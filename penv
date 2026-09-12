@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# penv — project Python environment (pyenv + venv)
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV="$ROOT/.venv"
+PY_VERSION="$(cat "$ROOT/.python-version" | tr -d '[:space:]')"
+
+ensure_python() {
+  if ! command -v pyenv &>/dev/null; then
+    echo "penv: pyenv not found. Install: https://github.com/pyenv/pyenv" >&2
+    exit 1
+  fi
+  if ! pyenv versions --bare | grep -qx "$PY_VERSION"; then
+    echo "penv: installing Python $PY_VERSION via pyenv..."
+    pyenv install -s "$PY_VERSION"
+  fi
+}
+
+ensure_venv() {
+  ensure_python
+  if [[ ! -d "$VENV" ]]; then
+    echo "penv: creating virtualenv at .venv..."
+    PYENV_VERSION="$PY_VERSION" pyenv exec python -m venv "$VENV"
+  fi
+}
+
+venv_python() {
+  ensure_venv
+  echo "$VENV/bin/python"
+}
+
+case "${1:-}" in
+  setup)
+    ensure_venv
+    if [[ -f "$ROOT/requirements.txt" ]] && [[ -s "$ROOT/requirements.txt" ]]; then
+      "$VENV/bin/pip" install -r "$ROOT/requirements.txt"
+    fi
+    echo "penv: ready. Run: ./penv run python <script> or source .venv/bin/activate"
+    ;;
+  run)
+    shift
+    [[ $# -gt 0 ]] || { echo "usage: penv run <command...>" >&2; exit 1; }
+    ensure_venv
+    PATH="$VENV/bin:$PATH" exec "$@"
+    ;;
+  python)
+    shift
+    exec "$(venv_python)" "$@"
+    ;;
+  pip)
+    shift
+    ensure_venv
+    exec "$VENV/bin/pip" "$@"
+    ;;
+  which)
+    venv_python
+    ;;
+  *)
+    cat <<EOF
+penv — run Python in this project
+
+  ./penv setup          Create .venv with pyenv Python ($(cat "$ROOT/.python-version"))
+  ./penv run <cmd>      Run any command with venv on PATH
+  ./penv python <args>  Run python from the venv
+  ./penv pip <args>     Run pip in the venv
+  ./penv which          Print venv python path
+EOF
+    ;;
+esac

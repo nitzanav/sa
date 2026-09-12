@@ -1,0 +1,8 @@
+---
+description: How to run Python in this project (pyenv + penv)
+alwaysApply: true
+---
+
+# Python
+
+Read `AGENTS.md`. Use `./penv setup` once, then `./penv python` or `./penv run` for all Python commands. Python version is pinned in `.python-version` (pyenv).
