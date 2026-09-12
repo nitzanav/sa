@@ -42,7 +42,8 @@ endef
 # progress/debug output on stderr so the captured file stays valid JSON.
 # ---------------------------------------------------------------------------
 
-.PHONY: analyst-recommendation-py analyst-recommendation-py-test
+.PHONY: analyst-recommendation-py analyst-recommendation-py-test \
+        analyst-recommendation-js analyst-recommendation-js-test
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -50,3 +51,10 @@ analyst-recommendation-py:
 analyst-recommendation-py-test:
 	@$(MAKE) --no-print-directory analyst-recommendation-py URL='$(URL)' > /tmp/analyst-recommendation-py.json
 	$(call diff-against-fixture,/tmp/analyst-recommendation-py.json)
+
+analyst-recommendation-js:
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendation.js '$(URL)'
+
+analyst-recommendation-js-test:
+	@$(MAKE) --no-print-directory analyst-recommendation-js URL='$(URL)' > /tmp/analyst-recommendation-js.json
+	$(call diff-against-fixture,/tmp/analyst-recommendation-js.json)
