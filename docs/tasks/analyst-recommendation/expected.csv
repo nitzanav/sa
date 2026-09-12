@@ -1,0 +1,52 @@
+analyst,firm,recommendation,action,price_target,projected,date
+James Schneider,Goldman Sachs,Buy,Maintained,$300.00,+37.4%,09/10/2026
+David O'Connor,Piper Sandler,Buy,Initiated,$300.00,+37.4%,09/10/2026
+Unknown Analyst,Piper Sandler,Buy,Initiated,$300.00,+37.4%,09/09/2026
+Quinn Bolton,Needham,Buy,Maintained,$300.00,+37.4%,09/04/2026
+Sebastien Naji,William Blair,Buy,Maintained,,,09/04/2026
+Simon Leopold,Raymond James,Buy,Maintained,,,09/03/2026
+Kevin Cassidy,Rosenblatt Securities,Buy,Maintained,$390.00,+78.7%,09/03/2026
+Vivek Arya,Bank of America Securities,Buy,Maintained,$350.00,+60.3%,09/02/2026
+Harlan Sur,J.P. Morgan,Buy,Maintained,$320.00,+46.6%,09/02/2026
+Raimo Lenschow,Barclays,Buy,Maintained,$275.00,+26%,09/01/2026
+Yik Ban Chong,Phillip Securities,Buy,Maintained,$300.00,+37.4%,08/31/2026
+Ruben Roy,Stifel Nicolaus,Buy,Maintained,$315.00,+44.3%,08/30/2026
+Ingo Wermann,DZ BANK AG,Buy,Maintained,,,08/27/2026
+Joshua Buchalter,TD Cowen,Buy,Maintained,$275.00,+26%,08/26/2026
+Mark Lipacis,Evercore ISI,Buy,Maintained,$465.00,+113%,08/27/2026
+Gil Luria,D.A. Davidson,Buy,Reiterated,$300.00,+37.4%,08/27/2026
+Christopher Rolland,Susquehanna,Buy,Reiterated,$275.00,+26%,08/27/2026
+William Stein,Truist Financial,Buy,Maintained,$346.00,+58.5%,08/27/2026
+Stacy Rasgon,Bernstein,Buy,Maintained,$400.00,+83.2%,08/27/2026
+Harsh Kumar,BMO Capital,Buy,Reiterated,$340.00,+55.8%,08/27/2026
+Aaron Rakers,Wells Fargo,Buy,Reiterated,$315.00,+44.3%,08/27/2026
+Vijay Rakesh,Mizuho Securities,Buy,Reiterated,$315.00,+44.3%,08/26/2026
+Timothy Arcuri,UBS,Buy,Reiterated,$300.00,+37.4%,08/28/2026
+Rick Schafer,Oppenheimer,Buy,Reiterated,$315.00,+44.3%,08/27/2026
+Joseph Moore,Morgan Stanley,Buy,Reiterated,$300.00,+37.4%,08/27/2026
+Atif Malik,Citi,Buy,Maintained,$315.00,+44.3%,08/28/2026
+Cody Acree,Benchmark Co.,Buy,Reiterated,$335.00,+53.5%,08/27/2026
+Thomas O'Malley,Barclays,Buy,Maintained,$275.00,+26%,08/27/2026
+John Vinh,KeyBanc,Buy,Maintained,$330.00,+51.2%,08/27/2026
+Blayne Curtis,Jefferies,Buy,Maintained,$300.00,+37.4%,08/27/2026
+Srini Pajjuri,RBC Capital,Buy,Reiterated,$330.00,+51.2%,08/27/2026
+C J Muse,Cantor Fitzgerald,Buy,Reiterated,$350.00,+60.3%,08/26/2026
+Unknown Analyst,BMO Capital,Buy,Initiated,$340.00,+55.8%,08/20/2026
+Varun Govindaraj,Bernstein,Buy,Maintained,$315.00,+44.3%,08/03/2026
+Dien Wang,Bernstein,Buy,Maintained,$315.00,+44.3%,06/29/2026
+Fang Boon Foo,DBS,Buy,Maintained,$250.00,+14.5%,06/05/2026
+Chris Caso,Wolfe Research,Buy,Maintained,$275.00,+26%,06/02/2026
+Ivan Feinseth,Tigress Financial,Buy,Reiterated,$425.00,+94.7%,05/27/2026
+Richard Shannon,Craig-Hallum,Buy,Maintained,$275.00,+26%,05/21/2026
+Daniel Ives,Wedbush,Buy,Reiterated,$330.00,+51.2%,05/21/2026
+Matt Bryson,Wedbush,Buy,Reiterated,$330.00,+51.2%,05/21/2026
+Tristan Gerra,Robert W. Baird,Buy,Maintained,$500.00,+129.1%,05/21/2026
+Ross Seymore,Deutsche Bank,Hold,Maintained,$255.00,+16.8%,05/21/2026
+Jim Kelleher,Argus Research,Buy,Reiterated,$270.00,+23.7%,05/20/2026
+Frank Lee CFA,HSBC,Buy,Maintained,$325.00,+48.9%,05/19/2026
+David Siffringer,Cantor Fitzgerald,Buy,Reiterated,$350.00,+60.3%,05/14/2026
+David Dai CFA,Bernstein,Buy,Maintained,$300.00,+37.4%,05/08/2026
+Ben Reitzes,Melius Research,Buy,Reiterated,$380.00,+74.1%,03/16/2026
+Jay Goldberg,Seaport Global,Sell,Reiterated,,,03/16/2026
+Bhavtosh Vajpayee,CLSA,Buy,Maintained,$300.00,+37.4%,03/04/2026
+Stefan Chang,Aletheia Capital,Buy,Upgraded,$250.00,+14.5%,02/23/2026
