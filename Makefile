@@ -43,7 +43,8 @@ endef
 # ---------------------------------------------------------------------------
 
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
-        analyst-recommendation-js analyst-recommendation-js-test
+        analyst-recommendation-js analyst-recommendation-js-test \
+        download_fortune_500
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -58,3 +59,11 @@ analyst-recommendation-js:
 analyst-recommendation-js-test:
 	@$(MAKE) --no-print-directory analyst-recommendation-js URL='$(URL)' > /tmp/analyst-recommendation-js.json
 	$(call diff-against-fixture,/tmp/analyst-recommendation-js.json)
+
+# ---------------------------------------------------------------------------
+# Data downloads
+# ---------------------------------------------------------------------------
+
+download_fortune_500:
+	@mkdir -p data/fortune_500
+	@curl -fsSL https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv -o data/fortune_500/symbols.csv
