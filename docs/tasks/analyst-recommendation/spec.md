@@ -10,6 +10,8 @@ The Analysis tab is client-rendered. The Analyst cell is two lines: **name**, th
 
 ## Deliverable
 
+Implementation lives under `src/analyst-recommendation/<specific technology choice>` (e.g. `python/` or `javascript/`).
+
 A `Makefile` target that runs a Python script (`./penv python …`, see `AGENTS.md`) **or** a JavaScript script (`nvm use`, then `node …`).
 
 The command takes a URL and prints JSON to **stdout** (no extra stdout logs):
@@ -21,8 +23,8 @@ make analyst-recommendation URL='https://www.google.com/finance/beta/quote/NVDA:
 The target may wrap either:
 
 ```
-./penv python scrape_analyst_recommendation.py '<url>'
-node scrape_analyst_recommendation.js '<url>'
+./penv python src/analyst-recommendation/python/scrape_analyst_recommendation.py '<url>'
+node src/analyst-recommendation/javascript/scrape_analyst_recommendation.js '<url>'
 ```
 
 ## Output schema
