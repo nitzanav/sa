@@ -7,8 +7,8 @@ and prints one JSON object per row to stdout. See
 Run from the repo root:
 
 ```
-make analyst-recommendation URL='https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis'
-make test-analyst-recommendation
+make analyst-recommendation-py URL='https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis'
+make analyst-recommendation-py-test
 ```
 
 Or call the script directly:
