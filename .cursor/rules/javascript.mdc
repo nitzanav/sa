@@ -1,0 +1,8 @@
+---
+description: How to run JavaScript in this project (nvm)
+alwaysApply: true
+---
+
+# JavaScript
+
+Read `AGENTS.md`. Run `nvm use` in the project root, then `npm install`. Use `node script.js` or `npm run <script>` for JS. Node is pinned in `.nvmrc` (v23.5.0).
