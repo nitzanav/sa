@@ -100,6 +100,7 @@ export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecom
   retryConfig,
   cacheConfig,
 ) {
+  logger.addContext({ symbol: quoteFromUrl(url) });
   const html = await httpRequestScrape(
     { url: withEnglishLocale(url) },
     retryConfig,
@@ -116,6 +117,7 @@ function quoteFromUrl(url) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const url = process.argv[2];
   const quote = quoteFromUrl(url);
+  logger.addContext({ symbol: quote });
   const listings = await scrapeAnalystRecommendation(
     url,
     { operationName: quote },

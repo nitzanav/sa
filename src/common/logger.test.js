@@ -120,6 +120,35 @@ test("logger.error writes and logger.info is skipped when level is error", () =>
   }
 });
 
+test("addContext adds fields to every following log line", () => {
+  const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  try {
+    logger.addContext({ symbol: "NVDA" });
+    logger.info({ message: "start" });
+    logger.error({ message: "error" });
+    expect(spy).toHaveBeenNthCalledWith(
+      1,
+      '{"symbol":"NVDA","message":"start","log_level":"info"}\n',
+    );
+    expect(spy).toHaveBeenNthCalledWith(
+      2,
+      '{"symbol":"NVDA","message":"error","log_level":"error"}\n',
+    );
+  } finally {
+    logger.clearContext();
+    spy.mockRestore();
+  }
+});
+
+test("clearContext drops the added fields", () => {
+  const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  logger.addContext({ symbol: "NVDA" });
+  logger.clearContext();
+  logger.info({ message: "start" });
+  expect(spy).toHaveBeenCalledWith('{"message":"start","log_level":"info"}\n');
+  spy.mockRestore();
+});
+
 test("logger.debug writes when level is debug", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   const previous = config.logger.level;

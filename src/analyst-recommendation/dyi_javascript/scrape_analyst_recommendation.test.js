@@ -2,6 +2,7 @@ import { jest } from "@jest/globals";
 import { mkdtempSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { logger } from "../../common/logger.js";
 import {
   parseAnalystRecommendation,
   scrapeAnalystRecommendation,
@@ -62,4 +63,27 @@ test("scrapeAnalystRecommendation caches html and parses", async () => {
   expect(rows).toHaveLength(2);
   expect(fetchSpy).toHaveBeenCalledTimes(1);
   fetchSpy.mockRestore();
+  logger.clearContext();
+});
+
+test("scrapeAnalystRecommendation logs the symbol from the url", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "sa-"));
+  const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    text: async () => "<html></html>",
+  });
+  await scrapeAnalystRecommendation(
+    "https://www.google.com/finance/beta/quote/NVDA:NASDAQ?tab=analysis",
+    { operationName: "NVDA", initialDelay: 0, maxAttempts: 1 },
+    { fileName: join(dir, "NVDA.html") },
+  );
+  expect(stderrSpy).toHaveBeenCalledWith(
+    '{"symbol":"NVDA","message":"error","error":"Analyst Recommendation table not found","log_level":"error"}\n',
+  );
+  fetchSpy.mockRestore();
+  stderrSpy.mockRestore();
+  logger.clearContext();
 });
