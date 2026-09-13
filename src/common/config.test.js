@@ -1,4 +1,8 @@
+import { execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import config from "./config.js";
+
+const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
 
 test("config loads defaults", () => {
   expect(config.retry).toEqual({
@@ -12,4 +16,24 @@ test("config loads defaults", () => {
   expect(config.analyst_recommendations.limit).toBe(3);
   expect(config.sharadar.chunkSize).toBe(30);
   expect(config.sharadar.api_key).toEqual(expect.any(String));
+});
+
+test("NODE_CONFIG overrides nested values", () => {
+  const output = execFileSync(
+    process.execPath,
+    [
+      "--input-type=module",
+      "-e",
+      "import config from './src/common/config.js'; process.stdout.write(String(config.analyst_recommendations.limit))",
+    ],
+    {
+      cwd: repoRoot,
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        NODE_CONFIG: JSON.stringify({ analyst_recommendations: { limit: 10 } }),
+      },
+    },
+  );
+  expect(output).toBe("10");
 });

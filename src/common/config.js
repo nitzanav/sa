@@ -1,5 +1,9 @@
-import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-export default JSON.parse(
-  readFileSync(new URL("../../config/default.json", import.meta.url), "utf8"),
-);
+const require = createRequire(import.meta.url);
+process.env.NODE_CONFIG_DIR ??= join(dirname(fileURLToPath(import.meta.url)), "../../config");
+const config = require("config");
+
+export default config;

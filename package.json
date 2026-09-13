@@ -12,7 +12,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cheerio": "^1.2.0"
+    "cheerio": "^1.2.0",
+    "config": "^3.3.12"
   },
   "devDependencies": {
     "jest": "^29.7.0"
@@ -20,6 +21,9 @@
   "jest": {
     "testEnvironment": "node",
     "transform": {},
-    "testPathIgnorePatterns": ["/node_modules/", "/test/e2e/"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/test/e2e/"
+    ]
   }
 }
