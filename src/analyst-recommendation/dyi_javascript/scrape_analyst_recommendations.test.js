@@ -78,10 +78,10 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ),
     ).toBe(
       [
-        "date,symbol,average_projected,std_projected",
-        "2026-09-10,AAA,37.4,",
-        "2026-09-10,BBB,37.4,",
-        "2026-09-10,CCC,37.4,",
+        "date,symbol,average_projected,std_projected,analyst_projections_count",
+        "2026-09-10,AAA,37.4,,1",
+        "2026-09-10,BBB,37.4,,1",
+        "2026-09-10,CCC,37.4,,1",
       ].join("\n"),
     );
   } finally {
@@ -123,8 +123,26 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
       CCC: [{ analyst: "Cam", projected: null, date: "01/02/2026" }],
     }),
   ).toEqual([
-    { date: "2025-12-31", symbol: "AAA", average_projected: -12.1, std_projected: null },
-    { date: "2026-01-02", symbol: "AAA", average_projected: 10, std_projected: null },
-    { date: "2026-01-02", symbol: "BBB", average_projected: 15.9, std_projected: 7.0711 },
+    {
+      date: "2025-12-31",
+      symbol: "AAA",
+      average_projected: -12.1,
+      std_projected: null,
+      analyst_projections_count: 1,
+    },
+    {
+      date: "2026-01-02",
+      symbol: "AAA",
+      average_projected: 10,
+      std_projected: null,
+      analyst_projections_count: 1,
+    },
+    {
+      date: "2026-01-02",
+      symbol: "BBB",
+      average_projected: 15.9,
+      std_projected: 7.0711,
+      analyst_projections_count: 2,
+    },
   ]);
 });

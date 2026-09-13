@@ -14,6 +14,7 @@ const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "symbol",
   "average_projected",
   "std_projected",
+  "analyst_projections_count",
 ];
 
 function isoDate(date) {
@@ -70,6 +71,7 @@ export function flattenAllSymbolsPerDateAndSymbol(all) {
     symbol,
     average_projected: roundStat(mean(percents)),
     std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
+    analyst_projections_count: percents.length,
   }));
 }
 
