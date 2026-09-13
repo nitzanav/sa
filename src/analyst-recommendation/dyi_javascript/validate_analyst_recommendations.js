@@ -17,7 +17,7 @@ const ROW_FIELDS = [
 ];
 const USD_PRICE_TARGET = /^\$[\d,]+(?:\.\d{1,2})?$/;
 const FOREIGN_PRICE_TARGET = /^[A-Z]{3} [\d,]+(?:\.\d{1,2})?$/;
-const PROJECTED = /^[+-]\d+(?:\.\d+)?%$/;
+const PROJECTED = /^(?:0(?:\.\d+)?%|[+-]\d+(?:\.\d+)?%)$/;
 const DATE = /^\d{2}\/\d{2}\/\d{4}$/;
 
 function formatContext(context) {

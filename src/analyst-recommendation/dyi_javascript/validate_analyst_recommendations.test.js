@@ -30,6 +30,15 @@ test("validateAnalystRecommendationRow accepts null optional fields", () => {
   ).not.toThrow();
 });
 
+test("validateAnalystRecommendationRow accepts zero projected", () => {
+  expect(() =>
+    validateAnalystRecommendationRow({
+      ...validRow,
+      projected: "0%",
+    }),
+  ).not.toThrow();
+});
+
 test("validateAnalystRecommendationRow accepts foreign currency price targets", () => {
   expect(() =>
     validateAnalystRecommendationRow({
