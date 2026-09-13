@@ -52,6 +52,8 @@ test("fetches and writes on cache miss", async () => {
   );
   expect(html).toBe("<live/>");
   expect(readFileSync(file, "utf8")).toBe("<live/>");
+  const [, init] = fetchSpy.mock.calls[0];
+  expect(() => new Headers(init.headers)).not.toThrow();
   fetchSpy.mockRestore();
 });
 

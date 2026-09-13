@@ -13,6 +13,7 @@ test("config loads defaults", () => {
   });
   expect(config.cache).toEqual({ enabled: true, ttl: 86400000 });
   expect(config.http.timeout).toBe(60000);
+  expect(() => new Headers(config.http.headers)).not.toThrow();
   expect(config.analyst_recommendations.limit).toBe(3);
   expect(config.sharadar.chunkSize).toBe(30);
   expect(config.sharadar.api_key).toEqual(expect.any(String));
