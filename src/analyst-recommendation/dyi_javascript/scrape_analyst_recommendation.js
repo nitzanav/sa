@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
 import { httpRequestScrape } from "../../common/http_request_scrape.js";
+import { log } from "../../common/logger.js";
 
 const ANALYST_TABLE_HEADERS = [
   "analyst",
@@ -12,11 +13,11 @@ const ANALYST_TABLE_HEADERS = [
 
 const MISSING_VALUES = new Set(["-", "\u2013", "\u2014", ""]);
 
-function withEnglishLocale(url) {
+const withEnglishLocale = log(function withEnglishLocale(url) {
   const parsed = new URL(url);
   if (!parsed.searchParams.has("hl")) parsed.searchParams.set("hl", "en");
   return parsed.toString();
-}
+});
 
 function cellText($element) {
   if (!$element || $element.length === 0) return "";
@@ -27,7 +28,7 @@ function optional(value) {
   return MISSING_VALUES.has(value) ? null : value;
 }
 
-function getAnalyst($, rowCells) {
+const getAnalyst = log(function getAnalyst($, rowCells) {
   const lines = [];
   rowCells
     .eq(0)
@@ -40,9 +41,9 @@ function getAnalyst($, rowCells) {
       }
     });
   return [lines[0] || "", lines[1] || ""];
-}
+});
 
-function findAnalystTable($) {
+const findAnalystTable = log(function findAnalystTable($) {
   const $main = $("main").first();
   const $root = $main.length ? $main : $.root();
   let found = null;
@@ -61,9 +62,9 @@ function findAnalystTable($) {
     }
   });
   return found;
-}
+});
 
-export function parseAnalystRecommendation(html) {
+export const parseAnalystRecommendation = log(function parseAnalystRecommendation(html) {
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
   if ($table === null) throw new Error("Analyst Recommendation table not found");
@@ -85,21 +86,25 @@ export function parseAnalystRecommendation(html) {
     });
   });
   return listings;
-}
+});
 
-export async function scrapeAnalystRecommendation(url, retryConfig, cacheConfig) {
+export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecommendation(
+  url,
+  retryConfig,
+  cacheConfig,
+) {
   const html = await httpRequestScrape(
     { url: withEnglishLocale(url) },
     retryConfig,
     cacheConfig,
   );
   return parseAnalystRecommendation(html);
-}
+});
 
-function quoteFromUrl(url) {
+const quoteFromUrl = log(function quoteFromUrl(url) {
   const match = new URL(url).pathname.match(/\/quote\/([^/:]+)/);
   return match ? match[1] : "quote";
-}
+});
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const url = process.argv[2];
