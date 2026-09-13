@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Tom Narayan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+71.3%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$75.00",
+    "projected": "+64.7%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Dan Levy",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+42.7%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Chris McNally",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$70.00",
+    "projected": "+53.7%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Mark Delaney",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+55.9%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Rajat Gupta CFA",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+42.7%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Steven Fox",
+    "firm": "Fox Advisors",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Itay Michaeli",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+69.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Joseph Spak",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+36.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Luke Junk",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "+29.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Edison Yu",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$56.00",
+    "projected": "+23%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Colin Langan",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+44.9%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Andrew Percoco",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$55.00",
+    "projected": "+20.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Alexander Perry",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Alexander Potter",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$94.00",
+    "projected": "+106.4%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "Bill Selesky",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$69.00",
+    "projected": "+51.5%",
+    "date": "05/26/2026"
+  },
+  {
+    "analyst": "Ryan Brinkman",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+84.5%",
+    "date": "05/18/2026"
+  },
+  {
+    "analyst": "Michael Ward",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+69.1%",
+    "date": "05/19/2026"
+  },
+  {
+    "analyst": "Colin Rusch",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$84.00",
+    "projected": "+84.5%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "02/03/2026"
+  }
+]

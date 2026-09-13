@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Bryan Keane",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$287.00",
+    "projected": "+7%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$290.00",
+    "projected": "+8.1%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Andy Yu CFA",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+8.1%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+15.6%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "David Grossman",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+6.2%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Tien Tsin Huang",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+4.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Mark Marcon",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+13.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Daniel Jester",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$305.00",
+    "projected": "+13.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+8.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$286.00",
+    "projected": "+6.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Dan Dolev",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$322.00",
+    "projected": "+20%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jared Levine",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$283.00",
+    "projected": "+5.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Samad Samana",
+    "firm": "Jefferies",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "-16.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$248.00",
+    "projected": "-7.6%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "-10.5%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Jacob Smith CFA",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+0.6%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Bryan Bergin",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$216.00",
+    "projected": "-19.5%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "-18%",
+    "date": "03/27/2026"
+  }
+]

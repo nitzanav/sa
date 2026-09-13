@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "Manav Gupta",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+26.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Benjamin Theurer",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+22.5%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Andrew Strelzik",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+22.5%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Steven Haynes",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+14.4%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Thomas Palmer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+14.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Salvator Tiano",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+6.2%",
+    "date": "03/11/2026"
+  },
+  {
+    "analyst": "Pooran Sharma",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+6.2%",
+    "date": "02/05/2026"
+  }
+]

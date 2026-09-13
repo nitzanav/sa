@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+7.2%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+19.2%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Joseph Spak",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$99.00",
+    "projected": "+18%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "William Stein",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$107.50",
+    "projected": "+28.1%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+21.5%",
+    "date": "08/30/2026"
+  },
+  {
+    "analyst": "Scott Graham",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+37%",
+    "date": "08/02/2026"
+  },
+  {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+7.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$107.50",
+    "projected": "+28.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+25.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$92.50",
+    "projected": "+10.2%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "William O'Neil",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "06/15/2026"
+  },
+  {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+138.3%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Luke Junk",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "+110.9%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$145.00",
+    "projected": "+72.8%",
+    "date": "03/31/2026"
+  }
+]

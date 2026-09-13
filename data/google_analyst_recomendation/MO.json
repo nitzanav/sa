@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+11.6%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Lisa Lewandowski",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+18.9%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Christine Dooley",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Pallav Mittal",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$58.00",
+    "projected": "-15.9%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Matthew Smith, CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+11.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Gerald Pascarelli",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Eric Serotta",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+2.9%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/26/2026"
+  },
+  {
+    "analyst": "Owen Bennett",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/26/2026"
+  },
+  {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-14.5%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Simon Hales",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+1.5%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Faham Baig",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$79.00",
+    "projected": "+14.5%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Damian McNeela",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "-4.3%",
+    "date": "05/04/2026"
+  }
+]

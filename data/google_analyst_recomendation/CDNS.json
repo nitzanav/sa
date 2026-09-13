@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Shebly Seyrafi",
+    "firm": "FBN Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$375.00",
+    "projected": "+29.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Ruben Roy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$432.00",
+    "projected": "+49.3%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$420.00",
+    "projected": "+45.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Siti Panigrahi",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Harlan Sur",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$405.00",
+    "projected": "+40%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Nay Soe Naing",
+    "firm": "Berenberg Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+52.1%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Edward Yang",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+3.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Blair Abernethy",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+45.1%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+46.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Lee Simpson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+38.2%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Gary Mobley",
+    "firm": "Benchmark Co.",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$450.00",
+    "projected": "+55.5%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Clarke Jeffries",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$349.00",
+    "projected": "+20.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Joseph Vruwink",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+45.1%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Charles Shi",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+38.2%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Kelsey Chia",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+45.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Jason Celino",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+46.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+62.4%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Benchmark Co.",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$450.00",
+    "projected": "+55.5%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "05/19/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Berenberg Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+31.3%",
+    "date": "02/18/2026"
+  }
+]
