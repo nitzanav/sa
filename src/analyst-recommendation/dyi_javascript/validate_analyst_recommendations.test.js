@@ -53,10 +53,13 @@ test("validateAnalystRecommendationRow accepts zero projected", () => {
   ).toBe(true);
 });
 
-test("validateAnalystRecommendationRow accepts foreign currency price targets", () => {
+test("validateAnalystRecommendationRow rejects non-USD price targets", () => {
   expect(
     validateAnalystRecommendationRow({ ...validRow, price_target: "SGD 1.86" }),
-  ).toBe(true);
+  ).toBe(false);
+  expect(loggedErrors()[0].error).toMatch(
+    /price_target is not USD: "SGD 1.86"/,
+  );
 });
 
 test("validateAnalystRecommendationRow accepts projected at the range bounds", () => {
@@ -150,17 +153,29 @@ test("validateAllSymbolsRecommendations skips invalid rows per symbol", () => {
   expect(loggedErrors()[0].error).toMatch(/symbol=BBB/);
 });
 
-test("existing google analyst recommendation json files pass validation", () => {
+const isUsdRow = (row) =>
+  row.price_target === null || row.price_target.startsWith("$");
+
+test("existing google analyst recommendation json files drop only non-USD rows", () => {
   const dir = join(process.cwd(), "data/google_analyst_recomendation");
   for (const fileName of readdirSync(dir).filter(
     (name) => name.endsWith(".json") && name !== "all_symbols.json",
   )) {
     const listings = JSON.parse(readFileSync(join(dir, fileName), "utf8"));
-    expect(validateAnalystRecommendations(listings, { fileName })).toHaveLength(
-      listings.length,
+    expect(validateAnalystRecommendations(listings, { fileName })).toEqual(
+      listings.filter(isUsdRow),
     );
   }
   const all = JSON.parse(readFileSync(join(dir, "all_symbols.json"), "utf8"));
-  expect(validateAllSymbolsRecommendations(all)).toEqual(all);
-  expect(loggedErrors()).toEqual([]);
+  expect(validateAllSymbolsRecommendations(all)).toEqual(
+    Object.fromEntries(
+      Object.entries(all).map(([symbol, listings]) => [
+        symbol,
+        listings.filter(isUsdRow),
+      ]),
+    ),
+  );
+  for (const { error } of loggedErrors()) {
+    expect(error).toMatch(/price_target is not USD/);
+  }
 });

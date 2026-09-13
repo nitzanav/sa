@@ -18,7 +18,7 @@ const ROW_FIELDS = [
   "date",
 ];
 const USD_PRICE_TARGET = /^\$[\d,]+(?:\.\d{1,2})?$/;
-const FOREIGN_PRICE_TARGET = /^[A-Z]{3} [\d,]+(?:\.\d{1,2})?$/;
+const NON_USD_PRICE_TARGET = /^[A-Z]{3} [\d,]+(?:\.\d{1,2})?$/;
 const PROJECTED = /^(?:0(?:\.\d+)?%|[+-][\d,]+(?:\.\d+)?%)$/;
 const PROJECTED_MAX = 1000;
 const PROJECTED_MIN = -95;
@@ -55,7 +55,10 @@ function isValidPriceTarget(value, context) {
   if (typeof value !== "string") {
     return reject("price_target must be null or a string", context);
   }
-  if (!USD_PRICE_TARGET.test(value) && !FOREIGN_PRICE_TARGET.test(value)) {
+  if (NON_USD_PRICE_TARGET.test(value)) {
+    return reject(`price_target is not USD: ${JSON.stringify(value)}`, context);
+  }
+  if (!USD_PRICE_TARGET.test(value)) {
     return reject(
       `price_target has invalid format: ${JSON.stringify(value)}`,
       context,
