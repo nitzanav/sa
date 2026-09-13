@@ -5,6 +5,7 @@ import config from "./config.js";
 const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
 
 test("config loads defaults", () => {
+  expect(config.logger).toEqual({ level: "info" });
   expect(config.retry).toEqual({
     enabled: true,
     initialDelay: 1000,

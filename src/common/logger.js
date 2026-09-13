@@ -1,3 +1,5 @@
+import config from "./config.js";
+
 const serialize = (seen) => (_key, value) => {
   if (value instanceof Error) return value.message;
   if (typeof value === "function") return value.name || "[Function]";
@@ -21,7 +23,12 @@ export function log(target, context = { name: target.name }) {
     logger.log({ message: "start", function: name, args });
     const started = Date.now();
     const finish = (result) => {
-      logger.log({ message: "finish", function: name, result, duration: Date.now() - started });
+      logger.log({
+        message: "finish",
+        function: name,
+        ...(config.logger.level === "debug" ? { result } : {}),
+        duration: Date.now() - started,
+      });
       return result;
     };
     const result = target.apply(this, args);

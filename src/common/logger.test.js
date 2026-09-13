@@ -1,4 +1,5 @@
 import { jest } from "@jest/globals";
+import config from "./config.js";
 import { log, logger } from "./logger.js";
 
 test("logger writes one json line to stderr", () => {
@@ -36,10 +37,7 @@ test("log writes start and finish around a function", () => {
     1,
     '{"message":"start","function":"add","args":[1,2]}\n',
   );
-  expect(spy).toHaveBeenNthCalledWith(
-    2,
-    '{"message":"finish","function":"add","result":3,"duration":42}\n',
-  );
+  expect(spy).toHaveBeenNthCalledWith(2, '{"message":"finish","function":"add","duration":42}\n');
   spy.mockRestore();
   now.mockRestore();
 });
@@ -55,10 +53,28 @@ test("log writes finish after an async function resolves", async () => {
     1,
     '{"message":"start","function":"add","args":[1,2]}\n',
   );
-  expect(spy).toHaveBeenNthCalledWith(
-    2,
-    '{"message":"finish","function":"add","result":3,"duration":250}\n',
-  );
+  expect(spy).toHaveBeenNthCalledWith(2, '{"message":"finish","function":"add","duration":250}\n');
   spy.mockRestore();
   now.mockRestore();
+});
+
+test("log writes result on finish when level is debug", () => {
+  const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const now = jest.spyOn(Date, "now").mockReturnValueOnce(1000).mockReturnValueOnce(1042);
+  const previous = config.logger.level;
+  config.logger.level = "debug";
+  try {
+    const add = log(function add(a, b) {
+      return a + b;
+    });
+    expect(add(1, 2)).toBe(3);
+    expect(spy).toHaveBeenNthCalledWith(
+      2,
+      '{"message":"finish","function":"add","result":3,"duration":42}\n',
+    );
+  } finally {
+    config.logger.level = previous;
+    spy.mockRestore();
+    now.mockRestore();
+  }
 });
