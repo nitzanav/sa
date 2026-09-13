@@ -15,6 +15,7 @@ const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "average_projected",
   "std_projected",
   "analyst_projections_count",
+  "projections",
 ];
 
 function isoDate(date) {
@@ -72,11 +73,15 @@ export function flattenAllSymbolsPerDateAndSymbol(all) {
     average_projected: roundStat(mean(percents)),
     std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
     analyst_projections_count: percents.length,
+    projections: percents,
   }));
 }
 
+const csvCell = (value) =>
+  value == null ? "" : Array.isArray(value) ? JSON.stringify(value) : value;
+
 const csvRow = (row) =>
-  Object.fromEntries(Object.entries(row).map(([k, v]) => [k, v ?? ""]));
+  Object.fromEntries(Object.entries(row).map(([k, v]) => [k, csvCell(v)]));
 
 export const allSymbolsCsv = (all) =>
   formatCsv(ALL_SYMBOLS_CSV_COLUMNS, flattenAllSymbols(all).map(csvRow));

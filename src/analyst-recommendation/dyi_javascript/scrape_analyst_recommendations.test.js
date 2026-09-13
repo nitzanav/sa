@@ -78,10 +78,10 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ),
     ).toBe(
       [
-        "date,symbol,average_projected,std_projected,analyst_projections_count",
-        "2026-09-10,AAA,37.4,,1",
-        "2026-09-10,BBB,37.4,,1",
-        "2026-09-10,CCC,37.4,,1",
+        "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
+        "2026-09-10,AAA,37.4,,1,[37.4]",
+        "2026-09-10,BBB,37.4,,1,[37.4]",
+        "2026-09-10,CCC,37.4,,1,[37.4]",
       ].join("\n"),
     );
   } finally {
@@ -129,6 +129,7 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
       average_projected: -12.1,
       std_projected: null,
       analyst_projections_count: 1,
+      projections: [-12.1],
     },
     {
       date: "2026-01-02",
@@ -136,6 +137,7 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
       average_projected: 10,
       std_projected: null,
       analyst_projections_count: 1,
+      projections: [10],
     },
     {
       date: "2026-01-02",
@@ -143,6 +145,7 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
       average_projected: 15.9,
       std_projected: 7.0711,
       analyst_projections_count: 2,
+      projections: [20.9, 10.9],
     },
   ]);
 });
