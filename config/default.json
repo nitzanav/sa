@@ -1,0 +1,21 @@
+{
+  "retry": { "enabled": true, "initialDelay": 1000, "delayMultiple": 2, "maxAttempts": 5 },
+  "cache": { "enabled": true, "ttl": 86400000 },
+  "http": {
+    "timeout": 60000,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      "Accept-Language": "en-US,en;q=0.9"
+    }
+  },
+  "analyst_recommendations": {
+    "limit": 3
+  },
+  "sharadar": {
+    "api_key": "e4d977beb06a10b53b7af7da1d2a1830",
+    "url": "https://api.sharadar.com/v1.0/data/tickers",
+    "fields": "ticker,exchange",
+    "chunkSize": 30,
+    "limit": 500
+  }
+}

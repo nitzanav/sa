@@ -44,6 +44,7 @@ endef
 
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
+        scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
         download_fortune_500
 
 analyst-recommendation-py:
@@ -63,6 +64,15 @@ analyst-recommendation-js-test:
 # ---------------------------------------------------------------------------
 # Data downloads
 # ---------------------------------------------------------------------------
+
+symbols_exchange:
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/symbols-exchange/fetch_symbols_exchange.js
+
+scrape_analyst_recommendations: symbols_exchange
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js
+
+scrape_analyst_recommendations-test:
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e
 
 download_fortune_500:
 	@mkdir -p data/fortune_500
