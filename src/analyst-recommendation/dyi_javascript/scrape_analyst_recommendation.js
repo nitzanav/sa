@@ -1,6 +1,7 @@
 import * as cheerio from "cheerio";
 import { httpRequestScrape } from "../../common/http_request_scrape.js";
-import { log } from "../../common/logger.js";
+import { log, logger } from "../../common/logger.js";
+import { validateAnalystRecommendations } from "./validate_analyst_recommendations.js";
 
 const ANALYST_TABLE_HEADERS = [
   "analyst",
@@ -67,7 +68,13 @@ function findAnalystTable($) {
 export function parseAnalystRecommendation(html) {
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
-  if ($table === null) throw new Error("Analyst Recommendation table not found");
+  if ($table === null) {
+    logger.log({
+      message: "error",
+      error: new Error("Analyst Recommendation table not found"),
+    });
+    return [];
+  }
   const $body = $table.find("tbody").first();
   const $rowsRoot = $body.length ? $body : $table;
   const listings = [];
@@ -85,7 +92,7 @@ export function parseAnalystRecommendation(html) {
       date: cellText(rowCells.eq(5)),
     });
   });
-  return listings;
+  return validateAnalystRecommendations(listings);
 }
 
 export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecommendation(

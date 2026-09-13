@@ -36,8 +36,13 @@ test("parseAnalystRecommendation returns rows in order", () => {
   ]);
 });
 
-test("parseAnalystRecommendation throws when table missing", () => {
-  expect(() => parseAnalystRecommendation("<html></html>")).toThrow(/not found/);
+test("parseAnalystRecommendation returns empty array when table missing", () => {
+  const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  expect(parseAnalystRecommendation("<html></html>")).toEqual([]);
+  expect(stderrSpy).toHaveBeenCalledWith(
+    '{"message":"error","error":"Analyst Recommendation table not found"}\n',
+  );
+  stderrSpy.mockRestore();
 });
 
 test("scrapeAnalystRecommendation caches html and parses", async () => {
