@@ -2,6 +2,7 @@ import config from "./config.js";
 import { backoffRetry } from "./backoff_retry.js";
 import { fileCache } from "./file_cache.js";
 import { log } from "./logger.js";
+import { rateLimit } from "./rate_limit.js";
 
 const request = log(async function request(httpConfig = {}) {
   const { url, headers, timeout } = { ...config.http, ...httpConfig };
@@ -14,8 +15,9 @@ const request = log(async function request(httpConfig = {}) {
   return response.text();
 });
 
-export async function httpRequestScrape(httpConfig, retryConfig, cacheConfig) {
-  const requestWithRetry = backoffRetry(request, retryConfig);
+export async function httpRequestScrape(httpConfig, retryConfig, cacheConfig, rateLimitConfig) {
+  const requestWithRateLimit = rateLimit(request, rateLimitConfig);
+  const requestWithRetry = backoffRetry(requestWithRateLimit, retryConfig);
   const requestWithRetryAndCache = fileCache(requestWithRetry, cacheConfig);
   return requestWithRetryAndCache(httpConfig);
 }
