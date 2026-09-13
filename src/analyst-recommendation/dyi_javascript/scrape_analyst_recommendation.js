@@ -69,7 +69,7 @@ export function parseAnalystRecommendation(html) {
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
   if ($table === null) {
-    logger.log({
+    logger.error({
       message: "error",
       error: new Error("Analyst Recommendation table not found"),
     });

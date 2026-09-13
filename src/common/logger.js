@@ -1,5 +1,7 @@
 import config from "./config.js";
 
+const levels = { error: 0, info: 1, debug: 2 };
+
 const serialize = (seen) => (_key, value) => {
   if (value instanceof Error) return value.message;
   if (typeof value === "function") return value.name || "[Function]";
@@ -14,7 +16,13 @@ const serialize = (seen) => (_key, value) => {
 };
 
 export const logger = {
-  log: (fields) => process.stderr.write(JSON.stringify(fields, serialize(new WeakSet())) + "\n"),
+  log: ({ log_level = "info", ...fields }) => {
+    if (levels[log_level] > levels[config.logger.level]) return;
+    process.stderr.write(JSON.stringify(fields, serialize(new WeakSet())) + "\n");
+  },
+  error: (fields) => logger.log({ ...fields, log_level: "error" }),
+  info: (fields) => logger.log({ ...fields, log_level: "info" }),
+  debug: (fields) => logger.log({ ...fields, log_level: "debug" }),
 };
 
 export function log(target, context = { name: target.name }) {
@@ -26,8 +34,9 @@ export function log(target, context = { name: target.name }) {
       logger.log({
         message: "finish",
         function: name,
-        ...(config.logger.level === "debug" ? { result } : {}),
+        result,
         duration: Date.now() - started,
+        log_level: "debug",
       });
       return result;
     };
