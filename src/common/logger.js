@@ -19,14 +19,12 @@ export function log(target, context = { name: target.name }) {
   const name = context.name;
   return function (...args) {
     logger.log({ message: "start", function: name, args });
+    const started = Date.now();
+    const finish = (result) => {
+      logger.log({ message: "finish", function: name, result, duration: Date.now() - started });
+      return result;
+    };
     const result = target.apply(this, args);
-    if (result instanceof Promise) {
-      return result.then((resolved) => {
-        logger.log({ message: "finish", function: name, result: resolved });
-        return resolved;
-      });
-    }
-    logger.log({ message: "finish", function: name, result });
-    return result;
+    return result instanceof Promise ? result.then(finish) : finish(result);
   };
 }

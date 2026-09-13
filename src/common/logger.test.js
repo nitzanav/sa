@@ -27,6 +27,7 @@ test("logger serializes class instances by constructor name", () => {
 
 test("log writes start and finish around a function", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const now = jest.spyOn(Date, "now").mockReturnValueOnce(1000).mockReturnValueOnce(1042);
   const add = log(function add(a, b) {
     return a + b;
   });
@@ -37,13 +38,15 @@ test("log writes start and finish around a function", () => {
   );
   expect(spy).toHaveBeenNthCalledWith(
     2,
-    '{"message":"finish","function":"add","result":3}\n',
+    '{"message":"finish","function":"add","result":3,"duration":42}\n',
   );
   spy.mockRestore();
+  now.mockRestore();
 });
 
 test("log writes finish after an async function resolves", async () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const now = jest.spyOn(Date, "now").mockReturnValueOnce(1000).mockReturnValueOnce(1250);
   const add = log(async function add(a, b) {
     return a + b;
   });
@@ -54,7 +57,8 @@ test("log writes finish after an async function resolves", async () => {
   );
   expect(spy).toHaveBeenNthCalledWith(
     2,
-    '{"message":"finish","function":"add","result":3}\n',
+    '{"message":"finish","function":"add","result":3,"duration":250}\n',
   );
   spy.mockRestore();
+  now.mockRestore();
 });
