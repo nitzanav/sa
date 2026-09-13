@@ -9,3 +9,15 @@ export function parseCsv(text) {
 }
 
 export const readCsv = (fileName) => parseCsv(readFileSync(fileName, "utf8"));
+
+export function formatCsvCell(value) {
+  const text = value == null ? "" : String(value);
+  return /["\n\r,]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+export function formatCsv(columns, rows) {
+  return [
+    columns.join(","),
+    ...rows.map((row) => columns.map((column) => formatCsvCell(row[column])).join(",")),
+  ].join("\n");
+}
