@@ -23,6 +23,7 @@ const PROJECTED = /^(?:0(?:\.\d+)?%|[+-][\d,]+(?:\.\d+)?%)$/;
 const PROJECTED_MAX = 1000;
 const PROJECTED_MIN = -95;
 const DATE = /^\d{2}\/\d{2}\/\d{4}$/;
+const DATE_MIN = new Date(2025, 11, 1);
 
 function formatContext(context) {
   if (!context) return "";
@@ -48,6 +49,26 @@ function isNonEmptyString(value) {
 export function parsePercent(value) {
   const number = Number(value.replace(/[+,%]/g, ""));
   return Number.isFinite(number) ? number : null;
+}
+
+export function parseAnalystDate(date) {
+  const [month, day, year] = date.split("/").map(Number);
+  return new Date(year, month - 1, day);
+}
+
+function startOfDay(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
+function today(context = {}) {
+  return startOfDay(context.now ?? new Date());
+}
+
+export function isAnalystDateInRange(date, context = {}) {
+  if (typeof date !== "string" || !DATE.test(date)) return false;
+  const parsed = parseAnalystDate(date);
+  return parsed >= DATE_MIN && parsed <= today(context);
 }
 
 function isValidPriceTarget(value, context) {
@@ -121,6 +142,19 @@ export function validateAnalystRecommendationRow(row, context = {}) {
   if (typeof row.date !== "string" || !DATE.test(row.date)) {
     return reject(
       `date must match MM/DD/YYYY, got ${JSON.stringify(row.date)}`,
+      context,
+    );
+  }
+  const parsedDate = parseAnalystDate(row.date);
+  if (parsedDate < DATE_MIN) {
+    return reject(
+      `date must not be before 2025-12-01, got ${JSON.stringify(row.date)}`,
+      context,
+    );
+  }
+  if (parsedDate > today(context)) {
+    return reject(
+      `date must not be after today, got ${JSON.stringify(row.date)}`,
       context,
     );
   }

@@ -22,7 +22,7 @@ Rows are validated before they are returned. A row that fails any check is logge
 Two checks reject data that Google really does serve: a `projected` outside `-95%` to
 `+1000%` (seen against a stale price target), and a `price_target` quoted in a
 currency other than USD (`"SGD 1.86"`). A missing `price_target` is `null` and stays
-valid.
+valid. `date` must fall between `2025-12-01` and today (inclusive).
 
 Fetching follows the [Oxylabs Google Finance recipe](https://github.com/oxylabs/how-to-scrape-google-finance):
 set `OXYLABS_USERNAME` and `OXYLABS_PASSWORD` to route requests through the Web
