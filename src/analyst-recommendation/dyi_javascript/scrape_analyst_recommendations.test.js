@@ -126,6 +126,5 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
     { date: "2025-12-31", symbol: "AAA", average_projected: -12.1, std_projected: null },
     { date: "2026-01-02", symbol: "AAA", average_projected: 10, std_projected: null },
     { date: "2026-01-02", symbol: "BBB", average_projected: 15.9, std_projected: 7.0711 },
-    { date: "2026-01-02", symbol: "CCC", average_projected: null, std_projected: null },
   ]);
 });

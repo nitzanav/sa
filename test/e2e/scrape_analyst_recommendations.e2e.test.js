@@ -27,7 +27,8 @@ test(
     }
 
     const result = JSON.parse(readFileSync(resultFile, "utf8"));
-    expect(Object.keys(result)).toHaveLength(config.analyst_recommendations.limit);
+    const tickers = [...new Set(result.map((row) => row.ticker))];
+    expect(tickers).toHaveLength(config.analyst_recommendations.limit);
     expect(result).toEqual(JSON.parse(readFileSync(baselineFile, "utf8")));
   },
   config.http.timeout,

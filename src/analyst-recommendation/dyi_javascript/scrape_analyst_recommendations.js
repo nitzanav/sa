@@ -58,15 +58,17 @@ export function flattenAllSymbols(all) {
 
 export function flattenAllSymbolsPerDateAndSymbol(all) {
   const groups = new Map();
-  for (const { date, ticker, percent } of flattenAllSymbols(all)) {
+  const rows = Array.isArray(all) ? all : flattenAllSymbols(all);
+  for (const { date, ticker, percent } of rows) {
+    if (percent == null || percent === "") continue;
     const key = `${date}\0${ticker}`;
     if (!groups.has(key)) groups.set(key, { date, symbol: ticker, percents: [] });
-    if (percent != null) groups.get(key).percents.push(percent);
+    groups.get(key).percents.push(percent);
   }
   return [...groups.values()].map(({ date, symbol, percents }) => ({
     date,
     symbol,
-    average_projected: percents.length ? roundStat(mean(percents)) : null,
+    average_projected: roundStat(mean(percents)),
     std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
   }));
 }
