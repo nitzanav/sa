@@ -6,7 +6,7 @@ test("logger writes one json line to stderr", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   logger.log({ message: "retry", operationName: "NVDA", attempt: 2, wait: 1234 });
   expect(spy).toHaveBeenCalledWith(
-    '{"message":"retry","operationName":"NVDA","attempt":2,"wait":1234}\n',
+    '{"message":"retry","operationName":"NVDA","attempt":2,"wait":1234,"log_level":"info"}\n',
   );
   spy.mockRestore();
 });
@@ -14,7 +14,7 @@ test("logger writes one json line to stderr", () => {
 test("logger serializes errors by message", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   logger.log({ message: "retry", error: new Error("boom") });
-  expect(spy).toHaveBeenCalledWith('{"message":"retry","error":"boom"}\n');
+  expect(spy).toHaveBeenCalledWith('{"message":"retry","error":"boom","log_level":"info"}\n');
   spy.mockRestore();
 });
 
@@ -22,7 +22,7 @@ test("logger serializes class instances by constructor name", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   class LoadedCheerio {}
   logger.log({ message: "start", args: [new LoadedCheerio()] });
-  expect(spy).toHaveBeenCalledWith('{"message":"start","args":["LoadedCheerio"]}\n');
+  expect(spy).toHaveBeenCalledWith('{"message":"start","args":["LoadedCheerio"],"log_level":"info"}\n');
   spy.mockRestore();
 });
 
@@ -34,7 +34,9 @@ test("log writes start around a function and skips debug finish", () => {
   });
   expect(add(1, 2)).toBe(3);
   expect(spy).toHaveBeenCalledTimes(1);
-  expect(spy).toHaveBeenCalledWith('{"message":"start","function":"add","args":[1,2]}\n');
+  expect(spy).toHaveBeenCalledWith(
+    '{"message":"start","function":"add","args":[1,2],"log_level":"info"}\n',
+  );
   spy.mockRestore();
   now.mockRestore();
 });
@@ -47,7 +49,9 @@ test("log writes start after an async function resolves and skips debug finish",
   });
   expect(await add(1, 2)).toBe(3);
   expect(spy).toHaveBeenCalledTimes(1);
-  expect(spy).toHaveBeenCalledWith('{"message":"start","function":"add","args":[1,2]}\n');
+  expect(spy).toHaveBeenCalledWith(
+    '{"message":"start","function":"add","args":[1,2],"log_level":"info"}\n',
+  );
   spy.mockRestore();
   now.mockRestore();
 });
@@ -64,7 +68,7 @@ test("log writes result on finish when level is debug", () => {
     expect(add(1, 2)).toBe(3);
     expect(spy).toHaveBeenNthCalledWith(
       2,
-      '{"message":"finish","function":"add","result":3,"duration":42}\n',
+      '{"message":"finish","function":"add","result":3,"duration":42,"log_level":"debug"}\n',
     );
   } finally {
     config.logger.level = previous;
@@ -76,14 +80,14 @@ test("log writes result on finish when level is debug", () => {
 test("logger.error writes when level is info", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   logger.error({ message: "error" });
-  expect(spy).toHaveBeenCalledWith('{"message":"error"}\n');
+  expect(spy).toHaveBeenCalledWith('{"message":"error","log_level":"error"}\n');
   spy.mockRestore();
 });
 
 test("logger.info writes when level is info", () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   logger.info({ message: "start" });
-  expect(spy).toHaveBeenCalledWith('{"message":"start"}\n');
+  expect(spy).toHaveBeenCalledWith('{"message":"start","log_level":"info"}\n');
   spy.mockRestore();
 });
 
@@ -109,7 +113,7 @@ test("logger.error writes and logger.info is skipped when level is error", () =>
     logger.info({ message: "start" });
     logger.error({ message: "error" });
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith('{"message":"error"}\n');
+    expect(spy).toHaveBeenCalledWith('{"message":"error","log_level":"error"}\n');
   } finally {
     config.logger.level = previous;
     spy.mockRestore();
@@ -122,7 +126,7 @@ test("logger.debug writes when level is debug", () => {
   config.logger.level = "debug";
   try {
     logger.debug({ message: "start" });
-    expect(spy).toHaveBeenCalledWith('{"message":"start"}\n');
+    expect(spy).toHaveBeenCalledWith('{"message":"start","log_level":"debug"}\n');
   } finally {
     config.logger.level = previous;
     spy.mockRestore();

@@ -18,7 +18,7 @@ const serialize = (seen) => (_key, value) => {
 export const logger = {
   log: ({ log_level = "info", ...fields }) => {
     if (levels[log_level] > levels[config.logger.level]) return;
-    process.stderr.write(JSON.stringify(fields, serialize(new WeakSet())) + "\n");
+    process.stderr.write(JSON.stringify({ ...fields, log_level }, serialize(new WeakSet())) + "\n");
   },
   error: (fields) => logger.log({ ...fields, log_level: "error" }),
   info: (fields) => logger.log({ ...fields, log_level: "info" }),

@@ -40,7 +40,7 @@ test("parseAnalystRecommendation returns empty array when table missing", () => 
   const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   expect(parseAnalystRecommendation("<html></html>")).toEqual([]);
   expect(stderrSpy).toHaveBeenCalledWith(
-    '{"message":"error","error":"Analyst Recommendation table not found"}\n',
+    '{"message":"error","error":"Analyst Recommendation table not found","log_level":"error"}\n',
   );
   stderrSpy.mockRestore();
 });
