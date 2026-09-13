@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$94.00",
+    "projected": "-2.2%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+5.1%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+8.2%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Edward DeArias",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+8.2%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+10.3%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$99.00",
+    "projected": "+3%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$129.00",
+    "projected": "+34.2%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$108.00",
+    "projected": "+12.4%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+5.1%",
+    "date": "05/15/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$108.00",
+    "projected": "+12.4%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+10.3%",
+    "date": "04/13/2026"
+  },
+  {
+    "analyst": "Gary Hovis",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+10.3%",
+    "date": "04/13/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+7.2%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+13.4%",
+    "date": "02/26/2026"
+  }
+]

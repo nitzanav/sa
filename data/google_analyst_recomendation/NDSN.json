@@ -1,0 +1,47 @@
+[
+  {
+    "analyst": "Matt Summerville",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+19.2%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Christopher Glynn",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$370.00",
+    "projected": "+17.7%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Michael Halloran",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$351.00",
+    "projected": "+11.6%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$360.00",
+    "projected": "+14.5%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Walter Liptak",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+3.3%",
+    "date": "03/01/2026"
+  }
+]

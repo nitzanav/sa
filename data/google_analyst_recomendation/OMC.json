@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Adam Berlin",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+75.9%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Steven Cahall",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$93.00",
+    "projected": "+17.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jason Bazinet",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+26.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Julien Roch",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+13.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$83.00",
+    "projected": "+5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Michael Nathanson",
+    "firm": "MoffettNathanson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+7.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "James Tate CFA",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+74.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Adrien Hilaire",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "-0%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Bianca Dallal",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$89.00",
+    "projected": "+12.6%",
+    "date": "05/28/2026"
+  },
+  {
+    "analyst": "David Karnovsky",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+45.6%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Grace Song",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$83.00",
+    "projected": "+5%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Christine Dooley",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Joseph Barnet-Lamb",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "+44.3%",
+    "date": "03/20/2026"
+  },
+  {
+    "analyst": "Thomas Yeh",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+3.8%",
+    "date": "02/19/2026"
+  }
+]

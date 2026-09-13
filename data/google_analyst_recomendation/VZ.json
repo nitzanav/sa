@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+8.7%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Laurent Yoon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "-7.1%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Kutgun Maral",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "-1.2%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Michael Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+0.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+2.7%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Maher Yaghi",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.50",
+    "projected": "+3.7%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Sebastiano Petti",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+2.7%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Kannan Venkateshwar",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "-9.1%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Steven Cahall",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "-7.1%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$56.00",
+    "projected": "+10.7%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Jonathan Atkin",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "-7.1%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Michael Funk",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$48.00",
+    "projected": "-5.2%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Nilesh Bhaiya",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+10.7%",
+    "date": "06/23/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "-5.2%",
+    "date": "06/22/2026"
+  },
+  {
+    "analyst": "Sachin Mittal",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "-3.2%",
+    "date": "05/28/2026"
+  },
+  {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Mike Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+8.7%",
+    "date": "04/27/2026"
+  },
+  {
+    "analyst": "Timothy Horan",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+10.7%",
+    "date": "04/28/2026"
+  },
+  {
+    "analyst": "Jonathan Kees",
+    "firm": "Daiwa",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$58.00",
+    "projected": "+14.6%",
+    "date": "02/18/2026"
+  },
+  {
+    "analyst": "Eric Luebchow",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "-13.1%",
+    "date": "02/02/2026"
+  }
+]

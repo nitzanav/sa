@@ -1,0 +1,200 @@
+[
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$254.00",
+    "projected": "+0.5%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Brian Brophy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$333.00",
+    "projected": "+31.8%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Adrian Huerta",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+26.6%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Garik Shmois",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$330.00",
+    "projected": "+30.6%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$330.00",
+    "projected": "+30.6%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Keith Hughes",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Brent Thielman",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Scott Group",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$343.00",
+    "projected": "+35.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Ivan Yi",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$343.00",
+    "projected": "+35.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$321.00",
+    "projected": "+27%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Anthony Codling",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+18.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+38.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Adam Seiden",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "+34.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Patrick Brown",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+26.6%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Adam Thalhimer",
+    "firm": "Thompson Davis",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "+38.5%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "Steven Fisher",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$349.00",
+    "projected": "+38.1%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Harry Goad",
+    "firm": "Berenberg Bank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$283.00",
+    "projected": "+12%",
+    "date": "06/01/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Berenberg Bank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$283.00",
+    "projected": "+12%",
+    "date": "06/01/2026"
+  },
+  {
+    "analyst": "Michael Feniger",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Trey Grooms",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$340.00",
+    "projected": "+34.5%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "+34.5%",
+    "date": "03/13/2026"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Wilma Burdis",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "-11.9%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Wesley Carmichael",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "-7.7%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+9.9%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$113.00",
+    "projected": "-5.2%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$128.00",
+    "projected": "+7.3%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+3.2%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+9%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Alex Scott",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "-22.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "-4.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Suneet Kamath",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "-7.7%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "John Barnidge",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "-7.7%",
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "Michael Ward CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "-22.8%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Jack Matten",
+    "firm": "BMO Capital",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "-27%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/06/2026"
+  },
+  {
+    "analyst": "Jimmy Bhullar",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "03/05/2026"
+  },
+  {
+    "analyst": "Thomas Gallagher",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "-7.7%",
+    "date": "02/04/2026"
+  }
+]

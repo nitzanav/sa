@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Ryan Kenny",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+27.7%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Dave Rochester",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+19.2%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+14.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+13.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$78.00",
+    "projected": "+10.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+13.5%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+19.2%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Ryan Nash",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+19.2%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Peter Winter",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+20.6%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+12.1%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$79.00",
+    "projected": "+12.1%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Matthew Breese",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-0.7%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+6.4%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$82.00",
+    "projected": "+16.3%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+12.1%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "David Chiaverini",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+27.7%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$82.00",
+    "projected": "+16.3%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+13.5%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "David Siffringer",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+6.4%",
+    "date": "06/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+5%",
+    "date": "02/04/2026"
+  }
+]

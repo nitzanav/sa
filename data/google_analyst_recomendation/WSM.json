@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Christopher Horvers",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+12.7%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Chris Graja",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+10.5%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Cristina Fernandez",
+    "firm": "Telsey Advisory",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+14.9%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Jonathan Matuszewski",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+21.6%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Simeon Gutman",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+6.1%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Kate McShane",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$279.00",
+    "projected": "+23.3%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Max Rakhlenko",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+23.8%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Oliver Wintermantel",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+8.3%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Steven Shemesh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+14.9%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$247.00",
+    "projected": "+9.2%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Steven Zaccone",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$252.00",
+    "projected": "+11.4%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Zachary Fadem",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+6.1%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Bradley Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+19.3%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Christopher Nardone",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$263.00",
+    "projected": "+16.3%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Seth Sigman",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "-16%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Joe Feldman",
+    "firm": "Telsey Advisory",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+12.7%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Peter Keith",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$253.00",
+    "projected": "+11.8%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "-11.6%",
+    "date": "03/19/2026"
+  },
+  {
+    "analyst": "Peter Benedict",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "-0.5%",
+    "date": "03/19/2026"
+  }
+]

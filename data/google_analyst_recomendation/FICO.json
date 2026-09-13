@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,100.00",
+    "projected": "+11.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,450.00",
+    "projected": "+47.1%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,700.00",
+    "projected": "+72.5%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Alexander Hess",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,530.00",
+    "projected": "+55.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Sean Kennedy",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,344.00",
+    "projected": "+36.4%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Scott Wurtzel",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Surinder Thind",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,675.00",
+    "projected": "+70%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,400.00",
+    "projected": "+42.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,525.00",
+    "projected": "+54.8%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Kyle Peterson",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,650.00",
+    "projected": "+67.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Owen Lau",
+    "firm": "Clear Street",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,600.00",
+    "projected": "+62.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,700.00",
+    "projected": "+72.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Rayna Kumar",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,543.00",
+    "projected": "+56.6%",
+    "date": "06/04/2026"
+  },
+  {
+    "analyst": "Faiza Alwy",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,658.00",
+    "projected": "+68.3%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Ryan Griffin CFA",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,700.00",
+    "projected": "+72.5%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Patrick O'Shaughnessy",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,750.00",
+    "projected": "+77.6%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Jeffrey Meuler",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,549.00",
+    "projected": "+57.2%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,416.00",
+    "projected": "+43.7%",
+    "date": "04/16/2026"
+  }
+]

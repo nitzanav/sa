@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$375.00",
+    "projected": "+2.4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Joe Ritchie",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$547.00",
+    "projected": "+49.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+22.9%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Timothy Wojs",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$495.00",
+    "projected": "+35.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Noah Kaye",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$575.00",
+    "projected": "+57.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Deane Dray",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$469.00",
+    "projected": "+28.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Ryan Merkel",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Patrick Baumann",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$522.00",
+    "projected": "+42.6%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Jeffrey Sprague",
+    "firm": "Vertical Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$600.00",
+    "projected": "+63.9%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$597.00",
+    "projected": "+63.1%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Andrew Buscaglia",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$535.00",
+    "projected": "+46.2%",
+    "date": "04/14/2026"
+  },
+  {
+    "analyst": "Joe O'Dea",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$480.00",
+    "projected": "+31.1%",
+    "date": "04/01/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+63.9%",
+    "date": "03/05/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$493.00",
+    "projected": "+34.7%",
+    "date": "02/02/2026"
+  }
+]

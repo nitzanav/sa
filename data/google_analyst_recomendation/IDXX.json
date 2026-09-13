@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Michael Ryskin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$665.00",
+    "projected": "+31.8%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$675.00",
+    "projected": "+33.7%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Ryan Daniels",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$710.00",
+    "projected": "+40.7%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$805.00",
+    "projected": "+59.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Andrea Alfonso",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$670.00",
+    "projected": "+32.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Daniel Grosslight",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$670.00",
+    "projected": "+32.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Keith Devas",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$792.00",
+    "projected": "+56.9%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$729.00",
+    "projected": "+44.4%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "David Westenberg",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+48.6%",
+    "date": "02/09/2026"
+  },
+  {
+    "analyst": "Mark Massaro",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$800.00",
+    "projected": "+58.5%",
+    "date": "02/03/2026"
+  }
+]

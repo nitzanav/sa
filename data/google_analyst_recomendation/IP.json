@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Michael Roxland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "George Staphos",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$46.00",
+    "projected": "+33.9%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Matt McKellar",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+51.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Anojja Shah",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$47.00",
+    "projected": "+36.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$48.00",
+    "projected": "+39.7%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Gabrial Hajde",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$46.00",
+    "projected": "+33.9%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Hillary Cacanando",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$50.00",
+    "projected": "+45.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Detlef Winckelmann",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$61.00",
+    "projected": "+77.5%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Mark Weintraub",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$39.00",
+    "projected": "+13.5%",
+    "date": "05/03/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "02/02/2026"
+  }
+]

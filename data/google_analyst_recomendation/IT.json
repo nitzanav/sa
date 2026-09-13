@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Joshua Chan",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$196.00",
+    "projected": "+9.1%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$198.00",
+    "projected": "+10.3%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$206.00",
+    "projected": "+14.7%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Jeffrey Meuler",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$229.00",
+    "projected": "+27.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Faiza Alwy",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+16.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Jasper Bibb",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$205.00",
+    "projected": "+14.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Toni Kaplan",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "-1.4%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "-8.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Wahid Amin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "-8.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "-16.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$181.00",
+    "projected": "+0.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "-16.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Andrew Nicholas",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/04/2026"
+  }
+]

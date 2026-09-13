@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Deane Dray",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+15.8%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Nathan Jones",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "+21.1%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+16.9%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+10.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Michael Halloran",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "+18%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Andrew Krill",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "+18%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+13.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "William Grippin",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+24.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Brian K. Lee",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$113.00",
+    "projected": "+20.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$123.00",
+    "projected": "+30.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Nigel Coe",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+15.8%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+6.3%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+16.9%",
+    "date": "06/25/2026"
+  }
+]

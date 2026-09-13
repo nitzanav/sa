@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Ryan Kenny",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$36.00",
+    "projected": "+19.5%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Matt O'Connor",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$34.00",
+    "projected": "+12.8%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "-0.4%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$32.00",
+    "projected": "+6.2%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Dave Rochester",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$35.00",
+    "projected": "+16.2%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+12.8%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$33.00",
+    "projected": "+9.5%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+2.9%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Peter Winter",
+    "firm": "D.A. Davidson",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$34.00",
+    "projected": "+12.8%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$36.00",
+    "projected": "+19.5%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+9.5%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "David Chiaverini",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+6.2%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+12.8%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+16.2%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$33.00",
+    "projected": "+9.5%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$30.00",
+    "projected": "-0.4%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$28.00",
+    "projected": "-7.1%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Robert W. Baird",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$28.00",
+    "projected": "-7.1%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Russell Gunther",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$31.00",
+    "projected": "+2.9%",
+    "date": "06/15/2026"
+  },
+  {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$31.00",
+    "projected": "+2.9%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Scott Siefers",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$28.00",
+    "projected": "-7.1%",
+    "date": "03/30/2026"
+  }
+]

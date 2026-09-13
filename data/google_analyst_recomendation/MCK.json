@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,050.00",
+    "projected": "+19.1%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$977.00",
+    "projected": "+10.8%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Ryan Daniels",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Ryan Halsted",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$845.00",
+    "projected": "-4.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,000.00",
+    "projected": "+13.4%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,042.00",
+    "projected": "+18.2%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$933.00",
+    "projected": "+5.8%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Daniel Grosslight",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,000.00",
+    "projected": "+13.4%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Eric Coldwell",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,015.00",
+    "projected": "+15.1%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,000.00",
+    "projected": "+13.4%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,080.00",
+    "projected": "+22.5%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Steven Valiquette",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$905.00",
+    "projected": "+2.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Charles Rhyee",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,006.00",
+    "projected": "+14.1%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "George Hill",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$875.00",
+    "projected": "-0.7%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "Max Smock",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "05/08/2026"
+  }
+]

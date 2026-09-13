@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+0.2%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+19.8%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+17.5%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+9.4%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$101.00",
+    "projected": "+16.4%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+25.6%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$104.00",
+    "projected": "+19.8%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Andrea Faria Teixeira",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$103.00",
+    "projected": "+18.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+3.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+26.7%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "Michael Lavery",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$96.00",
+    "projected": "+10.6%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$96.00",
+    "projected": "+10.6%",
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Cristian Rios",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$96.00",
+    "projected": "+10.6%",
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Taylor Conrad",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/09/2026"
+  },
+  {
+    "analyst": "Robert Ottenstein",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+15.2%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "Andy Sim",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+9.4%",
+    "date": "05/03/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+15.2%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Kaumil Gajrawala",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+1.4%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Edward Lewis",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$100.00",
+    "projected": "+15.2%",
+    "date": "04/21/2026"
+  }
+]

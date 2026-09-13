@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "Jonathan Bettenhausen",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$6,400.00",
+    "projected": "+3.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$7,000.00",
+    "projected": "+13.6%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$7,400.00",
+    "projected": "+20.1%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Ryan Gilbert",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$7,446.00",
+    "projected": "+20.9%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Trevor Allinson",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Michael Rehaut",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$6,760.00",
+    "projected": "+9.7%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "Kenneth Zener",
+    "firm": "Seaport Global",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$5,664.00",
+    "projected": "-8.1%",
+    "date": "04/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$7,700.00",
+    "projected": "+25%",
+    "date": "03/04/2026"
+  }
+]

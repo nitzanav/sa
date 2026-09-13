@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Robin M. Farley",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+15.3%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+37.9%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$43.00",
+    "projected": "+7.8%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Benjamin Chaiken",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+50.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Barry Jonas",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+37.9%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Daniel Politzer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": "+32.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+22.8%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Clark Lampen",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Joseph Stauff",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$53.00",
+    "projected": "+32.9%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Brandt Montour",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+20.3%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Lizzie Dove",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$43.00",
+    "projected": "+7.8%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.30",
+    "projected": "+21.1%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "James Hardiman",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+20.3%",
+    "date": "07/03/2026"
+  },
+  {
+    "analyst": "David Katz",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+20.3%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Vitaly Umansky",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/07/2026"
+  },
+  {
+    "analyst": "John DeCree",
+    "firm": "CBRE",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$50.00",
+    "projected": "+25.3%",
+    "date": "06/02/2026"
+  },
+  {
+    "analyst": "Steven Pizzella",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+37.9%",
+    "date": "06/02/2026"
+  },
+  {
+    "analyst": "Scot Ciccarelli",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$55.00",
+    "projected": "+37.9%",
+    "date": "05/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$45.00",
+    "projected": "+12.8%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$40.00",
+    "projected": "+0.3%",
+    "date": "02/06/2026"
+  }
+]

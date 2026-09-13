@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$14.00",
+    "projected": "+1.4%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Gregg Orrill",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$19.00",
+    "projected": "+37.7%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+66.7%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+52.2%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+1.4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+30.4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Aidan Kelly",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+30.4%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$24.00",
+    "projected": "+73.9%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$22.00",
+    "projected": "+59.4%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "+52.2%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$23.00",
+    "projected": "+66.7%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+73.9%",
+    "date": "04/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+66.7%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "William Appicelli",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+66.7%",
+    "date": "04/08/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$19.00",
+    "projected": "+37.7%",
+    "date": "03/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "+52.2%",
+    "date": "02/13/2026"
+  },
+  {
+    "analyst": "Steve Fleishman",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "+52.2%",
+    "date": "01/29/2026"
+  }
+]

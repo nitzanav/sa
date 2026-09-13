@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Michael Roxland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "George Staphos",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+10.9%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Terry Tillman",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+15.2%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Anojja Shah",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$292.00",
+    "projected": "+24.6%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$274.00",
+    "projected": "+16.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Detlef Winckelmann",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$312.00",
+    "projected": "+33.1%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$254.00",
+    "projected": "+8.4%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Gabrial Hajde",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$246.00",
+    "projected": "+4.9%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/27/2026"
+  },
+  {
+    "analyst": "Hillary Cacanando",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$256.00",
+    "projected": "+9.2%",
+    "date": "05/04/2026"
+  }
+]

@@ -34,14 +34,5 @@
     "price_target": "$500.00",
     "projected": "-2%",
     "date": "05/06/2026"
-  },
-  {
-    "analyst": "Andrew Kligerman",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$481.00",
-    "projected": "-5.8%",
-    "date": "11/12/2025"
   }
 ]

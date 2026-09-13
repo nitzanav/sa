@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "Javier Escalante",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$99.00",
+    "projected": "+12.8%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "-12.3%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Anna Lizzul",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+13.9%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+10.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "-4.3%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Taylor Conrad",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+16.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+2.6%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$97.00",
+    "projected": "+10.5%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$98.00",
+    "projected": "+11.7%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Andrea Faria Teixeira",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+8.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+19.6%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+25.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Kaumil Gajrawala",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$98.00",
+    "projected": "+11.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Edward Lewis",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+33.3%",
+    "date": "02/13/2026"
+  }
+]

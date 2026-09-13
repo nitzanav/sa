@@ -1,0 +1,200 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$400.00",
+    "projected": "+31%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Melissa Weathers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$400.00",
+    "projected": "+31%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Michael Genovese",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$500.00",
+    "projected": "+63.7%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+52.3%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Jed Dorsheimer",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+13%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Tim Savageaux",
+    "firm": "Northland Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "-8.3%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Richard Shannon",
+    "firm": "Craig-Hallum",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$480.00",
+    "projected": "+57.2%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Ruben Roy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$420.00",
+    "projected": "+37.5%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$375.00",
+    "projected": "+22.8%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+31%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Christopher Rolland",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+39.2%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Ryan Koontz",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+37.5%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Thomas O'Malley",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+14.6%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Sean O'Loughlin",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$395.00",
+    "projected": "+29.4%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Blayne Curtis",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+37.5%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Saiyi He",
+    "firm": "CMB International Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+42.5%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+42.5%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Simon Leopold",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+42.5%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "George Notter",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+31%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Mike Harrison",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$455.00",
+    "projected": "+49%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Papa Talla Sylla",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+37.5%",
+    "date": "04/21/2026"
+  }
+]

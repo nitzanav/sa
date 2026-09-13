@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Bob Brackett",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+13.6%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+13.6%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Steven Green",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+4.9%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$145.00",
+    "projected": "+14.3%",
+    "date": "08/16/2026"
+  },
+  {
+    "analyst": "Josh Wolfson",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+6.5%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Anita Soni",
+    "firm": "CIBC",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+34.1%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "-2.2%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Tanya Jakusconek",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+17.5%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Matt Murphy",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+6.5%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "-13.3%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Alexander Hacking",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "-1.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$146.00",
+    "projected": "+15.1%",
+    "date": "07/05/2026"
+  },
+  {
+    "analyst": "Daniel Major",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "-5.4%",
+    "date": "06/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$133.00",
+    "projected": "+4.9%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "Hugo Nicolaci",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.10",
+    "projected": "-1.3%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Ralph M. Profiti",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+38%",
+    "date": "04/24/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+18.3%",
+    "date": "04/17/2026"
+  },
+  {
+    "analyst": "Shane Nagle",
+    "firm": "National Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$130.00",
+    "projected": "+2.5%",
+    "date": "04/16/2026"
+  }
+]

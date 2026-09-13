@@ -1,0 +1,272 @@
+[
+  {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+8.4%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+26.5%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Robbie Marcus",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "-1.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Steven Silver",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+15.6%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+14.4%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "William Plovanic",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+8.4%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Steven Lichtman",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Kieran Ryan",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$92.00",
+    "projected": "+10.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Kendall Au",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+8.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Shagun Singh Chadha",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+8.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Jayson Bedford",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+13.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Bruce Jackson",
+    "firm": "Benchmark Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "-1.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Richard Newitter",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$93.00",
+    "projected": "+12%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Matthew O'Brien",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+14.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Jeff Johnson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+26.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+14.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Marie Thibault",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+8.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Josh Jennings",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+14.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Danielle Antalffy",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+15.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Patrick Wood",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+15.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$86.00",
+    "projected": "+3.6%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Matt Miksic",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "-22.9%",
+    "date": "05/18/2026"
+  },
+  {
+    "analyst": "David Roman",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-3.6%",
+    "date": "05/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+2.4%",
+    "date": "05/15/2026"
+  },
+  {
+    "analyst": "Lee Hambright",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "-7.3%",
+    "date": "05/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+34.9%",
+    "date": "05/14/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+3.6%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Brandon Vazquez",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-28.9%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Suraj Kalia",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "02/13/2026"
+  }
+]

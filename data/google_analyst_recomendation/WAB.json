@@ -1,0 +1,110 @@
+[
+  {
+    "analyst": "Ben Mohr",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$341.00",
+    "projected": "+20.4%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Tami Zakaria",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+11.2%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$315.00",
+    "projected": "+11.2%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Bascome Majors",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+16.5%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$355.00",
+    "projected": "+25.3%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Steve Barger",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "+20%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$322.00",
+    "projected": "+13.7%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Brady Lierz",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$320.00",
+    "projected": "+13%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Scott Group",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$303.00",
+    "projected": "+7%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$290.00",
+    "projected": "+2.4%",
+    "date": "03/31/2026"
+  },
+  {
+    "analyst": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$290.00",
+    "projected": "+2.4%",
+    "date": "03/31/2026"
+  },
+  {
+    "analyst": "Oliver Holmes",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$285.00",
+    "projected": "+0.6%",
+    "date": "03/26/2026"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Bill Carcache",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$171.00",
+    "projected": "+6.1%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Peter Heckmann",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$198.00",
+    "projected": "+22.9%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Daniel Perlin",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+10.5%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Darrin Peller",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+33.4%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Timothy Chiodo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+5.5%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+5.5%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Vasundhara Govil",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+24.1%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$196.00",
+    "projected": "+21.6%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Nik Cremo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+14.8%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Will Nance",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$178.00",
+    "projected": "+10.5%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Rayna Kumar",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$209.00",
+    "projected": "+29.7%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Christopher Kennedy",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Brett Huff",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$200.00",
+    "projected": "+24.1%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$170.00",
+    "projected": "+5.5%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$208.00",
+    "projected": "+29.1%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$197.00",
+    "projected": "+22.3%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Dominick Gabriele",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$197.00",
+    "projected": "+22.3%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Charles Nabhan",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$205.00",
+    "projected": "+27.2%",
+    "date": "02/05/2026"
+  },
+  {
+    "analyst": "David Koning",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$205.00",
+    "projected": "+27.2%",
+    "date": "02/05/2026"
+  },
+  {
+    "analyst": "Dan Waggoner",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+34.1%",
+    "date": "02/04/2026"
+  }
+]

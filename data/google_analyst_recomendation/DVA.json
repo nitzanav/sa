@@ -1,0 +1,56 @@
+[
+  {
+    "analyst": "Andrew Mok CFA",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$224.00",
+    "projected": "+23.4%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "David S Macdonald",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+18.4%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Ryan Langston",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$220.00",
+    "projected": "+21.2%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Pito Chickering",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$265.00",
+    "projected": "+46%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Kevin Fischbeck",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "A.J. Rice",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+48.7%",
+    "date": "07/10/2026"
+  }
+]

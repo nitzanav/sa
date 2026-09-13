@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "Jeremy Tonet",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.5%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+5.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Nicolas Woods",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+12.4%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "-8.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+8%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+18.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$81.00",
+    "projected": "+18.2%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$81.00",
+    "projected": "+18.2%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+10.9%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Angie Storozynski",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "William Appicelli",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$74.00",
+    "projected": "+8%",
+    "date": "03/27/2026"
+  },
+  {
+    "analyst": "Paul Zimbardo CFA",
+    "firm": "Jefferies",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$57.00",
+    "projected": "-16.8%",
+    "date": "03/24/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+12.4%",
+    "date": "02/19/2026"
+  }
+]

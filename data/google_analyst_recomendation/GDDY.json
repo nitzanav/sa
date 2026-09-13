@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Alec Brondolo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$76.00",
+    "projected": "-22.5%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Ygal Arounian",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$93.00",
+    "projected": "-5.2%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Jamesmichael Sherman-Lewis",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+7.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Brad Erickson",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "-3.1%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Kenneth Wong",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Naved Khan",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+73.3%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Robert Coolbrith",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "-13.3%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Deepak Mathivanan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "-8.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Josh Beck",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Alexei Gogolev",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+26.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Mark Zgutowicz",
+    "firm": "Benchmark Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+42.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Elizabeth Porter",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "James Callahan CFA",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "-3.1%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Christopher Zhang",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Arjun Bhatia",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Brent Thill",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/03/2026"
+  },
+  {
+    "analyst": "Trevor Young",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$118.00",
+    "projected": "+20.3%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+7.1%",
+    "date": "02/25/2026"
+  }
+]

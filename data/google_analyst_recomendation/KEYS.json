@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+25.5%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Mark Delaney",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$452.00",
+    "projected": "+33.5%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Andrew Spinola",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$440.00",
+    "projected": "+29.9%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+29.9%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Matthew Niknam",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+18.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+25.5%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$410.00",
+    "projected": "+21.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+18.1%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+19.6%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$429.00",
+    "projected": "+26.7%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$390.00",
+    "projected": "+15.2%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "David Ridley Lane",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+19.6%",
+    "date": "05/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$310.00",
+    "projected": "-8.5%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Richard Eastman",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "-8.5%",
+    "date": "03/30/2026"
+  }
+]

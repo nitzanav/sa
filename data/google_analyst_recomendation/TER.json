@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$550.00",
+    "projected": "+44.8%",
+    "date": "09/05/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$420.00",
+    "projected": "+10.6%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$465.00",
+    "projected": "+22.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Gus Richard",
+    "firm": "Northland Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Vedvati Shrotre",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+10.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Steve Barger",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Krish Sankar",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+18.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "C J Muse",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$550.00",
+    "projected": "+44.8%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$525.00",
+    "projected": "+38.3%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Shane Brett CFA",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$397.00",
+    "projected": "+4.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+22.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Timothy Arcuri",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$500.00",
+    "projected": "+31.7%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+5.3%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$400.00",
+    "projected": "+5.3%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Brian Chin",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+2.7%",
+    "date": "04/28/2026"
+  },
+  {
+    "analyst": "Richard Eastman",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$332.00",
+    "projected": "-12.6%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Amanda Tan",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "-13.1%",
+    "date": "02/10/2026"
+  },
+  {
+    "analyst": "Warren Lau",
+    "firm": "Aletheia Capital",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$400.00",
+    "projected": "+5.3%",
+    "date": "02/01/2026"
+  }
+]

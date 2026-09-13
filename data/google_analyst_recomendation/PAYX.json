@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+7.9%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Bryan Keane",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "+29.5%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Jared Levine",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+1%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "David Grossman",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+12.3%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$111.00",
+    "projected": "-4.1%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Brett Huff",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$132.00",
+    "projected": "+14%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+12.3%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Samad Samana",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+3.6%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "-7.6%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "-5.9%",
+    "date": "06/30/2026"
+  },
+  {
+    "analyst": "Jacob Smith CFA",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Daniel Jester",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "-11.1%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Tien Tsin Huang",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "-9.3%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Cassie Chan",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "-18%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Andrew Nicholas",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Bryan Bergin",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$98.00",
+    "projected": "-15.4%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "Mark Marcon",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+7.9%",
+    "date": "03/26/2026"
+  }
+]

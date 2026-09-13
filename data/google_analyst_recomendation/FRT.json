@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Michael Mueller",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$129.00",
+    "projected": "+12.8%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$134.00",
+    "projected": "+17.2%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Samir Khanal",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$127.00",
+    "projected": "+11.1%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+7.6%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+13.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+6.7%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Greg McGinniss",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+11.9%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Barry Jonas",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+30.3%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Andrew Rosivach CFA",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$143.00",
+    "projected": "+25%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+6.7%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "RJ Milligan",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+18%",
+    "date": "06/29/2026"
+  },
+  {
+    "analyst": "Michael Lewis",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+3.2%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "Haendel St. Juste",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$130.00",
+    "projected": "+13.7%",
+    "date": "06/01/2026"
+  },
+  {
+    "analyst": "Omotayo Okusanya",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$135.00",
+    "projected": "+18%",
+    "date": "05/29/2026"
+  },
+  {
+    "analyst": "Cooper Clark",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$129.00",
+    "projected": "+12.8%",
+    "date": "05/26/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+11.9%",
+    "date": "05/19/2026"
+  },
+  {
+    "analyst": "Floris van Dijkum",
+    "firm": "Ladenburg Thalmann & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+9.3%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Linda Tsai",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$119.00",
+    "projected": "+4.1%",
+    "date": "03/27/2026"
+  }
+]

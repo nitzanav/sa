@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Donald Fandetti",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+15.8%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Darrin Peller",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.4%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Moshe Orenbuch",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.4%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Terry Ma",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$93.00",
+    "projected": "+22.4%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Mihir Bhatia",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$89.00",
+    "projected": "+17.1%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+14.5%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+5.3%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Mark DeVries",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$104.00",
+    "projected": "+36.9%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+35.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+14.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Richard Shane",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+2.6%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Jon Arfstrom",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+5.3%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Jeffrey Adelson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$84.00",
+    "projected": "+10.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Vincent Caintic",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Sanjay Sakhrani",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+29%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Saul Martinez",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+27.6%",
+    "date": "07/12/2026"
+  },
+  {
+    "analyst": "Hoang Nguyen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$89.00",
+    "projected": "+17.1%",
+    "date": "06/09/2026"
+  },
+  {
+    "analyst": "Dominick Gabriele",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$81.00",
+    "projected": "+6.6%",
+    "date": "05/21/2026"
+  }
+]

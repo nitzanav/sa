@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$133.00",
+    "projected": "+26.1%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Berenberg Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+11.8%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+24.2%",
+    "date": "08/02/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+18.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+30.8%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+29.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$121.00",
+    "projected": "+14.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+15.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+13.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "James Hooper",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+23.2%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+28%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Michael Sison",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+23.2%",
+    "date": "05/26/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+18.5%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Eric Boyes",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+21.3%",
+    "date": "02/18/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+18.5%",
+    "date": "01/29/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "01/29/2026"
+  }
+]
