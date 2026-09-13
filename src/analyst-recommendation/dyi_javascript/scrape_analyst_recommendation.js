@@ -13,11 +13,11 @@ const ANALYST_TABLE_HEADERS = [
 
 const MISSING_VALUES = new Set(["-", "\u2013", "\u2014", ""]);
 
-const withEnglishLocale = log(function withEnglishLocale(url) {
+function withEnglishLocale(url) {
   const parsed = new URL(url);
   if (!parsed.searchParams.has("hl")) parsed.searchParams.set("hl", "en");
   return parsed.toString();
-});
+}
 
 function cellText($element) {
   if (!$element || $element.length === 0) return "";
@@ -28,7 +28,7 @@ function optional(value) {
   return MISSING_VALUES.has(value) ? null : value;
 }
 
-const getAnalyst = log(function getAnalyst($, rowCells) {
+function getAnalyst($, rowCells) {
   const lines = [];
   rowCells
     .eq(0)
@@ -41,9 +41,9 @@ const getAnalyst = log(function getAnalyst($, rowCells) {
       }
     });
   return [lines[0] || "", lines[1] || ""];
-});
+}
 
-const findAnalystTable = log(function findAnalystTable($) {
+function findAnalystTable($) {
   const $main = $("main").first();
   const $root = $main.length ? $main : $.root();
   let found = null;
@@ -62,9 +62,9 @@ const findAnalystTable = log(function findAnalystTable($) {
     }
   });
   return found;
-});
+}
 
-export const parseAnalystRecommendation = log(function parseAnalystRecommendation(html) {
+export function parseAnalystRecommendation(html) {
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
   if ($table === null) throw new Error("Analyst Recommendation table not found");
@@ -86,7 +86,7 @@ export const parseAnalystRecommendation = log(function parseAnalystRecommendatio
     });
   });
   return listings;
-});
+}
 
 export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecommendation(
   url,
@@ -101,10 +101,10 @@ export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecom
   return parseAnalystRecommendation(html);
 });
 
-const quoteFromUrl = log(function quoteFromUrl(url) {
+function quoteFromUrl(url) {
   const match = new URL(url).pathname.match(/\/quote\/([^/:]+)/);
   return match ? match[1] : "quote";
-});
+}
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const url = process.argv[2];
