@@ -1,4 +1,5 @@
 import config from "./config.js";
+import { logger } from "./logger.js";
 
 const lastRequestStartByDomain = {};
 
@@ -15,9 +16,10 @@ export function rateLimit(functionToLimit, rateLimitConfig = {}) {
     const lastRequestStart = lastRequestStartByDomain[domain];
     const earliestStart =
       lastRequestStart == null ? Date.now() : lastRequestStart + randomDelay(minDelay, maxDelay);
-    const wait = Math.max(0, earliestStart - Date.now());
-    lastRequestStartByDomain[domain] = Date.now() + wait;
-    await sleep(wait);
+    const delay = Math.max(0, earliestStart - Date.now());
+    lastRequestStartByDomain[domain] = Date.now() + delay;
+    logger.log({ message: "wait", delay });
+    await sleep(delay);
     return functionToLimit(httpConfig, ...args);
   };
 }

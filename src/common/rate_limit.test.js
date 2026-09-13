@@ -51,6 +51,25 @@ test("rateLimit does not delay different domains", async () => {
   jest.useRealTimers();
 });
 
+test("rateLimit logs wait before delaying", async () => {
+  jest.useFakeTimers();
+  const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const functionToLimit = jest.fn().mockResolvedValue("ok");
+  const limited = rateLimit(functionToLimit, { enabled: true, minDelay: 1000, maxDelay: 1000 });
+  const first = limited({ url: "http://log.example/a" });
+  await jest.advanceTimersByTimeAsync(0);
+  await first;
+  const second = limited({ url: "http://log.example/b" });
+  await jest.advanceTimersByTimeAsync(0);
+  expect(
+    spy.mock.calls.filter((c) => c[0].includes('"message":"wait"') && c[0].includes('"delay":1000')),
+  ).toHaveLength(1);
+  await jest.advanceTimersByTimeAsync(1000);
+  await second;
+  spy.mockRestore();
+  jest.useRealTimers();
+});
+
 test("rateLimit runs immediately when disabled", async () => {
   const functionToLimit = jest.fn().mockResolvedValue("ok");
   const limited = rateLimit(functionToLimit, {
