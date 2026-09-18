@@ -1,0 +1,218 @@
+[
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$128.00",
+    "projected": "+6.5%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$148.00",
+    "projected": "+23.1%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+23.9%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+15.6%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+24.8%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+15.6%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": "+18.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Michael Lonegan",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+7.3%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+12.3%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$133.00",
+    "projected": "+10.6%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+14.8%",
+    "date": "07/13/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$154.00",
+    "projected": "+28.1%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Paul Fremont",
+    "firm": "Ladenburg Thalmann & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$143.00",
+    "projected": "+18.9%",
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "James Weston",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+19.8%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+16.4%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$148.00",
+    "projected": "+23.1%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Angie Storozynski",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$145.00",
+    "projected": "+20.6%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": "+18.1%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Jeremy Tonet",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$139.00",
+    "projected": "+15.6%",
+    "date": "03/12/2026"
+  },
+  {
+    "analyst": "Nicholas Amicucci",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$153.00",
+    "projected": "+27.3%",
+    "date": "03/05/2026"
+  },
+  {
+    "analyst": "William Appicelli",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$132.00",
+    "projected": "+9.8%",
+    "date": "02/27/2026"
+  },
+  {
+    "analyst": "Steve Fleishman",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$142.00",
+    "projected": "+18.1%",
+    "date": "02/13/2026"
+  }
+]

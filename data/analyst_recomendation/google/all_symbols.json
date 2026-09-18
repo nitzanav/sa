@@ -1,0 +1,86 @@
+[
+  {
+    "date": "2026-05-29",
+    "ticker": "MMM",
+    "analyst": "Julian Mitchell",
+    "percent": 12.9
+  },
+  {
+    "date": "2026-06-10",
+    "ticker": "MMM",
+    "analyst": "Joe O'Dea",
+    "percent": 0.7
+  },
+  {
+    "date": "2026-07-01",
+    "ticker": "MMM",
+    "analyst": "Unknown Analyst",
+    "percent": -20
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "MMM",
+    "analyst": "Deane Dray",
+    "percent": -19.4
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "MMM",
+    "analyst": "Nigel Coe",
+    "percent": 22.7
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "MMM",
+    "analyst": "Amit Mehrotra",
+    "percent": 33.1
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "MMM",
+    "analyst": "Joe Ritchie",
+    "percent": 23.3
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "MMM",
+    "analyst": "Nicole Deblase",
+    "percent": 17.2
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "MMM",
+    "analyst": "Brett Linzey",
+    "percent": 9.9
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "MMM",
+    "analyst": "Chigusa Katoku",
+    "percent": 25.1
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "MMM",
+    "analyst": "Andrew Obin",
+    "percent": null
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "MMM",
+    "analyst": "Christopher Snyder",
+    "percent": 15.4
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "MMM",
+    "analyst": "Varun Govindaraj",
+    "percent": -11.5
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "MMM",
+    "analyst": "Andrew Kaplowitz",
+    "percent": 11.7
+  }
+]
