@@ -31,7 +31,7 @@ async function scrollPage(page) {
 }
 
 const requestPlaywright = log(async function requestPlaywright(httpConfig = {}) {
-  const { url, headers, timeout, headless, locale, viewport, waitForText } = {
+  const { url, headers, timeout, headless, locale, viewport, waitForText, afterLoad } = {
     ...config.http,
     ...config.playwright,
     ...httpConfig,
@@ -55,6 +55,7 @@ const requestPlaywright = log(async function requestPlaywright(httpConfig = {}) 
         .waitFor({ timeout })
         .catch(() => {});
     }
+    if (afterLoad) await afterLoad(page);
     return await page.content();
   } finally {
     await browser.close();

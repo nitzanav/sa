@@ -1,6 +1,7 @@
 import { jest } from "@jest/globals";
 import { readFileSync } from "node:fs";
 import {
+  collectAllTopAnalystTableRows,
   formatProjectedPercent,
   formatUsdPriceTarget,
   formatYahooTableDate,
@@ -139,4 +140,48 @@ test("parseYahooAnalystRecommendation returns empty array when table missing", a
     '{"message":"error","error":"Yahoo Top Analysts table not found","log_level":"error"}\n',
   );
   stderrSpy.mockRestore();
+});
+
+test("collectAllTopAnalystTableRows merges paginated tbody rows", async () => {
+  const pages = [["<tr data-i=\"1\"></tr>"], ["<tr data-i=\"2\"></tr>"]];
+  let pageIndex = 0;
+  let written = null;
+  const table = {
+    count: async () => 1,
+    locator: (selector) => {
+      if (selector === "tbody tr") {
+        return {
+          evaluateAll: async (fn) => fn(pages[pageIndex].map((html) => ({ outerHTML: html }))),
+        };
+      }
+      if (selector === "tbody tr td") {
+        return {
+          first: () => ({
+            textContent: async () => String(pageIndex + 1),
+          }),
+        };
+      }
+      if (selector === "tbody") {
+        return {
+          evaluate: async (_fn, rows) => {
+            written = rows;
+          },
+        };
+      }
+      throw new Error(selector);
+    },
+  };
+  const page = {
+    locator: () => ({ first: () => table }),
+    getByTestId: () => ({
+      count: async () => 1,
+      isDisabled: async () => pageIndex >= pages.length - 1,
+      click: async () => {
+        pageIndex += 1;
+      },
+    }),
+    waitForFunction: async () => {},
+  };
+  await collectAllTopAnalystTableRows(page);
+  expect(written).toEqual(["<tr data-i=\"1\"></tr>", "<tr data-i=\"2\"></tr>"]);
 });

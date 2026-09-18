@@ -175,9 +175,53 @@ export function matchesUrl(url) {
   return new URL(url).hostname.includes("yahoo.");
 }
 
+export async function collectAllTopAnalystTableRows(page) {
+  const table = page.locator("#top-analyst table").first();
+  if ((await table.count()) === 0) return;
+  const next = page.getByTestId("next-page-button");
+  const seen = new Set();
+  const rowsHtml = [];
+  for (let pageIndex = 0; pageIndex < 20; pageIndex += 1) {
+    const before = seen.size;
+    const htmls = await table.locator("tbody tr").evaluateAll((rows) =>
+      rows.map((row) => row.outerHTML),
+    );
+    for (const html of htmls) {
+      if (seen.has(html)) continue;
+      seen.add(html);
+      rowsHtml.push(html);
+    }
+    const disabled =
+      (await next.count()) === 0 || (await next.isDisabled().catch(() => true));
+    if (seen.size === before || disabled) break;
+    const previous = ((await table.locator("tbody tr td").first().textContent()) ?? "").trim();
+    await next.click();
+    try {
+      await page.waitForFunction(
+        (prior) => {
+          const td = document.querySelector("#top-analyst tbody tr td");
+          return Boolean(td && td.textContent.trim() !== prior);
+        },
+        previous,
+        { timeout: 10000 },
+      );
+    } catch {
+      break;
+    }
+  }
+  if (rowsHtml.length === 0) return;
+  await table.locator("tbody").evaluate((tbody, rows) => {
+    tbody.innerHTML = rows.join("");
+  }, rowsHtml);
+}
+
 export async function fetchYahooAnalystRecommendation(url, retryConfig, cacheConfig) {
   return httpRequestScrapePlaywright(
-    { url, waitForText: "Overall" },
+    {
+      url,
+      waitForText: "Overall",
+      afterLoad: (page) => collectAllTopAnalystTableRows(page).catch(() => {}),
+    },
     retryConfig,
     cacheConfig,
   );

@@ -88,6 +88,22 @@ test("fetches and writes on cache miss", async () => {
   launchSpy.mockRestore();
 });
 
+test("runs afterLoad before returning html", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "hsp-"));
+  const { browser, page } = fakeBrowser("<live/>");
+  const afterLoad = jest.fn(async (loaded) => {
+    expect(loaded).toBe(page);
+  });
+  const launchSpy = jest.spyOn(playwrightBrowser, "launch").mockResolvedValue(browser);
+  await httpRequestScrapePlaywright(
+    { url: "http://x", afterLoad },
+    { operationName: "k", initialDelay: 0, maxAttempts: 1 },
+    { fileName: join(dir, "d.html") },
+  );
+  expect(afterLoad).toHaveBeenCalledTimes(1);
+  launchSpy.mockRestore();
+});
+
 test("clicks Yahoo consent agree before returning html", async () => {
   const dir = mkdtempSync(join(tmpdir(), "hsp-"));
   const { browser, page } = fakeBrowser("<consented/>", { agreeVisible: true });

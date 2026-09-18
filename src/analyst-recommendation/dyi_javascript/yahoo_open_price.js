@@ -50,9 +50,18 @@ export async function fetchYahooOpenPrices(symbol, retryConfig, cacheConfig) {
   return JSON.parse(await requestWithRetryAndCache(symbol));
 }
 
+export function openPriceOnOrBefore(prices, isoDate) {
+  if (prices[isoDate] != null) return prices[isoDate];
+  let latest = null;
+  for (const date of Object.keys(prices)) {
+    if (date <= isoDate && (latest == null || date > latest)) latest = date;
+  }
+  return latest == null ? null : prices[latest];
+}
+
 export async function yahooOpenPriceForDate(symbol, date, retryConfig, cacheConfig) {
   const prices = await fetchYahooOpenPrices(symbol, retryConfig, cacheConfig);
-  return prices[isoDateFromAnalystDate(date)] ?? null;
+  return openPriceOnOrBefore(prices, isoDateFromAnalystDate(date));
 }
 
 export const yahooOpenPrice = {

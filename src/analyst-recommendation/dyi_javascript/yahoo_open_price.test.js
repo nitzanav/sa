@@ -6,6 +6,7 @@ import {
   OPEN_PRICES_PERIOD1,
   fetchYahooOpenPrices,
   isoDateFromAnalystDate,
+  openPriceOnOrBefore,
   openPricesFromChart,
   yahooFinanceClient,
   yahooOpenPriceForDate,
@@ -31,6 +32,14 @@ test("openPricesFromChart maps daily opens by UTC date", () => {
       ],
     }),
   ).toEqual({ "2026-09-10": 218.92 });
+});
+
+test("openPriceOnOrBefore uses the prior session when that day is missing", () => {
+  const prices = { "2026-09-04": 170.5, "2026-09-10": 218.92 };
+  expect(openPriceOnOrBefore(prices, "2026-09-10")).toBe(218.92);
+  expect(openPriceOnOrBefore(prices, "2026-09-05")).toBe(170.5);
+  expect(openPriceOnOrBefore(prices, "2026-09-07")).toBe(170.5);
+  expect(openPriceOnOrBefore(prices, "2026-01-01")).toBe(null);
 });
 
 test("fetchYahooOpenPrices caches chart opens without a second request", async () => {
@@ -72,7 +81,7 @@ test("fetchYahooOpenPrices returns cached json when fresh", async () => {
   chartSpy.mockRestore();
 });
 
-test("yahooOpenPriceForDate looks up the open for that day", async () => {
+test("yahooOpenPriceForDate looks up the open for that day or the prior session", async () => {
   const dir = mkdtempSync(join(tmpdir(), "open-"));
   const file = join(dir, "NVDA.json");
   const chartSpy = jest.spyOn(yahooFinanceClient, "chart").mockResolvedValue({
@@ -89,7 +98,10 @@ test("yahooOpenPriceForDate looks up the open for that day", async () => {
   await expect(yahooOpenPriceForDate("NVDA", "09/04/2026", retry, cache)).resolves.toBe(
     170.5,
   );
-  await expect(yahooOpenPriceForDate("NVDA", "01/02/2026", retry, cache)).resolves.toBe(
+  await expect(yahooOpenPriceForDate("NVDA", "09/05/2026", retry, cache)).resolves.toBe(
+    170.5,
+  );
+  await expect(yahooOpenPriceForDate("NVDA", "01/01/2026", retry, cache)).resolves.toBe(
     null,
   );
   expect(chartSpy).toHaveBeenCalledTimes(1);
