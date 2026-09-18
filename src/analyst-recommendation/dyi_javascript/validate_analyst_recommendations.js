@@ -23,13 +23,15 @@ const PROJECTED = /^(?:0(?:\.\d+)?%|[+-][\d,]+(?:\.\d+)?%)$/;
 const PROJECTED_MAX = 1000;
 const PROJECTED_MIN = -95;
 const DATE = /^\d{2}\/\d{2}\/\d{4}$/;
-const DATE_MIN = new Date(2025, 11, 1);
+const DATE_MIN_LABEL = "2025-01-01";
+const DATE_MIN = new Date(2025, 0, 1);
 
 function formatContext(context) {
   if (!context) return "";
   const parts = [];
   if (context.symbol) parts.push(`symbol=${context.symbol}`);
   if (context.index !== undefined) parts.push(`index=${context.index}`);
+  if (context.firm) parts.push(`firm=${context.firm}`);
   if (context.fileName) parts.push(`file=${context.fileName}`);
   return parts.length ? ` (${parts.join(", ")})` : "";
 }
@@ -119,6 +121,7 @@ export function validateAnalystRecommendationRow(row, context = {}) {
   if (row === null || typeof row !== "object" || Array.isArray(row)) {
     return reject("row must be an object", context);
   }
+  context = { ...context, firm: row.firm };
   for (const field of ROW_FIELDS) {
     if (!(field in row)) return reject(`missing field ${field}`, context);
   }
@@ -148,7 +151,7 @@ export function validateAnalystRecommendationRow(row, context = {}) {
   const parsedDate = parseAnalystDate(row.date);
   if (parsedDate < DATE_MIN) {
     return reject(
-      `date must not be before 2025-12-01, got ${JSON.stringify(row.date)}`,
+      `date must not be before ${DATE_MIN_LABEL}, got ${JSON.stringify(row.date)}`,
       context,
     );
   }

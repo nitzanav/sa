@@ -126,19 +126,19 @@ test("validateAnalystRecommendationRow rejects invalid date", () => {
   expect(loggedErrors()[0].error).toMatch(/date must match MM\/DD\/YYYY/);
 });
 
-test("validateAnalystRecommendationRow rejects date before 2025-12-01", () => {
+test("validateAnalystRecommendationRow rejects date before 2025-01-01", () => {
   expect(
-    validateAnalystRecommendationRow({ ...validRow, date: "11/30/2025" }),
+    validateAnalystRecommendationRow({ ...validRow, date: "12/31/2024" }),
   ).toBe(false);
   expect(loggedErrors()[0].error).toMatch(
-    /date must not be before 2025-12-01, got "11\/30\/2025"/,
+    /date must not be before 2025-01-01, got "12\/31\/2024" \(firm=Goldman Sachs\)/,
   );
 });
 
-test("validateAnalystRecommendationRow accepts date at 2025-12-01", () => {
+test("validateAnalystRecommendationRow accepts date at 2025-01-01", () => {
   expect(
     validateAnalystRecommendationRow(
-      { ...validRow, date: "12/01/2025" },
+      { ...validRow, date: "01/01/2025" },
       { now: "2026-09-13" },
     ),
   ).toBe(true);
@@ -157,8 +157,9 @@ test("validateAnalystRecommendationRow rejects date after today", () => {
 });
 
 test("isAnalystDateInRange checks format and bounds", () => {
-  expect(isAnalystDateInRange("12/01/2025", { now: "2026-09-13" })).toBe(true);
-  expect(isAnalystDateInRange("11/30/2025", { now: "2026-09-13" })).toBe(false);
+  expect(isAnalystDateInRange("01/01/2025", { now: "2026-09-13" })).toBe(true);
+  expect(isAnalystDateInRange("12/31/2024", { now: "2026-09-13" })).toBe(false);
+  expect(isAnalystDateInRange("11/30/2025", { now: "2026-09-13" })).toBe(true);
   expect(isAnalystDateInRange("09/10/2026", { now: "2026-09-09" })).toBe(
     false,
   );

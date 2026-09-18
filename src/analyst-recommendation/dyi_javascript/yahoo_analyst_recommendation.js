@@ -1,10 +1,7 @@
 import * as cheerio from "cheerio";
 import { httpRequestScrapePlaywright } from "../../common/http_request_scrape_playwright.js";
 import { logger } from "../../common/logger.js";
-import {
-  isAnalystDateInRange,
-  validateAnalystRecommendations,
-} from "./validate_analyst_recommendations.js";
+import { validateAnalystRecommendations } from "./validate_analyst_recommendations.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
 
 const BUY_GRADES = new Set([
@@ -158,10 +155,6 @@ async function parseTopAnalystsTable($, $table, symbol) {
   return listings;
 }
 
-function inRangeListings(listings) {
-  return listings.filter((row) => isAnalystDateInRange(row.date));
-}
-
 export function yahooAnalystRecommendationUrl(symbol) {
   return `https://finance.yahoo.com/quote/${symbol}/analyst-insights/`;
 }
@@ -245,7 +238,7 @@ export async function parseYahooAnalystRecommendation(html, symbol) {
     });
     return [];
   }
-  return validateAnalystRecommendations(inRangeListings(listings));
+  return validateAnalystRecommendations(listings);
 }
 
 export const yahooAnalystRecommendationSource = {

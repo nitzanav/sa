@@ -116,6 +116,65 @@ test("parseYahooAnalystRecommendation reads a header-matched Top Analysts table"
   openSpy.mockRestore();
 });
 
+test("parseYahooAnalystRecommendation logs and skips dates before 2025-01-01", async () => {
+  const openSpy = mockOpenPrice();
+  const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const table = `
+    <table>
+      <thead>
+        <tr>
+          <th>Analyst</th>
+          <th>Overall Score</th>
+          <th>Direction Score</th>
+          <th>Price Score</th>
+          <th>Latest Rating</th>
+          <th>Price Target</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Argus</td>
+          <td>80</td>
+          <td>75</td>
+          <td>94</td>
+          <td>Buy</td>
+          <td>300</td>
+          <td>2024-11-20</td>
+        </tr>
+        <tr>
+          <td>Piper Sandler</td>
+          <td>80</td>
+          <td>75</td>
+          <td>94</td>
+          <td>Overweight</td>
+          <td>300</td>
+          <td>2026-09-10</td>
+        </tr>
+      </tbody>
+    </table>
+  `;
+  await expect(parseYahooAnalystRecommendation(table, "NVDA")).resolves.toEqual([
+    {
+      analyst: "Piper Sandler",
+      firm: "Piper Sandler",
+      recommendation: "Buy",
+      action: "Maintained",
+      price_target: "$300.00",
+      projected: "+37%",
+      date: "09/10/2026",
+    },
+  ]);
+  const logged = stderrSpy.mock.calls.map(([line]) => JSON.parse(line));
+  expect(logged.map(({ error }) => error)).toEqual([
+    expect.stringMatching(
+      /date must not be before 2025-01-01, got "11\/20\/2024" \(index=0, firm=Argus\)/,
+    ),
+  ]);
+  stderrSpy.mockRestore();
+  openSpy.mockRestore();
+});
+
 test("parseYahooAnalystRecommendation ignores the upgrades table", async () => {
   const upgradesOnly = `
     <table>
