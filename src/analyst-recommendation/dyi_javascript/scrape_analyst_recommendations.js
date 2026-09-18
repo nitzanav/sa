@@ -38,6 +38,20 @@ function roundStat(value) {
   return Number(value.toFixed(4));
 }
 
+export function escapeAnalystName(name) {
+  return String(name ?? "")
+    .replaceAll("\\", "\\\\")
+    .replaceAll("|", "\\|")
+    .replaceAll('"', "''")
+    .replaceAll(",", ";");
+}
+
+export function formatProjections(listings) {
+  return listings
+    .map(({ analyst, percent }) => `${escapeAnalystName(analyst)}:${percent}`)
+    .join("|");
+}
+
 export function flattenAllSymbols(all) {
   const rows = [];
   for (const [ticker, listings] of Object.entries(all)) {
@@ -61,27 +75,27 @@ export function flattenAllSymbols(all) {
 export function flattenAllSymbolsPerDateAndSymbol(all) {
   const groups = new Map();
   const rows = Array.isArray(all) ? all : flattenAllSymbols(all);
-  for (const { date, ticker, percent } of rows) {
+  for (const { date, ticker, analyst, percent } of rows) {
     if (percent == null || percent === "") continue;
     const key = `${date}\0${ticker}`;
-    if (!groups.has(key)) groups.set(key, { date, symbol: ticker, percents: [] });
-    groups.get(key).percents.push(percent);
+    if (!groups.has(key)) groups.set(key, { date, symbol: ticker, listings: [] });
+    groups.get(key).listings.push({ analyst, percent });
   }
-  return [...groups.values()].map(({ date, symbol, percents }) => ({
-    date,
-    symbol,
-    average_projected: roundStat(mean(percents)),
-    std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
-    analyst_projections_count: percents.length,
-    projections: percents,
-  }));
+  return [...groups.values()].map(({ date, symbol, listings }) => {
+    const percents = listings.map(({ percent }) => percent);
+    return {
+      date,
+      symbol,
+      average_projected: roundStat(mean(percents)),
+      std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
+      analyst_projections_count: percents.length,
+      projections: formatProjections(listings),
+    };
+  });
 }
 
-const csvCell = (value) =>
-  value == null ? "" : Array.isArray(value) ? JSON.stringify(value) : value;
-
 const csvRow = (row) =>
-  Object.fromEntries(Object.entries(row).map(([k, v]) => [k, csvCell(v)]));
+  Object.fromEntries(Object.entries(row).map(([k, v]) => [k, v ?? ""]));
 
 export const allSymbolsCsv = (all) =>
   formatCsv(ALL_SYMBOLS_CSV_COLUMNS, flattenAllSymbols(all).map(csvRow));
