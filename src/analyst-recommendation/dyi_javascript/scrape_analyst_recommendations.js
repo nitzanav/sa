@@ -17,10 +17,17 @@ const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "analyst_projections_count",
   "projections",
 ];
+const AGGREGATION_WINDOW_DAYS = 7;
 
 function isoDate(date) {
   const [month, day, year] = date.split("/");
   return `${year}-${month}-${day}`;
+}
+
+function addUtcDays(iso, days) {
+  const date = new Date(`${iso}T00:00:00.000Z`);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
 }
 
 function mean(values) {
@@ -72,26 +79,63 @@ export function flattenAllSymbols(all) {
   );
 }
 
+function numericRows(all) {
+  const rows = Array.isArray(all) ? all : flattenAllSymbols(all);
+  return rows.filter(({ percent }) => percent != null && percent !== "");
+}
+
+function aggregateListings(date, symbol, listings) {
+  const percents = listings.map(({ percent }) => percent);
+  return {
+    date,
+    symbol,
+    average_projected: roundStat(mean(percents)),
+    std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
+    analyst_projections_count: percents.length,
+    projections: formatProjections(listings),
+  };
+}
+
 export function flattenAllSymbolsPerDateAndSymbol(all) {
   const groups = new Map();
-  const rows = Array.isArray(all) ? all : flattenAllSymbols(all);
-  for (const { date, ticker, analyst, percent } of rows) {
-    if (percent == null || percent === "") continue;
+  for (const { date, ticker, analyst, percent } of numericRows(all)) {
     const key = `${date}\0${ticker}`;
     if (!groups.has(key)) groups.set(key, { date, symbol: ticker, listings: [] });
     groups.get(key).listings.push({ analyst, percent });
   }
-  return [...groups.values()].map(({ date, symbol, listings }) => {
-    const percents = listings.map(({ percent }) => percent);
-    return {
-      date,
-      symbol,
-      average_projected: roundStat(mean(percents)),
-      std_projected: percents.length >= 2 ? roundStat(sampleStd(percents)) : null,
-      analyst_projections_count: percents.length,
-      projections: formatProjections(listings),
-    };
-  });
+  return [...groups.values()].map(({ date, symbol, listings }) =>
+    aggregateListings(date, symbol, listings),
+  );
+}
+
+export function flattenAllSymbolsPerDateAndSymbol7dAggregationWindow(all) {
+  const bySymbol = new Map();
+  const dates = new Set();
+  for (const { date, ticker, analyst, percent } of numericRows(all)) {
+    dates.add(date);
+    if (!bySymbol.has(ticker)) bySymbol.set(ticker, []);
+    bySymbol.get(ticker).push({ date, analyst, percent });
+  }
+  const sortedDates = [...dates].sort();
+  const symbols = [...bySymbol.keys()].sort();
+  for (const listings of bySymbol.values()) {
+    listings.sort(
+      (a, b) => a.date.localeCompare(b.date) || a.analyst.localeCompare(b.analyst),
+    );
+  }
+  const rows = [];
+  for (const date of sortedDates) {
+    const windowStart = addUtcDays(date, 1 - AGGREGATION_WINDOW_DAYS);
+    for (const symbol of symbols) {
+      const listings = bySymbol
+        .get(symbol)
+        .filter((listing) => listing.date >= windowStart && listing.date <= date)
+        .map(({ analyst, percent }) => ({ analyst, percent }));
+      if (listings.length === 0) continue;
+      rows.push(aggregateListings(date, symbol, listings));
+    }
+  }
+  return rows;
 }
 
 const csvRow = (row) =>
@@ -104,6 +148,12 @@ export const allSymbolsPerDateAndSymbolCsv = (all) =>
   formatCsv(
     PER_DATE_AND_SYMBOL_CSV_COLUMNS,
     flattenAllSymbolsPerDateAndSymbol(all).map(csvRow),
+  );
+
+export const allSymbolsPerDateAndSymbol7dAggregationWindowCsv = (all) =>
+  formatCsv(
+    PER_DATE_AND_SYMBOL_CSV_COLUMNS,
+    flattenAllSymbolsPerDateAndSymbol7dAggregationWindow(all).map(csvRow),
   );
 
 export async function scrapeAnalystRecommendations() {
@@ -125,6 +175,10 @@ export async function scrapeAnalystRecommendations() {
   await writeTextFile(
     `${dir}/all_symbols_per_date_and_symbol.csv`,
     allSymbolsPerDateAndSymbolCsv(all),
+  );
+  await writeTextFile(
+    `${dir}/all_symbols_per_date_and_symbol_7d_aggregation_window.csv`,
+    allSymbolsPerDateAndSymbol7dAggregationWindowCsv(all),
   );
 }
 

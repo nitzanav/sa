@@ -6,6 +6,7 @@ import {
   escapeAnalystName,
   flattenAllSymbols,
   flattenAllSymbolsPerDateAndSymbol,
+  flattenAllSymbolsPerDateAndSymbol7dAggregationWindow,
   scrapeAnalystRecommendations,
 } from "./scrape_analyst_recommendations.js";
 
@@ -72,19 +73,27 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
         "2026-09-10,CCC,James Schneider,37.4",
       ].join("\n"),
     );
+    const perDateAndSymbolCsv = [
+      "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
+      "2026-09-10,AAA,37.4,,1,James Schneider:37.4",
+      "2026-09-10,BBB,37.4,,1,James Schneider:37.4",
+      "2026-09-10,CCC,37.4,,1,James Schneider:37.4",
+    ].join("\n");
     expect(
       readFileSync(
         join(cwd, "data/google_analyst_recomendation/all_symbols_per_date_and_symbol.csv"),
         "utf8",
       ),
-    ).toBe(
-      [
-        "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
-        "2026-09-10,AAA,37.4,,1,James Schneider:37.4",
-        "2026-09-10,BBB,37.4,,1,James Schneider:37.4",
-        "2026-09-10,CCC,37.4,,1,James Schneider:37.4",
-      ].join("\n"),
-    );
+    ).toBe(perDateAndSymbolCsv);
+    expect(
+      readFileSync(
+        join(
+          cwd,
+          "data/google_analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+        ),
+        "utf8",
+      ),
+    ).toBe(perDateAndSymbolCsv);
   } finally {
     fetchSpy.mockRestore();
     process.chdir(originalCwd);
@@ -147,6 +156,69 @@ test("flattenAllSymbolsPerDateAndSymbol averages and std by date and symbol", ()
       std_projected: 7.0711,
       analyst_projections_count: 2,
       projections: "Yan:20.9|Zoe:10.9",
+    },
+  ]);
+});
+
+test("flattenAllSymbolsPerDateAndSymbol7dAggregationWindow rolls last 7 days", () => {
+  expect(
+    flattenAllSymbolsPerDateAndSymbol7dAggregationWindow({
+      BBB: [{ analyst: "Zoe", projected: "+40%", date: "01/02/2026" }],
+      AAA: [
+        { analyst: "Matthew Smith, CFA", projected: null, date: "01/01/2026" },
+        { analyst: "Ann", projected: "+10%", date: "01/01/2026" },
+        { analyst: "Bo", projected: "+20%", date: "01/03/2026" },
+        { analyst: "Cam", projected: "+30%", date: "01/10/2026" },
+      ],
+    }),
+  ).toEqual([
+    {
+      date: "2026-01-01",
+      symbol: "AAA",
+      average_projected: 10,
+      std_projected: null,
+      analyst_projections_count: 1,
+      projections: "Ann:10",
+    },
+    {
+      date: "2026-01-02",
+      symbol: "AAA",
+      average_projected: 10,
+      std_projected: null,
+      analyst_projections_count: 1,
+      projections: "Ann:10",
+    },
+    {
+      date: "2026-01-02",
+      symbol: "BBB",
+      average_projected: 40,
+      std_projected: null,
+      analyst_projections_count: 1,
+      projections: "Zoe:40",
+    },
+    {
+      date: "2026-01-03",
+      symbol: "AAA",
+      average_projected: 15,
+      std_projected: 7.0711,
+      analyst_projections_count: 2,
+      projections: "Ann:10|Bo:20",
+    },
+    {
+      date: "2026-01-03",
+      symbol: "BBB",
+      average_projected: 40,
+      std_projected: null,
+      analyst_projections_count: 1,
+      projections: "Zoe:40",
+    },
+    {
+      date: "2026-01-10",
+      symbol: "AAA",
+      average_projected: 30,
+      std_projected: null,
+      analyst_projections_count: 1,
+      projections: "Cam:30",
     },
   ]);
 });
