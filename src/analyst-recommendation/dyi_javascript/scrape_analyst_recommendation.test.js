@@ -15,6 +15,7 @@ import {
   sourceForUrl,
 } from "./scrape_analyst_recommendation.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
+import { yahooOpenPrice } from "./yahoo_open_price.js";
 
 const html = readFileSync(
   new URL("./__fixtures__/analyst.html", import.meta.url),
@@ -137,12 +138,10 @@ test("scrapeAnalystRecommendationFromUrl uses the Yahoo source for Yahoo urls", 
     new URL("./__fixtures__/yahoo_analyst.html", import.meta.url),
     "utf8",
   );
-  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
-    ok: true,
-    status: 200,
-    statusText: "OK",
-    text: async () => yahooHtml,
-  });
+  const fetchSpy = jest
+    .spyOn(yahooAnalystRecommendationSource, "fetch")
+    .mockResolvedValue(yahooHtml);
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
   const rows = await scrapeAnalystRecommendationFromUrl(
     "https://finance.yahoo.com/quote/NVDA/analyst-insights/",
     sources,
@@ -154,9 +153,12 @@ test("scrapeAnalystRecommendationFromUrl uses the Yahoo source for Yahoo urls", 
     recommendation,
     action,
   }))).toEqual([
-    { analyst: "Piper Sandler", recommendation: "Buy", action: "Initiated" },
+    { analyst: "Piper Sandler", recommendation: "Buy", action: "Maintained" },
     { analyst: "Rosenblatt", recommendation: "Buy", action: "Maintained" },
   ]);
+  expect(fetchSpy).toHaveBeenCalledTimes(1);
+  expect(openSpy).toHaveBeenCalledWith("NVDA", "09/10/2026");
   fetchSpy.mockRestore();
+  openSpy.mockRestore();
   logger.clearContext();
 });

@@ -11,6 +11,8 @@ import {
   scrapeAnalystRecommendations,
   selectAnalystRecommendationSources,
 } from "./scrape_analyst_recommendations.js";
+import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
+import { yahooOpenPrice } from "./yahoo_open_price.js";
 
 test("selectAnalystRecommendationSources filters by name", () => {
   expect(
@@ -50,12 +52,16 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
   );
   const originalCwd = process.cwd();
   process.chdir(cwd);
-  const fetchSpy = jest.spyOn(globalThis, "fetch").mockImplementation(async (url) => ({
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
     ok: true,
     status: 200,
     statusText: "OK",
-    text: async () => (String(url).includes("yahoo.") ? yahooHtml : html),
-  }));
+    text: async () => html,
+  });
+  const yahooFetchSpy = jest
+    .spyOn(yahooAnalystRecommendationSource, "fetch")
+    .mockResolvedValue(yahooHtml);
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
   try {
     await scrapeAnalystRecommendations();
     const all = JSON.parse(
@@ -179,6 +185,8 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ].join("\n"),
     );
   } finally {
+    yahooFetchSpy.mockRestore();
+    openSpy.mockRestore();
     fetchSpy.mockRestore();
     process.chdir(originalCwd);
   }

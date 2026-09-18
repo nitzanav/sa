@@ -1,9 +1,11 @@
 import * as cheerio from "cheerio";
+import { httpRequestScrapePlaywright } from "../../common/http_request_scrape_playwright.js";
 import { logger } from "../../common/logger.js";
 import {
   isAnalystDateInRange,
   validateAnalystRecommendations,
 } from "./validate_analyst_recommendations.js";
+import { yahooOpenPrice } from "./yahoo_open_price.js";
 
 const BUY_GRADES = new Set([
   "Accumulate",
@@ -39,48 +41,21 @@ const SELL_GRADES = new Set([
   "Underperform",
   "Underweight",
 ]);
-const ACTIONS = {
-  init: "Initiated",
-  main: "Maintained",
-  reit: "Reiterated",
-  up: "Upgraded",
-  down: "Downgraded",
-};
-const HTML_ACTIONS = {
-  initiated: "Initiated",
-  maintains: "Maintained",
-  maintained: "Maintained",
-  reiterates: "Reiterated",
-  reiterated: "Reiterated",
-  upgrades: "Upgraded",
-  upgraded: "Upgraded",
-  downgrades: "Downgraded",
-  downgraded: "Downgraded",
-};
+const TOP_ANALYST_HEADERS = [
+  "analyst",
+  "overall score",
+  "direction score",
+  "price score",
+  "latest rating",
+  "price target",
+  "date",
+];
+const MISSING_VALUES = new Set(["-", "\u2013", "\u2014", ""]);
+const DEFAULT_ACTION = "Maintained";
 
-function parseJson(text) {
-  try {
-    return JSON.parse(text);
-  } catch {
-    return null;
-  }
-}
-
-function quoteSummaryFromValue(value) {
-  if (!value || typeof value !== "object") return null;
-  const body =
-    typeof value.body === "string" ? parseJson(value.body) : (value.body ?? value);
-  return body?.quoteSummary?.result?.[0] ?? null;
-}
-
-function extractQuoteSummary(html) {
-  const $ = cheerio.load(html);
-  let found = null;
-  $("script").each((_, el) => {
-    if (found) return;
-    found = quoteSummaryFromValue(parseJson($(el).text()));
-  });
-  return found;
+function cellText($element) {
+  if (!$element || $element.length === 0) return "";
+  return $element.text().replace(/\s+/g, " ").trim();
 }
 
 export function mapYahooRecommendation(grade) {
@@ -90,10 +65,6 @@ export function mapYahooRecommendation(grade) {
   return grade;
 }
 
-export function mapYahooAction(action) {
-  return ACTIONS[action] ?? action;
-}
-
 export function formatUsdPriceTarget(value) {
   if (value == null || value === "" || Number(value) === 0) return null;
   const number = Number(value);
@@ -101,11 +72,11 @@ export function formatUsdPriceTarget(value) {
   return `$${number.toFixed(2)}`;
 }
 
-export function formatProjectedPercent(target, current) {
-  if (target == null || current == null || Number(target) === 0 || Number(current) === 0) {
+export function formatProjectedPercent(target, open) {
+  if (target == null || open == null || Number(target) === 0 || Number(open) === 0) {
     return null;
   }
-  const percent = ((Number(target) - Number(current)) / Number(current)) * 100;
+  const percent = ((Number(target) - Number(open)) / Number(open)) * 100;
   if (!Number.isFinite(percent)) return null;
   const rounded = Math.round(percent * 10) / 10;
   if (rounded === 0) return "0%";
@@ -113,14 +84,6 @@ export function formatProjectedPercent(target, current) {
   const abs = Math.abs(rounded);
   const body = Number.isInteger(abs) ? String(abs) : abs.toFixed(1);
   return `${sign}${body}%`;
-}
-
-export function formatYahooDate(epochSeconds) {
-  const date = new Date(Number(epochSeconds) * 1000);
-  if (Number.isNaN(date.getTime())) return "";
-  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(date.getUTCDate()).padStart(2, "0");
-  return `${month}/${day}/${date.getUTCFullYear()}`;
 }
 
 export function padUsDate(text) {
@@ -131,61 +94,67 @@ export function padUsDate(text) {
   return `${match[1].padStart(2, "0")}/${match[2].padStart(2, "0")}/${match[3]}`;
 }
 
-function currentPriceFromQuoteSummary(quoteSummary) {
-  return (
-    quoteSummary?.financialData?.currentPrice?.raw ??
-    quoteSummary?.price?.regularMarketPrice?.raw ??
-    null
-  );
+export function formatYahooTableDate(text) {
+  const iso = String(text ?? "")
+    .trim()
+    .match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (iso) return `${iso[2]}/${iso[3]}/${iso[1]}`;
+  return padUsDate(text);
 }
 
-function listingFromHistory(item, currentPrice) {
-  const firm = String(item.firm ?? "").trim();
-  return {
-    analyst: firm,
-    firm,
-    recommendation: mapYahooRecommendation(item.toGrade),
-    action: mapYahooAction(item.action),
-    price_target: formatUsdPriceTarget(item.currentPriceTarget),
-    projected: formatProjectedPercent(item.currentPriceTarget, currentPrice),
-    date: formatYahooDate(item.epochGradeDate),
-  };
+function parsePriceTargetNumber(text) {
+  if (MISSING_VALUES.has(text)) return null;
+  const number = Number(String(text).replace(/,/g, ""));
+  return Number.isFinite(number) && number !== 0 ? number : null;
 }
 
-function parseFirmGrade(text) {
-  const [firm, grades = ""] = text.split(/:\s*/, 2);
-  const toGrade = grades.includes(" to ") ? grades.split(" to ").at(-1) : grades;
-  return { firm: firm.trim(), toGrade: toGrade.trim() };
+function findTopAnalystsTable($) {
+  const $sectionTable = $("#top-analyst table").first();
+  if ($sectionTable.length) return $sectionTable;
+  let found = null;
+  $("table").each((_, table) => {
+    if (found) return;
+    const $table = $(table);
+    const headers = $table
+      .find("th")
+      .toArray()
+      .map((th) => cellText($(th)).toLowerCase());
+    if (
+      headers.length === TOP_ANALYST_HEADERS.length &&
+      headers.every((header, i) => header === TOP_ANALYST_HEADERS[i])
+    ) {
+      found = $table;
+    }
+  });
+  return found;
 }
 
-function parseYahooHtmlTable(html) {
-  const $ = cheerio.load(html);
+async function parseTopAnalystsTable($, $table, symbol) {
   const listings = [];
-  $("table tr").each((_, row) => {
+  const $body = $table.find("tbody").first();
+  const $rowsRoot = $body.length ? $body : $table;
+  for (const row of $rowsRoot.find("tr").toArray()) {
     const cells = $(row)
       .find("td")
       .toArray()
-      .map((td) =>
-        $(td)
-          .text()
-          .replace(/\s+/g, " ")
-          .trim(),
-      );
-    if (cells.length < 3) return;
-    const action = HTML_ACTIONS[cells[0].toLowerCase()];
-    if (!action) return;
-    const { firm, toGrade } = parseFirmGrade(cells[1]);
-    if (!firm) return;
+      .map((td) => cellText($(td)));
+    if (cells.length < TOP_ANALYST_HEADERS.length) continue;
+    const firm = cells[0];
+    if (!firm) continue;
+    const priceTarget = parsePriceTargetNumber(cells[5]);
+    const date = formatYahooTableDate(cells[6]);
+    const openPrice =
+      priceTarget == null || !symbol ? null : await yahooOpenPrice.forDate(symbol, date);
     listings.push({
       analyst: firm,
       firm,
-      recommendation: mapYahooRecommendation(toGrade),
-      action,
-      price_target: null,
-      projected: null,
-      date: padUsDate(cells[2]),
+      recommendation: mapYahooRecommendation(cells[4]),
+      action: DEFAULT_ACTION,
+      price_target: formatUsdPriceTarget(priceTarget),
+      projected: formatProjectedPercent(priceTarget, openPrice),
+      date,
     });
-  });
+  }
   return listings;
 }
 
@@ -206,19 +175,29 @@ export function matchesUrl(url) {
   return new URL(url).hostname.includes("yahoo.");
 }
 
-export function parseYahooAnalystRecommendation(html) {
-  const quoteSummary = extractQuoteSummary(html);
-  const history = quoteSummary?.upgradeDowngradeHistory?.history;
-  const listings =
-    Array.isArray(history) && history.length > 0
-      ? history.map((item) =>
-          listingFromHistory(item, currentPriceFromQuoteSummary(quoteSummary)),
-        )
-      : parseYahooHtmlTable(html);
+export async function fetchYahooAnalystRecommendation(url, retryConfig, cacheConfig) {
+  return httpRequestScrapePlaywright(
+    { url, waitForText: "Overall" },
+    retryConfig,
+    cacheConfig,
+  );
+}
+
+export async function parseYahooAnalystRecommendation(html, symbol) {
+  const $ = cheerio.load(html);
+  const $table = findTopAnalystsTable($);
+  if ($table == null || $table.length === 0) {
+    logger.error({
+      message: "error",
+      error: new Error("Yahoo Top Analysts table not found"),
+    });
+    return [];
+  }
+  const listings = await parseTopAnalystsTable($, $table, symbol);
   if (listings.length === 0) {
     logger.error({
       message: "error",
-      error: new Error("Yahoo analyst recommendation history not found"),
+      error: new Error("Yahoo Top Analysts table not found"),
     });
     return [];
   }
@@ -228,6 +207,7 @@ export function parseYahooAnalystRecommendation(html) {
 export const yahooAnalystRecommendationSource = {
   name: "yahoo",
   urlFor: yahooAnalystRecommendationUrl,
+  fetch: fetchYahooAnalystRecommendation,
   parse: parseYahooAnalystRecommendation,
   quoteFromUrl,
   matchesUrl,

@@ -1,4 +1,3 @@
-import { httpRequestScrape } from "../../common/http_request_scrape.js";
 import { log, logger } from "../../common/logger.js";
 
 export function analystRecommendationDir(source) {
@@ -18,12 +17,8 @@ export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecom
   cacheConfig,
 ) {
   logger.addContext({ source: source.name, symbol: source.quoteFromUrl(url) });
-  const html = await httpRequestScrape(
-    { url: source.requestUrl?.(url) ?? url },
-    retryConfig,
-    cacheConfig,
-  );
-  return source.parse(html);
+  const html = await source.fetch(url, retryConfig, cacheConfig);
+  return source.parse(html, source.quoteFromUrl(url));
 });
 
 export async function scrapeAnalystRecommendationFromUrl(

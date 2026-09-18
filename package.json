@@ -13,7 +13,9 @@
   "description": "",
   "dependencies": {
     "cheerio": "^1.2.0",
-    "config": "^3.3.12"
+    "config": "^3.3.12",
+    "playwright": "^1.63.0",
+    "yahoo-finance2": "^4.0.2"
   },
   "devDependencies": {
     "jest": "^29.7.0"

@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import { httpRequestScrape } from "../../common/http_request_scrape.js";
 import { logger } from "../../common/logger.js";
 import { validateAnalystRecommendations } from "./validate_analyst_recommendations.js";
 
@@ -77,6 +78,10 @@ export function matchesUrl(url) {
   return new URL(url).hostname.includes("google.");
 }
 
+export async function fetchGoogleAnalystRecommendation(url, retryConfig, cacheConfig) {
+  return httpRequestScrape({ url: requestUrl(url) }, retryConfig, cacheConfig);
+}
+
 export function parseGoogleAnalystRecommendation(html) {
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
@@ -110,6 +115,7 @@ export function parseGoogleAnalystRecommendation(html) {
 export const googleAnalystRecommendationSource = {
   name: "google",
   urlFor: googleAnalystRecommendationUrl,
+  fetch: fetchGoogleAnalystRecommendation,
   parse: parseGoogleAnalystRecommendation,
   quoteFromUrl,
   requestUrl,
