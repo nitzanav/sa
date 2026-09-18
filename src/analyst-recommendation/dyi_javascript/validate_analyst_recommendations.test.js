@@ -73,20 +73,20 @@ test("validateAnalystRecommendationRow accepts projected at the range bounds", (
   expect(loggedErrors()).toEqual([]);
 });
 
-test("validateAnalystRecommendationRow rejects invalid recommendation", () => {
+test("validateAnalystRecommendationRow accepts any recommendation", () => {
   expect(
     validateAnalystRecommendationRow({
       ...validRow,
       recommendation: "Strong Buy",
     }),
-  ).toBe(false);
-  expect(loggedErrors()).toEqual([
-    {
-      message: "error",
-      error: expect.stringMatching(/recommendation must be one of/),
-      log_level: "error",
-    },
-  ]);
+  ).toBe(true);
+  expect(
+    validateAnalystRecommendationRow({ ...validRow, recommendation: "" }),
+  ).toBe(true);
+  expect(
+    validateAnalystRecommendationRow({ ...validRow, recommendation: null }),
+  ).toBe(true);
+  expect(loggedErrors()).toEqual([]);
 });
 
 test("validateAnalystRecommendationRow rejects invalid price_target", () => {
@@ -144,15 +144,25 @@ test("validateAnalystRecommendationRow accepts date at 2025-01-01", () => {
   ).toBe(true);
 });
 
-test("validateAnalystRecommendationRow rejects date after today", () => {
+test("validateAnalystRecommendationRow accepts date of tomorrow", () => {
   expect(
     validateAnalystRecommendationRow(
       { ...validRow, date: "09/10/2026" },
       { now: "2026-09-09" },
     ),
+  ).toBe(true);
+  expect(loggedErrors()).toEqual([]);
+});
+
+test("validateAnalystRecommendationRow rejects date after tomorrow", () => {
+  expect(
+    validateAnalystRecommendationRow(
+      { ...validRow, date: "09/11/2026" },
+      { now: "2026-09-09" },
+    ),
   ).toBe(false);
   expect(loggedErrors()[0].error).toMatch(
-    /date must not be after today, got "09\/10\/2026"/,
+    /date must not be after tomorrow, got "09\/11\/2026"/,
   );
 });
 
@@ -160,7 +170,8 @@ test("isAnalystDateInRange checks format and bounds", () => {
   expect(isAnalystDateInRange("01/01/2025", { now: "2026-09-13" })).toBe(true);
   expect(isAnalystDateInRange("12/31/2024", { now: "2026-09-13" })).toBe(false);
   expect(isAnalystDateInRange("11/30/2025", { now: "2026-09-13" })).toBe(true);
-  expect(isAnalystDateInRange("09/10/2026", { now: "2026-09-09" })).toBe(
+  expect(isAnalystDateInRange("09/10/2026", { now: "2026-09-09" })).toBe(true);
+  expect(isAnalystDateInRange("09/11/2026", { now: "2026-09-09" })).toBe(
     false,
   );
   expect(isAnalystDateInRange("2026-09-10")).toBe(false);
@@ -175,7 +186,7 @@ test("parsePercent strips sign, separators and percent", () => {
 test("validateAnalystRecommendations skips invalid rows and logs the index", () => {
   const listings = validateAnalystRecommendations([
     validRow,
-    { ...validRow, recommendation: "Maybe" },
+    { ...validRow, action: "Unknown" },
     { ...validRow, projected: "+12,112.3%" },
   ]);
   expect(listings).toEqual([validRow]);

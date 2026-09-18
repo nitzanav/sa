@@ -1,6 +1,5 @@
 import { logger } from "../../common/logger.js";
 
-const RECOMMENDATIONS = new Set(["Buy", "Hold", "Sell"]);
 const ACTIONS = new Set([
   "Downgraded",
   "Initiated",
@@ -67,10 +66,16 @@ function today(context = {}) {
   return startOfDay(context.now ?? new Date());
 }
 
+function tomorrow(context = {}) {
+  const date = today(context);
+  date.setDate(date.getDate() + 1);
+  return date;
+}
+
 export function isAnalystDateInRange(date, context = {}) {
   if (typeof date !== "string" || !DATE.test(date)) return false;
   const parsed = parseAnalystDate(date);
-  return parsed >= DATE_MIN && parsed <= today(context);
+  return parsed >= DATE_MIN && parsed <= tomorrow(context);
 }
 
 function isValidPriceTarget(value, context) {
@@ -131,12 +136,6 @@ export function validateAnalystRecommendationRow(row, context = {}) {
   if (!isNonEmptyString(row.firm)) {
     return reject("firm must be a non-empty string", context);
   }
-  if (!RECOMMENDATIONS.has(row.recommendation)) {
-    return reject(
-      `recommendation must be one of ${[...RECOMMENDATIONS].join(", ")}`,
-      context,
-    );
-  }
   if (!ACTIONS.has(row.action)) {
     return reject(`action must be one of ${[...ACTIONS].join(", ")}`, context);
   }
@@ -155,9 +154,9 @@ export function validateAnalystRecommendationRow(row, context = {}) {
       context,
     );
   }
-  if (parsedDate > today(context)) {
+  if (parsedDate > tomorrow(context)) {
     return reject(
-      `date must not be after today, got ${JSON.stringify(row.date)}`,
+      `date must not be after tomorrow, got ${JSON.stringify(row.date)}`,
       context,
     );
   }
