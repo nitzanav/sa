@@ -68,10 +68,16 @@ analyst-recommendation-js-test:
 symbols_exchange:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/symbols-exchange/fetch_symbols_exchange.js
 
+# Scrapes Google and Yahoo into data/analyst_recomendation/<source>/.
 # Override limit:
 #   NODE_CONFIG='{"analyst_recommendations": {"limit": 10}}' make scrape_analyst_recommendations
+# Run one source only (google or yahoo):
+#   SOURCE=yahoo make scrape_analyst_recommendations
+#   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
+SOURCE ?=
+
 scrape_analyst_recommendations: symbols_exchange
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE))
 
 scrape_analyst_recommendations-test:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e

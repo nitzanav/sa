@@ -3,7 +3,7 @@ VectorBT simulations with shared portfolio machinery.
 
 1. Random SPY — 0.1% buy chance each day, 90-day hold
 2. Analyst 7d consensus — daily top score from
-   data/google_analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv
+   data/analyst_recomendation/google/all_symbols_per_date_and_symbol_7d_aggregation_window.csv
    score = average_projected * sqrt(analyst_projections_count)
    20% of starting capital per position, 90-day hold
 """
@@ -17,7 +17,7 @@ import vectorbt as vbt
 ROOT = Path(__file__).resolve().parents[1]
 ANALYST_CSV = (
     ROOT
-    / "data/google_analyst_recomendation"
+    / "data/analyst_recomendation/google"
     / "all_symbols_per_date_and_symbol_7d_aggregation_window.csv"
 )
 

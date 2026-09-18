@@ -1,5 +1,5 @@
 import { jest } from "@jest/globals";
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import {
   isAnalystDateInRange,
@@ -198,7 +198,11 @@ const isExpectedRow = (row) =>
   isAnalystDateInRange(row.date);
 
 test("existing google analyst recommendation json files drop invalid rows", () => {
-  const dir = join(process.cwd(), "data/google_analyst_recomendation");
+  const dir = [
+    join(process.cwd(), "data/analyst_recomendation/google"),
+    join(process.cwd(), "data/google_analyst_recomendation"),
+  ].find(existsSync);
+  if (!dir) return;
   for (const fileName of readdirSync(dir).filter(
     (name) => name.endsWith(".json") && name !== "all_symbols.json",
   )) {

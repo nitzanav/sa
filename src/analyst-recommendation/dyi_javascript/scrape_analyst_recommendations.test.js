@@ -3,16 +3,39 @@ import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
+  ANALYST_RECOMMENDATION_SOURCES,
   escapeAnalystName,
   flattenAllSymbols,
   flattenAllSymbolsPerDateAndSymbol,
   flattenAllSymbolsPerDateAndSymbol7dAggregationWindow,
   scrapeAnalystRecommendations,
+  selectAnalystRecommendationSources,
 } from "./scrape_analyst_recommendations.js";
+
+test("selectAnalystRecommendationSources filters by name", () => {
+  expect(
+    selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, ["yahoo"]).map(
+      (source) => source.name,
+    ),
+  ).toEqual(["yahoo"]);
+  expect(selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, null)).toEqual(
+    ANALYST_RECOMMENDATION_SOURCES,
+  );
+});
+
+test("selectAnalystRecommendationSources rejects unknown names", () => {
+  expect(() =>
+    selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, ["bing"]),
+  ).toThrow('Unknown analyst recommendation source(s): bing');
+});
 
 test("iterates first analyst_recommendations.limit symbols and writes outputs", async () => {
   const html = readFileSync(
     new URL("./__fixtures__/analyst.html", import.meta.url),
+    "utf8",
+  );
+  const yahooHtml = readFileSync(
+    new URL("./__fixtures__/yahoo_analyst.html", import.meta.url),
     "utf8",
   );
   const cwd = mkdtempSync(join(tmpdir(), "plural-"));
@@ -27,17 +50,17 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
   );
   const originalCwd = process.cwd();
   process.chdir(cwd);
-  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockImplementation(async (url) => ({
     ok: true,
     status: 200,
     statusText: "OK",
-    text: async () => html,
-  });
+    text: async () => (String(url).includes("yahoo.") ? yahooHtml : html),
+  }));
   try {
     await scrapeAnalystRecommendations();
     const all = JSON.parse(
       readFileSync(
-        join(cwd, "data/google_analyst_recomendation/all_symbols.json"),
+        join(cwd, "data/analyst_recomendation/google/all_symbols.json"),
         "utf8",
       ),
     );
@@ -50,18 +73,18 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       { date: "2026-09-10", ticker: "CCC", analyst: "James Schneider", percent: 37.4 },
     ]);
     expect(
-      readFileSync(join(cwd, "data/google_analyst_recomendation/AAA.html"), "utf8"),
+      readFileSync(join(cwd, "data/analyst_recomendation/google/AAA.html"), "utf8"),
     ).toBe(html);
     expect(
       JSON.parse(
         readFileSync(
-          join(cwd, "data/google_analyst_recomendation/AAA.json"),
+          join(cwd, "data/analyst_recomendation/google/AAA.json"),
           "utf8",
         ),
       ),
     ).toHaveLength(2);
     expect(
-      readFileSync(join(cwd, "data/google_analyst_recomendation/all_symbols.csv"), "utf8"),
+      readFileSync(join(cwd, "data/analyst_recomendation/google/all_symbols.csv"), "utf8"),
     ).toBe(
       [
         "date,ticker,analyst,percent",
@@ -81,7 +104,7 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
     ].join("\n");
     expect(
       readFileSync(
-        join(cwd, "data/google_analyst_recomendation/all_symbols_per_date_and_symbol.csv"),
+        join(cwd, "data/analyst_recomendation/google/all_symbols_per_date_and_symbol.csv"),
         "utf8",
       ),
     ).toBe(perDateAndSymbolCsv);
@@ -89,11 +112,72 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       readFileSync(
         join(
           cwd,
-          "data/google_analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+          "data/analyst_recomendation/google/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
         ),
         "utf8",
       ),
     ).toBe(perDateAndSymbolCsv);
+    const yahooAll = JSON.parse(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/yahoo/all_symbols.json"),
+        "utf8",
+      ),
+    );
+    expect(yahooAll).toEqual([
+      { date: "2026-09-04", ticker: "AAA", analyst: "Rosenblatt", percent: 78.1 },
+      { date: "2026-09-04", ticker: "BBB", analyst: "Rosenblatt", percent: 78.1 },
+      { date: "2026-09-04", ticker: "CCC", analyst: "Rosenblatt", percent: 78.1 },
+      { date: "2026-09-10", ticker: "AAA", analyst: "Piper Sandler", percent: 37 },
+      { date: "2026-09-10", ticker: "BBB", analyst: "Piper Sandler", percent: 37 },
+      { date: "2026-09-10", ticker: "CCC", analyst: "Piper Sandler", percent: 37 },
+    ]);
+    expect(
+      readFileSync(join(cwd, "data/analyst_recomendation/yahoo/all_symbols.csv"), "utf8"),
+    ).toBe(
+      [
+        "date,ticker,analyst,percent",
+        "2026-09-04,AAA,Rosenblatt,78.1",
+        "2026-09-04,BBB,Rosenblatt,78.1",
+        "2026-09-04,CCC,Rosenblatt,78.1",
+        "2026-09-10,AAA,Piper Sandler,37",
+        "2026-09-10,BBB,Piper Sandler,37",
+        "2026-09-10,CCC,Piper Sandler,37",
+      ].join("\n"),
+    );
+    const yahooPerDateAndSymbolCsv = [
+      "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
+      "2026-09-04,AAA,78.1,,1,Rosenblatt:78.1",
+      "2026-09-04,BBB,78.1,,1,Rosenblatt:78.1",
+      "2026-09-04,CCC,78.1,,1,Rosenblatt:78.1",
+      "2026-09-10,AAA,37,,1,Piper Sandler:37",
+      "2026-09-10,BBB,37,,1,Piper Sandler:37",
+      "2026-09-10,CCC,37,,1,Piper Sandler:37",
+    ].join("\n");
+    expect(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/yahoo/all_symbols_per_date_and_symbol.csv"),
+        "utf8",
+      ),
+    ).toBe(yahooPerDateAndSymbolCsv);
+    expect(
+      readFileSync(
+        join(
+          cwd,
+          "data/analyst_recomendation/yahoo/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+        ),
+        "utf8",
+      ),
+    ).toBe(
+      [
+        "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
+        "2026-09-04,AAA,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,BBB,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,CCC,78.1,,1,Rosenblatt:78.1",
+        "2026-09-10,AAA,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,BBB,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,CCC,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+      ].join("\n"),
+    );
   } finally {
     fetchSpy.mockRestore();
     process.chdir(originalCwd);

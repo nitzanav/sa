@@ -5,9 +5,10 @@ import { fileURLToPath } from "node:url";
 import config from "../../src/common/config.js";
 
 const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
-const resultFile = join(repoRoot, "data/google_analyst_recomendation/all_symbols.json");
+const resultFile = join(repoRoot, "data/analyst_recomendation/google/all_symbols.json");
+const yahooResultFile = join(repoRoot, "data/analyst_recomendation/yahoo/all_symbols.json");
 const baselineFile = join(repoRoot, "test/e2e/__baseline__/all_symbols.json");
-const cachedHtmlFile = join(repoRoot, "data/google_analyst_recomendation/MMM.html");
+const cachedHtmlFile = join(repoRoot, "data/analyst_recomendation/google/MMM.html");
 
 const modifiedAt = (fileName) => (existsSync(fileName) ? statSync(fileName).mtimeMs : null);
 
@@ -30,6 +31,23 @@ test(
     const tickers = [...new Set(result.map((row) => row.ticker))];
     expect(tickers).toHaveLength(config.analyst_recommendations.limit);
     expect(result).toEqual(JSON.parse(readFileSync(baselineFile, "utf8")));
+    expect(existsSync(yahooResultFile)).toBe(true);
+    expect(
+      existsSync(
+        join(
+          repoRoot,
+          "data/analyst_recomendation/yahoo/all_symbols_per_date_and_symbol.csv",
+        ),
+      ),
+    ).toBe(true);
+    expect(
+      existsSync(
+        join(
+          repoRoot,
+          "data/analyst_recomendation/yahoo/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+        ),
+      ),
+    ).toBe(true);
   },
-  config.http.timeout,
+  config.http.timeout * 2,
 );

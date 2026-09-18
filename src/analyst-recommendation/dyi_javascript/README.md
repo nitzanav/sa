@@ -1,13 +1,27 @@
 # Analyst Recommendation scraper (DIY JavaScript)
 
-Scrapes the Analyst Recommendation table from a Google Finance quote Analysis tab
-and prints one JSON object per row to stdout. See
+Scrapes analyst recommendations from Google Finance and Yahoo Finance, then writes
+the same aggregated files under `data/analyst_recomendation/<source>/`:
+
+- `data/analyst_recomendation/google/`
+- `data/analyst_recomendation/yahoo/`
+
+Shared fetch/aggregation lives in `scrape_analyst_recommendation.js` and
+`scrape_analyst_recommendations.js`. Source-specific parsing, URLs, and ticker
+extraction live in `google_analyst_recommendation.js` and
+`yahoo_analyst_recommendation.js`.
+
+A single URL still prints JSON rows to stdout. The CLI picks the source from the
+URL; `scrapeAnalystRecommendation` always takes an explicit source. See
 [spec.md](../../../docs/tasks/analyst-recommendation/spec.md).
 
 Run from the repo root (`nvm use`, then `npm install`):
 
 ```
 make analyst-recommendation-js URL='https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis'
+make analyst-recommendation-js URL='https://finance.yahoo.com/quote/NVDA/analyst-insights/'
+make scrape_analyst_recommendations
+SOURCE=yahoo make scrape_analyst_recommendations
 make analyst-recommendation-js-test
 ```
 
@@ -15,6 +29,7 @@ Or call the script directly:
 
 ```
 node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendation.js '<url>'
+node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js
 ```
 
 Rows are validated before they are returned. A row that fails any check is logged at

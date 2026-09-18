@@ -1,127 +1,57 @@
-import * as cheerio from "cheerio";
 import { httpRequestScrape } from "../../common/http_request_scrape.js";
 import { log, logger } from "../../common/logger.js";
-import { validateAnalystRecommendations } from "./validate_analyst_recommendations.js";
 
-const ANALYST_TABLE_HEADERS = [
-  "analyst",
-  "recommendation",
-  "action",
-  "price target",
-  "projected",
-  "date",
-];
-
-const MISSING_VALUES = new Set(["-", "\u2013", "\u2014", ""]);
-
-function withEnglishLocale(url) {
-  const parsed = new URL(url);
-  if (!parsed.searchParams.has("hl")) parsed.searchParams.set("hl", "en");
-  return parsed.toString();
+export function analystRecommendationDir(source) {
+  return `data/analyst_recomendation/${source.name}`;
 }
 
-function cellText($element) {
-  if (!$element || $element.length === 0) return "";
-  return $element.text().replace(/\s+/g, " ").trim();
-}
-
-function optional(value) {
-  return MISSING_VALUES.has(value) ? null : value;
-}
-
-function getAnalyst($, rowCells) {
-  const lines = [];
-  rowCells
-    .eq(0)
-    .find("div")
-    .each((_, el) => {
-      const $div = $(el);
-      if ($div.find("div").length === 0) {
-        const line = cellText($div);
-        if (line) lines.push(line);
-      }
-    });
-  return [lines[0] || "", lines[1] || ""];
-}
-
-function findAnalystTable($) {
-  const $main = $("main").first();
-  const $root = $main.length ? $main : $.root();
-  let found = null;
-  $root.find("table").each((_, table) => {
-    if (found) return;
-    const $table = $(table);
-    const headers = $table
-      .find("th")
-      .toArray()
-      .map((th) => cellText($(th)).toLowerCase());
-    if (
-      headers.length === ANALYST_TABLE_HEADERS.length &&
-      headers.every((header, i) => header === ANALYST_TABLE_HEADERS[i])
-    ) {
-      found = $table;
-    }
-  });
-  return found;
-}
-
-export function parseAnalystRecommendation(html) {
-  const $ = cheerio.load(html);
-  const $table = findAnalystTable($);
-  if ($table === null) {
-    logger.error({
-      message: "error",
-      error: new Error("Analyst Recommendation table not found"),
-    });
-    return [];
-  }
-  const $body = $table.find("tbody").first();
-  const $rowsRoot = $body.length ? $body : $table;
-  const listings = [];
-  $rowsRoot.find("tr").each((_, row) => {
-    const rowCells = $(row).find("td");
-    if (rowCells.length < ANALYST_TABLE_HEADERS.length) return;
-    const [analyst, firm] = getAnalyst($, rowCells);
-    listings.push({
-      analyst,
-      firm,
-      recommendation: cellText(rowCells.eq(1)),
-      action: cellText(rowCells.eq(2)),
-      price_target: optional(cellText(rowCells.eq(3))),
-      projected: optional(cellText(rowCells.eq(4))),
-      date: cellText(rowCells.eq(5)),
-    });
-  });
-  return validateAnalystRecommendations(listings);
+export function sourceForUrl(url, sources) {
+  const source = sources.find((candidate) => candidate.matchesUrl(url));
+  if (!source) throw new Error(`No analyst recommendation source for ${url}`);
+  return source;
 }
 
 export const scrapeAnalystRecommendation = log(async function scrapeAnalystRecommendation(
+  source,
   url,
   retryConfig,
   cacheConfig,
 ) {
-  logger.addContext({ symbol: quoteFromUrl(url) });
+  logger.addContext({ source: source.name, symbol: source.quoteFromUrl(url) });
   const html = await httpRequestScrape(
-    { url: withEnglishLocale(url) },
+    { url: source.requestUrl?.(url) ?? url },
     retryConfig,
     cacheConfig,
   );
-  return parseAnalystRecommendation(html);
+  return source.parse(html);
 });
 
-function quoteFromUrl(url) {
-  const match = new URL(url).pathname.match(/\/quote\/([^/:]+)/);
-  return match ? match[1] : "quote";
+export async function scrapeAnalystRecommendationFromUrl(
+  url,
+  sources,
+  retryConfig,
+  cacheConfig,
+) {
+  const source = sourceForUrl(url, sources);
+  const quote = source.quoteFromUrl(url);
+  return scrapeAnalystRecommendation(
+    source,
+    url,
+    retryConfig ?? { operationName: quote },
+    cacheConfig ?? { fileName: `${analystRecommendationDir(source)}/${quote}.html` },
+  );
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const url = process.argv[2];
-  const quote = quoteFromUrl(url);
-  logger.addContext({ symbol: quote });
-  const listings = await scrapeAnalystRecommendation(
-    url,
-    { operationName: quote },
-    { fileName: `data/google_analyst_recomendation/${quote}.html` },
+  const { googleAnalystRecommendationSource } = await import(
+    "./google_analyst_recommendation.js"
   );
+  const { yahooAnalystRecommendationSource } = await import(
+    "./yahoo_analyst_recommendation.js"
+  );
+  const listings = await scrapeAnalystRecommendationFromUrl(process.argv[2], [
+    googleAnalystRecommendationSource,
+    yahooAnalystRecommendationSource,
+  ]);
   process.stdout.write(JSON.stringify(listings, null, 2) + "\n");
 }

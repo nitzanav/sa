@@ -4,10 +4,48 @@ import { logger } from "../../common/logger.js";
 import { writeTextFile } from "../../common/write_file.js";
 import { writeJsonFile } from "../../common/write_json.js";
 import { readSymbolsExchange } from "../../symbols-exchange/fetch_symbols_exchange.js";
-import { scrapeAnalystRecommendation } from "./scrape_analyst_recommendation.js";
+import { googleAnalystRecommendationSource } from "./google_analyst_recommendation.js";
+import {
+  analystRecommendationDir,
+  scrapeAnalystRecommendation,
+} from "./scrape_analyst_recommendation.js";
 import { parsePercent } from "./validate_analyst_recommendations.js";
+import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 
-const dir = "data/google_analyst_recomendation";
+export const ANALYST_RECOMMENDATION_SOURCES = [
+  googleAnalystRecommendationSource,
+  yahooAnalystRecommendationSource,
+];
+
+function requestedSourceNames(argv = process.argv.slice(2)) {
+  const flag = argv.find((arg) => arg.startsWith("--source="));
+  if (flag) {
+    return flag
+      .slice("--source=".length)
+      .split(",")
+      .map((name) => name.trim())
+      .filter(Boolean);
+  }
+  const fromConfig = config.analyst_recommendations?.source;
+  if (!fromConfig) return null;
+  return Array.isArray(fromConfig) ? fromConfig : [String(fromConfig)];
+}
+
+export function selectAnalystRecommendationSources(
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+  sourceNames = requestedSourceNames(),
+) {
+  if (!sourceNames?.length) return sources;
+  const selected = sources.filter((source) => sourceNames.includes(source.name));
+  const unknown = sourceNames.filter(
+    (name) => !sources.some((source) => source.name === name),
+  );
+  if (unknown.length > 0) {
+    throw new Error(`Unknown analyst recommendation source(s): ${unknown.join(", ")}`);
+  }
+  return selected;
+}
+
 const ALL_SYMBOLS_CSV_COLUMNS = ["date", "ticker", "analyst", "percent"];
 const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "date",
@@ -156,20 +194,7 @@ export const allSymbolsPerDateAndSymbol7dAggregationWindowCsv = (all) =>
     flattenAllSymbolsPerDateAndSymbol7dAggregationWindow(all).map(csvRow),
   );
 
-export async function scrapeAnalystRecommendations() {
-  const symbols = readCsv("data/fortune_500/symbols.csv").map((row) => row.Symbol);
-  const exchanges = readSymbolsExchange();
-  const all = {};
-  for (const symbol of symbols.slice(0, config.analyst_recommendations.limit)) {
-    logger.addContext({ symbol });
-    const listings = await scrapeAnalystRecommendation(
-      `https://www.google.com/finance/beta/quote/${symbol}:${exchanges[symbol]}?window=YTD&tab=analysis&hl=en`,
-      { operationName: symbol },
-      { fileName: `${dir}/${symbol}.html` },
-    );
-    await writeJsonFile(`${dir}/${symbol}.json`, listings);
-    all[symbol] = listings;
-  }
+export async function writeAggregatedAnalystRecommendations(dir, all) {
   await writeJsonFile(`${dir}/all_symbols.json`, flattenAllSymbols(all));
   await writeTextFile(`${dir}/all_symbols.csv`, allSymbolsCsv(all));
   await writeTextFile(
@@ -182,6 +207,41 @@ export async function scrapeAnalystRecommendations() {
   );
 }
 
+export async function scrapeAnalystRecommendationSource(source, { symbols, exchanges }) {
+  const dir = analystRecommendationDir(source);
+  const all = {};
+  for (const symbol of symbols) {
+    logger.addContext({ source: source.name, symbol });
+    const listings = await scrapeAnalystRecommendation(
+      source,
+      source.urlFor(symbol, exchanges[symbol]),
+      { operationName: `${source.name}_${symbol}` },
+      { fileName: `${dir}/${symbol}.html` },
+    );
+    await writeJsonFile(`${dir}/${symbol}.json`, listings);
+    all[symbol] = listings;
+  }
+  await writeAggregatedAnalystRecommendations(dir, all);
+  return all;
+}
+
+export async function scrapeAnalystRecommendations(
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+) {
+  const symbols = readCsv("data/fortune_500/symbols.csv")
+    .map((row) => row.Symbol)
+    .slice(0, config.analyst_recommendations.limit);
+  const exchanges = readSymbolsExchange();
+  const all = {};
+  for (const source of sources) {
+    all[source.name] = await scrapeAnalystRecommendationSource(source, {
+      symbols,
+      exchanges,
+    });
+  }
+  return all;
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
-  await scrapeAnalystRecommendations();
+  await scrapeAnalystRecommendations(selectAnalystRecommendationSources());
 }
