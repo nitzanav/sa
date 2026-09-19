@@ -40,6 +40,8 @@ SELECT
     JOIN yahoo_all_symbols b
       ON a.ticker = b.ticker
     AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
+    WHERE 
+       percent IS NOT NULL
   ) w
 GROUP BY date, ticker;
 -- 2a. Query for daily scores (from daily aggregation)
