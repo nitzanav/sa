@@ -1,19 +1,17 @@
 /*
-creaet make command that takes the yahoo and google fiels and 
+
+task:
+creaet make command that takes the yahoo and google files of all symbols
+copy them to db
+drop the yahoo_all_symbols and google one
+do copy in psql
+
 
 export DATABASE_URL="postgresql://myuser:secret@mydb.xxxx.us-east-1.rds.amazonaws.com:5432/mydb?sslmode=require"
 
 psql "$DATABASE_URL" -c "\copy mytable (col1, col2, col3) FROM 'file.csv' CSV HEADER"
 
 */
-
-CREATE OR REPLACE VIEW yahoo_all_symbols_per_ticker_and_date_stats AS
-SELECT
-  AVG(sqrt(analyst_projections_count)) AS avg_sqrt_analist_count,
-  MIN(sqrt(analyst_projections_count)) AS min_sqrt_analist_count,
-  MAX(sqrt(analyst_projections_count)) AS max_sqrt_analist_count
-FROM yahoo_all_symbols_per_ticker_and_date;
-
 
 -- 1. Calculate signal score and basic stats overview
 -- 1a. View for daily aggregation by ticker and date
