@@ -2,7 +2,7 @@ import config from "../../common/config.js";
 import { formatCsv, readCsv } from "../../common/csv.js";
 import { logger } from "../../common/logger.js";
 import { writeTextFile } from "../../common/write_file.js";
-import { writeJsonFile } from "../../common/write_json.js";
+import { writeJsonFile } from "../../common/json_file.js";
 import { readSymbolsExchange } from "../../symbols-exchange/fetch_symbols_exchange.js";
 import { googleAnalystRecommendationSource } from "./google_analyst_recommendation.js";
 import {
