@@ -1,17 +1,10 @@
-/*
+CREATE OR REPLACE VIEW yahoo_all_symbols_per_ticker_and_date_stats AS
+SELECT
+  AVG(sqrt(analyst_projections_count)) AS avg_sqrt_analist_count,
+  MIN(sqrt(analyst_projections_count)) AS min_sqrt_analist_count,
+  MAX(sqrt(analyst_projections_count)) AS max_sqrt_analist_count
+FROM yahoo_all_symbols_per_ticker_and_date;
 
-task:
-creaet make command that takes the yahoo and google files of all symbols
-copy them to db
-truncate the yahoo_all_symbols and google one
-do copy in psql
-
-
-export DATABASE_URL="postgresql://myuser:secret@mydb.xxxx.us-east-1.rds.amazonaws.com:5432/mydb?sslmode=require"
-
-psql "$DATABASE_URL" -c "\copy mytable (col1, col2, col3) FROM 'file.csv' CSV HEADER"
-
-*/
 
 -- 1. Calculate signal score and basic stats overview
 -- 1a. View for daily aggregation by ticker and date
@@ -21,7 +14,8 @@ SELECT
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  STDDEV_POP(percent) AS std
+  STDDEV_POP(percent) AS std,
+  STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
 FROM yahoo_all_symbols
 GROUP BY date, ticker;
 
@@ -32,14 +26,13 @@ SELECT
   a.ticker,
   AVG(b.percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  STDDEV_POP(b.percent) AS std
-FROM
-  yahoo_all_symbols a
+  STDDEV_POP(b.percent) AS std,
+  STRING_AGG(b.analyst || ':' || b.percent::text, '|' ORDER BY b.analyst) AS analyst_percent_list
+FROM (SELECT DISTINCT ticker, date FROM yahoo_all_symbols) a
 JOIN yahoo_all_symbols b
   ON a.ticker = b.ticker
-  AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
+ AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
 GROUP BY a.date, a.ticker;
-
 -- 2a. Query for daily scores (from daily aggregation)
 CREATE OR REPLACE VIEW signal_score_daily AS
 SELECT
@@ -48,7 +41,8 @@ SELECT
   average_projected,
   analyst_projections_count,
   std,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score
+  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score,
+  analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date
 WHERE analyst_projections_count > 2
   AND average_projected > 0;
@@ -61,28 +55,31 @@ SELECT
   average_projected,
   analyst_projections_count,
   std,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score
+  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score,
+  analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date_7d_window
 WHERE analyst_projections_count > 1
   AND average_projected > 0;
 
 -- 3. Single signals table
+drop VIEW IF EXISTS signals;
+
 CREATE OR REPLACE VIEW signals AS
 SELECT
   u.*,
   PERCENT_RANK() OVER (
-    PARTITION BY signal_name, date
+    PARTITION BY signal_name
     ORDER BY signal_score ASC NULLS FIRST
   ) AS signal_percentile
 FROM (
-  SELECT 'daily' AS signal_name, date, ticker, average_projected, analyst_projections_count, std, signal_score
+  SELECT 'yahoo-daily' AS signal_name, *
   FROM signal_score_daily
   UNION ALL
-  SELECT '7d_window' AS signal_name, date, ticker, average_projected, analyst_projections_count, std, signal_score
+  SELECT 'yahoo-7d-window' AS signal_name, *
   FROM signal_score_7d_window
 ) u;
 
 -- Buy signals
 SELECT * FROM signals
-WHERE signal_percentile > 0.95
-ORDER BY date, signal_name, signal_percentile DESC;
+WHERE signal_percentile > 0.5
+ORDER BY signal_percentile DESC;
