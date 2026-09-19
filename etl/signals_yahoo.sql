@@ -7,32 +7,42 @@ FROM yahoo_all_symbols_per_ticker_and_date;
 
 
 -- 1. Calculate signal score and basic stats overview
--- 1a. View for daily aggregation by ticker and date
+-- 1a. Daily aggregation (MAD around the mean)
 CREATE OR REPLACE VIEW yahoo_all_symbols_per_ticker_and_date AS
 SELECT
   date,
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  STDDEV_POP(percent) AS std,
+  AVG(ABS(percent - mean_percent)) AS std,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
-FROM yahoo_all_symbols
+  FROM (
+    SELECT
+      date, ticker, analyst, percent,
+      AVG(percent) OVER (PARTITION BY date, ticker) AS mean_percent
+    FROM yahoo_all_symbols
+  ) s
 GROUP BY date, ticker;
 
--- 1b. View for 7-day rolling window, grouping by ticker and each date (window includes current and previous 6 days)
+-- 1b. 7-day rolling window (MAD around the window mean)
 CREATE OR REPLACE VIEW yahoo_all_symbols_per_ticker_and_date_7d_window AS
 SELECT
-  a.date,
-  a.ticker,
-  AVG(b.percent) AS average_projected,
+  date,
+  ticker,
+  AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  STDDEV_POP(b.percent) AS std,
-  STRING_AGG(b.analyst || ':' || b.percent::text, '|' ORDER BY b.analyst) AS analyst_percent_list
-FROM (SELECT DISTINCT ticker, date FROM yahoo_all_symbols) a
-JOIN yahoo_all_symbols b
-  ON a.ticker = b.ticker
- AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
-GROUP BY a.date, a.ticker;
+  AVG(ABS(percent - mean_percent)) AS std,
+  STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
+  FROM (
+    SELECT
+      a.date, a.ticker, b.analyst, b.percent,
+      AVG(b.percent) OVER (PARTITION BY a.date, a.ticker) AS mean_percent
+    FROM (SELECT DISTINCT ticker, date FROM yahoo_all_symbols) a
+    JOIN yahoo_all_symbols b
+      ON a.ticker = b.ticker
+    AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
+  ) w
+GROUP BY date, ticker;
 -- 2a. Query for daily scores (from daily aggregation)
 CREATE OR REPLACE VIEW signal_score_daily AS
 SELECT
@@ -81,5 +91,5 @@ FROM (
 
 -- Buy signals
 SELECT * FROM signals
-WHERE signal_percentile > 0.5
+WHERE signal_percentile > 0.5 and signal_name = 'yahoo-daily'
 ORDER BY signal_percentile DESC;
