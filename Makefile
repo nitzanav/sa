@@ -98,13 +98,7 @@ download_fortune_500:
 #   make db-copy-all-symbols
 db-copy-all-symbols:
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@echo "Truncating tables..."
-	@psql "$$DATABASE_URL" -f etl/truncate_all_symbols.sql
-	@echo "Copying Yahoo data..."
-	@psql "$$DATABASE_URL" -f etl/copy_yahoo_all_symbols.sql
-	@echo "Copying Google data..."
-	@psql "$$DATABASE_URL" -f etl/copy_google_all_symbols.sql
-	@echo "Done."
+	@psql "$$DATABASE_URL" -f etl/update_raw_signals.sql
 
 # ---------------------------------------------------------------------------
 # Backtests
