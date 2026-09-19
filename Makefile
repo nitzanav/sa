@@ -45,7 +45,7 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500 backtest
+        download_fortune_500 backtest import_tables
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -82,6 +82,9 @@ scrape_analyst_recommendations: symbols_exchange
 
 scrape_analyst_recommendations-test:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e
+
+import_tables:
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/common/import_table.js
 
 download_fortune_500:
 	@mkdir -p data/fortune_500

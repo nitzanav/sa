@@ -5,6 +5,7 @@ import config from "./config.js";
 const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
 
 test("config loads defaults", () => {
+  expect(config.DATABASE_URL).toBe("postgresql://nitzan@localhost:5432/sa");
   expect(config.logger).toEqual({ level: "info" });
   expect(config.retry).toEqual({
     enabled: true,

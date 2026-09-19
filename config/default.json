@@ -1,4 +1,5 @@
 {
+  "DATABASE_URL": "postgresql://nitzan@localhost:5432/sa",
   "logger": { "level": "info" },
   "retry": { "enabled": true, "initialDelay": 1000, "delayMultiple": 2, "maxAttempts": 5 },
   "cache": { "enabled": true, "ttl": 864000000 },
