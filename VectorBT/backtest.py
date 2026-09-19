@@ -2,12 +2,14 @@
 VectorBT simulations with shared portfolio machinery.
 
 1. Random SPY — 0.1% buy chance each day, 90-day hold
-2. Analyst 7d consensus — daily top score from
-   data/analyst_recomendation/google/all_symbols_per_date_and_symbol_7d_aggregation_window.csv
+2–5. Analyst consensus — daily top-N score from Google and Yahoo
+   all_symbols_per_date_and_symbol.csv and
+   all_symbols_per_date_and_symbol_7d_aggregation_window.csv
    score = average_projected * sqrt(analyst_projections_count)
    20% of starting capital per position, 90-day hold
 """
 
+from functools import partial
 from pathlib import Path
 
 import numpy as np
@@ -15,10 +17,11 @@ import pandas as pd
 import vectorbt as vbt
 
 ROOT = Path(__file__).resolve().parents[1]
-ANALYST_CSV = (
-    ROOT
-    / "data/analyst_recomendation/google"
-    / "all_symbols_per_date_and_symbol_7d_aggregation_window.csv"
+ANALYST_DIR = ROOT / "data/analyst_recomendation"
+ANALYST_SOURCES = ("google", "yahoo")
+ANALYST_CSVS = (
+    "all_symbols_per_date_and_symbol.csv",
+    "all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
 )
 
 INIT_CASH = 100_000.0
@@ -27,7 +30,7 @@ BUY_PROB = 0.001
 SEED = 42
 SPY_START = "2010-01-01"
 SPY_END = "2023-12-31"
-ANALYST_TOP_N = 1
+ANALYST_TOP_N = 10
 
 
 def download_close(symbols, start, end):
@@ -131,19 +134,24 @@ def entries_from_picks(close, picks):
     return entries.reindex(index=close.index, columns=close.columns, fill_value=False)
 
 
+def analyst_name(source, csv_name):
+    window = "7d" if "7d" in csv_name else "daily"
+    return f"Analyst {source} {window} top {ANALYST_TOP_N}"
+
+
 def run_random_spy():
     close = download_close("SPY", SPY_START, SPY_END)
     return simulate("Random SPY", close, random_entries(close))
 
 
-def run_analyst_7d():
-    recs = pd.read_csv(ANALYST_CSV)
+def run_analyst(source, csv_name):
+    recs = pd.read_csv(ANALYST_DIR / source / csv_name)
     picks = consensus_picks(recs)
     symbols = picks["symbol"].drop_duplicates().tolist()
     close = download_close(symbols, picks["date"].min(), None)
     entries = entries_from_picks(close, picks)
     return simulate(
-        "Analyst 7d consensus",
+        analyst_name(source, csv_name),
         close,
         entries,
         size=INIT_CASH * 0.2,
@@ -155,7 +163,11 @@ def run_analyst_7d():
 
 SIMULATIONS = (
     run_random_spy,
-    run_analyst_7d,
+    *(
+        partial(run_analyst, source, csv_name)
+        for source in ANALYST_SOURCES
+        for csv_name in ANALYST_CSVS
+    ),
 )
 
 
