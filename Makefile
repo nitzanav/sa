@@ -98,14 +98,12 @@ download_fortune_500:
 #   make db-copy-all-symbols
 db-copy-all-symbols:
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@echo "Truncating yahoo_all_symbols..."
-	@psql "$$DATABASE_URL" -c "TRUNCATE TABLE yahoo_all_symbols;"
-	@echo "Truncating google_all_symbols..."
-	@psql "$$DATABASE_URL" -c "TRUNCATE TABLE google_all_symbols;"
+	@echo "Truncating tables..."
+	@psql "$$DATABASE_URL" -f etl/truncate_all_symbols.sql
 	@echo "Copying Yahoo data..."
-	@psql "$$DATABASE_URL" -c "\copy yahoo_all_symbols (date, ticker, analyst, percent) FROM 'data/analyst_recomendation/yahoo/all_symbols.csv' CSV HEADER"
+	@psql "$$DATABASE_URL" -f etl/copy_yahoo_all_symbols.sql
 	@echo "Copying Google data..."
-	@psql "$$DATABASE_URL" -c "\copy google_all_symbols (date, ticker, analyst, percent) FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER"
+	@psql "$$DATABASE_URL" -f etl/copy_google_all_symbols.sql
 	@echo "Done."
 
 # ---------------------------------------------------------------------------
