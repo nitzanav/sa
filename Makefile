@@ -45,7 +45,7 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500 backtest
+        download_fortune_500 backtest db-copy-all-symbols
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -86,6 +86,19 @@ scrape_analyst_recommendations-test:
 download_fortune_500:
 	@mkdir -p data/fortune_500
 	@curl -fsSL https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv -o data/fortune_500/symbols.csv
+
+# ---------------------------------------------------------------------------
+# Database operations
+# ---------------------------------------------------------------------------
+
+# Copy Yahoo and Google all_symbols CSV files to database tables.
+# Requires DATABASE_URL environment variable to be set.
+# Example:
+#   export DATABASE_URL="postgresql://myuser:secret@mydb.xxxx.us-east-1.rds.amazonaws.com:5432/mydb?sslmode=require"
+#   make db-copy-all-symbols
+db-copy-all-symbols:
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
+	@psql "$$DATABASE_URL" -f etl/update_raw_signals.sql
 
 # ---------------------------------------------------------------------------
 # Backtests
