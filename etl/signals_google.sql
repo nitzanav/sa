@@ -1,10 +1,3 @@
-CREATE OR REPLACE VIEW yahoo_all_symbols_per_ticker_and_date_stats AS
-SELECT
-  AVG(sqrt(analyst_projections_count)) AS avg_sqrt_analist_count,
-  MIN(sqrt(analyst_projections_count)) AS min_sqrt_analist_count,
-  MAX(sqrt(analyst_projections_count)) AS max_sqrt_analist_count
-FROM yahoo_all_symbols_per_ticker_and_date;
-
 
 -- 1. Calculate signal score and basic stats overview
 -- 1a. Daily aggregation (MAD around the mean)
@@ -14,7 +7,7 @@ SELECT
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  AVG(ABS(percent - mean_percent)) / ABS(mean_percent) AS MAD,
+  AVG(ABS(percent - mean_percent)) / ABS(AVG(mean_percent)) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
@@ -31,7 +24,7 @@ SELECT
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  AVG(ABS(percent - mean_percent)) / ABS(mean_percent) AS MAD,
+  AVG(ABS(percent - mean_percent)) / ABS(AVG(mean_percent)) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
@@ -41,6 +34,8 @@ SELECT
     JOIN yahoo_all_symbols b
       ON a.ticker = b.ticker
     AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
+    WHERE 
+       percent IS NOT NULL
   ) w
 GROUP BY date, ticker;
 -- 2a. Query for daily scores (from daily aggregation)
@@ -51,11 +46,11 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(MAD, 0) AS signal_score,
+  average_projected * sqrt(analyst_projections_count) * (1 - NULLIF(MAD, 0)) AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date
-WHERE analyst_projections_count > 2
-  AND average_projected > 0;
+WHERE 
+  average_projected > 0;
 
 -- 2b. Query for 7d window scores (from 7d window aggregation)
 CREATE OR REPLACE VIEW signal_score_7d_window AS
@@ -65,15 +60,13 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(MAD, 0) AS signal_score,
+  average_projected * sqrt(analyst_projections_count) * (1 - NULLIF(MAD, 0))  AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date_7d_window
-WHERE analyst_projections_count > 1
-  AND average_projected > 0;
+WHERE 
+  average_projected > 0;
 
 -- 3. Single signals table
-drop VIEW IF EXISTS signals;
-
 CREATE OR REPLACE VIEW signals AS
 SELECT
   u.*,
@@ -91,5 +84,8 @@ FROM (
 
 -- Buy signals
 SELECT * FROM signals
-WHERE signal_percentile > 0.5 and signal_name = 'yahoo-daily'
+WHERE signal_percentile > 0.5 and signal_name = 'yahoo-daily' and ticker='TSLA'
 ORDER BY signal_percentile DESC;
+SELECT * FROM yahoo_all_symbols
+WHERE  ticker ='TSLA'
+ORDER BY date DESC;
