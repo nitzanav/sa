@@ -3,7 +3,7 @@
 task:
 creaet make command that takes the yahoo and google files of all symbols
 copy them to db
-drop the yahoo_all_symbols and google one
+truncate the yahoo_all_symbols and google one
 do copy in psql
 
 
