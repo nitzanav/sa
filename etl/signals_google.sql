@@ -14,7 +14,7 @@ SELECT
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  AVG(ABS(percent - mean_percent)) AS std,
+  AVG(ABS(percent - mean_percent)) / ABS(mean_percent) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
@@ -31,7 +31,7 @@ SELECT
   ticker,
   AVG(percent) AS average_projected,
   COUNT(*) AS analyst_projections_count,
-  AVG(ABS(percent - mean_percent)) AS std,
+  AVG(ABS(percent - mean_percent)) / ABS(mean_percent) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
@@ -50,8 +50,8 @@ SELECT
   ticker,
   average_projected,
   analyst_projections_count,
-  std,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score,
+  MAD,
+  average_projected * sqrt(analyst_projections_count) / NULLIF(MAD, 0) AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date
 WHERE analyst_projections_count > 2
@@ -64,8 +64,8 @@ SELECT
   ticker,
   average_projected,
   analyst_projections_count,
-  std,
-  average_projected * sqrt(analyst_projections_count) / NULLIF(std / ABS(average_projected), 0) AS signal_score,
+  MAD,
+  average_projected * sqrt(analyst_projections_count) / NULLIF(MAD, 0) AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date_7d_window
 WHERE analyst_projections_count > 1
