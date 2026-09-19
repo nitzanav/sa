@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+4.7%",
+    "date": "04/09/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+19%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+52.2%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+21.5%",
+    "date": "07/03/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+22.4%",
+    "date": "03/03/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+27.8%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$412.00",
+    "projected": "+26.8%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+8.7%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+18.5%",
+    "date": "01/23/2026"
+  },
+  {
+    "analyst": "B. Riley Securities",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+5%",
+    "date": "08/14/2026"
+  }
+]

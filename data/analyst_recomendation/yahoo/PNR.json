@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "-2.3%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+11%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+27.9%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+38.1%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+48.2%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+27.6%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": null,
+    "date": "10/23/2025"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "-3.6%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+0.1%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+16.3%",
+    "date": "01/16/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+45.8%",
+    "date": "03/31/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+22%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Seaport Global",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+13.5%",
+    "date": "07/16/2026"
+  }
+]

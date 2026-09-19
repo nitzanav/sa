@@ -1,0 +1,83 @@
+[
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+11.2%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+4.1%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+12.4%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": null,
+    "date": "12/25/2025"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+6.7%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+2.1%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": null,
+    "date": "12/19/2025"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+6%",
+    "date": "09/05/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+10.2%",
+    "date": "06/18/2026"
+  }
+]

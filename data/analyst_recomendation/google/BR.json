@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "Daniel Perlin",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$226.00",
+    "projected": "+38.1%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+10%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Peter Heckmann",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$214.00",
+    "projected": "+30.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$176.00",
+    "projected": "+7.5%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Puneet Jain",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$191.00",
+    "projected": "+16.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Kyle Peterson",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$230.00",
+    "projected": "+40.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Patrick O'Shaughnessy",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$257.00",
+    "projected": "+57%",
+    "date": "02/03/2026"
+  }
+]

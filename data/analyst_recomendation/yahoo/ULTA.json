@@ -1,0 +1,200 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$631.00",
+    "projected": "+31.8%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$625.00",
+    "projected": "+14.7%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+46.3%",
+    "date": "06/04/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$710.00",
+    "projected": "+31%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$731.00",
+    "projected": "+52.7%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Telsey Advisory Group",
+    "firm": "Telsey Advisory Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$715.00",
+    "projected": "+26.3%",
+    "date": "03/14/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$790.00",
+    "projected": "+15.7%",
+    "date": "01/22/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$650.00",
+    "projected": "+14.8%",
+    "date": "03/13/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$645.00",
+    "projected": "+19%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$635.00",
+    "projected": "+32.6%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$667.00",
+    "projected": "+23.1%",
+    "date": "08/29/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$695.00",
+    "projected": "+30.2%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "-3%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$630.00",
+    "projected": "+31.6%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+15.5%",
+    "date": "01/03/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+25.3%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+7%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+25.2%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$650.00",
+    "projected": "+19.9%",
+    "date": "08/29/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+29.4%",
+    "date": "06/09/2026"
+  },
+  {
+    "analyst": "B. Riley Securities",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+4.4%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+7.9%",
+    "date": "09/10/2026"
+  }
+]

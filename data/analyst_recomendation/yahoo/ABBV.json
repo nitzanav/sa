@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+17.5%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+5.8%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+15.5%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+3.6%",
+    "date": "07/11/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$288.00",
+    "projected": "+16.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+18.1%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$303.00",
+    "projected": "+14%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": null,
+    "date": "10/17/2025"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+25.4%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$296.00",
+    "projected": "+20%",
+    "date": "08/04/2026"
+  }
+]

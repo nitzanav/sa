@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "02/27/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": null,
+    "date": "10/01/2025"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/27/2025"
+  },
+  {
+    "analyst": "Barrington Research",
+    "firm": "Barrington Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "12/05/2025"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "02/27/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/07/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+11.8%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$29.00",
+    "projected": "+3.3%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$13.00",
+    "projected": null,
+    "date": "09/30/2025"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+14.4%",
+    "date": "05/08/2026"
+  }
+]

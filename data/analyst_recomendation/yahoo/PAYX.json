@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "-5.1%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+9.1%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+34%",
+    "date": "03/27/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+1.7%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+1.7%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+26%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+8.1%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+11.7%",
+    "date": "03/20/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+11.5%",
+    "date": "03/13/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+11.1%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "-1.3%",
+    "date": "08/13/2026"
+  }
+]

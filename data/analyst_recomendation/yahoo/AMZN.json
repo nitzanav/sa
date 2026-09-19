@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+17%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$298.00",
+    "projected": "+16.8%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Telsey Advisory Group",
+    "firm": "Telsey Advisory Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$335.00",
+    "projected": "+26.4%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+13.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+5.8%",
+    "date": "04/25/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+20.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+32.1%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": null,
+    "date": "10/03/2025"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+20.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+20.8%",
+    "date": "08/01/2026"
+  }
+]

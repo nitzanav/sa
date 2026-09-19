@@ -1,0 +1,38 @@
+[
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1196.00",
+    "projected": "+5%",
+    "date": "01/27/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2225.00",
+    "projected": "+28.2%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2100.00",
+    "projected": "+24.3%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2110.00",
+    "projected": "+26.7%",
+    "date": "07/28/2026"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$193.00",
+    "projected": "+11.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+5.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "+13.5%",
+    "date": "07/16/2026"
+  }
+]

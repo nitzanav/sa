@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$485.00",
+    "projected": "+17.2%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": null,
+    "date": "10/18/2025"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$445.00",
+    "projected": "+6.2%",
+    "date": "05/07/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$520.00",
+    "projected": "+24.6%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$480.00",
+    "projected": "+14.6%",
+    "date": "05/07/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": "+8.2%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+16.5%",
+    "date": "01/16/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": "+21.6%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$512.00",
+    "projected": "+23.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "+17.6%",
+    "date": "03/17/2026"
+  }
+]

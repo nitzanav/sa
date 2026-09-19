@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+19.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+36.5%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+84.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+9.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+8.8%",
+    "date": "06/29/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "-10.7%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+16%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+10.4%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+21.5%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+7.1%",
+    "date": "06/25/2026"
+  }
+]

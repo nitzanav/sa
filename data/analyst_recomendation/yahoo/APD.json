@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$329.00",
+    "projected": "+10.5%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+9.2%",
+    "date": "04/14/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+15.8%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+18.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$303.00",
+    "projected": "+2.3%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+8.6%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+21%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+10.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+16.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/12/2026"
+  }
+]

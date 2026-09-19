@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$143.00",
+    "projected": null,
+    "date": "12/05/2025"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+10.1%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": null,
+    "date": "12/05/2025"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+6.2%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$166.00",
+    "projected": null,
+    "date": "12/16/2025"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+15.8%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$141.00",
+    "projected": "+12.6%",
+    "date": "08/29/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+7.8%",
+    "date": "08/29/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "-1.8%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$151.00",
+    "projected": "+18%",
+    "date": "09/09/2026"
+  }
+]

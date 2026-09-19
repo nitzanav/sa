@@ -1,0 +1,146 @@
+[
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+36.5%",
+    "date": "07/25/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+4.1%",
+    "date": "03/17/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+62.6%",
+    "date": "07/25/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+51%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+24.9%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+23.7%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+45.2%",
+    "date": "07/25/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$251.00",
+    "projected": null,
+    "date": "12/12/2025"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/15/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+18.4%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$169.00",
+    "projected": "-1.8%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+20.5%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+31.5%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": null,
+    "date": "11/11/2025"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+39.1%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$243.00",
+    "projected": "+28%",
+    "date": "07/16/2026"
+  }
+]

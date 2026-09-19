@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+26.7%",
+    "date": "04/01/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+10%",
+    "date": "07/18/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$218.00",
+    "projected": "+26.7%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "-22.8%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+5.4%",
+    "date": "01/22/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "-15.7%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+6.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+9.5%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+5.3%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$181.00",
+    "projected": "+15.2%",
+    "date": "01/21/2026"
+  }
+]

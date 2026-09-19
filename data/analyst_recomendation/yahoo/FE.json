@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+7.7%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+5.1%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/16/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": "+12.8%",
+    "date": "01/20/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "+11.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+8.6%",
+    "date": "03/12/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": null,
+    "date": "10/25/2025"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": null,
+    "date": "10/09/2025"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+9.3%",
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+13.4%",
+    "date": "02/19/2026"
+  }
+]

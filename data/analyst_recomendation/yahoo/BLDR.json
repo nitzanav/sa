@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+11.3%",
+    "date": "04/27/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+33.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+23.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+43.8%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+36.9%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+5.2%",
+    "date": "05/02/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-1.3%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": null,
+    "date": "12/15/2025"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+10.4%",
+    "date": "02/19/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+14.9%",
+    "date": "07/28/2026"
+  }
+]

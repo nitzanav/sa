@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": null,
+    "date": "10/21/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+25%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+25%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$211.00",
+    "projected": "+34.2%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$146.00",
+    "projected": "+15.9%",
+    "date": "01/30/2026"
+  },
+  {
+    "analyst": "Telsey Advisory Group",
+    "firm": "Telsey Advisory Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+8.8%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+15.4%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "12/11/2025"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+3.3%",
+    "date": "01/15/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+44.6%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+19.4%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+36.8%",
+    "date": "08/15/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$159.00",
+    "projected": "+24.3%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$232.00",
+    "projected": "+81.3%",
+    "date": "08/14/2026"
+  }
+]

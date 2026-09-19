@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+23.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$403.00",
+    "projected": "+19.8%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$411.00",
+    "projected": "+23.7%",
+    "date": "01/30/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+13.4%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+21.6%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+15.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+20.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Macquarie",
+    "firm": "Macquarie",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+26.2%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$466.00",
+    "projected": "+22.7%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": null,
+    "date": "10/23/2025"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "+20.4%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$432.00",
+    "projected": "+18.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$427.00",
+    "projected": "+19.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$406.00",
+    "projected": "+9.1%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$408.00",
+    "projected": null,
+    "date": "10/29/2025"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$382.00",
+    "projected": null,
+    "date": "12/11/2025"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+4%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$445.00",
+    "projected": "+23%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+17.6%",
+    "date": "07/29/2026"
+  }
+]

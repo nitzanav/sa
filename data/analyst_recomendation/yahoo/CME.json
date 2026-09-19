@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+20%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": null,
+    "date": "09/26/2025"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "-0.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$292.00",
+    "projected": "+4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+9.7%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+31.8%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "-8.1%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+12.2%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+38.7%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$302.00",
+    "projected": "+1.7%",
+    "date": "02/05/2026"
+  }
+]

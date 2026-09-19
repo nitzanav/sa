@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$38.50",
+    "projected": null,
+    "date": "11/08/2025"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+2%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.50",
+    "projected": "+7.1%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+6.6%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.50",
+    "projected": "+2.6%",
+    "date": "06/13/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.50",
+    "projected": "+10.7%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.50",
+    "projected": "+12%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.50",
+    "projected": "+15.7%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.50",
+    "projected": "+15.5%",
+    "date": "06/02/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.50",
+    "projected": "+7.7%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$41.50",
+    "projected": "-1.8%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.50",
+    "projected": "+12%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.50",
+    "projected": "-1.1%",
+    "date": "07/21/2026"
+  }
+]

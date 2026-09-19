@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+10%",
+    "date": "08/22/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+58.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+20.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+22.3%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+49.2%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+17.6%",
+    "date": "06/30/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+24%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+16.5%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+20.3%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+24.1%",
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$397.00",
+    "projected": "+14.1%",
+    "date": "07/30/2026"
+  }
+]

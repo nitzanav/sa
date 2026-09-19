@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": null,
+    "date": "12/10/2025"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$565.00",
+    "projected": "+15.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+13.9%",
+    "date": "01/24/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$595.00",
+    "projected": "+22%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+16.7%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "HC Wainwright & Co.",
+    "firm": "HC Wainwright & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$641.00",
+    "projected": "+28.7%",
+    "date": "03/11/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$585.00",
+    "projected": "+21.3%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$598.00",
+    "projected": "+24%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$585.00",
+    "projected": "+20.3%",
+    "date": "07/13/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$560.00",
+    "projected": "+7.3%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+16.5%",
+    "date": "03/11/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$617.00",
+    "projected": "+25.7%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$572.00",
+    "projected": "+32.4%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "-33.1%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+24.4%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "Maxim Group",
+    "firm": "Maxim Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$575.00",
+    "projected": "+24.2%",
+    "date": "03/18/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$665.00",
+    "projected": "+19%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$466.00",
+    "projected": "-1.2%",
+    "date": "02/13/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$442.00",
+    "projected": "-9.3%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$570.00",
+    "projected": "+7.5%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$558.00",
+    "projected": "+18.3%",
+    "date": "02/13/2026"
+  }
+]

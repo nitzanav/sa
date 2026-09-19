@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+8.3%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$558.00",
+    "projected": "+13.4%",
+    "date": "01/29/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+20.9%",
+    "date": "04/27/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+25.3%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$387.00",
+    "projected": "-2.3%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$495.00",
+    "projected": "+24.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+13.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$590.00",
+    "projected": "+18.1%",
+    "date": "01/28/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$579.00",
+    "projected": "+50.9%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$431.00",
+    "projected": "+15.4%",
+    "date": "06/22/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$485.00",
+    "projected": "+22.4%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$393.00",
+    "projected": "-0.8%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+5.4%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$485.00",
+    "projected": "+22.4%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$560.00",
+    "projected": "+8.9%",
+    "date": "02/06/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "-0.9%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+9.8%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$413.00",
+    "projected": "+13.1%",
+    "date": "06/04/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": null,
+    "date": "10/27/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$381.00",
+    "projected": "-5.2%",
+    "date": "08/04/2026"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$164.00",
+    "projected": "+21.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$162.00",
+    "projected": "+21.7%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "-0.2%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$157.00",
+    "projected": "+16.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+3.8%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2025"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+8.1%",
+    "date": "07/03/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": null,
+    "date": "10/23/2025"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+22.3%",
+    "date": "09/10/2026"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+3.7%",
+    "date": "07/03/2026"
+  },
+  {
+    "analyst": "Janney Montgomery Scott",
+    "firm": "Janney Montgomery Scott",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": null,
+    "date": "11/25/2025"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+3.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+9.5%",
+    "date": "03/27/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+1.4%",
+    "date": "03/12/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "-2.3%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+7.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "-6.7%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+8%",
+    "date": "03/27/2026"
+  }
+]

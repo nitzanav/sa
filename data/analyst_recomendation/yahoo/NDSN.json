@@ -1,0 +1,38 @@
+[
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$370.00",
+    "projected": "+9.5%",
+    "date": "08/22/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+13.1%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+6.5%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$351.00",
+    "projected": "+3.8%",
+    "date": "08/22/2026"
+  }
+]

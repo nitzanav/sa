@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$316.00",
+    "projected": "+23.6%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+9.3%",
+    "date": "01/06/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$291.00",
+    "projected": "+14.4%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$282.00",
+    "projected": "+10.3%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+11.4%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+4.6%",
+    "date": "07/11/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+16%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "01/28/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$261.00",
+    "projected": "+2.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+8.7%",
+    "date": "08/07/2026"
+  }
+]

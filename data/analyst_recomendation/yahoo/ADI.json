@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+15.8%",
+    "date": "02/20/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$675.00",
+    "projected": "+79.4%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$498.00",
+    "projected": "+22.3%",
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+32.1%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$474.00",
+    "projected": "+19.5%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$460.00",
+    "projected": "+18.2%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+15.8%",
+    "date": "02/20/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+7.7%",
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+19.8%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$460.00",
+    "projected": "+16%",
+    "date": "05/21/2026"
+  }
+]

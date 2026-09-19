@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+11.4%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+27.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+34.2%",
+    "date": "02/12/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": "+20.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+14.5%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+2.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+32.1%",
+    "date": "05/11/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+1.2%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+19%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+18.4%",
+    "date": "08/12/2026"
+  }
+]

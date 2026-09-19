@@ -1,0 +1,47 @@
+[
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "+17%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+23.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+11.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+9.8%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+9.5%",
+    "date": "07/31/2026"
+  }
+]

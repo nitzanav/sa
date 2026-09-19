@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$199.00",
+    "projected": "+28.2%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$209.00",
+    "projected": "+27.6%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$198.00",
+    "projected": "+18.2%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+30.8%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$196.00",
+    "projected": "+23.3%",
+    "date": "02/18/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+4.1%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+12.6%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": null,
+    "date": "12/09/2025"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+9%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+3.6%",
+    "date": "02/06/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": null,
+    "date": "12/15/2025"
+  }
+]

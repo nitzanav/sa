@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+7.6%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$157.00",
+    "projected": "+11.3%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+17.7%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$156.00",
+    "projected": "+7.2%",
+    "date": "06/17/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": null,
+    "date": "12/06/2025"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+8.2%",
+    "date": "03/23/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+20.1%",
+    "date": "07/11/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$163.00",
+    "projected": "+13.8%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$148.00",
+    "projected": "+2%",
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$158.00",
+    "projected": "+6.3%",
+    "date": "08/18/2026"
+  }
+]

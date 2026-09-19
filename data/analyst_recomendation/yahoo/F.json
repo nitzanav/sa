@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$11.00",
+    "projected": "-21%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+9.2%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+13.4%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+18.5%",
+    "date": "05/29/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": null,
+    "date": "12/22/2025"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+17%",
+    "date": "05/13/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+28.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.50",
+    "projected": "+18.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+2.7%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$15.00",
+    "projected": "-3.7%",
+    "date": "07/29/2026"
+  }
+]

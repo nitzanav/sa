@@ -1,0 +1,56 @@
+[
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1375.00",
+    "projected": "+5.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$1185.00",
+    "projected": "-8.6%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1400.00",
+    "projected": "+6.6%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1428.00",
+    "projected": "+9.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1355.00",
+    "projected": "-1.1%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1165.00",
+    "projected": "-2.5%",
+    "date": "02/07/2026"
+  }
+]

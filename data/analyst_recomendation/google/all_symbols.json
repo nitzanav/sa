@@ -1,9 +1,285 @@
 [
   {
+    "date": "2026-02-03",
+    "ticker": "AES",
+    "analyst": "Julien Dumoulin Smith",
+    "percent": 7.7
+  },
+  {
+    "date": "2026-02-09",
+    "ticker": "ADBE",
+    "analyst": "Ben Reitzes",
+    "percent": 8.7
+  },
+  {
+    "date": "2026-02-20",
+    "ticker": "AES",
+    "analyst": "David Arcaro",
+    "percent": 54.8
+  },
+  {
+    "date": "2026-02-20",
+    "ticker": "AES",
+    "analyst": "Lilyanna Yang",
+    "percent": 7.7
+  },
+  {
+    "date": "2026-02-25",
+    "ticker": "ABBV",
+    "analyst": "Nico Chen",
+    "percent": -13
+  },
+  {
+    "date": "2026-02-25",
+    "ticker": "AFL",
+    "analyst": "Elyse Greenspan",
+    "percent": 1.9
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "AES",
+    "analyst": "Angie Storozynski",
+    "percent": null
+  },
+  {
+    "date": "2026-03-03",
+    "ticker": "AES",
+    "analyst": "Anthony Crowdell",
+    "percent": 1
+  },
+  {
+    "date": "2026-03-05",
+    "ticker": "AES",
+    "analyst": "Nicholas Amicucci",
+    "percent": 1
+  },
+  {
+    "date": "2026-03-05",
+    "ticker": "AFL",
+    "analyst": "Jimmy Bhullar",
+    "percent": null
+  },
+  {
+    "date": "2026-03-12",
+    "ticker": "ADBE",
+    "analyst": "Bradley Sills",
+    "percent": 85.1
+  },
+  {
+    "date": "2026-03-13",
+    "ticker": "ADBE",
+    "analyst": "Brad Zelnick",
+    "percent": 24.8
+  },
+  {
+    "date": "2026-03-16",
+    "ticker": "ADBE",
+    "analyst": "Joseph Bonner",
+    "percent": null
+  },
+  {
+    "date": "2026-03-19",
+    "ticker": "ACN",
+    "analyst": "Arun Viswanathan",
+    "percent": 37.9
+  },
+  {
+    "date": "2026-03-19",
+    "ticker": "AFL",
+    "analyst": "Wilma Burdis",
+    "percent": 2.8
+  },
+  {
+    "date": "2026-03-20",
+    "ticker": "ACN",
+    "analyst": "Jim Kelleher",
+    "percent": 82.6
+  },
+  {
+    "date": "2026-03-20",
+    "ticker": "ACN",
+    "analyst": "Phani Kanumuri",
+    "percent": 19.9
+  },
+  {
+    "date": "2026-03-26",
+    "ticker": "A",
+    "analyst": "Jack Meehan",
+    "percent": -7.3
+  },
+  {
+    "date": "2026-03-26",
+    "ticker": "AES",
+    "analyst": "John Eade",
+    "percent": null
+  },
+  {
+    "date": "2026-04-01",
+    "ticker": "ABT",
+    "analyst": "Unknown Analyst",
+    "percent": null
+  },
+  {
+    "date": "2026-04-09",
+    "ticker": "ABT",
+    "analyst": "Unknown Analyst",
+    "percent": 18.6
+  },
+  {
+    "date": "2026-04-17",
+    "ticker": "ABT",
+    "analyst": "Bruce Jackson",
+    "percent": 17.7
+  },
+  {
+    "date": "2026-04-17",
+    "ticker": "ABT",
+    "analyst": "Rick Wise",
+    "percent": 17.7
+  },
+  {
+    "date": "2026-04-17",
+    "ticker": "ABT",
+    "analyst": "Suraj Kalia",
+    "percent": 12.8
+  },
+  {
+    "date": "2026-04-20",
+    "ticker": "ABBV",
+    "analyst": "Unknown Analyst",
+    "percent": -0.8
+  },
+  {
+    "date": "2026-04-20",
+    "ticker": "ABT",
+    "analyst": "Anthony Petrone",
+    "percent": 12.8
+  },
+  {
+    "date": "2026-04-20",
+    "ticker": "ABT",
+    "analyst": "Matt Miksic",
+    "percent": 40.2
+  },
+  {
+    "date": "2026-04-21",
+    "ticker": "ABT",
+    "analyst": "Narumi Nakagiri",
+    "percent": -9.8
+  },
+  {
+    "date": "2026-04-28",
+    "ticker": "AMD",
+    "analyst": "Ross Seymore",
+    "percent": -54.5
+  },
+  {
+    "date": "2026-04-30",
+    "ticker": "AFL",
+    "analyst": "Thomas Gallagher",
+    "percent": -5.9
+  },
+  {
+    "date": "2026-05-01",
+    "ticker": "AOS",
+    "analyst": "Michael Halloran",
+    "percent": 23.4
+  },
+  {
+    "date": "2026-05-04",
+    "ticker": "AMD",
+    "analyst": "Frank Lee CFA",
+    "percent": -38.1
+  },
+  {
+    "date": "2026-05-06",
+    "ticker": "AMD",
+    "analyst": "Jay Goldberg",
+    "percent": -21.7
+  },
+  {
+    "date": "2026-05-06",
+    "ticker": "AMD",
+    "analyst": "Suji Desilva",
+    "percent": -9
+  },
+  {
+    "date": "2026-05-07",
+    "ticker": "AES",
+    "analyst": "Nicholas Campanella",
+    "percent": 7.7
+  },
+  {
+    "date": "2026-05-12",
+    "ticker": "AMD",
+    "analyst": "Louis Miscioscia",
+    "percent": -9
+  },
+  {
+    "date": "2026-05-13",
+    "ticker": "ABBV",
+    "analyst": "Jasper Hellweg",
+    "percent": -5.4
+  },
+  {
+    "date": "2026-05-18",
+    "ticker": "AMD",
+    "analyst": "Ben Reitzes",
+    "percent": -1.7
+  },
+  {
+    "date": "2026-05-21",
+    "ticker": "AFL",
+    "analyst": "Bob Huang",
+    "percent": 8
+  },
+  {
+    "date": "2026-05-26",
+    "ticker": "A",
+    "analyst": "Catherine Ramsey Schulte",
+    "percent": -0.3
+  },
+  {
+    "date": "2026-05-26",
+    "ticker": "AFL",
+    "analyst": "John Barnidge",
+    "percent": 12.3
+  },
+  {
+    "date": "2026-05-28",
+    "ticker": "A",
+    "analyst": "Brandon Couillard",
+    "percent": 2.2
+  },
+  {
     "date": "2026-05-29",
     "ticker": "MMM",
     "analyst": "Julian Mitchell",
     "percent": 12.9
+  },
+  {
+    "date": "2026-05-31",
+    "ticker": "ABT",
+    "analyst": "David Roman",
+    "percent": 10.8
+  },
+  {
+    "date": "2026-06-01",
+    "ticker": "A",
+    "analyst": "Michael Polark",
+    "percent": -13.7
+  },
+  {
+    "date": "2026-06-03",
+    "ticker": "A",
+    "analyst": "Sidharth Sahoo",
+    "percent": 5.4
+  },
+  {
+    "date": "2026-06-10",
+    "ticker": "AOS",
+    "analyst": "Bryan Blair",
+    "percent": 32.2
   },
   {
     "date": "2026-06-10",
@@ -12,10 +288,292 @@
     "percent": 0.7
   },
   {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Alex Zukin",
+    "percent": -24.5
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Andrew Sherman",
+    "percent": -1.4
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Arti Vula",
+    "percent": 36.8
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Brian Schwartz",
+    "percent": null
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Egor Tolmachev",
+    "percent": 0.6
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Elizabeth Porter",
+    "percent": 46.9
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Gregg Moskowitz",
+    "percent": -1.4
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Keith Weiss",
+    "percent": 46.9
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Mark Murphy",
+    "percent": 36.8
+  },
+  {
+    "date": "2026-06-12",
+    "ticker": "ADBE",
+    "analyst": "Nick Altmann",
+    "percent": null
+  },
+  {
+    "date": "2026-06-15",
+    "ticker": "ACN",
+    "analyst": "Surinder Thind",
+    "percent": 0.9
+  },
+  {
+    "date": "2026-06-16",
+    "ticker": "ACN",
+    "analyst": "Meha Pau",
+    "percent": 19.9
+  },
+  {
+    "date": "2026-06-17",
+    "ticker": "ADBE",
+    "analyst": "Dan Bergstrom",
+    "percent": 14.7
+  },
+  {
+    "date": "2026-06-17",
+    "ticker": "ADBE",
+    "analyst": "Paul Chew",
+    "percent": 55
+  },
+  {
+    "date": "2026-06-17",
+    "ticker": "AMD",
+    "analyst": "David Dai CFA",
+    "percent": 9.2
+  },
+  {
+    "date": "2026-06-18",
+    "ticker": "ACN",
+    "analyst": "Amit Daryanani",
+    "percent": -1.9
+  },
+  {
+    "date": "2026-06-18",
+    "ticker": "ACN",
+    "analyst": "David Koning",
+    "percent": 3.6
+  },
+  {
+    "date": "2026-06-19",
+    "ticker": "ACN",
+    "analyst": "Keith Bachman",
+    "percent": -18.2
+  },
+  {
+    "date": "2026-06-20",
+    "ticker": "ACN",
+    "analyst": "Maggie Nolan",
+    "percent": null
+  },
+  {
+    "date": "2026-06-21",
+    "ticker": "ACN",
+    "analyst": "David Grossman",
+    "percent": 22.7
+  },
+  {
+    "date": "2026-06-21",
+    "ticker": "ACN",
+    "analyst": "Tien Tsin Huang",
+    "percent": -2.4
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "Arvind Ramnani",
+    "percent": -18.2
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "Dan Dolev",
+    "percent": 23.2
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "Daniel Perlin",
+    "percent": -4.6
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "David Paige",
+    "percent": -4.6
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "Kevin Mcveigh",
+    "percent": 49.9
+  },
+  {
+    "date": "2026-06-22",
+    "ticker": "ACN",
+    "analyst": "Sean Kennedy",
+    "percent": 23.2
+  },
+  {
+    "date": "2026-06-23",
+    "ticker": "ABBV",
+    "analyst": "Nicholas Lorusso",
+    "percent": 6
+  },
+  {
+    "date": "2026-06-23",
+    "ticker": "ABBV",
+    "analyst": "Tyler Van Buren",
+    "percent": 6
+  },
+  {
+    "date": "2026-06-29",
+    "ticker": "ABT",
+    "analyst": "Unknown Analyst",
+    "percent": 7.9
+  },
+  {
+    "date": "2026-06-30",
+    "ticker": "ABT",
+    "analyst": "David Rescott",
+    "percent": 18.6
+  },
+  {
     "date": "2026-07-01",
     "ticker": "MMM",
     "analyst": "Unknown Analyst",
     "percent": -20
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "ADBE",
+    "analyst": "Stephen Bersey",
+    "percent": 24
+  },
+  {
+    "date": "2026-07-06",
+    "ticker": "ABT",
+    "analyst": "Vijay Kumar",
+    "percent": 9.8
+  },
+  {
+    "date": "2026-07-08",
+    "ticker": "AFL",
+    "analyst": "Michael Ward CFA",
+    "percent": 7.1
+  },
+  {
+    "date": "2026-07-09",
+    "ticker": "ABBV",
+    "analyst": "Chris Schott",
+    "percent": 6
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "ABBV",
+    "analyst": "Michael Harvey",
+    "percent": 6
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "ABBV",
+    "analyst": "Tim Anderson",
+    "percent": 4.5
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "AES",
+    "analyst": "Charles Minervino",
+    "percent": 1
+  },
+  {
+    "date": "2026-07-10",
+    "ticker": "AFL",
+    "analyst": "Suneet Kamath",
+    "percent": -6.7
+  },
+  {
+    "date": "2026-07-13",
+    "ticker": "ABBV",
+    "analyst": "Michael Yee",
+    "percent": -1.6
+  },
+  {
+    "date": "2026-07-14",
+    "ticker": "ACN",
+    "analyst": "James Friedman",
+    "percent": -23.7
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "ACN",
+    "analyst": "Sachin Mittal",
+    "percent": -27.5
+  },
+  {
+    "date": "2026-07-16",
+    "ticker": "ABT",
+    "analyst": "Shagun Singh Chadha",
+    "percent": 27.5
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "ABT",
+    "analyst": "Jayson Bedford",
+    "percent": null
+  },
+  {
+    "date": "2026-07-17",
+    "ticker": "ABT",
+    "analyst": "Unknown Analyst",
+    "percent": 32.4
+  },
+  {
+    "date": "2026-07-20",
+    "ticker": "ADBE",
+    "analyst": "Bhavtosh Vajpayee",
+    "percent": 20.7
+  },
+  {
+    "date": "2026-07-21",
+    "ticker": "ABBV",
+    "analyst": "Asad Haider",
+    "percent": -7.7
   },
   {
     "date": "2026-07-21",
@@ -28,6 +586,18 @@
     "ticker": "MMM",
     "analyst": "Nigel Coe",
     "percent": 22.7
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "ABBV",
+    "analyst": "Courtney Breen",
+    "percent": -14.9
+  },
+  {
+    "date": "2026-07-22",
+    "ticker": "AFL",
+    "analyst": "Andrew Kligerman",
+    "percent": -5
   },
   {
     "date": "2026-07-22",
@@ -49,6 +619,18 @@
   },
   {
     "date": "2026-07-28",
+    "ticker": "ABT",
+    "analyst": "Danielle Antalffy",
+    "percent": 22.6
+  },
+  {
+    "date": "2026-07-28",
+    "ticker": "ABT",
+    "analyst": "Patrick Wood",
+    "percent": 22.6
+  },
+  {
+    "date": "2026-07-28",
     "ticker": "MMM",
     "analyst": "Brett Linzey",
     "percent": 9.9
@@ -60,10 +642,262 @@
     "percent": 25.1
   },
   {
+    "date": "2026-07-31",
+    "ticker": "ABBV",
+    "analyst": "Carter Gould",
+    "percent": 7.9
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "ABBV",
+    "analyst": "Matt Phipps",
+    "percent": null
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "AOS",
+    "analyst": "Andrew Kaplowitz",
+    "percent": 12.8
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "AOS",
+    "analyst": "Jeffrey Hammond",
+    "percent": null
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "AOS",
+    "analyst": "Nathan Jones",
+    "percent": 23.4
+  },
+  {
+    "date": "2026-07-31",
+    "ticker": "AOS",
+    "analyst": "Susan Maklari",
+    "percent": 4
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "ABBV",
+    "analyst": "Gary Nachman",
+    "percent": 9.7
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "ABBV",
+    "analyst": "Terence Flynn",
+    "percent": 12
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "ABBV",
+    "analyst": "Vamil Divan",
+    "percent": 9
+  },
+  {
+    "date": "2026-08-03",
+    "ticker": "AOS",
+    "analyst": "Matt Summerville",
+    "percent": 18.1
+  },
+  {
     "date": "2026-08-03",
     "ticker": "MMM",
     "analyst": "Andrew Obin",
     "percent": null
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "Blayne Curtis",
+    "percent": 18.3
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "C J Muse",
+    "percent": 27.4
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "James Schneider",
+    "percent": 16.5
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "Joshua Buchalter",
+    "percent": 22.9
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "Tristan Gerra",
+    "percent": 127.6
+  },
+  {
+    "date": "2026-08-04",
+    "ticker": "AMD",
+    "analyst": "Vijay Rakesh",
+    "percent": 5.6
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "ABBV",
+    "analyst": "Hans Engel",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Christopher Rolland",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Cody Acree",
+    "percent": 24.7
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Gil Luria",
+    "percent": 0.1
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Gus Richard",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Harlan Sur",
+    "percent": 0.1
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Ingo Wermann",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Jim Kelleher",
+    "percent": 13.8
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "John Vinh",
+    "percent": 32
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Joseph Moore",
+    "percent": -15.3
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Kevin Cassidy",
+    "percent": 27.4
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Mark Lipacis",
+    "percent": 5.4
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Rick Schafer",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Sebastien Naji",
+    "percent": null
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Srini Pajjuri",
+    "percent": -1.7
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Thomas O'Malley",
+    "percent": 21.1
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Timothy Arcuri",
+    "percent": 32.9
+  },
+  {
+    "date": "2026-08-05",
+    "ticker": "AMD",
+    "analyst": "Unknown Analyst",
+    "percent": 9.2
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "AMD",
+    "analyst": "Aaron Rakers",
+    "percent": 27.4
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "AMD",
+    "analyst": "Amanda Tan",
+    "percent": 3.8
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "AFL",
+    "analyst": "Alex Scott",
+    "percent": -14.5
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "AFL",
+    "analyst": "Joshua Shanker",
+    "percent": null
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "AMD",
+    "analyst": "Yik Ban Chong",
+    "percent": null
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "ABBV",
+    "analyst": "Gavin Clark-Gartner",
+    "percent": -1.6
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "AFL",
+    "analyst": "Paul Newsome",
+    "percent": 19.2
+  },
+  {
+    "date": "2026-08-10",
+    "ticker": "AFL",
+    "analyst": "Yaron Kinar",
+    "percent": 0.2
   },
   {
     "date": "2026-08-10",
@@ -72,15 +906,543 @@
     "percent": 15.4
   },
   {
+    "date": "2026-08-11",
+    "ticker": "ABBV",
+    "analyst": "Emily Field",
+    "percent": 13.5
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "AFL",
+    "analyst": "Pablo Singzon",
+    "percent": 0.2
+  },
+  {
+    "date": "2026-08-11",
+    "ticker": "AFL",
+    "analyst": "Ryan Krueger",
+    "percent": 8
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ABBV",
+    "analyst": "Alexandria Hammond",
+    "percent": 13.5
+  },
+  {
+    "date": "2026-08-13",
+    "ticker": "ABT",
+    "analyst": "Michael Polark",
+    "percent": 27.5
+  },
+  {
+    "date": "2026-08-17",
+    "ticker": "ABBV",
+    "analyst": "Mohit Bansal",
+    "percent": 13.5
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "AFL",
+    "analyst": "Tracy Benguigui",
+    "percent": -11
+  },
+  {
+    "date": "2026-08-19",
+    "ticker": "AFL",
+    "analyst": "Wesley Carmichael",
+    "percent": 5.4
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "ABBV",
+    "analyst": "David Amsellem",
+    "percent": 14.7
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "ABT",
+    "analyst": "Marie Thibault",
+    "percent": 31.4
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "ABT",
+    "analyst": "Travis Steed",
+    "percent": 12.8
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "AMD",
+    "analyst": "Harsh Kumar",
+    "percent": 0.1
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "AMD",
+    "analyst": "Unknown Analyst",
+    "percent": 0.1
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "ABT",
+    "analyst": "Brandon Vazquez",
+    "percent": null
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "ABT",
+    "analyst": "Matthew Taylor",
+    "percent": 32.4
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "AMD",
+    "analyst": "Suji Desilva",
+    "percent": 18.3
+  },
+  {
+    "date": "2026-08-21",
+    "ticker": "AOS",
+    "analyst": "Tomohiko Sano",
+    "percent": 5.8
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "ACN",
+    "analyst": "Bryan Keane",
+    "percent": 3.6
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "ACN",
+    "analyst": "Darrin Peller",
+    "percent": 17.2
+  },
+  {
+    "date": "2026-08-25",
+    "ticker": "AMD",
+    "analyst": "Simon Leopold",
+    "percent": 16.7
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "A",
+    "analyst": "Dan Leonard",
+    "percent": 18.2
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "ABT",
+    "analyst": "Adam Maeder",
+    "percent": 15.7
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Casey Woodring",
+    "percent": 21.4
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Daniel Brennan",
+    "percent": 15
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "David Westenberg",
+    "percent": -4.1
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Evie Koslosky",
+    "percent": 11.8
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Luke Sergott",
+    "percent": 11.8
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Michael Ryskin",
+    "percent": 15
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Patrick B Donnelly",
+    "percent": 21.4
+  },
+  {
+    "date": "2026-08-27",
+    "ticker": "A",
+    "analyst": "Vijay Kumar",
+    "percent": 9.9
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "A",
+    "analyst": "Evan Stampler",
+    "percent": 15
+  },
+  {
+    "date": "2026-08-30",
+    "ticker": "A",
+    "analyst": "Daniel Arias",
+    "percent": 15
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "A",
+    "analyst": "Kallum Titchmarsh",
+    "percent": 11.8
+  },
+  {
+    "date": "2026-09-01",
+    "ticker": "ABT",
+    "analyst": "Robbie Marcus",
+    "percent": null
+  },
+  {
+    "date": "2026-09-02",
+    "ticker": "A",
+    "analyst": "Tycho Peterson",
+    "percent": -0.9
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "ABBV",
+    "analyst": "Evan Seigerman",
+    "percent": 13.5
+  },
+  {
     "date": "2026-09-03",
     "ticker": "MMM",
     "analyst": "Varun Govindaraj",
     "percent": -11.5
   },
   {
+    "date": "2026-09-04",
+    "ticker": "ABBV",
+    "analyst": "Geoff Meacham",
+    "percent": -1.6
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "ABBV",
+    "analyst": "Steve Scala",
+    "percent": 6
+  },
+  {
+    "date": "2026-09-04",
+    "ticker": "ABBV",
+    "analyst": "William Katz",
+    "percent": 6
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "A",
+    "analyst": "Unknown Analyst",
+    "percent": 5.4
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "ABBV",
+    "analyst": "Jason Gerberry",
+    "percent": 6.7
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "ABT",
+    "analyst": "Larry Biegelsen",
+    "percent": 9.8
+  },
+  {
+    "date": "2026-09-08",
+    "ticker": "AMD",
+    "analyst": "Atif Malik",
+    "percent": 4.7
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "A",
+    "analyst": "Doug Schenkel",
+    "percent": 5.4
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "A",
+    "analyst": "Eve Burstein",
+    "percent": 15
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "AMD",
+    "analyst": "Unknown Analyst",
+    "percent": 9.2
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ABBV",
+    "analyst": "Luisa Hector",
+    "percent": 4.1
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ABBV",
+    "analyst": "Rajesh Kumar",
+    "percent": 19.2
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ABT",
+    "analyst": "Joanne Wuensch",
+    "percent": 22.6
+  },
+  {
+    "date": "2026-09-10",
+    "ticker": "ADBE",
+    "analyst": "Keith Bachman",
+    "percent": 8.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "A",
+    "analyst": "Blayne Curtis",
+    "percent": -0.9
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ABBV",
+    "analyst": "Louise Chen",
+    "percent": 6
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ACN",
+    "analyst": "James Schneider",
+    "percent": 25.4
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Adam Wood",
+    "percent": -3.4
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Arjun Bhatia",
+    "percent": null
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Billy Fitzsimmons",
+    "percent": 0.6
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Brent Thill",
+    "percent": 10.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Derrick Wood",
+    "percent": -1.4
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Gil Luria",
+    "percent": 16.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "J. Parker Lane",
+    "percent": -9.4
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Jackson Ader",
+    "percent": -21.5
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Karl Keirstead",
+    "percent": 2.6
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Kirk Materne",
+    "percent": 0.6
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Matthew Swanson",
+    "percent": 26.8
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Michael Turrin",
+    "percent": 8.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Robert Oliver",
+    "percent": 0.6
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Saiyi He",
+    "percent": 20.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Saket Kalia",
+    "percent": 18.7
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Samik Chatterjee",
+    "percent": 26.8
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Tal Liani",
+    "percent": -11.5
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "ADBE",
+    "analyst": "Unknown Analyst",
+    "percent": null
+  },
+  {
+    "date": "2026-09-11",
+    "ticker": "AMD",
+    "analyst": "Ruben Roy",
+    "percent": 15.6
+  },
+  {
     "date": "2026-09-11",
     "ticker": "MMM",
     "analyst": "Andrew Kaplowitz",
     "percent": 11.7
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ABBV",
+    "analyst": "Trung Huynh",
+    "percent": 6
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ABT",
+    "analyst": "Josh Jennings",
+    "percent": 32.4
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ACN",
+    "analyst": "James Faucette",
+    "percent": -4.6
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ACN",
+    "analyst": "Jason Kupferberg",
+    "percent": 5.8
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ADBE",
+    "analyst": "Gabriela Borges",
+    "percent": -19.5
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ADBE",
+    "analyst": "Mark Moerdler",
+    "percent": 50.1
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "ADBE",
+    "analyst": "Tyler Radke",
+    "percent": 0.6
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "AMD",
+    "analyst": "Stacy Rasgon",
+    "percent": 18.3
+  },
+  {
+    "date": "2026-09-14",
+    "ticker": "AMD",
+    "analyst": "Vivek Arya",
+    "percent": 12.9
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "ACN",
+    "analyst": "Bryan Bergin",
+    "percent": -5.7
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "AMD",
+    "analyst": "David O'Connor",
+    "percent": 9.2
+  },
+  {
+    "date": "2026-09-15",
+    "ticker": "AMD",
+    "analyst": "William Stein",
+    "percent": 8.1
+  },
+  {
+    "date": "2026-09-17",
+    "ticker": "A",
+    "analyst": "John Dunigan",
+    "percent": 15.7
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "ACN",
+    "analyst": "Jonathan Lee CFA",
+    "percent": null
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "ACN",
+    "analyst": "Nate Svensson",
+    "percent": -4.6
+  },
+  {
+    "date": "2026-09-18",
+    "ticker": "AOS",
+    "analyst": "Unknown Analyst",
+    "percent": 19.9
   }
 ]

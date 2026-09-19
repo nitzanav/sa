@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+32%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$35.50",
+    "projected": "+14.7%",
+    "date": "04/24/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+47.1%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+8%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+10.7%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+58%",
+    "date": "01/06/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+25.7%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+13.3%",
+    "date": "01/17/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$36.00",
+    "projected": "+16.3%",
+    "date": "04/24/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/01/2025"
+  }
+]

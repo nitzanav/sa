@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$365.00",
+    "projected": "+14.4%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$359.00",
+    "projected": "+14.1%",
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+46.7%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+9.7%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+12.2%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+24.3%",
+    "date": "06/13/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$326.00",
+    "projected": "+3.6%",
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$455.00",
+    "projected": "+48.3%",
+    "date": "03/20/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$383.00",
+    "projected": "+28.5%",
+    "date": "02/13/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$326.00",
+    "projected": null,
+    "date": "12/19/2025"
+  }
+]

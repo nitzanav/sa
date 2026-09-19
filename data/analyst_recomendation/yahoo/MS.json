@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+12.8%",
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+11.9%",
+    "date": "07/18/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+16.6%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$233.00",
+    "projected": "+7.4%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$262.00",
+    "projected": "+22.2%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+21.7%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "-14.6%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+16.6%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+9.6%",
+    "date": "07/18/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+5.2%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "-0.2%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+14.3%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$207.00",
+    "projected": "+9.2%",
+    "date": "04/17/2026"
+  }
+]

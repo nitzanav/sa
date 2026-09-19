@@ -1,0 +1,38 @@
+[
+  {
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$370.00",
+    "projected": "+21.4%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$297.00",
+    "projected": "+0.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+7.3%",
+    "date": "04/16/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$289.00",
+    "projected": "-1.4%",
+    "date": "07/30/2026"
+  }
+]

@@ -1,14 +1,19 @@
 {
   "logger": { "level": "info" },
   "retry": { "enabled": true, "initialDelay": 1000, "delayMultiple": 2, "maxAttempts": 5 },
-  "cache": { "enabled": true, "ttl": 86400000 },
-  "rateLimit": { "enabled": true, "minDelay": 1000, "maxDelay": 10000 },
+  "cache": { "enabled": true, "ttl": 864000000 },
+  "rateLimit": { "enabled": true, "minDelay": 3000, "maxDelay": 30000 },
   "http": {
     "timeout": 60000,
     "headers": {
       "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
       "Accept-Language": "en-US,en;q=0.9"
     }
+  },
+  "playwright": {
+    "headless": true,
+    "locale": "en-US",
+    "viewport": { "width": 1440, "height": 900 }
   },
   "analyst_recommendations": {
     "limit": 3

@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+32.9%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "+17%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+8.2%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+49.5%",
+    "date": "04/17/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$15.00",
+    "projected": "-14.5%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "-5%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "-4.3%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+28%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "+17%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$16.00",
+    "projected": "-17.9%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+11.7%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "-0.9%",
+    "date": "04/27/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+26.2%",
+    "date": "03/04/2026"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+13.3%",
+    "date": "01/31/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+8.3%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+8.2%",
+    "date": "04/11/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$58.00",
+    "projected": "-10%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-4.4%",
+    "date": "05/01/2026"
+  }
+]

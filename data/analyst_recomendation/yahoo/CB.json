@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "JMP Securities",
+    "firm": "JMP Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": null,
+    "date": "10/23/2025"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$389.00",
+    "projected": "+9.8%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+15.7%",
+    "date": "02/10/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$374.00",
+    "projected": "+10.6%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Citizens",
+    "firm": "Citizens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+15.8%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$374.00",
+    "projected": "+7.2%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$368.00",
+    "projected": "+13%",
+    "date": "06/12/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "+16.4%",
+    "date": "02/09/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$356.00",
+    "projected": "+0.1%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$271.00",
+    "projected": "-17.3%",
+    "date": "04/14/2026"
+  }
+]

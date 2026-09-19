@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+22%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+7.8%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+6.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "-0.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/23/2025"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "-0.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+34.1%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "-18.3%",
+    "date": "02/04/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "-4.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+11.9%",
+    "date": "07/29/2026"
+  }
+]

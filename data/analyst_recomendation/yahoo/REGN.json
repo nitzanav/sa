@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$860.00",
+    "projected": "+6.7%",
+    "date": "01/08/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1030.00",
+    "projected": "+33.8%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$772.00",
+    "projected": "+6.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$960.00",
+    "projected": "+27.8%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "Leerink Partners",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$824.00",
+    "projected": "+1.2%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$865.00",
+    "projected": "+18%",
+    "date": "02/02/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$875.00",
+    "projected": "+37.9%",
+    "date": "05/20/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$921.00",
+    "projected": "+20.5%",
+    "date": "04/09/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$917.00",
+    "projected": "+32.3%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$740.00",
+    "projected": "-3.8%",
+    "date": "08/03/2026"
+  }
+]

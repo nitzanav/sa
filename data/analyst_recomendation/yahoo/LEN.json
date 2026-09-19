@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "JMP Securities",
+    "firm": "JMP Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": null,
+    "date": "09/23/2025"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+5.5%",
+    "date": "06/17/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+4.9%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-10.5%",
+    "date": "09/19/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "-5.7%",
+    "date": "06/09/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/22/2025"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-11.2%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "-13.6%",
+    "date": "06/17/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "-0.3%",
+    "date": "09/19/2026"
+  },
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": null,
+    "date": "09/23/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+0.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$69.00",
+    "projected": "-11.8%",
+    "date": "09/19/2026"
+  },
+  {
+    "analyst": "Seaport Global",
+    "firm": "Seaport Global",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "-16.8%",
+    "date": "04/08/2026"
+  }
+]

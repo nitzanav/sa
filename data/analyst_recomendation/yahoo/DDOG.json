@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+24%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+19.2%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+34.2%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+27.8%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+11.2%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+19.2%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+29.9%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+1.2%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+29.9%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+8.3%",
+    "date": "07/21/2026"
+  }
+]

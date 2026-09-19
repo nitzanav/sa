@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Loop Capital",
+    "firm": "Loop Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": null,
+    "date": "11/10/2025"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1400.00",
+    "projected": "+59.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1150.00",
+    "projected": "+27.7%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1090.00",
+    "projected": "+23.5%",
+    "date": "06/08/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1300.00",
+    "projected": "+47.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1187.00",
+    "projected": "+50.9%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$505.00",
+    "projected": "+12.3%",
+    "date": "01/30/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": "+22.7%",
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1300.00",
+    "projected": "+47.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "-2.6%",
+    "date": "01/28/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$875.00",
+    "projected": "+11.2%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$545.00",
+    "projected": "-18.4%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": "+27.1%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+42.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": null,
+    "date": "10/29/2025"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1240.00",
+    "projected": "+57.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1180.00",
+    "projected": "+50%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$900.00",
+    "projected": "+2.4%",
+    "date": "07/30/2026"
+  }
+]

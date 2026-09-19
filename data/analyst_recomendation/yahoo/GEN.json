@@ -1,0 +1,29 @@
+[
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-3.4%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+10.3%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+3.4%",
+    "date": "08/07/2026"
+  }
+]

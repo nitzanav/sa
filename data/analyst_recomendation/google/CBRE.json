@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Anthony Paolone",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+36.7%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Julien Blouin",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+36.7%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+31.7%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Seth Bergey",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+36.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+36.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+25.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jade Rahmani",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$174.00",
+    "projected": "+25.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Stephen Sheldon",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Benjamin Toms",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "07/07/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$180.00",
+    "projected": "+29.5%",
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "Joe Dickstein",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+22.3%",
+    "date": "05/05/2026"
+  }
+]

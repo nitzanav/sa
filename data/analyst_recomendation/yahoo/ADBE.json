@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+13.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "-16.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+11.5%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+30.1%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "-3.7%",
+    "date": "06/13/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+3.2%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+7.5%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+3.2%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "-6.1%",
+    "date": "06/12/2026"
+  }
+]

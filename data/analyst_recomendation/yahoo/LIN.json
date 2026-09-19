@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+7.2%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$546.00",
+    "projected": "+11.2%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+20.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$553.00",
+    "projected": "+14.5%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$579.00",
+    "projected": "+14.4%",
+    "date": "04/10/2026"
+  },
+  {
+    "analyst": "Seaport Global",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$575.00",
+    "projected": "+15.8%",
+    "date": "04/17/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "0%",
+    "date": "07/10/2026"
+  }
+]

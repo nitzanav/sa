@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1700.00",
+    "projected": "+62.7%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1650.00",
+    "projected": "+45.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1528.00",
+    "projected": "+45.5%",
+    "date": "04/02/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1700.00",
+    "projected": "+60.7%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1450.00",
+    "projected": "+26.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1547.00",
+    "projected": "+48.8%",
+    "date": "03/24/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1525.00",
+    "projected": "+32.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1130.00",
+    "projected": "+6.1%",
+    "date": "08/13/2026"
+  }
+]

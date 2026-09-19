@@ -1,0 +1,29 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "+27.2%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": null,
+    "date": "11/14/2025"
+  },
+  {
+    "analyst": "Macquarie",
+    "firm": "Macquarie",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$29.40",
+    "projected": "+7.5%",
+    "date": "05/11/2026"
+  }
+]

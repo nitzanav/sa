@@ -1,1 +1,5140 @@
 date,ticker,analyst,percent
+2025-09-19,PNC,Raymond James,
+2025-09-22,DHR,B of A Securities,
+2025-09-22,LEN,Raymond James,
+2025-09-22,MTD,B of A Securities,
+2025-09-22,WTW,Raymond James,
+2025-09-23,LEN,JMP Securities,
+2025-09-23,LEN,Wedbush,
+2025-09-23,NEM,Raymond James,
+2025-09-23,RJF,Citigroup,
+2025-09-24,AZO,Raymond James,
+2025-09-24,CRWD,JMP Securities,
+2025-09-24,LRCX,Keybanc,
+2025-09-25,FCX,Raymond James,
+2025-09-25,LDOS,Argus Research,
+2025-09-25,MCK,Deutsche Bank,
+2025-09-25,RDDT,Baird,
+2025-09-26,BIIB,Jefferies,
+2025-09-26,CME,Citigroup,
+2025-09-26,CTAS,JP Morgan,
+2025-09-26,SYF,JMP Securities,
+2025-09-26,XEL,B of A Securities,
+2025-09-27,DXCM,Baird,
+2025-09-27,WBD,Keybanc,
+2025-09-29,INTC,Deutsche Bank,
+2025-09-29,SYF,Morgan Stanley,
+2025-09-30,AXON,JMP Securities,
+2025-09-30,BKNG,Mizuho,
+2025-09-30,BLK,Citigroup,
+2025-09-30,CNP,Mizuho,
+2025-09-30,COST,Argus Research,
+2025-09-30,IVZ,Citigroup,
+2025-09-30,RL,TD Cowen,
+2025-09-30,TTD,JMP Securities,
+2025-09-30,WBD,Goldman Sachs,
+2025-10-01,AXP,"Keefe, Bruyette & Woods",
+2025-10-01,OKE,Goldman Sachs,
+2025-10-01,WBD,B of A Securities,
+2025-10-01,WYNN,Goldman Sachs,
+2025-10-02,BEN,B of A Securities,
+2025-10-02,CL,Goldman Sachs,
+2025-10-02,IVZ,B of A Securities,
+2025-10-02,KDP,Goldman Sachs,
+2025-10-02,KVUE,Goldman Sachs,
+2025-10-02,MCO,Deutsche Bank,
+2025-10-02,STZ,Goldman Sachs,
+2025-10-02,TAP,Goldman Sachs,
+2025-10-02,TROW,B of A Securities,
+2025-10-03,AMZN,Goldman Sachs,
+2025-10-04,BEN,BMO Capital,
+2025-10-04,RDDT,JMP Securities,
+2025-10-04,WEC,Citigroup,
+2025-10-06,PKG,Seaport Global,
+2025-10-07,CBRE,Morgan Stanley,
+2025-10-07,LMT,Baird,
+2025-10-07,MTB,Piper Sandler,
+2025-10-08,CHD,B of A Securities,
+2025-10-08,CLX,B of A Securities,
+2025-10-08,NOC,Deutsche Bank,
+2025-10-09,FE,Citigroup,
+2025-10-09,FLEX,B of A Securities,
+2025-10-10,HOOD,JMP Securities,
+2025-10-10,MCO,RBC Capital,
+2025-10-10,PNC,Piper Sandler,
+2025-10-10,TMO,JP Morgan,
+2025-10-11,ALGN,Jefferies,
+2025-10-11,APH,Baird,
+2025-10-11,KVUE,JP Morgan,
+2025-10-11,VLO,Jefferies,
+2025-10-13,APO,Citigroup,
+2025-10-13,BX,Citigroup,
+2025-10-13,BXP,Jefferies,
+2025-10-13,ICE,Raymond James,
+2025-10-13,KKR,Citigroup,
+2025-10-13,MGM,Mizuho,
+2025-10-14,CARR,Oppenheimer,
+2025-10-14,COP,RBC Capital,
+2025-10-14,TSLA,Evercore ISI Group,
+2025-10-15,IFF,B of A Securities,
+2025-10-15,LHX,Truist Securities,
+2025-10-15,TDG,Truist Securities,
+2025-10-15,UNH,Goldman Sachs,
+2025-10-16,DPZ,B of A Securities,
+2025-10-16,FE,Keybanc,
+2025-10-16,SNA,Barrington Research,
+2025-10-16,XEL,Jefferies,
+2025-10-17,ABBV,Raymond James,
+2025-10-17,AMT,Citigroup,
+2025-10-17,ATO,B of A Securities,
+2025-10-17,CSX,Jefferies,
+2025-10-17,CSX,Raymond James,
+2025-10-17,CVX,Raymond James,
+2025-10-17,ETR,B of A Securities,
+2025-10-17,LYB,Goldman Sachs,
+2025-10-17,MCO,Raymond James,
+2025-10-17,PGR,Raymond James,
+2025-10-17,SBAC,Citigroup,
+2025-10-17,TTWO,Benchmark,
+2025-10-18,BG,Stephens & Co.,
+2025-10-18,CRM,JMP Securities,
+2025-10-18,CSX,UBS,
+2025-10-18,ETN,Mizuho,
+2025-10-18,LH,Mizuho,
+2025-10-18,LII,Mizuho,
+2025-10-18,LNT,B of A Securities,
+2025-10-18,PH,Mizuho,
+2025-10-18,SCHW,Deutsche Bank,
+2025-10-18,SCHW,JMP Securities,
+2025-10-18,USB,B of A Securities,
+2025-10-20,HBAN,Raymond James,
+2025-10-20,META,Oppenheimer,
+2025-10-20,PG,Raymond James,
+2025-10-20,RDDT,Raymond James,
+2025-10-21,TPR,Raymond James,
+2025-10-21,VMC,Raymond James,
+2025-10-22,CHD,Oppenheimer,
+2025-10-22,HAL,HSBC,
+2025-10-22,PCAR,Wolfe Research,
+2025-10-23,APH,Goldman Sachs,
+2025-10-23,CB,JMP Securities,
+2025-10-23,GPC,JP Morgan,
+2025-10-23,GPN,Keybanc,
+2025-10-23,NOC,Bernstein,
+2025-10-23,PCAR,UBS,
+2025-10-23,PNR,UBS,
+2025-10-23,PYPL,Keybanc,
+2025-10-23,RJF,"Keefe, Bruyette & Woods",
+2025-10-23,RTX,Goldman Sachs,
+2025-10-23,V,Keybanc,
+2025-10-24,DECK,TD Cowen,
+2025-10-24,LYV,Deutsche Bank,
+2025-10-24,NSC,UBS,
+2025-10-24,OKE,Raymond James,
+2025-10-24,RJF,JMP Securities,
+2025-10-24,ROP,Raymond James,
+2025-10-24,ROP,TD Cowen,
+2025-10-25,CNP,Scotiabank,
+2025-10-25,FE,Mizuho,
+2025-10-27,DGX,Piper Sandler,
+2025-10-27,GE,B of A Securities,
+2025-10-27,HCA,B of A Securities,
+2025-10-27,RTX,B of A Securities,
+2025-10-28,KHC,Mizuho,
+2025-10-28,ON,UBS,
+2025-10-28,PANW,JMP Securities,
+2025-10-28,PGR,Goldman Sachs,
+2025-10-29,AMT,Raymond James,
+2025-10-29,AMT,Wells Fargo,
+2025-10-29,CDNS,JP Morgan,
+2025-10-29,DOW,Goldman Sachs,
+2025-10-29,DUK,RBC Capital,
+2025-10-29,ETR,RBC Capital,
+2025-10-29,GD,Bernstein,
+2025-10-29,MDLZ,RBC Capital,
+2025-10-29,NEE,Citigroup,
+2025-10-29,PNW,RBC Capital,
+2025-10-29,STX,Benchmark,
+2025-10-29,TMO,Argus Research,
+2025-10-29,V,Raymond James,
+2025-10-29,YUM,Guggenheim,
+2025-10-30,ECL,Barclays,
+2025-10-30,EW,Jefferies,
+2025-10-30,HRL,Goldman Sachs,
+2025-10-30,KLAC,Evercore ISI Group,
+2025-10-30,KLAC,Goldman Sachs,
+2025-10-30,MSFT,Raymond James,
+2025-10-30,SWKS,Piper Sandler,
+2025-10-30,TSLA,B of A Securities,
+2025-10-30,UNH,Piper Sandler,
+2025-10-31,CNC,Goldman Sachs,
+2025-10-31,DTE,Scotiabank,
+2025-10-31,GILD,JP Morgan,
+2025-10-31,ICE,JP Morgan,
+2025-10-31,KMB,JP Morgan,
+2025-10-31,META,Canaccord Genuity,
+2025-10-31,MSFT,JP Morgan,
+2025-10-31,MSFT,Morgan Stanley,
+2025-10-31,NI,Jefferies,
+2025-10-31,RDDT,Bernstein,
+2025-10-31,RSG,Stifel,
+2025-10-31,TEL,JP Morgan,
+2025-10-31,VICI,Stifel,
+2025-10-31,WEC,Scotiabank,
+2025-11-01,CMCSA,Keybanc,
+2025-11-01,WDC,Benchmark,
+2025-11-03,CBOE,Citigroup,
+2025-11-03,HII,JP Morgan,
+2025-11-03,NVDA,Goldman Sachs,
+2025-11-03,RDDT,Citigroup,
+2025-11-04,CI,Goldman Sachs,
+2025-11-04,CI,JP Morgan,
+2025-11-04,FTV,Baird,
+2025-11-04,IDXX,JP Morgan,
+2025-11-04,IDXX,Morgan Stanley,
+2025-11-04,KMB,Morgan Stanley,
+2025-11-04,NVDA,Loop Capital,
+2025-11-04,PLTR,Morgan Stanley,
+2025-11-04,SBAC,TD Cowen,
+2025-11-05,KMB,Evercore ISI Group,
+2025-11-05,PLTR,B of A Securities,
+2025-11-05,SBAC,BMO Capital,
+2025-11-05,TAP,Jefferies,
+2025-11-05,YUM,Bernstein,
+2025-11-05,YUM,Piper Sandler,
+2025-11-06,APO,"Keefe, Bruyette & Woods",
+2025-11-06,DTE,B of A Securities,
+2025-11-06,MCD,Baird,
+2025-11-06,MCK,Baird,
+2025-11-06,MCK,Morgan Stanley,
+2025-11-06,UBER,BMO Capital,
+2025-11-06,YUM,BMO Capital,
+2025-11-07,BIIB,Stifel,
+2025-11-07,COR,Mizuho,
+2025-11-07,CRL,Baird,
+2025-11-07,JCI,Argus Research,
+2025-11-07,JCI,Goldman Sachs,
+2025-11-07,PODD,Jefferies,
+2025-11-07,SO,Goldman Sachs,
+2025-11-08,HST,Compass Point,
+2025-11-08,MNST,B of A Securities,
+2025-11-08,VST,Evercore ISI Group,
+2025-11-10,HD,JP Morgan,
+2025-11-10,ROST,TD Cowen,
+2025-11-10,STX,Loop Capital,
+2025-11-10,WDC,Loop Capital,
+2025-11-11,EL,Argus Research,
+2025-11-11,MLM,Stifel,
+2025-11-11,PH,Argus Research,
+2025-11-11,TMUS,Tigress Financial,
+2025-11-12,MOS,Goldman Sachs,
+2025-11-12,PH,Baird,
+2025-11-13,BA,Susquehanna,
+2025-11-13,CPT,B of A Securities,
+2025-11-13,WAB,B of A Securities,
+2025-11-14,GPC,Goldman Sachs,
+2025-11-14,NWSA,Guggenheim,
+2025-11-14,TT,B of A Securities,
+2025-11-15,DE,Wells Fargo,
+2025-11-15,DIS,Evercore ISI Group,
+2025-11-15,SRE,Goldman Sachs,
+2025-11-17,AKAM,Oppenheimer,
+2025-11-17,WY,B of A Securities,
+2025-11-18,AEP,Jefferies,
+2025-11-18,MRK,Deutsche Bank,
+2025-11-19,HD,Evercore ISI Group,
+2025-11-19,ITW,B of A Securities,
+2025-11-20,FCX,BMO Capital,
+2025-11-20,HD,B of A Securities,
+2025-11-20,HD,Goldman Sachs,
+2025-11-20,HUBB,UBS,
+2025-11-20,INTC,Raymond James,
+2025-11-20,NVDA,Barclays,
+2025-11-20,NVDA,Susquehanna,
+2025-11-20,PANW,WestPark Capital,
+2025-11-20,TJX,TD Cowen,
+2025-11-21,AIG,Goldman Sachs,
+2025-11-21,NVDA,Argus Research,
+2025-11-21,NVDA,Deutsche Bank,
+2025-11-21,NVDA,Melius Research,
+2025-11-21,PANW,HSBC,
+2025-11-21,ROK,B of A Securities,
+2025-11-21,TJX,B of A Securities,
+2025-11-21,TJX,Bernstein,
+2025-11-21,TJX,Goldman Sachs,
+2025-11-22,PANW,Goldman Sachs,
+2025-11-22,ROST,B of A Securities,
+2025-11-22,WMT,BMO Capital,
+2025-11-22,XYZ,B of A Securities,
+2025-11-24,SRE,Citigroup,
+2025-11-25,CDW,Raymond James,
+2025-11-25,ES,Janney Montgomery Scott,
+2025-11-25,RSG,Goldman Sachs,
+2025-11-25,WM,Goldman Sachs,
+2025-11-26,PM,JP Morgan,
+2025-11-27,ADSK,Deutsche Bank,
+2025-12-02,BAX,Morgan Stanley,
+2025-12-02,BDX,Morgan Stanley,
+2025-12-02,BMY,Goldman Sachs,
+2025-12-02,KIM,Argus Research,
+2025-12-02,ODFL,BMO Capital,
+2025-12-02,TGT,Argus Research,
+2025-12-02,VICI,Evercore ISI Group,
+2025-12-03,BG,B of A Securities,
+2025-12-03,MRVL,Deutsche Bank,
+2025-12-03,MRVL,Goldman Sachs,
+2025-12-04,CRM,Deutsche Bank,
+2025-12-04,ODFL,B of A Securities,
+2025-12-05,CHD,Argus Research,
+2025-12-05,CRM,Baird,
+2025-12-05,DG,Jefferies,
+2025-12-05,DG,UBS,
+2025-12-05,HRL,Piper Sandler,
+2025-12-05,LLY,BMO Capital,
+2025-12-05,WBD,Barrington Research,
+2025-12-05,XYL,TD Cowen,
+2025-12-06,AAPL,CLSA,
+2025-12-06,EXR,Morgan Stanley,
+2025-12-06,GOOG,Pivotal Research,
+2025-12-06,PSA,Morgan Stanley,
+2025-12-08,AXP,Wolfe Research,
+2025-12-08,COO,Goldman Sachs,
+2025-12-08,COO,Morgan Stanley,
+2025-12-08,EXPD,Morgan Stanley,
+2025-12-09,HRL,Barclays,
+2025-12-09,JKHY,"Keefe, Bruyette & Woods",
+2025-12-09,TMO,Keybanc,
+2025-12-10,AZO,UBS,
+2025-12-10,HOOD,B of A Securities,
+2025-12-10,KEYS,Jefferies,
+2025-12-10,MTD,Goldman Sachs,
+2025-12-10,NUE,Jefferies,
+2025-12-10,RJF,B of A Securities,
+2025-12-10,STLD,Jefferies,
+2025-12-10,TMO,Goldman Sachs,
+2025-12-10,VRTX,Wells Fargo,
+2025-12-11,CHD,Deutsche Bank,
+2025-12-11,D,JP Morgan,
+2025-12-11,GEV,B of A Securities,
+2025-12-11,JBHT,Deutsche Bank,
+2025-12-11,NSC,Deutsche Bank,
+2025-12-11,RL,Guggenheim,
+2025-12-11,SNPS,JP Morgan,
+2025-12-11,TPR,Guggenheim,
+2025-12-11,TTD,Jefferies,
+2025-12-11,UNP,Deutsche Bank,
+2025-12-11,V,B of A Securities,
+2025-12-12,BMY,Morgan Stanley,
+2025-12-12,CL,Argus Research,
+2025-12-12,COST,Baird,
+2025-12-12,ORCL,Keybanc,
+2025-12-12,OXY,B of A Securities,
+2025-12-12,SNPS,Keybanc,
+2025-12-12,SO,RBC Capital,
+2025-12-12,TMUS,Goldman Sachs,
+2025-12-12,VLO,B of A Securities,
+2025-12-13,EQT,Mizuho,
+2025-12-13,MRNA,Jefferies,
+2025-12-13,PNW,Keybanc,
+2025-12-13,VEEV,Keybanc,
+2025-12-15,BLDR,Jefferies,
+2025-12-15,FAST,Jefferies,
+2025-12-15,JKHY,Baird,
+2025-12-15,SO,Jefferies,
+2025-12-16,DG,JP Morgan,
+2025-12-16,HLT,Goldman Sachs,
+2025-12-17,ADP,Jefferies,
+2025-12-17,ATO,UBS,
+2025-12-17,CMS,UBS,
+2025-12-17,CNP,UBS,
+2025-12-17,DTE,UBS,
+2025-12-17,DUK,UBS,
+2025-12-17,EL,Evercore ISI Group,
+2025-12-17,FRT,Jefferies,
+2025-12-17,ITW,Goldman Sachs,
+2025-12-17,LNT,UBS,
+2025-12-17,NI,UBS,
+2025-12-17,PEG,UBS,
+2025-12-17,PH,Goldman Sachs,
+2025-12-17,PNW,UBS,
+2025-12-17,RMD,Baird,
+2025-12-17,ROK,Goldman Sachs,
+2025-12-17,SO,UBS,
+2025-12-17,VRSK,Morgan Stanley,
+2025-12-17,WEC,UBS,
+2025-12-17,WM,Morgan Stanley,
+2025-12-18,CTAS,Morgan Stanley,
+2025-12-18,IVZ,Deutsche Bank,
+2025-12-18,KDP,Jefferies,
+2025-12-18,MSI,Morgan Stanley,
+2025-12-18,PG,Jefferies,
+2025-12-19,DD,Mizuho,
+2025-12-19,EXPE,B of A Securities,
+2025-12-19,FDX,Jefferies,
+2025-12-19,FOXA,Goldman Sachs,
+2025-12-19,JNJ,Goldman Sachs,
+2025-12-19,O,JP Morgan,
+2025-12-19,REG,JP Morgan,
+2025-12-19,T,Goldman Sachs,
+2025-12-19,TSLA,Deutsche Bank,
+2025-12-19,WELL,JP Morgan,
+2025-12-20,FDS,Stifel,
+2025-12-20,FOXA,B of A Securities,
+2025-12-20,LMT,JP Morgan,
+2025-12-22,F,Evercore ISI Group,
+2025-12-23,IP,Argus Research,
+2025-12-23,RSG,B of A Securities,
+2025-12-25,O,Morgan Stanley,
+2025-12-30,AFL,Raymond James,
+2026-01-01,NEE,Jefferies,
+2026-01-01,WEC,B of A Securities,
+2026-01-02,COF,"Keefe, Bruyette & Woods",18.7
+2026-01-02,SYF,"Keefe, Bruyette & Woods",17.1
+2026-01-03,AAPL,Raymond James,
+2026-01-03,ULTA,Argus Research,15.5
+2026-01-05,CARR,UBS,32
+2026-01-05,EL,Raymond James,19.3
+2026-01-05,LII,UBS,6.2
+2026-01-05,ROP,Jefferies,39.6
+2026-01-05,SWK,UBS,29.4
+2026-01-05,TT,UBS,31.5
+2026-01-06,AME,Mizuho,9.3
+2026-01-06,CARR,Mizuho,28.6
+2026-01-06,CMCSA,Benchmark,58
+2026-01-06,COP,Bernstein,-2.2
+2026-01-06,DOV,UBS,26.6
+2026-01-06,DVN,Bernstein,15.1
+2026-01-06,EMR,UBS,17.9
+2026-01-06,EQT,Bernstein,38.4
+2026-01-06,FTV,Mizuho,-4.6
+2026-01-06,HBAN,Barclays,11.9
+2026-01-06,HUBB,Mizuho,7.9
+2026-01-06,KEY,Barclays,13.6
+2026-01-06,MCHP,Morgan Stanley,-2.2
+2026-01-06,TFC,Barclays,11.1
+2026-01-07,ACGL,Evercore ISI Group,6.5
+2026-01-07,BMY,UBS,17.7
+2026-01-07,CLX,Goldman Sachs,-6.7
+2026-01-07,MCD,Oppenheimer,16.3
+2026-01-07,MCHP,Stifel,9.5
+2026-01-07,MU,Piper Sandler,17.4
+2026-01-07,UBER,Wolfe Research,27.6
+2026-01-07,YUM,Barclays,18.6
+2026-01-08,ACGL,Goldman Sachs,-2.3
+2026-01-08,AMCR,Baird,19.8
+2026-01-08,BDX,Stifel,35.9
+2026-01-08,CMG,Truist Securities,29.3
+2026-01-08,DPZ,Stifel,20.6
+2026-01-08,LOW,Barclays,16.3
+2026-01-08,MDLZ,Mizuho,30.4
+2026-01-08,MTB,B of A Securities,7.8
+2026-01-08,REGN,B of A Securities,6.7
+2026-01-08,TSCO,Gordon Haskett,1.2
+2026-01-08,VLO,JP Morgan,8.6
+2026-01-08,WMT,Barclays,12.3
+2026-01-08,YUM,Oppenheimer,
+2026-01-09,AOS,Jefferies,5.7
+2026-01-09,APTV,Piper Sandler,18.5
+2026-01-09,JNJ,Bernstein,1
+2026-01-09,LMT,Truist Securities,15
+2026-01-09,NKE,Needham,
+2026-01-09,NOC,Truist Securities,5.5
+2026-01-09,PGR,Barclays,24.6
+2026-01-09,PLD,Baird,1.3
+2026-01-09,REG,Mizuho,5.9
+2026-01-09,WAB,Wolfe Research,9.7
+2026-01-10,ESS,BMO Capital,9.7
+2026-01-10,GNRC,Baird,31.5
+2026-01-10,MAA,BMO Capital,14
+2026-01-12,AEP,B of A Securities,5.5
+2026-01-12,CCL,B of A Securities,41.1
+2026-01-12,DLR,Mizuho,13.9
+2026-01-12,EFX,Oppenheimer,17.3
+2026-01-12,MCHP,B. Riley Securities,26.1
+2026-01-12,VST,B of A Securities,32.4
+2026-01-13,LOW,Gordon Haskett,19
+2026-01-13,NDAQ,UBS,20.6
+2026-01-13,PSX,JP Morgan,9
+2026-01-13,TT,Morgan Stanley,38.6
+2026-01-13,TTWO,Morgan Stanley,12.5
+2026-01-13,VST,BMO Capital,40.2
+2026-01-14,BLK,TD Cowen,12.9
+2026-01-14,CVX,Jefferies,15.2
+2026-01-14,GOOGL,B of A Securities,10.4
+2026-01-14,KMB,Citigroup,-8.7
+2026-01-14,LYV,Jefferies,6.6
+2026-01-15,DECK,Citigroup,27.8
+2026-01-15,GDDY,Morgan Stanley,33.7
+2026-01-15,LOW,Morgan Stanley,7.6
+2026-01-15,MAR,Citigroup,7
+2026-01-15,TPR,Jefferies,3.3
+2026-01-16,BA,Bernstein,20.3
+2026-01-16,CRL,Citigroup,18.6
+2026-01-16,ETN,HSBC,16.5
+2026-01-16,LII,JP Morgan,3.1
+2026-01-16,MCHP,Piper Sandler,12.7
+2026-01-16,MTB,Jefferies,20
+2026-01-16,OTIS,JP Morgan,28.9
+2026-01-16,PNR,JP Morgan,16.3
+2026-01-16,SNDK,Benchmark,5.7
+2026-01-16,WFC,Argus Research,13.5
+2026-01-17,CHTR,Bernstein,23.3
+2026-01-17,CMCSA,Bernstein,13.3
+2026-01-17,EOG,Keybanc,
+2026-01-17,KHC,Morgan Stanley,0.7
+2026-01-17,T,Bernstein,26.8
+2026-01-20,AWK,Wells Fargo,-5.1
+2026-01-20,CMS,Wells Fargo,3.7
+2026-01-20,CNP,Wells Fargo,18.1
+2026-01-20,DTE,Wells Fargo,12.6
+2026-01-20,EW,Stifel,31.4
+2026-01-20,FE,Wells Fargo,12.8
+2026-01-20,GS,RBC Capital,8.8
+2026-01-20,HII,Goldman Sachs,0.3
+2026-01-20,PPL,Wells Fargo,12.1
+2026-01-20,SBAC,UBS,33.9
+2026-01-20,WEC,Wells Fargo,8
+2026-01-21,ALB,Oppenheimer,17.8
+2026-01-21,CVX,JP Morgan,5.4
+2026-01-21,EIX,Wells Fargo,-2.9
+2026-01-21,KHC,Jefferies,3.5
+2026-01-21,LNT,Wells Fargo,4.8
+2026-01-21,MMM,Deutsche Bank,15.2
+2026-01-21,PM,Jefferies,7.5
+2026-01-21,ROK,Oppenheimer,
+2026-01-21,RSG,Scotiabank,14.5
+2026-01-22,CFG,B of A Securities,21.2
+2026-01-22,DHI,B of A Securities,-1.8
+2026-01-22,DRI,Raymond James,
+2026-01-22,HAL,Goldman Sachs,19.9
+2026-01-22,LRCX,Deutsche Bank,10.4
+2026-01-22,MCHP,B of A Securities,-1.3
+2026-01-22,MMM,Morgan Stanley,5.4
+2026-01-22,SBUX,B of A Securities,18.2
+2026-01-22,TFC,Piper Sandler,5.9
+2026-01-22,TSCO,Stephens & Co.,-1
+2026-01-22,ULTA,Raymond James,15.7
+2026-01-23,ABT,Bernstein,15.5
+2026-01-23,COHR,Susquehanna,18.5
+2026-01-23,COR,Jefferies,25.2
+2026-01-23,ED,UBS,8.3
+2026-01-23,GOOG,Raymond James,20.2
+2026-01-23,META,Jefferies,41.1
+2026-01-23,OKE,UBS,29.8
+2026-01-23,RCL,Mizuho,34.2
+2026-01-23,SWKS,Susquehanna,9.6
+2026-01-24,CFG,Argus Research,12.7
+2026-01-24,DHI,Argus Research,18.7
+2026-01-24,DRI,Mizuho,12.9
+2026-01-24,INTC,Evercore ISI Group,-4
+2026-01-24,MKC,Stifel,6.5
+2026-01-24,RSG,Oppenheimer,18.1
+2026-01-24,TFC,Argus Research,16
+2026-01-24,VRTX,Evercore ISI Group,13.9
+2026-01-26,GILD,UBS,14.1
+2026-01-27,CMI,Wolfe Research,
+2026-01-27,FIX,Stifel,5
+2026-01-27,NRG,Jefferies,21.2
+2026-01-27,PWR,Stifel,9
+2026-01-27,SLB,B of A Securities,9.4
+2026-01-27,SWKS,B. Riley Securities,0.2
+2026-01-27,UBER,Stifel,28.1
+2026-01-27,WRB,Jefferies,1.6
+2026-01-28,ALB,Jefferies,17.8
+2026-01-28,AME,Oppenheimer,
+2026-01-28,BRO,Jefferies,14.5
+2026-01-28,EMR,Oppenheimer,
+2026-01-28,EXPE,Goldman Sachs,21.8
+2026-01-28,FFIV,Goldman Sachs,7.2
+2026-01-28,HCA,Jefferies,18.1
+2026-01-28,NEE,Argus Research,4.9
+2026-01-28,NEE,Mizuho,2.6
+2026-01-28,NOC,RBC Capital,11.2
+2026-01-28,PTC,Oppenheimer,21.1
+2026-01-28,ROP,Oppenheimer,
+2026-01-28,RTX,JP Morgan,6.8
+2026-01-28,STX,Goldman Sachs,-2.6
+2026-01-28,UPS,Jefferies,20.9
+2026-01-28,UPS,Wells Fargo,2.3
+2026-01-29,ADP,JP Morgan,10.3
+2026-01-29,BA,UBS,17.7
+2026-01-29,GEV,Goldman Sachs,29
+2026-01-29,GM,Piper Sandler,21.8
+2026-01-29,HCA,Deutsche Bank,13.4
+2026-01-29,LRCX,Goldman Sachs,6.7
+2026-01-29,META,Scotiabank,-5.1
+2026-01-29,MLM,Loop Capital,5
+2026-01-29,NOC,B of A Securities,7.8
+2026-01-29,PPG,Goldman Sachs,14.9
+2026-01-29,PPG,Jefferies,8.8
+2026-01-29,PPG,JP Morgan,9.7
+2026-01-29,ROP,Citigroup,26.5
+2026-01-29,ROP,Goldman Sachs,23.7
+2026-01-29,ROP,Mizuho,2.6
+2026-01-29,ROP,Stifel,8.2
+2026-01-29,ROP,Truist Securities,54.6
+2026-01-29,SYY,Jefferies,13.4
+2026-01-29,SYY,JP Morgan,3.9
+2026-01-29,SYY,Truist Securities,12.2
+2026-01-29,TXN,Deutsche Bank,-5.3
+2026-01-29,UPS,Deutsche Bank,1.6
+2026-01-29,UPS,Truist Securities,24.5
+2026-01-30,AES,JP Morgan,14.6
+2026-01-30,ARE,Jefferies,4.9
+2026-01-30,DECK,Goldman Sachs,-19.9
+2026-01-30,DHR,Jefferies,20.8
+2026-01-30,DHR,JP Morgan,25.4
+2026-01-30,LHX,RBC Capital,4
+2026-01-30,LVS,Deutsche Bank,47.5
+2026-01-30,META,BMO Capital,0.3
+2026-01-30,MSFT,Keybanc,36.6
+2026-01-30,NDAQ,RBC Capital,10.2
+2026-01-30,PH,Barclays,7.4
+2026-01-30,PH,Jefferies,15.8
+2026-01-30,PHM,Oppenheimer,17.7
+2026-01-30,SBUX,Barclays,25.1
+2026-01-30,SBUX,Piper Sandler,11.1
+2026-01-30,STX,Baird,12.3
+2026-01-30,TMO,Citigroup,17.8
+2026-01-30,TMO,TD Cowen,17.4
+2026-01-30,TPR,Goldman Sachs,15.9
+2026-01-30,TT,Wells Fargo,-5.2
+2026-01-30,V,Morgan Stanley,23.7
+2026-01-31,DOV,JP Morgan,19.8
+2026-01-31,MA,JP Morgan,21.1
+2026-01-31,MO,Stifel,13.3
+2026-01-31,NDAQ,JP Morgan,3
+2026-01-31,TSCO,JP Morgan,14.8
+2026-02-02,CHD,Morgan Stanley,7.9
+2026-02-02,LHX,Morgan Stanley,15.4
+2026-02-02,LMT,Goldman Sachs,-16.6
+2026-02-02,META,Argus Research,12
+2026-02-02,REGN,Oppenheimer,18
+2026-02-03,BA,Jefferies,24.8
+2026-02-03,BKR,Jefferies,18.9
+2026-02-03,CHD,Jefferies,18.5
+2026-02-03,HIG,Morgan Stanley,3.5
+2026-02-03,HSY,Jefferies,5.5
+2026-02-03,PHM,JP Morgan,3.9
+2026-02-03,PTC,JP Morgan,4.9
+2026-02-03,SLB,Jefferies,20.5
+2026-02-04,APTV,Oppenheimer,33.3
+2026-02-04,BR,JP Morgan,20.7
+2026-02-04,CHTR,Deutsche Bank,9
+2026-02-04,DIS,Jefferies,26.7
+2026-02-04,HIG,Citigroup,2.9
+2026-02-04,HUBB,JP Morgan,5.3
+2026-02-04,MDLZ,Piper Sandler,6.7
+2026-02-04,PGR,Citigroup,30
+2026-02-04,PYPL,Morgan Stanley,-18.3
+2026-02-04,RVTY,Wells Fargo,7.1
+2026-02-04,WDC,Goldman Sachs,-12.4
+2026-02-05,AES,Jefferies,3.2
+2026-02-05,ALGN,Stifel,19.3
+2026-02-05,BALL,Mizuho,7.2
+2026-02-05,BSX,JP Morgan,29.3
+2026-02-05,CCI,Jefferies,5.3
+2026-02-05,CCI,Scotiabank,17.9
+2026-02-05,CCI,UBS,31.7
+2026-02-05,CME,RBC Capital,1.7
+2026-02-05,CMG,Keybanc,5.3
+2026-02-05,CMG,Stifel,12.8
+2026-02-05,CMG,Wells Fargo,12.8
+2026-02-05,DOC,Evercore ISI Group,13.2
+2026-02-05,EFX,JP Morgan,25.8
+2026-02-05,EFX,Stifel,28.5
+2026-02-05,FOXA,Citigroup,17.4
+2026-02-05,FOXA,UBS,17.4
+2026-02-05,GOOGL,JP Morgan,26.5
+2026-02-05,LHX,Citigroup,23.4
+2026-02-05,LHX,JP Morgan,16.6
+2026-02-05,LITE,B. Riley Securities,20.6
+2026-02-05,LITE,Susquehanna,26.1
+2026-02-05,MDLZ,Stifel,13.1
+2026-02-05,PTC,RBC Capital,27.4
+2026-02-05,SWKS,Benchmark,
+2026-02-05,TECH,Stifel,-4.5
+2026-02-05,UBER,RBC Capital,43.3
+2026-02-06,ALGN,Wells Fargo,12.4
+2026-02-06,AVY,BMO Capital,15.7
+2026-02-06,DLR,Citigroup,13.4
+2026-02-06,EMR,Deutsche Bank,11.3
+2026-02-06,FOXA,Morgan Stanley,16.6
+2026-02-06,GEHC,Morgan Stanley,3.1
+2026-02-06,HCA,Argus Research,8.9
+2026-02-06,IQV,Citigroup,9.2
+2026-02-06,IQV,Jefferies,39.3
+2026-02-06,IQV,UBS,31.1
+2026-02-06,JCI,JP Morgan,16.1
+2026-02-06,JKHY,Morgan Stanley,3.6
+2026-02-06,MAA,RBC Capital,4.6
+2026-02-06,MCK,Mizuho,-7.3
+2026-02-06,ORLY,RBC Capital,18.3
+2026-02-06,ORLY,Truist Securities,16.2
+2026-02-06,PSA,Wells Fargo,3.8
+2026-02-06,RL,Jefferies,19.9
+2026-02-06,TDG,Keybanc,
+2026-02-06,UBER,Citigroup,45.7
+2026-02-06,UBER,Mizuho,45.7
+2026-02-06,UBER,Morgan Stanley,32.5
+2026-02-07,BA,Freedom Broker,21.1
+2026-02-07,GWW,JP Morgan,-2.5
+2026-02-07,MCHP,Mizuho,21
+2026-02-07,ORLY,JP Morgan,17.2
+2026-02-07,RCL,Tigress Financial,29.1
+2026-02-07,RDDT,Guggenheim,57.9
+2026-02-07,ROK,Mizuho,-1.7
+2026-02-07,WEC,Mizuho,7
+2026-02-09,CB,Citigroup,16.4
+2026-02-09,IDXX,Piper Sandler,15.8
+2026-02-09,MCO,Goldman Sachs,17.7
+2026-02-09,MDLZ,DA Davidson,6.7
+2026-02-09,MPWR,Citigroup,11
+2026-02-10,CB,Raymond James,15.7
+2026-02-10,DGX,Citigroup,10.4
+2026-02-10,EMR,Stephens & Co.,-3.2
+2026-02-10,FTV,Barclays,3.6
+2026-02-10,ON,Piper Sandler,15.8
+2026-02-10,VST,Jefferies,26.6
+2026-02-10,WDC,Wedbush,16.1
+2026-02-10,WMT,Mizuho,6.3
+2026-02-11,CAT,B of A Securities,8.7
+2026-02-11,COST,Evercore ISI Group,7.9
+2026-02-11,DD,Wells Fargo,10.3
+2026-02-11,ECL,Stifel,12.4
+2026-02-11,EW,Goldman Sachs,20.8
+2026-02-11,GM,Benchmark,11.8
+2026-02-11,HAS,Goldman Sachs,9.8
+2026-02-11,MAR,Goldman Sachs,11
+2026-02-11,MAR,Jefferies,15.7
+2026-02-11,ON,Benchmark,
+2026-02-11,SPGI,Goldman Sachs,29.4
+2026-02-12,APP,Jefferies,73.3
+2026-02-12,DD,BMO Capital,15.6
+2026-02-12,DD,Keybanc,9.8
+2026-02-12,DGX,Jefferies,3.9
+2026-02-12,EQIX,BMO Capital,9.8
+2026-02-12,EW,Wells Fargo,26.1
+2026-02-12,FIS,JP Morgan,34.2
+2026-02-12,GILD,Wells Fargo,7.5
+2026-02-12,GNRC,Guggenheim,
+2026-02-12,GOOG,UBS,11.4
+2026-02-12,GPN,JP Morgan,24.4
+2026-02-12,HII,B of A Securities,0
+2026-02-12,HUM,Jefferies,36.1
+2026-02-12,INCY,Wells Fargo,2.2
+2026-02-12,MAA,Keybanc,13.7
+2026-02-12,MCD,Jefferies,13.7
+2026-02-12,MCD,Piper Sandler,-1.5
+2026-02-12,MLM,Jefferies,15
+2026-02-12,SPGI,Evercore ISI Group,69.4
+2026-02-13,ABNB,TD Cowen,26.5
+2026-02-13,AEE,Wells Fargo,3.5
+2026-02-13,AKAM,DA Davidson,19.6
+2026-02-13,ANET,Goldman Sachs,28.9
+2026-02-13,EQIX,Jefferies,4.5
+2026-02-13,FDX,TD Cowen,28.5
+2026-02-13,FRT,Stifel,4.9
+2026-02-13,MCD,Truist Securities,11.3
+2026-02-13,MDLZ,Wells Fargo,13.1
+2026-02-13,TEL,Oppenheimer,26
+2026-02-13,TYL,Oppenheimer,54.4
+2026-02-13,TYL,Wells Fargo,14.9
+2026-02-13,VRT,Mizuho,21.7
+2026-02-13,VRTX,Scotiabank,18.3
+2026-02-13,VRTX,Stifel,-1.2
+2026-02-13,YUM,Evercore ISI Group,15.8
+2026-02-14,EXC,Mizuho,7.4
+2026-02-14,IFF,Wells Fargo,21.2
+2026-02-14,TYL,Needham,37.2
+2026-02-14,WMT,Keybanc,9.3
+2026-02-17,CI,Truist Securities,18.9
+2026-02-17,HUM,Goldman Sachs,-14.3
+2026-02-18,DD,Deutsche Bank,13
+2026-02-18,DTE,Citigroup,16.2
+2026-02-18,GIS,Bernstein,8.3
+2026-02-18,IFF,Mizuho,11.3
+2026-02-18,JKHY,Wells Fargo,23.3
+2026-02-18,KVUE,Canaccord Genuity,-2.9
+2026-02-18,MDLZ,Bernstein,21.9
+2026-02-18,MDT,JP Morgan,4.2
+2026-02-18,RSG,BMO Capital,13.1
+2026-02-18,RSG,Morgan Stanley,2.6
+2026-02-18,UDR,Piper Sandler,7.7
+2026-02-18,WDAY,Deutsche Bank,34.2
+2026-02-19,BLDR,Baird,10.4
+2026-02-19,DASH,Oppenheimer,27
+2026-02-19,FE,Scotiabank,13.4
+2026-02-19,IQV,Truist Securities,44.9
+2026-02-19,LDOS,Baird,14.2
+2026-02-19,MCO,Stifel,19.1
+2026-02-19,MCO,UBS,8.1
+2026-02-19,PPG,Evercore ISI Group,0.8
+2026-02-19,VMC,Truist Securities,20.7
+2026-02-19,VRSK,Goldman Sachs,11.5
+2026-02-20,ADI,Benchmark,15.8
+2026-02-20,ADI,Susquehanna,15.8
+2026-02-20,AEE,UBS,15.3
+2026-02-20,BX,UBS,12.8
+2026-02-20,CVNA,Stephens & Co.,57.3
+2026-02-20,DASH,B of A Securities,56.1
+2026-02-20,ED,Scotiabank,2.6
+2026-02-20,EVRG,Wells Fargo,2.9
+2026-02-20,EXC,UBS,7.5
+2026-02-20,MCO,Evercore ISI Group,36.5
+2026-02-20,PFE,Barclays,-6.4
+2026-02-20,PWR,B. Riley Securities,1.9
+2026-02-20,PWR,Baird,9.3
+2026-02-20,PWR,DA Davidson,3.7
+2026-02-20,SO,Scotiabank,6.7
+2026-02-20,SYY,Wells Fargo,11.1
+2026-02-20,TAP,Evercore ISI Group,2.5
+2026-02-21,BKNG,Susquehanna,24.6
+2026-02-21,BMY,Barclays,23.7
+2026-02-21,INVH,Keybanc,31.8
+2026-02-21,LYV,Evercore ISI Group,22.8
+2026-02-21,SO,Mizuho,7.8
+2026-02-21,SO,Wells Fargo,-0.5
+2026-02-21,WMT,HSBC,6.5
+2026-02-23,ADSK,Stifel,27.4
+2026-02-23,GDDY,Jefferies,12.3
+2026-02-23,OMC,Barclays,7.4
+2026-02-23,PPL,Citigroup,3.5
+2026-02-23,PPL,UBS,11.7
+2026-02-23,TDY,Jefferies,15.6
+2026-02-23,WMT,Evercore ISI Group,9.3
+2026-02-24,DE,Morgan Stanley,13.5
+2026-02-24,HSIC,Baird,19
+2026-02-24,PH,Morgan Stanley,2.5
+2026-02-24,TRGP,Citigroup,13.6
+2026-02-24,WDAY,JP Morgan,78.4
+2026-02-25,AMT,UBS,29.4
+2026-02-25,CRL,UBS,3
+2026-02-25,FSLR,RBC Capital,19.5
+2026-02-25,GDDY,RBC Capital,30.1
+2026-02-25,HSIC,JP Morgan,11.4
+2026-02-25,INVH,Citigroup,21.2
+2026-02-25,WDAY,Mizuho,75.6
+2026-02-26,A,UBS,35.4
+2026-02-26,FIS,Susquehanna,11.4
+2026-02-26,GDDY,Barclays,45.7
+2026-02-26,HSIC,Barrington Research,18.9
+2026-02-26,HSIC,Wells Fargo,6.6
+2026-02-26,IBM,UBS,-1.5
+2026-02-26,KR,Wells Fargo,0.1
+2026-02-26,PNW,Citigroup,9
+2026-02-26,PNW,Wells Fargo,-3
+2026-02-26,TAP,B of A Securities,-12.3
+2026-02-26,TTD,BMO Capital,160.7
+2026-02-26,TTD,Morgan Stanley,42.2
+2026-02-26,WDAY,Evercore ISI Group,16.8
+2026-02-26,WDAY,Guggenheim,100.7
+2026-02-27,TTD,Loop Capital,6.3
+2026-02-27,WBD,Benchmark,
+2026-02-27,WBD,Raymond James,
+2026-02-27,XYZ,Oppenheimer,41.1
+2026-02-28,AEP,UBS,-0.1
+2026-02-28,AES,Seaport Global,
+2026-02-28,AON,B of A Securities,19.9
+2026-03-02,D,Scotiabank,6.3
+2026-03-02,PFE,Argus Research,26.9
+2026-03-02,VRSK,Raymond James,23.8
+2026-03-03,CI,Piper Sandler,30.7
+2026-03-03,COHR,Barclays,22.4
+2026-03-03,KMI,Morgan Stanley,5.9
+2026-03-03,MAA,BTIG,13.1
+2026-03-03,NEM,Citigroup,24.6
+2026-03-03,REG,Truist Securities,6.4
+2026-03-03,TTD,Piper Sandler,16.4
+2026-03-04,AES,Mizuho,5.8
+2026-03-04,AZO,Evercore ISI Group,11.8
+2026-03-04,DASH,Mizuho,44.5
+2026-03-04,DUK,Wells Fargo,2.7
+2026-03-04,NCLH,B of A Securities,26.2
+2026-03-04,SLB,Goldman Sachs,23.3
+2026-03-05,APP,Oppenheimer,35.7
+2026-03-05,EQT,Piper Sandler,-10.3
+2026-03-05,HAS,UBS,14
+2026-03-05,JNJ,JP Morgan,3
+2026-03-05,LII,Oppenheimer,18.4
+2026-03-05,NEE,UBS,12.7
+2026-03-05,PEG,Barclays,6.7
+2026-03-05,ROST,Guggenheim,6.9
+2026-03-05,SRE,Argus Research,
+2026-03-05,TGT,B of A Securities,-11.5
+2026-03-05,VMC,JP Morgan,9.8
+2026-03-06,AEP,Evercore ISI Group,16.8
+2026-03-06,COST,BMO Capital,36
+2026-03-06,DUK,Evercore ISI Group,5.8
+2026-03-06,EIX,Ladenburg Thalmann,-11
+2026-03-06,KMI,Mizuho,10.3
+2026-03-06,NI,Evercore ISI Group,7.2
+2026-03-06,PEG,Evercore ISI Group,15
+2026-03-06,SO,Evercore ISI Group,14
+2026-03-06,SRE,UBS,8.1
+2026-03-07,AES,Morgan Stanley,5.5
+2026-03-07,IQV,Barclays,17.8
+2026-03-09,AZO,Argus Research,17.5
+2026-03-09,DOW,Fermium Research,8.7
+2026-03-10,ARE,JP Morgan,11.8
+2026-03-10,CRM,Northland Capital Markets,16.1
+2026-03-10,DOW,Jefferies,12.7
+2026-03-10,INVH,Morgan Stanley,28
+2026-03-10,LYB,Jefferies,6.5
+2026-03-10,O,UBS,11.2
+2026-03-10,PCG,UBS,26.9
+2026-03-10,RDDT,Jefferies,76.2
+2026-03-10,VRTX,B of A Securities,24
+2026-03-10,VRTX,Citigroup,21.3
+2026-03-10,VRTX,Oppenheimer,24.4
+2026-03-10,WBD,Wells Fargo,11.8
+2026-03-11,AMGN,Jefferies,-6.7
+2026-03-11,APA,Goldman Sachs,-8.6
+2026-03-11,BG,BMO Capital,12.7
+2026-03-11,BG,Morgan Stanley,16.9
+2026-03-11,FANG,Goldman Sachs,22.5
+2026-03-11,GILD,Jefferies,22.4
+2026-03-11,ORCL,JP Morgan,26.2
+2026-03-11,OXY,Goldman Sachs,0.9
+2026-03-11,VRTX,HC Wainwright & Co.,28.7
+2026-03-11,VRTX,Jefferies,16.5
+2026-03-12,AEP,JP Morgan,6.1
+2026-03-12,DVN,Piper Sandler,46.6
+2026-03-12,ED,JP Morgan,1.1
+2026-03-12,ES,JP Morgan,1.4
+2026-03-12,EXC,JP Morgan,9.1
+2026-03-12,FE,JP Morgan,8.6
+2026-03-12,PEG,JP Morgan,9.2
+2026-03-13,CF,Wells Fargo,13.6
+2026-03-13,KMI,Stifel,-1.6
+2026-03-13,OXY,Piper Sandler,14.4
+2026-03-13,PAYX,BMO Capital,11.5
+2026-03-13,ULTA,Oppenheimer,14.8
+2026-03-14,ULTA,Telsey Advisory Group,26.3
+2026-03-16,HBAN,DA Davidson,29.8
+2026-03-16,MDLZ,Morgan Stanley,25.9
+2026-03-17,DLTR,Citigroup,8.5
+2026-03-17,EQT,JP Morgan,11.1
+2026-03-17,ETN,Jefferies,17.6
+2026-03-17,INCY,Jefferies,1
+2026-03-17,ORCL,Mizuho,105.9
+2026-03-17,TMUS,Citigroup,4.1
+2026-03-18,ALGN,Barclays,15.6
+2026-03-18,CF,B of A Securities,-18.9
+2026-03-18,CF,BMO Capital,10.2
+2026-03-18,DLTR,B of A Securities,-19.8
+2026-03-18,DLTR,Telsey Advisory Group,35.2
+2026-03-18,DOV,Wells Fargo,7.8
+2026-03-18,PTC,Keybanc,27.7
+2026-03-18,VRTX,Maxim Group,24.2
+2026-03-19,GIS,Goldman Sachs,6.6
+2026-03-19,GIS,Mizuho,3.9
+2026-03-19,GIS,RBC Capital,46.5
+2026-03-19,LYB,Deutsche Bank,-1.8
+2026-03-19,META,Tigress Financial,54.4
+2026-03-19,MU,Bernstein,20
+2026-03-19,MU,JP Morgan,29.4
+2026-03-19,TTD,Stifel,12
+2026-03-20,CEG,JP Morgan,27.2
+2026-03-20,FDX,Susquehanna,48.3
+2026-03-20,OMC,UBS,50.5
+2026-03-20,PAYX,RBC Capital,11.7
+2026-03-20,VZ,Citigroup,10.6
+2026-03-21,DRI,Barclays,13.1
+2026-03-21,MOS,B of A Securities,16.1
+2026-03-21,OXY,JP Morgan,5.6
+2026-03-23,BAC,Goldman Sachs,17.9
+2026-03-23,EXR,JP Morgan,8.2
+2026-03-23,PSA,JP Morgan,7.8
+2026-03-23,PTC,Mizuho,6.4
+2026-03-23,SHW,Mizuho,21
+2026-03-23,SMCI,Northland Capital Markets,8.3
+2026-03-23,T,Citigroup,11.4
+2026-03-23,WFC,Goldman Sachs,17
+2026-03-24,BG,JP Morgan,10.2
+2026-03-24,CCI,Wells Fargo,5.9
+2026-03-24,FICO,Baird,48.8
+2026-03-24,KMI,Truist Securities,13
+2026-03-24,PCG,Jefferies,10
+2026-03-24,PGR,Jefferies,4.8
+2026-03-24,SRE,Wells Fargo,23.9
+2026-03-24,TRGP,UBS,16.4
+2026-03-25,AJG,BMO Capital,27.9
+2026-03-25,BX,BMO Capital,13.9
+2026-03-25,HD,Telsey Advisory Group,29.9
+2026-03-25,SMCI,B of A Securities,6.1
+2026-03-25,WAT,Deutsche Bank,8.7
+2026-03-26,CTAS,Stifel,7.7
+2026-03-26,EXC,Citigroup,21
+2026-03-26,GM,Wolfe Research,26.4
+2026-03-26,GPN,Raymond James,
+2026-03-26,HAL,BMO Capital,8.1
+2026-03-26,LUV,Freedom Broker,3.1
+2026-03-26,PNC,Jefferies,22
+2026-03-26,TFC,Jefferies,-21.6
+2026-03-26,WFC,Jefferies,25.2
+2026-03-27,AES,Argus Research,
+2026-03-27,CCL,Mizuho,58.7
+2026-03-27,CHRW,B of A Securities,31.2
+2026-03-27,ES,B of A Securities,8
+2026-03-27,ES,UBS,9.5
+2026-03-27,GNRC,B of A Securities,26.6
+2026-03-27,GPN,Mizuho,58.9
+2026-03-27,KMI,Scotiabank,-5.9
+2026-03-27,PAYX,Baird,34
+2026-03-28,CEG,B of A Securities,35.5
+2026-03-28,EQT,BMO Capital,12.7
+2026-03-28,IEX,BMO Capital,13
+2026-03-28,PH,BMO Capital,21.1
+2026-03-30,DOW,Wells Fargo,15.3
+2026-03-30,EL,Deutsche Bank,59.5
+2026-03-30,FITB,Piper Sandler,20.1
+2026-03-30,KDP,Deutsche Bank,6.5
+2026-03-30,KHC,Deutsche Bank,-9.6
+2026-03-30,KMB,Deutsche Bank,10.1
+2026-03-30,KMI,Citigroup,-3.7
+2026-03-30,KMI,RBC Capital,2.1
+2026-03-30,MDLZ,Deutsche Bank,-7.9
+2026-03-30,META,Morgan Stanley,44.5
+2026-03-30,PG,Deutsche Bank,13.3
+2026-03-30,RF,Piper Sandler,10
+2026-03-30,SJM,Deutsche Bank,2.1
+2026-03-30,TAP,Deutsche Bank,-4.8
+2026-03-30,VRSK,RBC Capital,24.4
+2026-03-31,CCL,Bernstein,16
+2026-03-31,CTAS,Citigroup,-5.6
+2026-03-31,CVS,Piper Sandler,40.6
+2026-03-31,IDXX,Stifel,20.5
+2026-03-31,MLM,Barclays,10
+2026-03-31,NSC,Bernstein,9.8
+2026-03-31,PNR,Jefferies,45.8
+2026-03-31,ROK,Baird,16.3
+2026-03-31,TEL,Jefferies,23.7
+2026-03-31,TRMB,Baird,34.9
+2026-03-31,UNP,Bernstein,21.7
+2026-04-01,ALLE,Wells Fargo,6.3
+2026-04-01,AMCR,Deutsche Bank,25
+2026-04-01,BA,Wells Fargo,22.9
+2026-04-01,CARR,Wells Fargo,2.4
+2026-04-01,CEG,Keybanc,13.7
+2026-04-01,CF,Mizuho,-17.6
+2026-04-01,FDS,Goldman Sachs,0.5
+2026-04-01,GE,Wells Fargo,12
+2026-04-01,GEV,Wells Fargo,0.8
+2026-04-01,ITW,Barclays,-3.9
+2026-04-01,LDOS,Wells Fargo,6.8
+2026-04-01,MDT,Barclays,38.6
+2026-04-01,MDT,Piper Sandler,5.1
+2026-04-01,MKC,Jefferies,27.4
+2026-04-01,MMM,Barclays,26.7
+2026-04-01,NOC,Wells Fargo,16.1
+2026-04-01,OTIS,Wells Fargo,4.7
+2026-04-01,SCHW,Truist Securities,26.3
+2026-04-01,SWK,Barclays,32.8
+2026-04-01,TDG,Wells Fargo,3.5
+2026-04-01,UNH,Raymond James,20.3
+2026-04-02,CEG,BMO Capital,42.3
+2026-04-02,COP,Citigroup,14.2
+2026-04-02,CVX,Citigroup,16
+2026-04-02,FICO,Goldman Sachs,45.5
+2026-04-02,GPN,Citigroup,41.2
+2026-04-02,RTX,Citigroup,15.8
+2026-04-02,TXT,Citigroup,12.5
+2026-04-03,FANG,Keybanc,13.9
+2026-04-03,RDDT,B of A Securities,35
+2026-04-03,SYY,Guggenheim,26.6
+2026-04-06,RJF,Jefferies,3.1
+2026-04-06,SCHW,Jefferies,25.7
+2026-04-06,VMC,Morgan Stanley,15.1
+2026-04-06,WFC,Evercore ISI Group,17.3
+2026-04-06,WYNN,Jefferies,48.4
+2026-04-07,APO,Goldman Sachs,27.6
+2026-04-07,COF,Goldman Sachs,43.1
+2026-04-07,FSLR,Jefferies,-3.1
+2026-04-07,KKR,Goldman Sachs,22.4
+2026-04-07,KKR,Piper Sandler,30.2
+2026-04-07,MCK,B of A Securities,16.6
+2026-04-07,MDT,Citigroup,27.9
+2026-04-07,TROW,Goldman Sachs,-10.3
+2026-04-07,TSLA,Baird,55.3
+2026-04-08,ABNB,Tigress Financial,41.2
+2026-04-08,AXON,Goldman Sachs,55.9
+2026-04-08,COP,Piper Sandler,28.5
+2026-04-08,DGX,Evercore ISI Group,7
+2026-04-08,DHI,Seaport Global,
+2026-04-08,HSIC,Evercore ISI Group,21.8
+2026-04-08,IQV,Evercore ISI Group,5.5
+2026-04-08,KDP,Wells Fargo,44.5
+2026-04-08,LEN,Seaport Global,-16.8
+2026-04-08,LH,Evercore ISI Group,10.3
+2026-04-08,LMT,Jefferies,4.5
+2026-04-08,OTIS,Wolfe Research,
+2026-04-08,PHM,Seaport Global,-15.8
+2026-04-08,RCL,JP Morgan,15.9
+2026-04-08,TXT,Jefferies,21.5
+2026-04-09,COHR,JP Morgan,4.7
+2026-04-09,COST,Telsey Advisory Group,10.2
+2026-04-09,DE,Jefferies,-9.5
+2026-04-09,GEV,Susquehanna,14.5
+2026-04-09,ICE,"Keefe, Bruyette & Woods",13.4
+2026-04-09,ISRG,Goldman Sachs,32.6
+2026-04-09,MGM,Morgan Stanley,-5
+2026-04-09,PG,Piper Sandler,-1.7
+2026-04-09,PRU,UBS,2.1
+2026-04-09,REGN,Bernstein,20.5
+2026-04-09,XOM,Jefferies,17.3
+2026-04-09,XOM,JP Morgan,8.4
+2026-04-10,AES,Susquehanna,4.1
+2026-04-10,AXP,Wells Fargo,30.8
+2026-04-10,BDX,Goldman Sachs,7.5
+2026-04-10,COF,Wells Fargo,33.9
+2026-04-10,IT,Barclays,1.8
+2026-04-10,KMB,B of A Securities,22.5
+2026-04-10,LIN,UBS,14.4
+2026-04-10,MDLZ,B of A Securities,10
+2026-04-10,PFE,Morgan Stanley,2.5
+2026-04-10,PPG,Wells Fargo,17.4
+2026-04-10,RSG,JP Morgan,12.9
+2026-04-10,WM,JP Morgan,16.4
+2026-04-10,XOM,Wells Fargo,20.1
+2026-04-11,CBOE,Morgan Stanley,-7.5
+2026-04-11,CL,B of A Securities,18.7
+2026-04-11,IVZ,BMO Capital,19.4
+2026-04-11,MO,B of A Securities,8.2
+2026-04-11,PH,Stifel,1.4
+2026-04-13,AOS,Goldman Sachs,-7.3
+2026-04-13,DOV,Citigroup,16.7
+2026-04-13,GEHC,Mizuho,23.9
+2026-04-13,GILD,Citigroup,19.6
+2026-04-13,NKE,HSBC,13.7
+2026-04-13,PEG,BMO Capital,10.2
+2026-04-14,APD,BMO Capital,9.2
+2026-04-14,CB,B of A Securities,-17.3
+2026-04-14,CCL,UBS,23.9
+2026-04-14,CF,Goldman Sachs,10.1
+2026-04-14,HIG,B of A Securities,-0.1
+2026-04-14,J,Baird,0.1
+2026-04-14,JPM,Piper Sandler,11.4
+2026-04-14,KEYS,Goldman Sachs,15.1
+2026-04-14,MA,Citigroup,32.9
+2026-04-14,MET,B of A Securities,31.3
+2026-04-14,PFE,UBS,-0.7
+2026-04-14,PRU,B of A Securities,6.1
+2026-04-14,RDDT,Goldman Sachs,17.9
+2026-04-14,SBUX,Jefferies,-6
+2026-04-14,SPGI,Wells Fargo,28.7
+2026-04-14,TEL,Goldman Sachs,14.1
+2026-04-14,VRT,Goldman Sachs,1.3
+2026-04-14,WTW,B of A Securities,20.9
+2026-04-15,BLK,Goldman Sachs,24.6
+2026-04-15,C,Barclays,17.3
+2026-04-15,C,Goldman Sachs,15
+2026-04-15,C,Piper Sandler,10.5
+2026-04-15,CNP,Barclays,3.1
+2026-04-15,DHR,Barclays,15.5
+2026-04-15,EVRG,B of A Securities,7.8
+2026-04-15,FAST,Baird,12.4
+2026-04-15,FDX,Stephens & Co.,46.7
+2026-04-15,GM,Deutsche Bank,13.2
+2026-04-15,JNJ,Barclays,6.3
+2026-04-15,JNJ,Stifel,4.2
+2026-04-15,JPM,Jefferies,1.9
+2026-04-15,KVUE,Citigroup,9.5
+2026-04-15,LNT,Barclays,2.8
+2026-04-15,RMD,JP Morgan,
+2026-04-15,WFC,Barclays,33.5
+2026-04-16,ANET,JP Morgan,28.3
+2026-04-16,BALL,Truist Securities,21.4
+2026-04-16,CSCO,JP Morgan,17
+2026-04-16,D,B of A Securities,4.5
+2026-04-16,FLEX,JP Morgan,7.9
+2026-04-16,GRMN,JP Morgan,7.3
+2026-04-16,KIM,Morgan Stanley,2.3
+2026-04-16,NOW,Deutsche Bank,38.3
+2026-04-17,GEHC,Piper Sandler,17.3
+2026-04-17,INTC,Bernstein,-12.9
+2026-04-17,KEY,Piper Sandler,9.7
+2026-04-17,LIN,Seaport Global,15.8
+2026-04-17,MPWR,Stifel,4.3
+2026-04-17,MS,RBC Capital,9.2
+2026-04-17,NCLH,Tigress Financial,49.5
+2026-04-17,PLD,UBS,13
+2026-04-17,PNC,B of A Securities,19.2
+2026-04-17,PNC,"Keefe, Bruyette & Woods",14.2
+2026-04-17,RL,B of A Securities,19.2
+2026-04-17,RSG,Baird,14.9
+2026-04-17,SCHW,JP Morgan,40.3
+2026-04-17,WM,Baird,16.2
+2026-04-17,WYNN,Susquehanna,17.2
+2026-04-18,ABT,Stifel,25.5
+2026-04-18,EXC,Barclays,6.4
+2026-04-18,EXC,BMO Capital,6.4
+2026-04-18,PEP,Evercore ISI Group,7.4
+2026-04-18,PLD,Evercore ISI Group,-5.3
+2026-04-18,UDR,Goldman Sachs,2.1
+2026-04-20,EXC,Jefferies,7.1
+2026-04-20,EXC,RBC Capital,2.8
+2026-04-20,JBL,B of A Securities,9.7
+2026-04-20,MOS,Scotiabank,36
+2026-04-20,PHM,B of A Securities,11.3
+2026-04-20,RF,RBC Capital,10.8
+2026-04-20,TFC,RBC Capital,5.5
+2026-04-20,TRGP,Goldman Sachs,14.6
+2026-04-20,ULTA,Jefferies,25.2
+2026-04-20,UNH,Jefferies,15.1
+2026-04-20,XEL,UBS,12.2
+2026-04-21,ABT,Barclays,49.6
+2026-04-21,AMZN,B of A Securities,16.8
+2026-04-21,BX,Morgan Stanley,41.6
+2026-04-21,COHR,Citigroup,19
+2026-04-21,DD,B of A Securities,0
+2026-04-21,ECL,B of A Securities,24.5
+2026-04-21,FE,Jefferies,5.1
+2026-04-21,FITB,Barclays,23.2
+2026-04-21,FLEX,Stifel,12.4
+2026-04-21,INTC,HSBC,41.5
+2026-04-21,MAS,B of A Securities,-8
+2026-04-21,PLD,B of A Securities,11.5
+2026-04-21,PNR,B of A Securities,-3.6
+2026-04-21,REG,Morgan Stanley,8.5
+2026-04-21,WEC,Barclays,1.1
+2026-04-21,WMB,Goldman Sachs,15
+2026-04-22,ALGN,Piper Sandler,18.6
+2026-04-22,APD,B of A Securities,2.3
+2026-04-22,APO,Evercore ISI Group,13.1
+2026-04-22,BKNG,Deutsche Bank,10.2
+2026-04-22,CMS,B of A Securities,15.6
+2026-04-22,CTVA,Wells Fargo,11.6
+2026-04-22,CVNA,B of A Securities,0.8
+2026-04-22,DHI,Goldman Sachs,16.6
+2026-04-22,ES,Scotiabank,-6.7
+2026-04-22,ETR,Keybanc,9.4
+2026-04-22,GE,Morgan Stanley,39.5
+2026-04-22,GIS,Stifel,13.5
+2026-04-22,GPN,BMO Capital,6
+2026-04-22,HAL,JP Morgan,7.7
+2026-04-22,HAL,RBC Capital,12.8
+2026-04-22,KEY,Evercore ISI Group,17
+2026-04-22,MA,BMO Capital,18.1
+2026-04-22,MMM,Wells Fargo,9.5
+2026-04-22,MPC,Scotiabank,-5.7
+2026-04-22,MSCI,Morgan Stanley,19.6
+2026-04-22,MSCI,RBC Capital,7.7
+2026-04-22,NEM,CIBC,57.9
+2026-04-22,NOC,Morgan Stanley,21.9
+2026-04-22,NTRS,Goldman Sachs,-1.6
+2026-04-22,OXY,Scotiabank,0.7
+2026-04-22,PYPL,B of A Securities,7.8
+2026-04-22,RTX,Morgan Stanley,17.2
+2026-04-22,SJM,Stifel,4.1
+2026-04-22,STLD,BMO Capital,7.1
+2026-04-22,STLD,Citigroup,13.8
+2026-04-22,SWK,Baird,6.1
+2026-04-22,TSCO,Morgan Stanley,13.4
+2026-04-22,UNH,Argus Research,14
+2026-04-22,VLO,Scotiabank,-4.4
+2026-04-22,XEL,Keybanc,12.9
+2026-04-23,CCI,Keybanc,18.1
+2026-04-23,CL,Morgan Stanley,14.9
+2026-04-23,CLX,Morgan Stanley,12.9
+2026-04-23,DHI,Citigroup,6.8
+2026-04-23,DHI,UBS,27.2
+2026-04-23,DHR,Baird,35.5
+2026-04-23,DHR,Morgan Stanley,41
+2026-04-23,GEV,Barclays,8.9
+2026-04-23,GEV,Evercore ISI Group,17.6
+2026-04-23,GPC,UBS,11.7
+2026-04-23,HAL,Stifel,9.9
+2026-04-23,ISRG,Barclays,34.4
+2026-04-23,LRCX,JP Morgan,18.8
+2026-04-23,LRCX,RBC Capital,17
+2026-04-23,LVS,Jefferies,22.8
+2026-04-23,MAS,RBC Capital,-3.8
+2026-04-23,MSCI,UBS,18.2
+2026-04-23,OTIS,Barclays,-1.3
+2026-04-23,OTIS,RBC Capital,34.5
+2026-04-23,REGN,TD Cowen,27.8
+2026-04-23,SWKS,Barclays,12.5
+2026-04-23,SYF,Barclays,18.7
+2026-04-23,SYF,BTIG,
+2026-04-23,TEL,Truist Securities,10.2
+2026-04-23,TSCO,Citigroup,18
+2026-04-23,TSLA,Wedbush,59.9
+2026-04-23,TXN,Jefferies,-0.1
+2026-04-24,BA,Morgan Stanley,6.4
+2026-04-24,CHTR,Benchmark,86.7
+2026-04-24,CMCSA,Citigroup,14.7
+2026-04-24,CMCSA,Evercore ISI Group,16.3
+2026-04-24,COF,Truist Securities,30.9
+2026-04-24,DOV,Barclays,0.5
+2026-04-24,EQT,Wells Fargo,34.9
+2026-04-24,EW,Canaccord Genuity,3
+2026-04-24,GEV,BMO Capital,7.7
+2026-04-24,GL,Truist Securities,19.6
+2026-04-24,HSIC,Morgan Stanley,-18
+2026-04-24,HSY,Morgan Stanley,18.5
+2026-04-24,MAR,Evercore ISI Group,8.9
+2026-04-24,MAS,Baird,6.4
+2026-04-24,MAS,Goldman Sachs,19.6
+2026-04-24,MAS,JP Morgan,3.7
+2026-04-24,NEE,Wells Fargo,4.9
+2026-04-24,PHM,UBS,24.4
+2026-04-24,ROP,Barclays,2.2
+2026-04-24,SBUX,JP Morgan,0.6
+2026-04-24,SYF,Truist Securities,7.4
+2026-04-24,TEL,UBS,18.6
+2026-04-24,TROW,JP Morgan,3.5
+2026-04-24,TXN,Barclays,-13.1
+2026-04-24,URI,RBC Capital,12.1
+2026-04-24,VRSN,Citigroup,15.7
+2026-04-24,VRT,JP Morgan,6.7
+2026-04-24,WRB,BMO Capital,0.1
+2026-04-25,ALGN,Morgan Stanley,-1.6
+2026-04-25,AMZN,Oppenheimer,5.8
+2026-04-25,DLR,Stifel,16.4
+2026-04-25,DOV,Baird,21.9
+2026-04-25,DOV,Oppenheimer,9.3
+2026-04-25,INTC,Jefferies,-2.7
+2026-04-25,INTC,Needham,
+2026-04-25,LMT,Susquehanna,33.3
+2026-04-25,MAS,BMO Capital,2.4
+2026-04-25,NEM,BMO Capital,26.1
+2026-04-25,ROP,Baird,28.8
+2026-04-25,SNA,Baird,0.8
+2026-04-25,TMO,Baird,36.2
+2026-04-25,TMO,Stifel,27.9
+2026-04-25,VRSN,Baird,28.4
+2026-04-27,BKR,BMO Capital,14.3
+2026-04-27,BKR,JP Morgan,5.7
+2026-04-27,BLDR,Stephens & Co.,11.3
+2026-04-27,BX,Piper Sandler,6.6
+2026-04-27,CF,Barclays,18.4
+2026-04-27,EW,Barclays,31.7
+2026-04-27,HCA,Stephens & Co.,20.9
+2026-04-27,HIG,UBS,15.8
+2026-04-27,NCLH,JP Morgan,-0.9
+2026-04-27,PG,UBS,16.7
+2026-04-27,PG,Wells Fargo,11.2
+2026-04-27,SLB,JP Morgan,8.7
+2026-04-27,TSCO,TD Cowen,3.2
+2026-04-27,UAL,Jefferies,20.7
+2026-04-28,AXP,Goldman Sachs,24.3
+2026-04-28,DOV,Seaport Global,17.2
+2026-04-28,DPZ,Goldman Sachs,27.1
+2026-04-28,NSC,Evercore ISI Group,1.2
+2026-04-28,PG,Evercore ISI Group,8
+2026-04-29,AMT,JP Morgan,35.2
+2026-04-29,BEN,Goldman Sachs,13.9
+2026-04-29,BKNG,JP Morgan,26.4
+2026-04-29,BKNG,RBC Capital,33.7
+2026-04-29,BRO,RBC Capital,13.9
+2026-04-29,CDNS,Keybanc,31.3
+2026-04-29,CNC,Oppenheimer,14.7
+2026-04-29,GM,Mizuho,27.9
+2026-04-29,HLT,Mizuho,1.4
+2026-04-29,INCY,Oppenheimer,-9.3
+2026-04-29,MDLZ,Evercore ISI Group,18.3
+2026-04-29,MDLZ,UBS,6.7
+2026-04-29,NUE,Citigroup,15
+2026-04-29,NXPI,Evercore ISI Group,13.7
+2026-04-29,ODFL,Baird,1.9
+2026-04-29,PFE,Citigroup,2.4
+2026-04-29,PNR,Barclays,11
+2026-04-29,PNR,Citigroup,27.9
+2026-04-29,STX,UBS,-18.4
+2026-04-29,SYY,Barclays,18.6
+2026-04-29,TER,Stifel,24
+2026-04-29,TPR,Citigroup,19.4
+2026-04-29,V,Evercore ISI Group,4
+2026-04-29,V,Oppenheimer,19.8
+2026-04-29,XYL,Citigroup,42.6
+2026-04-29,XYL,Oppenheimer,34.1
+2026-04-30,ACGL,Citigroup,32.7
+2026-04-30,ALGN,Evercore ISI Group,24.3
+2026-04-30,ALLE,Barclays,16.2
+2026-04-30,APH,Evercore ISI Group,18.5
+2026-04-30,BEN,JP Morgan,4.2
+2026-04-30,BG,Barclays,19.8
+2026-04-30,BKNG,Barclays,20.4
+2026-04-30,BRO,Truist Securities,47.8
+2026-04-30,CHRW,Barclays,10.9
+2026-04-30,CHRW,Wells Fargo,13.6
+2026-04-30,CMG,RBC Capital,28.2
+2026-04-30,EBAY,Goldman Sachs,-0.1
+2026-04-30,EBAY,Morgan Stanley,20.9
+2026-04-30,ETR,Wells Fargo,10
+2026-04-30,FFIV,Needham,
+2026-04-30,GEHC,Goldman Sachs,9.8
+2026-04-30,GLW,Susquehanna,15.5
+2026-04-30,GNRC,TD Cowen,11.3
+2026-04-30,GOOGL,Guggenheim,20.3
+2026-04-30,GOOGL,Susquehanna,23
+2026-04-30,INCY,Stifel,22.6
+2026-04-30,IR,Barclays,23.4
+2026-04-30,IR,Citigroup,41.6
+2026-04-30,IR,Wells Fargo,14.3
+2026-04-30,LII,Barclays,12.2
+2026-04-30,LII,Wells Fargo,4.3
+2026-04-30,META,Bernstein,37.2
+2026-04-30,NXPI,Jefferies,3.6
+2026-04-30,NXPI,JP Morgan,1.9
+2026-04-30,NXPI,Keybanc,19.2
+2026-04-30,NXPI,Stifel,-2.6
+2026-04-30,NXPI,Susquehanna,-13.6
+2026-04-30,NXPI,Truist Securities,7.1
+2026-04-30,ODFL,Stephens & Co.,14.4
+2026-04-30,ODFL,TD Cowen,-7.5
+2026-04-30,REGN,Barclays,32.3
+2026-04-30,SBUX,Baird,10.8
+2026-04-30,TER,Citigroup,22.3
+2026-04-30,TMUS,JP Morgan,39.1
+2026-04-30,TMUS,Oppenheimer,31.5
+2026-04-30,TPR,Baird,15.4
+2026-04-30,VMC,Barclays,14.9
+2026-04-30,VMC,Stephens & Co.,14.9
+2026-04-30,WM,Wells Fargo,16.1
+2026-05-01,ALGN,Mizuho,24.2
+2026-05-01,APD,JP Morgan,8.6
+2026-05-01,APH,JP Morgan,36.5
+2026-05-01,CARR,Barclays,17.6
+2026-05-01,CARR,RBC Capital,20.5
+2026-05-01,CAT,JP Morgan,25.4
+2026-05-01,CHRW,JP Morgan,5.8
+2026-05-01,CVNA,JP Morgan,17.6
+2026-05-01,ETR,UBS,15.3
+2026-05-01,FTV,Citigroup,7.1
+2026-05-01,FTV,RBC Capital,3.8
+2026-05-01,GD,JP Morgan,15.8
+2026-05-01,GOOG,Scotiabank,19.1
+2026-05-01,HLT,UBS,13.9
+2026-05-01,HSY,TD Cowen,12.5
+2026-05-01,HUBB,Wells Fargo,8.7
+2026-05-01,INVH,RBC Capital,4.5
+2026-05-01,IP,Seaport Global,27
+2026-05-01,IRM,JP Morgan,8.8
+2026-05-01,KLAC,Citigroup,19.1
+2026-05-01,META,Stifel,26.9
+2026-05-01,MGM,Citigroup,3.3
+2026-05-01,MO,Citigroup,-4.4
+2026-05-01,MOS,CIBC,15.5
+2026-05-01,MPWR,TD Cowen,18.2
+2026-05-01,MSFT,Scotiabank,33.2
+2026-05-01,ORLY,Wells Fargo,10
+2026-05-01,QCOM,JP Morgan,-10.7
+2026-05-01,RCL,Barclays,27.9
+2026-05-01,SBAC,Keybanc,12.6
+2026-05-01,SWK,JP Morgan,-4.6
+2026-05-01,TER,JP Morgan,16.5
+2026-05-01,TT,Barclays,18.2
+2026-05-01,TYL,Evercore ISI Group,6.7
+2026-05-01,UHS,UBS,84.2
+2026-05-01,V,Macquarie,26.2
+2026-05-01,VRSK,JP Morgan,22.8
+2026-05-01,VST,JP Morgan,45.9
+2026-05-01,VZ,JP Morgan,7.7
+2026-05-01,WTW,Evercore ISI Group,36.9
+2026-05-02,AAPL,UBS,6.1
+2026-05-02,AOS,Baird,12.9
+2026-05-02,BLDR,DA Davidson,5.2
+2026-05-02,BR,Needham,45.8
+2026-05-02,CAT,Morgan Stanley,2
+2026-05-02,GNRC,Wells Fargo,7.7
+2026-05-02,MA,Susquehanna,31.4
+2026-05-02,MGM,Jefferies,13.6
+2026-05-02,OMC,Morgan Stanley,7.5
+2026-05-02,ORLY,Evercore ISI Group,15
+2026-05-02,ORLY,UBS,20
+2026-05-02,PWR,Evercore ISI Group,8.6
+2026-05-02,SYK,Needham,33.4
+2026-05-02,TT,Keybanc,12.1
+2026-05-02,UBER,UBS,46.5
+2026-05-04,AIG,Citigroup,12.8
+2026-05-04,AOS,DA Davidson,12.3
+2026-05-04,BAX,Barclays,57
+2026-05-04,BR,UBS,6.8
+2026-05-04,CPT,RBC Capital,1
+2026-05-04,DTE,Barclays,4.3
+2026-05-04,FCX,Citigroup,17.4
+2026-05-04,FTV,Wells Fargo,9.8
+2026-05-04,GM,Evercore ISI Group,31.7
+2026-05-04,HUBB,Barclays,-1.3
+2026-05-04,INTC,RBC Capital,-19.3
+2026-05-04,ITW,Citigroup,13
+2026-05-04,ITW,Wells Fargo,0.4
+2026-05-04,LHX,Bernstein,29.8
+2026-05-04,LNT,Scotiabank,0.8
+2026-05-04,MLM,Truist Securities,20.6
+2026-05-04,NEE,Evercore ISI Group,11.4
+2026-05-04,PWR,Goldman Sachs,10.2
+2026-05-04,SYK,Barclays,33.7
+2026-05-04,TAP,Barclays,-2.1
+2026-05-04,XEL,Evercore ISI Group,17.1
+2026-05-05,ADP,Argus Research,14.3
+2026-05-05,ARE,RBC Capital,19.7
+2026-05-05,BR,DA Davidson,39.5
+2026-05-05,CBOE,"Keefe, Bruyette & Woods",-1.2
+2026-05-05,CBOE,UBS,-1.2
+2026-05-05,CIEN,Stifel,5.7
+2026-05-05,COHR,Stifel,26.8
+2026-05-05,CSGP,Stephens & Co.,19.2
+2026-05-05,CVX,UBS,15.1
+2026-05-05,FICO,Jefferies,60.7
+2026-05-05,FSLR,Freedom Broker,21.5
+2026-05-05,GDDY,UBS,14.6
+2026-05-05,HUBB,Stephens & Co.,15.5
+2026-05-05,LIN,JP Morgan,7.2
+2026-05-05,LITE,Stifel,12.7
+2026-05-05,LLY,Barclays,44
+2026-05-05,NOW,Barclays,45.3
+2026-05-05,NXPI,Barclays,16.4
+2026-05-05,ON,Jefferies,17.8
+2026-05-05,ON,Morgan Stanley,-10.9
+2026-05-05,PKG,Deutsche Bank,17
+2026-05-05,PLTR,RBC Capital,-35.8
+2026-05-05,PWR,UBS,16.5
+2026-05-05,REG,Citigroup,4
+2026-05-05,RVTY,Baird,40.2
+2026-05-05,TAP,Morgan Stanley,12.1
+2026-05-05,TRGP,Seaport Global,
+2026-05-05,TSN,Stephens & Co.,1.4
+2026-05-05,TXT,JP Morgan,14.7
+2026-05-05,TXT,UBS,9.2
+2026-05-05,VRTX,Bernstein,32.4
+2026-05-05,WDC,Baird,-1.3
+2026-05-05,XOM,RBC Capital,17.6
+2026-05-05,XOM,UBS,13.7
+2026-05-06,AEP,Wells Fargo,8.4
+2026-05-06,ANET,Citigroup,13.1
+2026-05-06,EMR,Barclays,1.4
+2026-05-06,EXPD,Susquehanna,1.3
+2026-05-06,J,Citigroup,42.9
+2026-05-06,LDOS,Stifel,42
+2026-05-06,MAA,Citigroup,10
+2026-05-06,META,Mizuho,38.9
+2026-05-06,MRK,Citigroup,10.5
+2026-05-06,NCLH,Susquehanna,-14.5
+2026-05-06,ON,JP Morgan,-2.6
+2026-05-06,ON,Keybanc,21.8
+2026-05-06,PSKY,Guggenheim,11.1
+2026-05-06,ROK,Barclays,7
+2026-05-06,ROK,Wells Fargo,-1.9
+2026-05-06,RVTY,TD Cowen,28.3
+2026-05-06,SPGI,Mizuho,38.7
+2026-05-06,TDG,Susquehanna,9.6
+2026-05-06,UDR,Citigroup,9.3
+2026-05-06,UDR,RBC Capital,2.5
+2026-05-07,ADM,JP Morgan,-5.6
+2026-05-07,AMCR,Truist Securities,26.2
+2026-05-07,AXON,JP Morgan,84.9
+2026-05-07,CDW,Evercore ISI Group,46.1
+2026-05-07,CMI,Barclays,6.6
+2026-05-07,CMI,JP Morgan,1.7
+2026-05-07,DVA,Deutsche Bank,13.2
+2026-05-07,EMR,Wells Fargo,4.8
+2026-05-07,ETN,JP Morgan,6.2
+2026-05-07,ETN,Keybanc,14.6
+2026-05-07,FLEX,Keybanc,36
+2026-05-07,J,Keybanc,18.1
+2026-05-07,JCI,Barclays,-0.4
+2026-05-07,JCI,Wells Fargo,10.6
+2026-05-07,LITE,UBS,4.8
+2026-05-07,NI,Wells Fargo,9.8
+2026-05-07,ROK,JP Morgan,-9.2
+2026-05-07,ROK,Keybanc,11
+2026-05-07,RVTY,Barclays,4.9
+2026-05-07,RVTY,JP Morgan,-10.1
+2026-05-07,SMCI,JP Morgan,-5.9
+2026-05-07,SOLV,Wells Fargo,-1.9
+2026-05-07,TECH,Evercore ISI Group,5.9
+2026-05-07,UBER,JP Morgan,37.8
+2026-05-07,UBER,Piper Sandler,31.5
+2026-05-07,UBER,Truist Securities,40.3
+2026-05-07,WAT,JP Morgan,-1.7
+2026-05-07,WBD,Guggenheim,
+2026-05-07,WMT,TD Cowen,15.5
+2026-05-08,AES,Barclays,11.3
+2026-05-08,CDW,UBS,34.1
+2026-05-08,COR,Baird,33.4
+2026-05-08,COR,Citigroup,39.7
+2026-05-08,CRL,Barclays,20.5
+2026-05-08,GPN,Stephens & Co.,14.3
+2026-05-08,IFF,Oppenheimer,14.7
+2026-05-08,JCI,Mizuho,-0.5
+2026-05-08,MCD,Barclays,22.8
+2026-05-08,MCHP,JP Morgan,14.2
+2026-05-08,MCK,JP Morgan,37.2
+2026-05-08,MNST,JP Morgan,-1.8
+2026-05-08,PH,JP Morgan,18.8
+2026-05-08,PODD,Barclays,22.6
+2026-05-08,PODD,Oppenheimer,30
+2026-05-08,RSG,RBC Capital,30.7
+2026-05-08,SHW,Evercore ISI Group,23.8
+2026-05-08,TTD,Wedbush,0.1
+2026-05-08,VTR,Keybanc,9.6
+2026-05-08,WBD,UBS,14.4
+2026-05-08,WYNN,Citigroup,24.5
+2026-05-09,AKAM,Keybanc,34.1
+2026-05-09,ATO,Citigroup,4.1
+2026-05-09,C,"Keefe, Bruyette & Woods",17.5
+2026-05-09,EVRG,UBS,9.7
+2026-05-09,MCHP,Evercore ISI Group,11.4
+2026-05-09,MCHP,Needham,14.2
+2026-05-09,MCHP,Susquehanna,14.2
+2026-05-09,MTD,Citigroup,29.9
+2026-05-09,ORLY,Mizuho,16.3
+2026-05-09,TMO,Wells Fargo,29.9
+2026-05-09,TTD,Keybanc,
+2026-05-09,TTD,Oppenheimer,
+2026-05-09,WMB,Citigroup,13.5
+2026-05-11,APA,Bernstein,9
+2026-05-11,CVS,TD Cowen,20.7
+2026-05-11,EOG,Bernstein,17.8
+2026-05-11,FIS,Goldman Sachs,32.1
+2026-05-11,MCD,JP Morgan,10.6
+2026-05-11,MTD,JP Morgan,7.5
+2026-05-11,NI,Citigroup,4.1
+2026-05-11,NWSA,Macquarie,7.5
+2026-05-11,SLB,Bernstein,32.3
+2026-05-11,VTR,JP Morgan,7.2
+2026-05-12,ADI,Oppenheimer,7.7
+2026-05-12,BDX,Barclays,40.8
+2026-05-12,FOXA,Evercore ISI Group,7
+2026-05-12,FTV,JP Morgan,5.6
+2026-05-12,GM,Wedbush,26
+2026-05-12,GPN,Cantor Fitzgerald,10.5
+2026-05-12,HD,Citigroup,27.7
+2026-05-12,HST,Citigroup,9.4
+2026-05-12,HST,Morgan Stanley,0.3
+2026-05-12,MOS,JP Morgan,-13
+2026-05-12,MTD,Baird,9.9
+2026-05-12,STX,Evercore ISI Group,22.7
+2026-05-12,VRT,Evercore ISI Group,17.6
+2026-05-13,ADSK,Barclays,30.8
+2026-05-13,CEG,Mizuho,7.2
+2026-05-13,F,Morgan Stanley,17
+2026-05-13,GIS,Barclays,6.1
+2026-05-13,KIM,Barclays,19.6
+2026-05-13,MOS,Mizuho,5.9
+2026-05-13,MOS,RBC Capital,19.1
+2026-05-13,MOS,UBS,1.5
+2026-05-13,MSFT,Wedbush,42.6
+2026-05-13,NEE,JP Morgan,11.6
+2026-05-13,WMB,UBS,20.9
+2026-05-14,ALB,Deutsche Bank,26.3
+2026-05-14,CARR,JP Morgan,1.5
+2026-05-14,CSCO,Citigroup,-4.7
+2026-05-14,CSCO,Evercore ISI Group,27.6
+2026-05-14,EXC,Keybanc,-7.4
+2026-05-14,GIS,Piper Sandler,21.2
+2026-05-14,HAS,Morgan Stanley,26.2
+2026-05-14,HUM,Piper Sandler,-16.1
+2026-05-14,MOS,Wells Fargo,-3.4
+2026-05-14,STE,Keybanc,26.8
+2026-05-14,TT,JP Morgan,0.6
+2026-05-14,WYNN,Morgan Stanley,37.8
+2026-05-15,AAPL,Tigress Financial,25.9
+2026-05-15,AMAT,Evercore ISI Group,20.2
+2026-05-15,AMAT,Goldman Sachs,21.4
+2026-05-15,EG,BMO Capital,7.7
+2026-05-15,NVDA,TD Cowen,19.7
+2026-05-15,RCL,UBS,17.2
+2026-05-15,SCHW,Raymond James,51.4
+2026-05-15,VRT,B of A Securities,20.8
+2026-05-15,VRT,Barclays,13.1
+2026-05-16,AOS,JP Morgan,5.3
+2026-05-16,D,Wells Fargo,8.2
+2026-05-16,HLT,Bernstein,1.6
+2026-05-16,MAR,Bernstein,14.2
+2026-05-18,APO,TD Cowen,9.1
+2026-05-18,BA,Citigroup,17.9
+2026-05-18,BSX,B of A Securities,27
+2026-05-18,CIEN,Citigroup,16.8
+2026-05-18,DXCM,B of A Securities,29.5
+2026-05-18,INTC,Citigroup,14.6
+2026-05-18,ISRG,B of A Securities,23.2
+2026-05-18,LOW,Stifel,0.7
+2026-05-18,MOS,Barclays,19.7
+2026-05-18,NFLX,B of A Securities,44.5
+2026-05-18,TJX,JP Morgan,17.4
+2026-05-19,AMD,Melius Research,30.9
+2026-05-19,APTV,Citigroup,47.3
+2026-05-19,CRM,B of A Securities,-13.5
+2026-05-19,CSGP,B of A Securities,9.5
+2026-05-19,DECK,Piper Sandler,5.9
+2026-05-19,EFX,B of A Securities,36.4
+2026-05-19,FFIV,Evercore ISI Group,25.7
+2026-05-19,HD,Jefferies,23.7
+2026-05-19,HD,Oppenheimer,6.2
+2026-05-19,INTC,Benchmark,30.9
+2026-05-19,INVH,Raymond James,11.9
+2026-05-19,LOW,Oppenheimer,27.3
+2026-05-19,NVDA,HSBC,48
+2026-05-19,PFG,Raymond James,8.4
+2026-05-19,VRSK,B of A Securities,8.8
+2026-05-20,ECL,Jefferies,40.8
+2026-05-20,EQIX,Guggenheim,18.2
+2026-05-20,HD,Morgan Stanley,32.9
+2026-05-20,HD,Piper Sandler,25.6
+2026-05-20,HD,TD Cowen,24.6
+2026-05-20,KIM,Scotiabank,6.7
+2026-05-20,MRVL,Evercore ISI Group,-15.5
+2026-05-20,REGN,Canaccord Genuity,37.9
+2026-05-20,VRT,TD Cowen,19.1
+2026-05-20,VTRS,Barclays,35.5
+2026-05-21,ADI,Citigroup,16
+2026-05-21,ADI,Evercore ISI Group,19.5
+2026-05-21,ADI,Jefferies,19.8
+2026-05-21,CI,Deutsche Bank,7.3
+2026-05-21,CI,Morgan Stanley,28.2
+2026-05-21,CNC,Deutsche Bank,38.6
+2026-05-21,HD,Baird,24
+2026-05-21,HUM,Deutsche Bank,45.2
+2026-05-21,INTU,BMO Capital,31.9
+2026-05-21,INTU,UBS,15.3
+2026-05-21,KEYS,Citigroup,15
+2026-05-21,MOS,BMO Capital,43.5
+2026-05-21,NVDA,Jefferies,35
+2026-05-21,NVDA,Stifel,26.9
+2026-05-21,TJX,Truist Securities,19.1
+2026-05-21,VRT,Oppenheimer,9.5
+2026-05-22,ADI,B of A Securities,18.2
+2026-05-22,ADSK,Keybanc,41.8
+2026-05-22,AFL,Morgan Stanley,5.7
+2026-05-22,AWK,B of A Securities,8.1
+2026-05-22,CI,UBS,40.8
+2026-05-22,CNC,UBS,4.5
+2026-05-22,ELV,UBS,16.9
+2026-05-22,INTU,Keybanc,46.2
+2026-05-22,LOW,B of A Securities,18.3
+2026-05-22,LOW,Baird,24.3
+2026-05-22,NVDA,B of A Securities,58.4
+2026-05-22,NVDA,Baird,126.3
+2026-05-22,TGT,Baird,5.9
+2026-05-22,TJX,Baird,11.1
+2026-05-22,TJX,Telsey Advisory Group,17.5
+2026-05-23,DE,B of A Securities,14.3
+2026-05-23,DECK,UBS,57.8
+2026-05-23,GNRC,Jefferies,16.1
+2026-05-23,RCL,Truist Securities,14.5
+2026-05-26,CIEN,B of A Securities,11.7
+2026-05-26,D,Mizuho,6.4
+2026-05-26,FFIV,B of A Securities,-23.9
+2026-05-26,ON,B of A Securities,12.4
+2026-05-26,TRV,JP Morgan,4.7
+2026-05-26,TXN,B of A Securities,16.2
+2026-05-26,WDC,Evercore ISI Group,13.9
+2026-05-26,WMB,CIBC,8.6
+2026-05-27,A,Baird,34.5
+2026-05-27,AZO,Truist Securities,
+2026-05-27,CDNS,Wells Fargo,12.2
+2026-05-27,DHR,Citigroup,-45.3
+2026-05-27,DOC,Scotiabank,4.3
+2026-05-27,ESS,Truist Securities,3
+2026-05-27,MGM,Truist Securities,36.4
+2026-05-27,MU,UBS,70
+2026-05-27,NVDA,Tigress Financial,98.5
+2026-05-27,PH,Wells Fargo,8.9
+2026-05-27,PLD,Morgan Stanley,2.7
+2026-05-27,SNDK,Barclays,39.7
+2026-05-27,WDC,Barclays,15
+2026-05-28,APA,Mizuho,-3.6
+2026-05-28,AZO,Mizuho,7
+2026-05-28,CARR,Morgan Stanley,-5.5
+2026-05-28,CDW,JP Morgan,14
+2026-05-28,CVX,Mizuho,25.2
+2026-05-28,D,Jefferies,12
+2026-05-28,DVN,Mizuho,51.9
+2026-05-28,EOG,Mizuho,15.2
+2026-05-28,FANG,Mizuho,23.2
+2026-05-28,FSLR,GLJ Research,14.3
+2026-05-28,HPQ,JP Morgan,-1.1
+2026-05-28,HPQ,Wells Fargo,-23.9
+2026-05-28,KIM,Truist Securities,2.9
+2026-05-28,MRVL,Jefferies,18.2
+2026-05-28,MRVL,JP Morgan,20.8
+2026-05-28,OXY,Mizuho,29.9
+2026-05-28,SNPS,Stifel,17.6
+2026-05-28,UNH,Bernstein,27.8
+2026-05-29,AVGO,Susquehanna,13.2
+2026-05-29,BBY,JP Morgan,13.5
+2026-05-29,COST,Truist Securities,2.5
+2026-05-29,CRM,Piper Sandler,19.3
+2026-05-29,CRM,Wedbush,80.3
+2026-05-29,CTVA,Morgan Stanley,18.2
+2026-05-29,F,B of A Securities,18.5
+2026-05-29,HPQ,B of A Securities,-32.6
+2026-05-29,HPQ,Citigroup,-6.4
+2026-05-29,LYB,Wells Fargo,43.5
+2026-05-29,MRVL,Barclays,34.5
+2026-05-29,MRVL,Benchmark,34.5
+2026-05-29,NTAP,JP Morgan,-15.1
+2026-05-29,SNPS,B of A Securities,24.8
+2026-05-29,SWK,Morgan Stanley,6.5
+2026-05-30,ATO,Mizuho,6.7
+2026-05-30,IBM,Wedbush,15.4
+2026-06-01,CHRW,UBS,28.8
+2026-06-01,CMI,Argus Research,20.5
+2026-06-01,GM,Citigroup,57
+2026-06-01,INTC,Barclays,-8.6
+2026-06-01,NTAP,Argus Research,16.5
+2026-06-01,SPG,JP Morgan,6.6
+2026-06-02,GIS,UBS,-10.4
+2026-06-02,HPE,Bernstein,-1.7
+2026-06-02,HPE,JP Morgan,7.8
+2026-06-02,HPE,Loop Capital,18.9
+2026-06-02,HPE,Susquehanna,3.1
+2026-06-02,META,RBC Capital,34.3
+2026-06-02,MNST,Morgan Stanley,15.5
+2026-06-02,PANW,Baird,4.4
+2026-06-02,TTWO,Piper Sandler,26
+2026-06-02,WAT,B of A Securities,7.4
+2026-06-03,ACN,Stifel,47.4
+2026-06-03,CF,JP Morgan,0.9
+2026-06-03,COST,TD Cowen,23.3
+2026-06-03,ED,Mizuho,0.7
+2026-06-03,FTV,Morgan Stanley,-2
+2026-06-03,GPN,Susquehanna,52.1
+2026-06-03,HAL,Citigroup,29.6
+2026-06-03,HON,Goldman Sachs,125
+2026-06-03,HPE,Goldman Sachs,45.8
+2026-06-03,HST,UBS,-2
+2026-06-03,IR,Morgan Stanley,12.3
+2026-06-03,JCI,UBS,26.6
+2026-06-03,KHC,Bernstein,-8.9
+2026-06-03,MDT,Mizuho,29.7
+2026-06-03,SHW,UBS,9.8
+2026-06-03,SNDK,Morgan Stanley,0.8
+2026-06-03,T,Oppenheimer,
+2026-06-03,TMO,HSBC,15.1
+2026-06-03,ULTA,B. Riley Securities,4.4
+2026-06-03,ULTA,Canaccord Genuity,52.7
+2026-06-03,ULTA,Evercore ISI Group,32.6
+2026-06-03,ULTA,JP Morgan,31.8
+2026-06-03,ULTA,Morgan Stanley,31.6
+2026-06-03,ULTA,Piper Sandler,25.3
+2026-06-03,WST,Stephens & Co.,14.8
+2026-06-04,AVGO,B of A Securities,29.6
+2026-06-04,AVGO,Oppenheimer,30.8
+2026-06-04,AVGO,UBS,18.6
+2026-06-04,CIEN,Raymond James,-4.1
+2026-06-04,CNC,B of A Securities,21.4
+2026-06-04,CNC,Morgan Stanley,-6.5
+2026-06-04,CVS,Morgan Stanley,18.7
+2026-06-04,DOV,Morgan Stanley,6.1
+2026-06-04,ETR,Barclays,8.5
+2026-06-04,GOOGL,Needham,25.4
+2026-06-04,HCA,Bernstein,13.1
+2026-06-04,OMC,Goldman Sachs,93.9
+2026-06-04,PANW,Loop Capital,7.5
+2026-06-04,PANW,Stephens & Co.,11.2
+2026-06-04,RDDT,Loop Capital,52.6
+2026-06-04,RTX,Jefferies,24.6
+2026-06-04,ULTA,Baird,46.3
+2026-06-04,YUM,Morgan Stanley,23.3
+2026-06-05,ALB,Wells Fargo,23.2
+2026-06-05,AVGO,Benchmark,33.7
+2026-06-05,AVGO,Deutsche Bank,26.3
+2026-06-05,CRWD,Susquehanna,14.8
+2026-06-05,DRI,B of A Securities,41.5
+2026-06-05,GIS,Morgan Stanley,-1.5
+2026-06-05,GLW,UBS,20.4
+2026-06-05,LULU,Evercore ISI Group,4.1
+2026-06-05,LULU,Jefferies,4.1
+2026-06-05,LVS,UBS,22.7
+2026-06-05,MDT,Bernstein,18.1
+2026-06-05,VEEV,BTIG,87.6
+2026-06-06,JBHT,BMO Capital,12.1
+2026-06-06,PLTR,Wedbush,63.9
+2026-06-06,PPL,Mizuho,4.9
+2026-06-08,ACN,JP Morgan,13.6
+2026-06-08,CI,Mizuho,18.3
+2026-06-08,CSCO,B of A Securities,21.4
+2026-06-08,CVS,Mizuho,19.9
+2026-06-08,ELV,JP Morgan,15.7
+2026-06-08,ELV,Mizuho,13
+2026-06-08,F,UBS,13.4
+2026-06-08,FRT,Truist Securities,-3.8
+2026-06-08,HUM,Mizuho,12.8
+2026-06-08,ODFL,JP Morgan,-4.5
+2026-06-08,STX,Mizuho,23.5
+2026-06-08,WDC,Mizuho,26.8
+2026-06-08,WRB,Goldman Sachs,7.7
+2026-06-09,CDNS,Stifel,8.9
+2026-06-09,CTSH,Wedbush,33.3
+2026-06-09,FFIV,RBC Capital,12.6
+2026-06-09,LEN,"Keefe, Bruyette & Woods",-5.7
+2026-06-09,ODFL,Jefferies,1
+2026-06-09,ULTA,TD Cowen,29.4
+2026-06-10,AOS,Oppenheimer,28.1
+2026-06-10,COR,Barclays,24.7
+2026-06-10,HON,Barclays,112.8
+2026-06-10,HON,Bernstein,107.4
+2026-06-10,LITE,Needham,24.7
+2026-06-10,LYV,Morgan Stanley,22.5
+2026-06-10,PFE,RBC Capital,-3.1
+2026-06-10,SPG,Morgan Stanley,-2.6
+2026-06-10,TYL,Barclays,36.3
+2026-06-10,TYL,DA Davidson,47.5
+2026-06-10,WST,Barclays,21
+2026-06-11,ADBE,Wolfe Research,
+2026-06-11,CPT,Truist Securities,6.7
+2026-06-11,DOC,Morgan Stanley,8.4
+2026-06-11,ETR,Mizuho,9.5
+2026-06-11,FE,UBS,9.3
+2026-06-11,KR,JP Morgan,9
+2026-06-11,MU,Wolfe Research,38.2
+2026-06-11,ORCL,Bernstein,80.9
+2026-06-11,SJM,B of A Securities,13.3
+2026-06-11,SJM,Morgan Stanley,-5.6
+2026-06-12,ADBE,Goldman Sachs,-6.1
+2026-06-12,AJG,Jefferies,20
+2026-06-12,CB,Barclays,13
+2026-06-12,HIG,Barclays,20.6
+2026-06-12,LRCX,Barclays,-6.8
+2026-06-12,MGM,JP Morgan,10.1
+2026-06-12,ORCL,Piper Sandler,21.6
+2026-06-12,PEP,Piper Sandler,23.8
+2026-06-12,UBER,Tigress Financial,64.2
+2026-06-12,WDC,JP Morgan,19.9
+2026-06-12,WRB,Barclays,-7.7
+2026-06-13,ADBE,Keybanc,-3.7
+2026-06-13,DIS,Needham,23.7
+2026-06-13,FDX,Barclays,24.3
+2026-06-13,MNST,Bernstein,2.6
+2026-06-15,DOC,BMO Capital,16
+2026-06-15,FOXA,Barclays,5.3
+2026-06-15,FSLR,Mizuho,10
+2026-06-15,LRCX,Oppenheimer,3.6
+2026-06-15,MGM,Stifel,-0.5
+2026-06-15,RF,Stephens & Co.,5.1
+2026-06-15,TXN,Citigroup,11.3
+2026-06-15,WDC,Morgan Stanley,5
+2026-06-16,CCL,Citigroup,21.3
+2026-06-16,CTAS,Truist Securities,27.9
+2026-06-16,LUV,Jefferies,-6.4
+2026-06-16,PSA,Citigroup,12.6
+2026-06-16,TEL,Barclays,38.3
+2026-06-16,TSCO,Truist Securities,4.9
+2026-06-16,YUM,TD Cowen,13.4
+2026-06-17,AMAT,Citigroup,19.9
+2026-06-17,CMI,Wells Fargo,22.3
+2026-06-17,DOC,Raymond James,
+2026-06-17,EXR,B of A Securities,7.2
+2026-06-17,INVH,Mizuho,6.7
+2026-06-17,LEN,JP Morgan,-13.6
+2026-06-17,LEN,UBS,5.5
+2026-06-17,LRCX,Citigroup,17.8
+2026-06-17,SLB,RBC Capital,15.4
+2026-06-17,STZ,UBS,22.8
+2026-06-17,VTR,Raymond James,12.4
+2026-06-17,WELL,Raymond James,6
+2026-06-18,ACN,Evercore ISI Group,42.3
+2026-06-18,AEP,Ladenburg Thalmann,11.1
+2026-06-18,DAL,Bernstein,10.5
+2026-06-18,EXR,Truist Securities,2
+2026-06-18,GDDY,JP Morgan,62.3
+2026-06-18,JBL,Barclays,9.7
+2026-06-18,JBL,JP Morgan,15.9
+2026-06-18,JBL,Stifel,18.5
+2026-06-18,MU,Stifel,35.4
+2026-06-18,O,Scotiabank,10.2
+2026-06-18,PEP,Deutsche Bank,19.1
+2026-06-18,RMD,Morgan Stanley,21.7
+2026-06-18,SLB,Stifel,27.7
+2026-06-18,SO,Barclays,5.9
+2026-06-18,VICI,Scotiabank,7.8
+2026-06-19,C,Wells Fargo,12.6
+2026-06-19,CEG,Goldman Sachs,13.5
+2026-06-19,DUK,Mizuho,9.8
+2026-06-19,JBL,Raymond James,15.9
+2026-06-19,PLD,Raymond James,
+2026-06-22,ACN,RBC Capital,40
+2026-06-22,ACN,Susquehanna,12
+2026-06-22,BEN,TD Cowen,19.4
+2026-06-22,HCA,TD Cowen,15.4
+2026-06-22,INCY,Truist Securities,5.2
+2026-06-22,KR,UBS,11.4
+2026-06-22,UHS,TD Cowen,39.5
+2026-06-23,ACN,Mizuho,81.1
+2026-06-23,KR,Barclays,7.9
+2026-06-23,KR,Morgan Stanley,18.5
+2026-06-23,NKE,Goldman Sachs,8.5
+2026-06-23,NUE,Morgan Stanley,7.4
+2026-06-23,NXPI,Citigroup,20.3
+2026-06-23,ODFL,Goldman Sachs,5.7
+2026-06-23,PSA,Truist Securities,4.8
+2026-06-23,SPG,Truist Securities,0
+2026-06-23,TEL,Evercore ISI Group,11.5
+2026-06-23,TGT,Wolfe Research,
+2026-06-23,TSCO,DA Davidson,32.9
+2026-06-23,XEL,Mizuho,14.7
+2026-06-24,ADI,Stifel,22.3
+2026-06-24,AXP,Truist Securities,11.3
+2026-06-24,CAT,Wells Fargo,17.7
+2026-06-24,COR,B of A Securities,0.6
+2026-06-24,CVS,B of A Securities,8
+2026-06-24,D,Barclays,0.6
+2026-06-24,DOW,Citigroup,16.7
+2026-06-24,ECL,Citigroup,21
+2026-06-24,FDX,Citigroup,14.1
+2026-06-24,FDX,Stifel,3.6
+2026-06-24,FITB,Truist Securities,9.3
+2026-06-24,HUM,B of A Securities,5
+2026-06-24,IFF,Citigroup,15.8
+2026-06-24,KEY,Truist Securities,3.9
+2026-06-24,KLAC,B of A Securities,30.9
+2026-06-24,LRCX,B of A Securities,30.8
+2026-06-24,LYB,Citigroup,15.8
+2026-06-24,MET,Piper Sandler,2.2
+2026-06-24,MRVL,B of A Securities,29.5
+2026-06-24,MRVL,Stifel,24.1
+2026-06-24,NKE,Evercore ISI Group,9.4
+2026-06-24,PFG,Piper Sandler,14.9
+2026-06-24,SHW,Citigroup,16.1
+2026-06-24,SNPS,Piper Sandler,19.5
+2026-06-24,TER,B of A Securities,24.1
+2026-06-24,TTWO,B of A Securities,49
+2026-06-24,TXN,Stifel,18.8
+2026-06-24,UNH,B of A Securities,15.7
+2026-06-25,BSX,Stifel,47
+2026-06-25,CCL,Susquehanna,12.6
+2026-06-25,CSGP,Goldman Sachs,56.9
+2026-06-25,CSGP,Wells Fargo,-11.3
+2026-06-25,ESS,Morgan Stanley,7.1
+2026-06-25,F,Wells Fargo,-21
+2026-06-25,FDX,Truist Securities,14.4
+2026-06-25,FDX,UBS,9.7
+2026-06-25,INVH,Wells Fargo,12.6
+2026-06-25,MU,Deutsche Bank,25.7
+2026-06-25,MU,Goldman Sachs,-10.8
+2026-06-25,MU,Morgan Stanley,-2.7
+2026-06-25,MU,Raymond James,21.7
+2026-06-25,MU,Susquehanna,62.2
+2026-06-25,MU,TD Cowen,29.8
+2026-06-25,MU,Wedbush,13.5
+2026-06-25,MU,Wells Fargo,23.7
+2026-06-25,NUE,Keybanc,13.1
+2026-06-25,PAYX,JP Morgan,9.1
+2026-06-25,QCOM,Bernstein,7.1
+2026-06-25,RDDT,Needham,87.1
+2026-06-25,STLD,Keybanc,7.6
+2026-06-26,AAPL,Wedbush,45.5
+2026-06-26,AMAT,Wells Fargo,15.1
+2026-06-26,AMT,Goldman Sachs,24.7
+2026-06-26,AMT,RBC Capital,18.9
+2026-06-26,CCI,Goldman Sachs,18.2
+2026-06-26,DAL,Evercore ISI Group,13.8
+2026-06-26,DRI,UBS,12.9
+2026-06-26,HSY,B of A Securities,12.6
+2026-06-26,INCY,UBS,3.2
+2026-06-26,INTC,Goldman Sachs,16.5
+2026-06-26,MKC,UBS,6.1
+2026-06-26,MRNA,Piper Sandler,29.5
+2026-06-26,MU,B of A Securities,36.1
+2026-06-26,MU,Barclays,75.6
+2026-06-26,MU,Needham,44.9
+2026-06-26,MU,Rosenblatt,31.7
+2026-06-26,NKE,Deutsche Bank,7.3
+2026-06-26,NOC,Jefferies,15.6
+2026-06-26,NTRS,Truist Securities,5.8
+2026-06-26,ODFL,Barclays,1.1
+2026-06-26,PEP,B of A Securities,16.7
+2026-06-26,QCOM,Barclays,21.5
+2026-06-26,SBAC,Goldman Sachs,11.8
+2026-06-26,TECH,Stephens & Co.,3
+2026-06-26,UAL,Citigroup,27
+2026-06-26,UNP,Evercore ISI Group,9.1
+2026-06-26,URI,Keybanc,9.9
+2026-06-26,WFC,Truist Securities,10.8
+2026-06-27,BEN,Morgan Stanley,3.2
+2026-06-27,DRI,BTIG,10.5
+2026-06-27,DRI,Piper Sandler,-0.3
+2026-06-27,JBHT,Benchmark,9.1
+2026-06-27,MKC,Bernstein,38.8
+2026-06-27,MKC,Deutsche Bank,22.4
+2026-06-27,NKE,Keybanc,
+2026-06-27,NKE,Oppenheimer,49.7
+2026-06-27,TECH,Baird,3
+2026-06-27,TROW,Morgan Stanley,2.4
+2026-06-29,APA,Morgan Stanley,23.8
+2026-06-29,BAC,Morgan Stanley,16
+2026-06-29,C,Morgan Stanley,15.6
+2026-06-29,CFG,Morgan Stanley,12.7
+2026-06-29,DVN,Morgan Stanley,49.4
+2026-06-29,EQIX,Citigroup,14.8
+2026-06-29,FITB,Morgan Stanley,13.8
+2026-06-29,GS,Morgan Stanley,6.8
+2026-06-29,JPM,Morgan Stanley,10.3
+2026-06-29,KEY,Morgan Stanley,8.1
+2026-06-29,LRCX,Cantor Fitzgerald,30.5
+2026-06-29,MU,Cantor Fitzgerald,77.2
+2026-06-29,OXY,Morgan Stanley,36
+2026-06-29,PNC,Morgan Stanley,13.7
+2026-06-29,QCOM,Mizuho,8.8
+2026-06-29,TXN,UBS,24.9
+2026-06-29,USB,Morgan Stanley,10.1
+2026-06-29,WDC,Cantor Fitzgerald,49.9
+2026-06-29,WFC,Morgan Stanley,21.8
+2026-06-30,CCL,Tigress Financial,45.1
+2026-06-30,DIS,JP Morgan,43.7
+2026-06-30,DOW,B of A Securities,3.9
+2026-06-30,EVRG,Barclays,8.1
+2026-06-30,FCX,UBS,22.3
+2026-06-30,FRT,B of A Securities,5.6
+2026-06-30,HON,Deutsche Bank,13.7
+2026-06-30,HRL,B of A Securities,3.9
+2026-06-30,LRCX,Susquehanna,14.1
+2026-06-30,LYB,B of A Securities,-10.7
+2026-06-30,MKC,Barclays,6.6
+2026-06-30,MRK,B of A Securities,9.1
+2026-06-30,NEM,UBS,27.9
+2026-06-30,NTRS,Citigroup,-2.2
+2026-06-30,PLD,BMO Capital,14.9
+2026-06-30,STZ,Wells Fargo,21.3
+2026-06-30,TECH,Citigroup,3
+2026-06-30,TER,Susquehanna,17.6
+2026-06-30,TFC,Citigroup,8
+2026-06-30,WY,DA Davidson,26.6
+2026-07-01,BAC,Oppenheimer,
+2026-07-01,C,Oppenheimer,
+2026-07-01,CMCSA,Deutsche Bank,32
+2026-07-01,DAL,B of A Securities,5.9
+2026-07-01,DRI,Argus Research,19.1
+2026-07-01,GE,Citigroup,14.9
+2026-07-01,GS,Oppenheimer,
+2026-07-01,ICE,Goldman Sachs,45.1
+2026-07-01,IFF,Argus Research,7.3
+2026-07-01,LDOS,Jefferies,5.9
+2026-07-01,LUV,B of A Securities,-13.5
+2026-07-01,MA,Piper Sandler,15.4
+2026-07-01,MOS,Morgan Stanley,23.2
+2026-07-01,MS,Oppenheimer,
+2026-07-01,NKE,Bernstein,73.9
+2026-07-01,NKE,Jefferies,81.2
+2026-07-01,PAYX,Morgan Stanley,8.1
+2026-07-01,SLB,Citigroup,35.9
+2026-07-01,SNDK,B of A Securities,19.9
+2026-07-01,STT,Goldman Sachs,15
+2026-07-01,TECH,Benchmark,
+2026-07-01,UAL,B of A Securities,10.2
+2026-07-01,UAL,Bernstein,12.4
+2026-07-01,WELL,Deutsche Bank,16.4
+2026-07-01,WMB,JP Morgan,20
+2026-07-02,BRO,Goldman Sachs,2.4
+2026-07-02,CAH,B of A Securities,8.4
+2026-07-02,CHTR,Goldman Sachs,-11.1
+2026-07-02,CME,Raymond James,38.7
+2026-07-02,DLR,Barclays,11.9
+2026-07-02,FDS,Jefferies,1.2
+2026-07-02,GIS,Deutsche Bank,-13.2
+2026-07-02,GIS,JP Morgan,-7.9
+2026-07-02,IFF,Morgan Stanley,15.9
+2026-07-02,LUV,Goldman Sachs,-32
+2026-07-02,NKE,B of A Securities,6.6
+2026-07-02,NKE,Barclays,17.9
+2026-07-02,NKE,BTIG,24.7
+2026-07-02,NKE,Guggenheim,36
+2026-07-02,NKE,Piper Sandler,2
+2026-07-02,NKE,Stifel,2
+2026-07-02,NKE,Wells Fargo,-9.3
+2026-07-02,NOW,Guggenheim,17.7
+2026-07-02,PEP,JP Morgan,18.7
+2026-07-02,PLD,BTIG,22.9
+2026-07-02,PNW,Barclays,1
+2026-07-02,PPG,Mizuho,9.3
+2026-07-02,STX,B of A Securities,27.7
+2026-07-02,STZ,B of A Securities,6.8
+2026-07-02,STZ,JP Morgan,21.6
+2026-07-02,TFC,Raymond James,
+2026-07-02,TSLA,Freedom Broker,-1.9
+2026-07-02,TSN,B of A Securities,17.9
+2026-07-02,VTR,Evercore ISI Group,6.1
+2026-07-02,WDC,B of A Securities,22.9
+2026-07-02,WMB,Jefferies,15.6
+2026-07-03,ATO,Argus Research,6.1
+2026-07-03,CHRW,Raymond James,5
+2026-07-03,CMI,Truist Securities,31.9
+2026-07-03,COHR,Raymond James,21.5
+2026-07-03,DD,Citigroup,21.5
+2026-07-03,DIS,Raymond James,15.1
+2026-07-03,EOG,Jefferies,35.2
+2026-07-03,EQT,Jefferies,42
+2026-07-03,ES,Wells Fargo,3.7
+2026-07-03,FDS,BMO Capital,10
+2026-07-03,FDS,UBS,36
+2026-07-03,FDS,Wells Fargo,-16
+2026-07-03,GE,Jefferies,19.8
+2026-07-03,GIS,Jefferies,-5.3
+2026-07-03,GIS,TD Cowen,-15.8
+2026-07-03,GIS,Wells Fargo,-13.2
+2026-07-03,GNRC,Citigroup,11
+2026-07-03,ITW,Truist Securities,11
+2026-07-03,J,Truist Securities,18.7
+2026-07-03,PCAR,Truist Securities,8.1
+2026-07-03,PEG,RBC Capital,0.7
+2026-07-03,PEP,UBS,20.1
+2026-07-03,PM,UBS,0.5
+2026-07-03,STZ,Morgan Stanley,16.4
+2026-07-03,STZ,RBC Capital,36.3
+2026-07-03,TSN,Bernstein,9.3
+2026-07-03,UAL,Goldman Sachs,17.4
+2026-07-03,WST,Keybanc,6.5
+2026-07-06,ADP,TD Cowen,-8.4
+2026-07-06,ALL,Raymond James,20.5
+2026-07-06,BAX,Evercore ISI Group,5.4
+2026-07-06,BDX,Evercore ISI Group,14
+2026-07-06,BXP,Evercore ISI Group,-2.2
+2026-07-06,LUV,Morgan Stanley,27.5
+2026-07-06,MDT,Evercore ISI Group,26.1
+2026-07-06,MS,Goldman Sachs,7.4
+2026-07-06,MSFT,Wolfe Research,35.6
+2026-07-06,MTB,Evercore ISI Group,9.6
+2026-07-06,NTRS,Evercore ISI Group,1.3
+2026-07-06,PFG,Morgan Stanley,0.9
+2026-07-06,SYK,Evercore ISI Group,6.9
+2026-07-06,TER,Goldman Sachs,20.3
+2026-07-06,TMO,Evercore ISI Group,9.6
+2026-07-06,TRV,Raymond James,17.1
+2026-07-06,UNH,HSBC,-10.3
+2026-07-06,UPS,Morgan Stanley,-31.4
+2026-07-06,WRB,Morgan Stanley,4.2
+2026-07-07,AJG,Barclays,15
+2026-07-07,APTV,Deutsche Bank,27
+2026-07-07,ARE,Mizuho,19.9
+2026-07-07,AXON,Needham,17.6
+2026-07-07,C,B of A Securities,22.2
+2026-07-07,CHRW,Morgan Stanley,-52
+2026-07-07,CMCSA,Morgan Stanley,25.7
+2026-07-07,CME,UBS,9.7
+2026-07-07,DLTR,JP Morgan,37.6
+2026-07-07,DOW,BMO Capital,19.8
+2026-07-07,EG,Morgan Stanley,-4
+2026-07-07,FITB,Wells Fargo,14.7
+2026-07-07,GL,Morgan Stanley,17.1
+2026-07-07,GLW,B of A Securities,29.9
+2026-07-07,HBAN,Jefferies,5.7
+2026-07-07,HBAN,JP Morgan,8.5
+2026-07-07,IBM,B of A Securities,8
+2026-07-07,JBHT,Morgan Stanley,-28
+2026-07-07,KEY,JP Morgan,4.3
+2026-07-07,KEY,Wells Fargo,14.9
+2026-07-07,MCO,Morgan Stanley,-1.1
+2026-07-07,MGM,Wells Fargo,3
+2026-07-07,MRK,Cantor Fitzgerald,-6.8
+2026-07-07,MRNA,B of A Securities,-53.7
+2026-07-07,MRNA,RBC Capital,-45.2
+2026-07-07,MS,B of A Securities,12.8
+2026-07-07,MSFT,BMO Capital,31.2
+2026-07-07,NEE,Barclays,3.3
+2026-07-07,NEM,Jefferies,52
+2026-07-07,O,Baird,2.1
+2026-07-07,ODFL,Morgan Stanley,11.4
+2026-07-07,PFE,Cantor Fitzgerald,12.3
+2026-07-07,PFG,Barclays,-18.8
+2026-07-07,PPG,BMO Capital,10.5
+2026-07-07,PRU,Barclays,-19.9
+2026-07-07,SPGI,Morgan Stanley,17.4
+2026-07-07,SYF,TD Cowen,16.4
+2026-07-07,TFC,Morgan Stanley,5.3
+2026-07-07,TMUS,B of A Securities,18.4
+2026-07-07,TMUS,Morgan Stanley,23.7
+2026-07-07,TRMB,Oppenheimer,49.3
+2026-07-07,VRTX,RBC Capital,7.5
+2026-07-07,WFC,B of A Securities,15.9
+2026-07-08,ACGL,Barclays,2.6
+2026-07-08,ACGL,UBS,16.1
+2026-07-08,AFL,UBS,1.6
+2026-07-08,AIG,UBS,20.8
+2026-07-08,AWK,JP Morgan,8.1
+2026-07-08,BKR,Citigroup,34.3
+2026-07-08,BRO,Barclays,10.1
+2026-07-08,BRO,UBS,5.8
+2026-07-08,CF,Morgan Stanley,-1.1
+2026-07-08,CFG,UBS,15.8
+2026-07-08,CNC,Cantor Fitzgerald,13.1
+2026-07-08,COP,Mizuho,32.7
+2026-07-08,CSX,Baird,8.5
+2026-07-08,DAL,Susquehanna,24.4
+2026-07-08,DVN,JP Morgan,27.2
+2026-07-08,ECL,RBC Capital,21.1
+2026-07-08,EFX,UBS,27.1
+2026-07-08,ELV,Cantor Fitzgerald,7.6
+2026-07-08,FITB,UBS,13.1
+2026-07-08,FRT,Evercore ISI Group,-0.3
+2026-07-08,GILD,Truist Securities,14.2
+2026-07-08,HBAN,UBS,22.9
+2026-07-08,HCA,Cantor Fitzgerald,25.3
+2026-07-08,HUM,Cantor Fitzgerald,-24.3
+2026-07-08,INVH,UBS,15.9
+2026-07-08,JNJ,Citigroup,10.9
+2026-07-08,KEY,UBS,16.1
+2026-07-08,LLY,JP Morgan,14.7
+2026-07-08,LLY,Morgan Stanley,10.3
+2026-07-08,LUV,Susquehanna,13.7
+2026-07-08,MA,Baird,28
+2026-07-08,MCO,BMO Capital,3.8
+2026-07-08,MET,UBS,14.6
+2026-07-08,MO,UBS,8.3
+2026-07-08,NTRS,B of A Securities,10.5
+2026-07-08,PANW,Evercore ISI Group,-5
+2026-07-08,PFE,JP Morgan,16.4
+2026-07-08,PNC,UBS,13.9
+2026-07-08,PODD,Citigroup,7.2
+2026-07-08,RF,UBS,8.4
+2026-07-08,SHW,RBC Capital,21.7
+2026-07-08,SPGI,BMO Capital,14.3
+2026-07-08,SPGI,UBS,18.8
+2026-07-08,STT,B of A Securities,6.1
+2026-07-08,TFC,UBS,8.6
+2026-07-08,TSCO,Evercore ISI Group,31.7
+2026-07-08,VMC,UBS,18.6
+2026-07-08,VRTX,Baird,-33.1
+2026-07-08,WELL,UBS,14.5
+2026-07-08,WM,CIBC,3.1
+2026-07-08,WM,Oppenheimer,11.1
+2026-07-08,WRB,"Keefe, Bruyette & Woods",-3.6
+2026-07-09,BALL,Citigroup,17.9
+2026-07-09,BALL,RBC Capital,26.1
+2026-07-09,BRO,"Keefe, Bruyette & Woods",9.2
+2026-07-09,CB,"Keefe, Bruyette & Woods",9.8
+2026-07-09,CHD,Wells Fargo,15.1
+2026-07-09,CL,Piper Sandler,3.9
+2026-07-09,CVS,RBC Capital,7.9
+2026-07-09,DLTR,Goldman Sachs,1.4
+2026-07-09,DLTR,Raymond James,13.6
+2026-07-09,ECL,Deutsche Bank,22.4
+2026-07-09,EG,"Keefe, Bruyette & Woods",12.7
+2026-07-09,EW,Citigroup,18.2
+2026-07-09,FCX,Goldman Sachs,24
+2026-07-09,FCX,Morgan Stanley,17.3
+2026-07-09,GD,Jefferies,18.5
+2026-07-09,GL,Wells Fargo,8.5
+2026-07-09,HAL,Susquehanna,21.7
+2026-07-09,HSY,Piper Sandler,15.5
+2026-07-09,HUM,RBC Capital,5.1
+2026-07-09,JBHT,Goldman Sachs,-14.2
+2026-07-09,KHC,Wells Fargo,0.9
+2026-07-09,KIM,UBS,15.3
+2026-07-09,LRCX,TD Cowen,9.6
+2026-07-09,LYV,Goldman Sachs,11
+2026-07-09,MNST,Wells Fargo,10.7
+2026-07-09,MSCI,Raymond James,26.2
+2026-07-09,NCLH,Morgan Stanley,17
+2026-07-09,NDAQ,Raymond James,33.9
+2026-07-09,NOW,Goldman Sachs,42.1
+2026-07-09,NTRS,"Keefe, Bruyette & Woods",-3.4
+2026-07-09,ODFL,Wells Fargo,13.7
+2026-07-09,OKE,Barclays,-3.2
+2026-07-09,ON,Susquehanna,53.1
+2026-07-09,REG,UBS,6.4
+2026-07-09,ROL,Morgan Stanley,45.6
+2026-07-09,SPG,UBS,1.2
+2026-07-09,T,Barclays,14.7
+2026-07-09,TAP,Wells Fargo,6.1
+2026-07-09,TECH,RBC Capital,3.2
+2026-07-09,TFC,B of A Securities,12.2
+2026-07-09,TRV,"Keefe, Bruyette & Woods",4.5
+2026-07-09,UDR,Truist Securities,2.6
+2026-07-09,UPS,Citigroup,19.1
+2026-07-09,USB,Raymond James,17.6
+2026-07-09,V,Barclays,21.6
+2026-07-09,WAT,Morgan Stanley,4.9
+2026-07-09,WDC,Susquehanna,-15.8
+2026-07-09,WFC,Raymond James,
+2026-07-09,WMB,Barclays,-0.8
+2026-07-09,XYZ,Barclays,31.6
+2026-07-10,AEE,Barclays,4.6
+2026-07-10,AFL,Jefferies,-11.6
+2026-07-10,APH,B of A Securities,14.5
+2026-07-10,AXP,B of A Securities,11.3
+2026-07-10,BMY,B of A Securities,14.2
+2026-07-10,CB,Evercore ISI Group,7.2
+2026-07-10,CME,Barclays,12.2
+2026-07-10,COF,B of A Securities,14.5
+2026-07-10,COST,JP Morgan,20.4
+2026-07-10,CRM,Keybanc,
+2026-07-10,DVA,UBS,16.9
+2026-07-10,EXR,UBS,13.8
+2026-07-10,F,Barclays,2.7
+2026-07-10,FCX,B of A Securities,32.5
+2026-07-10,FCX,JP Morgan,27.5
+2026-07-10,GPN,Wells Fargo,25.6
+2026-07-10,HAS,Citigroup,30.5
+2026-07-10,HIG,Evercore ISI Group,5.4
+2026-07-10,HRL,Stephens & Co.,2.5
+2026-07-10,JNJ,B of A Securities,1.1
+2026-07-10,KO,B of A Securities,14.8
+2026-07-10,LDOS,Truist Securities,46.9
+2026-07-10,LIN,Evercore ISI Group,0
+2026-07-10,MGM,Barclays,2.6
+2026-07-10,MSFT,Argus Research,31.5
+2026-07-10,NEM,B of A Securities,40.7
+2026-07-10,NUE,B of A Securities,25.6
+2026-07-10,PEP,Jefferies,11.9
+2026-07-10,PFE,B of A Securities,6.8
+2026-07-10,PKG,Wells Fargo,9
+2026-07-10,PRU,Mizuho,-6.1
+2026-07-10,PWR,Jefferies,18.4
+2026-07-10,RMD,Jefferies,7.9
+2026-07-10,RSG,Citigroup,18
+2026-07-10,SLB,Raymond James,28.7
+2026-07-10,SRE,Barclays,8.9
+2026-07-10,STLD,B of A Securities,17.1
+2026-07-10,TRGP,JP Morgan,15.2
+2026-07-10,WM,Citigroup,15.8
+2026-07-10,WRB,Evercore ISI Group,-5.2
+2026-07-10,XEL,Barclays,13.9
+2026-07-11,ABBV,RBC Capital,3.6
+2026-07-11,AMD,Stifel,16.7
+2026-07-11,AME,Morgan Stanley,4.6
+2026-07-11,AMP,Jefferies,26.8
+2026-07-11,AMP,Morgan Stanley,-3.9
+2026-07-11,CTSH,Baird,23.5
+2026-07-11,EXR,Barclays,20.1
+2026-07-11,FSLR,Susquehanna,17.5
+2026-07-11,GL,Jefferies,-7.2
+2026-07-11,GOOGL,Keybanc,24.5
+2026-07-11,ICE,Morgan Stanley,19.6
+2026-07-11,IT,Morgan Stanley,27.5
+2026-07-11,JBHT,Bernstein,14.4
+2026-07-11,LRCX,Stifel,24.5
+2026-07-11,LVS,Citigroup,55.7
+2026-07-11,MCO,Barclays,17
+2026-07-11,MET,Jefferies,11.9
+2026-07-11,MSCI,B of A Securities,19
+2026-07-11,MSCI,Barclays,19.8
+2026-07-11,NDAQ,Morgan Stanley,26.6
+2026-07-11,PEP,Citigroup,6.7
+2026-07-11,PEP,Morgan Stanley,17.8
+2026-07-11,PEP,RBC Capital,18.5
+2026-07-11,PEP,TD Cowen,6.7
+2026-07-11,PEP,Wells Fargo,3
+2026-07-11,PG,B of A Securities,12.8
+2026-07-11,PRU,Jefferies,-5.3
+2026-07-11,RJF,Morgan Stanley,2.4
+2026-07-11,SBAC,RBC Capital,15
+2026-07-11,WDC,Wells Fargo,29.4
+2026-07-11,WY,Raymond James,31.2
+2026-07-13,AAPL,Citigroup,15.1
+2026-07-13,AEE,B of A Securities,-0.2
+2026-07-13,AFL,Evercore ISI Group,-6.5
+2026-07-13,AMP,Evercore ISI Group,24.1
+2026-07-13,AON,JP Morgan,14.4
+2026-07-13,BX,Evercore ISI Group,13.8
+2026-07-13,CARR,Citigroup,15.8
+2026-07-13,CAT,Oppenheimer,17.7
+2026-07-13,CDW,Citigroup,0
+2026-07-13,CSGP,RBC Capital,17.7
+2026-07-13,DAL,JP Morgan,29.6
+2026-07-13,EW,RBC Capital,19.2
+2026-07-13,GL,Evercore ISI Group,-2.4
+2026-07-13,HII,TD Cowen,25.3
+2026-07-13,INTC,TD Cowen,8.5
+2026-07-13,KKR,Evercore ISI Group,18.5
+2026-07-13,LDOS,JP Morgan,47.6
+2026-07-13,LH,B of A Securities,15.4
+2026-07-13,LH,Baird,21.9
+2026-07-13,LLY,UBS,20.8
+2026-07-13,LMT,TD Cowen,6.7
+2026-07-13,MET,Evercore ISI Group,11.3
+2026-07-13,MRK,JP Morgan,13.3
+2026-07-13,NEE,B of A Securities,6
+2026-07-13,NXPI,B of A Securities,9.4
+2026-07-13,PRU,Evercore ISI Group,-5.6
+2026-07-13,TEL,Citigroup,15.2
+2026-07-13,TSLA,Jefferies,-1.1
+2026-07-13,TXT,TD Cowen,15.9
+2026-07-13,UNH,Wells Fargo,13.7
+2026-07-13,VRTX,UBS,20.3
+2026-07-14,AMCR,B of A Securities,19
+2026-07-14,AMP,Piper Sandler,1.3
+2026-07-14,APO,BMO Capital,6
+2026-07-14,APO,Piper Sandler,31.2
+2026-07-14,ATO,Wells Fargo,11.4
+2026-07-14,AVY,B of A Securities,31.4
+2026-07-14,AXP,JP Morgan,13.3
+2026-07-14,BBY,Loop Capital,0.4
+2026-07-14,BIIB,Truist Securities,17.3
+2026-07-14,CAT,Citigroup,14.8
+2026-07-14,CL,Citigroup,18.3
+2026-07-14,CMG,Citigroup,23
+2026-07-14,CMI,Citigroup,15.6
+2026-07-14,COF,JP Morgan,19.8
+2026-07-14,CRL,Mizuho,0.7
+2026-07-14,DAL,Citigroup,26.4
+2026-07-14,DECK,Jefferies,19.7
+2026-07-14,ELV,TD Cowen,6.6
+2026-07-14,HUM,Wells Fargo,22.4
+2026-07-14,IQV,Mizuho,12.2
+2026-07-14,JBHT,Stifel,-8.9
+2026-07-14,KDP,Citigroup,18.4
+2026-07-14,KO,Citigroup,15.2
+2026-07-14,MNST,Citigroup,15.7
+2026-07-14,NCLH,Goldman Sachs,-17.9
+2026-07-14,NOC,Goldman Sachs,-0.7
+2026-07-14,ODFL,Raymond James,3.7
+2026-07-14,PFE,BMO Capital,23.1
+2026-07-14,PFG,"Keefe, Bruyette & Woods",-1.8
+2026-07-14,Q,RBC Capital,29.6
+2026-07-14,RMD,Citigroup,21.6
+2026-07-14,SYF,JP Morgan,6.6
+2026-07-14,TAP,Citigroup,6
+2026-07-14,TSCO,UBS,9.3
+2026-07-14,UHS,Wells Fargo,14.5
+2026-07-14,UNH,TD Cowen,-0.2
+2026-07-14,UNP,Raymond James,24.5
+2026-07-14,VLO,Citigroup,0.9
+2026-07-14,WAT,Goldman Sachs,14.4
+2026-07-14,YUM,Citigroup,11.4
+2026-07-15,ABNB,Jefferies,18.9
+2026-07-15,ADI,Keybanc,32.1
+2026-07-15,AMD,B of A Securities,11.5
+2026-07-15,ATO,Barclays,3
+2026-07-15,BAC,RBC Capital,6
+2026-07-15,BAX,Goldman Sachs,-4.2
+2026-07-15,C,RBC Capital,11.9
+2026-07-15,CHRW,Susquehanna,13.2
+2026-07-15,CMS,Barclays,7.5
+2026-07-15,CNC,Truist Securities,16.5
+2026-07-15,CSGP,Baird,21.3
+2026-07-15,CSX,Benchmark,8.3
+2026-07-15,CTVA,Mizuho,15.1
+2026-07-15,CVS,Truist Securities,11.8
+2026-07-15,DASH,Jefferies,19.6
+2026-07-15,DASH,Keybanc,46.2
+2026-07-15,DHI,Barclays,-5.8
+2026-07-15,EBAY,Baird,10.3
+2026-07-15,ELV,Truist Securities,20.9
+2026-07-15,EW,Mizuho,17.7
+2026-07-15,FSLR,Barclays,24.6
+2026-07-15,GWW,Stephens & Co.,-1.1
+2026-07-15,HAL,Piper Sandler,21.1
+2026-07-15,HUM,Truist Securities,3.3
+2026-07-15,IBM,Oppenheimer,58.4
+2026-07-15,INTC,Keybanc,41.8
+2026-07-15,INVH,Barclays,18.8
+2026-07-15,JPM,Baird,-11.8
+2026-07-15,JPM,RBC Capital,7
+2026-07-15,LEN,Citigroup,4.9
+2026-07-15,LLY,Citigroup,39.7
+2026-07-15,LVS,Wells Fargo,18.2
+2026-07-15,MLM,Raymond James,18.6
+2026-07-15,MRVL,Keybanc,80.1
+2026-07-15,MSFT,Mizuho,26.4
+2026-07-15,MU,Keybanc,79.3
+2026-07-15,NOW,Citigroup,46.5
+2026-07-15,NSC,Susquehanna,10.6
+2026-07-15,ODFL,Susquehanna,-1
+2026-07-15,OXY,Stephens & Co.,26.5
+2026-07-15,PNR,RBC Capital,27.6
+2026-07-15,PNR,Seaport Global,
+2026-07-15,PPL,Barclays,13.7
+2026-07-15,RMD,Mizuho,13
+2026-07-15,SWKS,Keybanc,
+2026-07-15,TDG,Morgan Stanley,12
+2026-07-15,TRMB,Wells Fargo,17.8
+2026-07-15,TSCO,Barclays,16.2
+2026-07-15,TSLA,Barclays,-7.4
+2026-07-15,TSLA,Wells Fargo,-67.5
+2026-07-15,UBER,Keybanc,44.8
+2026-07-15,UDR,Barclays,14.3
+2026-07-15,UNP,Susquehanna,15.5
+2026-07-15,WFC,Baird,7.1
+2026-07-16,AEE,JP Morgan,22.8
+2026-07-16,AVY,Truist Securities,32.8
+2026-07-16,AWK,Barclays,0.4
+2026-07-16,BAC,Barclays,16.2
+2026-07-16,BAC,"Keefe, Bruyette & Woods",12.9
+2026-07-16,BAC,Truist Securities,4.9
+2026-07-16,BAC,Wells Fargo,11.3
+2026-07-16,BLK,UBS,18.8
+2026-07-16,C,Truist Securities,14.3
+2026-07-16,CB,Piper Sandler,10.6
+2026-07-16,CBOE,Piper Sandler,15.2
+2026-07-16,CHD,JP Morgan,7.1
+2026-07-16,CHRW,Truist Securities,7.3
+2026-07-16,CINF,Piper Sandler,13.5
+2026-07-16,CME,Piper Sandler,20
+2026-07-16,CMS,JP Morgan,14.8
+2026-07-16,CNP,JP Morgan,9.9
+2026-07-16,CTAS,RBC Capital,3.7
+2026-07-16,CTAS,UBS,15.7
+2026-07-16,CTAS,Wells Fargo,25.8
+2026-07-16,DOC,Wells Fargo,0.9
+2026-07-16,DTE,JP Morgan,10.3
+2026-07-16,DUK,JP Morgan,13.1
+2026-07-16,ELV,RBC Capital,7.5
+2026-07-16,ELV,Wells Fargo,19.9
+2026-07-16,ETR,JP Morgan,21.7
+2026-07-16,EXPD,Stifel,-12.1
+2026-07-16,EXPD,Truist Securities,-2.6
+2026-07-16,GL,Piper Sandler,9.9
+2026-07-16,GS,B of A Securities,13.3
+2026-07-16,GS,Barclays,8.5
+2026-07-16,GS,JP Morgan,-16.8
+2026-07-16,GS,"Keefe, Bruyette & Woods",-1.5
+2026-07-16,GS,Wells Fargo,15.5
+2026-07-16,HAS,B of A Securities,30
+2026-07-16,HIG,Piper Sandler,8.4
+2026-07-16,IBM,Argus Research,34.1
+2026-07-16,ICE,Piper Sandler,34.8
+2026-07-16,ISRG,Truist Securities,29.4
+2026-07-16,JBHT,JP Morgan,5.7
+2026-07-16,JBHT,TD Cowen,0.3
+2026-07-16,JBHT,Truist Securities,-0.3
+2026-07-16,JNJ,Raymond James,6.5
+2026-07-16,JNJ,RBC Capital,15.3
+2026-07-16,JPM,B of A Securities,20.2
+2026-07-16,JPM,Barclays,20.2
+2026-07-16,JPM,"Keefe, Bruyette & Woods",9.9
+2026-07-16,JPM,Truist Securities,0.8
+2026-07-16,KHC,JP Morgan,-14.5
+2026-07-16,KLAC,Oppenheimer,19.4
+2026-07-16,KO,UBS,17.4
+2026-07-16,MCD,Wells Fargo,12.5
+2026-07-16,MNST,Stifel,7.1
+2026-07-16,MS,JP Morgan,-14.6
+2026-07-16,MS,Wells Fargo,5.2
+2026-07-16,MTB,RBC Capital,1.6
+2026-07-16,NRG,Wells Fargo,52.6
+2026-07-16,ODFL,Truist Securities,9
+2026-07-16,PG,JP Morgan,8.4
+2026-07-16,PGR,B of A Securities,49.9
+2026-07-16,PKG,Truist Securities,17.8
+2026-07-16,PNC,Oppenheimer,10
+2026-07-16,PNC,RBC Capital,6.9
+2026-07-16,PNC,Truist Securities,3.4
+2026-07-16,PNC,Wells Fargo,11.6
+2026-07-16,PNR,Goldman Sachs,13.5
+2026-07-16,PNR,Oppenheimer,48.2
+2026-07-16,PSA,Raymond James,
+2026-07-16,SO,JP Morgan,9.7
+2026-07-16,TMUS,Scotiabank,28
+2026-07-16,TRGP,Truist Securities,12.3
+2026-07-16,TRV,Piper Sandler,18.2
+2026-07-16,TSCO,Wells Fargo,14.8
+2026-07-16,UNH,Baird,0.8
+2026-07-16,WEC,JP Morgan,9.9
+2026-07-16,WM,Scotiabank,10.2
+2026-07-16,WTW,Piper Sandler,9.9
+2026-07-16,WYNN,JP Morgan,37.7
+2026-07-16,WYNN,Stifel,43.9
+2026-07-16,XEL,JP Morgan,28.2
+2026-07-17,ABT,JP Morgan,18.8
+2026-07-17,ABT,Piper Sandler,16.8
+2026-07-17,ABT,Wells Fargo,10.9
+2026-07-17,APD,Bernstein,15.8
+2026-07-17,BKR,Barclays,27.1
+2026-07-17,BLK,B of A Securities,23.6
+2026-07-17,BLK,Barclays,35.7
+2026-07-17,BLK,JP Morgan,27.7
+2026-07-17,BLK,"Keefe, Bruyette & Woods",21.7
+2026-07-17,BLK,Morgan Stanley,39.3
+2026-07-17,CF,RBC Capital,-4.1
+2026-07-17,CFG,DA Davidson,15
+2026-07-17,CFG,Jefferies,21.8
+2026-07-17,CFG,Stephens & Co.,-5.3
+2026-07-17,CMI,Morgan Stanley,20.8
+2026-07-17,CTAS,B of A Securities,11
+2026-07-17,CTAS,Baird,3.3
+2026-07-17,DPZ,Morgan Stanley,11.8
+2026-07-17,ELV,Barclays,22.9
+2026-07-17,ELV,Guggenheim,22.4
+2026-07-17,FAST,Barclays,-1.9
+2026-07-17,FAST,Morgan Stanley,10.9
+2026-07-17,GS,BMO Capital,7.3
+2026-07-17,GS,Citigroup,12
+2026-07-17,HAS,Jefferies,34.3
+2026-07-17,HLT,Morgan Stanley,3
+2026-07-17,IBM,Evercore ISI Group,15.9
+2026-07-17,IBM,JP Morgan,15.9
+2026-07-17,INTC,Susquehanna,24.8
+2026-07-17,ISRG,JP Morgan,23.3
+2026-07-17,ISRG,Mizuho,9.6
+2026-07-17,ISRG,Piper Sandler,28.8
+2026-07-17,ISRG,Raymond James,32.3
+2026-07-17,ISRG,Wells Fargo,33.4
+2026-07-17,IVZ,Morgan Stanley,0.8
+2026-07-17,JBHT,Citigroup,4.3
+2026-07-17,JBHT,Evercore ISI Group,10.7
+2026-07-17,JBHT,Stephens & Co.,24.8
+2026-07-17,JBHT,Susquehanna,16.4
+2026-07-17,JNJ,Morgan Stanley,16.4
+2026-07-17,MAR,Morgan Stanley,2.4
+2026-07-17,MCD,Tigress Financial,41.8
+2026-07-17,MS,Barclays,22.2
+2026-07-17,MS,BMO Capital,16.6
+2026-07-17,MS,Freedom Broker,14.3
+2026-07-17,MS,"Keefe, Bruyette & Woods",16.6
+2026-07-17,MTB,Baird,-0.9
+2026-07-17,MTB,Barclays,5.8
+2026-07-17,NFLX,JP Morgan,29.8
+2026-07-17,NFLX,Morgan Stanley,26.8
+2026-07-17,NFLX,Oppenheimer,29.8
+2026-07-17,NI,BMO Capital,5.4
+2026-07-17,OXY,Citigroup,9.8
+2026-07-17,PGR,BMO Capital,-1.9
+2026-07-17,PGR,Evercore ISI Group,10.1
+2026-07-17,PLD,Barclays,4
+2026-07-17,PLD,Mizuho,6
+2026-07-17,PNC,Barclays,11.7
+2026-07-17,PNC,Stephens & Co.,8.2
+2026-07-17,PNR,Stifel,0.1
+2026-07-17,STT,"Keefe, Bruyette & Woods",18.5
+2026-07-17,STT,Morgan Stanley,7.5
+2026-07-17,STT,Wells Fargo,18.5
+2026-07-17,SYY,Morgan Stanley,5.9
+2026-07-17,UAL,JP Morgan,75.6
+2026-07-17,UBER,TD Cowen,61.1
+2026-07-17,UNH,Keybanc,17.2
+2026-07-17,UNH,Morgan Stanley,24
+2026-07-17,UNH,Oppenheimer,17.2
+2026-07-17,USB,Oppenheimer,20.1
+2026-07-17,USB,Wells Fargo,7.6
+2026-07-17,WRB,B of A Securities,-4.5
+2026-07-17,WY,RBC Capital,21.8
+2026-07-17,XYZ,Citigroup,45.2
+2026-07-18,ABT,Evercore ISI Group,18.8
+2026-07-18,ABT,RBC Capital,28.7
+2026-07-18,BAC,Evercore ISI Group,9.4
+2026-07-18,CFG,Evercore ISI Group,15
+2026-07-18,CFG,RBC Capital,6.9
+2026-07-18,ECL,Oppenheimer,15.3
+2026-07-18,EMR,JP Morgan,13.5
+2026-07-18,GE,RBC Capital,15.3
+2026-07-18,GE,UBS,25.4
+2026-07-18,GS,Evercore ISI Group,12.9
+2026-07-18,ISRG,Baird,37
+2026-07-18,ISRG,Bernstein,87.7
+2026-07-18,ISRG,Citigroup,37
+2026-07-18,ISRG,Evercore ISI Group,2.7
+2026-07-18,ISRG,RBC Capital,57.5
+2026-07-18,ISRG,Stifel,50.7
+2026-07-18,JPM,Evercore ISI Group,8.5
+2026-07-18,MAR,Stifel,-1.7
+2026-07-18,MMM,JP Morgan,10
+2026-07-18,MS,Citigroup,9.6
+2026-07-18,MS,Evercore ISI Group,11.9
+2026-07-18,NFLX,Guggenheim,14.5
+2026-07-18,NFLX,Pivotal Research,6.9
+2026-07-18,NFLX,TD Cowen,52.7
+2026-07-18,NFLX,UBS,75.6
+2026-07-18,PNC,Evercore ISI Group,12.1
+2026-07-18,PPG,B of A Securities,11.5
+2026-07-18,SBAC,Wells Fargo,11.1
+2026-07-18,SPGI,Stifel,14.2
+2026-07-18,STT,Barclays,10.2
+2026-07-18,STT,Citigroup,15.8
+2026-07-18,STT,RBC Capital,8
+2026-07-18,STT,Truist Securities,5.3
+2026-07-18,TSCO,Raymond James,27.8
+2026-07-18,UAL,Susquehanna,42.7
+2026-07-18,UNH,RBC Capital,12
+2026-07-18,UNH,Truist Securities,17.2
+2026-07-18,UNH,UBS,14.8
+2026-07-18,USB,Barclays,17
+2026-07-18,USB,DA Davidson,15.4
+2026-07-18,USB,Truist Securities,7.6
+2026-07-20,AIG,JP Morgan,12.4
+2026-07-20,CTVA,B of A Securities,10.6
+2026-07-20,DOW,Morgan Stanley,31.1
+2026-07-20,GE,JP Morgan,13.1
+2026-07-20,HIG,JP Morgan,8.3
+2026-07-20,IBM,Stifel,11.9
+2026-07-20,IR,Stifel,2.3
+2026-07-20,JPM,Citigroup,5.3
+2026-07-20,LITE,Barclays,30.9
+2026-07-20,LVS,B of A Securities,32
+2026-07-20,LYB,Morgan Stanley,22.2
+2026-07-20,MCO,JP Morgan,18.1
+2026-07-20,NVR,B of A Securities,10.6
+2026-07-20,PEG,Jefferies,-0.5
+2026-07-20,PNC,Citigroup,15.2
+2026-07-20,PPL,B of A Securities,8.5
+2026-07-20,RF,Citigroup,14.2
+2026-07-20,RF,DA Davidson,7.9
+2026-07-20,TER,UBS,49.2
+2026-07-20,TMUS,RBC Capital,20.5
+2026-07-20,TRV,Citigroup,4.7
+2026-07-21,APO,Morgan Stanley,37.4
+2026-07-21,CPT,Piper Sandler,5.6
+2026-07-21,DDOG,Evercore ISI Group,8.3
+2026-07-21,DIS,UBS,38.5
+2026-07-21,DPZ,Evercore ISI Group,14.5
+2026-07-21,DPZ,Oppenheimer,26.8
+2026-07-21,DPZ,RBC Capital,6.9
+2026-07-21,DVN,Susquehanna,42.7
+2026-07-21,EOG,Susquehanna,19.6
+2026-07-21,ESS,Piper Sandler,19.7
+2026-07-21,FANG,Susquehanna,29.4
+2026-07-21,FITB,DA Davidson,12.9
+2026-07-21,FITB,"Keefe, Bruyette & Woods",4.2
+2026-07-21,FITB,RBC Capital,7.7
+2026-07-21,FRT,Piper Sandler,18.2
+2026-07-21,GL,JP Morgan,8.7
+2026-07-21,GPN,Morgan Stanley,22
+2026-07-21,HLT,Evercore ISI Group,12.9
+2026-07-21,HLT,JP Morgan,11.4
+2026-07-21,HST,JP Morgan,3.4
+2026-07-21,KIM,Piper Sandler,18.7
+2026-07-21,KKR,Morgan Stanley,51.5
+2026-07-21,LRCX,Evercore ISI Group,8.2
+2026-07-21,LYV,JP Morgan,15.5
+2026-07-21,MAR,JP Morgan,7.9
+2026-07-21,MAR,TD Cowen,13.3
+2026-07-21,MCHP,Wells Fargo,5.8
+2026-07-21,META,Raymond James,29.9
+2026-07-21,MNST,BMO Capital,-1.1
+2026-07-21,MNST,Deutsche Bank,2
+2026-07-21,MTB,Truist Securities,7.2
+2026-07-21,OKE,RBC Capital,-3.8
+2026-07-21,PLD,Truist Securities,9.4
+2026-07-21,PWR,JP Morgan,11.8
+2026-07-21,RF,"Keefe, Bruyette & Woods",6
+2026-07-21,RF,Truist Securities,9.2
+2026-07-21,RL,Wells Fargo,10.2
+2026-07-21,SPG,Piper Sandler,24
+2026-07-21,STT,Evercore ISI Group,8.6
+2026-07-21,TFC,Baird,9.9
+2026-07-21,TFC,Evercore ISI Group,9.9
+2026-07-21,TFC,"Keefe, Bruyette & Woods",7.9
+2026-07-21,TFC,Stephens & Co.,11.9
+2026-07-21,TRV,B of A Securities,-16.3
+2026-07-21,TRV,Barclays,-13.3
+2026-07-21,TRV,Evercore ISI Group,-7.8
+2026-07-21,TSCO,Baird,26.4
+2026-07-21,TXN,Susquehanna,14.8
+2026-07-21,UNH,Barclays,4.4
+2026-07-21,UNH,JP Morgan,22.1
+2026-07-21,UPS,Evercore ISI Group,2.2
+2026-07-21,WRB,Truist Securities,16.1
+2026-07-21,WRB,Wells Fargo,-4.9
+2026-07-22,ADP,UBS,8.3
+2026-07-22,AEE,BMO Capital,7.1
+2026-07-22,AEP,BMO Capital,5.5
+2026-07-22,BIIB,B of A Securities,5.5
+2026-07-22,BIIB,Guggenheim,37.5
+2026-07-22,BXP,Barclays,14.6
+2026-07-22,BXP,Mizuho,-1.4
+2026-07-22,CB,Citizens,15.8
+2026-07-22,CHD,Barclays,-11
+2026-07-22,CLX,Barclays,-11.7
+2026-07-22,CNP,BMO Capital,8.9
+2026-07-22,D,BMO Capital,-0.6
+2026-07-22,DDOG,Jefferies,11.2
+2026-07-22,DDOG,TD Cowen,19.2
+2026-07-22,DHI,"Keefe, Bruyette & Woods",16.3
+2026-07-22,DHI,RBC Capital,-12.9
+2026-07-22,DHR,Guggenheim,12.1
+2026-07-22,DHR,RBC Capital,20.5
+2026-07-22,DHR,Wells Fargo,9.3
+2026-07-22,DPZ,BMO Capital,26.6
+2026-07-22,EFX,Baird,33.5
+2026-07-22,EFX,RBC Capital,11.7
+2026-07-22,EFX,Wells Fargo,22
+2026-07-22,ES,BMO Capital,-2.3
+2026-07-22,ESS,Wells Fargo,0.6
+2026-07-22,ETR,BMO Capital,9.3
+2026-07-22,EXPD,B of A Securities,5.7
+2026-07-22,GM,Goldman Sachs,28
+2026-07-22,GM,JP Morgan,49.1
+2026-07-22,GM,Morgan Stanley,25.5
+2026-07-22,GM,RBC Capital,24.2
+2026-07-22,GM,Wells Fargo,-24.2
+2026-07-22,GPC,Evercore ISI Group,24.1
+2026-07-22,GPC,Truist Securities,4.2
+2026-07-22,GS,HSBC,-7.7
+2026-07-22,HAL,Evercore ISI Group,28.1
+2026-07-22,HAL,Morgan Stanley,19.2
+2026-07-22,HAL,TD Cowen,40
+2026-07-22,HAS,DA Davidson,6.8
+2026-07-22,HAS,JP Morgan,24.8
+2026-07-22,HST,Barclays,-1.8
+2026-07-22,HSY,Stifel,5.2
+2026-07-22,IBM,Jefferies,25.2
+2026-07-22,KEY,DA Davidson,23
+2026-07-22,KEY,"Keefe, Bruyette & Woods",14.2
+2026-07-22,KEY,RBC Capital,9.8
+2026-07-22,KMB,Barclays,5.5
+2026-07-22,KVUE,Barclays,-1.1
+2026-07-22,MMM,Bernstein,-15.7
+2026-07-22,MMM,Citigroup,6.4
+2026-07-22,MMM,UBS,26.7
+2026-07-22,MPC,Goldman Sachs,15.1
+2026-07-22,MS,HSBC,-0.2
+2026-07-22,MSCI,Evercore ISI Group,30.1
+2026-07-22,MSCI,JP Morgan,26.1
+2026-07-22,MSCI,Wells Fargo,24.3
+2026-07-22,MSFT,Oppenheimer,28.9
+2026-07-22,MSFT,Truist Securities,43.9
+2026-07-22,NOC,Susquehanna,25.2
+2026-07-22,PAYX,UBS,1.7
+2026-07-22,PEP,Barclays,4.1
+2026-07-22,PFG,Wells Fargo,3.3
+2026-07-22,PG,Barclays,1.7
+2026-07-22,PNR,Mizuho,38.1
+2026-07-22,PNW,BMO Capital,-2.4
+2026-07-22,PSX,Goldman Sachs,8.8
+2026-07-22,SCHW,UBS,26.3
+2026-07-22,SRE,BMO Capital,11.3
+2026-07-22,STLD,Morgan Stanley,10.2
+2026-07-22,STZ,Barclays,0
+2026-07-22,SYF,RBC Capital,11.9
+2026-07-22,SYF,Wells Fargo,23.1
+2026-07-22,TRV,BMO Capital,2.9
+2026-07-22,TRV,Morgan Stanley,-10.4
+2026-07-22,UNH,Mizuho,13.3
+2026-07-22,VLO,Goldman Sachs,11.8
+2026-07-22,VTR,Mizuho,6.3
+2026-07-22,WEC,BMO Capital,3.7
+2026-07-22,WELL,Mizuho,5.2
+2026-07-22,XEL,BMO Capital,15.9
+2026-07-23,ALGN,UBS,11.6
+2026-07-23,AMD,Benchmark,25.7
+2026-07-23,BLDR,Benchmark,43.8
+2026-07-23,CCI,RBC Capital,15.7
+2026-07-23,CCI,TD Cowen,18.3
+2026-07-23,CME,B of A Securities,-8.1
+2026-07-23,CME,Morgan Stanley,31.8
+2026-07-23,COF,Barclays,20
+2026-07-23,COIN,Citigroup,44.1
+2026-07-23,CSX,B of A Securities,7.8
+2026-07-23,CSX,Barclays,15.5
+2026-07-23,CSX,JP Morgan,11.6
+2026-07-23,CTVA,Oppenheimer,6.9
+2026-07-23,EFX,Barclays,18.7
+2026-07-23,EFX,Needham,45.5
+2026-07-23,FRT,Wells Fargo,6.2
+2026-07-23,GE,Bernstein,23.8
+2026-07-23,GEV,JP Morgan,35.5
+2026-07-23,GEV,Morgan Stanley,37.6
+2026-07-23,GEV,RBC Capital,24.8
+2026-07-23,GM,Barclays,35.2
+2026-07-23,GOOG,JP Morgan,30.6
+2026-07-23,GOOG,Oppenheimer,24.4
+2026-07-23,GOOG,TD Cowen,47.7
+2026-07-23,GOOGL,Roth Capital,37
+2026-07-23,GOOGL,Wedbush,38.6
+2026-07-23,HAL,Argus Research,19.4
+2026-07-23,HAL,Barclays,58.2
+2026-07-23,HAS,Argus Research,19.2
+2026-07-23,HOOD,Keybanc,22.7
+2026-07-23,IBM,Barclays,29.3
+2026-07-23,IBM,BMO Capital,13.5
+2026-07-23,IBM,Morgan Stanley,-6.2
+2026-07-23,IBM,RBC Capital,33.2
+2026-07-23,INCY,JP Morgan,-4.4
+2026-07-23,INCY,Morgan Stanley,-9.6
+2026-07-23,KDP,JP Morgan,26.7
+2026-07-23,KEY,Baird,0.7
+2026-07-23,KIM,Wells Fargo,-0.3
+2026-07-23,LVS,Barclays,32.9
+2026-07-23,LVS,Goldman Sachs,23.9
+2026-07-23,LVS,JP Morgan,35.1
+2026-07-23,LVS,Mizuho,37.4
+2026-07-23,MCO,Baird,19.2
+2026-07-23,MMM,Mizuho,5.3
+2026-07-23,MMM,RBC Capital,-22.8
+2026-07-23,NCLH,Truist Securities,8.2
+2026-07-23,NOC,JP Morgan,11.7
+2026-07-23,NTRS,Morgan Stanley,-1.2
+2026-07-23,NTRS,RBC Capital,1.7
+2026-07-23,PHM,Barclays,-0.2
+2026-07-23,PHM,RBC Capital,-6.7
+2026-07-23,PM,Morgan Stanley,12
+2026-07-23,RJF,JP Morgan,5.7
+2026-07-23,ROL,RBC Capital,7.2
+2026-07-23,SCHW,Argus Research,13.7
+2026-07-23,SCHW,Barclays,24.7
+2026-07-23,STLD,Barclays,13.1
+2026-07-23,SYF,Baird,25.7
+2026-07-23,T,Argus Research,29
+2026-07-23,T,Morgan Stanley,16.1
+2026-07-23,T,RBC Capital,16.1
+2026-07-23,T,Wolfe Research,24.7
+2026-07-23,TEL,Baird,13.6
+2026-07-23,TSLA,Canaccord Genuity,20.2
+2026-07-23,TSLA,JP Morgan,30.5
+2026-07-23,TSLA,Mizuho,32
+2026-07-23,TSLA,Morgan Stanley,17.3
+2026-07-23,TSLA,RBC Capital,46.6
+2026-07-23,TSLA,Roth Capital,48.1
+2026-07-23,TSLA,TD Cowen,34.9
+2026-07-23,TSLA,Truist Securities,8.5
+2026-07-23,TSLA,UBS,12.9
+2026-07-23,TXN,Baird,38.8
+2026-07-23,TXN,Benchmark,29.8
+2026-07-23,TXN,Bernstein,4.6
+2026-07-23,TXN,Goldman Sachs,-18.9
+2026-07-23,TXN,JP Morgan,22.6
+2026-07-23,TXN,Mizuho,10
+2026-07-23,TXN,Morgan Stanley,-8
+2026-07-23,TXN,TD Cowen,22.6
+2026-07-23,TXN,Truist Securities,8.2
+2026-07-23,TXN,Wells Fargo,11.8
+2026-07-23,UNP,B of A Securities,7.8
+2026-07-23,URI,B of A Securities,18.6
+2026-07-23,VICI,Barclays,16.7
+2026-07-23,WAB,JP Morgan,7.3
+2026-07-23,WAB,Morgan Stanley,21
+2026-07-23,WAB,Stephens & Co.,12.4
+2026-07-24,AEE,Keybanc,7.1
+2026-07-24,ALLE,JP Morgan,11.7
+2026-07-24,AMD,Roth Capital,18.8
+2026-07-24,AMP,"Keefe, Bruyette & Woods",4.9
+2026-07-24,BLDR,Stifel,-1.3
+2026-07-24,BX,Goldman Sachs,1.4
+2026-07-24,BX,RBC Capital,35
+2026-07-24,CB,Wells Fargo,0.1
+2026-07-24,CCI,Citigroup,29.7
+2026-07-24,CMCSA,Wells Fargo,8
+2026-07-24,CMS,Keybanc,
+2026-07-24,CNP,Keybanc,3.2
+2026-07-24,CSX,Citigroup,2.3
+2026-07-24,CSX,Evercore ISI Group,-3.4
+2026-07-24,CTSH,JP Morgan,26.7
+2026-07-24,DECK,Stifel,41.5
+2026-07-24,DECK,Truist Securities,11.7
+2026-07-24,DGX,Barclays,9.6
+2026-07-24,DGX,Mizuho,14
+2026-07-24,DGX,Truist Securities,9.6
+2026-07-24,DLR,JP Morgan,23.7
+2026-07-24,DOW,JP Morgan,30.7
+2026-07-24,DUK,Keybanc,7.5
+2026-07-24,ED,Keybanc,-17
+2026-07-24,EVRG,Citigroup,11.4
+2026-07-24,EW,Piper Sandler,14.8
+2026-07-24,FCX,Wells Fargo,11.9
+2026-07-24,GL,"Keefe, Bruyette & Woods",11
+2026-07-24,HON,Citigroup,13
+2026-07-24,HST,Wells Fargo,8.1
+2026-07-24,HSY,Evercore ISI Group,30.1
+2026-07-24,IBM,Citigroup,17.1
+2026-07-24,INTC,JP Morgan,-15.3
+2026-07-24,INTC,Morgan Stanley,-16.3
+2026-07-24,INTC,Roth Capital,19.6
+2026-07-24,INTC,Stifel,9.6
+2026-07-24,INTC,Truist Securities,7.6
+2026-07-24,KMI,Wells Fargo,9.4
+2026-07-24,LMT,Morgan Stanley,21.4
+2026-07-24,LVS,Macquarie,33
+2026-07-24,LVS,Stifel,28.8
+2026-07-24,LVS,Susquehanna,35.2
+2026-07-24,MCD,Evercore ISI Group,21.3
+2026-07-24,MCK,Citigroup,20.5
+2026-07-24,MCO,Wells Fargo,25.4
+2026-07-24,NDAQ,Barclays,21.3
+2026-07-24,NDAQ,"Keefe, Bruyette & Woods",11.5
+2026-07-24,NDAQ,TD Cowen,18.1
+2026-07-24,NI,Keybanc,6.4
+2026-07-24,NOW,Evercore ISI Group,68.6
+2026-07-24,NOW,Macquarie,15.9
+2026-07-24,NSC,Barclays,13.8
+2026-07-24,NSC,Citigroup,6.9
+2026-07-24,NSC,JP Morgan,-3.9
+2026-07-24,NSC,RBC Capital,2.4
+2026-07-24,NSC,TD Cowen,6.9
+2026-07-24,NSC,Wells Fargo,9.5
+2026-07-24,NTRS,Wells Fargo,8.7
+2026-07-24,NXPI,Oppenheimer,18.7
+2026-07-24,PHM,Citigroup,6.2
+2026-07-24,PHM,Evercore ISI Group,28.4
+2026-07-24,PLD,Scotiabank,3.4
+2026-07-24,PM,Needham,11.6
+2026-07-24,PM,Stifel,6.4
+2026-07-24,ROL,Barclays,16
+2026-07-24,RTX,RBC Capital,18.6
+2026-07-24,RTX,Susquehanna,16.2
+2026-07-24,SNDK,Susquehanna,96.6
+2026-07-24,SO,Keybanc,-18.6
+2026-07-24,T,Wells Fargo,-13
+2026-07-24,TDY,Barclays,-2.1
+2026-07-24,TDY,Stifel,18.5
+2026-07-24,TMO,Barclays,14
+2026-07-24,TMO,RBC Capital,1.8
+2026-07-24,TMUS,Barclays,24.9
+2026-07-24,TMUS,TD Cowen,51
+2026-07-24,TMUS,Wells Fargo,-1.8
+2026-07-24,TSCO,Goldman Sachs,24.7
+2026-07-24,TSCO,Mizuho,-8.1
+2026-07-24,TSCO,Piper Sandler,1.7
+2026-07-24,TSLA,Cantor Fitzgerald,51.2
+2026-07-24,TSLA,Needham,
+2026-07-24,TSLA,Piper Sandler,40.3
+2026-07-24,TXN,Evercore ISI Group,17.4
+2026-07-24,TXN,Keybanc,42.3
+2026-07-24,UNP,Barclays,14.9
+2026-07-24,UNP,BMO Capital,5.1
+2026-07-24,UNP,Citigroup,14.6
+2026-07-24,UNP,JP Morgan,9.7
+2026-07-24,UNP,RBC Capital,11.3
+2026-07-24,UNP,TD Cowen,6.7
+2026-07-24,URI,Truist Securities,29.5
+2026-07-24,URI,Wells Fargo,19.7
+2026-07-24,VRSN,JP Morgan,19.8
+2026-07-24,WAB,Keybanc,13.8
+2026-07-24,WAB,Susquehanna,13.8
+2026-07-24,WAB,Wells Fargo,5.4
+2026-07-24,WEC,Keybanc,1.3
+2026-07-25,ALLE,B of A Securities,7.7
+2026-07-25,ALLE,Baird,11.7
+2026-07-25,AMP,RBC Capital,14.6
+2026-07-25,CTSH,RBC Capital,8.3
+2026-07-25,DECK,Baird,22.3
+2026-07-25,DECK,Telsey Advisory Group,11.7
+2026-07-25,DGX,Baird,11.8
+2026-07-25,DOV,BMO Capital,19.6
+2026-07-25,DOW,UBS,4.5
+2026-07-25,HBAN,Morgan Stanley,10.6
+2026-07-25,INTC,Cantor Fitzgerald,24.6
+2026-07-25,INTC,Rosenblatt,-20.3
+2026-07-25,INTC,Wedbush,-2.4
+2026-07-25,INTC,Wells Fargo,19.6
+2026-07-25,LUV,Citigroup,11.9
+2026-07-25,NVR,UBS,20.3
+2026-07-25,PGR,Morgan Stanley,-0.3
+2026-07-25,ROL,Canaccord Genuity,16
+2026-07-25,ROL,UBS,10.8
+2026-07-25,ROL,Wells Fargo,-17.5
+2026-07-25,RTX,UBS,2
+2026-07-25,RTX,Wells Fargo,9.1
+2026-07-25,TMUS,Benchmark,62.6
+2026-07-25,TMUS,Keybanc,45.2
+2026-07-25,TMUS,UBS,36.5
+2026-07-25,TSCO,Guggenheim,31.3
+2026-07-25,TSCO,Telsey Advisory Group,24.7
+2026-07-25,TXN,Rosenblatt,24.5
+2026-07-25,UNP,Benchmark,10
+2026-07-25,UNP,Wells Fargo,10
+2026-07-25,URI,Citigroup,17.5
+2026-07-25,URI,UBS,19.3
+2026-07-27,AKAM,Evercore ISI Group,49.6
+2026-07-27,AMD,Mizuho,18.5
+2026-07-27,AXP,Morgan Stanley,15.2
+2026-07-27,CHTR,UBS,11.6
+2026-07-27,DLR,RBC Capital,13.5
+2026-07-27,FIX,UBS,28.2
+2026-07-27,GILD,Morgan Stanley,26
+2026-07-27,HCA,Morgan Stanley,-0.9
+2026-07-27,HCA,UBS,50.9
+2026-07-27,HIG,RBC Capital,6.5
+2026-07-27,HON,Mizuho,8.4
+2026-07-27,LVS,Morgan Stanley,30
+2026-07-27,MCD,UBS,27.1
+2026-07-27,MCO,Mizuho,10.7
+2026-07-27,MSFT,UBS,23.1
+2026-07-27,RJF,UBS,7.7
+2026-07-27,SCHW,Morgan Stanley,32.5
+2026-07-27,SLB,Evercore ISI Group,26.2
+2026-07-27,SLB,Morgan Stanley,5.2
+2026-07-27,SLB,Piper Sandler,22.4
+2026-07-27,SLB,TD Cowen,22.4
+2026-07-27,TMO,Morgan Stanley,15
+2026-07-27,VZ,Morgan Stanley,12.1
+2026-07-27,VZ,RBC Capital,1.3
+2026-07-27,WRB,UBS,2.6
+2026-07-27,WST,Evercore ISI Group,29.1
+2026-07-28,ABT,UBS,17.8
+2026-07-28,ADSK,Oppenheimer,29.6
+2026-07-28,AXP,BTIG,-6.1
+2026-07-28,BAX,UBS,4.8
+2026-07-28,BDX,UBS,17.3
+2026-07-28,BKR,Piper Sandler,21.5
+2026-07-28,BKR,Stifel,24.8
+2026-07-28,BKR,TD Cowen,29.8
+2026-07-28,BLDR,BMO Capital,14.9
+2026-07-28,CDNS,B of A Securities,25.3
+2026-07-28,CEG,UBS,44.3
+2026-07-28,CEG,Wells Fargo,37.5
+2026-07-28,CHTR,Barclays,-13.9
+2026-07-28,CHTR,Citigroup,34.8
+2026-07-28,COF,Citigroup,42.2
+2026-07-28,CPAY,Morgan Stanley,8.2
+2026-07-28,CTSH,Guggenheim,34.4
+2026-07-28,CVX,B of A Securities,18.6
+2026-07-28,EQT,Citigroup,28.6
+2026-07-28,ES,Citigroup,7.7
+2026-07-28,F,Jefferies,18.6
+2026-07-28,FCX,Barclays,33.4
+2026-07-28,FFIV,Morgan Stanley,5.3
+2026-07-28,FFIV,Piper Sandler,17
+2026-07-28,FIX,Keybanc,26.7
+2026-07-28,GM,Jefferies,13
+2026-07-28,HCA,Baird,-0.8
+2026-07-28,HCA,Barclays,-2.3
+2026-07-28,HCA,Goldman Sachs,22.4
+2026-07-28,HCA,Keybanc,9.8
+2026-07-28,HCA,Oppenheimer,22.4
+2026-07-28,HCA,Truist Securities,24.9
+2026-07-28,HIG,Wells Fargo,15.5
+2026-07-28,INTC,Baird,44.3
+2026-07-28,ISRG,UBS,36.8
+2026-07-28,MSFT,Guggenheim,49
+2026-07-28,NEE,BMO Capital,7.4
+2026-07-28,NRG,BMO Capital,57.4
+2026-07-28,NRG,UBS,60.3
+2026-07-28,NSC,Baird,9.2
+2026-07-28,NSC,BMO Capital,2.8
+2026-07-28,NUE,UBS,0.8
+2026-07-28,PFG,B of A Securities,-6.2
+2026-07-28,PFG,Evercore ISI Group,1
+2026-07-28,PKG,Citigroup,-1.1
+2026-07-28,SLB,Barclays,29.8
+2026-07-28,SLB,BMO Capital,22
+2026-07-28,SLB,Susquehanna,20.1
+2026-07-28,SO,BMO Capital,6.9
+2026-07-28,SYF,Evercore ISI Group,14.1
+2026-07-28,UBER,B of A Securities,49
+2026-07-28,UNP,Baird,14.1
+2026-07-28,VST,UBS,47.5
+2026-07-28,VZ,Barclays,-3.9
+2026-07-28,VZ,Scotiabank,9.7
+2026-07-28,VZ,Wells Fargo,-1.8
+2026-07-28,XOM,B of A Securities,2.5
+2026-07-29,AMT,TD Cowen,29.7
+2026-07-29,BA,JP Morgan,32.7
+2026-07-29,BAC,JP Morgan,8.8
+2026-07-29,CBOE,JP Morgan,-2.8
+2026-07-29,CDNS,Baird,20.3
+2026-07-29,CDNS,Needham,14.6
+2026-07-29,CDNS,Piper Sandler,0
+2026-07-29,CDNS,Rosenblatt,20.3
+2026-07-29,CEG,Barclays,24.2
+2026-07-29,CFG,JP Morgan,8.2
+2026-07-29,CHTR,JP Morgan,8.7
+2026-07-29,CLX,Jefferies,-0.3
+2026-07-29,CMS,Mizuho,3.4
+2026-07-29,CSGP,Citigroup,26.8
+2026-07-29,CSGP,JP Morgan,99.8
+2026-07-29,DGX,JP Morgan,6.3
+2026-07-29,ECL,Mizuho,14.5
+2026-07-29,F,Citigroup,28.5
+2026-07-29,F,JP Morgan,9.2
+2026-07-29,F,RBC Capital,-3.7
+2026-07-29,FFIV,Barclays,-1.6
+2026-07-29,FFIV,JP Morgan,27.6
+2026-07-29,FITB,JP Morgan,7
+2026-07-29,GLW,Morgan Stanley,30.6
+2026-07-29,GLW,Oppenheimer,58.4
+2026-07-29,GM,Tigress Financial,43.3
+2026-07-29,HBAN,Truist Securities,16.5
+2026-07-29,HCA,Mizuho,13.6
+2026-07-29,HIG,"Keefe, Bruyette & Woods",0.7
+2026-07-29,HLT,Macquarie,2.6
+2026-07-29,HON,B of A Securities,8
+2026-07-29,HSIC,Piper Sandler,10.5
+2026-07-29,HST,Evercore ISI Group,-1.8
+2026-07-29,INCY,Guggenheim,16.4
+2026-07-29,INCY,RBC Capital,-15.4
+2026-07-29,IP,JP Morgan,42
+2026-07-29,IQV,JP Morgan,17.9
+2026-07-29,IQV,RBC Capital,2.2
+2026-07-29,IQV,Stifel,14.1
+2026-07-29,IQV,TD Cowen,19.1
+2026-07-29,ITW,JP Morgan,17.2
+2026-07-29,IVZ,JP Morgan,1.8
+2026-07-29,IVZ,RBC Capital,20.7
+2026-07-29,KLAC,Stifel,40.7
+2026-07-29,KLAC,Wells Fargo,37.9
+2026-07-29,KO,JP Morgan,8.3
+2026-07-29,KO,Piper Sandler,7.2
+2026-07-29,KO,TD Cowen,12.8
+2026-07-29,KO,Wells Fargo,7.2
+2026-07-29,MDLZ,JP Morgan,12.9
+2026-07-29,MDLZ,TD Cowen,9.7
+2026-07-29,MGM,Susquehanna,15.1
+2026-07-29,NEM,Barclays,35.6
+2026-07-29,NRG,Barclays,60.8
+2026-07-29,NXPI,Mizuho,-24.9
+2026-07-29,NXPI,TD Cowen,14.6
+2026-07-29,NXPI,Wells Fargo,10.7
+2026-07-29,PKG,JP Morgan,25.1
+2026-07-29,PNC,JP Morgan,7.6
+2026-07-29,PNR,TD Cowen,-2.3
+2026-07-29,PYPL,JP Morgan,11.9
+2026-07-29,RCL,Stifel,31.1
+2026-07-29,RCL,Susquehanna,17.5
+2026-07-29,RCL,Wells Fargo,22.6
+2026-07-29,RF,JP Morgan,3
+2026-07-29,ROP,JP Morgan,5.7
+2026-07-29,SHW,BMO Capital,15.1
+2026-07-29,SHW,JP Morgan,8
+2026-07-29,SHW,Morgan Stanley,12.2
+2026-07-29,SHW,Wells Fargo,2.3
+2026-07-29,SPGI,JP Morgan,25.9
+2026-07-29,STX,JP Morgan,57.6
+2026-07-29,STX,Morgan Stanley,50.9
+2026-07-29,STX,Susquehanna,11.2
+2026-07-29,STX,Wedbush,27.1
+2026-07-29,STX,Wells Fargo,50
+2026-07-29,SWKS,JP Morgan,10.9
+2026-07-29,SWKS,Mizuho,-11.2
+2026-07-29,SWKS,Morgan Stanley,22.9
+2026-07-29,SWKS,Stifel,19.5
+2026-07-29,SWKS,TD Cowen,10.9
+2026-07-29,SWKS,UBS,19.5
+2026-07-29,TFC,JP Morgan,2.7
+2026-07-29,TSCO,Argus Research,27.5
+2026-07-29,UHS,Barclays,1.5
+2026-07-29,UHS,Guggenheim,14.1
+2026-07-29,UHS,Morgan Stanley,15.3
+2026-07-29,UPS,Oppenheimer,11.4
+2026-07-29,UPS,Stifel,9.5
+2026-07-29,UPS,UBS,18.1
+2026-07-29,USB,JP Morgan,7.8
+2026-07-29,V,BMO Capital,13.4
+2026-07-29,V,Piper Sandler,20.4
+2026-07-29,V,Susquehanna,19.6
+2026-07-29,V,UBS,17.6
+2026-07-29,WYNN,Mizuho,26.5
+2026-07-29,XYL,Mizuho,5.6
+2026-07-29,XYL,Stifel,30
+2026-07-30,AAPL,Argus Research,12.6
+2026-07-30,AAPL,Baird,-0.9
+2026-07-30,ACGL,B of A Securities,29.6
+2026-07-30,ACGL,RBC Capital,16
+2026-07-30,ADP,Citigroup,8.1
+2026-07-30,ADP,Stifel,7.4
+2026-07-30,ADP,Wells Fargo,6.6
+2026-07-30,AMT,BMO Capital,10
+2026-07-30,AON,Citigroup,18.5
+2026-07-30,APH,Citigroup,31.5
+2026-07-30,APH,Truist Securities,34.6
+2026-07-30,BA,RBC Capital,23.3
+2026-07-30,BIIB,Canaccord Genuity,21.3
+2026-07-30,BIIB,HC Wainwright & Co.,22.8
+2026-07-30,BIIB,Morgan Stanley,13
+2026-07-30,BRO,BMO Capital,0.4
+2026-07-30,BRO,Citigroup,7.2
+2026-07-30,BSX,Canaccord Genuity,45.8
+2026-07-30,BSX,RBC Capital,54.6
+2026-07-30,BSX,Truist Securities,25.9
+2026-07-30,BX,Argus Research,14.3
+2026-07-30,CAT,Baird,11
+2026-07-30,CBRE,Evercore ISI Group,19
+2026-07-30,CHRW,Evercore ISI Group,46.4
+2026-07-30,CMG,TD Cowen,20.1
+2026-07-30,CNC,Barclays,30.3
+2026-07-30,CSGP,"Keefe, Bruyette & Woods",2.6
+2026-07-30,CSGP,Needham,41.5
+2026-07-30,CTSH,Citigroup,11.4
+2026-07-30,CTSH,Susquehanna,52.3
+2026-07-30,CTSH,Wells Fargo,24.4
+2026-07-30,CVNA,RBC Capital,39.1
+2026-07-30,DIS,Citigroup,38.6
+2026-07-30,DLR,Truist Securities,13.2
+2026-07-30,ECL,Wells Fargo,4.6
+2026-07-30,EG,Evercore ISI Group,-0.4
+2026-07-30,EQIX,Stifel,19.2
+2026-07-30,EQIX,TD Cowen,9.8
+2026-07-30,EQIX,UBS,19.2
+2026-07-30,FICO,RBC Capital,32.6
+2026-07-30,FICO,Wells Fargo,26.1
+2026-07-30,FLEX,Goldman Sachs,44.7
+2026-07-30,FTV,Truist Securities,13.4
+2026-07-30,GD,Citigroup,7.2
+2026-07-30,GD,Morgan Stanley,23.4
+2026-07-30,GD,RBC Capital,8.8
+2026-07-30,GD,Susquehanna,20.7
+2026-07-30,GEHC,Citigroup,5.1
+2026-07-30,GEHC,Evercore ISI Group,17.7
+2026-07-30,GILD,Barclays,11.5
+2026-07-30,GLW,Barclays,-1.1
+2026-07-30,GLW,Citigroup,68.7
+2026-07-30,GLW,JP Morgan,30.3
+2026-07-30,GNRC,Stifel,41.6
+2026-07-30,GRMN,Morgan Stanley,-1.4
+2026-07-30,HLT,Baird,12.1
+2026-07-30,HLT,Barclays,14.6
+2026-07-30,IEX,Citigroup,16.5
+2026-07-30,IEX,RBC Capital,21.2
+2026-07-30,IEX,Stifel,16
+2026-07-30,IEX,TD Cowen,19.1
+2026-07-30,INCY,Barclays,12.1
+2026-07-30,INCY,BMO Capital,4.8
+2026-07-30,IQV,Baird,17.7
+2026-07-30,ITW,Baird,0.3
+2026-07-30,IVZ,Barclays,12.3
+2026-07-30,JCI,Citigroup,9
+2026-07-30,JCI,RBC Capital,11.8
+2026-07-30,KLAC,Jefferies,12.4
+2026-07-30,KLAC,JP Morgan,27.4
+2026-07-30,KLAC,Needham,44.5
+2026-07-30,KO,Argus Research,10.7
+2026-07-30,KO,RBC Capital,9.6
+2026-07-30,LII,RBC Capital,9.1
+2026-07-30,LRCX,B. Riley Securities,10
+2026-07-30,LRCX,Morgan Stanley,15.3
+2026-07-30,LRCX,Wells Fargo,10
+2026-07-30,MAS,Truist Securities,19
+2026-07-30,META,Baird,42.6
+2026-07-30,META,DA Davidson,33.1
+2026-07-30,META,Goldman Sachs,37.8
+2026-07-30,META,Piper Sandler,49.2
+2026-07-30,META,Susquehanna,23.6
+2026-07-30,META,TD Cowen,42.6
+2026-07-30,META,UBS,35.9
+2026-07-30,META,Wells Fargo,21.7
+2026-07-30,MRK,Barclays,17
+2026-07-30,MSFT,Bernstein,47.8
+2026-07-30,MSFT,Citigroup,37
+2026-07-30,MSFT,DA Davidson,25.6
+2026-07-30,MSFT,Evercore ISI Group,20.6
+2026-07-30,MSFT,RBC Capital,46.2
+2026-07-30,MSFT,TD Cowen,23.3
+2026-07-30,NUE,Barclays,14.2
+2026-07-30,NUE,BMO Capital,14.2
+2026-07-30,NXPI,Needham,20.8
+2026-07-30,ODFL,Evercore ISI Group,8.7
+2026-07-30,ODFL,Stifel,17.6
+2026-07-30,OMC,Citigroup,25.4
+2026-07-30,OMC,Wells Fargo,16.6
+2026-07-30,ORLY,Morgan Stanley,21.8
+2026-07-30,PAYX,Citigroup,26
+2026-07-30,PCAR,Citigroup,3.8
+2026-07-30,PCAR,JP Morgan,21.5
+2026-07-30,PCAR,Wells Fargo,16.4
+2026-07-30,PG,Citigroup,18.3
+2026-07-30,PM,Barclays,16.5
+2026-07-30,PM,Citigroup,16.5
+2026-07-30,PNR,Baird,22
+2026-07-30,PPG,Citigroup,7.8
+2026-07-30,PPG,RBC Capital,8.7
+2026-07-30,PTC,Stifel,21.7
+2026-07-30,PYPL,Baird,-0.7
+2026-07-30,PYPL,Barclays,-0.7
+2026-07-30,PYPL,Canaccord Genuity,-4.2
+2026-07-30,PYPL,Citigroup,6.3
+2026-07-30,PYPL,"Keefe, Bruyette & Woods",22
+2026-07-30,QCOM,Benchmark,84.2
+2026-07-30,QCOM,Susquehanna,9.2
+2026-07-30,QCOM,TD Cowen,19.4
+2026-07-30,QCOM,Wells Fargo,16
+2026-07-30,RCL,Citigroup,13.5
+2026-07-30,REG,Evercore ISI Group,3.7
+2026-07-30,SBUX,Citigroup,4.5
+2026-07-30,SBUX,Evercore ISI Group,11.9
+2026-07-30,SPGI,Baird,23.5
+2026-07-30,SPGI,Barclays,33.1
+2026-07-30,STX,Argus Research,2.4
+2026-07-30,STX,Barclays,42.2
+2026-07-30,STX,Cantor Fitzgerald,47.9
+2026-07-30,STX,Citigroup,47.9
+2026-07-30,STX,Rosenblatt,59.3
+2026-07-30,SW,RBC Capital,24
+2026-07-30,SW,Truist Securities,17.8
+2026-07-30,SW,Wells Fargo,13.7
+2026-07-30,SWKS,Citigroup,4.4
+2026-07-30,TER,Cantor Fitzgerald,58.1
+2026-07-30,TER,Evercore ISI Group,20.7
+2026-07-30,TER,Morgan Stanley,14.1
+2026-07-30,UHS,Baird,0.6
+2026-07-30,UHS,Cantor Fitzgerald,17.6
+2026-07-30,UHS,Goldman Sachs,15.2
+2026-07-30,V,Baird,15.1
+2026-07-30,V,Citigroup,20.5
+2026-07-30,V,JP Morgan,23.3
+2026-07-30,V,Wells Fargo,18.4
+2026-07-30,VLTO,Citigroup,9.8
+2026-07-30,VLTO,RBC Capital,11.9
+2026-07-30,VLTO,Stifel,17
+2026-07-30,VMC,Citigroup,21.5
+2026-07-30,VMC,RBC Capital,4.2
+2026-07-30,VRSK,Evercore ISI Group,9.1
+2026-07-30,VRSK,Wells Fargo,27.2
+2026-07-30,VRT,Citigroup,50.9
+2026-07-30,VRT,RBC Capital,42.1
+2026-07-30,WM,RBC Capital,6.1
+2026-07-30,WM,Stifel,13.5
+2026-07-30,XYL,Baird,35
+2026-07-30,XYL,Barclays,30.1
+2026-07-30,XYL,RBC Capital,34.2
+2026-07-31,AAPL,JP Morgan,11.5
+2026-07-31,ACGL,Wells Fargo,16.6
+2026-07-31,ADP,Guggenheim,15.3
+2026-07-31,AEE,Goldman Sachs,5.7
+2026-07-31,AJG,Piper Sandler,16.7
+2026-07-31,AJG,RBC Capital,26.1
+2026-07-31,AMZN,Cantor Fitzgerald,20.8
+2026-07-31,AMZN,Citigroup,32.1
+2026-07-31,AMZN,Piper Sandler,20.8
+2026-07-31,AOS,Citigroup,8.2
+2026-07-31,APD,Mizuho,18.5
+2026-07-31,APD,Wells Fargo,16.8
+2026-07-31,APH,UBS,19.5
+2026-07-31,AVY,Citigroup,8
+2026-07-31,AVY,JP Morgan,10.3
+2026-07-31,AWK,Mizuho,2.5
+2026-07-31,BAX,Wells Fargo,-14.6
+2026-07-31,BLDR,RBC Capital,33.8
+2026-07-31,BMY,JP Morgan,12.3
+2026-07-31,BSX,Wells Fargo,9.1
+2026-07-31,CBRE,"Keefe, Bruyette & Woods",17.4
+2026-07-31,CBRE,UBS,28.2
+2026-07-31,CINF,B of A Securities,11.2
+2026-07-31,COIN,Oppenheimer,26.1
+2026-07-31,CVNA,Morgan Stanley,44.9
+2026-07-31,CVNA,Needham,93.2
+2026-07-31,CVNA,Wells Fargo,28.8
+2026-07-31,DXCM,JP Morgan,2.7
+2026-07-31,DXCM,Mizuho,18.9
+2026-07-31,DXCM,Piper Sandler,18.9
+2026-07-31,DXCM,RBC Capital,12.7
+2026-07-31,EG,Barclays,16.5
+2026-07-31,EG,Mizuho,12.7
+2026-07-31,EG,Wells Fargo,7.3
+2026-07-31,ESS,RBC Capital,11.1
+2026-07-31,FICO,Needham,45.2
+2026-07-31,FLEX,Barclays,22.1
+2026-07-31,GDDY,B. Riley Securities,121.3
+2026-07-31,GDDY,Piper Sandler,23.6
+2026-07-31,GEHC,Wells Fargo,23.5
+2026-07-31,GNRC,Barclays,40.8
+2026-07-31,GRMN,Barclays,0.5
+2026-07-31,HLT,Wells Fargo,18.4
+2026-07-31,HSY,JP Morgan,9.5
+2026-07-31,HUM,Evercore ISI Group,29.1
+2026-07-31,HUM,Guggenheim,26.7
+2026-07-31,HUM,Raymond James,
+2026-07-31,HUM,TD Cowen,-0.5
+2026-07-31,HUM,UBS,9
+2026-07-31,ICE,TD Cowen,14.2
+2026-07-31,IP,Citigroup,9.1
+2026-07-31,IP,RBC Capital,18.2
+2026-07-31,IP,Wells Fargo,4.6
+2026-07-31,KO,Barclays,6.1
+2026-07-31,LH,Morgan Stanley,8.2
+2026-07-31,LII,Goldman Sachs,29.6
+2026-07-31,LOW,JP Morgan,21.3
+2026-07-31,LRCX,Jefferies,6.2
+2026-07-31,LRCX,Needham,23.7
+2026-07-31,LVS,Argus Research,
+2026-07-31,LYV,Oppenheimer,13.6
+2026-07-31,MA,Morgan Stanley,20
+2026-07-31,MA,TD Cowen,17.5
+2026-07-31,MAA,Piper Sandler,5.6
+2026-07-31,MAS,Barclays,9.5
+2026-07-31,MAS,Citigroup,6.7
+2026-07-31,MAS,Evercore ISI Group,8.1
+2026-07-31,MAS,UBS,30.2
+2026-07-31,MCD,Mizuho,8.6
+2026-07-31,MDLZ,Barclays,12.1
+2026-07-31,META,B of A Securities,49
+2026-07-31,META,Barclays,43.5
+2026-07-31,META,Cantor Fitzgerald,25.1
+2026-07-31,META,Guggenheim,28.8
+2026-07-31,META,Keybanc,43.5
+2026-07-31,MLM,Stephens & Co.,26.8
+2026-07-31,MPWR,Wells Fargo,20.1
+2026-07-31,MSFT,Barclays,13.8
+2026-07-31,MSFT,Cantor Fitzgerald,16
+2026-07-31,MSFT,Piper Sandler,22.2
+2026-07-31,MTD,Jefferies,7.8
+2026-07-31,ODFL,UBS,6.4
+2026-07-31,ORLY,TD Cowen,26.3
+2026-07-31,PPG,UBS,12.3
+2026-07-31,PSA,RBC Capital,-0.1
+2026-07-31,PTC,Barclays,14.2
+2026-07-31,PTC,Piper Sandler,15.7
+2026-07-31,PTC,Rosenblatt,40
+2026-07-31,PWR,Citigroup,28.3
+2026-07-31,RDDT,B. Riley Securities,82.8
+2026-07-31,RDDT,JP Morgan,25.3
+2026-07-31,RDDT,Piper Sandler,32
+2026-07-31,RDDT,Wells Fargo,-3.9
+2026-07-31,SBUX,Wells Fargo,17.3
+2026-07-31,SNA,Tigress Financial,18.5
+2026-07-31,SW,JP Morgan,43.1
+2026-07-31,SYK,JP Morgan,6
+2026-07-31,SYK,Piper Sandler,18.1
+2026-07-31,SYK,RBC Capital,27.2
+2026-07-31,TT,Citigroup,24.8
+2026-07-31,TT,RBC Capital,9.3
+2026-07-31,TYL,BTIG,25.6
+2026-07-31,VLTO,Barclays,23.2
+2026-07-31,VLTO,UBS,9.5
+2026-07-31,VRSK,UBS,18.8
+2026-07-31,VTR,Cantor Fitzgerald,10.8
+2026-07-31,WM,Barclays,22.6
+2026-07-31,WTW,Wells Fargo,13.6
+2026-08-01,AJG,"Keefe, Bruyette & Woods",10.2
+2026-08-01,AJG,Truist Securities,7.8
+2026-08-01,AMZN,Bernstein,20.8
+2026-08-01,AMZN,Needham,13.2
+2026-08-01,AMZN,Telsey Advisory Group,26.4
+2026-08-01,AMZN,Wedbush,17
+2026-08-01,AOS,Stifel,18.4
+2026-08-01,APD,Citigroup,10.2
+2026-08-01,AVY,UBS,30.6
+2026-08-01,BAX,Citigroup,4
+2026-08-01,BAX,Stifel,4
+2026-08-01,BLDR,Barclays,23.2
+2026-08-01,BLDR,Truist Securities,36.9
+2026-08-01,BMY,Guggenheim,15.4
+2026-08-01,BMY,Truist Securities,7.7
+2026-08-01,BSX,Argus Research,
+2026-08-01,COIN,Benchmark,50.2
+2026-08-01,COIN,Canaccord Genuity,96
+2026-08-01,COIN,HC Wainwright & Co.,73.1
+2026-08-01,COIN,Needham,15.6
+2026-08-01,COIN,Rosenblatt,30.6
+2026-08-01,CVNA,Barclays,49.7
+2026-08-01,CVNA,Citigroup,44.9
+2026-08-01,DXCM,Citigroup,10.2
+2026-08-01,DXCM,Stifel,18.9
+2026-08-01,EG,Citigroup,12.4
+2026-08-01,EIX,Barclays,-1.2
+2026-08-01,EQIX,Truist Securities,15.3
+2026-08-01,FE,Barclays,11.2
+2026-08-01,FSLR,Truist Securities,7.6
+2026-08-01,GDDY,Benchmark,82.2
+2026-08-01,GEHC,UBS,6
+2026-08-01,HII,Citigroup,17.3
+2026-08-01,HSY,UBS,12.4
+2026-08-01,HUM,Barclays,9.5
+2026-08-01,ICE,Barclays,17.4
+2026-08-01,ICE,UBS,25.8
+2026-08-01,IP,Deutsche Bank,13.7
+2026-08-01,IP,Truist Securities,11.4
+2026-08-01,IP,UBS,6.9
+2026-08-01,KKR,Barclays,35.7
+2026-08-01,LH,Truist Securities,12.1
+2026-08-01,LHX,Susquehanna,28.2
+2026-08-01,LYV,Benchmark,16.3
+2026-08-01,LYV,Guggenheim,17.9
+2026-08-01,LYV,Susquehanna,1.1
+2026-08-01,MA,Barclays,16.3
+2026-08-01,MA,Keybanc,19.8
+2026-08-01,MPWR,Keybanc,40.1
+2026-08-01,MPWR,Needham,33.4
+2026-08-01,MPWR,Rosenblatt,5.1
+2026-08-01,MPWR,Truist Securities,26
+2026-08-01,NCLH,Barclays,-4.3
+2026-08-01,NCLH,Citigroup,17
+2026-08-01,NCLH,Stifel,32.9
+2026-08-01,PTC,Citigroup,3.9
+2026-08-01,RDDT,Truist Securities,86.2
+2026-08-01,REGN,Truist Securities,6.2
+2026-08-01,SBUX,BTIG,7.9
+2026-08-01,SWK,Citigroup,12
+2026-08-01,SYK,BTIG,8.5
+2026-08-01,TYL,Piper Sandler,54.2
+2026-08-01,VLO,Barclays,3.4
+2026-08-01,WELL,Citigroup,17.4
+2026-08-01,WMT,Bernstein,28.5
+2026-08-01,WTW,Truist Securities,20.2
+2026-08-01,YUM,RBC Capital,7.6
+2026-08-03,BEN,Evercore ISI Group,5.5
+2026-08-03,BIIB,Citigroup,5.7
+2026-08-03,BMY,Citigroup,5.9
+2026-08-03,CBOE,TD Cowen,4.1
+2026-08-03,CHD,TD Cowen,-3.5
+2026-08-03,CI,Raymond James,14.7
+2026-08-03,CL,Evercore ISI Group,9.3
+2026-08-03,CL,JP Morgan,11.5
+2026-08-03,CL,TD Cowen,-2.6
+2026-08-03,CNC,Bernstein,27.7
+2026-08-03,CVX,Bernstein,7
+2026-08-03,ETN,Citigroup,17.2
+2026-08-03,ETN,RBC Capital,23.7
+2026-08-03,EXPE,Truist Securities,1.8
+2026-08-03,FSLR,Guggenheim,29.4
+2026-08-03,INVH,Oppenheimer,10.2
+2026-08-03,KKR,TD Cowen,7.8
+2026-08-03,LH,JP Morgan,16.1
+2026-08-03,LHX,UBS,7.6
+2026-08-03,LIN,Citigroup,20.1
+2026-08-03,LIN,RBC Capital,14.5
+2026-08-03,LYV,Citigroup,20
+2026-08-03,MLM,Citigroup,30.2
+2026-08-03,MLM,UBS,34.9
+2026-08-03,MTD,Evercore ISI Group,6.4
+2026-08-03,MTD,Wells Fargo,2.9
+2026-08-03,PFG,JP Morgan,-6.2
+2026-08-03,PWR,Truist Securities,48.1
+2026-08-03,REGN,Citigroup,-3.8
+2026-08-03,REGN,Guggenheim,33.8
+2026-08-03,TROW,"Keefe, Bruyette & Woods",2.9
+2026-08-03,VLO,TD Cowen,12.2
+2026-08-03,WELL,RBC Capital,10.6
+2026-08-03,WY,Truist Securities,9.9
+2026-08-04,ABBV,Canaccord Genuity,17.5
+2026-08-04,ABBV,Cantor Fitzgerald,15.5
+2026-08-04,ABBV,Morgan Stanley,20
+2026-08-04,ACGL,Morgan Stanley,10.9
+2026-08-04,AEE,Mizuho,14
+2026-08-04,AEP,Barclays,0.7
+2026-08-04,AJG,Citigroup,17.4
+2026-08-04,AJG,Wells Fargo,21.9
+2026-08-04,AON,UBS,9.5
+2026-08-04,AXP,UBS,11.3
+2026-08-04,BBY,B of A Securities,-4.4
+2026-08-04,BEN,Barclays,2.3
+2026-08-04,BXP,Citigroup,-1.6
+2026-08-04,CBOE,Barclays,20.7
+2026-08-04,CL,UBS,22.2
+2026-08-04,CLX,JP Morgan,-3.1
+2026-08-04,CLX,UBS,7.1
+2026-08-04,CMG,Argus Research,20.1
+2026-08-04,COF,UBS,27.7
+2026-08-04,COIN,Cantor Fitzgerald,24.8
+2026-08-04,DXCM,Canaccord Genuity,3.3
+2026-08-04,ES,Mizuho,3.8
+2026-08-04,ESS,Cantor Fitzgerald,11.2
+2026-08-04,GDDY,Wedbush,5.2
+2026-08-04,GNRC,UBS,61.9
+2026-08-04,GS,UBS,9.5
+2026-08-04,HCA,Wells Fargo,-5.2
+2026-08-04,INCY,Mizuho,15
+2026-08-04,IR,Baird,23.3
+2026-08-04,JNJ,Wells Fargo,10.8
+2026-08-04,JPM,UBS,12.7
+2026-08-04,KKR,BMO Capital,12
+2026-08-04,LH,Piper Sandler,0.7
+2026-08-04,LNT,BMO Capital,9.8
+2026-08-04,LNT,Mizuho,5.6
+2026-08-04,LYB,BMO Capital,15.6
+2026-08-04,LYB,JP Morgan,36
+2026-08-04,LYB,Mizuho,12.2
+2026-08-04,LYB,UBS,8.8
+2026-08-04,MAA,Cantor Fitzgerald,5.8
+2026-08-04,MAR,Mizuho,8.5
+2026-08-04,MS,UBS,21.7
+2026-08-04,MTD,Barclays,9
+2026-08-04,MTD,Stifel,10.7
+2026-08-04,NTRS,JP Morgan,1.5
+2026-08-04,NXPI,UBS,17.4
+2026-08-04,ON,B. Riley Securities,50.5
+2026-08-04,PGR,JP Morgan,16.3
+2026-08-04,PLTR,Citigroup,68.8
+2026-08-04,PLTR,Mizuho,48.1
+2026-08-04,SBAC,JP Morgan,24.6
+2026-08-04,STT,JP Morgan,0.8
+2026-08-04,SW,Citigroup,20.4
+2026-08-04,SYF,UBS,11.5
+2026-08-04,TROW,Barclays,-9.8
+2026-08-04,TROW,BMO Capital,5.1
+2026-08-04,TSLA,Stifel,51.5
+2026-08-04,UDR,Cantor Fitzgerald,7.6
+2026-08-04,UDR,JP Morgan,7.6
+2026-08-04,URI,Argus Research,10.9
+2026-08-04,V,Cantor Fitzgerald,23
+2026-08-04,VLO,Mizuho,-1.6
+2026-08-04,VRTX,TD Cowen,16.7
+2026-08-04,WM,UBS,20.1
+2026-08-04,WTW,Citigroup,3.5
+2026-08-04,WTW,"Keefe, Bruyette & Woods",18.1
+2026-08-04,WTW,UBS,21.4
+2026-08-04,WY,Citigroup,16
+2026-08-04,YUM,JP Morgan,7.7
+2026-08-05,ABBV,Guggenheim,16.6
+2026-08-05,ADM,BMO Capital,0.2
+2026-08-05,AME,Citigroup,2.6
+2026-08-05,AME,Keybanc,16
+2026-08-05,AME,RBC Capital,14.4
+2026-08-05,AMGN,Oppenheimer,14.4
+2026-08-05,AMGN,Truist Securities,-8
+2026-08-05,ANET,Keybanc,18.9
+2026-08-05,ANET,Wells Fargo,21.3
+2026-08-05,APTV,RBC Capital,64.2
+2026-08-05,APTV,TD Cowen,62.1
+2026-08-05,APTV,Wells Fargo,39
+2026-08-05,AZO,Barclays,19.5
+2026-08-05,BALL,Wells Fargo,13.9
+2026-08-05,BKNG,B. Riley Securities,31.9
+2026-08-05,BKNG,Oppenheimer,15.5
+2026-08-05,CAT,Truist Securities,40
+2026-08-05,CI,Jefferies,14.4
+2026-08-05,CINF,"Keefe, Bruyette & Woods",5.1
+2026-08-05,CLX,Evercore ISI Group,-6
+2026-08-05,CVNA,BTIG,25.5
+2026-08-05,DDOG,Canaccord Genuity,1.2
+2026-08-05,DLR,Argus Research,8.5
+2026-08-05,EMR,Citigroup,15.7
+2026-08-05,EMR,RBC Capital,13.8
+2026-08-05,EQIX,RBC Capital,15.9
+2026-08-05,FANG,Truist Securities,16.7
+2026-08-05,FANG,Wells Fargo,37
+2026-08-05,FIS,Citigroup,2.5
+2026-08-05,FIS,"Keefe, Bruyette & Woods",27.6
+2026-08-05,FIS,RBC Capital,20.8
+2026-08-05,GD,Wells Fargo,13.2
+2026-08-05,GILD,RBC Capital,-9.6
+2026-08-05,GWW,Oppenheimer,5.5
+2026-08-05,GWW,RBC Capital,9.6
+2026-08-05,HSIC,UBS,5.4
+2026-08-05,IT,Goldman Sachs,-3.7
+2026-08-05,IT,RBC Capital,-12.8
+2026-08-05,IT,Wells Fargo,-20.2
+2026-08-05,J,RBC Capital,20.1
+2026-08-05,KMB,TD Cowen,-6.4
+2026-08-05,LDOS,RBC Capital,31.1
+2026-08-05,LDOS,UBS,6.4
+2026-08-05,LYB,RBC Capital,17.8
+2026-08-05,MAR,Baird,12.8
+2026-08-05,MAR,Barclays,-0.1
+2026-08-05,MAR,BMO Capital,13.4
+2026-08-05,MAR,Wells Fargo,22
+2026-08-05,MPC,Citigroup,1.1
+2026-08-05,MPC,TD Cowen,19.2
+2026-08-05,MSFT,Tigress Financial,39
+2026-08-05,MTD,Morgan Stanley,0.3
+2026-08-05,NKE,JP Morgan,-4
+2026-08-05,ON,Baird,36.7
+2026-08-05,ON,Citigroup,24
+2026-08-05,PEG,Citigroup,10.3
+2026-08-05,PEG,Wells Fargo,16.9
+2026-08-05,PLD,RBC Capital,14.4
+2026-08-05,PLTR,Deutsche Bank,23.5
+2026-08-05,PLTR,Piper Sandler,42
+2026-08-05,RL,JP Morgan,19
+2026-08-05,ROK,Citigroup,19.1
+2026-08-05,RVTY,Evercore ISI Group,12
+2026-08-05,SBAC,Morgan Stanley,16.2
+2026-08-05,SBAC,Truist Securities,28.6
+2026-08-05,SW,Barclays,15.5
+2026-08-05,SYY,Citigroup,2.4
+2026-08-05,SYY,Piper Sandler,0
+2026-08-05,TPR,JP Morgan,34.2
+2026-08-05,V,Truist Securities,9.1
+2026-08-05,VRTX,Canaccord Genuity,-9.3
+2026-08-05,VRTX,Cantor Fitzgerald,22
+2026-08-05,VRTX,Truist Securities,15.9
+2026-08-05,WAT,Evercore ISI Group,5.3
+2026-08-05,WAT,TD Cowen,19.1
+2026-08-05,WAT,Wells Fargo,0.3
+2026-08-05,WELL,Keybanc,18.4
+2026-08-05,WMB,Wells Fargo,25.8
+2026-08-05,WMT,Oppenheimer,
+2026-08-05,WYNN,Macquarie,40.1
+2026-08-06,ACGL,BMO Capital,1.6
+2026-08-06,ADM,Barclays,14.5
+2026-08-06,ADM,Morgan Stanley,0.5
+2026-08-06,ADP,Cantor Fitzgerald,14.3
+2026-08-06,AIZ,Piper Sandler,9.3
+2026-08-06,AIZ,Truist Securities,18
+2026-08-06,AMD,Evercore ISI Group,22.7
+2026-08-06,AMD,Wedbush,27.2
+2026-08-06,AME,BMO Capital,10.3
+2026-08-06,AME,DA Davidson,11.4
+2026-08-06,AME,Truist Securities,23.6
+2026-08-06,AMGN,B of A Securities,-23.4
+2026-08-06,AMGN,Goldman Sachs,8.8
+2026-08-06,AMGN,UBS,6.4
+2026-08-06,ANET,B of A Securities,24.7
+2026-08-06,ANET,Evercore ISI Group,29.9
+2026-08-06,ANET,Needham,35.1
+2026-08-06,ANET,Rosenblatt,45.5
+2026-08-06,APD,RBC Capital,21
+2026-08-06,APO,Barclays,20.1
+2026-08-06,APP,Macquarie,83.2
+2026-08-06,APP,UBS,133.4
+2026-08-06,APP,Wedbush,80.2
+2026-08-06,APTV,Morgan Stanley,17.9
+2026-08-06,ARE,Cantor Fitzgerald,2.3
+2026-08-06,AXON,Morgan Stanley,8.6
+2026-08-06,AXON,Piper Sandler,24.2
+2026-08-06,AXON,UBS,1.8
+2026-08-06,BALL,UBS,3.4
+2026-08-06,BBY,Jefferies,0.7
+2026-08-06,BKNG,BMO Capital,20.5
+2026-08-06,BKNG,Wedbush,19.1
+2026-08-06,BR,Morgan Stanley,8.8
+2026-08-06,CDW,Morgan Stanley,23.2
+2026-08-06,CMG,BTIG,31.7
+2026-08-06,CMI,UBS,29.6
+2026-08-06,COR,Evercore ISI Group,8.7
+2026-08-06,COR,UBS,33.6
+2026-08-06,CPAY,UBS,6.7
+2026-08-06,CVS,Evercore ISI Group,23.8
+2026-08-06,DASH,Benchmark,37.4
+2026-08-06,DASH,Truist Securities,56.5
+2026-08-06,DD,UBS,20.4
+2026-08-06,DIS,Argus Research,30.7
+2026-08-06,DIS,Barclays,12.2
+2026-08-06,DIS,Guggenheim,17
+2026-08-06,DIS,Wells Fargo,28.7
+2026-08-06,DUK,Barclays,5.7
+2026-08-06,DUK,BMO Capital,5.7
+2026-08-06,DVA,Barclays,20.4
+2026-08-06,EBAY,Benchmark,19.6
+2026-08-06,EBAY,Piper Sandler,18.8
+2026-08-06,EOG,Truist Securities,12
+2026-08-06,EXPD,Barclays,-11.8
+2026-08-06,EXPD,JP Morgan,10.3
+2026-08-06,EXPD,UBS,15.8
+2026-08-06,EXPE,Benchmark,10.8
+2026-08-06,EXPE,Piper Sandler,0
+2026-08-06,FIS,Barclays,1.2
+2026-08-06,GILD,Cantor Fitzgerald,15.7
+2026-08-06,GPN,UBS,4
+2026-08-06,HUM,Morgan Stanley,1
+2026-08-06,IDXX,UBS,14.4
+2026-08-06,IFF,UBS,4.7
+2026-08-06,IRM,Wells Fargo,10
+2026-08-06,IT,UBS,6.5
+2026-08-06,KHC,Piper Sandler,-3
+2026-08-06,KHC,TD Cowen,-14.6
+2026-08-06,KHC,UBS,4.8
+2026-08-06,KMB,UBS,3
+2026-08-06,LLY,Wells Fargo,11.2
+2026-08-06,MAR,Macquarie,0.8
+2026-08-06,MCD,Guggenheim,5.1
+2026-08-06,MCD,Keybanc,10.5
+2026-08-06,MCK,Evercore ISI Group,9.6
+2026-08-06,MCK,TD Cowen,10.3
+2026-08-06,MCK,UBS,18.4
+2026-08-06,MET,Barclays,-1.6
+2026-08-06,MPC,Barclays,5.9
+2026-08-06,MSI,Barclays,11.4
+2026-08-06,MSI,Piper Sandler,11.6
+2026-08-06,PODD,Bernstein,33.7
+2026-08-06,PODD,RBC Capital,22.2
+2026-08-06,PODD,Stifel,37.5
+2026-08-06,PODD,TD Cowen,10
+2026-08-06,PODD,UBS,14.6
+2026-08-06,PSX,Barclays,3.4
+2026-08-06,PSX,Evercore ISI Group,5.3
+2026-08-06,PSX,TD Cowen,22
+2026-08-06,RL,Needham,20
+2026-08-06,ROP,Argus Research,13.2
+2026-08-06,SNDK,Citigroup,79
+2026-08-06,SOLV,Keybanc,13.9
+2026-08-06,SOLV,Piper Sandler,17.3
+2026-08-06,SOLV,UBS,12.8
+2026-08-06,SYY,UBS,11.8
+2026-08-06,TDG,Stifel,11.1
+2026-08-06,TDG,UBS,34.1
+2026-08-06,TPR,Telsey Advisory Group,8.8
+2026-08-06,UBER,Barclays,54.5
+2026-08-06,UBER,Bernstein,38.4
+2026-08-06,UBER,Guggenheim,82.1
+2026-08-06,UBER,Wells Fargo,29.7
+2026-08-06,VRTX,Barclays,25.7
+2026-08-06,WAT,Barclays,15.6
+2026-08-06,WDC,UBS,22.4
+2026-08-06,WYNN,Barclays,34.5
+2026-08-06,XYZ,Keybanc,28.9
+2026-08-06,XYZ,RBC Capital,13.4
+2026-08-06,XYZ,TD Cowen,25.4
+2026-08-07,ABNB,Benchmark,9.3
+2026-08-07,ABNB,Canaccord Genuity,21.4
+2026-08-07,ABNB,Wells Fargo,12.9
+2026-08-07,ALL,Barclays,-16.9
+2026-08-07,AMD,Rosenblatt,40.6
+2026-08-07,AME,TD Cowen,8.7
+2026-08-07,ANET,Barclays,46
+2026-08-07,AXON,Barclays,30.7
+2026-08-07,BDX,Piper Sandler,-0.1
+2026-08-07,CAT,DA Davidson,1.9
+2026-08-07,COR,JP Morgan,20.4
+2026-08-07,CPAY,JP Morgan,17.9
+2026-08-07,CPAY,"Keefe, Bruyette & Woods",17.9
+2026-08-07,CRL,JP Morgan,18.5
+2026-08-07,CRL,Morgan Stanley,14.7
+2026-08-07,CVS,Barclays,13.4
+2026-08-07,DASH,Cantor Fitzgerald,22.5
+2026-08-07,DASH,Needham,24.9
+2026-08-07,DD,RBC Capital,21.5
+2026-08-07,DDOG,Citigroup,29.9
+2026-08-07,DIS,Rosenblatt,20.7
+2026-08-07,EBAY,Argus Research,19.2
+2026-08-07,EBAY,Barclays,10.2
+2026-08-07,EBAY,Needham,21
+2026-08-07,ED,Wells Fargo,0
+2026-08-07,EXPE,B. Riley Securities,25.2
+2026-08-07,EXPE,Barclays,2.7
+2026-08-07,GEN,Barclays,10.3
+2026-08-07,GEN,RBC Capital,3.4
+2026-08-07,GEN,Wells Fargo,-3.4
+2026-08-07,GPN,Barclays,1.6
+2026-08-07,GPN,Goldman Sachs,7.3
+2026-08-07,GPN,"Keefe, Bruyette & Woods",8.4
+2026-08-07,GRMN,Tigress Financial,21.4
+2026-08-07,HSIC,Barclays,13.5
+2026-08-07,IEX,DA Davidson,2.2
+2026-08-07,IFF,Barclays,13.3
+2026-08-07,JNJ,Guggenheim,12.2
+2026-08-07,KHC,Barclays,4.4
+2026-08-07,LLY,Cantor Fitzgerald,18.7
+2026-08-07,MCHP,Citigroup,16.8
+2026-08-07,MNST,Piper Sandler,7.7
+2026-08-07,MNST,RBC Capital,6.6
+2026-08-07,MSI,JP Morgan,13.9
+2026-08-07,MU,Citigroup,27.3
+2026-08-07,NI,Barclays,4.3
+2026-08-07,PFE,Guggenheim,18.2
+2026-08-07,PG,Argus Research,
+2026-08-07,PH,Keybanc,12.2
+2026-08-07,PODD,BTIG,
+2026-08-07,PODD,Canaccord Genuity,29.7
+2026-08-07,PODD,JP Morgan,10.1
+2026-08-07,PODD,Truist Securities,10.9
+2026-08-07,PODD,Wells Fargo,4.3
+2026-08-07,RL,Barclays,17
+2026-08-07,RMD,Piper Sandler,8.6
+2026-08-07,RMD,Wells Fargo,3.8
+2026-08-07,RSG,Barclays,12.3
+2026-08-07,STE,Piper Sandler,19.9
+2026-08-07,TAP,Needham,18.4
+2026-08-07,TAP,Piper Sandler,4.2
+2026-08-07,TRGP,Barclays,7.7
+2026-08-07,TTD,Benchmark,55.4
+2026-08-07,TTD,Wells Fargo,-6.8
+2026-08-07,UBER,Cantor Fitzgerald,26.2
+2026-08-07,UBER,DA Davidson,40.3
+2026-08-07,UBER,Needham,52.9
+2026-08-07,UBER,Susquehanna,26.2
+2026-08-07,WDC,Citigroup,61.8
+2026-08-07,WDC,Rosenblatt,74.9
+2026-08-07,WDC,TD Cowen,18
+2026-08-07,XYZ,Cantor Fitzgerald,20.3
+2026-08-07,XYZ,Needham,26.6
+2026-08-08,ABNB,Citigroup,17.2
+2026-08-08,ABNB,Susquehanna,21.4
+2026-08-08,AFL,Barclays,-21.8
+2026-08-08,AIG,Barclays,2.3
+2026-08-08,AIZ,"Keefe, Bruyette & Woods",9.7
+2026-08-08,AKAM,Baird,12.9
+2026-08-08,AKAM,TD Cowen,12.9
+2026-08-08,AKAM,UBS,15.3
+2026-08-08,ALB,BMO Capital,54.7
+2026-08-08,ALB,Citigroup,35.4
+2026-08-08,ALB,UBS,35.4
+2026-08-08,AMGN,Citigroup,0.2
+2026-08-08,APP,Citigroup,92.6
+2026-08-08,BDX,Citigroup,16.4
+2026-08-08,BDX,Wells Fargo,-3
+2026-08-08,BKR,Morgan Stanley,12.7
+2026-08-08,CF,UBS,7.5
+2026-08-08,COP,Wells Fargo,63.5
+2026-08-08,DASH,Susquehanna,17.8
+2026-08-08,DDOG,DA Davidson,34.2
+2026-08-08,DDOG,Needham,27.8
+2026-08-08,DDOG,Rosenblatt,29.9
+2026-08-08,DDOG,UBS,19.2
+2026-08-08,DVA,TD Cowen,20.9
+2026-08-08,DVA,Truist Securities,18.2
+2026-08-08,ED,Barclays,-1.9
+2026-08-08,EXPE,TD Cowen,2.7
+2026-08-08,KDP,UBS,30.6
+2026-08-08,LDOS,TD Cowen,1.3
+2026-08-08,LLY,Truist Securities,15.8
+2026-08-08,MCHP,Rosenblatt,47.5
+2026-08-08,MCHP,Truist Securities,10.6
+2026-08-08,MCHP,UBS,47.5
+2026-08-08,MNST,Evercore ISI Group,12
+2026-08-08,MNST,UBS,12
+2026-08-08,O,RBC Capital,12.4
+2026-08-08,PH,Citigroup,14.2
+2026-08-08,PH,Susquehanna,15.9
+2026-08-08,PH,Truist Securities,25.9
+2026-08-08,PWR,Keybanc,18.2
+2026-08-08,RL,BTIG,16.3
+2026-08-08,RL,Citigroup,15
+2026-08-08,RL,Evercore ISI Group,16.3
+2026-08-08,RL,Telsey Advisory Group,18.8
+2026-08-08,RL,UBS,31.5
+2026-08-08,TAP,UBS,6.5
+2026-08-08,TTD,Cantor Fitzgerald,8.8
+2026-08-08,TTD,Citigroup,-14.5
+2026-08-08,TTD,Evercore ISI Group,1
+2026-08-08,TTD,Needham,47.6
+2026-08-08,TTD,Rosenblatt,-6.8
+2026-08-08,TTD,Scotiabank,-6.8
+2026-08-08,TTD,Susquehanna,8.8
+2026-08-08,TTD,Truist Securities,24.3
+2026-08-08,TTD,UBS,24.3
+2026-08-08,XOM,TD Cowen,10.1
+2026-08-10,ABBV,Evercore ISI Group,5.8
+2026-08-10,AFL,Piper Sandler,11.2
+2026-08-10,AIG,Piper Sandler,8
+2026-08-10,AIG,RBC Capital,11.8
+2026-08-10,ALB,RBC Capital,19.5
+2026-08-10,ALL,Piper Sandler,12.4
+2026-08-10,ALL,UBS,3
+2026-08-10,APA,Truist Securities,2
+2026-08-10,APTV,Evercore ISI Group,42.7
+2026-08-10,ARE,Citigroup,1.8
+2026-08-10,COP,Truist Securities,9
+2026-08-10,CRL,TD Cowen,12.9
+2026-08-10,DD,JP Morgan,20.4
+2026-08-10,DOC,RBC Capital,12.7
+2026-08-10,FANG,Citigroup,15.3
+2026-08-10,HUM,JP Morgan,2.1
+2026-08-10,OXY,Truist Securities,11.3
+2026-08-10,TAP,JP Morgan,-1.7
+2026-08-10,TTD,DA Davidson,18.7
+2026-08-10,TTWO,DA Davidson,21.2
+2026-08-10,TTWO,Oppenheimer,13.1
+2026-08-10,TTWO,Wedbush,21.2
+2026-08-10,TTWO,Wells Fargo,21.2
+2026-08-10,WAT,Citigroup,15.8
+2026-08-10,WMB,RBC Capital,22.5
+2026-08-11,AFL,JP Morgan,-4.2
+2026-08-11,AKAM,Susquehanna,18.6
+2026-08-11,ALB,Evercore ISI Group,38
+2026-08-11,ALB,Morgan Stanley,23.4
+2026-08-11,ALL,Citigroup,-10.1
+2026-08-11,ALL,Goldman Sachs,4.9
+2026-08-11,ALL,JP Morgan,9.4
+2026-08-11,ALLE,Morgan Stanley,-3.6
+2026-08-11,DOC,Citigroup,5.4
+2026-08-11,FICO,Barclays,62.7
+2026-08-11,FIS,Cantor Fitzgerald,19
+2026-08-11,GWW,Barclays,-8.6
+2026-08-11,J,UBS,15.1
+2026-08-11,KDP,Barclays,30.1
+2026-08-11,KIM,Citigroup,8.4
+2026-08-11,LDOS,Citigroup,16.8
+2026-08-11,LIN,BMO Capital,11.2
+2026-08-11,MET,JP Morgan,11.6
+2026-08-11,PPL,BMO Capital,8.8
+2026-08-11,SPG,Stifel,-5.1
+2026-08-11,STLD,UBS,3
+2026-08-11,TTD,HSBC,-24.2
+2026-08-11,TTWO,BTIG,23.5
+2026-08-11,UBER,Jefferies,41
+2026-08-11,VTR,BMO Capital,17.8
+2026-08-12,A,Morgan Stanley,17.5
+2026-08-12,AFL,"Keefe, Bruyette & Woods",4
+2026-08-12,AIG,"Keefe, Bruyette & Woods",25.4
+2026-08-12,AIG,Morgan Stanley,5.8
+2026-08-12,APA,Susquehanna,17.2
+2026-08-12,APP,B of A Securities,25.3
+2026-08-12,CAH,Citigroup,16.8
+2026-08-12,CAH,Evercore ISI Group,12.6
+2026-08-12,CAH,Morgan Stanley,10.5
+2026-08-12,CAT,Evercore ISI Group,20.7
+2026-08-12,CMI,Evercore ISI Group,20.7
+2026-08-12,COP,Susquehanna,28.8
+2026-08-12,COR,Wells Fargo,23.6
+2026-08-12,CPT,Morgan Stanley,9.4
+2026-08-12,CVS,JP Morgan,25.9
+2026-08-12,ETN,Evercore ISI Group,8.2
+2026-08-12,FIS,Stephens & Co.,18.4
+2026-08-12,HD,Wells Fargo,13.6
+2026-08-12,HLT,Susquehanna,7.2
+2026-08-12,HPQ,Goldman Sachs,-27.9
+2026-08-12,HST,Cantor Fitzgerald,5.5
+2026-08-12,IDXX,Barclays,22.4
+2026-08-12,INTC,B of A Securities,43.1
+2026-08-12,IR,Evercore ISI Group,8.8
+2026-08-12,ITW,Evercore ISI Group,5.6
+2026-08-12,JBL,UBS,17.6
+2026-08-12,JKHY,Stephens & Co.,30.8
+2026-08-12,KVUE,UBS,1.7
+2026-08-12,LDOS,Goldman Sachs,-4.6
+2026-08-12,LITE,JP Morgan,42.4
+2026-08-12,LITE,Mizuho,26.8
+2026-08-12,LITE,Morgan Stanley,11.2
+2026-08-12,LOW,Wells Fargo,11.6
+2026-08-12,MAA,Morgan Stanley,12.2
+2026-08-12,MCK,Wells Fargo,3.4
+2026-08-12,MET,"Keefe, Bruyette & Woods",11.8
+2026-08-12,MO,Barclays,-10
+2026-08-12,MPC,Mizuho,-9.3
+2026-08-12,NEM,Scotiabank,24.2
+2026-08-12,NVDA,Wells Fargo,42.5
+2026-08-12,OXY,Susquehanna,19.7
+2026-08-12,PCAR,Evercore ISI Group,21.7
+2026-08-12,PH,Evercore ISI Group,13.7
+2026-08-12,PRU,"Keefe, Bruyette & Woods",0.8
+2026-08-12,PRU,Piper Sandler,4.9
+2026-08-12,RSG,UBS,10.3
+2026-08-12,SMCI,Citigroup,11.5
+2026-08-12,SMCI,Goldman Sachs,-2.8
+2026-08-12,SMCI,Mizuho,0
+2026-08-12,TGT,Oppenheimer,12.4
+2026-08-12,TTWO,JP Morgan,24.8
+2026-08-12,UDR,Morgan Stanley,12.7
+2026-08-12,URI,Evercore ISI Group,9.9
+2026-08-12,WMB,Truist Securities,21.7
+2026-08-13,AKAM,JP Morgan,26.5
+2026-08-13,APA,Benchmark,16.8
+2026-08-13,BBY,Citigroup,4.9
+2026-08-13,BDX,RBC Capital,2.8
+2026-08-13,CAH,Baird,17.6
+2026-08-13,CAH,Barclays,18
+2026-08-13,CAH,Mizuho,7.3
+2026-08-13,CAH,TD Cowen,20.2
+2026-08-13,CAH,UBS,20.2
+2026-08-13,CAH,Wells Fargo,18.9
+2026-08-13,COHR,Morgan Stanley,8.7
+2026-08-13,CPT,JP Morgan,4.5
+2026-08-13,FICO,UBS,6.1
+2026-08-13,IEX,Mizuho,16
+2026-08-13,INTC,UBS,10.3
+2026-08-13,IVZ,TD Cowen,23
+2026-08-13,LITE,B of A Securities,7.8
+2026-08-13,LITE,Rosenblatt,40.1
+2026-08-13,LMT,Citigroup,13.3
+2026-08-13,MLM,Morgan Stanley,16.8
+2026-08-13,MSFT,Wells Fargo,41.9
+2026-08-13,NOC,Citigroup,15.3
+2026-08-13,PAYX,Jefferies,-1.3
+2026-08-13,SMCI,Barclays,1.9
+2026-08-13,SMCI,Needham,20.2
+2026-08-13,SMCI,Rosenblatt,33.2
+2026-08-13,SMCI,Wedbush,4.5
+2026-08-13,TDY,Morgan Stanley,3.9
+2026-08-13,TRMB,Bernstein,28.3
+2026-08-13,TRMB,JP Morgan,33.5
+2026-08-14,AIZ,UBS,17.3
+2026-08-14,ALL,BMO Capital,8.7
+2026-08-14,AMAT,TD Cowen,40.2
+2026-08-14,AMCR,Citigroup,13
+2026-08-14,AMCR,Wells Fargo,-4.3
+2026-08-14,COHR,B. Riley Securities,5
+2026-08-14,COHR,Needham,27.8
+2026-08-14,COHR,Rosenblatt,52.2
+2026-08-14,CSCO,Keybanc,19.7
+2026-08-14,CSCO,Morgan Stanley,19.7
+2026-08-14,CSCO,Rosenblatt,46.3
+2026-08-14,CSCO,UBS,22.3
+2026-08-14,CSCO,Wells Fargo,33
+2026-08-14,DELL,Wells Fargo,9.9
+2026-08-14,DOC,Baird,15.6
+2026-08-14,DVN,Wells Fargo,45.1
+2026-08-14,EBAY,Citigroup,24.3
+2026-08-14,EOG,Wells Fargo,35.6
+2026-08-14,ESS,JP Morgan,2.7
+2026-08-14,FOXA,Wells Fargo,18.4
+2026-08-14,HON,JP Morgan,9.7
+2026-08-14,HRL,JP Morgan,6.5
+2026-08-14,INTU,Citigroup,26.2
+2026-08-14,JPM,Wells Fargo,7.4
+2026-08-14,LOW,Piper Sandler,25.4
+2026-08-14,PKG,UBS,13.8
+2026-08-14,ROK,Bernstein,15.6
+2026-08-14,SJM,JP Morgan,15.8
+2026-08-14,SNDK,RBC Capital,-2.8
+2026-08-14,SNDK,Wells Fargo,-5.9
+2026-08-14,TECH,Wells Fargo,1.1
+2026-08-14,TPR,Barclays,44.6
+2026-08-14,TPR,Evercore ISI Group,25
+2026-08-14,TPR,Morgan Stanley,24.3
+2026-08-14,TPR,UBS,81.3
+2026-08-14,TPR,Wells Fargo,25
+2026-08-14,TRMB,Piper Sandler,51
+2026-08-14,VTR,RBC Capital,9.8
+2026-08-14,WAB,Citigroup,14.4
+2026-08-14,XYL,UBS,14.9
+2026-08-15,AMAT,Cantor Fitzgerald,70.2
+2026-08-15,AMAT,JP Morgan,32.2
+2026-08-15,AMAT,Keybanc,50.2
+2026-08-15,AMAT,Stifel,30.2
+2026-08-15,DLR,HSBC,20.2
+2026-08-15,FOXA,JP Morgan,21.3
+2026-08-15,SNDK,Cantor Fitzgerald,76.1
+2026-08-15,SNDK,Wedbush,21.4
+2026-08-15,TMUS,Wolfe Research,
+2026-08-15,TPR,BTIG,36.8
+2026-08-15,WDAY,Baird,3.4
+2026-08-15,WDAY,UBS,5.8
+2026-08-17,ADM,UBS,18.2
+2026-08-17,ARE,Evercore ISI Group,19.7
+2026-08-17,CNP,Evercore ISI Group,5.9
+2026-08-17,D,Evercore ISI Group,2.2
+2026-08-17,ED,Evercore ISI Group,3.2
+2026-08-17,HON,Jefferies,9.8
+2026-08-17,INCY,Piper Sandler,8.2
+2026-08-17,MGM,Argus Research,25.2
+2026-08-17,MGM,Macquarie,25.2
+2026-08-17,NOW,TD Cowen,14.4
+2026-08-17,PANW,TD Cowen,4.4
+2026-08-17,PRU,JP Morgan,4.8
+2026-08-17,REG,Barclays,20.3
+2026-08-17,SPG,Barclays,-1.6
+2026-08-17,SPG,Citigroup,5.3
+2026-08-17,YUM,Argus Research,22.2
+2026-08-18,ABBV,Wells Fargo,18.1
+2026-08-18,AJG,Argus Research,20
+2026-08-18,AMCR,JP Morgan,2.5
+2026-08-18,APA,Barclays,-4.8
+2026-08-18,CBRE,Barclays,23.3
+2026-08-18,CPT,Barclays,12.5
+2026-08-18,DLR,Evercore ISI Group,20.7
+2026-08-18,DLTR,Wells Fargo,17.6
+2026-08-18,DVN,Barclays,20.8
+2026-08-18,EOG,Barclays,-0.7
+2026-08-18,EQIX,Evercore ISI Group,15.1
+2026-08-18,ESS,Barclays,5.3
+2026-08-18,EXR,Scotiabank,6.3
+2026-08-18,FRT,Barclays,3.9
+2026-08-18,HD,Stifel,1
+2026-08-18,MAA,Barclays,10.5
+2026-08-18,MCHP,Cantor Fitzgerald,60.2
+2026-08-18,NXPI,Cantor Fitzgerald,74.2
+2026-08-18,OXY,Barclays,18.4
+2026-08-18,PANW,Wells Fargo,28.3
+2026-08-18,REGN,Leerink Partners,1.2
+2026-08-18,TRGP,Jefferies,17.6
+2026-08-18,TXN,Cantor Fitzgerald,23.2
+2026-08-18,VEEV,Oppenheimer,23.4
+2026-08-18,VEEV,Stifel,13.1
+2026-08-18,WDAY,BTIG,
+2026-08-18,WMB,Morgan Stanley,38
+2026-08-18,XOM,Barclays,7.7
+2026-08-19,ADBE,B of A Securities,-16.1
+2026-08-19,CME,Deutsche Bank,-0.1
+2026-08-19,COP,Morgan Stanley,16
+2026-08-19,EQT,Morgan Stanley,24.7
+2026-08-19,FANG,Morgan Stanley,2.4
+2026-08-19,HBAN,RBC Capital,17.2
+2026-08-19,HD,DA Davidson,10.4
+2026-08-19,HD,Mizuho,14.2
+2026-08-19,HD,Truist Securities,9.2
+2026-08-19,HD,UBS,23
+2026-08-19,INTU,Deutsche Bank,21.7
+2026-08-19,IT,BMO Capital,13.8
+2026-08-19,JKHY,Oppenheimer,27.6
+2026-08-19,KEYS,JP Morgan,21.8
+2026-08-19,KEYS,Morgan Stanley,21.8
+2026-08-19,KEYS,UBS,26.1
+2026-08-19,MCK,Barclays,15.7
+2026-08-19,NCLH,Mizuho,-5
+2026-08-19,NCLH,UBS,11.7
+2026-08-19,NOW,B of A Securities,26.4
+2026-08-19,PANW,Mizuho,10.6
+2026-08-19,PANW,Stifel,10.6
+2026-08-19,PANW,Truist Securities,15.9
+2026-08-19,PANW,UBS,3.9
+2026-08-19,ROP,RBC Capital,5.3
+2026-08-19,SJM,Jefferies,16.2
+2026-08-19,TRMB,Barclays,39.7
+2026-08-19,WDAY,B of A Securities,7.7
+2026-08-19,XOM,Morgan Stanley,6.6
+2026-08-20,ABBV,Piper Sandler,14
+2026-08-20,AFL,Wells Fargo,5
+2026-08-20,AIZ,Morgan Stanley,15.6
+2026-08-20,AMGN,Argus Research,5.6
+2026-08-20,AMGN,Piper Sandler,4.9
+2026-08-20,AMT,Barclays,11.8
+2026-08-20,APP,Wells Fargo,4.4
+2026-08-20,BBY,Piper Sandler,-2.9
+2026-08-20,CCI,Barclays,10.3
+2026-08-20,CIEN,Northland Capital Markets,24.9
+2026-08-20,EBAY,Wedbush,32.6
+2026-08-20,EL,Goldman Sachs,15
+2026-08-20,EL,JP Morgan,15
+2026-08-20,EL,Morgan Stanley,4.7
+2026-08-20,EL,Piper Sandler,18
+2026-08-20,FISV,Truist Securities,1.6
+2026-08-20,FTV,Argus Research,16.1
+2026-08-20,HAS,Wells Fargo,-2.5
+2026-08-20,HCA,JP Morgan,5.4
+2026-08-20,HD,Guggenheim,26.5
+2026-08-20,HD,RBC Capital,1.8
+2026-08-20,JKHY,Goldman Sachs,9
+2026-08-20,JKHY,UBS,4.1
+2026-08-20,KEYS,Baird,30.3
+2026-08-20,KEYS,Barclays,36.3
+2026-08-20,KEYS,Susquehanna,39.8
+2026-08-20,KEYS,Wells Fargo,28.7
+2026-08-20,LOW,Citigroup,20.4
+2026-08-20,LOW,TD Cowen,8.8
+2026-08-20,LOW,Telsey Advisory Group,20.4
+2026-08-20,LOW,Truist Securities,17.6
+2026-08-20,LOW,UBS,27.3
+2026-08-20,MAR,UBS,10.8
+2026-08-20,MET,Wells Fargo,14.8
+2026-08-20,MRK,BMO Capital,12.7
+2026-08-20,MRK,UBS,16.1
+2026-08-20,MRNA,Goldman Sachs,-20.1
+2026-08-20,MRNA,UBS,-0.1
+2026-08-20,MRVL,UBS,30.5
+2026-08-20,MTB,Cantor Fitzgerald,16.9
+2026-08-20,PANW,BMO Capital,17.2
+2026-08-20,PGR,Wells Fargo,-8.1
+2026-08-20,PRU,Wells Fargo,-10
+2026-08-20,REG,Wells Fargo,15.6
+2026-08-20,SBAC,Barclays,15.3
+2026-08-20,SJM,UBS,16.2
+2026-08-20,TGT,Goldman Sachs,2.5
+2026-08-20,TGT,Wells Fargo,17.8
+2026-08-20,TJX,Barclays,32.2
+2026-08-20,TJX,BTIG,33.6
+2026-08-20,TJX,Citigroup,8.3
+2026-08-20,TJX,Evercore ISI Group,21.7
+2026-08-20,TJX,Morgan Stanley,25.2
+2026-08-20,TJX,UBS,39.2
+2026-08-20,TJX,Wells Fargo,-1.6
+2026-08-21,ALL,"Keefe, Bruyette & Woods",-1.6
+2026-08-21,APP,Piper Sandler,6.9
+2026-08-21,CPRT,Stephens & Co.,1.5
+2026-08-21,DE,Citigroup,4.3
+2026-08-21,EL,Jefferies,3.4
+2026-08-21,EL,RBC Capital,24
+2026-08-21,EXC,Morgan Stanley,16.6
+2026-08-21,FIX,DA Davidson,24.3
+2026-08-21,INCY,HC Wainwright & Co.,18.6
+2026-08-21,LOW,DA Davidson,12
+2026-08-21,LOW,Keybanc,25.7
+2026-08-21,LOW,Mizuho,14.3
+2026-08-21,LOW,RBC Capital,5.6
+2026-08-21,MRK,Goldman Sachs,7.3
+2026-08-21,MRK,Morgan Stanley,20
+2026-08-21,MRK,RBC Capital,0.6
+2026-08-21,MRNA,JP Morgan,-42.2
+2026-08-21,MRNA,Morgan Stanley,-33.1
+2026-08-21,MRVL,Citigroup,9
+2026-08-21,MRVL,RBC Capital,42.6
+2026-08-21,NDSN,Keybanc,6.5
+2026-08-21,NWSA,JP Morgan,27.2
+2026-08-21,RDDT,Morgan Stanley,38.3
+2026-08-21,ROST,Barclays,22.2
+2026-08-21,ROST,Citigroup,18.9
+2026-08-21,ROST,JP Morgan,11.5
+2026-08-21,ROST,Morgan Stanley,-4
+2026-08-21,ROST,Wells Fargo,1.7
+2026-08-21,TGT,DA Davidson,14.9
+2026-08-21,TGT,Guggenheim,8.7
+2026-08-21,TGT,RBC Capital,10.5
+2026-08-21,TJX,Gordon Haskett,10.2
+2026-08-21,UHS,RBC Capital,5.7
+2026-08-21,VST,Morgan Stanley,62.2
+2026-08-21,WMT,Citigroup,27.3
+2026-08-21,WMT,JP Morgan,20.6
+2026-08-21,WMT,Piper Sandler,23.4
+2026-08-21,WMT,Truist Securities,9.9
+2026-08-21,WMT,UBS,25.4
+2026-08-21,WMT,Wells Fargo,15.7
+2026-08-22,ADSK,Baird,29.5
+2026-08-22,DE,Oppenheimer,9.9
+2026-08-22,HSY,RBC Capital,9.8
+2026-08-22,LOW,Guggenheim,25.7
+2026-08-22,MCHP,BMO Capital,23.7
+2026-08-22,MRVL,BMO Capital,-0.9
+2026-08-22,NDSN,Baird,3.8
+2026-08-22,NDSN,Oppenheimer,9.5
+2026-08-22,NVDA,BMO Capital,55.7
+2026-08-22,ROST,Baird,10.7
+2026-08-22,ROST,Evercore ISI Group,18.9
+2026-08-22,SWKS,BMO Capital,3.1
+2026-08-22,TER,Baird,10
+2026-08-22,WMT,Baird,15.7
+2026-08-22,WMT,Guggenheim,25.4
+2026-08-22,WMT,Morgan Stanley,20.6
+2026-08-22,WMT,RBC Capital,26.3
+2026-08-22,WMT,Telsey Advisory Group,25.4
+2026-08-24,ABNB,Bernstein,14.8
+2026-08-24,ABNB,Evercore ISI Group,5.8
+2026-08-24,ACN,Citigroup,2.9
+2026-08-24,DAL,Raymond James,17.6
+2026-08-24,DAL,TD Cowen,26.1
+2026-08-24,DE,Barclays,3.4
+2026-08-24,DE,DA Davidson,16.4
+2026-08-24,DE,Truist Securities,23.1
+2026-08-24,EOG,Goldman Sachs,-0.7
+2026-08-24,EXPE,Evercore ISI Group,32.9
+2026-08-24,GWW,Morgan Stanley,6.6
+2026-08-24,HPQ,Evercore ISI Group,8.3
+2026-08-24,INTU,Jefferies,36.4
+2026-08-24,LUV,Raymond James,32
+2026-08-24,MET,Morgan Stanley,17
+2026-08-24,MRNA,Barclays,-12.4
+2026-08-24,MRVL,Wells Fargo,35.2
+2026-08-24,NDSN,DA Davidson,13.1
+2026-08-24,NTAP,Evercore ISI Group,10
+2026-08-24,PHM,Wolfe Research,-1.5
+2026-08-24,PRU,Morgan Stanley,-13.3
+2026-08-24,UAL,TD Cowen,66.9
+2026-08-24,WDAY,Jefferies,12.7
+2026-08-24,WDAY,Oppenheimer,10.2
+2026-08-24,XYL,Jefferies,30.9
+2026-08-25,ADI,Baird,79.4
+2026-08-25,ARE,Baird,-4.6
+2026-08-25,BXP,UBS,-0.9
+2026-08-25,CMG,Baird,5.3
+2026-08-25,COF,Wolfe Research,26.2
+2026-08-25,DE,RBC Capital,15.3
+2026-08-25,DPZ,Baird,1.1
+2026-08-25,MLM,DA Davidson,16.3
+2026-08-25,MRK,Wolfe Research,19.2
+2026-08-25,PPL,Jefferies,25.1
+2026-08-25,SYF,Wolfe Research,11.8
+2026-08-25,ULTA,Deutsche Bank,30.2
+2026-08-25,USB,RBC Capital,8.9
+2026-08-25,VMC,DA Davidson,17.4
+2026-08-25,XYZ,Wolfe Research,40.6
+2026-08-26,AMAT,Mizuho,23
+2026-08-26,AMD,Raymond James,34.9
+2026-08-26,BIIB,RBC Capital,18.5
+2026-08-26,BKR,RBC Capital,23
+2026-08-26,BSX,TD Cowen,19.1
+2026-08-26,BXP,JP Morgan,21.2
+2026-08-26,DLTR,Guggenheim,8.3
+2026-08-26,DLTR,Truist Securities,3
+2026-08-26,EXPE,BTIG,18
+2026-08-26,FIS,Wells Fargo,14.5
+2026-08-26,FOXA,Guggenheim,20.9
+2026-08-26,GPN,Truist Securities,1.4
+2026-08-26,INTU,Morgan Stanley,-2.6
+2026-08-26,INTU,Oppenheimer,17.5
+2026-08-26,INTU,Susquehanna,28.3
+2026-08-26,KIM,JP Morgan,8.1
+2026-08-26,LRCX,Mizuho,16
+2026-08-26,META,Evercore ISI Group,45.7
+2026-08-26,MRK,Argus Research,10.1
+2026-08-26,MRVL,Susquehanna,10.4
+2026-08-26,MU,Mizuho,40.4
+2026-08-26,NI,Mizuho,18.2
+2026-08-26,NKE,RBC Capital,14.2
+2026-08-26,PANW,JP Morgan,16.2
+2026-08-26,SNDK,Mizuho,28.8
+2026-08-26,TJX,Jefferies,4.2
+2026-08-26,WDAY,Canaccord Genuity,19.6
+2026-08-27,A,B of A Securities,13
+2026-08-27,A,Citigroup,19.2
+2026-08-27,A,Goldman Sachs,9.8
+2026-08-27,A,JP Morgan,19.2
+2026-08-27,A,TD Cowen,13
+2026-08-27,ACN,TD Cowen,-6
+2026-08-27,BXP,Piper Sandler,26.1
+2026-08-27,CPRT,Barclays,-22.9
+2026-08-27,CRM,Barclays,20
+2026-08-27,CRM,Bernstein,-15.2
+2026-08-27,CRM,Jefferies,30.4
+2026-08-27,CRM,JP Morgan,15.2
+2026-08-27,CRM,Macquarie,-2.2
+2026-08-27,CRM,Oppenheimer,19.5
+2026-08-27,CRWD,BMO Capital,12.8
+2026-08-27,DTE,Mizuho,11.8
+2026-08-27,EIX,Argus Research,
+2026-08-27,EXR,BMO Capital,17.7
+2026-08-27,FDS,RBC Capital,2.5
+2026-08-27,FSLR,BMO Capital,23.5
+2026-08-27,GPN,TD Cowen,2.5
+2026-08-27,HPQ,TD Cowen,7.7
+2026-08-27,HPQ,UBS,0.5
+2026-08-27,INTU,Barclays,15.4
+2026-08-27,INTU,Goldman Sachs,-14
+2026-08-27,INTU,JP Morgan,-6.4
+2026-08-27,INTU,Piper Sandler,-18
+2026-08-27,INTU,Wells Fargo,-15.1
+2026-08-27,MCD,Argus Research,16.8
+2026-08-27,NKE,Truist Securities,9.1
+2026-08-27,NVDA,Bernstein,79.5
+2026-08-27,NVDA,Citigroup,41.3
+2026-08-27,NVDA,JP Morgan,43.6
+2026-08-27,NVDA,Mizuho,41.3
+2026-08-27,NVDA,Oppenheimer,41.3
+2026-08-27,NVDA,RBC Capital,48.1
+2026-08-27,NVDA,UBS,34.6
+2026-08-27,PGR,UBS,5.8
+2026-08-27,SJM,Barclays,11.3
+2026-08-27,SJM,Bernstein,20.5
+2026-08-27,SJM,TD Cowen,4.4
+2026-08-27,SNPS,Baird,33.4
+2026-08-27,SPG,Mizuho,4.9
+2026-08-27,SPGI,RBC Capital,16.8
+2026-08-27,TRGP,RBC Capital,15.4
+2026-08-27,VEEV,Baird,8.9
+2026-08-28,A,Barclays,12.2
+2026-08-28,ADSK,UBS,24.4
+2026-08-28,BBY,Barclays,1.4
+2026-08-28,BX,Oppenheimer,18.3
+2026-08-28,CRM,DA Davidson,-20.2
+2026-08-28,CRM,Evercore ISI Group,15.8
+2026-08-28,CRM,Morgan Stanley,-6.2
+2026-08-28,CRM,Truist Securities,19.8
+2026-08-28,CRM,UBS,-4.2
+2026-08-28,CRWD,Benchmark,9.5
+2026-08-28,DG,Citigroup,6.2
+2026-08-28,DG,Morgan Stanley,15.8
+2026-08-28,DG,Piper Sandler,-1.8
+2026-08-28,DLTR,UBS,17.7
+2026-08-28,DRI,Keybanc,11.7
+2026-08-28,EMR,Morgan Stanley,-14.7
+2026-08-28,ETN,Morgan Stanley,24.6
+2026-08-28,HPQ,Barclays,-23
+2026-08-28,HPQ,Morgan Stanley,-36.4
+2026-08-28,KKR,Oppenheimer,51.2
+2026-08-28,META,Benchmark,
+2026-08-28,META,Needham,
+2026-08-28,META,Truist Securities,33.5
+2026-08-28,MLM,RBC Capital,16.5
+2026-08-28,MRVL,B. Riley Securities,39.8
+2026-08-28,MRVL,Craig-Hallum,33.2
+2026-08-28,MRVL,Morgan Stanley,9.2
+2026-08-28,MRVL,Oppenheimer,44.3
+2026-08-28,MRVL,TD Cowen,8.8
+2026-08-28,NVDA,Benchmark,47.3
+2026-08-28,NVDA,Cantor Fitzgerald,53.9
+2026-08-28,NVDA,DA Davidson,31.9
+2026-08-28,NVDA,Evercore ISI Group,104.5
+2026-08-28,NVDA,Keybanc,45.1
+2026-08-28,NVDA,Morgan Stanley,31.9
+2026-08-28,NVDA,Raymond James,126.5
+2026-08-28,NVDA,Truist Securities,52.2
+2026-08-28,NVDA,Wedbush,51.7
+2026-08-28,PANW,Jefferies,19.3
+2026-08-28,SJM,Wells Fargo,9.1
+2026-08-28,SNPS,Needham,25.6
+2026-08-28,SNPS,Rosenblatt,24.5
+2026-08-28,SW,Morgan Stanley,18.3
+2026-08-28,ULTA,Barclays,19
+2026-08-28,ULTA,Citigroup,7
+2026-08-28,ULTA,UBS,31
+2026-08-28,VEEV,Citigroup,-2.5
+2026-08-28,VEEV,Guggenheim,10.7
+2026-08-28,VEEV,Morgan Stanley,-1.8
+2026-08-28,VEEV,Needham,10.7
+2026-08-28,VEEV,Piper Sandler,14.3
+2026-08-28,WDAY,Barclays,17.5
+2026-08-28,WDAY,Citigroup,5.4
+2026-08-28,WDAY,DA Davidson,-0.4
+2026-08-28,WDAY,Freedom Broker,4.9
+2026-08-28,WDAY,RBC Capital,25.9
+2026-08-28,WDAY,Stifel,-16.1
+2026-08-28,WDAY,TD Cowen,10.1
+2026-08-28,WDAY,Wells Fargo,18
+2026-08-29,A,Wells Fargo,15.4
+2026-08-29,BBY,Goldman Sachs,-15.3
+2026-08-29,BBY,Guggenheim,13.3
+2026-08-29,DG,BMO Capital,7.8
+2026-08-29,DG,Goldman Sachs,12.6
+2026-08-29,DTE,BMO Capital,4.2
+2026-08-29,MRNA,Argus Research,31.2
+2026-08-29,MRVL,Cantor Fitzgerald,33.2
+2026-08-29,MRVL,Needham,33.2
+2026-08-29,MRVL,Rosenblatt,33.2
+2026-08-29,ULTA,B of A Securities,19.9
+2026-08-29,ULTA,Goldman Sachs,23.1
+2026-08-29,WDAY,Bernstein,24.8
+2026-08-29,WDAY,BMO Capital,20.6
+2026-08-29,WDAY,Cantor Fitzgerald,7.5
+2026-08-29,WDAY,Keybanc,12.8
+2026-08-29,WDAY,Morgan Stanley,-5.6
+2026-08-29,WDAY,Needham,20.6
+2026-08-29,WDAY,Piper Sandler,-0.4
+2026-08-31,ADSK,Citigroup,7.1
+2026-08-31,AZO,TD Cowen,18.7
+2026-08-31,DVN,Citigroup,38.3
+2026-08-31,HON,Morgan Stanley,16.4
+2026-08-31,NTAP,B of A Securities,9.2
+2026-08-31,PANW,Scotiabank,16.2
+2026-08-31,TROW,TD Cowen,-0.9
+2026-08-31,WDAY,Goldman Sachs,-18.4
+2026-09-01,ADSK,Rosenblatt,30.2
+2026-09-01,AKAM,Piper Sandler,14.8
+2026-09-01,AON,BMO Capital,12
+2026-09-01,AON,"Keefe, Bruyette & Woods",29.7
+2026-09-01,AON,Piper Sandler,8.6
+2026-09-01,AON,Wells Fargo,19.2
+2026-09-01,BR,RBC Capital,24.4
+2026-09-01,BXP,Wells Fargo,21
+2026-09-01,CPAY,RBC Capital,8.7
+2026-09-01,CPT,Wells Fargo,3.7
+2026-09-01,CRM,Argus Research,17.6
+2026-09-01,CRWD,Truist Securities,31.6
+2026-09-01,CSCO,Deutsche Bank,22.7
+2026-09-01,DELL,Deutsche Bank,5.3
+2026-09-01,DG,Guggenheim,10.1
+2026-09-01,EIX,B of A Securities,-5.6
+2026-09-01,EIX,Mizuho,29.6
+2026-09-01,EXR,Wells Fargo,11.3
+2026-09-01,FISV,Cantor Fitzgerald,1.1
+2026-09-01,GIS,B of A Securities,3.5
+2026-09-01,GPN,RBC Capital,17.3
+2026-09-01,HPE,B of A Securities,56.2
+2026-09-01,HPE,Deutsche Bank,18.1
+2026-09-01,KR,Citigroup,0.4
+2026-09-01,MAA,Wells Fargo,13.2
+2026-09-01,MDT,BTIG,6.4
+2026-09-01,MPC,Wells Fargo,5
+2026-09-01,MSFT,B of A Securities,20.6
+2026-09-01,O,Wells Fargo,4.1
+2026-09-01,PCG,BMO Capital,57.9
+2026-09-01,PCG,Wells Fargo,80.5
+2026-09-01,PLD,Wells Fargo,19
+2026-09-01,PSX,Wells Fargo,33.1
+2026-09-01,PYPL,RBC Capital,34.1
+2026-09-01,RMD,Keybanc,11.3
+2026-09-01,SRE,Jefferies,16.9
+2026-09-01,SRE,Mizuho,1.3
+2026-09-01,UDR,Wells Fargo,16.5
+2026-09-01,V,RBC Capital,22.7
+2026-09-01,VICI,Wells Fargo,1.3
+2026-09-01,VLO,Wells Fargo,6.9
+2026-09-01,VTR,Barclays,10.9
+2026-09-01,VTR,Wells Fargo,13
+2026-09-01,WELL,Morgan Stanley,5.4
+2026-09-01,WELL,Wells Fargo,11.7
+2026-09-01,WMT,Tigress Financial,47.5
+2026-09-02,AAPL,Morgan Stanley,10.1
+2026-09-02,AON,Evercore ISI Group,29.1
+2026-09-02,APA,Raymond James,23.4
+2026-09-02,APO,JP Morgan,17.3
+2026-09-02,CRM,Needham,54.2
+2026-09-02,CRM,TD Cowen,15.7
+2026-09-02,DELL,Citigroup,29.9
+2026-09-02,DELL,Goldman Sachs,23.4
+2026-09-02,DELL,JP Morgan,37.4
+2026-09-02,DELL,Raymond James,33.5
+2026-09-02,EIX,JP Morgan,7.4
+2026-09-02,EIX,UBS,11
+2026-09-02,HOOD,Piper Sandler,39.8
+2026-09-02,HUBB,Morgan Stanley,29.4
+2026-09-02,JCI,Morgan Stanley,28.6
+2026-09-02,JKHY,DA Davidson,18.2
+2026-09-02,LRCX,UBS,45.8
+2026-09-02,MLM,JP Morgan,34
+2026-09-02,OKE,Jefferies,10.3
+2026-09-02,OKE,JP Morgan,11.4
+2026-09-02,OKE,Scotiabank,-0.2
+2026-09-02,OKE,Truist Securities,9.3
+2026-09-02,OKE,Wells Fargo,11.4
+2026-09-02,ORCL,Jefferies,106.8
+2026-09-02,PANW,Citigroup,18.5
+2026-09-02,PANW,Oppenheimer,30.1
+2026-09-02,PANW,Piper Sandler,18.5
+2026-09-02,PCG,JP Morgan,32.7
+2026-09-02,PSA,Scotiabank,14
+2026-09-02,RJF,TD Cowen,-8
+2026-09-02,ROK,Morgan Stanley,29.7
+2026-09-02,SRE,JP Morgan,22
+2026-09-02,TRGP,Wells Fargo,10
+2026-09-03,AIG,Argus Research,17.5
+2026-09-03,AVGO,Evercore ISI Group,64.3
+2026-09-03,AVGO,Truist Securities,47.8
+2026-09-03,CME,TD Cowen,4
+2026-09-03,CRM,BTIG,14.5
+2026-09-03,CRWD,Raymond James,20
+2026-09-03,CRWD,TD Cowen,20
+2026-09-03,CVX,Piper Sandler,14.4
+2026-09-03,DELL,B of A Securities,23.4
+2026-09-03,DELL,Mizuho,23.4
+2026-09-03,DELL,UBS,2.8
+2026-09-03,EXR,Mizuho,7.6
+2026-09-03,HPE,Citigroup,59.7
+2026-09-03,HPE,Morgan Stanley,40.8
+2026-09-03,HPE,Raymond James,80.7
+2026-09-03,HPE,UBS,23.9
+2026-09-03,HPE,Wells Fargo,13.4
+2026-09-03,JNJ,UBS,15.4
+2026-09-03,LII,Morgan Stanley,-0.6
+2026-09-03,MDT,B of A Securities,18.2
+2026-09-03,MDT,UBS,18.2
+2026-09-03,MPC,Piper Sandler,20.3
+2026-09-03,NTAP,Citigroup,17.3
+2026-09-03,NTAP,Morgan Stanley,17.9
+2026-09-03,NTAP,Northland Capital Markets,15.5
+2026-09-03,NTAP,TD Cowen,23.5
+2026-09-03,NTAP,UBS,5.6
+2026-09-03,NTAP,Wells Fargo,17.3
+2026-09-03,OKE,Citigroup,12
+2026-09-03,PANW,Barclays,12.5
+2026-09-03,PANW,BTIG,21.2
+2026-09-03,PANW,Cantor Fitzgerald,27.5
+2026-09-03,PANW,DA Davidson,26
+2026-09-03,PANW,Guggenheim,
+2026-09-03,PANW,Morgan Stanley,18.2
+2026-09-03,PANW,Needham,27.5
+2026-09-03,PANW,RBC Capital,42.5
+2026-09-03,PANW,Rosenblatt,24.5
+2026-09-03,PANW,Susquehanna,24.5
+2026-09-03,PCG,Mizuho,4.9
+2026-09-03,PSA,Mizuho,5.1
+2026-09-03,PSX,Piper Sandler,3.2
+2026-09-03,VICI,Mizuho,4.7
+2026-09-03,VLO,Piper Sandler,19.2
+2026-09-03,VRTX,Morgan Stanley,19
+2026-09-03,XOM,Piper Sandler,12.5
+2026-09-04,ADBE,Barclays,7.5
+2026-09-04,AVGO,Cantor Fitzgerald,66.8
+2026-09-04,AVGO,Rosenblatt,66.8
+2026-09-04,CIEN,B. Riley Securities,7.9
+2026-09-04,CIEN,JP Morgan,88.1
+2026-09-04,CPRT,JP Morgan,20
+2026-09-04,CRWD,Needham,17.6
+2026-09-04,CVX,Wells Fargo,9.8
+2026-09-04,FRT,JP Morgan,10.1
+2026-09-04,HPE,Barclays,46.7
+2026-09-04,INTC,Mizuho,-0.5
+2026-09-04,LULU,B of A Securities,24.3
+2026-09-04,LULU,Baird,17.2
+2026-09-04,LULU,Barclays,-3.2
+2026-09-04,LULU,Goldman Sachs,-3.2
+2026-09-04,LULU,Morgan Stanley,-15.4
+2026-09-04,LULU,Piper Sandler,-18.5
+2026-09-04,LULU,Stifel,1.9
+2026-09-04,LULU,Telsey Advisory Group,12.1
+2026-09-04,LULU,Truist Securities,-16.5
+2026-09-04,LULU,UBS,8
+2026-09-04,LULU,Wells Fargo,-3.2
+2026-09-04,MRK,Wells Fargo,12.7
+2026-09-04,MSFT,Stifel,3.9
+2026-09-04,NCLH,Wells Fargo,28
+2026-09-04,NTAP,Barclays,19.9
+2026-09-04,NTAP,Susquehanna,6.8
+2026-09-04,NTAP,Wedbush,-6.9
+2026-09-04,PANW,Argus Research,28.9
+2026-09-04,PCAR,Morgan Stanley,-0.2
+2026-09-04,PCG,B of A Securities,1.4
+2026-09-04,PCG,Barclays,30.4
+2026-09-04,TSLA,GLJ Research,-93.1
+2026-09-04,TSN,BMO Capital,27.2
+2026-09-04,UBER,BTIG,31.3
+2026-09-04,WY,JP Morgan,23.1
+2026-09-05,CRWD,Rosenblatt,17.6
+2026-09-05,HPE,Argus Research,30
+2026-09-05,LULU,Bernstein,17.2
+2026-09-05,LULU,BTIG,
+2026-09-05,LULU,Guggenheim,
+2026-09-05,LULU,JP Morgan,-3.2
+2026-09-05,LULU,Keybanc,
+2026-09-05,LULU,Needham,
+2026-09-05,NVDA,Needham,29.8
+2026-09-05,NVDA,Rosenblatt,68.8
+2026-09-05,O,Barclays,6
+2026-09-05,TSN,Barclays,46.8
+2026-09-08,CPT,Mizuho,9.8
+2026-09-08,DGX,UBS,4.9
+2026-09-08,ECHO,UBS,60.3
+2026-09-08,ETN,UBS,21.6
+2026-09-08,GD,UBS,13.7
+2026-09-08,HCA,RBC Capital,8.3
+2026-09-08,HOOD,Goldman Sachs,13.5
+2026-09-08,INTC,Northland Capital Markets,19
+2026-09-08,JBL,Goldman Sachs,19.9
+2026-09-08,LMT,UBS,26.7
+2026-09-08,MAA,Mizuho,9.4
+2026-09-08,MPC,UBS,13.5
+2026-09-08,MTB,Morgan Stanley,25.4
+2026-09-08,NOC,UBS,36.4
+2026-09-08,ODFL,Citigroup,19.9
+2026-09-08,PSX,UBS,15.4
+2026-09-08,RF,Morgan Stanley,19
+2026-09-08,SNPS,Morgan Stanley,26
+2026-09-08,UDR,Mizuho,7.6
+2026-09-08,VLO,UBS,18.7
+2026-09-09,ABT,TD Cowen,27.7
+2026-09-09,AMGN,BMO Capital,14.5
+2026-09-09,APD,Argus Research,10.5
+2026-09-09,APH,Barclays,23.5
+2026-09-09,APH,TD Cowen,11.1
+2026-09-09,APP,BTIG,27.1
+2026-09-09,BBY,DA Davidson,6.1
+2026-09-09,BLK,Evercore ISI Group,10.5
+2026-09-09,BXP,Truist Securities,3.3
+2026-09-09,CDW,Barclays,4.1
+2026-09-09,CMS,BMO Capital,12.1
+2026-09-09,DELL,Evercore ISI Group,20.7
+2026-09-09,DG,Barclays,18
+2026-09-09,FDS,Barclays,-13.2
+2026-09-09,FDX,Evercore ISI Group,12.2
+2026-09-09,HOOD,Cantor Fitzgerald,24.2
+2026-09-09,HOOD,Mizuho,15.9
+2026-09-09,IEX,Oppenheimer,19.7
+2026-09-09,IRM,Barclays,24.4
+2026-09-09,ISRG,BTIG,33.9
+2026-09-09,IVZ,Evercore ISI Group,14.2
+2026-09-09,LOW,Bernstein,27
+2026-09-09,LOW,Evercore ISI Group,10
+2026-09-09,LULU,Citigroup,14.8
+2026-09-09,MLM,Wells Fargo,19.2
+2026-09-09,MRK,Guggenheim,14.1
+2026-09-09,NUE,JP Morgan,18.9
+2026-09-09,OKE,Morgan Stanley,13.2
+2026-09-09,PAYX,Stifel,11.1
+2026-09-09,PAYX,Wells Fargo,-5.1
+2026-09-09,PWR,Piper Sandler,14.2
+2026-09-09,SYK,Wells Fargo,28
+2026-09-09,TROW,Evercore ISI Group,3.2
+2026-09-09,UBER,Wedbush,24.6
+2026-09-09,VMC,Wells Fargo,1
+2026-09-09,VRSK,Barclays,28.2
+2026-09-09,WST,UBS,22.9
+2026-09-10,ABBV,HSBC,25.4
+2026-09-10,AZO,Wells Fargo,20.5
+2026-09-10,COO,Citigroup,15.7
+2026-09-10,COO,JP Morgan,11.8
+2026-09-10,COO,Piper Sandler,13.7
+2026-09-10,COO,Stifel,34.9
+2026-09-10,COO,Wells Fargo,17.6
+2026-09-10,FDS,Morgan Stanley,7.4
+2026-09-10,HD,Bernstein,11.6
+2026-09-10,HLT,Truist Securities,2.5
+2026-09-10,HOOD,Bernstein,42
+2026-09-10,HST,Truist Securities,22.1
+2026-09-10,KMB,Wells Fargo,6.4
+2026-09-10,LULU,BMO Capital,-29.1
+2026-09-10,MAR,Truist Securities,8.9
+2026-09-10,MRVL,Piper Sandler,18.4
+2026-09-10,MTD,UBS,14.4
+2026-09-10,NKE,BMO Capital,-18.8
+2026-09-10,NVDA,Piper Sandler,36
+2026-09-10,PCAR,RBC Capital,22.3
+2026-09-10,QCOM,Piper Sandler,10.4
+2026-09-10,QCOM,Rosenblatt,36.5
+2026-09-10,SYK,Citigroup,31.1
+2026-09-10,TMO,UBS,22.4
+2026-09-10,TRGP,Scotiabank,5.8
+2026-09-10,TSN,Piper Sandler,26.2
+2026-09-10,TTD,RBC Capital,8.6
+2026-09-10,UAL,UBS,29.9
+2026-09-10,ULTA,BMO Capital,7.9
+2026-09-10,WAT,UBS,23.2
+2026-09-10,WMB,Scotiabank,13.4
+2026-09-10,WMT,DA Davidson,24.3
+2026-09-11,ADBE,Evercore ISI Group,3.2
+2026-09-11,ADBE,Jefferies,13.6
+2026-09-11,AWK,UBS,15.3
+2026-09-11,CLX,Citigroup,8.4
+2026-09-11,CLX,Wells Fargo,0.6
+2026-09-11,COO,Baird,11.6
+2026-09-11,COO,Mizuho,37.2
+2026-09-11,CRL,Evercore ISI Group,15.9
+2026-09-11,DAL,UBS,24.7
+2026-09-11,DHI,Wells Fargo,5.1
+2026-09-11,DPZ,TD Cowen,-0.1
+2026-09-11,DRI,Citigroup,18.7
+2026-09-11,FDS,Deutsche Bank,12.9
+2026-09-11,KMB,Piper Sandler,18.9
+2026-09-11,LEN,Wells Fargo,0.5
+2026-09-11,LH,UBS,22.4
+2026-09-11,LUV,UBS,23.5
+2026-09-11,MAS,Wells Fargo,19.4
+2026-09-11,META,JP Morgan,25.5
+2026-09-11,MGM,UBS,12.7
+2026-09-11,NKE,Morgan Stanley,-15.8
+2026-09-11,ORCL,TD Cowen,46
+2026-09-11,ORCL,UBS,52
+2026-09-11,OXY,Evercore ISI Group,14.7
+2026-09-11,PAYX,TD Cowen,1.7
+2026-09-11,PFG,UBS,3.7
+2026-09-11,PHM,Wells Fargo,22.7
+2026-09-11,PKG,B of A Securities,10.4
+2026-09-11,PSA,Barclays,18.2
+2026-09-11,SNPS,Wells Fargo,18.9
+2026-09-11,SWK,Wells Fargo,4.8
+2026-09-11,TEL,Wells Fargo,5.4
+2026-09-11,TRGP,Mizuho,9.6
+2026-09-11,TRGP,Stifel,16.5
+2026-09-11,URI,JP Morgan,17
+2026-09-11,WMB,Stifel,16.9
+2026-09-11,WMT,BTIG,31.8
+2026-09-11,YUM,Wells Fargo,20.5
+2026-09-12,ADBE,BMO Capital,11.5
+2026-09-12,ADBE,Piper Sandler,3.2
+2026-09-12,ADBE,RBC Capital,30.1
+2026-09-12,APD,Keybanc,
+2026-09-12,ATO,JP Morgan,8.6
+2026-09-12,CPRT,Baird,18.7
+2026-09-12,CRWD,Wedbush,20.2
+2026-09-12,CTVA,Keybanc,
+2026-09-12,DAL,Barclays,19.6
+2026-09-12,DDOG,Wedbush,24
+2026-09-12,HOOD,Citizens,45.6
+2026-09-12,HPQ,RBC Capital,0.2
+2026-09-12,IFF,Keybanc,
+2026-09-12,LH,Barclays,6.3
+2026-09-12,LUV,Barclays,46.2
+2026-09-12,LYB,Keybanc,
+2026-09-12,MCD,TD Cowen,11
+2026-09-12,NOW,Needham,18.8
+2026-09-12,ORCL,Cantor Fitzgerald,72.7
+2026-09-12,ORCL,Guggenheim,143.3
+2026-09-12,PANW,Wedbush,18.2
+2026-09-12,PLTR,Rosenblatt,33.8
+2026-09-12,PPG,Keybanc,24.7
+2026-09-12,SHW,Keybanc,
+2026-09-12,UAL,Barclays,47.4
+2026-09-12,VRTX,JP Morgan,7.3
+2026-09-14,ACN,Morgan Stanley,-8.2
+2026-09-14,APA,UBS,3
+2026-09-14,CHTR,Morgan Stanley,2.9
+2026-09-14,COP,UBS,21.7
+2026-09-14,DVN,Raymond James,30.9
+2026-09-14,ECHO,Morgan Stanley,44.4
+2026-09-14,EIX,Jefferies,-6.2
+2026-09-14,EOG,UBS,22.8
+2026-09-14,GM,UBS,32.8
+2026-09-14,HAL,UBS,16.9
+2026-09-14,HOOD,Deutsche Bank,22.9
+2026-09-14,KR,Telsey Advisory Group,26.5
+2026-09-14,LEN,B of A Securities,-11.2
+2026-09-14,LII,Deutsche Bank,26.8
+2026-09-14,MCD,Deutsche Bank,18
+2026-09-14,MCD,Morgan Stanley,21.1
+2026-09-14,MKC,TD Cowen,6.3
+2026-09-14,MPC,Morgan Stanley,13
+2026-09-14,MPC,Raymond James,11
+2026-09-14,NKE,Baird,19.7
+2026-09-14,PSX,Morgan Stanley,7.9
+2026-09-14,PSX,Raymond James,14
+2026-09-14,SLB,UBS,34.1
+2026-09-14,ULTA,DA Davidson,14.7
+2026-09-14,VLO,Morgan Stanley,4
+2026-09-14,VLO,Raymond James,13.8
+2026-09-15,ACN,Wells Fargo,1.8
+2026-09-15,APTV,JP Morgan,26.8
+2026-09-15,AZO,Citigroup,16.3
+2026-09-15,CCL,Wells Fargo,57.8
+2026-09-15,CHTR,Wolfe Research,-16.8
+2026-09-15,CMS,Jefferies,10.8
+2026-09-15,COIN,Compass Point,-3.6
+2026-09-15,DOC,Jefferies,3.7
+2026-09-15,FANG,UBS,22.1
+2026-09-15,GIS,Evercore ISI Group,5.2
+2026-09-15,HPE,Evercore ISI Group,16.6
+2026-09-15,KHC,Evercore ISI Group,-3.9
+2026-09-15,KR,Evercore ISI Group,15.2
+2026-09-15,LULU,Argus Research,
+2026-09-15,MAA,Evercore ISI Group,3
+2026-09-15,MCD,RBC Capital,12.5
+2026-09-15,META,Wedbush,-1.4
+2026-09-15,NFLX,Evercore ISI Group,38.6
+2026-09-15,NKE,Citigroup,5.8
+2026-09-15,NKE,Telsey Advisory Group,19.4
+2026-09-15,OXY,UBS,7.9
+2026-09-15,OXY,Wells Fargo,32
+2026-09-15,PPL,RBC Capital,3.7
+2026-09-15,RMD,RBC Capital,15.7
+2026-09-15,SOLV,BTIG,6.1
+2026-09-15,SPG,Evercore ISI Group,6.9
+2026-09-15,STZ,Jefferies,8.8
+2026-09-15,UDR,Evercore ISI Group,22.3
+2026-09-15,VICI,Morgan Stanley,16
+2026-09-16,ALL,Mizuho,16.1
+2026-09-16,AON,Mizuho,20.6
+2026-09-16,BMY,Piper Sandler,28
+2026-09-16,BRO,Mizuho,25
+2026-09-16,CCL,Stifel,56.3
+2026-09-16,CMCSA,UBS,10.7
+2026-09-16,COO,Needham,34.3
+2026-09-16,COST,Oppenheimer,28.7
+2026-09-16,CRM,Mizuho,11.2
+2026-09-16,ESS,UBS,3.7
+2026-09-16,GLW,Mizuho,22.3
+2026-09-16,INTC,Tigress Financial,43
+2026-09-16,JKHY,Raymond James,28.2
+2026-09-16,KEY,Stephens & Co.,19.8
+2026-09-16,KR,Guggenheim,6.6
+2026-09-16,MAA,UBS,3.5
+2026-09-16,META,Citigroup,17.7
+2026-09-16,NEM,RBC Capital,23.2
+2026-09-16,PLTR,UBS,46.7
+2026-09-16,TDY,Needham,26.1
+2026-09-16,TRGP,Morgan Stanley,25.5
+2026-09-16,UDR,UBS,17.4
+2026-09-16,ULTA,Wells Fargo,-3
+2026-09-16,VTRS,Piper Sandler,-22.4
+2026-09-16,WTW,Mizuho,18.7
+2026-09-17,CCL,Barclays,45.4
+2026-09-17,CIEN,Barclays,56.3
+2026-09-17,CMCSA,B of A Securities,47.1
+2026-09-17,COIN,BTIG,41.3
+2026-09-17,COST,B of A Securities,22.3
+2026-09-17,CPT,Scotiabank,0.2
+2026-09-17,CTVA,BMO Capital,16.7
+2026-09-17,CTVA,RBC Capital,26.5
+2026-09-17,CTVA,UBS,10.6
+2026-09-17,FANG,Raymond James,33.5
+2026-09-17,FRT,Scotiabank,11.6
+2026-09-17,GNRC,Roth Capital,8.9
+2026-09-17,GOOGL,Evercore ISI Group,29.1
+2026-09-17,IQV,Morgan Stanley,-1.2
+2026-09-17,JBHT,B of A Securities,26.6
+2026-09-17,JBHT,Barclays,19.4
+2026-09-17,JBHT,Raymond James,25.7
+2026-09-17,JBHT,UBS,10.6
+2026-09-17,JBHT,Wells Fargo,27.8
+2026-09-17,JKHY,RBC Capital,12.6
+2026-09-17,MAA,Scotiabank,1.9
+2026-09-17,MAA,Truist Securities,7.6
+2026-09-17,MCD,BTIG,39.8
+2026-09-17,META,Rosenblatt,29.8
+2026-09-17,ON,Stifel,10.1
+2026-09-17,REG,Scotiabank,10.4
+2026-09-17,SPG,Scotiabank,8.1
+2026-09-17,STZ,TD Cowen,21.5
+2026-09-17,TDG,JP Morgan,29.3
+2026-09-17,TDG,RBC Capital,23.3
+2026-09-17,TSLA,Goldman Sachs,-2
+2026-09-17,UDR,Scotiabank,9.9
+2026-09-17,UNP,UBS,19.5
+2026-09-17,YUM,Baird,18.8
+2026-09-18,ADSK,RBC Capital,38.2
+2026-09-18,BALL,JP Morgan,6.3
+2026-09-18,BSX,Citigroup,16.1
+2026-09-18,CIEN,Needham,46.1
+2026-09-18,CIEN,Rosenblatt,47.5
+2026-09-18,CRM,BMO Capital,16.7
+2026-09-18,CRM,Canaccord Genuity,22.8
+2026-09-18,CRM,Cantor Fitzgerald,22.8
+2026-09-18,CRM,Citigroup,7.7
+2026-09-18,CRM,Guggenheim,22.8
+2026-09-18,CRM,RBC Capital,2.4
+2026-09-18,CRM,Stifel,22.8
+2026-09-18,CTSH,Deutsche Bank,13.1
+2026-09-18,CTSH,TD Cowen,-12.7
+2026-09-18,D,Morgan Stanley,3.1
+2026-09-18,DTE,Morgan Stanley,9.1
+2026-09-18,DUK,Morgan Stanley,7.7
+2026-09-18,DXCM,Truist Securities,15.3
+2026-09-18,EIX,Morgan Stanley,9
+2026-09-18,EQT,Stephens & Co.,41.1
+2026-09-18,ETR,Morgan Stanley,-5
+2026-09-18,FE,Morgan Stanley,7.7
+2026-09-18,GEHC,BTIG,22.9
+2026-09-18,GNRC,Canaccord Genuity,79
+2026-09-18,GNRC,JP Morgan,26.5
+2026-09-18,GNRC,Stephens & Co.,59.9
+2026-09-18,INTU,Evercore ISI Group,27.8
+2026-09-18,INTU,Mizuho,37.4
+2026-09-18,INTU,Stifel,-4.1
+2026-09-18,INTU,TD Cowen,10.6
+2026-09-18,JBHT,Baird,22.8
+2026-09-18,LDOS,B of A Securities,3.4
+2026-09-18,MCD,Citigroup,24.9
+2026-09-18,MKC,JP Morgan,26.3
+2026-09-18,NEE,Morgan Stanley,37.6
+2026-09-18,NKE,UBS,15.8
+2026-09-18,NRG,Morgan Stanley,50.4
+2026-09-18,O,Mizuho,6.7
+2026-09-18,ON,Cantor Fitzgerald,28.5
+2026-09-18,ON,Mizuho,35.6
+2026-09-18,ON,Needham,65.6
+2026-09-18,ON,Rosenblatt,21.4
+2026-09-18,ON,Truist Securities,7.1
+2026-09-18,ON,Wells Fargo,21.4
+2026-09-18,PANW,Bernstein,-6.6
+2026-09-18,PCG,Morgan Stanley,50.5
+2026-09-18,PEG,Morgan Stanley,25.1
+2026-09-18,PGR,"Keefe, Bruyette & Woods",16.8
+2026-09-18,PNW,Morgan Stanley,-6.1
+2026-09-18,PPL,Morgan Stanley,16.9
+2026-09-18,SO,Morgan Stanley,-1.5
+2026-09-18,SRE,Morgan Stanley,22.7
+2026-09-18,STLD,JP Morgan,11
+2026-09-18,TSN,JP Morgan,21
+2026-09-18,WBD,Barclays,3.3
+2026-09-18,XEL,Morgan Stanley,13.3
+2026-09-19,AEE,Morgan Stanley,5.3
+2026-09-19,AEP,Morgan Stanley,5.8
+2026-09-19,ATO,Morgan Stanley,11.2
+2026-09-19,CEG,Morgan Stanley,41.8
+2026-09-19,CMS,Morgan Stanley,16.9
+2026-09-19,CNP,Morgan Stanley,-0.7
+2026-09-19,CRM,Citizens,29
+2026-09-19,CRM,Wells Fargo,2.4
+2026-09-19,CTVA,Argus Research,13.1
+2026-09-19,ED,Morgan Stanley,-9
+2026-09-19,GOOGL,Tigress Financial,35.9
+2026-09-19,HBAN,Evercore ISI Group,13.5
+2026-09-19,INTU,RBC Capital,23
+2026-09-19,KMI,Jefferies,5.8
+2026-09-19,LEN,Barclays,-10.5
+2026-09-19,LEN,Evercore ISI Group,-0.3
+2026-09-19,LEN,RBC Capital,-11.8
+2026-09-19,LLY,Guggenheim,11.7
+2026-09-19,MU,RBC Capital,52.8
+2026-09-19,NFLX,Wells Fargo,-20
+2026-09-19,NUE,Wells Fargo,10.1
+2026-09-19,ORLY,DA Davidson,25.3
+2026-09-19,STLD,Wells Fargo,4.9
+2026-09-19,SYK,Canaccord Genuity,38.5
+2026-09-19,TTD,Guggenheim,-10

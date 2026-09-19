@@ -1,0 +1,227 @@
+[
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "+16.4%",
+    "date": "03/03/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/09/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$16.00",
+    "projected": "+24.3%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$13.00",
+    "projected": "+1%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+47.6%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$16.00",
+    "projected": "+18.7%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+8.8%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$11.00",
+    "projected": "-14.5%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+12%",
+    "date": "03/19/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$15.00",
+    "projected": "+8.6%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/09/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$10.00",
+    "projected": "-24.2%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$13.00",
+    "projected": "-10%",
+    "date": "09/19/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+160.7%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": null,
+    "date": "12/11/2025"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+42.2%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+0.1%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "Loop Capital",
+    "firm": "Loop Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+6.3%",
+    "date": "02/27/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$16.00",
+    "projected": "+24.3%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "-6.8%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "-6.8%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+55.4%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+8.8%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "-6.8%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "JMP Securities",
+    "firm": "JMP Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": null,
+    "date": "09/30/2025"
+  }
+]

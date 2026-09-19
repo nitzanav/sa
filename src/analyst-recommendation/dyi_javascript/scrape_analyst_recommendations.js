@@ -55,7 +55,11 @@ const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "analyst_projections_count",
   "projections",
 ];
+const PER_DATE_AND_SYMBOL_VALUE_COLUMNS = PER_DATE_AND_SYMBOL_CSV_COLUMNS.filter(
+  (column) => column !== "date" && column !== "symbol",
+);
 const AGGREGATION_WINDOW_DAYS = 7;
+const JOINT_ANALYST_RECOMMENDATION_DIR = "data/analyst_recomendation";
 
 function isoDate(date) {
   const [month, day, year] = date.split("/");
@@ -194,6 +198,75 @@ export const allSymbolsPerDateAndSymbol7dAggregationWindowCsv = (all) =>
     flattenAllSymbolsPerDateAndSymbol7dAggregationWindow(all).map(csvRow),
   );
 
+export function jointSourceNames(
+  allBySource,
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+) {
+  const present = new Set(Object.keys(allBySource));
+  return sources.map((source) => source.name).filter((name) => present.has(name));
+}
+
+export function jointPerDateAndSymbolCsvColumns(sourceNames) {
+  return [
+    "date",
+    "symbol",
+    ...sourceNames.flatMap((name) =>
+      PER_DATE_AND_SYMBOL_VALUE_COLUMNS.map((column) => `${name}_${column}`),
+    ),
+  ];
+}
+
+export function joinPerDateAndSymbolBySource(sourceRowsByName, sourceNames) {
+  const names = sourceNames ?? Object.keys(sourceRowsByName);
+  const joint = new Map();
+  for (const name of names) {
+    for (const row of sourceRowsByName[name] ?? []) {
+      const key = `${row.date}\0${row.symbol}`;
+      if (!joint.has(key)) joint.set(key, { date: row.date, symbol: row.symbol });
+      const joined = joint.get(key);
+      for (const column of PER_DATE_AND_SYMBOL_VALUE_COLUMNS) {
+        joined[`${name}_${column}`] = row[column];
+      }
+    }
+  }
+  return [...joint.values()].sort(
+    (a, b) => a.date.localeCompare(b.date) || a.symbol.localeCompare(b.symbol),
+  );
+}
+
+function sourceRowsByName(allBySource, sourceNames, flatten) {
+  return Object.fromEntries(
+    sourceNames.map((name) => [name, flatten(allBySource[name] ?? [])]),
+  );
+}
+
+function jointPerDateAndSymbolCsv(allBySource, flatten, sources) {
+  const sourceNames = jointSourceNames(allBySource, sources);
+  return formatCsv(
+    jointPerDateAndSymbolCsvColumns(sourceNames),
+    joinPerDateAndSymbolBySource(
+      sourceRowsByName(allBySource, sourceNames, flatten),
+      sourceNames,
+    ).map(csvRow),
+  );
+}
+
+export const joinAllSymbolsPerDateAndSymbolCsv = (
+  allBySource,
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+) =>
+  jointPerDateAndSymbolCsv(allBySource, flattenAllSymbolsPerDateAndSymbol, sources);
+
+export const joinAllSymbolsPerDateAndSymbol7dAggregationWindowCsv = (
+  allBySource,
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+) =>
+  jointPerDateAndSymbolCsv(
+    allBySource,
+    flattenAllSymbolsPerDateAndSymbol7dAggregationWindow,
+    sources,
+  );
+
 export async function writeAggregatedAnalystRecommendations(dir, all) {
   await writeJsonFile(`${dir}/all_symbols.json`, flattenAllSymbols(all));
   await writeTextFile(`${dir}/all_symbols.csv`, allSymbolsCsv(all));
@@ -204,6 +277,21 @@ export async function writeAggregatedAnalystRecommendations(dir, all) {
   await writeTextFile(
     `${dir}/all_symbols_per_date_and_symbol_7d_aggregation_window.csv`,
     allSymbolsPerDateAndSymbol7dAggregationWindowCsv(all),
+  );
+}
+
+export async function writeJointAnalystRecommendations(
+  allBySource,
+  sources = ANALYST_RECOMMENDATION_SOURCES,
+) {
+  const dir = JOINT_ANALYST_RECOMMENDATION_DIR;
+  await writeTextFile(
+    `${dir}/all_symbols_per_date_and_symbol.csv`,
+    joinAllSymbolsPerDateAndSymbolCsv(allBySource, sources),
+  );
+  await writeTextFile(
+    `${dir}/all_symbols_per_date_and_symbol_7d_aggregation_window.csv`,
+    joinAllSymbolsPerDateAndSymbol7dAggregationWindowCsv(allBySource, sources),
   );
 }
 
@@ -239,6 +327,7 @@ export async function scrapeAnalystRecommendations(
       exchanges,
     });
   }
+  await writeJointAnalystRecommendations(all, sources);
   return all;
 }
 

@@ -1,0 +1,47 @@
+[
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+17.3%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+13.9%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+12.8%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+6.1%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-1.9%",
+    "date": "05/07/2026"
+  }
+]

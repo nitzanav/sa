@@ -1,0 +1,20 @@
+[
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$134.00",
+    "projected": "+44.4%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+60.3%",
+    "date": "09/08/2026"
+  }
+]

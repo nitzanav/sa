@@ -1,0 +1,56 @@
+[
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+2.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$134.00",
+    "projected": "+8.1%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$162.00",
+    "projected": "+15.3%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+0.4%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$147.00",
+    "projected": "+8.1%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "-5.1%",
+    "date": "01/20/2026"
+  }
+]

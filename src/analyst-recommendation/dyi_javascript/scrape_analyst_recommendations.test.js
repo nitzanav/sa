@@ -8,6 +8,8 @@ import {
   flattenAllSymbols,
   flattenAllSymbolsPerDateAndSymbol,
   flattenAllSymbolsPerDateAndSymbol7dAggregationWindow,
+  joinPerDateAndSymbolBySource,
+  jointPerDateAndSymbolCsvColumns,
   scrapeAnalystRecommendations,
   selectAnalystRecommendationSources,
 } from "./scrape_analyst_recommendations.js";
@@ -184,6 +186,43 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
         "2026-09-10,CCC,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
       ].join("\n"),
     );
+    const jointHeader =
+      "date,symbol,google_average_projected,google_std_projected,google_analyst_projections_count,google_projections,yahoo_average_projected,yahoo_std_projected,yahoo_analyst_projections_count,yahoo_projections";
+    expect(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/all_symbols_per_date_and_symbol.csv"),
+        "utf8",
+      ),
+    ).toBe(
+      [
+        jointHeader,
+        "2026-09-04,AAA,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,BBB,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,CCC,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-10,AAA,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
+        "2026-09-10,BBB,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
+        "2026-09-10,CCC,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
+      ].join("\n"),
+    );
+    expect(
+      readFileSync(
+        join(
+          cwd,
+          "data/analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+        ),
+        "utf8",
+      ),
+    ).toBe(
+      [
+        jointHeader,
+        "2026-09-04,AAA,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,BBB,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-04,CCC,,,,,78.1,,1,Rosenblatt:78.1",
+        "2026-09-10,AAA,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,BBB,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,CCC,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+      ].join("\n"),
+    );
   } finally {
     yahooFetchSpy.mockRestore();
     openSpy.mockRestore();
@@ -311,6 +350,79 @@ test("flattenAllSymbolsPerDateAndSymbol7dAggregationWindow rolls last 7 days", (
       std_projected: null,
       analyst_projections_count: 1,
       projections: "Cam:30",
+    },
+  ]);
+});
+
+test("joinPerDateAndSymbolBySource prefixes source columns on shared date and symbol", () => {
+  expect(
+    jointPerDateAndSymbolCsvColumns(["google", "yahoo"]),
+  ).toEqual([
+    "date",
+    "symbol",
+    "google_average_projected",
+    "google_std_projected",
+    "google_analyst_projections_count",
+    "google_projections",
+    "yahoo_average_projected",
+    "yahoo_std_projected",
+    "yahoo_analyst_projections_count",
+    "yahoo_projections",
+  ]);
+  expect(
+    joinPerDateAndSymbolBySource(
+      {
+        google: [
+          {
+            date: "2026-09-10",
+            symbol: "AAA",
+            average_projected: 10,
+            std_projected: null,
+            analyst_projections_count: 1,
+            projections: "Ann:10",
+          },
+        ],
+        yahoo: [
+          {
+            date: "2026-09-04",
+            symbol: "AAA",
+            average_projected: 20,
+            std_projected: null,
+            analyst_projections_count: 1,
+            projections: "Bo:20",
+          },
+          {
+            date: "2026-09-10",
+            symbol: "AAA",
+            average_projected: 30,
+            std_projected: 1.4142,
+            analyst_projections_count: 2,
+            projections: "Bo:20|Cam:40",
+          },
+        ],
+      },
+      ["google", "yahoo"],
+    ),
+  ).toEqual([
+    {
+      date: "2026-09-04",
+      symbol: "AAA",
+      yahoo_average_projected: 20,
+      yahoo_std_projected: null,
+      yahoo_analyst_projections_count: 1,
+      yahoo_projections: "Bo:20",
+    },
+    {
+      date: "2026-09-10",
+      symbol: "AAA",
+      google_average_projected: 10,
+      google_std_projected: null,
+      google_analyst_projections_count: 1,
+      google_projections: "Ann:10",
+      yahoo_average_projected: 30,
+      yahoo_std_projected: 1.4142,
+      yahoo_analyst_projections_count: 2,
+      yahoo_projections: "Bo:20|Cam:40",
     },
   ]);
 });

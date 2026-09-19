@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "Wesley Brooks",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$36.00",
+    "projected": "+23%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Bret Jordan",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+60.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Gary Prestopino",
+    "firm": "Barrington",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$40.00",
+    "projected": "+36.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Craig Kennison",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "+29.8%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Jash Patwa",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$40.00",
+    "projected": "+36.6%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "John Babcock",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-14.6%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Dmitriy Pozdnyakov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$39.00",
+    "projected": "+33.2%",
+    "date": "06/26/2026"
+  }
+]

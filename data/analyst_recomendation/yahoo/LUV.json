@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+3.1%",
+    "date": "03/26/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "-13.5%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+23.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "-32%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+27.5%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$58.00",
+    "projected": "+46.2%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "+32%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "-6.4%",
+    "date": "06/16/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+11.9%",
+    "date": "07/25/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+13.7%",
+    "date": "07/08/2026"
+  }
+]

@@ -12,7 +12,7 @@ test("config loads defaults", () => {
     delayMultiple: 2,
     maxAttempts: 5,
   });
-  expect(config.cache).toEqual({ enabled: true, ttl: 86400000 });
+  expect(config.cache).toEqual({ enabled: true, ttl: 864000000 });
   expect(config.rateLimit.minDelay).toBe(1000);
   expect(config.rateLimit.maxDelay).toBe(10000);
   expect(config.http.timeout).toBe(60000);
@@ -20,6 +20,14 @@ test("config loads defaults", () => {
   expect(config.analyst_recommendations.limit).toBe(3);
   expect(config.sharadar.chunkSize).toBe(30);
   expect(config.sharadar.api_key).toEqual(expect.any(String));
+});
+
+test("config loads Playwright scrape defaults", () => {
+  expect(config.playwright).toEqual({
+    headless: true,
+    locale: "en-US",
+    viewport: { width: 1440, height: 900 },
+  });
 });
 
 test("NODE_CONFIG overrides nested values", () => {

@@ -1,0 +1,56 @@
+[
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": null,
+    "date": "10/11/2025"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "-2.9%",
+    "date": "02/18/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": null,
+    "date": "10/02/2025"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+1.7%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+9.5%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "-1.1%",
+    "date": "07/22/2026"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "-8.9%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "-14.5%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+4.8%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+0.9%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-3%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "-14.6%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+0.7%",
+    "date": "01/17/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "-3.9%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": null,
+    "date": "10/28/2025"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+3.5%",
+    "date": "01/21/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "-9.6%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+4.4%",
+    "date": "08/07/2026"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$277.00",
+    "projected": "+22.6%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+21.7%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Ryan Halsted",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$276.00",
+    "projected": "+22.2%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+15.1%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "George Hill",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$261.00",
+    "projected": "+15.5%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Steven Valiquette",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+10.7%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Charles Rhyee",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+24%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+19.5%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+12.9%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Daniel Grosslight",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+24%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$277.00",
+    "projected": "+22.6%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Michael Cherny",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$292.00",
+    "projected": "+29.3%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Ryan Daniels",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+15.1%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$274.00",
+    "projected": "+21.3%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "William O'Neil",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "06/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+9.8%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Steven Silver",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+9.8%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Eric Coldwell",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+9.8%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Max Smock",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "04/28/2026"
+  }
+]

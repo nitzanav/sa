@@ -1,10 +1,132 @@
 date,symbol,average_projected,std_projected,analyst_projections_count,projections
+2026-02-03,AES,7.7,,1,Julien Dumoulin Smith:7.7
+2026-02-09,ADBE,8.7,,1,Ben Reitzes:8.7
+2026-02-20,AES,31.25,33.3047,2,David Arcaro:54.8|Lilyanna Yang:7.7
+2026-02-25,ABBV,-13,,1,Nico Chen:-13
+2026-02-25,AFL,1.9,,1,Elyse Greenspan:1.9
+2026-03-03,AES,1,,1,Anthony Crowdell:1
+2026-03-05,AES,1,,1,Nicholas Amicucci:1
+2026-03-12,ADBE,85.1,,1,Bradley Sills:85.1
+2026-03-13,ADBE,24.8,,1,Brad Zelnick:24.8
+2026-03-19,ACN,37.9,,1,Arun Viswanathan:37.9
+2026-03-19,AFL,2.8,,1,Wilma Burdis:2.8
+2026-03-20,ACN,51.25,44.3356,2,Jim Kelleher:82.6|Phani Kanumuri:19.9
+2026-03-26,A,-7.3,,1,Jack Meehan:-7.3
+2026-04-09,ABT,18.6,,1,Unknown Analyst:18.6
+2026-04-17,ABT,16.0667,2.829,3,Bruce Jackson:17.7|Rick Wise:17.7|Suraj Kalia:12.8
+2026-04-20,ABBV,-0.8,,1,Unknown Analyst:-0.8
+2026-04-20,ABT,26.5,19.3747,2,Anthony Petrone:12.8|Matt Miksic:40.2
+2026-04-21,ABT,-9.8,,1,Narumi Nakagiri:-9.8
+2026-04-28,AMD,-54.5,,1,Ross Seymore:-54.5
+2026-04-30,AFL,-5.9,,1,Thomas Gallagher:-5.9
+2026-05-01,AOS,23.4,,1,Michael Halloran:23.4
+2026-05-04,AMD,-38.1,,1,Frank Lee CFA:-38.1
+2026-05-06,AMD,-15.35,8.9803,2,Jay Goldberg:-21.7|Suji Desilva:-9
+2026-05-07,AES,7.7,,1,Nicholas Campanella:7.7
+2026-05-12,AMD,-9,,1,Louis Miscioscia:-9
+2026-05-13,ABBV,-5.4,,1,Jasper Hellweg:-5.4
+2026-05-18,AMD,-1.7,,1,Ben Reitzes:-1.7
+2026-05-21,AFL,8,,1,Bob Huang:8
+2026-05-26,A,-0.3,,1,Catherine Ramsey Schulte:-0.3
+2026-05-26,AFL,12.3,,1,John Barnidge:12.3
+2026-05-28,A,2.2,,1,Brandon Couillard:2.2
 2026-05-29,MMM,12.9,,1,Julian Mitchell:12.9
+2026-05-31,ABT,10.8,,1,David Roman:10.8
+2026-06-01,A,-13.7,,1,Michael Polark:-13.7
+2026-06-03,A,5.4,,1,Sidharth Sahoo:5.4
+2026-06-10,AOS,32.2,,1,Bryan Blair:32.2
 2026-06-10,MMM,0.7,,1,Joe O'Dea:0.7
+2026-06-12,ADBE,17.5875,27.3539,8,Alex Zukin:-24.5|Andrew Sherman:-1.4|Arti Vula:36.8|Egor Tolmachev:0.6|Elizabeth Porter:46.9|Gregg Moskowitz:-1.4|Keith Weiss:46.9|Mark Murphy:36.8
+2026-06-15,ACN,0.9,,1,Surinder Thind:0.9
+2026-06-16,ACN,19.9,,1,Meha Pau:19.9
+2026-06-17,ADBE,34.85,28.4964,2,Dan Bergstrom:14.7|Paul Chew:55
+2026-06-17,AMD,9.2,,1,David Dai CFA:9.2
+2026-06-18,ACN,0.85,3.8891,2,Amit Daryanani:-1.9|David Koning:3.6
+2026-06-19,ACN,-18.2,,1,Keith Bachman:-18.2
+2026-06-21,ACN,10.15,17.7484,2,David Grossman:22.7|Tien Tsin Huang:-2.4
+2026-06-22,ACN,11.4833,25.0952,6,Arvind Ramnani:-18.2|Dan Dolev:23.2|Daniel Perlin:-4.6|David Paige:-4.6|Kevin Mcveigh:49.9|Sean Kennedy:23.2
+2026-06-23,ABBV,6,0,2,Nicholas Lorusso:6|Tyler Van Buren:6
+2026-06-29,ABT,7.9,,1,Unknown Analyst:7.9
+2026-06-30,ABT,18.6,,1,David Rescott:18.6
 2026-07-01,MMM,-20,,1,Unknown Analyst:-20
+2026-07-02,ADBE,24,,1,Stephen Bersey:24
+2026-07-06,ABT,9.8,,1,Vijay Kumar:9.8
+2026-07-08,AFL,7.1,,1,Michael Ward CFA:7.1
+2026-07-09,ABBV,6,,1,Chris Schott:6
+2026-07-10,ABBV,5.25,1.0607,2,Michael Harvey:6|Tim Anderson:4.5
+2026-07-10,AES,1,,1,Charles Minervino:1
+2026-07-10,AFL,-6.7,,1,Suneet Kamath:-6.7
+2026-07-13,ABBV,-1.6,,1,Michael Yee:-1.6
+2026-07-14,ACN,-23.7,,1,James Friedman:-23.7
+2026-07-15,ACN,-27.5,,1,Sachin Mittal:-27.5
+2026-07-16,ABT,27.5,,1,Shagun Singh Chadha:27.5
+2026-07-17,ABT,32.4,,1,Unknown Analyst:32.4
+2026-07-20,ADBE,20.7,,1,Bhavtosh Vajpayee:20.7
+2026-07-21,ABBV,-7.7,,1,Asad Haider:-7.7
 2026-07-21,MMM,1.65,29.7692,2,Deane Dray:-19.4|Nigel Coe:22.7
+2026-07-22,ABBV,-14.9,,1,Courtney Breen:-14.9
+2026-07-22,AFL,-5,,1,Andrew Kligerman:-5
 2026-07-22,MMM,24.5333,8.0214,3,Amit Mehrotra:33.1|Joe Ritchie:23.3|Nicole Deblase:17.2
+2026-07-28,ABT,22.6,0,2,Danielle Antalffy:22.6|Patrick Wood:22.6
 2026-07-28,MMM,17.5,10.748,2,Brett Linzey:9.9|Chigusa Katoku:25.1
+2026-07-31,ABBV,7.9,,1,Carter Gould:7.9
+2026-07-31,AOS,13.4,9.7139,3,Andrew Kaplowitz:12.8|Nathan Jones:23.4|Susan Maklari:4
+2026-08-03,ABBV,10.2333,1.5695,3,Gary Nachman:9.7|Terence Flynn:12|Vamil Divan:9
+2026-08-03,AOS,18.1,,1,Matt Summerville:18.1
+2026-08-04,AMD,36.3833,45.2834,6,Blayne Curtis:18.3|C J Muse:27.4|James Schneider:16.5|Joshua Buchalter:22.9|Tristan Gerra:127.6|Vijay Rakesh:5.6
+2026-08-05,AMD,12.475,15.3333,12,Cody Acree:24.7|Gil Luria:0.1|Harlan Sur:0.1|Jim Kelleher:13.8|John Vinh:32|Joseph Moore:-15.3|Kevin Cassidy:27.4|Mark Lipacis:5.4|Srini Pajjuri:-1.7|Thomas O'Malley:21.1|Timothy Arcuri:32.9|Unknown Analyst:9.2
+2026-08-06,AMD,15.6,16.6877,2,Aaron Rakers:27.4|Amanda Tan:3.8
+2026-08-07,AFL,-14.5,,1,Alex Scott:-14.5
+2026-08-10,ABBV,-1.6,,1,Gavin Clark-Gartner:-1.6
+2026-08-10,AFL,9.7,13.435,2,Paul Newsome:19.2|Yaron Kinar:0.2
 2026-08-10,MMM,15.4,,1,Christopher Snyder:15.4
+2026-08-11,ABBV,13.5,,1,Emily Field:13.5
+2026-08-11,AFL,4.1,5.5154,2,Pablo Singzon:0.2|Ryan Krueger:8
+2026-08-13,ABBV,13.5,,1,Alexandria Hammond:13.5
+2026-08-13,ABT,27.5,,1,Michael Polark:27.5
+2026-08-17,ABBV,13.5,,1,Mohit Bansal:13.5
+2026-08-19,AFL,-2.8,11.5966,2,Tracy Benguigui:-11|Wesley Carmichael:5.4
+2026-08-20,ABBV,14.7,,1,David Amsellem:14.7
+2026-08-20,ABT,22.1,13.1522,2,Marie Thibault:31.4|Travis Steed:12.8
+2026-08-20,AMD,0.1,0,2,Harsh Kumar:0.1|Unknown Analyst:0.1
+2026-08-21,ABT,32.4,,1,Matthew Taylor:32.4
+2026-08-21,AMD,18.3,,1,Suji Desilva:18.3
+2026-08-21,AOS,5.8,,1,Tomohiko Sano:5.8
+2026-08-24,ACN,3.6,,1,Bryan Keane:3.6
+2026-08-25,ACN,17.2,,1,Darrin Peller:17.2
+2026-08-25,AMD,16.7,,1,Simon Leopold:16.7
+2026-08-26,A,18.2,,1,Dan Leonard:18.2
+2026-08-26,ABT,15.7,,1,Adam Maeder:15.7
+2026-08-27,A,12.775,8.05,8,Casey Woodring:21.4|Daniel Brennan:15|David Westenberg:-4.1|Evie Koslosky:11.8|Luke Sergott:11.8|Michael Ryskin:15|Patrick B Donnelly:21.4|Vijay Kumar:9.9
+2026-08-28,A,15,,1,Evan Stampler:15
+2026-08-30,A,15,,1,Daniel Arias:15
+2026-09-01,A,11.8,,1,Kallum Titchmarsh:11.8
+2026-09-02,A,-0.9,,1,Tycho Peterson:-0.9
+2026-09-03,ABBV,13.5,,1,Evan Seigerman:13.5
 2026-09-03,MMM,-11.5,,1,Varun Govindaraj:-11.5
+2026-09-04,ABBV,3.4667,4.3879,3,Geoff Meacham:-1.6|Steve Scala:6|William Katz:6
+2026-09-08,A,5.4,,1,Unknown Analyst:5.4
+2026-09-08,ABBV,6.7,,1,Jason Gerberry:6.7
+2026-09-08,ABT,9.8,,1,Larry Biegelsen:9.8
+2026-09-08,AMD,4.7,,1,Atif Malik:4.7
+2026-09-09,A,10.2,6.7882,2,Doug Schenkel:5.4|Eve Burstein:15
+2026-09-09,AMD,9.2,,1,Unknown Analyst:9.2
+2026-09-10,ABBV,11.65,10.6773,2,Luisa Hector:4.1|Rajesh Kumar:19.2
+2026-09-10,ABT,22.6,,1,Joanne Wuensch:22.6
+2026-09-10,ADBE,8.7,,1,Keith Bachman:8.7
+2026-09-11,A,-0.9,,1,Blayne Curtis:-0.9
+2026-09-11,ABBV,6,,1,Louise Chen:6
+2026-09-11,ACN,25.4,,1,James Schneider:25.4
+2026-09-11,ADBE,5.3937,13.9582,16,Adam Wood:-3.4|Billy Fitzsimmons:0.6|Brent Thill:10.7|Derrick Wood:-1.4|Gil Luria:16.7|J. Parker Lane:-9.4|Jackson Ader:-21.5|Karl Keirstead:2.6|Kirk Materne:0.6|Matthew Swanson:26.8|Michael Turrin:8.7|Robert Oliver:0.6|Saiyi He:20.7|Saket Kalia:18.7|Samik Chatterjee:26.8|Tal Liani:-11.5
+2026-09-11,AMD,15.6,,1,Ruben Roy:15.6
 2026-09-11,MMM,11.7,,1,Andrew Kaplowitz:11.7
+2026-09-14,ABBV,6,,1,Trung Huynh:6
+2026-09-14,ABT,32.4,,1,Josh Jennings:32.4
+2026-09-14,ACN,0.6,7.3539,2,James Faucette:-4.6|Jason Kupferberg:5.8
+2026-09-14,ADBE,10.4,35.82,3,Gabriela Borges:-19.5|Mark Moerdler:50.1|Tyler Radke:0.6
+2026-09-14,AMD,15.6,3.8184,2,Stacy Rasgon:18.3|Vivek Arya:12.9
+2026-09-15,ACN,-5.7,,1,Bryan Bergin:-5.7
+2026-09-15,AMD,8.65,0.7778,2,David O'Connor:9.2|William Stein:8.1
+2026-09-17,A,15.7,,1,John Dunigan:15.7
+2026-09-18,ACN,-4.6,,1,Nate Svensson:-4.6
+2026-09-18,AOS,19.9,,1,Unknown Analyst:19.9

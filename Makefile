@@ -45,7 +45,7 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500
+        download_fortune_500 backtest
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -68,7 +68,8 @@ analyst-recommendation-js-test:
 symbols_exchange:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/symbols-exchange/fetch_symbols_exchange.js
 
-# Scrapes Google and Yahoo into data/analyst_recomendation/<source>/.
+# Scrapes Google and Yahoo into data/analyst_recomendation/<source>/, then joins
+# per-date/symbol CSVs into data/analyst_recomendation/all_symbols_per_date_and_symbol*.csv.
 # Override limit:
 #   NODE_CONFIG='{"analyst_recommendations": {"limit": 10}}' make scrape_analyst_recommendations
 # Run one source only (google or yahoo):
@@ -85,3 +86,10 @@ scrape_analyst_recommendations-test:
 download_fortune_500:
 	@mkdir -p data/fortune_500
 	@curl -fsSL https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv -o data/fortune_500/symbols.csv
+
+# ---------------------------------------------------------------------------
+# Backtests
+# ---------------------------------------------------------------------------
+
+backtest:
+	@./penv python VectorBT/backtest.py

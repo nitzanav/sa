@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+5.5%",
+    "date": "01/12/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+5.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+5.8%",
+    "date": "09/19/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+0.7%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": null,
+    "date": "11/18/2025"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$153.00",
+    "projected": "+16.8%",
+    "date": "03/06/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$148.00",
+    "projected": "+8.4%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "-0.1%",
+    "date": "02/28/2026"
+  },
+  {
+    "analyst": "Ladenburg Thalmann",
+    "firm": "Ladenburg Thalmann",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$143.00",
+    "projected": "+11.1%",
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+6.1%",
+    "date": "03/12/2026"
+  }
+]

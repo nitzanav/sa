@@ -48,6 +48,19 @@ test(
         ),
       ),
     ).toBe(true);
+    expect(
+      existsSync(
+        join(repoRoot, "data/analyst_recomendation/all_symbols_per_date_and_symbol.csv"),
+      ),
+    ).toBe(true);
+    expect(
+      existsSync(
+        join(
+          repoRoot,
+          "data/analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv",
+        ),
+      ),
+    ).toBe(true);
   },
   config.http.timeout * 2,
 );

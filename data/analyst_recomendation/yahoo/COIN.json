@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "HC Wainwright & Co.",
+    "firm": "HC Wainwright & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+73.1%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "+15.6%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+96%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Compass Point",
+    "firm": "Compass Point",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "-3.6%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+50.2%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+30.6%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$184.00",
+    "projected": "+24.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$193.00",
+    "projected": "+26.1%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+41.3%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+44.1%",
+    "date": "07/23/2026"
+  }
+]

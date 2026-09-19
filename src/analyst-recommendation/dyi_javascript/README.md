@@ -6,10 +6,18 @@ the same aggregated files under `data/analyst_recomendation/<source>/`:
 - `data/analyst_recomendation/google/`
 - `data/analyst_recomendation/yahoo/`
 
+After every source finishes, it also writes joined CSVs at
+`data/analyst_recomendation/all_symbols_per_date_and_symbol.csv` and
+`data/analyst_recomendation/all_symbols_per_date_and_symbol_7d_aggregation_window.csv`.
+Those keep shared `date` and `symbol` columns and prefix the rest
+(`average_projected`, `std_projected`, `analyst_projections_count`, `projections`)
+with the source name (`google_`, `yahoo_`).
+
 Shared fetch/aggregation lives in `scrape_analyst_recommendation.js` and
-`scrape_analyst_recommendations.js`. Source-specific parsing, URLs, and ticker
-extraction live in `google_analyst_recommendation.js` and
-`yahoo_analyst_recommendation.js`.
+`scrape_analyst_recommendations.js`. Source-specific parsing, URLs, ticker
+extraction, and fetch live in `google_analyst_recommendation.js` and
+`yahoo_analyst_recommendation.js`. Google fetch uses `httpRequestScrape`.
+Yahoo fetch uses `httpRequestScrapePlaywright` so the hydrated page is cached.
 
 A single URL still prints JSON rows to stdout. The CLI picks the source from the
 URL; `scrapeAnalystRecommendation` always takes an explicit source. See
@@ -41,5 +49,7 @@ valid. `date` must fall between `2025-01-01` and today (inclusive).
 
 Fetching follows the [Oxylabs Google Finance recipe](https://github.com/oxylabs/how-to-scrape-google-finance):
 set `OXYLABS_USERNAME` and `OXYLABS_PASSWORD` to route requests through the Web
-Scraper API. Without them the page is fetched directly, which works because the
-table is in the server-rendered HTML.
+Scraper API. Without them Google is fetched directly (`httpRequestScrape`).
+Yahoo is fetched with Playwright (`httpRequestScrapePlaywright`) because the
+analyst table is client-rendered after consent. Run `npx playwright install chromium`
+once.
