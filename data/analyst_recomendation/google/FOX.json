@@ -1,0 +1,29 @@
+[
+  {
+    "analyst": "Matthew Condon",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$95.00",
+    "projected": "+64.5%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "David Joyce",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Jessica Reif Ehrlich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "-6.5%",
+    "date": "07/08/2026"
+  }
+]

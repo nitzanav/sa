@@ -1,0 +1,38 @@
+[
+  {
+    "analyst": "Ygal Arounian",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$341.00",
+    "projected": "+12.5%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Alexei Gogolev",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$316.00",
+    "projected": "+4.2%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Jamesmichael Sherman-Lewis",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+5.6%",
+    "date": "06/02/2026"
+  },
+  {
+    "analyst": "Robert Oliver",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+17.1%",
+    "date": "04/24/2026"
+  }
+]

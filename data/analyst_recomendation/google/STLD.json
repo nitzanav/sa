@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Bill Peterson",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$272.00",
+    "projected": "+15.6%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Nick Cash",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$299.00",
+    "projected": "+27.1%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Katja Jancic",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$296.00",
+    "projected": "+25.8%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$257.00",
+    "projected": "+9.2%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+10.5%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$272.00",
+    "projected": "+15.6%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+16.9%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Andrew Jones CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$276.00",
+    "projected": "+17.3%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Carlos De Alba",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+10.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Samuel McKinney",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$262.00",
+    "projected": "+11.4%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$270.00",
+    "projected": "+14.8%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "Alexander Hacking",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+8.4%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Chris LaFemina",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$220.00",
+    "projected": "-6.5%",
+    "date": "04/21/2026"
+  }
+]

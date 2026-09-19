@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Tim Mulrooney",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Manish Somaiya",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,047.00",
+    "projected": "+39.6%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Adam Bubes",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$885.00",
+    "projected": "+18%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Brent Thielman",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,200.00",
+    "projected": "+60%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Avinatan Jaroslawicz",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,065.00",
+    "projected": "+42%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Justin Hauke",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$918.00",
+    "projected": "+22.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Adam Thalhimer",
+    "firm": "Thompson Davis",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,200.00",
+    "projected": "+60%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$825.00",
+    "projected": "+10%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,100.00",
+    "projected": "+46.6%",
+    "date": "05/28/2026"
+  },
+  {
+    "analyst": "Brian Brophy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$918.00",
+    "projected": "+22.4%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Sangita Jain",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "03/02/2026"
+  }
+]

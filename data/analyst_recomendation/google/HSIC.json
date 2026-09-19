@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Jason Bednar",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+22.6%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+29.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "David Larsen",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+29.7%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "John Stansel",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+20.2%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Michael Petusky",
+    "firm": "Barrington",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+22.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Jeff Johnson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+28.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Steven Valiquette",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+1.4%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Vik Chopra",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+0.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+10.8%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+12%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Daniel Grosslight",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+32%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+17.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Brandon Vazquez",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+23.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$85.00",
+    "projected": "+0.2%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "-24.6%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+2.5%",
+    "date": "02/25/2026"
+  },
+  {
+    "analyst": "Michael Cherny",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+2.5%",
+    "date": "02/24/2026"
+  }
+]

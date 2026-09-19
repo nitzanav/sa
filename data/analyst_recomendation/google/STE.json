@@ -1,0 +1,38 @@
+[
+  {
+    "analyst": "Brett Fishbin",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$269.00",
+    "projected": "+31.2%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Patrick Wood",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+31.7%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Michael Matson",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Jason Bednar",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+34.1%",
+    "date": "08/07/2026"
+  }
+]

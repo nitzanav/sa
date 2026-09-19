@@ -1,0 +1,344 @@
+[
+  {
+    "analyst": "Sharon Zackfia",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "John Ivankoe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+16.9%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$124.00",
+    "projected": "+29.4%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Chris O`Cull",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$124.00",
+    "projected": "+29.4%",
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Andrew Charles",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "+25.2%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Joshua Buchalter",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "+25.2%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Jacob Aiken Phillips",
+    "firm": "Melius Research",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Peter Saleh",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+20%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Nick Setyan",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+20%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Margaret-May Binshtok",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Matt Curtis",
+    "firm": "D.A. Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+14.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "David Palmer",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+25.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Lauren Silberman",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "+31.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Andrew Strelzik",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+35.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "David Tarantino CFA",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+29.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Sara Senatore",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$143.00",
+    "projected": "+49.2%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Dennis Geiger",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+16.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jon Tower",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+16.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Logan Reich",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+20%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Brian Harbour",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+20%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Zachary Fadem",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$125.00",
+    "projected": "+30.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Danilo Gargiulo",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+14.8%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Gregory Francfort",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+1.2%",
+    "date": "04/28/2026"
+  },
+  {
+    "analyst": "Brian Bittner",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Brian Mullan",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+14.8%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Jeff Bernstein",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$116.00",
+    "projected": "+21%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Christopher Carril",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+16.9%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+9.6%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "D.A. Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+1.2%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Ivan Feinseth",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$122.00",
+    "projected": "+27.3%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Andy Barish",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$92.00",
+    "projected": "-4%",
+    "date": "04/13/2026"
+  },
+  {
+    "analyst": "Stephen J McManus",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$84.00",
+    "projected": "-12.3%",
+    "date": "03/30/2026"
+  },
+  {
+    "analyst": "Greg Badishkanian",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "03/09/2026"
+  },
+  {
+    "analyst": "Alison Fok",
+    "firm": "DBS",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-38.4%",
+    "date": "02/10/2026"
+  },
+  {
+    "analyst": "Eric Gonzalez",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "01/30/2026"
+  }
+]

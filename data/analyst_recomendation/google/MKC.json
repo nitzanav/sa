@@ -1,0 +1,101 @@
+[
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+33.4%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Thomas Palmer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$62.00",
+    "projected": "+27.3%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Scott Marks CFA",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$62.00",
+    "projected": "+27.3%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$55.00",
+    "projected": "+12.9%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Andrew Lazar",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+12.9%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+39.6%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Matthew Smith, CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+12.9%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+6.7%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Robert Dickerson",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$60.00",
+    "projected": "+23.2%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "04/14/2026"
+  }
+]

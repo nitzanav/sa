@@ -1,0 +1,146 @@
+[
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+7.3%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Michael Lavery",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+20.6%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$162.00",
+    "projected": "+65.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "+7.3%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+6.3%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Taylor Conrad",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+22.6%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Javier Escalante",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+17.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+14.4%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$116.00",
+    "projected": "+18.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Anna Lizzul",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$122.00",
+    "projected": "+24.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Georgy Vashchenko",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$121.00",
+    "projected": "+23.6%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Citi",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "-8%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "+22.6%",
+    "date": "05/14/2026"
+  },
+  {
+    "analyst": "Andy Sim",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "+13.4%",
+    "date": "04/28/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "-8%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": "+45.1%",
+    "date": "02/13/2026"
+  }
+]

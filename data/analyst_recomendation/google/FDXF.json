@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$133.00",
+    "projected": "+10.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Brian Ossenbeck",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$160.00",
+    "projected": "+33.2%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$187.00",
+    "projected": "+55.7%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Patrick Brown",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Jeff Kauffman",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$190.00",
+    "projected": "+58.2%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$190.00",
+    "projected": "+58.2%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Bascome Majors",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$180.00",
+    "projected": "+49.8%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$180.00",
+    "projected": "+49.8%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Jordan Alliger",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$186.00",
+    "projected": "+54.8%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Fadi Chamoun",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+24.9%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Lucas Servera",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "Stephanie Moore",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$200.00",
+    "projected": "+66.5%",
+    "date": "06/26/2026"
+  },
+  {
+    "analyst": "J. Bruce Chan",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$160.00",
+    "projected": "+33.2%",
+    "date": "06/05/2026"
+  },
+  {
+    "analyst": "Jonathan Chappell",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$168.00",
+    "projected": "+39.8%",
+    "date": "06/04/2026"
+  }
+]

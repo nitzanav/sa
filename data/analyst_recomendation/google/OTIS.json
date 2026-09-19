@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$78.00",
+    "projected": "+13.8%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+31.3%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+57.6%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+9.5%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Nicholas Housden",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+31.3%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+38.6%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+41.6%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Joe O'Dea",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+16.8%",
+    "date": "06/05/2026"
+  },
+  {
+    "analyst": "Nigel Coe",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+51.8%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+12.4%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "Patrick Baumann",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+28.4%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "03/19/2026"
+  },
+  {
+    "analyst": "Lewis Merrick",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$109.00",
+    "projected": "+59.1%",
+    "date": "03/03/2026"
+  }
+]

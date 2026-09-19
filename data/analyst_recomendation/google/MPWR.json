@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "William Stein",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,889.00",
+    "projected": "+55.1%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2,000.00",
+    "projected": "+64.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Tore Svanberg",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,800.00",
+    "projected": "+47.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Kelsey Chia",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,820.00",
+    "projected": "+49.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,800.00",
+    "projected": "+47.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2,100.00",
+    "projected": "+72.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "John Vinh",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2,100.00",
+    "projected": "+72.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Joshua Buchalter",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,850.00",
+    "projected": "+51.9%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Kevin Cassidy",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,575.00",
+    "projected": "+29.3%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Rick Schafer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,700.00",
+    "projected": "+39.6%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Sebastien Naji",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Melissa Fairbanks",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,800.00",
+    "projected": "+47.8%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Ross Seymore",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,850.00",
+    "projected": "+51.9%",
+    "date": "05/01/2026"
+  }
+]

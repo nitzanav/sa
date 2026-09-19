@@ -1,0 +1,200 @@
+[
+  {
+    "analyst": "Craig Wong-Pan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$262.00",
+    "projected": "+16.4%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Laura Sutcliffe",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+6.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Brett Fishbin",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$267.00",
+    "projected": "+18.7%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Jackson Philips",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$230.00",
+    "projected": "+2.2%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+4.4%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Adam Maeder",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+0%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "David Rescott",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$213.00",
+    "projected": "-5.3%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Nathan Treybeck",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$215.00",
+    "projected": "-4.4%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Brandon Vazquez",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Michael Matson",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Lyanne Harrison",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+42.2%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "David Bailey",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+2.2%",
+    "date": "07/13/2026"
+  },
+  {
+    "analyst": "Matthew Taylor",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+0%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "+0%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$235.00",
+    "projected": "+4.4%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$227.00",
+    "projected": "+0.9%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Chris Cooper",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+13.3%",
+    "date": "04/13/2026"
+  },
+  {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+20%",
+    "date": "01/30/2026"
+  },
+  {
+    "analyst": "Mark Wilson CFA",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$314.00",
+    "projected": "+39.6%",
+    "date": "01/30/2026"
+  }
+]

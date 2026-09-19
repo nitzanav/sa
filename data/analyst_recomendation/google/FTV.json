@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "+16.4%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Brandon Knutson‏",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "+7.3%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+23.6%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$70.00",
+    "projected": "+27.3%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+23.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Deane Dray",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+14.5%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "+7.3%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+14.5%",
+    "date": "05/26/2026"
+  },
+  {
+    "analyst": "Chigusa Katoku",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "+16.4%",
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "+16.4%",
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Joe O'Dea",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+18.2%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Scott Graham",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "03/08/2026"
+  },
+  {
+    "analyst": "Robert Mason CFA",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+18.2%",
+    "date": "02/05/2026"
+  }
+]

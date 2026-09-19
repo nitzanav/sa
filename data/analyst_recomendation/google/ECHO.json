@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$134.00",
+    "projected": "+43.4%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$150.00",
+    "projected": "+60.5%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Bryan Kraft",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+26.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+25.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+39.1%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Ric Prentiss",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$115.00",
+    "projected": "+23%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Pierre Ferragu",
+    "firm": "New Street",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$161.00",
+    "projected": "+72.3%",
+    "date": "05/13/2026"
+  }
+]

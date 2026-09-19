@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Kannan Venkateshwar",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$8.00",
+    "projected": "-21.6%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Annick Mass",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "+17.5%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Joseph Bonner",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$10.00",
+    "projected": "-2.1%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Daniel Kurnos",
+    "firm": "Benchmark Co.",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$16.00",
+    "projected": "+56.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Patrick Sholl",
+    "firm": "Barrington",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Jessica Reif Ehrlich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$9.00",
+    "projected": "-11.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Laura Martin",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$8.00",
+    "projected": "-21.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Doug Creutz",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$8.00",
+    "projected": "-21.6%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Michael Morris",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Laurent Yoon",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "+17.5%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Steven Cahall",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$7.00",
+    "projected": "-31.4%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "David Plaus",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$11.00",
+    "projected": "+7.7%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Daniel Duran",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$14.00",
+    "projected": "+37.1%",
+    "date": "05/07/2026"
+  },
+  {
+    "analyst": "Bryan Kraft",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "+17.5%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Thomas Yeh",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$11.00",
+    "projected": "+7.7%",
+    "date": "02/26/2026"
+  }
+]

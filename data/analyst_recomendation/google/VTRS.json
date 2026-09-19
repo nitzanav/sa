@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "David Amsellem",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$13.00",
+    "projected": "-23.3%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Daniel Clark",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$20.00",
+    "projected": "+18%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Jasper Hellweg",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+18%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$22.00",
+    "projected": "+29.8%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Chris Schott",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+6.2%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Salveen Richter",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+18%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Ashwani Verma",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+35.7%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Jason Gerberry",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$14.00",
+    "projected": "-17.4%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Les Sulewski",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$20.00",
+    "projected": "+18%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+0.3%",
+    "date": "03/20/2026"
+  }
+]

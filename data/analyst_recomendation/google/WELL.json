@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Joe Dickstein",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$275.00",
+    "projected": "+20.2%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Michael Mueller",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$251.00",
+    "projected": "+9.7%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$251.00",
+    "projected": "+9.7%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "John Kilichowski",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$266.00",
+    "projected": "+16.2%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$259.00",
+    "projected": "+13.2%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$271.00",
+    "projected": "+18.4%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Austin Wurschmidt",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+20.2%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Farrell Granath",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$292.00",
+    "projected": "+27.6%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+20.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Michael Carroll",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "James Kammert",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Vikram Malhotra",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$268.00",
+    "projected": "+17.1%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$245.00",
+    "projected": "+7%",
+    "date": "07/13/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$226.00",
+    "projected": "-1.3%",
+    "date": "06/16/2026"
+  },
+  {
+    "analyst": "Dave Rodgers",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$226.00",
+    "projected": "-1.3%",
+    "date": "06/16/2026"
+  },
+  {
+    "analyst": "Jonathan Petersen",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+8.4%",
+    "date": "05/12/2026"
+  },
+  {
+    "analyst": "Andy Barish",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+63.8%",
+    "date": "04/13/2026"
+  }
+]

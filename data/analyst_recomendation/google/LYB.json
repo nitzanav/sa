@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Salvator Tiano",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+16.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+16.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+1.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$56.00",
+    "projected": "-9.6%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+16.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+3.3%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+9.8%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+6.6%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$80.00",
+    "projected": "+29.2%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Michael Sison",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$70.00",
+    "projected": "+13%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Abigail Eberts",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$70.00",
+    "projected": "+13%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Hassan Ahmed",
+    "firm": "Alembic Global",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$83.00",
+    "projected": "+34%",
+    "date": "07/02/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/18/2026"
+  },
+  {
+    "analyst": "David Begleiter",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+29.2%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Eric Boyes",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+13%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Laurence Alexander",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+13%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "Frank Mitsch",
+    "firm": "Fermium Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$74.00",
+    "projected": "+19.5%",
+    "date": "03/09/2026"
+  },
+  {
+    "analyst": "Kevin McCarthy",
+    "firm": "Vertical Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$75.00",
+    "projected": "+21.1%",
+    "date": "03/09/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$73.00",
+    "projected": "+17.9%",
+    "date": "03/04/2026"
+  }
+]
