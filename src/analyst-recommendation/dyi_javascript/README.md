@@ -30,6 +30,7 @@ make analyst-recommendation-js URL='https://www.google.com/finance/beta/quote/NV
 make analyst-recommendation-js URL='https://finance.yahoo.com/quote/NVDA/analyst-insights/'
 make scrape_analyst_recommendations
 SOURCE=yahoo make scrape_analyst_recommendations
+SKIP_EXISTING=1 make scrape_analyst_recommendations
 make analyst-recommendation-js-test
 ```
 

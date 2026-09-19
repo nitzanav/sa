@@ -18,6 +18,7 @@ test("config loads defaults", () => {
   expect(config.http.timeout).toBe(60000);
   expect(() => new Headers(config.http.headers)).not.toThrow();
   expect(config.analyst_recommendations.limit).toBe(3);
+  expect(config.analyst_recommendations.skip_existing).toBe(false);
   expect(config.sharadar.chunkSize).toBe(30);
   expect(config.sharadar.api_key).toEqual(expect.any(String));
 });

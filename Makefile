@@ -72,13 +72,17 @@ symbols_exchange:
 # per-date/symbol CSVs into data/analyst_recomendation/all_symbols_per_date_and_symbol*.csv.
 # Override limit:
 #   NODE_CONFIG='{"analyst_recommendations": {"limit": 10}}' make scrape_analyst_recommendations
+# Skip symbols whose JSON already exists:
+#   SKIP_EXISTING=1 make scrape_analyst_recommendations
+#   NODE_CONFIG='{"analyst_recommendations": {"skip_existing": true}}' make scrape_analyst_recommendations
 # Run one source only (google or yahoo):
 #   SOURCE=yahoo make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
 SOURCE ?=
+SKIP_EXISTING ?=
 
 scrape_analyst_recommendations: symbols_exchange
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE))
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
 
 scrape_analyst_recommendations-test:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e

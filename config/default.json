@@ -16,7 +16,8 @@
     "viewport": { "width": 1440, "height": 900 }
   },
   "analyst_recommendations": {
-    "limit": 3
+    "limit": 3,
+    "skip_existing": false
   },
   "sharadar": {
     "api_key": "e4d977beb06a10b53b7af7da1d2a1830",

@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from "node:fs";
 import config from "../../common/config.js";
 import { formatCsv, readCsv } from "../../common/csv.js";
 import { logger } from "../../common/logger.js";
@@ -29,6 +30,15 @@ function requestedSourceNames(argv = process.argv.slice(2)) {
   const fromConfig = config.analyst_recommendations?.source;
   if (!fromConfig) return null;
   return Array.isArray(fromConfig) ? fromConfig : [String(fromConfig)];
+}
+
+export function skipExistingAnalystRecommendations(argv = process.argv.slice(2)) {
+  const flag = argv.find(
+    (arg) => arg === "--skip-existing" || arg.startsWith("--skip-existing="),
+  );
+  if (flag === "--skip-existing" || flag === "--skip-existing=true") return true;
+  if (flag === "--skip-existing=false") return false;
+  return Boolean(config.analyst_recommendations?.skip_existing);
 }
 
 export function selectAnalystRecommendationSources(
@@ -295,18 +305,28 @@ export async function writeJointAnalystRecommendations(
   );
 }
 
-export async function scrapeAnalystRecommendationSource(source, { symbols, exchanges }) {
+export async function scrapeAnalystRecommendationSource(
+  source,
+  { symbols, exchanges },
+  { skipExisting = skipExistingAnalystRecommendations() } = {},
+) {
   const dir = analystRecommendationDir(source);
   const all = {};
   for (const symbol of symbols) {
     logger.addContext({ source: source.name, symbol });
+    const jsonFile = `${dir}/${symbol}.json`;
+    if (skipExisting && existsSync(jsonFile)) {
+      logger.info({ message: "skip existing json", fileName: jsonFile });
+      all[symbol] = JSON.parse(readFileSync(jsonFile, "utf8"));
+      continue;
+    }
     const listings = await scrapeAnalystRecommendation(
       source,
       source.urlFor(symbol, exchanges[symbol]),
       { operationName: `${source.name}_${symbol}` },
       { fileName: `${dir}/${symbol}.html` },
     );
-    await writeJsonFile(`${dir}/${symbol}.json`, listings);
+    await writeJsonFile(jsonFile, listings);
     all[symbol] = listings;
   }
   await writeAggregatedAnalystRecommendations(dir, all);
@@ -315,6 +335,7 @@ export async function scrapeAnalystRecommendationSource(source, { symbols, excha
 
 export async function scrapeAnalystRecommendations(
   sources = ANALYST_RECOMMENDATION_SOURCES,
+  options = {},
 ) {
   const symbols = readCsv("data/fortune_500/symbols.csv")
     .map((row) => row.Symbol)
@@ -322,15 +343,18 @@ export async function scrapeAnalystRecommendations(
   const exchanges = readSymbolsExchange();
   const all = {};
   for (const source of sources) {
-    all[source.name] = await scrapeAnalystRecommendationSource(source, {
-      symbols,
-      exchanges,
-    });
+    all[source.name] = await scrapeAnalystRecommendationSource(
+      source,
+      { symbols, exchanges },
+      options,
+    );
   }
   await writeJointAnalystRecommendations(all, sources);
   return all;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  await scrapeAnalystRecommendations(selectAnalystRecommendationSources());
+  await scrapeAnalystRecommendations(selectAnalystRecommendationSources(), {
+    skipExisting: skipExistingAnalystRecommendations(),
+  });
 }

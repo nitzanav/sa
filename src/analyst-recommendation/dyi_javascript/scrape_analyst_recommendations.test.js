@@ -12,6 +12,7 @@ import {
   jointPerDateAndSymbolCsvColumns,
   scrapeAnalystRecommendations,
   selectAnalystRecommendationSources,
+  skipExistingAnalystRecommendations,
 } from "./scrape_analyst_recommendations.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
@@ -31,6 +32,13 @@ test("selectAnalystRecommendationSources rejects unknown names", () => {
   expect(() =>
     selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, ["bing"]),
   ).toThrow('Unknown analyst recommendation source(s): bing');
+});
+
+test("skipExistingAnalystRecommendations reads flag then config", () => {
+  expect(skipExistingAnalystRecommendations([])).toBe(false);
+  expect(skipExistingAnalystRecommendations(["--skip-existing"])).toBe(true);
+  expect(skipExistingAnalystRecommendations(["--skip-existing=true"])).toBe(true);
+  expect(skipExistingAnalystRecommendations(["--skip-existing=false"])).toBe(false);
 });
 
 test("iterates first analyst_recommendations.limit symbols and writes outputs", async () => {
@@ -223,6 +231,112 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
         "2026-09-10,CCC,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
       ].join("\n"),
     );
+  } finally {
+    yahooFetchSpy.mockRestore();
+    openSpy.mockRestore();
+    fetchSpy.mockRestore();
+    process.chdir(originalCwd);
+  }
+});
+
+test("skip_existing reuses symbol json and does not refetch", async () => {
+  const html = readFileSync(
+    new URL("./__fixtures__/analyst.html", import.meta.url),
+    "utf8",
+  );
+  const yahooHtml = readFileSync(
+    new URL("./__fixtures__/yahoo_analyst.html", import.meta.url),
+    "utf8",
+  );
+  const cwd = mkdtempSync(join(tmpdir(), "skip-existing-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  mkdirSync(join(cwd, "data/analyst_recomendation/google"), { recursive: true });
+  mkdirSync(join(cwd, "data/analyst_recomendation/yahoo"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\nCCC,Gamma\nDDD,Delta\n",
+  );
+  writeFileSync(
+    join(cwd, "data/symbols_exchange.csv"),
+    "ticker,exchange\nAAA,NYSE\nBBB,NASDAQ\nCCC,NYSE\nDDD,NYSE\n",
+  );
+  const cachedGoogle = [
+    {
+      analyst: "Cached Google",
+      firm: "Cached",
+      recommendation: "Buy",
+      action: "Maintained",
+      price_target: "$1.00",
+      projected: "+1%",
+      date: "01/01/2026",
+    },
+  ];
+  const cachedYahoo = [
+    {
+      analyst: "Cached Yahoo",
+      firm: "Cached",
+      recommendation: "Hold",
+      action: "Maintained",
+      price_target: "$2.00",
+      projected: "+2%",
+      date: "01/02/2026",
+    },
+  ];
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/google/AAA.json"),
+    JSON.stringify(cachedGoogle),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/yahoo/AAA.json"),
+    JSON.stringify(cachedYahoo),
+  );
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    text: async () => html,
+  });
+  const yahooFetchSpy = jest
+    .spyOn(yahooAnalystRecommendationSource, "fetch")
+    .mockResolvedValue(yahooHtml);
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
+  try {
+    await scrapeAnalystRecommendations(ANALYST_RECOMMENDATION_SOURCES, {
+      skipExisting: true,
+    });
+    expect(fetchSpy).toHaveBeenCalledTimes(2);
+    expect(yahooFetchSpy).toHaveBeenCalledTimes(2);
+    expect(
+      JSON.parse(
+        readFileSync(join(cwd, "data/analyst_recomendation/google/AAA.json"), "utf8"),
+      ),
+    ).toEqual(cachedGoogle);
+    expect(
+      JSON.parse(
+        readFileSync(join(cwd, "data/analyst_recomendation/yahoo/AAA.json"), "utf8"),
+      ),
+    ).toEqual(cachedYahoo);
+    const googleAll = JSON.parse(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/google/all_symbols.json"),
+        "utf8",
+      ),
+    );
+    expect(googleAll.filter((row) => row.ticker === "AAA")).toEqual([
+      { date: "2026-01-01", ticker: "AAA", analyst: "Cached Google", percent: 1 },
+    ]);
+    expect(googleAll.filter((row) => row.ticker === "BBB")).toHaveLength(2);
+    const yahooAll = JSON.parse(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/yahoo/all_symbols.json"),
+        "utf8",
+      ),
+    );
+    expect(yahooAll.filter((row) => row.ticker === "AAA")).toEqual([
+      { date: "2026-01-02", ticker: "AAA", analyst: "Cached Yahoo", percent: 2 },
+    ]);
   } finally {
     yahooFetchSpy.mockRestore();
     openSpy.mockRestore();
