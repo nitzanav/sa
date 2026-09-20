@@ -1,13 +1,14 @@
 """
 VectorBT simulations of buy signals from data/signals.csv.
 
-Each CSV row is a $5K long. Starting cash is large enough to take every signal.
+Each taken signal opens one $5K long per ticker. If a ticker already has an
+open position, later signals for that ticker are skipped (no add-on buy) but
+still extend the exit rules below.
 
-1. Sell 30 trading days after the last signal that arrived while the lot
-   was still held. A new signal cancels that sell and pushes it out 30 days.
+1. Sell 30 trading days after the last signal received while still held.
 2. Same 30-day rule, or sell earlier when close reaches 75% of the analyst
-   projected upside. A new signal resets the projection target and adds
-   another 30 days.
+   projected upside. A new signal while held resets the projection target and
+   adds another 30 days.
 """
 
 from pathlib import Path
@@ -231,131 +232,111 @@ def unique_tickers(signals):
     return signals["ticker"].drop_duplicates().tolist()
 
 
-def signal_positions(close, signals):
-    """One column per signal so each $5K lot has its own entry/exit."""
+def _signal_events(close, signals, ticker):
+    """Return (bar_loc, average_projected) for one ticker, sorted by date."""
     dates = bar_dates(close.index)
-    frames = {}
-    rows = []
-    close_columns = close.columns if isinstance(close, pd.DataFrame) else [close.name]
-    for row in signals.itertuples(index=False):
-        ticker = row.ticker
-        if ticker not in close_columns:
-            continue
-        series = close[ticker] if isinstance(close, pd.DataFrame) else close
+    events = []
+    for row in signals.loc[signals["ticker"] == ticker].itertuples(index=False):
         loc = dates.get_indexer([pd.Timestamp(row.date)], method="bfill")[0]
-        if loc < 0:
-            continue
-        column = f"{ticker}_{pd.Timestamp(row.date).date()}_{len(rows)}"
-        frames[column] = series
-        rows.append(
-            {
-                "column": column,
-                "ticker": ticker,
-                "entry_loc": loc,
-                "average_projected": float(row.average_projected),
-            }
-        )
-    if not frames:
+        if loc >= 0:
+            events.append((int(loc), float(row.average_projected)))
+    return sorted(events, key=lambda item: item[0])
+
+
+def build_entries_exits(close, signals, hold_days, use_target=False, target_frac=TARGET_FRACTION):
+    """One column per ticker. Skip buys when already in; repeat signals extend exits."""
+    tickers = [t for t in unique_tickers(signals) if t in close.columns]
+    if not tickers:
         raise RuntimeError("No signals aligned to price data")
-    close_wide = pd.DataFrame(frames, index=close.index)
-    return close_wide, pd.DataFrame(rows)
 
+    close_wide = close[tickers].copy()
+    entries = pd.DataFrame(False, index=close_wide.index, columns=tickers)
+    exits = pd.DataFrame(False, index=close_wide.index, columns=tickers)
+    n_signals = 0
+    n_skipped = 0
+    n_buys = 0
 
-def entries_from_meta(close_wide, meta):
-    entries = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
-    col_index = {name: i for i, name in enumerate(close_wide.columns)}
-    for row in meta.itertuples(index=False):
-        entries.iat[row.entry_loc, col_index[row.column]] = True
-    return entries
+    for col, ticker in enumerate(tickers):
+        prices = close_wide[ticker].to_numpy()
+        signal_map = {}
+        for loc, proj in _signal_events(close, signals, ticker):
+            signal_map[loc] = proj
+            n_signals += 1
 
+        in_position = False
+        entry_loc = None
+        deadline = None
+        target = None
+        n = len(prices)
 
-def _extend_deadline(signal_locs, entry_loc, hold_days):
-    """Push the sell date out hold_days after each signal that arrives while still held."""
-    deadline = entry_loc + hold_days
-    for loc in signal_locs:
-        if loc < entry_loc:
-            continue
-        if loc <= deadline:
-            deadline = loc + hold_days
-        else:
-            break
-    return deadline
-
-
-def exits_after_last_signal(close_wide, meta, hold_days):
-    """Sell each lot hold_days after the last signal received while it was still open."""
-    exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
-    n = len(close_wide)
-    col_index = {name: i for i, name in enumerate(close_wide.columns)}
-    for _, group in meta.groupby("ticker"):
-        locs = sorted(int(loc) for loc in group["entry_loc"])
-        for row in group.itertuples(index=False):
-            deadline = _extend_deadline(locs, int(row.entry_loc), hold_days)
-            if deadline < n:
-                exits.iat[deadline, col_index[row.column]] = True
-    return exits
-
-
-def exits_after_last_or_target(close_wide, meta, hold_days, target_frac):
-    """Sell on the 30-day last-signal rule, or sooner at 75% of projected upside.
-
-    A new signal for the same ticker, received while the lot is still open,
-    resets the target to 75% of that signal's projected move from that day's
-    close and pushes the time stop out another hold_days.
-    """
-    exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
-    n = len(close_wide)
-    col_index = {name: i for i, name in enumerate(close_wide.columns)}
-
-    for _, group in meta.groupby("ticker"):
-        group = group.sort_values("entry_loc")
-        prices = close_wide[group["column"].iloc[0]].to_numpy()
-        signal_locs = [int(loc) for loc in group["entry_loc"]]
-        loc_to_proj = {
-            int(loc): float(proj)
-            for loc, proj in zip(group["entry_loc"], group["average_projected"])
-        }
-        signal_loc_set = set(signal_locs)
-
-        for row in group.itertuples(index=False):
-            entry = int(row.entry_loc)
-            deadline = entry + hold_days
-            target = prices[entry] * (1.0 + target_frac * float(row.average_projected) / 100.0)
-            for t in range(entry + 1, n):
-                if t in signal_loc_set:
+        for t in range(n):
+            if t in signal_map:
+                proj = signal_map[t]
+                if not in_position:
+                    entries.iloc[t, col] = True
+                    in_position = True
+                    entry_loc = t
+                    n_buys += 1
                     deadline = t + hold_days
-                    target = prices[t] * (1.0 + target_frac * loc_to_proj[t] / 100.0)
-                if t >= deadline or prices[t] >= target:
-                    exits.iat[t, col_index[row.column]] = True
-                    break
-    return exits
+                    if use_target:
+                        target = prices[t] * (1.0 + target_frac * proj / 100.0)
+                else:
+                    n_skipped += 1
+                    deadline = t + hold_days
+                    if use_target:
+                        target = prices[t] * (1.0 + target_frac * proj / 100.0)
+
+            if in_position and t > entry_loc:
+                hit_target = use_target and prices[t] >= target
+                if t >= deadline or hit_target:
+                    exits.iloc[t, col] = True
+                    in_position = False
+                    entry_loc = None
+                    deadline = None
+                    target = None
+
+    return close_wide, entries, exits, {
+        "n_signals": n_signals,
+        "n_buys": n_buys,
+        "n_skipped": n_skipped,
+    }
 
 
 def run_strategies():
     signals = load_signals()
     close = download_close(unique_tickers(signals), signals["date"].min(), None)
-    close_wide, meta = signal_positions(close, signals)
-    entries = entries_from_meta(close_wide, meta)
-    init_cash = POSITION_VALUE * len(meta)
-    print(f"{len(meta)} signals × ${POSITION_VALUE:,.0f} = ${init_cash:,.0f} starting cash\n")
+    init_cash = POSITION_VALUE * close.shape[1]
+    print(f"{len(signals)} signals in file, max {close.shape[1]} tickers × ${POSITION_VALUE:,.0f}\n")
     return (
-        simulate(
+        _run_one(
             "1. Sell 30d after last signal",
-            close_wide,
-            entries,
-            exits_after_last_signal(close_wide, meta, HOLD_AFTER_LAST_DAYS),
+            close,
+            signals,
             init_cash,
+            use_target=False,
         ),
-        simulate(
+        _run_one(
             "2. Sell 30d after last signal or 75% of projection",
-            close_wide,
-            entries,
-            exits_after_last_or_target(
-                close_wide, meta, HOLD_AFTER_LAST_DAYS, TARGET_FRACTION
-            ),
+            close,
+            signals,
             init_cash,
+            use_target=True,
         ),
     )
+
+
+def _run_one(name, close, signals, init_cash, use_target):
+    close_wide, entries, exits, stats = build_entries_exits(
+        close,
+        signals,
+        HOLD_AFTER_LAST_DAYS,
+        use_target=use_target,
+    )
+    print(
+        f"{stats['n_buys']} buys, {stats['n_skipped']} skipped (already in position), "
+        f"${init_cash:,.0f} starting cash\n"
+    )
+    return simulate(name, close_wide, entries, exits, init_cash)
 
 
 if __name__ == "__main__":
