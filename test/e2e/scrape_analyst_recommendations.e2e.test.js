@@ -1,7 +1,8 @@
 import { execSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { getFortune500Symbols } from "../../src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js";
 import config from "../../src/common/config.js";
 
 const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
@@ -22,14 +23,22 @@ test(
       expect(modifiedAt(cachedHtmlFile)).toBe(cachedBefore);
     }
 
+    const limitedSymbols = getFortune500Symbols().slice(
+      0,
+      config.analyst_recommendations.limit,
+    );
+    const result = JSON.parse(readFileSync(resultFile, "utf8")).filter((row) =>
+      limitedSymbols.includes(row.ticker),
+    );
+    const tickers = [...new Set(result.map((row) => row.ticker))];
+    expect(tickers).toHaveLength(limitedSymbols.length);
+    expect(tickers).toEqual(expect.arrayContaining(limitedSymbols));
+
     if (!existsSync(baselineFile)) {
       mkdirSync(dirname(baselineFile), { recursive: true });
-      copyFileSync(resultFile, baselineFile);
+      writeFileSync(baselineFile, `${JSON.stringify(result, null, 2)}\n`);
     }
 
-    const result = JSON.parse(readFileSync(resultFile, "utf8"));
-    const tickers = [...new Set(result.map((row) => row.ticker))];
-    expect(tickers).toHaveLength(config.analyst_recommendations.limit);
     expect(result).toEqual(JSON.parse(readFileSync(baselineFile, "utf8")));
     expect(existsSync(yahooResultFile)).toBe(true);
     expect(

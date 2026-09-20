@@ -277,6 +277,10 @@ export const joinAllSymbolsPerDateAndSymbol7dAggregationWindowCsv = (
     sources,
   );
 
+export function getFortune500Symbols() {
+  return readCsv("data/fortune_500/symbols.csv").map((row) => row.Symbol);
+}
+
 export async function writeAggregatedAnalystRecommendations(dir, all) {
   await writeJsonFile(`${dir}/all_symbols.json`, flattenAllSymbols(all));
   await writeTextFile(`${dir}/all_symbols.csv`, allSymbolsCsv(all));
@@ -290,10 +294,28 @@ export async function writeAggregatedAnalystRecommendations(dir, all) {
   );
 }
 
+function readAnalystRecommendationsJson(source, symbols) {
+  const dir = analystRecommendationDir(source);
+  const all = {};
+  for (const symbol of symbols) {
+    const jsonFile = `${dir}/${symbol}.json`;
+    if (!existsSync(jsonFile)) continue;
+    all[symbol] = JSON.parse(readFileSync(jsonFile, "utf8"));
+  }
+  return all;
+}
+
 export async function writeJointAnalystRecommendations(
-  allBySource,
   sources = ANALYST_RECOMMENDATION_SOURCES,
 ) {
+  const symbols = getFortune500Symbols();
+  const allBySource = {};
+  for (const source of sources) {
+    const all = readAnalystRecommendationsJson(source, symbols);
+    if (Object.keys(all).length === 0) continue;
+    allBySource[source.name] = all;
+    await writeAggregatedAnalystRecommendations(analystRecommendationDir(source), all);
+  }
   const dir = JOINT_ANALYST_RECOMMENDATION_DIR;
   await writeTextFile(
     `${dir}/all_symbols_per_date_and_symbol.csv`,
@@ -329,7 +351,6 @@ export async function scrapeAnalystRecommendationSource(
     await writeJsonFile(jsonFile, listings);
     all[symbol] = listings;
   }
-  await writeAggregatedAnalystRecommendations(dir, all);
   return all;
 }
 
@@ -337,9 +358,10 @@ export async function scrapeAnalystRecommendations(
   sources = ANALYST_RECOMMENDATION_SOURCES,
   options = {},
 ) {
-  const symbols = readCsv("data/fortune_500/symbols.csv")
-    .map((row) => row.Symbol)
-    .slice(0, config.analyst_recommendations.limit);
+  const symbols = getFortune500Symbols().slice(
+    0,
+    config.analyst_recommendations.limit,
+  );
   const exchanges = readSymbolsExchange();
   const all = {};
   for (const source of sources) {
@@ -349,12 +371,16 @@ export async function scrapeAnalystRecommendations(
       options,
     );
   }
-  await writeJointAnalystRecommendations(all, sources);
+  await writeJointAnalystRecommendations();
   return all;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  await scrapeAnalystRecommendations(selectAnalystRecommendationSources(), {
-    skipExisting: skipExistingAnalystRecommendations(),
-  });
+  if (process.argv.slice(2).includes("--join-only")) {
+    await writeJointAnalystRecommendations(selectAnalystRecommendationSources());
+  } else {
+    await scrapeAnalystRecommendations(selectAnalystRecommendationSources(), {
+      skipExisting: skipExistingAnalystRecommendations(),
+    });
+  }
 }

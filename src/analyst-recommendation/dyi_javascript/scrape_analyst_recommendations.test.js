@@ -10,9 +10,11 @@ import {
   flattenAllSymbolsPerDateAndSymbol7dAggregationWindow,
   joinPerDateAndSymbolBySource,
   jointPerDateAndSymbolCsvColumns,
+  getFortune500Symbols,
   scrapeAnalystRecommendations,
   selectAnalystRecommendationSources,
   skipExistingAnalystRecommendations,
+  writeJointAnalystRecommendations,
 } from "./scrape_analyst_recommendations.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
@@ -39,6 +41,112 @@ test("skipExistingAnalystRecommendations reads flag then config", () => {
   expect(skipExistingAnalystRecommendations(["--skip-existing"])).toBe(true);
   expect(skipExistingAnalystRecommendations(["--skip-existing=true"])).toBe(true);
   expect(skipExistingAnalystRecommendations(["--skip-existing=false"])).toBe(false);
+});
+
+test("getFortune500Symbols reads all symbols from csv", () => {
+  const cwd = mkdtempSync(join(tmpdir(), "fortune-500-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\nCCC,Gamma\nDDD,Delta\n",
+  );
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  try {
+    expect(getFortune500Symbols()).toEqual(["AAA", "BBB", "CCC", "DDD"]);
+  } finally {
+    process.chdir(originalCwd);
+  }
+});
+
+test("writeJointAnalystRecommendations reads per-symbol json and writes joint csvs", async () => {
+  const cwd = mkdtempSync(join(tmpdir(), "join-json-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  mkdirSync(join(cwd, "data/analyst_recomendation/google"), { recursive: true });
+  mkdirSync(join(cwd, "data/analyst_recomendation/yahoo"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\nCCC,Gamma\nDDD,Delta\n",
+  );
+  const listing = (analyst, projected, date) => ({
+    analyst,
+    firm: "Firm",
+    recommendation: "Buy",
+    action: "Maintained",
+    price_target: "$1.00",
+    projected,
+    date,
+  });
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/google/AAA.json"),
+    JSON.stringify([listing("Ann", "+10%", "01/02/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/google/BBB.json"),
+    JSON.stringify([listing("Bo", "+20%", "01/02/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/google/CCC.json"),
+    JSON.stringify([listing("Cam", "+30%", "01/02/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/yahoo/AAA.json"),
+    JSON.stringify([listing("Yan", "+40%", "01/03/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/yahoo/BBB.json"),
+    JSON.stringify([listing("Zoe", "+50%", "01/03/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/yahoo/CCC.json"),
+    JSON.stringify([listing("Abe", "+60%", "01/03/2026")]),
+  );
+  writeFileSync(
+    join(cwd, "data/analyst_recomendation/google/DDD.json"),
+    JSON.stringify([listing("Skip", "+99%", "01/02/2026")]),
+  );
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  try {
+    await writeJointAnalystRecommendations();
+    const jointHeader =
+      "date,symbol,google_average_projected,google_std_projected,google_analyst_projections_count,google_projections,yahoo_average_projected,yahoo_std_projected,yahoo_analyst_projections_count,yahoo_projections";
+    expect(
+      readFileSync(
+        join(cwd, "data/analyst_recomendation/all_symbols_per_date_and_symbol.csv"),
+        "utf8",
+      ),
+    ).toBe(
+      [
+        jointHeader,
+        "2026-01-02,AAA,10,,1,Ann:10,,,,",
+        "2026-01-02,BBB,20,,1,Bo:20,,,,",
+        "2026-01-02,CCC,30,,1,Cam:30,,,,",
+        "2026-01-02,DDD,99,,1,Skip:99,,,,",
+        "2026-01-03,AAA,,,,,40,,1,Yan:40",
+        "2026-01-03,BBB,,,,,50,,1,Zoe:50",
+        "2026-01-03,CCC,,,,,60,,1,Abe:60",
+      ].join("\n"),
+    );
+    expect(
+      readFileSync(join(cwd, "data/analyst_recomendation/google/all_symbols.csv"), "utf8"),
+    ).toBe(
+      [
+        "date,ticker,analyst,percent",
+        "2026-01-02,AAA,Ann,10",
+        "2026-01-02,BBB,Bo,20",
+        "2026-01-02,CCC,Cam,30",
+        "2026-01-02,DDD,Skip,99",
+      ].join("\n"),
+    );
+    expect(
+      JSON.parse(
+        readFileSync(join(cwd, "data/analyst_recomendation/yahoo/all_symbols.json"), "utf8"),
+      ).map((row) => row.ticker),
+    ).toEqual(["AAA", "BBB", "CCC"]);
+  } finally {
+    process.chdir(originalCwd);
+  }
 });
 
 test("iterates first analyst_recommendations.limit symbols and writes outputs", async () => {

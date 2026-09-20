@@ -49,7 +49,7 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500 backtest db-copy-all-symbols
+        download_fortune_500 write_joint_analyst_recommendations etl backtest
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -99,14 +99,22 @@ download_fortune_500:
 # Database operations
 # ---------------------------------------------------------------------------
 
-# Copy Yahoo and Google all_symbols CSV files to database tables.
+# Rebuild per-source and joint CSVs from data/analyst_recomendation/<source>/<symbol>.json.
+# Join one source only (google or yahoo):
+#   SOURCE=yahoo make write_joint_analyst_recommendations
+write_joint_analyst_recommendations:
+	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
+
+# Rebuild CSVs from per-symbol JSON, copy Yahoo and Google all_symbols CSV files
+# into database tables, then export ranked signals.
 # Requires DATABASE_URL environment variable to be set.
 # Example:
 #   export DATABASE_URL="postgresql://myuser:secret@mydb.xxxx.us-east-1.rds.amazonaws.com:5432/mydb?sslmode=require"
-#   make db-copy-all-symbols
-db-copy-all-symbols:
+#   make etl
+etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -f etl/update_raw_signals.sql
+	@psql "$$DATABASE_URL" -c "\copy (SELECT * FROM signals WHERE WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 3 and average_projected > 20 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER"
 
 # ---------------------------------------------------------------------------
 # Backtests
