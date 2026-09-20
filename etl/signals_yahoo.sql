@@ -12,7 +12,7 @@ SELECT
   date,
   ticker,
   AVG(percent) AS average_projected,
-  COUNT(*) AS analyst_projections_count,
+  COUNT(distinct average_projected) AS analyst_projections_count, -- ignore analist with same exact projected price
   AVG(ABS(percent - mean_percent)) / ABS(AVG(mean_percent)) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
@@ -52,7 +52,7 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * sqrt(analyst_projections_count) * (1 - NULLIF(MAD, 0)) AS signal_score,
+  average_projected * (analyst_projections_count) * (1 - MAD) AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date
 WHERE 
@@ -66,7 +66,7 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * sqrt(analyst_projections_count) * (1 - NULLIF(MAD, 0))  AS signal_score,
+  average_projected * sqrt(analyst_projections_count) * (1 - MAD)  AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date_7d_window
 WHERE 
@@ -90,8 +90,17 @@ FROM (
 
 -- Buy signals
 SELECT * FROM signals
-WHERE signal_percentile > 0.5 and signal_name = 'yahoo-daily' and ticker='TSLA'
+WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 3 and average_projected > 20
 ORDER BY signal_percentile DESC;
-SELECT * FROM yahoo_all_symbols
-WHERE  ticker ='TSLA'
-ORDER BY date DESC;
+
+
+SELECT (signal_percentile * 10)::int * 10, analyst_projections_count, count(*) as c FROM signals
+WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 2 and average_projected > 20
+-- and signal_percentile > 0.9
+group by 1,2
+order by 1,2
+-- ORDER BY signal_percentile DESC
+;
+
+
+select date, ticker, percent, count(*) as c from yahoo_all_symbols where percent is not null group by 1,2,3 having count(*) > 1 order by 4 desc
