@@ -3,10 +3,11 @@ VectorBT simulations of buy signals from data/signals.csv.
 
 Each CSV row is a $5K long. Starting cash is large enough to take every signal.
 
-1. Buy all signals, never sell
-2. Buy all signals, sell 60 trading days after that signal
-3. Buy all signals; if the same ticker signals again, cancel the scheduled
-   sell and postpone it to 30 trading days after the last signal
+1. Sell 30 trading days after the last signal that arrived while the lot
+   was still held. A new signal cancels that sell and pushes it out 30 days.
+2. Same 30-day rule, or sell earlier when close reaches 75% of the analyst
+   projected upside. A new signal resets the projection target and adds
+   another 30 days.
 """
 
 from pathlib import Path
@@ -19,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SIGNALS_CSV = ROOT / "data/signals.csv"
 
 POSITION_VALUE = 5_000.0
-HOLD_FIXED_DAYS = 60
 HOLD_AFTER_LAST_DAYS = 30
+TARGET_FRACTION = 0.75
 
 
 def download_close(symbols, start, end):
@@ -246,7 +247,14 @@ def signal_positions(close, signals):
             continue
         column = f"{ticker}_{pd.Timestamp(row.date).date()}_{len(rows)}"
         frames[column] = series
-        rows.append({"column": column, "ticker": ticker, "entry_loc": loc})
+        rows.append(
+            {
+                "column": column,
+                "ticker": ticker,
+                "entry_loc": loc,
+                "average_projected": float(row.average_projected),
+            }
+        )
     if not frames:
         raise RuntimeError("No signals aligned to price data")
     close_wide = pd.DataFrame(frames, index=close.index)
@@ -261,24 +269,65 @@ def entries_from_meta(close_wide, meta):
     return entries
 
 
-def no_exits(close_wide):
-    return pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
-
-
-def exits_after_hold(entries, hold_days):
-    return entries.shift(hold_days, fill_value=False)
+def _extend_deadline(signal_locs, entry_loc, hold_days):
+    """Push the sell date out hold_days after each signal that arrives while still held."""
+    deadline = entry_loc + hold_days
+    for loc in signal_locs:
+        if loc < entry_loc:
+            continue
+        if loc <= deadline:
+            deadline = loc + hold_days
+        else:
+            break
+    return deadline
 
 
 def exits_after_last_signal(close_wide, meta, hold_days):
-    """Sell every lot of a ticker hold_days after that ticker's last signal."""
+    """Sell each lot hold_days after the last signal received while it was still open."""
     exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
-    last_loc = meta.groupby("ticker")["entry_loc"].max()
-    col_index = {name: i for i, name in enumerate(close_wide.columns)}
     n = len(close_wide)
-    for row in meta.itertuples(index=False):
-        exit_loc = int(last_loc[row.ticker]) + hold_days
-        if 0 <= exit_loc < n:
-            exits.iat[exit_loc, col_index[row.column]] = True
+    col_index = {name: i for i, name in enumerate(close_wide.columns)}
+    for _, group in meta.groupby("ticker"):
+        locs = sorted(int(loc) for loc in group["entry_loc"])
+        for row in group.itertuples(index=False):
+            deadline = _extend_deadline(locs, int(row.entry_loc), hold_days)
+            if deadline < n:
+                exits.iat[deadline, col_index[row.column]] = True
+    return exits
+
+
+def exits_after_last_or_target(close_wide, meta, hold_days, target_frac):
+    """Sell on the 30-day last-signal rule, or sooner at 75% of projected upside.
+
+    A new signal for the same ticker, received while the lot is still open,
+    resets the target to 75% of that signal's projected move from that day's
+    close and pushes the time stop out another hold_days.
+    """
+    exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
+    n = len(close_wide)
+    col_index = {name: i for i, name in enumerate(close_wide.columns)}
+
+    for _, group in meta.groupby("ticker"):
+        group = group.sort_values("entry_loc")
+        prices = close_wide[group["column"].iloc[0]].to_numpy()
+        signal_locs = [int(loc) for loc in group["entry_loc"]]
+        loc_to_proj = {
+            int(loc): float(proj)
+            for loc, proj in zip(group["entry_loc"], group["average_projected"])
+        }
+        signal_loc_set = set(signal_locs)
+
+        for row in group.itertuples(index=False):
+            entry = int(row.entry_loc)
+            deadline = entry + hold_days
+            target = prices[entry] * (1.0 + target_frac * float(row.average_projected) / 100.0)
+            for t in range(entry + 1, n):
+                if t in signal_loc_set:
+                    deadline = t + hold_days
+                    target = prices[t] * (1.0 + target_frac * loc_to_proj[t] / 100.0)
+                if t >= deadline or prices[t] >= target:
+                    exits.iat[t, col_index[row.column]] = True
+                    break
     return exits
 
 
@@ -291,24 +340,19 @@ def run_strategies():
     print(f"{len(meta)} signals × ${POSITION_VALUE:,.0f} = ${init_cash:,.0f} starting cash\n")
     return (
         simulate(
-            "1. Buy all $5K, never sell",
-            close_wide,
-            entries,
-            no_exits(close_wide),
-            init_cash,
-        ),
-        simulate(
-            "2. Buy all $5K, sell after 60d",
-            close_wide,
-            entries,
-            exits_after_hold(entries, HOLD_FIXED_DAYS),
-            init_cash,
-        ),
-        simulate(
-            "3. Buy all $5K, sell 30d after last signal",
+            "1. Sell 30d after last signal",
             close_wide,
             entries,
             exits_after_last_signal(close_wide, meta, HOLD_AFTER_LAST_DAYS),
+            init_cash,
+        ),
+        simulate(
+            "2. Sell 30d after last signal or 75% of projection",
+            close_wide,
+            entries,
+            exits_after_last_or_target(
+                close_wide, meta, HOLD_AFTER_LAST_DAYS, TARGET_FRACTION
+            ),
             init_cash,
         ),
     )
