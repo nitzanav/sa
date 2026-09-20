@@ -1,0 +1,6 @@
+1. test signals on the current table mean × √N × (1 - relative_MAD) + 30 days sell
+2. implement extending the 30 days given following signals
+3. try removing (1 - relative_MAD)
+4. try 60 days
+5. try adding google
+6. other sources
