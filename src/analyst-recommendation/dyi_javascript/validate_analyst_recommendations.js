@@ -52,6 +52,12 @@ export function parsePercent(value) {
   return Number.isFinite(number) ? number : null;
 }
 
+export function parsePriceTarget(value) {
+  if (value == null || value === "") return null;
+  const number = Number(String(value).replace(/[$,]/g, ""));
+  return Number.isFinite(number) ? number : null;
+}
+
 export function parseAnalystDate(date) {
   const [month, day, year] = date.split("/").map(Number);
   return new Date(year, month - 1, day);

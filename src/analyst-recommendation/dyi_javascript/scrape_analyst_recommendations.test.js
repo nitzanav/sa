@@ -132,11 +132,11 @@ test("writeJointAnalystRecommendations reads per-symbol json and writes joint cs
       readFileSync(join(cwd, "data/analyst_recomendation/google/all_symbols.csv"), "utf8"),
     ).toBe(
       [
-        "date,ticker,analyst,percent",
-        "2026-01-02,AAA,Ann,10",
-        "2026-01-02,BBB,Bo,20",
-        "2026-01-02,CCC,Cam,30",
-        "2026-01-02,DDD,Skip,99",
+        "date,ticker,analyst,percent,projected_price",
+        "2026-01-02,AAA,Ann,10,1",
+        "2026-01-02,BBB,Bo,20,1",
+        "2026-01-02,CCC,Cam,30,1",
+        "2026-01-02,DDD,Skip,99,1",
       ].join("\n"),
     );
     expect(
@@ -189,12 +189,12 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ),
     );
     expect(all).toEqual([
-      { date: "2026-09-10", ticker: "AAA", analyst: "David O'Connor", percent: null },
-      { date: "2026-09-10", ticker: "AAA", analyst: "James Schneider", percent: 37.4 },
-      { date: "2026-09-10", ticker: "BBB", analyst: "David O'Connor", percent: null },
-      { date: "2026-09-10", ticker: "BBB", analyst: "James Schneider", percent: 37.4 },
-      { date: "2026-09-10", ticker: "CCC", analyst: "David O'Connor", percent: null },
-      { date: "2026-09-10", ticker: "CCC", analyst: "James Schneider", percent: 37.4 },
+      { date: "2026-09-10", ticker: "AAA", analyst: "David O'Connor", percent: null, projected_price: null },
+      { date: "2026-09-10", ticker: "AAA", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
+      { date: "2026-09-10", ticker: "BBB", analyst: "David O'Connor", percent: null, projected_price: null },
+      { date: "2026-09-10", ticker: "BBB", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
+      { date: "2026-09-10", ticker: "CCC", analyst: "David O'Connor", percent: null, projected_price: null },
+      { date: "2026-09-10", ticker: "CCC", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
     ]);
     expect(
       readFileSync(join(cwd, "data/analyst_recomendation/google/AAA.html"), "utf8"),
@@ -211,13 +211,13 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       readFileSync(join(cwd, "data/analyst_recomendation/google/all_symbols.csv"), "utf8"),
     ).toBe(
       [
-        "date,ticker,analyst,percent",
-        "2026-09-10,AAA,David O'Connor,",
-        "2026-09-10,AAA,James Schneider,37.4",
-        "2026-09-10,BBB,David O'Connor,",
-        "2026-09-10,BBB,James Schneider,37.4",
-        "2026-09-10,CCC,David O'Connor,",
-        "2026-09-10,CCC,James Schneider,37.4",
+        "date,ticker,analyst,percent,projected_price",
+        "2026-09-10,AAA,David O'Connor,,",
+        "2026-09-10,AAA,James Schneider,37.4,300",
+        "2026-09-10,BBB,David O'Connor,,",
+        "2026-09-10,BBB,James Schneider,37.4,300",
+        "2026-09-10,CCC,David O'Connor,,",
+        "2026-09-10,CCC,James Schneider,37.4,300",
       ].join("\n"),
     );
     const perDateAndSymbolCsv = [
@@ -248,24 +248,24 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ),
     );
     expect(yahooAll).toEqual([
-      { date: "2026-09-04", ticker: "AAA", analyst: "Rosenblatt", percent: 78.1 },
-      { date: "2026-09-04", ticker: "BBB", analyst: "Rosenblatt", percent: 78.1 },
-      { date: "2026-09-04", ticker: "CCC", analyst: "Rosenblatt", percent: 78.1 },
-      { date: "2026-09-10", ticker: "AAA", analyst: "Piper Sandler", percent: 37 },
-      { date: "2026-09-10", ticker: "BBB", analyst: "Piper Sandler", percent: 37 },
-      { date: "2026-09-10", ticker: "CCC", analyst: "Piper Sandler", percent: 37 },
+      { date: "2026-09-04", ticker: "AAA", analyst: "Rosenblatt", percent: 78.1, projected_price: 390 },
+      { date: "2026-09-04", ticker: "BBB", analyst: "Rosenblatt", percent: 78.1, projected_price: 390 },
+      { date: "2026-09-04", ticker: "CCC", analyst: "Rosenblatt", percent: 78.1, projected_price: 390 },
+      { date: "2026-09-10", ticker: "AAA", analyst: "Piper Sandler", percent: 37, projected_price: 300 },
+      { date: "2026-09-10", ticker: "BBB", analyst: "Piper Sandler", percent: 37, projected_price: 300 },
+      { date: "2026-09-10", ticker: "CCC", analyst: "Piper Sandler", percent: 37, projected_price: 300 },
     ]);
     expect(
       readFileSync(join(cwd, "data/analyst_recomendation/yahoo/all_symbols.csv"), "utf8"),
     ).toBe(
       [
-        "date,ticker,analyst,percent",
-        "2026-09-04,AAA,Rosenblatt,78.1",
-        "2026-09-04,BBB,Rosenblatt,78.1",
-        "2026-09-04,CCC,Rosenblatt,78.1",
-        "2026-09-10,AAA,Piper Sandler,37",
-        "2026-09-10,BBB,Piper Sandler,37",
-        "2026-09-10,CCC,Piper Sandler,37",
+        "date,ticker,analyst,percent,projected_price",
+        "2026-09-04,AAA,Rosenblatt,78.1,390",
+        "2026-09-04,BBB,Rosenblatt,78.1,390",
+        "2026-09-04,CCC,Rosenblatt,78.1,390",
+        "2026-09-10,AAA,Piper Sandler,37,300",
+        "2026-09-10,BBB,Piper Sandler,37,300",
+        "2026-09-10,CCC,Piper Sandler,37,300",
       ].join("\n"),
     );
     const yahooPerDateAndSymbolCsv = [
@@ -433,7 +433,7 @@ test("skip_existing reuses symbol json and does not refetch", async () => {
       ),
     );
     expect(googleAll.filter((row) => row.ticker === "AAA")).toEqual([
-      { date: "2026-01-01", ticker: "AAA", analyst: "Cached Google", percent: 1 },
+      { date: "2026-01-01", ticker: "AAA", analyst: "Cached Google", percent: 1, projected_price: 1 },
     ]);
     expect(googleAll.filter((row) => row.ticker === "BBB")).toHaveLength(2);
     const yahooAll = JSON.parse(
@@ -443,7 +443,7 @@ test("skip_existing reuses symbol json and does not refetch", async () => {
       ),
     );
     expect(yahooAll.filter((row) => row.ticker === "AAA")).toEqual([
-      { date: "2026-01-02", ticker: "AAA", analyst: "Cached Yahoo", percent: 2 },
+      { date: "2026-01-02", ticker: "AAA", analyst: "Cached Yahoo", percent: 2, projected_price: 2 },
     ]);
   } finally {
     yahooFetchSpy.mockRestore();
@@ -457,17 +457,17 @@ test("flattenAllSymbols sorts by date, ticker, analyst and parses percent", () =
   expect(
     flattenAllSymbols({
       BBB: [
-        { analyst: "Zoe", projected: "+10.9%", date: "01/02/2026" },
+        { analyst: "Zoe", projected: "+10.9%", price_target: "$12.00", date: "01/02/2026" },
       ],
       AAA: [
         { analyst: "Matthew Smith, CFA", projected: null, date: "01/02/2026" },
-        { analyst: "Ann", projected: "-12.1%", date: "12/31/2025" },
+        { analyst: "Ann", projected: "-12.1%", price_target: "$100.50", date: "12/31/2025" },
       ],
     }),
   ).toEqual([
-    { date: "2025-12-31", ticker: "AAA", analyst: "Ann", percent: -12.1 },
-    { date: "2026-01-02", ticker: "AAA", analyst: "Matthew Smith, CFA", percent: null },
-    { date: "2026-01-02", ticker: "BBB", analyst: "Zoe", percent: 10.9 },
+    { date: "2025-12-31", ticker: "AAA", analyst: "Ann", percent: -12.1, projected_price: 100.5 },
+    { date: "2026-01-02", ticker: "AAA", analyst: "Matthew Smith, CFA", percent: null, projected_price: null },
+    { date: "2026-01-02", ticker: "BBB", analyst: "Zoe", percent: 10.9, projected_price: 12 },
   ]);
 });
 

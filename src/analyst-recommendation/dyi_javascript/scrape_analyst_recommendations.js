@@ -10,7 +10,7 @@ import {
   analystRecommendationDir,
   scrapeAnalystRecommendation,
 } from "./scrape_analyst_recommendation.js";
-import { parsePercent } from "./validate_analyst_recommendations.js";
+import { parsePercent, parsePriceTarget } from "./validate_analyst_recommendations.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 
 export const ANALYST_RECOMMENDATION_SOURCES = [
@@ -56,7 +56,7 @@ export function selectAnalystRecommendationSources(
   return selected;
 }
 
-const ALL_SYMBOLS_CSV_COLUMNS = ["date", "ticker", "analyst", "percent"];
+const ALL_SYMBOLS_CSV_COLUMNS = ["date", "ticker", "analyst", "percent", "projected_price"];
 const PER_DATE_AND_SYMBOL_CSV_COLUMNS = [
   "date",
   "symbol",
@@ -114,12 +114,13 @@ export function formatProjections(listings) {
 export function flattenAllSymbols(all) {
   const rows = [];
   for (const [ticker, listings] of Object.entries(all)) {
-    for (const { date, analyst, projected } of listings) {
+    for (const { date, analyst, projected, price_target } of listings) {
       rows.push({
         date: isoDate(date),
         ticker,
         analyst,
         percent: projected === null ? null : parsePercent(projected),
+        projected_price: parsePriceTarget(price_target),
       });
     }
   }

@@ -4,6 +4,7 @@ import { join } from "node:path";
 import {
   isAnalystDateInRange,
   parsePercent,
+  parsePriceTarget,
   validateAllSymbolsRecommendations,
   validateAnalystRecommendationRow,
   validateAnalystRecommendations,
@@ -181,6 +182,12 @@ test("parsePercent strips sign, separators and percent", () => {
   expect(parsePercent("+12,112.3%")).toBe(12112.3);
   expect(parsePercent("-95%")).toBe(-95);
   expect(parsePercent("0%")).toBe(0);
+});
+
+test("parsePriceTarget strips dollar sign and separators", () => {
+  expect(parsePriceTarget("$300.00")).toBe(300);
+  expect(parsePriceTarget("$1,234.50")).toBe(1234.5);
+  expect(parsePriceTarget(null)).toBe(null);
 });
 
 test("validateAnalystRecommendations skips invalid rows and logs the index", () => {

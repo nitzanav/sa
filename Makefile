@@ -114,7 +114,7 @@ write_joint_analyst_recommendations:
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -f etl/update_raw_signals.sql
-	@psql "$$DATABASE_URL" -c "\copy (SELECT * FROM signals WHERE WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 3 and average_projected > 20 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER"
+	@psql "$$DATABASE_URL" -c "\copy (SELECT * FROM signals WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 3 and average_projected > 20 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER"
 
 # ---------------------------------------------------------------------------
 # Backtests
