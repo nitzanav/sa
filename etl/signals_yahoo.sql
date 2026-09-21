@@ -83,9 +83,11 @@ SELECT
 FROM (
   SELECT 'yahoo-daily' AS signal_name, *
   FROM signal_score_daily
+  WHERE analyst_projections_count > 2 and average_projected > 10
   UNION ALL
   SELECT 'yahoo-7d-window' AS signal_name, *
   FROM signal_score_7d_window
+  WHERE analyst_projections_count > 2 and average_projected > 10
 ) u;
 
 -- Buy signals
@@ -103,4 +105,11 @@ order by 1,2
 ;
 
 
-select date, ticker, percent, count(*) as c from yahoo_all_symbols where percent is not null group by 1,2,3 having count(*) > 1 order by 4 desc
+SELECT 
+count(distinct ticker) as c
+FROM signals 
+WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 2 and average_projected > 10
+
+-- and signal_percentile > 0.9
+-- ORDER BY signal_percentile DESC
+;

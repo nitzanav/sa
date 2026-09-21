@@ -1,6 +1,9 @@
 import {
   BarChart,
   Callout,
+  Card,
+  CardBody,
+  CardHeader,
   Divider,
   Grid,
   H1,
@@ -53,11 +56,55 @@ export default function Focused64Sweep() {
   return (
     <Stack gap={24}>
       <Stack gap={8}>
-        <H1>Focused 6×4 buy/sell sweep</H1>
         <Text tone="secondary" size="small">
-          {PERIOD}. Source: data/signals.csv · VectorBT/optimize.py focus · run
-          2026-09-21 20:41 UTC+3.
+          Focused 6×4 buy/sell sweep · {PERIOD}. Source: data/signals.csv ·
+          VectorBT/optimize.py focus · run 2026-09-21 20:41 UTC+3.
         </Text>
+        <H1>WINNING COMBINATION</H1>
+        <H2>SELL: 30D OR 50% TARGET OR 7.5% DD</H2>
+        <H2>BUY: ANALYST&gt;3 · PROJ&gt;30%</H2>
+      </Stack>
+
+      <Card size="lg">
+        <CardHeader trailing="22 SIGNALS · 68.2% WIN RATE">
+          WINNING COMBINATION
+        </CardHeader>
+        <CardBody>
+          <Grid columns={3} gap={16}>
+            <Stat value="+63.1%" label="ON INVESTED" tone="success" />
+            <Stat value="+$6,346" label="STOCK P&L" />
+            <Stat value="22" label="SIGNALS" />
+          </Grid>
+        </CardBody>
+      </Card>
+
+      <Stack gap={8}>
+        <H2>30D 50% 7.5DD — ALL 6 BUYS</H2>
+        <Text tone="secondary" size="small">
+          Return on avg invested and stock P&L for the winning sell. Source:
+          VectorBT focus run · 2026-01-28 to 2026-09-18.
+        </Text>
+        <Table
+          headers={["Buy", "n", "On invested", "Stock P&L"]}
+          columnAlign={["left", "right", "right", "right"]}
+          rows={[
+            ["analyst>2 · proj>20%", "84", "+37.2%", "+$14,446"],
+            ["analyst>2 · proj>25%", "63", "+46.2%", "+$13,321"],
+            ["analyst>2 · proj>30%", "42", "+52.9%", "+$9,569"],
+            ["analyst>3 · proj>20% (old freeze)", "42", "+36.4%", "+$7,433"],
+            ["analyst>3 · proj>25%", "31", "+51.4%", "+$7,674"],
+            ["ANALYST>3 · PROJ>30%", "22", "+63.1%", "+$6,346"],
+          ]}
+          rowTone={[
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            "success",
+          ]}
+          striped
+        />
       </Stack>
 
       <Grid columns={4} gap={16}>
@@ -144,31 +191,6 @@ export default function Focused64Sweep() {
             buy,
             ...((metric === "roi" ? ROI : PNL)[buy] ?? []),
           ])}
-          rowTone={[
-            undefined,
-            undefined,
-            undefined,
-            undefined,
-            "success",
-            "success",
-          ]}
-          striped
-        />
-      </Stack>
-
-      <Stack gap={8}>
-        <H3>Winning sell only — freeze vs &gt;25% vs &gt;30%</H3>
-        <Table
-          headers={["Buy", "n", "On invested", "Stock P&L"]}
-          columnAlign={["left", "right", "right", "right"]}
-          rows={[
-            ["analyst>2 · proj>20%", "84", "+37.2%", "+$14,446"],
-            ["analyst>2 · proj>25%", "63", "+46.2%", "+$13,321"],
-            ["analyst>2 · proj>30%", "42", "+52.9%", "+$9,569"],
-            ["analyst>3 · proj>20% (freeze)", "42", "+36.4%", "+$7,433"],
-            ["analyst>3 · proj>25%", "31", "+51.4%", "+$7,674"],
-            ["analyst>3 · proj>30%", "22", "+63.1%", "+$6,346"],
-          ]}
           rowTone={[
             undefined,
             undefined,

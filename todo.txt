@@ -1,6 +1,5 @@
-1. test signals on the current table mean × √N × (1 - relative_MAD) + 30 days sell
-2. implement extending the 30 days given following signals
-3. try removing (1 - relative_MAD)
-4. try 60 days
-5. try adding google
-6. other sources
+1. try price target mean × √N
+2. try adding google
+3. other sources
+4. different sum amoutn of positions, relative to stretch of score. 
+5. positions change, each time you but you take from other positions - much more complex

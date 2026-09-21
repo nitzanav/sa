@@ -43,8 +43,11 @@ from backtest import (  # noqa: E402
 )
 
 OUT_DIR = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 CACHE_DIR = OUT_DIR / ".cache"
 PRICE_END = pd.Timestamp("2026-09-18")
+FORTUNE_CSV = ROOT / "data" / "fortune_500" / "symbols.csv"
+PERCENTILE_CUTS = (0.80, 0.60, 0.40, 0.20, 0.00)
 
 
 def clip_prices(obj, end=PRICE_END):
@@ -116,6 +119,9 @@ class SellSpec:
         return " or ".join(bits)
 
 
+WINNING_SELL = SellSpec(hold_days=30, target_frac=0.50, drawdown=0.075)
+
+
 def freeze_buy_filter():
     return {"min_analysts": FREEZE_ANALYSTS, "min_projected": FREEZE_PROJECTED}
 
@@ -168,6 +174,12 @@ def focus_buy_grid():
 
 
 def buy_label(filt):
+    if filt.get("label"):
+        return filt["label"]
+    if filt.get("universe") == "fortune_500":
+        return "Fortune 500 at start"
+    if "min_percentile" in filt:
+        return f"signal_percentile > {filt['min_percentile']:.2f}"
     return f"analyst>{filt['min_analysts']} · proj>{filt['min_projected']:.0f}%"
 
 
@@ -290,9 +302,10 @@ def attach_spec(row, spec: SellSpec, buy=None):
     row["drawdown"] = spec.drawdown
     row["baseline"] = spec.baseline
     if buy is not None:
-        row["min_analysts"] = buy["min_analysts"]
-        row["min_projected"] = buy["min_projected"]
-        row["buy_label"] = buy_label(buy)
+        for key in ("min_analysts", "min_projected", "min_percentile", "universe", "family"):
+            if key in buy:
+                row[key] = buy[key]
+        row["buy_label"] = buy.get("label") or buy_label(buy)
     return row
 
 
@@ -818,13 +831,350 @@ def run_focus(signals, close, spy):
     return rows, close_wide, init_cash
 
 
+def yahoo_symbol(symbol):
+    return str(symbol).replace(".", "-")
+
+
+def load_fortune_symbols(path=FORTUNE_CSV):
+    df = pd.read_csv(path)
+    return [yahoo_symbol(s) for s in df["Symbol"].tolist()]
+
+
+def filter_percentile(signals, min_percentile):
+    out = signals[signals["signal_percentile"] > min_percentile]
+    return out.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
+        drop=True
+    )
+
+
+def download_close_yahoo(symbols, start, end):
+    import yfinance as yf
+
+    start_s = pd.Timestamp(start).strftime("%Y-%m-%d")
+    end_s = (pd.Timestamp(end) + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    print(f"Downloading {len(symbols)} Yahoo closes {start_s} → {end_s} …")
+    data = yf.download(
+        tickers=list(symbols),
+        start=start_s,
+        end=end_s,
+        auto_adjust=True,
+        threads=True,
+        group_by="column",
+        progress=True,
+    )
+    if data.empty:
+        raise RuntimeError("Yahoo returned no Fortune 500 prices")
+    if isinstance(data.columns, pd.MultiIndex):
+        close = data["Close"].copy()
+    else:
+        close = data.copy()
+        if "Close" in close.columns:
+            close = close[["Close"]]
+        if len(symbols) == 1:
+            close.columns = [symbols[0]]
+    close = close.dropna(axis=1, how="all")
+    idx = close.index
+    naive = idx.tz_localize(None) if getattr(idx, "tz", None) is not None else idx
+    close.index = pd.DatetimeIndex(pd.to_datetime(naive).normalize())
+    close = close.groupby(level=0).last().sort_index()
+    print(f"  {len(close)} days, {close.shape[1]} symbols\n")
+    return close
+
+
+def align_columns_to_index(extra, index):
+    extra = extra.copy()
+    idx = extra.index
+    naive = idx.tz_localize(None) if getattr(idx, "tz", None) is not None else idx
+    extra.index = pd.DatetimeIndex(pd.to_datetime(naive).normalize())
+    extra = extra.groupby(level=0).last()
+    index_naive = index.tz_localize(None) if getattr(index, "tz", None) is not None else index
+    days = pd.DatetimeIndex(pd.to_datetime(index_naive).normalize())
+    aligned = extra.reindex(days)
+    aligned.index = index
+    return aligned
+
+
+def ensure_fortune_prices(close, start=None, end=PRICE_END):
+    symbols = load_fortune_symbols()
+    fortune_path = CACHE_DIR / "fortune_close.pkl"
+    cached = pd.read_pickle(fortune_path) if fortune_path.exists() else pd.DataFrame()
+    missing = [
+        s for s in symbols if s not in close.columns and s not in cached.columns
+    ]
+    if missing:
+        extra = download_close_yahoo(
+            missing, start if start is not None else close.index.min(), end
+        )
+        cached = extra if cached.empty else cached.join(extra, how="outer")
+        CACHE_DIR.mkdir(exist_ok=True)
+        cached.to_pickle(fortune_path)
+        print(f"Cached {cached.shape[1]} Fortune 500 symbols → {fortune_path}")
+    if not cached.empty:
+        aligned = align_columns_to_index(cached, close.index)
+        new_cols = [c for c in aligned.columns if c not in close.columns]
+        if new_cols:
+            close = close.join(aligned[new_cols], how="left")
+    return close
+
+
+def fortune_entry_signals(close, symbols):
+    first_day = pd.Timestamp(close.index[0]).normalize()
+    rows = []
+    skipped = []
+    for ticker in symbols:
+        if ticker not in close.columns:
+            skipped.append({"ticker": ticker, "reason": "no prices"})
+            continue
+        if pd.isna(close[ticker].iloc[0]):
+            skipped.append({"ticker": ticker, "reason": "no first-day price"})
+            continue
+        rows.append(
+            {
+                "date": first_day,
+                "ticker": ticker,
+                "average_projected": 0.0,
+                "analyst_projections_count": 0,
+                "signal_score": 0.0,
+                "signal_percentile": 0.0,
+            }
+        )
+    return pd.DataFrame(rows), skipped
+
+
+def load_focus_winning_sell(path=None):
+    path = Path(path) if path is not None else CACHE_DIR / "focus.json"
+    rows = load_json(path)
+    frozen = [r for r in rows if r.get("tag") == "30d-t50-dd7.5"]
+    frozen.sort(key=lambda r: (r.get("min_analysts", 0), r.get("min_projected", 0)))
+    if len(frozen) != 6:
+        raise RuntimeError(f"Expected 6 frozen 30d-t50-dd7.5 rows, got {len(frozen)}")
+    for row in frozen:
+        row["family"] = "analyst"
+    return frozen
+
+
+def conclusion_compact_table(rows):
+    freeze = freeze_buy_filter()
+    head = "| Buy | n | On invested | Stock P&L |"
+    sep = "| --- | ---: | ---: | ---: |"
+    lines = [head, sep]
+    best = max(rows, key=lambda r: r["return_on_avg_invested_pct"])
+    for row in rows:
+        name = row.get("buy_label", row["label"])
+        if (
+            row.get("family") == "analyst"
+            and row.get("min_analysts") == freeze["min_analysts"]
+            and row.get("min_projected") == freeze["min_projected"]
+        ):
+            name = f"{name} *(old freeze)*"
+        if (
+            row.get("family") == "analyst"
+            and row.get("min_analysts") == 3
+            and int(row.get("min_projected", 0)) == 30
+        ):
+            name = f"**ANALYST>3 · PROJ>30%**"
+            cell_n = f"**{row['n_signals']}**"
+            cell_roi = f"**{row['return_on_avg_invested_pct']:+.1f}%**"
+            cell_pnl = f"**{money(row['stock_pnl'])}**"
+        elif row is best:
+            name = f"**{name}**"
+            cell_n = f"**{row['n_signals']}**"
+            cell_roi = f"**{row['return_on_avg_invested_pct']:+.1f}%**"
+            cell_pnl = f"**{money(row['stock_pnl'])}**"
+        else:
+            cell_n = str(row["n_signals"])
+            cell_roi = f"{row['return_on_avg_invested_pct']:+.1f}%"
+            cell_pnl = money(row["stock_pnl"])
+        lines.append(f"| {name} | {cell_n} | {cell_roi} | {cell_pnl} |")
+    return "\n".join(lines)
+
+
+def conclusion_detail_table(rows):
+    head = (
+        "| Buy | n | On invested | Stock P&L | Win rate | "
+        "Trades | vs SPY | Avg invested |"
+    )
+    sep = "| --- | ---: | ---: | ---: | ---: | --- | ---: | ---: |"
+    lines = [head, sep]
+    for row in rows:
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    row.get("buy_label", row["label"]),
+                    str(row["n_signals"]),
+                    f"{row['return_on_avg_invested_pct']:+.1f}%",
+                    money(row["stock_pnl"]),
+                    f"{row['win_rate_pct']:.1f}%",
+                    f"{row['n_trades']} ({row['n_closed']}c/{row['n_open']}o)",
+                    f"{row['vs_spy_pct']:+.2f}%",
+                    f"{row['avg_invested_pct']:.1f}%",
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def write_conclusion_summary(path, rows, info, notes, skipped=None):
+    analysts = [r for r in rows if r.get("family") == "analyst"]
+    percentiles = [r for r in rows if r.get("family") == "percentile"]
+    universe = [r for r in rows if r.get("family") == "universe"]
+    best = max(rows, key=lambda r: r["return_on_avg_invested_pct"])
+    best_pnl = max(rows, key=lambda r: r["stock_pnl"])
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        (
+            f"**Period:** {info['start']} → {info['end']} · "
+            f"{info['cal_days']} days ({info['trading_days']} trading)"
+        ),
+        (
+            "Sell frozen: **30d or 50% of projected target or 7.5% trailing dd**. "
+            "$5,000 per lot. Ranked by **return on avg invested**. "
+            "Analyst/proj rows reused from the 2026-09-21 20:41 focus run."
+        ),
+        "",
+        "# WINNING COMBINATION",
+        "",
+        "# SELL: 30D OR 50% TARGET OR 7.5% DD",
+        "",
+        f"# BUY: {best.get('buy_label', best['label']).upper()}",
+        "",
+        (
+            f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
+            f"{money(best['stock_pnl'])} · {best['n_signals']} SIGNALS · "
+            f"{best['win_rate_pct']:.1f}% WIN RATE"
+        ),
+        "",
+        "## 30d 50% 7.5dd — all buys",
+        "",
+        conclusion_compact_table(rows),
+        "",
+        "## Detail",
+        "",
+        conclusion_detail_table(rows),
+        "",
+        (
+            f"Best **return on invested**: **{best.get('buy_label')}** → "
+            f"{best['return_on_avg_invested_pct']:+.1f}% "
+            f"({best['n_signals']} signals, {money(best['stock_pnl'])})."
+        ),
+        "",
+        (
+            f"Best **stock P&L**: **{best_pnl.get('buy_label')}** → "
+            f"{money(best_pnl['stock_pnl'])} "
+            f"({best_pnl['n_signals']} signals, "
+            f"{best_pnl['return_on_avg_invested_pct']:+.1f}%)."
+        ),
+        "",
+    ]
+    conclusions = []
+    if analysts and percentiles:
+        weakest_a = min(analysts, key=lambda r: r["return_on_avg_invested_pct"])
+        best_p = max(percentiles, key=lambda r: r["return_on_avg_invested_pct"])
+        conclusions.append(
+            "Analyst count + projected % beats signal_percentile. "
+            f"The weakest analyst/proj cut (**{weakest_a['buy_label']}** "
+            f"{weakest_a['return_on_avg_invested_pct']:+.1f}%) still beats the "
+            f"tightest percentile (**{best_p['buy_label']}** "
+            f"{best_p['return_on_avg_invested_pct']:+.1f}%)."
+        )
+        conclusions.append(
+            "Percentile is monotonic on rate: tighter is better. "
+            "Loosening adds dollars until >0.00, which is worse dollars than >0.20."
+        )
+    if universe:
+        bits = []
+        for u in universe:
+            bits.append(
+                f"**{u.get('buy_label')}**: {u['n_signals']} names, "
+                f"{u['return_on_avg_invested_pct']:+.1f}% on invested, "
+                f"{money(u['stock_pnl'])}, {u['win_rate_pct']:.1f}% win rate "
+                f"({u['n_closed']}c/{u['n_open']}o)."
+            )
+        conclusions.append(
+            "Fortune 500 at start is the floor on rate. "
+            + " ".join(bits)
+            + " No analyst projection, so the 50% target never fires."
+        )
+    conclusions.append(
+        f"Keep **{best.get('buy_label')}** for rate. "
+        f"Keep **{best_pnl.get('buy_label')}** if you want more dollars in play. "
+        "Do not switch the buy filter to percentile or to the Fortune 500 universe."
+    )
+    body += ["## Conclusions", ""] + [f"- {c}" for c in conclusions] + [""]
+    if skipped:
+        reasons = {}
+        names = []
+        for item in skipped:
+            reasons[item["reason"]] = reasons.get(item["reason"], 0) + 1
+            names.append(item["ticker"])
+        body += [
+            "Skipped Fortune 500 names: "
+            + ", ".join(names)
+            + " ("
+            + ", ".join(f"{k} {v}" for k, v in reasons.items())
+            + ").",
+            "",
+        ]
+    if notes:
+        body += ["## Notes", ""] + [f"- {n}" for n in notes] + [""]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+def run_conclusion(signals, close, spy):
+    spec = WINNING_SELL
+    rows = load_focus_winning_sell()
+    close_wide = None
+    init_cash = None
+    for cut in PERCENTILE_CUTS:
+        bought = filter_percentile(signals, cut)
+        if bought.empty:
+            print(f"  skip signal_percentile > {cut:.2f}: no signals")
+            continue
+        filt = {"min_percentile": cut, "family": "percentile"}
+        label = f"{spec.label} · {buy_label(filt)}"
+        print(f"  {label} ({len(bought)} signals)")
+        row, _, close_wide, _, init_cash = run_one(label, close, spy, bought, spec)
+        row = attach_spec(row, spec, filt)
+        row["label"] = label
+        rows.append(row)
+
+    close = ensure_fortune_prices(close)
+    symbols = load_fortune_symbols()
+    f_signals, skipped = fortune_entry_signals(close, symbols)
+    if f_signals.empty:
+        raise RuntimeError("No Fortune 500 names aligned to first-day prices")
+    for f_spec, f_label in (
+        (SellSpec(hold_days=30, drawdown=0.075), "Fortune 500 at start · 30d 7.5dd"),
+        (SellSpec(drawdown=0.075), "Fortune 500 at start · 7.5dd"),
+    ):
+        filt = {
+            "universe": "fortune_500",
+            "family": "universe",
+            "label": f_label,
+        }
+        label = f"{f_spec.label} · {f_label}"
+        print(f"  {label} ({len(f_signals)} names, skipped {len(skipped)})")
+        row, _, close_wide, _, init_cash = run_one(label, close, spy, f_signals, f_spec)
+        row = attach_spec(row, f_spec, filt)
+        row["label"] = label
+        row["n_skipped"] = len(skipped)
+        row["n_listed"] = len(symbols)
+        rows.append(row)
+    return rows, close_wide, init_cash, skipped
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Sweep sell/buy permutations")
     p.add_argument(
         "phase",
         nargs="?",
         default="all",
-        choices=("download", "sells", "buys", "all", "focus"),
+        choices=("download", "sells", "buys", "all", "focus", "conclusion"),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
     p.add_argument("--end", default=None)
@@ -868,6 +1218,29 @@ def main():
             "Comparison is on invested dollars, not book vs SPY. Exposure stays low.",
         ]
         write_focus_summary(report_path, rows, signals, info, notes)
+        return
+
+    if args.phase == "conclusion":
+        rows, close_wide, init_cash, skipped = run_conclusion(signals, close, spy)
+        save_json(CACHE_DIR / "conclusion.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "30d 50% 7.5dd buy comparison",
+        )
+        notes = [
+            "Sell frozen at 30d or 50% of projected upside or 7.5% trailing drawdown. "
+            "Peak for drawdown is since entry. A new signal resets the 30d clock and the target.",
+            "The six analyst/proj rows are copied from VectorBT/.cache/focus.json "
+            "(run 2026-09-21 20:41 UTC+3). They were not re-simulated.",
+            "signal_percentile > 0.00 excludes the single row with percentile 0 (188 of 189).",
+            "Fortune 500 has no analyst projection, so the 50% target never fires. "
+            "Two F500 rows: 30d or 7.5% dd, and 7.5% dd alone. Bought on the first bar of the period.",
+            "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
+        ]
+        write_conclusion_summary(report_path, rows, info, notes, skipped)
         return
 
     sell_rows = []

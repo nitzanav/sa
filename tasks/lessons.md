@@ -1,5 +1,9 @@
 # Lessons
 
+## VectorBT price windows
+
+- Yahoo daily bars are timestamped after midnight UTC. Clip by **normalized calendar date**, not `timestamp <= date@00:00`, or the last session (and same-day signals such as ON) disappear.
+
 ## Analyst recommendation sources
 
 - Generic scrape takes an explicit `source` plus URL. Do not infer Google vs Yahoo from the hostname inside `scrapeAnalystRecommendation`.
