@@ -1,9 +1,9 @@
 """
 VectorBT simulations of buy signals from data/signals.csv.
 
-Each taken signal opens one $5K long per ticker. If a ticker already has an
-open position, later signals for that ticker are skipped (no add-on buy) but
-still extend the exit rules below.
+Start 100% in SPY. Each signal is a $5K long funded by selling that much SPY.
+Selling a lot buys SPY with the proceeds. The book stays fully invested, so
+the headline comparison is portfolio return vs buy-and-hold SPY.
 
 1. Sell 30 trading days after the last signal received while still held.
 2. Same 30-day rule, or sell earlier when close reaches 75% of the analyst
@@ -11,6 +11,7 @@ still extend the exit rules below.
    adds another 30 days.
 """
 
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -25,6 +26,7 @@ POSITION_VALUE = 5_000.0
 HOLD_AFTER_LAST_DAYS = 30
 TARGET_FRACTION = 0.75
 HOLD_NORM_DAYS = 30
+SPY = "SPY"
 
 
 def download_close(symbols, start, end):
@@ -61,82 +63,20 @@ def as_float(value):
     return float(arr[0] if arr.size == 1 else arr.sum())
 
 
-def as_series(value):
+def as_series(value, index):
     if isinstance(value, pd.DataFrame):
-        return value.sum(axis=1)
-    if isinstance(value, pd.Series):
-        return value
-    return pd.Series(np.asarray(value, dtype=float).reshape(-1))
+        series = value.sum(axis=1)
+    elif isinstance(value, pd.Series):
+        series = value
+    else:
+        series = pd.Series(np.asarray(value, dtype=float).reshape(-1))
+    series.index = index
+    return series
 
 
-def open_lots_series(portfolio, index):
-    try:
-        assets = portfolio.assets(group_by=False)
-    except TypeError:
-        assets = portfolio.assets()
-    if isinstance(assets, pd.DataFrame):
-        lots = (assets > 1e-8).sum(axis=1)
-        lots.index = index
-        return lots.astype(int)
-    return pd.Series(np.where(np.asarray(assets, dtype=float).reshape(-1) > 1e-8, 1, 0), index=index)
-
-
-def exposure_stats(portfolio, init_cash):
-    """Capital at work vs allocated cash. Exposure is market value / starting cash."""
-    asset_value = as_series(portfolio.asset_value())
-    cash = as_series(portfolio.cash())
-    nav = as_series(portfolio.value())
-    index = asset_value.index
-    open_lots = open_lots_series(portfolio, index)
-    cost_deployed = open_lots.astype(float) * POSITION_VALUE
-    pnl = as_float(portfolio.final_value()) - init_cash
-    avg_market = float(asset_value.mean())
-    avg_cost = float(cost_deployed.mean())
-    max_market = float(asset_value.max())
-    max_cost = float(cost_deployed.max())
-    end_market = float(asset_value.iloc[-1])
-    end_cost = float(cost_deployed.iloc[-1])
-    avg_cash = float(cash.mean())
-    min_cash = float(cash.min())
-    days_invested = int((open_lots > 0).sum())
-    n_days = int(len(index))
-    total_bought = POSITION_VALUE * as_float(portfolio.trades.count())
-
-    return {
-        "init_cash": init_cash,
-        "end_value": as_float(portfolio.final_value()),
-        "pnl": pnl,
-        "return_on_cash_pct": pnl / init_cash * 100,
-        "return_on_avg_market_pct": pnl / avg_market * 100 if avg_market else 0.0,
-        "return_on_avg_cost_pct": pnl / avg_cost * 100 if avg_cost else 0.0,
-        "return_on_peak_market_pct": pnl / max_market * 100 if max_market else 0.0,
-        "avg_market": avg_market,
-        "max_market": max_market,
-        "end_market": end_market,
-        "avg_cost": avg_cost,
-        "max_cost": max_cost,
-        "end_cost": end_cost,
-        "avg_exposure_pct": avg_market / init_cash * 100,
-        "max_exposure_pct": max_market / init_cash * 100,
-        "end_exposure_pct": end_market / init_cash * 100,
-        "avg_cost_exposure_pct": avg_cost / init_cash * 100,
-        "max_cost_exposure_pct": max_cost / init_cash * 100,
-        "end_cost_exposure_pct": end_cost / init_cash * 100,
-        "avg_cash": avg_cash,
-        "min_cash": min_cash,
-        "avg_idle_pct": avg_cash / init_cash * 100,
-        "avg_open_lots": float(open_lots.mean()),
-        "max_open_lots": int(open_lots.max()),
-        "end_open_lots": int(open_lots.iloc[-1]),
-        "days_invested": days_invested,
-        "n_days": n_days,
-        "total_bought": total_bought,
-        "asset_value": asset_value,
-        "cost_deployed": cost_deployed,
-        "cash": cash,
-        "nav": nav,
-        "open_lots": open_lots,
-    }
+def bar_dates(index):
+    idx = index.tz_localize(None) if getattr(index, "tz", None) is not None else index
+    return pd.DatetimeIndex(pd.to_datetime(idx).normalize())
 
 
 def loc_on(index, ts):
@@ -150,28 +90,56 @@ def loc_on(index, ts):
     return int(loc)
 
 
+def aligned_spy(spy, index):
+    series = spy.reindex(index)
+    if series.isna().any():
+        series = series.ffill().bfill()
+    return series
+
+
+def spy_funded_nav(portfolio, spy, init_cash):
+    """Start in SPY; sell SPY to buy lots; buy SPY with sale proceeds."""
+    index = portfolio.wrapper.index
+    spy = aligned_spy(spy, index)
+    cash = as_series(portfolio.cash(), index)
+    stocks = as_series(portfolio.asset_value(), index)
+    flow = cash.diff()
+    flow.iloc[0] = float(cash.iloc[0]) - init_cash
+    shares = init_cash / float(spy.iloc[0]) + (flow / spy).cumsum()
+    spy_value = shares * spy
+    return stocks + spy_value, spy_value, stocks
+
+
+def max_drawdown_pct(nav):
+    peak = nav.cummax()
+    return float((nav / peak - 1.0).min()) * 100
+
+
 def positions_frame(portfolio, spy):
     trades = portfolio.trades.records_readable
+    columns = [
+        "ticker",
+        "date_buy",
+        "date_sell",
+        "price_buy",
+        "price_sell",
+        "pnl",
+        "return_pct",
+        "return_pct_30d",
+        "spy_pct",
+        "vs_spy_pct",
+        "hold_days",
+        "status",
+    ]
     if trades.empty:
-        return pd.DataFrame(
-            columns=[
-                "ticker",
-                "date_buy",
-                "date_sell",
-                "price_buy",
-                "price_sell",
-                "pnl",
-                "return_pct",
-                "return_pct_30d",
-                "spy_pct",
-                "vs_spy_pct",
-                "hold_days",
-                "status",
-            ]
-        )
+        return pd.DataFrame(columns=columns)
     index = portfolio.wrapper.index
+    spy = aligned_spy(spy, spy.index)
     rows = []
     for _, rec in trades.iterrows():
+        column = str(rec["Column"])
+        if column == SPY or column.startswith(f"{SPY}_"):
+            continue
         buy = rec["Entry Timestamp"]
         sell = rec["Exit Timestamp"]
         ret = float(rec["Return"]) * 100
@@ -183,7 +151,7 @@ def positions_frame(portfolio, spy):
         spy_ret = float(spy.iloc[se] / spy.iloc[sb] - 1.0) * 100
         rows.append(
             {
-                "ticker": str(rec["Column"]).split("_")[0],
+                "ticker": column.split("_")[0],
                 "date_buy": pd.Timestamp(buy).strftime("%Y-%m-%d"),
                 "date_sell": pd.Timestamp(sell).strftime("%Y-%m-%d"),
                 "price_buy": float(rec["Avg Entry Price"]),
@@ -197,7 +165,7 @@ def positions_frame(portfolio, spy):
                 "status": rec["Status"] if "Status" in rec else "",
             }
         )
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows, columns=columns)
 
 
 def write_positions_csv(path, positions):
@@ -205,30 +173,39 @@ def write_positions_csv(path, positions):
     print(f"Wrote {path} ({len(positions)} rows)")
 
 
-def summary_row(name, portfolio, init_cash, buy_stats, positions):
-    stats = exposure_stats(portfolio, init_cash)
+def summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions):
+    index = portfolio.wrapper.index
+    spy = aligned_spy(spy, index)
+    stock_pnl = float(positions["pnl"].sum()) if len(positions) else 0.0
+    pnl = float(nav.iloc[-1]) - init_cash
+    spy_bnh = float(spy.iloc[-1] / spy.iloc[0] - 1.0) * 100
     n_trades = int(round(as_float(portfolio.trades.count())))
     n_closed = int(round(as_float(portfolio.trades.closed.count()))) if n_trades else 0
+    try:
+        assets = portfolio.assets(group_by=False)
+    except TypeError:
+        assets = portfolio.assets()
+    cost = as_series(assets > 1e-8, index) * POSITION_VALUE
     return {
         "strategy": name,
-        "n_signals": buy_stats["n_signals"],
-        "n_buys": buy_stats["n_buys"],
-        "n_skipped": buy_stats["n_skipped"],
+        "n_signals": n_signals,
         "n_trades": n_trades,
         "n_closed": n_closed,
         "n_open": n_trades - n_closed,
-        "pnl": stats["pnl"],
-        "avg_invested": stats["avg_cost"],
-        "return_on_cash_pct": stats["return_on_cash_pct"],
-        "return_on_avg_invested_pct": stats["return_on_avg_cost_pct"],
+        "stock_pnl": stock_pnl,
+        "pnl": pnl,
+        "return_pct": pnl / init_cash * 100,
+        "spy_pct": spy_bnh,
+        "vs_spy_pct": pnl / init_cash * 100 - spy_bnh,
+        "avg_stock_invested": float(cost.mean()),
         "win_rate_pct": as_float(portfolio.trades.win_rate()) * 100 if n_trades else 0.0,
-        "max_drawdown_pct": as_float(portfolio.max_drawdown()) * 100,
+        "max_drawdown_pct": max_drawdown_pct(nav),
         "mean_lot_return_pct": float(positions["return_pct"].mean()) if len(positions) else 0.0,
         "mean_vs_spy_pct": float(positions["vs_spy_pct"].mean()) if len(positions) else 0.0,
     }
 
 
-def simulate(name, close, entries, exits, init_cash, spy, csv_path, buy_stats):
+def simulate(name, close, entries, exits, init_cash, spy, csv_path, n_signals):
     print(f"Running {name} …")
     portfolio = vbt.Portfolio.from_signals(
         close=close,
@@ -243,20 +220,17 @@ def simulate(name, close, entries, exits, init_cash, spy, csv_path, buy_stats):
         group_by=True,
         allow_partial=False,
     )
+    nav, _, _ = spy_funded_nav(portfolio, spy, init_cash)
     positions = positions_frame(portfolio, spy)
     write_positions_csv(csv_path, positions)
-    row = summary_row(name, portfolio, init_cash, buy_stats, positions)
+    row = summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions)
     print(
-        f"  P&L {row['pnl']:+,.0f}  cash {row['return_on_cash_pct']:+.2f}%  "
-        f"avg invested ${row['avg_invested']:,.0f}  invested return {row['return_on_avg_invested_pct']:+.2f}%  "
+        f"  stock P&L {row['stock_pnl']:+,.0f}  "
+        f"book {row['pnl']:+,.0f} ({row['return_pct']:+.2f}%)  "
+        f"SPY {row['spy_pct']:+.2f}%  vs SPY {row['vs_spy_pct']:+.2f}%  "
         f"trades {row['n_trades']} ({row['n_closed']} closed)\n"
     )
     return portfolio, row
-
-
-def bar_dates(index):
-    idx = index.tz_localize(None) if getattr(index, "tz", None) is not None else index
-    return pd.DatetimeIndex(pd.to_datetime(idx).normalize())
 
 
 def load_signals(path=SIGNALS_CSV):
@@ -272,94 +246,131 @@ def unique_tickers(signals):
     return signals["ticker"].drop_duplicates().tolist()
 
 
-def _signal_events(close, signals, ticker):
-    """Return (bar_loc, average_projected) for one ticker, sorted by date."""
+def signal_positions(close, signals):
+    """One column per signal so each $5K lot has its own entry/exit."""
     dates = bar_dates(close.index)
-    events = []
-    for row in signals.loc[signals["ticker"] == ticker].itertuples(index=False):
+    frames = {}
+    rows = []
+    close_columns = close.columns if isinstance(close, pd.DataFrame) else [close.name]
+    for row in signals.itertuples(index=False):
+        ticker = row.ticker
+        if ticker not in close_columns:
+            continue
+        series = close[ticker] if isinstance(close, pd.DataFrame) else close
         loc = dates.get_indexer([pd.Timestamp(row.date)], method="bfill")[0]
-        if loc >= 0:
-            events.append((int(loc), float(row.average_projected)))
-    return sorted(events, key=lambda item: item[0])
-
-
-def build_entries_exits(close, signals, hold_days, use_target=False, target_frac=TARGET_FRACTION):
-    """One column per ticker. Skip buys when already in; repeat signals extend exits."""
-    tickers = [t for t in unique_tickers(signals) if t in close.columns]
-    if not tickers:
+        if loc < 0:
+            continue
+        column = f"{ticker}_{pd.Timestamp(row.date).date()}_{len(rows)}"
+        frames[column] = series
+        rows.append(
+            {
+                "column": column,
+                "ticker": ticker,
+                "entry_loc": loc,
+                "average_projected": float(row.average_projected),
+            }
+        )
+    if not frames:
         raise RuntimeError("No signals aligned to price data")
+    close_wide = pd.DataFrame(frames, index=close.index)
+    return close_wide, pd.DataFrame(rows)
 
-    close_wide = close[tickers].copy()
-    entries = pd.DataFrame(False, index=close_wide.index, columns=tickers)
-    exits = pd.DataFrame(False, index=close_wide.index, columns=tickers)
-    n_signals = 0
-    n_skipped = 0
-    n_buys = 0
 
-    for col, ticker in enumerate(tickers):
-        prices = close_wide[ticker].to_numpy()
-        signal_map = {}
-        for loc, proj in _signal_events(close, signals, ticker):
-            signal_map[loc] = proj
-            n_signals += 1
+def entries_from_meta(close_wide, meta):
+    entries = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
+    col_index = {name: i for i, name in enumerate(close_wide.columns)}
+    for row in meta.itertuples(index=False):
+        entries.iat[row.entry_loc, col_index[row.column]] = True
+    return entries
 
-        in_position = False
-        entry_loc = None
-        deadline = None
-        target = None
-        n = len(prices)
 
-        for t in range(n):
-            if t in signal_map:
-                proj = signal_map[t]
-                if not in_position:
-                    entries.iloc[t, col] = True
-                    in_position = True
-                    entry_loc = t
-                    n_buys += 1
+def _extend_deadline(signal_locs, entry_loc, hold_days):
+    """Push the sell date out hold_days after each signal that arrives while still held."""
+    deadline = entry_loc + hold_days
+    for loc in signal_locs:
+        if loc < entry_loc:
+            continue
+        if loc <= deadline:
+            deadline = loc + hold_days
+        else:
+            break
+    return deadline
+
+
+def exits_after_last_signal(close_wide, meta, hold_days):
+    """Sell each lot hold_days after the last signal received while it was still open."""
+    exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
+    n = len(close_wide)
+    col_index = {name: i for i, name in enumerate(close_wide.columns)}
+    for _, group in meta.groupby("ticker"):
+        locs = sorted(int(loc) for loc in group["entry_loc"])
+        for row in group.itertuples(index=False):
+            deadline = _extend_deadline(locs, int(row.entry_loc), hold_days)
+            if deadline < n:
+                exits.iat[deadline, col_index[row.column]] = True
+    return exits
+
+
+def exits_after_last_or_target(close_wide, meta, hold_days, target_frac):
+    """Sell on the 30-day last-signal rule, or sooner at 75% of projected upside.
+
+    A new signal for the same ticker, received while the lot is still open,
+    resets the target to 75% of that signal's projected move from that day's
+    close and pushes the time stop out another hold_days.
+    """
+    exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
+    n = len(close_wide)
+    col_index = {name: i for i, name in enumerate(close_wide.columns)}
+
+    for _, group in meta.groupby("ticker"):
+        group = group.sort_values("entry_loc")
+        prices = close_wide[group["column"].iloc[0]].to_numpy()
+        signal_locs = [int(loc) for loc in group["entry_loc"]]
+        loc_to_proj = {
+            int(loc): float(proj)
+            for loc, proj in zip(group["entry_loc"], group["average_projected"])
+        }
+        signal_loc_set = set(signal_locs)
+
+        for row in group.itertuples(index=False):
+            entry = int(row.entry_loc)
+            deadline = entry + hold_days
+            target = prices[entry] * (1.0 + target_frac * float(row.average_projected) / 100.0)
+            for t in range(entry + 1, n):
+                if t in signal_loc_set:
                     deadline = t + hold_days
-                    if use_target:
-                        target = prices[t] * (1.0 + target_frac * proj / 100.0)
-                else:
-                    n_skipped += 1
-                    deadline = t + hold_days
-                    if use_target:
-                        target = prices[t] * (1.0 + target_frac * proj / 100.0)
-
-            if in_position and t > entry_loc:
-                hit_target = use_target and prices[t] >= target
-                if t >= deadline or hit_target:
-                    exits.iloc[t, col] = True
-                    in_position = False
-                    entry_loc = None
-                    deadline = None
-                    target = None
-
-    return close_wide, entries, exits, {
-        "n_signals": n_signals,
-        "n_buys": n_buys,
-        "n_skipped": n_skipped,
-    }
+                    target = prices[t] * (1.0 + target_frac * loc_to_proj[t] / 100.0)
+                if t >= deadline or prices[t] >= target:
+                    exits.iat[t, col_index[row.column]] = True
+                    break
+    return exits
 
 
-def run_strategies():
-    signals = load_signals()
-    close = download_close(unique_tickers(signals), signals["date"].min(), None)
-    spy = download_close("SPY", signals["date"].min(), None)
-    init_cash = POSITION_VALUE * close.shape[1]
-    print(f"{len(signals)} signals in file, max {close.shape[1]} tickers × ${POSITION_VALUE:,.0f}\n")
+def run_strategies(signals_path=SIGNALS_CSV, end=None):
+    signals = load_signals(signals_path)
+    start = signals["date"].min()
+    close = download_close(unique_tickers(signals), start, end)
+    spy = download_close(SPY, start, end)
+    close_wide, meta = signal_positions(close, signals)
+    entries = entries_from_meta(close_wide, meta)
+    init_cash = POSITION_VALUE * len(meta)
+    print(f"{len(meta)} signals × ${POSITION_VALUE:,.0f} = ${init_cash:,.0f} starting in SPY\n")
     jobs = (
-        ("1. Sell 30d after last signal", False, OUT_DIR / "positions_30d_last_signal.csv"),
+        (
+            "1. Sell 30d after last signal",
+            exits_after_last_signal(close_wide, meta, HOLD_AFTER_LAST_DAYS),
+            OUT_DIR / "positions_30d_last_signal.csv",
+        ),
         (
             "2. Sell 30d after last signal or 75% of projection",
-            True,
+            exits_after_last_or_target(close_wide, meta, HOLD_AFTER_LAST_DAYS, TARGET_FRACTION),
             OUT_DIR / "positions_30d_or_75pct.csv",
         ),
     )
     rows = []
     portfolios = []
-    for name, use_target, csv_path in jobs:
-        pf, row = _run_one(name, close, signals, init_cash, spy, csv_path, use_target)
+    for name, exits, csv_path in jobs:
+        pf, row = simulate(name, close_wide, entries, exits, init_cash, spy, csv_path, len(meta))
         portfolios.append(pf)
         rows.append(row)
     summary = pd.DataFrame(rows)
@@ -370,19 +381,7 @@ def run_strategies():
     return tuple(portfolios)
 
 
-def _run_one(name, close, signals, init_cash, spy, csv_path, use_target):
-    close_wide, entries, exits, stats = build_entries_exits(
-        close,
-        signals,
-        HOLD_AFTER_LAST_DAYS,
-        use_target=use_target,
-    )
-    print(
-        f"{stats['n_buys']} buys, {stats['n_skipped']} skipped (already in position), "
-        f"${init_cash:,.0f} starting cash\n"
-    )
-    return simulate(name, close_wide, entries, exits, init_cash, spy, csv_path, stats)
-
-
 if __name__ == "__main__":
-    run_strategies()
+    path = sys.argv[1] if len(sys.argv) > 1 else SIGNALS_CSV
+    end = sys.argv[2] if len(sys.argv) > 2 else None
+    run_strategies(path, end)
