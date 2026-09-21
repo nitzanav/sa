@@ -1125,9 +1125,9 @@ def write_conclusion_summary(path, rows, info, notes, skipped=None):
     print(f"Wrote {path}")
 
 
-def run_conclusion(signals, close, spy):
+def run_percentile(signals, close, spy):
     spec = WINNING_SELL
-    rows = load_focus_winning_sell()
+    rows = []
     close_wide = None
     init_cash = None
     for cut in PERCENTILE_CUTS:
@@ -1142,6 +1142,80 @@ def run_conclusion(signals, close, spy):
         row = attach_spec(row, spec, filt)
         row["label"] = label
         rows.append(row)
+    return rows, close_wide, init_cash
+
+
+def write_percentile_summary(path, rows, info, notes):
+    best = max(rows, key=lambda r: r["return_on_avg_invested_pct"])
+    best_pnl = max(rows, key=lambda r: r["stock_pnl"])
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        (
+            f"**Period:** {info['start']} → {info['end']} · "
+            f"{info['cal_days']} days ({info['trading_days']} trading)"
+        ),
+        (
+            "Sell frozen: **30d or 50% of projected target or 7.5% trailing dd**. "
+            "$5,000 per lot. Ranked by **return on avg invested**."
+        ),
+        "",
+        "# WINNING PERCENTILE CUT",
+        "",
+        "# SELL: 30D OR 50% TARGET OR 7.5% DD",
+        "",
+        f"# BUY: {best.get('buy_label', best['label']).upper()}",
+        "",
+        (
+            f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
+            f"{money(best['stock_pnl'])} · {best['n_signals']} SIGNALS · "
+            f"{best['win_rate_pct']:.1f}% WIN RATE"
+        ),
+        "",
+        "## 30d 50% 7.5dd — signal_percentile buys",
+        "",
+        conclusion_compact_table(rows),
+        "",
+        "## Detail",
+        "",
+        conclusion_detail_table(rows),
+        "",
+        (
+            f"Best **return on invested**: **{best.get('buy_label')}** → "
+            f"{best['return_on_avg_invested_pct']:+.1f}% "
+            f"({best['n_signals']} signals, {money(best['stock_pnl'])})."
+        ),
+        "",
+        (
+            f"Best **stock P&L**: **{best_pnl.get('buy_label')}** → "
+            f"{money(best_pnl['stock_pnl'])} "
+            f"({best_pnl['n_signals']} signals, "
+            f"{best_pnl['return_on_avg_invested_pct']:+.1f}%)."
+        ),
+        "",
+        "## Conclusions",
+        "",
+        (
+            "- Percentile is monotonic on rate: tighter is better. "
+            f"**{best.get('buy_label')}** is the best of these five."
+        ),
+        (
+            f"- Best dollars: **{best_pnl.get('buy_label')}** "
+            f"({money(best_pnl['stock_pnl'])})."
+        ),
+        "",
+    ]
+    if notes:
+        body += ["## Notes", ""] + [f"- {n}" for n in notes] + [""]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+def run_conclusion(signals, close, spy):
+    rows = load_focus_winning_sell()
+    pct_rows, close_wide, init_cash = run_percentile(signals, close, spy)
+    rows.extend(pct_rows)
 
     close = ensure_fortune_prices(close)
     symbols = load_fortune_symbols()
@@ -1174,7 +1248,7 @@ def parse_args():
         "phase",
         nargs="?",
         default="all",
-        choices=("download", "sells", "buys", "all", "focus", "conclusion"),
+        choices=("download", "sells", "buys", "all", "focus", "conclusion", "percentile"),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
     p.add_argument("--end", default=None)
@@ -1218,6 +1292,25 @@ def main():
             "Comparison is on invested dollars, not book vs SPY. Exposure stays low.",
         ]
         write_focus_summary(report_path, rows, signals, info, notes)
+        return
+
+    if args.phase == "percentile":
+        rows, close_wide, init_cash = run_percentile(signals, close, spy)
+        save_json(CACHE_DIR / "percentile.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "30d 50% 7.5dd signal_percentile buys",
+        )
+        notes = [
+            "Sell frozen at 30d or 50% of projected upside or 7.5% trailing drawdown. "
+            "Peak for drawdown is since entry. A new signal resets the 30d clock and the target.",
+            "signal_percentile > 0.00 excludes the single row with percentile 0.",
+            "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
+        ]
+        write_percentile_summary(report_path, rows, info, notes)
         return
 
     if args.phase == "conclusion":

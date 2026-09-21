@@ -57,6 +57,36 @@ Same 6 analyst/proj buys (reuse 2041 numbers). Add percentile cuts >0.80/0.60/0.
 
 Full tables: `VectorBT/simulation_2026-09-21_2143_UTC+3_optimize.md`.
 
+## Percentile re-run (2026-09-21 22:32)
+
+Re-simulated 5 `signal_percentile` cuts on rewritten `data/signals.csv`, sell frozen 30d 50% 7.5dd.
+
+- [x] Add `percentile` phase to `VectorBT/optimize.py`
+- [x] Run 5 cuts
+- [x] Write timestamped md + canvas
+
+**Result:** still monotonic. **>0.80** +41.6% / +$7,504 / 38 (was +32.7% / +$5,857). Best dollars **>0.40** +$13,751. After rewrite, >0.80 and >0.60 beat the old freeze (+36.4%). analyst>3 · proj>30% (+63.1%) still wins on rate.
+
+Full tables: `VectorBT/simulation_2026-09-21_2232_UTC+3_optimize.md`.
+
+## Percentile re-run (2026-09-21 23:12)
+
+Same 5 `signal_percentile` cuts after another rewrite of `data/signals.csv`. Sell frozen 30d 50% 7.5dd.
+
+- [x] Re-run `percentile` phase
+- [x] Write timestamped md + canvas
+
+**Result:** still monotonic. **>0.80** +39.4% / +$7,371 / 38 (was +41.6% / +$7,504 at 22:32). Best dollars **>0.40** +$14,346. Still beats old freeze (+36.4%). analyst>3 · proj>30% (+63.1%) still wins on rate.
+
+Full tables: `VectorBT/simulation_2026-09-21_2312_UTC+3_optimize.md`.
+
+## Position inspector (analyst>2 · proj>20% · 30d 50% 7.5dd)
+
+- [x] Resimulate 84 lots and export CSV
+- [x] HTML + canvas charts 2025-01-01 → latest, buy/peak/sell markers
+
+84 lots: 45 stopped by 7.5% dd, 17 by 50% target, 11 by 30d, 10 open. Charts (analysts, 100% proj, other same-ticker buys, last close): `VectorBT/simulation_2026-09-21_2242_UTC+3_a2-p20_30d-t50-dd75_positions.html`.
+
 ## Review
 
 Baselines matched 1554 exactly after clipping Yahoo bars by **calendar date** (timestamp-after-midnight had dropped 2026-09-18 and the ON print).

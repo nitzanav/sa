@@ -1,5 +1,12 @@
-1. try price target mean × √N
+0. better sell strategy than "30d 50% 7.5dd " - to review graph - in progress
+1. try "price target mean" × √N - done, result are not good. cancelled
+now check different downdrops before profit and after profit
+2. ading 7d
 2. try adding google
 3. other sources
 4. different sum amoutn of positions, relative to stretch of score. 
-5. positions change, each time you but you take from other positions - much more complex
+positions change, each time you but you take from other positions - much more complex
+
+
+Last decision
+Sell: "30d 50% 7.5dd"
