@@ -19,10 +19,12 @@ import vectorbt as vbt
 
 ROOT = Path(__file__).resolve().parents[1]
 SIGNALS_CSV = ROOT / "data/signals.csv"
+OUT_DIR = Path(__file__).resolve().parent
 
 POSITION_VALUE = 5_000.0
 HOLD_AFTER_LAST_DAYS = 30
 TARGET_FRACTION = 0.75
+HOLD_NORM_DAYS = 30
 
 
 def download_close(symbols, start, end):
@@ -137,64 +139,96 @@ def exposure_stats(portfolio, init_cash):
     }
 
 
-def print_results(name, portfolio, init_cash):
+def loc_on(index, ts):
+    dates = bar_dates(index)
+    day = pd.Timestamp(ts)
+    if day.tzinfo is not None:
+        day = day.tz_localize(None)
+    loc = dates.get_indexer([day.normalize()], method="bfill")[0]
+    if loc < 0:
+        loc = dates.get_indexer([day.normalize()], method="ffill")[0]
+    return int(loc)
+
+
+def positions_frame(portfolio, spy):
+    trades = portfolio.trades.records_readable
+    if trades.empty:
+        return pd.DataFrame(
+            columns=[
+                "ticker",
+                "date_buy",
+                "date_sell",
+                "price_buy",
+                "price_sell",
+                "pnl",
+                "return_pct",
+                "return_pct_30d",
+                "spy_pct",
+                "vs_spy_pct",
+                "hold_days",
+                "status",
+            ]
+        )
+    index = portfolio.wrapper.index
+    rows = []
+    for _, rec in trades.iterrows():
+        buy = rec["Entry Timestamp"]
+        sell = rec["Exit Timestamp"]
+        ret = float(rec["Return"]) * 100
+        ib = loc_on(index, buy)
+        ie = loc_on(index, sell)
+        hold_days = max(ie - ib + 1, 1)
+        sb = loc_on(spy.index, buy)
+        se = loc_on(spy.index, sell)
+        spy_ret = float(spy.iloc[se] / spy.iloc[sb] - 1.0) * 100
+        rows.append(
+            {
+                "ticker": str(rec["Column"]).split("_")[0],
+                "date_buy": pd.Timestamp(buy).strftime("%Y-%m-%d"),
+                "date_sell": pd.Timestamp(sell).strftime("%Y-%m-%d"),
+                "price_buy": float(rec["Avg Entry Price"]),
+                "price_sell": float(rec["Avg Exit Price"]),
+                "pnl": float(rec["PnL"]),
+                "return_pct": ret,
+                "return_pct_30d": ret * HOLD_NORM_DAYS / hold_days,
+                "spy_pct": spy_ret,
+                "vs_spy_pct": ret - spy_ret,
+                "hold_days": hold_days,
+                "status": rec["Status"] if "Status" in rec else "",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def write_positions_csv(path, positions):
+    positions.to_csv(path, index=False)
+    print(f"Wrote {path} ({len(positions)} rows)")
+
+
+def summary_row(name, portfolio, init_cash, buy_stats, positions):
     stats = exposure_stats(portfolio, init_cash)
     n_trades = int(round(as_float(portfolio.trades.count())))
     n_closed = int(round(as_float(portfolio.trades.closed.count()))) if n_trades else 0
-    win_rate = as_float(portfolio.trades.win_rate()) * 100 if n_trades else 0.0
-    max_dd = as_float(portfolio.max_drawdown()) * 100
-    print("=" * 40)
-    print(name)
-    print(f"Starting cash     : ${stats['init_cash']:>12,.2f}")
-    print(f"Ending value      : ${stats['end_value']:>12,.2f}")
-    print(f"Total P&L         : ${stats['pnl']:>+12,.2f}")
-    print(f"Return on cash    :  {stats['return_on_cash_pct']:>+11.2f} %")
-    print(f"Return on avg exp.:  {stats['return_on_avg_market_pct']:>+11.2f} %")
-    print(f"Win rate          :  {win_rate:>11.2f} %")
-    print(f"Max drawdown      :  {max_dd:>11.2f} %")
-    print(f"Trades            :  {n_trades} ({n_closed} closed, {n_trades - n_closed} open)")
-    print("-" * 40)
-    print(f"Bought (cost)     : ${stats['total_bought']:>12,.2f}")
-    print(f"Avg invested      : ${stats['avg_cost']:>12,.2f}  ({stats['avg_cost_exposure_pct']:5.1f}% of cash)")
-    print(f"Peak invested     : ${stats['max_cost']:>12,.2f}  ({stats['max_cost_exposure_pct']:5.1f}% of cash)")
-    print(f"End invested      : ${stats['end_cost']:>12,.2f}  ({stats['end_cost_exposure_pct']:5.1f}% of cash)")
-    print(f"Avg market exp.   : ${stats['avg_market']:>12,.2f}  ({stats['avg_exposure_pct']:5.1f}% of cash)")
-    print(f"Peak market exp.  : ${stats['max_market']:>12,.2f}  ({stats['max_exposure_pct']:5.1f}% of cash)")
-    print(f"Avg idle cash     : ${stats['avg_cash']:>12,.2f}  ({stats['avg_idle_pct']:5.1f}% of cash)")
-    print(f"Open lots avg/max :  {stats['avg_open_lots']:5.1f} / {stats['max_open_lots']}")
-    print("=" * 40)
-    print()
-    return stats
+    return {
+        "strategy": name,
+        "n_signals": buy_stats["n_signals"],
+        "n_buys": buy_stats["n_buys"],
+        "n_skipped": buy_stats["n_skipped"],
+        "n_trades": n_trades,
+        "n_closed": n_closed,
+        "n_open": n_trades - n_closed,
+        "pnl": stats["pnl"],
+        "avg_invested": stats["avg_cost"],
+        "return_on_cash_pct": stats["return_on_cash_pct"],
+        "return_on_avg_invested_pct": stats["return_on_avg_cost_pct"],
+        "win_rate_pct": as_float(portfolio.trades.win_rate()) * 100 if n_trades else 0.0,
+        "max_drawdown_pct": as_float(portfolio.max_drawdown()) * 100,
+        "mean_lot_return_pct": float(positions["return_pct"].mean()) if len(positions) else 0.0,
+        "mean_vs_spy_pct": float(positions["vs_spy_pct"].mean()) if len(positions) else 0.0,
+    }
 
 
-def print_trades(portfolio):
-    trades = portfolio.trades.records_readable
-    if trades.empty:
-        print("No trades.\n")
-        return
-    columns = [
-        col
-        for col in (
-            "Column",
-            "Entry Timestamp",
-            "Exit Timestamp",
-            "Avg Entry Price",
-            "Avg Exit Price",
-            "Size",
-            "PnL",
-            "Return",
-            "Status",
-        )
-        if col in trades.columns
-    ]
-    view = trades[columns].copy()
-    if "Return" in view.columns:
-        view["Return"] = view["Return"] * 100
-    print(view.to_string(index=False))
-    print()
-
-
-def simulate(name, close, entries, exits, init_cash):
+def simulate(name, close, entries, exits, init_cash, spy, csv_path, buy_stats):
     print(f"Running {name} …")
     portfolio = vbt.Portfolio.from_signals(
         close=close,
@@ -209,9 +243,15 @@ def simulate(name, close, entries, exits, init_cash):
         group_by=True,
         allow_partial=False,
     )
-    print_results(name, portfolio, init_cash)
-    print_trades(portfolio)
-    return portfolio
+    positions = positions_frame(portfolio, spy)
+    write_positions_csv(csv_path, positions)
+    row = summary_row(name, portfolio, init_cash, buy_stats, positions)
+    print(
+        f"  P&L {row['pnl']:+,.0f}  cash {row['return_on_cash_pct']:+.2f}%  "
+        f"avg invested ${row['avg_invested']:,.0f}  invested return {row['return_on_avg_invested_pct']:+.2f}%  "
+        f"trades {row['n_trades']} ({row['n_closed']} closed)\n"
+    )
+    return portfolio, row
 
 
 def bar_dates(index):
@@ -305,27 +345,32 @@ def build_entries_exits(close, signals, hold_days, use_target=False, target_frac
 def run_strategies():
     signals = load_signals()
     close = download_close(unique_tickers(signals), signals["date"].min(), None)
+    spy = download_close("SPY", signals["date"].min(), None)
     init_cash = POSITION_VALUE * close.shape[1]
     print(f"{len(signals)} signals in file, max {close.shape[1]} tickers × ${POSITION_VALUE:,.0f}\n")
-    return (
-        _run_one(
-            "1. Sell 30d after last signal",
-            close,
-            signals,
-            init_cash,
-            use_target=False,
-        ),
-        _run_one(
+    jobs = (
+        ("1. Sell 30d after last signal", False, OUT_DIR / "positions_30d_last_signal.csv"),
+        (
             "2. Sell 30d after last signal or 75% of projection",
-            close,
-            signals,
-            init_cash,
-            use_target=True,
+            True,
+            OUT_DIR / "positions_30d_or_75pct.csv",
         ),
     )
+    rows = []
+    portfolios = []
+    for name, use_target, csv_path in jobs:
+        pf, row = _run_one(name, close, signals, init_cash, spy, csv_path, use_target)
+        portfolios.append(pf)
+        rows.append(row)
+    summary = pd.DataFrame(rows)
+    summary_path = OUT_DIR / "positions_summary.csv"
+    summary.to_csv(summary_path, index=False)
+    print(f"Wrote {summary_path}")
+    print(summary.to_string(index=False))
+    return tuple(portfolios)
 
 
-def _run_one(name, close, signals, init_cash, use_target):
+def _run_one(name, close, signals, init_cash, spy, csv_path, use_target):
     close_wide, entries, exits, stats = build_entries_exits(
         close,
         signals,
@@ -336,7 +381,7 @@ def _run_one(name, close, signals, init_cash, use_target):
         f"{stats['n_buys']} buys, {stats['n_skipped']} skipped (already in position), "
         f"${init_cash:,.0f} starting cash\n"
     )
-    return simulate(name, close_wide, entries, exits, init_cash)
+    return simulate(name, close_wide, entries, exits, init_cash, spy, csv_path, stats)
 
 
 if __name__ == "__main__":
