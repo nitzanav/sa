@@ -10,6 +10,10 @@ Phase 2 takes the four winning sells and sweeps buy filters.
 
 Phase focus runs a smaller 6×4 grid: analyst >2/>3 × proj >20/25/30%,
 against 7.5% dd with/without 30d and with/without a 50% target.
+
+Phase staged freezes buy at analyst > 2 and proj > 20%, then compares the
+winning 30d/50%/7.5dd sell against 15 two-stage trailing stops (wide dd
+until a profit lock, then a tighter dd).
 """
 
 from __future__ import annotations
@@ -75,9 +79,25 @@ class SellSpec:
     target_frac: float | None = None
     drawdown: float | None = None
     baseline: bool = False
+    dd_before: float | None = None
+    dd_after: float | None = None
+    lock_profit: float | None = None
+    lock_proj_frac: float | None = None
+
+    @property
+    def staged(self) -> bool:
+        return self.dd_before is not None
 
     @property
     def tag(self) -> str:
+        if self.staged:
+            before = f"dd{self.dd_before * 100:g}"
+            if self.lock_proj_frac is not None:
+                lock = f"p{int(round(self.lock_proj_frac * 100))}"
+            else:
+                lock = f"k{self.lock_profit * 100:g}"
+            after = f"dd{self.dd_after * 100:g}"
+            return f"{before}-{lock}-{after}"
         parts = []
         if self.hold_days is not None:
             parts.append(f"{self.hold_days}d")
@@ -90,6 +110,14 @@ class SellSpec:
 
     @property
     def short(self) -> str:
+        if self.staged:
+            before = f"{self.dd_before * 100:g}dd"
+            after = f"{self.dd_after * 100:g}dd"
+            if self.lock_proj_frac is not None:
+                lock = f"{int(round(self.lock_proj_frac * 100))}%proj"
+            else:
+                lock = f"{self.lock_profit * 100:g}%"
+            return f"{before}→{lock}→{after}"
         parts = []
         if self.hold_days is not None:
             parts.append(f"{self.hold_days}d")
@@ -101,6 +129,14 @@ class SellSpec:
 
     @property
     def label(self) -> str:
+        if self.staged:
+            before = f"{self.dd_before * 100:g}% dd"
+            after = f"{self.dd_after * 100:g}% dd"
+            if self.lock_proj_frac is not None:
+                lock = f"{int(round(self.lock_proj_frac * 100))}% of projection"
+            else:
+                lock = f"+{self.lock_profit * 100:g}%"
+            return f"{before} until {lock}, then {after}"
         if self.hold_days == 30 and self.target_frac is None and self.drawdown is None:
             return "30d after last signal"
         if (
@@ -156,6 +192,41 @@ def buy_grid():
     ]
 
 
+STAGED_BUY = {"min_analysts": 2, "min_projected": 20.0}
+
+
+def staged_sell_grid():
+    """Known 30d 50% 7.5dd plus 15 two-stage trailing stops."""
+    specs = [WINNING_SELL]
+    rows = (
+        (0.15, 0.05, None, 0.05),
+        (0.15, 0.075, None, 0.075),
+        (0.15, 0.10, None, 0.10),
+        (0.15, None, 0.25, 0.05),
+        (0.15, None, 0.25, 0.075),
+        (0.10, 0.05, None, 0.05),
+        (0.10, 0.075, None, 0.075),
+        (0.10, 0.10, None, 0.10),
+        (0.10, None, 0.25, 0.05),
+        (0.10, None, 0.25, 0.075),
+        (0.075, 0.05, None, 0.05),
+        (0.075, 0.075, None, 0.075),
+        (0.075, 0.10, None, 0.10),
+        (0.075, None, 0.25, 0.05),
+        (0.075, None, 0.25, 0.075),
+    )
+    for dd_before, lock_profit, lock_proj_frac, dd_after in rows:
+        specs.append(
+            SellSpec(
+                dd_before=dd_before,
+                lock_profit=lock_profit,
+                lock_proj_frac=lock_proj_frac,
+                dd_after=dd_after,
+            )
+        )
+    return specs
+
+
 def focus_sell_grid():
     return [
         SellSpec(hold_days=30, target_frac=0.50, drawdown=0.075),
@@ -202,6 +273,10 @@ def spec_from_row(row):
         target_frac=row.get("target_frac"),
         drawdown=row.get("drawdown"),
         baseline=bool(row.get("baseline", False)),
+        dd_before=row.get("dd_before"),
+        dd_after=row.get("dd_after"),
+        lock_profit=row.get("lock_profit"),
+        lock_proj_frac=row.get("lock_proj_frac"),
     )
 
 
@@ -210,6 +285,10 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
 
     A new signal for the same ticker while the lot is open resets the time
     stop and the projection target. Peak for drawdown is since entry.
+
+    Two-stage specs use dd_before until the lock (fixed % from entry, or a
+    fraction of analyst projection), then dd_after. Peak still starts at
+    entry and does not reset.
     """
     exits = pd.DataFrame(False, index=close_wide.index, columns=close_wide.columns)
     n = len(close_wide)
@@ -217,6 +296,20 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
     hold_days = spec.hold_days
     target_frac = spec.target_frac
     drawdown = spec.drawdown
+    dd_before = spec.dd_before
+    dd_after = spec.dd_after
+    lock_profit = spec.lock_profit
+    lock_proj_frac = spec.lock_proj_frac
+    staged = spec.staged
+    stats = {
+        "n_exit_wide": 0,
+        "n_exit_tight": 0,
+        "n_exit_time": 0,
+        "n_exit_target": 0,
+        "n_exit_dd": 0,
+        "n_locked": 0,
+        "n_still_open": 0,
+    }
 
     for _, group in meta.groupby("ticker"):
         group = group.sort_values("entry_loc")
@@ -230,14 +323,16 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
 
         for row in group.itertuples(index=False):
             entry = int(row.entry_loc)
+            entry_px = float(prices[entry])
             deadline = entry + hold_days if hold_days is not None else n + 1
+            proj_pct = float(row.average_projected)
             if target_frac is not None:
-                target = prices[entry] * (
-                    1.0 + target_frac * float(row.average_projected) / 100.0
-                )
+                target = entry_px * (1.0 + target_frac * proj_pct / 100.0)
             else:
                 target = None
-            peak = float(prices[entry])
+            peak = entry_px
+            locked = False
+            exited = False
             for t in range(entry + 1, n):
                 if t in signal_loc_set:
                     if hold_days is not None:
@@ -246,26 +341,56 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
                         target = prices[t] * (
                             1.0 + target_frac * loc_to_proj[t] / 100.0
                         )
+                    proj_pct = loc_to_proj[t]
                 px = float(prices[t])
                 if px > peak:
                     peak = px
+                if staged and not locked:
+                    if lock_profit is not None:
+                        threshold = lock_profit
+                    elif lock_proj_frac is not None:
+                        threshold = lock_proj_frac * (proj_pct / 100.0)
+                    else:
+                        threshold = None
+                    if threshold is not None and peak >= entry_px * (1.0 + threshold):
+                        locked = True
                 time_hit = t >= deadline
                 tgt_hit = target is not None and px >= target
-                dd_hit = drawdown is not None and px <= peak * (1.0 - drawdown)
+                if staged:
+                    active_dd = dd_after if locked else dd_before
+                    dd_hit = px <= peak * (1.0 - active_dd)
+                else:
+                    dd_hit = drawdown is not None and px <= peak * (1.0 - drawdown)
                 if time_hit or tgt_hit or dd_hit:
                     exits.iat[t, col_index[row.column]] = True
+                    if time_hit:
+                        stats["n_exit_time"] += 1
+                    if tgt_hit:
+                        stats["n_exit_target"] += 1
+                    if dd_hit:
+                        stats["n_exit_dd"] += 1
+                        if staged:
+                            if locked:
+                                stats["n_exit_tight"] += 1
+                            else:
+                                stats["n_exit_wide"] += 1
+                    exited = True
                     break
-    return exits
+            if locked:
+                stats["n_locked"] += 1
+            if not exited:
+                stats["n_still_open"] += 1
+    return exits, stats
 
 
 def verify_exits(close_wide, meta):
     time_only = SellSpec(hold_days=HOLD_AFTER_LAST_DAYS)
-    got = exits_from_spec(close_wide, meta, time_only)
+    got, _ = exits_from_spec(close_wide, meta, time_only)
     want = exits_after_last_signal(close_wide, meta, HOLD_AFTER_LAST_DAYS)
     if not got.equals(want):
         raise RuntimeError("exits_from_spec(30d) != exits_after_last_signal")
     combo = SellSpec(hold_days=HOLD_AFTER_LAST_DAYS, target_frac=TARGET_FRACTION)
-    got = exits_from_spec(close_wide, meta, combo)
+    got, _ = exits_from_spec(close_wide, meta, combo)
     want = exits_after_last_or_target(
         close_wide, meta, HOLD_AFTER_LAST_DAYS, TARGET_FRACTION
     )
@@ -301,6 +426,12 @@ def attach_spec(row, spec: SellSpec, buy=None):
     row["target_frac"] = spec.target_frac
     row["drawdown"] = spec.drawdown
     row["baseline"] = spec.baseline
+    row["dd_before"] = spec.dd_before
+    row["dd_after"] = spec.dd_after
+    row["lock_profit"] = spec.lock_profit
+    row["lock_proj_frac"] = spec.lock_proj_frac
+    row["staged"] = spec.staged
+    row["short"] = spec.short
     if buy is not None:
         for key in ("min_analysts", "min_projected", "min_percentile", "universe", "family"):
             if key in buy:
@@ -325,9 +456,10 @@ def run_one(label, close, spy, signals, spec: SellSpec, write_csv=None):
         raise RuntimeError(f"No price data for {label}")
     close_wide, meta = signal_positions(close[have], signals)
     entries = entries_from_meta(close_wide, meta)
-    exits = exits_from_spec(close_wide, meta, spec)
+    exits, exit_stats = exits_from_spec(close_wide, meta, spec)
     init_cash = POSITION_VALUE * len(meta)
     row, positions = simulate(label, close_wide, entries, exits, init_cash, spy, len(meta))
+    row.update(exit_stats)
     if write_csv is not None:
         positions.to_csv(write_csv, index=False)
         print(f"Wrote {write_csv} ({len(positions)} rows)")
@@ -1242,13 +1374,402 @@ def run_conclusion(signals, close, spy):
     return rows, close_wide, init_cash, skipped
 
 
+def staged_exit_cell(row):
+    if row.get("staged"):
+        return (
+            f"{int(row.get('n_exit_wide') or 0)} wide / "
+            f"{int(row.get('n_exit_tight') or 0)} tight / "
+            f"{int(row.get('n_still_open') or 0)} open · "
+            f"{int(row.get('n_locked') or 0)} locked"
+        )
+    return (
+        f"{int(row.get('n_exit_time') or 0)} 30d / "
+        f"{int(row.get('n_exit_target') or 0)} target / "
+        f"{int(row.get('n_exit_dd') or 0)} dd / "
+        f"{int(row.get('n_still_open') or 0)} open"
+    )
+
+
+def staged_compact_table(rows):
+    head = "| Rank | Sell | On invested | Stock P&L | Win rate | Exits |"
+    sep = "| ---: | --- | ---: | ---: | ---: | --- |"
+    lines = [head, sep]
+    ordered = sorted(rows, key=lambda r: r["return_on_avg_invested_pct"], reverse=True)
+    for i, row in enumerate(ordered, 1):
+        name = row.get("short") or row["label"]
+        if not row.get("staged"):
+            name = f"**{name}** *(known)*"
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    str(i),
+                    name,
+                    f"{row['return_on_avg_invested_pct']:+.1f}%",
+                    money(row["stock_pnl"]),
+                    f"{row['win_rate_pct']:.1f}%",
+                    staged_exit_cell(row),
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def staged_detail_table(rows):
+    head = (
+        "| Rank | Sell | On invested | Stock P&L | Win rate | Trades | "
+        "vs SPY | Avg invested |"
+    )
+    sep = "| ---: | --- | ---: | ---: | ---: | --- | ---: | ---: |"
+    lines = [head, sep]
+    ordered = sorted(rows, key=lambda r: r["return_on_avg_invested_pct"], reverse=True)
+    for i, row in enumerate(ordered, 1):
+        name = row.get("label") or row.get("short")
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    str(i),
+                    name,
+                    f"{row['return_on_avg_invested_pct']:+.1f}%",
+                    money(row["stock_pnl"]),
+                    f"{row['win_rate_pct']:.1f}%",
+                    f"{row['n_trades']} ({row['n_closed']}c/{row['n_open']}o)",
+                    f"{row['vs_spy_pct']:+.2f}%",
+                    f"{row['avg_invested_pct']:.1f}%",
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def staged_family_table(rows, key, fmt):
+    groups = {}
+    for row in rows:
+        if not row.get("staged"):
+            continue
+        groups.setdefault(row.get(key), []).append(row)
+    if not groups:
+        return ""
+    head = "| Group | Best sell | On invested | Stock P&L | n in group |"
+    sep = "| --- | --- | ---: | ---: | ---: |"
+    lines = [head, sep]
+    for value in sorted(groups, key=lambda v: (v is None, v)):
+        block = groups[value]
+        best = max(block, key=lambda r: r["return_on_avg_invested_pct"])
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    fmt(value),
+                    best.get("short") or best["label"],
+                    f"{best['return_on_avg_invested_pct']:+.1f}%",
+                    money(best["stock_pnl"]),
+                    str(len(block)),
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def write_staged_summary(path, rows, info, notes):
+    known = next(r for r in rows if not r.get("staged"))
+    staged = [r for r in rows if r.get("staged")]
+    best = max(rows, key=lambda r: r["return_on_avg_invested_pct"])
+    best_pnl = max(rows, key=lambda r: r["stock_pnl"])
+    best_staged = max(staged, key=lambda r: r["return_on_avg_invested_pct"])
+    worst_staged = min(staged, key=lambda r: r["return_on_avg_invested_pct"])
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        (
+            f"**Period:** {info['start']} → {info['end']} · "
+            f"{info['cal_days']} days ({info['trading_days']} trading)"
+        ),
+        (
+            f"Buy freeze: **analyst>2 · proj>20%** ({info['n']} signals). "
+            "$5,000 per lot. Ranked by **return on avg invested**."
+        ),
+        (
+            "Known sell: **30d or 50% of projected target or 7.5% trailing dd** "
+            f"({known['return_on_avg_invested_pct']:+.1f}%, {money(known['stock_pnl'])}). "
+            "15 two-stage trailing stops: wide dd from peak until a profit lock, "
+            "then a tighter dd. No 30d, no target sell."
+        ),
+        "",
+        "# WINNING COMBINATION",
+        "",
+        f"# SELL: {best.get('short', best['label']).upper()}",
+        "",
+        "# BUY: ANALYST>2 · PROJ>20%",
+        "",
+        (
+            f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
+            f"{money(best['stock_pnl'])} · {best['n_signals']} SIGNALS · "
+            f"{best['win_rate_pct']:.1f}% WIN RATE"
+        ),
+        "",
+        "## All 16 sells",
+        "",
+        staged_compact_table(rows),
+        "",
+        "## Detail",
+        "",
+        staged_detail_table(rows),
+        "",
+        "## Best by initial (wide) dd",
+        "",
+        staged_family_table(
+            rows,
+            "dd_before",
+            lambda v: f"{v * 100:g}% wide",
+        ),
+        "",
+        "## Best by lock trigger",
+        "",
+        _staged_lock_table(staged),
+        "",
+        (
+            f"Best **return on invested**: **{best.get('short') or best['label']}** → "
+            f"{best['return_on_avg_invested_pct']:+.1f}% ({money(best['stock_pnl'])})."
+        ),
+        "",
+        (
+            f"Best **stock P&L**: **{best_pnl.get('short') or best_pnl['label']}** → "
+            f"{money(best_pnl['stock_pnl'])} "
+            f"({best_pnl['return_on_avg_invested_pct']:+.1f}%)."
+        ),
+        "",
+        "## Conclusions",
+        "",
+    ]
+    conclusions = _staged_conclusions(
+        known, staged, best, best_pnl, best_staged, worst_staged
+    )
+    body += [f"- {c}" for c in conclusions] + [""]
+    if notes:
+        body += ["## Notes", ""] + [f"- {n}" for n in notes] + [""]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+def _staged_lock_table(staged):
+    by_lock = {}
+    for row in staged:
+        key = (
+            "p25"
+            if row.get("lock_proj_frac") is not None
+            else f"{row.get('lock_profit') * 100:g}%"
+        )
+        by_lock.setdefault(key, []).append(row)
+    head = "| Lock | Best sell | On invested | Stock P&L | n |"
+    sep = "| --- | --- | ---: | ---: | ---: |"
+    lines = [head, sep]
+    order = ["5%", "7.5%", "10%", "p25"]
+    labels = {
+        "5%": "+5% from entry",
+        "7.5%": "+7.5% from entry",
+        "10%": "+10% from entry",
+        "p25": "25% of projection",
+    }
+    for key in order:
+        block = by_lock.get(key)
+        if not block:
+            continue
+        best = max(block, key=lambda r: r["return_on_avg_invested_pct"])
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    labels[key],
+                    best.get("short") or best["label"],
+                    f"{best['return_on_avg_invested_pct']:+.1f}%",
+                    money(best["stock_pnl"]),
+                    str(len(block)),
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def _staged_conclusions(known, staged, best, best_pnl, best_staged, worst_staged):
+    out = []
+    known_roi = known["return_on_avg_invested_pct"]
+    known_pnl = known["stock_pnl"]
+    beat_roi = [r for r in staged if r["return_on_avg_invested_pct"] > known_roi]
+    beat_pnl = [r for r in staged if r["stock_pnl"] > known_pnl]
+    if best.get("staged"):
+        out.append(
+            f"Two-stage **{best_staged['short']}** beats the known 30d 50% 7.5dd "
+            f"on invested ({best_staged['return_on_avg_invested_pct']:+.1f}% vs "
+            f"{known_roi:+.1f}%)."
+        )
+    else:
+        out.append(
+            f"Known **30d 50% 7.5dd** still wins on invested "
+            f"({known_roi:+.1f}%). Best two-stage is **{best_staged['short']}** "
+            f"({best_staged['return_on_avg_invested_pct']:+.1f}%)."
+        )
+    out.append(
+        f"{len(beat_roi)} of 15 two-stage sells beat known on rate; "
+        f"{len(beat_pnl)} beat it on stock P&L."
+    )
+    by_wide = {}
+    for row in staged:
+        by_wide.setdefault(row["dd_before"], []).append(row)
+    wide_means = {
+        k: sum(r["return_on_avg_invested_pct"] for r in v) / len(v)
+        for k, v in by_wide.items()
+    }
+    wide_best = max(wide_means, key=wide_means.get)
+    wide_worst = min(wide_means, key=wide_means.get)
+    family = (
+        "tighter initial stop wins on average"
+        if wide_best < wide_worst
+        else "looser initial stop wins on average"
+    )
+    out.append(
+        "Mean invested return by initial dd: "
+        + ", ".join(
+            f"**{k * 100:g}%** → {wide_means[k]:+.1f}%"
+            for k in sorted(wide_means, reverse=True)
+        )
+        + f". {family.capitalize()}."
+    )
+    lock5 = [
+        r
+        for r in staged
+        if r.get("lock_profit") == 0.05 and r.get("dd_after") == 0.05
+    ]
+    proj5 = [
+        r
+        for r in staged
+        if r.get("lock_proj_frac") is not None and r.get("dd_after") == 0.05
+    ]
+    if lock5 and proj5:
+        best5 = max(lock5, key=lambda r: r["return_on_avg_invested_pct"])
+        bestp = max(proj5, key=lambda r: r["return_on_avg_invested_pct"])
+        out.append(
+            f"Best lock is **+5% then 5% dd** ({best5['short']} "
+            f"{best5['return_on_avg_invested_pct']:+.1f}%) vs best "
+            f"25% of projection then 5% dd ({bestp['short']} "
+            f"{bestp['return_on_avg_invested_pct']:+.1f}%). "
+            "Later locks (+7.5%, +10%) give the winner more room to give back."
+        )
+    const_75 = next(
+        (
+            r
+            for r in staged
+            if r.get("dd_before") == 0.075
+            and r.get("dd_after") == 0.075
+            and r.get("lock_profit") == 0.075
+        ),
+        None,
+    )
+    if const_75:
+        out.append(
+            f"Constant 7.5% trail (7.5dd→7.5%→7.5dd, no time/target) is "
+            f"{const_75['return_on_avg_invested_pct']:+.1f}% / "
+            f"{money(const_75['stock_pnl'])} vs known 30d 50% 7.5dd "
+            f"{known_roi:+.1f}% / {money(known_pnl)}."
+        )
+    loosen = next(
+        (
+            r
+            for r in staged
+            if r.get("dd_before") == 0.075
+            and r.get("dd_after") == 0.10
+            and r.get("lock_profit") == 0.10
+        ),
+        None,
+    )
+    if loosen:
+        worse = (
+            const_75 is not None
+            and loosen["return_on_avg_invested_pct"]
+            < const_75["return_on_avg_invested_pct"]
+        )
+        out.append(
+            f"Loosening after lock (7.5dd→10%→10dd) is "
+            f"{loosen['return_on_avg_invested_pct']:+.1f}% / "
+            f"{money(loosen['stock_pnl'])} — "
+            + (
+                "worse than keeping 7.5% the whole way."
+                if worse
+                else "does not justify widening the stop after a profit."
+            )
+        )
+    out.append(
+        f"Worst two-stage: **{worst_staged['short']}** "
+        f"({worst_staged['return_on_avg_invested_pct']:+.1f}%, "
+        f"{money(worst_staged['stock_pnl'])})."
+    )
+    if not best.get("staged"):
+        out.append(
+            "Keep **30d or 50% target or 7.5% dd**. Two-stage trailing without "
+            "a time stop or target sell did not replace it on this buy."
+        )
+    elif best_pnl.get("tag") == known.get("tag"):
+        out.append(
+            "Use the two-stage winner for rate. Known 30d 50% 7.5dd still "
+            "prints competitive dollars because it harvests targets and "
+            "clears 30d losers."
+        )
+    else:
+        out.append(
+            f"Prefer **{best['short']}** on this buy. Re-check before "
+            "replacing 30d 50% 7.5dd on tighter analyst/proj cuts."
+        )
+    return out
+
+
+def run_staged(signals, close, spy):
+    bought = filter_signals(
+        signals, STAGED_BUY["min_analysts"], STAGED_BUY["min_projected"]
+    )
+    if bought.empty:
+        raise RuntimeError("Staged buy filter left no signals")
+    tickers = [t for t in unique_tickers(bought) if t in close.columns]
+    close_wide, meta = signal_positions(close[tickers], bought)
+    verify_exits(close_wide, meta)
+    rows = []
+    init_cash = None
+    for spec in staged_sell_grid():
+        print(f"  {spec.short} ({len(bought)} signals)")
+        row, _, close_wide, _, init_cash = run_one(
+            spec.label, close, spy, bought, spec
+        )
+        row = attach_spec(row, spec, STAGED_BUY)
+        row["label"] = spec.label
+        print(
+            f"    invested {row['return_on_avg_invested_pct']:+.1f}%  "
+            f"{money(row['stock_pnl'])}  {staged_exit_cell(row)}"
+        )
+        rows.append(row)
+    return rows, close_wide, init_cash, bought
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Sweep sell/buy permutations")
     p.add_argument(
         "phase",
         nargs="?",
         default="all",
-        choices=("download", "sells", "buys", "all", "focus", "conclusion", "percentile"),
+        choices=(
+            "download",
+            "sells",
+            "buys",
+            "all",
+            "focus",
+            "conclusion",
+            "percentile",
+            "staged",
+        ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
     p.add_argument("--end", default=None)
@@ -1311,6 +1832,28 @@ def main():
             "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
         ]
         write_percentile_summary(report_path, rows, info, notes)
+        return
+
+    if args.phase == "staged":
+        rows, close_wide, init_cash, bought = run_staged(signals, close, spy)
+        save_json(CACHE_DIR / "staged.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            len(bought),
+            run_label,
+            "Two-stage trailing sells, buy frozen analyst>2 · proj>20%",
+        )
+        notes = [
+            "Peak for drawdown is since entry and does not reset on a new signal. "
+            "Profit lock is the first close at or above the lock threshold from entry.",
+            "25% of projection lock = entry × (1 + 0.25 × average_projected/100). "
+            "After lock, trailing dd switches from dd_before to dd_after.",
+            "Two-stage sells have no 30d time stop and no target-price sell. "
+            "Lots that never hit the trail stay open to the last bar.",
+            "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
+        ]
+        write_staged_summary(report_path, rows, info, notes)
         return
 
     if args.phase == "conclusion":

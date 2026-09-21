@@ -80,6 +80,18 @@ Same 5 `signal_percentile` cuts after another rewrite of `data/signals.csv`. Sel
 
 Full tables: `VectorBT/simulation_2026-09-21_2312_UTC+3_optimize.md`.
 
+## Two-stage trailing sells (2026-09-21 23:28)
+
+Buy frozen **analyst>2 · proj>20%** (84). Known sell 30d 50% 7.5dd vs 15 two-stage trails (wide dd until profit lock, then tighter dd; no 30d, no target).
+
+- [x] Add two-stage `SellSpec` + `staged` phase to `VectorBT/optimize.py`
+- [x] Run 16 sells
+- [x] Write timestamped md + canvas
+
+**Result:** known **30d 50% 7.5dd** still wins (+37.2% / +$14,446). 0 of 15 two-stage beat it. Best two-stage is **7.5dd→5%→5dd** (+20.8% / +$7,532). Wider initial dd is strictly worse (15% mean +5.7%, 7.5% mean +15.8%). Constant 7.5% trail is +15.1% — the 30d + 50% target are the extra +22pp.
+
+Full tables: `VectorBT/simulation_2026-09-21_2328_UTC+3_optimize.md`.
+
 ## Position inspector (analyst>2 · proj>20% · 30d 50% 7.5dd)
 
 - [x] Resimulate 84 lots and export CSV
