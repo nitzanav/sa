@@ -191,7 +191,7 @@ def write_report(path, rows, info):
         f"# {info['title']}",
         "",
         f"**Run:** {info['run']}",
-        f"**Period:** {info['start']} → {info['end']}",
+        f"**Period:** {info['start']} → {info['end']} · {info['cal_days']} days ({info['trading_days']} trading)",
         f"${info['cash']:,.0f} start in SPY. ${POSITION_VALUE:,.0f} per lot. {info['n']} signals.",
         "",
         head,
@@ -203,6 +203,14 @@ def write_report(path, rows, info):
         line("Book P&L (with SPY)", lambda r: f"{money(r['pnl'])} ({r['return_pct']:+.2f}%)"),
         line("SPY buy-and-hold", lambda r: f"{r['spy_pct']:+.2f}%"),
         line("vs SPY", lambda r: f"{r['vs_spy_pct']:+.2f}%"),
+        line(
+            "Invested / positions",
+            lambda r: (
+                f"{r['avg_invested_pct']:.1f}% (${r['avg_stock_invested'] / 1000:.0f}k, "
+                f"{r['avg_open_lots']:.1f} lots) avg · "
+                f"{r['peak_invested_pct']:.0f}% ({r['max_open_lots']} lots) peak"
+            ),
+        ),
         line(
             "Exposure (non-SPY)",
             lambda r: f"{r['avg_exposure_pct']:.1f}% avg, {r['peak_exposure_pct']:.0f}% peak",
@@ -230,7 +238,11 @@ def summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positi
         assets = portfolio.assets(group_by=False)
     except TypeError:
         assets = portfolio.assets()
-    cost = float((as_series(assets > 1e-8, index) * POSITION_VALUE).mean())
+    lots = as_series(assets > 1e-8, index)
+    avg_lots = float(lots.mean())
+    max_lots = int(lots.max())
+    cost = avg_lots * POSITION_VALUE
+    peak_cost = max_lots * POSITION_VALUE
     weight = stocks / nav
     return {
         "label": label,
@@ -244,6 +256,10 @@ def summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positi
         "spy_pct": spy_bnh,
         "vs_spy_pct": ret - spy_bnh,
         "avg_stock_invested": cost,
+        "avg_open_lots": avg_lots,
+        "max_open_lots": max_lots,
+        "avg_invested_pct": cost / init_cash * 100,
+        "peak_invested_pct": peak_cost / init_cash * 100,
         "return_on_avg_invested_pct": stock_pnl / cost * 100 if cost else 0.0,
         "avg_exposure_pct": float(weight.mean()) * 100,
         "peak_exposure_pct": float(weight.max()) * 100,
@@ -436,6 +452,10 @@ def run_strategies(signals_path=SIGNALS_CSV, end=None):
             "run": run_label,
             "start": pd.Timestamp(close_wide.index[0]).strftime("%Y-%m-%d"),
             "end": pd.Timestamp(close_wide.index[-1]).strftime("%Y-%m-%d"),
+            "cal_days": int(
+                (pd.Timestamp(close_wide.index[-1]) - pd.Timestamp(close_wide.index[0])).days
+            ),
+            "trading_days": len(close_wide),
             "cash": init_cash,
             "n": len(meta),
             "csvs": csvs,
