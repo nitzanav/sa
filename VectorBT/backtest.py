@@ -12,6 +12,7 @@ the headline comparison is portfolio return vs buy-and-hold SPY.
 """
 
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -168,16 +169,60 @@ def positions_frame(portfolio, spy):
     return pd.DataFrame(rows, columns=columns)
 
 
-def write_positions_csv(path, positions):
-    positions.to_csv(path, index=False)
-    print(f"Wrote {path} ({len(positions)} rows)")
+def run_clock():
+    now = datetime.now().astimezone()
+    hours = int(now.utcoffset().total_seconds() // 3600)
+    tz = f"UTC{hours:+d}"
+    return now.strftime(f"%Y-%m-%d_%H%M_{tz}"), f"{now:%Y-%m-%d %H:%M} {tz}"
 
 
-def summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions):
+def write_report(path, rows, info):
+    names = [r["label"] for r in rows]
+    head = "| | " + " | ".join(names) + " |"
+    sep = "| --- | " + " | ".join("---:" for _ in names) + " |"
+
+    def line(label, cell):
+        return "| " + label + " | " + " | ".join(cell(r) for r in rows) + " |"
+
+    def money(x):
+        return f"+${x:,.0f}" if x >= 0 else f"-${abs(x):,.0f}"
+
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        f"**Period:** {info['start']} → {info['end']}",
+        f"${info['cash']:,.0f} start in SPY. ${POSITION_VALUE:,.0f} per lot. {info['n']} signals.",
+        "",
+        head,
+        sep,
+        line("Stock P&L", lambda r: money(r["stock_pnl"])),
+        line("Return on avg invested", lambda r: f"{r['return_on_avg_invested_pct']:+.1f}%"),
+        line("Trades", lambda r: f"{r['n_trades']} ({r['n_closed']} closed, {r['n_open']} open)"),
+        line("Win rate", lambda r: f"{r['win_rate_pct']:.1f}%"),
+        line("Book P&L (with SPY)", lambda r: f"{money(r['pnl'])} ({r['return_pct']:+.2f}%)"),
+        line("SPY buy-and-hold", lambda r: f"{r['spy_pct']:+.2f}%"),
+        line("vs SPY", lambda r: f"{r['vs_spy_pct']:+.2f}%"),
+        line(
+            "Exposure (non-SPY)",
+            lambda r: f"{r['avg_exposure_pct']:.1f}% avg, {r['peak_exposure_pct']:.0f}% peak",
+        ),
+        line("Max drawdown", lambda r: f"{r['max_drawdown_pct']:+.2f}%"),
+        line("Mean lot vs SPY", lambda r: f"{r['mean_vs_spy_pct']:+.2f}%"),
+        "",
+        "Positions: " + ", ".join(f"`{p.name}`" for p in info["csvs"]),
+        "",
+    ]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+def summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positions):
     index = portfolio.wrapper.index
     spy = aligned_spy(spy, index)
     stock_pnl = float(positions["pnl"].sum()) if len(positions) else 0.0
     pnl = float(nav.iloc[-1]) - init_cash
+    ret = pnl / init_cash * 100
     spy_bnh = float(spy.iloc[-1] / spy.iloc[0] - 1.0) * 100
     n_trades = int(round(as_float(portfolio.trades.count())))
     n_closed = int(round(as_float(portfolio.trades.closed.count()))) if n_trades else 0
@@ -185,19 +230,23 @@ def summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions):
         assets = portfolio.assets(group_by=False)
     except TypeError:
         assets = portfolio.assets()
-    cost = as_series(assets > 1e-8, index) * POSITION_VALUE
+    cost = float((as_series(assets > 1e-8, index) * POSITION_VALUE).mean())
+    weight = stocks / nav
     return {
-        "strategy": name,
+        "label": label,
         "n_signals": n_signals,
         "n_trades": n_trades,
         "n_closed": n_closed,
         "n_open": n_trades - n_closed,
         "stock_pnl": stock_pnl,
         "pnl": pnl,
-        "return_pct": pnl / init_cash * 100,
+        "return_pct": ret,
         "spy_pct": spy_bnh,
-        "vs_spy_pct": pnl / init_cash * 100 - spy_bnh,
-        "avg_stock_invested": float(cost.mean()),
+        "vs_spy_pct": ret - spy_bnh,
+        "avg_stock_invested": cost,
+        "return_on_avg_invested_pct": stock_pnl / cost * 100 if cost else 0.0,
+        "avg_exposure_pct": float(weight.mean()) * 100,
+        "peak_exposure_pct": float(weight.max()) * 100,
         "win_rate_pct": as_float(portfolio.trades.win_rate()) * 100 if n_trades else 0.0,
         "max_drawdown_pct": max_drawdown_pct(nav),
         "mean_lot_return_pct": float(positions["return_pct"].mean()) if len(positions) else 0.0,
@@ -205,8 +254,8 @@ def summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions):
     }
 
 
-def simulate(name, close, entries, exits, init_cash, spy, csv_path, n_signals):
-    print(f"Running {name} …")
+def simulate(label, close, entries, exits, init_cash, spy, n_signals):
+    print(f"Running {label} …")
     portfolio = vbt.Portfolio.from_signals(
         close=close,
         entries=entries,
@@ -220,17 +269,17 @@ def simulate(name, close, entries, exits, init_cash, spy, csv_path, n_signals):
         group_by=True,
         allow_partial=False,
     )
-    nav, _, _ = spy_funded_nav(portfolio, spy, init_cash)
+    nav, _, stocks = spy_funded_nav(portfolio, spy, init_cash)
     positions = positions_frame(portfolio, spy)
-    write_positions_csv(csv_path, positions)
-    row = summary_row(name, portfolio, nav, spy, init_cash, n_signals, positions)
+    row = summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positions)
     print(
         f"  stock P&L {row['stock_pnl']:+,.0f}  "
         f"book {row['pnl']:+,.0f} ({row['return_pct']:+.2f}%)  "
         f"SPY {row['spy_pct']:+.2f}%  vs SPY {row['vs_spy_pct']:+.2f}%  "
+        f"exposure {row['avg_exposure_pct']:.1f}% avg  "
         f"trades {row['n_trades']} ({row['n_closed']} closed)\n"
     )
-    return portfolio, row
+    return row, positions
 
 
 def load_signals(path=SIGNALS_CSV):
@@ -355,30 +404,44 @@ def run_strategies(signals_path=SIGNALS_CSV, end=None):
     entries = entries_from_meta(close_wide, meta)
     init_cash = POSITION_VALUE * len(meta)
     print(f"{len(meta)} signals × ${POSITION_VALUE:,.0f} = ${init_cash:,.0f} starting in SPY\n")
+    stamp, run_label = run_clock()
+    prefix = OUT_DIR / f"simulation_{stamp}_signals"
     jobs = (
         (
-            "1. Sell 30d after last signal",
+            "30d after last signal",
+            "30d",
             exits_after_last_signal(close_wide, meta, HOLD_AFTER_LAST_DAYS),
-            OUT_DIR / "positions_30d_last_signal.csv",
         ),
         (
-            "2. Sell 30d after last signal or 75% of projection",
+            "30d or 75% of projection",
+            "30d-or-75pct",
             exits_after_last_or_target(close_wide, meta, HOLD_AFTER_LAST_DAYS, TARGET_FRACTION),
-            OUT_DIR / "positions_30d_or_75pct.csv",
         ),
     )
     rows = []
-    portfolios = []
-    for name, exits, csv_path in jobs:
-        pf, row = simulate(name, close_wide, entries, exits, init_cash, spy, csv_path, len(meta))
-        portfolios.append(pf)
+    csvs = []
+    for label, tag, exits in jobs:
+        row, positions = simulate(label, close_wide, entries, exits, init_cash, spy, len(meta))
+        csv_path = Path(f"{prefix}_{tag}.csv")
+        positions.to_csv(csv_path, index=False)
+        print(f"Wrote {csv_path} ({len(positions)} rows)")
         rows.append(row)
-    summary = pd.DataFrame(rows)
-    summary_path = OUT_DIR / "positions_summary.csv"
-    summary.to_csv(summary_path, index=False)
-    print(f"Wrote {summary_path}")
-    print(summary.to_string(index=False))
-    return tuple(portfolios)
+        csvs.append(csv_path)
+    report = Path(f"{prefix}.md")
+    write_report(
+        report,
+        rows,
+        {
+            "title": Path(signals_path).name,
+            "run": run_label,
+            "start": pd.Timestamp(close_wide.index[0]).strftime("%Y-%m-%d"),
+            "end": pd.Timestamp(close_wide.index[-1]).strftime("%Y-%m-%d"),
+            "cash": init_cash,
+            "n": len(meta),
+            "csvs": csvs,
+        },
+    )
+    return rows
 
 
 if __name__ == "__main__":
