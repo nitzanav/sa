@@ -92,6 +92,25 @@ Buy frozen **analyst>2 · proj>20%** (84). Known sell 30d 50% 7.5dd vs 15 two-st
 
 Full tables: `VectorBT/simulation_2026-09-21_2328_UTC+3_optimize.md`.
 
+## Closed-window re-opt (ignore last 29d)
+
+Prior sweeps used prices clipped at 2026-09-18 and ranked cells that still had open lots (10/84 on the dollar freeze, 1/22 on the rate freeze). Re-optimize with quotes through today and **drop the last 29 calendar days of signals**.
+
+Start from the two freeze buys **analyst>2 · proj>20%** and **analyst>3 · proj>30%**, neighborhood around **30d 50% 7.5dd**, five locked iterations, ~200 unique combos.
+
+- [x] `--ignore-last-days 29` + `--refresh` in `VectorBT/optimize.py`; prices through today
+- [x] Five iterations (lock a few buys/sells each time, skip duplicate cells)
+  1. 2 buys × hold 20/25/30/40 × target 40/50/60% × dd 5/7.5/10%
+  2. Lock best hold; expand target 25–75% × dd 6–12.5%
+  3. Lock top two (target, dd); sweep hold None–60
+  4. Lock top 3 sells; buy neighborhood around the two freezes
+  5. Percentile >0.80/>0.60 + staged 7.5dd→5%→5dd with 30d / 30d+50%
+- [x] Combined md + canvas: all combos and winners
+
+**Result (204 combos, signals 189→162, cutoff 2026-08-23, quotes through 2026-09-21):** known 30d 50% 7.5dd on the wide freeze drops +37.2% → **+29.7%** (open 10→5). Tight freeze holds (+63.1% → **+66.0%**). New rate winner: **10d 25% 7.5dd · analyst>3 · proj>30%** +126.7% / +$5,435 / 18c/0o. Scale mix: same sell · **analyst>2 · proj>30%** +115.3% / +$9,214 / 35.
+
+Full tables: `VectorBT/simulation_2026-09-21_2354_UTC+3_optimize.md`.
+
 ## Position inspector (analyst>2 · proj>20% · 30d 50% 7.5dd)
 
 - [x] Resimulate 84 lots and export CSV

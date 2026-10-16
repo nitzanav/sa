@@ -14,6 +14,12 @@ against 7.5% dd with/without 30d and with/without a 50% target.
 Phase staged freezes buy at analyst > 2 and proj > 20%, then compares the
 winning 30d/50%/7.5dd sell against 15 two-stage trailing stops (wide dd
 until a profit lock, then a tighter dd).
+
+Phase closed ignores the last N calendar days of signals (default 29) so
+parameter picks are not driven by lots that are still open, while prices
+are refreshed through today so older 30d clocks and trails can finish.
+Five locked iterations (~200 combos) start from analyst>2 · proj>20% and
+analyst>3 · proj>30% around the 30d / 50% / 7.5dd sell neighborhood.
 """
 
 from __future__ import annotations
@@ -21,6 +27,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -52,13 +59,29 @@ CACHE_DIR = OUT_DIR / ".cache"
 PRICE_END = pd.Timestamp("2026-09-18")
 FORTUNE_CSV = ROOT / "data" / "fortune_500" / "symbols.csv"
 PERCENTILE_CUTS = (0.80, 0.60, 0.40, 0.20, 0.00)
+IGNORE_LAST_DAYS_DEFAULT = 29
 
 
-def clip_prices(obj, end=PRICE_END):
+def quote_day(end=None):
+    if end is None:
+        return pd.Timestamp.today().normalize()
+    return pd.Timestamp(end).normalize()
+
+
+def normalize_price_index(obj):
+    out = obj.copy()
+    idx = out.index
+    naive = idx.tz_localize(None) if getattr(idx, "tz", None) is not None else idx
+    out.index = pd.DatetimeIndex(pd.to_datetime(naive).normalize())
+    return out.groupby(level=0).last().sort_index()
+
+
+def clip_prices(obj, end=None):
+    end = quote_day(end)
     idx = obj.index
     naive = idx.tz_localize(None) if getattr(idx, "tz", None) is not None else idx
     days = pd.DatetimeIndex(pd.to_datetime(naive).normalize())
-    mask = days <= pd.Timestamp(end).normalize()
+    mask = days <= end
     return obj.loc[mask]
 
 
@@ -88,28 +111,39 @@ class SellSpec:
     def staged(self) -> bool:
         return self.dd_before is not None
 
-    @property
-    def tag(self) -> str:
-        if self.staged:
-            before = f"dd{self.dd_before * 100:g}"
-            if self.lock_proj_frac is not None:
-                lock = f"p{int(round(self.lock_proj_frac * 100))}"
-            else:
-                lock = f"k{self.lock_profit * 100:g}"
-            after = f"dd{self.dd_after * 100:g}"
-            return f"{before}-{lock}-{after}"
+    def _prefix_parts(self):
         parts = []
         if self.hold_days is not None:
             parts.append(f"{self.hold_days}d")
         if self.target_frac is not None:
             parts.append(f"t{int(round(self.target_frac * 100))}")
-        if self.drawdown is not None:
-            dd = self.drawdown * 100
-            parts.append(f"dd{dd:g}")
+        return parts
+
+    def _staged_core(self):
+        before = f"dd{self.dd_before * 100:g}"
+        if self.lock_proj_frac is not None:
+            lock = f"p{int(round(self.lock_proj_frac * 100))}"
+        else:
+            lock = f"k{self.lock_profit * 100:g}"
+        after = f"dd{self.dd_after * 100:g}"
+        return f"{before}-{lock}-{after}"
+
+    @property
+    def tag(self) -> str:
+        parts = self._prefix_parts()
+        if self.staged:
+            parts.append(self._staged_core())
+        elif self.drawdown is not None:
+            parts.append(f"dd{self.drawdown * 100:g}")
         return "-".join(parts) or "hold"
 
     @property
     def short(self) -> str:
+        parts = []
+        if self.hold_days is not None:
+            parts.append(f"{self.hold_days}d")
+        if self.target_frac is not None:
+            parts.append(f"{int(round(self.target_frac * 100))}%")
         if self.staged:
             before = f"{self.dd_before * 100:g}dd"
             after = f"{self.dd_after * 100:g}dd"
@@ -117,13 +151,8 @@ class SellSpec:
                 lock = f"{int(round(self.lock_proj_frac * 100))}%proj"
             else:
                 lock = f"{self.lock_profit * 100:g}%"
-            return f"{before}→{lock}→{after}"
-        parts = []
-        if self.hold_days is not None:
-            parts.append(f"{self.hold_days}d")
-        if self.target_frac is not None:
-            parts.append(f"{int(round(self.target_frac * 100))}%")
-        if self.drawdown is not None:
+            parts.append(f"{before}→{lock}→{after}")
+        elif self.drawdown is not None:
             parts.append(f"{self.drawdown * 100:g}dd")
         return " ".join(parts) or "hold"
 
@@ -136,7 +165,13 @@ class SellSpec:
                 lock = f"{int(round(self.lock_proj_frac * 100))}% of projection"
             else:
                 lock = f"+{self.lock_profit * 100:g}%"
-            return f"{before} until {lock}, then {after}"
+            bits = []
+            if self.hold_days is not None:
+                bits.append(f"{self.hold_days}d")
+            if self.target_frac is not None:
+                bits.append(f"{int(round(self.target_frac * 100))}% target")
+            bits.append(f"{before} until {lock}, then {after}")
+            return " or ".join(bits)
         if self.hold_days == 30 and self.target_frac is None and self.drawdown is None:
             return "30d after last signal"
         if (
@@ -399,23 +434,53 @@ def verify_exits(close_wide, meta):
     print("Exit builder matches backtest 30d and 30d-or-75%.\n")
 
 
-def ensure_prices(tickers, start, end=None):
+def ensure_prices(tickers, start, end=None, refresh=False):
     CACHE_DIR.mkdir(exist_ok=True)
     close_path = CACHE_DIR / "close.pkl"
     spy_path = CACHE_DIR / "spy.pkl"
+    want_end = quote_day(end)
     close = pd.read_pickle(close_path) if close_path.exists() else pd.DataFrame()
-    missing = [t for t in tickers if t not in close.columns]
-    if missing:
-        extra = download_close(missing, start, end)
-        close = extra if close.empty else close.join(extra, how="outer").sort_index()
+    spy = pd.read_pickle(spy_path) if spy_path.exists() else None
+    if not close.empty:
+        close = normalize_price_index(close)
+    if spy is not None:
+        spy = normalize_price_index(spy if isinstance(spy, pd.DataFrame) else spy.to_frame(SPY))
+        spy = spy.iloc[:, 0]
+        spy.name = SPY
+
+    def last_day(obj):
+        if obj is None:
+            return None
+        if isinstance(obj, pd.DataFrame) and obj.empty:
+            return None
+        return pd.Timestamp(obj.index.max()).normalize()
+
+    missing = [t for t in tickers if close.empty or t not in close.columns]
+    stale = (
+        last_day(close) is None
+        or last_day(close) < want_end
+        or last_day(spy) is None
+        or last_day(spy) < want_end
+    )
+    if refresh or stale or missing:
+        names = list(dict.fromkeys(list(tickers) + (list(close.columns) if not close.empty else [])))
+        print(
+            f"Refreshing {len(names)} symbols through {want_end.date()} "
+            f"(refresh={refresh}, stale={stale}, missing={len(missing)})"
+        )
+        extra = download_close_yahoo(names, start, want_end)
+        if close.empty or refresh or stale:
+            close = extra
+        else:
+            close = close.join(extra, how="outer")
+        close = normalize_price_index(close)
         close.to_pickle(close_path)
-        print(f"Cached {close.shape[1]} symbols → {close_path}")
-    if spy_path.exists():
-        spy = pd.read_pickle(spy_path)
-    else:
-        spy = download_close(SPY, start, end)
+        print(f"Cached {close.shape[1]} symbols → {close_path} · last {close.index.max().date()}")
+        spy_df = download_close_yahoo([SPY], start, want_end)
+        spy = normalize_price_index(spy_df).iloc[:, 0]
+        spy.name = SPY
         spy.to_pickle(spy_path)
-        print(f"Cached SPY → {spy_path}")
+        print(f"Cached SPY → {spy_path} · last {spy.index.max().date()}")
     return close, spy
 
 
@@ -870,12 +935,28 @@ def load_json(path):
     return json.loads(Path(path).read_text())
 
 
-def prepare(signals_path=SIGNALS_CSV, end=None):
+def prepare(signals_path=SIGNALS_CSV, end=None, ignore_last_days=0, refresh=False):
     signals = load_signals(signals_path)
+    n_raw = len(signals)
+    quote_end = quote_day(end)
+    signal_cutoff = quote_end - pd.Timedelta(days=ignore_last_days) if ignore_last_days else quote_end
+    if ignore_last_days:
+        dates = pd.to_datetime(signals["date"]).dt.normalize()
+        signals = signals[dates <= signal_cutoff].reset_index(drop=True)
+        print(
+            f"Ignore last {ignore_last_days} calendar days of signals: "
+            f"{n_raw} → {len(signals)} (cutoff {signal_cutoff.date()}, quotes through {quote_end.date()})"
+        )
+    if signals.empty:
+        raise RuntimeError("No signals left after ignore-last-days cutoff")
     start = signals["date"].min()
-    close, spy = ensure_prices(unique_tickers(signals), start, end)
-    close = clip_prices(close)
-    spy = clip_prices(aligned_spy(spy, close.index))
+    close, spy = ensure_prices(unique_tickers(signals), start, quote_end, refresh=refresh)
+    close = clip_prices(close, quote_end)
+    spy = clip_prices(aligned_spy(spy, close.index), quote_end)
+    print(
+        f"Prices {pd.Timestamp(close.index[0]).date()} → {pd.Timestamp(close.index[-1]).date()} "
+        f"({len(close)} bars, {close.shape[1]} symbols)"
+    )
     return signals, close, spy
 
 
@@ -977,6 +1058,12 @@ def filter_percentile(signals, min_percentile):
     return out.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
         drop=True
     )
+
+
+def apply_buy(signals, buy):
+    if buy.get("min_percentile") is not None:
+        return filter_percentile(signals, buy["min_percentile"])
+    return filter_signals(signals, buy["min_analysts"], buy["min_projected"])
 
 
 def download_close_yahoo(symbols, start, end):
@@ -1754,6 +1841,441 @@ def run_staged(signals, close, spy):
     return rows, close_wide, init_cash, bought
 
 
+def anchor_buys():
+    return [
+        {"min_analysts": 2, "min_projected": 20.0},
+        {"min_analysts": 3, "min_projected": 30.0},
+    ]
+
+
+def combo_key(buy, spec):
+    return (buy_label(buy), spec.tag)
+
+
+def neighborhood_sells(holds, targets, drawdowns):
+    return [
+        SellSpec(hold_days=h, target_frac=t, drawdown=d)
+        for h in holds
+        for t in targets
+        for d in drawdowns
+    ]
+
+
+def iter4_buy_grid():
+    buys = []
+    for n, projs in ((2, (15, 20, 25, 30, 35)), (3, (20, 25, 30, 35)), (4, (20, 30))):
+        for p in projs:
+            buys.append({"min_analysts": n, "min_projected": float(p)})
+    return buys
+
+
+def mean_by(rows, keyfn):
+    groups = defaultdict(list)
+    for row in rows:
+        groups[keyfn(row)].append(row)
+    scored = []
+    for key, block in groups.items():
+        roi = sum(r["return_on_avg_invested_pct"] for r in block) / len(block)
+        pnl = sum(r["stock_pnl"] for r in block) / len(block)
+        scored.append((roi, pnl, key, block))
+    scored.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    return scored
+
+
+def best_hold_days(rows, default=30):
+    scored = [
+        item
+        for item in mean_by(rows, lambda r: r.get("hold_days_spec"))
+        if item[2] is not None
+    ]
+    return int(scored[0][2]) if scored else default
+
+
+def best_target_dd_pairs(rows, n=2):
+    def keyfn(row):
+        if row.get("staged"):
+            return None
+        tf, dd = row.get("target_frac"), row.get("drawdown")
+        if dd is None:
+            return None
+        return (tf, dd)
+
+    scored = [item for item in mean_by(rows, keyfn) if item[2] is not None]
+    return [item[2] for item in scored[:n]]
+
+
+def unique_specs_from_rows(rows, n):
+    scored = mean_by(rows, lambda r: r["tag"])
+    return [spec_from_row(block[0]) for _, _, _, block in scored[:n]]
+
+
+def unique_buys_from_rows(rows, n, extra=()):
+    buys = []
+    seen = set()
+    for buy in extra:
+        label = buy_label(buy)
+        if label not in seen:
+            seen.add(label)
+            buys.append(buy)
+    ordered = sorted(
+        rows,
+        key=lambda r: (r["return_on_avg_invested_pct"], r["stock_pnl"]),
+        reverse=True,
+    )
+    for row in ordered:
+        label = row.get("buy_label")
+        if not label or label in seen:
+            continue
+        buy = {}
+        if row.get("min_percentile") is not None:
+            buy["min_percentile"] = row["min_percentile"]
+        else:
+            buy["min_analysts"] = row.get("min_analysts")
+            buy["min_projected"] = row.get("min_projected")
+        seen.add(label)
+        buys.append(buy)
+        if len(buys) >= n:
+            break
+    return buys
+
+
+def run_combos(signals, close, spy, buys, specs, seen, iteration):
+    rows = []
+    close_wide = None
+    init_cash = None
+    planned = sum(1 for spec in specs for buy in buys if combo_key(buy, spec) not in seen)
+    done = 0
+    for spec in specs:
+        for buy in buys:
+            key = combo_key(buy, spec)
+            if key in seen:
+                continue
+            bought = apply_buy(signals, buy)
+            if bought.empty:
+                print(f"  skip I{iteration} {spec.short} · {buy_label(buy)}: no signals")
+                seen.add(key)
+                continue
+            done += 1
+            print(
+                f"  I{iteration} {done}/{planned} {spec.short} · {buy_label(buy)} "
+                f"({len(bought)} signals)"
+            )
+            row, _, close_wide, _, init_cash = run_one(
+                f"{spec.label} · {buy_label(buy)}", close, spy, bought, spec
+            )
+            row = attach_spec(row, spec, buy)
+            row["label"] = f"{spec.short} · {buy_label(buy)}"
+            row["iteration"] = iteration
+            print(
+                f"    invested {row['return_on_avg_invested_pct']:+.1f}%  "
+                f"{money(row['stock_pnl'])}  "
+                f"{row['n_closed']}c/{row['n_open']}o"
+            )
+            rows.append(row)
+            seen.add(key)
+    return rows, close_wide, init_cash
+
+
+def closed_plan_text(locks):
+    lines = [
+        "Five locked iterations. Duplicate (buy, sell) cells are skipped.",
+        "",
+        "1. Lock **analyst>2 · proj>20%** and **analyst>3 · proj>30%**. "
+        "Sell neighborhood around 30d 50% 7.5dd: hold 20/25/30/40 × target 40/50/60% × dd 5/7.5/10%.",
+        "2. Keep those two buys. Lock the best hold from iteration 1. "
+        "Expand target 25/35/50/65/75% × dd 6/7.5/8.5/10/12.5%.",
+        "3. Keep those two buys. Lock the two best (target, dd) pairs. "
+        "Sweep hold None/10/15/21/25/30/35/45/50/60.",
+        "4. Lock the three best sells so far. Sweep buy neighborhood: "
+        "analyst>2 · proj>15/20/25/30/35%, analyst>3 · proj>20/25/30/35%, analyst>4 · proj>20/30%.",
+        "5. Keep the two anchor buys plus percentile >0.80/>0.60. "
+        "Sells: known 30d 50% 7.5dd, next-best sell, and 7.5dd→5%→5dd with 30d and with 30d+50%.",
+    ]
+    if locks:
+        lines.append("")
+        lines.append("Locks this run: " + "; ".join(locks))
+    return lines
+
+
+def closed_compact_table(rows, limit=None):
+    ordered = sorted(
+        rows,
+        key=lambda r: (r["return_on_avg_invested_pct"], r["stock_pnl"]),
+        reverse=True,
+    )
+    if limit is not None:
+        ordered = ordered[:limit]
+    head = (
+        "| Rank | I | Sell | Buy | n | On invested | Stock P&L | Win | "
+        "Trades | vs SPY |"
+    )
+    sep = "| ---: | ---: | --- | --- | ---: | ---: | ---: | ---: | --- | ---: |"
+    lines = [head, sep]
+    for i, row in enumerate(ordered, 1):
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    str(i),
+                    str(row.get("iteration", "")),
+                    row.get("short") or row.get("tag", ""),
+                    row.get("buy_label", ""),
+                    str(row["n_signals"]),
+                    f"{row['return_on_avg_invested_pct']:+.1f}%",
+                    money(row["stock_pnl"]),
+                    f"{row['win_rate_pct']:.1f}%",
+                    f"{row['n_closed']}c/{row['n_open']}o",
+                    f"{row['vs_spy_pct']:+.2f}%",
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines)
+
+
+def write_closed_summary(path, rows, info, notes, locks, n_raw, n_kept, signal_cutoff):
+    ordered = sorted(
+        rows,
+        key=lambda r: (r["return_on_avg_invested_pct"], r["stock_pnl"]),
+        reverse=True,
+    )
+    usable = [r for r in ordered if r["n_signals"] >= 10]
+    best = usable[0] if usable else ordered[0]
+    best_pnl = max(usable or ordered, key=lambda r: r["stock_pnl"])
+    known = [
+        r
+        for r in rows
+        if r.get("tag") == WINNING_SELL.tag
+        and r.get("buy_label") in {buy_label(b) for b in anchor_buys()}
+    ]
+    by_iter = defaultdict(list)
+    for row in rows:
+        by_iter[row.get("iteration", 0)].append(row)
+
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        (
+            f"**Period:** {info['start']} → {info['end']} · "
+            f"{info['cal_days']} days ({info['trading_days']} trading)"
+        ),
+        (
+            f"Ignored last **{info['ignore_last_days']} calendar days** of signals "
+            f"({n_raw} → {n_kept}, cutoff {signal_cutoff}). "
+            f"Quotes through **{info['end']}**. ${POSITION_VALUE:,.0f} per lot. "
+            f"Ranked by **return on avg invested**. {len(rows)} unique combos."
+        ),
+        "",
+        "# WINNING COMBINATION",
+        "",
+        f"# SELL: {best.get('short', best.get('tag', '')).upper()}",
+        "",
+        f"# BUY: {best.get('buy_label', '').upper()}",
+        "",
+        (
+            f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
+            f"{money(best['stock_pnl'])} · {best['n_signals']} SIGNALS · "
+            f"{best['win_rate_pct']:.1f}% WIN RATE · "
+            f"{best['n_closed']}c/{best['n_open']}o"
+        ),
+        "",
+        "## Plan",
+        "",
+        *closed_plan_text(locks),
+        "",
+        "## Known sell on the two freeze buys",
+        "",
+        closed_compact_table(known) if known else "_known sell cells missing_",
+        "",
+        "## Top 25 overall",
+        "",
+        closed_compact_table(rows, limit=25),
+        "",
+    ]
+    for i in range(1, 6):
+        block = by_iter.get(i, [])
+        if not block:
+            continue
+        body += [
+            f"## Iteration {i} ({len(block)} new combos)",
+            "",
+            closed_compact_table(block, limit=12),
+            "",
+        ]
+    body += [
+        "## Best stock P&L",
+        "",
+        (
+            f"**{best_pnl.get('short')}** · **{best_pnl.get('buy_label')}** → "
+            f"{money(best_pnl['stock_pnl'])} "
+            f"({best_pnl['return_on_avg_invested_pct']:+.1f}%, {best_pnl['n_signals']} signals)."
+        ),
+        "",
+        "## All combinations",
+        "",
+        closed_compact_table(rows),
+        "",
+        "## Conclusions",
+        "",
+    ]
+    mean_open = sum(r["n_open"] for r in rows) / len(rows)
+    known_open = (
+        sum(r["n_open"] for r in known) / len(known) if known else float("nan")
+    )
+    body.append(
+        f"- {len(rows)} unique combos after dropping signals after {signal_cutoff}. "
+        f"Mean open lots at the last bar: {mean_open:.1f} "
+        f"(known 30d 50% 7.5dd on the two freeze buys: {known_open:.1f})."
+    )
+    body.append(
+        f"- Best **return on invested** (n≥10): **{best.get('buy_label')}** on "
+        f"**{best.get('short')}** → {best['return_on_avg_invested_pct']:+.1f}% "
+        f"({money(best['stock_pnl'])}, {best['n_signals']} signals, "
+        f"{best['n_closed']}c/{best['n_open']}o)."
+    )
+    body.append(
+        f"- Best **stock P&L** (n≥10): **{best_pnl.get('buy_label')}** on "
+        f"**{best_pnl.get('short')}** → {money(best_pnl['stock_pnl'])} "
+        f"({best_pnl['return_on_avg_invested_pct']:+.1f}%)."
+    )
+    if known:
+        body.append(
+            "- Known **30d 50% 7.5dd** on the two freeze buys after the cutoff:"
+        )
+        for row in sorted(known, key=lambda r: r["return_on_avg_invested_pct"], reverse=True):
+            body.append(
+                f"  - {row['buy_label']}: {row['return_on_avg_invested_pct']:+.1f}% / "
+                f"{money(row['stock_pnl'])} / {row['n_signals']} "
+                f"({row['n_closed']}c/{row['n_open']}o)."
+            )
+    top_sells = mean_by(rows, lambda r: r.get("short"))[:5]
+    body.append("- Best sells by mean invested return across the buys they were paired with:")
+    for roi, pnl, short, block in top_sells:
+        body.append(
+            f"  - **{short}**: mean {roi:+.1f}% / {money(pnl)} ({len(block)} cells)."
+        )
+    top_buys = mean_by(rows, lambda r: r.get("buy_label"))[:5]
+    body.append("- Best buys by mean invested return across the sells they were paired with:")
+    for roi, pnl, label, block in top_buys:
+        n = block[0]["n_signals"]
+        body.append(
+            f"  - **{label}** (n={n}): mean {roi:+.1f}% / {money(pnl)} ({len(block)} cells)."
+        )
+    body += ["", "## Notes", ""] + [f"- {n}" for n in notes] + [""]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+def run_closed(signals, close, spy):
+    seen = set()
+    all_rows = []
+    locks = []
+    close_wide = None
+    init_cash = None
+    anchors = anchor_buys()
+
+    print("\n=== Iteration 1: two freeze buys × 30d/50%/7.5dd neighborhood ===")
+    specs1 = neighborhood_sells((20, 25, 30, 40), (0.40, 0.50, 0.60), (0.05, 0.075, 0.10))
+    rows, close_wide, init_cash = run_combos(
+        signals, close, spy, anchors, specs1, seen, 1
+    )
+    all_rows.extend(rows)
+    hold_lock = best_hold_days(rows)
+    locks.append(f"I2 hold={hold_lock}d")
+    print(f"Lock hold={hold_lock}d for iteration 2\n")
+
+    print("=== Iteration 2: lock hold, expand target × dd ===")
+    specs2 = [
+        SellSpec(hold_days=hold_lock, target_frac=t, drawdown=d)
+        for t in (0.25, 0.35, 0.50, 0.65, 0.75)
+        for d in (0.06, 0.075, 0.085, 0.10, 0.125)
+    ]
+    rows, cw, ic = run_combos(signals, close, spy, anchors, specs2, seen, 2)
+    all_rows.extend(rows)
+    if cw is not None:
+        close_wide, init_cash = cw, ic
+    pairs = best_target_dd_pairs(all_rows, n=2)
+    if not pairs:
+        pairs = [(0.50, 0.075), (0.50, 0.10)]
+    locks.append(
+        "I3 target/dd="
+        + ", ".join(
+            f"{(t * 100 if t is not None else 0):g}%/{d * 100:g}dd" for t, d in pairs
+        )
+    )
+    print(f"Lock {locks[-1]} for iteration 3\n")
+
+    print("=== Iteration 3: lock target+dd, sweep hold ===")
+    specs3 = [
+        SellSpec(hold_days=h, target_frac=t, drawdown=d)
+        for t, d in pairs
+        for h in (None, 10, 15, 21, 25, 30, 35, 45, 50, 60)
+    ]
+    rows, cw, ic = run_combos(signals, close, spy, anchors, specs3, seen, 3)
+    all_rows.extend(rows)
+    if cw is not None:
+        close_wide, init_cash = cw, ic
+    sell_locks = unique_specs_from_rows(all_rows, 3)
+    if all(s.tag != WINNING_SELL.tag for s in sell_locks):
+        sell_locks = [WINNING_SELL] + sell_locks[:2]
+    locks.append("I4 sells=" + ", ".join(s.short for s in sell_locks))
+    print(f"Lock sells {locks[-1]} for iteration 4\n")
+
+    print("=== Iteration 4: lock top sells, sweep buy neighborhood ===")
+    rows, cw, ic = run_combos(
+        signals, close, spy, iter4_buy_grid(), sell_locks, seen, 4
+    )
+    all_rows.extend(rows)
+    if cw is not None:
+        close_wide, init_cash = cw, ic
+
+    print("=== Iteration 5: percentile buys + staged trail with 30d ===")
+    buys5 = unique_buys_from_rows(
+        all_rows,
+        n=4,
+        extra=anchors
+        + [
+            {"min_percentile": 0.80},
+            {"min_percentile": 0.60},
+        ],
+    )
+    extra_sell = next((s for s in sell_locks if s.tag != WINNING_SELL.tag), sell_locks[0])
+    specs5 = [
+        WINNING_SELL,
+        extra_sell,
+        SellSpec(hold_days=30, dd_before=0.075, lock_profit=0.05, dd_after=0.05),
+        SellSpec(
+            hold_days=30,
+            target_frac=0.50,
+            dd_before=0.075,
+            lock_profit=0.05,
+            dd_after=0.05,
+        ),
+        SellSpec(
+            hold_days=30,
+            target_frac=0.50,
+            dd_before=0.10,
+            lock_profit=0.05,
+            dd_after=0.05,
+        ),
+    ]
+    unique5 = []
+    tags = set()
+    for spec in specs5:
+        if spec.tag not in tags:
+            tags.add(spec.tag)
+            unique5.append(spec)
+    locks.append("I5 buys=" + ", ".join(buy_label(b) for b in buys5))
+    locks.append("I5 sells=" + ", ".join(s.short for s in unique5))
+    rows, cw, ic = run_combos(signals, close, spy, buys5, unique5, seen, 5)
+    all_rows.extend(rows)
+    if cw is not None:
+        close_wide, init_cash = cw, ic
+    print(f"\nClosed window done: {len(all_rows)} unique combos")
+    return all_rows, close_wide, init_cash, locks
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Sweep sell/buy permutations")
     p.add_argument(
@@ -1769,10 +2291,13 @@ def parse_args():
             "conclusion",
             "percentile",
             "staged",
+            "closed",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
     p.add_argument("--end", default=None)
+    p.add_argument("--ignore-last-days", type=int, default=None)
+    p.add_argument("--refresh", action="store_true")
     p.add_argument("--hold-days", type=int, default=None)
     p.add_argument("--sells-json", default=str(CACHE_DIR / "sells.json"))
     p.add_argument("--buys-json", default=str(CACHE_DIR / "buys.json"))
@@ -1789,12 +2314,33 @@ def main():
     stamp, run_label = run_clock()
     prefix = OUT_DIR / f"simulation_{stamp}_optimize"
     report_path = Path(args.report) if args.report else Path(f"{prefix}.md")
+    ignore_last_days = args.ignore_last_days
+    if ignore_last_days is None:
+        ignore_last_days = IGNORE_LAST_DAYS_DEFAULT if args.phase == "closed" else 0
+    refresh = args.refresh or args.phase == "closed"
+    n_raw = len(load_signals(args.signals))
+    quote_end = quote_day(args.end)
+    signal_cutoff = (
+        (quote_end - pd.Timedelta(days=ignore_last_days)).strftime("%Y-%m-%d")
+        if ignore_last_days
+        else quote_end.strftime("%Y-%m-%d")
+    )
 
     if args.phase == "download":
-        prepare(args.signals, args.end)
+        prepare(
+            args.signals,
+            args.end,
+            ignore_last_days=ignore_last_days,
+            refresh=refresh,
+        )
         return
 
-    signals, close, spy = prepare(args.signals, args.end)
+    signals, close, spy = prepare(
+        args.signals,
+        args.end,
+        ignore_last_days=ignore_last_days,
+        refresh=refresh,
+    )
 
     if args.phase == "focus":
         rows, close_wide, init_cash = run_focus(signals, close, spy)
@@ -1854,6 +2400,39 @@ def main():
             "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
         ]
         write_staged_summary(report_path, rows, info, notes)
+        return
+
+    if args.phase == "closed":
+        rows, close_wide, init_cash, locks = run_closed(signals, close, spy)
+        save_json(CACHE_DIR / "closed.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Closed-window 5-iteration sweep (ignore last 29d of signals)",
+        )
+        info["ignore_last_days"] = ignore_last_days
+        notes = [
+            f"Signals after {signal_cutoff} were dropped so parameter picks are not "
+            "driven by lots that could not finish a ~30d hold. Prices run through today.",
+            "30 trading days is longer than 29 calendar days, so a 30d clock on a "
+            "signal near the cutoff can still be open at the last bar; target and "
+            "drawdown can still close those lots.",
+            "Peak for drawdown is since entry and does not reset on a new signal. "
+            "A new signal resets the time stop and the projection target.",
+            "Comparison is on invested dollars, not book vs SPY. Exposure stays un-optimized.",
+        ]
+        write_closed_summary(
+            report_path,
+            rows,
+            info,
+            notes,
+            locks,
+            n_raw,
+            len(signals),
+            signal_cutoff,
+        )
         return
 
     if args.phase == "conclusion":
