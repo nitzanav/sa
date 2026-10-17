@@ -44,9 +44,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const { yahooAnalystRecommendationSource } = await import(
     "./yahoo_analyst_recommendation.js"
   );
+  const { tipranksAnalystRecommendationSource } = await import(
+    "./tipranks_analyst_recommendation.js"
+  );
   const listings = await scrapeAnalystRecommendationFromUrl(process.argv[2], [
     googleAnalystRecommendationSource,
     yahooAnalystRecommendationSource,
+    tipranksAnalystRecommendationSource,
   ]);
   process.stdout.write(JSON.stringify(listings, null, 2) + "\n");
 }

@@ -72,16 +72,19 @@ analyst-recommendation-js-test:
 symbols_exchange:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/symbols-exchange/fetch_symbols_exchange.js
 
-# Scrapes Google and Yahoo into data/analyst_recomendation/<source>/, then joins
+# Scrapes Google, Yahoo, and TipRanks into data/analyst_recomendation/<source>/, then joins
 # per-date/symbol CSVs into data/analyst_recomendation/all_symbols_per_date_and_symbol*.csv.
 # Override limit:
 #   NODE_CONFIG='{"analyst_recommendations": {"limit": 10}}' make scrape_analyst_recommendations
-# Skip symbols whose JSON already exists:
+# Skip symbols whose JSON already exists (TipRanks is expensive; prefer this on reruns):
 #   SKIP_EXISTING=1 make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"skip_existing": true}}' make scrape_analyst_recommendations
-# Run one source only (google or yahoo):
+# Run one source only (google, yahoo, or tipranks):
 #   SOURCE=yahoo make scrape_analyst_recommendations
+#   SOURCE=tipranks make scrape_analyst_recommendations
+#   SKIP_EXISTING=1 SOURCE=tipranks make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
+# TipRanks live fetches require TIPRANKS_API_KEY. Cache hits do not. Do not put the key in config.
 SOURCE ?=
 SKIP_EXISTING ?=
 
@@ -100,8 +103,11 @@ download_fortune_500:
 # ---------------------------------------------------------------------------
 
 # Rebuild per-source and joint CSVs from data/analyst_recomendation/<source>/<symbol>.json.
-# Join one source only (google or yahoo):
+# Join one source only (google, yahoo, or tipranks). That replaces the joint CSVs with
+# that source's columns only (SOURCE=tipranks keeps only tipranks_* columns, same as
+# SOURCE=yahoo keeps only yahoo_* columns):
 #   SOURCE=yahoo make write_joint_analyst_recommendations
+#   SOURCE=tipranks make write_joint_analyst_recommendations
 write_joint_analyst_recommendations:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
 
