@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Luke Sergott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+8.7%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "David S Macdonald",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+8.7%",
+    "date": "09/22/2026"
+  },
+  {
     "analyst": "Kevin Caliendo",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$245.00",
-    "projected": "-0.6%",
+    "projected": "+2.4%",
     "date": "09/08/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+5.5%",
+    "projected": "+8.7%",
     "date": "08/19/2026"
   },
   {
@@ -23,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+5.5%",
+    "projected": "+8.7%",
     "date": "07/28/2026"
   },
   {
@@ -32,16 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+5.5%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "David S Macdonald",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+1.4%",
+    "projected": "+8.7%",
     "date": "07/28/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$250.00",
-    "projected": "+1.4%",
+    "projected": "+4.5%",
     "date": "07/28/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$265.00",
-    "projected": "+7.5%",
+    "projected": "+10.8%",
     "date": "07/24/2026"
   },
   {
@@ -68,16 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$255.00",
-    "projected": "+3.5%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Luke Sergott",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+1.4%",
+    "projected": "+6.6%",
     "date": "07/24/2026"
   },
   {
@@ -86,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$245.00",
-    "projected": "-0.6%",
+    "projected": "+2.4%",
     "date": "07/23/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$210.00",
-    "projected": "-14.8%",
+    "projected": "-12.2%",
     "date": "04/20/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "-12.8%",
+    "projected": "-10.1%",
     "date": "02/11/2026"
   }
 ]

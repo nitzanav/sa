@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+21.5%",
+    "date": "10/09/2026"
+  },
+  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -40,9 +49,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+18.6%",
-    "date": "07/24/2026"
+    "price_target": "$235.00",
+    "projected": "+23.7%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -88,5 +97,14 @@
     "price_target": "$168.00",
     "projected": null,
     "date": "10/23/2025"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "+20.4%",
+    "date": "10/10/2026"
   }
 ]

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+23.1%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -31,9 +40,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$79.00",
-    "projected": "+12.7%",
-    "date": "06/29/2026"
+    "price_target": "$89.00",
+    "projected": "+37.6%",
+    "date": "09/29/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -49,27 +58,27 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+15%",
-    "date": "07/18/2026"
+    "price_target": "$78.00",
+    "projected": "+23.3%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+8.2%",
-    "date": "07/29/2026"
+    "price_target": "$72.50",
+    "projected": "+13.2%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+15.8%",
-    "date": "07/08/2026"
+    "price_target": "$77.00",
+    "projected": "+19.5%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Stephens & Co.",
@@ -88,5 +97,50 @@
     "price_target": "$90.00",
     "projected": "+21.8%",
     "date": "07/17/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+15.7%",
+    "date": "07/20/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+21.8%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+9.6%",
+    "date": "07/18/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+1.5%",
+    "date": "07/18/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+18.5%",
+    "date": "09/23/2026"
   }
 ]

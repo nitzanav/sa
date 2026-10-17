@@ -36,15 +36,6 @@
     "date": "08/01/2026"
   },
   {
-    "analyst": "Rosenblatt",
-    "firm": "Rosenblatt",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1575.00",
-    "projected": "+5.1%",
-    "date": "08/01/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -54,13 +45,13 @@
     "date": "08/01/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1800.00",
-    "projected": "+20.1%",
-    "date": "07/31/2026"
+    "price_target": "$1575.00",
+    "projected": "+5.1%",
+    "date": "08/01/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -70,5 +61,14 @@
     "price_target": "$1850.00",
     "projected": "+18.2%",
     "date": "05/01/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1800.00",
+    "projected": "+20.1%",
+    "date": "07/31/2026"
   }
 ]

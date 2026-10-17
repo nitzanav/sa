@@ -1,21 +1,66 @@
 [
   {
+    "analyst": "Ami Probandt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+2%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+5.7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$298.00",
+    "projected": "+10.5%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$326.00",
+    "projected": "+20.9%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Nicholas Yulico",
     "firm": "Scotiabank",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$293.00",
-    "projected": "+8.5%",
-    "date": "09/17/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "10/02/2026"
   },
   {
-    "analyst": "Ami Probandt",
-    "firm": "UBS",
+    "analyst": "Michael Lewis",
+    "firm": "Truist Financial",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$286.00",
-    "projected": "+5.9%",
-    "date": "09/15/2026"
+    "projected": "+6.1%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$299.00",
+    "projected": "+10.9%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "Haendel St. Juste",
@@ -23,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$295.00",
-    "projected": "+9.2%",
+    "projected": "+9.4%",
     "date": "09/08/2026"
   },
   {
@@ -32,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$297.00",
-    "projected": "+10%",
+    "projected": "+10.1%",
     "date": "09/01/2026"
   },
   {
@@ -41,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$325.00",
-    "projected": "+20.3%",
+    "projected": "+20.5%",
     "date": "08/18/2026"
-  },
-  {
-    "analyst": "Richard Hightower",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$297.00",
-    "projected": "+10%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Anthony Paolone",
@@ -59,7 +95,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$295.00",
-    "projected": "+9.2%",
+    "projected": "+9.4%",
     "date": "08/14/2026"
   },
   {
@@ -68,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$278.00",
-    "projected": "+2.9%",
+    "projected": "+3.1%",
     "date": "08/13/2026"
   },
   {
@@ -77,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$302.00",
-    "projected": "+11.8%",
+    "projected": "+12%",
     "date": "08/13/2026"
   },
   {
@@ -86,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$302.00",
-    "projected": "+11.8%",
+    "projected": "+12%",
     "date": "08/12/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$302.00",
-    "projected": "+11.8%",
+    "projected": "+12%",
     "date": "08/03/2026"
   },
   {
@@ -104,17 +140,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$316.00",
-    "projected": "+17%",
+    "projected": "+17.2%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$312.00",
-    "projected": "+15.5%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Aaron Hecht",
@@ -122,17 +149,8 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$330.00",
-    "projected": "+22.2%",
+    "projected": "+22.4%",
     "date": "07/31/2026"
-  },
-  {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$303.00",
-    "projected": "+12.2%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Simon Yarmak",
@@ -140,17 +158,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$292.75",
-    "projected": "+8.4%",
+    "projected": "+8.6%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Alexander Goldfarb",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$352.00",
-    "projected": "+30.3%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -158,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$334.00",
-    "projected": "+23.7%",
+    "projected": "+23.9%",
     "date": "07/21/2026"
   },
   {
@@ -167,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$320.00",
-    "projected": "+18.5%",
+    "projected": "+18.7%",
     "date": "06/26/2026"
   },
   {
@@ -176,17 +185,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$288.00",
-    "projected": "+6.6%",
+    "projected": "+6.8%",
     "date": "06/16/2026"
-  },
-  {
-    "analyst": "Michael Lewis",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$286.00",
-    "projected": "+5.9%",
-    "date": "05/27/2026"
   },
   {
     "analyst": "John Kim",
@@ -194,7 +194,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$280.00",
-    "projected": "+3.7%",
+    "projected": "+3.8%",
     "date": "04/29/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$281.00",
-    "projected": "+4.1%",
+    "projected": "+4.2%",
     "date": "03/02/2026"
   }
 ]

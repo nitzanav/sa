@@ -4,9 +4,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+18.3%",
-    "date": "07/30/2026"
+    "price_target": "$180.00",
+    "projected": "+16.4%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -36,6 +36,15 @@
     "date": "12/18/2025"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+3.8%",
+    "date": "10/01/2026"
+  },
+  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -63,6 +72,15 @@
     "date": "10/20/2025"
   },
   {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$166.00",
+    "projected": "+12.1%",
+    "date": "10/06/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -70,41 +88,5 @@
     "price_target": "$152.00",
     "projected": "+1.7%",
     "date": "07/22/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+8%",
-    "date": "04/28/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "+11.2%",
-    "date": "04/27/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$172.00",
-    "projected": "+16.7%",
-    "date": "04/27/2026"
-  },
-  {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": "-1.7%",
-    "date": "04/09/2026"
   }
 ]

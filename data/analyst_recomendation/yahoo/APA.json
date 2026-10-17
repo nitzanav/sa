@@ -22,27 +22,18 @@
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+23.8%",
-    "date": "06/29/2026"
+    "price_target": "$43.00",
+    "projected": "-9.3%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$36.00",
-    "projected": "-3.6%",
-    "date": "05/28/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$29.00",
-    "projected": "-8.6%",
-    "date": "03/11/2026"
+    "price_target": "$44.00",
+    "projected": "-7.2%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Benchmark",
@@ -52,6 +43,15 @@
     "price_target": "$46.00",
     "projected": "+16.8%",
     "date": "08/13/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$29.00",
+    "projected": "-8.6%",
+    "date": "03/11/2026"
   },
   {
     "analyst": "Bernstein",
@@ -72,21 +72,84 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+3%",
-    "date": "09/14/2026"
-  },
-  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$39.00",
-    "projected": "+2%",
-    "date": "08/10/2026"
+    "price_target": "$45.00",
+    "projected": "-4.3%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+10.4%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+3.4%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "-1.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "-8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-9.6%",
+    "date": "02/26/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$37.00",
+    "projected": "+11.4%",
+    "date": "03/12/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+7.2%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+5.1%",
+    "date": "10/14/2026"
   }
 ]

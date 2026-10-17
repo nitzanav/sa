@@ -13,9 +13,9 @@
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$157.00",
-    "projected": "+20.5%",
-    "date": "08/27/2026"
+    "price_target": "$160.00",
+    "projected": "+28%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -45,6 +45,15 @@
     "date": "08/19/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+9.1%",
+    "date": "08/28/2026"
+  },
+  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -63,15 +72,6 @@
     "date": "06/11/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$144.00",
-    "projected": "+9.1%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -85,17 +85,8 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$145.00",
-    "projected": "+11.3%",
-    "date": "08/27/2026"
-  },
-  {
-    "analyst": "Stifel",
-    "firm": "Stifel",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+4.1%",
-    "date": "04/22/2026"
+    "price_target": "$137.00",
+    "projected": "+8.2%",
+    "date": "10/16/2026"
   }
 ]

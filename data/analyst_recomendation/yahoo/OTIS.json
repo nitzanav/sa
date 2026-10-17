@@ -29,11 +29,11 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Hold",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+4.7%",
-    "date": "04/01/2026"
+    "price_target": "$77.00",
+    "projected": "+16%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "Wolfe Research",

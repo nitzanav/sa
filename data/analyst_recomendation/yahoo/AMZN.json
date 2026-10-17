@@ -45,15 +45,6 @@
     "date": "04/25/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+20.8%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -63,13 +54,13 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": null,
-    "date": "10/03/2025"
+    "price_target": "$310.00",
+    "projected": "+19.5%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -88,5 +79,14 @@
     "price_target": "$320.00",
     "projected": "+20.8%",
     "date": "08/01/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+19%",
+    "date": "04/30/2026"
   }
 ]

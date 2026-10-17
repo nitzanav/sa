@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+84.2%",
-    "date": "05/01/2026"
-  },
-  {
     "analyst": "Guggenheim",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -16,6 +7,15 @@
     "price_target": "$189.00",
     "projected": "+14.1%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+84.2%",
+    "date": "05/01/2026"
   },
   {
     "analyst": "Barclays",
@@ -54,15 +54,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$194.00",
-    "projected": "+17.6%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$197.00",
     "projected": "+39.5%",
     "date": "06/22/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$194.00",
+    "projected": "+17.6%",
+    "date": "07/30/2026"
   },
   {
     "analyst": "Morgan Stanley",

@@ -4,18 +4,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$241.00",
-    "projected": "+16.3%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": null,
-    "date": "10/17/2025"
+    "price_target": "$250.00",
+    "projected": "+18.9%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -49,9 +40,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$201.00",
-    "projected": "-8.1%",
-    "date": "08/20/2026"
+    "price_target": "$196.00",
+    "projected": "-8.4%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -81,6 +72,15 @@
     "date": "08/27/2026"
   },
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$247.00",
+    "projected": "+16.6%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
@@ -88,15 +88,6 @@
     "price_target": "$230.00",
     "projected": "+10.1%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+24.6%",
-    "date": "01/09/2026"
   },
   {
     "analyst": "Citigroup",
@@ -112,8 +103,8 @@
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+16.8%",
-    "date": "09/18/2026"
+    "price_target": "$246.00",
+    "projected": "+15%",
+    "date": "10/16/2026"
   }
 ]

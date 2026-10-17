@@ -4,9 +4,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+14.8%",
-    "date": "08/20/2026"
+    "price_target": "$110.00",
+    "projected": "+11.1%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",
@@ -40,27 +40,27 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "-1.6%",
-    "date": "08/06/2026"
+    "price_target": "$111.00",
+    "projected": "+15.2%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+11.6%",
-    "date": "08/11/2026"
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+14.6%",
-    "date": "07/08/2026"
+    "price_target": "$110.00",
+    "projected": "+13.2%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -72,21 +72,21 @@
     "date": "04/14/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+2.2%",
-    "date": "06/24/2026"
+    "price_target": "$110.00",
+    "projected": "+16%",
+    "date": "10/05/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+11.3%",
-    "date": "07/13/2026"
+    "price_target": "$110.00",
+    "projected": "+15.5%",
+    "date": "09/23/2026"
   }
 ]

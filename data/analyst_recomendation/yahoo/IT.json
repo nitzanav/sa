@@ -22,27 +22,27 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$196.00",
-    "projected": "+6.5%",
-    "date": "08/06/2026"
+    "price_target": "$208.00",
+    "projected": "+12.4%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$206.00",
-    "projected": "+13.8%",
-    "date": "08/19/2026"
+    "price_target": "$212.00",
+    "projected": "+8.3%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$173.00",
-    "projected": "+27.5%",
-    "date": "07/11/2026"
+    "price_target": "$182.00",
+    "projected": "-6.2%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Barclays",

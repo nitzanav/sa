@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Benjamin Theurer",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+8.5%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Thomas Palmer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "-9.6%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Andrew Strelzik",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -9,21 +27,12 @@
     "date": "09/15/2026"
   },
   {
-    "analyst": "Benjamin Theurer",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+6.1%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Manav Gupta",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+11.9%",
+    "projected": "+14.6%",
     "date": "08/17/2026"
   },
   {
@@ -32,17 +41,8 @@
     "recommendation": "Hold",
     "action": "Upgraded",
     "price_target": "$79.00",
-    "projected": "-6.9%",
+    "projected": "-4.7%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Thomas Palmer",
-    "firm": "J.P. Morgan",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "-12.8%",
-    "date": "05/06/2026"
   },
   {
     "analyst": "Dushyant Ailani",
@@ -50,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$77.00",
-    "projected": "-9.3%",
+    "projected": "-7.2%",
     "date": "04/06/2026"
   },
   {

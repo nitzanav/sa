@@ -1,21 +1,30 @@
 [
   {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1230.00",
+    "projected": "+65.8%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1700.00",
-    "projected": "+62.7%",
-    "date": "08/11/2026"
+    "price_target": "$875.00",
+    "projected": "+42.5%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Needham",
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1650.00",
-    "projected": "+45.2%",
-    "date": "07/31/2026"
+    "price_target": "$1100.00",
+    "projected": "+52.2%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -27,6 +36,15 @@
     "date": "04/02/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$800.00",
+    "projected": "+20.9%",
+    "date": "10/05/2026"
+  },
+  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -36,31 +54,31 @@
     "date": "05/05/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1450.00",
-    "projected": "+26.1%",
-    "date": "07/30/2026"
+    "price_target": "$1150.00",
+    "projected": "+91%",
+    "date": "09/30/2026"
   },
   {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1547.00",
-    "projected": "+48.8%",
-    "date": "03/24/2026"
+    "price_target": "$1070.00",
+    "projected": "+74.3%",
+    "date": "10/03/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1525.00",
-    "projected": "+32.6%",
-    "date": "07/30/2026"
+    "price_target": "$1045.00",
+    "projected": "+34.2%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "UBS",

@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,270.00",
+    "projected": "+37.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Joseph Osha",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,450.00",
+    "projected": "+56.5%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,125.00",
+    "projected": "+21.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,150.00",
+    "projected": "+24.1%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Mark Strouse",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,150.00",
+    "projected": "+24.1%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Chris Dendrinos",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,225.00",
+    "projected": "+32.2%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,350.00",
+    "projected": "+45.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,185.00",
+    "projected": "+27.9%",
+    "date": "09/22/2026"
+  },
+  {
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,350.00",
-    "projected": "+43.6%",
+    "projected": "+45.7%",
     "date": "09/17/2026"
   },
   {
@@ -14,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,310.00",
-    "projected": "+39.3%",
+    "projected": "+41.4%",
     "date": "09/16/2026"
   },
   {
@@ -23,7 +95,7 @@
     "recommendation": "Sell",
     "action": "Initiated",
     "price_target": "$470.00",
-    "projected": "-50%",
+    "projected": "-49.3%",
     "date": "09/14/2026"
   },
   {
@@ -32,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,298.00",
-    "projected": "+38%",
+    "projected": "+40.1%",
     "date": "09/15/2026"
   },
   {
@@ -41,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,298.00",
-    "projected": "+38%",
+    "projected": "+40.1%",
     "date": "09/15/2026"
   },
   {
@@ -50,17 +122,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,298.00",
-    "projected": "+38%",
+    "projected": "+40.1%",
     "date": "08/20/2026"
-  },
-  {
-    "analyst": "Andrew Kaplowitz",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/10/2026"
   },
   {
     "analyst": "John Eade",
@@ -68,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,300.00",
-    "projected": "+38.2%",
+    "projected": "+40.3%",
     "date": "08/04/2026"
   },
   {
@@ -81,30 +144,12 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "Julien Dumoulin Smith",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,210.00",
-    "projected": "+28.7%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Chris Dendrinos",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,225.00",
-    "projected": "+30.3%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Amit Mehrotra",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,400.00",
-    "projected": "+48.9%",
+    "projected": "+51.1%",
     "date": "07/24/2026"
   },
   {
@@ -113,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,259.00",
-    "projected": "+33.9%",
+    "projected": "+35.9%",
     "date": "07/24/2026"
   },
   {
@@ -122,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,259.00",
-    "projected": "+33.9%",
+    "projected": "+35.9%",
     "date": "07/24/2026"
   },
   {
@@ -131,17 +176,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$949.00",
-    "projected": "+0.9%",
+    "projected": "+2.4%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Alexander Virgo",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,350.00",
-    "projected": "+43.6%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Colin Rusch",
@@ -149,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1,338.00",
-    "projected": "+42.3%",
+    "projected": "+44.4%",
     "date": "07/23/2026"
   },
   {
@@ -158,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1,250.00",
-    "projected": "+32.9%",
+    "projected": "+34.9%",
     "date": "07/23/2026"
   },
   {
@@ -167,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,268.00",
-    "projected": "+34.8%",
+    "projected": "+36.9%",
     "date": "07/22/2026"
   },
   {
@@ -176,25 +212,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1,235.00",
-    "projected": "+31.3%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Mark Strouse",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,330.00",
-    "projected": "+41.4%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Joseph Osha",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,450.00",
-    "projected": "+54.2%",
+    "projected": "+33.3%",
     "date": "07/23/2026"
   },
   {
@@ -203,7 +221,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$1,205.00",
-    "projected": "+28.1%",
+    "projected": "+30.1%",
     "date": "07/13/2026"
   },
   {
@@ -221,17 +239,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,250.00",
-    "projected": "+32.9%",
+    "projected": "+34.9%",
     "date": "06/29/2026"
-  },
-  {
-    "analyst": "Julian Mitchell",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,250.00",
-    "projected": "+32.9%",
-    "date": "04/28/2026"
   },
   {
     "analyst": "Moses Sutton",
@@ -239,7 +248,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$1,190.00",
-    "projected": "+26.6%",
+    "projected": "+28.4%",
     "date": "04/27/2026"
   },
   {
@@ -248,17 +257,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,300.00",
-    "projected": "+38.2%",
+    "projected": "+40.3%",
     "date": "04/24/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,300.00",
-    "projected": "+38.2%",
-    "date": "04/23/2026"
   },
   {
     "analyst": "Ben Kallo",
@@ -266,7 +266,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,400.00",
-    "projected": "+48.9%",
+    "projected": "+51.1%",
     "date": "04/23/2026"
   },
   {
@@ -275,7 +275,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$1,100.00",
-    "projected": "+17%",
+    "projected": "+18.7%",
     "date": "03/09/2026"
   }
 ]

@@ -38,20 +38,20 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "0%",
-    "date": "08/07/2026"
+    "price_target": "$118.00",
+    "projected": "+13.7%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "-17%",
-    "date": "07/24/2026"
+    "price_target": "$87.00",
+    "projected": "-19.5%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "UBS",

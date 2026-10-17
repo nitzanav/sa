@@ -22,9 +22,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+26.1%",
-    "date": "07/09/2026"
+    "price_target": "$73.00",
+    "projected": "+21.9%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Mizuho",
@@ -40,9 +40,9 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$66.00",
-    "projected": "+3.4%",
-    "date": "08/06/2026"
+    "price_target": "$63.00",
+    "projected": "+10%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Citigroup",

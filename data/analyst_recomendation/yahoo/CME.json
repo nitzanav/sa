@@ -9,15 +9,6 @@
     "date": "07/16/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": null,
-    "date": "09/26/2025"
-  },
-  {
     "analyst": "Deutsche Bank",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
@@ -31,27 +22,36 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$292.00",
-    "projected": "+4%",
-    "date": "09/03/2026"
+    "price_target": "$300.00",
+    "projected": "+13.3%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+9.7%",
-    "date": "07/07/2026"
+    "price_target": "$270.00",
+    "projected": "+0.2%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+13%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+31.8%",
-    "date": "07/23/2026"
+    "price_target": "$337.00",
+    "projected": "+21.1%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -63,15 +63,6 @@
     "date": "07/23/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+12.2%",
-    "date": "07/10/2026"
-  },
-  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$320.00",
     "projected": "+38.7%",
     "date": "07/02/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$281.00",
+    "projected": "+3.8%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "RBC Capital",

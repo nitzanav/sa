@@ -27,6 +27,15 @@
     "date": "02/25/2026"
   },
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$199.00",
+    "projected": "+18.8%",
+    "date": "09/30/2026"
+  },
+  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -34,24 +43,6 @@
     "price_target": "$240.00",
     "projected": "+35.2%",
     "date": "04/29/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$198.00",
-    "projected": "+11.8%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": null,
-    "date": "10/17/2025"
   },
   {
     "analyst": "Raymond James",
@@ -88,5 +79,14 @@
     "price_target": "$227.00",
     "projected": "+29.7%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+14.8%",
+    "date": "02/25/2026"
   }
 ]

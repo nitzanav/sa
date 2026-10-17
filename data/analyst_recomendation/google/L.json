@@ -5,7 +5,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+85.6%",
+    "projected": "+83.8%",
     "date": "03/10/2026"
+  },
+  {
+    "analyst": "Chris Li CFA",
+    "firm": "Desjardins",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$49.04",
+    "projected": "-54.9%",
+    "date": "12/04/2025"
   }
 ]

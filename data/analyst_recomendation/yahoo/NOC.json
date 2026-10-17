@@ -36,15 +36,6 @@
     "date": "07/14/2026"
   },
   {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": null,
-    "date": "10/08/2025"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -65,11 +56,11 @@
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$750.00",
-    "projected": "+11.2%",
-    "date": "01/28/2026"
+    "price_target": "$525.00",
+    "projected": "+9.6%",
+    "date": "10/03/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -97,23 +88,5 @@
     "price_target": "$704.00",
     "projected": "+36.4%",
     "date": "09/08/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+11.7%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$696.00",
-    "projected": null,
-    "date": "10/23/2025"
   }
 ]

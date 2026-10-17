@@ -4,9 +4,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+11.4%",
-    "date": "08/01/2026"
+    "price_target": "$41.00",
+    "projected": "+28.6%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Seaport Global",
@@ -22,27 +22,27 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+42%",
-    "date": "07/29/2026"
+    "price_target": "$62.00",
+    "projected": "+74%",
+    "date": "09/24/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+9.1%",
-    "date": "07/31/2026"
+    "price_target": "$47.00",
+    "projected": "+42.4%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": null,
-    "date": "12/23/2025"
+    "price_target": "$45.00",
+    "projected": "+26.3%",
+    "date": "09/24/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -58,18 +58,18 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+6.9%",
-    "date": "08/01/2026"
+    "price_target": "$35.00",
+    "projected": "+9%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$46.00",
-    "projected": "+4.6%",
-    "date": "07/31/2026"
+    "price_target": "$42.00",
+    "projected": "+31.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Deutsche Bank",

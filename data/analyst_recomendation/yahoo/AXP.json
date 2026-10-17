@@ -13,18 +13,18 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+11.3%",
-    "date": "06/24/2026"
+    "price_target": "$370.00",
+    "projected": "+21.4%",
+    "date": "09/23/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$394.00",
-    "projected": null,
-    "date": "10/01/2025"
+    "price_target": "$400.00",
+    "projected": "+31.7%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -58,18 +58,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$382.00",
-    "projected": "+15.2%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$384.00",
-    "projected": "+11.3%",
-    "date": "08/04/2026"
+    "price_target": "$380.00",
+    "projected": "+23.3%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "BTIG",
@@ -81,12 +72,75 @@
     "date": "07/28/2026"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+13%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "+11%",
+    "date": "09/30/2026"
+  },
+  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+13.3%",
-    "date": "07/14/2026"
+    "price_target": "$360.00",
+    "projected": "+16.8%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+19.4%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$335.00",
+    "projected": "+9.7%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+25.1%",
+    "date": "10/10/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$342.00",
+    "projected": "+13.1%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+5.3%",
+    "date": "10/02/2026"
   }
 ]

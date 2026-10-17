@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$575.00",
+    "projected": "+18.9%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$588.00",
+    "projected": "+21.6%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Andrew Steinerman",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$555.00",
+    "projected": "+14.7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$490.00",
+    "projected": "+1.3%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Toni Kaplan",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "-2.8%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$564.00",
+    "projected": "+16.6%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+19.9%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$505.00",
+    "projected": "+4.4%",
+    "date": "10/06/2026"
+  },
+  {
     "analyst": "Jason Haas CFA",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$597.00",
-    "projected": "+27.4%",
+    "projected": "+23.4%",
     "date": "09/15/2026"
   },
   {
@@ -14,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$581.00",
-    "projected": "+24%",
+    "projected": "+20.1%",
     "date": "09/11/2026"
-  },
-  {
-    "analyst": "George Tong",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$593.00",
-    "projected": "+26.5%",
-    "date": "09/07/2026"
   },
   {
     "analyst": "Ashish Sabadra",
@@ -32,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$610.00",
-    "projected": "+30.2%",
+    "projected": "+26.1%",
     "date": "09/04/2026"
   },
   {
@@ -45,21 +108,12 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Andrew Steinerman",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$570.00",
-    "projected": "+21.6%",
-    "date": "07/28/2026"
-  },
-  {
     "analyst": "Sean Kennedy",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$530.00",
-    "projected": "+13.1%",
+    "projected": "+9.6%",
     "date": "07/28/2026"
   },
   {
@@ -68,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+28%",
+    "projected": "+24%",
     "date": "07/29/2026"
   },
   {
@@ -77,26 +131,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+17.4%",
+    "projected": "+13.7%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Alex Kramm",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$505.00",
-    "projected": "+7.8%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "David Motemaden",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$588.00",
-    "projected": "+25.5%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Jeffrey Meuler",
@@ -104,26 +140,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$572.00",
-    "projected": "+22.1%",
+    "projected": "+18.3%",
     "date": "07/23/2026"
-  },
-  {
-    "analyst": "Jeffrey Silber",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$515.00",
-    "projected": "+9.9%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Manav Patnaik",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$575.00",
-    "projected": "+22.7%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Andrew Nicholas",
@@ -135,30 +153,12 @@
     "date": "07/22/2026"
   },
   {
-    "analyst": "Toni Kaplan",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$512.00",
-    "projected": "+9.3%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Curtis Nagle",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "+23.8%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Surinder Thind",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$610.00",
-    "projected": "+30.2%",
+    "projected": "+26.1%",
     "date": "07/17/2026"
   },
   {
@@ -176,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+6.7%",
+    "projected": "+3.4%",
     "date": "06/18/2026"
   },
   {
@@ -185,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+17.4%",
+    "projected": "+13.7%",
     "date": "04/29/2026"
   },
   {
@@ -194,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+17.4%",
+    "projected": "+13.7%",
     "date": "04/29/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$535.00",
-    "projected": "+14.2%",
+    "projected": "+10.6%",
     "date": "04/22/2026"
   },
   {
@@ -212,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$564.00",
-    "projected": "+20.4%",
+    "projected": "+16.6%",
     "date": "02/26/2026"
   },
   {

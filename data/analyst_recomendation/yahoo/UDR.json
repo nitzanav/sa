@@ -27,15 +27,6 @@
     "date": "08/04/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+17.4%",
-    "date": "09/16/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -43,6 +34,15 @@
     "price_target": "$42.00",
     "projected": "+12.7%",
     "date": "08/12/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$39.00",
+    "projected": "+14.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Mizuho",
@@ -58,9 +58,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$46.00",
-    "projected": "+14.3%",
-    "date": "07/15/2026"
+    "price_target": "$44.00",
+    "projected": "+27.4%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -81,48 +81,12 @@
     "date": "09/17/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$38.00",
-    "projected": "+2.5%",
-    "date": "05/06/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+7.7%",
-    "date": "02/18/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "+22.3%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$40.50",
-    "projected": "+9.3%",
-    "date": "05/06/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+7.6%",
-    "date": "08/04/2026"
+    "price_target": "$36.00",
+    "projected": "+5.6%",
+    "date": "10/12/2026"
   }
 ]

@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$230.00",
+    "projected": "+29.9%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Joseph Stauff",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$224.00",
+    "projected": "+26.5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Eric Handler",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+29.9%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "David Joyce",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$214.00",
+    "projected": "+20.9%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Dalton Baretto",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$10.57",
+    "projected": "-94%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Brent Navon CFA",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "+27.1%",
+    "date": "09/24/2026"
+  },
+  {
     "analyst": "Ian S. Moore",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$240.00",
-    "projected": "+26.8%",
+    "projected": "+35.6%",
     "date": "09/16/2026"
   },
   {
@@ -14,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$220.00",
-    "projected": "+16.2%",
+    "projected": "+24.3%",
     "date": "09/11/2026"
   },
   {
@@ -32,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$235.00",
-    "projected": "+24.2%",
+    "projected": "+32.8%",
     "date": "08/04/2026"
   },
   {
@@ -41,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+32.1%",
+    "projected": "+41.2%",
     "date": "08/04/2026"
   },
   {
@@ -50,16 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$250.00",
-    "projected": "+32.1%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Brent Navon CFA",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$225.00",
-    "projected": "+18.9%",
+    "projected": "+41.2%",
     "date": "08/04/2026"
   },
   {
@@ -68,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$222.00",
-    "projected": "+17.3%",
+    "projected": "+25.4%",
     "date": "08/04/2026"
   },
   {
@@ -77,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$237.00",
-    "projected": "+25.2%",
+    "projected": "+33.9%",
     "date": "08/03/2026"
   },
   {
@@ -86,25 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$238.00",
-    "projected": "+25.8%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$230.00",
-    "projected": "+21.5%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Eric Handler",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$230.00",
-    "projected": "+21.5%",
+    "projected": "+34.4%",
     "date": "08/04/2026"
   },
   {
@@ -113,17 +140,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$250.00",
-    "projected": "+32.1%",
+    "projected": "+41.2%",
     "date": "07/16/2026"
-  },
-  {
-    "analyst": "David Joyce",
-    "firm": "Seaport Global",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$210.00",
-    "projected": "+11%",
-    "date": "07/13/2026"
   },
   {
     "analyst": "Nicholas Herman",
@@ -140,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$240.00",
-    "projected": "+26.8%",
+    "projected": "+35.6%",
     "date": "03/30/2026"
   },
   {
@@ -158,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+13.6%",
+    "projected": "+21.5%",
     "date": "02/26/2026"
   }
 ]

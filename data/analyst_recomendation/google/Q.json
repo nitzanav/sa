@@ -4,9 +4,45 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$189.00",
-    "projected": "+57.4%",
-    "date": "08/06/2026"
+    "price_target": "$160.00",
+    "projected": "+33.8%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Pete Osterland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$170.00",
+    "projected": "+42.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$211.00",
+    "projected": "+76.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$211.00",
+    "projected": "+76.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+33.8%",
+    "date": "09/30/2026"
   },
   {
     "analyst": "Melissa Weathers",
@@ -14,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$170.00",
-    "projected": "+41.6%",
+    "projected": "+42.1%",
     "date": "08/05/2026"
   },
   {
@@ -23,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$175.00",
-    "projected": "+45.8%",
+    "projected": "+46.3%",
     "date": "08/04/2026"
   },
   {
@@ -32,25 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+54.1%",
+    "projected": "+54.7%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "John Roberts CFA",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+49.9%",
-    "date": "07/01/2026"
-  },
-  {
-    "analyst": "Aleksey Yefremov",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "02/27/2026"
   }
 ]

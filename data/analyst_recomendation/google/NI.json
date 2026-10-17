@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+18.8%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+9.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+16.4%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Ian Rapp",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$43.00",
+    "projected": "+4.2%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$43.00",
+    "projected": "+4.2%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$45.00",
+    "projected": "+9.1%",
+    "date": "09/28/2026"
+  },
+  {
     "analyst": "Eli Jossen",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "09/01/2026"
   },
   {
@@ -14,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$48.00",
-    "projected": "+18.3%",
+    "projected": "+16.4%",
     "date": "08/26/2026"
   },
   {
@@ -23,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "08/21/2026"
   },
   {
@@ -32,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "08/17/2026"
   },
   {
@@ -41,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$51.00",
-    "projected": "+25.7%",
+    "projected": "+23.6%",
     "date": "08/17/2026"
   },
   {
@@ -50,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "+10.9%",
+    "projected": "+9.1%",
     "date": "08/07/2026"
   },
   {
@@ -63,40 +117,13 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+20.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+23.2%",
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "Stephen D'Ambrisi",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "Ryan Levine",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+15.8%",
-    "date": "05/11/2026"
   },
   {
     "analyst": "Steve Fleishman",
@@ -104,17 +131,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "05/06/2026"
-  },
-  {
-    "analyst": "Julien Dumoulin Smith",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$55.00",
-    "projected": "+35.5%",
-    "date": "04/21/2026"
   },
   {
     "analyst": "Marie Ferguson",
@@ -122,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$52.00",
-    "projected": "+28.1%",
+    "projected": "+26.1%",
     "date": "04/10/2026"
   }
 ]

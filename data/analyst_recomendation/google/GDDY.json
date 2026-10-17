@@ -3,10 +3,37 @@
     "analyst": "Alec Brondolo",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
-    "action": "Downgraded",
+    "action": "Maintained",
     "price_target": "$76.00",
-    "projected": "-22%",
-    "date": "08/26/2026"
+    "projected": "-29.2%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Brad Erickson",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$95.00",
+    "projected": "-11.5%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Mark Zgutowicz",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$140.00",
+    "projected": "+30.5%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Brent Thill",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "-6.8%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Ygal Arounian",
@@ -14,8 +41,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$93.00",
-    "projected": "-4.6%",
-    "date": "08/03/2026"
+    "projected": "-13.3%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Vikram Kesavabhotla",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+11.8%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Jamesmichael Sherman-Lewis",
@@ -23,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+7.7%",
+    "projected": "-2.1%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Brad Erickson",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "-2.5%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Kenneth Wong",
@@ -50,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$170.00",
-    "projected": "+74.4%",
+    "projected": "+58.4%",
     "date": "07/31/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$85.00",
-    "projected": "-12.8%",
+    "projected": "-20.8%",
     "date": "07/31/2026"
   },
   {
@@ -68,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$90.00",
-    "projected": "-7.7%",
+    "projected": "-16.1%",
     "date": "07/31/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+2.6%",
+    "projected": "-6.8%",
     "date": "07/31/2026"
   },
   {
@@ -86,16 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$124.00",
-    "projected": "+27.2%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Mark Zgutowicz",
-    "firm": "Benchmark Co.",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+43.6%",
+    "projected": "+15.6%",
     "date": "07/31/2026"
   },
   {
@@ -104,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+2.6%",
+    "projected": "-6.8%",
     "date": "07/31/2026"
   },
   {
@@ -113,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "-2.5%",
+    "projected": "-11.5%",
     "date": "07/31/2026"
   },
   {
@@ -122,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+2.6%",
+    "projected": "-6.8%",
     "date": "07/31/2026"
   },
   {
@@ -135,21 +153,12 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Brent Thill",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/03/2026"
-  },
-  {
     "analyst": "Trevor Young",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$118.00",
-    "projected": "+21.1%",
+    "projected": "+10%",
     "date": "05/01/2026"
   },
   {
@@ -158,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+7.7%",
+    "projected": "-2.1%",
     "date": "02/25/2026"
   }
 ]

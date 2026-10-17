@@ -4,9 +4,9 @@
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$86.00",
-    "projected": "-11.7%",
-    "date": "07/22/2026"
+    "price_target": "$80.00",
+    "projected": "-7.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -31,9 +31,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+12.9%",
-    "date": "04/23/2026"
+    "price_target": "$87.00",
+    "projected": "+2.1%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -54,31 +54,22 @@
     "date": "08/04/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+0.6%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "+8.4%",
-    "date": "09/11/2026"
+    "price_target": "$90.00",
+    "projected": "+6%",
+    "date": "10/14/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": null,
-    "date": "10/08/2025"
+    "price_target": "$85.00",
+    "projected": "+2.5%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Jefferies",
@@ -88,5 +79,14 @@
     "price_target": "$98.00",
     "projected": "-0.3%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "-0.5%",
+    "date": "03/30/2026"
   }
 ]

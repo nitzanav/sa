@@ -36,6 +36,15 @@
     "date": "07/30/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$531.00",
+    "projected": "+34.7%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
@@ -45,22 +54,13 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$554.00",
-    "projected": "+38.7%",
-    "date": "05/06/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$530.00",
-    "projected": "+25.9%",
-    "date": "07/29/2026"
+    "price_target": "$520.00",
+    "projected": "+27.1%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Stifel",
@@ -85,26 +85,8 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$525.00",
-    "projected": "+17.4%",
-    "date": "07/07/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$505.00",
-    "projected": "+14.3%",
-    "date": "07/08/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$625.00",
-    "projected": "+69.4%",
-    "date": "02/12/2026"
+    "price_target": "$477.00",
+    "projected": "+20.3%",
+    "date": "10/08/2026"
   }
 ]

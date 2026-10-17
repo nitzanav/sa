@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$193.00",
+    "projected": "+15.4%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Meyer Shields",
     "firm": "KBW",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+12.4%",
-    "date": "08/05/2026"
+    "price_target": "$171.00",
+    "projected": "+2.3%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Michael Zaremski",
@@ -14,17 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$198.00",
-    "projected": "+17.2%",
+    "projected": "+18.4%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$193.00",
-    "projected": "+14.2%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Paul Newsome",
@@ -32,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$197.00",
-    "projected": "+16.6%",
+    "projected": "+17.8%",
     "date": "07/28/2026"
   },
   {
@@ -41,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+18.3%",
+    "projected": "+19.6%",
     "date": "07/28/2026"
   },
   {

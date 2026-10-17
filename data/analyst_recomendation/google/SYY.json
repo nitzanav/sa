@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "Brian Harbour",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Danilo Gargiulo",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+2.4%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+8.5%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Sara Senatore",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+14.5%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "John Ivankoe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+14.5%",
+    "date": "09/29/2026"
+  },
+  {
     "analyst": "John Heinbockel",
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+13.9%",
+    "projected": "+8.5%",
     "date": "09/15/2026"
   },
   {
@@ -14,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+26.5%",
+    "projected": "+20.5%",
     "date": "09/10/2026"
-  },
-  {
-    "analyst": "John Ivankoe",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+26.5%",
-    "date": "08/19/2026"
   },
   {
     "analyst": "John Staszak",
@@ -41,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+20.2%",
+    "projected": "+14.5%",
     "date": "08/13/2026"
   },
   {
@@ -50,16 +86,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$89.00",
-    "projected": "+12.6%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Brian Harbour",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+11.3%",
+    "projected": "+7.3%",
     "date": "08/05/2026"
   },
   {
@@ -68,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$98.00",
-    "projected": "+24%",
+    "projected": "+18.1%",
     "date": "08/05/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$84.00",
-    "projected": "+6.3%",
+    "projected": "+1.2%",
     "date": "08/05/2026"
   },
   {
@@ -86,26 +113,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "+8.8%",
+    "projected": "+3.6%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Sara Senatore",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+20.2%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Danilo Gargiulo",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+7.5%",
-    "date": "07/20/2026"
   },
   {
     "analyst": "Jacob Aiken Phillips",
@@ -122,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "+8.8%",
+    "projected": "+3.6%",
     "date": "04/29/2026"
   },
   {
@@ -131,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+20.2%",
+    "projected": "+14.5%",
     "date": "01/28/2026"
   }
 ]

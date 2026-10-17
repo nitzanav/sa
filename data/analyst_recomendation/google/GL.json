@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$195.00",
+    "projected": "+16.4%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Wesley Carmichael",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$191.00",
+    "projected": "+14%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$197.00",
+    "projected": "+17.5%",
+    "date": "10/05/2026"
+  },
+  {
     "analyst": "Menno Hulshof",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$225.00",
-    "projected": "+29.7%",
+    "projected": "+34.3%",
     "date": "08/31/2026"
   },
   {
@@ -14,17 +41,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$225.00",
-    "projected": "+29.7%",
+    "projected": "+34.3%",
     "date": "08/31/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$193.00",
-    "projected": "+11.3%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Michael Zaremski",
@@ -32,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$192.00",
-    "projected": "+10.7%",
+    "projected": "+14.6%",
     "date": "07/28/2026"
   },
   {
@@ -41,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+6.7%",
+    "projected": "+10.4%",
     "date": "07/24/2026"
   },
   {
@@ -50,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+15.3%",
+    "projected": "+19.3%",
     "date": "07/24/2026"
   },
   {
@@ -59,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$190.00",
-    "projected": "+9.6%",
+    "projected": "+13.4%",
     "date": "07/24/2026"
   },
   {
@@ -68,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$190.00",
-    "projected": "+9.6%",
+    "projected": "+13.4%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$208.00",
-    "projected": "+19.9%",
-    "date": "07/22/2026"
   },
   {
     "analyst": "Suneet Kamath",
@@ -86,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$166.00",
-    "projected": "-4.3%",
+    "projected": "-0.9%",
     "date": "07/10/2026"
   },
   {
@@ -95,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$170.00",
-    "projected": "-2%",
+    "projected": "+1.4%",
     "date": "05/27/2026"
   },
   {
@@ -104,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$157.00",
-    "projected": "-9.5%",
+    "projected": "-6.3%",
     "date": "04/24/2026"
   },
   {
@@ -113,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$148.00",
-    "projected": "-14.7%",
+    "projected": "-11.7%",
     "date": "04/22/2026"
   },
   {
@@ -122,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$167.00",
-    "projected": "-3.7%",
+    "projected": "-0.4%",
     "date": "04/02/2026"
   },
   {
@@ -131,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$181.00",
-    "projected": "+4.4%",
+    "projected": "+8%",
     "date": "03/05/2026"
   }
 ]

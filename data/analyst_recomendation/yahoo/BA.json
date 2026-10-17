@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+59.6%",
+    "date": "10/10/2026"
+  },
+  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+24.8%",
-    "date": "02/03/2026"
+    "price_target": "$265.00",
+    "projected": "+32.2%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "Citigroup",
@@ -27,13 +36,22 @@
     "date": "11/13/2025"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+27.7%",
+    "date": "10/09/2026"
+  },
+  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+23.3%",
-    "date": "07/30/2026"
+    "price_target": "$235.00",
+    "projected": "+26.6%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -54,6 +72,15 @@
     "date": "01/29/2026"
   },
   {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$278.00",
+    "projected": "+45.2%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Freedom Broker",
     "firm": "Freedom Broker",
     "recommendation": "Buy",
@@ -61,15 +88,6 @@
     "price_target": "$290.00",
     "projected": "+21.1%",
     "date": "02/07/2026"
-  },
-  {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$298.00",
-    "projected": "+20.3%",
-    "date": "01/16/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -88,5 +106,23 @@
     "price_target": "$250.00",
     "projected": "+6.4%",
     "date": "04/24/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+13.1%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+37.2%",
+    "date": "09/18/2026"
   }
 ]

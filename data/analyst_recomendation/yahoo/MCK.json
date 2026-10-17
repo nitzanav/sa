@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
+    "analyst": "Leerink Partners",
+    "firm": "Leerink Partners",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1006.00",
-    "projected": "+10.3%",
-    "date": "08/06/2026"
+    "price_target": "$1070.00",
+    "projected": "+15.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Citigroup",
@@ -16,6 +16,15 @@
     "price_target": "$1000.00",
     "projected": "+20.5%",
     "date": "07/24/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1006.00",
+    "projected": "+10.3%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -31,9 +40,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1080.00",
-    "projected": "+18.4%",
-    "date": "08/06/2026"
+    "price_target": "$1200.00",
+    "projected": "+18.6%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -52,15 +61,6 @@
     "price_target": "$1015.00",
     "projected": "+37.2%",
     "date": "05/08/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$856.00",
-    "projected": null,
-    "date": "09/25/2025"
   },
   {
     "analyst": "Barclays",
@@ -88,23 +88,5 @@
     "price_target": "$927.00",
     "projected": null,
     "date": "11/06/2025"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$885.00",
-    "projected": "-7.3%",
-    "date": "02/06/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$933.00",
-    "projected": "+3.4%",
-    "date": "08/12/2026"
   }
 ]

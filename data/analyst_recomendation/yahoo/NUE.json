@@ -31,9 +31,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$308.00",
-    "projected": "+18.9%",
-    "date": "09/09/2026"
+    "price_target": "$296.00",
+    "projected": "+19%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "UBS",
@@ -85,8 +85,8 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$274.00",
+    "price_target": "$286.00",
     "projected": "+13.1%",
-    "date": "06/25/2026"
+    "date": "10/06/2026"
   }
 ]

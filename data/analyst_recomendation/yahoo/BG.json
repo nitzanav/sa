@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Stephens & Co.",
-    "firm": "Stephens & Co.",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": null,
-    "date": "10/18/2025"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -40,9 +31,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$134.00",
-    "projected": "+10.2%",
-    "date": "03/24/2026"
+    "price_target": "$139.00",
+    "projected": "+34%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Morgan Stanley",

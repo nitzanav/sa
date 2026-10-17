@@ -18,15 +18,6 @@
     "date": "05/05/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+9.4%",
-    "date": "07/13/2026"
-  },
-  {
     "analyst": "Needham",
     "firm": "Needham",
     "recommendation": "Buy",
@@ -34,6 +25,15 @@
     "price_target": "$300.00",
     "projected": "+20.8%",
     "date": "07/30/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+9.4%",
+    "date": "07/13/2026"
   },
   {
     "analyst": "Jefferies",
@@ -88,68 +88,5 @@
     "price_target": "$290.00",
     "projected": "+14.6%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+17.4%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+74.2%",
-    "date": "08/18/2026"
-  },
-  {
-    "analyst": "Stifel",
-    "firm": "Stifel",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$282.00",
-    "projected": "-2.6%",
-    "date": "04/30/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "+20.3%",
-    "date": "06/23/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "-24.9%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+1.9%",
-    "date": "04/30/2026"
-  },
-  {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "-13.6%",
-    "date": "04/30/2026"
   }
 ]

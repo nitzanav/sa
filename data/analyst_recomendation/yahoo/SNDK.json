@@ -31,9 +31,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1875.00",
-    "projected": "+28.8%",
-    "date": "08/26/2026"
+    "price_target": "$2050.00",
+    "projected": "+26.5%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -87,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$1550.00",
     "projected": "-5.9%",
-    "date": "08/14/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1600.00",
-    "projected": "-2.8%",
     "date": "08/14/2026"
   }
 ]

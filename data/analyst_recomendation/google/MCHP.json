@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "John Vinh",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+81.8%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Joseph Moore",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$103.00",
-    "projected": "+40.6%",
+    "projected": "+38.7%",
     "date": "09/18/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$95.00",
-    "projected": "+29.7%",
+    "projected": "+27.9%",
     "date": "08/20/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$95.00",
-    "projected": "+29.7%",
+    "projected": "+27.9%",
     "date": "08/20/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+22.8%",
+    "projected": "+21.2%",
     "date": "08/11/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+29.7%",
+    "projected": "+27.9%",
     "date": "08/10/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+63.8%",
+    "projected": "+61.6%",
     "date": "08/07/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$120.00",
-    "projected": "+63.8%",
+    "projected": "+61.6%",
     "date": "08/07/2026"
   },
   {
@@ -68,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "+36.5%",
+    "projected": "+34.7%",
     "date": "08/07/2026"
   },
   {
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "+47.4%",
+    "projected": "+45.4%",
     "date": "08/07/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "+47.4%",
+    "projected": "+45.4%",
     "date": "08/07/2026"
   },
   {
@@ -95,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+63.8%",
+    "projected": "+61.6%",
     "date": "08/07/2026"
   },
   {
@@ -104,16 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$120.00",
-    "projected": "+63.8%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "John Vinh",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
+    "projected": "+61.6%",
     "date": "08/07/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+43.3%",
+    "projected": "+41.4%",
     "date": "08/07/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+22.8%",
+    "projected": "+21.2%",
     "date": "08/06/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "+36.5%",
+    "projected": "+34.7%",
     "date": "08/07/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$117.00",
-    "projected": "+59.7%",
+    "projected": "+57.6%",
     "date": "08/07/2026"
   },
   {
@@ -158,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "+70.6%",
+    "projected": "+68.3%",
     "date": "08/03/2026"
   },
   {
@@ -167,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$88.00",
-    "projected": "+20.1%",
+    "projected": "+18.5%",
     "date": "07/20/2026"
   },
   {
@@ -176,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+52.9%",
+    "projected": "+50.8%",
     "date": "06/28/2026"
   },
   {
@@ -185,7 +185,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+29.7%",
+    "projected": "+27.9%",
     "date": "06/09/2026"
   },
   {
@@ -194,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+57%",
+    "projected": "+54.9%",
     "date": "05/08/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "+70.6%",
+    "projected": "+68.3%",
     "date": "05/08/2026"
   },
   {
@@ -212,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$120.00",
-    "projected": "+63.8%",
+    "projected": "+61.6%",
     "date": "05/08/2026"
   },
   {
@@ -221,7 +221,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "+36.5%",
+    "projected": "+34.7%",
     "date": "05/04/2026"
   }
 ]

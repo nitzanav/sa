@@ -13,18 +13,18 @@
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$144.00",
-    "projected": "+0.7%",
-    "date": "07/29/2026"
+    "price_target": "$137.00",
+    "projected": "+5.3%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$155.00",
-    "projected": "+15.8%",
-    "date": "04/27/2026"
+    "price_target": "$149.00",
+    "projected": "+18.2%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Barclays",
@@ -36,15 +36,6 @@
     "date": "06/12/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "+15.5%",
-    "date": "07/28/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Hold",
@@ -52,6 +43,33 @@
     "price_target": "$138.00",
     "projected": "-0.1%",
     "date": "04/14/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$158.00",
+    "projected": "+21.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+14%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+13.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Citigroup",
@@ -70,32 +88,5 @@
     "price_target": "$152.00",
     "projected": "+8.3%",
     "date": "07/20/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": "+3.5%",
-    "date": "02/03/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+6.5%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$146.00",
-    "projected": "+5.4%",
-    "date": "07/10/2026"
   }
 ]

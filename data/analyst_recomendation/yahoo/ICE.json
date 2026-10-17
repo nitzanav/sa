@@ -9,15 +9,6 @@
     "date": "04/09/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$177.00",
-    "projected": "+14.2%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$180.00",
     "projected": null,
     "date": "10/31/2025"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$167.00",
+    "projected": "+6.6%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "UBS",
@@ -40,9 +40,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "+17.4%",
-    "date": "08/01/2026"
+    "price_target": "$189.00",
+    "projected": "+23.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -54,30 +54,30 @@
     "date": "07/01/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": null,
-    "date": "10/13/2025"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+34.8%",
-    "date": "07/16/2026"
+    "price_target": "$195.00",
+    "projected": "+29%",
+    "date": "10/03/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+2.3%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$163.00",
-    "projected": "+19.6%",
-    "date": "07/11/2026"
+    "price_target": "$173.00",
+    "projected": "+11.2%",
+    "date": "10/10/2026"
   }
 ]

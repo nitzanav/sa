@@ -13,9 +13,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+13.3%",
-    "date": "07/13/2026"
+    "price_target": "$165.00",
+    "projected": "+14.8%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -45,6 +45,15 @@
     "date": "09/09/2026"
   },
   {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "-0.5%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$150.00",
     "projected": "+17%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "-6.8%",
-    "date": "07/07/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -72,66 +72,21 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+0.6%",
-    "date": "08/21/2026"
+    "price_target": "$145.00",
+    "projected": "+2.6%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+10.5%",
-    "date": "05/06/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+7.3%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+16.1%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$111.00",
-    "projected": null,
-    "date": "11/18/2025"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$179.00",
-    "projected": "+20%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Wolfe Research",
-    "firm": "Wolfe Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+19.2%",
-    "date": "08/25/2026"
+    "price_target": "$145.00",
+    "projected": "-0.6%",
+    "date": "10/13/2026"
   }
 ]

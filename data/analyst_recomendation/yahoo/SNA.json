@@ -9,15 +9,6 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Barrington Research",
-    "firm": "Barrington Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": null,
-    "date": "10/16/2025"
-  },
-  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",

@@ -22,18 +22,9 @@
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$111.00",
-    "projected": "+7.8%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+35.7%",
-    "date": "08/01/2026"
+    "price_target": "$103.00",
+    "projected": "+13.7%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -45,6 +36,24 @@
     "date": "04/07/2026"
   },
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+47.7%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+5.8%",
+    "date": "10/03/2026"
+  },
+  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$166.00",
     "projected": "+51.2%",
     "date": "08/28/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": null,
-    "date": "10/13/2025"
   },
   {
     "analyst": "Evercore ISI Group",

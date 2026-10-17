@@ -49,9 +49,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$248.00",
-    "projected": "+18.7%",
-    "date": "09/11/2026"
+    "price_target": "$247.00",
+    "projected": "+20.5%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -76,9 +76,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+12.9%",
-    "date": "01/24/2026"
+    "price_target": "$245.00",
+    "projected": "+19.6%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "BTIG",
@@ -86,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$235.00",
-    "projected": "+10.5%",
-    "date": "06/27/2026"
+    "projected": "+14.7%",
+    "date": "09/26/2026"
   }
 ]

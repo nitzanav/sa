@@ -22,9 +22,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+6.7%",
-    "date": "06/11/2026"
+    "price_target": "$108.00",
+    "projected": "+11%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "Mizuho",
@@ -40,27 +40,27 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+1%",
-    "date": "05/04/2026"
+    "price_target": "$101.00",
+    "projected": "+2.5%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$119.00",
-    "projected": "+5.6%",
-    "date": "07/21/2026"
+    "price_target": "$102.00",
+    "projected": "+4.4%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+12.5%",
-    "date": "08/18/2026"
+    "price_target": "$114.00",
+    "projected": "+15.3%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -72,15 +72,6 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+0.2%",
-    "date": "09/17/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$114.00",
     "projected": "+4.5%",
     "date": "08/13/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+0.2%",
+    "date": "09/17/2026"
   }
 ]

@@ -11,11 +11,11 @@
   {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$229.00",
-    "projected": "+7.6%",
-    "date": "08/01/2026"
+    "price_target": "$270.00",
+    "projected": "+50.3%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Susquehanna",
@@ -49,18 +49,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$279.00",
-    "projected": "+24.6%",
-    "date": "07/15/2026"
-  },
-  {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$282.00",
-    "projected": "+29.4%",
-    "date": "08/03/2026"
+    "price_target": "$259.00",
+    "projected": "+47.1%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -72,6 +63,15 @@
     "date": "08/27/2026"
   },
   {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$282.00",
+    "projected": "+29.4%",
+    "date": "08/03/2026"
+  },
+  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -81,12 +81,12 @@
     "date": "04/07/2026"
   },
   {
-    "analyst": "GLJ Research",
-    "firm": "GLJ Research",
+    "analyst": "UBS",
+    "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+14.3%",
-    "date": "05/28/2026"
+    "price_target": "$330.00",
+    "projected": "+29%",
+    "date": "06/11/2026"
   }
 ]

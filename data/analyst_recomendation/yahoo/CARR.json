@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/14/2025"
+    "price_target": "$61.00",
+    "projected": "+12.6%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Barclays",
@@ -31,9 +31,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+20.5%",
-    "date": "05/01/2026"
+    "price_target": "$72.00",
+    "projected": "+30.4%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -45,6 +45,15 @@
     "date": "05/28/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+27.9%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -54,30 +63,21 @@
     "date": "07/13/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+28.6%",
-    "date": "01/06/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+1.5%",
-    "date": "05/14/2026"
+    "price_target": "$61.00",
+    "projected": "+8.8%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$58.00",
-    "projected": "+2.4%",
-    "date": "04/01/2026"
+    "price_target": "$67.00",
+    "projected": "+21.3%",
+    "date": "09/26/2026"
   }
 ]

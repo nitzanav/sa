@@ -1,48 +1,30 @@
 [
   {
+    "analyst": "Mohit Bansal",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "-0.9%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Vamil Divan",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$378.00",
+    "projected": "-12.9%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+17.8%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Michael Yee",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$430.00",
-    "projected": "+12.6%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Louise Chen",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+17.8%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Gregory Renza",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "David Amsellem",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$457.00",
-    "projected": "+19.6%",
-    "date": "09/17/2026"
+    "price_target": "$415.00",
+    "projected": "-4.4%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Geoff Meacham",
@@ -50,44 +32,125 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$405.00",
-    "projected": "+6%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "-0.5%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Matt Phipps",
-    "firm": "William Blair",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Morten Herholdt",
-    "firm": "HSBC",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$425.00",
-    "projected": "+11.3%",
-    "date": "09/09/2026"
+    "projected": "-6.7%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Tazeen Ahmad",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$328.00",
+    "projected": "-24.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Michael Yee",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$470.00",
+    "projected": "+8.3%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Luca Issi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$317.00",
-    "projected": "-17%",
-    "date": "09/08/2026"
+    "price_target": "$430.00",
+    "projected": "-0.9%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Carter Gould",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$440.00",
+    "projected": "+1.4%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Gregory Renza",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "-12.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Terence Flynn",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$359.00",
+    "projected": "-17.3%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "David Amsellem",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$457.00",
+    "projected": "+5.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Louise Chen",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+15.2%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Christopher Raymond",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$410.00",
+    "projected": "-5.5%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Salveen Richter",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+3.7%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Gary Nachman",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$384.00",
+    "projected": "-11.5%",
+    "date": "09/23/2026"
   },
   {
     "analyst": "Yaron Werber",
@@ -95,44 +158,35 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$452.00",
-    "projected": "+18.3%",
-    "date": "09/08/2026"
+    "projected": "+4.1%",
+    "date": "09/22/2026"
   },
   {
-    "analyst": "Salveen Richter",
-    "firm": "Goldman Sachs",
+    "analyst": "Matt Phipps",
+    "firm": "William Blair",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+17.8%",
-    "date": "09/08/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/22/2026"
   },
   {
-    "analyst": "Carter Gould",
-    "firm": "Cantor Fitzgerald",
+    "analyst": "Emily Field",
+    "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+4.7%",
-    "date": "09/05/2026"
+    "price_target": "$380.00",
+    "projected": "-12.4%",
+    "date": "09/17/2026"
   },
   {
-    "analyst": "Mohit Bansal",
-    "firm": "Wells Fargo",
+    "analyst": "Morten Herholdt",
+    "firm": "HSBC",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$435.00",
-    "projected": "+13.9%",
-    "date": "09/04/2026"
-  },
-  {
-    "analyst": "Terence Flynn",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$362.00",
-    "projected": "-5.2%",
-    "date": "08/19/2026"
+    "action": "Downgraded",
+    "price_target": "$425.00",
+    "projected": "-2.1%",
+    "date": "09/09/2026"
   },
   {
     "analyst": "Jasper Hellweg",
@@ -140,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$460.00",
-    "projected": "+20.4%",
+    "projected": "+6%",
     "date": "08/18/2026"
   },
   {
@@ -149,7 +203,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$352.00",
-    "projected": "-7.8%",
+    "projected": "-18.9%",
     "date": "08/17/2026"
   },
   {
@@ -158,17 +212,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$350.00",
-    "projected": "-8.4%",
+    "projected": "-19.4%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "Vamil Divan",
-    "firm": "Guggenheim",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$388.00",
-    "projected": "+1.6%",
-    "date": "08/07/2026"
   },
   {
     "analyst": "Courtney Breen",
@@ -176,7 +221,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$345.00",
-    "projected": "-9.7%",
+    "projected": "-20.5%",
     "date": "08/05/2026"
   },
   {
@@ -185,16 +230,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$450.00",
-    "projected": "+17.8%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Luca Issi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+4.7%",
+    "projected": "+3.7%",
     "date": "08/05/2026"
   },
   {
@@ -203,16 +239,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "-39.8%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Gary Nachman",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$384.00",
-    "projected": "+0.5%",
+    "projected": "-47%",
     "date": "08/05/2026"
   },
   {
@@ -221,7 +248,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$375.00",
-    "projected": "-1.8%",
+    "projected": "-13.6%",
     "date": "05/07/2026"
   },
   {
@@ -257,7 +284,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$300.00",
-    "projected": "-21.5%",
+    "projected": "-30.9%",
     "date": "05/01/2026"
   },
   {
@@ -266,7 +293,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$366.00",
-    "projected": "-4.2%",
+    "projected": "-15.7%",
     "date": "04/21/2026"
   },
   {
@@ -275,7 +302,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$350.00",
-    "projected": "-8.4%",
+    "projected": "-19.4%",
     "date": "03/10/2026"
   },
   {
@@ -284,7 +311,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+4.7%",
+    "projected": "-7.8%",
     "date": "02/06/2026"
   }
 ]

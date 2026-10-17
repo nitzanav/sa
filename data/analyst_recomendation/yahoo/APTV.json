@@ -22,9 +22,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+64.2%",
-    "date": "08/05/2026"
+    "price_target": "$77.00",
+    "projected": "+76.8%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -45,15 +45,6 @@
     "date": "05/19/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+62.1%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Deutsche Bank",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -63,13 +54,13 @@
     "date": "07/07/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "+26.8%",
-    "date": "09/15/2026"
+    "price_target": "$77.00",
+    "projected": "+62.1%",
+    "date": "08/05/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -81,6 +72,15 @@
     "date": "08/05/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+26.8%",
+    "date": "09/15/2026"
+  },
+  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -88,5 +88,32 @@
     "price_target": "$103.00",
     "projected": "+18.5%",
     "date": "01/09/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+35.2%",
+    "date": "10/10/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+30.4%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+37.5%",
+    "date": "10/07/2026"
   }
 ]

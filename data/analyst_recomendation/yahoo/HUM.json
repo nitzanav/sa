@@ -13,9 +13,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$390.00",
-    "projected": "+12.8%",
-    "date": "06/08/2026"
+    "price_target": "$495.00",
+    "projected": "+17.4%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -34,6 +34,15 @@
     "price_target": "$235.00",
     "projected": "+36.1%",
     "date": "02/12/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+20.8%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -74,91 +83,10 @@
   {
     "analyst": "Raymond James",
     "firm": "Raymond James",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$405.00",
-    "projected": "+9%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "-0.5%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+5.1%",
-    "date": "07/09/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$407.00",
-    "projected": "+9.5%",
-    "date": "08/01/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "+5%",
-    "date": "06/24/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$158.00",
-    "projected": "-14.3%",
-    "date": "02/17/2026"
-  },
-  {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+3.3%",
-    "date": "07/15/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$441.00",
-    "projected": "+45.2%",
-    "date": "05/21/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "-24.3%",
-    "date": "07/08/2026"
+    "price_target": "$520.00",
+    "projected": "+18.4%",
+    "date": "10/13/2026"
   }
 ]

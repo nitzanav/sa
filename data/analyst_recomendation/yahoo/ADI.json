@@ -18,13 +18,13 @@
     "date": "08/25/2026"
   },
   {
-    "analyst": "Stifel",
-    "firm": "Stifel",
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$498.00",
-    "projected": "+22.3%",
-    "date": "06/24/2026"
+    "price_target": "$474.00",
+    "projected": "+19.5%",
+    "date": "05/21/2026"
   },
   {
     "analyst": "Keybanc",
@@ -36,13 +36,13 @@
     "date": "07/15/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
+    "analyst": "Stifel",
+    "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$474.00",
-    "projected": "+19.5%",
-    "date": "05/21/2026"
+    "price_target": "$498.00",
+    "projected": "+22.3%",
+    "date": "06/24/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -52,6 +52,15 @@
     "price_target": "$460.00",
     "projected": "+18.2%",
     "date": "05/22/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$460.00",
+    "projected": "+28%",
+    "date": "09/09/2026"
   },
   {
     "analyst": "Susquehanna",
@@ -88,5 +97,131 @@
     "price_target": "$460.00",
     "projected": "+16%",
     "date": "05/21/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "+24.5%",
+    "date": "02/20/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "+14.8%",
+    "date": "08/22/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$458.00",
+    "projected": "+21.5%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+2.1%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+32.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "+10.5%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+15.6%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+44.2%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+23.4%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+4.4%",
+    "date": "02/19/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+13.5%",
+    "date": "05/21/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+32.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$365.00",
+    "projected": "-6.2%",
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+20.1%",
+    "date": "08/21/2026"
   }
 ]

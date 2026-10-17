@@ -27,15 +27,6 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+17.6%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$75.00",
     "projected": "+37.2%",
     "date": "09/11/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+17.6%",
+    "date": "09/10/2026"
   },
   {
     "analyst": "Stifel",

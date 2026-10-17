@@ -4,9 +4,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+4.8%",
-    "date": "08/17/2026"
+    "price_target": "$127.00",
+    "projected": "+10.9%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Jefferies",
@@ -27,6 +27,15 @@
     "date": "07/13/2026"
   },
   {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+4.9%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Hold",
@@ -36,31 +45,31 @@
     "date": "04/14/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$128.00",
-    "projected": "+4.9%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "-19.9%",
-    "date": "07/07/2026"
+    "price_target": "$96.00",
+    "projected": "-14.7%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+0.8%",
-    "date": "08/12/2026"
+    "price_target": "$119.00",
+    "projected": "+3%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "-8.4%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Mizuho",
@@ -68,17 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "-6.1%",
-    "date": "07/10/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-10%",
-    "date": "08/20/2026"
+    "projected": "-3.1%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -88,14 +88,5 @@
     "price_target": "$105.00",
     "projected": "-13.3%",
     "date": "08/24/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+2.1%",
-    "date": "04/09/2026"
   }
 ]

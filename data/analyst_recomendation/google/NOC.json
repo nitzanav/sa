@@ -1,11 +1,110 @@
 [
   {
+    "analyst": "Kenneth Herbert",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+5.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$556.00",
+    "projected": "+11.3%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Noah Poponak",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$518.00",
+    "projected": "+3.7%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$540.00",
+    "projected": "+8.1%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$419.00",
+    "projected": "-16.1%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Anthony Valentini",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$419.00",
+    "projected": "-16.1%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "John Godyn",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$667.00",
+    "projected": "+33.5%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$655.00",
+    "projected": "+31.1%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Margaret Schooley",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$680.00",
+    "projected": "+36.1%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$694.00",
+    "projected": "+38.9%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Sheila Kahyaoglu",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+16.1%",
+    "date": "09/21/2026"
+  },
+  {
     "analyst": "Michael Ciarmoli",
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$612.00",
-    "projected": "+16%",
+    "projected": "+22.5%",
     "date": "09/14/2026"
   },
   {
@@ -14,17 +113,8 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$612.00",
-    "projected": "+16%",
+    "projected": "+22.5%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$704.00",
-    "projected": "+33.5%",
-    "date": "09/09/2026"
   },
   {
     "analyst": "Ronald Epstein",
@@ -36,49 +126,13 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Gautam Khanna",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$590.00",
-    "projected": "+11.9%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "John Godyn",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$667.00",
-    "projected": "+26.5%",
-    "date": "08/14/2026"
-  },
-  {
     "analyst": "Andre Madrid",
     "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$815.00",
-    "projected": "+54.5%",
+    "projected": "+63.1%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Noah Poponak",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$538.00",
-    "projected": "+2%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Sheila Kahyaoglu",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "+10%",
-    "date": "07/26/2026"
   },
   {
     "analyst": "Kristina Ruggeri",
@@ -86,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$700.00",
-    "projected": "+32.7%",
+    "projected": "+40.1%",
     "date": "07/23/2026"
   },
   {
@@ -95,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$620.00",
-    "projected": "+17.6%",
+    "projected": "+24.1%",
     "date": "07/24/2026"
   },
   {
@@ -104,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+13.8%",
+    "projected": "+20.1%",
     "date": "07/23/2026"
   },
   {
@@ -113,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$615.00",
-    "projected": "+16.6%",
+    "projected": "+23.1%",
     "date": "07/22/2026"
   },
   {
@@ -122,16 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$745.00",
-    "projected": "+41.3%",
-    "date": "07/22/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$655.00",
-    "projected": "+24.2%",
+    "projected": "+49.1%",
     "date": "07/22/2026"
   },
   {
@@ -140,25 +185,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "-5.2%",
+    "projected": "+0.1%",
     "date": "07/22/2026"
-  },
-  {
-    "analyst": "Kenneth Herbert",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$640.00",
-    "projected": "+21.4%",
-    "date": "07/21/2026"
-  },
-  {
-    "analyst": "Douglas Harned",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$660.00",
-    "projected": "+25.1%",
-    "date": "07/17/2026"
   }
 ]

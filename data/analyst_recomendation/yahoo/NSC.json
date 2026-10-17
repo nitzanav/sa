@@ -40,18 +40,18 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$338.00",
-    "projected": "-3.9%",
-    "date": "07/24/2026"
+    "price_target": "$318.00",
+    "projected": "+0.3%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$376.00",
-    "projected": "+6.9%",
-    "date": "07/24/2026"
+    "price_target": "$347.00",
+    "projected": "+10.3%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -72,15 +72,6 @@
     "date": "07/24/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$360.00",
-    "projected": "+2.4%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -90,30 +81,12 @@
     "date": "07/28/2026"
   },
   {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$360.00",
-    "projected": "+10.6%",
-    "date": "07/15/2026"
-  },
-  {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$377.00",
-    "projected": "+9.2%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$297.00",
-    "projected": null,
-    "date": "12/11/2025"
+    "projected": "+2.4%",
+    "date": "07/24/2026"
   }
 ]

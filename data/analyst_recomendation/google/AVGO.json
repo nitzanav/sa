@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Timothy Arcuri",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$470.00",
+    "projected": "+36.5%",
+    "date": "10/02/2026"
+  },
+  {
     "analyst": "Stacy Rasgon",
     "firm": "Bernstein",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$575.00",
-    "projected": "+62.3%",
-    "date": "09/14/2026"
+    "projected": "+67%",
+    "date": "09/22/2026"
   },
   {
     "analyst": "Vijay Rakesh",
@@ -14,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$530.00",
-    "projected": "+49.6%",
-    "date": "09/12/2026"
+    "projected": "+53.9%",
+    "date": "09/15/2026"
   },
   {
     "analyst": "David O'Connor",
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$460.00",
-    "projected": "+29.9%",
+    "projected": "+33.6%",
     "date": "09/10/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$460.00",
-    "projected": "+29.9%",
+    "projected": "+33.6%",
     "date": "09/09/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$470.00",
-    "projected": "+32.7%",
+    "projected": "+36.5%",
     "date": "09/07/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$515.00",
-    "projected": "+45.4%",
+    "projected": "+49.6%",
     "date": "09/04/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$350.00",
-    "projected": "-1.2%",
+    "projected": "+1.6%",
     "date": "09/04/2026"
   },
   {
@@ -68,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$475.00",
-    "projected": "+34.1%",
+    "projected": "+37.9%",
     "date": "09/03/2026"
   },
   {
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$600.00",
-    "projected": "+69.4%",
+    "projected": "+74.3%",
     "date": "09/03/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$490.00",
-    "projected": "+38.3%",
+    "projected": "+42.3%",
     "date": "09/03/2026"
   },
   {
@@ -104,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$578.00",
-    "projected": "+63.2%",
+    "projected": "+67.9%",
     "date": "09/03/2026"
   },
   {
@@ -113,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$575.00",
-    "projected": "+62.3%",
+    "projected": "+67%",
     "date": "09/03/2026"
   },
   {
@@ -122,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$520.00",
-    "projected": "+46.8%",
+    "projected": "+51%",
     "date": "09/03/2026"
   },
   {
@@ -131,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$600.00",
-    "projected": "+69.4%",
+    "projected": "+74.3%",
     "date": "09/03/2026"
   },
   {
@@ -140,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$490.00",
-    "projected": "+38.3%",
+    "projected": "+42.3%",
     "date": "09/03/2026"
   },
   {
@@ -149,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$545.00",
-    "projected": "+53.9%",
+    "projected": "+58.3%",
     "date": "09/03/2026"
   },
   {
@@ -158,17 +167,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+12.9%",
+    "projected": "+16.2%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Timothy Arcuri",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+32.7%",
-    "date": "09/04/2026"
   },
   {
     "analyst": "Joseph Moore",
@@ -176,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$505.00",
-    "projected": "+42.6%",
+    "projected": "+46.7%",
     "date": "09/03/2026"
   },
   {
@@ -185,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$580.00",
-    "projected": "+63.7%",
+    "projected": "+68.4%",
     "date": "09/03/2026"
   },
   {
@@ -194,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$575.00",
-    "projected": "+62.3%",
+    "projected": "+67%",
     "date": "09/03/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+41.2%",
+    "projected": "+45.2%",
     "date": "09/03/2026"
   },
   {
@@ -212,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$460.00",
-    "projected": "+29.9%",
+    "projected": "+33.6%",
     "date": "09/03/2026"
   },
   {
@@ -221,7 +221,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$540.00",
-    "projected": "+52.4%",
+    "projected": "+56.8%",
     "date": "09/02/2026"
   },
   {
@@ -230,7 +230,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$630.00",
-    "projected": "+77.9%",
+    "projected": "+83%",
     "date": "09/02/2026"
   },
   {
@@ -239,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$630.00",
-    "projected": "+77.9%",
+    "projected": "+83%",
     "date": "09/02/2026"
   },
   {
@@ -248,7 +248,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$475.00",
-    "projected": "+34.1%",
+    "projected": "+37.9%",
     "date": "09/03/2026"
   },
   {
@@ -257,16 +257,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+55.3%",
+    "projected": "+59.7%",
     "date": "09/02/2026"
   },
   {
     "analyst": "Cody Acree",
-    "firm": "Benchmark Co.",
+    "firm": "StoneX",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$545.00",
-    "projected": "+53.9%",
+    "projected": "+58.3%",
     "date": "08/28/2026"
   },
   {
@@ -275,7 +275,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$535.00",
-    "projected": "+51%",
+    "projected": "+55.4%",
     "date": "08/27/2026"
   },
   {
@@ -284,7 +284,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$455.00",
-    "projected": "+28.4%",
+    "projected": "+32.1%",
     "date": "08/20/2026"
   },
   {
@@ -302,7 +302,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$390.00",
-    "projected": "+10.1%",
+    "projected": "+13.3%",
     "date": "06/05/2026"
   },
   {
@@ -311,7 +311,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$500.00",
-    "projected": "+41.2%",
+    "projected": "+45.2%",
     "date": "06/04/2026"
   },
   {
@@ -320,7 +320,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$490.00",
-    "projected": "+38.3%",
+    "projected": "+42.3%",
     "date": "06/04/2026"
   },
   {
@@ -329,7 +329,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$515.00",
-    "projected": "+45.4%",
+    "projected": "+49.6%",
     "date": "06/04/2026"
   },
   {
@@ -338,7 +338,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$500.00",
-    "projected": "+41.2%",
+    "projected": "+45.2%",
     "date": "06/03/2026"
   },
   {
@@ -356,7 +356,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$375.00",
-    "projected": "+5.9%",
+    "projected": "+8.9%",
     "date": "04/07/2026"
   },
   {
@@ -365,7 +365,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$425.00",
-    "projected": "+20%",
+    "projected": "+23.4%",
     "date": "03/05/2026"
   },
   {
@@ -374,7 +374,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$450.00",
-    "projected": "+27%",
+    "projected": "+30.7%",
     "date": "03/03/2026"
   },
   {
@@ -383,7 +383,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$400.00",
-    "projected": "+12.9%",
+    "projected": "+16.2%",
     "date": "01/30/2026"
   }
 ]

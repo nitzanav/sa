@@ -54,15 +54,6 @@
     "date": "07/14/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+3.8%",
-    "date": "08/07/2026"
-  },
-  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$275.00",
     "projected": null,
     "date": "12/17/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+3.8%",
+    "date": "08/07/2026"
   },
   {
     "analyst": "Piper Sandler",

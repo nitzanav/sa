@@ -13,9 +13,9 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+6.4%",
-    "date": "07/24/2026"
+    "price_target": "$48.00",
+    "projected": "+16%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -31,9 +31,9 @@
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+5.4%",
-    "date": "07/17/2026"
+    "price_target": "$45.00",
+    "projected": "+14.3%",
+    "date": "09/28/2026"
   },
   {
     "analyst": "Barclays",
@@ -76,8 +76,8 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+4.1%",
-    "date": "05/11/2026"
+    "price_target": "$45.00",
+    "projected": "+8.7%",
+    "date": "10/14/2026"
   }
 ]

@@ -1,21 +1,75 @@
 [
   {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$162.00",
+    "projected": "+23.1%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Abigail Eberts",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$166.00",
-    "projected": "+28.7%",
-    "date": "09/17/2026"
+    "projected": "+26.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+21.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Michael Leithead",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$156.00",
+    "projected": "+18.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$156.00",
+    "projected": "+18.5%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Chigusa Katoku",
     "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$145.00",
+    "projected": "+10.2%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Reiterated",
+    "price_target": "$156.00",
+    "projected": "+18.5%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$172.00",
-    "projected": "+33.3%",
-    "date": "08/10/2026"
+    "projected": "+30.7%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "John McNulty",
@@ -23,17 +77,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$186.00",
-    "projected": "+44.2%",
+    "projected": "+41.3%",
     "date": "08/09/2026"
-  },
-  {
-    "analyst": "Arun Viswanathan",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$176.00",
-    "projected": "+36.4%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Vincent Andrews",
@@ -41,17 +86,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$156.00",
-    "projected": "+20.9%",
+    "projected": "+18.5%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$178.00",
-    "projected": "+38%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Matthew DeYoe",
@@ -59,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$159.00",
-    "projected": "+23.2%",
+    "projected": "+20.8%",
     "date": "08/05/2026"
   },
   {
@@ -68,17 +104,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$156.00",
-    "projected": "+20.9%",
+    "projected": "+18.5%",
     "date": "07/02/2026"
-  },
-  {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$170.00",
-    "projected": "+31.8%",
-    "date": "07/01/2026"
   },
   {
     "analyst": "Joe Ritchie",
@@ -86,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$159.00",
-    "projected": "+23.2%",
+    "projected": "+20.8%",
     "date": "06/15/2026"
   },
   {
@@ -95,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$165.00",
-    "projected": "+27.9%",
+    "projected": "+25.4%",
     "date": "05/26/2026"
   },
   {
@@ -104,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$180.00",
-    "projected": "+39.5%",
+    "projected": "+36.8%",
     "date": "05/07/2026"
   },
   {
@@ -113,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$59.00",
-    "projected": "-54.3%",
+    "projected": "-55.2%",
     "date": "02/11/2026"
   }
 ]

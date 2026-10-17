@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+20.8%",
+    "date": "09/26/2026"
+  },
+  {
     "analyst": "Benchmark",
     "firm": "Benchmark",
     "recommendation": "Buy",
@@ -11,11 +20,11 @@
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+30.1%",
-    "date": "02/25/2026"
+    "price_target": "$95.00",
+    "projected": "-7.4%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "B. Riley Securities",
@@ -79,14 +88,5 @@
     "price_target": "$100.00",
     "projected": "+14.6%",
     "date": "05/05/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$145.00",
-    "projected": "+33.7%",
-    "date": "01/15/2026"
   }
 ]

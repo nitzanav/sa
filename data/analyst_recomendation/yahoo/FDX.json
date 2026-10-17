@@ -4,18 +4,18 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+14.4%",
-    "date": "06/25/2026"
+    "price_target": "$350.00",
+    "projected": "+21.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$359.00",
-    "projected": "+14.1%",
-    "date": "06/24/2026"
+    "price_target": "$373.00",
+    "projected": "+29.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Stephens & Co.",
@@ -40,9 +40,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+12.2%",
-    "date": "09/09/2026"
+    "price_target": "$351.00",
+    "projected": "+22.8%",
+    "date": "09/28/2026"
   },
   {
     "analyst": "Barclays",

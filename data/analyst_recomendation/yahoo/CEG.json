@@ -36,15 +36,6 @@
     "date": "07/28/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+13.5%",
-    "date": "06/19/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$321.00",
     "projected": "+13.7%",
     "date": "04/01/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+13.5%",
+    "date": "06/19/2026"
   },
   {
     "analyst": "BMO Capital",

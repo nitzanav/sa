@@ -4,18 +4,9 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$39.00",
-    "projected": "+23%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": null,
-    "date": "10/02/2025"
+    "price_target": "$38.00",
+    "projected": "+28.8%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -27,22 +18,13 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": null,
-    "date": "09/30/2025"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$35.00",
-    "projected": "+20.7%",
-    "date": "07/29/2026"
+    "price_target": "$36.00",
+    "projected": "+20.2%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "Barclays",
@@ -67,26 +49,44 @@
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "+19.4%",
-    "date": "04/11/2026"
+    "price_target": "$36.00",
+    "projected": "+22.4%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": "+14.2%",
-    "date": "09/09/2026"
+    "price_target": "$34.00",
+    "projected": "+13.5%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+0.5%",
+    "date": "09/26/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
     "price_target": "$30.00",
-    "projected": "+0.8%",
-    "date": "07/17/2026"
+    "projected": "+16.5%",
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+36.3%",
+    "date": "10/08/2026"
   }
 ]

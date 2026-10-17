@@ -13,9 +13,9 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+9.4%",
-    "date": "04/22/2026"
+    "price_target": "$118.00",
+    "projected": "+12.4%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -58,9 +58,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$139.00",
-    "projected": "+21.7%",
-    "date": "07/16/2026"
+    "price_target": "$130.00",
+    "projected": "+24.3%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "UBS",
@@ -72,15 +72,6 @@
     "date": "05/01/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": null,
-    "date": "10/17/2025"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$98.00",
     "projected": "-5%",
     "date": "09/18/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$121.00",
+    "projected": "+3.4%",
+    "date": "05/05/2026"
   }
 ]

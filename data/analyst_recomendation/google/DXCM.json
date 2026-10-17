@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Richard Newitter",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$102.00",
-    "projected": "+14.2%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Josh Jennings",
-    "firm": "TD Cowen",
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+6.3%",
-    "date": "09/18/2026"
+    "price_target": "$105.00",
+    "projected": "+19.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Larry Biegelsen",
@@ -23,17 +14,80 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+0.7%",
-    "date": "09/09/2026"
+    "projected": "+2.6%",
+    "date": "10/14/2026"
   },
   {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+14%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Marie Thibault",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+9.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$115.00",
+    "projected": "+31.1%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Matt Miksic",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+31.1%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Kendall Au",
+    "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+17.5%",
-    "date": "08/14/2026"
+    "projected": "+19.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Shagun Singh Chadha",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+19.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Richard Newitter",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+16.3%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Josh Jennings",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+8.3%",
+    "date": "09/18/2026"
   },
   {
     "analyst": "Robbie Marcus",
@@ -41,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$82.00",
-    "projected": "-8.2%",
+    "projected": "-6.5%",
     "date": "08/04/2026"
   },
   {
@@ -50,17 +104,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$96.00",
-    "projected": "+7.4%",
+    "projected": "+9.5%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Anthony Petrone",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+6.3%",
-    "date": "08/04/2026"
   },
   {
     "analyst": "William Plovanic",
@@ -68,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$90.00",
-    "projected": "+0.7%",
+    "projected": "+2.6%",
     "date": "08/03/2026"
   },
   {
@@ -95,25 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$92.00",
-    "projected": "+3%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Kendall Au",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+0.7%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Shagun Singh Chadha",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+0.7%",
+    "projected": "+4.9%",
     "date": "07/31/2026"
   },
   {
@@ -122,16 +149,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$94.00",
-    "projected": "+5.2%",
+    "projected": "+7.2%",
     "date": "07/31/2026"
   },
   {
     "analyst": "Bruce Jackson",
-    "firm": "Benchmark Co.",
+    "firm": "StoneX",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$82.00",
-    "projected": "-8.2%",
+    "projected": "-6.5%",
     "date": "07/31/2026"
   },
   {
@@ -140,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+6.3%",
+    "projected": "+8.3%",
     "date": "07/31/2026"
   },
   {
@@ -149,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+17.5%",
+    "projected": "+19.7%",
     "date": "07/31/2026"
   },
   {
@@ -158,16 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+6.3%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Marie Thibault",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "+0.7%",
+    "projected": "+8.3%",
     "date": "07/31/2026"
   },
   {
@@ -176,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$96.00",
-    "projected": "+7.4%",
+    "projected": "+9.5%",
     "date": "07/28/2026"
   },
   {
@@ -185,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$96.00",
-    "projected": "+7.4%",
+    "projected": "+9.5%",
     "date": "07/28/2026"
   },
   {
@@ -194,17 +212,8 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$86.00",
-    "projected": "-3.7%",
+    "projected": "-1.9%",
     "date": "06/25/2026"
-  },
-  {
-    "analyst": "Matt Miksic",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$64.00",
-    "projected": "-28.4%",
-    "date": "05/18/2026"
   },
   {
     "analyst": "David Roman",
@@ -212,7 +221,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "-10.5%",
+    "projected": "-8.8%",
     "date": "05/15/2026"
   },
   {
@@ -221,7 +230,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$85.00",
-    "projected": "-4.9%",
+    "projected": "-3.1%",
     "date": "05/15/2026"
   },
   {
@@ -230,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$77.00",
-    "projected": "-13.8%",
+    "projected": "-12.2%",
     "date": "05/15/2026"
   },
   {
@@ -239,7 +248,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+25.3%",
+    "projected": "+27.7%",
     "date": "05/14/2026"
   },
   {
@@ -248,7 +257,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "-3.7%",
+    "projected": "-1.9%",
     "date": "05/05/2026"
   },
   {
@@ -257,7 +266,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$59.00",
-    "projected": "-34%",
+    "projected": "-32.7%",
     "date": "05/01/2026"
   },
   {

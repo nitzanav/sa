@@ -36,15 +36,6 @@
     "date": "05/30/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": null,
-    "date": "10/17/2025"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -77,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+6.1%",
-    "date": "07/03/2026"
+    "projected": "+15.6%",
+    "date": "10/07/2026"
   }
 ]

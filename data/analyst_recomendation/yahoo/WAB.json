@@ -45,15 +45,6 @@
     "date": "07/24/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+5.4%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "Wolfe Research",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -63,21 +54,30 @@
     "date": "01/09/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+5.4%",
+    "date": "07/24/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$341.00",
-    "projected": "+14.4%",
-    "date": "08/14/2026"
+    "price_target": "$338.00",
+    "projected": "+19.7%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+7.3%",
-    "date": "07/23/2026"
+    "price_target": "$320.00",
+    "projected": "+13.2%",
+    "date": "09/22/2026"
   }
 ]

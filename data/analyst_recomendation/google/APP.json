@@ -1,12 +1,66 @@
 [
   {
+    "analyst": "Michael Pachter",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$560.00",
+    "projected": "+100.5%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Eric Sheridan",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+43.2%",
+    "date": "10/14/2026"
+  },
+  {
     "analyst": "Matthew Cost",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+44.6%",
-    "date": "09/14/2026"
+    "price_target": "$400.00",
+    "projected": "+43.2%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Martin Yang",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$490.00",
+    "projected": "+75.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Alec Brondolo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+16.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Omar Dessouky",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+16.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Bernie McTernan",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+70.1%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Jason Bazinet",
@@ -14,8 +68,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+92.8%",
-    "date": "09/11/2026"
+    "projected": "+114.8%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "James Callahan CFA",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+16.4%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Clark Lampen",
@@ -23,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$396.00",
-    "projected": "+27.2%",
+    "projected": "+41.8%",
     "date": "09/08/2026"
   },
   {
@@ -41,35 +104,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$510.00",
-    "projected": "+63.8%",
+    "projected": "+82.6%",
     "date": "09/01/2026"
-  },
-  {
-    "analyst": "James Callahan CFA",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$325.00",
-    "projected": "+4.4%",
-    "date": "08/31/2026"
-  },
-  {
-    "analyst": "Bernie McTernan",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$475.00",
-    "projected": "+52.6%",
-    "date": "08/26/2026"
-  },
-  {
-    "analyst": "Alec Brondolo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+4.4%",
-    "date": "08/19/2026"
   },
   {
     "analyst": "James Heaney CFA",
@@ -77,16 +113,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+76.7%",
+    "projected": "+96.9%",
     "date": "08/18/2026"
   },
   {
     "analyst": "Mike Hickey",
-    "firm": "Benchmark Co.",
+    "firm": "StoneX",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$440.00",
-    "projected": "+41.4%",
+    "projected": "+57.5%",
     "date": "08/17/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$575.00",
-    "projected": "+84.7%",
+    "projected": "+105.9%",
     "date": "08/13/2026"
   },
   {
@@ -104,16 +140,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$400.00",
-    "projected": "+28.5%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Omar Dessouky",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$400.00",
-    "projected": "+28.5%",
+    "projected": "+43.2%",
     "date": "08/11/2026"
   },
   {
@@ -122,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$610.00",
-    "projected": "+96%",
+    "projected": "+118.4%",
     "date": "08/11/2026"
   },
   {
@@ -131,17 +158,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$610.00",
-    "projected": "+96%",
+    "projected": "+118.4%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "Eric Sheridan",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+49.4%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Joseph Bonner",
@@ -149,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$520.00",
-    "projected": "+67.1%",
+    "projected": "+86.2%",
     "date": "08/07/2026"
   },
   {
@@ -158,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$515.00",
-    "projected": "+65.5%",
+    "projected": "+84.4%",
     "date": "08/06/2026"
   },
   {
@@ -167,16 +185,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$580.00",
-    "projected": "+86.3%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Michael Pachter",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": "+96%",
+    "projected": "+107.7%",
     "date": "08/06/2026"
   },
   {
@@ -185,16 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$610.00",
-    "projected": "+96%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Martin Yang",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$560.00",
-    "projected": "+79.9%",
+    "projected": "+118.4%",
     "date": "08/06/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$790.00",
-    "projected": "+153.8%",
+    "projected": "+182.9%",
     "date": "08/06/2026"
   },
   {
@@ -212,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$640.00",
-    "projected": "+105.6%",
+    "projected": "+129.2%",
     "date": "06/29/2026"
   },
   {
@@ -230,7 +230,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$515.00",
-    "projected": "+65.5%",
+    "projected": "+84.4%",
     "date": "05/07/2026"
   },
   {
@@ -239,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$571.00",
-    "projected": "+83.4%",
+    "projected": "+104.4%",
     "date": "05/07/2026"
   },
   {
@@ -248,7 +248,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$710.00",
-    "projected": "+128.1%",
+    "projected": "+154.2%",
     "date": "04/08/2026"
   },
   {
@@ -257,7 +257,7 @@
     "recommendation": "Hold",
     "action": "Upgraded",
     "price_target": "$340.00",
-    "projected": "+9.2%",
+    "projected": "+21.7%",
     "date": "03/02/2026"
   }
 ]

@@ -9,6 +9,15 @@
     "date": "07/31/2026"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$153.00",
+    "projected": "+14.6%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": "$134.00",
     "projected": "+8.1%",
     "date": "05/22/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+15.3%",
-    "date": "09/11/2026"
   },
   {
     "analyst": "Barclays",

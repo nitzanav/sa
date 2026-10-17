@@ -88,14 +88,5 @@
     "price_target": "$525.00",
     "projected": "+24.1%",
     "date": "06/24/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$397.00",
-    "projected": "+14.1%",
-    "date": "07/30/2026"
   }
 ]

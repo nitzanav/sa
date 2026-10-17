@@ -54,15 +54,6 @@
     "date": "05/01/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+16%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$190.00",
     "projected": "+10.4%",
     "date": "09/10/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+16%",
+    "date": "07/30/2026"
   },
   {
     "analyst": "Barclays",
@@ -81,12 +81,12 @@
     "date": "06/26/2026"
   },
   {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+7.1%",
-    "date": "06/25/2026"
+    "price_target": "$195.00",
+    "projected": "-3.7%",
+    "date": "06/24/2026"
   }
 ]

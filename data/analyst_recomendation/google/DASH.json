@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Eric Sheridan",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+45%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Justin Post",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/18/2026"
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+42.5%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Nikhil Devnani",
@@ -15,7 +24,43 @@
     "action": "Maintained",
     "price_target": "$270.00",
     "projected": "+39.9%",
-    "date": "09/10/2026"
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Deepak Mathivanan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+24.3%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Ken Gawrelski",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+19.1%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Youssef Squali",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Justin Patterson",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+42.5%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Nat Schindler",
@@ -32,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$295.00",
-    "projected": "+52.9%",
+    "projected": "+52.8%",
     "date": "09/08/2026"
   },
   {
@@ -68,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$262.00",
-    "projected": "+35.8%",
+    "projected": "+35.7%",
     "date": "08/10/2026"
   },
   {
@@ -86,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$293.00",
-    "projected": "+51.9%",
+    "projected": "+51.8%",
     "date": "08/07/2026"
   },
   {
@@ -95,16 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+29.6%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Ken Gawrelski",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+16.6%",
+    "projected": "+29.5%",
     "date": "08/07/2026"
   },
   {
@@ -113,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+34.8%",
+    "projected": "+34.7%",
     "date": "08/06/2026"
   },
   {
@@ -122,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$235.00",
-    "projected": "+21.8%",
+    "projected": "+21.7%",
     "date": "08/06/2026"
   },
   {
@@ -140,25 +176,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$295.00",
-    "projected": "+52.9%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Youssef Squali",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$336.00",
-    "projected": "+74.1%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Deepak Mathivanan",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+34.8%",
+    "projected": "+52.8%",
     "date": "08/06/2026"
   },
   {
@@ -194,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$255.00",
-    "projected": "+32.2%",
+    "projected": "+32.1%",
     "date": "08/05/2026"
   },
   {
@@ -221,16 +239,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$255.00",
-    "projected": "+32.2%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Justin Patterson",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$275.00",
-    "projected": "+42.5%",
+    "projected": "+32.1%",
     "date": "08/06/2026"
   },
   {
@@ -239,7 +248,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+19.2%",
+    "projected": "+19.1%",
     "date": "08/06/2026"
   },
   {
@@ -248,7 +257,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$240.00",
-    "projected": "+24.4%",
+    "projected": "+24.3%",
     "date": "08/06/2026"
   },
   {
@@ -266,7 +275,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$300.00",
-    "projected": "+55.5%",
+    "projected": "+55.4%",
     "date": "08/06/2026"
   },
   {
@@ -284,7 +293,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$350.00",
-    "projected": "+81.4%",
+    "projected": "+81.3%",
     "date": "05/12/2026"
   },
   {
@@ -302,17 +311,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+3.7%",
+    "projected": "+3.6%",
     "date": "05/08/2026"
-  },
-  {
-    "analyst": "Eric Sheridan",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$280.00",
-    "projected": "+45.1%",
-    "date": "05/07/2026"
   },
   {
     "analyst": "Mark Kelley",
@@ -320,7 +320,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "-4.1%",
+    "projected": "-4.2%",
     "date": "05/07/2026"
   },
   {
@@ -329,7 +329,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+3.7%",
+    "projected": "+3.6%",
     "date": "05/07/2026"
   },
   {
@@ -347,7 +347,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$255.00",
-    "projected": "+32.2%",
+    "projected": "+32.1%",
     "date": "03/05/2026"
   },
   {
@@ -356,7 +356,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+29.6%",
+    "projected": "+29.5%",
     "date": "02/20/2026"
   }
 ]

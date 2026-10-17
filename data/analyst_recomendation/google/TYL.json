@@ -1,5 +1,77 @@
 [
   {
+    "analyst": "J. Parker Lane",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+10.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Michael Turrin",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$400.00",
+    "projected": "+10.8%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Adam Hotchkiss",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$345.00",
+    "projected": "-4.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Gabriela Borges",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$345.00",
+    "projected": "-4.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Kenneth Wong",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$450.00",
+    "projected": "+24.6%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Billy Fitzsimmons",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$450.00",
+    "projected": "+24.6%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Allan Verkhovski",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+10.8%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Kirk Materne",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+3.8%",
+    "date": "09/22/2026"
+  },
+  {
     "analyst": "Terry Tillman",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -14,26 +86,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$460.00",
-    "projected": "+36.3%",
+    "projected": "+27.4%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Adam Hotchkiss",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$395.00",
-    "projected": "+17%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Kenneth Wong",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+33.3%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Robert Oliver",
@@ -41,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$435.00",
-    "projected": "+28.9%",
+    "projected": "+20.5%",
     "date": "07/31/2026"
   },
   {
@@ -50,16 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$440.00",
-    "projected": "+30.4%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Allan Verkhovski",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+18.5%",
+    "projected": "+21.8%",
     "date": "07/30/2026"
   },
   {
@@ -68,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$400.00",
-    "projected": "+18.5%",
+    "projected": "+10.8%",
     "date": "07/30/2026"
   },
   {
@@ -77,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$425.00",
-    "projected": "+25.9%",
+    "projected": "+17.7%",
     "date": "07/31/2026"
   },
   {
@@ -86,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$491.00",
-    "projected": "+45.5%",
+    "projected": "+36%",
     "date": "07/31/2026"
   },
   {
@@ -95,16 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+18.5%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Kirk Materne",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+11.1%",
+    "projected": "+10.8%",
     "date": "07/30/2026"
   },
   {
@@ -122,17 +158,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$340.00",
-    "projected": "+0.7%",
+    "projected": "-5.8%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "J. Parker Lane",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+18.5%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -140,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$440.00",
-    "projected": "+30.4%",
+    "projected": "+21.8%",
     "date": "07/22/2026"
   },
   {
@@ -149,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$525.00",
-    "projected": "+55.6%",
+    "projected": "+45.4%",
     "date": "06/23/2026"
   },
   {
@@ -158,17 +185,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$450.00",
-    "projected": "+33.3%",
+    "projected": "+24.6%",
     "date": "06/14/2026"
-  },
-  {
-    "analyst": "Michael Turrin",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$335.00",
-    "projected": "-0.7%",
-    "date": "06/12/2026"
   },
   {
     "analyst": "Trevor J. Walsh",
@@ -176,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+48.1%",
+    "projected": "+38.5%",
     "date": "02/13/2026"
   }
 ]

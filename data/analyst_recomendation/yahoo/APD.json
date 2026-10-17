@@ -54,22 +54,22 @@
     "date": "05/01/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$360.00",
-    "projected": "+21%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+10.2%",
-    "date": "08/01/2026"
+    "price_target": "$312.00",
+    "projected": "+11.2%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$346.00",
+    "projected": "+17.4%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Wells Fargo",

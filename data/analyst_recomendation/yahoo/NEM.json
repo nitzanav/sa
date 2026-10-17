@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": null,
-    "date": "09/23/2025"
-  },
-  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -63,15 +54,6 @@
     "date": "07/07/2026"
   },
   {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "",
-    "action": "Maintained",
-    "price_target": "$149.00",
-    "projected": "+24.2%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -79,6 +61,15 @@
     "price_target": "$124.00",
     "projected": "+35.6%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+24.2%",
+    "date": "08/12/2026"
   },
   {
     "analyst": "CIBC",

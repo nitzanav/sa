@@ -27,13 +27,22 @@
     "date": "12/05/2025"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+9.2%",
+    "date": "10/06/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$86.00",
-    "projected": "-11%",
-    "date": "07/22/2026"
+    "price_target": "$83.00",
+    "projected": "-19.5%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -43,15 +52,6 @@
     "price_target": "$97.00",
     "projected": "-3.5%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+15.1%",
-    "date": "07/09/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -81,12 +81,12 @@
     "date": "07/16/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": null,
-    "date": "10/08/2025"
+    "price_target": "$107.00",
+    "projected": "+7.3%",
+    "date": "08/04/2026"
   }
 ]

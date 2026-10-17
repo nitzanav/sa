@@ -27,6 +27,15 @@
     "date": "07/06/2026"
   },
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "-16.6%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": "$28.00",
     "projected": "+4%",
     "date": "08/01/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+57%",
-    "date": "05/04/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -67,8 +67,8 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "+4%",
-    "date": "08/01/2026"
+    "price_target": "$27.00",
+    "projected": "+15.1%",
+    "date": "10/05/2026"
   }
 ]

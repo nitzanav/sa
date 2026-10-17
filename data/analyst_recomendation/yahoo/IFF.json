@@ -4,18 +4,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "+13.3%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": null,
-    "date": "10/15/2025"
+    "price_target": "$105.00",
+    "projected": "+15.1%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Keybanc",
@@ -31,9 +22,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+15.8%",
-    "date": "06/24/2026"
+    "price_target": "$100.00",
+    "projected": "+19.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -76,9 +67,9 @@
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+7.3%",
-    "date": "07/01/2026"
+    "price_target": "$95.00",
+    "projected": "+13.5%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "UBS",
@@ -88,5 +79,14 @@
     "price_target": "$91.00",
     "projected": "+4.7%",
     "date": "08/06/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+11%",
+    "date": "05/07/2026"
   }
 ]

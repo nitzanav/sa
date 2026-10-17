@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": null,
-    "date": "10/18/2025"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -22,9 +13,9 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "+2.8%",
-    "date": "04/15/2026"
+    "price_target": "$68.00",
+    "projected": "+1.5%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Mizuho",

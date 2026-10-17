@@ -18,6 +18,15 @@
     "date": "11/25/2025"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+1.4%",
+    "date": "03/12/2026"
+  },
+  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": "$74.00",
     "projected": "+9.5%",
     "date": "03/27/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+1.4%",
-    "date": "03/12/2026"
   },
   {
     "analyst": "BMO Capital",

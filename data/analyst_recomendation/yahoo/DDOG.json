@@ -54,24 +54,6 @@
     "date": "08/08/2026"
   },
   {
-    "analyst": "Rosenblatt",
-    "firm": "Rosenblatt",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+29.9%",
-    "date": "08/08/2026"
-  },
-  {
-    "analyst": "Canaccord Genuity",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+1.2%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -81,6 +63,15 @@
     "date": "08/07/2026"
   },
   {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+29.9%",
+    "date": "08/08/2026"
+  },
+  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$280.00",
     "projected": "+8.3%",
     "date": "07/21/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+1.2%",
+    "date": "08/05/2026"
   }
 ]

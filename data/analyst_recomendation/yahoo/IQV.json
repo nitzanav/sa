@@ -4,9 +4,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+12.2%",
-    "date": "07/14/2026"
+    "price_target": "$300.00",
+    "projected": "+14.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Jefferies",
@@ -18,6 +18,24 @@
     "date": "02/06/2026"
   },
   {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$329.00",
+    "projected": "+23.4%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$303.00",
+    "projected": "+14.3%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -27,31 +45,13 @@
     "date": "09/17/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+44.9%",
-    "date": "02/19/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+17.8%",
-    "date": "03/07/2026"
-  },
-  {
-    "analyst": "Stifel",
-    "firm": "Stifel",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$276.00",
-    "projected": "+14.1%",
-    "date": "07/29/2026"
+    "price_target": "$300.00",
+    "projected": "+14.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -76,9 +76,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+31.1%",
-    "date": "02/06/2026"
+    "price_target": "$345.00",
+    "projected": "+28.7%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Baird",
@@ -88,32 +88,5 @@
     "price_target": "$287.00",
     "projected": "+17.7%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+9.2%",
-    "date": "02/06/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$288.00",
-    "projected": "+19.1%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$247.00",
-    "projected": "+2.2%",
-    "date": "07/29/2026"
   }
 ]

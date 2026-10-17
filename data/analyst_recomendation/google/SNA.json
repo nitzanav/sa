@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "John Babcock",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+17.5%",
+    "date": "10/06/2026"
+  },
+  {
     "analyst": "Gary Prestopino",
     "firm": "Barrington",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$415.00",
-    "projected": "+11.5%",
-    "date": "08/20/2026"
+    "projected": "+12.1%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Ivan Feinseth",
@@ -14,17 +23,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$485.00",
-    "projected": "+30.3%",
+    "projected": "+31%",
     "date": "07/31/2026"
-  },
-  {
-    "analyst": "John Babcock",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+20.9%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Luke Junk",
@@ -32,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$415.00",
-    "projected": "+11.5%",
+    "projected": "+12.1%",
     "date": "07/24/2026"
   },
   {
@@ -41,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$461.00",
-    "projected": "+23.9%",
+    "projected": "+24.5%",
     "date": "07/24/2026"
   },
   {
@@ -50,7 +50,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$330.00",
-    "projected": "-11.3%",
+    "projected": "-10.9%",
     "date": "04/23/2026"
   }
 ]

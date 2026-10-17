@@ -9,15 +9,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+8.8%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$457.00",
     "projected": "+4.9%",
     "date": "08/20/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+8.8%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -36,15 +36,6 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$317.00",
-    "projected": "-23.4%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -54,13 +45,40 @@
     "date": "03/11/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$317.00",
+    "projected": "-23.4%",
+    "date": "08/06/2026"
+  },
+  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$362.00",
-    "projected": "-8%",
-    "date": "08/05/2026"
+    "price_target": "$380.00",
+    "projected": "-5.7%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+16%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$415.00",
+    "projected": "-0.3%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Citigroup",
@@ -70,23 +88,5 @@
     "price_target": "$405.00",
     "projected": "+0.2%",
     "date": "08/08/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+14.5%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+6.4%",
-    "date": "08/06/2026"
   }
 ]

@@ -13,9 +13,9 @@
     "firm": "Macquarie",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$143.00",
-    "projected": "+40.1%",
-    "date": "08/05/2026"
+    "price_target": "$132.00",
+    "projected": "+72.2%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Stifel",
@@ -40,18 +40,18 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$136.00",
-    "projected": "+34.5%",
-    "date": "08/06/2026"
+    "price_target": "$128.00",
+    "projected": "+69.4%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$132.00",
-    "projected": "+24.5%",
-    "date": "05/08/2026"
+    "price_target": "$103.00",
+    "projected": "+36.3%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -72,13 +72,13 @@
     "date": "04/06/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": null,
-    "date": "10/01/2025"
+    "price_target": "$130.00",
+    "projected": "+28.5%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "Susquehanna",
@@ -88,5 +88,32 @@
     "price_target": "$127.00",
     "projected": "+17.2%",
     "date": "04/17/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+29.5%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+54.7%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+41.5%",
+    "date": "05/12/2026"
   }
 ]

@@ -1,5 +1,113 @@
 [
   {
+    "analyst": "Eli Abboud",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$133.00",
+    "projected": "+42.2%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Alexander Blostein",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+16.6%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Michael Cho",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+28.3%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "William Katz",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+14.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Michael Cyprys",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+26.2%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Patrick O'Shaughnessy",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+16.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+28.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+16.6%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Patrick Moley",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+15.5%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Daniel Welden",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$100.00",
+    "projected": "+7%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+15.5%",
+    "date": "09/27/2026"
+  },
+  {
     "analyst": "Jeff Schmitt",
     "firm": "William Blair",
     "recommendation": "Buy",
@@ -9,84 +117,12 @@
     "date": "09/16/2026"
   },
   {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$111.00",
-    "projected": "+18.7%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Michael Cho",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$114.00",
-    "projected": "+21.9%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Alex Kramm",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+28.3%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+15.5%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "William Katz",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+15.5%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Michael Cyprys",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "+28.3%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "Christopher Allen",
     "firm": "KBW",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$102.00",
-    "projected": "+9%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Patrick Moley",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "+11.2%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Eli Abboud",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$135.00",
-    "projected": "+44.3%",
+    "projected": "+9.1%",
     "date": "07/24/2026"
   },
   {
@@ -97,24 +133,6 @@
     "price_target": "$111.00",
     "projected": "+18.7%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Alexander Blostein",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+12.3%",
-    "date": "07/14/2026"
-  },
-  {
-    "analyst": "Patrick O'Shaughnessy",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+20.8%",
-    "date": "07/09/2026"
   },
   {
     "analyst": "Simon Clinch",
