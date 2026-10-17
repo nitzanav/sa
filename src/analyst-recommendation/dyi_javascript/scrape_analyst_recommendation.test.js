@@ -15,6 +15,7 @@ import {
   scrapeAnalystRecommendationFromUrl,
   sourceForUrl,
 } from "./scrape_analyst_recommendation.js";
+import { tipranksAnalystRecommendationSource } from "./tipranks_analyst_recommendation.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
 
@@ -22,7 +23,11 @@ const html = readFileSync(
   new URL("./__fixtures__/analyst.html", import.meta.url),
   "utf8",
 );
-const sources = [googleAnalystRecommendationSource, yahooAnalystRecommendationSource];
+const sources = [
+  googleAnalystRecommendationSource,
+  yahooAnalystRecommendationSource,
+  tipranksAnalystRecommendationSource,
+];
 
 test("parseGoogleAnalystRecommendation returns rows in order", () => {
   const rows = parseGoogleAnalystRecommendation(html);
@@ -223,6 +228,9 @@ test("analystRecommendationDir is data/analyst_recomendation/<source>", () => {
   expect(analystRecommendationDir(yahooAnalystRecommendationSource)).toBe(
     "data/analyst_recomendation/yahoo",
   );
+  expect(analystRecommendationDir(tipranksAnalystRecommendationSource)).toBe(
+    "data/analyst_recomendation/tipranks",
+  );
 });
 
 test("sourceForUrl selects the source from the url", () => {
@@ -235,6 +243,9 @@ test("sourceForUrl selects the source from the url", () => {
   expect(
     sourceForUrl("https://finance.yahoo.com/quote/NVDA/analyst-insights/", sources),
   ).toBe(yahooAnalystRecommendationSource);
+  expect(
+    sourceForUrl("https://mcp.tipranks.com/mcp/?ticker=BRK.B", sources),
+  ).toBe(tipranksAnalystRecommendationSource);
   expect(() => sourceForUrl("https://example.com/quote/NVDA", sources)).toThrow(
     "No analyst recommendation source for https://example.com/quote/NVDA",
   );
