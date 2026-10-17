@@ -20,6 +20,10 @@ parameter picks are not driven by lots that are still open, while prices
 are refreshed through today so older 30d clocks and trails can finish.
 Five locked iterations (~200 combos) start from analyst>2 · proj>20% and
 analyst>3 · proj>30% around the 30d / 50% / 7.5dd sell neighborhood.
+
+Buy filters also split on signal_name (yahoo-daily and yahoo-7d-window) so
+the two families are never mixed in one backtest. Sell and staged freezes
+use the first selected name (yahoo-daily unless --signal-name overrides it).
 """
 
 from __future__ import annotations
@@ -87,6 +91,8 @@ def clip_prices(obj, end=None):
 
 FREEZE_ANALYSTS = 3
 FREEZE_PROJECTED = 20.0
+SIGNAL_NAMES = ("yahoo-daily", "yahoo-7d-window")
+_SELECTED_SIGNAL_NAMES = None
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -193,8 +199,44 @@ class SellSpec:
 WINNING_SELL = SellSpec(hold_days=30, target_frac=0.50, drawdown=0.075)
 
 
+def signal_names():
+    return _SELECTED_SIGNAL_NAMES or SIGNAL_NAMES
+
+
+def set_signal_names(names):
+    global _SELECTED_SIGNAL_NAMES
+    if not names:
+        _SELECTED_SIGNAL_NAMES = None
+        return
+    unknown = [name for name in names if name not in SIGNAL_NAMES]
+    if unknown:
+        raise SystemExit(
+            f"Unknown signal_name {unknown}; choose from {list(SIGNAL_NAMES)}"
+        )
+    chosen = tuple(name for name in SIGNAL_NAMES if name in set(names))
+    _SELECTED_SIGNAL_NAMES = chosen
+
+
+def with_signal_names(buys, names=None):
+    names = signal_names() if names is None else names
+    expanded = []
+    for buy in buys:
+        if buy.get("signal_name"):
+            expanded.append(dict(buy))
+            continue
+        for name in names:
+            row = dict(buy)
+            row["signal_name"] = name
+            expanded.append(row)
+    return expanded
+
+
 def freeze_buy_filter():
-    return {"min_analysts": FREEZE_ANALYSTS, "min_projected": FREEZE_PROJECTED}
+    return {
+        "min_analysts": FREEZE_ANALYSTS,
+        "min_projected": FREEZE_PROJECTED,
+        "signal_name": signal_names()[0],
+    }
 
 
 def sell_grid():
@@ -220,14 +262,21 @@ def sell_grid():
 
 
 def buy_grid():
-    return [
-        {"min_analysts": n, "min_projected": float(p)}
-        for n in ANALYST_CUTS
-        for p in PROJECTED_CUTS
-    ]
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in ANALYST_CUTS
+            for p in PROJECTED_CUTS
+        ]
+    )
 
 
-STAGED_BUY = {"min_analysts": 2, "min_projected": 20.0}
+def staged_buy():
+    return {
+        "min_analysts": 2,
+        "min_projected": 20.0,
+        "signal_name": signal_names()[0],
+    }
 
 
 def staged_sell_grid():
@@ -272,27 +321,62 @@ def focus_sell_grid():
 
 
 def focus_buy_grid():
-    return [
-        {"min_analysts": n, "min_projected": float(p)}
-        for n in (2, 3)
-        for p in (20, 25, 30)
-    ]
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3)
+            for p in (20, 25, 30)
+        ]
+    )
 
 
 def buy_label(filt):
     if filt.get("label"):
-        return filt["label"]
-    if filt.get("universe") == "fortune_500":
-        return "Fortune 500 at start"
-    if "min_percentile" in filt:
-        return f"signal_percentile > {filt['min_percentile']:.2f}"
-    return f"analyst>{filt['min_analysts']} · proj>{filt['min_projected']:.0f}%"
+        base = filt["label"]
+    elif filt.get("universe") == "fortune_500":
+        base = "Fortune 500 at start"
+    elif "min_percentile" in filt:
+        base = f"signal_percentile > {filt['min_percentile']:.2f}"
+    else:
+        base = f"analyst>{filt['min_analysts']} · proj>{filt['min_projected']:.0f}%"
+    name = filt.get("signal_name")
+    if name and name not in str(base):
+        return f"{name} · {base}"
+    return base
 
 
-def filter_signals(signals, min_analysts, min_projected):
-    out = signals[
-        (signals["analyst_projections_count"] > min_analysts)
-        & (signals["average_projected"] > min_projected)
+def signal_file_tag(name):
+    if not name:
+        return ""
+    return "_" + str(name).replace("-", "")
+
+
+def restrict_signal_name(frame, signal_name):
+    if signal_name is None:
+        return frame
+    if "signal_name" not in frame.columns:
+        if signal_name == SIGNAL_NAMES[0]:
+            return frame
+        return frame.iloc[0:0]
+    return frame.loc[frame["signal_name"] == signal_name]
+
+
+def restrict_signal_names(frame, names):
+    if "signal_name" not in frame.columns:
+        if SIGNAL_NAMES[0] in names:
+            return frame
+        return frame.iloc[0:0]
+    out = frame.loc[frame["signal_name"].isin(list(names))]
+    return out.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
+        drop=True
+    )
+
+
+def filter_signals(signals, min_analysts, min_projected, signal_name=None):
+    out = restrict_signal_name(signals, signal_name)
+    out = out[
+        (out["analyst_projections_count"] > min_analysts)
+        & (out["average_projected"] > min_projected)
     ]
     return out.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
         drop=True
@@ -498,7 +582,14 @@ def attach_spec(row, spec: SellSpec, buy=None):
     row["staged"] = spec.staged
     row["short"] = spec.short
     if buy is not None:
-        for key in ("min_analysts", "min_projected", "min_percentile", "universe", "family"):
+        for key in (
+            "min_analysts",
+            "min_projected",
+            "min_percentile",
+            "universe",
+            "family",
+            "signal_name",
+        ):
             if key in buy:
                 row[key] = buy[key]
         row["buy_label"] = buy.get("label") or buy_label(buy)
@@ -611,6 +702,7 @@ def buy_table(rows):
         if (
             row.get("min_analysts") == freeze["min_analysts"]
             and row.get("min_projected") == freeze["min_projected"]
+            and row.get("signal_name") == freeze.get("signal_name")
         ):
             mark = " *(freeze)*"
         note = " †" if row["n_signals"] < 10 else ""
@@ -661,8 +753,7 @@ def write_summary(path, sell_rows, buy_groups, info, winners, notes):
             f"{info['cal_days']} days ({info['trading_days']} trading)"
         ),
         (
-            f"Buy freeze: analyst_count > {freeze['min_analysts']} and "
-            f"average_projected > {freeze['min_projected']:.0f}% "
+            f"Buy freeze: {buy_label(freeze)} "
             f"({info['n']} signals). ${POSITION_VALUE:,.0f} per lot."
         ),
         (
@@ -743,7 +834,13 @@ def write_summary(path, sell_rows, buy_groups, info, winners, notes):
 
 def focus_lookup(rows):
     return {
-        (r["tag"], r["min_analysts"], int(r["min_projected"])): r for r in rows
+        (
+            r["tag"],
+            r.get("signal_name"),
+            r["min_analysts"],
+            int(r["min_projected"]),
+        ): r
+        for r in rows
     }
 
 
@@ -753,10 +850,17 @@ def focus_matrix(rows, specs, buys, fmt):
     sep = "| --- | " + " | ".join("---:" for _ in specs) + " |"
     lines = [head, sep]
     for filt in buys:
-        cells = [
-            fmt(lookup[(spec.tag, filt["min_analysts"], int(filt["min_projected"]))])
-            for spec in specs
-        ]
+        cells = []
+        for spec in specs:
+            row = lookup.get(
+                (
+                    spec.tag,
+                    filt.get("signal_name"),
+                    filt["min_analysts"],
+                    int(filt["min_projected"]),
+                )
+            )
+            cells.append(fmt(row) if row is not None else "—")
         lines.append("| " + buy_label(filt) + " | " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
@@ -801,6 +905,8 @@ def sell_ablation_table(rows, specs):
     for spec in specs:
         block = [r for r in rows if r["tag"] == spec.tag]
         n = len(block)
+        if not n:
+            continue
         mean_roi = sum(r["return_on_avg_invested_pct"] for r in block) / n
         mean_pnl = sum(r["stock_pnl"] for r in block) / n
         mean_win = sum(r["win_rate_pct"] for r in block) / n
@@ -826,15 +932,23 @@ def sell_ablation_table(rows, specs):
 def signal_count_table(signals, buys):
     cuts = (20, 25, 30)
     analysts = (2, 3)
+    names = []
+    for filt in buys:
+        name = filt.get("signal_name")
+        if name not in names:
+            names.append(name)
+    if not names:
+        names = [None]
     head = "| | " + " | ".join(f">{p}%" for p in cuts) + " |"
     sep = "| --- | " + " | ".join("---:" for _ in cuts) + " |"
     lines = [head, sep]
-    for n in analysts:
-        cells = []
-        for p in cuts:
-            count = len(filter_signals(signals, n, float(p)))
-            cells.append(str(count))
-        lines.append("| " + f"analyst>{n}" + " | " + " | ".join(cells) + " |")
+    for name in names:
+        for n in analysts:
+            cells = [
+                str(len(filter_signals(signals, n, float(p), name))) for p in cuts
+            ]
+            label = f"analyst>{n}" if not name else f"{name} · analyst>{n}"
+            lines.append("| " + label + " | " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
 
@@ -857,9 +971,12 @@ def write_focus_summary(path, rows, signals, info, notes):
             f"(stock P&L ÷ time-average $ in stocks). Exposure is not optimized."
         ),
         "",
-        "6 buys (analyst >2/>3 × proj >20/25/30%) × 4 sells (7.5% dd with/without "
-        "30d and with/without 50% of projected target). Exits are OR-combined. "
-        "A new signal resets the 30d clock and the target; drawdown peak is since entry.",
+        (
+            f"{len(buys)} buys ({len(signal_names())} signal names × analyst >2/>3 × "
+            "proj >20/25/30%) × 4 sells (7.5% dd with/without "
+            "30d and with/without 50% of projected target). Exits are OR-combined. "
+            "A new signal resets the 30d clock and the target; drawdown peak is since entry."
+        ),
         "",
         "## Signal counts",
         "",
@@ -899,7 +1016,7 @@ def write_focus_summary(path, rows, signals, info, notes):
             lambda r: f"{r['n_closed']}c/{r['n_open']}o",
         ),
         "",
-        "## Sell ablation (mean across 6 buys)",
+        "## Sell ablation (mean across buys)",
         "",
         sell_ablation_table(rows, specs),
         "",
@@ -937,6 +1054,16 @@ def load_json(path):
 
 def prepare(signals_path=SIGNALS_CSV, end=None, ignore_last_days=0, refresh=False):
     signals = load_signals(signals_path)
+    n_file = len(signals)
+    signals = restrict_signal_names(signals, signal_names())
+    if len(signals) != n_file:
+        print(
+            f"signal_name {', '.join(signal_names())}: {n_file} → {len(signals)} rows"
+        )
+    if signals.empty:
+        raise RuntimeError(
+            f"No signals left for signal_name {list(signal_names())}"
+        )
     n_raw = len(signals)
     quote_end = quote_day(end)
     signal_cutoff = quote_end - pd.Timedelta(days=ignore_last_days) if ignore_last_days else quote_end
@@ -962,7 +1089,7 @@ def prepare(signals_path=SIGNALS_CSV, end=None, ignore_last_days=0, refresh=Fals
 
 def run_sells(signals, close, spy, hold_days=None, prefix=None, write_positions=False):
     freeze = freeze_buy_filter()
-    bought = filter_signals(signals, freeze["min_analysts"], freeze["min_projected"])
+    bought = apply_buy(signals, freeze)
     if bought.empty:
         raise RuntimeError("Freeze buy filter left no signals")
     specs = sell_grid()
@@ -1000,7 +1127,7 @@ def run_buys(signals, close, spy, sell_rows, prefix=None, sell_tags=None):
         spec = spec_from_row(sell_row)
         block = []
         for filt in buy_grid():
-            bought = filter_signals(signals, filt["min_analysts"], filt["min_projected"])
+            bought = apply_buy(signals, filt)
             if bought.empty:
                 print(f"  skip {buy_label(filt)}: no signals")
                 continue
@@ -1008,7 +1135,8 @@ def run_buys(signals, close, spy, sell_rows, prefix=None, sell_tags=None):
             csv_path = None
             if prefix is not None:
                 csv_path = Path(
-                    f"{prefix}_{spec.tag}_a{filt['min_analysts']}_p{int(filt['min_projected'])}.csv"
+                    f"{prefix}_{spec.tag}{signal_file_tag(filt.get('signal_name'))}"
+                    f"_a{filt['min_analysts']}_p{int(filt['min_projected'])}.csv"
                 )
             row, _, _, _, _ = run_one(label, close, spy, bought, spec, write_csv=csv_path)
             row = attach_spec(row, spec, filt)
@@ -1027,9 +1155,7 @@ def run_focus(signals, close, spy):
     init_cash = None
     for spec in specs:
         for filt in buys:
-            bought = filter_signals(
-                signals, filt["min_analysts"], filt["min_projected"]
-            )
+            bought = apply_buy(signals, filt)
             if bought.empty:
                 print(f"  skip {spec.short} · {buy_label(filt)}: no signals")
                 continue
@@ -1053,17 +1179,21 @@ def load_fortune_symbols(path=FORTUNE_CSV):
     return [yahoo_symbol(s) for s in df["Symbol"].tolist()]
 
 
-def filter_percentile(signals, min_percentile):
-    out = signals[signals["signal_percentile"] > min_percentile]
+def filter_percentile(signals, min_percentile, signal_name=None):
+    out = restrict_signal_name(signals, signal_name)
+    out = out[out["signal_percentile"] > min_percentile]
     return out.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
         drop=True
     )
 
 
 def apply_buy(signals, buy):
+    signal_name = buy.get("signal_name")
     if buy.get("min_percentile") is not None:
-        return filter_percentile(signals, buy["min_percentile"])
-    return filter_signals(signals, buy["min_analysts"], buy["min_projected"])
+        return filter_percentile(signals, buy["min_percentile"], signal_name)
+    return filter_signals(
+        signals, buy["min_analysts"], buy["min_projected"], signal_name
+    )
 
 
 def download_close_yahoo(symbols, start, end):
@@ -1164,9 +1294,15 @@ def load_focus_winning_sell(path=None):
     path = Path(path) if path is not None else CACHE_DIR / "focus.json"
     rows = load_json(path)
     frozen = [r for r in rows if r.get("tag") == "30d-t50-dd7.5"]
-    frozen.sort(key=lambda r: (r.get("min_analysts", 0), r.get("min_projected", 0)))
-    if len(frozen) != 6:
-        raise RuntimeError(f"Expected 6 frozen 30d-t50-dd7.5 rows, got {len(frozen)}")
+    frozen.sort(
+        key=lambda r: (
+            r.get("signal_name") or "",
+            r.get("min_analysts", 0),
+            r.get("min_projected", 0),
+        )
+    )
+    if not frozen:
+        raise RuntimeError("No 30d-t50-dd7.5 rows in focus cache")
     for row in frozen:
         row["family"] = "analyst"
     return frozen
@@ -1180,16 +1316,19 @@ def conclusion_compact_table(rows):
     best = max(rows, key=lambda r: r["return_on_avg_invested_pct"])
     for row in rows:
         name = row.get("buy_label", row["label"])
+        same_signal = row.get("signal_name") in (None, freeze.get("signal_name"))
         if (
             row.get("family") == "analyst"
             and row.get("min_analysts") == freeze["min_analysts"]
             and row.get("min_projected") == freeze["min_projected"]
+            and same_signal
         ):
             name = f"{name} *(old freeze)*"
         if (
             row.get("family") == "analyst"
             and row.get("min_analysts") == 3
             and int(row.get("min_projected", 0)) == 30
+            and same_signal
         ):
             name = f"**ANALYST>3 · PROJ>30%**"
             cell_n = f"**{row['n_signals']}**"
@@ -1349,18 +1488,23 @@ def run_percentile(signals, close, spy):
     rows = []
     close_wide = None
     init_cash = None
-    for cut in PERCENTILE_CUTS:
-        bought = filter_percentile(signals, cut)
-        if bought.empty:
-            print(f"  skip signal_percentile > {cut:.2f}: no signals")
-            continue
-        filt = {"min_percentile": cut, "family": "percentile"}
-        label = f"{spec.label} · {buy_label(filt)}"
-        print(f"  {label} ({len(bought)} signals)")
-        row, _, close_wide, _, init_cash = run_one(label, close, spy, bought, spec)
-        row = attach_spec(row, spec, filt)
-        row["label"] = label
-        rows.append(row)
+    for signal_name in signal_names():
+        for cut in PERCENTILE_CUTS:
+            filt = {
+                "min_percentile": cut,
+                "family": "percentile",
+                "signal_name": signal_name,
+            }
+            bought = apply_buy(signals, filt)
+            if bought.empty:
+                print(f"  skip {buy_label(filt)}: no signals")
+                continue
+            label = f"{spec.label} · {buy_label(filt)}"
+            print(f"  {label} ({len(bought)} signals)")
+            row, _, close_wide, _, init_cash = run_one(label, close, spy, bought, spec)
+            row = attach_spec(row, spec, filt)
+            row["label"] = label
+            rows.append(row)
     return rows, close_wide, init_cash
 
 
@@ -1578,7 +1722,7 @@ def write_staged_summary(path, rows, info, notes):
             f"{info['cal_days']} days ({info['trading_days']} trading)"
         ),
         (
-            f"Buy freeze: **analyst>2 · proj>20%** ({info['n']} signals). "
+            f"Buy freeze: **{buy_label(staged_buy())}** ({info['n']} signals). "
             "$5,000 per lot. Ranked by **return on avg invested**."
         ),
         (
@@ -1592,7 +1736,7 @@ def write_staged_summary(path, rows, info, notes):
         "",
         f"# SELL: {best.get('short', best['label']).upper()}",
         "",
-        "# BUY: ANALYST>2 · PROJ>20%",
+        f"# BUY: {buy_label(staged_buy()).upper()}",
         "",
         (
             f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
@@ -1816,9 +1960,8 @@ def _staged_conclusions(known, staged, best, best_pnl, best_staged, worst_staged
 
 
 def run_staged(signals, close, spy):
-    bought = filter_signals(
-        signals, STAGED_BUY["min_analysts"], STAGED_BUY["min_projected"]
-    )
+    buy = staged_buy()
+    bought = apply_buy(signals, buy)
     if bought.empty:
         raise RuntimeError("Staged buy filter left no signals")
     tickers = [t for t in unique_tickers(bought) if t in close.columns]
@@ -1831,7 +1974,7 @@ def run_staged(signals, close, spy):
         row, _, close_wide, _, init_cash = run_one(
             spec.label, close, spy, bought, spec
         )
-        row = attach_spec(row, spec, STAGED_BUY)
+        row = attach_spec(row, spec, buy)
         row["label"] = spec.label
         print(
             f"    invested {row['return_on_avg_invested_pct']:+.1f}%  "
@@ -1842,10 +1985,12 @@ def run_staged(signals, close, spy):
 
 
 def anchor_buys():
-    return [
-        {"min_analysts": 2, "min_projected": 20.0},
-        {"min_analysts": 3, "min_projected": 30.0},
-    ]
+    return with_signal_names(
+        [
+            {"min_analysts": 2, "min_projected": 20.0},
+            {"min_analysts": 3, "min_projected": 30.0},
+        ]
+    )
 
 
 def combo_key(buy, spec):
@@ -1866,7 +2011,7 @@ def iter4_buy_grid():
     for n, projs in ((2, (15, 20, 25, 30, 35)), (3, (20, 25, 30, 35)), (4, (20, 30))):
         for p in projs:
             buys.append({"min_analysts": n, "min_projected": float(p)})
-    return buys
+    return with_signal_names(buys)
 
 
 def mean_by(rows, keyfn):
@@ -1927,6 +2072,8 @@ def unique_buys_from_rows(rows, n, extra=()):
         if not label or label in seen:
             continue
         buy = {}
+        if row.get("signal_name"):
+            buy["signal_name"] = row["signal_name"]
         if row.get("min_percentile") is not None:
             buy["min_percentile"] = row["min_percentile"]
         else:
@@ -1977,18 +2124,20 @@ def run_combos(signals, close, spy, buys, specs, seen, iteration):
 
 
 def closed_plan_text(locks):
+    anchors = ", ".join(f"**{buy_label(b)}**" for b in anchor_buys())
     lines = [
-        "Five locked iterations. Duplicate (buy, sell) cells are skipped.",
+        "Five locked iterations. Duplicate (buy, sell) cells are skipped. "
+        "Each buy filter includes signal_name.",
         "",
-        "1. Lock **analyst>2 · proj>20%** and **analyst>3 · proj>30%**. "
+        f"1. Lock {anchors}. "
         "Sell neighborhood around 30d 50% 7.5dd: hold 20/25/30/40 × target 40/50/60% × dd 5/7.5/10%.",
-        "2. Keep those two buys. Lock the best hold from iteration 1. "
+        "2. Keep those anchor buys. Lock the best hold from iteration 1. "
         "Expand target 25/35/50/65/75% × dd 6/7.5/8.5/10/12.5%.",
-        "3. Keep those two buys. Lock the two best (target, dd) pairs. "
+        "3. Keep those anchor buys. Lock the two best (target, dd) pairs. "
         "Sweep hold None/10/15/21/25/30/35/45/50/60.",
-        "4. Lock the three best sells so far. Sweep buy neighborhood: "
+        "4. Lock the three best sells so far. Sweep the buy neighborhood for each signal name: "
         "analyst>2 · proj>15/20/25/30/35%, analyst>3 · proj>20/25/30/35%, analyst>4 · proj>20/30%.",
-        "5. Keep the two anchor buys plus percentile >0.80/>0.60. "
+        "5. Keep the anchor buys plus percentile >0.80/>0.60 on each signal name. "
         "Sells: known 30d 50% 7.5dd, next-best sell, and 7.5dd→5%→5dd with 30d and with 30d+50%.",
     ]
     if locks:
@@ -2084,7 +2233,7 @@ def write_closed_summary(path, rows, info, notes, locks, n_raw, n_kept, signal_c
         "",
         *closed_plan_text(locks),
         "",
-        "## Known sell on the two freeze buys",
+        "## Known sell on the anchor buys",
         "",
         closed_compact_table(known) if known else "_known sell cells missing_",
         "",
@@ -2126,7 +2275,7 @@ def write_closed_summary(path, rows, info, notes, locks, n_raw, n_kept, signal_c
     body.append(
         f"- {len(rows)} unique combos after dropping signals after {signal_cutoff}. "
         f"Mean open lots at the last bar: {mean_open:.1f} "
-        f"(known 30d 50% 7.5dd on the two freeze buys: {known_open:.1f})."
+        f"(known 30d 50% 7.5dd on the anchor buys: {known_open:.1f})."
     )
     body.append(
         f"- Best **return on invested** (n≥10): **{best.get('buy_label')}** on "
@@ -2141,7 +2290,7 @@ def write_closed_summary(path, rows, info, notes, locks, n_raw, n_kept, signal_c
     )
     if known:
         body.append(
-            "- Known **30d 50% 7.5dd** on the two freeze buys after the cutoff:"
+            "- Known **30d 50% 7.5dd** on the anchor buys after the cutoff:"
         )
         for row in sorted(known, key=lambda r: r["return_on_avg_invested_pct"], reverse=True):
             body.append(
@@ -2175,7 +2324,7 @@ def run_closed(signals, close, spy):
     init_cash = None
     anchors = anchor_buys()
 
-    print("\n=== Iteration 1: two freeze buys × 30d/50%/7.5dd neighborhood ===")
+    print("\n=== Iteration 1: anchor buys × 30d/50%/7.5dd neighborhood ===")
     specs1 = neighborhood_sells((20, 25, 30, 40), (0.40, 0.50, 0.60), (0.05, 0.075, 0.10))
     rows, close_wide, init_cash = run_combos(
         signals, close, spy, anchors, specs1, seen, 1
@@ -2235,10 +2384,12 @@ def run_closed(signals, close, spy):
         all_rows,
         n=4,
         extra=anchors
-        + [
-            {"min_percentile": 0.80},
-            {"min_percentile": 0.60},
-        ],
+        + with_signal_names(
+            [
+                {"min_percentile": 0.80},
+                {"min_percentile": 0.60},
+            ]
+        ),
     )
     extra_sell = next((s for s in sell_locks if s.tag != WINNING_SELL.tag), sell_locks[0])
     specs5 = [
@@ -2305,11 +2456,20 @@ def parse_args():
     p.add_argument("--report", default=None)
     p.add_argument("--positions", action="store_true")
     p.add_argument("--sell-tag", action="append", dest="sell_tags")
+    p.add_argument(
+        "--signal-name",
+        action="append",
+        dest="signal_names",
+        choices=SIGNAL_NAMES,
+        help="Keep this signal_name. Repeat to compare several. Default: both.",
+    )
     return p.parse_args()
 
 
 def main():
     args = parse_args()
+    if args.signal_names:
+        set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
     prefix = OUT_DIR / f"simulation_{stamp}_optimize"
@@ -2318,7 +2478,7 @@ def main():
     if ignore_last_days is None:
         ignore_last_days = IGNORE_LAST_DAYS_DEFAULT if args.phase == "closed" else 0
     refresh = args.refresh or args.phase == "closed"
-    n_raw = len(load_signals(args.signals))
+    n_raw = len(restrict_signal_names(load_signals(args.signals), signal_names()))
     quote_end = quote_day(args.end)
     signal_cutoff = (
         (quote_end - pd.Timedelta(days=ignore_last_days)).strftime("%Y-%m-%d")
@@ -2345,13 +2505,25 @@ def main():
     if args.phase == "focus":
         rows, close_wide, init_cash = run_focus(signals, close, spy)
         save_json(CACHE_DIR / "focus.json", rows)
-        widest = filter_signals(signals, 2, 20.0)
+        widest_n = max(
+            len(
+                apply_buy(
+                    signals,
+                    {
+                        "min_analysts": 2,
+                        "min_projected": 20.0,
+                        "signal_name": name,
+                    },
+                )
+            )
+            for name in signal_names()
+        )
         info = period_info(
             close_wide,
             init_cash,
-            len(widest),
+            widest_n,
             run_label,
-            "Focused 6×4 buy/sell sweep",
+            "Focused buy/sell sweep by signal name",
         )
         notes = [
             "Sells are 7.5% trailing drawdown, optionally OR'd with a 30d time stop "
@@ -2388,7 +2560,7 @@ def main():
             init_cash,
             len(bought),
             run_label,
-            "Two-stage trailing sells, buy frozen analyst>2 · proj>20%",
+            f"Two-stage trailing sells, buy frozen {buy_label(staged_buy())}",
         )
         notes = [
             "Peak for drawdown is since entry and does not reset on a new signal. "
@@ -2484,7 +2656,7 @@ def main():
                 init_cash,
                 len(bought),
                 run_label,
-                "Sell sweep, buy frozen >3 and >20%",
+                f"Sell sweep, buy frozen {buy_label(freeze_buy_filter())}",
             )
             write_summary(report_path, sell_rows, [], info, winners, notes)
         elif args.phase == "sells":
@@ -2511,7 +2683,7 @@ def main():
             return
         freeze = freeze_buy_filter()
         if close_wide is None:
-            bought = filter_signals(signals, freeze["min_analysts"], freeze["min_projected"])
+            bought = apply_buy(signals, freeze)
             tickers = [t for t in unique_tickers(bought) if t in close.columns]
             close_wide, _ = signal_positions(close[tickers], bought)
             init_cash = POSITION_VALUE * len(bought)
@@ -2523,8 +2695,8 @@ def main():
             "Sell then buy parameter sweep",
         )
         notes.append(
-            "All raw signals already have analyst_count ≥ 3 and average_projected ≥ 10%, "
-            "so analyst>2 and proj>10% is the unfiltered file (189 rows)."
+            "Rows are filtered by signal_name before analyst and projected cuts. "
+            "analyst>2 and proj>10% is the full export for that signal name."
         )
         notes.append("† in buy tables: fewer than 10 signals.")
         write_summary(report_path, sell_rows, buy_groups, info, winners, notes)
