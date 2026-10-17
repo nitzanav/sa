@@ -21,6 +21,11 @@ are refreshed through today so older 30d clocks and trails can finish.
 Five locked iterations (~200 combos) start from analyst>2 · proj>20% and
 analyst>3 · proj>30% around the 30d / 50% / 7.5dd sell neighborhood.
 
+Phase coarse is one wide pass, not a locked search: analyst >2–6 ×
+projected >20/25/30% against hold 10/15/30 × target 25/50% × dd 7.5/10%.
+Pass --one-lot to keep a single open lot per ticker: a later buy while
+that lot is open does not add a lot, it restarts the hold clock.
+
 Buy filters also split on signal_name (yahoo-daily and yahoo-7d-window) so
 the two families are never mixed in one backtest. Sell and staged freezes
 use the first selected name (yahoo-daily unless --signal-name overrides it).
@@ -399,11 +404,30 @@ def spec_from_row(row):
     )
 
 
-def exits_from_spec(close_wide, meta, spec: SellSpec):
+def _record_exit(stats, staged, locked, time_hit, tgt_hit, dd_hit):
+    if time_hit:
+        stats["n_exit_time"] += 1
+    if tgt_hit:
+        stats["n_exit_target"] += 1
+    if dd_hit:
+        stats["n_exit_dd"] += 1
+        if staged:
+            if locked:
+                stats["n_exit_tight"] += 1
+            else:
+                stats["n_exit_wide"] += 1
+
+
+def exits_from_spec(close_wide, meta, spec: SellSpec, one_lot=False):
     """OR of time stop, target fraction of projected upside, trailing drawdown.
 
-    A new signal for the same ticker while the lot is open resets the time
-    stop and the projection target. Peak for drawdown is since entry.
+    Default: each signal is its own lot. A new signal for the same ticker
+    while a lot is open resets that lot's time stop and projection target.
+    Peak for drawdown is since entry.
+
+    one_lot: at most one open lot per ticker. A later buy while that lot is
+    open does not open another lot. It restarts the hold clock from that
+    bar. The target and the drawdown peak stay on the original entry.
 
     Two-stage specs use dd_before until the lock (fixed % from entry, or a
     fraction of analyst projection), then dd_after. Peak still starts at
@@ -428,11 +452,32 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
         "n_exit_dd": 0,
         "n_locked": 0,
         "n_still_open": 0,
+        "n_lots": 0,
+        "n_extended": 0,
+        "opened_columns": [],
     }
 
     for _, group in meta.groupby("ticker"):
-        group = group.sort_values("entry_loc")
+        group = group.sort_values("entry_loc", kind="mergesort")
         prices = close_wide[group["column"].iloc[0]].to_numpy()
+        if one_lot:
+            _exits_one_lot(
+                list(group.itertuples(index=False)),
+                prices,
+                exits,
+                col_index,
+                n,
+                stats,
+                hold_days,
+                target_frac,
+                drawdown,
+                dd_before,
+                dd_after,
+                lock_profit,
+                lock_proj_frac,
+                staged,
+            )
+            continue
         signal_locs = [int(loc) for loc in group["entry_loc"]]
         loc_to_proj = {
             int(loc): float(proj)
@@ -441,6 +486,8 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
         signal_loc_set = set(signal_locs)
 
         for row in group.itertuples(index=False):
+            stats["n_lots"] += 1
+            stats["opened_columns"].append(row.column)
             entry = int(row.entry_loc)
             entry_px = float(prices[entry])
             deadline = entry + hold_days if hold_days is not None else n + 1
@@ -482,17 +529,7 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
                     dd_hit = drawdown is not None and px <= peak * (1.0 - drawdown)
                 if time_hit or tgt_hit or dd_hit:
                     exits.iat[t, col_index[row.column]] = True
-                    if time_hit:
-                        stats["n_exit_time"] += 1
-                    if tgt_hit:
-                        stats["n_exit_target"] += 1
-                    if dd_hit:
-                        stats["n_exit_dd"] += 1
-                        if staged:
-                            if locked:
-                                stats["n_exit_tight"] += 1
-                            else:
-                                stats["n_exit_wide"] += 1
+                    _record_exit(stats, staged, locked, time_hit, tgt_hit, dd_hit)
                     exited = True
                     break
             if locked:
@@ -500,6 +537,83 @@ def exits_from_spec(close_wide, meta, spec: SellSpec):
             if not exited:
                 stats["n_still_open"] += 1
     return exits, stats
+
+
+def _exits_one_lot(
+    ordered,
+    prices,
+    exits,
+    col_index,
+    n,
+    stats,
+    hold_days,
+    target_frac,
+    drawdown,
+    dd_before,
+    dd_after,
+    lock_profit,
+    lock_proj_frac,
+    staged,
+):
+    """Open a lot only when the ticker is flat. Later signals restart the hold."""
+    i = 0
+    n_rows = len(ordered)
+    while i < n_rows:
+        row = ordered[i]
+        entry = int(row.entry_loc)
+        j = i + 1
+        while j < n_rows and int(ordered[j].entry_loc) == entry:
+            stats["n_extended"] += 1
+            j += 1
+        stats["n_lots"] += 1
+        stats["opened_columns"].append(row.column)
+        entry_px = float(prices[entry])
+        deadline = entry + hold_days if hold_days is not None else n + 1
+        proj_pct = float(row.average_projected)
+        if target_frac is not None:
+            target = entry_px * (1.0 + target_frac * proj_pct / 100.0)
+        else:
+            target = None
+        peak = entry_px
+        locked = False
+        exited = False
+        next_i = j
+        for t in range(entry + 1, n):
+            while next_i < n_rows and int(ordered[next_i].entry_loc) == t:
+                if hold_days is not None:
+                    deadline = t + hold_days
+                stats["n_extended"] += 1
+                next_i += 1
+            px = float(prices[t])
+            if px > peak:
+                peak = px
+            if staged and not locked:
+                if lock_profit is not None:
+                    threshold = lock_profit
+                elif lock_proj_frac is not None:
+                    threshold = lock_proj_frac * (proj_pct / 100.0)
+                else:
+                    threshold = None
+                if threshold is not None and peak >= entry_px * (1.0 + threshold):
+                    locked = True
+            time_hit = t >= deadline
+            tgt_hit = target is not None and px >= target
+            if staged:
+                active_dd = dd_after if locked else dd_before
+                dd_hit = px <= peak * (1.0 - active_dd)
+            else:
+                dd_hit = drawdown is not None and px <= peak * (1.0 - drawdown)
+            if time_hit or tgt_hit or dd_hit:
+                exits.iat[t, col_index[row.column]] = True
+                _record_exit(stats, staged, locked, time_hit, tgt_hit, dd_hit)
+                exited = True
+                break
+        if locked:
+            stats["n_locked"] += 1
+        if not exited:
+            stats["n_still_open"] += 1
+            break
+        i = next_i
 
 
 def verify_exits(close_wide, meta):
@@ -553,10 +667,11 @@ def ensure_prices(tickers, start, end=None, refresh=False):
             f"(refresh={refresh}, stale={stale}, missing={len(missing)})"
         )
         extra = download_close_yahoo(names, start, want_end)
-        if close.empty or refresh or stale:
+        if close.empty:
             close = extra
         else:
-            close = close.join(extra, how="outer")
+            # Keep symbols the latest download omitted instead of dropping them.
+            close = extra.combine_first(close)
         close = normalize_price_index(close)
         close.to_pickle(close_path)
         print(f"Cached {close.shape[1]} symbols → {close_path} · last {close.index.max().date()}")
@@ -605,15 +720,20 @@ def jsonable(row):
     return out
 
 
-def run_one(label, close, spy, signals, spec: SellSpec, write_csv=None):
+def run_one(label, close, spy, signals, spec: SellSpec, write_csv=None, one_lot=False):
     tickers = unique_tickers(signals)
     have = [t for t in tickers if t in close.columns]
     if not have:
         raise RuntimeError(f"No price data for {label}")
     close_wide, meta = signal_positions(close[have], signals)
-    entries = entries_from_meta(close_wide, meta)
-    exits, exit_stats = exits_from_spec(close_wide, meta, spec)
-    init_cash = POSITION_VALUE * len(meta)
+    exits, exit_stats = exits_from_spec(close_wide, meta, spec, one_lot=one_lot)
+    opened = exit_stats.pop("opened_columns")
+    if one_lot:
+        entry_meta = meta[meta["column"].isin(opened)]
+    else:
+        entry_meta = meta
+    entries = entries_from_meta(close_wide, entry_meta)
+    init_cash = POSITION_VALUE * len(entry_meta)
     row, positions = simulate(label, close_wide, entries, exits, init_cash, spy, len(meta))
     row.update(exit_stats)
     if write_csv is not None:
@@ -2086,7 +2206,7 @@ def unique_buys_from_rows(rows, n, extra=()):
     return buys
 
 
-def run_combos(signals, close, spy, buys, specs, seen, iteration):
+def run_combos(signals, close, spy, buys, specs, seen, iteration, one_lot=False):
     rows = []
     close_wide = None
     init_cash = None
@@ -2108,7 +2228,12 @@ def run_combos(signals, close, spy, buys, specs, seen, iteration):
                 f"({len(bought)} signals)"
             )
             row, _, close_wide, _, init_cash = run_one(
-                f"{spec.label} · {buy_label(buy)}", close, spy, bought, spec
+                f"{spec.label} · {buy_label(buy)}",
+                close,
+                spy,
+                bought,
+                spec,
+                one_lot=one_lot,
             )
             row = attach_spec(row, spec, buy)
             row["label"] = f"{spec.short} · {buy_label(buy)}"
@@ -2427,6 +2552,317 @@ def run_closed(signals, close, spy):
     return all_rows, close_wide, init_cash, locks
 
 
+def coarse_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4, 5, 6)
+            for p in (20, 25, 30)
+        ]
+    )
+
+
+def coarse_sell_grid():
+    return neighborhood_sells((10, 15, 30), (0.25, 0.50), (0.075, 0.10))
+
+
+def coarse_count_table(signals, buys):
+    cuts = []
+    analysts = []
+    names = []
+    for filt in buys:
+        name = filt.get("signal_name")
+        if name not in names:
+            names.append(name)
+        n = filt["min_analysts"]
+        if n not in analysts:
+            analysts.append(n)
+        projected = int(filt["min_projected"])
+        if projected not in cuts:
+            cuts.append(projected)
+    cuts = tuple(sorted(cuts))
+    analysts = tuple(sorted(analysts))
+    head = "| | " + " | ".join(f">{p}%" for p in cuts) + " |"
+    sep = "| --- | " + " | ".join("---:" for _ in cuts) + " |"
+    lines = [head, sep]
+    for name in names:
+        for n in analysts:
+            cells = [
+                str(len(filter_signals(signals, n, float(p), name))) for p in cuts
+            ]
+            label = f"analyst>{n}" if not name else f"{name} · analyst>{n}"
+            lines.append("| " + label + " | " + " | ".join(cells) + " |")
+    return "\n".join(lines)
+
+
+def run_coarse(signals, close, spy, one_lot=False):
+    buys = coarse_buy_grid()
+    specs = coarse_sell_grid()
+    print(
+        f"\n=== Coarse grid: {len(buys)} buys × {len(specs)} sells"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(signals, close, spy, buys, specs, set(), "coarse", one_lot=one_lot)
+
+
+def _climb_lines(known_rows):
+    groups = defaultdict(dict)
+    for row in known_rows:
+        groups[(row.get("signal_name"), row.get("min_analysts"))][
+            int(row["min_projected"])
+        ] = row
+    lines = []
+    for key in sorted(groups, key=lambda k: (str(k[0]), k[1] or 0)):
+        block = groups[key]
+        vals = []
+        bits = []
+        cuts = sorted(block)
+        for projected in cuts:
+            row = block[projected]
+            vals.append(row["return_on_avg_invested_pct"])
+            bits.append(
+                f">{projected}% {row['return_on_avg_invested_pct']:+.1f}% "
+                f"(n={row['n_signals']}, {money(row['stock_pnl'])})"
+            )
+        trend = "keeps rising" if len(vals) >= 2 and vals == sorted(vals) else "peaks before the tightest cut"
+        name = f"{key[0]} · " if key[0] else ""
+        lines.append(f"{name}analyst>{key[1]} {trend}: " + ", ".join(bits))
+    return lines
+
+
+def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, trust_n=30):
+    trusted = [r for r in rows if r["n_signals"] >= trust_n]
+    pool = trusted or rows
+    best = max(pool, key=lambda r: (r["return_on_avg_invested_pct"], r["stock_pnl"]))
+    best_pnl = max(pool, key=lambda r: r["stock_pnl"])
+    known_tag = anchor.tag
+    known_rows = [r for r in rows if r.get("tag") == known_tag]
+    by_buy = defaultdict(list)
+    for row in rows:
+        by_buy[row.get("buy_label")].append(row)
+
+    body = [
+        f"# {info['title']}",
+        "",
+        f"**Run:** {info['run']}",
+        (
+            f"**Period:** {info['start']} → {info['end']} · "
+            f"{info['cal_days']} days ({info['trading_days']} trading)"
+        ),
+        (
+            f"${POSITION_VALUE:,.0f} per lot. Ranked by **return on avg invested**. "
+            f"{len(rows)} combos. Trusted set is n≥{trust_n} ({len(trusted)} cells)."
+        ),
+        "",
+        (
+            f"{len(buys)} buys × {len(specs)} sells. One pass. Sells are OR-combined."
+        ),
+        "",
+        "# WINNING COMBINATION",
+        "",
+        f"# SELL: {(best.get('short') or '').upper()}",
+        "",
+        f"# BUY: {best.get('buy_label', '').upper()}",
+        "",
+        (
+            f"# {best['return_on_avg_invested_pct']:+.1f}% ON INVESTED · "
+            f"{money(best['stock_pnl'])} · {best['n_signals']} SIGNALS · "
+            f"{best['win_rate_pct']:.1f}% WIN RATE · "
+            f"{best['n_closed']}c/{best['n_open']}o"
+        ),
+        "",
+        "## Signal counts",
+        "",
+        coarse_count_table(signals, buys),
+        "",
+        f"## Anchor sell on every buy",
+        "",
+        f"{anchor.short}.",
+        "",
+        closed_compact_table(known_rows) if known_rows else "_known sell missing_",
+        "",
+        f"## Top 30 with n≥{trust_n}",
+        "",
+        closed_compact_table(trusted or rows, limit=30),
+        "",
+        "## Best sell for each buy",
+        "",
+    ]
+
+    head = f"| Buy | n | Best sell | On invested | Stock P&L | Anchor {anchor.short} |"
+    sep = "| --- | ---: | --- | ---: | ---: | --- |"
+    lines = [head, sep]
+    for filt in buys:
+        label = buy_label(filt)
+        block = by_buy.get(label, [])
+        if not block:
+            continue
+        top = max(block, key=lambda r: r["return_on_avg_invested_pct"])
+        known = next((r for r in block if r.get("tag") == known_tag), None)
+        known_cell = (
+            f"{known['return_on_avg_invested_pct']:+.1f}% / {money(known['stock_pnl'])}"
+            if known
+            else "—"
+        )
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    label,
+                    str(top["n_signals"]),
+                    top.get("short") or top["tag"],
+                    f"{top['return_on_avg_invested_pct']:+.1f}%",
+                    money(top["stock_pnl"]),
+                    known_cell,
+                ]
+            )
+            + " |"
+        )
+    body += ["\n".join(lines), ""]
+
+    if len(specs) <= 16:
+        body += ["## Return on avg invested", "", focus_matrix(
+            rows, specs, buys, lambda r: f"{r['return_on_avg_invested_pct']:+.1f}%"
+        ), ""]
+        body += ["## Stock P&L", "", focus_matrix(rows, specs, buys, lambda r: money(r["stock_pnl"])), ""]
+
+    body += [f"## Mean by sell (n≥{trust_n})", ""]
+    head = "| Sell | Cells | Mean on invested | Mean stock P&L |"
+    sep = "| --- | ---: | ---: | ---: |"
+    lines = [head, sep]
+    for roi, pnl, short, block in mean_by(trusted or rows, lambda r: r.get("short")):
+        lines.append(f"| {short} | {len(block)} | {roi:+.1f}% | {money(pnl)} |")
+    body += ["\n".join(lines), ""]
+
+    body += [f"## Mean by buy (n≥{trust_n})", ""]
+    head = "| Buy | n | Cells | Mean on invested | Mean stock P&L |"
+    sep = "| --- | ---: | ---: | ---: | ---: |"
+    lines = [head, sep]
+    for roi, pnl, label, block in mean_by(trusted or rows, lambda r: r.get("buy_label")):
+        lines.append(
+            f"| {label} | {block[0]['n_signals']} | {len(block)} | {roi:+.1f}% | {money(pnl)} |"
+        )
+    body += ["\n".join(lines), ""]
+
+    body += [
+        f"## Best stock P&L (n≥{trust_n})",
+        "",
+        (
+            f"**{best_pnl.get('short')}** · **{best_pnl.get('buy_label')}** → "
+            f"{money(best_pnl['stock_pnl'])} "
+            f"({best_pnl['return_on_avg_invested_pct']:+.1f}%, {best_pnl['n_signals']} signals)."
+        ),
+        "",
+        f"## Upside steps on {anchor.short}",
+        "",
+    ]
+    body += [f"- {line}" for line in _climb_lines(known_rows)] + [""]
+    if notes:
+        body += ["## Notes", ""] + [f"- {n}" for n in notes] + [""]
+    path.write_text("\n".join(body))
+    print(f"Wrote {path}")
+
+
+COARSE_PEAK = SellSpec(hold_days=10, target_frac=0.25, drawdown=0.075)
+
+
+def fine_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": 2, "min_projected": 30.0},
+            {"min_analysts": 3, "min_projected": 30.0},
+            {"min_analysts": 2, "min_projected": 35.0},
+            {"min_analysts": 3, "min_projected": 35.0},
+            {"min_analysts": 3, "min_projected": 25.0},
+            {"min_analysts": 4, "min_projected": 30.0},
+        ]
+    )
+
+
+def fine_sell_grid():
+    return neighborhood_sells(
+        (5, 7, 10, 12),
+        (0.20, 0.25, 0.30, 0.35, 0.40),
+        (0.06, 0.075, 0.085),
+    )
+
+
+def run_fine(signals, close, spy):
+    buys = fine_buy_grid()
+    specs = fine_sell_grid()
+    print(f"\n=== Fine grid: {len(buys)} buys × {len(specs)} sells ===")
+    return run_combos(signals, close, spy, buys, specs, set(), "fine")
+
+
+def cohort_frames(signals):
+    raw = load_signals(SIGNALS_CSV)
+    daily = raw[raw["signal_name"] == "yahoo-daily"]
+    keys = set(
+        zip(pd.to_datetime(daily["date"]).dt.normalize(), daily["ticker"].astype(str))
+    )
+    dates = pd.to_datetime(signals["date"]).dt.normalize()
+    shared = [
+        (d, t) in keys
+        for d, t in zip(dates, signals["ticker"].astype(str))
+    ]
+    shared = pd.Series(shared, index=signals.index)
+    return (
+        ("all", signals),
+        ("new", signals.loc[~shared].reset_index(drop=True)),
+        ("shared", signals.loc[shared].reset_index(drop=True)),
+    )
+
+
+def run_split(signals, close, spy, buys, specs):
+    rows = []
+    close_wide = None
+    init_cash = None
+    frames = cohort_frames(signals)
+    planned = len(frames) * len(buys) * len(specs)
+    done = 0
+    for cohort, frame in frames:
+        for buy in buys:
+            bought_filter = dict(buy)
+            for spec in specs:
+                done += 1
+                bought = apply_buy(frame, bought_filter)
+                label = f"{cohort} · {buy_label(bought_filter)}"
+                if bought.empty:
+                    print(f"  skip split {done}/{planned} {spec.short} · {label}")
+                    continue
+                print(
+                    f"  split {done}/{planned} {spec.short} · {label} ({len(bought)} signals)"
+                )
+                row, _, close_wide, _, init_cash = run_one(
+                    f"{spec.label} · {label}", close, spy, bought, spec
+                )
+                tagged = dict(bought_filter)
+                tagged["label"] = label
+                row = attach_spec(row, spec, tagged)
+                row["label"] = f"{spec.short} · {label}"
+                row["cohort"] = cohort
+                print(
+                    f"    invested {row['return_on_avg_invested_pct']:+.1f}%  "
+                    f"{money(row['stock_pnl'])}  {row['n_closed']}c/{row['n_open']}o"
+                )
+                rows.append(row)
+    return rows, close_wide, init_cash
+
+
+def append_split_summary(path, rows):
+    lines = [
+        "",
+        "## New names vs shared names",
+        "",
+        "Same sell on three books: every 7-day row, rows with no same-day daily twin, and rows that also appear on daily.",
+        "",
+        closed_compact_table(rows),
+        "",
+    ]
+    path.write_text(path.read_text() + "\n".join(lines))
+    print(f"Appended split table → {path}")
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Sweep sell/buy permutations")
     p.add_argument(
@@ -2443,6 +2879,8 @@ def parse_args():
             "percentile",
             "staged",
             "closed",
+            "coarse",
+            "fine",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -2455,6 +2893,14 @@ def parse_args():
     p.add_argument("--winners-json", default=str(CACHE_DIR / "winners.json"))
     p.add_argument("--report", default=None)
     p.add_argument("--positions", action="store_true")
+    p.add_argument(
+        "--one-lot",
+        action="store_true",
+        help=(
+            "One open lot per ticker. A later buy while it is held restarts "
+            "the hold clock and does not open another lot."
+        ),
+    )
     p.add_argument("--sell-tag", action="append", dest="sell_tags")
     p.add_argument(
         "--signal-name",
@@ -2501,6 +2947,107 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "coarse":
+        rows, close_wide, init_cash = run_coarse(
+            signals, close, spy, one_lot=args.one_lot
+        )
+        save_json(CACHE_DIR / "coarse.json", rows)
+        title = "Coarse 7d-style buy/sell grid"
+        if args.one_lot:
+            title += " · one lot, hold extends"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot; it restarts the 10/15/30-day hold "
+                "from that bar. The profit target and the drawdown peak stay on the "
+                "original entry. n is the signal count; trades are the lots opened."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot and resets the time stop and target "
+                "on lots of that ticker still open. Drawdown peak is since entry."
+            )
+        notes = [
+            "One pass: analyst >2–6, projected >20/25/30%, hold 10/15/30, "
+            "target 25/50%, drawdown 7.5/10%. No locked iterations.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            coarse_buy_grid(),
+            coarse_sell_grid(),
+            WINNING_SELL,
+        )
+        return
+
+    if args.phase == "fine":
+        rows, close_wide, init_cash = run_fine(signals, close, spy)
+        save_json(CACHE_DIR / "fine.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Fine grid around 10d 25% 7.5dd",
+        )
+        notes = [
+            "Neighborhood of the coarse peak: holds 5/7/10/12, targets 20–40%, "
+            "drawdown 6/7.5/8.5%, on the two best buys and the nearby cuts.",
+            "Trusted cells have at least 30 signals.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            fine_buy_grid(),
+            fine_sell_grid(),
+            COARSE_PEAK,
+        )
+        trusted = [r for r in rows if r["n_signals"] >= 30]
+        best = max(
+            trusted or rows,
+            key=lambda r: (r["return_on_avg_invested_pct"], r["stock_pnl"]),
+        )
+        peak = spec_from_row(best)
+        specs = [COARSE_PEAK]
+        if peak.tag != COARSE_PEAK.tag:
+            specs.append(peak)
+        split_buys = with_signal_names(
+            [
+                {"min_analysts": 2, "min_projected": 0.0, "label": "every row"},
+                {"min_analysts": 2, "min_projected": 30.0},
+                {"min_analysts": 3, "min_projected": 30.0},
+            ]
+        )
+        if best.get("min_percentile") is None and best.get("min_analysts") is not None:
+            winner_buy = {
+                "min_analysts": best["min_analysts"],
+                "min_projected": best["min_projected"],
+                "signal_name": best.get("signal_name"),
+            }
+            if buy_label(winner_buy) not in {buy_label(b) for b in split_buys}:
+                split_buys.append(winner_buy)
+        split_rows, _, _ = run_split(signals, close, spy, split_buys, specs)
+        save_json(CACHE_DIR / "split.json", split_rows)
+        append_split_summary(report_path, split_rows)
+        return
 
     if args.phase == "focus":
         rows, close_wide, init_cash = run_focus(signals, close, spy)
