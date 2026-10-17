@@ -13,7 +13,7 @@ import {
 } from "cursor/canvas";
 
 const SOURCE =
-  "Yahoo 7-day window · 2026-01-12 → 2026-10-16 · 193 trading days · $5,000 per lot. Holds 10/15/30 from VectorBT/simulation_2026-10-17_1332_UTC+3_optimize.md. Holds 45–120d use the same rules.";
+  "Yahoo 7-day window · 2026-01-12 → 2026-10-16 · 193 trading days · $5,000 per lot. Holds 10/15/30 from VectorBT/simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.md. Holds 45–120d use the same rules.";
 
 const ANALYSTS = [2, 3, 4, 5, 6];
 const UPSIDES = [20, 25, 30];

@@ -12,7 +12,7 @@ From the repo root, with the project virtualenv:
 ./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window
 ```
 
-`run_clock()` stamps the run as `simulation_<YYYY-MM-DD>_<HHMM>_UTC+<offset>_optimize`. The 13:32 coarse pass is `simulation_2026-10-17_1332_UTC+3_optimize`.
+`run_clock()` supplies the timestamp `<YYYY-MM-DD>_<HHMM>_UTC+<offset>`. Put a few kebab-case words that name the sweep before that timestamp: `simulation_<words>_<timestamp>_optimize`. The 13:32 coarse pass is `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize`.
 
 Pin `--end` to the last quote day when today is not a session (the cache's last bar is then before `today`, so a refresh would download again). A download that omits a symbol must not drop that symbol: `ensure_prices` keeps prior columns with `combine_first`.
 
@@ -76,9 +76,9 @@ Before trusting an extension, re-run one published cell. Analyst >2 · proj >20%
 
 ## Four files, one stamp
 
-Every run writes these siblings under `VectorBT/`. `<stamp>` is the `run_clock()` value, for example `2026-10-17_1332_UTC+3`.
+Every run writes these siblings under `VectorBT/`. The file stem is `simulation_<words>_<timestamp>_optimize`. `<timestamp>` is the `run_clock()` value, for example `2026-10-17_1332_UTC+3`. `<words>` is a few kebab-case words that say what the simulation is, placed before the timestamp, for example `7d-coarse-grid`.
 
-1. `simulation_<stamp>_optimize.py` — exact copy of `optimize.py` as executed. If the invocation has arguments or is not a bare phase command, also write `simulation_<stamp>_optimize.sh` with the exact command from the repo root:
+1. `simulation_<words>_<timestamp>_optimize.py` — exact copy of `optimize.py` as executed. If the invocation has arguments or is not a bare phase command, also write `simulation_<words>_<timestamp>_optimize.sh` with the exact command from the repo root:
 
 ```bash
 #!/bin/sh
@@ -86,15 +86,15 @@ cd "$(dirname "$0")/.." || exit 1
 ./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window
 ```
 
-2. `simulation_<stamp>_optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
+2. `simulation_<words>_<timestamp>_optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
 
-3. `simulation_<stamp>_optimize.tsx` — copy of the canvas source. The file Cursor opens beside chat is the same source at:
+3. `simulation_<words>_<timestamp>_optimize.tsx` — copy of the canvas source. The file Cursor opens beside chat is the same source at:
 
-`/Users/<user>/.cursor/projects/<workspace>/canvases/simulation_<stamp>_optimize.canvas.tsx`
+`/Users/<user>/.cursor/projects/<workspace>/canvases/simulation_<words>_<timestamp>_optimize.canvas.tsx`
 
 If that canvas is missing or has a different name, save it under this stamp before finishing. In the chat, link the `.canvas.tsx` path.
 
-The canvas is one merged table, not separate return and P&L tables. Copy the structure of `simulation_2026-10-17_1332_UTC+3_optimize.canvas.tsx`.
+The canvas is one merged table, not separate return and P&L tables. Copy the structure of `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.canvas.tsx`.
 
 - Each result is two sub-cells, `%` and `$`. A Show filter toggles `%`, `$`, or both.
 - Color each sub-cell from yellow (low) to red (high) with `useHostTheme()` category tokens. Scale `%` across all `%` values and `$` across all `$` values. Pick text color for contrast.
@@ -103,4 +103,4 @@ The canvas is one merged table, not separate return and P&L tables. Copy the str
 - Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy. Rows summarize the visible buys for each sell. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 
-4. `simulation_<stamp>_optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`.
+4. `simulation_<words>_<timestamp>_optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`.
