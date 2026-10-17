@@ -56,12 +56,14 @@ test("validateAnalystRecommendationRow accepts zero projected", () => {
 });
 
 test("validateAnalystRecommendationRow rejects non-USD price targets", () => {
-  expect(
-    validateAnalystRecommendationRow({ ...validRow, price_target: "SGD 1.86" }),
-  ).toBe(false);
-  expect(loggedErrors()[0].error).toMatch(
-    /price_target is not USD: "SGD 1.86"/,
-  );
+  for (const price_target of ["SGD 1.86", "GBX 10,814.00", "CA$11.50", "A$38.00"]) {
+    expect(validateAnalystRecommendationRow({ ...validRow, price_target })).toBe(
+      false,
+    );
+    expect(loggedErrors().at(-1).error).toContain(
+      `price_target is not USD: ${JSON.stringify(price_target)}`,
+    );
+  }
 });
 
 test("validateAnalystRecommendationRow accepts projected at the range bounds", () => {

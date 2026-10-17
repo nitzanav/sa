@@ -1,5 +1,5 @@
 import { jest } from "@jest/globals";
-import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
@@ -11,6 +11,7 @@ import {
   joinPerDateAndSymbolBySource,
   jointPerDateAndSymbolCsvColumns,
   getFortune500Symbols,
+  scrapeAnalystRecommendationSource,
   scrapeAnalystRecommendations,
   selectAnalystRecommendationSources,
   skipExistingAnalystRecommendations,
@@ -647,6 +648,51 @@ test("joinPerDateAndSymbolBySource prefixes source columns on shared date and sy
       yahoo_projections: "Bo:20|Cam:40",
     },
   ]);
+});
+
+test("scrapeAnalystRecommendationSource continues after a symbol fetch failure", async () => {
+  const cwd = mkdtempSync(join(tmpdir(), "continue-"));
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const listing = {
+    analyst: "Ann",
+    firm: "Firm",
+    recommendation: "Buy",
+    action: "Maintained",
+    price_target: "$1.00",
+    projected: "+1%",
+    date: "01/02/2026",
+  };
+  const source = {
+    name: "google",
+    urlFor: (symbol) => `https://example.test/${symbol}`,
+    quoteFromUrl: (url) => new URL(url).pathname.slice(1),
+    fetch: async (url) => {
+      if (url.endsWith("/BBB")) throw new TypeError("fetch failed");
+      return "<html></html>";
+    },
+    parse: () => [listing],
+  };
+  try {
+    const all = await scrapeAnalystRecommendationSource(source, {
+      symbols: ["AAA", "BBB", "CCC"],
+      exchanges: { AAA: "NYSE", BBB: "NYSE", CCC: "NASDAQ" },
+    });
+    expect(Object.keys(all)).toEqual(["AAA", "CCC"]);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/google/BBB.json"))).toBe(
+      false,
+    );
+    expect(stderrSpy.mock.calls.map(([line]) => line).join("")).toContain(
+      '"symbol":"BBB"',
+    );
+    expect(stderrSpy.mock.calls.map(([line]) => line).join("")).toContain(
+      "fetch failed",
+    );
+  } finally {
+    stderrSpy.mockRestore();
+    process.chdir(originalCwd);
+  }
 });
 
 test("escapeAnalystName avoids csv-quoting characters", () => {

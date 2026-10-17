@@ -5,6 +5,7 @@ import { join } from "node:path";
 import { logger } from "../../common/logger.js";
 import {
   googleAnalystRecommendationSource,
+  googleAnalystRecommendationUrl,
   parseGoogleAnalystRecommendation,
   quoteFromUrl as googleQuoteFromUrl,
 } from "./google_analyst_recommendation.js";
@@ -54,6 +55,157 @@ test("parseGoogleAnalystRecommendation returns empty array when table missing", 
     '{"message":"error","error":"Analyst Recommendation table not found","log_level":"error"}\n',
   );
   stderrSpy.mockRestore();
+});
+
+function analystPayload(rows) {
+  return `AF_initDataCallback({key: 'ds:6', hash: '1', data:${JSON.stringify([
+    ["Name", "USD"],
+    rows,
+  ])}, sideChannel: {}});`;
+}
+
+function quotePayload(symbol, price) {
+  return `AF_initDataCallback({key: 'ds:2', hash: '1', data:${JSON.stringify([
+    [[["id", [symbol, "NYSE"], "Name", 0, "USD", [price]]]],
+  ])}, sideChannel: {}});`;
+}
+
+function embeddedRow({
+  analyst,
+  firm,
+  recommendation = "Hold",
+  action = "Maintained",
+  date,
+  amount,
+  currency,
+  displayAmount,
+  displayCurrency,
+}) {
+  const row = Array(30).fill(null);
+  row[1] = analyst;
+  row[2] = firm;
+  row[3] = recommendation;
+  row[4] = date;
+  row[19] = amount;
+  row[21] = currency;
+  row[22] = displayAmount;
+  row[24] = displayCurrency;
+  row[27] = action;
+  return row;
+}
+
+test("parseGoogleAnalystRecommendation converts non-USD targets using embedded USD", () => {
+  const html = `<html><body><main><table><thead><tr>
+    <th>Analyst</th><th>Recommendation</th><th>Action</th>
+    <th>Price target</th><th>Projected</th><th>Date</th>
+    </tr></thead><tbody>
+    <tr><td><div><div>Ada</div><div>Citi</div></div></td>
+      <td>Buy</td><td>Maintained</td><td>$28.70</td><td>+8.5%</td><td>10/13/2026</td></tr>
+    <tr><td><div><div>Jia Hui NG</div><div>DBS</div></div></td>
+      <td>Buy</td><td>Initiated</td><td>SGD 1.86</td><td>-93%</td><td>06/10/2026</td></tr>
+    <tr><td><div><div>Kyle McPhee</div><div>ATB</div></div></td>
+      <td>Hold</td><td>Maintained</td><td>CA$11.50</td><td>-98.2%</td><td>05/11/2026</td></tr>
+    </tbody></table></main></body></html>
+    <script>${quotePayload("DE", 26.46)}</script>
+    <script>${analystPayload([
+      embeddedRow({
+        analyst: "Ada",
+        firm: "Citi",
+        recommendation: "Buy",
+        date: "10/13/2026",
+        amount: 28.7,
+        currency: "USD",
+        displayAmount: 28.7,
+        displayCurrency: "USD",
+      }),
+      embeddedRow({
+        analyst: "Jia Hui NG",
+        firm: "DBS",
+        recommendation: "Buy",
+        action: "Initiated",
+        date: "06/10/2026",
+        amount: 1.86,
+        currency: "SGD",
+        displayAmount: 1.47074478,
+        displayCurrency: "USD",
+      }),
+      embeddedRow({
+        analyst: "Kyle McPhee",
+        firm: "ATB",
+        date: "05/11/2026",
+        amount: 11.5,
+        currency: "CAD",
+        displayAmount: 8.33,
+        displayCurrency: "USD",
+      }),
+    ])}</script>`;
+  expect(parseGoogleAnalystRecommendation(html)).toEqual([
+    {
+      analyst: "Ada",
+      firm: "Citi",
+      recommendation: "Buy",
+      action: "Maintained",
+      price_target: "$28.70",
+      projected: "+8.5%",
+      date: "10/13/2026",
+    },
+    {
+      analyst: "Jia Hui NG",
+      firm: "DBS",
+      recommendation: "Buy",
+      action: "Initiated",
+      price_target: "$1.47",
+      projected: "-94.4%",
+      date: "06/10/2026",
+    },
+    {
+      analyst: "Kyle McPhee",
+      firm: "ATB",
+      recommendation: "Hold",
+      action: "Maintained",
+      price_target: "$8.33",
+      projected: "-68.5%",
+      date: "05/11/2026",
+    },
+  ]);
+});
+
+test("parseGoogleAnalystRecommendation reads embedded rows when the table is missing", () => {
+  const html = `<html></html><script>${quotePayload("CBOE", 308.09)}</script><script>${analystPayload([
+    embeddedRow({
+      analyst: "Eli Abboud",
+      firm: "Bank of America Securities",
+      date: "10/14/2026",
+      action: "Reiterated",
+      amount: 329,
+      currency: "USD",
+      displayAmount: 6067.42,
+      displayCurrency: "MXN",
+    }),
+  ])}</script>`;
+  expect(parseGoogleAnalystRecommendation(html)).toEqual([
+    {
+      analyst: "Eli Abboud",
+      firm: "Bank of America Securities",
+      recommendation: "Hold",
+      action: "Reiterated",
+      price_target: "$329.00",
+      projected: "+6.8%",
+      date: "10/14/2026",
+    },
+  ]);
+});
+
+test("googleAnalystRecommendationUrl uses the quote alias", () => {
+  expect(googleAnalystRecommendationUrl("NVDA", "NASDAQ")).toBe(
+    "https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis&hl=en",
+  );
+  expect(googleAnalystRecommendationUrl("PSKY", "NYSE")).toBe(
+    "https://www.google.com/finance/beta/quote/SKYD:NYSE?window=YTD&tab=analysis&hl=en",
+  );
+  expect(() => googleAnalystRecommendationUrl("ZZZ")).toThrow(
+    "missing exchange for ZZZ",
+  );
 });
 
 test("google quoteFromUrl strips the exchange from the ticker", () => {

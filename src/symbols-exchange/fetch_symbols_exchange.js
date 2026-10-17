@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import { chunk } from "../common/chunk.js";
 import config from "../common/config.js";
 import { parseCsv, readCsv } from "../common/csv.js";
@@ -5,6 +6,12 @@ import { httpRequestScrape } from "../common/http_request_scrape.js";
 import { writeTextFile } from "../common/write_file.js";
 
 const SYMBOLS_EXCHANGE_FILE = "data/symbols_exchange.csv";
+const SYMBOLS_EXCHANGE_OVERRIDES_FILE = "data/symbols_exchange_overrides.csv";
+
+export function readExchangeOverrides() {
+  if (!existsSync(SYMBOLS_EXCHANGE_OVERRIDES_FILE)) return [];
+  return readCsv(SYMBOLS_EXCHANGE_OVERRIDES_FILE);
+}
 
 function tickersUrl(symbols) {
   const { url, api_key, fields, limit } = config.sharadar;
@@ -32,14 +39,29 @@ export async function fetchSymbolsExchange(symbols) {
   for (const [index, symbolsChunk] of chunk(symbols, config.sharadar.chunkSize).entries()) {
     rows.push(...(await fetchTickers(symbolsChunk, index)));
   }
-  const exchangeBySymbol = Object.fromEntries(rows.map((row) => [row.ticker, row.exchange]));
+  const exchangeBySymbol = {
+    ...Object.fromEntries(rows.map((row) => [row.ticker, row.exchange])),
+    ...Object.fromEntries(readExchangeOverrides().map((row) => [row.ticker, row.exchange])),
+  };
   const lines = Object.entries(exchangeBySymbol).map((entry) => entry.join(","));
   await writeTextFile(SYMBOLS_EXCHANGE_FILE, [config.sharadar.fields, ...lines].join("\n"));
   return exchangeBySymbol;
 }
 
-export const readSymbolsExchange = () =>
-  Object.fromEntries(readCsv(SYMBOLS_EXCHANGE_FILE).map((row) => [row.ticker, row.exchange]));
+export function readSymbolQuoteAliases() {
+  return Object.fromEntries(
+    readExchangeOverrides()
+      .filter((row) => row.quote)
+      .map((row) => [row.ticker, row.quote]),
+  );
+}
+
+export const readSymbolsExchange = () => ({
+  ...Object.fromEntries(
+    readCsv(SYMBOLS_EXCHANGE_FILE).map((row) => [row.ticker, row.exchange]),
+  ),
+  ...Object.fromEntries(readExchangeOverrides().map((row) => [row.ticker, row.exchange])),
+});
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   await fetchSymbolsExchange(readCsv("data/fortune_500/symbols.csv").map((row) => row.Symbol));

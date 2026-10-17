@@ -43,10 +43,14 @@ node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js
 
 Rows are validated before they are returned. A row that fails any check is logged at
 `error` level and skipped, so a bad row at the source does not fail the whole symbol.
-Two checks reject data that Google really does serve: a `projected` outside `-95%` to
-`+1000%` (seen against a stale price target), and a `price_target` quoted in a
-currency other than USD (`"SGD 1.86"`). A missing `price_target` is `null` and stays
-valid. `date` must fall between `2025-01-01` and today (inclusive).
+Google sometimes prints a price target in another currency (`"SGD 1.86"`, `"CA$11.50"`,
+`"A$38.00"`). The scraper replaces that with the USD amount embedded in the page and
+recomputes `projected` from the USD quote. A target that is still not USD, or a
+`projected` outside `-95%` to `+1000%`, is skipped. A missing `price_target` is `null`
+and stays valid. `date` must fall between `2025-01-01` and tomorrow (inclusive).
+A failed fetch for one symbol is logged and the scrape continues with the rest.
+Tickers missing from Sharadar, or renamed, are listed in
+`data/symbols_exchange_overrides.csv` (`PSKY` is fetched as `SKYD:NYSE`).
 
 Fetching follows the [Oxylabs Google Finance recipe](https://github.com/oxylabs/how-to-scrape-google-finance):
 set `OXYLABS_USERNAME` and `OXYLABS_PASSWORD` to route requests through the Web

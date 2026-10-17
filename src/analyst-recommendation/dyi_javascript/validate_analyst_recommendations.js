@@ -17,7 +17,8 @@ const ROW_FIELDS = [
   "date",
 ];
 const USD_PRICE_TARGET = /^\$[\d,]+(?:\.\d{1,2})?$/;
-const NON_USD_PRICE_TARGET = /^[A-Z]{3} [\d,]+(?:\.\d{1,2})?$/;
+const NON_USD_PRICE_TARGET =
+  /^(?:[A-Z]{3} [\d,]+(?:\.\d{1,2})?|[A-Z]{1,3}\$[\d,]+(?:\.\d{1,2})?)$/;
 const PROJECTED = /^(?:0(?:\.\d+)?%|[+-][\d,]+(?:\.\d+)?%)$/;
 const PROJECTED_MAX = 1000;
 const PROJECTED_MIN = -95;

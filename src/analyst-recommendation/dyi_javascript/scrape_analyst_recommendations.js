@@ -343,14 +343,18 @@ export async function scrapeAnalystRecommendationSource(
       all[symbol] = JSON.parse(readFileSync(jsonFile, "utf8"));
       continue;
     }
-    const listings = await scrapeAnalystRecommendation(
-      source,
-      source.urlFor(symbol, exchanges[symbol]),
-      { operationName: `${source.name}_${symbol}` },
-      { fileName: `${dir}/${symbol}.html` },
-    );
-    await writeJsonFile(jsonFile, listings);
-    all[symbol] = listings;
+    try {
+      const listings = await scrapeAnalystRecommendation(
+        source,
+        source.urlFor(symbol, exchanges[symbol]),
+        { operationName: `${source.name}_${symbol}` },
+        { fileName: `${dir}/${symbol}.html` },
+      );
+      await writeJsonFile(jsonFile, listings);
+      all[symbol] = listings;
+    } catch (error) {
+      logger.error({ message: "error", error });
+    }
   }
   return all;
 }

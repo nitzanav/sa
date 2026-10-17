@@ -1,9 +1,26 @@
 import { jest } from "@jest/globals";
-import { mkdtempSync } from "node:fs";
+import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import config from "../common/config.js";
 import { fetchSymbolsExchange, readSymbolsExchange } from "./fetch_symbols_exchange.js";
+
+test("readSymbolsExchange lets overrides replace Sharadar and add a quote alias", () => {
+  const cwd = mkdtempSync(join(tmpdir(), "sx-override-"));
+  mkdirSync(join(cwd, "data"));
+  writeFileSync(join(cwd, "data/symbols_exchange.csv"), "ticker,exchange\nAAA,NYSE\n");
+  writeFileSync(
+    join(cwd, "data/symbols_exchange_overrides.csv"),
+    "ticker,exchange,quote\nAAA,NASDAQ,\nPSKY,NYSE,SKYD\n",
+  );
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  try {
+    expect(readSymbolsExchange()).toEqual({ AAA: "NASDAQ", PSKY: "NYSE" });
+  } finally {
+    process.chdir(originalCwd);
+  }
+});
 
 test("fetchSymbolsExchange chunks requests, dedupes rows and writes csv", async () => {
   const cwd = mkdtempSync(join(tmpdir(), "sx-"));
