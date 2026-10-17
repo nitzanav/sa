@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+16.6%",
+    "date": "10/10/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -7,15 +16,6 @@
     "price_target": "$67.00",
     "projected": "+24.4%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Wedbush",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+33.3%",
-    "date": "06/09/2026"
   },
   {
     "analyst": "Citigroup",
@@ -76,9 +76,9 @@
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$54.00",
-    "projected": "-12.7%",
-    "date": "09/18/2026"
+    "price_target": "$60.00",
+    "projected": "-0.8%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Baird",

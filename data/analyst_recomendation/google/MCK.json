@@ -1,30 +1,21 @@
 [
   {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$977.00",
-    "projected": "+11.7%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Elizabeth Anderson CFA",
-    "firm": "Evercore ISI",
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,000.00",
-    "projected": "+14.3%",
-    "date": "09/15/2026"
+    "price_target": "$1,200.00",
+    "projected": "+20.2%",
+    "date": "10/16/2026"
   },
   {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
+    "analyst": "Unknown Analyst",
+    "firm": "Leerink Partners",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,050.00",
-    "projected": "+20%",
-    "date": "09/16/2026"
+    "action": "Maintained",
+    "price_target": "$1,070.00",
+    "projected": "+7.1%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Ryan Halsted",
@@ -32,8 +23,44 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$845.00",
-    "projected": "-3.4%",
-    "date": "09/14/2026"
+    "projected": "-15.4%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,000.00",
+    "projected": "+0.1%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "George Hill",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$913.00",
+    "projected": "-8.6%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$977.00",
+    "projected": "-2.2%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,050.00",
+    "projected": "+5.1%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Ryan Daniels",
@@ -42,7 +69,7 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/25/2026"
+    "date": "10/05/2026"
   },
   {
     "analyst": "Glen Santangelo",
@@ -50,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,000.00",
-    "projected": "+14.3%",
+    "projected": "+0.1%",
     "date": "08/18/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,042.00",
-    "projected": "+19.1%",
+    "projected": "+4.3%",
     "date": "08/10/2026"
   },
   {
@@ -68,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$933.00",
-    "projected": "+6.7%",
+    "projected": "-6.6%",
     "date": "08/11/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1,000.00",
-    "projected": "+14.3%",
+    "projected": "+0.1%",
     "date": "08/10/2026"
   },
   {
@@ -86,16 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,015.00",
-    "projected": "+16%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Kevin Caliendo",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,080.00",
-    "projected": "+23.5%",
+    "projected": "+1.6%",
     "date": "08/06/2026"
   },
   {
@@ -104,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$905.00",
-    "projected": "+3.5%",
+    "projected": "-9.4%",
     "date": "08/05/2026"
   },
   {
@@ -113,17 +131,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1,006.00",
-    "projected": "+15%",
+    "projected": "+0.7%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "George Hill",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$875.00",
-    "projected": "+0%",
-    "date": "05/08/2026"
   },
   {
     "analyst": "Max Smock",

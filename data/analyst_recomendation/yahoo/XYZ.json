@@ -5,8 +5,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+20.3%",
-    "date": "08/07/2026"
+    "projected": "+24.2%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "Keybanc",
@@ -45,21 +45,21 @@
     "date": "07/09/2026"
   },
   {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+40.6%",
+    "date": "08/25/2026"
+  },
+  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$95.00",
     "projected": "+13.4%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+25.4%",
     "date": "08/06/2026"
   },
   {
@@ -72,13 +72,13 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "Wolfe Research",
-    "firm": "Wolfe Research",
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+40.6%",
-    "date": "08/25/2026"
+    "price_target": "$105.00",
+    "projected": "+25.4%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "B of A Securities",

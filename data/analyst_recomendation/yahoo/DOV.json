@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+25.8%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
@@ -45,15 +54,6 @@
     "date": "04/13/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$256.00",
-    "projected": "+26.6%",
-    "date": "01/06/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -61,6 +61,15 @@
     "price_target": "$230.00",
     "projected": "+6.1%",
     "date": "06/04/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$256.00",
+    "projected": "+26.6%",
+    "date": "01/06/2026"
   },
   {
     "analyst": "Barclays",
@@ -79,14 +88,5 @@
     "price_target": "$265.00",
     "projected": "+17.2%",
     "date": "04/28/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+7.8%",
-    "date": "03/18/2026"
   }
 ]

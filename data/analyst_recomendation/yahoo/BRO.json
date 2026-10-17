@@ -58,9 +58,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+25%",
-    "date": "09/16/2026"
+    "price_target": "$78.00",
+    "projected": "+26.4%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -85,8 +85,8 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$76.00",
-    "projected": "+10.1%",
-    "date": "07/08/2026"
+    "price_target": "$71.00",
+    "projected": "+14.7%",
+    "date": "10/08/2026"
   }
 ]

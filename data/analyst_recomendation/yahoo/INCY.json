@@ -4,9 +4,9 @@
     "firm": "HC Wainwright & Co.",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+18.6%",
-    "date": "08/21/2026"
+    "price_target": "$152.00",
+    "projected": "+40%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Jefferies",
@@ -40,18 +40,18 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+5.2%",
-    "date": "06/22/2026"
+    "price_target": "$115.00",
+    "projected": "+5.9%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+22.6%",
-    "date": "04/30/2026"
+    "price_target": "$157.00",
+    "projected": "+37.6%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -85,53 +85,8 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-4.4%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+2.2%",
-    "date": "02/12/2026"
-  },
-  {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+16.4%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+4.8%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "-9.6%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "-15.4%",
-    "date": "07/29/2026"
+    "price_target": "$123.00",
+    "projected": "-0.3%",
+    "date": "09/28/2026"
   }
 ]

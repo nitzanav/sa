@@ -40,9 +40,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": null,
-    "date": "12/12/2025"
+    "price_target": "$41.00",
+    "projected": "-31%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Guggenheim",

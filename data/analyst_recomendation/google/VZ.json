@@ -1,66 +1,30 @@
 [
   {
+    "analyst": "Michael Funk",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$48.00",
+    "projected": "+7.4%",
+    "date": "10/14/2026"
+  },
+  {
     "analyst": "Laurent Yoon",
     "firm": "Bernstein",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "-2.3%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+14.4%",
-    "date": "09/03/2026"
-  },
-  {
-    "analyst": "Kutgun Maral",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+4%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Michael Ng",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$51.00",
-    "projected": "+6.1%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+8.1%",
-    "date": "07/27/2026"
+    "action": "Reiterated",
+    "price_target": "$45.00",
+    "projected": "+0.6%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Maher Yaghi",
     "firm": "Scotiabank",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$52.50",
-    "projected": "+9.2%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Sebastiano Petti",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+8.1%",
-    "date": "07/27/2026"
+    "price_target": "$50.00",
+    "projected": "+11.8%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Brandon Nispel",
@@ -69,16 +33,7 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Kannan Venkateshwar",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$46.00",
-    "projected": "-4.3%",
-    "date": "07/27/2026"
+    "date": "10/07/2026"
   },
   {
     "analyst": "Steven Cahall",
@@ -86,7 +41,88 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$47.00",
-    "projected": "-2.3%",
+    "projected": "+5.1%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Kannan Venkateshwar",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+2.9%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+23%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+16.3%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Frank Louthan",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Kutgun Maral",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+11.8%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$48.00",
+    "projected": "+7.4%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+7.4%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Michael Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+14.1%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Sebastiano Petti",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+16.3%",
     "date": "07/27/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$56.00",
-    "projected": "+16.4%",
+    "projected": "+25.3%",
     "date": "07/27/2026"
   },
   {
@@ -104,17 +140,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$47.00",
-    "projected": "-2.3%",
+    "projected": "+5.1%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Michael Funk",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$48.00",
-    "projected": "-0.2%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "Nilesh Bhaiya",
@@ -122,17 +149,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$56.00",
-    "projected": "+16.4%",
+    "projected": "+25.3%",
     "date": "06/23/2026"
-  },
-  {
-    "analyst": "John Hodulik",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "-0.2%",
-    "date": "06/22/2026"
   },
   {
     "analyst": "Sachin Mittal",
@@ -140,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$49.00",
-    "projected": "+1.9%",
+    "projected": "+9.6%",
     "date": "05/28/2026"
   },
   {
@@ -158,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$55.00",
-    "projected": "+14.4%",
+    "projected": "+23%",
     "date": "04/27/2026"
   },
   {
@@ -167,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$56.00",
-    "projected": "+16.4%",
+    "projected": "+25.3%",
     "date": "04/28/2026"
   },
   {
@@ -176,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$58.00",
-    "projected": "+20.6%",
+    "projected": "+29.7%",
     "date": "02/18/2026"
   },
   {
@@ -185,7 +203,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$44.00",
-    "projected": "-8.5%",
+    "projected": "-1.6%",
     "date": "02/02/2026"
   }
 ]

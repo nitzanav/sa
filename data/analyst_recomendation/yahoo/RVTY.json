@@ -22,18 +22,18 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+28.3%",
-    "date": "05/06/2026"
+    "price_target": "$175.00",
+    "projected": "+11.9%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+4.9%",
-    "date": "05/07/2026"
+    "price_target": "$160.00",
+    "projected": "+4.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "JP Morgan",

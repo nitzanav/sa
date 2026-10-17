@@ -27,15 +27,6 @@
     "date": "08/25/2026"
   },
   {
-    "analyst": "BTIG",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+31.7%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$44.00",
     "projected": "+20.1%",
     "date": "07/30/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+31.7%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "Citigroup",
@@ -54,15 +54,6 @@
     "date": "07/14/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+28.2%",
-    "date": "04/30/2026"
-  },
-  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$45.00",
     "projected": "+12.8%",
     "date": "02/05/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+28.2%",
+    "date": "04/30/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -81,12 +81,12 @@
     "date": "02/05/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+20.1%",
-    "date": "08/04/2026"
+    "price_target": "$37.00",
+    "projected": "+20.7%",
+    "date": "10/16/2026"
   }
 ]

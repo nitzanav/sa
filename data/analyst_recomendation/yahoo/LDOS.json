@@ -27,15 +27,6 @@
     "date": "05/06/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": null,
-    "date": "09/25/2025"
-  },
-  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",
@@ -49,9 +40,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$161.00",
-    "projected": "+16.8%",
-    "date": "08/11/2026"
+    "price_target": "$141.00",
+    "projected": "+25.4%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -65,20 +56,20 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+47.6%",
-    "date": "07/13/2026"
+    "price_target": "$142.00",
+    "projected": "+19.1%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+1.3%",
-    "date": "08/08/2026"
+    "price_target": "$130.00",
+    "projected": "+10.2%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -90,30 +81,12 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+31.1%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+5.9%",
-    "date": "07/01/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+6.4%",
-    "date": "08/05/2026"
+    "price_target": "$130.00",
+    "projected": "+10.2%",
+    "date": "10/06/2026"
   }
 ]

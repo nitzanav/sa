@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Jeff Reive",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+20.5%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "Bryan Blair",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+20.7%",
+    "projected": "+14.2%",
     "date": "09/09/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$250.00",
-    "projected": "+11.7%",
+    "projected": "+5.7%",
     "date": "09/08/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$280.00",
-    "projected": "+25.2%",
+    "projected": "+18.4%",
     "date": "08/11/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$240.00",
-    "projected": "+7.3%",
+    "projected": "+1.5%",
     "date": "08/06/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$260.00",
-    "projected": "+16.2%",
+    "projected": "+10%",
     "date": "08/05/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$274.00",
-    "projected": "+22.5%",
+    "projected": "+15.9%",
     "date": "07/30/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$251.00",
-    "projected": "+12.2%",
+    "projected": "+6.2%",
     "date": "07/29/2026"
   },
   {
@@ -68,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$268.00",
-    "projected": "+19.8%",
+    "projected": "+13.4%",
     "date": "07/30/2026"
   },
   {
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$280.00",
-    "projected": "+25.2%",
+    "projected": "+18.4%",
     "date": "07/29/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$269.00",
-    "projected": "+20.2%",
+    "projected": "+13.8%",
     "date": "07/30/2026"
   },
   {
@@ -95,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$275.00",
-    "projected": "+22.9%",
+    "projected": "+16.3%",
     "date": "07/29/2026"
   },
   {
@@ -104,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+11.7%",
+    "projected": "+5.7%",
     "date": "05/05/2026"
   },
   {
@@ -113,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$214.00",
-    "projected": "-4.3%",
+    "projected": "-9.5%",
     "date": "03/27/2026"
   }
 ]

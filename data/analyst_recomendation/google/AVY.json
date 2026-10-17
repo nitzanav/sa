@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Michael Roxland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$208.00",
+    "projected": "+18.3%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "George Staphos",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+8%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+27.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$186.00",
+    "projected": "+5.8%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$213.00",
+    "projected": "+21.1%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Ghansham Panjabi",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/24/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$181.00",
-    "projected": "+6.9%",
+    "projected": "+2.9%",
     "date": "09/17/2026"
   },
   {
@@ -14,53 +68,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$190.00",
-    "projected": "+12.3%",
+    "projected": "+8%",
     "date": "08/04/2026"
-  },
-  {
-    "analyst": "George Staphos",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$212.00",
-    "projected": "+25.3%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "John McNulty",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$213.00",
-    "projected": "+25.8%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$225.00",
-    "projected": "+32.9%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Michael Roxland",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$209.00",
-    "projected": "+23.5%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$186.00",
-    "projected": "+9.9%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Alexandra Yates",
@@ -68,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$175.00",
-    "projected": "+3.4%",
+    "projected": "-0.5%",
     "date": "06/03/2026"
   },
   {
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$192.00",
-    "projected": "+13.4%",
+    "projected": "+9.2%",
     "date": "04/21/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$200.00",
-    "projected": "+18.2%",
+    "projected": "+13.7%",
     "date": "03/31/2026"
   },
   {
@@ -95,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+9.3%",
+    "projected": "+5.2%",
     "date": "03/10/2026"
   }
 ]

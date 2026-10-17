@@ -27,6 +27,15 @@
     "date": "08/10/2026"
   },
   {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "+7.7%",
+    "date": "09/21/2026"
+  },
+  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "06/17/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$19.00",
-    "projected": "+13.2%",
-    "date": "02/05/2026"
   },
   {
     "analyst": "Scotiabank",

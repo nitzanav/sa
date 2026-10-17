@@ -4,18 +4,18 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+10.8%",
-    "date": "06/26/2026"
+    "price_target": "$95.00",
+    "projected": "+18.3%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+17.3%",
-    "date": "04/06/2026"
+    "price_target": "$90.00",
+    "projected": "+13.4%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Barclays",
@@ -29,11 +29,11 @@
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+21.8%",
-    "date": "06/29/2026"
+    "price_target": "$101.00",
+    "projected": "+28.4%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Raymond James",
@@ -85,8 +85,8 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+17%",
-    "date": "03/23/2026"
+    "price_target": "$96.00",
+    "projected": "+16.8%",
+    "date": "10/05/2026"
   }
 ]

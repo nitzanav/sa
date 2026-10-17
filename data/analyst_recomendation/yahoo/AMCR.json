@@ -18,15 +18,6 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$51.00",
-    "projected": "+19%",
-    "date": "07/14/2026"
-  },
-  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Buy",
@@ -34,6 +25,15 @@
     "price_target": "$51.00",
     "projected": "+26.2%",
     "date": "05/07/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+19%",
+    "date": "07/14/2026"
   },
   {
     "analyst": "Wells Fargo",

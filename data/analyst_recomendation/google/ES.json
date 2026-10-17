@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+21.2%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Jeremy Tonet",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$73.00",
-    "projected": "+7.8%",
+    "projected": "+10.6%",
     "date": "08/24/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$72.00",
-    "projected": "+6.3%",
+    "projected": "+9.1%",
     "date": "08/03/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$77.00",
-    "projected": "+13.7%",
+    "projected": "+16.7%",
     "date": "08/03/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$63.00",
-    "projected": "-7%",
+    "projected": "-4.5%",
     "date": "08/03/2026"
   },
   {
@@ -41,17 +50,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$74.00",
-    "projected": "+9.3%",
+    "projected": "+12.1%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Carly Davenport",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+19.6%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Sophie Karp",
@@ -68,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$81.00",
-    "projected": "+19.6%",
+    "projected": "+22.7%",
     "date": "07/27/2026"
   },
   {
@@ -77,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$81.00",
-    "projected": "+19.6%",
+    "projected": "+22.7%",
     "date": "07/28/2026"
   },
   {
@@ -86,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$76.00",
-    "projected": "+12.2%",
+    "projected": "+15.2%",
     "date": "07/21/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$74.00",
-    "projected": "+9.3%",
+    "projected": "+12.1%",
     "date": "03/27/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$57.00",
-    "projected": "-15.8%",
+    "projected": "-13.6%",
     "date": "03/24/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$77.00",
-    "projected": "+13.7%",
+    "projected": "+16.7%",
     "date": "02/19/2026"
   }
 ]

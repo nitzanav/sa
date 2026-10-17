@@ -18,15 +18,6 @@
     "date": "08/10/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "+25.4%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -34,6 +25,15 @@
     "price_target": "$90.00",
     "projected": "+17.5%",
     "date": "09/03/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+15%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -58,18 +58,18 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+20.8%",
-    "date": "07/08/2026"
+    "price_target": "$100.00",
+    "projected": "+33%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+5.8%",
-    "date": "08/12/2026"
+    "price_target": "$80.00",
+    "projected": "+6.4%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Barclays",

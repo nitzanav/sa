@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "David Manthey",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+19.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+9.2%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$47.00",
+    "projected": "-6.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Kenneth Newman",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "-8.7%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$49.00",
-    "projected": "-0%",
+    "projected": "-2.7%",
     "date": "09/16/2026"
   },
   {
@@ -14,17 +59,8 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$51.00",
-    "projected": "+4.1%",
+    "projected": "+1.2%",
     "date": "09/15/2026"
-  },
-  {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$55.00",
-    "projected": "+12.2%",
-    "date": "09/08/2026"
   },
   {
     "analyst": "Ryan Merkel",
@@ -41,35 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$46.00",
-    "projected": "-6.1%",
+    "projected": "-8.7%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$42.00",
-    "projected": "-14.3%",
-    "date": "09/03/2026"
-  },
-  {
-    "analyst": "David Manthey",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$54.00",
-    "projected": "+10.2%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Guy Hardwick",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$46.00",
-    "projected": "-6.1%",
-    "date": "07/16/2026"
   },
   {
     "analyst": "Kristina Ruggeri",
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$55.00",
-    "projected": "+12.2%",
+    "projected": "+9.2%",
     "date": "07/16/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$52.00",
-    "projected": "+6.1%",
+    "projected": "+3.2%",
     "date": "07/15/2026"
   },
   {
@@ -95,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$48.00",
-    "projected": "-2.1%",
+    "projected": "-4.7%",
     "date": "07/14/2026"
-  },
-  {
-    "analyst": "Kenneth Newman",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/15/2026"
   },
   {
     "analyst": "Sam Darkatsh",
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$55.00",
-    "projected": "+12.2%",
+    "projected": "+9.2%",
     "date": "07/13/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$46.00",
-    "projected": "-6.1%",
+    "projected": "-8.7%",
     "date": "06/16/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$46.00",
-    "projected": "-6.1%",
+    "projected": "-8.7%",
     "date": "06/15/2026"
   }
 ]

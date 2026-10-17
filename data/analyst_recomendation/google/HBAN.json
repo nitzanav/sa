@@ -1,12 +1,39 @@
 [
   {
-    "analyst": "Manan Gosalia",
-    "firm": "Morgan Stanley",
+    "analyst": "Jon Arfstrom",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+30.3%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Scott Siefers",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$18.00",
+    "projected": "+17.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$18.00",
+    "projected": "+17.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$19.00",
-    "projected": "+19.6%",
-    "date": "09/17/2026"
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+17.3%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Jason Goldberg",
@@ -14,26 +41,71 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "+25.9%",
-    "date": "09/18/2026"
+    "projected": "+30.3%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+23.8%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Andrew J Dietrich",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.50",
+    "projected": "+14%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Mike Mayo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+32.2%",
-    "date": "09/17/2026"
+    "projected": "+36.8%",
+    "date": "09/29/2026"
   },
   {
-    "analyst": "Jon Arfstrom",
-    "firm": "RBC Capital",
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$19.00",
+    "projected": "+23.8%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+36.8%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+23.8%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Peter Winter",
+    "firm": "D.A. Davidson",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "+25.9%",
-    "date": "09/16/2026"
+    "projected": "+30.3%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "David George",
@@ -41,17 +113,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+32.2%",
+    "projected": "+36.8%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Brian Foran",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": "+25.9%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Ebrahim Poonawala",
@@ -59,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$18.50",
-    "projected": "+16.5%",
+    "projected": "+20.5%",
     "date": "07/27/2026"
   },
   {
@@ -68,25 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$19.00",
-    "projected": "+19.6%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Christopher Mcgratty",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$19.50",
-    "projected": "+22.8%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Peter Winter",
-    "firm": "D.A. Davidson",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$22.00",
-    "projected": "+38.5%",
+    "projected": "+23.8%",
     "date": "07/24/2026"
   },
   {
@@ -95,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$18.00",
-    "projected": "+13.4%",
+    "projected": "+17.3%",
     "date": "07/23/2026"
   },
   {
@@ -104,17 +149,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$22.00",
-    "projected": "+38.5%",
+    "projected": "+43.3%",
     "date": "07/07/2026"
-  },
-  {
-    "analyst": "Andrew J Dietrich",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$19.50",
-    "projected": "+22.8%",
-    "date": "07/06/2026"
   },
   {
     "analyst": "John Pancari",
@@ -122,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+32.2%",
+    "projected": "+36.8%",
     "date": "07/06/2026"
   },
   {
@@ -131,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "+25.9%",
+    "projected": "+30.3%",
     "date": "05/06/2026"
   },
   {
@@ -140,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "+25.9%",
+    "projected": "+30.3%",
     "date": "04/27/2026"
   },
   {
@@ -149,16 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$20.00",
-    "projected": "+25.9%",
-    "date": "04/23/2026"
-  },
-  {
-    "analyst": "Scott Siefers",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$18.00",
-    "projected": "+13.4%",
+    "projected": "+30.3%",
     "date": "04/23/2026"
   },
   {
@@ -167,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$20.00",
-    "projected": "+25.9%",
+    "projected": "+30.3%",
     "date": "03/17/2026"
   },
   {
@@ -176,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$23.00",
-    "projected": "+44.8%",
+    "projected": "+49.8%",
     "date": "02/13/2026"
   }
 ]

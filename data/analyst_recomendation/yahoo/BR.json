@@ -27,15 +27,6 @@
     "date": "05/05/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$176.00",
-    "projected": "+8.8%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
@@ -43,6 +34,15 @@
     "price_target": "$229.00",
     "projected": "+20.7%",
     "date": "02/04/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$176.00",
+    "projected": "+8.8%",
+    "date": "08/06/2026"
   },
   {
     "analyst": "UBS",

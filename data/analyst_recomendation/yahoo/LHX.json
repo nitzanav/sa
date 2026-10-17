@@ -9,15 +9,6 @@
     "date": "02/05/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$353.00",
-    "projected": null,
-    "date": "10/15/2025"
-  },
-  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -40,9 +31,9 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+4%",
-    "date": "01/30/2026"
+    "price_target": "$265.00",
+    "projected": "+9.7%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -58,9 +49,9 @@
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$405.00",
-    "projected": "+29.8%",
-    "date": "05/04/2026"
+    "price_target": "$318.00",
+    "projected": "+33.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "UBS",

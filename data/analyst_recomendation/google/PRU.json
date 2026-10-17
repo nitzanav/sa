@@ -1,12 +1,75 @@
 [
   {
-    "analyst": "Andrew Kligerman",
-    "firm": "TD Cowen",
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$119.00",
+    "projected": "+2.3%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+3.1%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$114.00",
-    "projected": "-3.7%",
-    "date": "09/14/2026"
+    "price_target": "$127.00",
+    "projected": "+9.2%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Wesley Carmichael",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "-10.6%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "-7.2%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+13.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Alex Scott",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "-17.5%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "-9.8%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Wilma Burdis",
@@ -15,7 +78,16 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/27/2026"
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$114.00",
+    "projected": "-2%",
+    "date": "09/14/2026"
   },
   {
     "analyst": "Kevin Heal",
@@ -27,84 +99,12 @@
     "date": "08/26/2026"
   },
   {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$105.00",
-    "projected": "-11.3%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Wesley Carmichael",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-7.1%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$131.00",
-    "projected": "+10.6%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "-4.6%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$128.00",
-    "projected": "+8.1%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+3.9%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$130.00",
-    "projected": "+9.8%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Alex Scott",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "-22.3%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Suneet Kamath",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-7.1%",
+    "projected": "-5.5%",
     "date": "07/09/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-7.1%",
+    "projected": "-5.5%",
     "date": "06/24/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$92.00",
-    "projected": "-22.3%",
+    "projected": "-20.9%",
     "date": "05/06/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$87.00",
-    "projected": "-26.5%",
+    "projected": "-25.2%",
     "date": "05/06/2026"
   },
   {
@@ -167,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-7.1%",
+    "projected": "-5.5%",
     "date": "02/04/2026"
   }
 ]

@@ -13,9 +13,9 @@
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$389.00",
-    "projected": "+9.8%",
-    "date": "07/09/2026"
+    "price_target": "$387.00",
+    "projected": "+11.3%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Raymond James",
@@ -76,17 +76,17 @@
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$356.00",
-    "projected": "+0.1%",
-    "date": "07/24/2026"
+    "price_target": "$343.00",
+    "projected": "0%",
+    "date": "10/12/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Sell",
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$271.00",
-    "projected": "-17.3%",
-    "date": "04/14/2026"
+    "price_target": "$351.00",
+    "projected": "+13.2%",
+    "date": "01/08/2026"
   }
 ]

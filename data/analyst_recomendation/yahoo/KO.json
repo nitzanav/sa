@@ -18,40 +18,31 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "+8.3%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+3.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+7.2%",
-    "date": "07/29/2026"
+    "projected": "+8.4%",
+    "date": "09/28/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+6.1%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "+10.7%",
-    "date": "07/30/2026"
+    "price_target": "$98.00",
+    "projected": "+5.4%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "UBS",
@@ -61,6 +52,15 @@
     "price_target": "$98.00",
     "projected": "+17.4%",
     "date": "07/16/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+10.7%",
+    "date": "07/30/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -85,8 +85,8 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "+15.2%",
-    "date": "07/14/2026"
+    "price_target": "$102.00",
+    "projected": "+12.2%",
+    "date": "10/14/2026"
   }
 ]

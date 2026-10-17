@@ -5,8 +5,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$224.00",
-    "projected": "+21.8%",
-    "date": "08/11/2026"
+    "projected": "+18.4%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "David S Macdonald",
@@ -14,7 +14,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+16.9%",
+    "projected": "+13.7%",
     "date": "08/11/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$220.00",
-    "projected": "+19.7%",
+    "projected": "+16.3%",
     "date": "08/07/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$265.00",
-    "projected": "+44.1%",
+    "projected": "+40.1%",
     "date": "08/05/2026"
   },
   {
@@ -50,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+46.9%",
+    "projected": "+42.7%",
     "date": "07/10/2026"
   }
 ]

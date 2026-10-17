@@ -18,15 +18,6 @@
     "date": "09/12/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$284.00",
-    "projected": "+72.7%",
-    "date": "09/12/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -45,13 +36,13 @@
     "date": "12/12/2025"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+46%",
-    "date": "09/11/2026"
+    "price_target": "$284.00",
+    "projected": "+72.7%",
+    "date": "09/12/2026"
   },
   {
     "analyst": "UBS",
@@ -60,6 +51,15 @@
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "+52%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+46%",
     "date": "09/11/2026"
   },
   {
@@ -81,12 +81,12 @@
     "date": "06/11/2026"
   },
   {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "+106.8%",
-    "date": "09/02/2026"
+    "price_target": "$245.00",
+    "projected": "+12.5%",
+    "date": "06/08/2026"
   }
 ]

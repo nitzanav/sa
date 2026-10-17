@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+11.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Edward DeArias",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+11.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+1.3%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/23/2026"
+  },
+  {
     "analyst": "Ross Fowler",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -14,16 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$75.00",
-    "projected": "+13.7%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Edward DeArias",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$78.00",
-    "projected": "+18.3%",
+    "projected": "+11.8%",
     "date": "08/03/2026"
   },
   {
@@ -32,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$81.00",
-    "projected": "+22.8%",
+    "projected": "+20.7%",
     "date": "07/21/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+10.7%",
-    "date": "07/20/2026"
   },
   {
     "analyst": "Stephen D'Ambrisi",
@@ -50,17 +68,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "+21.3%",
+    "projected": "+19.2%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+25.8%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "Shelby Tucker",
@@ -68,17 +77,8 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$83.00",
-    "projected": "+25.8%",
+    "projected": "+23.7%",
     "date": "07/08/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "06/22/2026"
   },
   {
     "analyst": "Andrew Weisel",
@@ -86,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$74.00",
-    "projected": "+12.2%",
+    "projected": "+10.3%",
     "date": "05/04/2026"
   },
   {
@@ -95,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$81.00",
-    "projected": "+22.8%",
+    "projected": "+20.7%",
     "date": "05/04/2026"
   },
   {
@@ -104,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$79.00",
-    "projected": "+19.8%",
+    "projected": "+17.7%",
     "date": "04/17/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$77.00",
-    "projected": "+16.7%",
+    "projected": "+14.8%",
     "date": "02/09/2026"
   }
 ]

@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$360.00",
+    "projected": "+9.5%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "Matt Summerville",
     "firm": "D.A. Davidson",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$375.00",
-    "projected": "+20.4%",
+    "projected": "+14.1%",
     "date": "08/24/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$370.00",
-    "projected": "+18.8%",
+    "projected": "+12.5%",
     "date": "08/21/2026"
   },
   {
@@ -23,17 +32,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$351.00",
-    "projected": "+12.7%",
+    "projected": "+6.8%",
     "date": "08/21/2026"
-  },
-  {
-    "analyst": "Jeffrey Hammond",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$360.00",
-    "projected": "+15.5%",
-    "date": "08/20/2026"
   },
   {
     "analyst": "Walter Liptak",
@@ -41,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$325.00",
-    "projected": "+4.3%",
+    "projected": "-1.2%",
     "date": "03/01/2026"
   }
 ]

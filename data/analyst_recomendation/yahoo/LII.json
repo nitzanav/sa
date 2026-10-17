@@ -4,9 +4,9 @@
     "firm": "Mizuho",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$565.00",
-    "projected": null,
-    "date": "10/18/2025"
+    "price_target": "$395.00",
+    "projected": "+10.5%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -20,20 +20,20 @@
   {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$547.00",
-    "projected": "+29.6%",
-    "date": "07/31/2026"
+    "price_target": "$390.00",
+    "projected": "+13%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$555.00",
-    "projected": "+4.3%",
-    "date": "04/30/2026"
+    "price_target": "$424.00",
+    "projected": "+15.2%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -45,6 +45,15 @@
     "date": "09/14/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "-0.5%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -54,13 +63,13 @@
     "date": "04/30/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "-0.6%",
-    "date": "09/03/2026"
+    "price_target": "$406.00",
+    "projected": "+17.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "UBS",
@@ -72,21 +81,12 @@
     "date": "01/05/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$469.00",
-    "projected": "+9.1%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$645.00",
-    "projected": "+18.4%",
-    "date": "03/05/2026"
+    "price_target": "$548.00",
+    "projected": "+58.8%",
+    "date": "10/14/2026"
   }
 ]

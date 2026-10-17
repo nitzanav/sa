@@ -1,12 +1,111 @@
 [
   {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "-1.8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Mikhail Paramonov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$226.00",
+    "projected": "+5.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Robert Cox CFA",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$233.00",
+    "projected": "+9%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Harry Fong",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+14.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Michael Zaremski",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+1.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$266.00",
+    "projected": "+24.4%",
+    "date": "10/15/2026"
+  },
+  {
     "analyst": "Meyer Shields",
     "firm": "KBW",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$246.00",
+    "projected": "+15.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Alex Scott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$247.00",
+    "projected": "+15.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$227.00",
+    "projected": "+6.2%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Elyse Greenspan",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$196.00",
+    "projected": "-8.3%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Vikram Gandhi",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+1.1%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+17.1%",
-    "date": "09/18/2026"
+    "projected": "+17%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Adam Klauber",
@@ -23,17 +122,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+7.7%",
+    "projected": "+7.6%",
     "date": "09/15/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$210.00",
-    "projected": "-1.6%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "Brian Meredith",
@@ -41,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$234.00",
-    "projected": "+9.6%",
+    "projected": "+9.5%",
     "date": "08/27/2026"
   },
   {
@@ -54,66 +144,12 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Robert Cox CFA",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$233.00",
-    "projected": "+9.1%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Michael Zaremski",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$205.00",
-    "projected": "-4%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Elyse Greenspan",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$201.00",
-    "projected": "-5.8%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$309.00",
-    "projected": "+44.7%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Alex Scott",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$246.00",
-    "projected": "+15.2%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Harry Fong",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$245.00",
-    "projected": "+14.8%",
-    "date": "08/20/2026"
-  },
-  {
     "analyst": "Ryan Tunis",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "-6.3%",
+    "projected": "-6.4%",
     "date": "08/17/2026"
   },
   {
@@ -126,30 +162,12 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "David Motemaden",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+7.7%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$241.00",
-    "projected": "+12.9%",
-    "date": "08/04/2026"
-  },
-  {
     "analyst": "Andrew Kligerman",
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$222.00",
-    "projected": "+4%",
+    "projected": "+3.9%",
     "date": "07/28/2026"
   },
   {
@@ -158,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$261.00",
-    "projected": "+22.3%",
+    "projected": "+22.1%",
     "date": "07/15/2026"
   },
   {
@@ -167,17 +185,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$241.00",
-    "projected": "+12.9%",
+    "projected": "+12.7%",
     "date": "07/16/2026"
-  },
-  {
-    "analyst": "Vikram Gandhi",
-    "firm": "HSBC",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$221.00",
-    "projected": "+3.5%",
-    "date": "07/06/2026"
   },
   {
     "analyst": "Andrew Andersen",
@@ -185,7 +194,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+0.7%",
+    "projected": "+0.6%",
     "date": "03/24/2026"
   }
 ]

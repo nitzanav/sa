@@ -1,21 +1,93 @@
 [
   {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$415.00",
+    "projected": "-3%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Patrick Wood",
+    "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+19.5%",
-    "date": "09/14/2026"
+    "price_target": "$500.00",
+    "projected": "+16.9%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Ryan Zimmerman",
     "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$469.00",
-    "projected": "+19.2%",
-    "date": "09/07/2026"
+    "price_target": "$454.00",
+    "projected": "+6.1%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Mike Kratky",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$473.00",
+    "projected": "+10.6%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Adam Maeder",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+9.8%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$485.00",
+    "projected": "+13.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Matt Miksic",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$485.00",
+    "projected": "+13.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+16.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Kendall Au",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$575.00",
+    "projected": "+34.4%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+9.8%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "Vik Chopra",
@@ -27,30 +99,12 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "Adam Maeder",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+19.5%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+27.1%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Lee Hambright",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$685.00",
-    "projected": "+74.2%",
+    "projected": "+60.1%",
     "date": "08/11/2026"
   },
   {
@@ -59,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$500.00",
-    "projected": "+27.1%",
+    "projected": "+16.9%",
     "date": "08/12/2026"
   },
   {
@@ -68,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$485.00",
-    "projected": "+23.3%",
+    "projected": "+13.4%",
     "date": "08/03/2026"
   },
   {
@@ -77,17 +131,8 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$391.00",
-    "projected": "-0.6%",
+    "projected": "-8.6%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Patrick Wood",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$500.00",
-    "projected": "+27.1%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Larry Biegelsen",
@@ -95,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$487.00",
-    "projected": "+23.8%",
+    "projected": "+13.8%",
     "date": "07/23/2026"
   },
   {
@@ -104,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$450.00",
-    "projected": "+14.4%",
+    "projected": "+5.2%",
     "date": "07/21/2026"
   },
   {
@@ -122,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$483.00",
-    "projected": "+22.8%",
+    "projected": "+12.9%",
     "date": "07/17/2026"
   },
   {
@@ -140,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$575.00",
-    "projected": "+46.2%",
+    "projected": "+34.4%",
     "date": "07/16/2026"
   },
   {
@@ -149,16 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+27.1%",
-    "date": "07/17/2026"
-  },
-  {
-    "analyst": "Mike Kratky",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$454.00",
-    "projected": "+15.4%",
+    "projected": "+16.9%",
     "date": "07/17/2026"
   },
   {
@@ -167,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$550.00",
-    "projected": "+39.8%",
+    "projected": "+28.5%",
     "date": "07/17/2026"
   },
   {
@@ -176,17 +212,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$510.00",
-    "projected": "+29.7%",
+    "projected": "+19.2%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "Anthony Petrone",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+1.7%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -194,7 +221,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$518.00",
-    "projected": "+31.7%",
+    "projected": "+21.1%",
     "date": "07/09/2026"
   },
   {
@@ -203,7 +230,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$430.00",
-    "projected": "+9.3%",
+    "projected": "+0.5%",
     "date": "07/06/2026"
   },
   {
@@ -212,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$558.00",
-    "projected": "+41.9%",
+    "projected": "+30.4%",
     "date": "06/15/2026"
   },
   {
@@ -221,7 +248,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$366.00",
-    "projected": "-6.9%",
+    "projected": "-14.5%",
     "date": "06/02/2026"
   },
   {
@@ -234,21 +261,12 @@
     "date": "05/05/2026"
   },
   {
-    "analyst": "Matt Miksic",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$651.00",
-    "projected": "+65.5%",
-    "date": "04/23/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$515.00",
-    "projected": "+30.9%",
+    "projected": "+20.4%",
     "date": "04/22/2026"
   },
   {
@@ -257,7 +275,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$480.00",
-    "projected": "+22%",
+    "projected": "+12.2%",
     "date": "03/18/2026"
   },
   {
@@ -266,7 +284,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$550.00",
-    "projected": "+39.8%",
+    "projected": "+28.5%",
     "date": "03/17/2026"
   }
 ]

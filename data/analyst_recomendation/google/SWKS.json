@@ -1,5 +1,59 @@
 [
   {
+    "analyst": "Vijay Rakesh",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "-24.8%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "-3.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Craig Ellis",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$107.00",
+    "projected": "+31.8%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+10.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Krish Sankar",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "-19.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Srini Pajjuri",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+17.1%",
+    "date": "09/30/2026"
+  },
+  {
     "analyst": "Joseph Moore",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -14,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$70.00",
-    "projected": "-21.1%",
+    "projected": "-13.7%",
     "date": "08/21/2026"
   },
   {
@@ -32,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$65.00",
-    "projected": "-26.8%",
+    "projected": "-19.9%",
     "date": "07/29/2026"
   },
   {
@@ -41,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$65.00",
-    "projected": "-26.8%",
+    "projected": "-19.9%",
     "date": "07/29/2026"
   },
   {
@@ -50,21 +104,12 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$65.00",
-    "projected": "-26.8%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Srini Pajjuri",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "-21.1%",
+    "projected": "-19.9%",
     "date": "07/29/2026"
   },
   {
     "analyst": "Cody Acree",
-    "firm": "Benchmark Co.",
+    "firm": "StoneX",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": null,
@@ -77,16 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$70.00",
-    "projected": "-21.1%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Atif Malik",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "-27.9%",
+    "projected": "-13.7%",
     "date": "07/29/2026"
   },
   {
@@ -95,16 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$70.00",
-    "projected": "-21.1%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$65.00",
-    "projected": "-26.8%",
+    "projected": "-13.7%",
     "date": "07/29/2026"
   },
   {
@@ -122,26 +149,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$70.00",
-    "projected": "-21.1%",
+    "projected": "-13.7%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Krish Sankar",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$65.00",
-    "projected": "-26.8%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Vijay Rakesh",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "-41.4%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Anthony Stoss",
@@ -149,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$85.00",
-    "projected": "-4.2%",
+    "projected": "+4.7%",
     "date": "05/06/2026"
   }
 ]

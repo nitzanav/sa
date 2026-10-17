@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "-7.2%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$97.00",
+    "projected": "+12.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$91.00",
+    "projected": "+5.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+4.4%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-7.2%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+27.6%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "-14.2%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "-1.4%",
+    "date": "10/05/2026"
+  },
+  {
     "analyst": "Anna Lizzul",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+20.3%",
+    "projected": "+16%",
     "date": "09/18/2026"
   },
   {
@@ -14,44 +86,8 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$99.00",
-    "projected": "+19.1%",
+    "projected": "+14.8%",
     "date": "09/11/2026"
-  },
-  {
-    "analyst": "Bonnie Herzog",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "-7.3%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "Filippo Falorni",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "+16.7%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Christopher Carey",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+8.3%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Lauren Lieberman",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "+1.1%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "Taylor Conrad",
@@ -63,30 +99,12 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "Robert Moskow",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+8.3%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Dara Mohsenian",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$97.00",
-    "projected": "+16.7%",
-    "date": "08/04/2026"
-  },
-  {
     "analyst": "Stephen Powers",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$98.00",
-    "projected": "+17.9%",
+    "projected": "+13.7%",
     "date": "08/04/2026"
   },
   {
@@ -95,25 +113,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+14.3%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Peter Grom",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+26.4%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Nik Modi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+32.4%",
+    "projected": "+10.2%",
     "date": "08/04/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$98.00",
-    "projected": "+17.9%",
+    "projected": "+13.7%",
     "date": "07/28/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$117.00",
-    "projected": "+40.8%",
+    "projected": "+35.7%",
     "date": "02/13/2026"
   }
 ]

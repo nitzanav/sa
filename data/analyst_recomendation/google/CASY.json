@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Bradley Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$780.00",
+    "projected": "+15.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Irene Nattel",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$825.00",
+    "projected": "+22.5%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Corey Tarlowe",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$850.00",
+    "projected": "+26.2%",
+    "date": "09/30/2026"
+  },
+  {
     "analyst": "Michael Montani",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$775.00",
-    "projected": "+28.8%",
+    "projected": "+15%",
     "date": "09/11/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$775.00",
-    "projected": "+28.8%",
+    "projected": "+15%",
     "date": "09/11/2026"
   },
   {
@@ -23,16 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$933.00",
-    "projected": "+55%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "Corey Tarlowe",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$850.00",
-    "projected": "+41.2%",
+    "projected": "+38.5%",
     "date": "09/10/2026"
   },
   {
@@ -41,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$720.00",
-    "projected": "+19.6%",
+    "projected": "+6.9%",
     "date": "09/10/2026"
   },
   {
@@ -50,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$750.00",
-    "projected": "+24.6%",
+    "projected": "+11.3%",
     "date": "09/10/2026"
   },
   {
@@ -59,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$687.00",
-    "projected": "+14.2%",
+    "projected": "+2%",
     "date": "09/10/2026"
   },
   {
@@ -68,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$810.00",
-    "projected": "+34.6%",
+    "projected": "+20.2%",
     "date": "09/10/2026"
   },
   {
@@ -77,16 +95,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$750.00",
-    "projected": "+24.6%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "Bradley Thomas",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$780.00",
-    "projected": "+29.6%",
+    "projected": "+11.3%",
     "date": "09/10/2026"
   },
   {
@@ -95,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$750.00",
-    "projected": "+24.6%",
+    "projected": "+11.3%",
     "date": "09/10/2026"
   },
   {
@@ -104,17 +113,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$750.00",
-    "projected": "+24.6%",
+    "projected": "+11.3%",
     "date": "09/09/2026"
-  },
-  {
-    "analyst": "Irene Nattel",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$910.00",
-    "projected": "+51.2%",
-    "date": "09/08/2026"
   },
   {
     "analyst": "Lisa Lewandowski",
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$875.00",
-    "projected": "+45.4%",
+    "projected": "+29.9%",
     "date": "09/10/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$950.00",
-    "projected": "+57.9%",
+    "projected": "+41%",
     "date": "07/13/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$896.00",
-    "projected": "+48.9%",
+    "projected": "+33%",
     "date": "06/22/2026"
   }
 ]

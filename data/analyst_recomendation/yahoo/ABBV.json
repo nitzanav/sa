@@ -22,18 +22,18 @@
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+15.5%",
-    "date": "08/04/2026"
+    "price_target": "$290.00",
+    "projected": "+6.8%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+3.6%",
-    "date": "07/11/2026"
+    "price_target": "$280.00",
+    "projected": "-1.2%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Guggenheim",
@@ -41,8 +41,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$288.00",
-    "projected": "+16.6%",
-    "date": "08/05/2026"
+    "projected": "+6.1%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -52,6 +52,15 @@
     "price_target": "$300.00",
     "projected": "+18.1%",
     "date": "08/18/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+25.4%",
+    "date": "09/10/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -72,21 +81,93 @@
     "date": "10/17/2025"
   },
   {
-    "analyst": "HSBC",
-    "firm": "HSBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+25.4%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$296.00",
-    "projected": "+20%",
-    "date": "08/04/2026"
+    "price_target": "$310.00",
+    "projected": "+15.5%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+6.9%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+10.5%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+10.9%",
+    "date": "08/01/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+22%",
+    "date": "07/14/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+18.6%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+16.1%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+1.3%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Berenberg",
+    "firm": "Berenberg",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+12.9%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$276.00",
+    "projected": "+10%",
+    "date": "07/10/2026"
   }
 ]

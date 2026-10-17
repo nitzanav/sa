@@ -27,15 +27,6 @@
     "date": "07/23/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$29.00",
-    "projected": null,
-    "date": "10/02/2025"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",

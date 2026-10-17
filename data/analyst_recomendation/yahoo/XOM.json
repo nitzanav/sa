@@ -9,13 +9,22 @@
     "date": "09/03/2026"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+10.6%",
+    "date": "09/28/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$177.00",
-    "projected": "+6.6%",
-    "date": "08/19/2026"
+    "price_target": "$185.00",
+    "projected": "+3.6%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Barclays",
@@ -25,15 +34,6 @@
     "price_target": "$177.00",
     "projected": "+7.7%",
     "date": "08/18/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$168.00",
-    "projected": "+10.1%",
-    "date": "08/08/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -47,11 +47,11 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+20.1%",
-    "date": "04/10/2026"
+    "price_target": "$182.00",
+    "projected": "+12.7%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "B of A Securities",

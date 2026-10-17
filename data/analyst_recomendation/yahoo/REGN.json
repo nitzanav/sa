@@ -9,6 +9,24 @@
     "date": "01/08/2026"
   },
   {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$850.00",
+    "projected": "+14.8%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$930.00",
+    "projected": "+21.3%",
+    "date": "10/01/2026"
+  },
+  {
     "analyst": "Guggenheim",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -22,9 +40,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$772.00",
-    "projected": "+6.2%",
-    "date": "08/01/2026"
+    "price_target": "$780.00",
+    "projected": "+5.7%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -36,13 +54,13 @@
     "date": "04/23/2026"
   },
   {
-    "analyst": "Leerink Partners",
-    "firm": "Leerink Partners",
-    "recommendation": "Hold",
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$824.00",
-    "projected": "+1.2%",
-    "date": "08/18/2026"
+    "price_target": "$875.00",
+    "projected": "+37.9%",
+    "date": "05/20/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -54,13 +72,13 @@
     "date": "02/02/2026"
   },
   {
-    "analyst": "Canaccord Genuity",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
+    "analyst": "Leerink Partners",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$875.00",
-    "projected": "+37.9%",
-    "date": "05/20/2026"
+    "price_target": "$824.00",
+    "projected": "+1.2%",
+    "date": "08/18/2026"
   },
   {
     "analyst": "Bernstein",
@@ -70,23 +88,5 @@
     "price_target": "$921.00",
     "projected": "+20.5%",
     "date": "04/09/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$917.00",
-    "projected": "+32.3%",
-    "date": "04/30/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$740.00",
-    "projected": "-3.8%",
-    "date": "08/03/2026"
   }
 ]

@@ -1,12 +1,84 @@
 [
   {
+    "analyst": "Daniel Major",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+25.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Bill Peterson",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$92.00",
+    "projected": "+31.3%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Carlos De Alba",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+7.1%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Sam Crittenden",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$85.00",
-    "projected": "+18.8%",
-    "date": "09/15/2026"
+    "projected": "+21.3%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+24.2%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$83.00",
+    "projected": "+18.5%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Alexander Hacking",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+19.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+14.2%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Nick Cash",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$81.00",
+    "projected": "+15.6%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Bob Brackett",
@@ -18,21 +90,12 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Nick Cash",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+2%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Vitaly Kononov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$75.00",
-    "projected": "+4.8%",
+    "projected": "+7.1%",
     "date": "09/03/2026"
   },
   {
@@ -54,39 +117,12 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Alexander Hacking",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$66.00",
-    "projected": "-7.7%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Carlos De Alba",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "-2.2%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Daniel Major",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+7.6%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "Katja Jancic",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$78.00",
-    "projected": "+9%",
+    "projected": "+11.3%",
     "date": "07/24/2026"
   },
   {
@@ -95,26 +131,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$77.00",
-    "projected": "+7.6%",
+    "projected": "+9.9%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "-2.2%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Lawson Winder",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$80.00",
-    "projected": "+11.8%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Ralph M. Profiti",
@@ -122,17 +140,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "+11.8%",
+    "projected": "+14.2%",
     "date": "07/21/2026"
-  },
-  {
-    "analyst": "Bill Peterson",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$77.00",
-    "projected": "+7.6%",
-    "date": "07/12/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -140,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$77.00",
-    "projected": "+7.6%",
+    "projected": "+9.9%",
     "date": "05/21/2026"
   },
   {
@@ -149,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$72.00",
-    "projected": "+0.6%",
+    "projected": "+2.8%",
     "date": "05/15/2026"
   },
   {
@@ -158,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$75.00",
-    "projected": "+4.8%",
+    "projected": "+7.1%",
     "date": "04/23/2026"
   },
   {
@@ -167,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$61.38",
-    "projected": "-14.2%",
+    "projected": "-12.4%",
     "date": "04/01/2026"
   },
   {

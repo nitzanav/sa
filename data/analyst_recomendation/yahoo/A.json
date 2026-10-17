@@ -40,27 +40,27 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+17.5%",
-    "date": "08/12/2026"
+    "price_target": "$190.00",
+    "projected": "+10.5%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+13%",
-    "date": "08/27/2026"
+    "price_target": "$196.00",
+    "projected": "+14%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+12.2%",
-    "date": "08/28/2026"
+    "price_target": "$195.00",
+    "projected": "+16.4%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Citigroup",
@@ -88,5 +88,41 @@
     "price_target": "$180.00",
     "projected": "+13%",
     "date": "08/27/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+10.2%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+13%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+13%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/03/2026"
   }
 ]

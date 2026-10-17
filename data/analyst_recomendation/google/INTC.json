@@ -1,21 +1,66 @@
 [
   {
-    "analyst": "Ivan Feinseth",
-    "firm": "Tigress Financial",
+    "analyst": "John Vinh",
+    "firm": "KeyBanc",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+62.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Christopher Rolland",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$145.00",
-    "projected": "+33.5%",
-    "date": "09/15/2026"
+    "price_target": "$115.00",
+    "projected": "+20.6%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Vijay Rakesh",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$114.00",
+    "projected": "+19.5%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Joshua Buchalter",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+20.6%",
+    "date": "09/23/2026"
   },
   {
     "analyst": "Stacy Rasgon",
     "firm": "Bernstein",
     "recommendation": "Hold",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$110.00",
-    "projected": "+1.3%",
-    "date": "09/14/2026"
+    "projected": "+15.3%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Ivan Feinseth",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$145.00",
+    "projected": "+52%",
+    "date": "09/15/2026"
   },
   {
     "analyst": "David O'Connor",
@@ -23,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$110.00",
-    "projected": "+1.3%",
+    "projected": "+15.3%",
     "date": "09/10/2026"
   },
   {
@@ -32,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$110.00",
-    "projected": "+1.3%",
+    "projected": "+15.3%",
     "date": "09/09/2026"
   },
   {
@@ -41,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$120.00",
-    "projected": "+10.5%",
+    "projected": "+25.8%",
     "date": "09/08/2026"
-  },
-  {
-    "analyst": "Vijay Rakesh",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "-15.3%",
-    "date": "09/03/2026"
   },
   {
     "analyst": "Simon Leopold",
@@ -68,16 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+3.1%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$145.00",
-    "projected": "+33.5%",
+    "projected": "+17.4%",
     "date": "08/12/2026"
   },
   {
@@ -86,7 +113,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$85.00",
-    "projected": "-21.7%",
+    "projected": "-10.9%",
     "date": "07/28/2026"
   },
   {
@@ -95,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "-0.6%",
+    "projected": "+13.2%",
     "date": "07/28/2026"
   },
   {
@@ -104,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "+1.3%",
+    "projected": "+15.3%",
     "date": "07/28/2026"
   },
   {
@@ -113,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+10.5%",
+    "projected": "+25.8%",
     "date": "07/27/2026"
   },
   {
@@ -122,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$130.00",
-    "projected": "+19.7%",
+    "projected": "+36.3%",
     "date": "07/24/2026"
   },
   {
@@ -140,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$125.00",
-    "projected": "+15.1%",
+    "projected": "+31.1%",
     "date": "07/23/2026"
   },
   {
@@ -149,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "+15.1%",
+    "projected": "+31.1%",
     "date": "07/24/2026"
   },
   {
@@ -158,16 +185,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$98.00",
-    "projected": "-9.8%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Christopher Rolland",
-    "firm": "Susquehanna",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$115.00",
-    "projected": "+5.9%",
+    "projected": "+2.8%",
     "date": "07/24/2026"
   },
   {
@@ -176,7 +194,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$80.00",
-    "projected": "-26.3%",
+    "projected": "-16.1%",
     "date": "07/24/2026"
   },
   {
@@ -194,17 +212,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+10.5%",
+    "projected": "+25.8%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Joshua Buchalter",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+5.9%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Rick Schafer",
@@ -216,21 +225,12 @@
     "date": "07/24/2026"
   },
   {
-    "analyst": "John Vinh",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$155.00",
-    "projected": "+42.7%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "07/24/2026"
   },
   {
@@ -239,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+10.5%",
+    "projected": "+25.8%",
     "date": "07/24/2026"
   },
   {
@@ -248,7 +248,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "07/24/2026"
   },
   {
@@ -257,7 +257,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$84.00",
-    "projected": "-22.7%",
+    "projected": "-11.9%",
     "date": "07/24/2026"
   },
   {
@@ -266,7 +266,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "+38.1%",
+    "projected": "+57.3%",
     "date": "07/23/2026"
   },
   {
@@ -275,7 +275,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "07/23/2026"
   },
   {
@@ -284,7 +284,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "-44.8%",
+    "projected": "-37.1%",
     "date": "07/20/2026"
   },
   {
@@ -293,7 +293,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "07/09/2026"
   },
   {
@@ -302,7 +302,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+84.2%",
+    "projected": "+109.7%",
     "date": "07/02/2026"
   },
   {
@@ -320,7 +320,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "06/18/2026"
   },
   {
@@ -329,7 +329,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+5.9%",
+    "projected": "+20.6%",
     "date": "06/10/2026"
   },
   {
@@ -338,7 +338,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "+38.1%",
+    "projected": "+57.3%",
     "date": "05/18/2026"
   },
   {
@@ -347,7 +347,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$140.00",
-    "projected": "+28.9%",
+    "projected": "+46.8%",
     "date": "05/18/2026"
   },
   {
@@ -356,7 +356,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "05/12/2026"
   },
   {
@@ -365,7 +365,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "04/28/2026"
   },
   {
@@ -374,7 +374,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "04/28/2026"
   },
   {
@@ -383,7 +383,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$100.00",
-    "projected": "-7.9%",
+    "projected": "+4.9%",
     "date": "04/25/2026"
   },
   {
@@ -392,7 +392,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$111.00",
-    "projected": "+2.2%",
+    "projected": "+16.4%",
     "date": "04/24/2026"
   },
   {
@@ -401,7 +401,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$75.00",
-    "projected": "-30.9%",
+    "projected": "-21.4%",
     "date": "04/23/2026"
   },
   {
@@ -419,7 +419,7 @@
     "recommendation": "Hold",
     "action": "Upgraded",
     "price_target": "$60.00",
-    "projected": "-44.8%",
+    "projected": "-37.1%",
     "date": "04/20/2026"
   },
   {
@@ -428,7 +428,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$71.00",
-    "projected": "-34.6%",
+    "projected": "-25.6%",
     "date": "04/20/2026"
   },
   {
@@ -437,7 +437,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$65.00",
-    "projected": "-40.1%",
+    "projected": "-31.8%",
     "date": "04/14/2026"
   },
   {
@@ -446,7 +446,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$65.00",
-    "projected": "-40.1%",
+    "projected": "-31.8%",
     "date": "04/12/2026"
   },
   {
@@ -464,7 +464,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$36.00",
-    "projected": "-66.9%",
+    "projected": "-62.3%",
     "date": "03/13/2026"
   }
 ]

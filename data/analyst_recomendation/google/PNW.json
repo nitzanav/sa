@@ -1,21 +1,66 @@
 [
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$89.00",
-    "projected": "-5.5%",
-    "date": "09/18/2026"
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+7.3%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Richard Sunderland",
     "firm": "Truist Financial",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+7.2%",
-    "date": "08/17/2026"
+    "price_target": "$99.00",
+    "projected": "-2.5%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+7.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "-7.5%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Ian Rapp",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$104.00",
+    "projected": "+2.4%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$104.00",
+    "projected": "+2.4%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$89.00",
+    "projected": "-12.4%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "James Thalacker",
@@ -23,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$104.00",
-    "projected": "+10.4%",
+    "projected": "+2.4%",
     "date": "08/05/2026"
   },
   {
@@ -32,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$104.00",
-    "projected": "+10.4%",
+    "projected": "+2.4%",
     "date": "08/05/2026"
   },
   {
@@ -41,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$106.00",
-    "projected": "+12.5%",
+    "projected": "+4.4%",
     "date": "08/05/2026"
   },
   {
@@ -50,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$99.00",
-    "projected": "+5.1%",
+    "projected": "-2.5%",
     "date": "07/17/2026"
   },
   {
@@ -59,17 +104,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$129.00",
-    "projected": "+36.9%",
+    "projected": "+27%",
     "date": "07/08/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$108.00",
-    "projected": "+14.6%",
-    "date": "07/01/2026"
   },
   {
     "analyst": "Shelby Tucker",
@@ -77,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$101.00",
-    "projected": "+7.2%",
+    "projected": "-0.6%",
     "date": "05/15/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$108.00",
-    "projected": "+14.6%",
+    "projected": "+6.3%",
     "date": "04/20/2026"
   },
   {
@@ -104,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$106.00",
-    "projected": "+12.5%",
+    "projected": "+4.4%",
     "date": "04/13/2026"
   },
   {
@@ -113,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$106.00",
-    "projected": "+12.5%",
+    "projected": "+4.4%",
     "date": "04/13/2026"
   },
   {
@@ -122,16 +158,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$103.00",
-    "projected": "+9.3%",
-    "date": "02/26/2026"
-  },
-  {
-    "analyst": "Ryan Levine",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+15.7%",
+    "projected": "+1.4%",
     "date": "02/26/2026"
   }
 ]

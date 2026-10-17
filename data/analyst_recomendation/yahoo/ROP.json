@@ -9,15 +9,6 @@
     "date": "04/24/2026"
   },
   {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+39.6%",
-    "date": "01/05/2026"
-  },
-  {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$450.00",
     "projected": "+13.2%",
     "date": "08/06/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+39.6%",
+    "date": "01/05/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -88,41 +88,5 @@
     "price_target": "$575.00",
     "projected": null,
     "date": "10/24/2025"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+5.7%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+2.6%",
-    "date": "01/29/2026"
-  },
-  {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+28.8%",
-    "date": "04/25/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+23.7%",
-    "date": "01/29/2026"
   }
 ]

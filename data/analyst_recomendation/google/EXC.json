@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+3.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+3.6%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$41.00",
+    "projected": "-3.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$49.00",
+    "projected": "+15.3%",
+    "date": "09/21/2026"
+  },
+  {
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$50.00",
-    "projected": "+18.8%",
-    "date": "09/18/2026"
+    "projected": "+17.7%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "Paul Cole",
@@ -14,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+18.8%",
+    "projected": "+17.7%",
     "date": "09/14/2026"
   },
   {
@@ -23,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$47.00",
-    "projected": "+11.7%",
+    "projected": "+10.6%",
     "date": "08/24/2026"
   },
   {
@@ -32,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$48.00",
-    "projected": "+14.1%",
+    "projected": "+13%",
     "date": "08/17/2026"
   },
   {
@@ -41,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$47.00",
-    "projected": "+11.7%",
+    "projected": "+10.6%",
     "date": "07/31/2026"
   },
   {
@@ -50,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+18.8%",
+    "projected": "+17.7%",
     "date": "07/22/2026"
   },
   {
@@ -59,26 +95,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$48.00",
-    "projected": "+14.1%",
+    "projected": "+13%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "Carly Davenport",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+7%",
-    "date": "07/16/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+11.7%",
-    "date": "06/23/2026"
   },
   {
     "analyst": "Shelby Tucker",
@@ -86,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$49.00",
-    "projected": "+16.5%",
+    "projected": "+15.3%",
     "date": "05/15/2026"
-  },
-  {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "-2.5%",
-    "date": "05/13/2026"
   },
   {
     "analyst": "Nicholas Amicucci",
@@ -104,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$57.00",
-    "projected": "+35.5%",
+    "projected": "+34.2%",
     "date": "05/11/2026"
   },
   {
@@ -131,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$50.00",
-    "projected": "+18.8%",
+    "projected": "+17.7%",
     "date": "04/20/2026"
   },
   {
@@ -140,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$50.00",
-    "projected": "+18.8%",
+    "projected": "+17.7%",
     "date": "04/20/2026"
   },
   {
@@ -149,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$48.00",
-    "projected": "+14.1%",
+    "projected": "+13%",
     "date": "04/17/2026"
   },
   {
@@ -158,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$49.00",
-    "projected": "+16.5%",
+    "projected": "+15.3%",
     "date": "04/17/2026"
   },
   {
@@ -167,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$58.00",
-    "projected": "+37.9%",
+    "projected": "+36.5%",
     "date": "03/25/2026"
   },
   {
@@ -176,7 +185,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$51.00",
-    "projected": "+21.2%",
+    "projected": "+20.1%",
     "date": "02/20/2026"
   }
 ]

@@ -13,9 +13,9 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "-1.2%",
-    "date": "08/01/2026"
+    "price_target": "$53.00",
+    "projected": "-2.6%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -29,11 +29,11 @@
   {
     "analyst": "Jefferies",
     "firm": "Jefferies",
-    "recommendation": "Hold",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "-6.2%",
-    "date": "09/14/2026"
+    "price_target": "$42.00",
+    "projected": "-20.6%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Argus Research",
@@ -85,8 +85,8 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+7.4%",
-    "date": "09/02/2026"
+    "price_target": "$59.00",
+    "projected": "+6.2%",
+    "date": "10/12/2026"
   }
 ]

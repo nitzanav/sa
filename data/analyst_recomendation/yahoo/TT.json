@@ -56,28 +56,37 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Sell",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "-5.2%",
-    "date": "01/30/2026"
+    "price_target": "$536.00",
+    "projected": "+20.6%",
+    "date": "09/26/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$565.00",
+    "projected": "+17.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$476.00",
-    "projected": "+0.6%",
-    "date": "05/14/2026"
+    "price_target": "$550.00",
+    "projected": "+16.1%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$496.00",
-    "projected": "+9.3%",
-    "date": "07/31/2026"
+    "price_target": "$502.00",
+    "projected": "+4.6%",
+    "date": "10/14/2026"
   }
 ]

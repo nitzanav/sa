@@ -81,12 +81,12 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
+    "analyst": "Gordon Haskett",
+    "firm": "Gordon Haskett",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$151.00",
-    "projected": "+18%",
-    "date": "09/09/2026"
+    "price_target": "$140.00",
+    "projected": "+13.5%",
+    "date": "10/07/2026"
   }
 ]

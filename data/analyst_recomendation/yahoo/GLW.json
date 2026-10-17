@@ -27,21 +27,21 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+30.3%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$220.00",
     "projected": "+68.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+30.3%",
     "date": "07/30/2026"
   },
   {
@@ -58,9 +58,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$228.00",
-    "projected": "+20.4%",
-    "date": "06/05/2026"
+    "price_target": "$201.00",
+    "projected": "+24.8%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Barclays",
@@ -79,5 +79,14 @@
     "price_target": "$165.00",
     "projected": "+30.6%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "+11%",
+    "date": "10/02/2026"
   }
 ]

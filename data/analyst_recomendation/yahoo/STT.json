@@ -4,18 +4,18 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$191.00",
-    "projected": "+5.3%",
-    "date": "07/18/2026"
+    "price_target": "$171.00",
+    "projected": "+2.2%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+8.6%",
-    "date": "07/21/2026"
+    "price_target": "$185.00",
+    "projected": "+9.8%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -40,9 +40,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+15.8%",
-    "date": "07/18/2026"
+    "price_target": "$190.00",
+    "projected": "+12.8%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -67,9 +67,9 @@
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+18.5%",
-    "date": "07/17/2026"
+    "price_target": "$230.00",
+    "projected": "+36.5%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -85,17 +85,8 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$187.00",
-    "projected": "+0.8%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$196.00",
-    "projected": "+8%",
-    "date": "07/18/2026"
+    "price_target": "$187.50",
+    "projected": "+7.1%",
+    "date": "10/02/2026"
   }
 ]

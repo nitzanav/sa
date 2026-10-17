@@ -49,9 +49,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$173.00",
-    "projected": "+13.1%",
-    "date": "05/06/2026"
+    "price_target": "$248.00",
+    "projected": "+15.1%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -87,6 +87,42 @@
     "action": "Maintained",
     "price_target": "$255.00",
     "projected": "+21.3%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+4.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$259.00",
+    "projected": "+34.6%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+12.4%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+14.2%",
     "date": "08/05/2026"
   }
 ]

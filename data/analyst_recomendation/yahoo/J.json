@@ -13,9 +13,9 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+18.1%",
-    "date": "05/07/2026"
+    "price_target": "$166.00",
+    "projected": "+16.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "UBS",
@@ -27,15 +27,6 @@
     "date": "08/11/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+0.1%",
-    "date": "04/14/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -45,12 +36,21 @@
     "date": "05/06/2026"
   },
   {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "+0.1%",
+    "date": "04/14/2026"
+  },
+  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$149.00",
-    "projected": "+18.7%",
-    "date": "07/03/2026"
+    "price_target": "$160.00",
+    "projected": "+16.1%",
+    "date": "10/05/2026"
   }
 ]

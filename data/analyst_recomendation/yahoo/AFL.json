@@ -36,31 +36,40 @@
     "date": "07/13/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "-5.5%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "-21.8%",
-    "date": "08/08/2026"
+    "price_target": "$101.00",
+    "projected": "-10.4%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+4%",
-    "date": "08/12/2026"
+    "price_target": "$120.00",
+    "projected": "+4.7%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "-4.2%",
-    "date": "08/11/2026"
+    "price_target": "$119.00",
+    "projected": "-0.8%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Jefferies",
@@ -76,17 +85,17 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$124.00",
-    "projected": "+1.6%",
-    "date": "07/08/2026"
+    "price_target": "$125.00",
+    "projected": "+11.1%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$122.00",
-    "projected": "+5%",
-    "date": "08/20/2026"
+    "price_target": "$116.00",
+    "projected": "+0.7%",
+    "date": "10/12/2026"
   }
 ]

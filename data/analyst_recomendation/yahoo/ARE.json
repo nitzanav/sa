@@ -13,9 +13,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+19.7%",
-    "date": "08/17/2026"
+    "price_target": "$59.00",
+    "projected": "+10.5%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -25,15 +25,6 @@
     "price_target": "$50.00",
     "projected": "+19.7%",
     "date": "05/05/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+2.3%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Baird",
@@ -63,12 +54,21 @@
     "date": "07/07/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+11.8%",
-    "date": "03/10/2026"
+    "price_target": "$52.00",
+    "projected": "+2.3%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+10%",
+    "date": "09/24/2026"
   }
 ]

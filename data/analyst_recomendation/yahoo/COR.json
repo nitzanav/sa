@@ -13,9 +13,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$430.00",
-    "projected": "+33.6%",
-    "date": "08/06/2026"
+    "price_target": "$400.00",
+    "projected": "+16.5%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -36,15 +36,6 @@
     "date": "01/23/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+24.7%",
-    "date": "06/10/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$355.00",
     "projected": "+39.7%",
     "date": "05/08/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+24.7%",
+    "date": "06/10/2026"
   },
   {
     "analyst": "JP Morgan",

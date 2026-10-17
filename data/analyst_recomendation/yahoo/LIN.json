@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$530.00",
-    "projected": "+7.2%",
-    "date": "05/05/2026"
-  },
-  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -18,31 +9,49 @@
     "date": "08/11/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+7.2%",
+    "date": "05/05/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "+20.1%",
-    "date": "08/03/2026"
+    "price_target": "$560.00",
+    "projected": "+14.2%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$553.00",
-    "projected": "+14.5%",
-    "date": "08/03/2026"
+    "price_target": "$549.00",
+    "projected": "+10.5%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$579.00",
-    "projected": "+14.4%",
-    "date": "04/10/2026"
+    "price_target": "$574.00",
+    "projected": "+18.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$577.00",
+    "projected": "+16.9%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Seaport Global",

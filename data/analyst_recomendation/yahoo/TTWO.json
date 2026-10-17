@@ -9,15 +9,6 @@
     "date": "06/02/2026"
   },
   {
-    "analyst": "Benchmark",
-    "firm": "Benchmark",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": null,
-    "date": "10/17/2025"
-  },
-  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -81,6 +72,24 @@
     "date": "08/10/2026"
   },
   {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": null,
+    "date": "11/04/2025"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+6.6%",
+    "date": "08/11/2026"
+  },
+  {
     "analyst": "BTIG",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -88,5 +97,23 @@
     "price_target": "$313.00",
     "projected": "+23.5%",
     "date": "08/11/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+20.2%",
+    "date": "06/25/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+22%",
+    "date": "01/28/2026"
   }
 ]

@@ -54,21 +54,21 @@
     "date": "08/06/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+15.1%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
     "projected": "-0.1%",
-    "date": "04/30/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$121.00",
-    "projected": "+20.9%",
     "date": "04/30/2026"
   },
   {
@@ -88,5 +88,104 @@
     "price_target": "$133.00",
     "projected": "+19.2%",
     "date": "08/07/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$89.00",
+    "projected": null,
+    "date": "10/25/2025"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+3.9%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "-2.9%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+6.8%",
+    "date": "05/02/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "-33.8%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+2.7%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+14.3%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "-4.1%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "-20.6%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "-5%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "JMP Securities",
+    "firm": "JMP Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": null,
+    "date": "10/25/2025"
   }
 ]

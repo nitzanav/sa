@@ -4,9 +4,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$261.00",
-    "projected": "+18.6%",
-    "date": "04/24/2026"
+    "price_target": "$253.00",
+    "projected": "+18.9%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Baird",
@@ -31,9 +31,9 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+14.1%",
-    "date": "04/14/2026"
+    "price_target": "$288.00",
+    "projected": "+31.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Jefferies",
@@ -54,15 +54,6 @@
     "date": "07/13/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+5.4%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$230.00",
     "projected": "+11.5%",
     "date": "06/23/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+5.4%",
+    "date": "09/11/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -88,14 +88,5 @@
     "price_target": "$300.00",
     "projected": "+38.3%",
     "date": "06/16/2026"
-  },
-  {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+10.2%",
-    "date": "04/23/2026"
   }
 ]

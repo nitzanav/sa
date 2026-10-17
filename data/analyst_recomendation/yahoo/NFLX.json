@@ -13,9 +13,9 @@
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+14.5%",
-    "date": "07/18/2026"
+    "price_target": "$80.00",
+    "projected": "+15.3%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -23,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+52.7%",
-    "date": "07/18/2026"
+    "projected": "+49.1%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -67,9 +67,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+26.8%",
-    "date": "07/17/2026"
+    "price_target": "$80.00",
+    "projected": "+13.5%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Wells Fargo",

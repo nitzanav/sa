@@ -1,11 +1,92 @@
 [
   {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$254.00",
+    "projected": "+24%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$205.00",
+    "projected": "+0.1%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Monir Koummal",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$222.00",
+    "projected": "+8.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$222.00",
+    "projected": "+8.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+5%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Michael Lewis",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+5%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$208.00",
+    "projected": "+1.5%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$207.00",
+    "projected": "+1%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+5.4%",
+    "date": "09/21/2026"
+  },
+  {
     "analyst": "Greg McGinniss",
     "firm": "Scotiabank",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$221.00",
-    "projected": "+7.6%",
+    "projected": "+7.9%",
     "date": "09/17/2026"
   },
   {
@@ -14,26 +95,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$223.00",
-    "projected": "+8.6%",
+    "projected": "+8.9%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$219.00",
-    "projected": "+6.7%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Alexander Goldfarb",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+38.8%",
-    "date": "08/27/2026"
   },
   {
     "analyst": "Haendel St. Juste",
@@ -41,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$226.00",
-    "projected": "+10.1%",
+    "projected": "+10.3%",
     "date": "08/27/2026"
-  },
-  {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$222.00",
-    "projected": "+8.1%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Nicholas Joseph",
@@ -59,16 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+12%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "Richard Hightower",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+4.7%",
+    "projected": "+12.3%",
     "date": "08/17/2026"
   },
   {
@@ -77,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$264.00",
-    "projected": "+28.6%",
+    "projected": "+28.9%",
     "date": "08/13/2026"
   },
   {
@@ -86,26 +131,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+21.8%",
+    "projected": "+22%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "Michael Lewis",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$207.00",
-    "projected": "+0.8%",
-    "date": "08/11/2026"
   },
   {
     "analyst": "Floris van Dijkum",
@@ -113,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$275.00",
-    "projected": "+33.9%",
+    "projected": "+34.2%",
     "date": "08/11/2026"
   },
   {
@@ -122,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$209.00",
-    "projected": "+1.8%",
+    "projected": "+2%",
     "date": "08/11/2026"
   },
   {
@@ -131,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$241.00",
-    "projected": "+17.4%",
+    "projected": "+17.6%",
     "date": "07/20/2026"
   },
   {
@@ -140,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$220.00",
-    "projected": "+7.1%",
+    "projected": "+7.4%",
     "date": "07/09/2026"
   },
   {
@@ -158,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$210.00",
-    "projected": "+2.3%",
+    "projected": "+2.5%",
     "date": "05/15/2026"
   },
   {

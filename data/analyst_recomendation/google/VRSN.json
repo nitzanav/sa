@@ -3,10 +3,10 @@
     "analyst": "Ygal Arounian",
     "firm": "Wedbush",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$341.00",
-    "projected": "+12.5%",
-    "date": "09/01/2026"
+    "projected": "+13%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Alexei Gogolev",
@@ -14,7 +14,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$316.00",
-    "projected": "+4.2%",
+    "projected": "+4.7%",
     "date": "07/28/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$320.00",
-    "projected": "+5.6%",
+    "projected": "+6%",
     "date": "06/02/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$355.00",
-    "projected": "+17.1%",
+    "projected": "+17.6%",
     "date": "04/24/2026"
   }
 ]

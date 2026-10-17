@@ -1,48 +1,39 @@
 [
   {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$111.00",
-    "projected": "+14.4%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Elyse Greenspan",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+12.3%",
-    "date": "08/19/2026"
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Wesley Carmichael",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+12.3%",
-    "date": "08/19/2026"
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/12/2026"
   },
   {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+15.4%",
-    "date": "08/11/2026"
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/12/2026"
   },
   {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+11.3%",
-    "date": "08/11/2026"
+    "price_target": "$119.00",
+    "projected": "+18.7%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Ryan Krueger",
@@ -50,62 +41,80 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "+11.3%",
-    "date": "08/11/2026"
+    "projected": "+7.7%",
+    "date": "10/08/2026"
   },
   {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "-7.3%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$119.00",
-    "projected": "+22.6%",
-    "date": "08/05/2026"
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+8.7%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Alex Scott",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$97.00",
-    "projected": "-0%",
-    "date": "08/06/2026"
+    "price_target": "$111.00",
+    "projected": "+10.7%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Michael Ward CFA",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$111.00",
+    "projected": "+10.7%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Andrew Kligerman",
     "firm": "TD Cowen",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+8.2%",
-    "date": "07/22/2026"
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+9.7%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Suneet Kamath",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+6.1%",
-    "date": "07/09/2026"
+    "price_target": "$115.00",
+    "projected": "+14.7%",
+    "date": "10/01/2026"
   },
   {
-    "analyst": "Michael Ward CFA",
-    "firm": "UBS",
+    "analyst": "Wilma Burdis",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Elyse Greenspan",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$105.00",
-    "projected": "+8.2%",
-    "date": "07/08/2026"
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+8.7%",
+    "date": "08/19/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -122,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "-7.3%",
+    "projected": "-10.2%",
     "date": "06/24/2026"
   },
   {
@@ -131,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$96.00",
-    "projected": "-1.1%",
+    "projected": "-4.3%",
     "date": "05/12/2026"
   },
   {
@@ -140,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$96.00",
-    "projected": "-1.1%",
+    "projected": "-4.3%",
     "date": "04/09/2026"
   }
 ]

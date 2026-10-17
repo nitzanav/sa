@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$396.00",
-    "projected": "+15%",
-    "date": "05/21/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -16,6 +7,15 @@
     "price_target": "$440.00",
     "projected": "+26.1%",
     "date": "08/19/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$396.00",
+    "projected": "+15%",
+    "date": "05/21/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -27,21 +27,21 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$410.00",
-    "projected": "+30.3%",
-    "date": "08/20/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$405.00",
     "projected": "+28.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$410.00",
+    "projected": "+30.3%",
     "date": "08/20/2026"
   },
   {
@@ -72,15 +72,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$384.00",
-    "projected": "+15.1%",
-    "date": "04/14/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$425.00",
     "projected": "+21.8%",
     "date": "08/19/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$487.00",
+    "projected": "+27.9%",
+    "date": "10/07/2026"
   }
 ]

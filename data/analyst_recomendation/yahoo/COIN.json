@@ -63,6 +63,15 @@
     "date": "08/04/2026"
   },
   {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+37.1%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -72,21 +81,12 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "BTIG",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+41.3%",
-    "date": "09/17/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+44.1%",
-    "date": "07/23/2026"
+    "price_target": "$230.00",
+    "projected": "+28.7%",
+    "date": "10/14/2026"
   }
 ]

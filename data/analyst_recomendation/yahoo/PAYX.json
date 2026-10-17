@@ -11,20 +11,20 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Sell",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+9.1%",
-    "date": "06/25/2026"
+    "price_target": "$115.00",
+    "projected": "+13.7%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+34%",
-    "date": "03/27/2026"
+    "price_target": "$110.00",
+    "projected": "+11.4%",
+    "date": "09/29/2026"
   },
   {
     "analyst": "UBS",
@@ -32,8 +32,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+1.7%",
-    "date": "07/22/2026"
+    "projected": "+9%",
+    "date": "09/24/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -67,35 +67,26 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+11.7%",
-    "date": "03/20/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+11.5%",
-    "date": "03/13/2026"
+    "price_target": "$130.00",
+    "projected": "+28.5%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+11.1%",
-    "date": "09/09/2026"
+    "price_target": "$112.00",
+    "projected": "+6.2%",
+    "date": "09/24/2026"
   },
   {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "-1.3%",
-    "date": "08/13/2026"
+    "price_target": "$113.00",
+    "projected": "+7.1%",
+    "date": "09/24/2026"
   }
 ]

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "+24.7%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -13,9 +22,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$174.00",
-    "projected": "+2.4%",
-    "date": "07/11/2026"
+    "price_target": "$171.00",
+    "projected": "+8.4%",
+    "date": "10/10/2026"
   },
   {
     "analyst": "JMP Securities",
@@ -31,27 +40,27 @@
     "firm": "B of A Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$196.00",
-    "projected": null,
-    "date": "12/10/2025"
+    "price_target": "$198.00",
+    "projected": "+24.8%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+7.8%",
+    "date": "10/03/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$179.00",
-    "projected": "+5.7%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": null,
-    "date": "09/23/2025"
+    "price_target": "$185.00",
+    "projected": "+16.6%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -76,8 +85,8 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$184.00",
-    "projected": "+7.7%",
-    "date": "07/27/2026"
+    "price_target": "$179.00",
+    "projected": "+13.9%",
+    "date": "10/08/2026"
   }
 ]

@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$269.00",
-    "projected": "+31.2%",
+    "projected": "+19.1%",
     "date": "08/17/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+31.7%",
+    "projected": "+19.6%",
     "date": "08/07/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$275.00",
-    "projected": "+34.1%",
+    "projected": "+21.8%",
     "date": "08/07/2026"
   }
 ]

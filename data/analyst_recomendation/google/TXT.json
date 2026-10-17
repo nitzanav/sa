@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "Kristine Liwag",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+12.5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+30.8%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "John Godyn",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+12.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+43.9%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+12.5%",
+    "date": "09/29/2026"
+  },
+  {
     "analyst": "Noah Poponak",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$93.00",
-    "projected": "+16.7%",
+    "projected": "+21.7%",
     "date": "08/03/2026"
   },
   {
@@ -14,26 +59,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$98.00",
-    "projected": "+23%",
+    "projected": "+28.2%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+38%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Kristine Liwag",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+23%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Ronald Epstein",
@@ -41,26 +68,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$95.00",
-    "projected": "+19.2%",
+    "projected": "+24.3%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+19.2%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Gautam Khanna",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+31.8%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Douglas Harned",
@@ -68,17 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "+35.5%",
+    "projected": "+41.3%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "John Godyn",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$99.00",
-    "projected": "+24.2%",
-    "date": "07/01/2026"
   },
   {
     "analyst": "David E. Strauss",
@@ -86,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$92.00",
-    "projected": "+15.4%",
+    "projected": "+20.3%",
     "date": "06/15/2026"
   },
   {
@@ -95,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$115.00",
-    "projected": "+44.3%",
+    "projected": "+50.4%",
     "date": "05/03/2026"
   }
 ]

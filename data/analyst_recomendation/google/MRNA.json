@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Geoff Meacham",
+    "firm": "Citi",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-66.2%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Salveen Richter",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$137.00",
+    "projected": "-42.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Alec Stranahan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Luca Issi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "-45%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Terence Flynn",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "-59.8%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Jessica Fye",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Courtney Breen",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "-81%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Andrew Tsai",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "-36.6%",
+    "date": "09/22/2026"
+  },
+  {
     "analyst": "Nico Chen",
     "firm": "DBS",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "-2.6%",
+    "projected": "-36.6%",
     "date": "09/11/2026"
   },
   {
@@ -14,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "-48.1%",
+    "projected": "-66.2%",
     "date": "09/11/2026"
   },
   {
@@ -23,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "-35.1%",
+    "projected": "-57.7%",
     "date": "09/10/2026"
   },
   {
@@ -32,7 +104,7 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$81.00",
-    "projected": "-47.4%",
+    "projected": "-65.8%",
     "date": "09/03/2026"
   },
   {
@@ -41,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$180.00",
-    "projected": "+16.9%",
+    "projected": "-23.9%",
     "date": "08/27/2026"
   },
   {
@@ -59,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "-18.9%",
+    "projected": "-47.1%",
     "date": "08/24/2026"
   },
   {
@@ -68,53 +140,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "-2.6%",
+    "projected": "-36.6%",
     "date": "08/20/2026"
-  },
-  {
-    "analyst": "Terence Flynn",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$89.00",
-    "projected": "-42.2%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Andrew Tsai",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$60.00",
-    "projected": "-61%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Alec Stranahan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$170.00",
-    "projected": "+10.4%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Salveen Richter",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "-22.1%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Luca Issi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "-15.6%",
-    "date": "08/19/2026"
   },
   {
     "analyst": "Joseph Stringer",
@@ -123,33 +150,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Jessica Fye",
-    "firm": "J.P. Morgan",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "-50%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Courtney Breen",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$45.00",
-    "projected": "-70.8%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Geoff Meacham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "-61%",
     "date": "08/19/2026"
   },
   {
@@ -167,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$77.00",
-    "projected": "-50%",
+    "projected": "-67.4%",
     "date": "08/06/2026"
   },
   {
@@ -176,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$40.00",
-    "projected": "-74%",
+    "projected": "-83.1%",
     "date": "07/31/2026"
   },
   {
@@ -185,7 +185,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "-70.8%",
+    "projected": "-81%",
     "date": "07/31/2026"
   },
   {
@@ -194,7 +194,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$40.00",
-    "projected": "-74%",
+    "projected": "-83.1%",
     "date": "05/20/2026"
   },
   {
@@ -203,7 +203,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$12.00",
-    "projected": "-92.2%",
+    "projected": "-94.9%",
     "date": "02/11/2026"
   }
 ]

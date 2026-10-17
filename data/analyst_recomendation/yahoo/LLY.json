@@ -4,9 +4,9 @@
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1410.00",
-    "projected": "+18.7%",
-    "date": "08/07/2026"
+    "price_target": "$1440.00",
+    "projected": "+24.8%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Guggenheim",
@@ -27,22 +27,31 @@
     "date": "08/08/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1347.00",
-    "projected": "+10.3%",
-    "date": "07/08/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1400.00",
-    "projected": "+14.7%",
-    "date": "07/08/2026"
+    "price_target": "$1500.00",
+    "projected": "+27.1%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$940.00",
+    "projected": "-16.8%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1430.00",
+    "projected": "+21.8%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -79,14 +88,5 @@
     "price_target": "$1425.00",
     "projected": "+20.8%",
     "date": "07/13/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": null,
-    "date": "12/05/2025"
   }
 ]

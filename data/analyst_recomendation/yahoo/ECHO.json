@@ -9,6 +9,15 @@
     "date": "09/14/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+64.1%",
+    "date": "10/17/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",

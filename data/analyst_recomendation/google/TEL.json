@@ -1,12 +1,57 @@
 [
   {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$290.00",
+    "projected": "+36.3%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+8.1%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$243.00",
+    "projected": "+14.2%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Joseph Spak",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$253.00",
+    "projected": "+18.9%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Mark Delaney",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$284.00",
-    "projected": "+38.3%",
-    "date": "09/14/2026"
+    "action": "Reiterated",
+    "price_target": "$288.00",
+    "projected": "+35.4%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/21/2026"
   },
   {
     "analyst": "Colin Langan",
@@ -14,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$220.00",
-    "projected": "+7.1%",
+    "projected": "+3.4%",
     "date": "09/11/2026"
   },
   {
@@ -23,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+4.7%",
+    "projected": "+1.1%",
     "date": "07/28/2026"
   },
   {
@@ -32,25 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$275.00",
-    "projected": "+33.9%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$290.00",
-    "projected": "+41.2%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Joseph Spak",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$241.00",
-    "projected": "+17.3%",
+    "projected": "+29.3%",
     "date": "07/23/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$235.00",
-    "projected": "+14.4%",
+    "projected": "+10.5%",
     "date": "07/23/2026"
   },
   {
@@ -68,26 +95,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$225.00",
-    "projected": "+9.5%",
+    "projected": "+5.8%",
     "date": "07/23/2026"
-  },
-  {
-    "analyst": "Guy Hardwick",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+46%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Asiya Merchant",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$230.00",
-    "projected": "+12%",
-    "date": "07/13/2026"
   },
   {
     "analyst": "Amit Daryanani",
@@ -95,8 +104,17 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$230.00",
-    "projected": "+12%",
+    "projected": "+8.1%",
     "date": "06/21/2026"
+  },
+  {
+    "analyst": "Maurice Patrick",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$16.82",
+    "projected": "-92.1%",
+    "date": "05/13/2026"
   },
   {
     "analyst": "Stephen Bersey",
@@ -104,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$234.00",
-    "projected": "+13.9%",
+    "projected": "+10%",
     "date": "04/23/2026"
   },
   {
@@ -113,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$285.00",
-    "projected": "+38.7%",
+    "projected": "+34%",
     "date": "04/21/2026"
   },
   {
@@ -122,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+21.7%",
+    "projected": "+17.5%",
     "date": "03/31/2026"
   }
 ]

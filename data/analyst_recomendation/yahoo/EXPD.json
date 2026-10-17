@@ -4,27 +4,27 @@
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "-11.8%",
-    "date": "08/06/2026"
+    "price_target": "$165.00",
+    "projected": "-12.4%",
+    "date": "09/30/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+10.3%",
-    "date": "08/06/2026"
+    "price_target": "$214.00",
+    "projected": "+11.2%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+15.8%",
-    "date": "08/06/2026"
+    "price_target": "$220.00",
+    "projected": "+15.5%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -70,5 +70,14 @@
     "price_target": "$158.00",
     "projected": "-12.1%",
     "date": "07/16/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+5%",
+    "date": "10/02/2026"
   }
 ]

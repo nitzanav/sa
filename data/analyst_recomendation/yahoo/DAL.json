@@ -13,18 +13,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+24.7%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+10.5%",
-    "date": "06/18/2026"
+    "price_target": "$102.00",
+    "projected": "+26.4%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Barclays",
@@ -36,22 +27,22 @@
     "date": "09/12/2026"
   },
   {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+22.4%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+24.4%",
-    "date": "07/08/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+26.1%",
-    "date": "08/24/2026"
+    "price_target": "$95.00",
+    "projected": "+17.2%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -61,6 +52,15 @@
     "price_target": "$105.00",
     "projected": "+13.8%",
     "date": "06/26/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+17.8%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "B of A Securities",

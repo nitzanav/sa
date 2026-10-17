@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": null,
-    "date": "10/07/2025"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+19%",
-    "date": "07/30/2026"
+    "price_target": "$166.00",
+    "projected": "+24.5%",
+    "date": "09/28/2026"
   },
   {
     "analyst": "Barclays",
@@ -40,8 +31,8 @@
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$174.00",
-    "projected": "+17.4%",
-    "date": "07/31/2026"
+    "price_target": "$164.00",
+    "projected": "+25%",
+    "date": "10/09/2026"
   }
 ]

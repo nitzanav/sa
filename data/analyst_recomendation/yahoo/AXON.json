@@ -9,15 +9,6 @@
     "date": "08/07/2026"
   },
   {
-    "analyst": "JMP Securities",
-    "firm": "JMP Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$825.00",
-    "projected": null,
-    "date": "09/30/2025"
-  },
-  {
     "analyst": "Needham",
     "firm": "Needham",
     "recommendation": "Buy",

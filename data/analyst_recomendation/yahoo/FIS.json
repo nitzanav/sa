@@ -4,9 +4,9 @@
     "firm": "Susquehanna",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+11.4%",
-    "date": "02/26/2026"
+    "price_target": "$37.00",
+    "projected": "+5.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",
@@ -49,36 +49,36 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+2.5%",
-    "date": "08/05/2026"
+    "price_target": "$39.00",
+    "projected": "+7.1%",
+    "date": "10/17/2026"
   },
   {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+32.1%",
-    "date": "05/11/2026"
+    "price_target": "$44.00",
+    "projected": "+25.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "+1.2%",
-    "date": "08/06/2026"
+    "price_target": "$38.00",
+    "projected": "+10.6%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+19%",
-    "date": "08/11/2026"
+    "price_target": "$45.00",
+    "projected": "+23.6%",
+    "date": "10/17/2026"
   },
   {
     "analyst": "Stephens & Co.",

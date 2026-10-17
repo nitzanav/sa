@@ -58,9 +58,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": null,
-    "date": "12/17/2025"
+    "price_target": "$215.00",
+    "projected": "+20.5%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -72,6 +72,15 @@
     "date": "07/30/2026"
   },
   {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$217.00",
+    "projected": "+21.6%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$235.00",
     "projected": "+18.8%",
     "date": "07/31/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$206.00",
-    "projected": "+11.5%",
-    "date": "02/19/2026"
   }
 ]

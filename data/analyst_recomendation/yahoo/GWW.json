@@ -13,9 +13,9 @@
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$1185.00",
-    "projected": "-8.6%",
-    "date": "08/11/2026"
+    "price_target": "$1172.00",
+    "projected": "-7%",
+    "date": "09/26/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -31,9 +31,9 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1428.00",
-    "projected": "+9.6%",
-    "date": "08/05/2026"
+    "price_target": "$1427.00",
+    "projected": "+9.7%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Stephens & Co.",
@@ -52,5 +52,14 @@
     "price_target": "$1165.00",
     "projected": "-2.5%",
     "date": "02/07/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/16/2026"
   }
 ]

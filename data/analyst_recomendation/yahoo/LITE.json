@@ -13,9 +13,9 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1100.00",
-    "projected": "+12.7%",
-    "date": "05/05/2026"
+    "price_target": "$1232.00",
+    "projected": "+12%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Needham",
@@ -36,6 +36,15 @@
     "date": "02/05/2026"
   },
   {
+    "analyst": "Rosenblatt",
+    "firm": "Rosenblatt",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1300.00",
+    "projected": "+18.2%",
+    "date": "10/06/2026"
+  },
+  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -43,15 +52,6 @@
     "price_target": "$1280.00",
     "projected": "+42.4%",
     "date": "08/12/2026"
-  },
-  {
-    "analyst": "Rosenblatt",
-    "firm": "Rosenblatt",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1300.00",
-    "projected": "+40.1%",
-    "date": "08/13/2026"
   },
   {
     "analyst": "B. Riley Securities",
@@ -88,14 +88,5 @@
     "price_target": "$960.00",
     "projected": "+4.8%",
     "date": "05/07/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1000.00",
-    "projected": "+11.2%",
-    "date": "08/12/2026"
   }
 ]

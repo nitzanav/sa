@@ -1,11 +1,110 @@
 [
   {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "-15.3%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$41.00",
+    "projected": "-13.2%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "William Janela",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "-6.8%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Mark Lear",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$44.00",
+    "projected": "-6.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Noah Hungness",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$51.00",
+    "projected": "+8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Scott Hanold",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+3.7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+10.1%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Gabriel Daoud",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "-4.7%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Lloyd Byrne",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "-13.2%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "-2.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$44.00",
+    "projected": "-6.8%",
+    "date": "09/30/2026"
+  },
+  {
     "analyst": "Leo Mariani",
     "firm": "Roth MKM",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$39.00",
-    "projected": "-13.4%",
+    "projected": "-17.4%",
     "date": "09/16/2026"
   },
   {
@@ -14,26 +113,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$40.00",
-    "projected": "-11.2%",
+    "projected": "-15.3%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Josh Silverstein",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$47.00",
-    "projected": "+4.3%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "-11.2%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "David Deckelbaum",
@@ -41,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$62.00",
-    "projected": "+37.6%",
+    "projected": "+31.3%",
     "date": "09/10/2026"
   },
   {
@@ -50,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$62.00",
-    "projected": "+37.6%",
+    "projected": "+31.3%",
     "date": "09/10/2026"
   },
   {
@@ -59,17 +140,8 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$62.00",
-    "projected": "+37.6%",
+    "projected": "+31.3%",
     "date": "09/09/2026"
-  },
-  {
-    "analyst": "Neil Mehta",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "-4.6%",
-    "date": "09/07/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -86,16 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$54.00",
-    "projected": "+19.9%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Noah Hungness",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$50.00",
-    "projected": "+11%",
+    "projected": "+14.3%",
     "date": "09/02/2026"
   },
   {
@@ -104,17 +167,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$50.00",
-    "projected": "+11%",
+    "projected": "+5.9%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$41.00",
-    "projected": "-9%",
-    "date": "08/20/2026"
   },
   {
     "analyst": "Scott Gruber",
@@ -122,16 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$44.00",
-    "projected": "-2.3%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Scott Hanold",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+4.3%",
+    "projected": "-6.8%",
     "date": "08/20/2026"
   },
   {
@@ -140,17 +185,8 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$48.00",
-    "projected": "+6.5%",
+    "projected": "+1.6%",
     "date": "08/18/2026"
-  },
-  {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "-9%",
-    "date": "08/12/2026"
   },
   {
     "analyst": "Charles Minervino",
@@ -158,17 +194,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$47.00",
-    "projected": "+4.3%",
+    "projected": "-0.5%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "Gabriel Daoud",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$39.00",
-    "projected": "-13.4%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Neal Dingmann",
@@ -185,17 +212,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "-0.1%",
+    "projected": "-4.7%",
     "date": "07/09/2026"
-  },
-  {
-    "analyst": "William Janela",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$36.00",
-    "projected": "-20.1%",
-    "date": "05/27/2026"
   },
   {
     "analyst": "Bob Brackett",
@@ -203,7 +221,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$40.00",
-    "projected": "-11.2%",
+    "projected": "-15.3%",
     "date": "05/11/2026"
   },
   {
@@ -212,7 +230,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$36.00",
-    "projected": "-20.1%",
+    "projected": "-23.8%",
     "date": "05/07/2026"
   },
   {
@@ -221,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$47.00",
-    "projected": "+4.3%",
+    "projected": "-0.5%",
     "date": "05/06/2026"
   },
   {
@@ -230,17 +248,8 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$30.00",
-    "projected": "-33.4%",
+    "projected": "-36.5%",
     "date": "04/27/2026"
-  },
-  {
-    "analyst": "Mark Lear",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": "-17.9%",
-    "date": "03/12/2026"
   },
   {
     "analyst": "Subash Chandra",
@@ -248,7 +257,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$40.00",
-    "projected": "-11.2%",
+    "projected": "-15.3%",
     "date": "03/05/2026"
   },
   {
@@ -257,7 +266,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$24.00",
-    "projected": "-46.7%",
+    "projected": "-49.2%",
     "date": "02/17/2026"
   }
 ]

@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Matthew Hedberg",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+15%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Michael Ng",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "-7.4%",
+    "projected": "-12.4%",
     "date": "07/27/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$515.00",
-    "projected": "+19.2%",
+    "projected": "+12.8%",
     "date": "07/28/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$415.00",
-    "projected": "-3.9%",
+    "projected": "-9.1%",
     "date": "07/28/2026"
   },
   {
@@ -32,17 +41,8 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$300.00",
-    "projected": "-30.6%",
+    "projected": "-34.3%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Matthew Hedberg",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$508.00",
-    "projected": "+17.6%",
-    "date": "07/27/2026"
   },
   {
     "analyst": "James Fish",
@@ -50,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$461.00",
-    "projected": "+6.7%",
+    "projected": "+1%",
     "date": "07/28/2026"
   },
   {
@@ -68,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$397.00",
-    "projected": "-8.1%",
+    "projected": "-13%",
     "date": "07/28/2026"
   },
   {
@@ -86,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$385.00",
-    "projected": "-10.9%",
+    "projected": "-15.7%",
     "date": "05/28/2026"
   },
   {
@@ -95,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$385.00",
-    "projected": "-10.9%",
+    "projected": "-15.7%",
     "date": "05/28/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$435.00",
-    "projected": "+0.7%",
+    "projected": "-4.7%",
     "date": "05/27/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$475.00",
-    "projected": "+9.9%",
+    "projected": "+4%",
     "date": "05/17/2026"
   },
   {

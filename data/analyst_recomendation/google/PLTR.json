@@ -1,57 +1,66 @@
 [
   {
-    "analyst": "Arvind Ramnani",
-    "firm": "Truist Financial",
+    "analyst": "Gregg Moskowitz",
+    "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/16/2026"
+    "price_target": "$245.00",
+    "projected": "+22.2%",
+    "date": "10/15/2026"
   },
   {
-    "analyst": "Karl Keirstead",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$250.00",
-    "projected": "+40.7%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Martin Yang",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$200.00",
-    "projected": "+12.6%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Param Singh",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$200.00",
-    "projected": "+12.6%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "John McPeake",
-    "firm": "Rosenblatt Securities",
+    "analyst": "William Power",
+    "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+26.7%",
-    "date": "09/11/2026"
+    "price_target": "$250.00",
+    "projected": "+24.7%",
+    "date": "10/12/2026"
   },
   {
-    "analyst": "Gil Luria",
-    "firm": "D.A. Davidson",
+    "analyst": "Paul Chew",
+    "firm": "Phillip Securities",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$215.00",
+    "projected": "+7.2%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Initiated",
+    "price_target": "$265.00",
+    "projected": "+32.2%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Anthony Valentini",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$265.00",
+    "projected": "+32.2%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Gabriela Borges",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$230.00",
+    "projected": "+14.7%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Daniel Ives",
+    "firm": "Yorkville Ives & Co",
+    "recommendation": "Buy",
+    "action": "Initiated",
     "price_target": "$250.00",
-    "projected": "+40.7%",
-    "date": "09/11/2026"
+    "projected": "+24.7%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Louie DiPalma",
@@ -60,7 +69,61 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/26/2026"
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "John McPeake",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "+12.2%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Arvind Ramnani",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "+11.2%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Karl Keirstead",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+24.7%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Martin Yang",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": "-0.2%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Param Singh",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": "-0.2%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Gil Luria",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+24.7%",
+    "date": "09/11/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -72,30 +135,12 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "William Power",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+12.6%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Paul Chew",
-    "firm": "Phillip Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+21%",
-    "date": "08/11/2026"
-  },
-  {
     "analyst": "Joseph Bonner",
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$190.00",
-    "projected": "+7%",
+    "projected": "-5.2%",
     "date": "08/04/2026"
   },
   {
@@ -108,21 +153,12 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "Gregg Moskowitz",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$215.00",
-    "projected": "+21%",
-    "date": "08/04/2026"
-  },
-  {
     "analyst": "Mariana Perez Mora",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$255.00",
-    "projected": "+43.5%",
+    "projected": "+27.2%",
     "date": "08/05/2026"
   },
   {
@@ -131,17 +167,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$230.00",
-    "projected": "+29.5%",
+    "projected": "+14.7%",
     "date": "08/04/2026"
-  },
-  {
-    "analyst": "Gabriela Borges",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$204.00",
-    "projected": "+14.8%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Thomas Blakey",
@@ -149,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$156.00",
-    "projected": "-12.2%",
+    "projected": "-22.2%",
     "date": "08/03/2026"
   },
   {
@@ -158,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$200.00",
-    "projected": "+12.6%",
+    "projected": "-0.2%",
     "date": "08/04/2026"
   },
   {
@@ -167,7 +194,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$205.00",
-    "projected": "+15.4%",
+    "projected": "+2.2%",
     "date": "08/04/2026"
   },
   {
@@ -176,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$245.00",
-    "projected": "+37.9%",
+    "projected": "+22.2%",
     "date": "08/05/2026"
   },
   {
@@ -185,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$200.00",
-    "projected": "+12.6%",
+    "projected": "-0.2%",
     "date": "08/04/2026"
   },
   {
@@ -194,7 +221,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "-55%",
+    "projected": "-60.1%",
     "date": "08/03/2026"
   },
   {
@@ -203,17 +230,8 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "-49.3%",
+    "projected": "-55.1%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Daniel Ives",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+29.5%",
-    "date": "06/24/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -221,7 +239,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+29.5%",
+    "projected": "+14.7%",
     "date": "06/05/2026"
   },
   {
@@ -230,7 +248,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$151.00",
-    "projected": "-15%",
+    "projected": "-24.7%",
     "date": "05/01/2026"
   },
   {
@@ -257,7 +275,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$180.00",
-    "projected": "+1.3%",
+    "projected": "-10.2%",
     "date": "02/09/2026"
   }
 ]

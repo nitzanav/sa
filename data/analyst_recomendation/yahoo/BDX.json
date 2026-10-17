@@ -56,11 +56,11 @@
   {
     "analyst": "Barclays",
     "firm": "Barclays",
-    "recommendation": "Buy",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$204.00",
-    "projected": "+40.8%",
-    "date": "05/12/2026"
+    "price_target": "$165.00",
+    "projected": "-8.5%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -88,5 +88,23 @@
     "price_target": "$190.00",
     "projected": "+2.8%",
     "date": "08/13/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+6.5%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+5.4%",
+    "date": "02/10/2026"
   }
 ]

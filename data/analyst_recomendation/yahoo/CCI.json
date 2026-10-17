@@ -40,9 +40,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "+10.3%",
-    "date": "08/20/2026"
+    "price_target": "$86.00",
+    "projected": "+27.4%",
+    "date": "09/30/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -63,15 +63,6 @@
     "date": "06/26/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+18.3%",
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$105.00",
     "projected": "+18.1%",
     "date": "04/23/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+18.3%",
+    "date": "07/23/2026"
   },
   {
     "analyst": "Scotiabank",

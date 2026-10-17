@@ -45,13 +45,13 @@
     "date": "04/02/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
+    "analyst": "UBS",
+    "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": null,
-    "date": "10/17/2025"
+    "price_target": "$235.00",
+    "projected": "+12.3%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -72,13 +72,13 @@
     "date": "01/14/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+15.1%",
-    "date": "05/05/2026"
+    "price_target": "$226.00",
+    "projected": "+1.4%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Bernstein",
@@ -88,5 +88,59 @@
     "price_target": "$209.00",
     "projected": "+7%",
     "date": "08/03/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+15.1%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+4.9%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+22.7%",
+    "date": "09/26/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+10.7%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$208.00",
+    "projected": "+1.4%",
+    "date": "08/18/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$187.00",
+    "projected": "-0.1%",
+    "date": "04/22/2026"
   }
 ]

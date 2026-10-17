@@ -1,21 +1,57 @@
 [
   {
+    "analyst": "Simeon Gutman",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+6.8%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+0.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Chris Graja",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+35.5%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Rob Joyce",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$72.00",
+    "projected": "+14.8%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Jacob Aiken Phillips",
+    "firm": "Melius Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$80.00",
+    "projected": "+27.6%",
+    "date": "09/29/2026"
+  },
+  {
     "analyst": "Seth Sigman",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$61.00",
-    "projected": "+1.7%",
+    "projected": "-2.7%",
     "date": "09/17/2026"
-  },
-  {
-    "analyst": "Simeon Gutman",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$67.00",
-    "projected": "+11.7%",
-    "date": "09/16/2026"
   },
   {
     "analyst": "John Heinbockel",
@@ -23,16 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$66.00",
-    "projected": "+10%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Michael Lasser",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$63.00",
-    "projected": "+5%",
+    "projected": "+5.2%",
     "date": "09/14/2026"
   },
   {
@@ -41,7 +68,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$70.00",
-    "projected": "+16.7%",
+    "projected": "+11.6%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Greg Melich",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+11.6%",
     "date": "09/14/2026"
   },
   {
@@ -50,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "0%",
+    "projected": "-4.3%",
     "date": "09/14/2026"
   },
   {
@@ -59,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$73.00",
-    "projected": "+21.7%",
+    "projected": "+16.4%",
     "date": "09/14/2026"
   },
   {
@@ -68,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$75.00",
-    "projected": "+25%",
+    "projected": "+19.6%",
     "date": "09/14/2026"
   },
   {
@@ -77,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$85.00",
-    "projected": "+41.7%",
+    "projected": "+35.5%",
     "date": "09/11/2026"
   },
   {
@@ -86,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$62.00",
-    "projected": "+3.3%",
+    "projected": "-1.1%",
     "date": "09/11/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$72.00",
-    "projected": "+20%",
+    "projected": "+14.8%",
     "date": "09/11/2026"
   },
   {
@@ -104,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$71.00",
-    "projected": "+18.3%",
+    "projected": "+13.2%",
     "date": "09/11/2026"
   },
   {
@@ -113,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$68.00",
-    "projected": "+13.3%",
+    "projected": "+8.4%",
     "date": "09/09/2026"
   },
   {
@@ -131,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$57.00",
-    "projected": "-5%",
+    "projected": "-9.1%",
     "date": "09/02/2026"
   },
   {
@@ -140,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$58.00",
-    "projected": "-3.3%",
+    "projected": "-7.5%",
     "date": "07/17/2026"
   },
   {
@@ -149,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "+43.3%",
+    "projected": "+37.1%",
     "date": "07/01/2026"
   },
   {

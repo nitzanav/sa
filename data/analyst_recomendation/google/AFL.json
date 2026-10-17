@@ -1,48 +1,21 @@
 [
   {
-    "analyst": "Tracy Benguigui",
-    "firm": "Wolfe Research",
-    "recommendation": "Sell",
-    "action": "Initiated",
-    "price_target": "$103.00",
-    "projected": "-11%",
-    "date": "08/19/2026"
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$119.00",
+    "projected": "+0.8%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Wesley Carmichael",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$122.00",
-    "projected": "+5.4%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
     "price_target": "$116.00",
-    "projected": "+0.2%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+8%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+0.2%",
-    "date": "08/10/2026"
+    "projected": "-1.7%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Paul Newsome",
@@ -50,26 +23,71 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$138.00",
-    "projected": "+19.2%",
-    "date": "08/10/2026"
+    "projected": "+16.9%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Joshua Shanker",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/07/2026"
+    "price_target": "$133.00",
+    "projected": "+12.7%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+1.7%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "-9.4%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "Alex Scott",
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "-14.5%",
-    "date": "08/07/2026"
+    "price_target": "$101.00",
+    "projected": "-14.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Michael Ward CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+5.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$125.00",
+    "projected": "+5.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Tracy Benguigui",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$103.00",
+    "projected": "-12.7%",
+    "date": "08/19/2026"
   },
   {
     "analyst": "Andrew Kligerman",
@@ -77,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-5%",
+    "projected": "-6.8%",
     "date": "07/22/2026"
   },
   {
@@ -86,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "-6.7%",
+    "projected": "-8.5%",
     "date": "07/10/2026"
-  },
-  {
-    "analyst": "Michael Ward CFA",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$124.00",
-    "projected": "+7.1%",
-    "date": "07/08/2026"
   },
   {
     "analyst": "John Barnidge",
@@ -104,17 +113,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$130.00",
-    "projected": "+12.3%",
+    "projected": "+10.1%",
     "date": "05/26/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+8%",
-    "date": "05/21/2026"
   },
   {
     "analyst": "Thomas Gallagher",
@@ -122,7 +122,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "-5.9%",
+    "projected": "-7.7%",
     "date": "04/30/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$119.00",
-    "projected": "+2.8%",
+    "projected": "+0.8%",
     "date": "03/19/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$118.00",
-    "projected": "+1.9%",
+    "projected": "-0%",
     "date": "02/25/2026"
   }
 ]

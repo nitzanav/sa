@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": null,
-    "date": "10/02/2025"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -40,9 +31,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "+3.9%",
-    "date": "07/09/2026"
+    "price_target": "$95.00",
+    "projected": "+9.1%",
+    "date": "09/22/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -54,15 +45,6 @@
     "date": "04/23/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "-2.6%",
-    "date": "08/03/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -70,6 +52,15 @@
     "price_target": "$102.00",
     "projected": "+18.7%",
     "date": "04/11/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "-2.6%",
+    "date": "08/03/2026"
   },
   {
     "analyst": "Citigroup",
@@ -88,5 +79,14 @@
     "price_target": null,
     "projected": null,
     "date": "12/12/2025"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+4%",
+    "date": "10/06/2026"
   }
 ]

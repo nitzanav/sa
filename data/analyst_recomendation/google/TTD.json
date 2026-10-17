@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$15.00",
+    "projected": "+14.3%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Alec Brondolo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$12.00",
+    "projected": "-8.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Clark Lampen",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/23/2026"
+  },
+  {
     "analyst": "Michael Morris",
     "firm": "Guggenheim",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$13.00",
-    "projected": "-6.6%",
+    "projected": "-0.9%",
     "date": "09/18/2026"
   },
   {
@@ -23,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$15.00",
-    "projected": "+7.8%",
+    "projected": "+14.3%",
     "date": "09/08/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$14.00",
-    "projected": "+0.6%",
+    "projected": "+6.7%",
     "date": "09/08/2026"
   },
   {
@@ -50,7 +77,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$11.00",
-    "projected": "-21%",
+    "projected": "-16.2%",
     "date": "09/08/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$12.00",
-    "projected": "-13.8%",
+    "projected": "-8.5%",
     "date": "09/04/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$19.00",
-    "projected": "+36.5%",
+    "projected": "+44.8%",
     "date": "09/03/2026"
   },
   {
@@ -86,7 +113,7 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$10.00",
-    "projected": "-28.2%",
+    "projected": "-23.8%",
     "date": "08/10/2026"
   },
   {
@@ -95,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$13.00",
-    "projected": "-6.6%",
+    "projected": "-0.9%",
     "date": "08/10/2026"
   },
   {
@@ -104,7 +131,7 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$10.00",
-    "projected": "-28.2%",
+    "projected": "-23.8%",
     "date": "08/10/2026"
   },
   {
@@ -113,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$16.00",
-    "projected": "+14.9%",
+    "projected": "+22%",
     "date": "08/10/2026"
   },
   {
@@ -122,7 +149,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$15.00",
-    "projected": "+7.8%",
+    "projected": "+14.3%",
     "date": "08/07/2026"
   },
   {
@@ -136,11 +163,11 @@
   },
   {
     "analyst": "Mark Zgutowicz",
-    "firm": "Benchmark Co.",
+    "firm": "StoneX",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "+43.7%",
+    "projected": "+52.4%",
     "date": "08/07/2026"
   },
   {
@@ -149,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$14.00",
-    "projected": "+0.6%",
+    "projected": "+6.7%",
     "date": "08/07/2026"
   },
   {
@@ -167,16 +194,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$12.00",
-    "projected": "-13.8%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Stephen Ju",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$16.00",
-    "projected": "+14.9%",
+    "projected": "-8.5%",
     "date": "08/07/2026"
   },
   {
@@ -185,7 +203,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$11.00",
-    "projected": "-21%",
+    "projected": "-16.2%",
     "date": "08/07/2026"
   },
   {
@@ -194,16 +212,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$6.00",
-    "projected": "-56.9%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Alec Brondolo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$12.00",
-    "projected": "-13.8%",
+    "projected": "-54.3%",
     "date": "08/07/2026"
   },
   {
@@ -212,7 +221,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$15.00",
-    "projected": "+7.8%",
+    "projected": "+14.3%",
     "date": "08/07/2026"
   },
   {
@@ -221,7 +230,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$14.00",
-    "projected": "+0.6%",
+    "projected": "+6.7%",
     "date": "08/07/2026"
   },
   {
@@ -248,7 +257,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+50.9%",
+    "projected": "+60.1%",
     "date": "08/03/2026"
   },
   {
@@ -257,7 +266,7 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$11.60",
-    "projected": "-16.7%",
+    "projected": "-11.6%",
     "date": "06/30/2026"
   },
   {
@@ -266,7 +275,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+50.9%",
+    "projected": "+60.1%",
     "date": "06/04/2026"
   },
   {
@@ -275,7 +284,7 @@
     "recommendation": "Sell",
     "action": "Initiated",
     "price_target": "$11.00",
-    "projected": "-21%",
+    "projected": "-16.2%",
     "date": "05/28/2026"
   },
   {
@@ -284,7 +293,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$24.00",
-    "projected": "+72.4%",
+    "projected": "+82.9%",
     "date": "05/08/2026"
   },
   {
@@ -293,7 +302,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$21.00",
-    "projected": "+50.9%",
+    "projected": "+60.1%",
     "date": "05/08/2026"
   },
   {
@@ -302,17 +311,8 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$19.86",
-    "projected": "+42.7%",
+    "projected": "+51.4%",
     "date": "05/07/2026"
-  },
-  {
-    "analyst": "Clark Lampen",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "05/08/2026"
   },
   {
     "analyst": "Rocco Strauss",
@@ -320,7 +320,7 @@
     "recommendation": "Hold",
     "action": "Upgraded",
     "price_target": "$25.00",
-    "projected": "+79.6%",
+    "projected": "+90.5%",
     "date": "03/16/2026"
   },
   {
@@ -329,7 +329,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$40.00",
-    "projected": "+187.4%",
+    "projected": "+204.9%",
     "date": "03/05/2026"
   },
   {
@@ -338,7 +338,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$25.00",
-    "projected": "+79.6%",
+    "projected": "+90.5%",
     "date": "02/25/2026"
   },
   {
@@ -347,7 +347,7 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$17.00",
-    "projected": "+22.1%",
+    "projected": "+29.6%",
     "date": "02/26/2026"
   },
   {

@@ -4,9 +4,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$209.00",
-    "projected": "+32.8%",
-    "date": "07/16/2026"
+    "price_target": "$208.00",
+    "projected": "+24.7%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "UBS",
@@ -36,15 +36,6 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+10.3%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -52,5 +43,14 @@
     "price_target": "$210.00",
     "projected": "+31.4%",
     "date": "07/14/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+10.3%",
+    "date": "07/31/2026"
   }
 ]

@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$95.00",
-    "projected": "+64.5%",
+    "projected": "+66.3%",
     "date": "09/14/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$54.00",
-    "projected": "-6.5%",
+    "projected": "-5.5%",
     "date": "07/08/2026"
   }
 ]

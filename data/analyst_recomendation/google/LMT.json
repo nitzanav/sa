@@ -1,12 +1,66 @@
 [
   {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
+    "analyst": "Kenneth Herbert",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+3.3%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$564.00",
+    "projected": "+5.9%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Robert Stallard",
+    "firm": "Vertical Research",
     "recommendation": "Buy",
     "action": "Upgraded",
-    "price_target": "$674.00",
-    "projected": "+26.4%",
-    "date": "09/08/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Noah Poponak",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$486.00",
+    "projected": "-8.8%",
+    "date": "10/11/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$570.00",
+    "projected": "+7%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$554.00",
+    "projected": "+4%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Anthony Valentini",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$554.00",
+    "projected": "+4%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "John Godyn",
@@ -14,8 +68,44 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$691.00",
-    "projected": "+29.6%",
-    "date": "08/14/2026"
+    "projected": "+29.7%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+31.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Margaret Schooley",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$650.00",
+    "projected": "+22%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$653.00",
+    "projected": "+22.6%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "oxcap",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$600.00",
+    "projected": "+12.6%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Seth Seifman",
@@ -23,26 +113,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$620.00",
-    "projected": "+16.2%",
+    "projected": "+16.4%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Gautam Khanna",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+12.5%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Noah Poponak",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$503.00",
-    "projected": "-5.7%",
-    "date": "07/26/2026"
   },
   {
     "analyst": "Ronald Epstein",
@@ -50,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$600.00",
-    "projected": "+12.5%",
+    "projected": "+12.6%",
     "date": "07/27/2026"
   },
   {
@@ -68,26 +140,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$595.00",
-    "projected": "+11.6%",
+    "projected": "+11.7%",
     "date": "07/26/2026"
-  },
-  {
-    "analyst": "Kenneth Herbert",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+12.5%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+31.2%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Peter Arment",
@@ -95,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$700.00",
-    "projected": "+31.2%",
+    "projected": "+31.4%",
     "date": "07/24/2026"
   },
   {
@@ -104,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$690.00",
-    "projected": "+29.4%",
+    "projected": "+29.5%",
     "date": "07/24/2026"
   },
   {
@@ -113,17 +167,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+12.5%",
+    "projected": "+12.6%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Douglas Harned",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$614.00",
-    "projected": "+15.1%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Richard Safran",
@@ -131,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$756.00",
-    "projected": "+41.7%",
+    "projected": "+41.9%",
     "date": "03/22/2026"
   },
   {
@@ -140,7 +185,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$665.00",
-    "projected": "+24.7%",
+    "projected": "+24.8%",
     "date": "02/03/2026"
   },
   {
@@ -158,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$695.00",
-    "projected": "+30.3%",
+    "projected": "+30.5%",
     "date": "01/30/2026"
   }
 ]

@@ -18,6 +18,15 @@
     "date": "01/28/2026"
   },
   {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+31.8%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -31,9 +40,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+35.4%",
-    "date": "08/08/2026"
+    "price_target": "$150.00",
+    "projected": "+42.6%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -49,9 +58,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$157.00",
-    "projected": "+19.5%",
-    "date": "08/10/2026"
+    "price_target": "$129.00",
+    "projected": "+33%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -88,5 +97,68 @@
     "price_target": "$200.00",
     "projected": "+23.2%",
     "date": "06/05/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+74.1%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+5.6%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+19.9%",
+    "date": "08/08/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+44.6%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+1.2%",
+    "date": "04/18/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+34%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Berenberg",
+    "firm": "Berenberg",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$192.00",
+    "projected": "+12.8%",
+    "date": "06/03/2026"
   }
 ]

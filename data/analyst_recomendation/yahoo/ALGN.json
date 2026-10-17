@@ -4,18 +4,18 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+19.3%",
-    "date": "02/05/2026"
+    "price_target": "$175.00",
+    "projected": "+24.1%",
+    "date": "10/10/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+24.2%",
-    "date": "05/01/2026"
+    "price_target": "$162.00",
+    "projected": "+7.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -27,13 +27,13 @@
     "date": "02/06/2026"
   },
   {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": null,
-    "date": "10/11/2025"
+    "price_target": "$220.00",
+    "projected": "+24.2%",
+    "date": "05/01/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -65,11 +65,11 @@
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+24.3%",
-    "date": "04/30/2026"
+    "price_target": "$155.00",
+    "projected": "+9.2%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "UBS",

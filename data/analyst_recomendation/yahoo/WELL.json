@@ -65,20 +65,11 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$205.00",
-    "projected": null,
-    "date": "12/19/2025"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+17.4%",
-    "date": "08/01/2026"
+    "price_target": "$260.00",
+    "projected": "+11.1%",
+    "date": "09/24/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -88,5 +79,14 @@
     "price_target": "$260.00",
     "projected": "+10.6%",
     "date": "08/03/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+17.4%",
+    "date": "08/01/2026"
   }
 ]

@@ -3,10 +3,46 @@
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$111.00",
-    "projected": "+37.9%",
-    "date": "09/18/2026"
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+39.3%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+36.8%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+1.3%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Angie Storozynski",
+    "firm": "Seaport Global",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "-29.1%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$93.00",
+    "projected": "+17.8%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Nicholas Amicucci",
@@ -14,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$107.00",
-    "projected": "+33%",
+    "projected": "+35.5%",
     "date": "09/15/2026"
   },
   {
@@ -32,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$101.00",
-    "projected": "+25.5%",
+    "projected": "+27.9%",
     "date": "08/19/2026"
   },
   {
@@ -41,17 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+11.8%",
+    "projected": "+14%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+15.6%",
-    "date": "08/14/2026"
   },
   {
     "analyst": "Marie Ferguson",
@@ -59,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$102.00",
-    "projected": "+26.8%",
+    "projected": "+29.2%",
     "date": "07/30/2026"
   },
   {
@@ -68,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$93.00",
-    "projected": "+15.6%",
+    "projected": "+17.8%",
     "date": "07/27/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "+36.7%",
+    "projected": "+39.3%",
     "date": "07/27/2026"
   },
   {
@@ -86,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+39.2%",
+    "projected": "+41.8%",
     "date": "07/23/2026"
   },
   {
@@ -95,7 +122,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$91.00",
-    "projected": "+13.1%",
+    "projected": "+15.2%",
     "date": "07/07/2026"
   },
   {
@@ -104,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+30.5%",
+    "projected": "+33%",
     "date": "06/18/2026"
   },
   {
@@ -113,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$107.00",
-    "projected": "+33%",
+    "projected": "+35.5%",
     "date": "06/16/2026"
   },
   {
@@ -122,26 +149,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+30.5%",
+    "projected": "+33%",
     "date": "05/13/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+23%",
-    "date": "04/21/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+18.1%",
-    "date": "04/15/2026"
   },
   {
     "analyst": "Carly Davenport",
@@ -149,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$98.00",
-    "projected": "+21.8%",
+    "projected": "+24.1%",
     "date": "04/15/2026"
   }
 ]

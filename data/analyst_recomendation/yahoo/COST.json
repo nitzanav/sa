@@ -1,21 +1,30 @@
 [
   {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": "+5.8%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+27.2%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": null,
-    "date": "09/30/2025"
-  },
-  {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1000.00",
-    "projected": null,
-    "date": "12/12/2025"
+    "price_target": "$1230.00",
+    "projected": "+34.2%",
+    "date": "09/29/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -25,6 +34,15 @@
     "price_target": "$1095.00",
     "projected": "+22.3%",
     "date": "09/17/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": null,
+    "date": "12/12/2025"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -45,15 +63,6 @@
     "date": "04/09/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1100.00",
-    "projected": "+20.4%",
-    "date": "07/10/2026"
-  },
-  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -63,6 +72,15 @@
     "date": "09/16/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1015.00",
+    "projected": "+14.4%",
+    "date": "09/25/2026"
+  },
+  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -70,23 +88,5 @@
     "price_target": "$1175.00",
     "projected": "+23.3%",
     "date": "06/03/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1315.00",
-    "projected": "+36%",
-    "date": "03/06/2026"
-  },
-  {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1011.00",
-    "projected": "+2.5%",
-    "date": "05/29/2026"
   }
 ]

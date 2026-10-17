@@ -13,18 +13,18 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$301.00",
-    "projected": "+11%",
-    "date": "07/03/2026"
+    "price_target": "$297.00",
+    "projected": "+13.4%",
+    "date": "10/05/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+17.2%",
-    "date": "07/29/2026"
+    "price_target": "$277.00",
+    "projected": "+5.4%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Wells Fargo",

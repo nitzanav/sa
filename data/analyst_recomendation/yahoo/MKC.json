@@ -27,22 +27,13 @@
     "date": "09/18/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+6.1%",
-    "date": "06/26/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+6.3%",
-    "date": "09/14/2026"
+    "price_target": "$48.00",
+    "projected": "+10.3%",
+    "date": "10/02/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -54,21 +45,30 @@
     "date": "06/27/2026"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+10.3%",
+    "date": "10/02/2026"
+  },
+  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+6.5%",
-    "date": "01/24/2026"
+    "price_target": "$48.00",
+    "projected": "+10.3%",
+    "date": "10/03/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+6.6%",
-    "date": "06/30/2026"
+    "price_target": "$47.00",
+    "projected": "+8%",
+    "date": "10/03/2026"
   }
 ]

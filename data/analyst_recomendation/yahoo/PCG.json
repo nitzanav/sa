@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+29.6%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -7,15 +16,6 @@
     "price_target": "$24.00",
     "projected": "+80.5%",
     "date": "09/01/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$18.00",
-    "projected": "+30.4%",
-    "date": "09/04/2026"
   },
   {
     "analyst": "Jefferies",
@@ -36,15 +36,6 @@
     "date": "09/03/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$18.00",
-    "projected": "+32.7%",
-    "date": "09/02/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Hold",
@@ -52,6 +43,15 @@
     "price_target": "$14.00",
     "projected": "+1.4%",
     "date": "09/04/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+29.6%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -74,10 +74,10 @@
   {
     "analyst": "UBS",
     "firm": "UBS",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$23.00",
-    "projected": "+26.9%",
-    "date": "03/10/2026"
+    "price_target": "$14.00",
+    "projected": "+12.2%",
+    "date": "09/24/2026"
   }
 ]

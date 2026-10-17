@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "-27.6%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$212.00",
+    "projected": "+2.3%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Toni Kaplan",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "-12.2%",
+    "date": "10/08/2026"
+  },
+  {
     "analyst": "Joshua Chan",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$196.00",
-    "projected": "+5.5%",
-    "date": "09/10/2026"
+    "price_target": "$208.00",
+    "projected": "+0.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "-27.6%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "Ashish Sabadra",
@@ -14,17 +50,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$198.00",
-    "projected": "+6.6%",
+    "projected": "-4.5%",
     "date": "09/04/2026"
-  },
-  {
-    "analyst": "Jeffrey Silber",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$206.00",
-    "projected": "+10.9%",
-    "date": "08/18/2026"
   },
   {
     "analyst": "Jeffrey Meuler",
@@ -32,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$229.00",
-    "projected": "+23.3%",
+    "projected": "+10.5%",
     "date": "08/05/2026"
   },
   {
@@ -41,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$210.00",
-    "projected": "+13%",
+    "projected": "+1.3%",
     "date": "08/05/2026"
   },
   {
@@ -50,17 +77,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$205.00",
-    "projected": "+10.3%",
+    "projected": "-1.1%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Toni Kaplan",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$177.00",
-    "projected": "-4.7%",
-    "date": "08/04/2026"
   },
   {
     "analyst": "Curtis Nagle",
@@ -68,7 +86,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$165.00",
-    "projected": "-11.2%",
+    "projected": "-20.4%",
     "date": "08/05/2026"
   },
   {
@@ -77,16 +95,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$165.00",
-    "projected": "-11.2%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jason Haas CFA",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "-19.3%",
+    "projected": "-20.4%",
     "date": "08/05/2026"
   },
   {
@@ -95,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$181.00",
-    "projected": "-2.6%",
+    "projected": "-12.7%",
     "date": "08/04/2026"
-  },
-  {
-    "analyst": "Manav Patnaik",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "-19.3%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Andrew Nicholas",

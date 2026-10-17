@@ -1,12 +1,39 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$139.00",
+    "projected": "+8.3%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Michael Lonegan",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+5.2%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+6%",
+    "date": "09/28/2026"
+  },
+  {
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$141.00",
-    "projected": "+9.7%",
-    "date": "09/18/2026"
+    "projected": "+9.9%",
+    "date": "09/21/2026"
   },
   {
     "analyst": "Richard Sunderland",
@@ -18,30 +45,12 @@
     "date": "08/31/2026"
   },
   {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$152.00",
-    "projected": "+18.3%",
-    "date": "08/30/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$143.00",
-    "projected": "+11.3%",
-    "date": "08/27/2026"
-  },
-  {
     "analyst": "Jeremy Tonet",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$156.00",
-    "projected": "+21.4%",
+    "projected": "+21.6%",
     "date": "08/19/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$165.00",
-    "projected": "+28.4%",
+    "projected": "+28.6%",
     "date": "08/20/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$150.00",
-    "projected": "+16.7%",
+    "projected": "+16.9%",
     "date": "08/18/2026"
   },
   {
@@ -68,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "+16.7%",
+    "projected": "+16.9%",
     "date": "08/18/2026"
   },
   {
@@ -77,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$165.00",
-    "projected": "+28.4%",
+    "projected": "+28.6%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Michael Lonegan",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$154.00",
-    "projected": "+19.8%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Shelby Tucker",
@@ -95,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$166.00",
-    "projected": "+29.2%",
+    "projected": "+29.4%",
     "date": "07/08/2026"
   },
   {
@@ -104,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$162.00",
-    "projected": "+26.1%",
+    "projected": "+26.2%",
     "date": "04/22/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$165.00",
-    "projected": "+28.4%",
+    "projected": "+28.6%",
     "date": "04/20/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$170.00",
-    "projected": "+32.3%",
+    "projected": "+32.5%",
     "date": "04/12/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$167.00",
-    "projected": "+29.9%",
+    "projected": "+30.1%",
     "date": "03/19/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$168.00",
-    "projected": "+30.7%",
+    "projected": "+30.9%",
     "date": "02/18/2026"
   },
   {

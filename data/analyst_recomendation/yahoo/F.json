@@ -13,18 +13,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$17.00",
-    "projected": "+9.2%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$17.00",
-    "projected": "+13.4%",
-    "date": "06/08/2026"
+    "price_target": "$16.00",
+    "projected": "+31.6%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -34,6 +25,15 @@
     "price_target": "$20.00",
     "projected": "+18.5%",
     "date": "05/29/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$15.00",
+    "projected": "+24.8%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -87,6 +87,24 @@
     "action": "Maintained",
     "price_target": "$15.00",
     "projected": "-3.7%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+14.8%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "+9.2%",
     "date": "07/29/2026"
   }
 ]

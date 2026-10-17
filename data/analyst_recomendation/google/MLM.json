@@ -6,43 +6,70 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "09/18/2026"
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Adrian Huerta",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$650.00",
+    "projected": "+32.3%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Anthony Codling",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+7.9%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Steven Fisher",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$662.00",
+    "projected": "+34.8%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Keith Hughes",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$625.00",
+    "projected": "+27.2%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$579.00",
+    "projected": "+17.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$610.00",
+    "projected": "+24.2%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Philip Ng",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$720.00",
-    "projected": "+46.7%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$609.00",
-    "projected": "+24.1%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Adrian Huerta",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$680.00",
-    "projected": "+38.6%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Anthony Codling",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$620.00",
-    "projected": "+26.4%",
-    "date": "08/28/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "09/23/2026"
   },
   {
     "analyst": "Garik Shmois",
@@ -50,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$625.00",
-    "projected": "+27.4%",
+    "projected": "+27.2%",
     "date": "08/25/2026"
   },
   {
@@ -59,17 +86,8 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$625.00",
-    "projected": "+27.4%",
+    "projected": "+27.2%",
     "date": "08/25/2026"
-  },
-  {
-    "analyst": "Keith Hughes",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/21/2026"
   },
   {
     "analyst": "Angel Castillo",
@@ -77,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$639.00",
-    "projected": "+30.2%",
+    "projected": "+30.1%",
     "date": "08/13/2026"
   },
   {
@@ -86,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$640.00",
-    "projected": "+30.4%",
+    "projected": "+30.3%",
     "date": "08/05/2026"
   },
   {
@@ -95,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$634.00",
-    "projected": "+29.2%",
+    "projected": "+29.1%",
     "date": "08/04/2026"
   },
   {
@@ -104,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$648.00",
-    "projected": "+32.1%",
+    "projected": "+31.9%",
     "date": "08/03/2026"
   },
   {
@@ -113,25 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$648.00",
-    "projected": "+32.1%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Steven Fisher",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$715.00",
-    "projected": "+45.7%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$690.00",
-    "projected": "+40.6%",
+    "projected": "+31.9%",
     "date": "08/03/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$660.00",
-    "projected": "+34.5%",
+    "projected": "+34.4%",
     "date": "07/31/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$680.00",
-    "projected": "+38.6%",
+    "projected": "+38.4%",
     "date": "07/31/2026"
   },
   {
@@ -158,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$672.00",
-    "projected": "+37%",
+    "projected": "+36.8%",
     "date": "06/30/2026"
   },
   {
@@ -167,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$556.00",
-    "projected": "+13.3%",
+    "projected": "+13.2%",
     "date": "06/01/2026"
   },
   {
@@ -176,7 +176,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$556.00",
-    "projected": "+13.3%",
+    "projected": "+13.2%",
     "date": "06/01/2026"
   },
   {
@@ -185,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$700.00",
-    "projected": "+42.7%",
+    "projected": "+42.5%",
     "date": "04/02/2026"
   }
 ]

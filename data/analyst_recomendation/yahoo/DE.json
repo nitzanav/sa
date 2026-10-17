@@ -18,15 +18,6 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$730.00",
-    "projected": "+13.5%",
-    "date": "02/24/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -34,6 +25,15 @@
     "price_target": "$752.00",
     "projected": "+15.3%",
     "date": "08/25/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$730.00",
+    "projected": "+13.5%",
+    "date": "02/24/2026"
   },
   {
     "analyst": "DA Davidson",

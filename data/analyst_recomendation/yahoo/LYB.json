@@ -58,62 +58,35 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+17.8%",
-    "date": "08/05/2026"
+    "price_target": "$68.00",
+    "projected": "+14.2%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+15.8%",
-    "date": "06/24/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$51.00",
-    "projected": null,
-    "date": "10/17/2025"
+    "price_target": "$63.00",
+    "projected": "+11.2%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+8.8%",
-    "date": "08/04/2026"
+    "price_target": "$62.00",
+    "projected": "+4.4%",
+    "date": "09/25/2026"
   },
   {
-    "analyst": "Keybanc",
-    "firm": "Keybanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/12/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+15.6%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
+    "analyst": "Barclays",
+    "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$66.00",
-    "projected": "+12.2%",
-    "date": "08/04/2026"
+    "projected": "+9.5%",
+    "date": "10/14/2026"
   }
 ]

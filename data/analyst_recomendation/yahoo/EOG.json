@@ -13,9 +13,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$183.00",
-    "projected": "+22.8%",
-    "date": "09/14/2026"
+    "price_target": "$186.00",
+    "projected": "+25.4%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Bernstein",
@@ -85,8 +85,8 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$153.00",
-    "projected": "+12%",
-    "date": "08/06/2026"
+    "price_target": "$160.00",
+    "projected": "+14.5%",
+    "date": "10/02/2026"
   }
 ]

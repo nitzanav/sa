@@ -1,12 +1,66 @@
 [
   {
+    "analyst": "Brian Harbour",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+17.8%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Danilo Gargiulo",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+12.6%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Dennis Geiger",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+7.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Joshua Buchalter",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+22.9%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Logan Reich",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+17.8%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "John Ivankoe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+7.5%",
+    "date": "09/29/2026"
+  },
+  {
     "analyst": "Sharon Zackfia",
     "firm": "William Blair",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "09/16/2026"
+    "date": "09/24/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -18,13 +72,13 @@
     "date": "09/15/2026"
   },
   {
-    "analyst": "John Ivankoe",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+16.9%",
-    "date": "08/27/2026"
+    "analyst": "Eric Gonzalez",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/15/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -32,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$124.00",
-    "projected": "+29.4%",
+    "projected": "+27%",
     "date": "08/24/2026"
   },
   {
@@ -41,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$124.00",
-    "projected": "+29.4%",
+    "projected": "+27%",
     "date": "08/24/2026"
   },
   {
@@ -50,16 +104,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$120.00",
-    "projected": "+25.2%",
-    "date": "08/18/2026"
-  },
-  {
-    "analyst": "Joshua Buchalter",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "+25.2%",
+    "projected": "+22.9%",
     "date": "08/18/2026"
   },
   {
@@ -77,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+20%",
+    "projected": "+17.8%",
     "date": "07/31/2026"
   },
   {
@@ -95,7 +140,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+20%",
+    "projected": "+17.8%",
     "date": "07/31/2026"
   },
   {
@@ -113,7 +158,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "+14.8%",
+    "projected": "+12.6%",
     "date": "07/31/2026"
   },
   {
@@ -122,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+25.2%",
+    "projected": "+22.9%",
     "date": "07/30/2026"
   },
   {
@@ -131,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$126.00",
-    "projected": "+31.5%",
+    "projected": "+29%",
     "date": "07/30/2026"
   },
   {
@@ -140,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$130.00",
-    "projected": "+35.7%",
+    "projected": "+33.1%",
     "date": "07/30/2026"
   },
   {
@@ -149,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$124.00",
-    "projected": "+29.4%",
+    "projected": "+27%",
     "date": "07/30/2026"
   },
   {
@@ -158,16 +203,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$143.00",
-    "projected": "+49.2%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Dennis Geiger",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+16.9%",
+    "projected": "+46.4%",
     "date": "07/30/2026"
   },
   {
@@ -176,25 +212,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+16.9%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Logan Reich",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+20%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Brian Harbour",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+20%",
+    "projected": "+14.7%",
     "date": "07/30/2026"
   },
   {
@@ -203,17 +221,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$125.00",
-    "projected": "+30.4%",
+    "projected": "+28%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Danilo Gargiulo",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+14.8%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "Gregory Francfort",
@@ -221,7 +230,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$97.00",
-    "projected": "+1.2%",
+    "projected": "-0.7%",
     "date": "04/28/2026"
   },
   {
@@ -239,7 +248,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$110.00",
-    "projected": "+14.8%",
+    "projected": "+12.6%",
     "date": "04/29/2026"
   },
   {
@@ -248,7 +257,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$116.00",
-    "projected": "+21%",
+    "projected": "+18.8%",
     "date": "04/29/2026"
   },
   {
@@ -266,7 +275,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+16.9%",
+    "projected": "+14.7%",
     "date": "04/29/2026"
   },
   {
@@ -275,7 +284,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$105.00",
-    "projected": "+9.6%",
+    "projected": "+7.5%",
     "date": "04/21/2026"
   },
   {
@@ -284,7 +293,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$97.00",
-    "projected": "+1.2%",
+    "projected": "-0.7%",
     "date": "04/22/2026"
   },
   {
@@ -293,7 +302,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$122.00",
-    "projected": "+27.3%",
+    "projected": "+24.9%",
     "date": "04/15/2026"
   },
   {
@@ -302,7 +311,7 @@
     "recommendation": "Hold",
     "action": "Upgraded",
     "price_target": "$92.00",
-    "projected": "-4%",
+    "projected": "-5.8%",
     "date": "04/13/2026"
   },
   {
@@ -311,7 +320,7 @@
     "recommendation": "Sell",
     "action": "Initiated",
     "price_target": "$84.00",
-    "projected": "-12.3%",
+    "projected": "-14%",
     "date": "03/30/2026"
   },
   {
@@ -329,16 +338,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$59.00",
-    "projected": "-38.4%",
+    "projected": "-39.6%",
     "date": "02/10/2026"
-  },
-  {
-    "analyst": "Eric Gonzalez",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "01/30/2026"
   }
 ]

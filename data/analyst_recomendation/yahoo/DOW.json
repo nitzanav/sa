@@ -49,9 +49,9 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+4.5%",
-    "date": "07/25/2026"
+    "price_target": "$30.00",
+    "projected": "+6.2%",
+    "date": "09/25/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -65,11 +65,11 @@
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$35.00",
-    "projected": "+16.7%",
-    "date": "06/24/2026"
+    "price_target": "$30.00",
+    "projected": "+10.9%",
+    "date": "10/01/2026"
   },
   {
     "analyst": "Goldman Sachs",

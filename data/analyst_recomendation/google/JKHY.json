@@ -1,11 +1,74 @@
 [
   {
+    "analyst": "Matthew O'Neill",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$165.00",
+    "projected": "+5.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Will Nance",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$181.00",
+    "projected": "+15.7%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Bill Carcache",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$175.00",
+    "projected": "+11.8%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Jeff Cantwell",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$193.00",
+    "projected": "+23.3%",
+    "date": "10/04/2026"
+  },
+  {
+    "analyst": "Daniel Perlin",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$178.00",
+    "projected": "+13.8%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$158.00",
+    "projected": "+1%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$233.00",
+    "projected": "+48.9%",
+    "date": "09/24/2026"
+  },
+  {
     "analyst": "Nik Cremo",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+19.5%",
+    "projected": "+18.2%",
     "date": "09/17/2026"
   },
   {
@@ -14,7 +77,16 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$198.00",
-    "projected": "+27.9%",
+    "projected": "+26.5%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Madison Suhr",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$199.00",
+    "projected": "+27.2%",
     "date": "09/16/2026"
   },
   {
@@ -23,34 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$199.00",
-    "projected": "+28.5%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Will Nance",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "+17.5%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Daniel Perlin",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$178.00",
-    "projected": "+14.9%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Bill Carcache",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+13%",
+    "projected": "+27.2%",
     "date": "09/16/2026"
   },
   {
@@ -59,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$170.00",
-    "projected": "+9.8%",
+    "projected": "+8.6%",
     "date": "09/16/2026"
   },
   {
@@ -72,21 +117,12 @@
     "date": "09/16/2026"
   },
   {
-    "analyst": "James Faucette",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+9.8%",
-    "date": "09/14/2026"
-  },
-  {
     "analyst": "Andrew Schmitt",
     "firm": "KeyBanc",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$190.00",
-    "projected": "+22.7%",
+    "projected": "+21.4%",
     "date": "09/14/2026"
   },
   {
@@ -95,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+38.8%",
+    "projected": "+37.4%",
     "date": "08/25/2026"
   },
   {
@@ -104,16 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$200.00",
-    "projected": "+29.2%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Jason Kupferberg",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$196.00",
-    "projected": "+26.6%",
+    "projected": "+27.8%",
     "date": "08/20/2026"
   },
   {
@@ -122,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$209.00",
-    "projected": "+35%",
+    "projected": "+33.6%",
     "date": "08/19/2026"
   },
   {
@@ -131,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$200.00",
-    "projected": "+29.2%",
+    "projected": "+27.8%",
     "date": "08/10/2026"
   },
   {
@@ -140,7 +167,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$170.00",
-    "projected": "+9.8%",
+    "projected": "+8.6%",
     "date": "07/08/2026"
   },
   {
@@ -149,7 +176,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$208.00",
-    "projected": "+34.3%",
+    "projected": "+32.9%",
     "date": "05/06/2026"
   },
   {
@@ -158,7 +185,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$197.00",
-    "projected": "+27.2%",
+    "projected": "+25.9%",
     "date": "03/30/2026"
   },
   {
@@ -167,7 +194,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$197.00",
-    "projected": "+27.2%",
+    "projected": "+25.9%",
     "date": "03/30/2026"
   },
   {
@@ -176,7 +203,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$205.00",
-    "projected": "+32.4%",
+    "projected": "+31%",
     "date": "02/05/2026"
   },
   {
@@ -185,7 +212,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$205.00",
-    "projected": "+32.4%",
+    "projected": "+31%",
     "date": "02/05/2026"
   },
   {
@@ -194,7 +221,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$216.00",
-    "projected": "+39.5%",
+    "projected": "+38%",
     "date": "02/04/2026"
   }
 ]
