@@ -86,7 +86,14 @@ cd "$(dirname "$0")/.." || exit 1
 ./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window
 ```
 
-2. `simulation_<words>_<timestamp>_optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
+2. `simulation_<words>_<timestamp>_optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, lot-day exposure, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
+
+Lot-day exposure is four figures on the winning combination, taken from the lots. An open lot runs through the last quote day.
+
+- **Trade range:** first buy date → last sell date (`from … to …`). This is the range of actual trades, separate from the price-cache period.
+- **Days exposed:** distinct calendar days with at least one lot open. A day with two lots open counts once.
+- **Lot-days:** sum of days held across lots. One lot for 3 days, one for 1 day, and one for 3 days is 6 lot-days. Overlap counts once per lot.
+- **Average lot amount:** mean dollar size of the lots opened.
 
 3. `simulation_<words>_<timestamp>_optimize.tsx` — copy of the canvas source. The file Cursor opens beside chat is the same source at:
 

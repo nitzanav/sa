@@ -26,6 +26,15 @@ Re-check one published cell before trusting an extension. Analyst >2 · proj >20
 The stem is `simulation_<words>_<timestamp>_optimize`. `<timestamp>` comes from `run_clock()`, shape `2026-10-17_1332_UTC+3`. `<words>` is a few kebab-case words before the timestamp that say what the sweep is, for example `7d-coarse-grid`. Write all four under `VectorBT/` before finishing:
 
 1. `simulation_<words>_<timestamp>_optimize.py` — byte copy of `optimize.py` as executed. If the command has arguments, also write `simulation_<words>_<timestamp>_optimize.sh` with that exact command.
-2. `simulation_<words>_<timestamp>_optimize.md` — static report whose conclusion names the winning sell, buy, return on invested, stock P&L, signals, win rate, and closed/open lots.
+2. `simulation_<words>_<timestamp>_optimize.md` — static report whose conclusion names the winning sell, buy, return on invested, stock P&L, signals, win rate, closed/open lots, and lot-day exposure.
 3. `simulation_<words>_<timestamp>_optimize.tsx` — canvas source. Also save the same source as `~/.cursor/projects/<workspace>/canvases/simulation_<words>_<timestamp>_optimize.canvas.tsx` so it opens beside chat. If a canvas for this run exists under another name, save it under this stem. Link the `.canvas.tsx` path in the reply. The table is the merged one in `VectorBT/optimize.md`: `%` and `$` sub-cells, yellow-to-red scale, symbol and signal columns, parameter pills, Show filter, and Min / Avg / Max on both axes.
 4. `simulation_<words>_<timestamp>_optimize.csv` — one row per lot for every combo in the report, columns listed in `VectorBT/optimize.md`.
+
+## Lot-day exposure
+
+The conclusion states these four figures for the winning combination. Compute them from the lots, not from the price-cache period. An open lot runs through the last quote day.
+
+- **Trade range:** first buy date → last sell date, written `from … to …`.
+- **Days exposed:** distinct calendar days on which at least one lot was open. Two lots open on the same day count as one day.
+- **Lot-days:** sum of the days each lot was held. One lot held 3 days, another held 1 day, and another held 3 days is 6 lot-days. Overlapping days count once per lot.
+- **Average lot amount:** mean dollar size of the lots opened.
