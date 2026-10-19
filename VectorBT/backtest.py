@@ -225,6 +225,75 @@ def write_report(path, rows, info):
     print(f"Wrote {path}")
 
 
+def _calendar_span(buy, sell):
+    start = pd.Timestamp(buy).normalize()
+    end = pd.Timestamp(sell).normalize()
+    if end < start:
+        start, end = end, start
+    return {start + pd.Timedelta(days=i) for i in range(int((end - start).days) + 1)}
+
+
+def exposure_fields(index, positions, portfolio):
+    """Trade window and lot-day exposure for one combo.
+
+    days_exposed counts distinct calendar days with at least one lot open.
+    lot_days sums each lot's calendar hold, so overlapping lots count again:
+    a 3-day lot, a 1-day lot, and a 3-day lot are 6 lot-days.
+    An open lot runs through the last quote day.
+    avg_lot_amount is the mean dollars used to open a lot.
+    """
+    empty = {
+        "trade_from": "",
+        "trade_to": "",
+        "days_exposed": 0,
+        "lot_days": 0,
+        "avg_lot_amount": 0.0,
+    }
+    if positions is None or len(positions) == 0:
+        return empty
+    last = pd.Timestamp(bar_dates(index)[-1]).strftime("%Y-%m-%d")
+    covered = set()
+    lot_days = 0
+    starts = []
+    ends = []
+    statuses = positions["status"] if "status" in positions.columns else [""] * len(positions)
+    for buy, sell, status in zip(positions["date_buy"], positions["date_sell"], statuses):
+        if pd.isna(buy) or buy == "":
+            continue
+        open_lot = str(status).lower() == "open"
+        if pd.isna(sell) or sell == "" or (open_lot and str(sell) < last):
+            sell = last
+        buy_day = pd.Timestamp(buy).strftime("%Y-%m-%d")
+        sell_day = pd.Timestamp(sell).strftime("%Y-%m-%d")
+        days = _calendar_span(buy_day, sell_day)
+        covered.update(days)
+        lot_days += len(days)
+        starts.append(buy_day)
+        ends.append(sell_day)
+    trade_from = min(starts)
+    trade_to = max(ends)
+    notionals = []
+    trades = portfolio.trades.records_readable
+    if (
+        not trades.empty
+        and "Size" in trades.columns
+        and "Avg Entry Price" in trades.columns
+    ):
+        for _, rec in trades.iterrows():
+            column = str(rec["Column"])
+            if column == SPY or column.startswith(f"{SPY}_"):
+                continue
+            notionals.append(float(rec["Avg Entry Price"]) * abs(float(rec["Size"])))
+    avg_lot = float(sum(notionals) / len(notionals)) if notionals else float(POSITION_VALUE)
+    return {
+        "trade_from": str(trade_from),
+        "trade_to": str(trade_to),
+        "days_exposed": len(covered),
+        "lot_days": int(lot_days),
+        "avg_lot_amount": avg_lot,
+    }
+
+
 def summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positions):
     index = portfolio.wrapper.index
     spy = aligned_spy(spy, index)
@@ -267,6 +336,7 @@ def summary_row(label, portfolio, nav, stocks, spy, init_cash, n_signals, positi
         "max_drawdown_pct": max_drawdown_pct(nav),
         "mean_lot_return_pct": float(positions["return_pct"].mean()) if len(positions) else 0.0,
         "mean_vs_spy_pct": float(positions["vs_spy_pct"].mean()) if len(positions) else 0.0,
+        **exposure_fields(index, positions, portfolio),
     }
 
 

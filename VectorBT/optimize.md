@@ -110,4 +110,12 @@ The canvas is one merged table, not separate return and P&L tables. Copy the str
 - Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy. Rows summarize the visible buys for each sell. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 
-4. `simulation_<words>_<timestamp>_optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`.
+4. `simulation_<words>_<timestamp>_optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`, then the combo's `trade_from`, `trade_to`, `days_exposed`, `lot_days`, `avg_lot_amount` repeated on each of its lots.
+
+## Fine grid
+
+Fine neighborhood of the coarse 10d 25% 7.5dd peak. 6 buys × 60 sells. Holds 5/7/10/12 × target 20/25/30/35/40% × drawdown 6/7.5/8.5%, on analyst >2/>3/>4 and projected >25/30/35% around the two best coarse buys:
+
+```bash
+./penv python VectorBT/optimize.py fine --signal-name yahoo-7d-window
+```

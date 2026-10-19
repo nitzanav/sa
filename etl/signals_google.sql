@@ -11,12 +11,12 @@ SELECT
   date,
   ticker,
   AVG(percent) AS average_projected,
-  COUNT(distinct average_projected) AS analyst_projections_count, -- ignore analist with same exact projected price
+  COUNT(distinct projected_price) AS analyst_projections_count, -- ignore analist with same exact projected price
   AVG(ABS(percent - mean_percent)) / ABS(AVG(mean_percent)) AS MAD,
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
-      date, ticker, analyst, percent,
+      date, ticker, analyst, percent, projected_price,
       AVG(percent) OVER (PARTITION BY date, ticker) AS mean_percent
     FROM google_all_symbols
   ) s
