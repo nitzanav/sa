@@ -52,7 +52,7 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * (analyst_projections_count) * (1 - MAD) AS signal_score,
+  average_projected * sqrt(analyst_projections_count) AS signal_score,
   analyst_percent_list
 FROM yahoo_all_symbols_per_ticker_and_date
 WHERE 
@@ -92,15 +92,15 @@ FROM (
 
 -- Buy signals
 SELECT * FROM signals
-WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 3 and average_projected > 20
+WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 2 and average_projected > 20
 ORDER BY signal_percentile DESC;
 
 
-SELECT (signal_percentile * 10)::int * 10, analyst_projections_count, count(*) as c FROM signals
+SELECT (signal_percentile * 5)::int * (100/ 5), count(*) as c FROM signals
 WHERE signal_name = 'yahoo-daily'  and analyst_projections_count > 2 and average_projected > 20
 -- and signal_percentile > 0.9
-group by 1,2
-order by 1,2
+group by 1
+order by 1
 -- ORDER BY signal_percentile DESC
 ;
 

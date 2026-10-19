@@ -52,7 +52,7 @@ SELECT
   average_projected,
   analyst_projections_count,
   MAD,
-  average_projected * (analyst_projections_count) * (1 - MAD) AS signal_score,
+  average_projected * sqrt(analyst_projections_count) AS signal_score,
   analyst_percent_list
 FROM google_all_symbols_per_ticker_and_date
 WHERE 
@@ -83,24 +83,33 @@ SELECT
 FROM (
   SELECT 'google-daily' AS signal_name, *
   FROM signal_score_daily
+  WHERE analyst_projections_count > 2 and average_projected > 10
   UNION ALL
   SELECT 'google-7d-window' AS signal_name, *
   FROM signal_score_7d_window
+  WHERE analyst_projections_count > 2 and average_projected > 10
 ) u;
 
--- Buy signals
+-- Buy signals©
 SELECT * FROM signals
-WHERE signal_name = 'google-daily'  and analyst_projections_count > 3 and average_projected > 20
+WHERE signal_name = 'google-daily'  and analyst_projections_count > 2 and average_projected > 20
 ORDER BY signal_percentile DESC;
 
 
-SELECT (signal_percentile * 10)::int * 10, analyst_projections_count, count(*) as c FROM signals
+SELECT (signal_percentile * 5)::int * (100/ 5), count(*) as c FROM signals
 WHERE signal_name = 'google-daily'  and analyst_projections_count > 2 and average_projected > 20
 -- and signal_percentile > 0.9
-group by 1,2
-order by 1,2
+group by 1
+order by 1
 -- ORDER BY signal_percentile DESC
 ;
 
 
-select date, ticker, percent, count(*) as c from google_all_symbols where percent is not null group by 1,2,3 having count(*) > 1 order by 4 desc
+SELECT 
+count(distinct ticker) as c
+FROM signals 
+WHERE signal_name = 'google-daily'  and analyst_projections_count > 2 and average_projected > 10
+
+-- and signal_percentile > 0.9
+-- ORDER BY signal_percentile DESC
+;
