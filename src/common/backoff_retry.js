@@ -17,7 +17,7 @@ export function backoffRetry(functionToRetry, retryConfig = {}) {
       try {
         return await functionToRetry(...args);
       } catch (error) {
-        if (attempt === maxAttempts) throw error;
+        if (attempt === maxAttempts || error?.retry === false) throw error;
         const wait = jitter(delayMs);
         logger.log({ message: "retry", operationName, attempt, wait, error });
         await sleep(wait);

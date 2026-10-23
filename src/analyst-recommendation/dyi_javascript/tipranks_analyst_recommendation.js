@@ -60,6 +60,30 @@ function jsonRpcError(error) {
   return new Error(`TipRanks JSON-RPC error: ${message}`);
 }
 
+function toolErrorText(result) {
+  const parts = Array.isArray(result?.content) ? result.content : [];
+  const text = parts
+    .filter((part) => part && part.type === "text" && typeof part.text === "string")
+    .map((part) => part.text.trim())
+    .filter(Boolean)
+    .join(" ");
+  const message = text || "unknown";
+  return message.length > 300 ? `${message.slice(0, 300)}…` : message;
+}
+
+export function isTipRanksQuotaError(error) {
+  return error instanceof Error && error.message.includes("tool-call limit");
+}
+
+function throwIfTipRanksFailure(message) {
+  if (message?.error) throw jsonRpcError(message.error);
+  if (message?.result?.isError === true) {
+    const error = new Error(`TipRanks tool error: ${toolErrorText(message.result)}`);
+    if (isTipRanksQuotaError(error)) error.retry = false;
+    throw error;
+  }
+}
+
 function scrubError(error, apiKey) {
   if (!(error instanceof Error)) return new Error("TipRanks request failed");
   if (apiKey && error.message.includes(apiKey)) {
@@ -247,7 +271,7 @@ async function readEventStreamJsonRpc(response) {
       const message = drainSse(state);
       if (message) {
         await reader.cancel();
-        if (message.error) throw jsonRpcError(message.error);
+        throwIfTipRanksFailure(message);
         return JSON.stringify(message);
       }
       if (done) break;
@@ -291,8 +315,8 @@ async function performTipRanksRequest(httpConfig, apiKey) {
   } catch {
     return text;
   }
-  if (parsed && typeof parsed === "object" && !Array.isArray(parsed) && parsed.error) {
-    throw jsonRpcError(parsed.error);
+  if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+    throwIfTipRanksFailure(parsed);
   }
   return text;
 }

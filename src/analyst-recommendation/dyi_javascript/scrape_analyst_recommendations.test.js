@@ -473,6 +473,57 @@ test("skip_existing reuses symbol json and does not refetch", async () => {
   }
 });
 
+test("tipranks monthly quota stops the scrape instead of calling the next symbol", async () => {
+  const cwd = mkdtempSync(join(tmpdir(), "tipranks-quota-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\n",
+  );
+  writeFileSync(
+    join(cwd, "data/symbols_exchange.csv"),
+    "ticker,exchange\nAAA,NYSE\nBBB,NASDAQ\n",
+  );
+  const previousKey = process.env.TIP_RANKS_API_KEY;
+  process.env.TIP_RANKS_API_KEY = "tipranks-test-key-9f3a";
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    headers: {
+      get: (name) => (name.toLowerCase() === "content-type" ? "application/json" : null),
+    },
+    text: async () =>
+      JSON.stringify({
+        jsonrpc: "2.0",
+        id: 1,
+        result: {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "You've reached your TipRanks API monthly tool-call limit (50/50 calls on the 'free' plan).",
+            },
+          ],
+        },
+      }),
+  });
+  try {
+    await expect(
+      scrapeAnalystRecommendations([tipranksAnalystRecommendationSource]),
+    ).rejects.toThrow("tool-call limit");
+    expect(fetchSpy).toHaveBeenCalledTimes(1);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/tipranks/BBB.json"))).toBe(false);
+  } finally {
+    if (previousKey === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previousKey;
+    fetchSpy.mockRestore();
+    process.chdir(originalCwd);
+  }
+});
+
 test("scrapeAnalystRecommendations tipranks writes only tipranks outputs and skips existing json", async () => {
   const cwd = mkdtempSync(join(tmpdir(), "tipranks-pipeline-"));
   mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });

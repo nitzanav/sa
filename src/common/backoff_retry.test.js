@@ -59,6 +59,18 @@ test("backoffRetry throws after last attempt", async () => {
   spy.mockRestore();
 });
 
+test("backoffRetry does not retry an error marked retry false", async () => {
+  const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
+  const error = new Error("monthly tool-call limit");
+  error.retry = false;
+  const fn = jest.fn().mockRejectedValue(error);
+  const retried = backoffRetry(fn, { initialDelay: 0, maxAttempts: 3 });
+  await expect(retried()).rejects.toThrow("monthly tool-call limit");
+  expect(fn).toHaveBeenCalledTimes(1);
+  expect(spy.mock.calls.map(([line]) => String(line)).join("")).not.toContain('"message":"retry"');
+  spy.mockRestore();
+});
+
 test("backoffRetry works without operationName", async () => {
   const spy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   let calls = 0;

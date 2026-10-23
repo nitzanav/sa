@@ -1,5 +1,5 @@
 import { jest } from "@jest/globals";
-import { existsSync, mkdtempSync, readFileSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { logger } from "../../common/logger.js";
@@ -344,6 +344,62 @@ test("concatenates text parts in order and accepts an already-parsed array", asy
       ["First", "Reiterated"],
       ["Second", "Upgraded"],
     ]);
+  });
+});
+
+test("a warm response cache does not fetch or require the API key", async () => {
+  const fileName = tempCachePath();
+  const url = tipranksAnalystRecommendationUrl("MMM");
+  const body = rpcBody([], JSON.stringify({ ticker: "MMM", ratings: [exampleRating()] }));
+  writeFileSync(fileName, body);
+  const previous = process.env.TIP_RANKS_API_KEY;
+  delete process.env.TIP_RANKS_API_KEY;
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockRejectedValue(new Error("fetch must not run"));
+  try {
+    await expect(
+      fetchTipRanksAnalystRecommendation(
+        url,
+        { initialDelay: 0, maxAttempts: 1 },
+        { fileName },
+      ),
+    ).resolves.toBe(body);
+    expect(fetchSpy).not.toHaveBeenCalled();
+  } finally {
+    if (previous === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previous;
+    fetchSpy.mockRestore();
+  }
+});
+
+test("MCP isError is not cached", async () => {
+  const fileName = tempCachePath();
+  const url = tipranksAnalystRecommendationUrl("AAPL");
+  await withApiKey(async () => {
+    const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue(
+      jsonResponse(
+        JSON.stringify({
+          jsonrpc: "2.0",
+          id: 1,
+          result: {
+            isError: true,
+            content: [{ type: "text", text: "rate limit exceeded" }],
+          },
+        }),
+      ),
+    );
+    try {
+      await expect(
+        fetchTipRanksAnalystRecommendation(
+          url,
+          { initialDelay: 0, maxAttempts: 1 },
+          { fileName },
+        ),
+      ).rejects.toThrow("TipRanks tool error: rate limit exceeded");
+      expect(fetchSpy).toHaveBeenCalledTimes(1);
+      expect(existsSync(fileName)).toBe(false);
+    } finally {
+      fetchSpy.mockRestore();
+    }
   });
 });
 
