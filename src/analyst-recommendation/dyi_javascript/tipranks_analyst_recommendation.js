@@ -126,8 +126,18 @@ function ratingsFromText(text) {
   } catch {
     throw new Error("TipRanks ratings text is not JSON");
   }
-  if (!Array.isArray(parsed)) throw new Error("TipRanks ratings text is not an array");
-  return parsed;
+  if (Array.isArray(parsed)) return parsed;
+  if (parsed && typeof parsed === "object" && Array.isArray(parsed.ratings)) {
+    return parsed.ratings;
+  }
+  throw new Error("TipRanks ratings text is not an array");
+}
+
+function cleanLabel(value) {
+  return String(value ?? "")
+    .replace(/\p{Cf}/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function ratingsFromResult(result) {
@@ -175,10 +185,11 @@ function parseJsonRpcObject(raw) {
 }
 
 async function listingFromTipRanksRating(rating, symbol) {
-  const analystName = String(rating?.analystName ?? "").trim();
-  const firm = String(rating?.firmName ?? "").trim();
+  const analystName = cleanLabel(rating?.analystName);
+  const firm = cleanLabel(rating?.firmName);
   const priceTarget = positivePriceTarget(rating?.priceTarget);
   const date = padUsDate(rating?.recommendationDate);
+  const recommendation = rating?.recommendation ?? rating?.rating;
   const projected =
     priceTarget == null
       ? null
@@ -186,8 +197,8 @@ async function listingFromTipRanksRating(rating, symbol) {
   return {
     analyst: analystName || firm,
     firm,
-    recommendation: rating?.rating == null ? null : String(rating.rating).trim(),
-    action: mapTipRanksAction(rating?.action),
+    recommendation: recommendation == null ? null : cleanLabel(recommendation),
+    action: mapTipRanksAction(rating?.analystAction ?? rating?.action),
     price_target: priceTarget == null ? null : formatUsdPriceTarget(priceTarget),
     projected,
     date,
@@ -286,9 +297,13 @@ async function performTipRanksRequest(httpConfig, apiKey) {
   return text;
 }
 
+function tipRanksApiKey() {
+  return process.env.TIP_RANKS_API_KEY || "";
+}
+
 const requestTipRanksAnalystRecommendation = log(
   async function requestTipRanksAnalystRecommendation(httpConfig) {
-    const apiKey = process.env.TIPRANKS_API_KEY;
+    const apiKey = tipRanksApiKey();
     try {
       return await performTipRanksRequest(httpConfig, apiKey);
     } catch (error) {
@@ -300,7 +315,7 @@ const requestTipRanksAnalystRecommendation = log(
 export async function fetchTipRanksAnalystRecommendation(url, retryConfig, cacheConfig) {
   // A cache hit returns before this runs. Missing key stays outside backoffRetry.
   const cached = fileCache(async (httpConfig) => {
-    if (!process.env.TIPRANKS_API_KEY) throw new Error("TIPRANKS_API_KEY is not set");
+    if (!tipRanksApiKey()) throw new Error("TIP_RANKS_API_KEY is not set");
     return backoffRetry(rateLimit(requestTipRanksAnalystRecommendation), retryConfig)(httpConfig);
   }, cacheConfig);
   return cached({ url });

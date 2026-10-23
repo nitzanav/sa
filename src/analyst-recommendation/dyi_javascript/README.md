@@ -36,15 +36,25 @@ make analyst-recommendation-js URL='https://www.google.com/finance/beta/quote/NV
 make analyst-recommendation-js URL='https://finance.yahoo.com/quote/NVDA/analyst-insights/'
 make scrape_analyst_recommendations
 SOURCE=yahoo make scrape_analyst_recommendations
+SOURCE=google make scrape_analyst_recommendations
 SOURCE=tipranks make scrape_analyst_recommendations
+NODE_CONFIG='{"analyst_recommendations": {"source": "tipranks"}}' make scrape_analyst_recommendations
 SKIP_EXISTING=1 make scrape_analyst_recommendations
 SKIP_EXISTING=1 SOURCE=tipranks make scrape_analyst_recommendations
 make analyst-recommendation-js-test
 ```
 
-`TIPRANKS_API_KEY` is required for a live TipRanks fetch. A cache hit does not need
-it. The key is read inside the request, after the cache lookup, and is not part of
-`urlFor` (that URL only carries `ticker`). Do not put the key in `config/default.json`.
+TipRanks uses the same `make scrape_analyst_recommendations` target as Yahoo and Google.
+`SOURCE=tipranks` (or `NODE_CONFIG` `analyst_recommendations.source`) selects it and
+does not fetch the other sources. With no `SOURCE`, the target runs Google, Yahoo,
+and TipRanks. The default symbol limit is `analyst_recommendations.limit` in
+`config/default.json` (currently 3).
+
+A live TipRanks fetch reads `TIP_RANKS_API_KEY` from `.env`. The Makefile loads
+`.env` and exports it, so the key is not passed on the command line. A cache hit
+does not need it. The key is read inside the request, after the cache lookup, and
+is not part of `urlFor` (that URL only carries `ticker`). Do not put the key in
+`config/default.json`.
 
 `SOURCE=tipranks make write_joint_analyst_recommendations` joins only TipRanks and
 replaces the joint CSVs with TipRanks columns only, the same way

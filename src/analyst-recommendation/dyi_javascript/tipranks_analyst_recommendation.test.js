@@ -71,13 +71,13 @@ function jsonResponse(body, contentType = "application/json") {
 }
 
 async function withApiKey(fn) {
-  const previous = process.env.TIPRANKS_API_KEY;
-  process.env.TIPRANKS_API_KEY = API_KEY;
+  const previous = process.env.TIP_RANKS_API_KEY;
+  process.env.TIP_RANKS_API_KEY = API_KEY;
   try {
     return await fn();
   } finally {
-    if (previous === undefined) delete process.env.TIPRANKS_API_KEY;
-    else process.env.TIPRANKS_API_KEY = previous;
+    if (previous === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previous;
   }
 }
 
@@ -105,6 +105,57 @@ test("parseTipRanksAnalystRecommendation maps the example rating", async () => {
     } finally {
       stderrSpy.mockRestore();
     }
+  });
+});
+
+test("parseTipRanksAnalystRecommendation reads the live ratings object", async () => {
+  await withOpenPrice(async (openSpy) => {
+    const payload = {
+      ticker: "MMM",
+      ratings: [
+        {
+          analystName: "Joe O'Dea",
+          firmName: "Wells Fargo",
+          recommendation: "Hold",
+          analystAction: "reiterated",
+          recommendationDate: "10/22/2026",
+          priceTarget: 195,
+        },
+        {
+          analystName: "Brandon Knutson\u200f",
+          firmName: "Deutsche Bank ",
+          recommendation: "Hold",
+          analystAction: "maintained",
+          recommendationDate: "10/21/2026",
+        },
+      ],
+    };
+    const rows = await parseTipRanksAnalystRecommendation(
+      rpcBody([], JSON.stringify(payload)),
+      "MMM",
+    );
+    expect(rows).toEqual([
+      {
+        analyst: "Joe O'Dea",
+        firm: "Wells Fargo",
+        recommendation: "Hold",
+        action: "Reiterated",
+        price_target: "$195.00",
+        projected: "-10.9%",
+        date: "10/22/2026",
+      },
+      {
+        analyst: "Brandon Knutson",
+        firm: "Deutsche Bank",
+        recommendation: "Hold",
+        action: "Maintained",
+        price_target: null,
+        projected: null,
+        date: "10/21/2026",
+      },
+    ]);
+    expect(openSpy).toHaveBeenCalledTimes(1);
+    expect(openSpy).toHaveBeenCalledWith("MMM", "10/22/2026");
   });
 });
 
@@ -362,11 +413,11 @@ test("non-200 throws HTTP 500 and does not write the cache file", async () => {
   });
 });
 
-test("missing TIPRANKS_API_KEY throws once and does not fetch", async () => {
+test("missing TIP_RANKS_API_KEY throws once and does not fetch", async () => {
   const fileName = tempCachePath();
   const url = tipranksAnalystRecommendationUrl("AAPL");
-  const previous = process.env.TIPRANKS_API_KEY;
-  delete process.env.TIPRANKS_API_KEY;
+  const previous = process.env.TIP_RANKS_API_KEY;
+  delete process.env.TIP_RANKS_API_KEY;
   const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse("{}"));
   const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
   logger.clearContext();
@@ -377,15 +428,15 @@ test("missing TIPRANKS_API_KEY throws once and does not fetch", async () => {
         { initialDelay: 0, maxAttempts: 3, operationName: "tipranks_missing_key" },
         { fileName },
       ),
-    ).rejects.toThrow("TIPRANKS_API_KEY is not set");
+    ).rejects.toThrow("TIP_RANKS_API_KEY is not set");
     expect(fetchSpy).not.toHaveBeenCalled();
     expect(stderrSpy.mock.calls.map(([line]) => String(line)).join("")).not.toContain(
       '"message":"retry"',
     );
     expect(existsSync(fileName)).toBe(false);
   } finally {
-    if (previous === undefined) delete process.env.TIPRANKS_API_KEY;
-    else process.env.TIPRANKS_API_KEY = previous;
+    if (previous === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previous;
     fetchSpy.mockRestore();
     stderrSpy.mockRestore();
     logger.clearContext();

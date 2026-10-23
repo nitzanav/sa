@@ -498,8 +498,8 @@ test("scrapeAnalystRecommendations tipranks writes only tipranks outputs and ski
     id: 1,
     result: { content: [{ type: "text", text: JSON.stringify([rating]) }] },
   });
-  const previousKey = process.env.TIPRANKS_API_KEY;
-  process.env.TIPRANKS_API_KEY = "tipranks-test-key-9f3a";
+  const previousKey = process.env.TIP_RANKS_API_KEY;
+  process.env.TIP_RANKS_API_KEY = "tipranks-test-key-9f3a";
   const originalCwd = process.cwd();
   process.chdir(cwd);
   const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
@@ -547,8 +547,8 @@ test("scrapeAnalystRecommendations tipranks writes only tipranks outputs and ski
     expect(fetchSpy).not.toHaveBeenCalled();
     expect(readFileSync(aaaJsonPath, "utf8")).toBe(aaaJson);
   } finally {
-    if (previousKey === undefined) delete process.env.TIPRANKS_API_KEY;
-    else process.env.TIPRANKS_API_KEY = previousKey;
+    if (previousKey === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previousKey;
     openSpy.mockRestore();
     fetchSpy.mockRestore();
     process.chdir(originalCwd);

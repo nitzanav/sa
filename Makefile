@@ -84,7 +84,7 @@ symbols_exchange:
 #   SOURCE=tipranks make scrape_analyst_recommendations
 #   SKIP_EXISTING=1 SOURCE=tipranks make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
-# TipRanks live fetches require TIPRANKS_API_KEY. Cache hits do not. Do not put the key in config.
+# TipRanks live fetches read TIP_RANKS_API_KEY from .env (make exports it). Cache hits do not. Do not put the key in config.
 SOURCE ?=
 SKIP_EXISTING ?=
 
