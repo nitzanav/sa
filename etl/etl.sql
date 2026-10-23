@@ -16,11 +16,16 @@ TRUNCATE _load;
 
 \copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
 INSERT INTO raw_signals SELECT 'google', * FROM _load;
+TRUNCATE _load;
 
--- Pool both sources. Existing views then emit all_sources-daily and all_sources-7d-window.
+\copy _load FROM 'data/analyst_recomendation/tipranks/all_symbols.csv' CSV HEADER
+INSERT INTO raw_signals SELECT 'tipranks', * FROM _load;
+
+-- Pool Yahoo and TipRanks only. Views then emit all_sources-daily and all_sources-7d-window.
 INSERT INTO raw_signals
 SELECT 'all_sources', date, ticker, analyst, percent, projected_price
-FROM raw_signals;
+FROM raw_signals
+WHERE source IN ('yahoo', 'tipranks');
 
 -- Drop old views so columns can be re-ordered / renamed cleanly.
 DROP VIEW IF EXISTS signals CASCADE;
@@ -121,4 +126,4 @@ FROM (
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'all_sources-daily', 'all_sources-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
