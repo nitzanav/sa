@@ -10,18 +10,42 @@ TRUNCATE TABLE raw_signals;
 
 CREATE TEMP TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
 
+CREATE TEMP TABLE _raw_signals (
+  source varchar,
+  date date,
+  ticker varchar,
+  analyst text,
+  percent real,
+  projected_price real
+);
+
 \copy _load FROM 'data/analyst_recomendation/yahoo/all_symbols.csv' CSV HEADER
-INSERT INTO raw_signals SELECT 'yahoo', * FROM _load;
+INSERT INTO _raw_signals SELECT 'yahoo', * FROM _load;
 TRUNCATE _load;
 
-\copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
-INSERT INTO raw_signals SELECT 'google', * FROM _load;
-TRUNCATE _load;
+-- Google is paused. Uncomment to load it again.
+-- \copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
+-- INSERT INTO _raw_signals SELECT 'google', * FROM _load;
+-- TRUNCATE _load;
 
 \copy _load FROM 'data/analyst_recomendation/tipranks/all_symbols.csv' CSV HEADER
-INSERT INTO raw_signals SELECT 'tipranks', * FROM _load;
+INSERT INTO _raw_signals SELECT 'tipranks', * FROM _load;
 
--- Pool Yahoo and TipRanks only. Views then emit all_sources-daily and all_sources-7d-window.
+-- Shared window: later of the two earliest dates through earlier of the two latest dates.
+-- Keep only the overlap, then pool those rows as all_sources.
+WITH _source_overlap AS (
+  SELECT
+    GREATEST(y.min_date, t.min_date) AS start_date,
+    LEAST(y.max_date, t.max_date) AS end_date
+  FROM
+    (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'yahoo') y,
+    (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'tipranks') t
+)
+INSERT INTO raw_signals
+SELECT r.*
+FROM _raw_signals r
+JOIN _source_overlap o ON r.date BETWEEN o.start_date AND o.end_date;
+
 INSERT INTO raw_signals
 SELECT 'all_sources', date, ticker, analyst, percent, projected_price
 FROM raw_signals
@@ -126,4 +150,4 @@ FROM (
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
