@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Vijay Rakesh",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2050.00",
+    "projected": "+52%",
+    "date": "10/18/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2100.00",
+    "projected": "+25.8%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$3000.00",
+    "projected": "+73.9%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Kevin Cassidy",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$2400.00",
+    "projected": "+36.6%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2745.00",
+    "projected": "+60.2%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Harlan Sur",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$2250.00",
+    "projected": "+36.6%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Blayne Curtis",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1750.00",
+    "projected": "+6.3%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Matt Bryson",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2000.00",
+    "projected": "+21.4%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "C J Muse",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2900.00",
+    "projected": "+76.1%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1550.00",
+    "projected": "-5.9%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Joseph Moore",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1750.00",
+    "projected": "+6.3%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Thomas O'Malley",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2300.00",
+    "projected": "+39.7%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2200.00",
+    "projected": "+64.2%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Srini Pajjuri",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1600.00",
+    "projected": "+19.4%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$2500.00",
+    "projected": "+86.6%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2800.00",
+    "projected": "+109%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$1600.00",
+    "projected": "+22.2%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Ben Reitzes",
+    "firm": "Melius Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2350.00",
+    "projected": "+64.1%",
+    "date": "05/18/2026"
+  },
+  {
+    "analyst": "Melissa Fairbanks",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1470.00",
+    "projected": "+38.8%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "CTBC Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$660.00",
+    "projected": "+12.1%",
+    "date": "02/02/2026"
+  },
+  {
+    "analyst": "Steven Fox",
+    "firm": "Fox Advisors",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$280.00",
+    "projected": null,
+    "date": "11/07/2025"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "David Paige",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+12.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ari Klein",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "+13.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+31.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Maher Yaghi",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "+13.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$98.00",
+    "projected": "+22.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Richard Choe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-0.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Eric Luebchow",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-0.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Cameron McVeigh",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+6.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+31.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+7.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Michael Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+6.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Madison Rezaei",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+19.9%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Matthew Niknam",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+15.9%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Gregory P Miller",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+58.8%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Michael Funk",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+28.6%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Andrew Rosivach CFA",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$94.00",
+    "projected": "+3.2%",
+    "date": "05/20/2026"
+  },
+  {
+    "analyst": "Ric Prentiss",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+22.5%",
+    "date": "01/28/2026"
+  },
+  {
+    "analyst": "Jonathan Chaplin",
+    "firm": "New Street",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$93.00",
+    "projected": "+5.8%",
+    "date": "01/05/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": null,
+    "date": "12/16/2025"
+  }
+]

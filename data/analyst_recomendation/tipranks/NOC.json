@@ -1,0 +1,200 @@
+[
+  {
+    "analyst": "Noah Poponak",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+3.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Anthony Valentini",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$430.00",
+    "projected": "-15%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "John Godyn",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$667.00",
+    "projected": "+31.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$698.00",
+    "projected": "+38%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Kristine Liwag",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$765.00",
+    "projected": "+51.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Peter Arment",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$675.00",
+    "projected": "+33.4%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$655.00",
+    "projected": "+29.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Kenneth Herbert",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+8.7%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Michael Ciarmoli",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$640.00",
+    "projected": "+26.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "David E. Strauss",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$620.00",
+    "projected": "+22.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ronald Epstein",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+48.2%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$556.00",
+    "projected": "+14.5%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$540.00",
+    "projected": "+12.5%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Margaret Schooley",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$680.00",
+    "projected": "+42.7%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Sheila Kahyaoglu",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+10.6%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Andre Madrid",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$815.00",
+    "projected": "+49.3%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$700.00",
+    "projected": "+30.3%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Seth Seifman",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+11.7%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Scott Deuschle",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$615.00",
+    "projected": "+17.6%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Richard Safran",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$772.00",
+    "projected": "+16.8%",
+    "date": "01/22/2026"
+  },
+  {
+    "analyst": "Peter Skibitski",
+    "firm": "Alembic Global",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$662.00",
+    "projected": null,
+    "date": "12/15/2025"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$710.00",
+    "projected": null,
+    "date": "11/18/2025"
+  }
+]

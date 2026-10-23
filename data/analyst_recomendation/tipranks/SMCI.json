@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wedbush",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+16%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ruplu Bhattacharya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$38.00",
+    "projected": "+10.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+33.4%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Sajal Dogra",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+65.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "-1.4%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+30.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$42.00",
+    "projected": "+8.6%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Vijay Rakesh",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$43.00",
+    "projected": "-1.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$15.00",
+    "projected": "-60.3%",
+    "date": "09/12/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+14.5%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Nehal Chokshi",
+    "firm": "Northland Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+12.3%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "George Notter",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$39.00",
+    "projected": "+11.5%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "GF Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$48.00",
+    "projected": "+48.5%",
+    "date": "06/22/2026"
+  },
+  {
+    "analyst": "Jonathan Tanwanteng",
+    "firm": "CJS Securities",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Simon Leopold",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+43.1%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Rob Chang CFA",
+    "firm": "KGI Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$60.00",
+    "projected": null,
+    "date": "11/05/2025"
+  }
+]

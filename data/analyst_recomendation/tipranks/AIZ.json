@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "Thomas McJoynt Griffith",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+21.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+12.7%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$329.00",
+    "projected": "+16%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Charlie Lederer",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+12%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Brian Meredith",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$331.00",
+    "projected": "+13.9%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Mark Hughes",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+18%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Jeff Schmitt",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/04/2026"
+  }
+]

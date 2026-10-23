@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Chris Schott",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$750.00",
+    "projected": "+35.5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Matthew Dellatorre",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$740.00",
+    "projected": "+37.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Scott Schoenhaus",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Ryan Daniels",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Andrea Alfonso",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$670.00",
+    "projected": "+31%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Michael Ryskin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$665.00",
+    "projected": "+16.8%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$675.00",
+    "projected": "+18.6%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$710.00",
+    "projected": "+19.4%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$805.00",
+    "projected": "+36.4%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Daniel Grosslight",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$670.00",
+    "projected": "+13.5%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Keith Devas",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$792.00",
+    "projected": "+41%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "David Westenberg",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+15.8%",
+    "date": "02/09/2026"
+  },
+  {
+    "analyst": "Mark Massaro",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$800.00",
+    "projected": "+25.9%",
+    "date": "02/03/2026"
+  },
+  {
+    "analyst": "Daniel Clark",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$785.00",
+    "projected": null,
+    "date": "11/03/2025"
+  }
+]

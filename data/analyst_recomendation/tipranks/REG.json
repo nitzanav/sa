@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+14.4%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+7.5%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+21.4%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Greg McGinniss",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+13%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+16.6%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Michael Gorman",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+18.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+16%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Haendel St. Juste",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+4.2%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Michael Mueller",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$83.00",
+    "projected": "+13.8%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Michael Griffin CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+10.7%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Todd Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+10.5%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Samir Khanal",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+8.3%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Floris van Dijkum",
+    "firm": "Ladenburg Thalmann & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+6%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "RJ Milligan",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+7.6%",
+    "date": "06/29/2026"
+  },
+  {
+    "analyst": "Omotayo Okusanya",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$85.00",
+    "projected": "+9%",
+    "date": "05/29/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$82.00",
+    "projected": "+4%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Wes Golladay",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+10%",
+    "date": "02/10/2026"
+  }
+]

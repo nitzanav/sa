@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Brian Meredith",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$222.00",
+    "projected": "+18.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$218.00",
+    "projected": "+16.2%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+6.6%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Meyer Shields",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$201.00",
+    "projected": "+7.1%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$190.00",
+    "projected": "+1.3%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Matthew Heimermann",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$203.00",
+    "projected": "+8.2%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Alex Scott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$206.00",
+    "projected": "+9.8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Elyse Greenspan",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "+5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Robert Cox CFA",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$199.00",
+    "projected": "+8.9%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Rowland Mayor",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+9.4%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$180.00",
+    "projected": "-1.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Michael Zaremski",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$203.00",
+    "projected": "+4.7%",
+    "date": "08/25/2026"
+  },
+  {
+    "analyst": "Harry Fong",
+    "firm": "Roth MKM",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+11.1%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$234.00",
+    "projected": "+30%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Adam Klauber",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "+3%",
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Ryan Tunis",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$218.00",
+    "projected": "+22.8%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Gregory Peters",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$225.00",
+    "projected": "+27%",
+    "date": "02/17/2026"
+  },
+  {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": null,
+    "date": "11/03/2025"
+  }
+]

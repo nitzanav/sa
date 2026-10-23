@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$219.00",
+    "projected": "-5.4%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$300.00",
+    "projected": "+29.3%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+6.8%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Krish Sankar",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+11.2%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Ananda Baruah",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+20.1%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Steven Wahrhaftig",
+    "firm": "Wedbush",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "-19.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Jason Ader",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Param Singh",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$190.00",
+    "projected": "-9.5%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$220.00",
+    "projected": "+4.7%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$191.00",
+    "projected": "-3.6%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "+21.8%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Nehal Chokshi",
+    "firm": "Northland Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$187.00",
+    "projected": "+15.5%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+20.4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$171.00",
+    "projected": "+5.6%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+20.4%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$190.00",
+    "projected": "+17.3%",
+    "date": "09/03/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Roth MKM",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/26/2025"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2025"
+  }
+]

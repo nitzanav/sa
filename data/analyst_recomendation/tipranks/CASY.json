@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Bradley Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$780.00",
+    "projected": "+21.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Irene Nattel",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$825.00",
+    "projected": "+28.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Corey Tarlowe",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$850.00",
+    "projected": "+41%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Greg Melich",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$775.00",
+    "projected": "+23.3%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Krisztina Katai",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$933.00",
+    "projected": "+47.6%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Mark Carden",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$720.00",
+    "projected": "+13.9%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Pooran Sharma",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+18.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Thomas Palmer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$687.00",
+    "projected": "+8.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Kelly Bania",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$810.00",
+    "projected": "+28.2%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Bobby Griffin",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$750.00",
+    "projected": "+18.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Edward Kelly",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$750.00",
+    "projected": "+18.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Lisa Lewandowski",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$875.00",
+    "projected": "+38.4%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+19.5%",
+    "date": "09/09/2026"
+  },
+  {
+    "analyst": "Phillip Blee",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Chuck Cerankosky",
+    "firm": "Northcoast Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$950.00",
+    "projected": "+14.4%",
+    "date": "07/13/2026"
+  },
+  {
+    "analyst": "Dan Guglielmo",
+    "firm": "Capital One Financial",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$896.00",
+    "projected": "+6%",
+    "date": "06/22/2026"
+  },
+  {
+    "analyst": "Stephen J McManus",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$730.00",
+    "projected": "+13.6%",
+    "date": "01/20/2026"
+  }
+]

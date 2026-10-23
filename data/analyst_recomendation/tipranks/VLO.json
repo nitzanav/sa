@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "John Royall",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "-2.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Vikram Bagri",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$490.00",
+    "projected": "+9.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Theresa Chen",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$443.00",
+    "projected": "-1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jason Gabelman",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "-10.6%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Sam Margolin",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$489.00",
+    "projected": "+9.3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Jean Ann Salisbury",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$465.00",
+    "projected": "+3.9%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Duladeth Bik",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$436.00",
+    "projected": "-2.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Justin Jenkins",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+18.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$439.00",
+    "projected": "+2.1%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Lloyd Byrne",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$394.00",
+    "projected": "-8.4%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Nitin Kumar CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$434.00",
+    "projected": "+0.9%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Joe Laetsch",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$411.00",
+    "projected": "-2.9%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Phillip Jungwirth",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$455.00",
+    "projected": "+9.3%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Manav Gupta",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+13.8%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Sergey Pigarev",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$276.00",
+    "projected": "-11.5%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Betty Zhang",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$226.00",
+    "projected": "-9.7%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Stephen Richardson",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "-0.2%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Doug Leggate",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$203.00",
+    "projected": "-10.5%",
+    "date": "04/21/2026"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$49.00",
+    "projected": "+27.4%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Benjamin Chaiken",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "+40.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Katz",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$37.00",
+    "projected": "-3.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Lizzie Dove",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$41.00",
+    "projected": "+6.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$45.00",
+    "projected": "+17%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Brandt Montour",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+30%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Joseph Stauff",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+22.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+35.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Daniel Politzer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$50.00",
+    "projected": "+30%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Robin M. Farley",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+30.8%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Peter Supino",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Steven Pizzella",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+39.6%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "John DeCree",
+    "firm": "CBRE",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+39.6%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "George Choi",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$73.00",
+    "projected": "+55.7%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Macquarie",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+36.4%",
+    "date": "04/23/2026"
+  }
+]

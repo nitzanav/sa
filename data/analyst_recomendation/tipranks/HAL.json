@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$41.00",
+    "projected": "+23%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Sergey Pigarev",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$40.00",
+    "projected": "+20%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Joe Laetsch",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$40.00",
+    "projected": "+20%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+26.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Stephen Gengaro",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$43.00",
+    "projected": "+29.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Lloyd Byrne",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+41.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "David Anderson",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+53.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Phillip Jungwirth",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+23%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+26.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+29.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Saurabh Pant",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+20%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Keith Mackey",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+38.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Derek Podhaizer",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+26.1%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Scott Gruber",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+31.3%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Bill Selesky",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$40.00",
+    "projected": "+19.2%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Stephen Richardson",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+28.1%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Marc Bianchi",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$47.00",
+    "projected": "+40%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Carlos Escalante",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$34.00",
+    "projected": "0%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Kevin Simpson",
+    "firm": "Griffin",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$47.00",
+    "projected": "+23.6%",
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "James West",
+    "firm": "Melius Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/21/2026"
+  },
+  {
+    "analyst": "Sebastian Erskine",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$35.00",
+    "projected": null,
+    "date": "11/03/2025"
+  }
+]

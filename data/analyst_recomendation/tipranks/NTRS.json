@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+2.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$187.00",
+    "projected": "+12.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Smith -CFA",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$181.00",
+    "projected": "+8.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "+6.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+11.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$194.00",
+    "projected": "+16.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Konrad",
+    "firm": "KBW",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+2.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$194.00",
+    "projected": "+16.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+7%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Scott Siefers",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$175.00",
+    "projected": "+4.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Brennan Hawken",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+11.5%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Glenn Schorr",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+8.2%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Alexander Blostein",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "+0.3%",
+    "date": "07/22/2026"
+  }
+]

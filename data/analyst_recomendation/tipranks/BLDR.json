@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Ryan Merkel",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$60.00",
+    "projected": "+12.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "David Manthey",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+12.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Tyler Batory",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$78.00",
+    "projected": "+45.9%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Sam Reid",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+2.9%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Ketan Mamtora",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+30.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Charles Perron-Piche",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+47.7%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Keith Hughes",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+32.8%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Michael Dahl",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$62.00",
+    "projected": "+14.2%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Michael Rehaut",
+    "firm": "Melius Research",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$52.00",
+    "projected": "-7.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Reuben Garner",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+49.4%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Jay McCanless",
+    "firm": "Citizens JMP",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Collin Verron",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$66.00",
+    "projected": "+0.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Kurt Yinger",
+    "firm": "D.A. Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+3.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+33.8%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Matthew Bouley",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+23.2%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$91.00",
+    "projected": "+38.4%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "W. Andrew Carter",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "-5.4%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Sam Darkatsh",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+25.3%",
+    "date": "05/01/2026"
+  },
+  {
+    "analyst": "Trey Grooms",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+11.3%",
+    "date": "04/27/2026"
+  },
+  {
+    "analyst": "Philip Ng",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$110.00",
+    "projected": null,
+    "date": "12/15/2025"
+  }
+]

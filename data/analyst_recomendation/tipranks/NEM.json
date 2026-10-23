@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Ralph M. Profiti",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+43.1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Tanya Jakusconek",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+29.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Harrison Reynolds",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+34.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Vitaly Kononov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$116.00",
+    "projected": "+0.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Alexander Hacking",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+21.4%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+6.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Anita Soni",
+    "firm": "CIBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$154.00",
+    "projected": "+33.5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Bob Brackett",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+16.3%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Daniel Major",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$155.00",
+    "projected": "+23.2%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Hugo Nicolaci",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$127.50",
+    "projected": "+3.5%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Steven Green",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+4.4%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$145.00",
+    "projected": "+25.2%",
+    "date": "08/16/2026"
+  },
+  {
+    "analyst": "Matt Murphy",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+15.1%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+16.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$146.00",
+    "projected": "+52.4%",
+    "date": "07/05/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+30.9%",
+    "date": "04/17/2026"
+  },
+  {
+    "analyst": "Shane Nagle",
+    "firm": "National Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$130.00",
+    "projected": "+15.5%",
+    "date": "04/16/2026"
+  },
+  {
+    "analyst": "Brian MacArthur",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+12.5%",
+    "date": "01/14/2026"
+  },
+  {
+    "analyst": "Alan Spence",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$97.00",
+    "projected": null,
+    "date": "12/05/2025"
+  }
+]
