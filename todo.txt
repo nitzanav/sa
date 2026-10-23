@@ -2,9 +2,8 @@
 - try "price target mean" × √N - done, result are not good. cancelled
 now check different downdrops before profit and after profit - it only gets worst "30d 50% 7.5dd"
 CHECK WITHOUT last month, the last month posiitons are not finsihed, and wrong optimization decisions happen. We cannot can optimization decisions on last month.
-- ading 7d
-- skill
-- combine google
+
+- combine google [working]
 - other sources => tip ranks
 - smarter sell algos based on analyst recomendations
 - combine 1d + 3d +7d
