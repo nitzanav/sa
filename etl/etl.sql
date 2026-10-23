@@ -1,3 +1,22 @@
+CREATE TABLE IF NOT EXISTS raw_signals (
+  source varchar,
+  date date,
+  ticker varchar,
+  analyst text,
+  percent real,
+  projected_price real
+);
+TRUNCATE TABLE raw_signals;
+
+CREATE TEMP TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
+
+\copy _load FROM 'data/analyst_recomendation/yahoo/all_symbols.csv' CSV HEADER
+INSERT INTO raw_signals SELECT 'yahoo', * FROM _load;
+TRUNCATE _load;
+
+\copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
+INSERT INTO raw_signals SELECT 'google', * FROM _load;
+
 -- Drop old views so columns can be re-ordered / renamed cleanly.
 DROP VIEW IF EXISTS signals CASCADE;
 DROP VIEW IF EXISTS signal_score_daily CASCADE;
@@ -74,7 +93,27 @@ SELECT
 FROM raw_signals_per_ticker_and_date_7d_window
 WHERE average_projected > 0;
 
--- Buy signals
-SELECT * FROM signals
-WHERE analyst_projections_count > 2 and average_projected > 20
-ORDER BY signal_percentile DESC;
+-- Combined signals. Percentile is ranked within each signal_name.
+CREATE OR REPLACE VIEW signals AS
+SELECT
+  u.*,
+  PERCENT_RANK() OVER (
+    PARTITION BY signal_name
+    ORDER BY signal_score ASC NULLS FIRST
+  ) AS signal_percentile
+FROM (
+  SELECT source || '-daily' AS signal_name,
+         date, ticker, average_projected, analyst_projections_count,
+         MAD, signal_score, analyst_percent_list
+  FROM signal_score_daily
+  WHERE analyst_projections_count > 2 AND average_projected > 10
+  UNION ALL
+  SELECT source || '-7d-window' AS signal_name,
+         date, ticker, average_projected, analyst_projections_count,
+         MAD, signal_score, analyst_percent_list
+  FROM signal_score_7d_window
+  WHERE analyst_projections_count > 2 AND average_projected > 10
+) u;
+
+-- \copy reads the rest of the line only, so the export query stays on one line.
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
