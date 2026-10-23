@@ -6,10 +6,10 @@ When this behavior changes, update this file in the same change.
 
 ## Run
 
-From the repo root, with the project virtualenv:
+From the repo root, with the project virtualenv. Do not edit `optimize.py` while the sweep is in progress. Copy it to `simulation_<words>_<timestamp>_optimize.py` first (timestamp in the `run_clock()` shape, for example `2026-10-19_2127_UTC+3`), change and run that copy, then overwrite `optimize.py` with the finished copy. Concurrent sweeps each keep their own copy; the overwrite replaces `optimize.py` wholesale, with no merge.
 
 ```bash
-./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window
+./penv python VectorBT/simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.py coarse --signal-name yahoo-7d-window
 ```
 
 `run_clock()` supplies the timestamp `<YYYY-MM-DD>_<HHMM>_UTC+<offset>`. Put a few kebab-case words that name the sweep before that timestamp: `simulation_<words>_<timestamp>_optimize`. The 13:32 coarse pass is `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize`.
@@ -78,12 +78,12 @@ Before trusting an extension, re-run one published cell. Analyst >2 · proj >20%
 
 Every run writes these siblings under `VectorBT/`. The file stem is `simulation_<words>_<timestamp>_optimize`. `<timestamp>` is the `run_clock()` value, for example `2026-10-17_1332_UTC+3`. `<words>` is a few kebab-case words that say what the simulation is, placed before the timestamp, for example `7d-coarse-grid`.
 
-1. `simulation_<words>_<timestamp>_optimize.py` — exact copy of `optimize.py` as executed. If the invocation has arguments or is not a bare phase command, also write `simulation_<words>_<timestamp>_optimize.sh` with the exact command from the repo root:
+1. `simulation_<words>_<timestamp>_optimize.py` — the copy of `optimize.py` created before editing and executed as-is. After the run, that file overwrites `optimize.py`. If the invocation has arguments or is not a bare phase command, also write `simulation_<words>_<timestamp>_optimize.sh` with the exact command from the repo root:
 
 ```bash
 #!/bin/sh
 cd "$(dirname "$0")/.." || exit 1
-./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window
+./penv python VectorBT/simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.py coarse --signal-name yahoo-7d-window
 ```
 
 2. `simulation_<words>_<timestamp>_optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, lot-day exposure, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
