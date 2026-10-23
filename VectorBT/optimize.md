@@ -16,7 +16,7 @@ From the repo root, with the project virtualenv. Do not edit `optimize.py` while
 
 Pin `--end` to the last quote day when today is not a session (the cache's last bar is then before `today`, so a refresh would download again). A download that omits a symbol must not drop that symbol: `ensure_prices` keeps prior columns with `combine_first`.
 
-Never mix `signal_name` families in one backtest. `yahoo-daily` and `yahoo-7d-window` are separate books. Repeat `--signal-name` only to compare them as separate grids.
+Each cell is one signal book. Repeat `--signal-name` to put several books in one run; the canvas signal pills filter them. Phase `full` with no `--signal-name` uses all six: `all_sources-daily`, `all_sources-7d-window`, `yahoo-daily`, `yahoo-7d-window`, `google-daily`, `google-7d-window`. Do not merge two books inside one cell. The catalog is `VectorBT/optimization_params_full.md`.
 
 Trusted cells have at least 30 signals. Smaller cells stay in the matrices and out of the winner.
 
@@ -74,6 +74,50 @@ One lot per ticker, same coarse permutation, end pinned to the last quote day:
 
 Before trusting an extension, re-run one published cell. Analyst >2 · proj >20% · 10d 25% 7.5dd on the 13:32 book is +63.0% and +$30,432.
 
+Wide, 540 cells. Same 15 buys as coarse. Holds append 45/60/75/90/105/120 onto 10/15/30. Targets stay 25/50%. Drawdowns stay 7.5/10%. This is the grid in `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.tsx`. One book per run. Signals dated after `--end` are dropped before the sweep.
+
+```python
+def wide_sell_grid():
+    return neighborhood_sells(
+        (10, 15, 30, 45, 60, 75, 90, 105, 120),
+        (0.25, 0.50),
+        (0.075, 0.10),
+    )
+```
+
+```bash
+./penv python VectorBT/optimize.py wide --signal-name tipranks-7d-window --end 2026-10-22
+```
+
+Full, every cut in `optimization_params_full.md`. 8 analyst cuts × 6 upside cuts × 6 books = 288 buys. Holds 10/15/30/45/60/75/90/105/120 × target 25/50/75/100% × drawdown 5/7.5/10/15% = 144 sells. 288 × 144 = 41,472 cells. One book per cell.
+
+```python
+def full_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4, 5, 6, 7, 8, 9)
+            for p in (10, 20, 25, 30, 40, 50)
+        ]
+    )
+
+
+def full_sell_grid():
+    return neighborhood_sells(
+        (10, 15, 30, 45, 60, 75, 90, 105, 120),
+        (0.25, 0.50, 0.75, 1.00),
+        (0.05, 0.075, 0.10, 0.15),
+    )
+```
+
+```bash
+./penv python VectorBT/optimize.py full --end 2026-10-22
+```
+
+Pass `--signal-name` more than once to run a subset of the six. `tipranks-daily` and `tipranks-7d-window` stay valid names; they are not in the default six.
+
+`make etl` loads `data/analyst_recomendation/tipranks/all_symbols.csv` and writes `tipranks-daily` and `tipranks-7d-window` into `data/signals.csv` with the Yahoo, Google, and all-sources books. Each of those names is its own book.
+
 ## Four files, one stamp
 
 Every run writes these siblings under `VectorBT/`. The file stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, for example `2026-10-19_2127_UTC+3`. `<words>` follows it, for example `7d-fine-grid`, then `__optimize`. Set the copy's output prefix to that stem.
@@ -106,7 +150,7 @@ The canvas is one merged table, not separate return and P&L tables. Copy the str
 - Each result is two sub-cells, `%` and `$`. A Show filter toggles `%`, `$`, or both.
 - Color each sub-cell from yellow (low) to red (high) with `useHostTheme()` category tokens. Scale `%` across all `%` values and `$` across all `$` values. Pick text color for contrast.
 - Buy rows carry Symbols (unique tickers) and Signals (signal count).
-- Pill filters: analysts `>2 >3 >4 >5 >6`, upside `>20% >25% >30%`, hold, target `25% 50%`, drawdown `7.5dd 10dd`.
+- Pill filters: signal book, analysts, upside, hold, target, drawdown. The signal pills are the books in that run.
 - Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy. Rows summarize the visible buys for each sell. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 

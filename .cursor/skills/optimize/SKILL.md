@@ -11,7 +11,7 @@ description: >-
 
 # Optimize
 
-Read [VectorBT/optimize.md](../../../VectorBT/optimize.md) before a sweep. When the sweep's rules or phases change, update that file in the same change.
+Read [VectorBT/optimize.md](../../../VectorBT/optimize.md) and [VectorBT/optimization_params_full.md](../../../VectorBT/optimization_params_full.md) before a sweep. The second file is the parameter catalog: signal books, analyst and upside cuts, hold, target, and drawdown. When the sweep's rules or phases change, update `optimize.md` in the same change. When the catalog changes, update `optimization_params_full.md` too.
 
 ## Work on a copy
 
@@ -22,7 +22,9 @@ Do not edit `VectorBT/optimize.py` until the sweep is finished. Other optimize a
 3. Keep that stem. The timestamp stays the one from the copy, at the front. If the process writes a report, canvas, or CSV under another name, rename those outputs onto this stem. Do not put `<words>` before the timestamp.
 4. When the run is finished, overwrite `VectorBT/optimize.py` with the finished copy. Replace the whole file. Do not merge.
 
-Run from the repo root with `./penv python`. Do not mix `yahoo-daily` and `yahoo-7d-window` in one book. Rank by return on avg invested. Trusted winners have at least 30 signals.
+Run from the repo root with `./penv python`. Rank by return on avg invested. Trusted winners have at least 30 signals.
+
+Phase `full` runs every buy and sell in `optimization_params_full.md`. Repeat `--signal-name` to put several books in that one run. With no `--signal-name`, `full` uses all six: `all_sources-daily`, `all_sources-7d-window`, `yahoo-daily`, `yahoo-7d-window`, `google-daily`, `google-7d-window`. Each cell is still one book. The canvas signal pills filter those books. Do not merge two books inside one cell.
 
 ## New phase
 
