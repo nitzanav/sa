@@ -16,7 +16,9 @@ From the repo root, with the project virtualenv. Do not edit `optimize.py` while
 
 Pin `--end` to the last quote day when today is not a session (the cache's last bar is then before `today`, so a refresh would download again). A download that omits a symbol must not drop that symbol: `ensure_prices` keeps prior columns with `combine_first`.
 
-Never mix `signal_name` families in one backtest. `yahoo-daily` and `yahoo-7d-window` are separate books. Repeat `--signal-name` only to compare them as separate grids.
+Never mix `signal_name` families in one backtest. `yahoo-daily`, `yahoo-7d-window`, and `all_sources-7d-window` are separate books. The default pair is the two Yahoo names. `all_sources-7d-window` is selected only with `--signal-name all_sources-7d-window`. Repeat `--signal-name` only to compare books as separate grids.
+
+The wide permutation, taken from the October 2026 runs, is the coarse grid: analyst >2–6 × projected >20/25/30% × hold 10/15/30 × target 25/50% × drawdown 7.5/10% (180 cells). The fine grids are a neighborhood of 10d 25% 7.5dd, not a wider book.
 
 Trusted cells have at least 30 signals. Smaller cells stay in the matrices and out of the winner.
 
@@ -72,7 +74,24 @@ One lot per ticker, same coarse permutation, end pinned to the last quote day:
 ./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window --one-lot --end 2026-10-16
 ```
 
-Before trusting an extension, re-run one published cell. Analyst >2 · proj >20% · 10d 25% 7.5dd on the 13:32 book is +63.0% and +$30,432.
+Before trusting an extension, re-run one published cell. Analyst >2 · proj >20% · 10d 25% 7.5dd on the 13:32 book is +63.0% and +$30,432. On the 11:30 `all_sources-7d-window` book, analyst>5 · proj>20% · 15d 25% 7.5dd is +8.6% and +$12,004.
+
+Analysts >7–10 on that same wide sell grid, plus the analyst>5 · proj>20% re-check. 13 × 12 = 156 cells.
+
+```python
+def analysts_buy_grid():
+    buys = [
+        {"min_analysts": n, "min_projected": float(p)}
+        for n in (7, 8, 9, 10)
+        for p in (20, 25, 30)
+    ]
+    buys.append({"min_analysts": 5, "min_projected": 20.0})
+    return with_signal_names(buys)
+```
+
+```bash
+./penv python VectorBT/optimize.py analysts --signal-name all_sources-7d-window --end 2026-10-22
+```
 
 ## Four files, one stamp
 

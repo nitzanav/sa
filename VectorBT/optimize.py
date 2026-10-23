@@ -23,12 +23,20 @@ analyst>3 · proj>30% around the 30d / 50% / 7.5dd sell neighborhood.
 
 Phase coarse is one wide pass, not a locked search: analyst >2–6 ×
 projected >20/25/30% against hold 10/15/30 × target 25/50% × dd 7.5/10%.
-Pass --one-lot to keep a single open lot per ticker: a later buy while
-that lot is open does not add a lot, it restarts the hold clock.
+That is the wide permutation from the October 2026 books. The fine grid
+is a neighborhood of 10d 25% 7.5dd, not a wider book. Pass --one-lot to
+keep a single open lot per ticker: a later buy while that lot is open
+does not add a lot, it restarts the hold clock.
 
-Buy filters also split on signal_name (yahoo-daily and yahoo-7d-window) so
-the two families are never mixed in one backtest. Sell and staged freezes
-use the first selected name (yahoo-daily unless --signal-name overrides it).
+Phase analysts keeps that wide sell grid and raises the analyst cut to
+>7–10, still at projected >20/25/30%. It also re-runs analyst>5 · proj>20%,
+the published all_sources winner buy, so the extension can be checked
+against 15d 25% 7.5dd at +8.6% and +$12,004.
+
+Buy filters split on signal_name so families are never mixed in one
+backtest. yahoo-daily and yahoo-7d-window are the default pair.
+all_sources-7d-window is a separate book, selected only with
+--signal-name. Sell and staged freezes use the first selected name.
 """
 
 from __future__ import annotations
@@ -98,6 +106,8 @@ def clip_prices(obj, end=None):
 FREEZE_ANALYSTS = 3
 FREEZE_PROJECTED = 20.0
 SIGNAL_NAMES = ("yahoo-daily", "yahoo-7d-window")
+EXTRA_SIGNAL_NAMES = ("all_sources-7d-window",)
+ALLOWED_SIGNAL_NAMES = SIGNAL_NAMES + EXTRA_SIGNAL_NAMES
 _SELECTED_SIGNAL_NAMES = None
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
@@ -214,12 +224,12 @@ def set_signal_names(names):
     if not names:
         _SELECTED_SIGNAL_NAMES = None
         return
-    unknown = [name for name in names if name not in SIGNAL_NAMES]
+    unknown = [name for name in names if name not in ALLOWED_SIGNAL_NAMES]
     if unknown:
         raise SystemExit(
-            f"Unknown signal_name {unknown}; choose from {list(SIGNAL_NAMES)}"
+            f"Unknown signal_name {unknown}; choose from {list(ALLOWED_SIGNAL_NAMES)}"
         )
-    chosen = tuple(name for name in SIGNAL_NAMES if name in set(names))
+    chosen = tuple(dict.fromkeys(names))
     _SELECTED_SIGNAL_NAMES = chosen
 
 
@@ -2647,14 +2657,58 @@ def coarse_count_table(signals, buys):
     return "\n".join(lines)
 
 
-def run_coarse(signals, close, spy, one_lot=False):
+def analysts_buy_grid():
+    buys = [
+        {"min_analysts": n, "min_projected": float(p)}
+        for n in (7, 8, 9, 10)
+        for p in (20, 25, 30)
+    ]
+    buys.append({"min_analysts": 5, "min_projected": 20.0})
+    return with_signal_names(buys)
+
+
+def analysts_sell_grid():
+    return coarse_sell_grid()
+
+
+def run_analysts(signals, close, spy, one_lot=False, position_log=None):
+    buys = analysts_buy_grid()
+    specs = analysts_sell_grid()
+    print(
+        f"\n=== Analysts >7–10: {len(buys)} buys × {len(specs)} sells"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "analysts",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
+
+
+def run_coarse(signals, close, spy, one_lot=False, position_log=None):
     buys = coarse_buy_grid()
     specs = coarse_sell_grid()
     print(
         f"\n=== Coarse grid: {len(buys)} buys × {len(specs)} sells"
         f"{' · one lot' if one_lot else ''} ==="
     )
-    return run_combos(signals, close, spy, buys, specs, set(), "coarse", one_lot=one_lot)
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "coarse",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
 
 
 def _climb_lines(known_rows):
@@ -3324,7 +3378,7 @@ export default function FineGridCanvas() {
   return (
     <Stack gap={20}>
       <Stack gap={6}>
-        <H1>7-day fine grid</H1>
+        <H1>{__TITLE__}</H1>
         <Text size="small" tone="secondary">
           {SOURCE}
         </Text>
@@ -3570,8 +3624,12 @@ def write_positions_log(path, frames):
 
 def write_code_snapshot(prefix, argv):
     py_path = Path(f"{prefix}.py")
-    py_path.write_bytes(Path(__file__).read_bytes())
-    command = "./penv python VectorBT/optimize.py " + " ".join(shlex.quote(str(arg)) for arg in argv)
+    running = Path(__file__).resolve()
+    if py_path.resolve() != running:
+        py_path.write_bytes(running.read_bytes())
+    command = "./penv python VectorBT/" + running.name
+    if argv:
+        command += " " + " ".join(shlex.quote(str(arg)) for arg in argv)
     sh_path = Path(f"{prefix}.sh")
     sh_path.write_text(
         "#!/bin/sh\n"
@@ -3641,13 +3699,15 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
     holds = sorted({sell["h"] for sell in sell_rows})
     targets = sorted({sell["t"] for sell in sell_rows})
     drops = sorted({sell["d"] for sell in sell_rows}, key=float)
+    book = " · ".join(signal_names())
     caption = (
-        f"Yahoo 7-day window · {info['start']} → {info['end']} · "
+        f"{book} · {info['start']} → {info['end']} · "
         f"{info['trading_days']} trading days · $5,000 per lot. "
         "Days exposed are calendar days with at least one lot open. "
         "Lot-days add each lot's calendar hold, so overlapping lots count again."
     )
     data = {
+        "__TITLE__": json.dumps(info.get("title") or "Buy/sell grid"),
         "__SOURCE__": json.dumps(caption),
         "__ANALYSTS__": json.dumps(analysts),
         "__UPSIDES__": json.dumps(upsides),
@@ -3696,6 +3756,7 @@ def parse_args():
             "closed",
             "coarse",
             "fine",
+            "analysts",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -3721,10 +3782,22 @@ def parse_args():
         "--signal-name",
         action="append",
         dest="signal_names",
-        choices=SIGNAL_NAMES,
-        help="Keep this signal_name. Repeat to compare several. Default: both.",
+        choices=ALLOWED_SIGNAL_NAMES,
+        help=(
+            "Keep this signal_name. Repeat only to compare books that must "
+            "stay in separate grids. Default: yahoo-daily and yahoo-7d-window. "
+            "all_sources-7d-window is its own book."
+        ),
     )
     return p.parse_args()
+
+
+def output_prefix(phase, stamp):
+    stem = Path(__file__).stem
+    if stem.startswith("simulation_") and stem.endswith("__optimize"):
+        return OUT_DIR / stem
+    words = {"fine": "7d-fine-grid", "coarse": "7d-coarse-grid"}.get(phase, phase)
+    return OUT_DIR / f"simulation_{stamp}_{words}__optimize"
 
 
 def main():
@@ -3733,10 +3806,7 @@ def main():
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase == "fine":
-        prefix = OUT_DIR / f"simulation_7d-fine-grid_{stamp}_optimize"
-    else:
-        prefix = OUT_DIR / f"simulation_{stamp}_optimize"
+    prefix = output_prefix(args.phase, stamp)
     report_path = Path(args.report) if args.report else Path(f"{prefix}.md")
     ignore_last_days = args.ignore_last_days
     if ignore_last_days is None:
@@ -3767,8 +3837,9 @@ def main():
     )
 
     if args.phase == "coarse":
+        position_log = []
         rows, close_wide, init_cash = run_coarse(
-            signals, close, spy, one_lot=args.one_lot
+            signals, close, spy, one_lot=args.one_lot, position_log=position_log
         )
         save_json(CACHE_DIR / "coarse.json", rows)
         title = "Coarse 7d-style buy/sell grid"
@@ -3794,10 +3865,19 @@ def main():
                 "on lots of that ticker still open. Drawdown peak is since entry."
             )
         notes = [
-            "One pass: analyst >2–6, projected >20/25/30%, hold 10/15/30, "
-            "target 25/50%, drawdown 7.5/10%. No locked iterations.",
+            "Wide permutation from the October 2026 books: analyst >2–6, "
+            "projected >20/25/30%, hold 10/15/30, target 25/50%, drawdown 7.5/10%. "
+            "The fine grids (holds 5/7/10/12, targets 20–40%, drawdown 6/7.5/8.5%) "
+            "are a neighborhood of 10d 25% 7.5dd, not a wider book.",
+            "Book is "
+            + " and ".join(signal_names())
+            + ". Other signal_name families stay out of this grid.",
             "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
             overlap,
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "An open lot runs through the last quote day. "
+            "Avg lot is the mean dollars used to open a lot.",
             "Comparison is on invested dollars, not book vs SPY.",
         ]
         write_grid_summary(
@@ -3809,6 +3889,83 @@ def main():
             coarse_buy_grid(),
             coarse_sell_grid(),
             WINNING_SELL,
+        )
+        write_positions_log(Path(f"{prefix}.csv"), position_log)
+        write_code_snapshot(prefix, sys.argv[1:])
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            coarse_buy_grid(),
+            coarse_sell_grid(),
+            info,
+        )
+        return
+
+    if args.phase == "analysts":
+        position_log = []
+        rows, close_wide, init_cash = run_analysts(
+            signals, close, spy, one_lot=args.one_lot, position_log=position_log
+        )
+        save_json(CACHE_DIR / "analysts.json", rows)
+        title = "Analysts >7–10 on the wide sell grid"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot; it restarts the hold clock. "
+                "The profit target and the drawdown peak stay on the original entry."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot and resets the time stop and target "
+                "on lots of that ticker still open. Drawdown peak is since entry."
+            )
+        anchor = SellSpec(hold_days=15, target_frac=0.25, drawdown=0.075)
+        notes = [
+            "Same wide sells as the coarse book: hold 10/15/30, target 25/50%, "
+            "drawdown 7.5/10%. Buys are analyst >7–10 × projected >20/25/30%, "
+            "plus analyst>5 · proj>20% to re-check the 11:30 all_sources cell.",
+            "That published cell, 15d 25% 7.5dd · analyst>5 · proj>20%, was "
+            "+8.6% and +$12,004 on 587 signals.",
+            "all_sources pools Yahoo and Google into one mean and one analyst count. "
+            "analyst>3 · proj>30% is 47 Yahoo signals and 488 pooled signals.",
+            "Book is "
+            + " and ".join(signal_names())
+            + ". Other signal_name families stay out of this grid.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "An open lot runs through the last quote day. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            analysts_buy_grid(),
+            analysts_sell_grid(),
+            anchor,
+        )
+        write_positions_log(Path(f"{prefix}.csv"), position_log)
+        write_code_snapshot(prefix, sys.argv[1:])
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            analysts_buy_grid(),
+            analysts_sell_grid(),
+            info,
         )
         return
 
