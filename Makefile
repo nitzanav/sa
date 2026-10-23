@@ -114,8 +114,7 @@ write_joint_analyst_recommendations:
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/update_raw_signals.sql
-	@set -o pipefail; sed '/^-- Buy signals/,$$d' etl/signals_yahoo.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1
-	@set -o pipefail; sed '/^-- Buy signals/,$$d' etl/signals_google.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1
+	@set -o pipefail; sed '/^-- Buy signals/,$$d' etl/signals.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/etl_common.sql
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -c "\copy ($$(cat etl/export_signals.sql)) TO 'data/signals.csv' WITH CSV HEADER"
 

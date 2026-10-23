@@ -1,21 +1,18 @@
-CREATE TABLE IF NOT EXISTS yahoo_all_symbols (
+CREATE TABLE IF NOT EXISTS raw_signals (
+  source varchar,
   date date,
   ticker varchar,
   analyst text,
   percent real,
   projected_price real
 );
-TRUNCATE TABLE yahoo_all_symbols;
-\copy yahoo_all_symbols (date, ticker, analyst, percent, projected_price) FROM 'data/analyst_recomendation/yahoo/all_symbols.csv' CSV HEADER
+TRUNCATE TABLE raw_signals;
 
-CREATE TABLE IF NOT EXISTS google_all_symbols (
-  date date,
-  ticker varchar,
-  analyst text,
-  percent real,
-  projected_price real
-);
+CREATE TEMP TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
 
-TRUNCATE TABLE google_all_symbols;
--- focusing now only on yahoo
-\copy google_all_symbols (date, ticker, analyst, percent, projected_price) FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
+\copy _load FROM 'data/analyst_recomendation/yahoo/all_symbols.csv' CSV HEADER
+INSERT INTO raw_signals SELECT 'yahoo', * FROM _load;
+TRUNCATE _load;
+
+\copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
+INSERT INTO raw_signals SELECT 'google', * FROM _load;
