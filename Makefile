@@ -119,8 +119,7 @@ write_joint_analyst_recommendations:
 #   make etl
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@psql "$$DATABASE_URL" -f etl/update_raw_signals.sql
-	@psql "$$DATABASE_URL" -c "\copy ($$(cat etl/export_signals.sql)) TO 'data/signals.csv' WITH CSV HEADER"
+	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/etl.sql
 
 # ---------------------------------------------------------------------------
 # Backtests

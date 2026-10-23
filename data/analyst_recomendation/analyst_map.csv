@@ -1,0 +1,741 @@
+analyst_google,analyst_yahoo,n,share,is_best,verified
+William Katz,TD Cowen,11,1.0,True,verified_data
+Yaron Kinar,Mizuho,11,1.0,True,verified_data
+Andrew Kaplowitz,Citigroup,10,1.0,True,verified_data
+Jamie Cook,Truist Securities,10,1.0,True,verified_data
+Pablo Singzon,JP Morgan,10,1.0,True,verified_data
+Vijay Kumar,Evercore ISI Group,10,1.0,True,verified_data
+Nicholas Campanella,Barclays,9,0.9,True,verified_data
+Alexander Goldfarb,Piper Sandler,8,1.0,True,verified_data
+Arun Viswanathan,RBC Capital,8,1.0,True,verified_data
+Ben Gerlinger,Citigroup,8,0.8889,True,verified_data
+Bob Huang,Morgan Stanley,8,1.0,True,verified_data
+Brian Meredith,UBS,8,1.0,True,verified_data
+Jeremy Tonet,JP Morgan,8,1.0,True,verified_data
+Julian Mitchell,Barclays,8,0.6154,True,best_guess
+Julien Dumoulin Smith,Jefferies,8,1.0,True,verified_data
+Luke Sergott,Barclays,8,0.8889,True,verified_data
+Michael Lewis,Truist Securities,8,1.0,True,verified_data
+Robert Moskow,TD Cowen,8,0.8889,True,verified_data
+William Appicelli,UBS,8,1.0,True,verified_data
+Andrea Faria Teixeira,JP Morgan,7,1.0,True,verified_data
+Elyse Greenspan,Wells Fargo,7,0.875,True,verified_data
+Ivan Feinseth,Tigress Financial,7,1.0,True,verified_data
+Meta Marshall,Morgan Stanley,7,0.875,True,verified_data
+Ryan Levine,Citigroup,7,1.0,True,verified_data
+Thomas Champion,Piper Sandler,7,1.0,True,verified_data
+Vivek Juneja,JP Morgan,7,1.0,True,verified_data
+Benjamin Budish,Barclays,6,1.0,True,verified_data
+Brian Foran,Truist Securities,6,1.0,True,verified_data
+Jeffrey Silber,BMO Capital,6,1.0,True,verified_data
+John Pancari,Evercore ISI Group,6,1.0,True,verified_data
+Joseph Quatrochi,Wells Fargo,6,0.8571,True,verified_data
+Kevin Caliendo,UBS,6,1.0,True,verified_data
+Lauren Lieberman,Barclays,6,1.0,True,verified_data
+Linda Tsai,Truist Securities,6,1.0,True,verified_data
+Matthew Heimermann,Citigroup,6,1.0,True,verified_data
+Michael Goldsmith,UBS,6,1.0,True,verified_data
+Nicholas Joseph,Citigroup,6,1.0,True,verified_data
+Nicholas Yulico,Scotiabank,6,1.0,True,verified_data
+Scot Ciccarelli,Truist Securities,6,1.0,True,verified_data
+Stephen Ju,UBS,6,0.8571,True,verified_data
+Atif Malik,Citigroup,5,1.0,True,verified_data
+Brandt Montour,Barclays,5,1.0,True,verified_data
+Brian Ossenbeck,JP Morgan,5,1.0,True,verified_data
+Chigusa Katoku,JP Morgan,5,1.0,True,verified_data
+Christopher Snyder,Morgan Stanley,5,1.0,True,verified_data
+David Motemaden,Evercore ISI Group,5,1.0,True,verified_data
+Gabriel Daoud,Truist Securities,5,1.0,True,verified_data
+Gautam Khanna,TD Cowen,5,1.0,True,verified_data
+Glenn Schorr,Evercore ISI Group,5,1.0,True,verified_data
+Haendel St. Juste,Mizuho,5,1.0,True,verified_data
+Harlan Sur,JP Morgan,5,0.625,True,best_guess
+James Kammert,Evercore ISI Group,5,1.0,True,verified_data
+Joseph Cardoso,JP Morgan,5,0.5556,True,best_guess
+Julian Mitchell,JP Morgan,5,0.3846,False,unverified
+Kallum Titchmarsh,Morgan Stanley,5,1.0,True,verified_data
+Michael Lasser,UBS,5,0.7143,True,best_guess
+Michael Roxland,Truist Securities,5,1.0,True,verified_data
+Terence Flynn,Morgan Stanley,5,1.0,True,verified_data
+Thomas Palmer,JP Morgan,5,1.0,True,verified_data
+Toni Kaplan,Morgan Stanley,5,1.0,True,verified_data
+Wesley Carmichael,Wells Fargo,5,1.0,True,verified_data
+Aaron Rakers,Wells Fargo,4,0.6667,True,best_guess
+Alex Scott,Barclays,4,1.0,True,verified_data
+Anthony Crowdell,Mizuho,4,1.0,True,verified_data
+Brad Heffern,RBC Capital,4,1.0,True,verified_data
+Charles Minervino,Susquehanna,4,1.0,True,verified_data
+Chris Schott,JP Morgan,4,1.0,True,verified_data
+Daniel Kurnos,Benchmark,4,1.0,True,verified_data
+Greg Melich,Evercore ISI Group,4,1.0,True,verified_data
+James Faucette,Morgan Stanley,4,1.0,True,verified_data
+James Fish,Piper Sandler,4,1.0,True,verified_data
+Jeffrey Zekauskas,JP Morgan,4,1.0,True,verified_data
+Joanne Wuensch,Citigroup,4,1.0,True,verified_data
+Joe Ritchie,Goldman Sachs,4,1.0,True,verified_data
+John Godyn,Citigroup,4,1.0,True,verified_data
+John Kilichowski,Wells Fargo,4,1.0,True,verified_data
+Kenneth Herbert,RBC Capital,4,1.0,True,verified_data
+Lisa Gill,JP Morgan,4,1.0,True,verified_data
+Lucas Servera,Truist Securities,4,1.0,True,verified_data
+Michael Cho,JP Morgan,4,1.0,True,verified_data
+Michael Lavery,Piper Sandler,4,1.0,True,verified_data
+Michael Yee,UBS,4,1.0,True,verified_data
+Naved Khan,B. Riley Securities,4,0.8,True,verified_data
+Peter Keith,Piper Sandler,4,0.8,True,verified_data
+Scott Gruber,Citigroup,4,1.0,True,verified_data
+Theresa Chen,Barclays,4,1.0,True,verified_data
+A.J. Rice,UBS,3,1.0,True,verified_data
+Aidan Kelly,JP Morgan,3,0.75,True,best_guess
+Ami Probandt,UBS,3,1.0,True,verified_data
+Andrew Steinerman,JP Morgan,3,1.0,True,verified_data
+Andrew Weisel,Scotiabank,3,1.0,True,verified_data
+Anthony Paolone,JP Morgan,3,1.0,True,verified_data
+Asiya Merchant,Citigroup,3,1.0,True,verified_data
+Brendan Lynch,Barclays,3,1.0,True,verified_data
+Brett Linzey,Mizuho,3,0.75,True,best_guess
+Bryan Bergin,TD Cowen,3,1.0,True,verified_data
+Bryan Blair,Oppenheimer,3,1.0,True,verified_data
+Charles Rhyee,TD Cowen,3,1.0,True,verified_data
+Christopher Horvers,JP Morgan,3,1.0,True,verified_data
+Christopher Stathoulopoulos,Susquehanna,3,1.0,True,verified_data
+Daniel Brennan,TD Cowen,3,1.0,True,verified_data
+Daniel Politzer,JP Morgan,3,1.0,True,verified_data
+Daniel Welden,Wells Fargo,3,1.0,True,verified_data
+Darrin Peller,Wolfe Research,3,1.0,True,verified_data
+David E. Strauss,Wells Fargo,3,1.0,True,verified_data
+David Vogt,UBS,3,0.75,True,best_guess
+Doug Anmuth,JP Morgan,3,1.0,True,verified_data
+Douglas Harned,Bernstein,3,1.0,True,verified_data
+Eric Sheridan,Goldman Sachs,3,1.0,True,verified_data
+Evan Stampler,Wells Fargo,3,1.0,True,verified_data
+Gregory Renza,Truist Securities,3,1.0,True,verified_data
+J. Bruce Chan,Stifel,3,1.0,True,verified_data
+James Thalacker,BMO Capital,3,1.0,True,verified_data
+John Freeman,Raymond James,3,1.0,True,verified_data
+John Hodulik,UBS,3,0.6,True,best_guess
+John Ivankoe,JP Morgan,3,1.0,True,verified_data
+Joseph Moore,Morgan Stanley,3,1.0,True,verified_data
+Joshua Chan,UBS,3,1.0,True,verified_data
+Joshua Spector,UBS,3,1.0,True,verified_data
+Justin Jenkins,Raymond James,3,1.0,True,verified_data
+Ken Gawrelski,Wells Fargo,3,1.0,True,verified_data
+Krish Sankar,TD Cowen,3,0.6,True,best_guess
+Kristine Liwag,Morgan Stanley,3,1.0,True,verified_data
+Kyle Menges,Citigroup,3,1.0,True,verified_data
+Laurence Alexander,Jefferies,3,1.0,True,verified_data
+Lloyd Byrne,Jefferies,3,1.0,True,verified_data
+Mark Mahaney,Evercore ISI Group,3,1.0,True,verified_data
+Matthew Cost,Morgan Stanley,3,1.0,True,verified_data
+Michael Dahl,RBC Capital,3,1.0,True,verified_data
+Michael Elias,TD Cowen,3,1.0,True,verified_data
+Michael Lonegan,Barclays,3,1.0,True,verified_data
+Nicholas Amicucci,Evercore ISI Group,3,1.0,True,verified_data
+Patrick Baumann,JP Morgan,3,1.0,True,verified_data
+Patrick Cunningham,Citigroup,3,1.0,True,verified_data
+Patrick Wood,UBS,3,0.75,True,best_guess
+Paul Zimbardo,Jefferies,3,1.0,True,verified_data
+Peter Winter,DA Davidson,3,1.0,True,verified_data
+Richard Shane,JP Morgan,3,1.0,True,verified_data
+Ronald Kamdem,Morgan Stanley,3,1.0,True,verified_data
+Ross Fowler,B of A Securities,3,1.0,True,verified_data
+Ryan Krueger,"Keefe, Bruyette & Woods",3,1.0,True,verified_data
+Sam Reid,Wells Fargo,3,1.0,True,verified_data
+Samik Chatterjee,JP Morgan,3,0.5,True,best_guess
+Seth Seifman,JP Morgan,3,1.0,True,verified_data
+Shyam Patil,Susquehanna,3,0.75,True,best_guess
+Simeon Gutman,Morgan Stanley,3,0.75,True,best_guess
+Stephen Grambling,Morgan Stanley,3,1.0,True,verified_data
+Steve Sakwa,Evercore ISI Group,3,1.0,True,verified_data
+Steven Fisher,UBS,3,1.0,True,verified_data
+Tim Long,Barclays,3,1.0,True,verified_data
+Trey Grooms,Stephens & Co.,3,0.75,True,best_guess
+Vikram Malhotra,Mizuho,3,1.0,True,verified_data
+Adrian Huerta,JP Morgan,2,1.0,True,likely
+Alastair Syme,Citigroup,2,1.0,True,likely
+Alexander Hacking,Citigroup,2,1.0,True,likely
+Alexander Potter,Piper Sandler,2,1.0,True,likely
+Alexandra Straton,Morgan Stanley,2,1.0,True,likely
+Alexei Gogolev,JP Morgan,2,0.5,True,best_guess
+Alicia Reese,Wedbush,2,0.5,True,best_guess
+Amit Daryanani,Evercore ISI Group,2,0.6667,True,best_guess
+Amit Mehrotra,UBS,2,1.0,True,likely
+Andrew J Dietrich,JP Morgan,2,1.0,True,likely
+Andrew Lazar,Barclays,2,1.0,True,likely
+Andrew Mok,Barclays,2,1.0,True,likely
+Andrew Strelzik,BMO Capital,2,1.0,True,likely
+Angel Castillo,Morgan Stanley,2,1.0,True,likely
+Ann Hynes,Mizuho,2,0.6667,True,best_guess
+Anna Andreeva,Piper Sandler,2,1.0,True,likely
+Anthony Petrone,Mizuho,2,0.6667,True,best_guess
+Atul Maheswari,UBS,2,1.0,True,likely
+Bob Brackett,Bernstein,2,1.0,True,likely
+Brad Zelnick,Deutsche Bank,2,1.0,True,likely
+Casey Woodring,JP Morgan,2,0.6667,True,best_guess
+Chris Kotowski,Oppenheimer,2,0.6667,True,best_guess
+Chris McNally,Evercore ISI Group,2,1.0,True,likely
+Christine Yao,Morgan Stanley,2,1.0,True,likely
+Christopher Mcgratty,"Keefe, Bruyette & Woods",2,0.6667,True,best_guess
+Christopher Rolland,Susquehanna,2,0.6667,True,best_guess
+Cody Acree,Benchmark,2,1.0,True,likely
+Craig Ellis,B. Riley Securities,2,1.0,True,likely
+Craig Siegenthaler,B of A Securities,2,1.0,True,likely
+Daniel Arias,Evercore ISI Group,2,1.0,True,likely
+Daniel Markowitz,Evercore ISI Group,2,1.0,True,likely
+Danielle Antalffy,UBS,2,1.0,True,likely
+David O'Connor,Piper Sandler,2,1.0,True,likely
+David Roman,Goldman Sachs,2,1.0,True,likely
+David Westenberg,Piper Sandler,2,1.0,True,likely
+David Windley,Jefferies,2,1.0,True,likely
+Derek Podhaizer,Piper Sandler,2,0.6667,True,best_guess
+Elizabeth Anderson,Evercore ISI Group,2,1.0,True,likely
+Erik Woodring,Morgan Stanley,2,1.0,True,likely
+Frank Lee,HSBC,2,1.0,True,likely
+Gabe Moreen,Mizuho,2,1.0,True,likely
+Gregory Miller,Truist Securities,2,1.0,True,likely
+James Feldman,Wells Fargo,2,1.0,True,likely
+James Friedman,Susquehanna,2,1.0,True,likely
+Jason Bazinet,Citigroup,2,1.0,True,likely
+Jason Bednar,Piper Sandler,2,1.0,True,likely
+Jason Gabelman,TD Cowen,2,1.0,True,likely
+Jayson Bedford,Raymond James,2,1.0,True,likely
+Jeff Bernstein,Barclays,2,1.0,True,likely
+Jeffrey Meuler,Baird,2,1.0,True,likely
+Jerry Revich,Wells Fargo,2,1.0,True,likely
+Jessica Tassan,Piper Sandler,2,1.0,True,likely
+Joe O'Dea,Wells Fargo,2,1.0,True,likely
+John McDonald,Truist Securities,2,1.0,True,likely
+John Royall,Piper Sandler,2,1.0,True,likely
+Jon Tower,Citigroup,2,1.0,True,likely
+Jonathan Chappell,Evercore ISI Group,2,1.0,True,likely
+Joseph C Giordano,TD Cowen,2,1.0,True,likely
+Josh Silverstein,UBS,2,1.0,True,likely
+Juan C. Sanabria,BMO Capital,2,1.0,True,likely
+Ken Worthington,JP Morgan,2,1.0,True,likely
+Kian Abouhossein,JP Morgan,2,1.0,True,likely
+Kirk Materne,Evercore ISI Group,2,1.0,True,likely
+Manav Gupta,UBS,2,0.6667,True,best_guess
+Marc Bianchi,TD Cowen,2,0.6667,True,best_guess
+Mark Hughes,Truist Securities,2,0.6667,True,best_guess
+Mark Lipacis,Evercore ISI Group,2,1.0,True,likely
+Matthew Boss,JP Morgan,2,1.0,True,likely
+Matthew O'Brien,Piper Sandler,2,0.6667,True,best_guess
+Matthew Taylor,Jefferies,2,1.0,True,likely
+Michael Binetti,Evercore ISI Group,2,0.6667,True,best_guess
+Michael Carroll,RBC Capital,2,1.0,True,likely
+Michael Griffin,Evercore ISI Group,2,1.0,True,likely
+Michael Mueller,JP Morgan,2,1.0,True,likely
+Michael Rollins,Citigroup,2,1.0,True,likely
+Michael Ward,Citigroup,2,0.5,True,best_guess
+Michael Ward,UBS,2,0.5,False,unverified
+Michael Wiederhorn,Oppenheimer,2,1.0,True,likely
+Moshe Orenbuch,TD Cowen,2,1.0,True,likely
+Nate Svensson,Deutsche Bank,2,1.0,True,likely
+Nicole Deblase,Deutsche Bank,2,1.0,True,likely
+Nik Cremo,Barclays,2,1.0,True,likely
+Patrick Brown,Raymond James,2,1.0,True,likely
+Patrick Scholes,Truist Securities,2,1.0,True,likely
+Peter Christiansen,Citigroup,2,1.0,True,likely
+Peter Grom,UBS,2,0.6667,True,best_guess
+Rayna Kumar,Oppenheimer,2,1.0,True,likely
+Richard Choe,JP Morgan,2,1.0,True,likely
+Richard Hightower,Barclays,2,1.0,True,likely
+Rick Patel,Raymond James,2,0.6667,True,best_guess
+Ronald Epstein,B of A Securities,2,1.0,True,likely
+Saket Kalia,Barclays,2,0.5,True,best_guess
+Scott Schneeberger,Oppenheimer,2,1.0,True,likely
+Sheila Kahyaoglu,Jefferies,2,0.6667,True,best_guess
+Simon Leopold,Raymond James,2,1.0,True,likely
+Stephen D'Ambrisi,RBC Capital,2,1.0,True,likely
+Stephen Volkmann,Jefferies,2,1.0,True,likely
+Thomas Fitzgerald,TD Cowen,2,1.0,True,likely
+Thomas Wadewitz,UBS,2,0.5,True,best_guess
+Tien Tsin Huang,JP Morgan,2,0.6667,True,best_guess
+Trey Bowers,Wells Fargo,2,1.0,True,likely
+Trung Huynh,RBC Capital,2,1.0,True,likely
+Tyler Radke,Citigroup,2,1.0,True,likely
+Vijay Rakesh,Mizuho,2,0.6667,True,best_guess
+Ygal Arounian,Wedbush,2,0.6667,True,best_guess
+Aaron Rakers,Cantor Fitzgerald,1,0.1667,False,unverified
+Aaron Rakers,Oppenheimer,1,0.1667,False,unverified
+Abigail Eberts,Wells Fargo,1,1.0,True,best_guess
+Adam Borg,Barclays,1,0.3333,True,best_guess
+Adam Borg,JP Morgan,1,0.3333,False,unverified
+Adam Borg,Rosenblatt,1,0.3333,False,unverified
+Adam Maeder,Piper Sandler,1,1.0,True,best_guess
+Adam Tindle,Raymond James,1,1.0,True,best_guess
+Adrienne Yih,Barclays,1,1.0,True,best_guess
+Aidan Kelly,Barclays,1,0.25,False,unverified
+Akash Tewari,Jefferies,1,1.0,True,best_guess
+Alan Gould,Loop Capital,1,1.0,True,best_guess
+Alec Brondolo,Wells Fargo,1,1.0,True,best_guess
+Alex Dwyer,Jefferies,1,1.0,True,best_guess
+Alexandria Hammond,Wolfe Research,1,1.0,True,best_guess
+Alexei Gogolev,Barclays,1,0.25,False,unverified
+Alexei Gogolev,Rosenblatt,1,0.25,False,unverified
+Alexia Burland Howard,Bernstein,1,1.0,True,best_guess
+Alicia Reese,DA Davidson,1,0.25,False,unverified
+Alicia Reese,Wells Fargo,1,0.25,False,unverified
+Allison Bratzel,Piper Sandler,1,1.0,True,best_guess
+Amanda Tan,Wells Fargo,1,1.0,True,best_guess
+Amit Daryanani,Keybanc,1,0.3333,False,unverified
+Andrew Andersen,Jefferies,1,1.0,True,best_guess
+Andrew Fein,HC Wainwright & Co.,1,1.0,True,best_guess
+Andrew Jones,UBS,1,1.0,True,best_guess
+Andrew Kligerman,TD Cowen,1,1.0,True,best_guess
+Andrew Schmitt,Keybanc,1,1.0,True,best_guess
+Andrew Sherman,TD Cowen,1,1.0,True,best_guess
+Andrew Spinola,UBS,1,1.0,True,best_guess
+Andrew Terrell,Stephens & Co.,1,1.0,True,best_guess
+Andrew Wittmann,Baird,1,1.0,True,best_guess
+Aneesha Sherman,Barclays,1,1.0,True,best_guess
+Angie Storozynski,Seaport Global,1,1.0,True,best_guess
+Ann Hynes,Barclays,1,0.3333,False,unverified
+Anne Samuel,JP Morgan,1,1.0,True,best_guess
+Anthony Chukumba,Loop Capital,1,1.0,True,best_guess
+Anthony Codling,RBC Capital,1,1.0,True,best_guess
+Anthony Petrone,Wells Fargo,1,0.3333,False,unverified
+Anthony Pettinari,Citigroup,1,1.0,True,best_guess
+Arun Jayaram,JP Morgan,1,0.5,True,best_guess
+Arun Jayaram,Susquehanna,1,0.5,False,unverified
+Ashish Sabadra,RBC Capital,1,1.0,True,best_guess
+Atidrip Modak,Goldman Sachs,1,1.0,True,best_guess
+Barry Jonas,Truist Securities,1,1.0,True,best_guess
+Bascome Majors,Stephens & Co.,1,1.0,True,best_guess
+Batya Levi,UBS,1,1.0,True,best_guess
+Ben Gerlinger,RBC Capital,1,0.1111,False,unverified
+Ben Isaacson,Scotiabank,1,1.0,True,best_guess
+Ben Mohr,Citigroup,1,1.0,True,best_guess
+Benjamin Black,Deutsche Bank,1,0.5,True,best_guess
+Benjamin Black,Wells Fargo,1,0.5,False,unverified
+Benjamin Chaiken,Mizuho,1,1.0,True,best_guess
+Benjamin Theurer,Barclays,1,1.0,True,best_guess
+Betty Jiang,Barclays,1,1.0,True,best_guess
+Bill Peterson,JP Morgan,1,1.0,True,best_guess
+Billy Fitzsimmons,Evercore ISI Group,1,1.0,True,best_guess
+Blaine Heck,Wells Fargo,1,1.0,True,best_guess
+Blair Abernethy,B of A Securities,1,1.0,True,best_guess
+Bobby Griffin,Morgan Stanley,1,0.5,True,best_guess
+Bobby Griffin,TD Cowen,1,0.5,False,unverified
+Brandon Bingham,Scotiabank,1,1.0,True,best_guess
+Brandon Couillard,Wells Fargo,1,1.0,True,best_guess
+Brandon Nispel,Keybanc,1,1.0,True,best_guess
+Brandon Oglenski,Wells Fargo,1,1.0,True,best_guess
+Brent Thill,Jefferies,1,1.0,True,best_guess
+Brett Fishbin,Keybanc,1,1.0,True,best_guess
+Brett Linzey,RBC Capital,1,0.25,False,unverified
+Brian Abrahams,RBC Capital,1,1.0,True,best_guess
+Brian Bedell,Deutsche Bank,1,1.0,True,best_guess
+Brian Chin,Stifel,1,1.0,True,best_guess
+Brian Harbour,Morgan Stanley,1,1.0,True,best_guess
+Brian Mullan,Piper Sandler,1,1.0,True,best_guess
+Brian Nagel,Oppenheimer,1,1.0,True,best_guess
+Brian Nowak,Morgan Stanley,1,1.0,True,best_guess
+Brian Pitz,Benchmark,1,1.0,True,best_guess
+Brian Schwartz,Oppenheimer,1,1.0,True,best_guess
+Brooke Roach,Goldman Sachs,1,1.0,True,best_guess
+Bruce Jackson,JP Morgan,1,1.0,True,best_guess
+Bryan Burgmeier,Citigroup,1,1.0,True,best_guess
+Bryan Keane,Citigroup,1,0.5,True,best_guess
+Bryan Keane,Truist Securities,1,0.5,False,unverified
+Bryan Kraft,Wells Fargo,1,1.0,True,best_guess
+Carlos De Alba,Morgan Stanley,1,1.0,True,best_guess
+Casey Woodring,Citigroup,1,0.3333,False,unverified
+Catharine Trebnick,UBS,1,1.0,True,best_guess
+Catherine Ramsey Schulte,Stephens & Co.,1,1.0,True,best_guess
+Chris Caso,Evercore ISI Group,1,1.0,True,best_guess
+Chris Kotowski,DA Davidson,1,0.3333,False,unverified
+Chris O'Cull,TD Cowen,1,0.5,True,best_guess
+Chris O'Cull,Wells Fargo,1,0.5,False,unverified
+Christian Schwab,Craig-Hallum,1,1.0,True,best_guess
+Christian Wetherbee,Wells Fargo,1,1.0,True,best_guess
+Christine Cho,Goldman Sachs,1,1.0,True,best_guess
+Christopher Allen,Barclays,1,0.5,True,best_guess
+Christopher Allen,"Keefe, Bruyette & Woods",1,0.5,False,unverified
+Christopher Glynn,Oppenheimer,1,1.0,True,best_guess
+Christopher Mcgratty,RBC Capital,1,0.3333,False,unverified
+Christopher Pasquale,Barclays,1,1.0,True,best_guess
+Christopher Rolland,TD Cowen,1,0.3333,False,unverified
+Christopher Souther,Truist Securities,1,1.0,True,best_guess
+Christopher Zhang,UBS,1,1.0,True,best_guess
+Clark Wright,UBS,1,1.0,True,best_guess
+Colin Langan,Wells Fargo,1,1.0,True,best_guess
+Colin Sebastian,Baird,1,0.5,True,best_guess
+Colin Sebastian,JP Morgan,1,0.5,False,unverified
+Cory Carpenter,JP Morgan,1,1.0,True,best_guess
+Craig Hettenbach,Morgan Stanley,1,1.0,True,best_guess
+Craig Kennison,TD Cowen,1,1.0,True,best_guess
+Craig Wong-Pan,RBC Capital,1,1.0,True,best_guess
+Dan Dolev,Barclays,1,0.5,True,best_guess
+Dan Dolev,Mizuho,1,0.5,False,unverified
+Dana Telsey,Telsey Advisory Group,1,1.0,True,best_guess
+Daniel Fannon,Jefferies,1,1.0,True,best_guess
+Daniel Grosslight,Citigroup,1,1.0,True,best_guess
+Daniel Jester,BMO Capital,1,0.25,True,best_guess
+Daniel Jester,Barclays,1,0.25,False,unverified
+Daniel Jester,JP Morgan,1,0.25,False,unverified
+Daniel Jester,Rosenblatt,1,0.25,False,unverified
+Daniel Major,RBC Capital,1,1.0,True,best_guess
+Daniel Tamayo,UBS,1,1.0,True,best_guess
+Dara Mohsenian,Morgan Stanley,1,1.0,True,best_guess
+Dave Kang,B. Riley Securities,1,1.0,True,best_guess
+David Anderson,Barclays,1,1.0,True,best_guess
+David Arcaro,Morgan Stanley,1,1.0,True,best_guess
+David Begleiter,Deutsche Bank,1,1.0,True,best_guess
+David Grossman,Baird,1,0.5,True,best_guess
+David Grossman,Stifel,1,0.5,False,unverified
+David Palmer,Evercore ISI Group,1,1.0,True,best_guess
+David S Macdonald,Oppenheimer,1,0.5,True,best_guess
+David S Macdonald,Truist Securities,1,0.5,False,unverified
+David Smith,Truist Securities,1,1.0,True,best_guess
+David Vogt,JP Morgan,1,0.25,False,unverified
+Derek Podhaizer,TD Cowen,1,0.3333,False,unverified
+Derrick Wood,TD Cowen,1,1.0,True,best_guess
+Dmitriy Pozdnyakov,Freedom Broker,1,1.0,True,best_guess
+Doug Schenkel,UBS,1,1.0,True,best_guess
+Drew Levine,JP Morgan,1,1.0,True,best_guess
+Ebrahim Poonawala,"Keefe, Bruyette & Woods",1,1.0,True,best_guess
+Edlain Rodriguez,Wells Fargo,1,1.0,True,best_guess
+Edward Kelly,UBS,1,0.5,True,best_guess
+Edward Kelly,Wells Fargo,1,0.5,False,unverified
+Eliana Merle,Barclays,1,1.0,True,best_guess
+Elvira Scotto,RBC Capital,1,1.0,True,best_guess
+Elyse Greenspan,"Keefe, Bruyette & Woods",1,0.125,False,unverified
+Eric Boyes,Evercore ISI Group,1,1.0,True,best_guess
+Eric Handler,DA Davidson,1,0.3333,True,best_guess
+Eric Handler,Wedbush,1,0.3333,False,unverified
+Eric Handler,Wells Fargo,1,0.3333,False,unverified
+Eric Luebchow,Wells Fargo,1,1.0,True,best_guess
+Erik Rasmussen,JP Morgan,1,0.3333,True,best_guess
+Erik Rasmussen,Stifel,1,0.3333,False,unverified
+Erik Rasmussen,UBS,1,0.3333,False,unverified
+Erin Wright,Morgan Stanley,1,1.0,True,best_guess
+Evan Seigerman,BMO Capital,1,1.0,True,best_guess
+Filippo Falorni,Citigroup,1,1.0,True,best_guess
+Frank Mitsch,Fermium Research,1,1.0,True,best_guess
+Garik Shmois,DA Davidson,1,1.0,True,best_guess
+Gavin Clark-Gartner,Evercore ISI Group,1,1.0,True,best_guess
+George Gianarikas,Canaccord Genuity,1,1.0,True,best_guess
+George Staphos,B of A Securities,1,1.0,True,best_guess
+Gerald Pascarelli,Morgan Stanley,1,0.5,True,best_guess
+Gerald Pascarelli,Needham,1,0.5,False,unverified
+Gil Luria,DA Davidson,1,0.5,True,best_guess
+Gil Luria,JP Morgan,1,0.5,False,unverified
+Glenn Thum,RBC Capital,1,1.0,True,best_guess
+Greg McGinniss,Scotiabank,1,1.0,True,best_guess
+Greg Parrish,Morgan Stanley,1,1.0,True,best_guess
+Gregg Moskowitz,Mizuho,1,1.0,True,best_guess
+Gregory Francfort,Guggenheim,1,1.0,True,best_guess
+Gregory Peters,Raymond James,1,1.0,True,best_guess
+Gregory Williams,TD Cowen,1,1.0,True,best_guess
+Guy Hardwick,Barclays,1,1.0,True,best_guess
+Harlan Sur,Needham,1,0.125,False,unverified
+Harlan Sur,TD Cowen,1,0.125,False,unverified
+Harlan Sur,Wells Fargo,1,0.125,False,unverified
+Harsh Kumar,Piper Sandler,1,1.0,True,best_guess
+Hillary Cacanando,Wells Fargo,1,1.0,True,best_guess
+Ike Boruchow,Goldman Sachs,1,1.0,True,best_guess
+Irvin Liu,Evercore ISI Group,1,1.0,True,best_guess
+Itay Michaeli,RBC Capital,1,0.5,True,best_guess
+Itay Michaeli,TD Cowen,1,0.5,False,unverified
+Ittai Kidron,Oppenheimer,1,0.5,True,best_guess
+Ittai Kidron,Raymond James,1,0.5,False,unverified
+Jade Rahmani,"Keefe, Bruyette & Woods",1,1.0,True,best_guess
+Jailendra Singh,Truist Securities,1,1.0,True,best_guess
+Jake Fuller,UBS,1,1.0,True,best_guess
+James Callahan,Piper Sandler,1,1.0,True,best_guess
+James Hooper,Bernstein,1,1.0,True,best_guess
+James Schneider,Piper Sandler,1,0.5,True,best_guess
+James Schneider,Susquehanna,1,0.5,False,unverified
+Jason Goldberg,UBS,1,1.0,True,best_guess
+Jason Helfstein,JP Morgan,1,0.3333,True,best_guess
+Jason Helfstein,Oppenheimer,1,0.3333,False,unverified
+Jason Helfstein,Piper Sandler,1,0.3333,False,unverified
+Jason Seidl,Stifel,1,1.0,True,best_guess
+Javier Escalante,Canaccord Genuity,1,1.0,True,best_guess
+Jay Olson,Oppenheimer,1,1.0,True,best_guess
+Jean Ann Salisbury,B of A Securities,1,1.0,True,best_guess
+Jed Kelly,Oppenheimer,1,1.0,True,best_guess
+Jeff Johnson,Bernstein,1,0.5,True,best_guess
+Jeff Johnson,Wells Fargo,1,0.5,False,unverified
+Jeff Kauffman,Raymond James,1,1.0,True,best_guess
+Jeff Lick,Stephens & Co.,1,1.0,True,best_guess
+Jeff Reive,Citigroup,1,1.0,True,best_guess
+Jeffrey Adelson,Morgan Stanley,1,1.0,True,best_guess
+Jeffrey Hammond,Keybanc,1,1.0,True,best_guess
+Jessica Fye,JP Morgan,1,1.0,True,best_guess
+Jimmy Bhullar,JP Morgan,1,1.0,True,best_guess
+Joe Dickstein,Jefferies,1,1.0,True,best_guess
+Joe Feldman,Telsey Advisory Group,1,0.5,True,best_guess
+Joe Feldman,UBS,1,0.5,False,unverified
+Johannes Schaller,Citigroup,1,1.0,True,best_guess
+John Blackledge,TD Cowen,1,1.0,True,best_guess
+John Davis,Raymond James,1,1.0,True,best_guess
+John Hodulik,Citigroup,1,0.2,False,unverified
+John Hodulik,Stifel,1,0.2,False,unverified
+Jon Windham,UBS,1,1.0,True,best_guess
+Jonathan Atkin,RBC Capital,1,1.0,True,best_guess
+Jonathan Block,Mizuho,1,0.5,True,best_guess
+Jonathan Block,Piper Sandler,1,0.5,False,unverified
+Jonathan Petersen,Jefferies,1,1.0,True,best_guess
+Joseph Barnet-Lamb,UBS,1,1.0,True,best_guess
+Joseph Bonner,Piper Sandler,1,0.5,True,best_guess
+Joseph Bonner,Truist Securities,1,0.5,False,unverified
+Joseph Cardoso,Keybanc,1,0.1111,False,unverified
+Joseph Cardoso,Morgan Stanley,1,0.1111,False,unverified
+Joseph Cardoso,TD Cowen,1,0.1111,False,unverified
+Joseph Cardoso,Truist Securities,1,0.1111,False,unverified
+Joseph Gallo,Oppenheimer,1,1.0,True,best_guess
+Joseph Osha,Guggenheim,1,1.0,True,best_guess
+Joseph Parkhill,UBS,1,1.0,True,best_guess
+Joseph Quatrochi,JP Morgan,1,0.1429,False,unverified
+Joseph Spak,Goldman Sachs,1,1.0,True,best_guess
+Joseph Stauff,Susquehanna,1,1.0,True,best_guess
+Joseph Vruwink,B of A Securities,1,0.5,True,best_guess
+Joseph Vruwink,Baird,1,0.5,False,unverified
+Josh Beck,Oppenheimer,1,1.0,True,best_guess
+Joshua Buchalter,TD Cowen,1,1.0,True,best_guess
+Julien Roch,Barclays,1,1.0,True,best_guess
+Junaid Siddiqui,Truist Securities,1,1.0,True,best_guess
+Justin Bowers,Deutsche Bank,1,0.3333,True,best_guess
+Justin Bowers,Stephens & Co.,1,0.3333,False,unverified
+Justin Bowers,Wells Fargo,1,0.3333,False,unverified
+Karen Holthouse,Citigroup,1,1.0,True,best_guess
+Karl Keirstead,UBS,1,1.0,True,best_guess
+Kaumil Gajrawala,Jefferies,1,1.0,True,best_guess
+Keith Bachman,BMO Capital,1,1.0,True,best_guess
+Keith Hughes,Truist Securities,1,1.0,True,best_guess
+Kelly Bania,BMO Capital,1,0.3333,True,best_guess
+Kelly Bania,Citigroup,1,0.3333,False,unverified
+Kelly Bania,TD Cowen,1,0.3333,False,unverified
+Kelsey Chia,Baird,1,0.5,True,best_guess
+Kelsey Chia,Rosenblatt,1,0.5,False,unverified
+Kevin Chiang,CIBC,1,1.0,True,best_guess
+Kevin Heal,RBC Capital,1,1.0,True,best_guess
+Kevin Kopelman,Barclays,1,0.5,True,best_guess
+Kevin Kopelman,Benchmark,1,0.5,False,unverified
+Krish Sankar,B. Riley Securities,1,0.2,False,unverified
+Krish Sankar,Bernstein,1,0.2,False,unverified
+Kristen Owen,Oppenheimer,1,1.0,True,best_guess
+Kyle Boucher,Citigroup,1,1.0,True,best_guess
+Lauren Silberman,Deutsche Bank,1,1.0,True,best_guess
+Lee Hambright,Bernstein,1,1.0,True,best_guess
+Lee Simpson,Morgan Stanley,1,0.5,True,best_guess
+Lee Simpson,Needham,1,0.5,False,unverified
+Leo Carrington,Citigroup,1,1.0,True,best_guess
+Lizzie Dove,Goldman Sachs,1,1.0,True,best_guess
+Lloyd Walmsley,Oppenheimer,1,1.0,True,best_guess
+Lorraine Hutchinson,B of A Securities,1,1.0,True,best_guess
+Luke Junk,Baird,1,1.0,True,best_guess
+Luke Sergott,Mizuho,1,0.1111,False,unverified
+Madison Suhr,Raymond James,1,1.0,True,best_guess
+Maher Yaghi,Scotiabank,1,1.0,True,best_guess
+Manan Gosalia,Morgan Stanley,1,1.0,True,best_guess
+Manav Gupta,Raymond James,1,0.3333,False,unverified
+Manav Patnaik,RBC Capital,1,1.0,True,best_guess
+Marc Bianchi,Piper Sandler,1,0.3333,False,unverified
+Maria Ripps,Canaccord Genuity,1,1.0,True,best_guess
+Mariana Perez Mora,B of A Securities,1,1.0,True,best_guess
+Mark Altschwager,Baird,1,1.0,True,best_guess
+Mark Hughes,"Keefe, Bruyette & Woods",1,0.3333,False,unverified
+Mark Strouse,JP Morgan,1,1.0,True,best_guess
+Mark Zgutowicz,Benchmark,1,1.0,True,best_guess
+Martin Yang,Oppenheimer,1,1.0,True,best_guess
+Mathew Blackman,TD Cowen,1,1.0,True,best_guess
+Matt McCartney,Wedbush,1,1.0,True,best_guess
+Matt McKellar,RBC Capital,1,1.0,True,best_guess
+Matt Miksic,Barclays,1,1.0,True,best_guess
+Matt Summerville,DA Davidson,1,1.0,True,best_guess
+Matthew Bouley,Barclays,1,1.0,True,best_guess
+Matthew Breese,Stephens & Co.,1,1.0,True,best_guess
+Matthew Coad,Truist Securities,1,1.0,True,best_guess
+Matthew DeYoe,JP Morgan,1,1.0,True,best_guess
+Matthew Hedberg,Barclays,1,0.3333,True,best_guess
+Matthew Hedberg,JP Morgan,1,0.3333,False,unverified
+Matthew Hedberg,Rosenblatt,1,0.3333,False,unverified
+Matthew Niknam,Truist Securities,1,1.0,True,best_guess
+Matthew O'Brien,Mizuho,1,0.3333,False,unverified
+Matthew O'Neill,Baird,1,1.0,True,best_guess
+Matthew Smith,TD Cowen,1,0.5,True,best_guess
+Matthew Smith,UBS,1,0.5,False,unverified
+Max Rakhlenko,TD Cowen,1,1.0,True,best_guess
+Mayur Ramdhani,TD Cowen,1,1.0,True,best_guess
+Megan Alexander,Morgan Stanley,1,1.0,True,best_guess
+Mehdi Hosseini,Susquehanna,1,0.5,True,best_guess
+Mehdi Hosseini,UBS,1,0.5,False,unverified
+Meta Marshall,JP Morgan,1,0.125,False,unverified
+Meyer Shields,"Keefe, Bruyette & Woods",1,1.0,True,best_guess
+Michael Binetti,Citigroup,1,0.3333,False,unverified
+Michael Craig Jones,B of A Securities,1,1.0,True,best_guess
+Michael Graham,Canaccord Genuity,1,1.0,True,best_guess
+Michael Harrison,Seaport Global,1,1.0,True,best_guess
+Michael Lasser,Morgan Stanley,1,0.1429,False,unverified
+Michael Lasser,Wells Fargo,1,0.1429,False,unverified
+Michael Montani,Evercore ISI Group,1,1.0,True,best_guess
+Michael Morris,Guggenheim,1,1.0,True,best_guess
+Michael Ng,Goldman Sachs,1,1.0,True,best_guess
+Michael Piccolo,UBS,1,0.5,True,best_guess
+Michael Piccolo,Wedbush,1,0.5,False,unverified
+Michael Rose,Raymond James,1,1.0,True,best_guess
+Michael Ryskin,Morgan Stanley,1,1.0,True,best_guess
+Michael Shlisky,DA Davidson,1,1.0,True,best_guess
+Michael Turrin,Wells Fargo,1,1.0,True,best_guess
+Mike Hickey,Barclays,1,1.0,True,best_guess
+Mike Ng,Goldman Sachs,1,1.0,True,best_guess
+Mikhail Paramonov,RBC Capital,1,1.0,True,best_guess
+Nat Schindler,Wells Fargo,1,1.0,True,best_guess
+Nathan Feather,Morgan Stanley,1,1.0,True,best_guess
+Nathan Jones,Stifel,1,1.0,True,best_guess
+Nathan Martin,Benchmark,1,1.0,True,best_guess
+Nathan Treybeck,Wells Fargo,1,1.0,True,best_guess
+Naved Khan,UBS,1,0.2,False,unverified
+Nehal Chokshi,Northland Capital Markets,1,1.0,True,best_guess
+Nicholas Campanella,JP Morgan,1,0.1,False,unverified
+Nick Setyan,Mizuho,1,1.0,True,best_guess
+Nik Modi,Evercore ISI Group,1,1.0,True,best_guess
+Nitin Kumar,Mizuho,1,1.0,True,best_guess
+Noah Hungness,Wells Fargo,1,1.0,True,best_guess
+Noah Kaye,Oppenheimer,1,1.0,True,best_guess
+Noah Poponak,Goldman Sachs,1,1.0,True,best_guess
+Param Singh,Oppenheimer,1,1.0,True,best_guess
+Parker Snure,Raymond James,1,1.0,True,best_guess
+Patrick B Donnelly,Citigroup,1,0.5,True,best_guess
+Patrick B Donnelly,JP Morgan,1,0.5,False,unverified
+Patrick Moley,Piper Sandler,1,1.0,True,best_guess
+Patrick O'Shaughnessy,Raymond James,1,1.0,True,best_guess
+Patrick Wood,B of A Securities,1,0.25,False,unverified
+Paul Cole,B of A Securities,1,1.0,True,best_guess
+Paul Fremont,Ladenburg Thalmann,1,1.0,True,best_guess
+Paul Lejuez,BMO Capital,1,0.3333,True,best_guess
+Paul Lejuez,Citigroup,1,0.3333,False,unverified
+Paul Lejuez,TD Cowen,1,0.3333,False,unverified
+Paul Newsome,Piper Sandler,1,0.5,True,best_guess
+Paul Newsome,Wells Fargo,1,0.5,False,unverified
+Peter Clark,Bernstein,1,1.0,True,best_guess
+Peter Grom,TD Cowen,1,0.3333,False,unverified
+Peter Keith,Barclays,1,0.2,False,unverified
+Peter Levine,Evercore ISI Group,1,1.0,True,best_guess
+Peter Peng,TD Cowen,1,1.0,True,best_guess
+Peter Supino,Wolfe Research,1,1.0,True,best_guess
+Phil Nadeau,TD Cowen,1,1.0,True,best_guess
+Philippe Houchois,Jefferies,1,1.0,True,best_guess
+Phillip Jungwirth,BMO Capital,1,1.0,True,best_guess
+Pooran Sharma,Stephens & Co.,1,1.0,True,best_guess
+Praneeth Satish,Wells Fargo,1,1.0,True,best_guess
+Raj Kumar,Stephens & Co.,1,1.0,True,best_guess
+Rajesh Kumar,HSBC,1,1.0,True,best_guess
+Ric Prentiss,JP Morgan,1,0.5,True,best_guess
+Ric Prentiss,Raymond James,1,0.5,False,unverified
+Richard Anderson,Cantor Fitzgerald,1,1.0,True,best_guess
+Richard Poland,Wells Fargo,1,1.0,True,best_guess
+Richard Sunderland,Keybanc,1,1.0,True,best_guess
+Rick Patel,Telsey Advisory Group,1,0.3333,False,unverified
+Rick Schafer,Oppenheimer,1,0.5,True,best_guess
+Rick Schafer,RBC Capital,1,0.5,False,unverified
+Rob Owens,Piper Sandler,1,1.0,True,best_guess
+Robbie Marcus,JP Morgan,1,1.0,True,best_guess
+Robert Moskow,UBS,1,0.1111,False,unverified
+Robert Oliver,Evercore ISI Group,1,1.0,True,best_guess
+Robert Ottenstein,Evercore ISI Group,1,1.0,True,best_guess
+Robin M. Farley,UBS,1,1.0,True,best_guess
+Roger Boyd,Raymond James,1,0.5,True,best_guess
+Roger Boyd,UBS,1,0.5,False,unverified
+Rohit Kulkarni,Roth Capital,1,1.0,True,best_guess
+Ronald Josey,Citigroup,1,1.0,True,best_guess
+Ross Seymore,TD Cowen,1,1.0,True,best_guess
+Ruben Roy,Stifel,1,1.0,True,best_guess
+Rudy Kessinger,DA Davidson,1,1.0,True,best_guess
+Russell Gunther,Stephens & Co.,1,1.0,True,best_guess
+Ryan Griffin,BMO Capital,1,1.0,True,best_guess
+Ryan Kenny,Morgan Stanley,1,1.0,True,best_guess
+Ryan Langston,TD Cowen,1,1.0,True,best_guess
+Ryan Todd,Piper Sandler,1,1.0,True,best_guess
+Saken Ismailov,Morgan Stanley,1,1.0,True,best_guess
+Saket Kalia,JP Morgan,1,0.25,False,unverified
+Saket Kalia,Rosenblatt,1,0.25,False,unverified
+Sam Poser,Goldman Sachs,1,1.0,True,best_guess
+Samik Chatterjee,Citigroup,1,0.1667,False,unverified
+Samik Chatterjee,Keybanc,1,0.1667,False,unverified
+Samik Chatterjee,Morgan Stanley,1,0.1667,False,unverified
+Sara Senatore,JP Morgan,1,1.0,True,best_guess
+Scott Fidel,Goldman Sachs,1,1.0,True,best_guess
+Sean Diffley,Morgan Stanley,1,1.0,True,best_guess
+Sebastiano Petti,Morgan Stanley,1,1.0,True,best_guess
+Seth Sigman,Barclays,1,0.3333,True,best_guess
+Seth Sigman,DA Davidson,1,0.3333,False,unverified
+Seth Sigman,UBS,1,0.3333,False,unverified
+Shaul Eyal,TD Cowen,1,1.0,True,best_guess
+Shaun Kelley,JP Morgan,1,1.0,True,best_guess
+Sheila Kahyaoglu,TD Cowen,1,0.3333,False,unverified
+Shlomo Rosenbaum,Stifel,1,1.0,True,best_guess
+Shyam Patil,Canaccord Genuity,1,0.25,False,unverified
+Sidharth Sahoo,HSBC,1,1.0,True,best_guess
+Simeon Gutman,UBS,1,0.25,False,unverified
+Simon Hales,Barclays,1,0.5,True,best_guess
+Simon Hales,Citigroup,1,0.5,False,unverified
+Simon Yarmak,Stifel,1,1.0,True,best_guess
+Siti Panigrahi,Barclays,1,0.25,True,best_guess
+Siti Panigrahi,JP Morgan,1,0.25,False,unverified
+Siti Panigrahi,Mizuho,1,0.25,False,unverified
+Siti Panigrahi,Rosenblatt,1,0.25,False,unverified
+Sophie Karp,JP Morgan,1,1.0,True,best_guess
+Spiro M. Dounis,Citigroup,1,1.0,True,best_guess
+Srikripa Devarakonda,Truist Securities,1,1.0,True,best_guess
+Srini Pajjuri,RBC Capital,1,1.0,True,best_guess
+Stephen Gengaro,Piper Sandler,1,0.5,True,best_guess
+Stephen Gengaro,TD Cowen,1,0.5,False,unverified
+Stephen Ju,B. Riley Securities,1,0.1429,False,unverified
+Stephen Kim,Evercore ISI Group,1,1.0,True,best_guess
+Stephen Powers,Evercore ISI Group,1,1.0,True,best_guess
+Stephen Richardson,Evercore ISI Group,1,1.0,True,best_guess
+Steve Barger,Keybanc,1,1.0,True,best_guess
+Steven Cahall,Wells Fargo,1,1.0,True,best_guess
+Steven Etoch,Stephens & Co.,1,1.0,True,best_guess
+Steven Shemesh,RBC Capital,1,1.0,True,best_guess
+Steven Valiquette,Mizuho,1,1.0,True,best_guess
+Sumant Kulkarni,Canaccord Genuity,1,1.0,True,best_guess
+Suneet Kamath,Jefferies,1,1.0,True,best_guess
+Tal Liani,B of A Securities,1,0.5,True,best_guess
+Tal Liani,TD Cowen,1,0.5,False,unverified
+Tami Zakaria,JP Morgan,1,1.0,True,best_guess
+Tanya Jakusconek,Scotiabank,1,1.0,True,best_guess
+Taylor McGinnis,UBS,1,1.0,True,best_guess
+Terry Ma,Barclays,1,1.0,True,best_guess
+Thomas O'Malley,Stifel,1,1.0,True,best_guess
+Thomas Wadewitz,RBC Capital,1,0.25,False,unverified
+Thomas Wadewitz,TD Cowen,1,0.25,False,unverified
+Tien Tsin Huang,Wells Fargo,1,0.3333,False,unverified
+Timna Tanners,Wells Fargo,1,1.0,True,best_guess
+Timothy Arcuri,Stifel,1,0.3333,True,best_guess
+Timothy Arcuri,UBS,1,0.3333,False,unverified
+Timothy Arcuri,Wells Fargo,1,0.3333,False,unverified
+Timothy Horan,Oppenheimer,1,1.0,True,best_guess
+Timothy Wojs,JP Morgan,1,1.0,True,best_guess
+Todd Brooks,Goldman Sachs,1,1.0,True,best_guess
+Tom Forte,Citigroup,1,1.0,True,best_guess
+Tom Narayan,RBC Capital,1,1.0,True,best_guess
+Tom Nikic,Needham,1,1.0,True,best_guess
+Tom White,DA Davidson,1,1.0,True,best_guess
+Tore Svanberg,Benchmark,1,0.5,True,best_guess
+Tore Svanberg,Wells Fargo,1,0.5,False,unverified
+Trey Grooms,Barclays,1,0.25,False,unverified
+Tycho Peterson,Jefferies,1,1.0,True,best_guess
+Tyler Batory,Oppenheimer,1,1.0,True,best_guess
+Vedvati Shrotre,Evercore ISI Group,1,1.0,True,best_guess
+Vijay Rakesh,Wells Fargo,1,0.3333,False,unverified
+Vlad Bystricky,Citigroup,1,1.0,True,best_guess
+Wamsi Mohan,Citigroup,1,0.5,True,best_guess
+Wamsi Mohan,Oppenheimer,1,0.5,False,unverified
+William Grippin,Barclays,1,1.0,True,best_guess
+William Janela,Mizuho,1,1.0,True,best_guess
+William Stein,Truist Securities,1,1.0,True,best_guess
+Yatin Suneja,Guggenheim,1,1.0,True,best_guess
+Ygal Arounian,Canaccord Genuity,1,0.3333,False,unverified
+Young Li,Stifel,1,1.0,True,best_guess
+Youssef Squali,Truist Securities,1,1.0,True,best_guess
+Yun Kim,Barclays,1,0.3333,True,best_guess
+Yun Kim,JP Morgan,1,0.3333,False,unverified
+Yun Kim,Rosenblatt,1,0.3333,False,unverified
+Zachary Fadem,Barclays,1,0.3333,True,best_guess
+Zachary Fadem,TD Cowen,1,0.3333,False,unverified
+Zachary Fadem,Wells Fargo,1,0.3333,False,unverified

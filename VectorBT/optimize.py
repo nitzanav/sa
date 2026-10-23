@@ -35,6 +35,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shlex
 import sys
 from collections import defaultdict
 from dataclasses import dataclass
@@ -2206,7 +2207,41 @@ def unique_buys_from_rows(rows, n, extra=()):
     return buys
 
 
-def run_combos(signals, close, spy, buys, specs, seen, iteration, one_lot=False):
+POSITION_COLUMNS = [
+    "sell",
+    "buy",
+    "ticker",
+    "date_buy",
+    "date_sell",
+    "price_buy",
+    "price_sell",
+    "pnl",
+    "return_pct",
+    "return_pct_30d",
+    "spy_pct",
+    "vs_spy_pct",
+    "hold_days",
+    "status",
+    "trade_from",
+    "trade_to",
+    "days_exposed",
+    "lot_days",
+    "avg_lot_amount",
+]
+
+
+def tag_positions(positions, row):
+    frame = positions.copy()
+    frame.insert(0, "sell", row.get("short") or row.get("tag", ""))
+    frame.insert(1, "buy", row.get("buy_label", ""))
+    for key in ("trade_from", "trade_to", "days_exposed", "lot_days", "avg_lot_amount"):
+        frame[key] = row.get(key)
+    return frame[POSITION_COLUMNS]
+
+
+def run_combos(
+    signals, close, spy, buys, specs, seen, iteration, one_lot=False, position_log=None
+):
     rows = []
     close_wide = None
     init_cash = None
@@ -2227,7 +2262,7 @@ def run_combos(signals, close, spy, buys, specs, seen, iteration, one_lot=False)
                 f"  I{iteration} {done}/{planned} {spec.short} · {buy_label(buy)} "
                 f"({len(bought)} signals)"
             )
-            row, _, close_wide, _, init_cash = run_one(
+            row, positions, close_wide, _, init_cash = run_one(
                 f"{spec.label} · {buy_label(buy)}",
                 close,
                 spy,
@@ -2241,9 +2276,12 @@ def run_combos(signals, close, spy, buys, specs, seen, iteration, one_lot=False)
             print(
                 f"    invested {row['return_on_avg_invested_pct']:+.1f}%  "
                 f"{money(row['stock_pnl'])}  "
-                f"{row['n_closed']}c/{row['n_open']}o"
+                f"{row['n_closed']}c/{row['n_open']}o  "
+                f"exposed {row['days_exposed']}d  lot-days {row['lot_days']}"
             )
             rows.append(row)
+            if position_log is not None:
+                position_log.append(tag_positions(positions, row))
             seen.add(key)
     return rows, close_wide, init_cash
 
@@ -2271,6 +2309,16 @@ def closed_plan_text(locks):
     return lines
 
 
+def exposure_cells(row):
+    window = f"{row.get('trade_from', '')} → {row.get('trade_to', '')}"
+    return [
+        window,
+        str(row.get("days_exposed", "")),
+        str(row.get("lot_days", "")),
+        f"${row.get('avg_lot_amount', 0):,.0f}",
+    ]
+
+
 def closed_compact_table(rows, limit=None):
     ordered = sorted(
         rows,
@@ -2281,9 +2329,12 @@ def closed_compact_table(rows, limit=None):
         ordered = ordered[:limit]
     head = (
         "| Rank | I | Sell | Buy | n | On invested | Stock P&L | Win | "
-        "Trades | vs SPY |"
+        "Trades | vs SPY | Trade window | Days exposed | Lot-days | Avg lot |"
     )
-    sep = "| ---: | ---: | --- | --- | ---: | ---: | ---: | ---: | --- | ---: |"
+    sep = (
+        "| ---: | ---: | --- | --- | ---: | ---: | ---: | ---: | --- | ---: | "
+        "--- | ---: | ---: | ---: |"
+    )
     lines = [head, sep]
     for i, row in enumerate(ordered, 1):
         lines.append(
@@ -2300,6 +2351,7 @@ def closed_compact_table(rows, limit=None):
                     f"{row['win_rate_pct']:.1f}%",
                     f"{row['n_closed']}c/{row['n_open']}o",
                     f"{row['vs_spy_pct']:+.2f}%",
+                    *exposure_cells(row),
                 ]
             )
             + " |"
@@ -2671,6 +2723,13 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
             f"{best['n_closed']}c/{best['n_open']}o"
         ),
         "",
+        (
+            f"# TRADES {best.get('trade_from', '')} → {best.get('trade_to', '')} · "
+            f"{best.get('days_exposed', 0)} DAYS EXPOSED · "
+            f"{best.get('lot_days', 0)} LOT-DAYS · "
+            f"AVG LOT ${best.get('avg_lot_amount', 0):,.0f}"
+        ),
+        "",
         "## Signal counts",
         "",
         coarse_count_table(signals, buys),
@@ -2787,11 +2846,13 @@ def fine_sell_grid():
     )
 
 
-def run_fine(signals, close, spy):
+def run_fine(signals, close, spy, position_log=None):
     buys = fine_buy_grid()
     specs = fine_sell_grid()
     print(f"\n=== Fine grid: {len(buys)} buys × {len(specs)} sells ===")
-    return run_combos(signals, close, spy, buys, specs, set(), "fine")
+    return run_combos(
+        signals, close, spy, buys, specs, set(), "fine", position_log=position_log
+    )
 
 
 def cohort_frames(signals):
@@ -2813,7 +2874,7 @@ def cohort_frames(signals):
     )
 
 
-def run_split(signals, close, spy, buys, specs):
+def run_split(signals, close, spy, buys, specs, position_log=None):
     rows = []
     close_wide = None
     init_cash = None
@@ -2833,7 +2894,7 @@ def run_split(signals, close, spy, buys, specs):
                 print(
                     f"  split {done}/{planned} {spec.short} · {label} ({len(bought)} signals)"
                 )
-                row, _, close_wide, _, init_cash = run_one(
+                row, positions, close_wide, _, init_cash = run_one(
                     f"{spec.label} · {label}", close, spy, bought, spec
                 )
                 tagged = dict(bought_filter)
@@ -2846,6 +2907,8 @@ def run_split(signals, close, spy, buys, specs):
                     f"{money(row['stock_pnl'])}  {row['n_closed']}c/{row['n_open']}o"
                 )
                 rows.append(row)
+                if position_log is not None:
+                    position_log.append(tag_positions(positions, row))
     return rows, close_wide, init_cash
 
 
@@ -2861,6 +2924,758 @@ def append_split_summary(path, rows):
     ]
     path.write_text(path.read_text() + "\n".join(lines))
     print(f"Appended split table → {path}")
+
+
+GRID_CANVAS = r'''import {
+  H1,
+  H2,
+  Pill,
+  Row,
+  Stack,
+  Stat,
+  Table,
+  Text,
+  useCanvasState,
+  useHostTheme,
+  useMemo,
+  type CSSProperties,
+} from "cursor/canvas";
+
+const SOURCE = __SOURCE__;
+
+const ANALYSTS = __ANALYSTS__;
+const UPSIDES = __UPSIDES__;
+const HOLDS = __HOLDS__;
+const TARGETS = __TARGETS__;
+const DROPS = __DROPS__;
+
+type Buy = { a: number; p: number; n: number; sym: number };
+type Sell = { h: number; t: number; d: number };
+
+const BUYS: Buy[] = __BUYS__;
+const SELLS: Sell[] = __SELLS__;
+const ROI: number[][] = __ROI__;
+const PNL: number[][] = __PNL__;
+const EXPOSED: number[][] = __EXPOSED__;
+const LOTDAYS: number[][] = __LOTDAYS__;
+const AVGLOT: number[][] = __AVGLOT__;
+const WIN: number[][] = __WIN__;
+const CLOSED: number[][] = __CLOSED__;
+const OPENN: number[][] = __OPEN__;
+const FROM: string[][] = __FROM__;
+const TO: string[][] = __TO__;
+
+function buyLabel(buy: Buy): string {
+  return `>${buy.a},>${buy.p}%`;
+}
+
+function sellLabel(sell: Sell): string {
+  return `${sell.h}d ${sell.t}% ${sell.d}dd`;
+}
+
+function money(n: number): string {
+  const sign = n >= 0 ? "+" : "-";
+  return `${sign}$${Math.abs(Math.round(n)).toLocaleString("en-US")}`;
+}
+
+function pct(n: number): string {
+  return `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`;
+}
+
+function lotMoney(n: number): string {
+  return `$${Math.round(n).toLocaleString("en-US")}`;
+}
+
+function parseHex(value: string): { r: number; g: number; b: number } | null {
+  const raw = value.trim().replace("#", "");
+  const hex = raw.length === 8 || raw.length === 4 ? raw.slice(0, raw.length === 8 ? 6 : 3) : raw;
+  const full = hex.length === 3 ? hex.split("").map((c) => c + c).join("") : hex;
+  if (full.length !== 6 || Number.isNaN(parseInt(full, 16))) return null;
+  return {
+    r: parseInt(full.slice(0, 2), 16),
+    g: parseInt(full.slice(2, 4), 16),
+    b: parseInt(full.slice(4, 6), 16),
+  };
+}
+
+function parseColor(value: string): { r: number; g: number; b: number } | null {
+  const hex = parseHex(value);
+  if (hex) return hex;
+  const match = value.match(/rgba?\(\s*([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)/i);
+  if (!match) return null;
+  return { r: Number(match[1]), g: Number(match[2]), b: Number(match[3]) };
+}
+
+function mix(a: string, b: string, t: number, fallback: string): string {
+  const pa = parseColor(a);
+  const pb = parseColor(b);
+  if (!pa || !pb) return fallback;
+  const clamp = Math.min(1, Math.max(0, t));
+  const r = Math.round(pa.r + (pb.r - pa.r) * clamp);
+  const g = Math.round(pa.g + (pb.g - pa.g) * clamp);
+  const bl = Math.round(pa.b + (pb.b - pa.b) * clamp);
+  return `rgb(${r}, ${g}, ${bl})`;
+}
+
+function heat(t: number, yellow: string, orange: string, red: string, fallback: string): string {
+  const clamp = Math.min(1, Math.max(0, t));
+  return clamp < 0.5
+    ? mix(yellow, orange, clamp * 2, fallback)
+    : mix(orange, red, (clamp - 0.5) * 2, fallback);
+}
+
+function channel(c: number): number {
+  const x = c / 255;
+  return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+}
+
+function luminance(rgb: { r: number; g: number; b: number }): number {
+  return 0.2126 * channel(rgb.r) + 0.7152 * channel(rgb.g) + 0.0722 * channel(rgb.b);
+}
+
+function readable(bg: string, primary: string, editor: string): string {
+  const b = parseColor(bg);
+  const p = parseColor(primary);
+  const e = parseColor(editor);
+  if (!b || !p || !e) return primary;
+  const score = (ink: { r: number; g: number; b: number }) => {
+    const lighter = Math.max(luminance(b), luminance(ink));
+    const darker = Math.min(luminance(b), luminance(ink));
+    return (lighter + 0.05) / (darker + 0.05);
+  };
+  return score(p) >= score(e) ? primary : editor;
+}
+
+function span(values: number[]): { min: number; max: number } {
+  let min = values[0];
+  let max = values[0];
+  for (const value of values) {
+    if (value < min) min = value;
+    if (value > max) max = value;
+  }
+  return { min, max };
+}
+
+function unit(value: number, min: number, max: number): number {
+  if (max === min) return 0.5;
+  return (value - min) / (max - min);
+}
+
+const STAT_NAMES = ["min", "avg", "max"] as const;
+type StatName = (typeof STAT_NAMES)[number];
+type Stats = Record<StatName, number>;
+const METRICS = ["pct", "pnl"] as const;
+type Metric = (typeof METRICS)[number];
+
+function mean(values: number[]): number {
+  return values.reduce((total, value) => total + value, 0) / values.length;
+}
+
+function pack(values: number[]): Stats {
+  return { min: Math.min(...values), avg: mean(values), max: Math.max(...values) };
+}
+
+function cornerOf(perRow: Stats[]): Record<StatName, Stats> {
+  const out = {} as Record<StatName, Stats>;
+  for (const rowStat of STAT_NAMES) {
+    const row = {} as Stats;
+    for (const colStat of STAT_NAMES) {
+      row[colStat] = pack(perRow.map((item) => item[colStat]))[rowStat];
+    }
+    out[rowStat] = row;
+  }
+  return out;
+}
+
+function statLabel(name: StatName): string {
+  if (name === "min") return "Min";
+  if (name === "avg") return "Avg";
+  return "Max";
+}
+
+function toggleItem<T extends string | number>(current: T[], value: T, all: readonly T[]): T[] {
+  const has = current.includes(value);
+  if (has && current.length === 1) return current;
+  const next = has ? current.filter((item) => item !== value) : [...current, value];
+  return all.filter((item) => next.includes(item));
+}
+
+function FilterGroup<T extends string | number>({
+  label,
+  options,
+  selected,
+  onChange,
+  format,
+}: {
+  label: string;
+  options: readonly T[];
+  selected: T[];
+  onChange: (next: T[]) => void;
+  format: (value: T) => string;
+}) {
+  return (
+    <Row gap={6} align="center" wrap>
+      <Text size="small" tone="secondary" weight="semibold">
+        {label}
+      </Text>
+      {options.map((option) => (
+        <Pill
+          key={String(option)}
+          size="sm"
+          active={selected.includes(option)}
+          onClick={() => onChange(toggleItem(selected, option, options))}
+        >
+          {format(option)}
+        </Pill>
+      ))}
+    </Row>
+  );
+}
+
+function Scale({
+  label,
+  range,
+  format,
+  yellow,
+  orange,
+  red,
+  fallback,
+}: {
+  label: string;
+  range: { min: number; max: number };
+  format: (n: number) => string;
+  yellow: string;
+  orange: string;
+  red: string;
+  fallback: string;
+}) {
+  const steps = [0, 0.25, 0.5, 0.75, 1];
+  return (
+    <Row gap={8} align="center" wrap>
+      <Text size="small" tone="secondary" weight="semibold">
+        {label}
+      </Text>
+      <Text size="small" tone="tertiary">
+        {format(range.min)}
+      </Text>
+      {steps.map((step) => (
+        <div
+          key={step}
+          style={{
+            width: 28,
+            height: 14,
+            background: heat(step, yellow, orange, red, fallback),
+          }}
+        />
+      ))}
+      <Text size="small" tone="tertiary">
+        {format(range.max)}
+      </Text>
+    </Row>
+  );
+}
+
+export default function FineGridCanvas() {
+  const theme = useHostTheme();
+  const [analysts, setAnalysts] = useCanvasState<number[]>("fine-analysts", ANALYSTS);
+  const [upsides, setUpsides] = useCanvasState<number[]>("fine-upsides", UPSIDES);
+  const [holds, setHolds] = useCanvasState<number[]>("fine-holds", HOLDS);
+  const [targets, setTargets] = useCanvasState<number[]>("fine-targets", TARGETS);
+  const [drops, setDrops] = useCanvasState<number[]>("fine-drops", DROPS);
+  const [metrics, setMetrics] = useCanvasState<Metric[]>("fine-metrics", ["pct", "pnl"]);
+
+  const view = useMemo(() => {
+    const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
+      ({ buy }) => analysts.includes(buy.a) && upsides.includes(buy.p),
+    );
+    const sells = SELLS.map((sell, col) => ({ sell, col })).filter(
+      ({ sell }) => holds.includes(sell.h) && targets.includes(sell.t) && drops.includes(sell.d),
+    );
+    const rowRoi = buys.map(({ row }) => pack(sells.map(({ col }) => ROI[row][col])));
+    const rowPnl = buys.map(({ row }) => pack(sells.map(({ col }) => PNL[row][col])));
+    const colRoi = sells.map(({ col }) => pack(buys.map(({ row }) => ROI[row][col])));
+    const colPnl = sells.map(({ col }) => pack(buys.map(({ row }) => PNL[row][col])));
+    return {
+      buys,
+      sells,
+      rowRoi,
+      rowPnl,
+      colRoi,
+      colPnl,
+      cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
+      cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
+    };
+  }, [analysts, upsides, holds, targets, drops]);
+
+  const roiRange = span(ROI.flat());
+  const pnlRange = span(PNL.flat());
+  const showPct = metrics.includes("pct");
+  const showPnl = metrics.includes("pnl");
+
+  const cells = view.buys.flatMap(({ buy, row }) =>
+    view.sells.map(({ sell, col }) => ({
+      label: `${buyLabel(buy)} · ${sellLabel(sell)}`,
+      sell: sellLabel(sell),
+      buy: buyLabel(buy),
+      roi: ROI[row][col],
+      pnl: PNL[row][col],
+      n: buy.n,
+      from: FROM[row][col],
+      to: TO[row][col],
+      exposed: EXPOSED[row][col],
+      lotDays: LOTDAYS[row][col],
+      avgLot: AVGLOT[row][col],
+      win: WIN[row][col],
+      closed: CLOSED[row][col],
+      open: OPENN[row][col],
+    })),
+  );
+  const topScore = cells.reduce((best, cell) => (cell.roi > best.roi ? cell : best), cells[0]);
+  const topCash = cells.reduce((best, cell) => (cell.pnl > best.pnl ? cell : best), cells[0]);
+  const ranked = [...cells].sort((a, b) => b.roi - a.roi || b.pnl - a.pnl).slice(0, 12);
+
+  const yellow = theme.category.yellow;
+  const orange = theme.category.orange;
+  const red = theme.category.red;
+  const fallback = theme.fill.tertiary;
+  const paint = (
+    key: string,
+    value: number,
+    range: { min: number; max: number },
+    text: string,
+    title: string,
+    edge = false,
+  ) => {
+    const background = heat(unit(value, range.min, range.max), yellow, orange, red, fallback);
+    return (
+      <td
+        key={key}
+        title={title}
+        style={{
+          background,
+          color: readable(background, theme.text.primary, theme.bg.editor),
+          textAlign: "right",
+          padding: "6px 7px",
+          fontSize: 12,
+          lineHeight: "16px",
+          fontVariantNumeric: "tabular-nums",
+          whiteSpace: "nowrap",
+          borderLeft: edge ? `1px solid ${theme.stroke.secondary}` : undefined,
+        }}
+      >
+        {text}
+      </td>
+    );
+  };
+
+  const labelCell = (text: string, sticky: boolean, strong: boolean) => (
+    <td
+      style={{
+        position: sticky ? "sticky" : undefined,
+        left: sticky ? 0 : undefined,
+        zIndex: sticky ? 1 : undefined,
+        background: theme.bg.editor,
+        padding: "6px 8px",
+        whiteSpace: "nowrap",
+        borderTop: strong ? `1px solid ${theme.stroke.secondary}` : undefined,
+        borderLeft: strong && !sticky ? `1px solid ${theme.stroke.secondary}` : undefined,
+      }}
+    >
+      <Text size="small" weight={strong ? "semibold" : "medium"}>
+        {text}
+      </Text>
+    </td>
+  );
+
+  const countCell = (value: string, strong: boolean) => (
+    <td
+      style={{
+        textAlign: "right",
+        padding: "6px 8px",
+        whiteSpace: "nowrap",
+        borderTop: strong ? `1px solid ${theme.stroke.secondary}` : undefined,
+      }}
+    >
+      <Text size="small" tone={strong ? "primary" : "secondary"} weight={strong ? "semibold" : "normal"}>
+        {value}
+      </Text>
+    </td>
+  );
+
+  const head: CSSProperties = {
+    textAlign: "center",
+    padding: "4px 6px",
+    fontSize: 12,
+    lineHeight: "16px",
+    fontWeight: 590,
+    color: theme.text.secondary,
+    whiteSpace: "nowrap",
+    background: theme.bg.editor,
+  };
+  const both = showPct && showPnl;
+  const pair = (key: string, roi: number, pnl: number, title: string, edge = false) => {
+    const out = [];
+    if (showPct) out.push(paint(`${key}-pct`, roi, roiRange, pct(roi), `${title} · return`, edge));
+    if (showPnl) out.push(paint(`${key}-pnl`, pnl, pnlRange, money(pnl), `${title} · profit`, edge && !showPct));
+    return out;
+  };
+  const filled = view.buys.length > 0 && view.sells.length > 0 && topScore && topCash && view.cornerRoi && view.cornerPnl;
+
+  return (
+    <Stack gap={20}>
+      <Stack gap={6}>
+        <H1>7-day fine grid</H1>
+        <Text size="small" tone="secondary">
+          {SOURCE}
+        </Text>
+      </Stack>
+
+      {filled ? (
+        <Row gap={16} wrap>
+          {showPct ? (
+            <Stat value={pct(topScore.roi)} label={`Best return · ${topScore.label}`} tone="success" />
+          ) : null}
+          {showPnl ? <Stat value={money(topCash.pnl)} label={`Most cash · ${topCash.label}`} /> : null}
+          <Stat value={`${topScore.from} → ${topScore.to}`} label="Best return · trade window" />
+          <Stat value={String(topScore.exposed)} label="Best return · days exposed" />
+          <Stat value={String(topScore.lotDays)} label="Best return · lot-days" />
+          <Stat value={lotMoney(topScore.avgLot)} label="Best return · average lot" />
+          <Stat value={String(cells.length)} label="Combinations shown" />
+        </Row>
+      ) : null}
+
+      <Stack gap={8}>
+        <FilterGroup
+          label="Show"
+          options={METRICS}
+          selected={metrics}
+          onChange={setMetrics}
+          format={(value) => (value === "pct" ? "%" : "$")}
+        />
+        <FilterGroup
+          label="Analysts"
+          options={ANALYSTS}
+          selected={analysts}
+          onChange={setAnalysts}
+          format={(value) => `>${value}`}
+        />
+        <FilterGroup
+          label="Upside"
+          options={UPSIDES}
+          selected={upsides}
+          onChange={setUpsides}
+          format={(value) => `>${value}%`}
+        />
+        <FilterGroup
+          label="Hold"
+          options={HOLDS}
+          selected={holds}
+          onChange={setHolds}
+          format={(value) => `${value}d`}
+        />
+        <FilterGroup
+          label="Target"
+          options={TARGETS}
+          selected={targets}
+          onChange={setTargets}
+          format={(value) => `${value}%`}
+        />
+        <FilterGroup
+          label="Drop"
+          options={DROPS}
+          selected={drops}
+          onChange={setDrops}
+          format={(value) => `${value}dd`}
+        />
+      </Stack>
+
+      {filled ? (
+        <Stack gap={8}>
+          <H2>Buy × sell</H2>
+          <Text size="small" tone="secondary">
+            Yellow is the smaller number and red is the larger one, on a scale fixed to the full
+            grid. The three columns are the min, average, and max of that buy across the sells in
+            view. The three rows do the same for each sell across the buys in view. Symbols are
+            unique tickers in that buy. Signals are the lots opened.
+          </Text>
+          {showPct ? (
+            <Scale label="Return" range={roiRange} format={pct} yellow={yellow} orange={orange} red={red} fallback={fallback} />
+          ) : null}
+          {showPnl ? (
+            <Scale label="Profit" range={pnlRange} format={money} yellow={yellow} orange={orange} red={red} fallback={fallback} />
+          ) : null}
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ borderCollapse: "separate", borderSpacing: 2 }}>
+              <thead>
+                <tr>
+                  <th
+                    rowSpan={both ? 2 : 1}
+                    style={{ ...head, textAlign: "left", position: "sticky", left: 0, zIndex: 2 }}
+                  >
+                    Buy
+                  </th>
+                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
+                    Symbols
+                  </th>
+                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
+                    Signals
+                  </th>
+                  {view.sells.map(({ sell }) => (
+                    <th key={sellLabel(sell)} colSpan={both ? 2 : 1} style={head}>
+                      {sellLabel(sell)}
+                    </th>
+                  ))}
+                  {STAT_NAMES.map((name, index) => (
+                    <th
+                      key={name}
+                      colSpan={both ? 2 : 1}
+                      style={{
+                        ...head,
+                        borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
+                      }}
+                    >
+                      {statLabel(name)}
+                    </th>
+                  ))}
+                </tr>
+                {both ? (
+                  <tr>
+                    {view.sells.flatMap(({ sell }) => {
+                      const name = sellLabel(sell);
+                      return [
+                        <th key={`${name}-pct`} style={head}>
+                          %
+                        </th>,
+                        <th key={`${name}-pnl`} style={head}>
+                          $
+                        </th>,
+                      ];
+                    })}
+                    {STAT_NAMES.flatMap((name, index) => [
+                      <th
+                        key={`${name}-pct`}
+                        style={{
+                          ...head,
+                          borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
+                        }}
+                      >
+                        %
+                      </th>,
+                      <th key={`${name}-pnl`} style={head}>
+                        $
+                      </th>,
+                    ])}
+                  </tr>
+                ) : null}
+              </thead>
+              <tbody>
+                {view.buys.map(({ buy, row }, index) => (
+                  <tr key={buyLabel(buy)}>
+                    {labelCell(buy.n < 30 ? `${buyLabel(buy)} · thin` : buyLabel(buy), true, false)}
+                    {countCell(String(buy.sym), false)}
+                    {countCell(String(buy.n), false)}
+                    {view.sells.flatMap(({ sell, col }) => {
+                      const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
+                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
+                      return pair(name, ROI[row][col], PNL[row][col], title);
+                    })}
+                    {STAT_NAMES.flatMap((name, statIndex) =>
+                      pair(
+                        `${buyLabel(buy)}-${name}`,
+                        view.rowRoi[index][name],
+                        view.rowPnl[index][name],
+                        `${buyLabel(buy)} · ${statLabel(name)} across sells`,
+                        statIndex === 0,
+                      ),
+                    )}
+                  </tr>
+                ))}
+                {STAT_NAMES.map((rowStat, rowIndex) => (
+                  <tr key={rowStat}>
+                    {labelCell(statLabel(rowStat), true, rowIndex === 0)}
+                    {countCell("—", rowIndex === 0)}
+                    {countCell("—", rowIndex === 0)}
+                    {view.sells.flatMap(({ sell }, index) => {
+                      const name = sellLabel(sell);
+                      return pair(
+                        `${rowStat}-${name}`,
+                        view.colRoi[index][rowStat],
+                        view.colPnl[index][rowStat],
+                        `${name} · ${statLabel(rowStat)} across buys`,
+                      );
+                    })}
+                    {STAT_NAMES.flatMap((colStat, statIndex) =>
+                      pair(
+                        `${rowStat}-${colStat}`,
+                        view.cornerRoi![rowStat][colStat],
+                        view.cornerPnl![rowStat][colStat],
+                        `${statLabel(rowStat)} of each buy's ${statLabel(colStat).toLowerCase()}`,
+                        statIndex === 0,
+                      ),
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </Stack>
+      ) : (
+        <Text size="small" tone="secondary">
+          These pills leave out every buy in this grid.
+        </Text>
+      )}
+
+      {filled ? (
+        <Stack gap={8}>
+          <H2>Lot exposure on the best returns</H2>
+          <Text size="small" tone="secondary">
+            Top 12 visible cells by return on invested. Days exposed are distinct calendar days
+            with a lot open. Lot-days are the sum of each lot's calendar hold. A 3-day lot, a
+            1-day lot, and another 3-day lot are 6 lot-days.
+          </Text>
+          <Table
+            headers={["Sell", "Buy", "On invested", "Stock P&L", "Trade window", "Days exposed", "Lot-days", "Avg lot", "Win", "Lots"]}
+            columnAlign={["left", "left", "right", "right", "left", "right", "right", "right", "right", "right"]}
+            rows={ranked.map((cell) => [
+              cell.sell,
+              cell.buy,
+              pct(cell.roi),
+              money(cell.pnl),
+              `${cell.from} → ${cell.to}`,
+              String(cell.exposed),
+              String(cell.lotDays),
+              lotMoney(cell.avgLot),
+              pct(cell.win),
+              `${cell.closed}c/${cell.open}o`,
+            ])}
+            striped
+            stickyHeader
+          />
+        </Stack>
+      ) : null}
+    </Stack>
+  );
+}
+'''
+
+
+CANVAS_DIR = Path.home() / ".cursor/projects/Users-nitzan-dev-sa/canvases"
+
+
+def write_positions_log(path, frames):
+    out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=POSITION_COLUMNS)
+    out.to_csv(path, index=False)
+    print(f"Wrote {path} ({len(out)} rows)")
+
+
+def write_code_snapshot(prefix, argv):
+    py_path = Path(f"{prefix}.py")
+    py_path.write_bytes(Path(__file__).read_bytes())
+    command = "./penv python VectorBT/optimize.py " + " ".join(shlex.quote(str(arg)) for arg in argv)
+    sh_path = Path(f"{prefix}.sh")
+    sh_path.write_text(
+        "#!/bin/sh\n"
+        'cd "$(dirname "$0")/.." || exit 1\n'
+        f"{command}\n"
+    )
+    sh_path.chmod(0o755)
+    print(f"Wrote {py_path}")
+    print(f"Wrote {sh_path}")
+
+
+def _pct_number(value):
+    number = round(float(value) * 100, 2)
+    return int(number) if number == int(number) else number
+
+
+def write_grid_canvas(prefix, rows, signals, buys, specs, info):
+    by_key = {(row["buy_label"], row["tag"]): row for row in rows}
+    buy_rows = []
+    for buy in buys:
+        bought = apply_buy(signals, buy)
+        buy_rows.append(
+            {
+                "a": int(buy["min_analysts"]),
+                "p": int(buy["min_projected"]),
+                "n": int(len(bought)),
+                "sym": int(bought["ticker"].nunique()) if len(bought) else 0,
+            }
+        )
+    sell_rows = [
+        {
+            "h": int(spec.hold_days),
+            "t": int(round(spec.target_frac * 100)),
+            "d": _pct_number(spec.drawdown),
+        }
+        for spec in specs
+    ]
+    matrices = {key: [] for key in ("roi", "pnl", "exposed", "lotDays", "avgLot", "win", "closed", "open")}
+    windows_from = []
+    windows_to = []
+    for buy in buys:
+        label = buy_label(buy)
+        block = {key: [] for key in matrices}
+        from_row = []
+        to_row = []
+        for spec in specs:
+            row = by_key.get((label, spec.tag))
+            if row is None:
+                raise RuntimeError(f"missing canvas cell {spec.short} · {label}")
+            block["roi"].append(round(float(row["return_on_avg_invested_pct"]), 4))
+            block["pnl"].append(round(float(row["stock_pnl"]), 2))
+            block["exposed"].append(int(row["days_exposed"]))
+            block["lotDays"].append(int(row["lot_days"]))
+            block["avgLot"].append(round(float(row["avg_lot_amount"]), 2))
+            block["win"].append(round(float(row["win_rate_pct"]), 4))
+            block["closed"].append(int(row["n_closed"]))
+            block["open"].append(int(row["n_open"]))
+            from_row.append(row.get("trade_from") or "")
+            to_row.append(row.get("trade_to") or "")
+        for key, values in block.items():
+            matrices[key].append(values)
+        windows_from.append(from_row)
+        windows_to.append(to_row)
+
+    analysts = sorted({buy["a"] for buy in buy_rows})
+    upsides = sorted({buy["p"] for buy in buy_rows})
+    holds = sorted({sell["h"] for sell in sell_rows})
+    targets = sorted({sell["t"] for sell in sell_rows})
+    drops = sorted({sell["d"] for sell in sell_rows}, key=float)
+    caption = (
+        f"Yahoo 7-day window · {info['start']} → {info['end']} · "
+        f"{info['trading_days']} trading days · $5,000 per lot. "
+        "Days exposed are calendar days with at least one lot open. "
+        "Lot-days add each lot's calendar hold, so overlapping lots count again."
+    )
+    data = {
+        "__SOURCE__": json.dumps(caption),
+        "__ANALYSTS__": json.dumps(analysts),
+        "__UPSIDES__": json.dumps(upsides),
+        "__HOLDS__": json.dumps(holds),
+        "__TARGETS__": json.dumps(targets),
+        "__DROPS__": json.dumps(drops),
+        "__BUYS__": json.dumps(buy_rows, separators=(",", ":")),
+        "__SELLS__": json.dumps(sell_rows, separators=(",", ":")),
+        "__ROI__": json.dumps(matrices["roi"], separators=(",", ":")),
+        "__PNL__": json.dumps(matrices["pnl"], separators=(",", ":")),
+        "__EXPOSED__": json.dumps(matrices["exposed"], separators=(",", ":")),
+        "__LOTDAYS__": json.dumps(matrices["lotDays"], separators=(",", ":")),
+        "__AVGLOT__": json.dumps(matrices["avgLot"], separators=(",", ":")),
+        "__WIN__": json.dumps(matrices["win"], separators=(",", ":")),
+        "__CLOSED__": json.dumps(matrices["closed"], separators=(",", ":")),
+        "__OPEN__": json.dumps(matrices["open"], separators=(",", ":")),
+        "__FROM__": json.dumps(windows_from, separators=(",", ":")),
+        "__TO__": json.dumps(windows_to, separators=(",", ":")),
+    }
+    source = GRID_CANVAS
+    for key, value in data.items():
+        source = source.replace(key, value)
+    tsx_path = Path(f"{prefix}.tsx")
+    canvas_path = CANVAS_DIR / f"{prefix.name}.canvas.tsx"
+    tsx_path.write_text(source)
+    canvas_path.write_text(source)
+    print(f"Wrote {tsx_path}")
+    print(f"Wrote {canvas_path}")
 
 
 def parse_args():
@@ -2918,7 +3733,10 @@ def main():
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    prefix = OUT_DIR / f"simulation_{stamp}_optimize"
+    if args.phase == "fine":
+        prefix = OUT_DIR / f"simulation_7d-fine-grid_{stamp}_optimize"
+    else:
+        prefix = OUT_DIR / f"simulation_{stamp}_optimize"
     report_path = Path(args.report) if args.report else Path(f"{prefix}.md")
     ignore_last_days = args.ignore_last_days
     if ignore_last_days is None:
@@ -2995,7 +3813,8 @@ def main():
         return
 
     if args.phase == "fine":
-        rows, close_wide, init_cash = run_fine(signals, close, spy)
+        position_log = []
+        rows, close_wide, init_cash = run_fine(signals, close, spy, position_log)
         save_json(CACHE_DIR / "fine.json", rows)
         info = period_info(
             close_wide,
@@ -3008,6 +3827,13 @@ def main():
             "Neighborhood of the coarse peak: holds 5/7/10/12, targets 20–40%, "
             "drawdown 6/7.5/8.5%, on the two best buys and the nearby cuts.",
             "Trusted cells have at least 30 signals.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "An open lot runs through the last quote day. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "The 2026-10-17 13:37 fine run, on the previous signals.csv, "
+            "won with 5d 25% 7.5dd · yahoo-7d-window · analyst>3 · proj>35% "
+            "at +146.7% and +$9,313 on 48 signals.",
             "Comparison is on invested dollars, not book vs SPY.",
         ]
         write_grid_summary(
@@ -3044,9 +3870,21 @@ def main():
             }
             if buy_label(winner_buy) not in {buy_label(b) for b in split_buys}:
                 split_buys.append(winner_buy)
-        split_rows, _, _ = run_split(signals, close, spy, split_buys, specs)
+        split_rows, _, _ = run_split(
+            signals, close, spy, split_buys, specs, position_log
+        )
         save_json(CACHE_DIR / "split.json", split_rows)
         append_split_summary(report_path, split_rows)
+        write_positions_log(Path(f"{prefix}.csv"), position_log)
+        write_code_snapshot(prefix, sys.argv[1:])
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            fine_buy_grid(),
+            fine_sell_grid(),
+            info,
+        )
         return
 
     if args.phase == "focus":
