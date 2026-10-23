@@ -8,6 +8,7 @@ import {
   matchesUrl,
   parseTipRanksAnalystRecommendation,
   quoteFromUrl,
+  TIPRANKS_RATE_LIMIT,
   tipranksAnalystRecommendationUrl,
 } from "./tipranks_analyst_recommendation.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
@@ -80,6 +81,10 @@ async function withApiKey(fn) {
     else process.env.TIP_RANKS_API_KEY = previous;
   }
 }
+
+test("TIPRANKS_RATE_LIMIT spaces live calls about one second apart", () => {
+  expect(TIPRANKS_RATE_LIMIT).toEqual({ enabled: true, minDelay: 1000, maxDelay: 1000 });
+});
 
 test("urlFor is keyless and quoteFromUrl keeps BRK.B", () => {
   const url = tipranksAnalystRecommendationUrl("BRK.B", "NYSE");

@@ -12,6 +12,8 @@ import {
 import { yahooOpenPrice } from "./yahoo_open_price.js";
 
 const TIPRANKS_MCP_URL = "https://mcp.tipranks.com/mcp/";
+// TipRanks allows ~60 tool calls per minute; ~1s between request starts stays under that.
+export const TIPRANKS_RATE_LIMIT = { enabled: true, minDelay: 1000, maxDelay: 1000 };
 const TIPRANKS_ACTIONS = {
   downgraded: "Downgraded",
   initiated: "Initiated",
@@ -340,7 +342,10 @@ export async function fetchTipRanksAnalystRecommendation(url, retryConfig, cache
   // A cache hit returns before this runs. Missing key stays outside backoffRetry.
   const cached = fileCache(async (httpConfig) => {
     if (!tipRanksApiKey()) throw new Error("TIP_RANKS_API_KEY is not set");
-    return backoffRetry(rateLimit(requestTipRanksAnalystRecommendation), retryConfig)(httpConfig);
+    return backoffRetry(
+      rateLimit(requestTipRanksAnalystRecommendation, TIPRANKS_RATE_LIMIT),
+      retryConfig,
+    )(httpConfig);
   }, cacheConfig);
   return cached({ url });
 }
