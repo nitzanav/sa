@@ -41,7 +41,7 @@ The stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes firs
 1. `simulation_<timestamp>_<words>__optimize.py` — the copy created at the start and edited in place. It is the code that ran. After the run, that same file overwrites `VectorBT/optimize.py`. If the command has arguments, also write `simulation_<timestamp>_<words>__optimize.sh` with that exact command (the snapshot path).
 2. `simulation_<timestamp>_<words>__optimize.md` — static report whose conclusion names the winning sell, buy, return on invested, stock P&L, signals, win rate, closed/open lots, and lot-day exposure.
 3. `simulation_<timestamp>_<words>__optimize.tsx` — canvas source. Also save the same source as `~/.cursor/projects/<workspace>/canvases/simulation_<timestamp>_<words>__optimize.canvas.tsx` so it opens beside chat. If a canvas for this run exists under another name, save it under this stem. Link the `.canvas.tsx` path in the reply. Copy the filter and table rules in [Canvas filters](#canvas-filters). The published example is the relevant-full run below.
-4. `simulation_<timestamp>_<words>__optimize.csv` — one row per lot for every combo in the report, columns listed in `VectorBT/optimize.md`.
+4. `simulation_<timestamp>_<words>__optimize.csv.xz` — one row per lot for every combo in the report, xz-compressed. Columns listed in `VectorBT/optimize.md`. `write_positions_log` writes the plain CSV and then xz-compresses it in place; macOS Finder decompresses `.csv.xz` with a double-click.
 
 ## Canvas filters
 
