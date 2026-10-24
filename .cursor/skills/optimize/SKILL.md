@@ -58,7 +58,7 @@ Buy filters are signal, analysts, upside, and symbols. Sell filters are hold, ta
 
 - **Signal, analysts, hold, target, drawdown** are multi-select. A click adds or removes that value. The last selected value in a group stays on.
 - **Upside** is one floor, like symbols. The pills are the projected cuts in that run. The default is the lowest. A buy stays when its projected cut is greater than or equal to the active floor, so `>20%` keeps `>20%`, `>25%`, and `>30%`.
-- **Symbols** is one floor. The pills are `>0`, `>2`, `>4`, `>7`, `>10`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy stays when its unique-ticker count is greater than that floor.
+- **Symbols** is one floor. The pills are `>0`, `>2`, `>4`, `>7`, `>8`, `>9`, `>10`, `>12`, `>14`, `>16`, `>18`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy stays when its unique-ticker count is greater than that floor.
 - **Show** is one choice: `%`, `$`, or Both. The default is Both. It sits above the table, outside the two filter columns.
 
 ### Layout

@@ -10,8 +10,9 @@ One cell is one signal book, one buy, and one sell. The sell closes on the first
 | TipRanks | `tipranks-daily` | `tipranks-7d-window` |
 | All sources | `all_sources-daily` | `all_sources-7d-window` |
 | Google | `google-daily` | `google-7d-window` |
+| Yahoo + Google | `yahoo_and_google-daily` | `yahoo_and_google-7d-window` |
 
-A full run with no `--signal-name` uses the six all_sources, yahoo, and google books. TipRanks is included only when named.
+A full run with no `--signal-name` uses the six all_sources, yahoo, and google books. TipRanks and yahoo_and_google are included only when named.
 
 ## Buy
 

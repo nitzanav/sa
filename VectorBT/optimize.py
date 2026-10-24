@@ -119,6 +119,8 @@ SIGNAL_NAME_CHOICES = SIGNAL_NAMES + (
     "tipranks-7d-window",
     "all_sources-daily",
     "all_sources-7d-window",
+    "yahoo_and_google-daily",
+    "yahoo_and_google-7d-window",
 )
 FULL_SIGNAL_NAMES = (
     "all_sources-daily",
@@ -129,7 +131,7 @@ FULL_SIGNAL_NAMES = (
     "google-7d-window",
 )
 _SELECTED_SIGNAL_NAMES = None
-OUTPUT_STEM = "simulation_2026-10-23_2014_UTC+3_full-all-signals__optimize"
+OUTPUT_STEM = "simulation_2026-10-24_1603_UTC+3_daily-winner-params__optimize"
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -2702,6 +2704,41 @@ def full_sell_grid():
     )
 
 
+def winners_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4)
+            for p in (20, 30, 40, 50)
+        ]
+    )
+
+
+def winners_sell_grid():
+    return neighborhood_sells((10, 15), (0.25, 0.50), (0.05, 0.075, 0.10))
+
+
+def run_winners(signals, close, spy, position_log=None, one_lot=False):
+    buys = winners_buy_grid()
+    specs = winners_sell_grid()
+    print(
+        f"\n=== Winners grid: {len(buys)} buys × {len(specs)} sells"
+        f" · {', '.join(signal_names())}"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "winners",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
+
+
 def run_full(signals, close, spy, position_log=None, one_lot=False):
     buys = full_buy_grid()
     specs = full_sell_grid()
@@ -3196,7 +3233,7 @@ type Stats = Record<StatName, number>;
 const SHOW_MODES = ["pct", "pnl", "both"] as const;
 type ShowMode = (typeof SHOW_MODES)[number];
 type Metric = "pct" | "pnl";
-const SYMBOL_FLOORS = [0, 2, 4, 7, 10, 20, 40, 80, 160, 320] as const;
+const SYMBOL_FLOORS = [0, 2, 4, 7, 8, 9, 10, 12, 14, 16, 18, 20, 40, 80, 160, 320] as const;
 
 function mean(values: number[]): number {
   return values.reduce((total, value) => total + value, 0) / values.length;
@@ -3587,7 +3624,7 @@ export default function FineGridCanvas() {
   );
   const topScore = cells.reduce((best, cell) => (cell.roi > best.roi ? cell : best), cells[0]);
   const topCash = cells.reduce((best, cell) => (cell.pnl > best.pnl ? cell : best), cells[0]);
-  const ranked = [...cells].sort((a, b) => b.roi - a.roi || b.pnl - a.pnl).slice(0, 12);
+  const ranked = [...cells].sort((a, b) => b.roi - a.roi || b.pnl - a.pnl).slice(0, 30);
 
   const yellow = theme.category.yellow;
   const orange = theme.category.orange;
@@ -4000,7 +4037,7 @@ export default function FineGridCanvas() {
         <Stack gap={8}>
           <H2>Lot exposure on the best returns</H2>
           <Text size="small" tone="secondary">
-            Top 12 visible cells by return on invested. Days exposed are distinct calendar days
+            Top 30 visible cells by return on invested. Days exposed are distinct calendar days
             with a lot open. Lot-days are the sum of each lot's calendar hold. A 3-day lot, a
             1-day lot, and another 3-day lot are 6 lot-days.
           </Text>
@@ -4187,6 +4224,7 @@ def parse_args():
             "fine",
             "wide",
             "full",
+            "winners",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -4231,7 +4269,7 @@ def main():
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase in ("wide", "full"):
+    if args.phase in ("wide", "full", "winners"):
         prefix = OUT_DIR / OUTPUT_STEM
     elif args.phase == "fine":
         prefix = OUT_DIR / f"simulation_7d-fine-grid_{stamp}_optimize"
@@ -4265,6 +4303,70 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "winners":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_winners(
+            signals, close, spy, position_log=position_path, one_lot=args.one_lot
+        )
+        save_json(CACHE_DIR / "winners.json", rows)
+        title = "Daily winner-parameter grid"
+        if args.one_lot:
+            title += " · one lot, hold extends"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot; it restarts the hold clock from "
+                "that bar. The profit target and the drawdown peak stay on the "
+                "original entry. n is the signal count; trades are the lots opened."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot and resets the time stop and target "
+                "on lots of that ticker still open. Drawdown peak is since entry."
+            )
+        notes = [
+            "Daily winner cuts: analyst >2/>3/>4, projected >20/30/40/50%, "
+            "hold 10/15, target 25/50%, drawdown 5/7.5/10%.",
+            "Signal books: " + ", ".join(signal_names()) + ". Each cell is one book.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "Signals dated after --end are dropped. An open lot runs through the last quote day.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            winners_sell_grid(),
+            SellSpec(hold_days=15, target_frac=0.50, drawdown=0.075),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            winners_sell_grid(),
+            info,
+        )
+        return
 
     if args.phase == "full":
         position_path = Path(f"{prefix}.csv")

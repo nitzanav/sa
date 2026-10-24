@@ -151,12 +151,40 @@ The canvas is one merged table, not separate return and P&L tables. Copy the str
 - Click a column heading to sort the buy rows. Click it again to reverse the order. Buy sorts by name. Symbols and Signals sort by those counts. Min, Avg, Max, and each sell sort by return or profit, using the `%` and `$` subheadings when both are shown. The Min, Avg, and Max rows stay at the top.
 - Color each sub-cell from yellow (low) to red (high) with `useHostTheme()` category tokens. Scale `%` across all `%` values and `$` across all `$` values. Pick text color for contrast.
 - Buy rows carry Symbols (unique tickers) and Signals (signal count).
-- Pill filters: signal book, analysts, upside, hold, target, drawdown, and Symbols. The signal pills are the books in that run. The Symbols pills are a single floor: `>0`, `>2`, `>4`, `>7`, `>10`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy row stays when its unique-ticker count is greater than the active floor. The Upside pills are a single floor too. One cut is active and the default is the lowest. A buy stays when its projected cut is at least that floor.
+- Pill filters: signal book, analysts, upside, hold, target, drawdown, and Symbols. The signal pills are the books in that run. The Symbols pills are a single floor: `>0`, `>2`, `>4`, `>7`, `>8`, `>9`, `>10`, `>12`, `>14`, `>16`, `>18`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy row stays when its unique-ticker count is greater than the active floor. The Upside pills are a single floor too. One cut is active and the default is the lowest. A buy stays when its projected cut is at least that floor.
 - Each filter value shows min, average, and max return (%) for the cells with that value under the other active filters, then min, average, and max symbol count for that same slice, then min, average, and max win rate. Two columns: signal, analysts, upside, and symbols on the left; hold, target, and drawdown on the right. Show is the row above the table. Values stack vertically. On that row, return Min, Avg, and Max come first, symbol-count Min, Avg, and Max follow them, and win-rate Min, Avg, and Max come last.
 - Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy and sit on the left, after Symbols and Signals and before the sells. Rows summarize the visible buys for each sell and sit at the top, under the header and above the buys. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 
 4. `simulation_<timestamp>_<words>__optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`, then the combo's `trade_from`, `trade_to`, `days_exposed`, `lot_days`, `avg_lot_amount` repeated on each of its lots.
+
+## Winners grid
+
+Daily-signal cross-check around the pasted winner cells. 48 buys × 12 sells = 576 cells. Analysts >2/>3/>4 × projected >20/30/40/50% on `yahoo-daily`, `tipranks-daily`, `all_sources-daily`, `yahoo_and_google-daily`. Hold 10/15 × target 25/50% × drawdown 5/7.5/10%. Anchor sell is `15d 50% 7.5dd`.
+
+```python
+def winners_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4)
+            for p in (20, 30, 40, 50)
+        ]
+    )
+
+
+def winners_sell_grid():
+    return neighborhood_sells((10, 15), (0.25, 0.50), (0.05, 0.075, 0.10))
+```
+
+```bash
+./penv python VectorBT/optimize.py winners \
+  --signal-name yahoo-daily --signal-name tipranks-daily \
+  --signal-name all_sources-daily --signal-name yahoo_and_google-daily \
+  --end 2026-10-22
+```
+
+`yahoo_and_google-daily` and `yahoo_and_google-7d-window` are valid `--signal-name` values; `make etl` writes them into `data/signals.csv` alongside the Yahoo, Google, TipRanks, and all_sources books.
 
 ## Fine grid
 
