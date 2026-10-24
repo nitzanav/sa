@@ -32,40 +32,30 @@ TRUNCATE _load;
 \copy _load FROM 'data/analyst_recomendation/tipranks/all_symbols.csv' CSV HEADER
 INSERT INTO _raw_signals SELECT 'tipranks', * FROM _load;
 
--- Pair windows: later start through earlier end.
--- all_sources is yahoo ∩ tipranks. yahoo_and_google is yahoo ∩ google.
--- Yahoo rows cover the union of those windows so both pools can be cut from them.
+-- One range for every source: latest start through earliest end.
 DROP TABLE IF EXISTS _windows;
 CREATE TABLE _windows AS
-SELECT
-  GREATEST(y.min_date, t.min_date) AS yt_start,
-  LEAST(y.max_date, t.max_date) AS yt_end,
-  GREATEST(y.min_date, g.min_date) AS yg_start,
-  LEAST(y.max_date, g.max_date) AS yg_end
-FROM
-  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'yahoo') y,
-  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'google') g,
-  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'tipranks') t;
+SELECT MAX(min_date) AS start_date, MIN(max_date) AS end_date
+FROM (
+  SELECT MIN(date) AS min_date, MAX(date) AS max_date
+  FROM _raw_signals
+  GROUP BY source
+) s;
 
 INSERT INTO raw_signals
 SELECT r.*
 FROM _raw_signals r
-JOIN _windows w ON
-  (r.source = 'yahoo' AND r.date BETWEEN LEAST(w.yt_start, w.yg_start) AND GREATEST(w.yt_end, w.yg_end))
-  OR (r.source = 'tipranks' AND r.date BETWEEN w.yt_start AND w.yt_end)
-  OR (r.source = 'google' AND r.date BETWEEN w.yg_start AND w.yg_end);
+JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date;
 
 INSERT INTO raw_signals
-SELECT 'all_sources', r.date, r.ticker, r.analyst, r.percent, r.projected_price
-FROM raw_signals r
-JOIN _windows w ON r.date BETWEEN w.yt_start AND w.yt_end
-WHERE r.source IN ('yahoo', 'tipranks');
+SELECT 'all_sources', date, ticker, analyst, percent, projected_price
+FROM raw_signals
+WHERE source IN ('yahoo', 'tipranks');
 
 INSERT INTO raw_signals
-SELECT 'yahoo_and_google', r.date, r.ticker, r.analyst, r.percent, r.projected_price
-FROM raw_signals r
-JOIN _windows w ON r.date BETWEEN w.yg_start AND w.yg_end
-WHERE r.source IN ('yahoo', 'google');
+SELECT 'yahoo_and_google', date, ticker, analyst, percent, projected_price
+FROM raw_signals
+WHERE source IN ('yahoo', 'google');
 
 -- Drop old views so columns can be re-ordered / renamed cleanly.
 DROP VIEW IF EXISTS signals CASCADE;
