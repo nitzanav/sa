@@ -8,9 +8,11 @@ CREATE TABLE IF NOT EXISTS raw_signals (
 );
 TRUNCATE TABLE raw_signals;
 
-CREATE TEMP TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
+DROP TABLE IF EXISTS _load;
+CREATE TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
 
-CREATE TEMP TABLE _raw_signals (
+DROP TABLE IF EXISTS _raw_signals;
+CREATE TABLE _raw_signals (
   source varchar,
   date date,
   ticker varchar,
@@ -33,7 +35,8 @@ INSERT INTO _raw_signals SELECT 'tipranks', * FROM _load;
 -- Pair windows: later start through earlier end.
 -- all_sources is yahoo ∩ tipranks. yahoo_and_google is yahoo ∩ google.
 -- Yahoo rows cover the union of those windows so both pools can be cut from them.
-CREATE TEMP TABLE _windows AS
+DROP TABLE IF EXISTS _windows;
+CREATE TABLE _windows AS
 SELECT
   GREATEST(y.min_date, t.min_date) AS yt_start,
   LEAST(y.max_date, t.max_date) AS yt_end,
