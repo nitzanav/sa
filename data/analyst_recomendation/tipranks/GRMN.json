@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "Richard Kramer",
+    "firm": "Arete Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$335.00",
+    "projected": "+19.7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Noah Zatzkin",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Ivan Feinseth",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$370.00",
+    "projected": "+21.1%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$295.00",
+    "projected": "+0.7%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$289.00",
+    "projected": "-1.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$297.00",
+    "projected": "+1.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Ronald Epstein",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "-25.1%",
+    "date": "02/23/2026"
+  },
+  {
+    "analyst": "David Macgregor",
+    "firm": "Longbow Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$250.00",
+    "projected": null,
+    "date": "12/03/2025"
+  }
+]

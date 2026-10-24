@@ -1,0 +1,173 @@
+[
+  {
+    "analyst": "Derek Podhaizer",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+28.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Scott Gruber",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+26.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Keith Mackey",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+22.4%",
+    "date": "10/18/2026"
+  },
+  {
+    "analyst": "David Anderson",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+36.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Joe Laetsch",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+11.4%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Saurabh Pant",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+17.4%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Lloyd Byrne",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$66.00",
+    "projected": "+36.4%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+48.3%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Phillip Jungwirth",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$62.00",
+    "projected": "+22.6%",
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Stephen Richardson",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+10%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+6.5%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Guillaume Delaby",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+22%",
+    "date": "08/31/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+20.1%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+18.5%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Stephen Gengaro",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "+22.4%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Marc Bianchi",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$64.00",
+    "projected": "+22.4%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "James Rollyson",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+28.7%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Carlos Escalante",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$62.00",
+    "projected": "+32.7%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Sebastian Erskine",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$48.00",
+    "projected": null,
+    "date": "11/03/2025"
+  }
+]

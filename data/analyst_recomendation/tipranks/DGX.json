@@ -1,0 +1,128 @@
+[
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+8.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Eric Coldwell",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$262.00",
+    "projected": "+9.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Luke Sergott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+8.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Michael Ryskin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+10.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+4.3%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "David S Macdonald",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+13.7%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "David Toung",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+10.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+10.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+6.3%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Tycho Peterson",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$245.00",
+    "projected": "+7.4%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Jared Haase",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+8.1%",
+    "date": "04/20/2026"
+  },
+  {
+    "analyst": "Patrick B Donnelly",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+3.8%",
+    "date": "02/11/2026"
+  },
+  {
+    "analyst": "David Westenberg",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": null,
+    "date": "10/27/2025"
+  }
+]

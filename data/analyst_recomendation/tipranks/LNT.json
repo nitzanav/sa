@@ -1,0 +1,119 @@
+[
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$69.50",
+    "projected": "+3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+11.9%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+1.5%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+6.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+9.5%",
+    "date": "07/21/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+4%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$83.00",
+    "projected": "+6.8%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+0.8%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Michaela Jamison",
+    "firm": "Jarden",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+10.3%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "William Appicelli",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+15.7%",
+    "date": "02/09/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": null,
+    "date": "11/24/2025"
+  }
+]

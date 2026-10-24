@@ -1,0 +1,92 @@
+[
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$355.00",
+    "projected": "+23%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ben Mohr",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$334.00",
+    "projected": "+15.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Steve Barger",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$332.00",
+    "projected": "+15%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+12.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Tami Zakaria",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+12.6%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Bascome Majors",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+12.4%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Scott Group",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$303.00",
+    "projected": "+19.5%",
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$290.00",
+    "projected": "+20.4%",
+    "date": "03/31/2026"
+  },
+  {
+    "analyst": "Oliver Holmes",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$285.00",
+    "projected": "+13.8%",
+    "date": "03/26/2026"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Brennan Hawken",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+15%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Kian Abouhossein",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$198.00",
+    "projected": "+8.4%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$220.00",
+    "projected": "+20.6%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Glenn Schorr",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+12.3%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Scott Siefers",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+12.3%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+4.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$230.00",
+    "projected": "+26%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$195.00",
+    "projected": "+8.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$217.00",
+    "projected": "+20.3%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$262.00",
+    "projected": "+45.2%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Richard Ramsden",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+10.8%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$236.00",
+    "projected": "+23.7%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Domenico Santoro",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$219.00",
+    "projected": "+11.8%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Manyi Lu",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+14.2%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Mikhail Paramonov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$245.00",
+    "projected": "+14.3%",
+    "date": "07/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$261.00",
+    "projected": "+14.4%",
+    "date": "07/16/2026"
+  },
+  {
+    "analyst": "Chris Kotowski",
+    "firm": "Oppenheimer",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "06/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "01/16/2026"
+  },
+  {
+    "analyst": "Steven Chubak",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$211.00",
+    "projected": "+12.7%",
+    "date": "01/07/2026"
+  }
+]

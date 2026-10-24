@@ -1,0 +1,83 @@
+[
+  {
+    "analyst": "Michael Roxland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$294.00",
+    "projected": "+25.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Detlef Winckelmann",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$322.00",
+    "projected": "+37.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "George Staphos",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Gabrial Hajde",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+8.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Anojja Shah",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$289.00",
+    "projected": "+27.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$253.00",
+    "projected": "+11.5%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$274.00",
+    "projected": "+6.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Hillary Cacanando",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$256.00",
+    "projected": "+16.1%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Mark Weintraub",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": null,
+    "date": "11/23/2025"
+  }
+]

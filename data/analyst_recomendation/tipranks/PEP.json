@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+11.9%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+2.2%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "-0.6%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Georgy Vashchenko",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$147.00",
+    "projected": "+16%",
+    "date": "10/10/2026"
+  },
+  {
+    "analyst": "Taylor Conrad",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Zheng Feng Chee",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+8.9%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+5%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Andrea Faria Teixeira",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+8.1%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+6.6%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+14.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+4.2%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+14.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Robert Ottenstein",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+6.6%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Michael Lavery",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+10.5%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+18.4%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+8.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+32.7%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Kaumil Gajrawala",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+11.9%",
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "Kevin Grundy",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+25.3%",
+    "date": "07/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/24/2026"
+  }
+]

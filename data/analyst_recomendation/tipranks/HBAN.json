@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$19.00",
+    "projected": "+23.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+16.7%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Matt Olney",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+16.7%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+23.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+29.7%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jon Arfstrom",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+29.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+23.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Scott Siefers",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$18.00",
+    "projected": "+19.3%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+23.7%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Andrew J Dietrich",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$17.50",
+    "projected": "+14.4%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+22.1%",
+    "date": "09/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+30.1%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Peter Winter",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+25%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$18.50",
+    "projected": "+6.6%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "David Chiaverini",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "+3.4%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+19.1%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+20.4%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Matt O'Connor",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "01/27/2026"
+  },
+  {
+    "analyst": "Keith Horowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": null,
+    "date": "12/30/2025"
+  },
+  {
+    "analyst": "David Long",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$20.00",
+    "projected": null,
+    "date": "10/28/2025"
+  }
+]

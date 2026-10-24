@@ -1,0 +1,110 @@
+[
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$485.00",
+    "projected": "+4.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+28.8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$560.00",
+    "projected": "+20.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$531.00",
+    "projected": "+12.7%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Scott Graham",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$580.00",
+    "projected": "+22.4%",
+    "date": "10/04/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Vertical Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$584.00",
+    "projected": "+29.4%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Luke Junk",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$550.00",
+    "projected": "+16.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Christopher Glynn",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": "+3.7%",
+    "date": "06/16/2026"
+  },
+  {
+    "analyst": "Tommy Moll",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+17.8%",
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$585.00",
+    "projected": "+13.5%",
+    "date": "05/01/2026"
+  }
+]

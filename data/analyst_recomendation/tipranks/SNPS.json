@@ -1,0 +1,164 @@
+[
+  {
+    "analyst": "Lee Simpson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$574.00",
+    "projected": "+23.6%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Charles Shi",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$620.00",
+    "projected": "+21.5%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+19.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Gary Mobley",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$570.00",
+    "projected": "+21.8%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Ruben Roy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+28.2%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Gianmarco Conti",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$640.00",
+    "projected": "+36.8%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Harlan Sur",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+28.2%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$540.00",
+    "projected": "+15.4%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Jason Celino",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$605.00",
+    "projected": "+29.3%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Blair Abernethy",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$620.00",
+    "projected": "+32.5%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+42.4%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Siti Panigrahi",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$550.00",
+    "projected": "+30.5%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "Frank Lee CFA",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$700.00",
+    "projected": "+57.3%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Andrew Degasperi",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$420.00",
+    "projected": "+1.6%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Nay Soe Naing",
+    "firm": "Berenberg Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$633.00",
+    "projected": "+50.8%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Clarke Jeffries",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+31.1%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Kelsey Chia",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$610.00",
+    "projected": "+45.4%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Joseph Vruwink",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$560.00",
+    "projected": "+33.4%",
+    "date": "08/27/2026"
+  }
+]

@@ -1,5 +1,12 @@
 import { jest } from "@jest/globals";
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  unlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
@@ -17,6 +24,7 @@ import {
   skipExistingAnalystRecommendations,
   writeJointAnalystRecommendations,
 } from "./scrape_analyst_recommendations.js";
+import { tipranksAnalystRecommendationSource } from "./tipranks_analyst_recommendation.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 import { yahooOpenPrice } from "./yahoo_open_price.js";
 
@@ -29,6 +37,9 @@ test("selectAnalystRecommendationSources filters by name", () => {
   expect(selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, null)).toEqual(
     ANALYST_RECOMMENDATION_SOURCES,
   );
+  expect(
+    selectAnalystRecommendationSources(ANALYST_RECOMMENDATION_SOURCES, ["tipranks"]),
+  ).toEqual([tipranksAnalystRecommendationSource]);
 });
 
 test("selectAnalystRecommendationSources rejects unknown names", () => {
@@ -181,6 +192,9 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
     .spyOn(yahooAnalystRecommendationSource, "fetch")
     .mockResolvedValue(yahooHtml);
   const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
+  const tipranksFetchSpy = jest
+    .spyOn(tipranksAnalystRecommendationSource, "fetch")
+    .mockRejectedValue(new Error("tipranks disabled in this test"));
   try {
     await scrapeAnalystRecommendations();
     const all = JSON.parse(
@@ -341,6 +355,7 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       ].join("\n"),
     );
   } finally {
+    tipranksFetchSpy.mockRestore();
     yahooFetchSpy.mockRestore();
     openSpy.mockRestore();
     fetchSpy.mockRestore();
@@ -411,6 +426,9 @@ test("skip_existing reuses symbol json and does not refetch", async () => {
     .spyOn(yahooAnalystRecommendationSource, "fetch")
     .mockResolvedValue(yahooHtml);
   const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
+  const tipranksFetchSpy = jest
+    .spyOn(tipranksAnalystRecommendationSource, "fetch")
+    .mockRejectedValue(new Error("tipranks disabled in this test"));
   try {
     await scrapeAnalystRecommendations(ANALYST_RECOMMENDATION_SOURCES, {
       skipExisting: true,
@@ -447,7 +465,141 @@ test("skip_existing reuses symbol json and does not refetch", async () => {
       { date: "2026-01-02", ticker: "AAA", analyst: "Cached Yahoo", percent: 2, projected_price: 2 },
     ]);
   } finally {
+    tipranksFetchSpy.mockRestore();
     yahooFetchSpy.mockRestore();
+    openSpy.mockRestore();
+    fetchSpy.mockRestore();
+    process.chdir(originalCwd);
+  }
+});
+
+test("tipranks monthly quota stops the scrape instead of calling the next symbol", async () => {
+  const cwd = mkdtempSync(join(tmpdir(), "tipranks-quota-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\n",
+  );
+  writeFileSync(
+    join(cwd, "data/symbols_exchange.csv"),
+    "ticker,exchange\nAAA,NYSE\nBBB,NASDAQ\n",
+  );
+  const previousKey = process.env.TIP_RANKS_API_KEY;
+  process.env.TIP_RANKS_API_KEY = "tipranks-test-key-9f3a";
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    headers: {
+      get: (name) => (name.toLowerCase() === "content-type" ? "application/json" : null),
+    },
+    text: async () =>
+      JSON.stringify({
+        jsonrpc: "2.0",
+        id: 1,
+        result: {
+          isError: true,
+          content: [
+            {
+              type: "text",
+              text: "You've reached your TipRanks API monthly tool-call limit (50/50 calls on the 'free' plan).",
+            },
+          ],
+        },
+      }),
+  });
+  try {
+    await expect(
+      scrapeAnalystRecommendations([tipranksAnalystRecommendationSource]),
+    ).rejects.toThrow("tool-call limit");
+    expect(fetchSpy).toHaveBeenCalledTimes(1);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/tipranks/BBB.json"))).toBe(false);
+  } finally {
+    if (previousKey === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previousKey;
+    fetchSpy.mockRestore();
+    process.chdir(originalCwd);
+  }
+});
+
+test("scrapeAnalystRecommendations tipranks writes only tipranks outputs and skips existing json", async () => {
+  const cwd = mkdtempSync(join(tmpdir(), "tipranks-pipeline-"));
+  mkdirSync(join(cwd, "data/fortune_500"), { recursive: true });
+  writeFileSync(
+    join(cwd, "data/fortune_500/symbols.csv"),
+    "Symbol,Name\nAAA,Alpha\nBBB,Beta\n",
+  );
+  writeFileSync(
+    join(cwd, "data/symbols_exchange.csv"),
+    "ticker,exchange\nAAA,NYSE\nBBB,NASDAQ\n",
+  );
+  const rating = {
+    recommendationDate: "09/15/2026",
+    analystName: "Example Analyst",
+    firmName: "Example Bank",
+    rating: "Buy",
+    action: "reiterated",
+    priceTarget: 300,
+    numOfStars: 5,
+  };
+  const body = JSON.stringify({
+    jsonrpc: "2.0",
+    id: 1,
+    result: { content: [{ type: "text", text: JSON.stringify([rating]) }] },
+  });
+  const previousKey = process.env.TIP_RANKS_API_KEY;
+  process.env.TIP_RANKS_API_KEY = "tipranks-test-key-9f3a";
+  const originalCwd = process.cwd();
+  process.chdir(cwd);
+  const fetchSpy = jest.spyOn(globalThis, "fetch").mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    headers: {
+      get: (name) => (name.toLowerCase() === "content-type" ? "application/json" : null),
+    },
+    text: async () => body,
+  });
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(218.92);
+  const aaaJsonPath = join(cwd, "data/analyst_recomendation/tipranks/AAA.json");
+  try {
+    await scrapeAnalystRecommendations([tipranksAnalystRecommendationSource]);
+    expect(existsSync(aaaJsonPath)).toBe(true);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/tipranks/BBB.json"))).toBe(
+      true,
+    );
+    expect(existsSync(join(cwd, "data/analyst_recomendation/tipranks/AAA.html"))).toBe(
+      true,
+    );
+    expect(
+      existsSync(join(cwd, "data/analyst_recomendation/tipranks/all_symbols.csv")),
+    ).toBe(true);
+    const jointHeader =
+      "date,symbol,tipranks_average_projected,tipranks_std_projected,tipranks_analyst_projections_count,tipranks_projections";
+    const jointPath = join(
+      cwd,
+      "data/analyst_recomendation/all_symbols_per_date_and_symbol.csv",
+    );
+    expect(existsSync(jointPath)).toBe(true);
+    expect(readFileSync(jointPath, "utf8").split("\n")[0]).toBe(jointHeader);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/google"))).toBe(false);
+    expect(existsSync(join(cwd, "data/analyst_recomendation/yahoo"))).toBe(false);
+    expect(fetchSpy).toHaveBeenCalledTimes(2);
+    const aaaJson = readFileSync(aaaJsonPath, "utf8");
+    // Drop the raw cache so a skipped symbol cannot be served by fileCache.
+    unlinkSync(join(cwd, "data/analyst_recomendation/tipranks/AAA.html"));
+    unlinkSync(join(cwd, "data/analyst_recomendation/tipranks/BBB.html"));
+    fetchSpy.mockClear();
+    await scrapeAnalystRecommendations([tipranksAnalystRecommendationSource], {
+      skipExisting: true,
+    });
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(readFileSync(aaaJsonPath, "utf8")).toBe(aaaJson);
+  } finally {
+    if (previousKey === undefined) delete process.env.TIP_RANKS_API_KEY;
+    else process.env.TIP_RANKS_API_KEY = previousKey;
     openSpy.mockRestore();
     fetchSpy.mockRestore();
     process.chdir(originalCwd);

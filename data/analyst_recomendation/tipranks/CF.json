@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-4.2%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Benjamin Theurer",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+12.4%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Joel Jackson",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$135.00",
+    "projected": "+16.9%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Andrew Wong CFA",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-0.4%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Mazahir Mammadli",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$110.00",
+    "projected": "-6.2%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "James Hooper",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$162.00",
+    "projected": "+37.5%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-9.2%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "KeyBanc",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$115.00",
+    "projected": "-13.3%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Vitaly Kononov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$133.00",
+    "projected": "+5.5%",
+    "date": "08/26/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-0.7%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Ben Isaacson",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+12.6%",
+    "date": "08/10/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+7.5%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-2.9%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Edlain Rodriguez",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Hamir Patel",
+    "firm": "CIBC",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+2%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Michael Sison",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "+27.6%",
+    "date": "05/27/2026"
+  },
+  {
+    "analyst": "Kristen Owen",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2025"
+  }
+]

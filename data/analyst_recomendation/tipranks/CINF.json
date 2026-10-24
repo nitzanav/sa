@@ -1,0 +1,65 @@
+[
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$193.00",
+    "projected": "+17.4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Meyer Shields",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$171.00",
+    "projected": "+4%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Michael Zaremski",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$198.00",
+    "projected": "+9.6%",
+    "date": "07/29/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "+11.6%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Harry Fong",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+13.3%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/04/2026"
+  },
+  {
+    "analyst": "Michael Phillips CFA",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2025"
+  }
+]

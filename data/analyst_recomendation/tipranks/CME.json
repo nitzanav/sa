@@ -1,0 +1,137 @@
+[
+  {
+    "analyst": "Alexander Blostein",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$271.00",
+    "projected": "-7.1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Patrick Moley",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$330.00",
+    "projected": "+13.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+6.3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ken Worthington",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$367.00",
+    "projected": "+25.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Michael Cyprys",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$359.00",
+    "projected": "+23.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Christopher Allen",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+13.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Daniel Welden",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$333.00",
+    "projected": "+14.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$321.00",
+    "projected": "+10.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$227.00",
+    "projected": "-22.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$302.00",
+    "projected": "+3.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "William Katz",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+13.3%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Brian Bedell",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$270.00",
+    "projected": "-0.1%",
+    "date": "08/19/2026"
+  },
+  {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "06/24/2026"
+  },
+  {
+    "analyst": "Simon Clinch",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$323.00",
+    "projected": "+21.5%",
+    "date": "06/11/2026"
+  },
+  {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "03/03/2026"
+  }
+]

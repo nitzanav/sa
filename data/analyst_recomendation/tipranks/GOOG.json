@@ -1,0 +1,146 @@
+[
+  {
+    "analyst": "Ingo Wermann",
+    "firm": "DZ BANK AG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Doug Anmuth",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+24.8%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+8.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "John Blackledge",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$485.00",
+    "projected": "+38.7%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+30.6%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Jason Helfstein",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+22.7%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Josh Beck",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+24.4%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Saiyi He",
+    "firm": "CMB International Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$428.00",
+    "projected": "+33.1%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Ralph Schackart",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Jeffrey Wlodarczak",
+    "firm": "Pivotal Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$475.00",
+    "projected": "+47.7%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Nat Schindler",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+29.6%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Benjamin Black CFA",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+12.4%",
+    "date": "04/28/2026"
+  },
+  {
+    "analyst": "Lloyd Walmsley",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+14.8%",
+    "date": "02/03/2026"
+  },
+  {
+    "analyst": "Aaron Kessler",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": null,
+    "date": "10/30/2025"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$345.00",
+    "projected": null,
+    "date": "10/30/2025"
+  }
+]

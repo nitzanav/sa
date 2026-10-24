@@ -1,0 +1,209 @@
+[
+  {
+    "analyst": "Doug Schenkel",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+12.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Daniel Brennan",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+17.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Casey Woodring",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+17.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Daniel Arias",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+12.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Catherine Ramsey Schulte",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$254.00",
+    "projected": "+10.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Patrick B Donnelly",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+17.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Luke Sergott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+12.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Dan Leonard",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+15%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Evie Koslosky",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$275.00",
+    "projected": "+19.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Lu Li",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+17.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Kallum Titchmarsh",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+8%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Subbu Nambi",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+13%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Tycho Peterson",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "-1.2%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "David Westenberg",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+4.5%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "David Toung",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$230.00",
+    "projected": "+24.2%",
+    "date": "07/23/2026"
+  },
+  {
+    "analyst": "Aristotelis Moutopoulos",
+    "firm": "DZ BANK AG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+17.7%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Justin Bowers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+34.5%",
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Matt Larew",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Vijay Kumar",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+17.8%",
+    "date": "07/06/2026"
+  },
+  {
+    "analyst": "Sidharth Sahoo",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+30.8%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Michael Polark",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "06/01/2026"
+  },
+  {
+    "analyst": "Ed Ridley-Day",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+5.4%",
+    "date": "04/17/2026"
+  },
+  {
+    "analyst": "Paul Knight",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$310.00",
+    "projected": null,
+    "date": "12/18/2025"
+  }
+]

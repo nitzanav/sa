@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$36.00",
+    "projected": "+4.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Richard Hightower",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+28%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+16.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+13.4%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Ami Probandt",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+14.7%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$37.00",
+    "projected": "+7.4%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "John Kim",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "+14.4%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+20.7%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Austin Wurschmidt",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "+9.9%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Michael Lewis",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "+8.1%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$42.00",
+    "projected": "+19.3%",
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Haendel St. Juste",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+7.6%",
+    "date": "09/08/2026"
+  },
+  {
+    "analyst": "Peter Abramowitz",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+16%",
+    "date": "08/14/2026"
+  },
+  {
+    "analyst": "Anthony Paolone",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+7.6%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+7.1%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Jana Galan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+17.5%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Julien Blouin",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$38.00",
+    "projected": "-3.5%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$40.50",
+    "projected": "+9.3%",
+    "date": "05/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$35.53",
+    "projected": null,
+    "date": "12/15/2025"
+  }
+]

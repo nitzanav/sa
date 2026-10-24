@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$318.00",
+    "projected": "+7.2%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$294.00",
+    "projected": "-0.8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$317.00",
+    "projected": "+11.1%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Michael Griffin CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$308.00",
+    "projected": "+3.7%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Michael Mueller",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$330.00",
+    "projected": "+11.2%",
+    "date": "09/21/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$344.00",
+    "projected": "+15.8%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$351.00",
+    "projected": "+19.3%",
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$343.00",
+    "projected": "+14%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Ravi Vaidya",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$319.00",
+    "projected": "+6%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Eric Luebchow",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$311.00",
+    "projected": "+1.3%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+11.2%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/24/2026"
+  },
+  {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$341.00",
+    "projected": "+4.3%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Caitlin Burrows",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$367.00",
+    "projected": "+13.4%",
+    "date": "07/30/2026"
+  },
+  {
+    "analyst": "RJ Milligan",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "07/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+10%",
+    "date": "06/23/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$363.00",
+    "projected": "+12.5%",
+    "date": "06/15/2026"
+  },
+  {
+    "analyst": "Andrew Rosivach CFA",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "01/25/2026"
+  },
+  {
+    "analyst": "Omotayo Okusanya",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$285.00",
+    "projected": "-2.1%",
+    "date": "01/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/20/2025"
+  }
+]

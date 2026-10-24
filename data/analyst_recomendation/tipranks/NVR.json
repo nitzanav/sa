@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$7425.00",
+    "projected": "+23.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$5900.00",
+    "projected": "-1.6%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$5058.00",
+    "projected": "-15.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ryan Gilbert",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$7125.00",
+    "projected": "+14.7%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Jonathan Bettenhausen",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$6400.00",
+    "projected": "+2.1%",
+    "date": "09/16/2026"
+  },
+  {
+    "analyst": "Michael Rehaut",
+    "firm": "Melius Research",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$6760.00",
+    "projected": "+1.9%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "Trevor Allinson",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/22/2026"
+  },
+  {
+    "analyst": "Kenneth Zener",
+    "firm": "Seaport Global",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$5664.00",
+    "projected": "-14.7%",
+    "date": "04/06/2026"
+  }
+]

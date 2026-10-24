@@ -11,11 +11,16 @@ import {
   scrapeAnalystRecommendation,
 } from "./scrape_analyst_recommendation.js";
 import { parsePercent, parsePriceTarget } from "./validate_analyst_recommendations.js";
+import {
+  isTipRanksQuotaError,
+  tipranksAnalystRecommendationSource,
+} from "./tipranks_analyst_recommendation.js";
 import { yahooAnalystRecommendationSource } from "./yahoo_analyst_recommendation.js";
 
 export const ANALYST_RECOMMENDATION_SOURCES = [
   googleAnalystRecommendationSource,
   yahooAnalystRecommendationSource,
+  tipranksAnalystRecommendationSource,
 ];
 
 function requestedSourceNames(argv = process.argv.slice(2)) {
@@ -354,6 +359,7 @@ export async function scrapeAnalystRecommendationSource(
       all[symbol] = listings;
     } catch (error) {
       logger.error({ message: "error", error });
+      if (isTipRanksQuotaError(error)) throw error;
     }
   }
   return all;

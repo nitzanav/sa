@@ -23,25 +23,31 @@ analyst>3 · proj>30% around the 30d / 50% / 7.5dd sell neighborhood.
 
 Phase coarse is one wide pass, not a locked search: analyst >2–6 ×
 projected >20/25/30% against hold 10/15/30 × target 25/50% × dd 7.5/10%.
-That is the wide permutation from the October 2026 books. The fine grid
-is a neighborhood of 10d 25% 7.5dd, not a wider book. Pass --one-lot to
-keep a single open lot per ticker: a later buy while that lot is open
-does not add a lot, it restarts the hold clock.
+Pass --one-lot to keep a single open lot per ticker: a later buy while
+that lot is open does not add a lot, it restarts the hold clock.
 
-Phase analysts keeps that wide sell grid and raises the analyst cut to
->7–10, still at projected >20/25/30%. It also re-runs analyst>5 · proj>20%,
-the published all_sources winner buy, so the extension can be checked
-against 15d 25% 7.5dd at +8.6% and +$12,004.
+Phase wide keeps that buy grid and appends the longer holds from the
+2026-10-17 coarse canvas: hold 10/15/30/45/60/75/90/105/120 × target
+25/50% × dd 7.5/10%. 15 buys × 36 sells.
 
-Buy filters split on signal_name so families are never mixed in one
-backtest. yahoo-daily and yahoo-7d-window are the default pair.
-all_sources-7d-window is a separate book, selected only with
---signal-name. Sell and staged freezes use the first selected name.
+Phase full is the catalog in optimization_params_full.md. Analysts >2–9 ×
+projected >10/20/25/30/40/50 × hold 10/15/30/45/60/75/90/105/120 × target
+25/50/75/100% × drawdown 5/7.5/10/15%. With no --signal-name it runs all
+six all_sources, yahoo, and google books (daily and 7-day). Repeat
+--signal-name to choose books. Each cell is one book. The canvas filters
+them.
+
+Buy filters also split on signal_name. The default pair outside full is
+yahoo-daily and yahoo-7d-window. --signal-name also accepts google,
+tipranks, and all_sources daily and 7d-window books. Sell and staged
+freezes use the first selected name (yahoo-daily unless --signal-name
+overrides it).
 """
 
 from __future__ import annotations
 
 import argparse
+import gc
 import json
 import shlex
 import sys
@@ -106,9 +112,24 @@ def clip_prices(obj, end=None):
 FREEZE_ANALYSTS = 3
 FREEZE_PROJECTED = 20.0
 SIGNAL_NAMES = ("yahoo-daily", "yahoo-7d-window")
-EXTRA_SIGNAL_NAMES = ("all_sources-7d-window",)
-ALLOWED_SIGNAL_NAMES = SIGNAL_NAMES + EXTRA_SIGNAL_NAMES
+SIGNAL_NAME_CHOICES = SIGNAL_NAMES + (
+    "google-daily",
+    "google-7d-window",
+    "tipranks-daily",
+    "tipranks-7d-window",
+    "all_sources-daily",
+    "all_sources-7d-window",
+)
+FULL_SIGNAL_NAMES = (
+    "all_sources-daily",
+    "all_sources-7d-window",
+    "yahoo-daily",
+    "yahoo-7d-window",
+    "google-daily",
+    "google-7d-window",
+)
 _SELECTED_SIGNAL_NAMES = None
+OUTPUT_STEM = "simulation_2026-10-23_2014_UTC+3_full-all-signals__optimize"
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -224,13 +245,16 @@ def set_signal_names(names):
     if not names:
         _SELECTED_SIGNAL_NAMES = None
         return
-    unknown = [name for name in names if name not in ALLOWED_SIGNAL_NAMES]
+    unknown = [name for name in names if name not in SIGNAL_NAME_CHOICES]
     if unknown:
         raise SystemExit(
-            f"Unknown signal_name {unknown}; choose from {list(ALLOWED_SIGNAL_NAMES)}"
+            f"Unknown signal_name {unknown}; choose from {list(SIGNAL_NAME_CHOICES)}"
         )
-    chosen = tuple(dict.fromkeys(names))
-    _SELECTED_SIGNAL_NAMES = chosen
+    chosen = []
+    for name in names:
+        if name not in chosen:
+            chosen.append(name)
+    _SELECTED_SIGNAL_NAMES = tuple(chosen)
 
 
 def with_signal_names(buys, names=None):
@@ -1197,6 +1221,12 @@ def prepare(signals_path=SIGNALS_CSV, end=None, ignore_last_days=0, refresh=Fals
         )
     n_raw = len(signals)
     quote_end = quote_day(end)
+    dates = pd.to_datetime(signals["date"]).dt.normalize()
+    in_book = dates <= quote_end
+    if not bool(in_book.all()):
+        print(f"Drop signals after {quote_end.date()}: {n_raw} → {int(in_book.sum())}")
+        signals = signals.loc[in_book].reset_index(drop=True)
+        n_raw = len(signals)
     signal_cutoff = quote_end - pd.Timedelta(days=ignore_last_days) if ignore_last_days else quote_end
     if ignore_last_days:
         dates = pd.to_datetime(signals["date"]).dt.normalize()
@@ -2255,6 +2285,13 @@ def run_combos(
     rows = []
     close_wide = None
     init_cash = None
+    position_path = None
+    write_header = False
+    if isinstance(position_log, (str, Path)):
+        position_path = Path(position_log)
+        if position_path.exists():
+            position_path.unlink()
+        write_header = True
     planned = sum(1 for spec in specs for buy in buys if combo_key(buy, spec) not in seen)
     done = 0
     for spec in specs:
@@ -2290,8 +2327,15 @@ def run_combos(
                 f"exposed {row['days_exposed']}d  lot-days {row['lot_days']}"
             )
             rows.append(row)
-            if position_log is not None:
-                position_log.append(tag_positions(positions, row))
+            tagged = tag_positions(positions, row)
+            if position_path is not None:
+                tagged.to_csv(position_path, mode="a", header=write_header, index=False)
+                write_header = False
+            elif position_log is not None:
+                position_log.append(tagged)
+            del positions, tagged
+            if done % 25 == 0:
+                gc.collect()
             seen.add(key)
     return rows, close_wide, init_cash
 
@@ -2628,6 +2672,77 @@ def coarse_sell_grid():
     return neighborhood_sells((10, 15, 30), (0.25, 0.50), (0.075, 0.10))
 
 
+def wide_buy_grid():
+    return coarse_buy_grid()
+
+
+def wide_sell_grid():
+    return neighborhood_sells(
+        (10, 15, 30, 45, 60, 75, 90, 105, 120),
+        (0.25, 0.50),
+        (0.075, 0.10),
+    )
+
+
+def full_buy_grid():
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4, 5, 6)
+            for p in (10, 20, 25, 30)
+        ]
+    )
+
+
+def full_sell_grid():
+    return neighborhood_sells(
+        (10, 15, 30, 45, 60),
+        (0.25, 0.50, 0.75),
+        (0.05, 0.075),
+    )
+
+
+def run_full(signals, close, spy, position_log=None, one_lot=False):
+    buys = full_buy_grid()
+    specs = full_sell_grid()
+    print(
+        f"\n=== Full grid: {len(buys)} buys × {len(specs)} sells"
+        f" · {', '.join(signal_names())}"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "full",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
+
+
+def run_wide(signals, close, spy, position_log=None, one_lot=False):
+    buys = wide_buy_grid()
+    specs = wide_sell_grid()
+    print(
+        f"\n=== Wide grid: {len(buys)} buys × {len(specs)} sells"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "wide",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
+
+
 def coarse_count_table(signals, buys):
     cuts = []
     analysts = []
@@ -2657,58 +2772,14 @@ def coarse_count_table(signals, buys):
     return "\n".join(lines)
 
 
-def analysts_buy_grid():
-    buys = [
-        {"min_analysts": n, "min_projected": float(p)}
-        for n in (7, 8, 9, 10)
-        for p in (20, 25, 30)
-    ]
-    buys.append({"min_analysts": 5, "min_projected": 20.0})
-    return with_signal_names(buys)
-
-
-def analysts_sell_grid():
-    return coarse_sell_grid()
-
-
-def run_analysts(signals, close, spy, one_lot=False, position_log=None):
-    buys = analysts_buy_grid()
-    specs = analysts_sell_grid()
-    print(
-        f"\n=== Analysts >7–10: {len(buys)} buys × {len(specs)} sells"
-        f"{' · one lot' if one_lot else ''} ==="
-    )
-    return run_combos(
-        signals,
-        close,
-        spy,
-        buys,
-        specs,
-        set(),
-        "analysts",
-        one_lot=one_lot,
-        position_log=position_log,
-    )
-
-
-def run_coarse(signals, close, spy, one_lot=False, position_log=None):
+def run_coarse(signals, close, spy, one_lot=False):
     buys = coarse_buy_grid()
     specs = coarse_sell_grid()
     print(
         f"\n=== Coarse grid: {len(buys)} buys × {len(specs)} sells"
         f"{' · one lot' if one_lot else ''} ==="
     )
-    return run_combos(
-        signals,
-        close,
-        spy,
-        buys,
-        specs,
-        set(),
-        "coarse",
-        one_lot=one_lot,
-        position_log=position_log,
-    )
+    return run_combos(signals, close, spy, buys, specs, set(), "coarse", one_lot=one_lot)
 
 
 def _climb_lines(known_rows):
@@ -2981,6 +3052,7 @@ def append_split_summary(path, rows):
 
 
 GRID_CANVAS = r'''import {
+  Grid,
   H1,
   H2,
   Pill,
@@ -2996,14 +3068,16 @@ GRID_CANVAS = r'''import {
 } from "cursor/canvas";
 
 const SOURCE = __SOURCE__;
+const TITLE = __TITLE__;
 
+const SIGNALS = __SIGNALS__;
 const ANALYSTS = __ANALYSTS__;
 const UPSIDES = __UPSIDES__;
 const HOLDS = __HOLDS__;
 const TARGETS = __TARGETS__;
 const DROPS = __DROPS__;
 
-type Buy = { a: number; p: number; n: number; sym: number };
+type Buy = { s: string; a: number; p: number; n: number; sym: number };
 type Sell = { h: number; t: number; d: number };
 
 const BUYS: Buy[] = __BUYS__;
@@ -3020,7 +3094,8 @@ const FROM: string[][] = __FROM__;
 const TO: string[][] = __TO__;
 
 function buyLabel(buy: Buy): string {
-  return `>${buy.a},>${buy.p}%`;
+  const cut = `>${buy.a},>${buy.p}%`;
+  return buy.s ? `${buy.s} · ${cut}` : cut;
 }
 
 function sellLabel(sell: Sell): string {
@@ -3118,8 +3193,10 @@ function unit(value: number, min: number, max: number): number {
 const STAT_NAMES = ["min", "avg", "max"] as const;
 type StatName = (typeof STAT_NAMES)[number];
 type Stats = Record<StatName, number>;
-const METRICS = ["pct", "pnl"] as const;
-type Metric = (typeof METRICS)[number];
+const SHOW_MODES = ["pct", "pnl", "both"] as const;
+type ShowMode = (typeof SHOW_MODES)[number];
+type Metric = "pct" | "pnl";
+const SYMBOL_FLOORS = [0, 2, 4, 7, 10, 20, 40, 80, 160, 320] as const;
 
 function mean(values: number[]): number {
   return values.reduce((total, value) => total + value, 0) / values.length;
@@ -3154,18 +3231,155 @@ function toggleItem<T extends string | number>(current: T[], value: T, all: read
   return all.filter((item) => next.includes(item));
 }
 
-function FilterGroup<T extends string | number>({
+function emptyBuckets(options: readonly (string | number)[]): Record<string, number[]> {
+  const out: Record<string, number[]> = {};
+  for (const option of options) out[String(option)] = [];
+  return out;
+}
+
+type SliceStats = { roi: Stats | null; sym: Stats | null; win: Stats | null };
+
+function packSlice(
+  roiGroups: Record<string, number[]>,
+  symGroups: Record<string, number[]>,
+  winGroups: Record<string, number[]>,
+): Record<string, SliceStats> {
+  const out: Record<string, SliceStats> = {};
+  for (const key of Object.keys(roiGroups)) {
+    const roi = roiGroups[key];
+    const sym = symGroups[key];
+    const win = winGroups[key];
+    out[key] = {
+      roi: roi.length ? pack(roi) : null,
+      sym: sym.length ? pack(sym) : null,
+      win: win.length ? pack(win) : null,
+    };
+  }
+  return out;
+}
+
+function countText(value: number | undefined): string {
+  return value === undefined ? "—" : String(Math.round(value));
+}
+
+function winText(value: number | undefined): string {
+  return value === undefined ? "—" : `${value.toFixed(1)}%`;
+}
+
+function FilterColumn<T extends string | number>({
   label,
   options,
   selected,
   onChange,
   format,
+  stats,
+  exclusive = false,
 }: {
   label: string;
   options: readonly T[];
   selected: T[];
   onChange: (next: T[]) => void;
   format: (value: T) => string;
+  stats: Record<string, SliceStats>;
+  exclusive?: boolean;
+}) {
+  const figure = {
+    textAlign: "right" as const,
+    fontVariantNumeric: "tabular-nums" as const,
+  };
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "minmax(0, 1fr) 4.5em 4.5em 4.5em 3.2em 3.2em 3.2em 4.2em 4.2em 4.2em",
+        columnGap: 6,
+        rowGap: 2,
+        alignItems: "center",
+      }}
+    >
+      <span />
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "2 / span 3", textAlign: "center" }}>
+        Return
+      </Text>
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "5 / span 3", textAlign: "center" }}>
+        Symbols
+      </Text>
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "8 / span 3", textAlign: "center" }}>
+        Win rate
+      </Text>
+      <Text size="small" tone="secondary" weight="semibold">
+        {label}
+      </Text>
+      {["Min", "Avg", "Max", "Min", "Avg", "Max", "Min", "Avg", "Max"].map((name, index) => (
+        <Text key={`${name}-${index}`} as="span" size="small" tone="tertiary" style={figure}>
+          {name}
+        </Text>
+      ))}
+      {options.map((option) => {
+        const stat = stats[String(option)];
+        const active = selected.includes(option);
+        const tone = active ? "primary" : "tertiary";
+        return (
+          <div key={String(option)} style={{ display: "contents" }}>
+            <div style={{ minWidth: 0, justifySelf: "start" }}>
+              <Pill
+                size="sm"
+                active={active}
+                onClick={() =>
+                  onChange(exclusive ? [option] : toggleItem(selected, option, options))
+                }
+              >
+                {format(option)}
+              </Pill>
+            </div>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.min) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.avg) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.max) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.min)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.avg)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.max)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.min)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.avg)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.max)}
+            </Text>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function FilterGroup<T extends string | number>({
+  label,
+  options,
+  selected,
+  onChange,
+  format,
+  exclusive = false,
+}: {
+  label: string;
+  options: readonly T[];
+  selected: T[];
+  onChange: (next: T[]) => void;
+  format: (value: T) => string;
+  exclusive?: boolean;
 }) {
   return (
     <Row gap={6} align="center" wrap>
@@ -3177,7 +3391,9 @@ function FilterGroup<T extends string | number>({
           key={String(option)}
           size="sm"
           active={selected.includes(option)}
-          onClick={() => onChange(toggleItem(selected, option, options))}
+          onClick={() =>
+            onChange(exclusive ? [option] : toggleItem(selected, option, options))
+          }
         >
           {format(option)}
         </Pill>
@@ -3231,16 +3447,24 @@ function Scale({
 
 export default function FineGridCanvas() {
   const theme = useHostTheme();
+  const [books, setBooks] = useCanvasState<string[]>("grid-signals", SIGNALS);
   const [analysts, setAnalysts] = useCanvasState<number[]>("fine-analysts", ANALYSTS);
-  const [upsides, setUpsides] = useCanvasState<number[]>("fine-upsides", UPSIDES);
+  const [upsideFloor, setUpsideFloor] = useCanvasState<number>("fine-upside-floor", UPSIDES[0]);
   const [holds, setHolds] = useCanvasState<number[]>("fine-holds", HOLDS);
   const [targets, setTargets] = useCanvasState<number[]>("fine-targets", TARGETS);
   const [drops, setDrops] = useCanvasState<number[]>("fine-drops", DROPS);
-  const [metrics, setMetrics] = useCanvasState<Metric[]>("fine-metrics", ["pct", "pnl"]);
+  const [showMode, setShowMode] = useCanvasState<ShowMode>("fine-show-mode", "both");
+  const [sortKey, setSortKey] = useCanvasState<string>("grid-sort-key", "");
+  const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("grid-sort-dir", "desc");
+  const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
-      ({ buy }) => analysts.includes(buy.a) && upsides.includes(buy.p),
+      ({ buy }) =>
+        books.includes(buy.s) &&
+        analysts.includes(buy.a) &&
+        buy.p >= upsideFloor &&
+        buy.sym > symbolFloor,
     );
     const sells = SELLS.map((sell, col) => ({ sell, col })).filter(
       ({ sell }) => holds.includes(sell.h) && targets.includes(sell.t) && drops.includes(sell.d),
@@ -3259,12 +3483,89 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [analysts, upsides, holds, targets, drops]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
+
+  const filterStats = useMemo(() => {
+    const signalRoi = emptyBuckets(SIGNALS);
+    const signalSym = emptyBuckets(SIGNALS);
+    const signalWin = emptyBuckets(SIGNALS);
+    const analystRoi = emptyBuckets(ANALYSTS);
+    const analystSym = emptyBuckets(ANALYSTS);
+    const analystWin = emptyBuckets(ANALYSTS);
+    const upsideRoi = emptyBuckets(UPSIDES);
+    const upsideSym = emptyBuckets(UPSIDES);
+    const upsideWin = emptyBuckets(UPSIDES);
+    const symbolRoi = emptyBuckets(SYMBOL_FLOORS);
+    const symbolSym = emptyBuckets(SYMBOL_FLOORS);
+    const symbolWin = emptyBuckets(SYMBOL_FLOORS);
+    const holdRoi = emptyBuckets(HOLDS);
+    const holdSym = emptyBuckets(HOLDS);
+    const holdWin = emptyBuckets(HOLDS);
+    const targetRoi = emptyBuckets(TARGETS);
+    const targetSym = emptyBuckets(TARGETS);
+    const targetWin = emptyBuckets(TARGETS);
+    const dropRoi = emptyBuckets(DROPS);
+    const dropSym = emptyBuckets(DROPS);
+    const dropWin = emptyBuckets(DROPS);
+    const push = (
+      roiBucket: Record<string, number[]>,
+      symBucket: Record<string, number[]>,
+      winBucket: Record<string, number[]>,
+      key: string,
+      roi: number,
+      sym: number,
+      win: number,
+    ) => {
+      roiBucket[key]?.push(roi);
+      symBucket[key]?.push(sym);
+      if (Number.isFinite(win)) winBucket[key]?.push(win);
+    };
+    BUYS.forEach((buy, row) => {
+      const signalOk = books.includes(buy.s);
+      const analystOk = analysts.includes(buy.a);
+      const upsideOk = buy.p >= upsideFloor;
+      const symbolOk = buy.sym > symbolFloor;
+      SELLS.forEach((sell, col) => {
+        const roi = ROI[row][col];
+        const win = WIN[row][col];
+        if (!Number.isFinite(roi)) return;
+        const holdOk = holds.includes(sell.h);
+        const targetOk = targets.includes(sell.t);
+        const dropOk = drops.includes(sell.d);
+        const sellsOk = holdOk && targetOk && dropOk;
+        const buysOk = signalOk && analystOk && upsideOk && symbolOk;
+        if (analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalSym, signalWin, buy.s, roi, buy.sym, win);
+        if (signalOk && upsideOk && symbolOk && sellsOk) push(analystRoi, analystSym, analystWin, String(buy.a), roi, buy.sym, win);
+        if (signalOk && analystOk && symbolOk && sellsOk) {
+          for (const floor of UPSIDES) {
+            if (buy.p >= floor) push(upsideRoi, upsideSym, upsideWin, String(floor), roi, buy.sym, win);
+          }
+        }
+        if (signalOk && analystOk && upsideOk && sellsOk) {
+          for (const floor of SYMBOL_FLOORS) {
+            if (buy.sym > floor) push(symbolRoi, symbolSym, symbolWin, String(floor), roi, buy.sym, win);
+          }
+        }
+        if (buysOk && targetOk && dropOk) push(holdRoi, holdSym, holdWin, String(sell.h), roi, buy.sym, win);
+        if (buysOk && holdOk && dropOk) push(targetRoi, targetSym, targetWin, String(sell.t), roi, buy.sym, win);
+        if (buysOk && holdOk && targetOk) push(dropRoi, dropSym, dropWin, String(sell.d), roi, buy.sym, win);
+      });
+    });
+    return {
+      signal: packSlice(signalRoi, signalSym, signalWin),
+      analyst: packSlice(analystRoi, analystSym, analystWin),
+      upside: packSlice(upsideRoi, upsideSym, upsideWin),
+      symbol: packSlice(symbolRoi, symbolSym, symbolWin),
+      hold: packSlice(holdRoi, holdSym, holdWin),
+      target: packSlice(targetRoi, targetSym, targetWin),
+      drop: packSlice(dropRoi, dropSym, dropWin),
+    };
+  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
-  const showPct = metrics.includes("pct");
-  const showPnl = metrics.includes("pnl");
+  const showPct = showMode !== "pnl";
+  const showPnl = showMode !== "pct";
 
   const cells = view.buys.flatMap(({ buy, row }) =>
     view.sells.map(({ sell, col }) => ({
@@ -3367,6 +3668,43 @@ export default function FineGridCanvas() {
     background: theme.bg.editor,
   };
   const both = showPct && showPnl;
+  const activeMetric: Metric = showPct ? "pct" : "pnl";
+  const chooseSort = (key: string, numeric: boolean) => {
+    if (sortKey === key) setSortDir(sortDir === "asc" ? "desc" : "asc");
+    else {
+      setSortKey(key);
+      setSortDir(numeric ? "desc" : "asc");
+    }
+  };
+  const sortMark = (key: string) => (sortKey === key ? (sortDir === "asc" ? " ↑" : " ↓") : "");
+  const sortStyle = (extra?: CSSProperties): CSSProperties => ({
+    ...head,
+    cursor: "pointer",
+    userSelect: "none",
+    ...extra,
+  });
+  const orderedBuys = [...view.buys.map((item, index) => ({ ...item, index }))].sort((a, b) => {
+    if (!sortKey) return 0;
+    const dir = sortDir === "asc" ? 1 : -1;
+    const read = (item: { buy: Buy; row: number; index: number }): number | string => {
+      if (sortKey === "buy") return buyLabel(item.buy);
+      if (sortKey === "sym") return item.buy.sym;
+      if (sortKey === "n") return item.buy.n;
+      const [kind, id, metric] = sortKey.split(":");
+      if (kind === "stat") {
+        const stats = metric === "pnl" ? view.rowPnl[item.index] : view.rowRoi[item.index];
+        return stats[id as StatName];
+      }
+      const col = Number(id);
+      return metric === "pnl" ? PNL[item.row][col] : ROI[item.row][col];
+    };
+    const av = read(a);
+    const bv = read(b);
+    if (typeof av === "string" && typeof bv === "string") return av.localeCompare(bv) * dir;
+    const left = Number.isFinite(av as number) ? (av as number) : dir === 1 ? Infinity : -Infinity;
+    const right = Number.isFinite(bv as number) ? (bv as number) : dir === 1 ? Infinity : -Infinity;
+    return (left - right) * dir;
+  });
   const pair = (key: string, roi: number, pnl: number, title: string, edge = false) => {
     const out = [];
     if (showPct) out.push(paint(`${key}-pct`, roi, roiRange, pct(roi), `${title} · return`, edge));
@@ -3378,7 +3716,7 @@ export default function FineGridCanvas() {
   return (
     <Stack gap={20}>
       <Stack gap={6}>
-        <H1>{__TITLE__}</H1>
+        <H1>{TITLE}</H1>
         <Text size="small" tone="secondary">
           {SOURCE}
         </Text>
@@ -3399,47 +3737,77 @@ export default function FineGridCanvas() {
       ) : null}
 
       <Stack gap={8}>
+        <Text size="small" tone="secondary">
+          Min, avg, and max are the return for that value with the other filters applied.
+          The next three figures are that value's symbol count. The last three are its win rate.
+        </Text>
+        <Grid columns={2} gap={16} align="start">
+          <FilterColumn
+            label="Signal"
+            options={SIGNALS}
+            selected={books}
+            onChange={setBooks}
+            format={(value) => value}
+            stats={filterStats.signal}
+          />
+          <FilterColumn
+            label="Hold"
+            options={HOLDS}
+            selected={holds}
+            onChange={setHolds}
+            format={(value) => `${value}d`}
+            stats={filterStats.hold}
+          />
+          <FilterColumn
+            label="Analysts"
+            options={ANALYSTS}
+            selected={analysts}
+            onChange={setAnalysts}
+            format={(value) => `>${value}`}
+            stats={filterStats.analyst}
+          />
+          <FilterColumn
+            label="Target"
+            options={TARGETS}
+            selected={targets}
+            onChange={setTargets}
+            format={(value) => `${value}%`}
+            stats={filterStats.target}
+          />
+          <FilterColumn
+            label="Upside"
+            options={UPSIDES}
+            selected={[upsideFloor]}
+            onChange={(next) => setUpsideFloor(next[0])}
+            format={(value) => `>${value}%`}
+            stats={filterStats.upside}
+            exclusive
+          />
+          <FilterColumn
+            label="Drop"
+            options={DROPS}
+            selected={drops}
+            onChange={setDrops}
+            format={(value) => `${value}dd`}
+            stats={filterStats.drop}
+          />
+          <FilterColumn
+            label="Symbols"
+            options={SYMBOL_FLOORS}
+            selected={[symbolFloor]}
+            onChange={(next) => setSymbolFloor(next[0])}
+            format={(value) => `>${value}`}
+            stats={filterStats.symbol}
+            exclusive
+          />
+        </Grid>
         <FilterGroup
           label="Show"
-          options={METRICS}
-          selected={metrics}
-          onChange={setMetrics}
-          format={(value) => (value === "pct" ? "%" : "$")}
-        />
-        <FilterGroup
-          label="Analysts"
-          options={ANALYSTS}
-          selected={analysts}
-          onChange={setAnalysts}
-          format={(value) => `>${value}`}
-        />
-        <FilterGroup
-          label="Upside"
-          options={UPSIDES}
-          selected={upsides}
-          onChange={setUpsides}
-          format={(value) => `>${value}%`}
-        />
-        <FilterGroup
-          label="Hold"
-          options={HOLDS}
-          selected={holds}
-          onChange={setHolds}
-          format={(value) => `${value}d`}
-        />
-        <FilterGroup
-          label="Target"
-          options={TARGETS}
-          selected={targets}
-          onChange={setTargets}
-          format={(value) => `${value}%`}
-        />
-        <FilterGroup
-          label="Drop"
-          options={DROPS}
-          selected={drops}
-          onChange={setDrops}
-          format={(value) => `${value}dd`}
+          options={SHOW_MODES}
+          selected={[showMode]}
+          onChange={(next) => setShowMode(next[0])}
+          format={(value) => (value === "pct" ? "%" : value === "pnl" ? "$" : "Both")}
+          exclusive
         />
       </Stack>
 
@@ -3448,9 +3816,12 @@ export default function FineGridCanvas() {
           <H2>Buy × sell</H2>
           <Text size="small" tone="secondary">
             Yellow is the smaller number and red is the larger one, on a scale fixed to the full
-            grid. The three columns are the min, average, and max of that buy across the sells in
-            view. The three rows do the same for each sell across the buys in view. Symbols are
-            unique tickers in that buy. Signals are the lots opened.
+            grid. The min, average, and max columns sit on the left and summarize that buy across
+            the sells in view. The min, average, and max rows sit at the top and do the same for
+            each sell across the buys in view. Symbols are
+            unique tickers in that buy, and the Symbols pill keeps buys above that floor. Signals
+            are the lots opened. Click a heading to sort the buys. Click it again to reverse the
+            order. The total rows stay at the top.
           </Text>
           {showPct ? (
             <Scale label="Return" range={roiRange} format={pct} yellow={yellow} orange={orange} red={red} fallback={fallback} />
@@ -3464,91 +3835,125 @@ export default function FineGridCanvas() {
                 <tr>
                   <th
                     rowSpan={both ? 2 : 1}
-                    style={{ ...head, textAlign: "left", position: "sticky", left: 0, zIndex: 2 }}
+                    onClick={() => chooseSort("buy", false)}
+                    style={sortStyle({ textAlign: "left", position: "sticky", left: 0, zIndex: 2 })}
                   >
-                    Buy
+                    Buy{sortMark("buy")}
                   </th>
-                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
-                    Symbols
+                  <th
+                    rowSpan={both ? 2 : 1}
+                    onClick={() => chooseSort("sym", true)}
+                    style={sortStyle({ textAlign: "right" })}
+                  >
+                    Symbols{sortMark("sym")}
                   </th>
-                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
-                    Signals
+                  <th
+                    rowSpan={both ? 2 : 1}
+                    onClick={() => chooseSort("n", true)}
+                    style={sortStyle({ textAlign: "right" })}
+                  >
+                    Signals{sortMark("n")}
                   </th>
-                  {view.sells.map(({ sell }) => (
-                    <th key={sellLabel(sell)} colSpan={both ? 2 : 1} style={head}>
-                      {sellLabel(sell)}
-                    </th>
-                  ))}
-                  {STAT_NAMES.map((name, index) => (
-                    <th
-                      key={name}
-                      colSpan={both ? 2 : 1}
-                      style={{
-                        ...head,
-                        borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
-                      }}
-                    >
-                      {statLabel(name)}
-                    </th>
-                  ))}
-                </tr>
-                {both ? (
-                  <tr>
-                    {view.sells.flatMap(({ sell }) => {
-                      const name = sellLabel(sell);
-                      return [
-                        <th key={`${name}-pct`} style={head}>
-                          %
-                        </th>,
-                        <th key={`${name}-pnl`} style={head}>
-                          $
-                        </th>,
-                      ];
-                    })}
-                    {STAT_NAMES.flatMap((name, index) => [
+                  {STAT_NAMES.map((name) =>
+                    both ? (
+                      <th key={name} colSpan={2} style={head}>
+                        {statLabel(name)}
+                      </th>
+                    ) : (
                       <th
-                        key={`${name}-pct`}
+                        key={name}
+                        onClick={() => chooseSort(`stat:${name}:${activeMetric}`, true)}
+                        style={sortStyle()}
+                      >
+                        {statLabel(name)}
+                        {sortMark(`stat:${name}:${activeMetric}`)}
+                      </th>
+                    ),
+                  )}
+                  {view.sells.map(({ sell, col }, index) =>
+                    both ? (
+                      <th
+                        key={sellLabel(sell)}
+                        colSpan={2}
                         style={{
                           ...head,
                           borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
                         }}
                       >
-                        %
+                        {sellLabel(sell)}
+                      </th>
+                    ) : (
+                      <th
+                        key={sellLabel(sell)}
+                        onClick={() => chooseSort(`sell:${col}:${activeMetric}`, true)}
+                        style={sortStyle({
+                          borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
+                        })}
+                      >
+                        {sellLabel(sell)}
+                        {sortMark(`sell:${col}:${activeMetric}`)}
+                      </th>
+                    ),
+                  )}
+                </tr>
+                {both ? (
+                  <tr>
+                    {STAT_NAMES.flatMap((name) => [
+                      <th
+                        key={`${name}-pct`}
+                        onClick={() => chooseSort(`stat:${name}:pct`, true)}
+                        style={sortStyle()}
+                      >
+                        %{sortMark(`stat:${name}:pct`)}
                       </th>,
-                      <th key={`${name}-pnl`} style={head}>
-                        $
+                      <th
+                        key={`${name}-pnl`}
+                        onClick={() => chooseSort(`stat:${name}:pnl`, true)}
+                        style={sortStyle()}
+                      >
+                        ${sortMark(`stat:${name}:pnl`)}
                       </th>,
                     ])}
+                    {view.sells.flatMap(({ sell, col }, index) => {
+                      const name = sellLabel(sell);
+                      const edge =
+                        index === 0
+                          ? { borderLeft: `1px solid ${theme.stroke.secondary}` }
+                          : undefined;
+                      return [
+                        <th
+                          key={`${name}-pct`}
+                          onClick={() => chooseSort(`sell:${col}:pct`, true)}
+                          style={sortStyle(edge)}
+                        >
+                          %{sortMark(`sell:${col}:pct`)}
+                        </th>,
+                        <th
+                          key={`${name}-pnl`}
+                          onClick={() => chooseSort(`sell:${col}:pnl`, true)}
+                          style={sortStyle()}
+                        >
+                          ${sortMark(`sell:${col}:pnl`)}
+                        </th>,
+                      ];
+                    })}
                   </tr>
                 ) : null}
               </thead>
               <tbody>
-                {view.buys.map(({ buy, row }, index) => (
-                  <tr key={buyLabel(buy)}>
-                    {labelCell(buy.n < 30 ? `${buyLabel(buy)} · thin` : buyLabel(buy), true, false)}
-                    {countCell(String(buy.sym), false)}
-                    {countCell(String(buy.n), false)}
-                    {view.sells.flatMap(({ sell, col }) => {
-                      const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
-                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
-                      return pair(name, ROI[row][col], PNL[row][col], title);
-                    })}
-                    {STAT_NAMES.flatMap((name, statIndex) =>
+                {STAT_NAMES.map((rowStat) => (
+                  <tr key={rowStat}>
+                    {labelCell(statLabel(rowStat), true, false)}
+                    {countCell("—", false)}
+                    {countCell("—", false)}
+                    {STAT_NAMES.flatMap((colStat) =>
                       pair(
-                        `${buyLabel(buy)}-${name}`,
-                        view.rowRoi[index][name],
-                        view.rowPnl[index][name],
-                        `${buyLabel(buy)} · ${statLabel(name)} across sells`,
-                        statIndex === 0,
+                        `${rowStat}-${colStat}`,
+                        view.cornerRoi![rowStat][colStat],
+                        view.cornerPnl![rowStat][colStat],
+                        `${statLabel(rowStat)} of each buy's ${statLabel(colStat).toLowerCase()}`,
                       ),
                     )}
-                  </tr>
-                ))}
-                {STAT_NAMES.map((rowStat, rowIndex) => (
-                  <tr key={rowStat}>
-                    {labelCell(statLabel(rowStat), true, rowIndex === 0)}
-                    {countCell("—", rowIndex === 0)}
-                    {countCell("—", rowIndex === 0)}
                     {view.sells.flatMap(({ sell }, index) => {
                       const name = sellLabel(sell);
                       return pair(
@@ -3556,17 +3961,29 @@ export default function FineGridCanvas() {
                         view.colRoi[index][rowStat],
                         view.colPnl[index][rowStat],
                         `${name} · ${statLabel(rowStat)} across buys`,
+                        index === 0,
                       );
                     })}
-                    {STAT_NAMES.flatMap((colStat, statIndex) =>
+                  </tr>
+                ))}
+                {orderedBuys.map(({ buy, row, index }, position) => (
+                  <tr key={buyLabel(buy)}>
+                    {labelCell(buy.n < 30 ? `${buyLabel(buy)} · thin` : buyLabel(buy), true, position === 0)}
+                    {countCell(String(buy.sym), position === 0)}
+                    {countCell(String(buy.n), position === 0)}
+                    {STAT_NAMES.flatMap((name) =>
                       pair(
-                        `${rowStat}-${colStat}`,
-                        view.cornerRoi![rowStat][colStat],
-                        view.cornerPnl![rowStat][colStat],
-                        `${statLabel(rowStat)} of each buy's ${statLabel(colStat).toLowerCase()}`,
-                        statIndex === 0,
+                        `${buyLabel(buy)}-${name}`,
+                        view.rowRoi[index][name],
+                        view.rowPnl[index][name],
+                        `${buyLabel(buy)} · ${statLabel(name)} across sells`,
                       ),
                     )}
+                    {view.sells.flatMap(({ sell, col }, sellIndex) => {
+                      const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
+                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
+                      return pair(name, ROI[row][col], PNL[row][col], title, sellIndex === 0);
+                    })}
                   </tr>
                 ))}
               </tbody>
@@ -3617,6 +4034,14 @@ CANVAS_DIR = Path.home() / ".cursor/projects/Users-nitzan-dev-sa/canvases"
 
 
 def write_positions_log(path, frames):
+    if isinstance(frames, (str, Path)):
+        logged = Path(frames)
+        n = 0
+        if logged.exists():
+            with logged.open() as handle:
+                n = max(sum(1 for _ in handle) - 1, 0)
+        print(f"Wrote {logged} ({n} rows)")
+        return
     out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=POSITION_COLUMNS)
     out.to_csv(path, index=False)
     print(f"Wrote {path} ({len(out)} rows)")
@@ -3624,12 +4049,11 @@ def write_positions_log(path, frames):
 
 def write_code_snapshot(prefix, argv):
     py_path = Path(f"{prefix}.py")
-    running = Path(__file__).resolve()
-    if py_path.resolve() != running:
-        py_path.write_bytes(running.read_bytes())
-    command = "./penv python VectorBT/" + running.name
-    if argv:
-        command += " " + " ".join(shlex.quote(str(arg)) for arg in argv)
+    py_path.write_bytes(Path(__file__).read_bytes())
+    script = Path(__file__).name
+    command = f"./penv python VectorBT/{script} " + " ".join(
+        shlex.quote(str(arg)) for arg in argv
+    )
     sh_path = Path(f"{prefix}.sh")
     sh_path.write_text(
         "#!/bin/sh\n"
@@ -3653,6 +4077,7 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         bought = apply_buy(signals, buy)
         buy_rows.append(
             {
+                "s": buy.get("signal_name") or "",
                 "a": int(buy["min_analysts"]),
                 "p": int(buy["min_projected"]),
                 "n": int(len(bought)),
@@ -3694,21 +4119,25 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         windows_from.append(from_row)
         windows_to.append(to_row)
 
+    signal_order = []
+    for buy in buy_rows:
+        if buy["s"] not in signal_order:
+            signal_order.append(buy["s"])
     analysts = sorted({buy["a"] for buy in buy_rows})
     upsides = sorted({buy["p"] for buy in buy_rows})
     holds = sorted({sell["h"] for sell in sell_rows})
     targets = sorted({sell["t"] for sell in sell_rows})
     drops = sorted({sell["d"] for sell in sell_rows}, key=float)
-    book = " · ".join(signal_names())
     caption = (
-        f"{book} · {info['start']} → {info['end']} · "
+        f"{' · '.join(signal_names())} · {info['start']} → {info['end']} · "
         f"{info['trading_days']} trading days · $5,000 per lot. "
         "Days exposed are calendar days with at least one lot open. "
         "Lot-days add each lot's calendar hold, so overlapping lots count again."
     )
     data = {
-        "__TITLE__": json.dumps(info.get("title") or "Buy/sell grid"),
         "__SOURCE__": json.dumps(caption),
+        "__TITLE__": json.dumps(info.get("title") or "Buy × sell"),
+        "__SIGNALS__": json.dumps(signal_order),
         "__ANALYSTS__": json.dumps(analysts),
         "__UPSIDES__": json.dumps(upsides),
         "__HOLDS__": json.dumps(holds),
@@ -3756,7 +4185,8 @@ def parse_args():
             "closed",
             "coarse",
             "fine",
-            "analysts",
+            "wide",
+            "full",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -3782,31 +4212,31 @@ def parse_args():
         "--signal-name",
         action="append",
         dest="signal_names",
-        choices=ALLOWED_SIGNAL_NAMES,
+        choices=SIGNAL_NAME_CHOICES,
         help=(
-            "Keep this signal_name. Repeat only to compare books that must "
-            "stay in separate grids. Default: yahoo-daily and yahoo-7d-window. "
-            "all_sources-7d-window is its own book."
+            "Keep this signal_name. Repeat for several books in one run. "
+            "Each cell stays one book. full with no flag uses all_sources, "
+            "yahoo, and google, daily and 7-day. Other phases default to "
+            "yahoo-daily and yahoo-7d-window."
         ),
     )
     return p.parse_args()
 
 
-def output_prefix(phase, stamp):
-    stem = Path(__file__).stem
-    if stem.startswith("simulation_") and stem.endswith("__optimize"):
-        return OUT_DIR / stem
-    words = {"fine": "7d-fine-grid", "coarse": "7d-coarse-grid"}.get(phase, phase)
-    return OUT_DIR / f"simulation_{stamp}_{words}__optimize"
-
-
 def main():
     args = parse_args()
-    if args.signal_names:
+    if args.phase == "full" and not args.signal_names:
+        set_signal_names(FULL_SIGNAL_NAMES)
+    elif args.signal_names:
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    prefix = output_prefix(args.phase, stamp)
+    if args.phase in ("wide", "full"):
+        prefix = OUT_DIR / OUTPUT_STEM
+    elif args.phase == "fine":
+        prefix = OUT_DIR / f"simulation_7d-fine-grid_{stamp}_optimize"
+    else:
+        prefix = OUT_DIR / f"simulation_{stamp}_optimize"
     report_path = Path(args.report) if args.report else Path(f"{prefix}.md")
     ignore_last_days = args.ignore_last_days
     if ignore_last_days is None:
@@ -3836,10 +4266,137 @@ def main():
         refresh=refresh,
     )
 
-    if args.phase == "coarse":
+    if args.phase == "full":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_full(
+            signals, close, spy, position_log=position_path, one_lot=args.one_lot
+        )
+        save_json(CACHE_DIR / "full.json", rows)
+        title = "Full buy/sell grid"
+        if args.one_lot:
+            title += " · one lot, hold extends"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot; it restarts the hold clock from "
+                "that bar. The profit target and the drawdown peak stay on the "
+                "original entry. n is the signal count; trades are the lots opened."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot and resets the time stop and target "
+                "on lots of that ticker still open. Drawdown peak is since entry."
+            )
+        notes = [
+            "Full catalog: analyst >2–9, projected >10/20/25/30/40/50%, "
+            "hold 10/15/30/45/60/75/90/105/120, target 25/50/75/100%, "
+            "drawdown 5/7.5/10/15%.",
+            "Signal books: " + ", ".join(signal_names()) + ". Each cell is one book.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "Signals dated after --end are dropped. An open lot runs through the last quote day.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            full_buy_grid(),
+            full_sell_grid(),
+            WINNING_SELL,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in full_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            full_sell_grid(),
+            info,
+        )
+        return
+
+    if args.phase == "wide":
         position_log = []
+        rows, close_wide, init_cash = run_wide(
+            signals, close, spy, position_log=position_log, one_lot=args.one_lot
+        )
+        save_json(CACHE_DIR / "wide.json", rows)
+        title = "Wide all_sources buy/sell grid"
+        if args.one_lot:
+            title += " · one lot, hold extends"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot; it restarts the hold clock from "
+                "that bar. The profit target and the drawdown peak stay on the "
+                "original entry. n is the signal count; trades are the lots opened."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot and resets the time stop and target "
+                "on lots of that ticker still open. Drawdown peak is since entry."
+            )
+        notes = [
+            "Wide pass from the 2026-10-17 coarse canvas: analyst >2–6, "
+            "projected >20/25/30%, hold 10/15/30/45/60/75/90/105/120, "
+            "target 25/50%, drawdown 7.5/10%.",
+            "One signal book: " + ", ".join(signal_names()) + ".",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "Signals dated after --end are dropped. An open lot runs through the last quote day.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            wide_buy_grid(),
+            wide_sell_grid(),
+            WINNING_SELL,
+        )
+        write_positions_log(Path(f"{prefix}.csv"), position_log)
+        write_code_snapshot(prefix, sys.argv[1:])
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            wide_buy_grid(),
+            wide_sell_grid(),
+            info,
+        )
+        return
+
+    if args.phase == "coarse":
         rows, close_wide, init_cash = run_coarse(
-            signals, close, spy, one_lot=args.one_lot, position_log=position_log
+            signals, close, spy, one_lot=args.one_lot
         )
         save_json(CACHE_DIR / "coarse.json", rows)
         title = "Coarse 7d-style buy/sell grid"
@@ -3865,19 +4422,10 @@ def main():
                 "on lots of that ticker still open. Drawdown peak is since entry."
             )
         notes = [
-            "Wide permutation from the October 2026 books: analyst >2–6, "
-            "projected >20/25/30%, hold 10/15/30, target 25/50%, drawdown 7.5/10%. "
-            "The fine grids (holds 5/7/10/12, targets 20–40%, drawdown 6/7.5/8.5%) "
-            "are a neighborhood of 10d 25% 7.5dd, not a wider book.",
-            "Book is "
-            + " and ".join(signal_names())
-            + ". Other signal_name families stay out of this grid.",
+            "One pass: analyst >2–6, projected >20/25/30%, hold 10/15/30, "
+            "target 25/50%, drawdown 7.5/10%. No locked iterations.",
             "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
             overlap,
-            "Days exposed counts calendar days with at least one lot open. "
-            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
-            "An open lot runs through the last quote day. "
-            "Avg lot is the mean dollars used to open a lot.",
             "Comparison is on invested dollars, not book vs SPY.",
         ]
         write_grid_summary(
@@ -3889,83 +4437,6 @@ def main():
             coarse_buy_grid(),
             coarse_sell_grid(),
             WINNING_SELL,
-        )
-        write_positions_log(Path(f"{prefix}.csv"), position_log)
-        write_code_snapshot(prefix, sys.argv[1:])
-        write_grid_canvas(
-            prefix,
-            rows,
-            signals,
-            coarse_buy_grid(),
-            coarse_sell_grid(),
-            info,
-        )
-        return
-
-    if args.phase == "analysts":
-        position_log = []
-        rows, close_wide, init_cash = run_analysts(
-            signals, close, spy, one_lot=args.one_lot, position_log=position_log
-        )
-        save_json(CACHE_DIR / "analysts.json", rows)
-        title = "Analysts >7–10 on the wide sell grid"
-        info = period_info(
-            close_wide,
-            init_cash,
-            max(r["n_signals"] for r in rows),
-            run_label,
-            title,
-        )
-        if args.one_lot:
-            overlap = (
-                "One open lot per ticker. A later buy while that ticker is already "
-                "held does not open another lot; it restarts the hold clock. "
-                "The profit target and the drawdown peak stay on the original entry."
-            )
-        else:
-            overlap = (
-                "A new signal opens its own lot and resets the time stop and target "
-                "on lots of that ticker still open. Drawdown peak is since entry."
-            )
-        anchor = SellSpec(hold_days=15, target_frac=0.25, drawdown=0.075)
-        notes = [
-            "Same wide sells as the coarse book: hold 10/15/30, target 25/50%, "
-            "drawdown 7.5/10%. Buys are analyst >7–10 × projected >20/25/30%, "
-            "plus analyst>5 · proj>20% to re-check the 11:30 all_sources cell.",
-            "That published cell, 15d 25% 7.5dd · analyst>5 · proj>20%, was "
-            "+8.6% and +$12,004 on 587 signals.",
-            "all_sources pools Yahoo and Google into one mean and one analyst count. "
-            "analyst>3 · proj>30% is 47 Yahoo signals and 488 pooled signals.",
-            "Book is "
-            + " and ".join(signal_names())
-            + ". Other signal_name families stay out of this grid.",
-            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
-            overlap,
-            "Days exposed counts calendar days with at least one lot open. "
-            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
-            "An open lot runs through the last quote day. "
-            "Avg lot is the mean dollars used to open a lot.",
-            "Comparison is on invested dollars, not book vs SPY.",
-        ]
-        write_grid_summary(
-            report_path,
-            rows,
-            signals,
-            info,
-            notes,
-            analysts_buy_grid(),
-            analysts_sell_grid(),
-            anchor,
-        )
-        write_positions_log(Path(f"{prefix}.csv"), position_log)
-        write_code_snapshot(prefix, sys.argv[1:])
-        write_grid_canvas(
-            prefix,
-            rows,
-            signals,
-            analysts_buy_grid(),
-            analysts_sell_grid(),
-            info,
         )
         return
 

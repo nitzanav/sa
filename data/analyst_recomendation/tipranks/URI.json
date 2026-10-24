@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1450.00",
+    "projected": "+39.1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Tami Zakaria",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1170.00",
+    "projected": "+12.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1350.00",
+    "projected": "+29.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Mircea Dobre",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1310.00",
+    "projected": "+25.7%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1355.00",
+    "projected": "+30%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Kenneth Newman",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1350.00",
+    "projected": "+29.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Sabahat Khan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1392.00",
+    "projected": "+33.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Kyle Menges",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1330.00",
+    "projected": "+27.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Steven Fisher",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1450.00",
+    "projected": "+39.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Michael Feniger",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1325.00",
+    "projected": "+27.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Adam Seiden",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$950.00",
+    "projected": "-8.8%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1317.00",
+    "projected": "+26.7%",
+    "date": "09/28/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+15.7%",
+    "date": "08/03/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Seth Weber",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$1320.00",
+    "projected": "+17.7%",
+    "date": "06/29/2026"
+  },
+  {
+    "analyst": "Timothy Thein",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1275.00",
+    "projected": "+16.6%",
+    "date": "06/10/2026"
+  },
+  {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1101.00",
+    "projected": "+17.3%",
+    "date": "05/11/2026"
+  }
+]

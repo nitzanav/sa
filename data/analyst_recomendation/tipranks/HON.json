@@ -1,0 +1,209 @@
+[
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$241.00",
+    "projected": "+14%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$271.00",
+    "projected": "+28.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jeff Reive",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$269.00",
+    "projected": "+27.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$265.00",
+    "projected": "+25.3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$231.00",
+    "projected": "+9.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+18.2%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$255.00",
+    "projected": "+22.1%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$254.00",
+    "projected": "+20.4%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Scott Davis",
+    "firm": "Melius Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "09/14/2026"
+  },
+  {
+    "analyst": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$255.00",
+    "projected": "+9.8%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Daniel DiCicco",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$276.00",
+    "projected": "+11.8%",
+    "date": "07/24/2026"
+  },
+  {
+    "analyst": "Nigel Coe",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+19.8%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Nicole Deblase",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$263.00",
+    "projected": "+13.7%",
+    "date": "06/30/2026"
+  },
+  {
+    "analyst": "Jairam Nathan",
+    "firm": "Daiwa",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$255.00",
+    "projected": "+6%",
+    "date": "06/29/2026"
+  },
+  {
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+127.6%",
+    "date": "06/12/2026"
+  },
+  {
+    "analyst": "Joe Ritchie",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$552.00",
+    "projected": "+125%",
+    "date": "06/03/2026"
+  },
+  {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "+164%",
+    "date": "04/30/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$460.00",
+    "projected": "+111%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "Peter Arment",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$480.00",
+    "projected": "+101.9%",
+    "date": "01/30/2026"
+  },
+  {
+    "analyst": "Jeffrey Sprague",
+    "firm": "Vertical Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$440.00",
+    "projected": "+114.3%",
+    "date": "01/05/2026"
+  },
+  {
+    "analyst": "Andrew Buscaglia",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$390.00",
+    "projected": null,
+    "date": "12/03/2025"
+  },
+  {
+    "analyst": "Christopher Glynn",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/24/2025"
+  },
+  {
+    "analyst": "Amit Mehrotra",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$516.00",
+    "projected": null,
+    "date": "10/24/2025"
+  }
+]

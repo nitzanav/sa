@@ -1,0 +1,182 @@
+[
+  {
+    "analyst": "Christine Yao",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1038.00",
+    "projected": "+7.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Nathan Jones",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1002.00",
+    "projected": "+3.8%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1200.00",
+    "projected": "+26%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$950.00",
+    "projected": "-0.2%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1234.00",
+    "projected": "+28.5%",
+    "date": "10/13/2026"
+  },
+  {
+    "analyst": "Chigusa Katoku",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1131.00",
+    "projected": "+19.3%",
+    "date": "10/09/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1218.00",
+    "projected": "+25%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1200.00",
+    "projected": "+23.1%",
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Vertical Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/29/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$1050.00",
+    "projected": "+8.8%",
+    "date": "09/24/2026"
+  },
+  {
+    "analyst": "Amit Mehrotra",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+18%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1358.00",
+    "projected": "+28%",
+    "date": "08/11/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1200.00",
+    "projected": "+11.2%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Mircea Dobre",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1275.00",
+    "projected": "+18.2%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+15.9%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1210.00",
+    "projected": "+12.2%",
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Daniel DiCicco",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1214.00",
+    "projected": "+12.8%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Matthew McCann CFA",
+    "firm": "Edgewater Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "07/10/2026"
+  },
+  {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1064.00",
+    "projected": "+22.1%",
+    "date": "05/11/2026"
+  },
+  {
+    "analyst": "Joe Ritchie",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1040.00",
+    "projected": "+14.6%",
+    "date": "04/07/2026"
+  }
+]
