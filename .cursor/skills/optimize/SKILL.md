@@ -17,7 +17,7 @@ Read [VectorBT/optimize.md](../../../VectorBT/optimize.md) and [VectorBT/optimiz
 
 Do not edit `VectorBT/optimize.py` until the sweep is finished. Other optimize agents may be running at the same time. Ignore them: do not read their copies, diff them, or merge their code. Each run is independent.
 
-1. Before any edit, copy `VectorBT/optimize.py` to `VectorBT/simulation_<timestamp>_<words>__optimize.py`. `<timestamp>` comes first, in the `run_clock()` shape `2026-10-19_2127_UTC+3` (`YYYY-MM-DD_HHMM_UTC±offset`). `<words>` follows it, a few kebab-case words for this sweep, for example `7d-fine-grid`. Two underscores sit before `optimize`. A fine-grid copy is `simulation_2026-10-19_2127_UTC+3_7d-fine-grid__optimize.py`.
+1. Before any edit, copy `VectorBT/optimize.py` to `VectorBT/simulation_<timestamp>_<words>__optimize.py`. `<timestamp>` comes first, in the `run_clock()` shape `2026-10-24_1019_UTC+3` (`YYYY-MM-DD_HHMM_UTC±offset`). `<words>` follows it, a few kebab-case words for this sweep, for example `relevant-full`. Two underscores sit before `optimize`. That copy is `simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.py`.
 2. Make every code change in that copy, including its output prefix, so the run writes this same stem. From the repo root, run `./penv python VectorBT/simulation_<timestamp>_<words>__optimize.py` with the sweep's arguments.
 3. Keep that stem. The timestamp stays the one from the copy, at the front. If the process writes a report, canvas, or CSV under another name, rename those outputs onto this stem. Do not put `<words>` before the timestamp.
 4. When the run is finished, overwrite `VectorBT/optimize.py` with the finished copy. Replace the whole file. Do not merge.
@@ -32,16 +32,50 @@ Add a phase instead of overwriting a published grid. Steps and permutation examp
 
 A later buy opens a new lot after the previous one has closed. `--one-lot` only skips a second lot while that ticker is still held, and then restarts the hold clock. The default still opens one lot per signal.
 
-Re-check one published cell before trusting an extension. Analyst >2 · proj >20% · 10d 25% 7.5dd on the 13:32 book is +63.0% and +$30,432.
+Re-check one published cell before trusting an extension. Analyst >4 · proj >25% · 15d 25% 5dd on tipranks-daily in `simulation_2026-10-24_1019_UTC+3_relevant-full` is +103.4% and +$5,146.
 
 ## Four files, one stamp
 
-The stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, shape `2026-10-19_2127_UTC+3`. `<words>` follows it, for example `7d-fine-grid`, then `__optimize`. A fine-grid stem is `simulation_2026-10-19_2127_UTC+3_7d-fine-grid__optimize`. Write all four under `VectorBT/` before finishing:
+The stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, shape `2026-10-24_1019_UTC+3`. `<words>` follows it, for example `relevant-full`, then `__optimize`. That stem is `simulation_2026-10-24_1019_UTC+3_relevant-full__optimize`. Write all four under `VectorBT/` before finishing:
 
 1. `simulation_<timestamp>_<words>__optimize.py` — the copy created at the start and edited in place. It is the code that ran. After the run, that same file overwrites `VectorBT/optimize.py`. If the command has arguments, also write `simulation_<timestamp>_<words>__optimize.sh` with that exact command (the snapshot path).
 2. `simulation_<timestamp>_<words>__optimize.md` — static report whose conclusion names the winning sell, buy, return on invested, stock P&L, signals, win rate, closed/open lots, and lot-day exposure.
-3. `simulation_<timestamp>_<words>__optimize.tsx` — canvas source. Also save the same source as `~/.cursor/projects/<workspace>/canvases/simulation_<timestamp>_<words>__optimize.canvas.tsx` so it opens beside chat. If a canvas for this run exists under another name, save it under this stem. Link the `.canvas.tsx` path in the reply. The table is the merged one in `VectorBT/optimize.md`: `%` and `$` sub-cells, yellow-to-red scale, symbol and signal columns, parameter pills, Show filter, and Min / Avg / Max on both axes.
+3. `simulation_<timestamp>_<words>__optimize.tsx` — canvas source. Also save the same source as `~/.cursor/projects/<workspace>/canvases/simulation_<timestamp>_<words>__optimize.canvas.tsx` so it opens beside chat. If a canvas for this run exists under another name, save it under this stem. Link the `.canvas.tsx` path in the reply. Copy the filter and table rules in [Canvas filters](#canvas-filters). The published example is the relevant-full run below.
 4. `simulation_<timestamp>_<words>__optimize.csv` — one row per lot for every combo in the report, columns listed in `VectorBT/optimize.md`.
+
+## Canvas filters
+
+The published example is `simulation_2026-10-24_1019_UTC+3_relevant-full`. Copy its filter layout and table. These four files are that run:
+
+- `VectorBT/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.py` — the sweep that ran, including the canvas template.
+- `VectorBT/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.md` — the report. Winner: tipranks-daily · analyst >4 · proj >25% · 15d 25% 5dd, +103.4% and +$5,146.
+- `VectorBT/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.tsx` — canvas source in the repo.
+- `~/.cursor/projects/<workspace>/canvases/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.canvas.tsx` — the same source, opened beside chat.
+
+### Which filters, and how many choices
+
+Buy filters are signal, analysts, upside, and symbols. Sell filters are hold, target, and drawdown. Show is separate, above the table.
+
+- **Signal, analysts, hold, target, drawdown** are multi-select. A click adds or removes that value. The last selected value in a group stays on.
+- **Upside** is one floor, like symbols. The pills are the projected cuts in that run. The default is the lowest. A buy stays when its projected cut is greater than or equal to the active floor, so `>20%` keeps `>20%`, `>25%`, and `>30%`.
+- **Symbols** is one floor. The pills are `>0`, `>2`, `>4`, `>7`, `>10`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy stays when its unique-ticker count is greater than that floor.
+- **Show** is one choice: `%`, `$`, or Both. The default is Both. It sits above the table, outside the two filter columns.
+
+### Layout
+
+Two columns, so the filters stay short. Signal, analysts, upside, and symbols are on the left. Hold, target, and drawdown are on the right. Inside a filter the values stack vertically. Show is a single row above the table.
+
+Each value is one row: the pill, then nine figures. Return min, avg, and max come first. Symbol-count min, avg, and max follow. Win-rate min, avg, and max come last. Group those nine under the headings Return, Symbols, and Win rate. Return and win rate are percentages. Symbol count is a whole number.
+
+Those nine figures use the other active filters. The figure for a value includes the cells that match that value, including a value that is currently off, so the row shows what selecting it would cover. An upside or symbols floor includes every buy at or above that floor.
+
+### Table
+
+One merged table. Each result is a `%` sub-cell and a `$` sub-cell, colored yellow (low) to red (high) on a scale fixed to the full grid. Buy rows carry Symbols (unique tickers) and Signals (lots opened).
+
+Min, Avg, and Max columns sit on the left, after Signals and before the sells. They summarize that buy across the sells in view. Min, Avg, and Max rows sit at the top, under the header and above the buys. They summarize that sell across the buys in view. The corner is those stats of those stats.
+
+Click a heading to sort the buy rows. Click it again to reverse the order. Buy sorts by name. Symbols and Signals sort by those counts. Min, Avg, Max, and each sell sort by return or profit, using the `%` and `$` subheadings when both are shown. The total rows stay at the top.
 
 ## Lot-day exposure
 

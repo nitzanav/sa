@@ -4,17 +4,31 @@ now check different downdrops before profit and after profit - it only gets wors
 CHECK WITHOUT last month, the last month posiitons are not finsihed, and wrong optimization decisions happen. We cannot can optimization decisions on last month.
 
 - combine google [working]
-- other sources => tip ranks
 - smarter sell algos based on analyst recomendations
 - combine 1d + 3d +7d
 - different amount per signal strength
 - recency
 
 
+Optimization conclusion analysis:
+add win rate.
+a good buy is first high percent, then a buy strategy that is successful with as much as possible indevidual sell strategies, and as much as many combinations, only then, we prefer more tickersto reduce risk.
+a good sell is first high percent, then a buy strategy that is successful with as much as possible indevidual buy strategies, and as much as many combinations, only then, we prefer more tickersto reduce risk.
+
+
+
 Last decision
 Sell: "30d 50% 7.5dd"
 
+Chosen hayoo daily combinations
+Sell	Buy	On invested	Stock P&L	Trade window	Days exposed	Lot-days	Avg lot	Win	Lots
+15d 50% 7.5dd	yahoo-daily · >3,>30%	+146.8%	+$4,894	2026-07-23 → 2026-10-09	79	202	$5,000	+75.0%	12c/0o
+15d 50% 7.5dd	yahoo-daily · >2,>30%	+116.9%	+$6,106	2026-05-07 → 2026-10-22	133	321	$5,000	+73.7%	18c/1o
+15d 25% 7.5dd	yahoo-daily · >2,>30%	+94.0%	+$4,160	2026-05-07 → 2026-10-22	130	277	$5,000	+73.7%	18c/1o
 
+Conclusions
+sell: 15d 50% 7.5dd
+buy: >3,>30% for 12 positions OR >2,>30% for 18 positions
 
 
 tipranks

@@ -17,23 +17,23 @@ A full run with no `--signal-name` uses the six all_sources, yahoo, and google b
 
 Both cuts are strict greater-than.
 
-**Analysts** (`analyst_projections_count`): `>2` `>3` `>4` `>5` `>6` `>7` `>8` `>9`
+**Analysts** (`analyst_projections_count`): `>2` `>3` `>4` `>5` `>6`. Above 7 is out.
 
-**Projected upside** (`average_projected`): `>10%` `>20%` `>25%` `>30%` `>40%` `>50%`
+**Projected upside** (`average_projected`): `>10%` `>20%` `>25%` `>30%`. Above 40% and 50% are out.
 
-8 × 6 = 48 buys on one book. Six books: 288 buys.
+5 × 4 = 20 buys on one book. Six books: 120 buys.
 
 ## Sell
 
 Order is hold, target, drawdown (`30d 25% 7.5dd`).
 
-**Hold.** Trading days from the last signal on the lot. A later signal for that ticker restarts the clock. `10d` `15d` `30d` `45d` `60d` `75d` `90d` `105d` `120d`
+**Hold.** Trading days from the last signal on the lot. A later signal for that ticker restarts the clock. `10d` `15d` `30d` `45d` `60d`. Above 60 days is out.
 
-**Target.** Fraction of that signal's projected upside, from the price that set it. A later signal replaces the target. `25%` `50%` `75%` `100%`
+**Target.** Fraction of that signal's projected upside, from the price that set it. A later signal replaces the target. `25%` `50%` `75%`. `100%` is out so the six-book run stays near 30 minutes.
 
-**Drawdown.** From the high since entry. `7.5dd` sells 7.5% under that peak. A later signal does not reset the peak. `5dd` `7.5dd` `10dd` `15dd`
+**Drawdown.** From the high since entry. `7.5dd` sells 7.5% under that peak. A later signal does not reset the peak. `5dd` `7.5dd`. `10dd` and `15dd` are out for the same reason.
 
-9 × 4 × 4 = 144 sells. One book is 6,912 cells. All six books: 41,472 cells.
+5 × 3 × 2 = 30 sells. One book is 600 cells. All six books: 3,600 cells.
 
 ## Lots
 

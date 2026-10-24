@@ -9,10 +9,10 @@ When this behavior changes, update this file in the same change.
 From the repo root, with the project virtualenv. Do not edit `optimize.py` while the sweep is in progress. Copy it to `simulation_<timestamp>_<words>__optimize.py` first, change and run that copy, then overwrite `optimize.py` with the finished copy. Concurrent sweeps each keep their own copy; the overwrite replaces `optimize.py` wholesale, with no merge.
 
 ```bash
-./penv python VectorBT/simulation_2026-10-17_1332_UTC+3_7d-coarse-grid__optimize.py coarse --signal-name yahoo-7d-window
+./penv python VectorBT/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.py full --signal-name all_sources-daily --signal-name all_sources-7d-window --signal-name yahoo-daily --signal-name yahoo-7d-window --signal-name tipranks-daily --signal-name tipranks-7d-window --end 2026-10-22
 ```
 
-`run_clock()` supplies the timestamp `<YYYY-MM-DD>_<HHMM>_UTC+<offset>`. The timestamp comes first, then a few kebab-case words, then `__optimize`: `simulation_<timestamp>_<words>__optimize`. A fine-grid file is `simulation_2026-10-19_2127_UTC+3_7d-fine-grid__optimize`. The 13:32 coarse pass on disk is still `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize`.
+`run_clock()` supplies the timestamp `<YYYY-MM-DD>_<HHMM>_UTC+<offset>`. The timestamp comes first, then a few kebab-case words, then `__optimize`: `simulation_<timestamp>_<words>__optimize`. That file is `simulation_2026-10-24_1019_UTC+3_relevant-full__optimize`.
 
 Pin `--end` to the last quote day when today is not a session (the cache's last bar is then before `today`, so a refresh would download again). A download that omits a symbol must not drop that symbol: `ensure_prices` keeps prior columns with `combine_first`.
 
@@ -72,7 +72,7 @@ One lot per ticker, same coarse permutation, end pinned to the last quote day:
 ./penv python VectorBT/optimize.py coarse --signal-name yahoo-7d-window --one-lot --end 2026-10-16
 ```
 
-Before trusting an extension, re-run one published cell. Analyst >2 · proj >20% · 10d 25% 7.5dd on the 13:32 book is +63.0% and +$30,432.
+Before trusting an extension, re-run one published cell. Analyst >4 · proj >25% · 15d 25% 5dd on tipranks-daily in `simulation_2026-10-24_1019_UTC+3_relevant-full` is +103.4% and +$5,146.
 
 Wide, 540 cells. Same 15 buys as coarse. Holds append 45/60/75/90/105/120 onto 10/15/30. Targets stay 25/50%. Drawdowns stay 7.5/10%. This is the grid in `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.tsx`. One book per run. Signals dated after `--end` are dropped before the sweep.
 
@@ -89,24 +89,24 @@ def wide_sell_grid():
 ./penv python VectorBT/optimize.py wide --signal-name tipranks-7d-window --end 2026-10-22
 ```
 
-Full, every cut in `optimization_params_full.md`. 8 analyst cuts × 6 upside cuts × 6 books = 288 buys. Holds 10/15/30/45/60/75/90/105/120 × target 25/50/75/100% × drawdown 5/7.5/10/15% = 144 sells. 288 × 144 = 41,472 cells. One book per cell.
+Full, every cut in `optimization_params_full.md`. 5 analyst cuts × 4 upside cuts × 6 books = 120 buys. Holds 10/15/30/45/60 × target 25/50/75% × drawdown 5/7.5% = 30 sells. 120 × 30 = 3,600 cells. One book per cell. Analysts above 7, upside above 30%, and holds above 60 days are out. Target 100% and drawdowns 10% and 15% are out so this six-book run stays near 30 minutes.
 
 ```python
 def full_buy_grid():
     return with_signal_names(
         [
             {"min_analysts": n, "min_projected": float(p)}
-            for n in (2, 3, 4, 5, 6, 7, 8, 9)
-            for p in (10, 20, 25, 30, 40, 50)
+            for n in (2, 3, 4, 5, 6)
+            for p in (10, 20, 25, 30)
         ]
     )
 
 
 def full_sell_grid():
     return neighborhood_sells(
-        (10, 15, 30, 45, 60, 75, 90, 105, 120),
-        (0.25, 0.50, 0.75, 1.00),
-        (0.05, 0.075, 0.10, 0.15),
+        (10, 15, 30, 45, 60),
+        (0.25, 0.50, 0.75),
+        (0.05, 0.075),
     )
 ```
 
@@ -120,14 +120,14 @@ Pass `--signal-name` more than once to run a subset of the six. `tipranks-daily`
 
 ## Four files, one stamp
 
-Every run writes these siblings under `VectorBT/`. The file stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, for example `2026-10-19_2127_UTC+3`. `<words>` follows it, for example `7d-fine-grid`, then `__optimize`. Set the copy's output prefix to that stem.
+Every run writes these siblings under `VectorBT/`. The file stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, for example `2026-10-23_2014_UTC+3`. `<words>` follows it, for example `full-all-signals`, then `__optimize`. Set the copy's output prefix to that stem.
 
 1. `simulation_<timestamp>_<words>__optimize.py` — the copy of `optimize.py` created before editing and executed as-is. After the run, that file overwrites `optimize.py`. If the invocation has arguments or is not a bare phase command, also write `simulation_<timestamp>_<words>__optimize.sh` with the exact command from the repo root:
 
 ```bash
 #!/bin/sh
 cd "$(dirname "$0")/.." || exit 1
-./penv python VectorBT/simulation_2026-10-17_1332_UTC+3_7d-coarse-grid__optimize.py coarse --signal-name yahoo-7d-window
+./penv python VectorBT/simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.py full --signal-name all_sources-daily --signal-name all_sources-7d-window --signal-name yahoo-daily --signal-name yahoo-7d-window --signal-name tipranks-daily --signal-name tipranks-7d-window --end 2026-10-22
 ```
 
 2. `simulation_<timestamp>_<words>__optimize.md` — static report with a conclusion: period, lot rule, winning sell and buy, return on invested, stock P&L, signal count, win rate, closed/open lots, lot-day exposure, and the best stock-P&L cell. `write_grid_summary` is the report. An extension that only adds cells still gets a conclusion in this file.
@@ -145,13 +145,15 @@ Lot-day exposure is four figures on the winning combination, taken from the lots
 
 If that canvas is missing or has a different name, save it under this stamp before finishing. In the chat, link the `.canvas.tsx` path.
 
-The canvas is one merged table, not separate return and P&L tables. Copy the structure of `simulation_7d-coarse-grid_2026-10-17_1332_UTC+3_optimize.canvas.tsx`.
+The canvas is one merged table, not separate return and P&L tables. Copy the structure of `simulation_2026-10-24_1019_UTC+3_relevant-full__optimize.canvas.tsx`.
 
-- Each result is two sub-cells, `%` and `$`. A Show filter toggles `%`, `$`, or both.
+- Each result is two sub-cells, `%` and `$`. Show is three exclusive choices above the table: `%`, `$`, or Both.
+- Click a column heading to sort the buy rows. Click it again to reverse the order. Buy sorts by name. Symbols and Signals sort by those counts. Min, Avg, Max, and each sell sort by return or profit, using the `%` and `$` subheadings when both are shown. The Min, Avg, and Max rows stay at the top.
 - Color each sub-cell from yellow (low) to red (high) with `useHostTheme()` category tokens. Scale `%` across all `%` values and `$` across all `$` values. Pick text color for contrast.
 - Buy rows carry Symbols (unique tickers) and Signals (signal count).
-- Pill filters: signal book, analysts, upside, hold, target, drawdown. The signal pills are the books in that run.
-- Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy. Rows summarize the visible buys for each sell. The corner is the same stats of those stats.
+- Pill filters: signal book, analysts, upside, hold, target, drawdown, and Symbols. The signal pills are the books in that run. The Symbols pills are a single floor: `>0`, `>2`, `>4`, `>7`, `>10`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy row stays when its unique-ticker count is greater than the active floor. The Upside pills are a single floor too. One cut is active and the default is the lowest. A buy stays when its projected cut is at least that floor.
+- Each filter value shows min, average, and max return (%) for the cells with that value under the other active filters, then min, average, and max symbol count for that same slice, then min, average, and max win rate. Two columns: signal, analysts, upside, and symbols on the left; hold, target, and drawdown on the right. Show is the row above the table. Values stack vertically. On that row, return Min, Avg, and Max come first, symbol-count Min, Avg, and Max follow them, and win-rate Min, Avg, and Max come last.
+- Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy and sit on the left, after Symbols and Signals and before the sells. Rows summarize the visible buys for each sell and sit at the top, under the header and above the buys. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 
 4. `simulation_<timestamp>_<words>__optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`, then the combo's `trade_from`, `trade_to`, `days_exposed`, `lot_days`, `avg_lot_amount` repeated on each of its lots.

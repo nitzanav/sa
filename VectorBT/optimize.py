@@ -47,6 +47,7 @@ overrides it).
 from __future__ import annotations
 
 import argparse
+import gc
 import json
 import shlex
 import sys
@@ -128,7 +129,7 @@ FULL_SIGNAL_NAMES = (
     "google-7d-window",
 )
 _SELECTED_SIGNAL_NAMES = None
-OUTPUT_STEM = "simulation_2026-10-23_1827_UTC+3_all-sources-7d-window__optimize"
+OUTPUT_STEM = "simulation_2026-10-23_2014_UTC+3_full-all-signals__optimize"
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -2284,6 +2285,13 @@ def run_combos(
     rows = []
     close_wide = None
     init_cash = None
+    position_path = None
+    write_header = False
+    if isinstance(position_log, (str, Path)):
+        position_path = Path(position_log)
+        if position_path.exists():
+            position_path.unlink()
+        write_header = True
     planned = sum(1 for spec in specs for buy in buys if combo_key(buy, spec) not in seen)
     done = 0
     for spec in specs:
@@ -2319,8 +2327,15 @@ def run_combos(
                 f"exposed {row['days_exposed']}d  lot-days {row['lot_days']}"
             )
             rows.append(row)
-            if position_log is not None:
-                position_log.append(tag_positions(positions, row))
+            tagged = tag_positions(positions, row)
+            if position_path is not None:
+                tagged.to_csv(position_path, mode="a", header=write_header, index=False)
+                write_header = False
+            elif position_log is not None:
+                position_log.append(tagged)
+            del positions, tagged
+            if done % 25 == 0:
+                gc.collect()
             seen.add(key)
     return rows, close_wide, init_cash
 
@@ -2673,17 +2688,17 @@ def full_buy_grid():
     return with_signal_names(
         [
             {"min_analysts": n, "min_projected": float(p)}
-            for n in (2, 3, 4, 5, 6, 7, 8, 9)
-            for p in (10, 20, 25, 30, 40, 50)
+            for n in (2, 3, 4, 5, 6)
+            for p in (10, 20, 25, 30)
         ]
     )
 
 
 def full_sell_grid():
     return neighborhood_sells(
-        (10, 15, 30, 45, 60, 75, 90, 105, 120),
-        (0.25, 0.50, 0.75, 1.00),
-        (0.05, 0.075, 0.10, 0.15),
+        (10, 15, 30, 45, 60),
+        (0.25, 0.50, 0.75),
+        (0.05, 0.075),
     )
 
 
@@ -3037,6 +3052,7 @@ def append_split_summary(path, rows):
 
 
 GRID_CANVAS = r'''import {
+  Grid,
   H1,
   H2,
   Pill,
@@ -3177,8 +3193,10 @@ function unit(value: number, min: number, max: number): number {
 const STAT_NAMES = ["min", "avg", "max"] as const;
 type StatName = (typeof STAT_NAMES)[number];
 type Stats = Record<StatName, number>;
-const METRICS = ["pct", "pnl"] as const;
-type Metric = (typeof METRICS)[number];
+const SHOW_MODES = ["pct", "pnl", "both"] as const;
+type ShowMode = (typeof SHOW_MODES)[number];
+type Metric = "pct" | "pnl";
+const SYMBOL_FLOORS = [0, 2, 4, 7, 10, 20, 40, 80, 160, 320] as const;
 
 function mean(values: number[]): number {
   return values.reduce((total, value) => total + value, 0) / values.length;
@@ -3213,18 +3231,155 @@ function toggleItem<T extends string | number>(current: T[], value: T, all: read
   return all.filter((item) => next.includes(item));
 }
 
-function FilterGroup<T extends string | number>({
+function emptyBuckets(options: readonly (string | number)[]): Record<string, number[]> {
+  const out: Record<string, number[]> = {};
+  for (const option of options) out[String(option)] = [];
+  return out;
+}
+
+type SliceStats = { roi: Stats | null; sym: Stats | null; win: Stats | null };
+
+function packSlice(
+  roiGroups: Record<string, number[]>,
+  symGroups: Record<string, number[]>,
+  winGroups: Record<string, number[]>,
+): Record<string, SliceStats> {
+  const out: Record<string, SliceStats> = {};
+  for (const key of Object.keys(roiGroups)) {
+    const roi = roiGroups[key];
+    const sym = symGroups[key];
+    const win = winGroups[key];
+    out[key] = {
+      roi: roi.length ? pack(roi) : null,
+      sym: sym.length ? pack(sym) : null,
+      win: win.length ? pack(win) : null,
+    };
+  }
+  return out;
+}
+
+function countText(value: number | undefined): string {
+  return value === undefined ? "—" : String(Math.round(value));
+}
+
+function winText(value: number | undefined): string {
+  return value === undefined ? "—" : `${value.toFixed(1)}%`;
+}
+
+function FilterColumn<T extends string | number>({
   label,
   options,
   selected,
   onChange,
   format,
+  stats,
+  exclusive = false,
 }: {
   label: string;
   options: readonly T[];
   selected: T[];
   onChange: (next: T[]) => void;
   format: (value: T) => string;
+  stats: Record<string, SliceStats>;
+  exclusive?: boolean;
+}) {
+  const figure = {
+    textAlign: "right" as const,
+    fontVariantNumeric: "tabular-nums" as const,
+  };
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "minmax(0, 1fr) 4.5em 4.5em 4.5em 3.2em 3.2em 3.2em 4.2em 4.2em 4.2em",
+        columnGap: 6,
+        rowGap: 2,
+        alignItems: "center",
+      }}
+    >
+      <span />
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "2 / span 3", textAlign: "center" }}>
+        Return
+      </Text>
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "5 / span 3", textAlign: "center" }}>
+        Symbols
+      </Text>
+      <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "8 / span 3", textAlign: "center" }}>
+        Win rate
+      </Text>
+      <Text size="small" tone="secondary" weight="semibold">
+        {label}
+      </Text>
+      {["Min", "Avg", "Max", "Min", "Avg", "Max", "Min", "Avg", "Max"].map((name, index) => (
+        <Text key={`${name}-${index}`} as="span" size="small" tone="tertiary" style={figure}>
+          {name}
+        </Text>
+      ))}
+      {options.map((option) => {
+        const stat = stats[String(option)];
+        const active = selected.includes(option);
+        const tone = active ? "primary" : "tertiary";
+        return (
+          <div key={String(option)} style={{ display: "contents" }}>
+            <div style={{ minWidth: 0, justifySelf: "start" }}>
+              <Pill
+                size="sm"
+                active={active}
+                onClick={() =>
+                  onChange(exclusive ? [option] : toggleItem(selected, option, options))
+                }
+              >
+                {format(option)}
+              </Pill>
+            </div>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.min) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.avg) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {stat?.roi ? pct(stat.roi.max) : "—"}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.min)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.avg)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {countText(stat?.sym?.max)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.min)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.avg)}
+            </Text>
+            <Text as="span" size="small" tone={tone} style={figure}>
+              {winText(stat?.win?.max)}
+            </Text>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function FilterGroup<T extends string | number>({
+  label,
+  options,
+  selected,
+  onChange,
+  format,
+  exclusive = false,
+}: {
+  label: string;
+  options: readonly T[];
+  selected: T[];
+  onChange: (next: T[]) => void;
+  format: (value: T) => string;
+  exclusive?: boolean;
 }) {
   return (
     <Row gap={6} align="center" wrap>
@@ -3236,7 +3391,9 @@ function FilterGroup<T extends string | number>({
           key={String(option)}
           size="sm"
           active={selected.includes(option)}
-          onClick={() => onChange(toggleItem(selected, option, options))}
+          onClick={() =>
+            onChange(exclusive ? [option] : toggleItem(selected, option, options))
+          }
         >
           {format(option)}
         </Pill>
@@ -3292,16 +3449,22 @@ export default function FineGridCanvas() {
   const theme = useHostTheme();
   const [books, setBooks] = useCanvasState<string[]>("grid-signals", SIGNALS);
   const [analysts, setAnalysts] = useCanvasState<number[]>("fine-analysts", ANALYSTS);
-  const [upsides, setUpsides] = useCanvasState<number[]>("fine-upsides", UPSIDES);
+  const [upsideFloor, setUpsideFloor] = useCanvasState<number>("fine-upside-floor", UPSIDES[0]);
   const [holds, setHolds] = useCanvasState<number[]>("fine-holds", HOLDS);
   const [targets, setTargets] = useCanvasState<number[]>("fine-targets", TARGETS);
   const [drops, setDrops] = useCanvasState<number[]>("fine-drops", DROPS);
-  const [metrics, setMetrics] = useCanvasState<Metric[]>("fine-metrics", ["pct", "pnl"]);
+  const [showMode, setShowMode] = useCanvasState<ShowMode>("fine-show-mode", "both");
+  const [sortKey, setSortKey] = useCanvasState<string>("grid-sort-key", "");
+  const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("grid-sort-dir", "desc");
+  const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
       ({ buy }) =>
-        books.includes(buy.s) && analysts.includes(buy.a) && upsides.includes(buy.p),
+        books.includes(buy.s) &&
+        analysts.includes(buy.a) &&
+        buy.p >= upsideFloor &&
+        buy.sym > symbolFloor,
     );
     const sells = SELLS.map((sell, col) => ({ sell, col })).filter(
       ({ sell }) => holds.includes(sell.h) && targets.includes(sell.t) && drops.includes(sell.d),
@@ -3320,12 +3483,89 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsides, holds, targets, drops]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
+
+  const filterStats = useMemo(() => {
+    const signalRoi = emptyBuckets(SIGNALS);
+    const signalSym = emptyBuckets(SIGNALS);
+    const signalWin = emptyBuckets(SIGNALS);
+    const analystRoi = emptyBuckets(ANALYSTS);
+    const analystSym = emptyBuckets(ANALYSTS);
+    const analystWin = emptyBuckets(ANALYSTS);
+    const upsideRoi = emptyBuckets(UPSIDES);
+    const upsideSym = emptyBuckets(UPSIDES);
+    const upsideWin = emptyBuckets(UPSIDES);
+    const symbolRoi = emptyBuckets(SYMBOL_FLOORS);
+    const symbolSym = emptyBuckets(SYMBOL_FLOORS);
+    const symbolWin = emptyBuckets(SYMBOL_FLOORS);
+    const holdRoi = emptyBuckets(HOLDS);
+    const holdSym = emptyBuckets(HOLDS);
+    const holdWin = emptyBuckets(HOLDS);
+    const targetRoi = emptyBuckets(TARGETS);
+    const targetSym = emptyBuckets(TARGETS);
+    const targetWin = emptyBuckets(TARGETS);
+    const dropRoi = emptyBuckets(DROPS);
+    const dropSym = emptyBuckets(DROPS);
+    const dropWin = emptyBuckets(DROPS);
+    const push = (
+      roiBucket: Record<string, number[]>,
+      symBucket: Record<string, number[]>,
+      winBucket: Record<string, number[]>,
+      key: string,
+      roi: number,
+      sym: number,
+      win: number,
+    ) => {
+      roiBucket[key]?.push(roi);
+      symBucket[key]?.push(sym);
+      if (Number.isFinite(win)) winBucket[key]?.push(win);
+    };
+    BUYS.forEach((buy, row) => {
+      const signalOk = books.includes(buy.s);
+      const analystOk = analysts.includes(buy.a);
+      const upsideOk = buy.p >= upsideFloor;
+      const symbolOk = buy.sym > symbolFloor;
+      SELLS.forEach((sell, col) => {
+        const roi = ROI[row][col];
+        const win = WIN[row][col];
+        if (!Number.isFinite(roi)) return;
+        const holdOk = holds.includes(sell.h);
+        const targetOk = targets.includes(sell.t);
+        const dropOk = drops.includes(sell.d);
+        const sellsOk = holdOk && targetOk && dropOk;
+        const buysOk = signalOk && analystOk && upsideOk && symbolOk;
+        if (analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalSym, signalWin, buy.s, roi, buy.sym, win);
+        if (signalOk && upsideOk && symbolOk && sellsOk) push(analystRoi, analystSym, analystWin, String(buy.a), roi, buy.sym, win);
+        if (signalOk && analystOk && symbolOk && sellsOk) {
+          for (const floor of UPSIDES) {
+            if (buy.p >= floor) push(upsideRoi, upsideSym, upsideWin, String(floor), roi, buy.sym, win);
+          }
+        }
+        if (signalOk && analystOk && upsideOk && sellsOk) {
+          for (const floor of SYMBOL_FLOORS) {
+            if (buy.sym > floor) push(symbolRoi, symbolSym, symbolWin, String(floor), roi, buy.sym, win);
+          }
+        }
+        if (buysOk && targetOk && dropOk) push(holdRoi, holdSym, holdWin, String(sell.h), roi, buy.sym, win);
+        if (buysOk && holdOk && dropOk) push(targetRoi, targetSym, targetWin, String(sell.t), roi, buy.sym, win);
+        if (buysOk && holdOk && targetOk) push(dropRoi, dropSym, dropWin, String(sell.d), roi, buy.sym, win);
+      });
+    });
+    return {
+      signal: packSlice(signalRoi, signalSym, signalWin),
+      analyst: packSlice(analystRoi, analystSym, analystWin),
+      upside: packSlice(upsideRoi, upsideSym, upsideWin),
+      symbol: packSlice(symbolRoi, symbolSym, symbolWin),
+      hold: packSlice(holdRoi, holdSym, holdWin),
+      target: packSlice(targetRoi, targetSym, targetWin),
+      drop: packSlice(dropRoi, dropSym, dropWin),
+    };
+  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
-  const showPct = metrics.includes("pct");
-  const showPnl = metrics.includes("pnl");
+  const showPct = showMode !== "pnl";
+  const showPnl = showMode !== "pct";
 
   const cells = view.buys.flatMap(({ buy, row }) =>
     view.sells.map(({ sell, col }) => ({
@@ -3428,6 +3668,43 @@ export default function FineGridCanvas() {
     background: theme.bg.editor,
   };
   const both = showPct && showPnl;
+  const activeMetric: Metric = showPct ? "pct" : "pnl";
+  const chooseSort = (key: string, numeric: boolean) => {
+    if (sortKey === key) setSortDir(sortDir === "asc" ? "desc" : "asc");
+    else {
+      setSortKey(key);
+      setSortDir(numeric ? "desc" : "asc");
+    }
+  };
+  const sortMark = (key: string) => (sortKey === key ? (sortDir === "asc" ? " ↑" : " ↓") : "");
+  const sortStyle = (extra?: CSSProperties): CSSProperties => ({
+    ...head,
+    cursor: "pointer",
+    userSelect: "none",
+    ...extra,
+  });
+  const orderedBuys = [...view.buys.map((item, index) => ({ ...item, index }))].sort((a, b) => {
+    if (!sortKey) return 0;
+    const dir = sortDir === "asc" ? 1 : -1;
+    const read = (item: { buy: Buy; row: number; index: number }): number | string => {
+      if (sortKey === "buy") return buyLabel(item.buy);
+      if (sortKey === "sym") return item.buy.sym;
+      if (sortKey === "n") return item.buy.n;
+      const [kind, id, metric] = sortKey.split(":");
+      if (kind === "stat") {
+        const stats = metric === "pnl" ? view.rowPnl[item.index] : view.rowRoi[item.index];
+        return stats[id as StatName];
+      }
+      const col = Number(id);
+      return metric === "pnl" ? PNL[item.row][col] : ROI[item.row][col];
+    };
+    const av = read(a);
+    const bv = read(b);
+    if (typeof av === "string" && typeof bv === "string") return av.localeCompare(bv) * dir;
+    const left = Number.isFinite(av as number) ? (av as number) : dir === 1 ? Infinity : -Infinity;
+    const right = Number.isFinite(bv as number) ? (bv as number) : dir === 1 ? Infinity : -Infinity;
+    return (left - right) * dir;
+  });
   const pair = (key: string, roi: number, pnl: number, title: string, edge = false) => {
     const out = [];
     if (showPct) out.push(paint(`${key}-pct`, roi, roiRange, pct(roi), `${title} · return`, edge));
@@ -3460,54 +3737,77 @@ export default function FineGridCanvas() {
       ) : null}
 
       <Stack gap={8}>
-        <FilterGroup
-          label="Signal"
-          options={SIGNALS}
-          selected={books}
-          onChange={setBooks}
-          format={(value) => value}
-        />
+        <Text size="small" tone="secondary">
+          Min, avg, and max are the return for that value with the other filters applied.
+          The next three figures are that value's symbol count. The last three are its win rate.
+        </Text>
+        <Grid columns={2} gap={16} align="start">
+          <FilterColumn
+            label="Signal"
+            options={SIGNALS}
+            selected={books}
+            onChange={setBooks}
+            format={(value) => value}
+            stats={filterStats.signal}
+          />
+          <FilterColumn
+            label="Hold"
+            options={HOLDS}
+            selected={holds}
+            onChange={setHolds}
+            format={(value) => `${value}d`}
+            stats={filterStats.hold}
+          />
+          <FilterColumn
+            label="Analysts"
+            options={ANALYSTS}
+            selected={analysts}
+            onChange={setAnalysts}
+            format={(value) => `>${value}`}
+            stats={filterStats.analyst}
+          />
+          <FilterColumn
+            label="Target"
+            options={TARGETS}
+            selected={targets}
+            onChange={setTargets}
+            format={(value) => `${value}%`}
+            stats={filterStats.target}
+          />
+          <FilterColumn
+            label="Upside"
+            options={UPSIDES}
+            selected={[upsideFloor]}
+            onChange={(next) => setUpsideFloor(next[0])}
+            format={(value) => `>${value}%`}
+            stats={filterStats.upside}
+            exclusive
+          />
+          <FilterColumn
+            label="Drop"
+            options={DROPS}
+            selected={drops}
+            onChange={setDrops}
+            format={(value) => `${value}dd`}
+            stats={filterStats.drop}
+          />
+          <FilterColumn
+            label="Symbols"
+            options={SYMBOL_FLOORS}
+            selected={[symbolFloor]}
+            onChange={(next) => setSymbolFloor(next[0])}
+            format={(value) => `>${value}`}
+            stats={filterStats.symbol}
+            exclusive
+          />
+        </Grid>
         <FilterGroup
           label="Show"
-          options={METRICS}
-          selected={metrics}
-          onChange={setMetrics}
-          format={(value) => (value === "pct" ? "%" : "$")}
-        />
-        <FilterGroup
-          label="Analysts"
-          options={ANALYSTS}
-          selected={analysts}
-          onChange={setAnalysts}
-          format={(value) => `>${value}`}
-        />
-        <FilterGroup
-          label="Upside"
-          options={UPSIDES}
-          selected={upsides}
-          onChange={setUpsides}
-          format={(value) => `>${value}%`}
-        />
-        <FilterGroup
-          label="Hold"
-          options={HOLDS}
-          selected={holds}
-          onChange={setHolds}
-          format={(value) => `${value}d`}
-        />
-        <FilterGroup
-          label="Target"
-          options={TARGETS}
-          selected={targets}
-          onChange={setTargets}
-          format={(value) => `${value}%`}
-        />
-        <FilterGroup
-          label="Drop"
-          options={DROPS}
-          selected={drops}
-          onChange={setDrops}
-          format={(value) => `${value}dd`}
+          options={SHOW_MODES}
+          selected={[showMode]}
+          onChange={(next) => setShowMode(next[0])}
+          format={(value) => (value === "pct" ? "%" : value === "pnl" ? "$" : "Both")}
+          exclusive
         />
       </Stack>
 
@@ -3516,9 +3816,12 @@ export default function FineGridCanvas() {
           <H2>Buy × sell</H2>
           <Text size="small" tone="secondary">
             Yellow is the smaller number and red is the larger one, on a scale fixed to the full
-            grid. The three columns are the min, average, and max of that buy across the sells in
-            view. The three rows do the same for each sell across the buys in view. Symbols are
-            unique tickers in that buy. Signals are the lots opened.
+            grid. The min, average, and max columns sit on the left and summarize that buy across
+            the sells in view. The min, average, and max rows sit at the top and do the same for
+            each sell across the buys in view. Symbols are
+            unique tickers in that buy, and the Symbols pill keeps buys above that floor. Signals
+            are the lots opened. Click a heading to sort the buys. Click it again to reverse the
+            order. The total rows stay at the top.
           </Text>
           {showPct ? (
             <Scale label="Return" range={roiRange} format={pct} yellow={yellow} orange={orange} red={red} fallback={fallback} />
@@ -3532,91 +3835,125 @@ export default function FineGridCanvas() {
                 <tr>
                   <th
                     rowSpan={both ? 2 : 1}
-                    style={{ ...head, textAlign: "left", position: "sticky", left: 0, zIndex: 2 }}
+                    onClick={() => chooseSort("buy", false)}
+                    style={sortStyle({ textAlign: "left", position: "sticky", left: 0, zIndex: 2 })}
                   >
-                    Buy
+                    Buy{sortMark("buy")}
                   </th>
-                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
-                    Symbols
+                  <th
+                    rowSpan={both ? 2 : 1}
+                    onClick={() => chooseSort("sym", true)}
+                    style={sortStyle({ textAlign: "right" })}
+                  >
+                    Symbols{sortMark("sym")}
                   </th>
-                  <th rowSpan={both ? 2 : 1} style={{ ...head, textAlign: "right" }}>
-                    Signals
+                  <th
+                    rowSpan={both ? 2 : 1}
+                    onClick={() => chooseSort("n", true)}
+                    style={sortStyle({ textAlign: "right" })}
+                  >
+                    Signals{sortMark("n")}
                   </th>
-                  {view.sells.map(({ sell }) => (
-                    <th key={sellLabel(sell)} colSpan={both ? 2 : 1} style={head}>
-                      {sellLabel(sell)}
-                    </th>
-                  ))}
-                  {STAT_NAMES.map((name, index) => (
-                    <th
-                      key={name}
-                      colSpan={both ? 2 : 1}
-                      style={{
-                        ...head,
-                        borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
-                      }}
-                    >
-                      {statLabel(name)}
-                    </th>
-                  ))}
-                </tr>
-                {both ? (
-                  <tr>
-                    {view.sells.flatMap(({ sell }) => {
-                      const name = sellLabel(sell);
-                      return [
-                        <th key={`${name}-pct`} style={head}>
-                          %
-                        </th>,
-                        <th key={`${name}-pnl`} style={head}>
-                          $
-                        </th>,
-                      ];
-                    })}
-                    {STAT_NAMES.flatMap((name, index) => [
+                  {STAT_NAMES.map((name) =>
+                    both ? (
+                      <th key={name} colSpan={2} style={head}>
+                        {statLabel(name)}
+                      </th>
+                    ) : (
                       <th
-                        key={`${name}-pct`}
+                        key={name}
+                        onClick={() => chooseSort(`stat:${name}:${activeMetric}`, true)}
+                        style={sortStyle()}
+                      >
+                        {statLabel(name)}
+                        {sortMark(`stat:${name}:${activeMetric}`)}
+                      </th>
+                    ),
+                  )}
+                  {view.sells.map(({ sell, col }, index) =>
+                    both ? (
+                      <th
+                        key={sellLabel(sell)}
+                        colSpan={2}
                         style={{
                           ...head,
                           borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
                         }}
                       >
-                        %
+                        {sellLabel(sell)}
+                      </th>
+                    ) : (
+                      <th
+                        key={sellLabel(sell)}
+                        onClick={() => chooseSort(`sell:${col}:${activeMetric}`, true)}
+                        style={sortStyle({
+                          borderLeft: index === 0 ? `1px solid ${theme.stroke.secondary}` : undefined,
+                        })}
+                      >
+                        {sellLabel(sell)}
+                        {sortMark(`sell:${col}:${activeMetric}`)}
+                      </th>
+                    ),
+                  )}
+                </tr>
+                {both ? (
+                  <tr>
+                    {STAT_NAMES.flatMap((name) => [
+                      <th
+                        key={`${name}-pct`}
+                        onClick={() => chooseSort(`stat:${name}:pct`, true)}
+                        style={sortStyle()}
+                      >
+                        %{sortMark(`stat:${name}:pct`)}
                       </th>,
-                      <th key={`${name}-pnl`} style={head}>
-                        $
+                      <th
+                        key={`${name}-pnl`}
+                        onClick={() => chooseSort(`stat:${name}:pnl`, true)}
+                        style={sortStyle()}
+                      >
+                        ${sortMark(`stat:${name}:pnl`)}
                       </th>,
                     ])}
+                    {view.sells.flatMap(({ sell, col }, index) => {
+                      const name = sellLabel(sell);
+                      const edge =
+                        index === 0
+                          ? { borderLeft: `1px solid ${theme.stroke.secondary}` }
+                          : undefined;
+                      return [
+                        <th
+                          key={`${name}-pct`}
+                          onClick={() => chooseSort(`sell:${col}:pct`, true)}
+                          style={sortStyle(edge)}
+                        >
+                          %{sortMark(`sell:${col}:pct`)}
+                        </th>,
+                        <th
+                          key={`${name}-pnl`}
+                          onClick={() => chooseSort(`sell:${col}:pnl`, true)}
+                          style={sortStyle()}
+                        >
+                          ${sortMark(`sell:${col}:pnl`)}
+                        </th>,
+                      ];
+                    })}
                   </tr>
                 ) : null}
               </thead>
               <tbody>
-                {view.buys.map(({ buy, row }, index) => (
-                  <tr key={buyLabel(buy)}>
-                    {labelCell(buy.n < 30 ? `${buyLabel(buy)} · thin` : buyLabel(buy), true, false)}
-                    {countCell(String(buy.sym), false)}
-                    {countCell(String(buy.n), false)}
-                    {view.sells.flatMap(({ sell, col }) => {
-                      const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
-                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
-                      return pair(name, ROI[row][col], PNL[row][col], title);
-                    })}
-                    {STAT_NAMES.flatMap((name, statIndex) =>
+                {STAT_NAMES.map((rowStat) => (
+                  <tr key={rowStat}>
+                    {labelCell(statLabel(rowStat), true, false)}
+                    {countCell("—", false)}
+                    {countCell("—", false)}
+                    {STAT_NAMES.flatMap((colStat) =>
                       pair(
-                        `${buyLabel(buy)}-${name}`,
-                        view.rowRoi[index][name],
-                        view.rowPnl[index][name],
-                        `${buyLabel(buy)} · ${statLabel(name)} across sells`,
-                        statIndex === 0,
+                        `${rowStat}-${colStat}`,
+                        view.cornerRoi![rowStat][colStat],
+                        view.cornerPnl![rowStat][colStat],
+                        `${statLabel(rowStat)} of each buy's ${statLabel(colStat).toLowerCase()}`,
                       ),
                     )}
-                  </tr>
-                ))}
-                {STAT_NAMES.map((rowStat, rowIndex) => (
-                  <tr key={rowStat}>
-                    {labelCell(statLabel(rowStat), true, rowIndex === 0)}
-                    {countCell("—", rowIndex === 0)}
-                    {countCell("—", rowIndex === 0)}
                     {view.sells.flatMap(({ sell }, index) => {
                       const name = sellLabel(sell);
                       return pair(
@@ -3624,17 +3961,29 @@ export default function FineGridCanvas() {
                         view.colRoi[index][rowStat],
                         view.colPnl[index][rowStat],
                         `${name} · ${statLabel(rowStat)} across buys`,
+                        index === 0,
                       );
                     })}
-                    {STAT_NAMES.flatMap((colStat, statIndex) =>
+                  </tr>
+                ))}
+                {orderedBuys.map(({ buy, row, index }, position) => (
+                  <tr key={buyLabel(buy)}>
+                    {labelCell(buy.n < 30 ? `${buyLabel(buy)} · thin` : buyLabel(buy), true, position === 0)}
+                    {countCell(String(buy.sym), position === 0)}
+                    {countCell(String(buy.n), position === 0)}
+                    {STAT_NAMES.flatMap((name) =>
                       pair(
-                        `${rowStat}-${colStat}`,
-                        view.cornerRoi![rowStat][colStat],
-                        view.cornerPnl![rowStat][colStat],
-                        `${statLabel(rowStat)} of each buy's ${statLabel(colStat).toLowerCase()}`,
-                        statIndex === 0,
+                        `${buyLabel(buy)}-${name}`,
+                        view.rowRoi[index][name],
+                        view.rowPnl[index][name],
+                        `${buyLabel(buy)} · ${statLabel(name)} across sells`,
                       ),
                     )}
+                    {view.sells.flatMap(({ sell, col }, sellIndex) => {
+                      const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
+                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
+                      return pair(name, ROI[row][col], PNL[row][col], title, sellIndex === 0);
+                    })}
                   </tr>
                 ))}
               </tbody>
@@ -3685,6 +4034,14 @@ CANVAS_DIR = Path.home() / ".cursor/projects/Users-nitzan-dev-sa/canvases"
 
 
 def write_positions_log(path, frames):
+    if isinstance(frames, (str, Path)):
+        logged = Path(frames)
+        n = 0
+        if logged.exists():
+            with logged.open() as handle:
+                n = max(sum(1 for _ in handle) - 1, 0)
+        print(f"Wrote {logged} ({n} rows)")
+        return
     out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=POSITION_COLUMNS)
     out.to_csv(path, index=False)
     print(f"Wrote {path} ({len(out)} rows)")
@@ -3910,9 +4267,9 @@ def main():
     )
 
     if args.phase == "full":
-        position_log = []
+        position_path = Path(f"{prefix}.csv")
         rows, close_wide, init_cash = run_full(
-            signals, close, spy, position_log=position_log, one_lot=args.one_lot
+            signals, close, spy, position_log=position_path, one_lot=args.one_lot
         )
         save_json(CACHE_DIR / "full.json", rows)
         title = "Full buy/sell grid"
@@ -3960,13 +4317,15 @@ def main():
             full_sell_grid(),
             WINNING_SELL,
         )
-        write_positions_log(Path(f"{prefix}.csv"), position_log)
+        write_positions_log(position_path, position_path)
         write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in full_buy_grid() if buy_label(buy) in present]
         write_grid_canvas(
             prefix,
             rows,
             signals,
-            full_buy_grid(),
+            canvas_buys,
             full_sell_grid(),
             info,
         )
