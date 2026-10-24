@@ -111,8 +111,9 @@ download_fortune_500:
 write_joint_analyst_recommendations:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
 
-# Rebuild CSVs from per-symbol JSON, copy Yahoo and Google all_symbols CSV files
-# into database tables, then export ranked signals.
+# Rebuild CSVs from per-symbol JSON, copy Yahoo, Google, and TipRanks into
+# database tables, pool all_sources (Yahoo + TipRanks) and yahoo_and_google,
+# then export ranked signals.
 # Requires DATABASE_URL environment variable to be set.
 # Example:
 #   export DATABASE_URL="postgresql://myuser:secret@mydb.xxxx.us-east-1.rds.amazonaws.com:5432/mydb?sslmode=require"

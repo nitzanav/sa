@@ -23,33 +23,46 @@ CREATE TEMP TABLE _raw_signals (
 INSERT INTO _raw_signals SELECT 'yahoo', * FROM _load;
 TRUNCATE _load;
 
--- Google is paused. Uncomment to load it again.
--- \copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
--- INSERT INTO _raw_signals SELECT 'google', * FROM _load;
--- TRUNCATE _load;
+\copy _load FROM 'data/analyst_recomendation/google/all_symbols.csv' CSV HEADER
+INSERT INTO _raw_signals SELECT 'google', * FROM _load;
+TRUNCATE _load;
 
 \copy _load FROM 'data/analyst_recomendation/tipranks/all_symbols.csv' CSV HEADER
 INSERT INTO _raw_signals SELECT 'tipranks', * FROM _load;
 
--- Shared window: later of the two earliest dates through earlier of the two latest dates.
--- Keep only the overlap, then pool those rows as all_sources.
-WITH _source_overlap AS (
-  SELECT
-    GREATEST(y.min_date, t.min_date) AS start_date,
-    LEAST(y.max_date, t.max_date) AS end_date
-  FROM
-    (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'yahoo') y,
-    (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'tipranks') t
-)
+-- Pair windows: later start through earlier end.
+-- all_sources is yahoo ∩ tipranks. yahoo_and_google is yahoo ∩ google.
+-- Yahoo rows cover the union of those windows so both pools can be cut from them.
+CREATE TEMP TABLE _windows AS
+SELECT
+  GREATEST(y.min_date, t.min_date) AS yt_start,
+  LEAST(y.max_date, t.max_date) AS yt_end,
+  GREATEST(y.min_date, g.min_date) AS yg_start,
+  LEAST(y.max_date, g.max_date) AS yg_end
+FROM
+  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'yahoo') y,
+  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'google') g,
+  (SELECT MIN(date) AS min_date, MAX(date) AS max_date FROM _raw_signals WHERE source = 'tipranks') t;
+
 INSERT INTO raw_signals
 SELECT r.*
 FROM _raw_signals r
-JOIN _source_overlap o ON r.date BETWEEN o.start_date AND o.end_date;
+JOIN _windows w ON
+  (r.source = 'yahoo' AND r.date BETWEEN LEAST(w.yt_start, w.yg_start) AND GREATEST(w.yt_end, w.yg_end))
+  OR (r.source = 'tipranks' AND r.date BETWEEN w.yt_start AND w.yt_end)
+  OR (r.source = 'google' AND r.date BETWEEN w.yg_start AND w.yg_end);
 
 INSERT INTO raw_signals
-SELECT 'all_sources', date, ticker, analyst, percent, projected_price
-FROM raw_signals
-WHERE source IN ('yahoo', 'tipranks');
+SELECT 'all_sources', r.date, r.ticker, r.analyst, r.percent, r.projected_price
+FROM raw_signals r
+JOIN _windows w ON r.date BETWEEN w.yt_start AND w.yt_end
+WHERE r.source IN ('yahoo', 'tipranks');
+
+INSERT INTO raw_signals
+SELECT 'yahoo_and_google', r.date, r.ticker, r.analyst, r.percent, r.projected_price
+FROM raw_signals r
+JOIN _windows w ON r.date BETWEEN w.yg_start AND w.yg_end
+WHERE r.source IN ('yahoo', 'google');
 
 -- Drop old views so columns can be re-ordered / renamed cleanly.
 DROP VIEW IF EXISTS signals CASCADE;
@@ -150,4 +163,4 @@ FROM (
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
