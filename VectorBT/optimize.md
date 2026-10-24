@@ -156,7 +156,7 @@ The canvas is one merged table, not separate return and P&L tables. Copy the str
 - Three total columns and three total rows: Min, Avg, Max. Columns summarize the visible sells for each buy and sit on the left, after Symbols and Signals and before the sells. Rows summarize the visible buys for each sell and sit at the top, under the header and above the buys. The corner is the same stats of those stats.
 - Embed the numbers. No `fetch`. Import only from `cursor/canvas`.
 
-4. `simulation_<timestamp>_<words>__optimize.csv` — one row per lot for every combo in the report. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`, then the combo's `trade_from`, `trade_to`, `days_exposed`, `lot_days`, `avg_lot_amount` repeated on each of its lots.
+4. `simulation_<timestamp>_<words>__optimize.csv.xz` — one row per lot for every combo in the report, xz-compressed so GitHub accepts the push (plain CSV lot logs can exceed the 100 MB blob limit). `write_positions_log` writes the plain `.csv` and then runs `xz` on it; Finder decompresses `.csv.xz` by double-click. Columns: `sell`, `buy`, `ticker`, `date_buy`, `date_sell`, `price_buy`, `price_sell`, `pnl`, `return_pct`, `return_pct_30d`, `spy_pct`, `vs_spy_pct`, `hold_days`, `status`, then the combo's `trade_from`, `trade_to`, `days_exposed`, `lot_days`, `avg_lot_amount` repeated on each of its lots.
 
 ## Winners grid
 

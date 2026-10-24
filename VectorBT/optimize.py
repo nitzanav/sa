@@ -4070,6 +4070,27 @@ export default function FineGridCanvas() {
 CANVAS_DIR = Path.home() / ".cursor/projects/Users-nitzan-dev-sa/canvases"
 
 
+def _compress_positions_csv(csv_path, rows):
+    """Compress the plain lot CSV to .csv.xz with Finder-openable xz and delete the plain CSV."""
+    csv_path = Path(csv_path)
+    if not csv_path.exists():
+        return
+    xz_path = csv_path.with_suffix(csv_path.suffix + ".xz")
+    if xz_path.exists():
+        xz_path.unlink()
+    # Delegate to the xz CLI: multi-threaded (-T0) and keeps default level.
+    # Falls back to the lzma stdlib if xz is missing.
+    try:
+        import subprocess
+        subprocess.run(["xz", "-T0", "-f", str(csv_path)], check=True)
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        import lzma, shutil
+        with csv_path.open("rb") as src, lzma.open(xz_path, "wb", preset=6) as dst:
+            shutil.copyfileobj(src, dst, length=16 * 1024 * 1024)
+        csv_path.unlink()
+    print(f"Compressed {csv_path.name} → {xz_path.name} ({rows} rows, {xz_path.stat().st_size / 1024 / 1024:.1f} MB)")
+
+
 def write_positions_log(path, frames):
     if isinstance(frames, (str, Path)):
         logged = Path(frames)
@@ -4078,10 +4099,12 @@ def write_positions_log(path, frames):
             with logged.open() as handle:
                 n = max(sum(1 for _ in handle) - 1, 0)
         print(f"Wrote {logged} ({n} rows)")
+        _compress_positions_csv(logged, n)
         return
     out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=POSITION_COLUMNS)
     out.to_csv(path, index=False)
     print(f"Wrote {path} ({len(out)} rows)")
+    _compress_positions_csv(path, len(out))
 
 
 def write_code_snapshot(prefix, argv):
