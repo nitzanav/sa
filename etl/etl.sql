@@ -163,4 +163,4 @@ FROM (
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_percentile DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
