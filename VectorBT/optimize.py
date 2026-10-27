@@ -42,6 +42,23 @@ yahoo-daily and yahoo-7d-window. --signal-name also accepts google,
 tipranks, and all_sources daily and 7d-window books. Sell and staged
 freezes use the first selected name (yahoo-daily unless --signal-name
 overrides it).
+
+Phase protect keeps the daily winner buys and replaces the sell. There is
+no hold and no profit target. While the close is below the entry, a loss
+dropdown sells 2.5%, 5%, or 7.5% under that entry. Once a close has traded
+above the entry, profit protection sells when the giveback from the highest
+close reaches 5%, 10%, 20%, or 40% of the gain from entry to that peak.
+
+Phase slots keeps those same buys and books. The book holds 8 lots. A new
+signal takes a free slot. When the book is full, it sells the biggest loss,
+or, if every lot is in profit, the least profitable lot only when that lot's
+strength is below the new signal. Strength is sqrt(analysts, capped at 10)
+times the target percent floored to 10-point steps.
+
+Phase book is yahoo-daily only. The same 8-lot replacement rule runs inside
+a swept book size, and each open lot also exits on a loss dropdown or on
+profit protection. Loss dropdown is 1.25/2.5/7.5/10. Profit protection is
+2.5/5/10/20/30. Book size is 4/6/8/12/16/20.
 """
 
 from __future__ import annotations
@@ -49,6 +66,7 @@ from __future__ import annotations
 import argparse
 import gc
 import json
+import math
 import shlex
 import sys
 from collections import defaultdict
@@ -61,6 +79,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from backtest import (  # noqa: E402
     HOLD_AFTER_LAST_DAYS,
+    HOLD_NORM_DAYS,
     POSITION_VALUE,
     SIGNALS_CSV,
     SPY,
@@ -132,6 +151,13 @@ FULL_SIGNAL_NAMES = (
 )
 _SELECTED_SIGNAL_NAMES = None
 OUTPUT_STEM = "simulation_2026-10-24_1603_UTC+3_daily-winner-params__optimize"
+PROTECT_STEM = "simulation_2026-10-24_2032_UTC+3_loss-dd-profit-protect__optimize"
+SLOTS_STEM = "simulation_2026-10-24_2130_UTC+3_eight-lot-strength__optimize"
+SLOT_COUNT = 8
+BOOK_STEM = "simulation_2026-10-27_1141_UTC+2_yahoo-dd-pp-lots__optimize"
+BOOK_DRAWDOWNS = (0.0125, 0.025, 0.075, 0.10)
+BOOK_PROTECTS = (0.025, 0.05, 0.10, 0.20, 0.30)
+BOOK_SLOTS = (4, 6, 8, 12, 16, 20)
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -146,11 +172,13 @@ class SellSpec:
     hold_days: int | None = None
     target_frac: float | None = None
     drawdown: float | None = None
+    profit_protect: float | None = None
     baseline: bool = False
     dd_before: float | None = None
     dd_after: float | None = None
     lock_profit: float | None = None
     lock_proj_frac: float | None = None
+    slots: int | None = None
 
     @property
     def staged(self) -> bool:
@@ -175,15 +203,31 @@ class SellSpec:
 
     @property
     def tag(self) -> str:
+        if self.slots is not None and self.profit_protect is not None:
+            dd = f"dd{self.drawdown * 100:g}"
+            pp = f"pp{self.profit_protect * 100:g}"
+            return f"{dd}-{pp}-slots{self.slots}"
+        if self.slots is not None:
+            return f"slots{self.slots}"
         parts = self._prefix_parts()
         if self.staged:
             parts.append(self._staged_core())
+        elif self.profit_protect is not None:
+            dd = f"dd{self.drawdown * 100:g}" if self.drawdown is not None else "dd"
+            parts.append(f"{dd}-pp{self.profit_protect * 100:g}")
         elif self.drawdown is not None:
             parts.append(f"dd{self.drawdown * 100:g}")
         return "-".join(parts) or "hold"
 
     @property
     def short(self) -> str:
+        if self.slots is not None and self.profit_protect is not None:
+            return (
+                f"{self.drawdown * 100:g}dd {self.profit_protect * 100:g}pp"
+                f" · {self.slots} lots"
+            )
+        if self.slots is not None:
+            return f"{self.slots} lots"
         parts = []
         if self.hold_days is not None:
             parts.append(f"{self.hold_days}d")
@@ -197,12 +241,26 @@ class SellSpec:
             else:
                 lock = f"{self.lock_profit * 100:g}%"
             parts.append(f"{before}→{lock}→{after}")
+        elif self.profit_protect is not None:
+            if self.drawdown is not None:
+                parts.append(f"{self.drawdown * 100:g}dd")
+            parts.append(f"{self.profit_protect * 100:g}pp")
         elif self.drawdown is not None:
             parts.append(f"{self.drawdown * 100:g}dd")
         return " ".join(parts) or "hold"
 
     @property
     def label(self) -> str:
+        if self.slots is not None and self.profit_protect is not None:
+            return (
+                f"{self.slots} lots, {self.drawdown * 100:g}% loss dd, "
+                f"{self.profit_protect * 100:g}% of peak gain"
+            )
+        if self.slots is not None:
+            return (
+                f"{self.slots} lots. Sell the biggest loss for a new buy, "
+                "or the least profitable winner when it is the weaker signal."
+            )
         if self.staged:
             before = f"{self.dd_before * 100:g}% dd"
             after = f"{self.dd_after * 100:g}% dd"
@@ -230,6 +288,11 @@ class SellSpec:
             bits.append(f"{self.hold_days}d")
         if self.target_frac is not None:
             bits.append(f"{int(round(self.target_frac * 100))}% target")
+        if self.profit_protect is not None:
+            if self.drawdown is not None:
+                bits.append(f"{self.drawdown * 100:g}% loss dd")
+            bits.append(f"{self.profit_protect * 100:g}% of peak gain")
+            return " or ".join(bits)
         if self.drawdown is not None:
             bits.append(f"{self.drawdown * 100:g}% dd")
         return " or ".join(bits)
@@ -433,6 +496,7 @@ def spec_from_row(row):
         hold_days=int(hold) if hold is not None else None,
         target_frac=row.get("target_frac"),
         drawdown=row.get("drawdown"),
+        profit_protect=row.get("profit_protect"),
         baseline=bool(row.get("baseline", False)),
         dd_before=row.get("dd_before"),
         dd_after=row.get("dd_after"),
@@ -455,8 +519,438 @@ def _record_exit(stats, staged, locked, time_hit, tgt_hit, dd_hit):
                 stats["n_exit_wide"] += 1
 
 
+def _protect_stops(px, peak, entry_px, drawdown, profit_protect):
+    """Loss dropdown from the entry, or a giveback of the peak gain.
+
+    Loss: while this close is under the entry, sell at entry * (1 - dd).
+    Profit: once a close has traded above the entry, sell when
+    (peak - price) >= pp * (peak - entry). A 10% stop on a $10 entry whose
+    high close is $12 sells at $11.80. The peak is updated before the check,
+    so a new high does not sell.
+    """
+    pp_hit = (
+        profit_protect is not None
+        and peak > entry_px
+        and px <= peak - profit_protect * (peak - entry_px)
+    )
+    dd_hit = (
+        drawdown is not None
+        and px < entry_px
+        and px <= entry_px * (1.0 - drawdown)
+    )
+    return pp_hit, dd_hit
+
+
+def position_strength(analysts, projected_pct):
+    """sqrt(analysts capped at 10) × target percent floored to 10-point steps.
+
+    Two analysts and a 33% target is sqrt(2) × 30.
+    """
+    count = min(max(float(analysts), 0.0), 10.0)
+    bucket = math.floor(float(projected_pct) / 10.0) * 10.0
+    return math.sqrt(count) * bucket
+
+
+def _slot_replacement(marked, new_strength):
+    """Lot to sell so a new signal can enter a full book, or None.
+
+    marked is (lot, return, price). A loss is a negative return. The biggest
+    loss is sold with no strength test. If every lot is in profit, the least
+    profitable is sold only when its strength is strictly below the new signal.
+    A flat lot is neither, so it blocks the winner swap.
+    """
+    if not marked:
+        return None
+    losers = [item for item in marked if item[1] < 0]
+    if losers:
+        return min(losers, key=lambda item: (item[1], item[0]["strength"], item[0]["entry"]))
+    if all(item[1] > 0 for item in marked):
+        least = min(marked, key=lambda item: (item[1], item[0]["strength"], item[0]["entry"]))
+        if least[0]["strength"] < new_strength:
+            return least
+    return None
+
+
+def _check_slot_book():
+    """Synthetic book: strength formula, loss swap, and the winner-strength gate."""
+    got = position_strength(2, 33)
+    want = math.sqrt(2) * 30
+    if abs(got - want) > 1e-9:
+        raise RuntimeError(f"strength(2, 33) {got} != {want}")
+    if position_strength(12, 33) != math.sqrt(10) * 30:
+        raise RuntimeError("analysts above 10 must cap at 10")
+    if position_strength(2, 39.9) != math.sqrt(2) * 30:
+        raise RuntimeError("39.9% must floor to 30")
+
+    index = pd.bdate_range("2026-01-05", periods=4)
+    close = pd.DataFrame(
+        {
+            "A": [10.0, 10.0, 8.0, 8.0],
+            "B": [10.0, 11.0, 12.0, 12.0],
+            "C": [10.0, 10.0, 10.0, 14.0],
+            "D": [10.0, 10.0, 10.5, 10.5],
+            "E": [10.0, 10.0, 10.0, 10.0],
+        },
+        index=index,
+    )
+    spy = pd.Series(100.0, index=index, name=SPY)
+
+    def frame(rows):
+        return pd.DataFrame(rows)
+
+    # Full book, A is the loser: sell A even though the new signal is weaker.
+    loss = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 2},
+            {"date": index[0], "ticker": "B", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[2], "ticker": "C", "analyst_projections_count": 1, "average_projected": 20, "signal_score": 1},
+        ]
+    )
+    row, positions, _, _ = run_slot_book("loss", close, spy, loss, slots=2)
+    closed = positions[positions["status"] == "Closed"]
+    if list(closed["ticker"]) != ["A"] or abs(closed["pnl"].iloc[0] - -1000) > 1e-6:
+        raise RuntimeError(f"biggest loss should sell A at -1000, got\n{positions}")
+    if set(positions.loc[positions["status"] == "Open", "ticker"]) != {"B", "C"}:
+        raise RuntimeError(f"B and C should stay open\n{positions}")
+    if row["max_open_lots"] > 2:
+        raise RuntimeError("book exceeded 2 slots")
+
+    # Both in profit. Least profitable A is still stronger than D, so D is skipped.
+    keep = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 2},
+            {"date": index[2], "ticker": "D", "analyst_projections_count": 1, "average_projected": 20, "signal_score": 1},
+        ]
+    )
+    # A is +5% on day 2 (10.5). Use a price path where A is profitable.
+    up = close.copy()
+    up["A"] = [10.0, 10.2, 10.5, 10.5]
+    _, kept, _, _ = run_slot_book("keep", up, spy, keep, slots=1)
+    if list(kept["ticker"]) != ["A"] or (kept["status"] != "Open").any():
+        raise RuntimeError(f"weaker new signal must not replace a stronger winner\n{kept}")
+
+    # Least profitable winner is weaker than the new signal, so it is replaced.
+    swap = frame(
+        [
+            {"date": index[0], "ticker": "E", "analyst_projections_count": 1, "average_projected": 20, "signal_score": 1},
+            {"date": index[0], "ticker": "B", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 2},
+            {"date": index[2], "ticker": "C", "analyst_projections_count": 9, "average_projected": 50, "signal_score": 3},
+        ]
+    )
+    # Day 2: E is +5% (10.5), B is +20% (12). Least profitable is E, strength 20 < 150.
+    up["E"] = [10.0, 10.2, 10.5, 10.5]
+    _, swapped, _, _ = run_slot_book("swap", up, spy, swap, slots=2)
+    sold = swapped[swapped["status"] == "Closed"]
+    if list(sold["ticker"]) != ["E"]:
+        raise RuntimeError(f"least profitable weaker winner E should be sold\n{swapped}")
+    if set(swapped.loc[swapped["status"] == "Open", "ticker"]) != {"B", "C"}:
+        raise RuntimeError(f"B and C should remain\n{swapped}")
+
+    # Same day, one slot: the stronger signal gets it. The flat lot is not sold.
+    same = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[0], "ticker": "B", "analyst_projections_count": 1, "average_projected": 20, "signal_score": 9},
+        ]
+    )
+    _, first, _, _ = run_slot_book("same", close, spy, same, slots=1)
+    if list(first["ticker"]) != ["A"]:
+        raise RuntimeError(f"stronger same-day signal should take the only slot\n{first}")
+
+    stopped = frame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 4,
+                "average_projected": 40,
+                "signal_score": 1,
+            }
+        ]
+    )
+    down = close.copy()
+    down["A"] = [10.0, 10.0, 9.8, 9.8]
+    _, hit, _, _ = run_slot_book(
+        "dd", down, spy, stopped, slots=4, drawdown=0.0125, profit_protect=0.30
+    )
+    if list(hit["status"]) != ["Closed"] or hit["date_sell"].iloc[0] != index[2].strftime("%Y-%m-%d"):
+        raise RuntimeError(f"1.25dd should sell a 9.80 close\n{hit}")
+    _, held_dd, _, _ = run_slot_book(
+        "dd-wide", down, spy, stopped, slots=4, drawdown=0.025, profit_protect=0.30
+    )
+    if list(held_dd["status"]) != ["Open"]:
+        raise RuntimeError(f"2.5dd should keep a 9.80 close\n{held_dd}")
+
+    trail = close.copy()
+    trail["A"] = [10.0, 12.0, 11.8, 11.8]
+    _, trailed, _, _ = run_slot_book(
+        "pp", trail, spy, stopped, slots=4, drawdown=0.10, profit_protect=0.10
+    )
+    if list(trailed["status"]) != ["Closed"] or abs(trailed["price_sell"].iloc[0] - 11.8) > 1e-9:
+        raise RuntimeError(f"10pp should sell the 11.80 giveback\n{trailed}")
+    print("Slot book checks passed.")
+
+
+def run_slot_book(
+    label, close, spy, signals, slots=SLOT_COUNT, drawdown=None, profit_protect=None
+):
+    """At most `slots` open lots.
+
+    A signal buys at that day's close when a slot is free. On a full book it
+    sells the biggest loss at that close and buys. If every open lot is in
+    profit, it sells the least profitable one only when that lot's strength
+    is strictly below the new signal's strength. Two signals on the same
+    ticker can both be open. Same-day signals are taken strongest first.
+
+    When drawdown and profit_protect are set, those stops run first each day,
+    before new signals. Loss dropdown sells while the close is under the
+    entry. Profit protection sells a giveback of the gain from entry to the
+    highest close. A new high does not sell. A lot that is never replaced
+    and never stopped stays open through the last quote day.
+    """
+    from backtest import bar_dates
+
+    dates = bar_dates(close.index)
+    n = len(dates)
+    spy_px = aligned_spy(spy, close.index).to_numpy(dtype=float)
+    held = [ticker for ticker in signals["ticker"].drop_duplicates() if ticker in close.columns]
+    if not held or n == 0:
+        raise RuntimeError(f"No price data for {label}")
+    prices = {ticker: close[ticker].to_numpy(dtype=float) for ticker in held}
+    located = signals.copy()
+    if "signal_score" in located.columns:
+        located["rank"] = located["signal_score"]
+    else:
+        located["rank"] = 0.0
+    located["bar"] = dates.get_indexer(pd.to_datetime(located["date"]).dt.normalize(), method="bfill")
+    by_day = defaultdict(list)
+    n_signals = 0
+    for row in located.itertuples(index=False):
+        loc = int(row.bar)
+        ticker = row.ticker
+        if loc < 0 or loc >= n or ticker not in prices:
+            continue
+        px = float(prices[ticker][loc])
+        if not math.isfinite(px) or px <= 0:
+            continue
+        n_signals += 1
+        by_day[loc].append(
+            {
+                "ticker": ticker,
+                "entry": loc,
+                "strength": position_strength(row.analyst_projections_count, row.average_projected),
+                "score": float(row.rank) if pd.notna(row.rank) else 0.0,
+            }
+        )
+
+    init_cash = POSITION_VALUE * slots
+    spy_shares = init_cash / float(spy_px[0])
+    cash = 0.0
+    open_lots = []
+    records = []
+    open_counts = []
+    navs = []
+    stocks = []
+
+    def mark(lot, t):
+        px = float(prices[lot["ticker"]][t])
+        if not math.isfinite(px) or px <= 0:
+            return None
+        return px / lot["entry_px"] - 1.0, px
+
+    def fund_buy(t):
+        nonlocal spy_shares, cash
+        cost = POSITION_VALUE
+        px = float(spy_px[t])
+        take = min(spy_shares, cost / px)
+        spy_shares -= take
+        cash -= cost - take * px
+
+    def fund_sell(proceeds, t):
+        nonlocal spy_shares, cash
+        left = proceeds
+        if cash < 0:
+            repay = min(left, -cash)
+            cash += repay
+            left -= repay
+        if left:
+            spy_shares += left / float(spy_px[t])
+
+    def record(lot, t, px, status):
+        ret = (px / lot["entry_px"] - 1.0) * 100.0
+        hold = max(t - lot["entry"] + 1, 1)
+        spy_ret = (float(spy_px[t]) / float(spy_px[lot["entry"]]) - 1.0) * 100.0
+        records.append(
+            {
+                "ticker": lot["ticker"],
+                "date_buy": dates[lot["entry"]].strftime("%Y-%m-%d"),
+                "date_sell": dates[t].strftime("%Y-%m-%d"),
+                "price_buy": lot["entry_px"],
+                "price_sell": px,
+                "pnl": POSITION_VALUE * ret / 100.0,
+                "return_pct": ret,
+                "return_pct_30d": ret * HOLD_NORM_DAYS / hold,
+                "spy_pct": spy_ret,
+                "vs_spy_pct": ret - spy_ret,
+                "hold_days": hold,
+                "status": status,
+            }
+        )
+
+    def close_lot(lot, t, px):
+        fund_sell(POSITION_VALUE * px / lot["entry_px"], t)
+        record(lot, t, px, "Closed")
+        open_lots.remove(lot)
+
+    def open_lot(signal, t, px):
+        fund_buy(t)
+        open_lots.append(
+            {
+                "ticker": signal["ticker"],
+                "entry": t,
+                "entry_px": px,
+                "peak": px,
+                "strength": signal["strength"],
+            }
+        )
+
+    for t in range(n):
+        if drawdown is not None or profit_protect is not None:
+            for lot in list(open_lots):
+                if lot["entry"] >= t:
+                    continue
+                point = mark(lot, t)
+                if point is None:
+                    continue
+                px = point[1]
+                if px > lot["peak"]:
+                    lot["peak"] = px
+                pp_hit, dd_hit = _protect_stops(
+                    px, lot["peak"], lot["entry_px"], drawdown, profit_protect
+                )
+                if pp_hit or dd_hit:
+                    close_lot(lot, t, px)
+        todays = by_day.get(t, [])
+        todays.sort(key=lambda signal: (signal["strength"], signal["score"]), reverse=True)
+        for signal in todays:
+            px = float(prices[signal["ticker"]][t])
+            if len(open_lots) < slots:
+                open_lot(signal, t, px)
+                continue
+            marked = []
+            blocked = False
+            for lot in open_lots:
+                point = mark(lot, t)
+                if point is None:
+                    blocked = True
+                    break
+                marked.append((lot, point[0], point[1]))
+            if blocked:
+                continue
+            victim = _slot_replacement(marked, signal["strength"])
+            if victim is None:
+                continue
+            close_lot(victim[0], t, victim[2])
+            open_lot(signal, t, px)
+        stock = 0.0
+        for lot in open_lots:
+            point = mark(lot, t)
+            if point is not None:
+                stock += POSITION_VALUE * (1.0 + point[0])
+        navs.append(stock + spy_shares * float(spy_px[t]) + cash)
+        stocks.append(stock)
+        open_counts.append(len(open_lots))
+
+    last = n - 1
+    for lot in list(open_lots):
+        point = mark(lot, last)
+        px = point[1] if point is not None else lot["entry_px"]
+        record(lot, last, px, "Open")
+
+    positions = pd.DataFrame(
+        records,
+        columns=[
+            "ticker",
+            "date_buy",
+            "date_sell",
+            "price_buy",
+            "price_sell",
+            "pnl",
+            "return_pct",
+            "return_pct_30d",
+            "spy_pct",
+            "vs_spy_pct",
+            "hold_days",
+            "status",
+        ],
+    )
+    stock_pnl = float(positions["pnl"].sum()) if len(positions) else 0.0
+    nav = pd.Series(navs, index=close.index)
+    pnl = float(nav.iloc[-1]) - init_cash if len(nav) else 0.0
+    spy_bnh = (float(spy_px[-1]) / float(spy_px[0]) - 1.0) * 100.0
+    n_trades = len(positions)
+    n_open = int((positions["status"] == "Open").sum()) if n_trades else 0
+    n_closed = n_trades - n_open
+    avg_lots = float(sum(open_counts) / len(open_counts)) if open_counts else 0.0
+    max_lots = int(max(open_counts)) if open_counts else 0
+    cost = avg_lots * POSITION_VALUE
+    weight = []
+    for stock, value in zip(stocks, navs):
+        if value:
+            weight.append(stock / value)
+    peak = nav.cummax()
+    drawdown = float((nav / peak - 1.0).min()) * 100.0 if len(nav) else 0.0
+    wins = int((positions["pnl"] > 0).sum()) if n_trades else 0
+    covered = set()
+    lot_days = 0
+    starts = []
+    ends = []
+    for buy, sell in zip(positions["date_buy"], positions["date_sell"]) if n_trades else []:
+        start = pd.Timestamp(buy).normalize()
+        end = pd.Timestamp(sell).normalize()
+        span = int((end - start).days) + 1
+        covered.update(start + pd.Timedelta(days=i) for i in range(span))
+        lot_days += span
+        starts.append(buy)
+        ends.append(sell)
+    row = {
+        "label": label,
+        "n_signals": n_signals,
+        "n_trades": n_trades,
+        "n_closed": n_closed,
+        "n_open": n_open,
+        "stock_pnl": stock_pnl,
+        "pnl": pnl,
+        "return_pct": pnl / init_cash * 100.0 if init_cash else 0.0,
+        "spy_pct": spy_bnh,
+        "vs_spy_pct": (pnl / init_cash * 100.0 if init_cash else 0.0) - spy_bnh,
+        "avg_stock_invested": cost,
+        "avg_open_lots": avg_lots,
+        "max_open_lots": max_lots,
+        "avg_invested_pct": cost / init_cash * 100.0 if init_cash else 0.0,
+        "peak_invested_pct": max_lots * POSITION_VALUE / init_cash * 100.0 if init_cash else 0.0,
+        "return_on_avg_invested_pct": stock_pnl / cost * 100.0 if cost else 0.0,
+        "avg_exposure_pct": float(sum(weight) / len(weight)) * 100.0 if weight else 0.0,
+        "peak_exposure_pct": float(max(weight)) * 100.0 if weight else 0.0,
+        "win_rate_pct": wins / n_trades * 100.0 if n_trades else 0.0,
+        "max_drawdown_pct": drawdown,
+        "mean_lot_return_pct": float(positions["return_pct"].mean()) if n_trades else 0.0,
+        "mean_vs_spy_pct": float(positions["vs_spy_pct"].mean()) if n_trades else 0.0,
+        "trade_from": min(starts) if starts else "",
+        "trade_to": max(ends) if ends else "",
+        "days_exposed": len(covered),
+        "lot_days": int(lot_days),
+        "avg_lot_amount": float(POSITION_VALUE) if n_trades else 0.0,
+    }
+    return row, positions, close, init_cash
+
+
 def exits_from_spec(close_wide, meta, spec: SellSpec, one_lot=False):
     """OR of time stop, target fraction of projected upside, trailing drawdown.
+
+    Profit-protection specs skip that OR. They sell on a loss dropdown from
+    the entry, or on a giveback of the highest close's gain. No time stop
+    and no projection target.
 
     Default: each signal is its own lot. A new signal for the same ticker
     while a lot is open resets that lot's time stop and projection target.
@@ -476,6 +970,7 @@ def exits_from_spec(close_wide, meta, spec: SellSpec, one_lot=False):
     hold_days = spec.hold_days
     target_frac = spec.target_frac
     drawdown = spec.drawdown
+    profit_protect = spec.profit_protect
     dd_before = spec.dd_before
     dd_after = spec.dd_after
     lock_profit = spec.lock_profit
@@ -508,6 +1003,7 @@ def exits_from_spec(close_wide, meta, spec: SellSpec, one_lot=False):
                 hold_days,
                 target_frac,
                 drawdown,
+                profit_protect,
                 dd_before,
                 dd_after,
                 lock_profit,
@@ -548,6 +1044,16 @@ def exits_from_spec(close_wide, meta, spec: SellSpec, one_lot=False):
                 px = float(prices[t])
                 if px > peak:
                     peak = px
+                if profit_protect is not None:
+                    pp_hit, dd_hit = _protect_stops(
+                        px, peak, entry_px, drawdown, profit_protect
+                    )
+                    if pp_hit or dd_hit:
+                        exits.iat[t, col_index[row.column]] = True
+                        _record_exit(stats, False, False, False, pp_hit, dd_hit)
+                        exited = True
+                        break
+                    continue
                 if staged and not locked:
                     if lock_profit is not None:
                         threshold = lock_profit
@@ -586,6 +1092,7 @@ def _exits_one_lot(
     hold_days,
     target_frac,
     drawdown,
+    profit_protect,
     dd_before,
     dd_after,
     lock_profit,
@@ -624,6 +1131,16 @@ def _exits_one_lot(
             px = float(prices[t])
             if px > peak:
                 peak = px
+            if profit_protect is not None:
+                pp_hit, dd_hit = _protect_stops(
+                    px, peak, entry_px, drawdown, profit_protect
+                )
+                if pp_hit or dd_hit:
+                    exits.iat[t, col_index[row.column]] = True
+                    _record_exit(stats, False, False, False, pp_hit, dd_hit)
+                    exited = True
+                    break
+                continue
             if staged and not locked:
                 if lock_profit is not None:
                     threshold = lock_profit
@@ -726,6 +1243,7 @@ def attach_spec(row, spec: SellSpec, buy=None):
     row["hold_days_spec"] = spec.hold_days
     row["target_frac"] = spec.target_frac
     row["drawdown"] = spec.drawdown
+    row["profit_protect"] = spec.profit_protect
     row["baseline"] = spec.baseline
     row["dd_before"] = spec.dd_before
     row["dd_after"] = spec.dd_after
@@ -2311,14 +2829,25 @@ def run_combos(
                 f"  I{iteration} {done}/{planned} {spec.short} · {buy_label(buy)} "
                 f"({len(bought)} signals)"
             )
-            row, positions, close_wide, _, init_cash = run_one(
-                f"{spec.label} · {buy_label(buy)}",
-                close,
-                spy,
-                bought,
-                spec,
-                one_lot=one_lot,
-            )
+            if spec.slots is not None:
+                row, positions, close_wide, init_cash = run_slot_book(
+                    f"{spec.label} · {buy_label(buy)}",
+                    close,
+                    spy,
+                    bought,
+                    slots=spec.slots,
+                    drawdown=spec.drawdown,
+                    profit_protect=spec.profit_protect,
+                )
+            else:
+                row, positions, close_wide, _, init_cash = run_one(
+                    f"{spec.label} · {buy_label(buy)}",
+                    close,
+                    spy,
+                    bought,
+                    spec,
+                    one_lot=one_lot,
+                )
             row = attach_spec(row, spec, buy)
             row["label"] = f"{spec.short} · {buy_label(buy)}"
             row["iteration"] = iteration
@@ -2718,6 +3247,92 @@ def winners_sell_grid():
     return neighborhood_sells((10, 15), (0.25, 0.50), (0.05, 0.075, 0.10))
 
 
+def protect_sell_grid():
+    """Loss dropdown × fraction of the peak gain. No hold, no target."""
+    return [
+        SellSpec(drawdown=dd, profit_protect=pp)
+        for dd in (0.025, 0.05, 0.075)
+        for pp in (0.05, 0.10, 0.20, 0.40)
+    ]
+
+
+def slots_sell_grid():
+    """One book size. Replacement is the sell."""
+    return [SellSpec(slots=SLOT_COUNT)]
+
+
+def book_sell_grid():
+    """Book size × loss dropdown × profit protection, on the slot rule."""
+    return [
+        SellSpec(drawdown=dd, profit_protect=pp, slots=slots)
+        for slots in BOOK_SLOTS
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def run_book(signals, close, spy, position_log=None):
+    _check_slot_book()
+    buys = winners_buy_grid()
+    specs = book_sell_grid()
+    print(
+        f"\n=== Yahoo book: {len(buys)} buys × {len(specs)} sells"
+        f" · lots {', '.join(str(n) for n in BOOK_SLOTS)}"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "book",
+        position_log=position_log,
+    )
+
+
+def run_slots(signals, close, spy, position_log=None):
+    _check_slot_book()
+    buys = winners_buy_grid()
+    specs = slots_sell_grid()
+    print(
+        f"\n=== Slot book: {len(buys)} buys × {len(specs)} sells"
+        f" · {SLOT_COUNT} lots · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "slots",
+        position_log=position_log,
+    )
+
+
+def run_protect(signals, close, spy, position_log=None, one_lot=False):
+    buys = winners_buy_grid()
+    specs = protect_sell_grid()
+    print(
+        f"\n=== Protect grid: {len(buys)} buys × {len(specs)} sells"
+        f" · {', '.join(signal_names())}"
+        f"{' · one lot' if one_lot else ''} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "protect",
+        one_lot=one_lot,
+        position_log=position_log,
+    )
+
+
 def run_winners(signals, close, spy, position_log=None, one_lot=False):
     buys = winners_buy_grid()
     specs = winners_sell_grid()
@@ -2869,7 +3484,24 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
         ),
         "",
         (
-            f"{len(buys)} buys × {len(specs)} sells. One pass. Sells are OR-combined."
+            f"{len(buys)} buys × {len(specs)} sells. One pass. "
+            + (
+                "Each cell is one book size, one loss dropdown, and one profit "
+                "protect. Stops run first. A full book then sells the biggest "
+                "loss, or the least profitable winner when that lot is the weaker signal."
+                if any(
+                    spec.slots is not None and spec.profit_protect is not None
+                    for spec in specs
+                )
+                else "The book holds a fixed number of lots. A full book sells the "
+                "biggest loss, or the least profitable winner when that lot is "
+                "the weaker signal. No time stop and no drawdown."
+                if any(spec.slots is not None for spec in specs)
+                else "Each sell is a loss dropdown from the entry plus a giveback "
+                "of the peak gain. No time stop and no profit target."
+                if any(spec.profit_protect is not None for spec in specs)
+                else "Sells are OR-combined."
+            )
         ),
         "",
         "# WINNING COMBINATION",
@@ -3113,9 +3745,11 @@ const UPSIDES = __UPSIDES__;
 const HOLDS = __HOLDS__;
 const TARGETS = __TARGETS__;
 const DROPS = __DROPS__;
+const PROTECTS = __PROTECTS__;
+const SELL_MODE = __SELL_MODE__;
 
 type Buy = { s: string; a: number; p: number; n: number; sym: number };
-type Sell = { h: number; t: number; d: number };
+type Sell = { h: number; t: number; d: number; p: number };
 
 const BUYS: Buy[] = __BUYS__;
 const SELLS: Sell[] = __SELLS__;
@@ -3136,6 +3770,9 @@ function buyLabel(buy: Buy): string {
 }
 
 function sellLabel(sell: Sell): string {
+  if (SELL_MODE === "book") return `${sell.d}dd ${sell.p}pp · ${sell.h} lots`;
+  if (SELL_MODE === "slots") return `${sell.h} lots`;
+  if (SELL_MODE === "protect") return `${sell.d}dd ${sell.p}pp`;
   return `${sell.h}d ${sell.t}% ${sell.d}dd`;
 }
 
@@ -3490,6 +4127,7 @@ export default function FineGridCanvas() {
   const [holds, setHolds] = useCanvasState<number[]>("fine-holds", HOLDS);
   const [targets, setTargets] = useCanvasState<number[]>("fine-targets", TARGETS);
   const [drops, setDrops] = useCanvasState<number[]>("fine-drops", DROPS);
+  const [protects, setProtects] = useCanvasState<number[]>("fine-protects", PROTECTS);
   const [showMode, setShowMode] = useCanvasState<ShowMode>("fine-show-mode", "both");
   const [sortKey, setSortKey] = useCanvasState<string>("grid-sort-key", "");
   const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("grid-sort-dir", "desc");
@@ -3503,8 +4141,17 @@ export default function FineGridCanvas() {
         buy.p >= upsideFloor &&
         buy.sym > symbolFloor,
     );
-    const sells = SELLS.map((sell, col) => ({ sell, col })).filter(
-      ({ sell }) => holds.includes(sell.h) && targets.includes(sell.t) && drops.includes(sell.d),
+    const bookMode = SELL_MODE === "book";
+    const protectMode = SELL_MODE === "protect";
+    const slotsMode = SELL_MODE === "slots";
+    const sells = SELLS.map((sell, col) => ({ sell, col })).filter(({ sell }) =>
+      bookMode
+        ? holds.includes(sell.h) && protects.includes(sell.p) && drops.includes(sell.d)
+        : slotsMode
+          ? true
+          : protectMode
+            ? protects.includes(sell.p) && drops.includes(sell.d)
+            : holds.includes(sell.h) && targets.includes(sell.t) && drops.includes(sell.d),
     );
     const rowRoi = buys.map(({ row }) => pack(sells.map(({ col }) => ROI[row][col])));
     const rowPnl = buys.map(({ row }) => pack(sells.map(({ col }) => PNL[row][col])));
@@ -3520,7 +4167,7 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor]);
 
   const filterStats = useMemo(() => {
     const signalRoi = emptyBuckets(SIGNALS);
@@ -3544,6 +4191,12 @@ export default function FineGridCanvas() {
     const dropRoi = emptyBuckets(DROPS);
     const dropSym = emptyBuckets(DROPS);
     const dropWin = emptyBuckets(DROPS);
+    const protectRoi = emptyBuckets(PROTECTS);
+    const protectSym = emptyBuckets(PROTECTS);
+    const protectWin = emptyBuckets(PROTECTS);
+    const bookMode = SELL_MODE === "book";
+    const protectMode = SELL_MODE === "protect";
+    const slotsMode = SELL_MODE === "slots";
     const push = (
       roiBucket: Record<string, number[]>,
       symBucket: Record<string, number[]>,
@@ -3566,9 +4219,13 @@ export default function FineGridCanvas() {
         const roi = ROI[row][col];
         const win = WIN[row][col];
         if (!Number.isFinite(roi)) return;
-        const holdOk = holds.includes(sell.h);
-        const targetOk = targets.includes(sell.t);
-        const dropOk = drops.includes(sell.d);
+        const holdOk = bookMode
+          ? holds.includes(sell.h)
+          : slotsMode || protectMode || holds.includes(sell.h);
+        const targetOk = bookMode
+          ? protects.includes(sell.p)
+          : slotsMode || (protectMode ? protects.includes(sell.p) : targets.includes(sell.t));
+        const dropOk = bookMode ? drops.includes(sell.d) : slotsMode || drops.includes(sell.d);
         const sellsOk = holdOk && targetOk && dropOk;
         const buysOk = signalOk && analystOk && upsideOk && symbolOk;
         if (analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalSym, signalWin, buy.s, roi, buy.sym, win);
@@ -3583,8 +4240,9 @@ export default function FineGridCanvas() {
             if (buy.sym > floor) push(symbolRoi, symbolSym, symbolWin, String(floor), roi, buy.sym, win);
           }
         }
-        if (buysOk && targetOk && dropOk) push(holdRoi, holdSym, holdWin, String(sell.h), roi, buy.sym, win);
-        if (buysOk && holdOk && dropOk) push(targetRoi, targetSym, targetWin, String(sell.t), roi, buy.sym, win);
+        if (!protectMode && buysOk && targetOk && dropOk) push(holdRoi, holdSym, holdWin, String(sell.h), roi, buy.sym, win);
+        if (!protectMode && buysOk && holdOk && dropOk) push(targetRoi, targetSym, targetWin, String(sell.t), roi, buy.sym, win);
+        if ((protectMode && buysOk && dropOk) || (bookMode && buysOk && holds.includes(sell.h) && drops.includes(sell.d))) push(protectRoi, protectSym, protectWin, String(sell.p), roi, buy.sym, win);
         if (buysOk && holdOk && targetOk) push(dropRoi, dropSym, dropWin, String(sell.d), roi, buy.sym, win);
       });
     });
@@ -3596,8 +4254,9 @@ export default function FineGridCanvas() {
       hold: packSlice(holdRoi, holdSym, holdWin),
       target: packSlice(targetRoi, targetSym, targetWin),
       drop: packSlice(dropRoi, dropSym, dropWin),
+      protect: packSlice(protectRoi, protectSym, protectWin),
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, symbolFloor]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
@@ -3787,14 +4446,35 @@ export default function FineGridCanvas() {
             format={(value) => value}
             stats={filterStats.signal}
           />
-          <FilterColumn
-            label="Hold"
-            options={HOLDS}
-            selected={holds}
-            onChange={setHolds}
-            format={(value) => `${value}d`}
-            stats={filterStats.hold}
-          />
+          {SELL_MODE === "slots" ? (
+            <Stack gap={4}>
+              <Text>8 lots</Text>
+              <Text size="small" tone="secondary">
+                A new signal takes a free lot. On a full book, sell the biggest loss.
+                If every lot is in profit, sell the least profitable one only when its
+                strength is below the new signal. Strength is sqrt(analysts, capped at
+                10) times the target percent floored to 10% steps.
+              </Text>
+            </Stack>
+          ) : SELL_MODE === "book" || SELL_MODE === "protect" ? (
+            <FilterColumn
+              label="Loss dd"
+              options={DROPS}
+              selected={drops}
+              onChange={setDrops}
+              format={(value) => `${value}dd`}
+              stats={filterStats.drop}
+            />
+          ) : (
+            <FilterColumn
+              label="Hold"
+              options={HOLDS}
+              selected={holds}
+              onChange={setHolds}
+              format={(value) => `${value}d`}
+              stats={filterStats.hold}
+            />
+          )}
           <FilterColumn
             label="Analysts"
             options={ANALYSTS}
@@ -3803,14 +4483,27 @@ export default function FineGridCanvas() {
             format={(value) => `>${value}`}
             stats={filterStats.analyst}
           />
-          <FilterColumn
-            label="Target"
-            options={TARGETS}
-            selected={targets}
-            onChange={setTargets}
-            format={(value) => `${value}%`}
-            stats={filterStats.target}
-          />
+          {SELL_MODE === "slots" ? (
+            <div />
+          ) : SELL_MODE === "book" || SELL_MODE === "protect" ? (
+            <FilterColumn
+              label="Profit protect"
+              options={PROTECTS}
+              selected={protects}
+              onChange={setProtects}
+              format={(value) => `${value}pp`}
+              stats={filterStats.protect}
+            />
+          ) : (
+            <FilterColumn
+              label="Target"
+              options={TARGETS}
+              selected={targets}
+              onChange={setTargets}
+              format={(value) => `${value}%`}
+              stats={filterStats.target}
+            />
+          )}
           <FilterColumn
             label="Upside"
             options={UPSIDES}
@@ -3820,14 +4513,27 @@ export default function FineGridCanvas() {
             stats={filterStats.upside}
             exclusive
           />
-          <FilterColumn
-            label="Drop"
-            options={DROPS}
-            selected={drops}
-            onChange={setDrops}
-            format={(value) => `${value}dd`}
-            stats={filterStats.drop}
-          />
+          {SELL_MODE === "book" ? (
+            <FilterColumn
+              label="Lots"
+              options={HOLDS}
+              selected={holds}
+              onChange={setHolds}
+              format={(value) => `${value} lots`}
+              stats={filterStats.hold}
+            />
+          ) : SELL_MODE === "slots" || SELL_MODE === "protect" ? (
+            <div />
+          ) : (
+            <FilterColumn
+              label="Drop"
+              options={DROPS}
+              selected={drops}
+              onChange={setDrops}
+              format={(value) => `${value}dd`}
+              stats={filterStats.drop}
+            />
+          )}
           <FilterColumn
             label="Symbols"
             options={SYMBOL_FLOORS}
@@ -4144,14 +4850,42 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                 "sym": int(bought["ticker"].nunique()) if len(bought) else 0,
             }
         )
-    sell_rows = [
-        {
-            "h": int(spec.hold_days),
-            "t": int(round(spec.target_frac * 100)),
-            "d": _pct_number(spec.drawdown),
-        }
-        for spec in specs
-    ]
+    book_mode = any(
+        spec.slots is not None and spec.profit_protect is not None for spec in specs
+    )
+    protect_mode = any(spec.profit_protect is not None for spec in specs) and not book_mode
+    slots_mode = any(spec.slots is not None for spec in specs) and not book_mode
+    sell_rows = []
+    for spec in specs:
+        if book_mode:
+            sell_rows.append(
+                {
+                    "h": int(spec.slots),
+                    "t": 0,
+                    "d": _pct_number(spec.drawdown),
+                    "p": _pct_number(spec.profit_protect),
+                }
+            )
+        elif slots_mode:
+            sell_rows.append({"h": int(spec.slots), "t": 0, "d": 0, "p": 0})
+        elif protect_mode:
+            sell_rows.append(
+                {
+                    "h": 0,
+                    "t": 0,
+                    "d": _pct_number(spec.drawdown),
+                    "p": _pct_number(spec.profit_protect),
+                }
+            )
+        else:
+            sell_rows.append(
+                {
+                    "h": int(spec.hold_days),
+                    "t": int(round(spec.target_frac * 100)),
+                    "d": _pct_number(spec.drawdown),
+                    "p": 0,
+                }
+            )
     matrices = {key: [] for key in ("roi", "pnl", "exposed", "lotDays", "avgLot", "win", "closed", "open")}
     windows_from = []
     windows_to = []
@@ -4188,6 +4922,7 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
     holds = sorted({sell["h"] for sell in sell_rows})
     targets = sorted({sell["t"] for sell in sell_rows})
     drops = sorted({sell["d"] for sell in sell_rows}, key=float)
+    protects = sorted({sell["p"] for sell in sell_rows}, key=float)
     caption = (
         f"{' · '.join(signal_names())} · {info['start']} → {info['end']} · "
         f"{info['trading_days']} trading days · $5,000 per lot. "
@@ -4203,6 +4938,10 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         "__HOLDS__": json.dumps(holds),
         "__TARGETS__": json.dumps(targets),
         "__DROPS__": json.dumps(drops),
+        "__PROTECTS__": json.dumps(protects if protect_mode or book_mode else [0]),
+        "__SELL_MODE__": json.dumps(
+            "book" if book_mode else "slots" if slots_mode else "protect" if protect_mode else "hold"
+        ),
         "__BUYS__": json.dumps(buy_rows, separators=(",", ":")),
         "__SELLS__": json.dumps(sell_rows, separators=(",", ":")),
         "__ROI__": json.dumps(matrices["roi"], separators=(",", ":")),
@@ -4248,6 +4987,9 @@ def parse_args():
             "wide",
             "full",
             "winners",
+            "protect",
+            "slots",
+            "book",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -4288,11 +5030,19 @@ def main():
     args = parse_args()
     if args.phase == "full" and not args.signal_names:
         set_signal_names(FULL_SIGNAL_NAMES)
+    elif args.phase == "book" and not args.signal_names:
+        set_signal_names(("yahoo-daily",))
     elif args.signal_names:
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase in ("wide", "full", "winners"):
+    if args.phase == "book":
+        prefix = OUT_DIR / BOOK_STEM
+    elif args.phase == "slots":
+        prefix = OUT_DIR / SLOTS_STEM
+    elif args.phase == "protect":
+        prefix = OUT_DIR / PROTECT_STEM
+    elif args.phase in ("wide", "full", "winners"):
         prefix = OUT_DIR / OUTPUT_STEM
     elif args.phase == "fine":
         prefix = OUT_DIR / f"simulation_7d-fine-grid_{stamp}_optimize"
@@ -4326,6 +5076,198 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "book":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_book(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "book.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo book, loss dropdown, profit protection",
+        )
+        notes = [
+            "yahoo-daily only. Winner buys: analyst >2/>3/>4 × projected >20/30/40/50%.",
+            "Loss dropdown, while the close is below the entry: 1.25dd, 2.5dd, "
+            "7.5dd, 10dd from that entry. Profit protection, once a close has "
+            "traded above the entry: 2.5pp, 5pp, 10pp, 20pp, 30pp of the gain "
+            "from entry to the highest close. Stops are checked before new signals. "
+            "A new high does not sell.",
+            "Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A signal buys "
+            "at that close when a slot is free. Two signals on the same ticker "
+            "can both hold a slot.",
+            "When the book is full and any lot is at a loss, sell the biggest "
+            "loss and buy the new signal. When every open lot is in profit, sell "
+            "the least profitable one only if its strength is strictly below the "
+            "new signal. Strength is sqrt(analysts, capped at 10) times the target "
+            "percent floored to 10-point steps. A flat lot is not sold to make room.",
+            "Same-day signals are taken strongest first. A lot that never stops "
+            "and is never replaced stays open through the last quote day.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            "Signals dated after --end are dropped.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            book_sell_grid(),
+            SellSpec(drawdown=0.025, profit_protect=0.05, slots=8),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            book_sell_grid(),
+            info,
+        )
+        return
+
+    if args.phase == "slots":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_slots(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "slots.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Eight-lot book",
+        )
+        notes = [
+            "Same daily books and the same winner buys: analyst >2/>3/>4 × "
+            "projected >20/30/40/50%.",
+            f"The book starts with {SLOT_COUNT} lots of ${POSITION_VALUE:,.0f}. "
+            "A signal buys at that close when a slot is free. Two signals on the "
+            "same ticker can both hold a slot.",
+            "When the book is full and any lot is at a loss, sell the biggest "
+            "loss at that close and buy the new signal. Strength is not consulted.",
+            "When every open lot is in profit, sell the least profitable one only "
+            "if its strength is strictly below the new signal. Strength is "
+            "sqrt(analysts, capped at 10) times the target percent floored to "
+            "10, 20, 30, 40, 50, …. Two analysts at a 33% target score sqrt(2)×30. "
+            "A flat lot is not a loss and not a profit, so it is not sold.",
+            "Same-day signals are taken strongest first. A lot opened earlier "
+            "the same day is flat, so a later signal that day cannot replace it.",
+            "No hold, no profit target, and no drawdown. A lot that is never "
+            "replaced stays open through the last quote day.",
+            "Signal books: " + ", ".join(signal_names()) + ". Each cell is one book.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            "Signals dated after --end are dropped. An open lot runs through the last quote day.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            slots_sell_grid(),
+            SellSpec(slots=SLOT_COUNT),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            slots_sell_grid(),
+            info,
+        )
+        return
+
+    if args.phase == "protect":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_protect(
+            signals, close, spy, position_log=position_path, one_lot=args.one_lot
+        )
+        save_json(CACHE_DIR / "protect.json", rows)
+        title = "Loss dropdown and profit protection"
+        if args.one_lot:
+            title += " · one lot"
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            title,
+        )
+        if args.one_lot:
+            overlap = (
+                "One open lot per ticker. A later buy while that ticker is already "
+                "held does not open another lot and does not move the entry or the "
+                "peak. n is the signal count; trades are the lots opened."
+            )
+        else:
+            overlap = (
+                "A new signal opens its own lot. It does not move the entry or the "
+                "peak of a lot that is still open."
+            )
+        notes = [
+            "Same daily books and the same winner buys: analyst >2/>3/>4 × "
+            "projected >20/30/40/50%.",
+            "No hold and no profit target. Loss dropdown, while the close is "
+            "below the entry: 2.5dd, 5dd, 7.5dd from that entry. Profit "
+            "protection, once a close has traded above the entry: sell when the "
+            "giveback from the highest close reaches 5%, 10%, 20%, or 40% of "
+            "the gain from entry to that peak. A $10 buy with a $12 high and "
+            "10pp sells at $11.80.",
+            "Signal books: " + ", ".join(signal_names()) + ". Each cell is one book.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            overlap,
+            "A lot that never hits either stop stays open through the last quote day.",
+            "Signals dated after --end are dropped. An open lot runs through the last quote day.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "Avg lot is the mean dollars used to open a lot.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            protect_sell_grid(),
+            SellSpec(drawdown=0.05, profit_protect=0.10),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            protect_sell_grid(),
+            info,
+        )
+        return
 
     if args.phase == "winners":
         position_path = Path(f"{prefix}.csv")

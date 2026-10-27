@@ -186,6 +186,72 @@ def winners_sell_grid():
 
 `yahoo_and_google-daily` and `yahoo_and_google-7d-window` are valid `--signal-name` values; `make etl` writes them into `data/signals.csv` alongside the Yahoo, Google, TipRanks, and all_sources books.
 
+## Protect grid
+
+Same daily books and the same winner buys as the winners grid. The sell has no hold and no profit target. 5 books × 12 buys × 12 sells = 720 cells.
+
+**Loss dropdown.** While the close is below the entry, sell at 2.5%, 5%, or 7.5% under that entry. `2.5dd` on a $10 entry sells at $9.75. This is not a trail from the high.
+
+**Profit protection.** Once a close has traded above the entry, sell when the giveback from the highest close reaches 5%, 10%, 20%, or 40% of the gain from the entry to that peak. A $10 buy, a $12 high, and `10pp` allow a $0.20 giveback, so the sell is $11.80. The peak is the highest close since entry. A new high does not sell, and a later signal does not reset the peak. A lot that hits neither stop stays open through the last quote day.
+
+Column order is loss dropdown, then profit protection: `2.5dd 5pp`. Anchor sell is `5dd 10pp`.
+
+```python
+def protect_sell_grid():
+    return [
+        SellSpec(drawdown=dd, profit_protect=pp)
+        for dd in (0.025, 0.05, 0.075)
+        for pp in (0.05, 0.10, 0.20, 0.40)
+    ]
+```
+
+```bash
+./penv python VectorBT/optimize.py protect \
+  --signal-name yahoo-daily --signal-name tipranks-daily \
+  --signal-name google-daily --signal-name all_sources-daily \
+  --signal-name yahoo_and_google-daily \
+  --end 2026-10-22
+```
+
+The canvas sell pills are Loss dd and Profit protect. Signal, analysts, upside, and symbols stay on the left.
+
+## Yahoo book
+
+yahoo-daily only, same winner buys. Each cell is one book size, one loss dropdown, and one profit protect. 12 buys × 4 loss stops × 5 profit protects × 6 book sizes = 1,440 cells.
+
+Loss dropdown, while the close is below the entry: `1.25dd`, `2.5dd`, `7.5dd`, `10dd`. Profit protection, once a close has traded above the entry: `2.5pp`, `5pp`, `10pp`, `20pp`, `30pp` of the gain from entry to the highest close. Stops run before new signals. A new high does not sell.
+
+Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A free slot takes the signal. On a full book, sell the biggest loss, or, if every lot is in profit, the least profitable lot only when its strength is strictly below the new signal. Strength is `sqrt(min(analysts, 10)) × floor(target / 10) × 10`. Anchor sell is `2.5dd 5pp · 8 lots`.
+
+```bash
+./penv python VectorBT/optimize.py book \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+The canvas pills are Loss dd, Profit protect, and Lots. Signal, analysts, upside, and symbols stay on the left.
+
+## Eight-lot book
+
+Same daily books and the same winner buys. One sell: a book of 8 lots. 5 books × 12 buys = 60 cells. There is no hold, no profit target, and no drawdown.
+
+Each lot is $5,000. A signal buys at that close when a slot is free. A second signal on a ticker that is already held opens another lot. Same-day signals are taken strongest first.
+
+When all 8 slots are full:
+
+- If any open lot is at a loss, sell the biggest loss at that close and buy the new signal. Strength is not consulted.
+- If every open lot is in profit, sell the least profitable one only when its strength is strictly below the new signal. A flat lot is not sold.
+
+Strength is `sqrt(min(analysts, 10)) × floor(target percent / 10) × 10`. Two analysts and a 33% target score `sqrt(2) × 30`. A lot that is never replaced stays open through the last quote day.
+
+```bash
+./penv python VectorBT/optimize.py slots \
+  --signal-name yahoo-daily --signal-name tipranks-daily \
+  --signal-name google-daily --signal-name all_sources-daily \
+  --signal-name yahoo_and_google-daily \
+  --end 2026-10-22
+```
+
 ## Fine grid
 
 Fine neighborhood of the coarse 10d 25% 7.5dd peak. 6 buys × 60 sells. Holds 5/7/10/12 × target 20/25/30/35/40% × drawdown 6/7.5/8.5%, on analyst >2/>3/>4 and projected >25/30/35% around the two best coarse buys:

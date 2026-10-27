@@ -36,6 +36,10 @@ Order is hold, target, drawdown (`30d 25% 7.5dd`).
 
 5 × 3 × 2 = 30 sells. One book is 600 cells. All six books: 3,600 cells.
 
+Phase `protect` is a different sell, not part of that 30. No hold and no target. Loss dropdown from the entry is `2.5dd` `5dd` `7.5dd`, and only while the close is below the entry. Profit protection is `5pp` `10pp` `20pp` `40pp`: that fraction of the gain from entry to the highest close. See `VectorBT/optimize.md`.
+
+Phase `book` is yahoo-daily only. It keeps the slot rule and sweeps book size `4` `6` `8` `12` `16` `20`, loss dropdown `1.25dd` `2.5dd` `7.5dd` `10dd`, and profit protection `2.5pp` `5pp` `10pp` `20pp` `30pp`.
+
 ## Lots
 
 Each signal opens a lot. A later signal while held resets the hold and the target; the peak stays since entry. `--one-lot` keeps one open lot per ticker: a later buy only restarts the hold, and the next signal after a close opens a new lot.
