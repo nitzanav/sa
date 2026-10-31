@@ -34,6 +34,10 @@ A later buy opens a new lot after the previous one has closed. `--one-lot` only 
 
 Re-check one published cell before trusting an extension. Analyst >4 · proj >25% · 15d 25% 5dd on tipranks-daily in `simulation_2026-10-24_1019_UTC+3_relevant-full` is +103.4% and +$5,146.
 
+SPY is optional as the stop filler. A slot freed by a stop and not reused for a new ticker can hold SPY, or stay empty. Free leftover slots stay TQQQ. The cash sleeve stays SPY. `VectorBT/simulation_2026-10-27_1309_UTC+2_yahoo-64-dls__optimize.py` keeps both: phase `scale` is a 64-lot book with filler `SPY` or `none`, sell pick `ls` or `dls`, and lot size `1` or `str` (`floor(analysts × target percent / 10)`, capped at 16). The earlier filler sweep is `VectorBT/simulation_2026-10-27_1221_UTC+2_yahoo-stop-fillers__optimize.py`.
+
+A stock-only book holds neither SPY nor TQQQ. Empty slots and stopped slots stay cash, and uninvested money stays cash. Phase `cash` in `VectorBT/simulation_2026-10-27_1536_UTC+2_yahoo-cash-strength__optimize.py` varies the lot count at $5,000 each, so the total cash changes. Phase `fixed` in `VectorBT/simulation_2026-10-27_1552_UTC+2_yahoo-split-lots__optimize.py` keeps one $320,000 book and splits it: 8 lots are $40,000 each, 64 lots are $5,000 each. Buys include projected >10%, and the canvas Upside pill is `>10%`. Phase `formulas` in `VectorBT/simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize.py` keeps that fixed book and sweeps four lot sizes: `at`, `sqra`, `a`, and `sqra_target`. Lot-days invested is invested lot-days divided by the lot count times the calendar days in the test. Phase `counts` in `VectorBT/simulation_2026-10-27_2040_UTC+2_yahoo-analyst-counts__optimize.py` adds analyst `>0` and `>1` beside `>2`, `>3`, and `>4`. Phase `low` in `VectorBT/simulation_2026-10-27_2101_UTC+2_yahoo-upside-0__optimize.py` adds projected `>0%` beside `>10%`. The signal export keeps projected upside above 0%. Phase `books` in `VectorBT/simulation_2026-10-27_2202_UTC+2_all-signal-books__optimize.py` runs that grid on every signal name in the export.
+
 ## Four files, one stamp
 
 The stem is `simulation_<timestamp>_<words>__optimize`. `<timestamp>` comes first, shape `2026-10-24_1019_UTC+3`. `<words>` follows it, for example `relevant-full`, then `__optimize`. That stem is `simulation_2026-10-24_1019_UTC+3_relevant-full__optimize`. Write all four under `VectorBT/` before finishing:
@@ -59,13 +63,13 @@ Buy filters are signal, analysts, upside, and symbols. Sell filters are hold, ta
 - **Signal, analysts, hold, target, drawdown** are multi-select. A click adds or removes that value. The last selected value in a group stays on.
 - **Upside** is one floor, like symbols. The pills are the projected cuts in that run. The default is the lowest. A buy stays when its projected cut is greater than or equal to the active floor, so `>20%` keeps `>20%`, `>25%`, and `>30%`.
 - **Symbols** is one floor. The pills are `>0`, `>2`, `>4`, `>7`, `>8`, `>9`, `>10`, `>12`, `>14`, `>16`, `>18`, `>20`, `>40`, `>80`, `>160`, `>320`. The default is `>0`. A buy stays when its unique-ticker count is greater than that floor.
-- **Show** is one choice: `%`, `$`, or Both. The default is Both. It sits above the table, outside the two filter columns.
+- **Show** is one choice: `%`, `$`, or Both. The default is Both. It sits above the table, outside the two filter columns. When Show is `$`, the first three figures on every filter pill are stock P&L min, avg, and max, under the heading P&L, and the top 30 visible cells sort by stock P&L. `%` and Both keep those figures as return percent and sort the top 30 by return on invested. That switch is in `VectorBT/simulation_2026-10-27_1221_UTC+2_yahoo-stop-fillers__optimize.py`.
 
 ### Layout
 
 Two columns, so the filters stay short. Signal, analysts, upside, and symbols are on the left. Hold, target, and drawdown are on the right. Inside a filter the values stack vertically. Show is a single row above the table.
 
-Each value is one row: the pill, then nine figures. Return min, avg, and max come first. Symbol-count min, avg, and max follow. Win-rate min, avg, and max come last. Group those nine under the headings Return, Symbols, and Win rate. Return and win rate are percentages. Symbol count is a whole number.
+Each value is one row: the pill, then nine figures. Return min, avg, and max come first. Symbol-count min, avg, and max follow. Win-rate min, avg, and max come last. Group those nine under the headings Return, Symbols, and Win rate. Return and win rate are percentages, except when Show is `$`: those first three figures are dollars and the heading is P&L. Symbol count is a whole number.
 
 Those nine figures use the other active filters. The figure for a value includes the cells that match that value, including a value that is currently off, so the row shows what selecting it would cover. An upside or symbols floor includes every buy at or above that floor.
 
