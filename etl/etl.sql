@@ -48,7 +48,7 @@ FROM _raw_signals r
 JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date;
 
 INSERT INTO raw_signals
-SELECT 'all_sources', date, ticker, analyst, percent, projected_price
+SELECT 'yahoo_and_tipranks', date, ticker, analyst, percent, projected_price
 FROM raw_signals
 WHERE source IN ('yahoo', 'tipranks');
 
@@ -142,16 +142,16 @@ SELECT
     ORDER BY signal_score ASC NULLS FIRST
   ) AS signal_percentile
 FROM (
-  SELECT source || '-daily' AS signal_name,
+  SELECT source || '-1d' AS signal_name,
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_daily
   UNION ALL
-  SELECT source || '-7d-window' AS signal_name,
+  SELECT source || '-7d' AS signal_name,
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_7d_window
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-1d', 'yahoo-7d', 'tipranks-1d', 'tipranks-7d', 'google-1d', 'google-7d', 'yahoo_and_tipranks-1d', 'yahoo_and_tipranks-7d', 'yahoo_and_google-1d', 'yahoo_and_google-7d') AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
