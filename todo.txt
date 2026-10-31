@@ -1,3 +1,61 @@
+Actions
+- little optmimzation: 
+    - consider all sources [running]
+    - update the winrate to check for number of unique positions, not lots.
+    - do mapping + tipranks / google
+    - more days - 7d or few days
+    - better lots - increase gap between lots by using ceil instead of floor, and poer 3 or 4 instead of 2. (but might be to mush)
+    - find the way to alert on 1 stock per quarter with huge amount of analysts 
+- Other data
+    - more than snp500, getm more signals of more symbols
+    - data from twitter
+
+
+Winning:
+
+simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize.canvas.tsx.
+
+No SPY, 16 lots, $320K => +$189,530
+8 lots warks well also,
+a instead of sqr a from strength also ok
+I like that it ">3,>0%" or ">3,>10%" which catches lot's of poisiotnsions, 43 positions.
+
+It is only yahoo, need to add tipranks/google and mapping (only what is surely the same).
+
+Sell	Buy	On invested	Stock P&L	Trade window	Days utilized	Lots utilized	Lot-days	Lot-days invested	Avg lot	Win	Lots
+7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >3,>0%	+205.6%	+$189,530	2026-04-30 → 2026-10-26	102	+28.8%	1734	36.4%	$20,000	+59.4%	275c/1o
+7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >3,>10%	+209.5%	+$186,593	2026-04-30 → 2026-10-26	97	+27.8%	1654	34.7%	$20,000	+56.9%	259c/1o
+7.5dd 5pp · 8 × $40,000 · ls · sqra	yahoo-daily · >3,>0%	+202.1%	+$186,562	2026-04-30 → 2026-10-26	102	+28.8%	870	36.5%	$40,000	+60.0%	139c/1o
+7.5dd 5pp · 8 × $40,000 · ls · sqra	yahoo-daily · >3,>10%	+205.9%	+$183,625	2026-04-30 → 2026-10-26	97	+27.9%	830	34.8%	$40,000	+57.6%	131c/1o
+
+
+
+Winning:
+
+simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize.canvas.tsx.
+
+No SPY, 16 lots, $320K => +$142,711
+
+Sell	Buy	On invested	Stock P&L	Trade window	Days utilized	Lots utilized	Lot-days	Lot-days invested	Avg lot	Win	Lots
+7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >2,>10%	+108.6%	+$142,711	2026-01-29 → 2026-10-23	159	+41.1%	2399	51.0%	$20,000	+49.2%	376c/0o
+
+
+
+
+conclusions and action items:
+The SPY works on total money
+Need to enable now more profit, meaning more money invested.
+for this:
+- more data
+- position strength, some positions starts with more than one lot.
+- smarter replacement of lots.
+Simple:
+1.6 - > 4 or > 40% => 4 lots
+0.9 - > 3 or > 30% => 2 lots
+0.4 - > 2 or > 20% => 1 lot
+
+
+
 - better sell strategy than "30d 50% 7.5dd " - to review graph - in progress
 - try "price target mean" × √N - done, result are not good. cancelled
 now check different downdrops before profit and after profit - it only gets worst "30d 50% 7.5dd"
@@ -26,6 +84,31 @@ Sell	Buy	On invested	Stock P&L	Trade window	Days exposed	Lot-days	Avg lot	Win	Lo
 15d 50% 7.5dd	yahoo-daily · >2,>30%	+116.9%	+$6,106	2026-05-07 → 2026-10-22	133	321	$5,000	+73.7%	18c/1o
 15d 25% 7.5dd	yahoo-daily · >2,>30%	+94.0%	+$4,160	2026-05-07 → 2026-10-22	130	277	$5,000	+73.7%	18c/1o
 
+15d 50% 7.5dd	tipranks-daily · >4,>30%	+101.3%	+$5,341	2026-07-29 → 2026-10-21	84	327	$5,000	+57.1%	21c/0o
+
+the pp instead of %target and hold is better because it has less over fitting propery which is very risky:
+
+Sell	Buy	On invested	Stock P&L	Trade window	Days exposed	Lot-days	Avg lot	Win	Lots
+7.5dd 2.5pp · 6 lots	yahoo-daily · >3,>30%	+111.4%	+$1,509	2026-07-23 → 2026-09-28	57	92	$5,000	+83.3%	12c/0o
+7.5dd 5pp · 6 lots	yahoo-daily · >3,>30%	+111.4%	+$1,509	2026-07-23 → 2026-09-28	57	92	$5,000	+83.3%	12c/0o
+7.5dd 10pp · 6 lots	yahoo-daily · >3,>30%	+111.4%	+$1,509	2026-07-23 → 2026-09-28	57	92	$5,000	+83.3%	12c/0o
+7.5dd 2.5pp · 6 lots	yahoo-daily · >4,>30%	+76.8%	+$435	2026-07-23 → 2026-08-21	27	36	$5,000	+80.0%	5c/0o
+
+
+
+next simulation, in order to compare all daily signals with focus on winner paramerts
+signals: yahoo-daily,tipranks-daily,all_sources-daily,yahoo_and_google-daily 
+
+Buy:
+>3,>2 
+>20%,>30%
+
+Sell:
+7.5dd 
+15d 
+25%-50% 
+
+
 Conclusions
 sell: 15d 50% 7.5dd
 buy: >3,>30% for 12 positions OR >2,>30% for 18 positions
@@ -36,3 +119,10 @@ tipranks
 nitzanav+tipranks1@gmail.com
 tip1... pwd
 tip2.... pwd
+
+
+conclustions when looking on plots:
+1. in most cases I see nothing to improve as it did the best it can be done.
+2. 15d seems over fitting
+5. 50% might also be
+too risky, lots of losses, over fittign cus lotsI think need to increase daata by doing more than snp 500
