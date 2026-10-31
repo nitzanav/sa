@@ -1,17 +1,39 @@
 Actions
 - little optmimzation: 
     - consider all sources [running]
-    - update the winrate to check for number of unique positions, not lots.
-    - do mapping + tipranks / google
-    - more days - 7d or few days
-    - better lots - increase gap between lots by using ceil instead of floor, and poer 3 or 4 instead of 2. (but might be to mush)
-    - find the way to alert on 1 stock per quarter with huge amount of analysts 
+    - update the winrate to check for number of unique positions, not lots. [done]
+    - do mapping + tipranks / google [on hold]
+    - make the same google spreadsheet also on all sources to compare sqr a, a, and sqr a * target 
+    - 2d/3d/4d/5d [in]
+    - at sqrta a and atarget behave differently in tripranks. Need to see what is the stabel thing there. with the spreadsheet mechanism. 
+øπ    - better lots - increase gap between lots by using ceil instead of floor, and poer 3 or 4 instead of 2. (but might be to mush)
+    - 7d or few days [running]
 - Other data
     - more than snp500, getm more signals of more symbols
     - data from twitter
+- find the way to alert on 1 stock per quarter with huge amount of analysts 
+
+
+
 
 
 Winning:
+7d works only for tipranks tip ranks, in yahoo it does not work at all. +100.6% | +$176,493
+| Sell                                    | Buy                          | On invested | Stock P&L | Trade window            | Days utilized | Lots utilized | Lot-days | Lot-days invested | Avg lot |    Win |    Lots | Symbols | Positions |
+| --------------------------------------- | ---------------------------- | ----------: | --------: | ----------------------- | ------------: | ------------: | -------: | ----------------: | ------: | -----: | ------: | ------: | --------: |
+| 1.25dd 2.5pp · 12 × $26,667 · ls · sqra | tipranks-7d-window · >0,>30% |     +100.6% | +$176,493 | 2026-01-05 → 2026-10-20 |           272 |        +54.8% |     2531 |             70.8% | $26,667 | +44.3% | 579c/0o |     134 |       235 |
+
+1d yahoo works best +205.6% +$189,530:
+Sell	Buy	On invested	Stock P&L	Trade window	Days utilized	Lots utilized	Lot-days	Lot-days invested	Avg lot	Win	Lots
+7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >3,>0%	+205.6%	+$189,530	2026-04-30 → 2026-10-26	102	+28.8%	1734	36.4%	$20,000	+59.4%	275c/1o
+
+but 1d on  yahoo+tipranks also ok. +149%, +$161K
+
+simulation_2026-10-31_1925_UTC+2_daily-ls-books__optimize.canvas.tsx
+| Sell                                 | Buy                         | On invested | Stock P&L | Trade window            | Days utilized | Lots utilized | Lot-days | Lot-days invested | Avg lot |    Win |    Lots |
+| ------------------------------------ | --------------------------- | ----------: | --------: | ----------------------- | ------------: | ------------: | -------: | ----------------: | ------: | -----: | ------: |
+| 2.5dd 10pp · 8 × $40,000 · ls · sqra | all_sources-daily · >2,>30% |     +149.8% | +$161,091 | 2026-05-07 → 2026-10-26 |           112 |        +33.6% |     1000 |             41.9% | $40,000 | +45.2% | 177c/8o |
+
 
 simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize.canvas.tsx.
 
@@ -22,11 +44,6 @@ I like that it ">3,>0%" or ">3,>10%" which catches lot's of poisiotnsions, 43 po
 
 It is only yahoo, need to add tipranks/google and mapping (only what is surely the same).
 
-Sell	Buy	On invested	Stock P&L	Trade window	Days utilized	Lots utilized	Lot-days	Lot-days invested	Avg lot	Win	Lots
-7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >3,>0%	+205.6%	+$189,530	2026-04-30 → 2026-10-26	102	+28.8%	1734	36.4%	$20,000	+59.4%	275c/1o
-7.5dd 5pp · 16 × $20,000 · ls · sqra	yahoo-daily · >3,>10%	+209.5%	+$186,593	2026-04-30 → 2026-10-26	97	+27.8%	1654	34.7%	$20,000	+56.9%	259c/1o
-7.5dd 5pp · 8 × $40,000 · ls · sqra	yahoo-daily · >3,>0%	+202.1%	+$186,562	2026-04-30 → 2026-10-26	102	+28.8%	870	36.5%	$40,000	+60.0%	139c/1o
-7.5dd 5pp · 8 × $40,000 · ls · sqra	yahoo-daily · >3,>10%	+205.9%	+$183,625	2026-04-30 → 2026-10-26	97	+27.9%	830	34.8%	$40,000	+57.6%	131c/1o
 
 
 
