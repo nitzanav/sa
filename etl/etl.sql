@@ -146,14 +146,12 @@ FROM (
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_daily
-  WHERE analyst_projections_count > 2 AND average_projected > 10
   UNION ALL
   SELECT source || '-7d-window' AS signal_name,
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_7d_window
-  WHERE analyst_projections_count > 2 AND average_projected > 10
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 2 AND average_projected > 10 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name in ('yahoo-daily', 'yahoo-7d-window', 'google-daily', 'google-7d-window', 'tipranks-daily', 'tipranks-7d-window', 'all_sources-daily', 'all_sources-7d-window', 'yahoo_and_google-daily', 'yahoo_and_google-7d-window') AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
