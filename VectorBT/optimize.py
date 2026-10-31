@@ -59,6 +59,39 @@ Phase book is yahoo-daily only. The same 8-lot replacement rule runs inside
 a swept book size, and each open lot also exits on a loss dropdown or on
 profit protection. Loss dropdown is 1.25/2.5/7.5/10. Profit protection is
 2.5/5/10/20/30. Book size is 4/6/8/12/16/20.
+
+Phase park is that same yahoo grid. A slot still empty after the day's
+buys holds TQQQ. A stop that is not reused for a new ticker buys SPY in
+that slot. A new buy sells a SPY lot before it sells TQQQ or a stock.
+
+Phase fillers is the same park grid with the stop filler swapped from SPY
+to VOO, SSO, UPRO, SPXL, QQQ, QLD, or TQQQ. Free slots still hold TQQQ.
+
+Phase scale is yahoo-daily with a 64-lot book. SPY filler and no SPY filler
+are both options. A freed slot buys SPY only when the filler is on. Selling
+a stock lot is either the biggest loss (ls) or that loss per day held (dls).
+A signal opens one lot, or floor(analysts × target percent / 10) lots,
+capped at 16.
+
+Phase cash is yahoo-daily with no SPY and no TQQQ. Empty slots stay cash,
+and cash is not invested in the SPY sleeve. Every signal opens
+floor(analysts × target percent / 10) lots, capped at 16. Book size is
+8/12/16/24/32/48/64. Buys add projected >10%.
+
+Phase split keeps that stock-only book, but the total cash is fixed at
+64 × $5,000. Fewer lots means more dollars in each lot. Eight lots are
+$40,000 each. Sixty-four lots are $5,000 each.
+
+Phase formulas keeps that fixed $320,000 book and sweeps four lot-size
+formulas. at is floor(analysts × target percent / 10). sqra is analysts
+squared. a is analysts × 3. sqra_target is floor(analysts² × target
+percent / 40). Each is at least 1 lot and at most 16.
+
+Phase counts keeps that formula grid and adds analyst >0 and analyst >1
+beside >2, >3, and >4.
+
+Phase low keeps the counts grid and adds projected >0% beside
+>10/20/30/40/50%.
 """
 
 from __future__ import annotations
@@ -155,9 +188,28 @@ PROTECT_STEM = "simulation_2026-10-24_2032_UTC+3_loss-dd-profit-protect__optimiz
 SLOTS_STEM = "simulation_2026-10-24_2130_UTC+3_eight-lot-strength__optimize"
 SLOT_COUNT = 8
 BOOK_STEM = "simulation_2026-10-27_1141_UTC+2_yahoo-dd-pp-lots__optimize"
+PARK_STEM = "simulation_2026-10-27_1203_UTC+2_yahoo-spy-tqqq__optimize"
+FILLER_STEM = "simulation_2026-10-27_1221_UTC+2_yahoo-stop-fillers__optimize"
+SCALE_STEM = "simulation_2026-10-27_1309_UTC+2_yahoo-64-dls__optimize"
+CASH_STEM = "simulation_2026-10-27_1536_UTC+2_yahoo-cash-strength__optimize"
+SPLIT_STEM = "simulation_2026-10-27_1552_UTC+2_yahoo-split-lots__optimize"
+FORMULA_STEM = "simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize"
+COUNT_STEM = "simulation_2026-10-27_2040_UTC+2_yahoo-analyst-counts__optimize"
+LOW_STEM = "simulation_2026-10-27_2101_UTC+2_yahoo-upside-0__optimize"
+CASH_SLOTS = (8, 12, 16, 24, 32, 48, 64)
+BOOK_CASH = 64 * 5_000
 BOOK_DRAWDOWNS = (0.0125, 0.025, 0.075, 0.10)
 BOOK_PROTECTS = (0.025, 0.05, 0.10, 0.20, 0.30)
 BOOK_SLOTS = (4, 6, 8, 12, 16, 20)
+SCALE_SLOTS = 64
+LOT_CAP = 16
+PARK_SPY = "SPY"
+PARK_TQQQ = "TQQQ"
+FILLERS = ("VOO", "SSO", "UPRO", "SPXL", "QQQ", "QLD", "TQQQ")
+SCALE_FILLERS = ("SPY", "none")
+LOSS_MODES = ("ls", "dls")
+LOT_MODES = ("1", "str")
+LOT_FORMULAS = ("at", "sqra", "a", "sqra_target")
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
 TARGET_FRACS = (0.50, 0.75, 1.00)
 HOLD_DAYS = (30, 60)
@@ -179,6 +231,10 @@ class SellSpec:
     lock_profit: float | None = None
     lock_proj_frac: float | None = None
     slots: int | None = None
+    filler: str | None = None
+    loss_mode: str | None = None
+    lot_mode: str | None = None
+    lot_amount: float | None = None
 
     @property
     def staged(self) -> bool:
@@ -206,7 +262,16 @@ class SellSpec:
         if self.slots is not None and self.profit_protect is not None:
             dd = f"dd{self.drawdown * 100:g}"
             pp = f"pp{self.profit_protect * 100:g}"
-            return f"{dd}-{pp}-slots{self.slots}"
+            core = f"{dd}-{pp}-slots{self.slots}"
+            parts = []
+            if self.filler:
+                parts.append(self.filler.lower())
+            parts.append(core)
+            if self.loss_mode:
+                parts.append(self.loss_mode)
+            if self.lot_mode:
+                parts.append(self.lot_mode)
+            return "-".join(parts)
         if self.slots is not None:
             return f"slots{self.slots}"
         parts = self._prefix_parts()
@@ -222,10 +287,22 @@ class SellSpec:
     @property
     def short(self) -> str:
         if self.slots is not None and self.profit_protect is not None:
-            return (
-                f"{self.drawdown * 100:g}dd {self.profit_protect * 100:g}pp"
-                f" · {self.slots} lots"
+            size = (
+                f"{self.slots} × ${self.lot_amount:,.0f}"
+                if self.lot_amount
+                else f"{self.slots} lots"
             )
+            text = (
+                f"{self.drawdown * 100:g}dd {self.profit_protect * 100:g}pp"
+                f" · {size}"
+            )
+            if self.filler:
+                text = f"{text} · {self.filler}"
+            if self.loss_mode:
+                text = f"{text} · {self.loss_mode}"
+            if self.lot_mode:
+                text = f"{text} · {self.lot_mode}"
+            return text
         if self.slots is not None:
             return f"{self.slots} lots"
         parts = []
@@ -252,10 +329,13 @@ class SellSpec:
     @property
     def label(self) -> str:
         if self.slots is not None and self.profit_protect is not None:
-            return (
+            text = (
                 f"{self.slots} lots, {self.drawdown * 100:g}% loss dd, "
                 f"{self.profit_protect * 100:g}% of peak gain"
             )
+            if self.filler:
+                return f"{text}, stop filler {self.filler}"
+            return text
         if self.slots is not None:
             return (
                 f"{self.slots} lots. Sell the biggest loss for a new buy, "
@@ -551,6 +631,31 @@ def position_strength(analysts, projected_pct):
     return math.sqrt(count) * bucket
 
 
+def position_lots(analysts, projected_pct, mode="at"):
+    """Lots one signal opens. At least 1, at most 16.
+
+    at (and str): floor(analysts × target percent / 10).
+    Two analysts and 10% is 2. Four analysts and 40% is 16.
+    sqra: floor(analysts²). Two analysts is 4. Four is 16.
+    a: floor(analysts × 3). Two analysts is 6. Four is 12.
+    sqra_target: floor(analysts² × target percent / 40).
+    Two analysts and 10% is 1. Three analysts and 30% is 6.
+    """
+    count = max(float(analysts), 0.0)
+    proj = float(projected_pct)
+    if mode in ("str", "at"):
+        raw = math.floor(count * proj / 10.0)
+    elif mode == "sqra":
+        raw = math.floor(count * count)
+    elif mode == "a":
+        raw = math.floor(count * 3.0)
+    elif mode == "sqra_target":
+        raw = math.floor(count * count * proj / 40.0)
+    else:
+        raise RuntimeError(f"unknown lot formula {mode}")
+    return max(1, min(LOT_CAP, raw))
+
+
 def _slot_replacement(marked, new_strength):
     """Lot to sell so a new signal can enter a full book, or None.
 
@@ -691,8 +796,322 @@ def _check_slot_book():
     print("Slot book checks passed.")
 
 
+def _check_park_book():
+    """Free slots hold TQQQ. A stop with no new ticker holds SPY. SPY is sold first."""
+    index = pd.bdate_range("2026-01-05", periods=4)
+    close = pd.DataFrame(
+        {
+            "A": [10.0, 10.0, 9.8, 9.8],
+            "B": [10.0, 10.5, 11.0, 12.0],
+            "C": [10.0, 10.0, 10.0, 10.0],
+        },
+        index=index,
+    )
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    tqqq = pd.Series(50.0, index=index, name=PARK_TQQQ)
+
+    def frame(rows):
+        return pd.DataFrame(rows)
+
+    both = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 2, "average_projected": 40, "signal_score": 1},
+            {"date": index[0], "ticker": "B", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 2},
+            {"date": index[3], "ticker": "C", "analyst_projections_count": 9, "average_projected": 50, "signal_score": 3},
+        ]
+    )
+    _, parked, _, _ = run_slot_book(
+        "spy-first", close, spy, both, slots=2, drawdown=0.0125, profit_protect=0.30, tqqq=tqqq
+    )
+    closed = parked[parked["status"] == "Closed"]
+    opened = set(parked.loc[parked["status"] == "Open", "ticker"])
+    if list(closed["ticker"]) != ["A", PARK_SPY] or opened != {"B", "C"}:
+        raise RuntimeError(f"new buy should sell SPY before the stock\n{parked}")
+
+    one = frame(
+        [
+            {"date": index[0], "ticker": "B", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[3], "ticker": "C", "analyst_projections_count": 9, "average_projected": 50, "signal_score": 2},
+        ]
+    )
+    _, filler, _, _ = run_slot_book(
+        "tqqq", close, spy, one, slots=2, drawdown=0.10, profit_protect=0.30, tqqq=tqqq
+    )
+    if list(filler.loc[filler["status"] == "Closed", "ticker"]) != [PARK_TQQQ]:
+        raise RuntimeError(f"free-slot TQQQ should be sold before the stock\n{filler}")
+    if set(filler.loc[filler["status"] == "Open", "ticker"]) != {"B", "C"}:
+        raise RuntimeError(f"B and C should remain after TQQQ is sold\n{filler}")
+
+    reuse = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 2, "average_projected": 40, "signal_score": 1},
+            {"date": index[2], "ticker": "C", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+        ]
+    )
+    _, reused, _, _ = run_slot_book(
+        "reuse", close, spy, reuse, slots=1, drawdown=0.0125, profit_protect=0.30, tqqq=tqqq
+    )
+    if PARK_SPY in set(reused["ticker"]) or list(reused.loc[reused["status"] == "Open", "ticker"]) != ["C"]:
+        raise RuntimeError(f"a same-day signal should take the stopped slot, not buy SPY\n{reused}")
+    print("Park checks passed.")
+
+
+def _check_filler_book():
+    """A stop fills the chosen ETF, and a new buy sells that ETF before TQQQ."""
+    index = pd.bdate_range("2026-01-05", periods=4)
+    close = pd.DataFrame(
+        {"A": [10.0, 10.0, 9.8, 9.8], "C": [10.0, 10.0, 10.0, 10.0]},
+        index=index,
+    )
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    tqqq = pd.Series(50.0, index=index, name=PARK_TQQQ)
+    voo = pd.Series(80.0, index=index, name="VOO")
+    signals = pd.DataFrame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 2, "average_projected": 40, "signal_score": 1},
+            {"date": index[3], "ticker": "C", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+        ]
+    )
+    _, booked, _, _ = run_slot_book(
+        "voo",
+        close,
+        spy,
+        signals,
+        slots=2,
+        drawdown=0.0125,
+        profit_protect=0.30,
+        tqqq=tqqq,
+        park=voo,
+        park_ticker="VOO",
+    )
+    closed = list(booked.loc[booked["status"] == "Closed", "ticker"])
+    opened = set(booked.loc[booked["status"] == "Open", "ticker"])
+    if closed != ["A", "VOO"] or opened != {PARK_TQQQ, "C"}:
+        raise RuntimeError(f"a new buy should sell the stop filler before TQQQ\n{booked}")
+    print("Filler checks passed.")
+
+
+def _check_scale_book():
+    """Lot count, daily-loss victim, and a stop that stays empty when SPY filler is off."""
+    if position_lots(2, 10) != 2 or position_lots(2, 20) != 4:
+        raise RuntimeError("2 analysts at 10% and 20% must be 2 and 4 lots")
+    if position_lots(3, 30) != 9 or position_lots(4, 40) != 16:
+        raise RuntimeError("3×30% must be 9 lots and 4×40% must be 16")
+    if position_lots(6, 50) != 16:
+        raise RuntimeError("lot count caps at 16")
+
+    index = pd.bdate_range("2026-01-05", periods=6)
+    close = pd.DataFrame(
+        {
+            "A": [10.0, 9.6, 9.2, 8.8, 8.4, 8.0],
+            "B": [10.0, 10.0, 10.0, 10.0, 10.0, 9.0],
+            "C": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0],
+        },
+        index=index,
+    )
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[4], "ticker": "B", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[5], "ticker": "C", "analyst_projections_count": 9, "average_projected": 50, "signal_score": 1},
+        ]
+    )
+    _, by_loss, _, _ = run_slot_book("ls", close, spy, signals, slots=2)
+    _, by_day, _, _ = run_slot_book("dls", close, spy, signals, slots=2, daily_loss=True)
+    if list(by_loss.loc[by_loss["status"] == "Closed", "ticker"]) != ["A"]:
+        raise RuntimeError(f"ls should sell the bigger loss\n{by_loss}")
+    if list(by_day.loc[by_day["status"] == "Closed", "ticker"]) != ["B"]:
+        raise RuntimeError(f"dls should sell the steeper daily loss\n{by_day}")
+
+    stop_index = pd.bdate_range("2026-01-05", periods=4)
+    stopped = pd.DataFrame({"A": [10.0, 10.0, 9.8, 9.8]}, index=stop_index)
+    tqqq = pd.Series(50.0, index=stop_index, name=PARK_TQQQ)
+    one = pd.DataFrame(
+        [
+            {
+                "date": stop_index[0],
+                "ticker": "A",
+                "analyst_projections_count": 2,
+                "average_projected": 40,
+                "signal_score": 1,
+            }
+        ]
+    )
+    sleeve = pd.Series(100.0, index=stop_index, name=PARK_SPY)
+    _, empty, _, _ = run_slot_book(
+        "no-spy",
+        stopped,
+        sleeve,
+        one,
+        slots=2,
+        drawdown=0.0125,
+        profit_protect=0.30,
+        tqqq=tqqq,
+        spy_fill=False,
+    )
+    if PARK_SPY in set(empty["ticker"]) or list(empty.loc[empty["status"] == "Open", "ticker"]) != [PARK_TQQQ]:
+        raise RuntimeError(f"a stop without SPY filler should leave the slot empty\n{empty}")
+    print("Scale checks passed.")
+
+
+def _check_cash_book():
+    """Idle cash earns nothing, and a stop is not refilled with SPY or TQQQ."""
+    index = pd.bdate_range("2026-01-05", periods=4)
+    close = pd.DataFrame({"A": [10.0, 10.0, 10.0, 10.0]}, index=index)
+    spy = pd.Series([100.0, 100.0, 100.0, 200.0], index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 2,
+                "average_projected": 40,
+                "signal_score": 1,
+            }
+        ]
+    )
+    off, off_pos, _, _ = run_slot_book(
+        "cash-off", close, spy, signals, slots=2, cash_sleeve=False
+    )
+    on, _, _, _ = run_slot_book(
+        "cash-on", close, spy, signals, slots=2, cash_sleeve=True
+    )
+    if set(off_pos["ticker"]) != {"A"}:
+        raise RuntimeError(f"cash book must hold only the stock\n{off_pos}")
+    if abs(off["pnl"]) > 1:
+        raise RuntimeError(f"idle cash must not earn SPY, pnl {off['pnl']}")
+    if on["pnl"] < 1000:
+        raise RuntimeError(f"SPY sleeve should earn when it is on, pnl {on['pnl']}")
+
+    stopped = pd.DataFrame({"A": [10.0, 10.0, 9.8, 9.8]}, index=index)
+    _, empty, _, _ = run_slot_book(
+        "cash-stop",
+        stopped,
+        spy,
+        signals,
+        slots=2,
+        drawdown=0.0125,
+        profit_protect=0.30,
+        cash_sleeve=False,
+        lot_mode="str",
+    )
+    if set(empty["ticker"]) & {PARK_SPY, PARK_TQQQ} or (empty["status"] == "Open").any():
+        raise RuntimeError(f"a stop must leave cash, not SPY or TQQQ\n{empty}")
+    if len(empty) != 2:
+        raise RuntimeError(f"strength should fill both slots, then stop\n{empty}")
+    print("Cash checks passed.")
+
+
+def _check_split_book():
+    """A fixed book puts more dollars in each lot when there are fewer lots."""
+    index = pd.bdate_range("2026-01-05", periods=3)
+    close = pd.DataFrame({"A": [10.0, 10.0, 12.0]}, index=index)
+    spy = pd.Series([100.0, 100.0, 200.0], index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 2,
+                "average_projected": 40,
+                "signal_score": 1,
+            }
+        ]
+    )
+    row, positions, _, init = run_slot_book(
+        "split",
+        close,
+        spy,
+        signals,
+        slots=2,
+        cash_sleeve=False,
+        lot_amount=40_000,
+    )
+    if init != 80_000:
+        raise RuntimeError(f"two $40,000 lots must be an $80,000 book, got {init}")
+    if abs(row["pnl"] - 8_000) > 1 or abs(row["avg_lot_amount"] - 40_000) > 1:
+        raise RuntimeError(f"a 20% gain on one $40,000 lot must be $8,000\n{row}")
+    if set(positions["ticker"]) != {"A"}:
+        raise RuntimeError(f"split book must hold only the stock\n{positions}")
+    if abs(row["lot_days_util_pct"] - 50.0) > 0.1:
+        raise RuntimeError(
+            f"one lot of two, held all 3 days, is 50% of lot-days, got {row['lot_days_util_pct']}"
+        )
+    print("Split checks passed.")
+
+
+def _check_lot_formulas():
+    """The four strength sizes, including the cap at 16."""
+    cases = (
+        ("at", 2, 10, 2),
+        ("at", 2, 20, 4),
+        ("at", 3, 30, 9),
+        ("at", 4, 40, 16),
+        ("at", 5, 50, 16),
+        ("str", 2, 10, 2),
+        ("sqra", 2, 99, 4),
+        ("sqra", 3, 10, 9),
+        ("sqra", 4, 10, 16),
+        ("sqra", 5, 10, 16),
+        ("a", 2, 10, 6),
+        ("a", 3, 10, 9),
+        ("a", 4, 10, 12),
+        ("a", 6, 10, 16),
+        ("sqra_target", 2, 10, 1),
+        ("sqra_target", 2, 20, 2),
+        ("sqra_target", 3, 30, 6),
+        ("sqra_target", 4, 40, 16),
+    )
+    for mode, analysts, proj, want in cases:
+        got = position_lots(analysts, proj, mode)
+        if got != want:
+            raise RuntimeError(f"{mode}({analysts}, {proj}) = {got}, want {want}")
+    index = pd.bdate_range("2026-01-05", periods=2)
+    close = pd.DataFrame({"A": [10.0, 10.0]}, index=index)
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 3,
+                "average_projected": 30,
+                "signal_score": 1,
+            }
+        ]
+    )
+    for mode, want in (("at", 9), ("sqra", 9), ("a", 9), ("sqra_target", 6)):
+        _, positions, _, _ = run_slot_book(
+            mode,
+            close,
+            spy,
+            signals,
+            slots=16,
+            cash_sleeve=False,
+            lot_mode=mode,
+        )
+        if len(positions) != want:
+            raise RuntimeError(f"{mode} opened {len(positions)} lots, want {want}")
+    print("Lot formula checks passed.")
+
+
 def run_slot_book(
-    label, close, spy, signals, slots=SLOT_COUNT, drawdown=None, profit_protect=None
+    label,
+    close,
+    spy,
+    signals,
+    slots=SLOT_COUNT,
+    drawdown=None,
+    profit_protect=None,
+    tqqq=None,
+    park=None,
+    park_ticker=None,
+    spy_fill=None,
+    daily_loss=False,
+    lot_mode=None,
+    cash_sleeve=True,
+    lot_amount=None,
 ):
     """At most `slots` open lots.
 
@@ -705,8 +1124,15 @@ def run_slot_book(
     When drawdown and profit_protect are set, those stops run first each day,
     before new signals. Loss dropdown sells while the close is under the
     entry. Profit protection sells a giveback of the gain from entry to the
-    highest close. A new high does not sell. A lot that is never replaced
-    and never stopped stays open through the last quote day.
+    highest close. A new high does not sell. Stops do not apply to SPY or TQQQ.
+
+    When tqqq is set, the book is filled at the close. A slot still empty
+    after today's stock buys holds TQQQ. A slot freed by a stop and not reused
+    for a new ticker holds the stop filler, SPY unless park_ticker is set.
+    A new buy sells that filler before TQQQ, and TQQQ before a stock.
+
+    cash_sleeve false keeps uninvested money as cash. The sleeve does not
+    buy SPY, and with no tqqq the empty slots stay empty.
     """
     from backtest import bar_dates
 
@@ -717,6 +1143,22 @@ def run_slot_book(
     if not held or n == 0:
         raise RuntimeError(f"No price data for {label}")
     prices = {ticker: close[ticker].to_numpy(dtype=float) for ticker in held}
+    tqqq_px = None
+    stop_px = None
+    stop_ticker = park_ticker or PARK_SPY
+    use_spy_fill = True if spy_fill is None else bool(spy_fill)
+    if tqqq is not None:
+        tqqq_px = aligned_spy(tqqq, close.index).to_numpy(dtype=float)
+        prices[PARK_TQQQ] = tqqq_px
+        if use_spy_fill:
+            if stop_ticker == PARK_TQQQ:
+                stop_px = tqqq_px
+            elif park is not None:
+                stop_px = aligned_spy(park, close.index).to_numpy(dtype=float)
+                prices[stop_ticker] = stop_px
+            else:
+                stop_px = spy_px
+                prices[PARK_SPY] = spy_px
     located = signals.copy()
     if "signal_score" in located.columns:
         located["rank"] = located["signal_score"]
@@ -728,6 +1170,11 @@ def run_slot_book(
     for row in located.itertuples(index=False):
         loc = int(row.bar)
         ticker = row.ticker
+        blocked = {PARK_TQQQ}
+        if use_spy_fill:
+            blocked.add(stop_ticker)
+        if tqqq_px is not None and ticker in blocked:
+            continue
         if loc < 0 or loc >= n or ticker not in prices:
             continue
         px = float(prices[ticker][loc])
@@ -740,17 +1187,32 @@ def run_slot_book(
                 "entry": loc,
                 "strength": position_strength(row.analyst_projections_count, row.average_projected),
                 "score": float(row.rank) if pd.notna(row.rank) else 0.0,
+                "lots": (
+                    1
+                    if not lot_mode or lot_mode == "1"
+                    else position_lots(
+                        row.analyst_projections_count,
+                        row.average_projected,
+                        lot_mode,
+                    )
+                ),
             }
         )
 
-    init_cash = POSITION_VALUE * slots
-    spy_shares = init_cash / float(spy_px[0])
-    cash = 0.0
+    amount = float(POSITION_VALUE if lot_amount is None else lot_amount)
+    init_cash = amount * slots
+    if cash_sleeve:
+        spy_shares = init_cash / float(spy_px[0])
+        cash = 0.0
+    else:
+        spy_shares = 0.0
+        cash = float(init_cash)
     open_lots = []
     records = []
     open_counts = []
     navs = []
     stocks = []
+    idle_cash = 0
 
     def mark(lot, t):
         px = float(prices[lot["ticker"]][t])
@@ -760,7 +1222,7 @@ def run_slot_book(
 
     def fund_buy(t):
         nonlocal spy_shares, cash
-        cost = POSITION_VALUE
+        cost = amount
         px = float(spy_px[t])
         take = min(spy_shares, cost / px)
         spy_shares -= take
@@ -774,7 +1236,10 @@ def run_slot_book(
             cash += repay
             left -= repay
         if left:
-            spy_shares += left / float(spy_px[t])
+            if cash_sleeve:
+                spy_shares += left / float(spy_px[t])
+            else:
+                cash += left
 
     def record(lot, t, px, status):
         ret = (px / lot["entry_px"] - 1.0) * 100.0
@@ -787,7 +1252,7 @@ def run_slot_book(
                 "date_sell": dates[t].strftime("%Y-%m-%d"),
                 "price_buy": lot["entry_px"],
                 "price_sell": px,
-                "pnl": POSITION_VALUE * ret / 100.0,
+                "pnl": amount * ret / 100.0,
                 "return_pct": ret,
                 "return_pct_30d": ret * HOLD_NORM_DAYS / hold,
                 "spy_pct": spy_ret,
@@ -798,11 +1263,11 @@ def run_slot_book(
         )
 
     def close_lot(lot, t, px):
-        fund_sell(POSITION_VALUE * px / lot["entry_px"], t)
+        fund_sell(amount * px / lot["entry_px"], t)
         record(lot, t, px, "Closed")
         open_lots.remove(lot)
 
-    def open_lot(signal, t, px):
+    def open_lot(signal, t, px, park=False):
         fund_buy(t)
         open_lots.append(
             {
@@ -811,13 +1276,26 @@ def run_slot_book(
                 "entry_px": px,
                 "peak": px,
                 "strength": signal["strength"],
+                "park": park,
             }
         )
 
+    def sell_park(ticker, t):
+        for lot in list(open_lots):
+            if lot["ticker"] != ticker:
+                continue
+            point = mark(lot, t)
+            if point is None:
+                continue
+            close_lot(lot, t, point[1])
+            return True
+        return False
+
     for t in range(n):
+        freed_by_stop = 0
         if drawdown is not None or profit_protect is not None:
             for lot in list(open_lots):
-                if lot["entry"] >= t:
+                if lot.get("park") or lot["entry"] >= t:
                     continue
                 point = mark(lot, t)
                 if point is None:
@@ -830,33 +1308,74 @@ def run_slot_book(
                 )
                 if pp_hit or dd_hit:
                     close_lot(lot, t, px)
+                    freed_by_stop += 1
         todays = by_day.get(t, [])
         todays.sort(key=lambda signal: (signal["strength"], signal["score"]), reverse=True)
         for signal in todays:
             px = float(prices[signal["ticker"]][t])
-            if len(open_lots) < slots:
-                open_lot(signal, t, px)
+            if not math.isfinite(px) or px <= 0:
                 continue
-            marked = []
-            blocked = False
-            for lot in open_lots:
-                point = mark(lot, t)
-                if point is None:
-                    blocked = True
+            for _ in range(int(signal["lots"])):
+                if len(open_lots) < slots:
+                    open_lot(signal, t, px)
+                    if freed_by_stop > 0:
+                        freed_by_stop -= 1
+                    elif not use_spy_fill and idle_cash > 0:
+                        idle_cash -= 1
+                    continue
+                if use_spy_fill and tqqq_px is not None and sell_park(stop_ticker, t):
+                    open_lot(signal, t, px)
+                    continue
+                if (
+                    tqqq_px is not None
+                    and (not use_spy_fill or stop_ticker != PARK_TQQQ)
+                    and sell_park(PARK_TQQQ, t)
+                ):
+                    open_lot(signal, t, px)
+                    continue
+                marked = []
+                blocked = False
+                for lot in open_lots:
+                    if lot.get("park"):
+                        continue
+                    point = mark(lot, t)
+                    if point is None:
+                        blocked = True
+                        break
+                    ret = point[0]
+                    if daily_loss:
+                        held_days = max((dates[t] - dates[lot["entry"]]).days, 1)
+                        ret = ret / held_days
+                    marked.append((lot, ret, point[1]))
+                if blocked or not marked:
                     break
-                marked.append((lot, point[0], point[1]))
-            if blocked:
-                continue
-            victim = _slot_replacement(marked, signal["strength"])
-            if victim is None:
-                continue
-            close_lot(victim[0], t, victim[2])
-            open_lot(signal, t, px)
+                victim = _slot_replacement(marked, signal["strength"])
+                if victim is None:
+                    break
+                close_lot(victim[0], t, victim[2])
+                open_lot(signal, t, px)
+        if tqqq_px is not None:
+            if not use_spy_fill:
+                idle_cash += freed_by_stop
+                freed_by_stop = 0
+            room = slots if use_spy_fill else slots - idle_cash
+            while len(open_lots) < room:
+                if use_spy_fill and freed_by_stop > 0:
+                    fill_px = float(stop_px[t])
+                    fill = stop_ticker
+                else:
+                    fill_px = float(tqqq_px[t])
+                    fill = PARK_TQQQ
+                if not math.isfinite(fill_px) or fill_px <= 0:
+                    break
+                if use_spy_fill and fill == stop_ticker and freed_by_stop > 0:
+                    freed_by_stop -= 1
+                open_lot({"ticker": fill, "strength": 0.0}, t, fill_px, park=True)
         stock = 0.0
         for lot in open_lots:
             point = mark(lot, t)
             if point is not None:
-                stock += POSITION_VALUE * (1.0 + point[0])
+                stock += amount * (1.0 + point[0])
         navs.append(stock + spy_shares * float(spy_px[t]) + cash)
         stocks.append(stock)
         open_counts.append(len(open_lots))
@@ -893,7 +1412,7 @@ def run_slot_book(
     n_closed = n_trades - n_open
     avg_lots = float(sum(open_counts) / len(open_counts)) if open_counts else 0.0
     max_lots = int(max(open_counts)) if open_counts else 0
-    cost = avg_lots * POSITION_VALUE
+    cost = avg_lots * amount
     weight = []
     for stock, value in zip(stocks, navs):
         if value:
@@ -913,6 +1432,8 @@ def run_slot_book(
         lot_days += span
         starts.append(buy)
         ends.append(sell)
+    period_days = int((pd.Timestamp(dates[-1]) - pd.Timestamp(dates[0])).days) + 1
+    possible_lot_days = slots * period_days
     row = {
         "label": label,
         "n_signals": n_signals,
@@ -928,7 +1449,7 @@ def run_slot_book(
         "avg_open_lots": avg_lots,
         "max_open_lots": max_lots,
         "avg_invested_pct": cost / init_cash * 100.0 if init_cash else 0.0,
-        "peak_invested_pct": max_lots * POSITION_VALUE / init_cash * 100.0 if init_cash else 0.0,
+        "peak_invested_pct": max_lots * amount / init_cash * 100.0 if init_cash else 0.0,
         "return_on_avg_invested_pct": stock_pnl / cost * 100.0 if cost else 0.0,
         "avg_exposure_pct": float(sum(weight) / len(weight)) * 100.0 if weight else 0.0,
         "peak_exposure_pct": float(max(weight)) * 100.0 if weight else 0.0,
@@ -940,7 +1461,11 @@ def run_slot_book(
         "trade_to": max(ends) if ends else "",
         "days_exposed": len(covered),
         "lot_days": int(lot_days),
-        "avg_lot_amount": float(POSITION_VALUE) if n_trades else 0.0,
+        "lot_days_util_pct": (
+            lot_days / possible_lot_days * 100.0 if possible_lot_days else 0.0
+        ),
+        "slots": slots,
+        "avg_lot_amount": amount if n_trades else 0.0,
     }
     return row, positions, close, init_cash
 
@@ -2800,7 +3325,18 @@ def tag_positions(positions, row):
 
 
 def run_combos(
-    signals, close, spy, buys, specs, seen, iteration, one_lot=False, position_log=None
+    signals,
+    close,
+    spy,
+    buys,
+    specs,
+    seen,
+    iteration,
+    one_lot=False,
+    position_log=None,
+    tqqq=None,
+    parks=None,
+    cash_sleeve=True,
 ):
     rows = []
     close_wide = None
@@ -2830,6 +3366,20 @@ def run_combos(
                 f"({len(bought)} signals)"
             )
             if spec.slots is not None:
+                filler = spec.filler
+                spy_fill = None
+                park_ticker = filler
+                park_series = None if parks is None or not filler else parks.get(filler)
+                if filler == "none":
+                    spy_fill = False
+                    park_ticker = None
+                    park_series = None
+                elif filler == PARK_SPY:
+                    spy_fill = True
+                    park_ticker = PARK_SPY
+                    park_series = None
+                elif filler:
+                    spy_fill = True
                 row, positions, close_wide, init_cash = run_slot_book(
                     f"{spec.label} · {buy_label(buy)}",
                     close,
@@ -2838,6 +3388,14 @@ def run_combos(
                     slots=spec.slots,
                     drawdown=spec.drawdown,
                     profit_protect=spec.profit_protect,
+                    tqqq=tqqq,
+                    park=park_series,
+                    park_ticker=park_ticker,
+                    spy_fill=spy_fill,
+                    daily_loss=spec.loss_mode == "dls",
+                    lot_mode=spec.lot_mode,
+                    cash_sleeve=cash_sleeve,
+                    lot_amount=spec.lot_amount,
                 )
             else:
                 row, positions, close_wide, _, init_cash = run_one(
@@ -2894,14 +3452,21 @@ def closed_plan_text(locks):
     return lines
 
 
-def exposure_cells(row):
+def exposure_cells(row, with_util=False):
     window = f"{row.get('trade_from', '')} → {row.get('trade_to', '')}"
-    return [
+    lots_used = row.get("avg_invested_pct")
+    lots_text = f"{lots_used:.1f}%" if lots_used is not None else ""
+    cells = [
         window,
         str(row.get("days_exposed", "")),
+        lots_text,
         str(row.get("lot_days", "")),
         f"${row.get('avg_lot_amount', 0):,.0f}",
     ]
+    if with_util:
+        util = row.get("lot_days_util_pct")
+        cells.insert(4, f"{util:.1f}%" if util is not None else "")
+    return cells
 
 
 def closed_compact_table(rows, limit=None):
@@ -2912,13 +3477,18 @@ def closed_compact_table(rows, limit=None):
     )
     if limit is not None:
         ordered = ordered[:limit]
+    with_util = any(r.get("lot_days_util_pct") is not None for r in ordered)
+    util_head = " Lot-days utilized |" if with_util else ""
+    util_sep = " ---: |" if with_util else ""
     head = (
         "| Rank | I | Sell | Buy | n | On invested | Stock P&L | Win | "
-        "Trades | vs SPY | Trade window | Days exposed | Lot-days | Avg lot |"
+        "Trades | vs SPY | Trade window | Days utilized | Lots utilized | Lot-days |"
+        f"{util_head} Avg lot |"
     )
     sep = (
         "| ---: | ---: | --- | --- | ---: | ---: | ---: | ---: | --- | ---: | "
         "--- | ---: | ---: | ---: |"
+        f"{util_sep} ---: |"
     )
     lines = [head, sep]
     for i, row in enumerate(ordered, 1):
@@ -2936,7 +3506,7 @@ def closed_compact_table(rows, limit=None):
                     f"{row['win_rate_pct']:.1f}%",
                     f"{row['n_closed']}c/{row['n_open']}o",
                     f"{row['vs_spy_pct']:+.2f}%",
-                    *exposure_cells(row),
+                    *exposure_cells(row, with_util),
                 ]
             )
             + " |"
@@ -3271,6 +3841,161 @@ def book_sell_grid():
     ]
 
 
+def filler_sell_grid():
+    """The yahoo book grid once for each stop filler that replaces SPY."""
+    return [
+        SellSpec(drawdown=dd, profit_protect=pp, slots=slots, filler=filler)
+        for filler in FILLERS
+        for slots in BOOK_SLOTS
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def cash_buy_grid():
+    """Yahoo winner buys plus projected >10%."""
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (2, 3, 4)
+            for p in (10, 20, 30, 40, 50)
+        ]
+    )
+
+
+def count_buy_grid():
+    """Formula buys plus analyst >0 and analyst >1."""
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (0, 1, 2, 3, 4)
+            for p in (10, 20, 30, 40, 50)
+        ]
+    )
+
+
+def low_buy_grid():
+    """Count buys plus projected >0%."""
+    return with_signal_names(
+        [
+            {"min_analysts": n, "min_projected": float(p)}
+            for n in (0, 1, 2, 3, 4)
+            for p in (0, 10, 20, 30, 40, 50)
+        ]
+    )
+
+
+def cash_sell_grid():
+    """Book size × ls or dls × loss dropdown × profit protect. Strength lots only."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=slots,
+            loss_mode=loss,
+            lot_mode="str",
+        )
+        for slots in CASH_SLOTS
+        for loss in LOSS_MODES
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def formula_sell_grid():
+    """Fixed $320,000 book, four strength formulas, same stops as the split."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=slots,
+            loss_mode=loss,
+            lot_mode=mode,
+            lot_amount=BOOK_CASH / slots,
+        )
+        for mode in LOT_FORMULAS
+        for slots in CASH_SLOTS
+        for loss in LOSS_MODES
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def split_sell_grid():
+    """Same stops as cash, with each lot count splitting one $320,000 book."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=slots,
+            loss_mode=loss,
+            lot_mode="str",
+            lot_amount=BOOK_CASH / slots,
+        )
+        for slots in CASH_SLOTS
+        for loss in LOSS_MODES
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def scale_sell_grid():
+    """64-lot book × SPY or none × ls or dls × one lot or strength sizing."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=SCALE_SLOTS,
+            filler=filler,
+            loss_mode=loss,
+            lot_mode=lot,
+        )
+        for filler in SCALE_FILLERS
+        for loss in LOSS_MODES
+        for lot in LOT_MODES
+        for dd in BOOK_DRAWDOWNS
+        for pp in BOOK_PROTECTS
+    ]
+
+
+def load_symbol(ticker, index):
+    """One Yahoo close series aligned to the simulation calendar."""
+    path = CACHE_DIR / f"{ticker.lower()}.pkl"
+    series = None
+    if path.exists():
+        series = pd.read_pickle(path)
+        if isinstance(series, pd.DataFrame):
+            series = series.iloc[:, 0]
+        series = normalize_price_index(series)
+        series.name = ticker
+    start = pd.Timestamp(index.min()).normalize()
+    want = pd.Timestamp(index.max()).normalize()
+    covered = (
+        series is not None
+        and not series.empty
+        and pd.Timestamp(series.index.min()) <= start
+        and pd.Timestamp(series.index.max()) >= want
+    )
+    if not covered:
+        extra = download_close_yahoo([ticker], start, want)
+        series = normalize_price_index(extra.iloc[:, 0])
+        series.name = ticker
+        CACHE_DIR.mkdir(exist_ok=True)
+        series.to_pickle(path)
+        print(f"Cached {ticker} → {path} · last {series.index.max().date()}")
+    aligned = aligned_spy(series, index)
+    if aligned.isna().any():
+        raise RuntimeError(
+            f"{ticker} prices do not cover {start.date()} → {want.date()}"
+        )
+    return aligned
+
+
+def load_tqqq(index):
+    """TQQQ closes aligned to the simulation calendar. Cached under VectorBT/.cache."""
+    return load_symbol(PARK_TQQQ, index)
+
+
 def run_book(signals, close, spy, position_log=None):
     _check_slot_book()
     buys = winners_buy_grid()
@@ -3289,6 +4014,232 @@ def run_book(signals, close, spy, position_log=None):
         set(),
         "book",
         position_log=position_log,
+    )
+
+
+def run_park(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_park_book()
+    tqqq = load_tqqq(close.index)
+    buys = winners_buy_grid()
+    specs = book_sell_grid()
+    print(
+        f"\n=== Yahoo park: {len(buys)} buys × {len(specs)} sells"
+        f" · lots {', '.join(str(n) for n in BOOK_SLOTS)}"
+        f" · free lots {PARK_TQQQ} · stop lots {PARK_SPY}"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "park",
+        position_log=position_log,
+        tqqq=tqqq,
+    )
+
+
+def run_fillers(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_park_book()
+    _check_filler_book()
+    tqqq = load_tqqq(close.index)
+    parks = {ticker: load_symbol(ticker, close.index) for ticker in FILLERS}
+    buys = winners_buy_grid()
+    specs = filler_sell_grid()
+    print(
+        f"\n=== Yahoo stop fillers: {len(buys)} buys × {len(specs)} sells"
+        f" · {', '.join(FILLERS)}"
+        f" · free lots {PARK_TQQQ}"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "fillers",
+        position_log=position_log,
+        tqqq=tqqq,
+        parks=parks,
+    )
+
+
+def run_cash(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    buys = cash_buy_grid()
+    specs = cash_sell_grid()
+    print(
+        f"\n=== Yahoo cash book: {len(buys)} buys × {len(specs)} sells"
+        f" · lots {', '.join(str(n) for n in CASH_SLOTS)}"
+        f" · {', '.join(LOSS_MODES)} · strength"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "cash",
+        position_log=position_log,
+        cash_sleeve=False,
+    )
+
+
+def run_low(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    buys = low_buy_grid()
+    specs = formula_sell_grid()
+    print(
+        f"\n=== Yahoo upside >0: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · analysts >0/>1/>2/>3/>4"
+        f" · projected >0/>10/>20/>30/>40/>50%"
+        f" · lots {', '.join(str(n) for n in CASH_SLOTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · {', '.join(LOSS_MODES)}"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "low",
+        position_log=position_log,
+        cash_sleeve=False,
+    )
+
+
+def run_counts(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    buys = count_buy_grid()
+    specs = formula_sell_grid()
+    print(
+        f"\n=== Yahoo analyst counts: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · analysts >0/>1/>2/>3/>4"
+        f" · lots {', '.join(str(n) for n in CASH_SLOTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · {', '.join(LOSS_MODES)}"
+        f" · no SPY · no TQQQ"
+        f" · upside >10%"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "counts",
+        position_log=position_log,
+        cash_sleeve=False,
+    )
+
+
+def run_formulas(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    buys = cash_buy_grid()
+    specs = formula_sell_grid()
+    print(
+        f"\n=== Yahoo strength formulas: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · lots {', '.join(str(n) for n in CASH_SLOTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · {', '.join(LOSS_MODES)}"
+        f" · no SPY · no TQQQ"
+        f" · upside >10%"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "formulas",
+        position_log=position_log,
+        cash_sleeve=False,
+    )
+
+
+def run_fixed_book(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    buys = cash_buy_grid()
+    specs = split_sell_grid()
+    print(
+        f"\n=== Yahoo split book: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · lots {', '.join(str(n) for n in CASH_SLOTS)}"
+        f" · {', '.join(LOSS_MODES)} · strength"
+        f" · no SPY · no TQQQ"
+        f" · upside >10%"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "split",
+        position_log=position_log,
+        cash_sleeve=False,
+    )
+
+
+def run_scale(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_park_book()
+    _check_filler_book()
+    _check_scale_book()
+    tqqq = load_tqqq(close.index)
+    buys = winners_buy_grid()
+    specs = scale_sell_grid()
+    print(
+        f"\n=== Yahoo 64-lot scale: {len(buys)} buys × {len(specs)} sells"
+        f" · fillers {', '.join(SCALE_FILLERS)}"
+        f" · {', '.join(LOSS_MODES)} · {', '.join(LOT_MODES)}"
+        f" · free lots {PARK_TQQQ}"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "scale",
+        position_log=position_log,
+        tqqq=tqqq,
     )
 
 
@@ -3469,6 +4420,11 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
     by_buy = defaultdict(list)
     for row in rows:
         by_buy[row.get("buy_label")].append(row)
+    lot_note = (
+        f"One book of ${BOOK_CASH:,.0f}. The lot count splits that cash. "
+        if any(getattr(spec, "lot_amount", None) for spec in specs)
+        else f"${POSITION_VALUE:,.0f} per lot. "
+    )
 
     body = [
         f"# {info['title']}",
@@ -3479,7 +4435,7 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
             f"{info['cal_days']} days ({info['trading_days']} trading)"
         ),
         (
-            f"${POSITION_VALUE:,.0f} per lot. Ranked by **return on avg invested**. "
+            f"{lot_note}Ranked by **return on avg invested**. "
             f"{len(rows)} combos. Trusted set is n≥{trust_n} ({len(trusted)} cells)."
         ),
         "",
@@ -3519,8 +4475,10 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
         "",
         (
             f"# TRADES {best.get('trade_from', '')} → {best.get('trade_to', '')} · "
-            f"{best.get('days_exposed', 0)} DAYS EXPOSED · "
+            f"{best.get('days_exposed', 0)} DAYS UTILIZED · "
+            f"{best.get('avg_invested_pct', 0):.1f}% LOTS UTILIZED · "
             f"{best.get('lot_days', 0)} LOT-DAYS · "
+            f"{best.get('lot_days_util_pct', 0):.1f}% OF LOT-DAYS INVESTED · "
             f"AVG LOT ${best.get('avg_lot_amount', 0):,.0f}"
         ),
         "",
@@ -3746,17 +4704,22 @@ const HOLDS = __HOLDS__;
 const TARGETS = __TARGETS__;
 const DROPS = __DROPS__;
 const PROTECTS = __PROTECTS__;
-const SELL_MODE = __SELL_MODE__;
+const FILLERS: string[] = __FILLERS__;
+const RULES: string[] = __RULES__;
+const SIZES: string[] = __SIZES__;
+const SELL_MODE: string = __SELL_MODE__;
 
 type Buy = { s: string; a: number; p: number; n: number; sym: number };
-type Sell = { h: number; t: number; d: number; p: number };
+type Sell = { h: number; t: number; d: number; p: number; f: string; r: string; z: string; m: number };
 
 const BUYS: Buy[] = __BUYS__;
 const SELLS: Sell[] = __SELLS__;
 const ROI: number[][] = __ROI__;
 const PNL: number[][] = __PNL__;
 const EXPOSED: number[][] = __EXPOSED__;
+const LOTUTIL: number[][] = __LOTUTIL__;
 const LOTDAYS: number[][] = __LOTDAYS__;
+const LOTDAYUTIL: number[][] = __LOTDAYUTIL__;
 const AVGLOT: number[][] = __AVGLOT__;
 const WIN: number[][] = __WIN__;
 const CLOSED: number[][] = __CLOSED__;
@@ -3764,13 +4727,34 @@ const OPENN: number[][] = __OPEN__;
 const FROM: string[][] = __FROM__;
 const TO: string[][] = __TO__;
 
+const LOT_MONEY: Record<number, number> = {};
+for (const sell of SELLS) if (sell.m) LOT_MONEY[sell.h] = sell.m;
+
+function lotSplit(slots: number): string {
+  const dollars = LOT_MONEY[slots];
+  if (!dollars) return `${slots} lots`;
+  return `${slots} × $${Math.round(dollars).toLocaleString("en-US")}`;
+}
+
+function lotSizeLabel(value: string): string {
+  if (value === "str") return "strength";
+  if (value === "1") return "1 lot";
+  return value;
+}
+
 function buyLabel(buy: Buy): string {
   const cut = `>${buy.a},>${buy.p}%`;
   return buy.s ? `${buy.s} · ${cut}` : cut;
 }
 
 function sellLabel(sell: Sell): string {
-  if (SELL_MODE === "book") return `${sell.d}dd ${sell.p}pp · ${sell.h} lots`;
+  if (SELL_MODE === "book") {
+    const base = `${sell.d}dd ${sell.p}pp · ${lotSplit(sell.h)}`;
+    const fillerName = sell.f === "none" ? "no SPY" : sell.f;
+    const ruleName = sell.r === "ls" ? "ls" : sell.r === "dls" ? "dls" : sell.r;
+    const lotName = lotSizeLabel(sell.z);
+    return [base, fillerName, ruleName, lotName].filter(Boolean).join(" · ");
+  }
   if (SELL_MODE === "slots") return `${sell.h} lots`;
   if (SELL_MODE === "protect") return `${sell.d}dd ${sell.p}pp`;
   return `${sell.h}d ${sell.t}% ${sell.d}dd`;
@@ -3783,6 +4767,10 @@ function money(n: number): string {
 
 function pct(n: number): string {
   return `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`;
+}
+
+function share(n: number): string {
+  return `${n.toFixed(1)}%`;
 }
 
 function lotMoney(n: number): string {
@@ -3911,20 +4899,23 @@ function emptyBuckets(options: readonly (string | number)[]): Record<string, num
   return out;
 }
 
-type SliceStats = { roi: Stats | null; sym: Stats | null; win: Stats | null };
+type SliceStats = { roi: Stats | null; pnl: Stats | null; sym: Stats | null; win: Stats | null };
 
 function packSlice(
   roiGroups: Record<string, number[]>,
+  pnlGroups: Record<string, number[]>,
   symGroups: Record<string, number[]>,
   winGroups: Record<string, number[]>,
 ): Record<string, SliceStats> {
   const out: Record<string, SliceStats> = {};
   for (const key of Object.keys(roiGroups)) {
     const roi = roiGroups[key];
+    const pnl = pnlGroups[key] ?? [];
     const sym = symGroups[key];
     const win = winGroups[key];
     out[key] = {
       roi: roi.length ? pack(roi) : null,
+      pnl: pnl.length ? pack(pnl) : null,
       sym: sym.length ? pack(sym) : null,
       win: win.length ? pack(win) : null,
     };
@@ -3947,6 +4938,7 @@ function FilterColumn<T extends string | number>({
   onChange,
   format,
   stats,
+  moneyMode = false,
   exclusive = false,
 }: {
   label: string;
@@ -3955,17 +4947,24 @@ function FilterColumn<T extends string | number>({
   onChange: (next: T[]) => void;
   format: (value: T) => string;
   stats: Record<string, SliceStats>;
+  moneyMode?: boolean;
   exclusive?: boolean;
 }) {
   const figure = {
     textAlign: "right" as const,
     fontVariantNumeric: "tabular-nums" as const,
   };
+  const lead = (statsFor: Stats | null | undefined, name: StatName) => {
+    if (!statsFor) return "—";
+    return moneyMode ? money(statsFor[name]) : pct(statsFor[name]);
+  };
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "minmax(0, 1fr) 4.5em 4.5em 4.5em 3.2em 3.2em 3.2em 4.2em 4.2em 4.2em",
+        gridTemplateColumns: moneyMode
+          ? "minmax(0, 1fr) 6.6em 6.6em 6.6em 3.2em 3.2em 3.2em 4.2em 4.2em 4.2em"
+          : "minmax(0, 1fr) 4.5em 4.5em 4.5em 3.2em 3.2em 3.2em 4.2em 4.2em 4.2em",
         columnGap: 6,
         rowGap: 2,
         alignItems: "center",
@@ -3973,7 +4972,7 @@ function FilterColumn<T extends string | number>({
     >
       <span />
       <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "2 / span 3", textAlign: "center" }}>
-        Return
+        {moneyMode ? "P&L" : "Return"}
       </Text>
       <Text as="span" size="small" tone="tertiary" style={{ gridColumn: "5 / span 3", textAlign: "center" }}>
         Symbols
@@ -4007,13 +5006,13 @@ function FilterColumn<T extends string | number>({
               </Pill>
             </div>
             <Text as="span" size="small" tone={tone} style={figure}>
-              {stat?.roi ? pct(stat.roi.min) : "—"}
+              {lead(moneyMode ? stat?.pnl : stat?.roi, "min")}
             </Text>
             <Text as="span" size="small" tone={tone} style={figure}>
-              {stat?.roi ? pct(stat.roi.avg) : "—"}
+              {lead(moneyMode ? stat?.pnl : stat?.roi, "avg")}
             </Text>
             <Text as="span" size="small" tone={tone} style={figure}>
-              {stat?.roi ? pct(stat.roi.max) : "—"}
+              {lead(moneyMode ? stat?.pnl : stat?.roi, "max")}
             </Text>
             <Text as="span" size="small" tone={tone} style={figure}>
               {countText(stat?.sym?.min)}
@@ -4132,6 +5131,9 @@ export default function FineGridCanvas() {
   const [sortKey, setSortKey] = useCanvasState<string>("grid-sort-key", "");
   const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("grid-sort-dir", "desc");
   const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
+  const [filler, setFiller] = useCanvasState<string>("grid-filler", FILLERS[0] ?? "");
+  const [rule, setRule] = useCanvasState<string>("grid-rule", RULES[0] ?? "");
+  const [sizeMode, setSizeMode] = useCanvasState<string>("grid-size", SIZES[0] ?? "");
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
@@ -4146,7 +5148,12 @@ export default function FineGridCanvas() {
     const slotsMode = SELL_MODE === "slots";
     const sells = SELLS.map((sell, col) => ({ sell, col })).filter(({ sell }) =>
       bookMode
-        ? holds.includes(sell.h) && protects.includes(sell.p) && drops.includes(sell.d)
+        ? holds.includes(sell.h) &&
+          protects.includes(sell.p) &&
+          drops.includes(sell.d) &&
+          (FILLERS.length === 0 || sell.f === filler) &&
+          (RULES.length === 0 || sell.r === rule) &&
+          (SIZES.length === 0 || sell.z === sizeMode)
         : slotsMode
           ? true
           : protectMode
@@ -4167,46 +5174,69 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
 
   const filterStats = useMemo(() => {
     const signalRoi = emptyBuckets(SIGNALS);
+    const signalPnl = emptyBuckets(SIGNALS);
     const signalSym = emptyBuckets(SIGNALS);
     const signalWin = emptyBuckets(SIGNALS);
     const analystRoi = emptyBuckets(ANALYSTS);
+    const analystPnl = emptyBuckets(ANALYSTS);
     const analystSym = emptyBuckets(ANALYSTS);
     const analystWin = emptyBuckets(ANALYSTS);
     const upsideRoi = emptyBuckets(UPSIDES);
+    const upsidePnl = emptyBuckets(UPSIDES);
     const upsideSym = emptyBuckets(UPSIDES);
     const upsideWin = emptyBuckets(UPSIDES);
     const symbolRoi = emptyBuckets(SYMBOL_FLOORS);
+    const symbolPnl = emptyBuckets(SYMBOL_FLOORS);
     const symbolSym = emptyBuckets(SYMBOL_FLOORS);
     const symbolWin = emptyBuckets(SYMBOL_FLOORS);
     const holdRoi = emptyBuckets(HOLDS);
+    const holdPnl = emptyBuckets(HOLDS);
     const holdSym = emptyBuckets(HOLDS);
     const holdWin = emptyBuckets(HOLDS);
     const targetRoi = emptyBuckets(TARGETS);
+    const targetPnl = emptyBuckets(TARGETS);
     const targetSym = emptyBuckets(TARGETS);
     const targetWin = emptyBuckets(TARGETS);
     const dropRoi = emptyBuckets(DROPS);
+    const dropPnl = emptyBuckets(DROPS);
     const dropSym = emptyBuckets(DROPS);
     const dropWin = emptyBuckets(DROPS);
     const protectRoi = emptyBuckets(PROTECTS);
+    const protectPnl = emptyBuckets(PROTECTS);
     const protectSym = emptyBuckets(PROTECTS);
     const protectWin = emptyBuckets(PROTECTS);
+    const fillerRoi = emptyBuckets(FILLERS);
+    const fillerPnl = emptyBuckets(FILLERS);
+    const fillerSym = emptyBuckets(FILLERS);
+    const fillerWin = emptyBuckets(FILLERS);
+    const ruleRoi = emptyBuckets(RULES);
+    const rulePnl = emptyBuckets(RULES);
+    const ruleSym = emptyBuckets(RULES);
+    const ruleWin = emptyBuckets(RULES);
+    const sizeRoi = emptyBuckets(SIZES);
+    const sizePnl = emptyBuckets(SIZES);
+    const sizeSym = emptyBuckets(SIZES);
+    const sizeWin = emptyBuckets(SIZES);
     const bookMode = SELL_MODE === "book";
     const protectMode = SELL_MODE === "protect";
     const slotsMode = SELL_MODE === "slots";
     const push = (
       roiBucket: Record<string, number[]>,
+      pnlBucket: Record<string, number[]>,
       symBucket: Record<string, number[]>,
       winBucket: Record<string, number[]>,
       key: string,
       roi: number,
+      pnl: number,
       sym: number,
       win: number,
     ) => {
       roiBucket[key]?.push(roi);
+      pnlBucket[key]?.push(pnl);
       symBucket[key]?.push(sym);
       if (Number.isFinite(win)) winBucket[key]?.push(win);
     };
@@ -4217,8 +5247,12 @@ export default function FineGridCanvas() {
       const symbolOk = buy.sym > symbolFloor;
       SELLS.forEach((sell, col) => {
         const roi = ROI[row][col];
+        const pnl = PNL[row][col];
         const win = WIN[row][col];
-        if (!Number.isFinite(roi)) return;
+        if (!Number.isFinite(roi) || !Number.isFinite(pnl)) return;
+        const fillerOn = FILLERS.length === 0 || sell.f === filler;
+        const ruleOn = RULES.length === 0 || sell.r === rule;
+        const sizeOn = SIZES.length === 0 || sell.z === sizeMode;
         const holdOk = bookMode
           ? holds.includes(sell.h)
           : slotsMode || protectMode || holds.includes(sell.h);
@@ -4228,35 +5262,41 @@ export default function FineGridCanvas() {
         const dropOk = bookMode ? drops.includes(sell.d) : slotsMode || drops.includes(sell.d);
         const sellsOk = holdOk && targetOk && dropOk;
         const buysOk = signalOk && analystOk && upsideOk && symbolOk;
-        if (analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalSym, signalWin, buy.s, roi, buy.sym, win);
-        if (signalOk && upsideOk && symbolOk && sellsOk) push(analystRoi, analystSym, analystWin, String(buy.a), roi, buy.sym, win);
-        if (signalOk && analystOk && symbolOk && sellsOk) {
+        if (FILLERS.length && buysOk && sellsOk && ruleOn && sizeOn) push(fillerRoi, fillerPnl, fillerSym, fillerWin, sell.f, roi, pnl, buy.sym, win);
+        if (RULES.length && buysOk && sellsOk && fillerOn && sizeOn) push(ruleRoi, rulePnl, ruleSym, ruleWin, sell.r, roi, pnl, buy.sym, win);
+        if (SIZES.length && buysOk && sellsOk && fillerOn && ruleOn) push(sizeRoi, sizePnl, sizeSym, sizeWin, sell.z, roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalPnl, signalSym, signalWin, buy.s, roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && signalOk && upsideOk && symbolOk && sellsOk) push(analystRoi, analystPnl, analystSym, analystWin, String(buy.a), roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && symbolOk && sellsOk) {
           for (const floor of UPSIDES) {
-            if (buy.p >= floor) push(upsideRoi, upsideSym, upsideWin, String(floor), roi, buy.sym, win);
+            if (buy.p >= floor) push(upsideRoi, upsidePnl, upsideSym, upsideWin, String(floor), roi, pnl, buy.sym, win);
           }
         }
-        if (signalOk && analystOk && upsideOk && sellsOk) {
+        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && upsideOk && sellsOk) {
           for (const floor of SYMBOL_FLOORS) {
-            if (buy.sym > floor) push(symbolRoi, symbolSym, symbolWin, String(floor), roi, buy.sym, win);
+            if (buy.sym > floor) push(symbolRoi, symbolPnl, symbolSym, symbolWin, String(floor), roi, pnl, buy.sym, win);
           }
         }
-        if (!protectMode && buysOk && targetOk && dropOk) push(holdRoi, holdSym, holdWin, String(sell.h), roi, buy.sym, win);
-        if (!protectMode && buysOk && holdOk && dropOk) push(targetRoi, targetSym, targetWin, String(sell.t), roi, buy.sym, win);
-        if ((protectMode && buysOk && dropOk) || (bookMode && buysOk && holds.includes(sell.h) && drops.includes(sell.d))) push(protectRoi, protectSym, protectWin, String(sell.p), roi, buy.sym, win);
-        if (buysOk && holdOk && targetOk) push(dropRoi, dropSym, dropWin, String(sell.d), roi, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && !protectMode && buysOk && targetOk && dropOk) push(holdRoi, holdPnl, holdSym, holdWin, String(sell.h), roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && !protectMode && buysOk && holdOk && dropOk) push(targetRoi, targetPnl, targetSym, targetWin, String(sell.t), roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && ((protectMode && buysOk && dropOk) || (bookMode && buysOk && holds.includes(sell.h) && drops.includes(sell.d)))) push(protectRoi, protectPnl, protectSym, protectWin, String(sell.p), roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && buysOk && holdOk && targetOk) push(dropRoi, dropPnl, dropSym, dropWin, String(sell.d), roi, pnl, buy.sym, win);
       });
     });
     return {
-      signal: packSlice(signalRoi, signalSym, signalWin),
-      analyst: packSlice(analystRoi, analystSym, analystWin),
-      upside: packSlice(upsideRoi, upsideSym, upsideWin),
-      symbol: packSlice(symbolRoi, symbolSym, symbolWin),
-      hold: packSlice(holdRoi, holdSym, holdWin),
-      target: packSlice(targetRoi, targetSym, targetWin),
-      drop: packSlice(dropRoi, dropSym, dropWin),
-      protect: packSlice(protectRoi, protectSym, protectWin),
+      signal: packSlice(signalRoi, signalPnl, signalSym, signalWin),
+      analyst: packSlice(analystRoi, analystPnl, analystSym, analystWin),
+      upside: packSlice(upsideRoi, upsidePnl, upsideSym, upsideWin),
+      symbol: packSlice(symbolRoi, symbolPnl, symbolSym, symbolWin),
+      hold: packSlice(holdRoi, holdPnl, holdSym, holdWin),
+      target: packSlice(targetRoi, targetPnl, targetSym, targetWin),
+      drop: packSlice(dropRoi, dropPnl, dropSym, dropWin),
+      protect: packSlice(protectRoi, protectPnl, protectSym, protectWin),
+      filler: packSlice(fillerRoi, fillerPnl, fillerSym, fillerWin),
+      rule: packSlice(ruleRoi, rulePnl, ruleSym, ruleWin),
+      size: packSlice(sizeRoi, sizePnl, sizeSym, sizeWin),
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
@@ -4274,7 +5314,9 @@ export default function FineGridCanvas() {
       from: FROM[row][col],
       to: TO[row][col],
       exposed: EXPOSED[row][col],
+      lotsUtil: LOTUTIL[row][col],
       lotDays: LOTDAYS[row][col],
+      lotDayUtil: LOTDAYUTIL[row][col],
       avgLot: AVGLOT[row][col],
       win: WIN[row][col],
       closed: CLOSED[row][col],
@@ -4283,7 +5325,10 @@ export default function FineGridCanvas() {
   );
   const topScore = cells.reduce((best, cell) => (cell.roi > best.roi ? cell : best), cells[0]);
   const topCash = cells.reduce((best, cell) => (cell.pnl > best.pnl ? cell : best), cells[0]);
-  const ranked = [...cells].sort((a, b) => b.roi - a.roi || b.pnl - a.pnl).slice(0, 30);
+  const byMoney = showMode === "pnl";
+  const ranked = [...cells]
+    .sort((a, b) => (byMoney ? b.pnl - a.pnl || b.roi - a.roi : b.roi - a.roi || b.pnl - a.pnl))
+    .slice(0, 30);
 
   const yellow = theme.category.yellow;
   const orange = theme.category.orange;
@@ -4425,8 +5470,12 @@ export default function FineGridCanvas() {
           ) : null}
           {showPnl ? <Stat value={money(topCash.pnl)} label={`Most cash · ${topCash.label}`} /> : null}
           <Stat value={`${topScore.from} → ${topScore.to}`} label="Best return · trade window" />
-          <Stat value={String(topScore.exposed)} label="Best return · days exposed" />
+          <Stat value={pct(topScore.lotsUtil)} label="Best return · lots utilized" />
+          <Stat value={String(topScore.exposed)} label="Best return · days utilized" />
           <Stat value={String(topScore.lotDays)} label="Best return · lot-days" />
+          {SELL_MODE === "book" ? (
+            <Stat value={share(topScore.lotDayUtil)} label="Best return · lot-days invested" />
+          ) : null}
           <Stat value={lotMoney(topScore.avgLot)} label="Best return · average lot" />
           <Stat value={String(cells.length)} label="Combinations shown" />
         </Row>
@@ -4434,7 +5483,9 @@ export default function FineGridCanvas() {
 
       <Stack gap={8}>
         <Text size="small" tone="secondary">
-          Min, avg, and max are the return for that value with the other filters applied.
+          {showMode === "pnl"
+            ? "Min, avg, and max are the stock P&L for that value with the other filters applied."
+            : "Min, avg, and max are the return for that value with the other filters applied."}{" "}
           The next three figures are that value's symbol count. The last three are its win rate.
         </Text>
         <Grid columns={2} gap={16} align="start">
@@ -4444,6 +5495,7 @@ export default function FineGridCanvas() {
             selected={books}
             onChange={setBooks}
             format={(value) => value}
+            moneyMode={showMode === "pnl"}
             stats={filterStats.signal}
           />
           {SELL_MODE === "slots" ? (
@@ -4463,7 +5515,8 @@ export default function FineGridCanvas() {
               selected={drops}
               onChange={setDrops}
               format={(value) => `${value}dd`}
-              stats={filterStats.drop}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.drop}
             />
           ) : (
             <FilterColumn
@@ -4472,7 +5525,8 @@ export default function FineGridCanvas() {
               selected={holds}
               onChange={setHolds}
               format={(value) => `${value}d`}
-              stats={filterStats.hold}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.hold}
             />
           )}
           <FilterColumn
@@ -4481,6 +5535,7 @@ export default function FineGridCanvas() {
             selected={analysts}
             onChange={setAnalysts}
             format={(value) => `>${value}`}
+            moneyMode={showMode === "pnl"}
             stats={filterStats.analyst}
           />
           {SELL_MODE === "slots" ? (
@@ -4492,7 +5547,8 @@ export default function FineGridCanvas() {
               selected={protects}
               onChange={setProtects}
               format={(value) => `${value}pp`}
-              stats={filterStats.protect}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.protect}
             />
           ) : (
             <FilterColumn
@@ -4501,7 +5557,8 @@ export default function FineGridCanvas() {
               selected={targets}
               onChange={setTargets}
               format={(value) => `${value}%`}
-              stats={filterStats.target}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.target}
             />
           )}
           <FilterColumn
@@ -4510,6 +5567,7 @@ export default function FineGridCanvas() {
             selected={[upsideFloor]}
             onChange={(next) => setUpsideFloor(next[0])}
             format={(value) => `>${value}%`}
+            moneyMode={showMode === "pnl"}
             stats={filterStats.upside}
             exclusive
           />
@@ -4519,8 +5577,9 @@ export default function FineGridCanvas() {
               options={HOLDS}
               selected={holds}
               onChange={setHolds}
-              format={(value) => `${value} lots`}
-              stats={filterStats.hold}
+              format={(value) => lotSplit(value)}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.hold}
             />
           ) : SELL_MODE === "slots" || SELL_MODE === "protect" ? (
             <div />
@@ -4531,7 +5590,8 @@ export default function FineGridCanvas() {
               selected={drops}
               onChange={setDrops}
               format={(value) => `${value}dd`}
-              stats={filterStats.drop}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.drop}
             />
           )}
           <FilterColumn
@@ -4540,9 +5600,46 @@ export default function FineGridCanvas() {
             selected={[symbolFloor]}
             onChange={(next) => setSymbolFloor(next[0])}
             format={(value) => `>${value}`}
+            moneyMode={showMode === "pnl"}
             stats={filterStats.symbol}
             exclusive
           />
+          {FILLERS.length > 0 ? (
+            <FilterColumn
+              label="Stop filler"
+              options={FILLERS}
+              selected={[filler]}
+              onChange={(next) => setFiller(next[0])}
+              format={(value) => (value === "none" ? "no SPY" : value)}
+              moneyMode={showMode === "pnl"}
+            stats={filterStats.filler}
+              exclusive
+            />
+          ) : null}
+          {RULES.length > 0 ? (
+            <FilterColumn
+              label="Sell pick"
+              options={RULES}
+              selected={[rule]}
+              onChange={(next) => setRule(next[0])}
+              format={(value) => (value === "dls" ? "dls" : "ls")}
+              moneyMode={showMode === "pnl"}
+              stats={filterStats.rule}
+              exclusive
+            />
+          ) : null}
+          {SIZES.length > 0 ? (
+            <FilterColumn
+              label={SIZES.includes("at") ? "Strength" : "Lot size"}
+              options={SIZES}
+              selected={[sizeMode]}
+              onChange={(next) => setSizeMode(next[0])}
+              format={(value) => lotSizeLabel(value)}
+              moneyMode={showMode === "pnl"}
+              stats={filterStats.size}
+              exclusive
+            />
+          ) : null}
         </Grid>
         <FilterGroup
           label="Show"
@@ -4724,7 +5821,7 @@ export default function FineGridCanvas() {
                     )}
                     {view.sells.flatMap(({ sell, col }, sellIndex) => {
                       const name = `${buyLabel(buy)} · ${sellLabel(sell)}`;
-                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · avg lot ${lotMoney(AVGLOT[row][col])}`;
+                      const title = `${name} · ${FROM[row][col]} → ${TO[row][col]} · ${EXPOSED[row][col]} days exposed · ${LOTDAYS[row][col]} lot-days · ${share(LOTDAYUTIL[row][col])} of lot-days invested · avg lot ${lotMoney(AVGLOT[row][col])}`;
                       return pair(name, ROI[row][col], PNL[row][col], title, sellIndex === 0);
                     })}
                   </tr>
@@ -4741,27 +5838,59 @@ export default function FineGridCanvas() {
 
       {filled ? (
         <Stack gap={8}>
-          <H2>Lot exposure on the best returns</H2>
+          <H2>{byMoney ? "Lot exposure on the largest stock P&L" : "Lot exposure on the best returns"}</H2>
           <Text size="small" tone="secondary">
-            Top 30 visible cells by return on invested. Days exposed are distinct calendar days
-            with a lot open. Lot-days are the sum of each lot's calendar hold. A 3-day lot, a
-            1-day lot, and another 3-day lot are 6 lot-days.
+            {byMoney
+              ? "Top 30 visible cells by stock P&L. "
+              : "Top 30 visible cells by return on invested. "}
+            Days utilized are distinct calendar days with a lot open. Lots utilized is the
+            average share of the lot count that was open, including empty days. Lot-days are the
+            sum of each lot's calendar hold. A 3-day lot, a 1-day lot, and another 3-day lot are
+            6 lot-days. Lot-days invested is that sum divided by the lot count times the calendar
+            days in the test, so a full book held every day is 100%. The lowest
+            upside pill is the floor, and it includes 0% when that cut is in the run.
           </Text>
           <Table
-            headers={["Sell", "Buy", "On invested", "Stock P&L", "Trade window", "Days exposed", "Lot-days", "Avg lot", "Win", "Lots"]}
-            columnAlign={["left", "left", "right", "right", "left", "right", "right", "right", "right", "right"]}
-            rows={ranked.map((cell) => [
-              cell.sell,
-              cell.buy,
-              pct(cell.roi),
-              money(cell.pnl),
-              `${cell.from} → ${cell.to}`,
-              String(cell.exposed),
-              String(cell.lotDays),
-              lotMoney(cell.avgLot),
-              pct(cell.win),
-              `${cell.closed}c/${cell.open}o`,
-            ])}
+            headers={
+              SELL_MODE === "book"
+                ? ["Sell", "Buy", "On invested", "Stock P&L", "Trade window", "Days utilized", "Lots utilized", "Lot-days", "Lot-days invested", "Avg lot", "Win", "Lots"]
+                : ["Sell", "Buy", "On invested", "Stock P&L", "Trade window", "Days utilized", "Lots utilized", "Lot-days", "Avg lot", "Win", "Lots"]
+            }
+            columnAlign={
+              SELL_MODE === "book"
+                ? ["left", "left", "right", "right", "left", "right", "right", "right", "right", "right", "right", "right"]
+                : ["left", "left", "right", "right", "left", "right", "right", "right", "right", "right", "right"]
+            }
+            rows={ranked.map((cell) =>
+              SELL_MODE === "book"
+                ? [
+                    cell.sell,
+                    cell.buy,
+                    pct(cell.roi),
+                    money(cell.pnl),
+                    `${cell.from} → ${cell.to}`,
+                    String(cell.exposed),
+                    pct(cell.lotsUtil),
+                    String(cell.lotDays),
+                    share(cell.lotDayUtil),
+                    lotMoney(cell.avgLot),
+                    pct(cell.win),
+                    `${cell.closed}c/${cell.open}o`,
+                  ]
+                : [
+                    cell.sell,
+                    cell.buy,
+                    pct(cell.roi),
+                    money(cell.pnl),
+                    `${cell.from} → ${cell.to}`,
+                    String(cell.exposed),
+                    pct(cell.lotsUtil),
+                    String(cell.lotDays),
+                    lotMoney(cell.avgLot),
+                    pct(cell.win),
+                    `${cell.closed}c/${cell.open}o`,
+                  ],
+            )}
             striped
             stickyHeader
           />
@@ -4864,10 +5993,14 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                     "t": 0,
                     "d": _pct_number(spec.drawdown),
                     "p": _pct_number(spec.profit_protect),
+                    "f": spec.filler or "",
+                    "r": spec.loss_mode or "",
+                    "z": spec.lot_mode or "",
+                    "m": round(float(spec.lot_amount), 2) if spec.lot_amount else 0,
                 }
             )
         elif slots_mode:
-            sell_rows.append({"h": int(spec.slots), "t": 0, "d": 0, "p": 0})
+            sell_rows.append({"h": int(spec.slots), "t": 0, "d": 0, "p": 0, "f": "", "r": "", "z": "", "m": round(float(spec.lot_amount), 2) if spec.lot_amount else 0})
         elif protect_mode:
             sell_rows.append(
                 {
@@ -4875,6 +6008,10 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                     "t": 0,
                     "d": _pct_number(spec.drawdown),
                     "p": _pct_number(spec.profit_protect),
+                    "f": "",
+                    "r": "",
+                    "z": "",
+                    "m": 0,
                 }
             )
         else:
@@ -4884,9 +6021,13 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                     "t": int(round(spec.target_frac * 100)),
                     "d": _pct_number(spec.drawdown),
                     "p": 0,
+                    "f": "",
+                    "r": "",
+                    "z": "",
+                    "m": 0,
                 }
             )
-    matrices = {key: [] for key in ("roi", "pnl", "exposed", "lotDays", "avgLot", "win", "closed", "open")}
+    matrices = {key: [] for key in ("roi", "pnl", "exposed", "lotUtil", "lotDays", "lotDayUtil", "avgLot", "win", "closed", "open")}
     windows_from = []
     windows_to = []
     for buy in buys:
@@ -4901,7 +6042,9 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
             block["roi"].append(round(float(row["return_on_avg_invested_pct"]), 4))
             block["pnl"].append(round(float(row["stock_pnl"]), 2))
             block["exposed"].append(int(row["days_exposed"]))
+            block["lotUtil"].append(round(float(row["avg_invested_pct"]), 4))
             block["lotDays"].append(int(row["lot_days"]))
+            block["lotDayUtil"].append(round(float(row.get("lot_days_util_pct") or 0.0), 4))
             block["avgLot"].append(round(float(row["avg_lot_amount"]), 2))
             block["win"].append(round(float(row["win_rate_pct"]), 4))
             block["closed"].append(int(row["n_closed"]))
@@ -4923,10 +6066,36 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
     targets = sorted({sell["t"] for sell in sell_rows})
     drops = sorted({sell["d"] for sell in sell_rows}, key=float)
     protects = sorted({sell["p"] for sell in sell_rows}, key=float)
+    fillers = []
+    rules = []
+    sizes = []
+    for spec in specs:
+        if spec.filler and spec.filler not in fillers:
+            fillers.append(spec.filler)
+        if spec.loss_mode and spec.loss_mode not in rules:
+            rules.append(spec.loss_mode)
+        if spec.lot_mode and spec.lot_mode not in sizes:
+            sizes.append(spec.lot_mode)
+    fixed = any(spec.lot_amount for spec in specs)
+    if fixed:
+        sizing = (
+            f"one book of ${BOOK_CASH:,.0f}. "
+            "The lot count splits that cash, so fewer lots means more dollars in each lot. "
+            + (
+                "Upside filter includes >0%. "
+                if 0 in upsides
+                else "Upside filter includes >10%. "
+            )
+        )
+    else:
+        sizing = "$5,000 per lot. "
     caption = (
         f"{' · '.join(signal_names())} · {info['start']} → {info['end']} · "
-        f"{info['trading_days']} trading days · $5,000 per lot. "
-        "Days exposed are calendar days with at least one lot open. "
+        f"{info['trading_days']} trading days · {sizing}"
+        "Days utilized are calendar days with at least one lot open. "
+        "Lots utilized is the average open lots divided by the lot count. "
+        "Lot-days invested is the sum of each lot's calendar hold divided by "
+        "the lot count times the calendar days in the test. "
         "Lot-days add each lot's calendar hold, so overlapping lots count again."
     )
     data = {
@@ -4939,6 +6108,9 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         "__TARGETS__": json.dumps(targets),
         "__DROPS__": json.dumps(drops),
         "__PROTECTS__": json.dumps(protects if protect_mode or book_mode else [0]),
+        "__FILLERS__": json.dumps(fillers),
+        "__RULES__": json.dumps(rules),
+        "__SIZES__": json.dumps(sizes),
         "__SELL_MODE__": json.dumps(
             "book" if book_mode else "slots" if slots_mode else "protect" if protect_mode else "hold"
         ),
@@ -4947,7 +6119,9 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         "__ROI__": json.dumps(matrices["roi"], separators=(",", ":")),
         "__PNL__": json.dumps(matrices["pnl"], separators=(",", ":")),
         "__EXPOSED__": json.dumps(matrices["exposed"], separators=(",", ":")),
+        "__LOTUTIL__": json.dumps(matrices["lotUtil"], separators=(",", ":")),
         "__LOTDAYS__": json.dumps(matrices["lotDays"], separators=(",", ":")),
+        "__LOTDAYUTIL__": json.dumps(matrices["lotDayUtil"], separators=(",", ":")),
         "__AVGLOT__": json.dumps(matrices["avgLot"], separators=(",", ":")),
         "__WIN__": json.dumps(matrices["win"], separators=(",", ":")),
         "__CLOSED__": json.dumps(matrices["closed"], separators=(",", ":")),
@@ -4990,6 +6164,14 @@ def parse_args():
             "protect",
             "slots",
             "book",
+            "park",
+            "fillers",
+            "scale",
+            "cash",
+            "fixed",
+            "formulas",
+            "counts",
+            "low",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -5026,17 +6208,66 @@ def parse_args():
     return p.parse_args()
 
 
+def append_filler_comparison(path, rows):
+    """Same-sell and best-sell results for each stop filler, next to the prior SPY run."""
+    buy = "yahoo-daily · analyst>2 · proj>20%"
+    same_sell = "10dd 10pp · 4 lots"
+    lines = [
+        "",
+        "## Stop filler vs SPY",
+        "",
+        "Free leftover slots stay TQQQ. The stop filler is the ETF that replaces SPY. "
+        "On this buy, the prior SPY filler at 10dd 10pp · 4 lots was +25.9% and +$5,185.",
+        "",
+        "| Stop filler | 10dd 10pp · 4 lots | P&L | Best trusted sell | Best return | Best P&L |",
+        "| --- | ---: | ---: | --- | ---: | ---: |",
+        "| SPY (prior) | +25.9% | +$5,185 | 10dd 10pp · 4 lots | +25.9% | +$5,185 |",
+    ]
+    for filler in FILLERS:
+        subset = [
+            row
+            for row in rows
+            if row.get("buy_label") == buy and str(row.get("short", "")).endswith(f" · {filler}")
+        ]
+        if not subset:
+            continue
+        best = max(subset, key=lambda row: (row["return_on_avg_invested_pct"], row["stock_pnl"]))
+        same = next(row for row in subset if row["short"] == f"{same_sell} · {filler}")
+        best_sell = best["short"][: -len(f" · {filler}")]
+        lines.append(
+            f"| {filler} | {same['return_on_avg_invested_pct']:+.1f}% | {money(same['stock_pnl'])} | "
+            f"{best_sell} | {best['return_on_avg_invested_pct']:+.1f}% | {money(best['stock_pnl'])} |"
+        )
+    path.write_text(path.read_text() + "\n".join(lines) + "\n")
+
+
 def main():
     args = parse_args()
     if args.phase == "full" and not args.signal_names:
         set_signal_names(FULL_SIGNAL_NAMES)
-    elif args.phase == "book" and not args.signal_names:
+    elif args.phase in ("book", "park", "fillers", "scale", "cash", "fixed", "formulas", "counts", "low") and not args.signal_names:
         set_signal_names(("yahoo-daily",))
     elif args.signal_names:
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase == "book":
+    if args.phase == "low":
+        prefix = OUT_DIR / LOW_STEM
+    elif args.phase == "counts":
+        prefix = OUT_DIR / COUNT_STEM
+    elif args.phase == "formulas":
+        prefix = OUT_DIR / FORMULA_STEM
+    elif args.phase == "fixed":
+        prefix = OUT_DIR / SPLIT_STEM
+    elif args.phase == "cash":
+        prefix = OUT_DIR / CASH_STEM
+    elif args.phase == "scale":
+        prefix = OUT_DIR / SCALE_STEM
+    elif args.phase == "fillers":
+        prefix = OUT_DIR / FILLER_STEM
+    elif args.phase == "park":
+        prefix = OUT_DIR / PARK_STEM
+    elif args.phase == "book":
         prefix = OUT_DIR / BOOK_STEM
     elif args.phase == "slots":
         prefix = OUT_DIR / SLOTS_STEM
@@ -5076,6 +6307,476 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "low":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_low(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "low.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo upside above 0%, fixed $320,000, no SPY or TQQQ",
+        )
+        specs = formula_sell_grid()
+        notes = [
+            "yahoo-daily only. Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30/40/50%.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/24/32/48/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Signals now include 1 and 2 analysts, and projected upside above 0% "
+            "rather than only above 10%.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10). "
+            "sqra is floor(analysts²). "
+            "a is floor(analysts × 3). "
+            "sqra_target is floor(analysts² × target percent / 40).",
+            "ls sells the biggest loss. dls sells the loss divided by calendar "
+            "days held. If every stock lot is in profit, the least profitable "
+            "one is sold only when its strength is strictly below the new signal.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%.",
+            "The Upside pills include >0%. The Analyst pills include >0 and >1. "
+            "The Strength pills are at, sqra, a, and sqra_target. Trusted cells "
+            "have at least 30 signals.",
+            "The published formulas cell 7.5dd 2.5pp · 16 × $20,000 · ls · sqra "
+            "on analyst >3 · proj >10% was +207.4% and +$186,593.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            low_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in low_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "counts":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_counts(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "counts.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo analyst counts, fixed $320,000, no SPY or TQQQ",
+        )
+        specs = formula_sell_grid()
+        notes = [
+            "yahoo-daily only. Analyst >0/>1/>2/>3/>4 × projected >10/20/30/40/50%.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/24/32/48/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10). "
+            "sqra is floor(analysts²). "
+            "a is floor(analysts × 3). "
+            "sqra_target is floor(analysts² × target percent / 40). "
+            "One analyst is 1 lot for at at 10%, 1 lot for sqra, 3 lots for a, "
+            "and 1 lot for sqra_target at 10%.",
+            "ls sells the biggest loss. dls sells the loss divided by calendar "
+            "days held. If every stock lot is in profit, the least profitable "
+            "one is sold only when its strength is strictly below the new signal.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%. "
+            "Lots utilized is the average open lots divided by the lot count.",
+            "The Upside filter includes >10%. The Analyst pills include >0 and >1. "
+            "The Strength pills are at, sqra, a, and sqra_target. Trusted cells "
+            "have at least 30 signals. Show $ switches the filter figures and "
+            "the top 30 to stock P&L.",
+            "The published formulas cell 7.5dd 2.5pp · 16 × $20,000 · ls · sqra "
+            "on analyst >3 · proj >10% was +207.4% and +$186,593.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            count_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in count_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "formulas":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_formulas(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "formulas.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo strength formulas, fixed $320,000, no SPY or TQQQ",
+        )
+        specs = formula_sell_grid()
+        notes = [
+            "yahoo-daily only. Analyst >2/>3/>4 × projected >10/20/30/40/50%.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/24/32/48/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10): 2 analysts and 10% is 2 lots, "
+            "4 analysts and 40% is 16. "
+            "sqra is floor(analysts²): 2 analysts is 4 lots, 4 is 16. "
+            "a is floor(analysts × 3): 2 analysts is 6 lots, 4 is 12. "
+            "sqra_target is floor(analysts² × target percent / 40): "
+            "2 analysts and 10% is 1 lot, 3 analysts and 30% is 6, 4 analysts and 40% is 16.",
+            "ls sells the biggest loss. dls sells the loss divided by calendar "
+            "days held. If every stock lot is in profit, the least profitable "
+            "one is sold only when its strength is strictly below the new signal.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%. "
+            "Lots utilized is the average open lots divided by the lot count.",
+            "The Upside filter includes >10%. The Strength pills are at, sqra, a, "
+            "and sqra_target. Trusted cells have at least 30 signals. Show $ "
+            "switches the filter figures and the top 30 to stock P&L.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            cash_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in cash_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "fixed":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_fixed_book(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "fixed.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo strength book, fixed $320,000, no SPY or TQQQ",
+        )
+        specs = split_sell_grid()
+        notes = [
+            "yahoo-daily only. Analyst >2/>3/>4 × projected >10/20/30/40/50%.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/24/32/48/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Every signal opens floor(analysts × target percent / 10) lots, "
+            "at least 1 and at most 16. There is no one-lot size.",
+            "ls sells the biggest loss. dls sells the loss divided by calendar "
+            "days held. If every stock lot is in profit, the least profitable "
+            "one is sold only when its strength is strictly below the new signal.",
+            "Lots utilized is the average open lots divided by the lot count, "
+            "over every trading day, including empty days. Days utilized is "
+            "the count of calendar days with at least one lot open.",
+            "The Upside filter includes >10%. Trusted cells have at least 30 "
+            "signals. Show $ switches the filter figures and the top 30 to "
+            "stock P&L.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            cash_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="str",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in cash_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "cash":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_cash(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "cash.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo strength book, cash only, no SPY or TQQQ",
+        )
+        specs = cash_sell_grid()
+        notes = [
+            "yahoo-daily only. Analyst >2/>3/>4 × projected >10/20/30/40/50%.",
+            "Book size 8/12/16/24/32/48/64 lots of $5,000. Loss dropdown "
+            "1.25/2.5/7.5/10. Profit protection 2.5/5/10/20/30.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused for a new ticker stays cash. Uninvested money is cash, not "
+            "a SPY sleeve.",
+            "Every signal opens floor(analysts × target percent / 10) lots, "
+            "at least 1 and at most 16. There is no one-lot size.",
+            "ls sells the biggest loss. dls sells the loss divided by calendar "
+            "days held, with a same-day lot counted as one day. If every stock "
+            "lot is in profit, the least profitable one is sold only when its "
+            "strength is strictly below the new signal.",
+            "Trusted cells have at least 30 signals. The Lots pills are "
+            "8, 12, 16, 24, 32, 48, and 64. Show $ switches the filter figures "
+            "and the top 30 to stock P&L.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            cash_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="str",
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in cash_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "scale":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_scale(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "scale.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo 64-lot book, SPY filler, daily loss, strength lots",
+        )
+        specs = scale_sell_grid()
+        notes = [
+            "yahoo-daily only. Winner buys: analyst >2/>3/>4 × projected >20/30/40/50%.",
+            "One book of 64 lots of $5,000. Loss dropdown 1.25/2.5/7.5/10. "
+            "Profit protection 2.5/5/10/20/30. Stops do not apply to SPY or TQQQ.",
+            "Free leftover slots hold TQQQ. SPY filler on: a stop that is not reused "
+            "for a new ticker buys SPY, and a new buy sells SPY before TQQQ. "
+            "SPY filler off: that slot stays empty.",
+            "ls sells the biggest loss. dls sells the loss divided by calendar days "
+            "held, with a same-day lot counted as one day. If every stock lot is in "
+            "profit, the least profitable one is sold only when its strength is "
+            "strictly below the new signal.",
+            "Lot size 1 opens one lot per signal. Strength opens "
+            "floor(analysts × target percent / 10) lots, at least 1 and at most 16. "
+            "Two analysts and 10% is 2 lots. Four analysts and 40% is 16.",
+            "Trusted cells have at least 30 signals. Show $ switches the filter "
+            "figures and the top 30 to stock P&L.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.025,
+                profit_protect=0.10,
+                slots=SCALE_SLOTS,
+                filler="SPY",
+                loss_mode="ls",
+                lot_mode="1",
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "fillers":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_fillers(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "fillers.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo book, stop filler instead of SPY",
+        )
+        specs = filler_sell_grid()
+        notes = [
+            "yahoo-daily only. Winner buys: analyst >2/>3/>4 × projected >20/30/40/50%.",
+            "Same book as the SPY and TQQQ filler run. Loss dropdown 1.25/2.5/7.5/10. "
+            "Profit protection 2.5/5/10/20/30. Book size 4/6/8/12/16/20. "
+            "Stops do not apply to filler lots.",
+            "A slot still empty after the day's stock buys holds TQQQ. A slot freed "
+            "by a stop and not reused for a new ticker holds the stop filler: "
+            "VOO, SSO, UPRO, SPXL, QQQ, QLD, or TQQQ. A new buy sells that filler "
+            "before it sells TQQQ, and TQQQ before it sells a stock.",
+            "The cash sleeve stays SPY. A filler lot is a separate $5,000 position.",
+            "Trusted cells have at least 30 signals. The Stop filler pill on the "
+            "canvas is one ETF at a time. Its min, avg, and max are that ETF "
+            "with the other filters applied.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold. Filler lots are included "
+            "in the stock P&L.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            specs,
+            SellSpec(drawdown=0.10, profit_protect=0.10, slots=4, filler="VOO"),
+        )
+        append_filler_comparison(report_path, rows)
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "park":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_park(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "park.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Yahoo book with SPY and TQQQ fillers",
+        )
+        notes = [
+            "yahoo-daily only. Winner buys: analyst >2/>3/>4 × projected >20/30/40/50%.",
+            "Loss dropdown, while the close is below the entry: 1.25dd, 2.5dd, "
+            "7.5dd, 10dd from that entry. Profit protection, once a close has "
+            "traded above the entry: 2.5pp, 5pp, 10pp, 20pp, 30pp of the gain "
+            "from entry to the highest close. Stops are checked before new signals "
+            "and do not apply to SPY or TQQQ lots. A new high does not sell.",
+            "Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A signal buys "
+            "at that close when a slot is free. Two signals on the same ticker "
+            "can both hold a slot.",
+            "A slot still empty after the day's stock buys holds TQQQ. A slot "
+            "freed by a stop and not reused for a new ticker holds SPY. A new "
+            "buy sells a SPY lot before it sells TQQQ, and TQQQ before it sells "
+            "a stock.",
+            "When the book is full of stocks and any lot is at a loss, sell the "
+            "biggest loss and buy the new signal. When every stock lot is in "
+            "profit, sell the least profitable one only if its strength is "
+            "strictly below the new signal. Strength is sqrt(analysts, capped at "
+            "10) times the target percent floored to 10-point steps.",
+            "Same-day signals are taken strongest first. A filler that is never "
+            "sold stays open through the last quote day.",
+            "Trusted cells have at least 30 signals. Smaller cells stay in the matrices.",
+            "Signals dated after --end are dropped.",
+            "Days exposed counts calendar days with at least one lot open. "
+            "Lot-days sums each lot's calendar hold, so overlapping lots count again. "
+            "SPY and TQQQ lots are included in the stock P&L.",
+            "Comparison is on invested dollars, not book vs SPY.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            winners_buy_grid(),
+            book_sell_grid(),
+            SellSpec(drawdown=0.025, profit_protect=0.05, slots=8),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in winners_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(
+            prefix,
+            rows,
+            signals,
+            canvas_buys,
+            book_sell_grid(),
+            info,
+        )
+        return
 
     if args.phase == "book":
         position_path = Path(f"{prefix}.csv")

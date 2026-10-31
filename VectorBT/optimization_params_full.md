@@ -40,6 +40,24 @@ Phase `protect` is a different sell, not part of that 30. No hold and no target.
 
 Phase `book` is yahoo-daily only. It keeps the slot rule and sweeps book size `4` `6` `8` `12` `16` `20`, loss dropdown `1.25dd` `2.5dd` `7.5dd` `10dd`, and profit protection `2.5pp` `5pp` `10pp` `20pp` `30pp`.
 
+Phase `park` is that same grid. A leftover slot holds TQQQ. A stop that is not reused for a new ticker holds SPY. A new buy sells SPY before TQQQ, and TQQQ before a stock.
+
+Phase `fillers` repeats that grid with the stop filler set to `VOO` `SSO` `UPRO` `SPXL` `QQQ` `QLD` `TQQQ` instead of SPY. Free leftover slots stay TQQQ.
+
+Phase `scale` is yahoo-daily with 64 lots. The stop filler is `SPY` or `none`. `ls` sells the biggest loss and `dls` sells loss per day held. Lot size `1` is one lot; `str` is `floor(analysts × target percent / 10)` lots, capped at 16.
+
+Phase `cash` is yahoo-daily with no SPY and no TQQQ. Empty slots and stopped slots stay cash, and the cash sleeve is cash. Lot size is only `str`. Book size is `8` `12` `16` `24` `32` `48` `64`, each lot still $5,000, so the total cash changes with the lot count.
+
+Phase `fixed` is that same stock-only book with the total held at $320,000. The lot count splits that cash: 8 lots are $40,000 each and 64 lots are $5,000 each. Buys include projected `>10%`.
+
+Phase `formulas` keeps that fixed book and sweeps four lot sizes: `at` is `floor(analysts × target percent / 10)`, `sqra` is `floor(analysts²)`, `a` is `floor(analysts × 3)`, and `sqra_target` is `floor(analysts² × target percent / 40)`. Each is at least 1 lot and at most 16. Lot-days invested is invested lot-days divided by slots times the calendar days in the test.
+
+Phase `counts` keeps that formula grid and adds analyst `>0` and `>1` beside `>2` `>3` `>4`.
+
+Phase `low` keeps that grid and adds projected `>0%` beside `>10%` `>20%` `>30%` `>40%` `>50%`. The export in `etl/etl.sql` keeps rows with projected upside above 0%.
+
+Phase `books` keeps that grid and runs every signal name in that export: `yahoo-daily`, `yahoo-7d-window`, `google-daily`, `google-7d-window`, `tipranks-daily`, `tipranks-7d-window`, `all_sources-daily`, `all_sources-7d-window`, `yahoo_and_google-daily`, and `yahoo_and_google-7d-window`. Each cell is one book.
+
 ## Lots
 
 Each signal opens a lot. A later signal while held resets the hold and the target; the peak stays since entry. `--one-lot` keeps one open lot per ticker: a later buy only restarts the hold, and the next signal after a close opens a new lot.

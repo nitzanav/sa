@@ -231,6 +231,109 @@ Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A free slot takes the signal
 
 The canvas pills are Loss dd, Profit protect, and Lots. Signal, analysts, upside, and symbols stay on the left.
 
+## Yahoo park
+
+Same yahoo-daily grid as the Yahoo book. Empty capacity is filled at the close.
+
+A slot still empty after the day's stock buys holds TQQQ. A slot freed by a stop and not reused for a new ticker holds SPY. A new buy sells a SPY lot before it sells TQQQ, and TQQQ before it sells a stock. Stops do not apply to SPY or TQQQ. Anchor sell is `2.5dd 5pp · 8 lots`.
+
+```bash
+./penv python VectorBT/optimize.py park \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Stop fillers
+
+Same yahoo park grid. Free leftover slots stay TQQQ. The stop filler, the lot bought when a stop is not reused for a new ticker, is swept in place of SPY: `VOO`, `SSO`, `UPRO`, `SPXL`, `QQQ`, `QLD`, `TQQQ`. A new buy sells that filler before TQQQ, and TQQQ before a stock. 12 buys × 120 sells × 7 fillers = 10,080 cells. The canvas Stop filler pill selects one ETF.
+
+```bash
+./penv python VectorBT/optimize.py fillers \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## 64-lot scale
+
+yahoo-daily, one book of 64 lots. Free leftover slots hold TQQQ. The stop filler is `SPY` or `none`. With SPY, a stop that is not reused buys SPY and a new buy sells that lot first. Without SPY, that slot stays empty. `ls` sells the biggest loss. `dls` sells that loss divided by calendar days held. Lot size `1` opens one lot. `str` opens `floor(analysts × target percent / 10)` lots, from 1 to 16. 12 buys × 20 sells × 2 fillers × 2 sell picks × 2 lot sizes = 1,920 cells.
+
+```bash
+./penv python VectorBT/optimize.py scale \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Cash book
+
+yahoo-daily. No SPY and no TQQQ. An empty slot stays cash, a stop that is not reused stays cash, and uninvested money is cash rather than a SPY sleeve. Every signal opens `floor(analysts × target percent / 10)` lots, from 1 to 16. There is no one-lot size. Book size is 8/12/16/24/32/48/64. `ls` sells the biggest loss. `dls` sells that loss per day held. Buys are analyst >2/>3/>4 × projected >10/20/30/40/50%. 15 buys × 280 sells = 4,200 cells. The canvas Lots pills are those seven book sizes, and Upside includes >10%.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_1536_UTC+2_yahoo-cash-strength__optimize.py cash \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Fixed book
+
+Same stock-only rules as the cash book, with one change: the cash is always $320,000. The lot count splits that cash. Eight lots are $40,000 each. Sixty-four lots are $5,000 each. Counts are 8/12/16/24/32/48/64. Buys include projected >10%. The Upside filter pill is `>10%`. Lots utilized is the average open lots divided by the lot count. Days utilized is the count of calendar days with at least one lot open.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_1552_UTC+2_yahoo-split-lots__optimize.py fixed \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Strength formulas
+
+Same fixed $320,000 stock-only book as `fixed`. The lot size is one of four formulas, each at least 1 lot and at most 16.
+
+- `at`: `floor(analysts × target percent / 10)`. Two analysts and 10% is 2 lots. Four analysts and 40% is 16.
+- `sqra`: `floor(analysts²)`. Two analysts is 4 lots. Four is 16.
+- `a`: `floor(analysts × 3)`. Two analysts is 6 lots. Four is 12.
+- `sqra_target`: `floor(analysts² × target percent / 40)`. Two analysts and 10% is 1 lot. Three analysts and 30% is 6. Four analysts and 40% is 16.
+
+15 buys × 1,120 sells = 16,800 cells. The canvas Strength pills are those four names. Lot-days invested is invested lot-days divided by the lot count times the calendar days in the test. A full book held every day is 100%.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_1631_UTC+2_yahoo-strength-formulas__optimize.py formulas \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Analyst counts
+
+Same fixed book and the same four strength formulas as `formulas`. Analyst cuts add `>0` and `>1` beside `>2`, `>3`, and `>4`. Projected cuts stay `>10/20/30/40/50%`. 25 buys × 1,120 sells = 28,000 cells. The published `sqra` cell on analyst `>3` · projected `>10%` · `7.5dd 2.5pp` · 16 × $20,000 · `ls` was +207.4% and +$186,593.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_2040_UTC+2_yahoo-analyst-counts__optimize.py counts \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## Upside above 0%
+
+Same fixed book, same four strength formulas, and the same analyst cuts as `counts`, including `>0` and `>1`. Projected cuts add `>0%` beside `>10/20/30/40/50%`. The signal export keeps projected upside above 0%, so 1- and 2-analyst rows between 0% and 10% stay in `data/signals.csv`. 30 buys × 1,120 sells = 33,600 cells. The canvas Upside pill includes `>0%`.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_2101_UTC+2_yahoo-upside-0__optimize.py low \
+  --signal-name yahoo-daily \
+  --end 2026-10-26
+```
+
+## All signal books
+
+Same fixed book, same four strength formulas, same analyst cuts, and same projected cuts as `low`, including `>0` and `>0%`. The books are every name in the `etl/etl.sql` export: `yahoo-daily`, `yahoo-7d-window`, `google-daily`, `google-7d-window`, `tipranks-daily`, `tipranks-7d-window`, `all_sources-daily`, `all_sources-7d-window`, `yahoo_and_google-daily`, and `yahoo_and_google-7d-window`. Each cell is one book. 300 buys × 1,120 sells = 336,000 cells. The canvas Signal pills are those ten names.
+
+```bash
+./penv python VectorBT/simulation_2026-10-27_2202_UTC+2_all-signal-books__optimize.py books \
+  --signal-name yahoo-daily --signal-name yahoo-7d-window \
+  --signal-name google-daily --signal-name google-7d-window \
+  --signal-name tipranks-daily --signal-name tipranks-7d-window \
+  --signal-name all_sources-daily --signal-name all_sources-7d-window \
+  --signal-name yahoo_and_google-daily --signal-name yahoo_and_google-7d-window \
+  --end 2026-10-26
+```
+
 ## Eight-lot book
 
 Same daily books and the same winner buys. One sell: a book of 8 lots. 5 books × 12 buys = 60 cells. There is no hold, no profit target, and no drawdown.
