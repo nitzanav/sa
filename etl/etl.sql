@@ -1,3 +1,5 @@
+-- NOTE: signal dates are session-aligned; weekend/holiday rows are shifted back
+-- onto the prior session (lookahead, see the shift comment).
 CREATE TABLE IF NOT EXISTS raw_signals (
   source varchar,
   date date,
@@ -32,30 +34,12 @@ TRUNCATE _load;
 \copy _load FROM 'data/analyst_recomendation/tipranks/all_symbols.csv' CSV HEADER
 INSERT INTO _raw_signals SELECT 'tipranks', * FROM _load;
 
--- One range for every source: latest start through earliest end.
-DROP TABLE IF EXISTS _windows;
-CREATE TABLE _windows AS
-SELECT MAX(min_date) AS start_date, MIN(max_date) AS end_date
-FROM (
-  SELECT MIN(date) AS min_date, MAX(date) AS max_date
-  FROM _raw_signals
-  GROUP BY source
-) s;
-
-INSERT INTO raw_signals
-SELECT r.*
-FROM _raw_signals r
-JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date;
-
-INSERT INTO raw_signals
-SELECT 'yahoo_and_tipranks', date, ticker, analyst, percent, projected_price
-FROM raw_signals
-WHERE source IN ('yahoo', 'tipranks');
-
-INSERT INTO raw_signals
-SELECT 'yahoo_and_google', date, ticker, analyst, percent, projected_price
-FROM raw_signals
-WHERE source IN ('yahoo', 'google');
+DO $$ BEGIN
+  IF (SELECT MIN(date) - 30 FROM _raw_signals) < DATE '2024-01-01'
+     OR (SELECT MAX(date) FROM _raw_signals) > DATE '2026-12-31' THEN
+    RAISE EXCEPTION '_raw_signals fall outside the 2024-2026 Nasdaq holiday list';
+  END IF;
+END $$;
 
 -- ---------------------------------------------------------------------
 -- NASDAQ trading calendar (explicit, independent of the data)
@@ -109,37 +93,89 @@ DROP VIEW IF EXISTS signal_score_nd_window CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date_7d_window CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date_nd_window CASCADE;
+DROP VIEW IF EXISTS signals_dedup CASCADE;
 DROP TABLE IF EXISTS _trading_days;
 CREATE TABLE _trading_days AS
 SELECT d::date AS date, ROW_NUMBER() OVER (ORDER BY d) AS day_idx
 FROM generate_series(
-       (SELECT MIN(date) FROM raw_signals)::timestamp - INTERVAL '30 days',
-       (SELECT MAX(date) FROM raw_signals)::timestamp,
+       (SELECT MIN(date) FROM _raw_signals)::timestamp - INTERVAL '30 days',
+       (SELECT MAX(date) FROM _raw_signals)::timestamp,
        INTERVAL '1 day') AS g(d)
 WHERE EXTRACT(ISODOW FROM d) < 6
   AND d::date NOT IN (SELECT date FROM _nasdaq_holidays);
 CREATE INDEX ON _trading_days(date);
 
+-- Sat/Sun/holiday rows count as the last session before them (Fri stays Fri).
+-- Intentional, with a known LOOKAHEAD: a Friday signal includes rows published
+-- Sat/Sun (or on the holiday) after Friday's close. Any backtest that trades on
+-- the Friday signal must account for this (e.g., act at the next session's
+-- open, not Friday's close). Not a bug.
+UPDATE _raw_signals r
+SET date = (SELECT MAX(t.date) FROM _trading_days t WHERE t.date <= r.date);
+
+DO $$ BEGIN
+  IF EXISTS (SELECT 1 FROM _raw_signals WHERE date IS NULL) THEN
+    RAISE EXCEPTION 'date shift produced NULL';
+  END IF;
+END $$;
+
+-- One range for every source: latest start through earliest end.
+DROP TABLE IF EXISTS _windows;
+CREATE TABLE _windows AS
+SELECT MAX(min_date) AS start_date, MIN(max_date) AS end_date
+FROM (
+  SELECT MIN(date) AS min_date, MAX(date) AS max_date
+  FROM _raw_signals
+  GROUP BY source
+) s;
+
+INSERT INTO raw_signals
+SELECT r.*
+FROM _raw_signals r
+JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date;
+
+-- Combined books (yahoo_and_tipranks, yahoo_and_google) are deduped under their
+-- own source name. Intentional: the same projected_price on the same session
+-- from both underlying sources counts once, so a combined count is NOT the sum
+-- of the parts. Feature, not a bug.
+INSERT INTO raw_signals
+SELECT 'yahoo_and_tipranks', date, ticker, analyst, percent, projected_price
+FROM raw_signals
+WHERE source IN ('yahoo', 'tipranks');
+
+INSERT INTO raw_signals
+SELECT 'yahoo_and_google', date, ticker, analyst, percent, projected_price
+FROM raw_signals
+WHERE source IN ('yahoo', 'google');
+
+-- See the combined-books note above: cross-source duplicates collapse here too.
+-- Dedupe key is (source, ticker, date, projected_price), NOT analyst, for a
+-- real price. Intentional:
+--  * identical prices on the same session count once (incl. Fri/Sat/Sun rows
+--    shifted onto Friday), matching the old 1d rule.
+--  * an analyst whose price changed between Fri and Sun keeps both rows.
+--  * different analysts with the same price collapse to one (first by name).
+-- NULL projected_price: the source CSVs do contain empty prices (yahoo 71,
+-- google 1125, tipranks 962). DISTINCT ON would treat those NULLs as equal.
+-- Checked on the loaded window, including a weekend/holiday shift onto the
+-- prior session and the combined books: no (source, ticker, session) has more
+-- than one NULL price, so nothing is dropped today. NULL-price rows are still
+-- keyed by analyst so two missing prices are not collapsed into one opinion.
+-- Not a bug; do not add analyst to the non-NULL key without changing this decision.
+CREATE OR REPLACE VIEW signals_dedup AS
+SELECT DISTINCT ON (
+         source, ticker, date, projected_price,
+         CASE WHEN projected_price IS NULL THEN analyst END
+       )
+       source, ticker, date, analyst, percent, projected_price
+FROM raw_signals
+WHERE percent IS NOT NULL
+ORDER BY source, ticker, date, projected_price,
+         CASE WHEN projected_price IS NULL THEN analyst END,
+         analyst;
+
 -- 1a. Daily aggregation (MAD around the mean)
 CREATE OR REPLACE VIEW raw_signals_per_ticker_and_date AS
-SELECT
-  source,
-  date,
-  ticker,
-  AVG(percent) AS average_projected,
-  COUNT(distinct projected_price) AS analyst_projections_count, -- ignore analyst with same exact projected price
-  AVG(ABS(percent - mean_percent)) / ABS(AVG(mean_percent)) AS MAD,
-  STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
-  FROM (
-    SELECT
-      source, date, ticker, analyst, percent, projected_price,
-      AVG(percent) OVER (PARTITION BY source, date, ticker) AS mean_percent
-    FROM raw_signals
-  ) s
-GROUP BY source, date, ticker;
-
--- 1b. 7-day rolling window, calendar days (MAD around the window mean)
-CREATE OR REPLACE VIEW raw_signals_per_ticker_and_date_7d_window AS
 SELECT
   source,
   date,
@@ -150,15 +186,10 @@ SELECT
   STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY analyst) AS analyst_percent_list
   FROM (
     SELECT
-      a.source, a.date, a.ticker, b.analyst, b.percent,
-      AVG(b.percent) OVER (PARTITION BY a.source, a.date, a.ticker) AS mean_percent
-    FROM (SELECT DISTINCT source, ticker, date FROM raw_signals) a
-    JOIN raw_signals b
-      ON a.source = b.source
-     AND a.ticker = b.ticker
-     AND b.date BETWEEN a.date - INTERVAL '6 days' AND a.date
-    WHERE percent IS NOT NULL
-  ) w
+      source, date, ticker, analyst, percent, projected_price,
+      AVG(percent) OVER (PARTITION BY source, date, ticker) AS mean_percent
+    FROM signals_dedup
+  ) s
 GROUP BY source, date, ticker;
 
 -- 1c. N-trading-day rolling window, N = 2..5 (MAD around the window mean)
@@ -178,17 +209,16 @@ SELECT
       AVG(b.percent) OVER (PARTITION BY a.source, w.n, a.date, a.ticker) AS mean_percent
     FROM (
       SELECT DISTINCT r.source, r.ticker, r.date, t.day_idx
-      FROM raw_signals r
+      FROM signals_dedup r
       JOIN _trading_days t ON t.date = r.date
     ) a
     CROSS JOIN (VALUES (2), (3), (4), (5)) AS w(n)
     JOIN _trading_days tb
       ON tb.day_idx BETWEEN a.day_idx - (w.n - 1) AND a.day_idx
-    JOIN raw_signals b
+    JOIN signals_dedup b
       ON b.source = a.source
      AND b.ticker = a.ticker
      AND b.date = tb.date
-    WHERE b.percent IS NOT NULL
   ) x
 GROUP BY source, n, date, ticker;
 
@@ -204,20 +234,6 @@ SELECT
   average_projected * sqrt(analyst_projections_count) AS signal_score,
   analyst_percent_list
 FROM raw_signals_per_ticker_and_date
-WHERE average_projected > 0;
-
--- 2b. 7-day window scores
-CREATE OR REPLACE VIEW signal_score_7d_window AS
-SELECT
-  source,
-  date,
-  ticker,
-  average_projected,
-  analyst_projections_count,
-  MAD,
-  average_projected * sqrt(analyst_projections_count) * (1 - MAD) AS signal_score,
-  analyst_percent_list
-FROM raw_signals_per_ticker_and_date_7d_window
 WHERE average_projected > 0;
 
 -- 2c. N-trading-day window scores
@@ -253,13 +269,7 @@ FROM (
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_nd_window
-  UNION ALL
-  SELECT source || '-7d' AS signal_name,
-         date, ticker, average_projected, analyst_projections_count,
-         MAD, signal_score, analyst_percent_list
-  FROM signal_score_7d_window
 ) u;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
--- 1d and 7d only, so this export can be diffed against the previous signals.csv.
-\copy (SELECT * FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)-[17]d$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)-[1-5]d$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
