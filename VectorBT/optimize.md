@@ -22,7 +22,7 @@ Trusted cells have at least 30 signals. Smaller cells stay in the matrices and o
 
 ## Lot rules
 
-Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry.
+Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
 
 `--one-lot`: at most one open lot per ticker. A later buy **while that lot is open** does not open another lot; it restarts the hold clock (10/15/30/…) from that bar. The profit target and the drawdown peak stay on the original entry. After the lot has closed (time, target, or drawdown), the next buy opens a new lot. A closed position does not block the next one.
 
@@ -331,6 +331,26 @@ Same fixed book, same four strength formulas, same analyst cuts, and same projec
   --signal-name tipranks-daily --signal-name tipranks-7d-window \
   --signal-name all_sources-daily --signal-name all_sources-7d-window \
   --signal-name yahoo_and_google-daily --signal-name yahoo_and_google-7d-window \
+  --end 2026-10-26
+```
+
+## Daily books
+
+Same fixed $320,000 stock-only book and the same four strength formulas as `books`, on a smaller grid. The books are the five daily names: `yahoo-daily`, `google-daily`, `tipranks-daily`, `all_sources-daily`, and `yahoo_and_google-daily`. Analyst cuts stay `>0` `>1` `>2` `>3` `>4`. Projected cuts are `>0%` `>10%` `>20%` `>30%`. Lot counts are `8` `12` `16` `32` `64`. Loss dropdown stays `1.25%` `2.5%` `7.5%` `10%`. Profit protection is `2.5%` `5%` `10%` of the gain from entry to the high. The sell pick is `ls` only. 100 buys × 240 sells = 24,000 cells.
+
+Win rate counts positions, not lots. Lots opened together — the same ticker, buy date, and buy price — are one position. That position wins when the lots' P&L sums to more than zero. The top 30 table adds Symbols and Positions from that cell's lots. A ticker counts once when it has more than one lot or more than one signal. A position counts once for lots that share a ticker, buy date, and buy price.
+
+```bash
+./penv python VectorBT/simulation_2026-10-31_1925_UTC+2_daily-ls-books__optimize.py daily \
+  --end 2026-10-26
+```
+
+## 7-day books
+
+Same grid as `daily`, on the five 7-day books: `yahoo-7d-window`, `google-7d-window`, `tipranks-7d-window`, `all_sources-7d-window`, and `yahoo_and_google-7d-window`. Analyst cuts, projected cuts, lot counts, loss dropdown, profit protection, and `ls` stay the same. 100 buys × 240 sells = 24,000 cells. Win rate, Symbols, and Positions count the same way as the daily sweep.
+
+```bash
+./penv python VectorBT/simulation_2026-10-31_2043_UTC+2_7d-ls-books__optimize.py window \
   --end 2026-10-26
 ```
 

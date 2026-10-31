@@ -58,6 +58,12 @@ Phase `low` keeps that grid and adds projected `>0%` beside `>10%` `>20%` `>30%`
 
 Phase `books` keeps that grid and runs every signal name in that export: `yahoo-daily`, `yahoo-7d-window`, `google-daily`, `google-7d-window`, `tipranks-daily`, `tipranks-7d-window`, `all_sources-daily`, `all_sources-7d-window`, `yahoo_and_google-daily`, and `yahoo_and_google-7d-window`. Each cell is one book.
 
+Phase `daily` keeps the fixed $320,000 book and the four strength formulas, on the five daily books only: `yahoo-daily`, `google-daily`, `tipranks-daily`, `all_sources-daily`, and `yahoo_and_google-daily`. Analyst cuts stay `>0` `>1` `>2` `>3` `>4`. Projected cuts are `>0%` `>10%` `>20%` `>30%`. Lot counts are `8` `12` `16` `32` `64`. Loss dropdown stays `1.25dd` `2.5dd` `7.5dd` `10dd`. Profit protection is `2.5pp` `5pp` `10pp`. The sell pick is `ls` only. 100 buys × 240 sells = 24,000 cells.
+
+Phase `window` is that same grid on the five 7-day books: `yahoo-7d-window`, `google-7d-window`, `tipranks-7d-window`, `all_sources-7d-window`, and `yahoo_and_google-7d-window`.
+
+Win rate is the share of positions with positive P&L. Lots opened together — the same ticker, buy date, and buy price — are one position. The position wins when those lots' P&L sums to more than zero. A four-lot winner counts once.
+
 ## Lots
 
 Each signal opens a lot. A later signal while held resets the hold and the target; the peak stays since entry. `--one-lot` keeps one open lot per ticker: a later buy only restarts the hold, and the next signal after a close opens a new lot.
