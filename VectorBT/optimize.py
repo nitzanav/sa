@@ -102,6 +102,19 @@ narrows the grid. Books are the five daily names only. Projected cuts
 stop at >30%. Lot counts drop 24 and 48. Profit protection stops at 10%.
 The sell pick is ls only. Win rate counts a position once: lots opened
 together are one position.
+
+Phase window is that same daily grid on the five 7-day books:
+yahoo-7d-window, google-7d-window, tipranks-7d-window,
+all_sources-7d-window, and yahoo_and_google-7d-window.
+
+Phase horizon is that same fixed book on the 1–5 day books for yahoo,
+tipranks, and yahoo_and_tipranks. Loss dropdown adds 5%. Profit
+protection adds 7.5% of the gain from entry to the high.
+
+Phase recency is that same horizon grid on yahoo_and_tipranks_1d_recency
+through yahoo_and_tipranks_5d_recency. Older analyst points weigh
+2.5 / trading days back. A slot book never opens a second position on a
+ticker that is still held.
 """
 
 from __future__ import annotations
@@ -183,6 +196,35 @@ SIGNAL_NAME_CHOICES = SIGNAL_NAMES + (
     "all_sources-7d-window",
     "yahoo_and_google-daily",
     "yahoo_and_google-7d-window",
+    "yahoo-1d",
+    "yahoo-2d",
+    "yahoo-3d",
+    "yahoo-4d",
+    "yahoo-5d",
+    "google-1d",
+    "google-2d",
+    "google-3d",
+    "google-4d",
+    "google-5d",
+    "tipranks-1d",
+    "tipranks-2d",
+    "tipranks-3d",
+    "tipranks-4d",
+    "tipranks-5d",
+    "yahoo_and_google-1d",
+    "yahoo_and_google-2d",
+    "yahoo_and_google-3d",
+    "yahoo_and_google-4d",
+    "yahoo_and_google-5d",
+    "yahoo_and_tipranks-1d",
+    "yahoo_and_tipranks-2d",
+    "yahoo_and_tipranks-3d",
+    "yahoo_and_tipranks-4d",
+    "yahoo_and_tipranks-5d",
+) + tuple(
+    f"{source}_{day}d_recency"
+    for source in ("yahoo", "google", "tipranks", "yahoo_and_tipranks", "yahoo_and_google")
+    for day in range(1, 6)
 )
 FULL_SIGNAL_NAMES = (
     "all_sources-daily",
@@ -208,6 +250,9 @@ COUNT_STEM = "simulation_2026-10-27_2040_UTC+2_yahoo-analyst-counts__optimize"
 LOW_STEM = "simulation_2026-10-27_2101_UTC+2_yahoo-upside-0__optimize"
 BOOKS_STEM = "simulation_2026-10-27_2202_UTC+2_all-signal-books__optimize"
 DAILY_STEM = "simulation_2026-10-31_1925_UTC+2_daily-ls-books__optimize"
+WINDOW_STEM = "simulation_2026-10-31_2043_UTC+2_7d-ls-books__optimize"
+HORIZON_STEM = "simulation_2026-10-31_2359_UTC+2_1-5d-ls-books__optimize"
+RECENCY_STEM = "simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize"
 EXPORT_SIGNAL_NAMES = (
     "yahoo-daily",
     "yahoo-7d-window",
@@ -227,9 +272,26 @@ DAILY_SIGNAL_NAMES = (
     "all_sources-daily",
     "yahoo_and_google-daily",
 )
+WINDOW_SIGNAL_NAMES = (
+    "yahoo-7d-window",
+    "google-7d-window",
+    "tipranks-7d-window",
+    "all_sources-7d-window",
+    "yahoo_and_google-7d-window",
+)
 DAILY_SLOTS = (8, 12, 16, 32, 64)
 DAILY_PROTECTS = (0.025, 0.05, 0.10)
 DAILY_PROJECTED = (0, 10, 20, 30)
+HORIZON_SIGNAL_NAMES = tuple(
+    f"{source}-{day}d"
+    for source in ("yahoo", "tipranks", "yahoo_and_tipranks")
+    for day in range(1, 6)
+)
+RECENCY_SIGNAL_NAMES = tuple(
+    f"yahoo_and_tipranks_{day}d_recency" for day in range(1, 6)
+)
+HORIZON_DRAWDOWNS = (0.0125, 0.025, 0.05, 0.075, 0.10)
+HORIZON_PROTECTS = (0.025, 0.05, 0.075, 0.10)
 CASH_SLOTS = (8, 12, 16, 24, 32, 48, 64)
 BOOK_CASH = 64 * 5_000
 BOOK_DRAWDOWNS = (0.0125, 0.025, 0.075, 0.10)
@@ -827,6 +889,49 @@ def _check_slot_book():
     )
     if list(trailed["status"]) != ["Closed"] or abs(trailed["price_sell"].iloc[0] - 11.8) > 1e-9:
         raise RuntimeError(f"10pp should sell the 11.80 giveback\n{trailed}")
+
+    # A ticker that is still held does not open a second position.
+    again = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 2},
+            {"date": index[2], "ticker": "A", "analyst_projections_count": 9, "average_projected": 50, "signal_score": 9},
+            {"date": index[2], "ticker": "C", "analyst_projections_count": 1, "average_projected": 20, "signal_score": 1},
+        ]
+    )
+    _, once, _, _ = run_slot_book("one-ticker", close, spy, again, slots=2)
+    held_a = once[once["ticker"] == "A"]
+    if len(held_a) != 1 or held_a["date_buy"].iloc[0] != index[0].strftime("%Y-%m-%d"):
+        raise RuntimeError(f"a held ticker must keep its one position\n{once}")
+    if set(once.loc[once["status"] == "Open", "ticker"]) != {"A", "C"}:
+        raise RuntimeError(f"the other ticker should take the free slot\n{once}")
+
+    same_name = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 1, "average_projected": 10, "signal_score": 9},
+        ]
+    )
+    _, one_day, _, _ = run_slot_book("same-ticker", close, spy, same_name, slots=4)
+    if len(one_day) != 1 or one_day["date_buy"].iloc[0] != index[0].strftime("%Y-%m-%d"):
+        raise RuntimeError(f"same-day signals on one ticker are one position\n{one_day}")
+
+    # After the position closes, the next signal opens a new one.
+    reopen = frame(
+        [
+            {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[3], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+        ]
+    )
+    _, reopened, _, _ = run_slot_book(
+        "reopen", down, spy, reopen, slots=2, drawdown=0.0125, profit_protect=0.30
+    )
+    closed_a = reopened[reopened["status"] == "Closed"]
+    open_a = reopened[reopened["status"] == "Open"]
+    if (
+        list(closed_a["date_buy"]) != [index[0].strftime("%Y-%m-%d")]
+        or list(open_a["date_buy"]) != [index[3].strftime("%Y-%m-%d")]
+    ):
+        raise RuntimeError(f"a closed ticker can open again\n{reopened}")
     print("Slot book checks passed.")
 
 
@@ -1247,8 +1352,10 @@ def run_slot_book(
     A signal buys at that day's close when a slot is free. On a full book it
     sells the biggest loss at that close and buys. If every open lot is in
     profit, it sells the least profitable one only when that lot's strength
-    is strictly below the new signal's strength. Two signals on the same
-    ticker can both be open. Same-day signals are taken strongest first.
+    is strictly below the new signal's strength. A ticker that already has
+    an open position is skipped. Lots opened by the signal in hand stay one
+    position. After that position closes, a later signal can open a new one.
+    Same-day signals are taken strongest first.
 
     When drawdown and profit_protect are set, those stops run first each day,
     before new signals. Loss dropdown sells while the close is under the
@@ -1441,6 +1548,11 @@ def run_slot_book(
         todays = by_day.get(t, [])
         todays.sort(key=lambda signal: (signal["strength"], signal["score"]), reverse=True)
         for signal in todays:
+            if any(
+                lot["ticker"] == signal["ticker"] and not lot.get("park")
+                for lot in open_lots
+            ):
+                continue
             px = float(prices[signal["ticker"]][t])
             if not math.isfinite(px) or px <= 0:
                 continue
@@ -4274,6 +4386,24 @@ def daily_sell_grid():
     ]
 
 
+def horizon_sell_grid():
+    """Daily sell grid plus 5% loss dropdown and 7.5% profit protection."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=slots,
+            loss_mode="ls",
+            lot_mode=mode,
+            lot_amount=BOOK_CASH / slots,
+        )
+        for mode in LOT_FORMULAS
+        for slots in DAILY_SLOTS
+        for dd in HORIZON_DRAWDOWNS
+        for pp in HORIZON_PROTECTS
+    ]
+
+
 def split_sell_grid():
     """Same stops as cash, with each lot count splitting one $320,000 book."""
     return [
@@ -4538,6 +4668,110 @@ def run_daily(signals, close, spy, position_log=None):
         specs,
         set(),
         "daily",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+
+
+def run_horizon(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    buys = daily_buy_grid()
+    specs = horizon_sell_grid()
+    print(
+        f"\n=== 1-5 day books: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · analysts >0/>1/>2/>3/>4"
+        f" · projected >0/>10/>20/>30%"
+        f" · lots {', '.join(str(n) for n in DAILY_SLOTS)}"
+        f" · loss {', '.join(f'{dd * 100:g}dd' for dd in HORIZON_DRAWDOWNS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in HORIZON_PROTECTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · ls"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "horizon",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+
+
+def run_recency(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    buys = daily_buy_grid()
+    specs = horizon_sell_grid()
+    print(
+        f"\n=== Recency books: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · analysts >0/>1/>2/>3/>4"
+        f" · projected >0/>10/>20/>30%"
+        f" · lots {', '.join(str(n) for n in DAILY_SLOTS)}"
+        f" · loss {', '.join(f'{dd * 100:g}dd' for dd in HORIZON_DRAWDOWNS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in HORIZON_PROTECTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · ls"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "recency",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+
+
+def run_window(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    buys = daily_buy_grid()
+    specs = daily_sell_grid()
+    print(
+        f"\n=== 7-day books: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · analysts >0/>1/>2/>3/>4"
+        f" · projected >0/>10/>20/>30%"
+        f" · lots {', '.join(str(n) for n in DAILY_SLOTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · ls"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "window",
         position_log=position_log,
         cash_sleeve=False,
         resume=True,
@@ -5553,7 +5787,7 @@ export default function FineGridCanvas() {
   const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
   const [filler, setFiller] = useCanvasState<string>("grid-filler", FILLERS[0] ?? "");
   const [rule, setRule] = useCanvasState<string>("grid-rule", RULES[0] ?? "");
-  const [sizeMode, setSizeMode] = useCanvasState<string>("grid-size", SIZES[0] ?? "");
+  const [sizes, setSizes] = useCanvasState<string[]>("grid-sizes", SIZES);
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
@@ -5573,7 +5807,7 @@ export default function FineGridCanvas() {
           drops.includes(sell.d) &&
           (FILLERS.length === 0 || sell.f === filler) &&
           (RULES.length === 0 || sell.r === rule) &&
-          (SIZES.length === 0 || sell.z === sizeMode)
+          (SIZES.length === 0 || sizes.includes(sell.z))
         : slotsMode
           ? true
           : protectMode
@@ -5594,7 +5828,7 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
 
   const filterStats = useMemo(() => {
     const signalRoi = emptyBuckets(SIGNALS);
@@ -5672,7 +5906,7 @@ export default function FineGridCanvas() {
         if (!Number.isFinite(roi) || !Number.isFinite(pnl)) return;
         const fillerOn = FILLERS.length === 0 || sell.f === filler;
         const ruleOn = RULES.length === 0 || sell.r === rule;
-        const sizeOn = SIZES.length === 0 || sell.z === sizeMode;
+        const sizeOn = SIZES.length === 0 || sizes.includes(sell.z);
         const holdOk = bookMode
           ? holds.includes(sell.h)
           : slotsMode || protectMode || holds.includes(sell.h);
@@ -5716,7 +5950,7 @@ export default function FineGridCanvas() {
       rule: packSlice(ruleRoi, rulePnl, ruleSym, ruleWin),
       size: packSlice(sizeRoi, sizePnl, sizeSym, sizeWin),
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
@@ -6054,12 +6288,11 @@ export default function FineGridCanvas() {
             <FilterColumn
               label={SIZES.includes("at") ? "Strength" : "Lot size"}
               options={SIZES}
-              selected={[sizeMode]}
-              onChange={(next) => setSizeMode(next[0])}
+              selected={sizes}
+              onChange={setSizes}
               format={(value) => lotSizeLabel(value)}
               moneyMode={showMode === "pnl"}
               stats={filterStats.size}
-              exclusive
             />
           ) : null}
         </Grid>
@@ -6609,6 +6842,9 @@ def parse_args():
             "low",
             "books",
             "daily",
+            "window",
+            "horizon",
+            "recency",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -6640,7 +6876,12 @@ def parse_args():
             "Each cell stays one book. full with no flag uses all_sources, "
             "yahoo, and google, daily and 7-day. books with no flag uses "
             "every name in the signal export. daily with no flag uses the "
-            "five daily names. Other phases default to "
+            "five daily names. window with no flag uses the five 7-day names. "
+            "horizon with no flag uses yahoo, tipranks, and yahoo_and_tipranks "
+            "for 1d through 5d. "
+            "recency with no flag uses yahoo_and_tipranks_1d_recency through "
+            "yahoo_and_tipranks_5d_recency. "
+            "Other phases default to "
             "yahoo-daily and yahoo-7d-window."
         ),
     )
@@ -6682,7 +6923,13 @@ def append_filler_comparison(path, rows):
 
 def main():
     args = parse_args()
-    if args.phase == "daily" and not args.signal_names:
+    if args.phase == "recency" and not args.signal_names:
+        set_signal_names(RECENCY_SIGNAL_NAMES)
+    elif args.phase == "horizon" and not args.signal_names:
+        set_signal_names(HORIZON_SIGNAL_NAMES)
+    elif args.phase == "window" and not args.signal_names:
+        set_signal_names(WINDOW_SIGNAL_NAMES)
+    elif args.phase == "daily" and not args.signal_names:
         set_signal_names(DAILY_SIGNAL_NAMES)
     elif args.phase == "books" and not args.signal_names:
         set_signal_names(EXPORT_SIGNAL_NAMES)
@@ -6694,7 +6941,13 @@ def main():
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase == "daily":
+    if args.phase == "recency":
+        prefix = OUT_DIR / RECENCY_STEM
+    elif args.phase == "horizon":
+        prefix = OUT_DIR / HORIZON_STEM
+    elif args.phase == "window":
+        prefix = OUT_DIR / WINDOW_STEM
+    elif args.phase == "daily":
         prefix = OUT_DIR / DAILY_STEM
     elif args.phase == "books":
         prefix = OUT_DIR / BOOKS_STEM
@@ -6754,6 +7007,217 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "recency":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_recency(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "recency.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Recency books, fixed $320,000, one position per ticker, no SPY or TQQQ",
+        )
+        specs = horizon_sell_grid()
+        notes = [
+            "Recency books: yahoo_and_tipranks_1d_recency through "
+            "yahoo_and_tipranks_5d_recency. "
+            "A point on the signal session weighs 2.5. Each older session "
+            "weighs 2.5 divided by how many trading days back it is, counting "
+            "the signal session as 1. The analyst count is that weight sum. "
+            "The projected upside is the weighted mean. "
+            "Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30%. "
+            "Each cell is one book.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/32/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "A ticker that already has an open position is skipped. Lots opened "
+            "by one signal stay one position. After that position closes, a "
+            "later signal can open a new one.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10). "
+            "sqra is floor(analysts²). "
+            "a is floor(analysts × 3). "
+            "sqra_target is floor(analysts² × target percent / 40).",
+            "ls sells the biggest loss. If every stock lot is in profit, the "
+            "least profitable one is sold only when its strength is strictly "
+            "below the new signal.",
+            "Loss dropdown, while the close is below the entry: 1.25%, 2.5%, "
+            "5%, 7.5%, and 10%. Profit protection, once a close has traded "
+            "above the entry: 2.5%, 5%, 7.5%, and 10% of the gain from entry "
+            "to the highest close.",
+            "Win rate is positions, not lots. Lots opened together — the same "
+            "ticker, buy date, and buy price — are one position, and that "
+            "position wins when their P&L sums to more than zero. "
+            "The top 30 table counts Symbols once per ticker and Positions "
+            "once per entry, even when a symbol has several lots or several signals.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%.",
+            "100 buys × 400 sells = 40,000 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            daily_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in daily_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "horizon":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_horizon(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "horizon.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "1-5 day books, fixed $320,000, ls only, no SPY or TQQQ",
+        )
+        specs = horizon_sell_grid()
+        notes = [
+            "1-5 day books: yahoo, tipranks, and yahoo_and_tipranks, each "
+            "for 1d, 2d, 3d, 4d, and 5d. "
+            "Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30%. "
+            "Each cell is one book.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/32/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10). "
+            "sqra is floor(analysts²). "
+            "a is floor(analysts × 3). "
+            "sqra_target is floor(analysts² × target percent / 40).",
+            "ls sells the biggest loss. If every stock lot is in profit, the "
+            "least profitable one is sold only when its strength is strictly "
+            "below the new signal.",
+            "Loss dropdown, while the close is below the entry: 1.25%, 2.5%, "
+            "5%, 7.5%, and 10%. Profit protection, once a close has traded "
+            "above the entry: 2.5%, 5%, 7.5%, and 10% of the gain from entry "
+            "to the highest close.",
+            "Win rate is positions, not lots. Lots opened together — the same "
+            "ticker, buy date, and buy price — are one position, and that "
+            "position wins when their P&L sums to more than zero. "
+            "The top 30 table counts Symbols once per ticker and Positions "
+            "once per entry, even when a symbol has several lots or several signals.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%.",
+            "300 buys × 400 sells = 120,000 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            daily_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in daily_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "window":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_window(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "window.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "7-day books, fixed $320,000, ls only, no SPY or TQQQ",
+        )
+        specs = daily_sell_grid()
+        notes = [
+            "7-day books only: yahoo-7d-window, google-7d-window, "
+            "tipranks-7d-window, all_sources-7d-window, and "
+            "yahoo_and_google-7d-window. "
+            "Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30%. "
+            "Each cell is one book. Same sell grid as the daily sweep.",
+            f"One book of ${BOOK_CASH:,.0f}. Lot count splits that cash: "
+            "8 lots are $40,000 each, 64 lots are $5,000 each. "
+            "Counts are 8/12/16/32/64.",
+            "No SPY and no TQQQ. An empty slot stays cash. A stop that is not "
+            "reused stays cash. Uninvested money is cash, not a SPY sleeve.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "at is floor(analysts × target percent / 10). "
+            "sqra is floor(analysts²). "
+            "a is floor(analysts × 3). "
+            "sqra_target is floor(analysts² × target percent / 40).",
+            "ls sells the biggest loss. If every stock lot is in profit, the "
+            "least profitable one is sold only when its strength is strictly "
+            "below the new signal.",
+            "Win rate is positions, not lots. Lots opened together — the same "
+            "ticker, buy date, and buy price — are one position, and that "
+            "position wins when their P&L sums to more than zero. "
+            "The top 30 table counts Symbols once per ticker and Positions "
+            "once per entry, even when a symbol has several lots or several signals.",
+            "Lot-days invested is invested lot-days divided by the lot count "
+            "times the calendar days in the test. A full book held every day is 100%.",
+            "100 buys × 240 sells = 24,000 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            daily_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.10,
+                profit_protect=0.10,
+                slots=32,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 32,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in daily_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
 
     if args.phase == "daily":
         position_path = Path(f"{prefix}.csv")
@@ -7310,8 +7774,8 @@ def main():
             "from entry to the highest close. Stops are checked before new signals "
             "and do not apply to SPY or TQQQ lots. A new high does not sell.",
             "Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A signal buys "
-            "at that close when a slot is free. Two signals on the same ticker "
-            "can both hold a slot.",
+            "at that close when a slot is free. A ticker that already has an "
+            "open position is skipped.",
             "A slot still empty after the day's stock buys holds TQQQ. A slot "
             "freed by a stop and not reused for a new ticker holds SPY. A new "
             "buy sells a SPY lot before it sells TQQQ, and TQQQ before it sells "
@@ -7375,8 +7839,8 @@ def main():
             "from entry to the highest close. Stops are checked before new signals. "
             "A new high does not sell.",
             "Book size is 4, 6, 8, 12, 16, or 20 lots of $5,000. A signal buys "
-            "at that close when a slot is free. Two signals on the same ticker "
-            "can both hold a slot.",
+            "at that close when a slot is free. A ticker that already has an "
+            "open position is skipped.",
             "When the book is full and any lot is at a loss, sell the biggest "
             "loss and buy the new signal. When every open lot is in profit, sell "
             "the least profitable one only if its strength is strictly below the "
@@ -7431,8 +7895,8 @@ def main():
             "Same daily books and the same winner buys: analyst >2/>3/>4 × "
             "projected >20/30/40/50%.",
             f"The book starts with {SLOT_COUNT} lots of ${POSITION_VALUE:,.0f}. "
-            "A signal buys at that close when a slot is free. Two signals on the "
-            "same ticker can both hold a slot.",
+            "A signal buys at that close when a slot is free. A ticker that "
+            "already has an open position is skipped.",
             "When the book is full and any lot is at a loss, sell the biggest "
             "loss at that close and buy the new signal. Strength is not consulted.",
             "When every open lot is in profit, sell the least profitable one only "
