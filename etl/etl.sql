@@ -92,6 +92,8 @@ DROP VIEW IF EXISTS signal_score_7d_window CASCADE;
 DROP VIEW IF EXISTS signal_score_nd_window CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date_7d_window CASCADE;
+DROP VIEW IF EXISTS signal_score_nd_recency CASCADE;
+DROP VIEW IF EXISTS raw_signals_per_ticker_and_date_nd_recency CASCADE;
 DROP VIEW IF EXISTS raw_signals_per_ticker_and_date_nd_window CASCADE;
 DROP VIEW IF EXISTS signals_dedup CASCADE;
 DROP TABLE IF EXISTS _trading_days;
@@ -222,6 +224,64 @@ SELECT
   ) x
 GROUP BY source, n, date, ticker;
 
+-- 1d. Recency windows, N = 1..5.
+-- A point on the signal session is 1 trading day back and weighs 2.5.
+-- The previous session is 2 trading days back and weighs 1.25.
+-- Weight is 2.5 / trading_days_back, so an older point counts less.
+-- analyst_projections_count is the sum of those weights, not a headcount.
+-- average_projected is the weighted mean. On a 1d signal every point is on
+-- the signal session, so the count is 2.5 times the unweighted count and
+-- the mean matches the daily mean.
+CREATE OR REPLACE VIEW raw_signals_per_ticker_and_date_nd_recency AS
+SELECT
+  source,
+  n,
+  date,
+  ticker,
+  SUM(percent * weight) / SUM(weight) AS average_projected,
+  SUM(weight) AS analyst_projections_count,
+  (
+    SUM(ABS(percent - mean_percent) * weight) / NULLIF(SUM(weight), 0)
+  ) / NULLIF(ABS(SUM(percent * weight) / NULLIF(SUM(weight), 0)), 0) AS MAD,
+  STRING_AGG(analyst || ':' || percent::text, '|' ORDER BY point_date, analyst) AS analyst_percent_list
+FROM (
+  SELECT
+    p.source,
+    p.n,
+    p.date,
+    p.ticker,
+    p.analyst,
+    p.percent,
+    p.point_date,
+    p.weight,
+    SUM(p.percent * p.weight) OVER (PARTITION BY p.source, p.n, p.date, p.ticker)
+      / SUM(p.weight) OVER (PARTITION BY p.source, p.n, p.date, p.ticker) AS mean_percent
+  FROM (
+    SELECT
+      a.source,
+      w.n,
+      a.date,
+      a.ticker,
+      b.analyst,
+      b.percent,
+      b.date AS point_date,
+      (2.5 / (a.day_idx - tb.day_idx + 1))::float8 AS weight
+    FROM (
+      SELECT DISTINCT r.source, r.ticker, r.date, t.day_idx
+      FROM signals_dedup r
+      JOIN _trading_days t ON t.date = r.date
+    ) a
+    CROSS JOIN (VALUES (1), (2), (3), (4), (5)) AS w(n)
+    JOIN _trading_days tb
+      ON tb.day_idx BETWEEN a.day_idx - (w.n - 1) AND a.day_idx
+    JOIN signals_dedup b
+      ON b.source = a.source
+     AND b.ticker = a.ticker
+     AND b.date = tb.date
+  ) p
+) x
+GROUP BY source, n, date, ticker;
+
 -- 2a. Daily scores
 CREATE OR REPLACE VIEW signal_score_daily AS
 SELECT
@@ -251,6 +311,24 @@ SELECT
 FROM raw_signals_per_ticker_and_date_nd_window
 WHERE average_projected > 0;
 
+-- 2d. Recency scores. 1d matches the daily score shape. 2d–5d match the window.
+CREATE OR REPLACE VIEW signal_score_nd_recency AS
+SELECT
+  source,
+  n,
+  date,
+  ticker,
+  average_projected,
+  analyst_projections_count,
+  MAD,
+  CASE
+    WHEN n = 1 THEN average_projected * sqrt(analyst_projections_count)
+    ELSE average_projected * sqrt(analyst_projections_count) * (1 - MAD)
+  END AS signal_score,
+  analyst_percent_list
+FROM raw_signals_per_ticker_and_date_nd_recency
+WHERE average_projected > 0;
+
 -- Combined signals. Percentile is ranked within each signal_name.
 CREATE OR REPLACE VIEW signals AS
 SELECT
@@ -269,7 +347,33 @@ FROM (
          date, ticker, average_projected, analyst_projections_count,
          MAD, signal_score, analyst_percent_list
   FROM signal_score_nd_window
+  UNION ALL
+  SELECT source || '_' || n || 'd_recency' AS signal_name,
+         date, ticker, average_projected, analyst_projections_count,
+         MAD, signal_score, analyst_percent_list
+  FROM signal_score_nd_recency
 ) u;
 
+-- 1d recency is the daily book with every point weighed 2.5.
+DO $$ BEGIN
+  IF (SELECT COUNT(*) FROM signal_score_daily) <>
+     (SELECT COUNT(*) FROM signal_score_nd_recency WHERE n = 1) THEN
+    RAISE EXCEPTION '1d recency row count does not match the daily book';
+  END IF;
+  IF EXISTS (
+    SELECT 1
+    FROM signal_score_daily d
+    JOIN signal_score_nd_recency r
+      ON r.source = d.source
+     AND r.n = 1
+     AND r.date = d.date
+     AND r.ticker = d.ticker
+    WHERE abs(r.analyst_projections_count - 2.5 * d.analyst_projections_count) > 1e-6
+       OR abs(r.average_projected - d.average_projected) > 1e-3
+  ) THEN
+    RAISE EXCEPTION '1d recency must weigh the signal session by 2.5 and keep the daily mean';
+  END IF;
+END $$;
+
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)-[1-5]d$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT * FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)(-[1-5]d|_[1-5]d_recency)$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
