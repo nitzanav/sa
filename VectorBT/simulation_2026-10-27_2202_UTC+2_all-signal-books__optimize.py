@@ -5361,7 +5361,7 @@ export default function FineGridCanvas() {
   const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
   const [filler, setFiller] = useCanvasState<string>("grid-filler", FILLERS[0] ?? "");
   const [rule, setRule] = useCanvasState<string>("grid-rule", RULES[0] ?? "");
-  const [sizeMode, setSizeMode] = useCanvasState<string>("grid-size", SIZES[0] ?? "");
+  const [sizes, setSizes] = useCanvasState<string[]>("grid-sizes", SIZES);
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
@@ -5381,7 +5381,7 @@ export default function FineGridCanvas() {
           drops.includes(sell.d) &&
           (FILLERS.length === 0 || sell.f === filler) &&
           (RULES.length === 0 || sell.r === rule) &&
-          (SIZES.length === 0 || sell.z === sizeMode)
+          (SIZES.length === 0 || sizes.includes(sell.z))
         : slotsMode
           ? true
           : protectMode
@@ -5402,7 +5402,7 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
 
   const filterStats = useMemo(() => {
     const signalRoi = emptyBuckets(SIGNALS);
@@ -5480,7 +5480,7 @@ export default function FineGridCanvas() {
         if (!Number.isFinite(roi) || !Number.isFinite(pnl)) return;
         const fillerOn = FILLERS.length === 0 || sell.f === filler;
         const ruleOn = RULES.length === 0 || sell.r === rule;
-        const sizeOn = SIZES.length === 0 || sell.z === sizeMode;
+        const sizeOn = SIZES.length === 0 || sizes.includes(sell.z);
         const holdOk = bookMode
           ? holds.includes(sell.h)
           : slotsMode || protectMode || holds.includes(sell.h);
@@ -5524,7 +5524,7 @@ export default function FineGridCanvas() {
       rule: packSlice(ruleRoi, rulePnl, ruleSym, ruleWin),
       size: packSlice(sizeRoi, sizePnl, sizeSym, sizeWin),
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizeMode]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
@@ -5860,12 +5860,11 @@ export default function FineGridCanvas() {
             <FilterColumn
               label={SIZES.includes("at") ? "Strength" : "Lot size"}
               options={SIZES}
-              selected={[sizeMode]}
-              onChange={(next) => setSizeMode(next[0])}
+              selected={sizes}
+              onChange={setSizes}
               format={(value) => lotSizeLabel(value)}
               moneyMode={showMode === "pnl"}
               stats={filterStats.size}
-              exclusive
             />
           ) : null}
         </Grid>
