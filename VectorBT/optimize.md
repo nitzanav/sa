@@ -22,7 +22,7 @@ Trusted cells have at least 30 signals. Smaller cells stay in the matrices and o
 
 ## Lot rules
 
-Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
+Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal, and those lots are one position. A ticker that already has an open position is skipped. After that position closes, a later signal can open a new one. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
 
 `--one-lot`: at most one open lot per ticker. A later buy **while that lot is open** does not open another lot; it restarts the hold clock (10/15/30/…) from that bar. The profit target and the drawdown peak stay on the original entry. After the lot has closed (time, target, or drawdown), the next buy opens a new lot. A closed position does not block the next one.
 
@@ -354,11 +354,29 @@ Same grid as `daily`, on the five 7-day books: `yahoo-7d-window`, `google-7d-win
   --end 2026-10-26
 ```
 
+## 1–5 day books
+
+Same fixed $320,000 stock-only book and the same four strength formulas as `daily`. The books are yahoo, tipranks, and yahoo_and_tipranks, each for 1d, 2d, 3d, 4d, and 5d: `yahoo-1d` through `yahoo-5d`, `tipranks-1d` through `tipranks-5d`, and `yahoo_and_tipranks-1d` through `yahoo_and_tipranks-5d`. Analyst cuts stay `>0` `>1` `>2` `>3` `>4`. Projected cuts stay `>0%` `>10%` `>20%` `>30%`. Lot counts stay `8` `12` `16` `32` `64`. Loss dropdown adds `5dd` beside `1.25dd` `2.5dd` `7.5dd` `10dd`. Profit protection adds `7.5pp` beside `2.5pp` `5pp` `10pp`. The sell pick stays `ls` only. 300 buys × 400 sells = 120,000 cells. Win rate, Symbols, and Positions count the same way as the daily sweep.
+
+```bash
+./penv python VectorBT/simulation_2026-10-31_2359_UTC+2_1-5d-ls-books__optimize.py horizon \
+  --end 2026-10-26
+```
+
+## Recency books
+
+Same fixed $320,000 stock-only book and the same sell grid as `horizon`, on the five combined recency books: `yahoo_and_tipranks_1d_recency` through `yahoo_and_tipranks_5d_recency`. `etl/etl.sql` also writes `yahoo_1d_recency` and the same shape for google, tipranks, and yahoo_and_google. A point on the signal session weighs 2.5. Each older session weighs `2.5 / trading days back`, counting the signal session as 1, so a point from the previous session weighs 1.25. The analyst count is the sum of those weights. The projected upside is the weighted mean. Analyst cuts, projected cuts, lot counts, loss dropdown, profit protection, and `ls` stay the same as `horizon`. A ticker that already has an open position is skipped. 100 buys × 400 sells = 40,000 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize.py recency \
+  --end 2026-10-26
+```
+
 ## Eight-lot book
 
 Same daily books and the same winner buys. One sell: a book of 8 lots. 5 books × 12 buys = 60 cells. There is no hold, no profit target, and no drawdown.
 
-Each lot is $5,000. A signal buys at that close when a slot is free. A second signal on a ticker that is already held opens another lot. Same-day signals are taken strongest first.
+Each lot is $5,000. A signal buys at that close when a slot is free. A ticker that already has an open position is skipped. Same-day signals are taken strongest first.
 
 When all 8 slots are full:
 

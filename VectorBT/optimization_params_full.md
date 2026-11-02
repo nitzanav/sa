@@ -62,6 +62,10 @@ Phase `daily` keeps the fixed $320,000 book and the four strength formulas, on t
 
 Phase `window` is that same grid on the five 7-day books: `yahoo-7d-window`, `google-7d-window`, `tipranks-7d-window`, `all_sources-7d-window`, and `yahoo_and_google-7d-window`.
 
+Phase `horizon` is that same fixed book on the 1–5 day names `yahoo-1d` through `yahoo-5d`, `tipranks-1d` through `tipranks-5d`, and `yahoo_and_tipranks-1d` through `yahoo_and_tipranks-5d`. Analyst cuts, projected cuts, lot counts, and `ls` stay the same. Loss dropdown adds `5dd`. Profit protection adds `7.5pp`. 300 buys × 400 sells = 120,000 cells.
+
+Phase `recency` is that same horizon grid on `yahoo_and_tipranks_1d_recency` through `yahoo_and_tipranks_5d_recency`. A point on the signal session weighs 2.5. An older point weighs `2.5 / trading days back`, counting the signal session as 1. The analyst count is the weight sum and the projected upside is the weighted mean. A ticker that already has an open position is skipped. 100 buys × 400 sells = 40,000 cells.
+
 Win rate is the share of positions with positive P&L. Lots opened together — the same ticker, buy date, and buy price — are one position. The position wins when those lots' P&L sums to more than zero. A four-lot winner counts once.
 
 ## Lots
