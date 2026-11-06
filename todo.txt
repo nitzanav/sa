@@ -3,21 +3,44 @@ Actions
     - consider all sources [running]
     - update the winrate to check for number of unique positions, not lots. [done]
     - do mapping + tipranks / google [on hold]
-    - make the same google spreadsheet also on all sources to compare sqr a, a, and sqr a * target 
-    - 2d/3d/4d/5d [in]
-    - at sqrta a and atarget behave differently in tripranks. Need to see what is the stabel thing there. with the spreadsheet mechanism. 
-øπ    - better lots - increase gap between lots by using ceil instead of floor, and poer 3 or 4 instead of 2. (but might be to mush)
-    - 7d or few days [running]
-- Other data
+    
+    High:
+    - 2d/3d/4d/5d [testing]
+    - test: ls, dls and just don't buy if no lots
+    - validation
     - more than snp500, getm more signals of more symbols
+    - test analyst consensus
+
+Medium:
+
+Low:
+    - adjust recency weights
+check the tipranks consensus GET /stable/upgrades-downgrades-consensus-bulk?apikey=KEY there is MCP as well.
+
+    - make the same google spreadsheet also on all sources to compare sqr a, a, and sqr a * target 
+    - at sqrta a and atarget behave differently in tripranks. Need to see what is the stabel thing there. with the spreadsheet mechanism. 
+    - better lots - increase gap between lots by using ceil instead of floor, and poer 3 or 4 instead of 2. (but might be to mush)
+- Other data
     - data from twitter
-- find the way to alert on 1 stock per quarter with huge amount of analysts 
+    - find the way to alert on 1 stock per quarter with huge amount of analysts 
 
 
 
 
 
 Winning:
+simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize.canvas.tsx
+
+Recency
+| Sell                               | Buy                                     | On invested | Stock P&L | Trade window            | Days utilized | Lots utilized | Lot-days | Lot-days invested | Avg lot |    Win |    Lots | Symbols | Positions |
+| ---------------------------------- | --------------------------------------- | ----------: | --------: | ----------------------- | ------------: | ------------: | -------: | ----------------: | ------: | -----: | ------: | ------: | --------: |
+| 7.5dd 5pp · 12 × $26,667 · ls · at | yahoo_and_tipranks_2d_recency · >3,>10% |     +104.9% | +$306,733 | 2026-01-06 → 2026-10-20 |           288 |        +91.3% |     4230 |            118.3% | $26,667 | +41.4% | 935c/0o |     104 |       145 |
+| 7.5dd 5pp · 12 × $26,667 · ls · at | yahoo_and_tipranks_2d_recency · >3,>0%  |      +93.7% | +$276,361 | 2026-01-06 → 2026-10-20 |           288 |        +92.2% |     4304 |            120.4% | $26,667 | +41.9% | 983c/0o |     120 |       167 |
+| 7.5dd 5pp · 12 × $26,667 · ls · at | yahoo_and_tipranks_2d_recency · >3,>30% |     +110.9% | +$239,375 | 2026-02-06 → 2026-10-20 |           228 |        +67.4% |     3126 |             87.4% | $26,667 | +42.3% | 671c/0o |      56 |        78 |
+| 7.5dd 5pp · 12 × $26,667 · ls · at | yahoo_and_tipranks_2d_recency · >3,>20% |      +85.3% | +$226,926 | 2026-01-06 → 2026-10-20 |           277 |        +83.2% |     3873 |            108.3% | $26,667 | +39.6% | 855c/0o |      76 |       106 |
+
+
+
 7d works only for tipranks tip ranks, in yahoo it does not work at all. +100.6% | +$176,493
 | Sell                                    | Buy                          | On invested | Stock P&L | Trade window            | Days utilized | Lots utilized | Lot-days | Lot-days invested | Avg lot |    Win |    Lots | Symbols | Positions |
 | --------------------------------------- | ---------------------------- | ----------: | --------: | ----------------------- | ------------: | ------------: | -------: | ----------------: | ------: | -----: | ------: | ------: | --------: |
