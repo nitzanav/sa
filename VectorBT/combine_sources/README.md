@@ -1,11 +1,14 @@
-# Combine Google and Yahoo analyst recommendations
+# Combine Google, Yahoo, and Tipranks analyst names
 
-Google rows name a person. Yahoo rows name a firm. These two scripts map each person to a firm and (optionally) confirm the best guess with a web search.
-
-Run from the repo root, in this order:
+Firms, people, and person-firm relations live under `data/analyst_recomendation/entities/`. The skill at `.cursor/skills/analyst-entities/SKILL.md` runs the scripts and, if needed, a confirmation subagent.
 
 ```bash
 ./penv python VectorBT/combine_sources/build_map.py
+```
+
+That is `classify.py` then `candidates.py`. Each person keeps one firm. A Google-Yahoo price match counts only when that ticker/date/price is unique (one person, one firm). Weak unique matches go to `candidates_pending.csv` and need `confirm_candidates.py` plus a subagent. The older Google/Yahoo price map is still:
+
+```bash
 ./penv python VectorBT/combine_sources/web_verify.py
 ```
 
