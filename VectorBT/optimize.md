@@ -24,6 +24,8 @@ Trusted cells have at least 30 signals. Smaller cells stay in the matrices and o
 
 Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal, and those lots are one position. A ticker that already has an open position is skipped. After that position closes, a later signal can open a new one. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
 
+A slot-book signal buys the next session's close. Analyst points arrive through the signal day, so that day's close is not a trade. A Friday signal buys Monday. The fill is that next close. The price cache has no opens. The older hold and target path still buys the signal session.
+
 `--one-lot`: at most one open lot per ticker. A later buy **while that lot is open** does not open another lot; it restarts the hold clock (10/15/30/…) from that bar. The profit target and the drawdown peak stay on the original entry. After the lot has closed (time, target, or drawdown), the next buy opens a new lot. A closed position does not block the next one.
 
 ## New phase
@@ -372,11 +374,119 @@ Same fixed $320,000 stock-only book and the same sell grid as `horizon`, on the 
   --end 2026-10-26
 ```
 
+## Recency sell picks
+
+Same fixed $320,000 stock-only book, same five recency books, and the same stop grid as `recency`. The sell pick is `ls`, `dls`, or `nb`. `ls` sells the biggest loss. `dls` sells that loss divided by calendar days held. If every stock lot is in profit, either of those sells the least profitable lot only when its strength is strictly below the new signal. `nb` does not sell a lot to free a slot. The signal is bought only when a slot is already free. Loss dropdown and profit protection still close lots under `nb`. 100 buys × 1,200 sells = 120,000 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-02_2158_UTC+2_recency-sell-picks__optimize.py picks \
+  --end 2026-10-26
+```
+
+## Recency date ranges
+
+Frozen sell from the recency book: `7.5dd 5pp · 12 × $26,667 · ls · at`. Buys are analyst >3 and projected >0/10/20/30% on `yahoo_and_tipranks_1d_recency` through `yahoo_and_tipranks_5d_recency`. Each cell is one window from one list, not a separate phase per length. Windows start in January 2026 and end in October. One month has 10 windows, January through October. Two months has 9, starting January through September. Three months has 8, starting January through August. Four months has 7, starting January through July. Five months has 6, starting January through June. Six months has 5, starting January through May. Seven months has 4, starting January through April. Eight months has 3, starting January through March: `8m_Jan-Aug`, `8m_Feb-Sep`, `8m_Mar-Oct`. A cell keeps signals dated inside the window and prices through the window's last day. A lot still open that day stays open. 5 books × 4 upside cuts × 52 windows = 1,040 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-02_2217_UTC+2_recency-date-ranges__optimize.py ranges \
+  --end 2026-10-26
+```
+
+## Formula confirm
+
+Same frozen sell, `7.5dd 5pp · 12 × $26,667 · ls · at`, plus one moved knob at a time: loss dropdown `5dd` or `10dd`, profit protection `2.5pp`, `7.5pp`, or `10pp`, lot count `8`, `16`, or `32`, sell pick `dls`, or strength formula `a`. Buys are analyst `>2`, `>3`, and `>4` at projected `>0/10/20/30%` on `yahoo_and_tipranks_1d_recency`, `yahoo_and_tipranks_2d_recency`, and `yahoo_and_tipranks_3d_recency`. Windows are one list: the ten months, five disjoint two-month blocks, Jan–May, Jun–Oct, and January–October. A formula is held when January–October has at least 30 signals and 30 symbols, both halves are profitable, and at least 4 of the 5 disjoint blocks are profitable. 3 × 3 × 4 × 18 × 11 = 7,128 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-02_2255_UTC+2_formula-confirm__optimize.py confirm \
+  --end 2026-10-26
+```
+
+## Frozen next session
+
+The frozen cash cell only: `yahoo_and_tipranks_2d_recency`, analyst >3, projected >10%, `7.5dd 5pp · 12 × $26,667 · ls`. Strength is `at`, `sqra`, `a`, and `sqra_target`. Every window in the flat range list is a cell, from `1m_Jan` through `8m_Mar-Oct`. A signal buys the next session's close. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1305_UTC+2_frozen-next-strength__optimize.py next \
+  --end 2026-10-26
+```
+
+## Frozen 7.5pp
+
+Same buy, same windows, same four strength formulas, and the same next-session fill. The only change from the frozen sell is profit protection `7.5pp` instead of `5pp`. Loss dropdown stays `7.5dd`. 52 ranges × 4 strength formulas = 208 cells. Later steps move one knob at a time: `2.5pp` at `7.5dd`, then `5dd`, `2.5dd`, and `1.25dd` at `5pp`, then the remaining crosses of `7.5pp` / `5pp` / `2.5pp` with `7.5dd` / `5dd` / `2.5dd` / `1.25dd`.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1324_UTC+2_frozen-7.5pp__optimize.py pp75 \
+  --end 2026-10-26
+```
+
+## Frozen 2.5pp
+
+Same grid as `7.5pp`, with profit protection `2.5pp` and loss dropdown still `7.5dd`. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1326_UTC+2_frozen-2.5pp__optimize.py pp25 \
+  --end 2026-10-26
+```
+
+## Frozen 5dd
+
+Same grid, with the loss dropdown moved to `5dd`. Profit protection stays `5pp`. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1327_UTC+2_frozen-5dd__optimize.py dd5 \
+  --end 2026-10-26
+```
+
+## Frozen 7.5dd nb
+
+Same frozen book, with the sell pick moved from `ls` to `nb`. `nb` buys only into a slot that is already free. A full book skips the signal and does not sell a stock, SPY, or TQQQ to make room. Loss dropdown and profit protection still run first and can free a slot for a same-day buy. Loss dropdown stays `7.5dd` and profit protection stays `5pp`. 52 ranges × 4 strength formulas = 208 cells. Later drawdown steps keep `nb` and move the loss dropdown to `5dd`, `2.5dd`, and `1.25dd`.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1330_UTC+2_frozen-7.5dd-nb__optimize.py nb75 \
+  --end 2026-10-26
+```
+
+## Frozen 5dd nb
+
+Same `nb` book, with the loss dropdown moved to `5dd`. Profit protection stays `5pp`. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1332_UTC+2_frozen-5dd-nb__optimize.py nb5 \
+  --end 2026-10-26
+```
+
+## Frozen 2.5dd nb
+
+Same `nb` book, with the loss dropdown moved to `2.5dd`. Profit protection stays `5pp`. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1333_UTC+2_frozen-2.5dd-nb__optimize.py nb25 \
+  --end 2026-10-26
+```
+
+## Frozen 1.25dd nb
+
+Same `nb` book, with the loss dropdown moved to `1.25dd`. Profit protection stays `5pp`. 52 ranges × 4 strength formulas = 208 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1334_UTC+2_frozen-1.25dd-nb__optimize.py nb125 \
+  --end 2026-10-26
+```
+
+## Frozen grace
+
+Same frozen buy and the same 52 windows. `ls` and `nb` run in one pass. Loss dropdown is `7.5dd`, `5dd`, `2.5dd`, and `1.25dd`. Profit protection is `7.5pp`, `5pp`, and `2.5pp`. Strength is `at`, `sqra`, `a`, and `sqra_target`. Buys stop on the last day of the range. Prices continue 6 calendar days after that. Six days is the p80 calendar hold of closed lots on `7.5dd 5pp · 12 × $26,667 · ls · at` in the next-session run, measured on `8m_Jan-Aug` and `8m_Feb-Sep`. The trading-session p80 of those lots is 4. A lot still open at the end of the grace stays open. Quotes end on `--end`, so a range that already ends on the last quote gets a shorter grace. 52 ranges × 4 drawdowns × 3 profit protects × 2 sell picks × 4 strength formulas = 4,992 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_1552_UTC+2_frozen-grace-stops__optimize.py grace \
+  --end 2026-10-26
+```
+
 ## Eight-lot book
 
 Same daily books and the same winner buys. One sell: a book of 8 lots. 5 books × 12 buys = 60 cells. There is no hold, no profit target, and no drawdown.
 
-Each lot is $5,000. A signal buys at that close when a slot is free. A ticker that already has an open position is skipped. Same-day signals are taken strongest first.
+Each lot is $5,000. A signal buys the next session's close when a slot is free. A ticker that already has an open position is skipped. Signals that enter on the same session are taken strongest first.
 
 When all 8 slots are full:
 

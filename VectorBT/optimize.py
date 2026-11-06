@@ -115,6 +115,24 @@ Phase recency is that same horizon grid on yahoo_and_tipranks_1d_recency
 through yahoo_and_tipranks_5d_recency. Older analyst points weigh
 2.5 / trading days back. A slot book never opens a second position on a
 ticker that is still held.
+
+Phase ranges freezes the recency winner sell, 7.5dd 5pp · 12 × $26,667 ·
+ls · at, and the analyst>3 buys at projected >0/10/20/30%. It runs those
+buys on yahoo_and_tipranks_1d_recency through yahoo_and_tipranks_5d_recency.
+Each cell keeps signals and prices inside one window from a single list:
+1-month through 8-month ranges starting in January 2026 and ending in October.
+
+Phase confirm keeps that frozen sell and moves one knob at a time:
+loss dropdown 5/7.5/10, profit protection 2.5/5/7.5/10, lot count 8/12/16/32,
+sell pick ls or dls, and strength formula at or a. Buys add analyst >2 and >4
+beside >3, on the 1d, 2d, and 3d recency books. Windows are the ten months,
+five disjoint two-month blocks, the two halves, and January–October.
+
+Phase next keeps one buy: yahoo_and_tipranks_2d_recency, analyst >3,
+projected >10%. The sell stays 7.5dd 5pp · 12 × $26,667 · ls, and the
+strength formula is at, sqra, a, or sqra_target. Every window in the flat
+range list is its own cell. A slot-book signal buys the next session's
+close, because analyst points arrive through the signal day.
 """
 
 from __future__ import annotations
@@ -253,6 +271,21 @@ DAILY_STEM = "simulation_2026-10-31_1925_UTC+2_daily-ls-books__optimize"
 WINDOW_STEM = "simulation_2026-10-31_2043_UTC+2_7d-ls-books__optimize"
 HORIZON_STEM = "simulation_2026-10-31_2359_UTC+2_1-5d-ls-books__optimize"
 RECENCY_STEM = "simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize"
+RANGES_STEM = "simulation_2026-11-02_2217_UTC+2_recency-date-ranges__optimize"
+CONFIRM_STEM = "simulation_2026-11-02_2255_UTC+2_formula-confirm__optimize"
+NEXT_STEM = "simulation_2026-11-06_1305_UTC+2_frozen-next-strength__optimize"
+PP25_STEM = "simulation_2026-11-06_1326_UTC+2_frozen-2.5pp__optimize"
+DD5_STEM = "simulation_2026-11-06_1327_UTC+2_frozen-5dd__optimize"
+NB125_STEM = "simulation_2026-11-06_1334_UTC+2_frozen-1.25dd-nb__optimize"
+GRACE_STEM = "simulation_2026-11-06_1552_UTC+2_frozen-grace-stops__optimize"
+# p80 calendar hold of closed lots on the frozen book
+# 7.5dd 5pp · 12 × $26,667 · ls · at, measured on 8m_Jan-Aug and 8m_Feb-Sep.
+# The trading-session p80 of those same lots is 4.
+HOLD_GRACE_DAYS = 6
+GRACE_DRAWDOWNS = (0.075, 0.05, 0.025, 0.0125)
+GRACE_PROTECTS = (0.075, 0.05, 0.025)
+GRACE_PICKS = ("ls", "nb")
+FROZEN_SIGNAL = "yahoo_and_tipranks_2d_recency"
 EXPORT_SIGNAL_NAMES = (
     "yahoo-daily",
     "yahoo-7d-window",
@@ -290,6 +323,75 @@ HORIZON_SIGNAL_NAMES = tuple(
 RECENCY_SIGNAL_NAMES = tuple(
     f"yahoo_and_tipranks_{day}d_recency" for day in range(1, 6)
 )
+CONFIRM_SIGNAL_NAMES = tuple(
+    f"yahoo_and_tipranks_{day}d_recency" for day in range(1, 4)
+)
+_RANGE_MONTHS = (
+    (1, "Jan"),
+    (2, "Feb"),
+    (3, "Mar"),
+    (4, "Apr"),
+    (5, "May"),
+    (6, "Jun"),
+    (7, "Jul"),
+    (8, "Aug"),
+    (9, "Sep"),
+    (10, "Oct"),
+)
+VALIDATION_RANGE_LABELS = (
+    "1m_Jan",
+    "1m_Feb",
+    "1m_Mar",
+    "1m_Apr",
+    "1m_May",
+    "1m_Jun",
+    "1m_Jul",
+    "1m_Aug",
+    "1m_Sep",
+    "1m_Oct",
+    "2m_Jan-Feb",
+    "2m_Feb-Mar",
+    "2m_Mar-Apr",
+    "2m_Apr-May",
+    "2m_May-Jun",
+    "2m_Jun-Jul",
+    "2m_Jul-Aug",
+    "2m_Aug-Sep",
+    "2m_Sep-Oct",
+    "3m_Jan-Mar",
+    "3m_Feb-Apr",
+    "3m_Mar-May",
+    "3m_Apr-Jun",
+    "3m_May-Jul",
+    "3m_Jun-Aug",
+    "3m_Jul-Sep",
+    "3m_Aug-Oct",
+    "4m_Jan-Apr",
+    "4m_Feb-May",
+    "4m_Mar-Jun",
+    "4m_Apr-Jul",
+    "4m_May-Aug",
+    "4m_Jun-Sep",
+    "4m_Jul-Oct",
+    "5m_Jan-May",
+    "5m_Feb-Jun",
+    "5m_Mar-Jul",
+    "5m_Apr-Aug",
+    "5m_May-Sep",
+    "5m_Jun-Oct",
+    "6m_Jan-Jun",
+    "6m_Feb-Jul",
+    "6m_Mar-Aug",
+    "6m_Apr-Sep",
+    "6m_May-Oct",
+    "7m_Jan-Jul",
+    "7m_Feb-Aug",
+    "7m_Mar-Sep",
+    "7m_Apr-Oct",
+    "8m_Jan-Aug",
+    "8m_Feb-Sep",
+    "8m_Mar-Oct",
+)
 HORIZON_DRAWDOWNS = (0.0125, 0.025, 0.05, 0.075, 0.10)
 HORIZON_PROTECTS = (0.025, 0.05, 0.075, 0.10)
 CASH_SLOTS = (8, 12, 16, 24, 32, 48, 64)
@@ -304,6 +406,7 @@ PARK_TQQQ = "TQQQ"
 FILLERS = ("VOO", "SSO", "UPRO", "SPXL", "QQQ", "QLD", "TQQQ")
 SCALE_FILLERS = ("SPY", "none")
 LOSS_MODES = ("ls", "dls")
+PICK_MODES = ("ls", "dls", "nb")
 LOT_MODES = ("1", "str")
 LOT_FORMULAS = ("at", "sqra", "a", "sqra_target")
 DRAWDOWNS = (0.025, 0.05, 0.075, 0.10)
@@ -622,7 +725,10 @@ def buy_label(filt):
         base = f"analyst>{filt['min_analysts']} · proj>{filt['min_projected']:.0f}%"
     name = filt.get("signal_name")
     if name and name not in str(base):
-        return f"{name} · {base}"
+        base = f"{name} · {base}"
+    window = filt.get("range_label")
+    if window and window not in str(base):
+        return f"{window} · {base}"
     return base
 
 
@@ -783,6 +889,16 @@ def _check_slot_book():
     if position_strength(2, 39.9) != math.sqrt(2) * 30:
         raise RuntimeError("39.9% must floor to 30")
 
+    week = pd.bdate_range("2026-01-05", periods=6)
+    bars = list(
+        next_session_bars(
+            week,
+            [week[0], week[4], week[0] - pd.Timedelta(days=1)],
+        )
+    )
+    if bars != [1, 5, 0]:
+        raise RuntimeError(f"next session should be Tue, Mon, Mon, got {bars}")
+
     index = pd.bdate_range("2026-01-05", periods=4)
     close = pd.DataFrame(
         {
@@ -815,6 +931,13 @@ def _check_slot_book():
         raise RuntimeError(f"B and C should stay open\n{positions}")
     if row["max_open_lots"] > 2:
         raise RuntimeError("book exceeded 2 slots")
+
+    _, skipped, _, _ = run_slot_book("nb", close, spy, loss, slots=2, no_buy=True)
+    if set(skipped["ticker"]) != {"A", "B"} or (skipped["status"] != "Open").any():
+        raise RuntimeError(f"nb should keep the full book and skip C\n{skipped}")
+    _, room, _, _ = run_slot_book("nb-room", close, spy, loss, slots=3, no_buy=True)
+    if set(room["ticker"]) != {"A", "B", "C"} or (room["status"] != "Open").any():
+        raise RuntimeError(f"nb should buy C when a slot is free\n{room}")
 
     # Both in profit. Least profitable A is still stronger than D, so D is skipped.
     keep = frame(
@@ -876,6 +999,11 @@ def _check_slot_book():
     )
     if list(hit["status"]) != ["Closed"] or hit["date_sell"].iloc[0] != index[2].strftime("%Y-%m-%d"):
         raise RuntimeError(f"1.25dd should sell a 9.80 close\n{hit}")
+    _, hit_nb, _, _ = run_slot_book(
+        "nb-dd", down, spy, stopped, slots=4, drawdown=0.0125, profit_protect=0.30, no_buy=True
+    )
+    if list(hit_nb["status"]) != ["Closed"] or hit_nb["date_sell"].iloc[0] != index[2].strftime("%Y-%m-%d"):
+        raise RuntimeError(f"nb still sells on the loss dropdown\n{hit_nb}")
     _, held_dd, _, _ = run_slot_book(
         "dd-wide", down, spy, stopped, slots=4, drawdown=0.025, profit_protect=0.30
     )
@@ -883,7 +1011,7 @@ def _check_slot_book():
         raise RuntimeError(f"2.5dd should keep a 9.80 close\n{held_dd}")
 
     trail = close.copy()
-    trail["A"] = [10.0, 12.0, 11.8, 11.8]
+    trail["A"] = [10.0, 10.0, 12.0, 11.8]
     _, trailed, _, _ = run_slot_book(
         "pp", trail, spy, stopped, slots=4, drawdown=0.10, profit_protect=0.10
     )
@@ -900,7 +1028,7 @@ def _check_slot_book():
     )
     _, once, _, _ = run_slot_book("one-ticker", close, spy, again, slots=2)
     held_a = once[once["ticker"] == "A"]
-    if len(held_a) != 1 or held_a["date_buy"].iloc[0] != index[0].strftime("%Y-%m-%d"):
+    if len(held_a) != 1 or held_a["date_buy"].iloc[0] != index[1].strftime("%Y-%m-%d"):
         raise RuntimeError(f"a held ticker must keep its one position\n{once}")
     if set(once.loc[once["status"] == "Open", "ticker"]) != {"A", "C"}:
         raise RuntimeError(f"the other ticker should take the free slot\n{once}")
@@ -912,14 +1040,14 @@ def _check_slot_book():
         ]
     )
     _, one_day, _, _ = run_slot_book("same-ticker", close, spy, same_name, slots=4)
-    if len(one_day) != 1 or one_day["date_buy"].iloc[0] != index[0].strftime("%Y-%m-%d"):
+    if len(one_day) != 1 or one_day["date_buy"].iloc[0] != index[1].strftime("%Y-%m-%d"):
         raise RuntimeError(f"same-day signals on one ticker are one position\n{one_day}")
 
     # After the position closes, the next signal opens a new one.
     reopen = frame(
         [
             {"date": index[0], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
-            {"date": index[3], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[2], "ticker": "A", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
         ]
     )
     _, reopened, _, _ = run_slot_book(
@@ -928,7 +1056,7 @@ def _check_slot_book():
     closed_a = reopened[reopened["status"] == "Closed"]
     open_a = reopened[reopened["status"] == "Open"]
     if (
-        list(closed_a["date_buy"]) != [index[0].strftime("%Y-%m-%d")]
+        list(closed_a["date_buy"]) != [index[1].strftime("%Y-%m-%d")]
         or list(open_a["date_buy"]) != [index[3].strftime("%Y-%m-%d")]
     ):
         raise RuntimeError(f"a closed ticker can open again\n{reopened}")
@@ -937,12 +1065,12 @@ def _check_slot_book():
 
 def _check_park_book():
     """Free slots hold TQQQ. A stop with no new ticker holds SPY. SPY is sold first."""
-    index = pd.bdate_range("2026-01-05", periods=4)
+    index = pd.bdate_range("2026-01-05", periods=5)
     close = pd.DataFrame(
         {
-            "A": [10.0, 10.0, 9.8, 9.8],
-            "B": [10.0, 10.5, 11.0, 12.0],
-            "C": [10.0, 10.0, 10.0, 10.0],
+            "A": [10.0, 10.0, 9.8, 9.8, 9.8],
+            "B": [10.0, 10.5, 11.0, 12.0, 12.0],
+            "C": [10.0, 10.0, 10.0, 10.0, 10.0],
         },
         index=index,
     )
@@ -964,7 +1092,7 @@ def _check_park_book():
     )
     closed = parked[parked["status"] == "Closed"]
     opened = set(parked.loc[parked["status"] == "Open", "ticker"])
-    if list(closed["ticker"]) != ["A", PARK_SPY] or opened != {"B", "C"}:
+    if list(closed["ticker"]) != [PARK_TQQQ, PARK_TQQQ, "A", PARK_SPY] or opened != {"B", "C"}:
         raise RuntimeError(f"new buy should sell SPY before the stock\n{parked}")
 
     one = frame(
@@ -976,7 +1104,7 @@ def _check_park_book():
     _, filler, _, _ = run_slot_book(
         "tqqq", close, spy, one, slots=2, drawdown=0.10, profit_protect=0.30, tqqq=tqqq
     )
-    if list(filler.loc[filler["status"] == "Closed", "ticker"]) != [PARK_TQQQ]:
+    if list(filler.loc[filler["status"] == "Closed", "ticker"]) != [PARK_TQQQ, PARK_TQQQ]:
         raise RuntimeError(f"free-slot TQQQ should be sold before the stock\n{filler}")
     if set(filler.loc[filler["status"] == "Open", "ticker"]) != {"B", "C"}:
         raise RuntimeError(f"B and C should remain after TQQQ is sold\n{filler}")
@@ -984,7 +1112,7 @@ def _check_park_book():
     reuse = frame(
         [
             {"date": index[0], "ticker": "A", "analyst_projections_count": 2, "average_projected": 40, "signal_score": 1},
-            {"date": index[2], "ticker": "C", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
+            {"date": index[1], "ticker": "C", "analyst_projections_count": 4, "average_projected": 40, "signal_score": 1},
         ]
     )
     _, reused, _, _ = run_slot_book(
@@ -997,9 +1125,9 @@ def _check_park_book():
 
 def _check_filler_book():
     """A stop fills the chosen ETF, and a new buy sells that ETF before TQQQ."""
-    index = pd.bdate_range("2026-01-05", periods=4)
+    index = pd.bdate_range("2026-01-05", periods=5)
     close = pd.DataFrame(
-        {"A": [10.0, 10.0, 9.8, 9.8], "C": [10.0, 10.0, 10.0, 10.0]},
+        {"A": [10.0, 10.0, 9.8, 9.8, 9.8], "C": [10.0, 10.0, 10.0, 10.0, 10.0]},
         index=index,
     )
     spy = pd.Series(100.0, index=index, name=PARK_SPY)
@@ -1025,7 +1153,7 @@ def _check_filler_book():
     )
     closed = list(booked.loc[booked["status"] == "Closed", "ticker"])
     opened = set(booked.loc[booked["status"] == "Open", "ticker"])
-    if closed != ["A", "VOO"] or opened != {PARK_TQQQ, "C"}:
+    if closed != [PARK_TQQQ, "A", "VOO"] or opened != {PARK_TQQQ, "C"}:
         raise RuntimeError(f"a new buy should sell the stop filler before TQQQ\n{booked}")
     print("Filler checks passed.")
 
@@ -1039,12 +1167,12 @@ def _check_scale_book():
     if position_lots(6, 50) != 16:
         raise RuntimeError("lot count caps at 16")
 
-    index = pd.bdate_range("2026-01-05", periods=6)
+    index = pd.bdate_range("2026-01-05", periods=7)
     close = pd.DataFrame(
         {
-            "A": [10.0, 9.6, 9.2, 8.8, 8.4, 8.0],
-            "B": [10.0, 10.0, 10.0, 10.0, 10.0, 9.0],
-            "C": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0],
+            "A": [10.0, 10.0, 9.6, 9.2, 8.8, 8.4, 8.0],
+            "B": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 9.0],
+            "C": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0],
         },
         index=index,
     )
@@ -1173,9 +1301,9 @@ def _check_split_book():
         raise RuntimeError(f"a 20% gain on one $40,000 lot must be $8,000\n{row}")
     if set(positions["ticker"]) != {"A"}:
         raise RuntimeError(f"split book must hold only the stock\n{positions}")
-    if abs(row["lot_days_util_pct"] - 50.0) > 0.1:
+    if abs(row["lot_days_util_pct"] - 100.0 / 3.0) > 0.1:
         raise RuntimeError(
-            f"one lot of two, held all 3 days, is 50% of lot-days, got {row['lot_days_util_pct']}"
+            f"one lot of two, held 2 of the 3 days, is 33.3% of lot-days, got {row['lot_days_util_pct']}"
         )
     print("Split checks passed.")
 
@@ -1330,6 +1458,17 @@ def trade_counts(positions):
     return n_symbols, n_positions
 
 
+def next_session_bars(dates, signal_dates):
+    """First session after each analyst day.
+
+    Points arrive through the signal day, so the book does not trade that
+    close. The buy is the next session's close. A Friday signal buys Monday.
+    A signal with no later session is dropped.
+    """
+    day = pd.to_datetime(pd.Series(signal_dates)).dt.normalize() + pd.Timedelta(days=1)
+    return dates.get_indexer(pd.DatetimeIndex(day), method="bfill")
+
+
 def run_slot_book(
     label,
     close,
@@ -1346,16 +1485,22 @@ def run_slot_book(
     lot_mode=None,
     cash_sleeve=True,
     lot_amount=None,
+    no_buy=False,
 ):
     """At most `slots` open lots.
 
-    A signal buys at that day's close when a slot is free. On a full book it
-    sells the biggest loss at that close and buys. If every open lot is in
-    profit, it sells the least profitable one only when that lot's strength
-    is strictly below the new signal's strength. A ticker that already has
-    an open position is skipped. Lots opened by the signal in hand stay one
-    position. After that position closes, a later signal can open a new one.
-    Same-day signals are taken strongest first.
+    A signal buys at the next session's close. Analyst points arrive through
+    the signal day, so that day's close is not a trade. Friday buys Monday.
+    On that next close, a free slot is taken. On a full book it sells the
+    biggest loss at that close and buys. If every open lot is in profit, it
+    sells the least profitable one only when that lot's strength is strictly
+    below the new signal's strength. no_buy skips that sale: a full book
+    does not sell a stock, SPY, or TQQQ to make room, and the signal is not
+    bought. A stop can still free a slot, and that slot can be bought the
+    same day. A ticker that already has an open position is skipped. Lots
+    opened by the signal in hand stay one position. After that position
+    closes, a later signal can open a new one. Signals that enter on the
+    same session are taken strongest first.
 
     When drawdown and profit_protect are set, those stops run first each day,
     before new signals. Loss dropdown sells while the close is under the
@@ -1400,7 +1545,7 @@ def run_slot_book(
         located["rank"] = located["signal_score"]
     else:
         located["rank"] = 0.0
-    located["bar"] = dates.get_indexer(pd.to_datetime(located["date"]).dt.normalize(), method="bfill")
+    located["bar"] = next_session_bars(dates, located["date"])
     by_day = defaultdict(list)
     n_signals = 0
     for row in located.itertuples(index=False):
@@ -1564,6 +1709,8 @@ def run_slot_book(
                     elif not use_spy_fill and idle_cash > 0:
                         idle_cash -= 1
                     continue
+                if no_buy:
+                    break
                 if use_spy_fill and tqqq_px is not None and sell_park(stop_ticker, t):
                     open_lot(signal, t, px)
                     continue
@@ -2027,6 +2174,9 @@ def attach_spec(row, spec: SellSpec, buy=None):
             "universe",
             "family",
             "signal_name",
+            "range_label",
+            "date_from",
+            "date_to",
         ):
             if key in buy:
                 row[key] = buy[key]
@@ -2642,10 +2792,19 @@ def filter_percentile(signals, min_percentile, signal_name=None):
 def apply_buy(signals, buy):
     signal_name = buy.get("signal_name")
     if buy.get("min_percentile") is not None:
-        return filter_percentile(signals, buy["min_percentile"], signal_name)
-    return filter_signals(
-        signals, buy["min_analysts"], buy["min_projected"], signal_name
-    )
+        out = filter_percentile(signals, buy["min_percentile"], signal_name)
+    else:
+        out = filter_signals(
+            signals, buy["min_analysts"], buy["min_projected"], signal_name
+        )
+    start = buy.get("date_from")
+    end = buy.get("date_to")
+    if start and end and len(out):
+        dates = pd.to_datetime(out["date"]).dt.normalize()
+        out = out.loc[
+            (dates >= pd.Timestamp(start)) & (dates <= pd.Timestamp(end))
+        ].reset_index(drop=True)
+    return out
 
 
 def download_close_yahoo(symbols, start, end):
@@ -3799,6 +3958,15 @@ def run_combos(
                 f"  I{iteration} {done}/{planned} {spec.short} · {buy_label(buy)} "
                 f"({len(bought)} signals)"
             )
+            book_close = close
+            if buy.get("date_from") and buy.get("date_to"):
+                start, end = combo_price_bounds(buy)
+                book_close = close.loc[start:end]
+                if book_close.empty:
+                    raise RuntimeError(
+                        f"no prices in {start.date()} → {end.date()}"
+                        f" for {buy_label(buy)}"
+                    )
             if spec.slots is not None:
                 filler = spec.filler
                 spy_fill = None
@@ -3816,7 +3984,7 @@ def run_combos(
                     spy_fill = True
                 row, positions, close_wide, init_cash = run_slot_book(
                     f"{spec.label} · {buy_label(buy)}",
-                    close,
+                    book_close,
                     spy,
                     bought,
                     slots=spec.slots,
@@ -3827,6 +3995,7 @@ def run_combos(
                     park_ticker=park_ticker,
                     spy_fill=spy_fill,
                     daily_loss=spec.loss_mode == "dls",
+                    no_buy=spec.loss_mode == "nb",
                     lot_mode=spec.lot_mode,
                     cash_sleeve=cash_sleeve,
                     lot_amount=spec.lot_amount,
@@ -3834,7 +4003,7 @@ def run_combos(
             else:
                 row, positions, close_wide, _, init_cash = run_one(
                     f"{spec.label} · {buy_label(buy)}",
-                    close,
+                    book_close,
                     spy,
                     bought,
                     spec,
@@ -4709,6 +4878,893 @@ def run_horizon(signals, close, spy, position_log=None):
     )
 
 
+def grace_price_to(date_to, days=HOLD_GRACE_DAYS):
+    """Last price day after the buy window. Buys stop at date_to."""
+    return (pd.Timestamp(date_to) + pd.Timedelta(days=int(days))).strftime("%Y-%m-%d")
+
+
+def combo_price_bounds(buy):
+    """Signals stay inside date_to. Prices run through price_to when set."""
+    start = pd.Timestamp(buy["date_from"])
+    end = pd.Timestamp(buy.get("price_to") or buy["date_to"])
+    return start, end
+
+
+def _check_grace_hold():
+    if HOLD_GRACE_DAYS != 6:
+        raise RuntimeError(f"grace drifted from the frozen p80: {HOLD_GRACE_DAYS}")
+    if grace_price_to("2026-01-31") != "2026-02-06":
+        raise RuntimeError(f"grace end drifted: {grace_price_to('2026-01-31')}")
+    frame = pd.DataFrame(
+        {
+            "date": ["2026-01-30", "2026-02-02"],
+            "ticker": ["A", "A"],
+            "average_projected": [20.0, 20.0],
+            "analyst_projections_count": [4, 4],
+            "signal_score": [1.0, 1.0],
+            "signal_name": [FROZEN_SIGNAL, FROZEN_SIGNAL],
+        }
+    )
+    buy = {
+        "min_analysts": 3,
+        "min_projected": 10.0,
+        "signal_name": FROZEN_SIGNAL,
+        "date_from": "2026-01-01",
+        "date_to": "2026-01-31",
+        "price_to": grace_price_to("2026-01-31"),
+    }
+    kept = apply_buy(frame, buy)
+    got = list(pd.to_datetime(kept["date"]).dt.strftime("%Y-%m-%d"))
+    if got != ["2026-01-30"]:
+        raise RuntimeError(f"grace bought outside the range: {got}")
+    _start, end = combo_price_bounds(buy)
+    if end != pd.Timestamp("2026-02-06"):
+        raise RuntimeError(f"prices must run through the grace, got {end.date()}")
+
+
+def validation_ranges(year=2026):
+    """One flat list of windows. Not a separate phase per length."""
+    built = []
+    n = len(_RANGE_MONTHS)
+    for length in range(1, 9):
+        for i in range(n - length + 1):
+            start_num, start_name = _RANGE_MONTHS[i]
+            end_num, end_name = _RANGE_MONTHS[i + length - 1]
+            label = (
+                f"{length}m_{start_name}"
+                if length == 1
+                else f"{length}m_{start_name}-{end_name}"
+            )
+            start = pd.Timestamp(year=year, month=start_num, day=1)
+            if end_num == 12:
+                end = pd.Timestamp(year=year, month=12, day=31)
+            else:
+                end = pd.Timestamp(year=year, month=end_num + 1, day=1) - pd.Timedelta(
+                    days=1
+                )
+            built.append(
+                {
+                    "label": label,
+                    "start": start.strftime("%Y-%m-%d"),
+                    "end": end.strftime("%Y-%m-%d"),
+                }
+            )
+    labels = tuple(item["label"] for item in built)
+    if labels != VALIDATION_RANGE_LABELS:
+        raise RuntimeError("validation range labels drifted from the hardcoded list")
+    return built
+
+
+def _check_validation_ranges():
+    ranges = validation_ranges()
+    if len(ranges) != 52:
+        raise RuntimeError(f"expected 52 ranges, got {len(ranges)}")
+    by_label = {item["label"]: item for item in ranges}
+    checks = {
+        "1m_Jan": ("2026-01-01", "2026-01-31"),
+        "1m_Oct": ("2026-10-01", "2026-10-31"),
+        "2m_Sep-Oct": ("2026-09-01", "2026-10-31"),
+        "3m_Jan-Mar": ("2026-01-01", "2026-03-31"),
+        "7m_Apr-Oct": ("2026-04-01", "2026-10-31"),
+        "8m_Jan-Aug": ("2026-01-01", "2026-08-31"),
+        "8m_Mar-Oct": ("2026-03-01", "2026-10-31"),
+    }
+    for label, (start, end) in checks.items():
+        got = by_label[label]
+        if got["start"] != start or got["end"] != end:
+            raise RuntimeError(f"{label} is {got['start']} → {got['end']}")
+    counts = {length: 0 for length in range(1, 9)}
+    for item in ranges:
+        counts[int(item["label"].split("m_", 1)[0])] += 1
+    if counts != {1: 10, 2: 9, 3: 8, 4: 7, 5: 6, 6: 5, 7: 4, 8: 3}:
+        raise RuntimeError(f"range counts {counts}")
+
+
+def validation_sell():
+    """Frozen recency winner: 7.5dd 5pp · 12 × $26,667 · ls · at."""
+    spec = SellSpec(
+        drawdown=0.075,
+        profit_protect=0.05,
+        slots=12,
+        loss_mode="ls",
+        lot_mode="at",
+        lot_amount=BOOK_CASH / 12,
+    )
+    if spec.short != "7.5dd 5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"frozen sell label drifted: {spec.short}")
+    return spec
+
+
+def validation_buys():
+    """Analyst >3 and projected >0/10/20/30% on each selected book, in every window."""
+    buys = []
+    for window in validation_ranges():
+        for name in signal_names():
+            for projected in (0, 10, 20, 30):
+                buys.append(
+                    {
+                        "min_analysts": 3,
+                        "min_projected": float(projected),
+                        "signal_name": name,
+                        "range_label": window["label"],
+                        "date_from": window["start"],
+                        "date_to": window["end"],
+                    }
+                )
+    return buys
+
+
+def run_ranges(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    buys = validation_buys()
+    spec = validation_sell()
+    print(
+        f"\n=== Recency date ranges: {len(buys)} buys × 1 sell"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · {spec.short}"
+        f" · analysts >3"
+        f" · projected >0/>10/>20/>30%"
+        f" · {len(validation_ranges())} ranges"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(signal_names())} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        [spec],
+        set(),
+        "ranges",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+CONFIRM_BLOCKS = (
+    "2m_Jan-Feb",
+    "2m_Mar-Apr",
+    "2m_May-Jun",
+    "2m_Jul-Aug",
+    "2m_Sep-Oct",
+)
+CONFIRM_HALVES = ("5m_Jan-May", "5m_Jun-Oct")
+CONFIRM_FULL = "10m_Jan-Oct"
+
+
+def _range_window(label, start_num, end_num, year=2026):
+    start = pd.Timestamp(year=year, month=start_num, day=1)
+    if end_num == 12:
+        end = pd.Timestamp(year=year, month=12, day=31)
+    else:
+        end = pd.Timestamp(year=year, month=end_num + 1, day=1) - pd.Timedelta(days=1)
+    return {
+        "label": label,
+        "start": start.strftime("%Y-%m-%d"),
+        "end": end.strftime("%Y-%m-%d"),
+    }
+
+
+def confirm_ranges(year=2026):
+    """Months, disjoint two-month blocks, both halves, and the full year."""
+    built = [
+        _range_window(f"1m_{name}", num, num, year) for num, name in _RANGE_MONTHS
+    ]
+    pairs = (
+        (1, 2, "Jan", "Feb"),
+        (3, 4, "Mar", "Apr"),
+        (5, 6, "May", "Jun"),
+        (7, 8, "Jul", "Aug"),
+        (9, 10, "Sep", "Oct"),
+    )
+    for start_num, end_num, start_name, end_name in pairs:
+        built.append(
+            _range_window(
+                f"2m_{start_name}-{end_name}", start_num, end_num, year
+            )
+        )
+    built.append(_range_window("5m_Jan-May", 1, 5, year))
+    built.append(_range_window("5m_Jun-Oct", 6, 10, year))
+    built.append(_range_window(CONFIRM_FULL, 1, 10, year))
+    labels = [item["label"] for item in built]
+    if labels != [
+        "1m_Jan",
+        "1m_Feb",
+        "1m_Mar",
+        "1m_Apr",
+        "1m_May",
+        "1m_Jun",
+        "1m_Jul",
+        "1m_Aug",
+        "1m_Sep",
+        "1m_Oct",
+        *CONFIRM_BLOCKS,
+        *CONFIRM_HALVES,
+        CONFIRM_FULL,
+    ]:
+        raise RuntimeError(f"confirm ranges drifted: {labels}")
+    return built
+
+
+def _book_sell(drawdown, profit_protect, slots, loss_mode, lot_mode):
+    return SellSpec(
+        drawdown=drawdown,
+        profit_protect=profit_protect,
+        slots=slots,
+        loss_mode=loss_mode,
+        lot_mode=lot_mode,
+        lot_amount=BOOK_CASH / slots,
+    )
+
+
+def confirm_sells():
+    """Frozen sell, then one moved knob at a time."""
+    specs = [
+        validation_sell(),
+        _book_sell(0.05, 0.05, 12, "ls", "at"),
+        _book_sell(0.10, 0.05, 12, "ls", "at"),
+        _book_sell(0.075, 0.025, 12, "ls", "at"),
+        _book_sell(0.075, 0.075, 12, "ls", "at"),
+        _book_sell(0.075, 0.10, 12, "ls", "at"),
+        _book_sell(0.075, 0.05, 8, "ls", "at"),
+        _book_sell(0.075, 0.05, 16, "ls", "at"),
+        _book_sell(0.075, 0.05, 32, "ls", "at"),
+        _book_sell(0.075, 0.05, 12, "dls", "at"),
+        _book_sell(0.075, 0.05, 12, "ls", "a"),
+    ]
+    shorts = [spec.short for spec in specs]
+    if len(shorts) != len(set(shorts)):
+        raise RuntimeError(f"duplicate confirm sells: {shorts}")
+    if shorts[0] != "7.5dd 5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"anchor drifted: {shorts[0]}")
+    return specs
+
+
+def confirm_buys():
+    """Analyst >2/>3/>4 and projected >0/10/20/30% on each confirm book and window."""
+    buys = []
+    for window in confirm_ranges():
+        for name in CONFIRM_SIGNAL_NAMES:
+            for analysts in (2, 3, 4):
+                for projected in (0, 10, 20, 30):
+                    buys.append(
+                        {
+                            "min_analysts": analysts,
+                            "min_projected": float(projected),
+                            "signal_name": name,
+                            "range_label": window["label"],
+                            "date_from": window["start"],
+                            "date_to": window["end"],
+                        }
+                    )
+    return buys
+
+
+def run_confirm(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    buys = confirm_buys()
+    specs = confirm_sells()
+    print(
+        f"\n=== Formula confirm: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · anchor {specs[0].short}"
+        f" · analysts >2/>3/>4"
+        f" · projected >0/>10/>20/>30%"
+        f" · {len(confirm_ranges())} windows"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {', '.join(CONFIRM_SIGNAL_NAMES)} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "confirm",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def next_sells():
+    """Frozen book, once for each strength formula."""
+    specs = [_book_sell(0.075, 0.05, 12, "ls", mode) for mode in LOT_FORMULAS]
+    if specs[0].short != "7.5dd 5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"frozen sell drifted: {specs[0].short}")
+    if [spec.lot_mode for spec in specs] != list(LOT_FORMULAS):
+        raise RuntimeError(f"strength formulas drifted: {[spec.lot_mode for spec in specs]}")
+    return specs
+
+
+def next_buys():
+    """Analyst >3 and projected >10% on the 2d recency book, in every window."""
+    return [
+        {
+            "min_analysts": 3,
+            "min_projected": 10.0,
+            "signal_name": FROZEN_SIGNAL,
+            "range_label": window["label"],
+            "date_from": window["start"],
+            "date_to": window["end"],
+        }
+        for window in validation_ranges()
+    ]
+
+
+def grace_buys():
+    """Same windows as next_buys. Prices continue for the static grace."""
+    buys = []
+    for buy in next_buys():
+        extended = dict(buy)
+        extended["price_to"] = grace_price_to(buy["date_to"])
+        buys.append(extended)
+    return buys
+
+
+def grace_sells():
+    """Loss dropdown × profit protection × ls/nb × the four strength formulas."""
+    specs = [
+        _book_sell(drawdown, protect, 12, pick, mode)
+        for drawdown in GRACE_DRAWDOWNS
+        for protect in GRACE_PROTECTS
+        for pick in GRACE_PICKS
+        for mode in LOT_FORMULAS
+    ]
+    shorts = [spec.short for spec in specs]
+    frozen = "7.5dd 5pp · 12 × $26,667 · ls · at"
+    no_buy = "7.5dd 5pp · 12 × $26,667 · nb · at"
+    if frozen not in shorts or no_buy not in shorts:
+        raise RuntimeError(f"grace sells missing the frozen book: {shorts[:4]}")
+    if len(specs) != 4 * 3 * 2 * 4:
+        raise RuntimeError(f"expected 96 grace sells, got {len(specs)}")
+    if specs[0].short != "7.5dd 7.5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"grace sell order drifted: {specs[0].short}")
+    return specs
+
+
+def run_grace(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    _check_grace_hold()
+    buys = grace_buys()
+    specs = grace_sells()
+    print(
+        f"\n=== Frozen grace: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · grace {HOLD_GRACE_DAYS}d"
+        f" · picks {', '.join(GRACE_PICKS)}"
+        f" · loss {', '.join(f'{dd * 100:g}dd' for dd in GRACE_DRAWDOWNS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in GRACE_PROTECTS)}"
+        f" · strength {', '.join(LOT_FORMULAS)}"
+        f" · analysts >3 · projected >10%"
+        f" · {len(validation_ranges())} ranges"
+        f" · buy the next session"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {FROZEN_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "grace",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def run_next(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    buys = next_buys()
+    specs = next_sells()
+    print(
+        f"\n=== Frozen next session: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · {specs[0].short}"
+        f" · strength {', '.join(LOT_FORMULAS)}"
+        f" · analysts >3 · projected >10%"
+        f" · {len(validation_ranges())} ranges"
+        f" · buy the next session"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {FROZEN_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "next",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def pp25_sells():
+    """Same frozen book, with profit protection moved from 5pp to 2.5pp."""
+    specs = [_book_sell(0.075, 0.025, 12, "ls", mode) for mode in LOT_FORMULAS]
+    if specs[0].short != "7.5dd 2.5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"2.5pp sell drifted: {specs[0].short}")
+    if [spec.lot_mode for spec in specs] != list(LOT_FORMULAS):
+        raise RuntimeError(f"strength formulas drifted: {[spec.lot_mode for spec in specs]}")
+    return specs
+
+
+def run_pp25(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    buys = next_buys()
+    specs = pp25_sells()
+    print(
+        f"\n=== Frozen 2.5pp: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · {specs[0].short}"
+        f" · strength {', '.join(LOT_FORMULAS)}"
+        f" · analysts >3 · projected >10%"
+        f" · {len(validation_ranges())} ranges"
+        f" · buy the next session"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {FROZEN_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "pp25",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def dd5_sells():
+    """Same frozen book, with the loss dropdown moved from 7.5dd to 5dd."""
+    specs = [_book_sell(0.05, 0.05, 12, "ls", mode) for mode in LOT_FORMULAS]
+    if specs[0].short != "5dd 5pp · 12 × $26,667 · ls · at":
+        raise RuntimeError(f"5dd sell drifted: {specs[0].short}")
+    if [spec.lot_mode for spec in specs] != list(LOT_FORMULAS):
+        raise RuntimeError(f"strength formulas drifted: {[spec.lot_mode for spec in specs]}")
+    return specs
+
+
+def run_dd5(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    buys = next_buys()
+    specs = dd5_sells()
+    print(
+        f"\n=== Frozen 5dd: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · {specs[0].short}"
+        f" · strength {', '.join(LOT_FORMULAS)}"
+        f" · analysts >3 · projected >10%"
+        f" · {len(validation_ranges())} ranges"
+        f" · buy the next session"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {FROZEN_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "dd5",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def nb125_sells():
+    """Frozen book with sell pick nb, and the loss dropdown moved from 7.5dd to 1.25dd."""
+    specs = [_book_sell(0.0125, 0.05, 12, "nb", mode) for mode in LOT_FORMULAS]
+    if specs[0].short != "1.25dd 5pp · 12 × $26,667 · nb · at":
+        raise RuntimeError(f"nb sell drifted: {specs[0].short}")
+    if [spec.lot_mode for spec in specs] != list(LOT_FORMULAS):
+        raise RuntimeError(f"strength formulas drifted: {[spec.lot_mode for spec in specs]}")
+    if "nb" not in PICK_MODES:
+        raise RuntimeError(f"nb missing from picks: {PICK_MODES}")
+    return specs
+
+
+def run_nb125(signals, close, spy, position_log=None):
+    _check_slot_book()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_validation_ranges()
+    buys = next_buys()
+    specs = nb125_sells()
+    print(
+        f"\n=== Frozen 1.25dd nb: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · {specs[0].short}"
+        f" · strength {', '.join(LOT_FORMULAS)}"
+        f" · analysts >3 · projected >10%"
+        f" · {len(validation_ranges())} ranges"
+        f" · buy the next session"
+        f" · one position per ticker"
+        f" · no SPY · no TQQQ"
+        f" · {FROZEN_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "nb125",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+    )
+    return rows, close, init_cash or BOOK_CASH
+
+
+def _median(values):
+    ordered = sorted(values)
+    if not ordered:
+        return float("nan")
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2.0
+
+
+def _book_day(name):
+    return str(name).split("_")[-2]
+
+
+def _window_tail(label):
+    return str(label).split("_", 1)[1]
+
+
+def _top_shares(position_path):
+    path = Path(position_path) if position_path else None
+    if path is None or not path.exists():
+        return {}
+    frame = pd.read_csv(path, usecols=["sell", "buy", "ticker", "pnl"])
+    frame = frame[frame["buy"].astype(str).str.startswith(CONFIRM_FULL)]
+    shares = {}
+    for (sell, buy), block in frame.groupby(["sell", "buy"], sort=False):
+        by_ticker = block.groupby("ticker")["pnl"].sum().sort_values(ascending=False)
+        total = float(by_ticker.sum())
+        if total <= 0 or by_ticker.empty:
+            shares[(sell, buy)] = None
+            continue
+        top5 = float(by_ticker.head(5).sum()) / total * 100.0
+        shares[(sell, buy)] = top5
+    return shares
+
+
+def _blank_window(template, label):
+    """A window with no signals is a flat month, not a missing formula."""
+    return {
+        "range_label": label,
+        "return_on_avg_invested_pct": 0.0,
+        "stock_pnl": 0.0,
+        "n_symbols": 0,
+        "n_signals": 0,
+        "win_rate_pct": 0.0,
+        "signal_name": template.get("signal_name"),
+        "min_analysts": template.get("min_analysts"),
+        "min_projected": template.get("min_projected"),
+        "short": template.get("short"),
+        "buy_label": "",
+    }
+
+
+def _formula_stats(block):
+    by_label = {row["range_label"]: row for row in block}
+    template = block[0]
+
+    def need(label):
+        return by_label.get(label) or _blank_window(template, label)
+
+    full = by_label.get(CONFIRM_FULL)
+    if full is None:
+        return None
+    blocks = [need(label) for label in CONFIRM_BLOCKS]
+    halves = [need(label) for label in CONFIRM_HALVES]
+    months = [need(f"1m_{name}") for _num, name in _RANGE_MONTHS]
+    negative = [
+        _window_tail(row["range_label"])
+        for row in blocks
+        if row["return_on_avg_invested_pct"] <= 0
+    ]
+    return {
+        "full": full,
+        "blocks": blocks,
+        "halves": halves,
+        "months": months,
+        "negative": negative,
+        "block_pos": 5 - len(negative),
+        "block_median": _median(
+            [row["return_on_avg_invested_pct"] for row in blocks]
+        ),
+        "block_worst": min(row["return_on_avg_invested_pct"] for row in blocks),
+        "month_pos": sum(
+            1 for row in months if row["return_on_avg_invested_pct"] > 0
+        ),
+        "block_win": _median([row["win_rate_pct"] for row in blocks]),
+        "block_symbols": _median([row["n_symbols"] for row in blocks]),
+    }
+
+
+def _held(stats):
+    full = stats["full"]
+    half_ok = all(row["return_on_avg_invested_pct"] > 0 for row in stats["halves"])
+    return (
+        full["n_signals"] >= 30
+        and full["n_symbols"] >= 30
+        and half_ok
+        and stats["block_pos"] >= 4
+    )
+
+
+def _formula_line(stats, top5):
+    full = stats["full"]
+    h1, h2 = stats["halves"]
+    share = "—" if top5 is None else f"{top5:.0f}%"
+    lost = ", ".join(stats["negative"]) if stats["negative"] else "—"
+    return (
+        f"| {_book_day(full['signal_name'])} · >{int(full['min_analysts'])}"
+        f" · >{int(full['min_projected'])}% "
+        f"| {full['return_on_avg_invested_pct']:+.1f}% "
+        f"| {money(full['stock_pnl'])} "
+        f"| {full['n_symbols']} "
+        f"| {full['win_rate_pct']:.1f}% "
+        f"| {full['n_signals']} "
+        f"| {stats['block_pos']}/5 "
+        f"| {stats['block_median']:+.1f}% "
+        f"| {stats['block_worst']:+.1f}% "
+        f"| {lost} "
+        f"| {stats['month_pos']}/10 "
+        f"| {h1['return_on_avg_invested_pct']:+.1f}% "
+        f"| {h2['return_on_avg_invested_pct']:+.1f}% "
+        f"| {share} |"
+    )
+
+
+def confirm_validation_markdown(rows, position_path=None):
+    """Score each formula on disjoint blocks, both halves, and the full year."""
+    grouped = defaultdict(list)
+    for row in rows:
+        grouped[
+            (
+                row.get("short") or "",
+                row.get("signal_name"),
+                int(row["min_analysts"]),
+                int(row["min_projected"]),
+            )
+        ].append(row)
+    shares = _top_shares(position_path)
+    scored = []
+    for key, block in grouped.items():
+        stats = _formula_stats(block)
+        if stats is None:
+            continue
+        full = stats["full"]
+        top5 = shares.get((full.get("short") or "", full.get("buy_label")))
+        scored.append((key, stats, top5))
+    anchor = "7.5dd 5pp · 12 × $26,667 · ls · at"
+    held = [item for item in scored if _held(item[1])]
+    held.sort(
+        key=lambda item: (
+            item[1]["full"]["return_on_avg_invested_pct"],
+            item[1]["full"]["stock_pnl"],
+        ),
+        reverse=True,
+    )
+    head = (
+        "| Formula | On invested | Stock P&L | Symbols | Win | Signals "
+        "| Blocks + | Block med | Worst block | Blocks lost "
+        "| Months + | Jan–May | Jun–Oct | Top 5 share |"
+    )
+    sep = (
+        "| --- | ---: | ---: | ---: | ---: | ---: "
+        "| ---: | ---: | ---: | --- "
+        "| ---: | ---: | ---: | ---: |"
+    )
+    lines = [
+        "## Validation score",
+        "",
+        "A formula is **held** only when January–October has at least 30 signals "
+        "and 30 symbols, both halves make money, and at least 4 of the 5 "
+        "disjoint two-month blocks make money. Those blocks are Jan–Feb, "
+        "Mar–Apr, May–Jun, Jul–Aug, and Sep–Oct. They do not share a month. "
+        "Rank among held formulas is January–October return on invested. "
+        "Top 5 share is the best five symbols' profit divided by the full-window "
+        "stock P&L. The single best cell further down is a different ranking.",
+        "",
+        f"Held formulas: **{len(held)}** of {len(scored)}.",
+        "",
+    ]
+    if held:
+        lines += [
+            "### Held, by January–October return on invested",
+            "",
+            head,
+            sep,
+        ]
+        for key, stats, top5 in held[:20]:
+            sell = key[0]
+            lines.append(f"| {sell} · " + _formula_line(stats, top5)[2:])
+        lines.append("")
+    else:
+        lines += [
+            "No formula is held. The nearest rows are the ones with the most "
+            "positive disjoint blocks, then the higher full-window return.",
+            "",
+        ]
+        nearest = sorted(
+            scored,
+            key=lambda item: (
+                item[1]["block_pos"],
+                item[1]["full"]["return_on_avg_invested_pct"],
+                item[1]["full"]["n_symbols"],
+            ),
+            reverse=True,
+        )[:15]
+        lines += [head, sep]
+        for key, stats, top5 in nearest:
+            lines.append(f"| {key[0]} · " + _formula_line(stats, top5)[2:])
+        lines.append("")
+
+    lines += [
+        "### Frozen sell on every book and cut",
+        "",
+        head,
+        sep,
+    ]
+    frozen = [item for item in scored if item[0][0] == anchor]
+    frozen.sort(
+        key=lambda item: item[1]["full"]["return_on_avg_invested_pct"],
+        reverse=True,
+    )
+    for _key, stats, top5 in frozen:
+        lines.append(_formula_line(stats, top5))
+    lines.append("")
+
+    lines += [
+        "### One knob off the frozen sell, 2d · analyst>3",
+        "",
+        head,
+        sep,
+    ]
+    neighbors = [
+        item
+        for item in scored
+        if _book_day(item[0][1]) == "2d" and item[0][2] == 3
+    ]
+    neighbors.sort(
+        key=lambda item: (
+            int(item[0][3]),
+            item[0][0] != anchor,
+            -item[1]["full"]["return_on_avg_invested_pct"],
+        )
+    )
+    for key, stats, top5 in neighbors:
+        lines.append(f"| {key[0]} · " + _formula_line(stats, top5)[2:])
+    lines.append("")
+
+    beats = []
+    anchor_by_buy = {
+        (item[0][1], item[0][2], item[0][3]): item[1]
+        for item in scored
+        if item[0][0] == anchor
+    }
+    for key, stats, top5 in scored:
+        if key[0] == anchor:
+            continue
+        base = anchor_by_buy.get((key[1], key[2], key[3]))
+        if base is None:
+            continue
+        better_return = (
+            stats["full"]["return_on_avg_invested_pct"]
+            > base["full"]["return_on_avg_invested_pct"]
+        )
+        better_blocks = stats["block_pos"] > base["block_pos"]
+        keeps_symbols = stats["full"]["n_symbols"] >= base["full"]["n_symbols"]
+        if better_blocks and better_return and keeps_symbols:
+            beats.append((key, stats, top5, base))
+    lines += [
+        "### Neighbors that beat the frozen sell on the same buy",
+        "",
+        "Same book, analyst cut, and upside cut. Higher full-window return, "
+        "more positive disjoint blocks, and at least as many symbols.",
+        "",
+    ]
+    if not beats:
+        lines += ["None.", ""]
+    else:
+        lines += [head, sep]
+        beats.sort(
+            key=lambda item: (
+                item[1]["block_pos"],
+                item[1]["full"]["return_on_avg_invested_pct"],
+            ),
+            reverse=True,
+        )
+        for key, stats, top5, _base in beats[:20]:
+            lines.append(f"| {key[0]} · " + _formula_line(stats, top5)[2:])
+        lines.append("")
+    return "\n".join(lines)
+
+
 def run_recency(signals, close, spy, position_log=None):
     _check_slot_book()
     _check_cash_book()
@@ -5359,9 +6415,30 @@ const PROTECTS = __PROTECTS__;
 const FILLERS: string[] = __FILLERS__;
 const RULES: string[] = __RULES__;
 const SIZES: string[] = __SIZES__;
+const RANGES: string[] = __RANGES__;
 const SELL_MODE: string = __SELL_MODE__;
 
-type Buy = { s: string; a: number; p: number; n: number; sym: number };
+function rangeLength(label: string): string {
+  const cut = label.indexOf("m_");
+  return cut > 0 ? label.slice(0, cut + 1) : "";
+}
+
+function rangeStart(label: string): string {
+  const rest = label.slice(label.indexOf("m_") + 2);
+  const dash = rest.indexOf("-");
+  return dash < 0 ? rest : rest.slice(0, dash);
+}
+
+const LENGTHS: string[] = [];
+const STARTS: string[] = [];
+for (const label of RANGES) {
+  const length = rangeLength(label);
+  const start = rangeStart(label);
+  if (length && !LENGTHS.includes(length)) LENGTHS.push(length);
+  if (start && !STARTS.includes(start)) STARTS.push(start);
+}
+
+type Buy = { s: string; a: number; p: number; n: number; sym: number; w: string };
 type Sell = { h: number; t: number; d: number; p: number; f: string; r: string; z: string; m: number };
 
 const BUYS: Buy[] = __BUYS__;
@@ -5398,7 +6475,8 @@ function lotSizeLabel(value: string): string {
 
 function buyLabel(buy: Buy): string {
   const cut = `>${buy.a},>${buy.p}%`;
-  return buy.s ? `${buy.s} · ${cut}` : cut;
+  const book = buy.s ? `${buy.s} · ${cut}` : cut;
+  return buy.w ? `${buy.w} · ${book}` : book;
 }
 
 function sellLabel(sell: Sell): string {
@@ -5774,20 +6852,22 @@ function Scale({
 
 export default function FineGridCanvas() {
   const theme = useHostTheme();
-  const [books, setBooks] = useCanvasState<string[]>("grid-signals", SIGNALS);
-  const [analysts, setAnalysts] = useCanvasState<number[]>("fine-analysts", ANALYSTS);
-  const [upsideFloor, setUpsideFloor] = useCanvasState<number>("fine-upside-floor", UPSIDES[0]);
-  const [holds, setHolds] = useCanvasState<number[]>("fine-holds", HOLDS);
-  const [targets, setTargets] = useCanvasState<number[]>("fine-targets", TARGETS);
-  const [drops, setDrops] = useCanvasState<number[]>("fine-drops", DROPS);
-  const [protects, setProtects] = useCanvasState<number[]>("fine-protects", PROTECTS);
-  const [showMode, setShowMode] = useCanvasState<ShowMode>("fine-show-mode", "both");
-  const [sortKey, setSortKey] = useCanvasState<string>("grid-sort-key", "");
-  const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("grid-sort-dir", "desc");
-  const [symbolFloor, setSymbolFloor] = useCanvasState<number>("fine-symbol-floor", 0);
-  const [filler, setFiller] = useCanvasState<string>("grid-filler", FILLERS[0] ?? "");
-  const [rule, setRule] = useCanvasState<string>("grid-rule", RULES[0] ?? "");
-  const [sizes, setSizes] = useCanvasState<string[]>("grid-sizes", SIZES);
+  const [books, setBooks] = useCanvasState<string[]>("next-signals", SIGNALS);
+  const [analysts, setAnalysts] = useCanvasState<number[]>("next-analysts", ANALYSTS);
+  const [upsideFloor, setUpsideFloor] = useCanvasState<number>("next-upside-floor", UPSIDES[0]);
+  const [holds, setHolds] = useCanvasState<number[]>("next-holds", HOLDS);
+  const [targets, setTargets] = useCanvasState<number[]>("next-targets", TARGETS);
+  const [drops, setDrops] = useCanvasState<number[]>("next-drops", DROPS);
+  const [protects, setProtects] = useCanvasState<number[]>("next-protects", PROTECTS);
+  const [showMode, setShowMode] = useCanvasState<ShowMode>("next-show-mode", "both");
+  const [sortKey, setSortKey] = useCanvasState<string>("next-sort-key", "");
+  const [sortDir, setSortDir] = useCanvasState<"asc" | "desc">("next-sort-dir", "desc");
+  const [symbolFloor, setSymbolFloor] = useCanvasState<number>("next-symbol-floor", 0);
+  const [filler, setFiller] = useCanvasState<string>("next-filler", FILLERS[0] ?? "");
+  const [rules, setRules] = useCanvasState<string[]>("grace-rules", RULES);
+  const [sizes, setSizes] = useCanvasState<string[]>("next-sizes", SIZES);
+  const [lengths, setLengths] = useCanvasState<string[]>("grace-lengths", LENGTHS);
+  const [starts, setStarts] = useCanvasState<string[]>("grace-starts", STARTS);
 
   const view = useMemo(() => {
     const buys = BUYS.map((buy, row) => ({ buy, row })).filter(
@@ -5795,7 +6875,9 @@ export default function FineGridCanvas() {
         books.includes(buy.s) &&
         analysts.includes(buy.a) &&
         buy.p >= upsideFloor &&
-        buy.sym > symbolFloor,
+        buy.sym > symbolFloor &&
+        (RANGES.length === 0 ||
+          (lengths.includes(rangeLength(buy.w)) && starts.includes(rangeStart(buy.w)))),
     );
     const bookMode = SELL_MODE === "book";
     const protectMode = SELL_MODE === "protect";
@@ -5806,7 +6888,7 @@ export default function FineGridCanvas() {
           protects.includes(sell.p) &&
           drops.includes(sell.d) &&
           (FILLERS.length === 0 || sell.f === filler) &&
-          (RULES.length === 0 || sell.r === rule) &&
+          (RULES.length === 0 || rules.includes(sell.r)) &&
           (SIZES.length === 0 || sizes.includes(sell.z))
         : slotsMode
           ? true
@@ -5828,7 +6910,7 @@ export default function FineGridCanvas() {
       cornerRoi: buys.length && sells.length ? cornerOf(rowRoi) : null,
       cornerPnl: buys.length && sells.length ? cornerOf(rowPnl) : null,
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rules, sizes, lengths, starts]);
 
   const filterStats = useMemo(() => {
     const signalRoi = emptyBuckets(SIGNALS);
@@ -5875,6 +6957,14 @@ export default function FineGridCanvas() {
     const sizePnl = emptyBuckets(SIZES);
     const sizeSym = emptyBuckets(SIZES);
     const sizeWin = emptyBuckets(SIZES);
+    const lengthRoi = emptyBuckets(LENGTHS);
+    const lengthPnl = emptyBuckets(LENGTHS);
+    const lengthSym = emptyBuckets(LENGTHS);
+    const lengthWin = emptyBuckets(LENGTHS);
+    const startRoi = emptyBuckets(STARTS);
+    const startPnl = emptyBuckets(STARTS);
+    const startSym = emptyBuckets(STARTS);
+    const startWin = emptyBuckets(STARTS);
     const bookMode = SELL_MODE === "book";
     const protectMode = SELL_MODE === "protect";
     const slotsMode = SELL_MODE === "slots";
@@ -5899,13 +6989,18 @@ export default function FineGridCanvas() {
       const analystOk = analysts.includes(buy.a);
       const upsideOk = buy.p >= upsideFloor;
       const symbolOk = buy.sym > symbolFloor;
+      const lengthName = rangeLength(buy.w);
+      const startName = rangeStart(buy.w);
+      const lengthOk = RANGES.length === 0 || lengths.includes(lengthName);
+      const startOk = RANGES.length === 0 || starts.includes(startName);
+      const rangeOk = lengthOk && startOk;
       SELLS.forEach((sell, col) => {
         const roi = ROI[row][col];
         const pnl = PNL[row][col];
         const win = WIN[row][col];
         if (!Number.isFinite(roi) || !Number.isFinite(pnl)) return;
         const fillerOn = FILLERS.length === 0 || sell.f === filler;
-        const ruleOn = RULES.length === 0 || sell.r === rule;
+        const ruleOn = RULES.length === 0 || rules.includes(sell.r);
         const sizeOn = SIZES.length === 0 || sizes.includes(sell.z);
         const holdOk = bookMode
           ? holds.includes(sell.h)
@@ -5915,18 +7010,20 @@ export default function FineGridCanvas() {
           : slotsMode || (protectMode ? protects.includes(sell.p) : targets.includes(sell.t));
         const dropOk = bookMode ? drops.includes(sell.d) : slotsMode || drops.includes(sell.d);
         const sellsOk = holdOk && targetOk && dropOk;
-        const buysOk = signalOk && analystOk && upsideOk && symbolOk;
+        const buysOk = signalOk && analystOk && upsideOk && symbolOk && rangeOk;
         if (FILLERS.length && buysOk && sellsOk && ruleOn && sizeOn) push(fillerRoi, fillerPnl, fillerSym, fillerWin, sell.f, roi, pnl, buy.sym, win);
         if (RULES.length && buysOk && sellsOk && fillerOn && sizeOn) push(ruleRoi, rulePnl, ruleSym, ruleWin, sell.r, roi, pnl, buy.sym, win);
         if (SIZES.length && buysOk && sellsOk && fillerOn && ruleOn) push(sizeRoi, sizePnl, sizeSym, sizeWin, sell.z, roi, pnl, buy.sym, win);
-        if (fillerOn && ruleOn && sizeOn && analystOk && upsideOk && symbolOk && sellsOk) push(signalRoi, signalPnl, signalSym, signalWin, buy.s, roi, pnl, buy.sym, win);
-        if (fillerOn && ruleOn && sizeOn && signalOk && upsideOk && symbolOk && sellsOk) push(analystRoi, analystPnl, analystSym, analystWin, String(buy.a), roi, pnl, buy.sym, win);
-        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && symbolOk && sellsOk) {
+        if (fillerOn && ruleOn && sizeOn && analystOk && upsideOk && symbolOk && sellsOk && rangeOk) push(signalRoi, signalPnl, signalSym, signalWin, buy.s, roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && signalOk && upsideOk && symbolOk && sellsOk && rangeOk) push(analystRoi, analystPnl, analystSym, analystWin, String(buy.a), roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && symbolOk && sellsOk && rangeOk) {
           for (const floor of UPSIDES) {
             if (buy.p >= floor) push(upsideRoi, upsidePnl, upsideSym, upsideWin, String(floor), roi, pnl, buy.sym, win);
           }
         }
-        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && upsideOk && sellsOk) {
+        if (LENGTHS.length && startOk && fillerOn && ruleOn && sizeOn && signalOk && analystOk && upsideOk && symbolOk && sellsOk) push(lengthRoi, lengthPnl, lengthSym, lengthWin, lengthName, roi, pnl, buy.sym, win);
+        if (STARTS.length && lengthOk && fillerOn && ruleOn && sizeOn && signalOk && analystOk && upsideOk && symbolOk && sellsOk) push(startRoi, startPnl, startSym, startWin, startName, roi, pnl, buy.sym, win);
+        if (fillerOn && ruleOn && sizeOn && signalOk && analystOk && upsideOk && sellsOk && rangeOk) {
           for (const floor of SYMBOL_FLOORS) {
             if (buy.sym > floor) push(symbolRoi, symbolPnl, symbolSym, symbolWin, String(floor), roi, pnl, buy.sym, win);
           }
@@ -5949,8 +7046,10 @@ export default function FineGridCanvas() {
       filler: packSlice(fillerRoi, fillerPnl, fillerSym, fillerWin),
       rule: packSlice(ruleRoi, rulePnl, ruleSym, ruleWin),
       size: packSlice(sizeRoi, sizePnl, sizeSym, sizeWin),
+      length: packSlice(lengthRoi, lengthPnl, lengthSym, lengthWin),
+      start: packSlice(startRoi, startPnl, startSym, startWin),
     };
-  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rule, sizes]);
+  }, [books, analysts, upsideFloor, holds, targets, drops, protects, symbolFloor, filler, rules, sizes, lengths, starts]);
 
   const roiRange = span(ROI.flat());
   const pnlRange = span(PNL.flat());
@@ -6144,6 +7243,28 @@ export default function FineGridCanvas() {
             : "Min, avg, and max are the return for that value with the other filters applied."}{" "}
           The next three figures are that value's symbol count. The last three are its win rate.
         </Text>
+        {RANGES.length > 0 ? (
+          <Grid columns={2} gap={16} align="start">
+            <FilterColumn
+              label="Length"
+              options={LENGTHS}
+              selected={lengths}
+              onChange={setLengths}
+              format={(value) => value}
+              moneyMode={showMode === "pnl"}
+              stats={filterStats.length}
+            />
+            <FilterColumn
+              label="Start month"
+              options={STARTS}
+              selected={starts}
+              onChange={setStarts}
+              format={(value) => value}
+              moneyMode={showMode === "pnl"}
+              stats={filterStats.start}
+            />
+          </Grid>
+        ) : null}
         <Grid columns={2} gap={16} align="start">
           <FilterColumn
             label="Signal"
@@ -6276,12 +7397,11 @@ export default function FineGridCanvas() {
             <FilterColumn
               label="Sell pick"
               options={RULES}
-              selected={[rule]}
-              onChange={(next) => setRule(next[0])}
-              format={(value) => (value === "dls" ? "dls" : "ls")}
+              selected={rules}
+              onChange={setRules}
+              format={(value) => value}
               moneyMode={showMode === "pnl"}
               stats={filterStats.rule}
-              exclusive
             />
           ) : null}
           {SIZES.length > 0 ? (
@@ -6639,6 +7759,7 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                 "p": int(buy["min_projected"]),
                 "n": int(len(bought)),
                 "sym": int(bought["ticker"].nunique()) if len(bought) else 0,
+                "w": buy.get("range_label") or "",
             }
         )
     book_mode = any(
@@ -6764,6 +7885,18 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         "Win rate counts a position once: lots with the same ticker, buy date, "
         "and buy price are one position."
     )
+    if any(buy.get("price_to") for buy in buys):
+        caption += (
+            f" Buys stop on the last day of each range. Prices continue "
+            f"{HOLD_GRACE_DAYS} calendar days, the p80 calendar hold of closed "
+            f"lots on 7.5dd 5pp · ls · at. A lot still open at the end of that "
+            f"grace stays open."
+        )
+    elif any(buy.get("range_label") for buy in buys):
+        caption += (
+            " Each cell keeps signals and prices inside one date range. "
+            "A lot still open on the last day of that range stays open."
+        )
     data = {
         "__SOURCE__": json.dumps(caption),
         "__TITLE__": json.dumps(info.get("title") or "Buy × sell"),
@@ -6777,6 +7910,13 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         "__FILLERS__": json.dumps(fillers),
         "__RULES__": json.dumps(rules),
         "__SIZES__": json.dumps(sizes),
+        "__RANGES__": json.dumps(
+            list(
+                dict.fromkeys(
+                    buy["range_label"] for buy in buys if buy.get("range_label")
+                )
+            )
+        ),
         "__SELL_MODE__": json.dumps(
             "book" if book_mode else "slots" if slots_mode else "protect" if protect_mode else "hold"
         ),
@@ -6845,6 +7985,13 @@ def parse_args():
             "window",
             "horizon",
             "recency",
+            "ranges",
+            "confirm",
+            "next",
+            "pp25",
+            "dd5",
+            "nb125",
+            "grace",
         ),
     )
     p.add_argument("--signals", default=str(SIGNALS_CSV))
@@ -6881,6 +8028,10 @@ def parse_args():
             "for 1d through 5d. "
             "recency with no flag uses yahoo_and_tipranks_1d_recency through "
             "yahoo_and_tipranks_5d_recency. "
+            "ranges with no flag uses those same five recency books. "
+            "confirm with no flag uses yahoo_and_tipranks_1d_recency through "
+            "yahoo_and_tipranks_3d_recency. "
+            "next, pp25, dd5, nb125, and grace keep yahoo_and_tipranks_2d_recency. "
             "Other phases default to "
             "yahoo-daily and yahoo-7d-window."
         ),
@@ -6923,7 +8074,11 @@ def append_filler_comparison(path, rows):
 
 def main():
     args = parse_args()
-    if args.phase == "recency" and not args.signal_names:
+    if args.phase in ("next", "pp25", "dd5", "nb125", "grace"):
+        set_signal_names((FROZEN_SIGNAL,))
+    elif args.phase == "confirm" and not args.signal_names:
+        set_signal_names(CONFIRM_SIGNAL_NAMES)
+    elif args.phase in ("recency", "ranges") and not args.signal_names:
         set_signal_names(RECENCY_SIGNAL_NAMES)
     elif args.phase == "horizon" and not args.signal_names:
         set_signal_names(HORIZON_SIGNAL_NAMES)
@@ -6941,7 +8096,21 @@ def main():
         set_signal_names(args.signal_names)
     CACHE_DIR.mkdir(exist_ok=True)
     stamp, run_label = run_clock()
-    if args.phase == "recency":
+    if args.phase == "grace":
+        prefix = OUT_DIR / GRACE_STEM
+    elif args.phase == "nb125":
+        prefix = OUT_DIR / NB125_STEM
+    elif args.phase == "dd5":
+        prefix = OUT_DIR / DD5_STEM
+    elif args.phase == "pp25":
+        prefix = OUT_DIR / PP25_STEM
+    elif args.phase == "next":
+        prefix = OUT_DIR / NEXT_STEM
+    elif args.phase == "confirm":
+        prefix = OUT_DIR / CONFIRM_STEM
+    elif args.phase == "ranges":
+        prefix = OUT_DIR / RANGES_STEM
+    elif args.phase == "recency":
         prefix = OUT_DIR / RECENCY_STEM
     elif args.phase == "horizon":
         prefix = OUT_DIR / HORIZON_STEM
@@ -7007,6 +8176,386 @@ def main():
         ignore_last_days=ignore_last_days,
         refresh=refresh,
     )
+
+    if args.phase == "grace":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_grace(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "grace.json", rows)
+        specs = grace_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Frozen grace, ls and nb, loss dropdown × profit protection, all strength formulas",
+        )
+        notes = [
+            "Frozen buy: yahoo_and_tipranks_2d_recency, analyst >3, "
+            "projected >10%.",
+            "Sells are loss dropdown 7.5%, 5%, 2.5%, and 1.25% crossed with "
+            "profit protection 7.5%, 5%, and 2.5%. Each stop pair runs as ls "
+            "and as nb, on strength at, sqra, a, and sqra_target. 12 lots "
+            "of $26,667.",
+            "nb buys only into a slot that is already free. A full book skips "
+            "the signal. It does not sell a stock, SPY, or TQQQ to make room. "
+            "Loss dropdown and profit protection still run first and can free "
+            "a slot, and that slot can be bought the same day.",
+            "ls sells the biggest loss to make room. If every open lot is in "
+            "profit, it sells the least profitable one only when that lot's "
+            "strength is strictly below the new signal.",
+            "A signal buys the next session's close. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday.",
+            f"Buys stop on the last day of the range. Prices continue "
+            f"{HOLD_GRACE_DAYS} calendar days after that, the p80 calendar "
+            f"hold of closed lots on 7.5dd 5pp · ls · at. A lot still open "
+            f"at the end of the grace stays open. It is not sold because the "
+            f"range ended. Quotes stop on the --end day, so a range that "
+            f"already ends on the last quote gets a shorter grace.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "52 ranges × 4 drawdowns × 3 profit protects × 2 sell picks "
+            "× 4 strength formulas = 4,992 cells. "
+            "Trusted cells have at least 30 signals.",
+        ]
+        buys = grace_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "next":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_next(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "next.json", rows)
+        specs = next_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Frozen 7.5dd 5pp · 12 × $26,667 · ls, next session, all strength formulas",
+        )
+        notes = [
+            "Frozen buy: yahoo_and_tipranks_2d_recency, analyst >3, "
+            "projected >10%.",
+            "Frozen sell: 7.5% loss dropdown, 5% of the peak gain, 12 lots "
+            "of $26,667, ls. Strength is at, sqra, a, and sqra_target.",
+            "A signal buys the next session's close. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday.",
+            "Every window from 1m_Jan through 8m_Mar-Oct is its own cell. "
+            "Each cell keeps signals dated inside that window and prices "
+            "through the window's last day. A lot still open on that day "
+            "stays open.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "52 ranges × 4 strength formulas = 208 cells. "
+            "Trusted cells have at least 30 signals.",
+        ]
+        buys = next_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "pp25":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_pp25(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "pp25.json", rows)
+        specs = pp25_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Frozen 7.5dd 2.5pp · 12 × $26,667 · ls, next session, all strength formulas",
+        )
+        notes = [
+            "Frozen buy: yahoo_and_tipranks_2d_recency, analyst >3, "
+            "projected >10%.",
+            "Sell moves one knob from the frozen book: profit protection "
+            "is 2.5% of the peak gain. Loss dropdown stays 7.5%, 12 lots "
+            "of $26,667, ls. Strength is at, sqra, a, and sqra_target.",
+            "A signal buys the next session's close. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday.",
+            "Every window from 1m_Jan through 8m_Mar-Oct is its own cell. "
+            "Each cell keeps signals dated inside that window and prices "
+            "through the window's last day. A lot still open on that day "
+            "stays open.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "52 ranges × 4 strength formulas = 208 cells. "
+            "Trusted cells have at least 30 signals.",
+        ]
+        buys = next_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "dd5":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_dd5(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "dd5.json", rows)
+        specs = dd5_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Frozen 5dd 5pp · 12 × $26,667 · ls, next session, all strength formulas",
+        )
+        notes = [
+            "Frozen buy: yahoo_and_tipranks_2d_recency, analyst >3, "
+            "projected >10%.",
+            "Sell moves one knob from the frozen book: the loss dropdown "
+            "is 5%. Profit protection stays 5% of the peak gain, 12 lots "
+            "of $26,667, ls. Strength is at, sqra, a, and sqra_target.",
+            "A signal buys the next session's close. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday.",
+            "Every window from 1m_Jan through 8m_Mar-Oct is its own cell. "
+            "Each cell keeps signals dated inside that window and prices "
+            "through the window's last day. A lot still open on that day "
+            "stays open.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "52 ranges × 4 strength formulas = 208 cells. "
+            "Trusted cells have at least 30 signals.",
+        ]
+        buys = next_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "nb125":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_nb125(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "nb125.json", rows)
+        specs = nb125_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Frozen 1.25dd 5pp · 12 × $26,667 · nb, next session, all strength formulas",
+        )
+        notes = [
+            "Frozen buy: yahoo_and_tipranks_2d_recency, analyst >3, "
+            "projected >10%.",
+            "Sell moves one knob from the frozen book: the sell pick is nb. "
+            "Loss dropdown is 1.25%, profit protection stays 5% of the peak "
+            "gain, 12 lots of $26,667. Strength is at, sqra, a, and sqra_target.",
+            "nb buys only into a slot that is already free. A full book skips "
+            "the signal. It does not sell a stock, SPY, or TQQQ to make room. "
+            "Loss dropdown and profit protection still run first and can free "
+            "a slot, and that slot can be bought the same day.",
+            "A signal buys the next session's close. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday.",
+            "Every window from 1m_Jan through 8m_Mar-Oct is its own cell.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "52 ranges × 4 strength formulas = 208 cells. "
+            "Trusted cells have at least 30 signals.",
+        ]
+        buys = next_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "confirm":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_confirm(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "confirm.json", rows)
+        specs = confirm_sells()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Formula confirm, frozen 7.5dd 5pp · 12 × $26,667 · ls · at and one-knob neighbors",
+        )
+        notes = [
+            "Anchor sell: 7.5% loss dropdown, 5% of the peak gain, 12 lots "
+            "of $26,667, ls, strength formula at. "
+            "Each other sell moves one knob: loss dropdown 5% or 10%, "
+            "profit protection 2.5%, 7.5%, or 10%, lot count 8, 16, or 32, "
+            "sell pick dls, or strength formula a.",
+            "Buys are analyst >2, >3, and >4 at projected >0/10/20/30% on "
+            "yahoo_and_tipranks_1d_recency, yahoo_and_tipranks_2d_recency, "
+            "and yahoo_and_tipranks_3d_recency.",
+            "Windows are a flat list: the ten months, five disjoint two-month "
+            "blocks (Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct), "
+            "Jan–May, Jun–Oct, and January–October.",
+            "A formula is held when January–October has at least 30 signals "
+            "and 30 symbols, both halves are profitable, and at least 4 of "
+            "the 5 disjoint blocks are profitable.",
+            "Each cell keeps signals dated inside that window and prices "
+            "through the window's last day. A lot still open on that day "
+            "stays open.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "3 books × 3 analyst cuts × 4 upside cuts × 18 windows × 11 sells "
+            "= 7,128 cells. Trusted cells have at least 30 signals.",
+        ]
+        buys = confirm_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            specs[0],
+        )
+        write_positions_log(position_path, position_path)
+        score = confirm_validation_markdown(rows, Path(f"{prefix}.csv.xz"))
+        report_text = report_path.read_text()
+        report_path.write_text(
+            report_text.replace(
+                "# WINNING COMBINATION",
+                score + "\n# WINNING COMBINATION",
+                1,
+            )
+        )
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "ranges":
+        position_path = Path(f"{prefix}.csv")
+        rows, close_wide, init_cash = run_ranges(
+            signals, close, spy, position_log=position_path
+        )
+        save_json(CACHE_DIR / "ranges.json", rows)
+        spec = validation_sell()
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Recency validation, frozen 7.5dd 5pp · 12 × $26,667 · ls · at",
+        )
+        notes = [
+            "Frozen sell: 7.5% loss dropdown, 5% of the peak gain, 12 lots "
+            "of $26,667, ls, strength formula at. "
+            "Frozen buys: analyst >3 and projected >0/10/20/30% on "
+            "yahoo_and_tipranks_1d_recency through yahoo_and_tipranks_5d_recency.",
+            "One flat list of date ranges, from January 2026 through October. "
+            "1 month is 10 windows, January through October. "
+            "2 months is 9 windows, starting January through September. "
+            "3 months is 8, starting January through August. "
+            "4 months is 7, starting January through July. "
+            "5 months is 6, starting January through June. "
+            "6 months is 5, starting January through May. "
+            "7 months is 4, starting January through April. "
+            "8 months is 3, starting January through March: "
+            "8m_Jan-Aug, 8m_Feb-Sep, and 8m_Mar-Oct.",
+            "Each cell keeps signals dated inside that window and prices "
+            "through the window's last day. A lot still open on that day "
+            "stays open. Lot-days invested uses that window's calendar, "
+            "not the full January–October span.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "20 buys × 52 ranges = 1,040 cells. Trusted cells have at least 30 signals.",
+        ]
+        buys = validation_buys()
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            [spec],
+            spec,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, [spec], info)
+        return
 
     if args.phase == "recency":
         position_path = Path(f"{prefix}.csv")
