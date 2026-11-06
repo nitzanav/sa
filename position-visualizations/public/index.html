@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Position</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font: 15px/1.4 system-ui, sans-serif; color: #1c1c1c; background: #f6f5f2; }
+    header, main { padding: 16px 20px; }
+    header { background: #fff; border-bottom: 1px solid #e4e0d8; }
+    form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; margin-bottom: 12px; }
+    label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #555; }
+    select { font: inherit; padding: 6px 8px; min-width: 240px; max-width: 480px; background: #fff; }
+    button, a.nav { font: inherit; padding: 6px 12px; background: #1c1c1c; color: #fff; border: 0; text-decoration: none; }
+    button.secondary, a.nav.secondary { background: #fff; color: #1c1c1c; border: 1px solid #ccc; }
+    .stats { display: flex; flex-wrap: wrap; gap: 16px; }
+    .stats div { min-width: 110px; }
+    .stats b { display: block; font-size: 18px; }
+    .pager { display: flex; gap: 8px; align-items: center; margin: 12px 0; }
+    #chart { background: #fff; height: 640px; }
+    .muted { color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <form id="filters">
+      <label>Sell <select name="sell"></select></label>
+      <label>Buy <select name="buy"></select></label>
+      <button type="submit">Show</button>
+    </form>
+    <div class="stats" id="summary"></div>
+  </header>
+  <main>
+    <div class="pager">
+      <a class="nav secondary" id="prev" href="#">Previous</a>
+      <span id="place" class="muted"></span>
+      <a class="nav" id="next" href="#">Next</a>
+    </div>
+    <div id="chart"></div>
+  </main>
+  <script>
+    const SOURCE_COLOR = { google: "#1F8A65", yahoo: "#4C8DDE", tipranks: "#C04848" };
+
+    function params() {
+      const q = new URLSearchParams(location.search);
+      if (!q.get("sell")) q.set("sell", "15d 50% 7.5dd");
+      if (!q.get("buy")) q.set("buy", "yahoo-daily · >2,>20%");
+      if (!q.get("i")) q.set("i", "0");
+      return q;
+    }
+
+    function money(n) {
+      const sign = n < 0 ? "-" : "+";
+      return sign + "$" + Math.abs(n).toLocaleString(undefined, { maximumFractionDigits: 0 });
+    }
+
+    function hrefAt(q, index) {
+      const next = new URLSearchParams(q);
+      next.set("i", String(index));
+      return "?" + next;
+    }
+
+    function stat(label, value) {
+      return "<div><span class='muted'>" + label + "</span><b>" + value + "</b></div>";
+    }
+
+    function optionHtml(value) {
+      const text = value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+      return "<option value=\"" + text + "\">" + text + "</option>";
+    }
+
+    function fillSelect(name, values, selected) {
+      const el = document.querySelector("[name=" + name + "]");
+      el.innerHTML = values.map(optionHtml).join("");
+      el.value = values.includes(selected) ? selected : (values[0] || "");
+    }
+
+    async function draw() {
+      const q = params();
+      if (location.search !== "?" + q) {
+        history.replaceState(null, "", "?" + q);
+      }
+      const res = await fetch("/api/page?" + q);
+      if (!res.ok) throw new Error(await res.text());
+      const page = await res.json();
+      const options = page.options || { sells: [], buys: [] };
+      fillSelect("sell", options.sells, page.sell);
+      fillSelect("buy", options.buys, page.buyLabel);
+      const index = page.index;
+      const lot = page.position;
+      const rules = page.rules || {};
+      document.getElementById("summary").innerHTML = !lot
+        ? ""
+        : [
+            stat("Ticker", lot.ticker),
+            stat("Return", (lot.returnPct >= 0 ? "+" : "") + lot.returnPct.toFixed(1) + "%"),
+            stat("Stock P&L", money(lot.pnl)),
+            stat("Bought", lot.dateBuy + " · $" + lot.priceBuy.toFixed(2)),
+            stat("Sold", lot.dateSell + " · $" + lot.priceSell.toFixed(2)),
+            stat("Hold", lot.holdDays + "d"),
+            stat("Status", lot.status),
+            stat("Exit", rules.exitReason || "—"),
+          ].join("");
+      document.getElementById("place").textContent = !lot
+        ? "No positions"
+        : (index + 1) + " / " + page.count;
+      document.getElementById("prev").href = hrefAt(q, Math.max(index - 1, 0));
+      document.getElementById("next").href = hrefAt(q, Math.min(index + 1, Math.max(page.count - 1, 0)));
+
+      if (!lot) {
+        Plotly.purge("chart");
+        return;
+      }
+      const xs = page.prices.map((p) => p.date);
+      const ys = page.prices.map((p) => p.close);
+      const holdX = [];
+      const holdY = [];
+      for (const point of page.prices) {
+        if (point.date >= lot.dateBuy && point.date <= lot.dateSell) {
+          holdX.push(point.date);
+          holdY.push(point.close);
+        }
+      }
+      const traces = [
+        {
+          x: xs, y: ys, name: "Close", mode: "lines",
+          line: { color: "#8A8F98", width: 1.4 },
+        },
+        {
+          x: holdX, y: holdY, name: lot.sell, mode: "lines",
+          line: { color: "#E07A2F", width: 2.6 },
+        },
+      ];
+      if (rules.drawdown && rules.drawdown.length) {
+        traces.push({
+          x: rules.drawdown.map((point) => point.date),
+          y: rules.drawdown.map((point) => point.y),
+          name: rules.drawdownLabel,
+          mode: "lines",
+          line: { color: "#C04848", width: 1.6, dash: "dash" },
+        });
+      }
+      if (rules.hold) {
+        traces.push({
+          x: [null], y: [null], name: rules.hold.label, mode: "lines",
+          line: { color: "#5A6CC0", width: 2, dash: "dot" },
+        });
+      }
+      if (rules.target && rules.target.length) {
+        traces.push({
+          x: [null], y: [null], name: rules.target[0].label, mode: "lines",
+          line: { color: "#1F8A65", width: 2, dash: "dash" },
+        });
+      }
+      const shapes = [{
+        type: "line", xref: "x", yref: "paper",
+        x0: lot.dateBuy, x1: lot.dateBuy, y0: 0, y1: 1,
+        line: { color: "#111111", width: 1.5 },
+      }];
+      const annotations = [{
+        x: lot.dateBuy, y: 1, yref: "paper", xref: "x",
+        text: "Buy " + lot.dateBuy, showarrow: false, yanchor: "bottom",
+        font: { color: "#111111", size: 12 },
+      }];
+      if (rules.hold) {
+        shapes.push({
+          type: "line", xref: "x", yref: "paper",
+          x0: rules.hold.date, x1: rules.hold.date, y0: 0, y1: 1,
+          line: { color: "#5A6CC0", width: 1.5, dash: "dot" },
+        });
+        annotations.push({
+          x: rules.hold.date, y: 1, yref: "paper", xref: "x",
+          text: rules.hold.label, showarrow: false, yanchor: "bottom",
+          font: { color: "#5A6CC0", size: 12 },
+        });
+      }
+      for (const segment of rules.target || []) {
+        shapes.push({
+          type: "line", xref: "x", yref: "y",
+          x0: segment.x0, x1: segment.x1, y0: segment.y, y1: segment.y,
+          line: { color: "#1F8A65", width: 1.5, dash: "dash" },
+        });
+      }
+      const lastTarget = (rules.target || []).at(-1);
+      if (lastTarget) {
+        annotations.push({
+          x: lastTarget.x1, y: lastTarget.y, xref: "x", yref: "y",
+          text: lastTarget.label, showarrow: false, xanchor: "left",
+          font: { color: "#1F8A65", size: 12 },
+        });
+      }
+      const lastDrop = (rules.drawdown || []).at(-1);
+      if (lastDrop) {
+        annotations.push({
+          x: lastDrop.date, y: lastDrop.y, xref: "x", yref: "y",
+          text: rules.drawdownLabel, showarrow: false, xanchor: "left",
+          font: { color: "#C04848", size: 12 },
+        });
+      }
+      const bySource = new Map();
+      for (const dot of page.signals) {
+        if (!bySource.has(dot.source)) bySource.set(dot.source, []);
+        bySource.get(dot.source).push(dot);
+      }
+      for (const [source, dots] of bySource) {
+        const color = SOURCE_COLOR[source] || "#222";
+        traces.push({
+          x: dots.map((d) => d.date),
+          y: dots.map((d) => d.y),
+          name: source,
+          mode: "markers",
+          marker: {
+            size: 16,
+            color,
+            symbol: dots.map((d) => (d.percent != null && d.percent < 0 ? "diamond" : "circle")),
+            line: { width: 1, color: "#fff" },
+          },
+          text: dots.map((d) => {
+            const pct = d.percent == null ? "n/a" : (d.percent >= 0 ? "+" : "") + d.percent + "%";
+            const who = d.analysts.length > 1 ? d.analysts.length + " analysts" : d.analysts[0];
+            return source + " · " + who + "<br>" + pct + "<br>target price $" + d.y;
+          }),
+          hovertemplate: "%{x}<br>%{text}<extra></extra>",
+        });
+      }
+      traces.push({
+        x: [lot.dateBuy], y: [lot.priceBuy], name: "Buy", mode: "markers",
+        marker: { size: 22, color: "#111111", symbol: "triangle-up", line: { width: 2, color: "#fff" } },
+        hovertemplate: "Buy " + lot.dateBuy + "<br>$%{y:.2f}<extra></extra>",
+      });
+      const macdSells = page.macdSells || [];
+      traces.push({
+        x: macdSells.map((d) => d.date),
+        y: macdSells.map((d) => d.y),
+        name: "MACD 12/26/9",
+        mode: "markers",
+        marker: { size: 14, color: "#7B64B8", symbol: "x", line: { width: 2, color: "#7B64B8" } },
+        customdata: macdSells.map((d) => (d.aboveZero ? "above zero" : "below zero")),
+        hovertemplate: "%{x}<br>close %{y:.2f}<br>%{customdata}<extra></extra>",
+      });
+      function shiftDay(iso, days) {
+        const date = new Date(iso + "T00:00:00Z");
+        date.setUTCDate(date.getUTCDate() + days);
+        return date.toISOString().slice(0, 10);
+      }
+      const firstPrice = xs[0];
+      const from = firstPrice && firstPrice > shiftDay(lot.dateBuy, -20) ? firstPrice : shiftDay(lot.dateBuy, -20);
+      const to = shiftDay(lot.dateSell, 25);
+      const visibleY = ys.filter((_, i) => xs[i] >= from && xs[i] <= to);
+      visibleY.push(lot.priceBuy, lot.priceSell);
+      for (const segment of rules.target || []) visibleY.push(segment.y);
+      for (const point of rules.drawdown || []) {
+        if (point.date >= from && point.date <= to) visibleY.push(point.y);
+      }
+      for (const dot of page.signals) {
+        if (dot.date >= from && dot.date <= to) visibleY.push(dot.y);
+      }
+      const yMin = Math.min(...visibleY);
+      const yMax = Math.max(...visibleY);
+      const yPad = (yMax - yMin) * 0.08 || 1;
+      Plotly.newPlot("chart", traces, {
+        title: lot.ticker,
+        height: 640,
+        margin: { l: 56, r: 24, t: 48, b: 72 },
+        xaxis: { title: "Date", range: [from, to] },
+        yaxis: { title: "Close ($)", range: [yMin - yPad, yMax + yPad] },
+        legend: { orientation: "h", y: -0.2 },
+        shapes,
+        annotations,
+        template: "plotly_white",
+        hovermode: "closest",
+      }, { responsive: true });
+    }
+
+    document.getElementById("filters").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const body = new FormData(event.target);
+      const q = new URLSearchParams();
+      q.set("sell", body.get("sell"));
+      q.set("buy", body.get("buy"));
+      q.set("i", "0");
+      location.search = q;
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.target.matches("input, select")) return;
+      if (event.key === "ArrowLeft") document.getElementById("prev").click();
+      if (event.key === "ArrowRight") document.getElementById("next").click();
+    });
+
+    draw().catch((error) => {
+      document.getElementById("summary").textContent = error.message;
+    });
+  </script>
+</body>
+</html>
