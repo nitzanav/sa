@@ -20,7 +20,7 @@ extraction, and fetch live in `google_analyst_recommendation.js`,
 `yahoo_analyst_recommendation.js`, and `tipranks_analyst_recommendation.js`.
 Google fetch uses `httpRequestScrape`. Yahoo fetch uses `httpRequestScrapePlaywright`
 so the hydrated page is cached. TipRanks POSTs a JSON-RPC `tools/call` for
-`get_recent_analyst_ratings`. The raw body is cached by file name (10-day TTL).
+`get_recent_analyst_ratings`. The raw body is cached by file name (same `config.cache.ttl` as other scrapes; default 1 day).
 `SKIP_EXISTING=1` reads an existing `<symbol>.json` and does not fetch. TipRanks is
 expensive, so prefer skip-existing on reruns. That path does not overwrite Google or
 Yahoo cache files.
@@ -35,6 +35,9 @@ Run from the repo root (`nvm use`, then `npm install`):
 make analyst-recommendation-js URL='https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis'
 make analyst-recommendation-js URL='https://finance.yahoo.com/quote/NVDA/analyst-insights/'
 make scrape_analyst_recommendations
+# All sources via node (equivalent to `make scrape_analyst_recommendations` with no SOURCE):
+# node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js
+# node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --source=google,yahoo,tipranks
 SOURCE=yahoo make scrape_analyst_recommendations
 SOURCE=google make scrape_analyst_recommendations
 SOURCE=tipranks make scrape_analyst_recommendations
