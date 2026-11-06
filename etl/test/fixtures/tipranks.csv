@@ -1,0 +1,4 @@
+date,ticker,analyst,percent,projected_price
+2026-01-16,COMBINE_YT_PRICE,T,20,200
+2026-01-16,SHIFT_WEEKEND,T,21,210
+2026-01-20,SHIFT_WEEKEND,T,41,410
