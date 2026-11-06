@@ -2,7 +2,12 @@ import * as cheerio from "cheerio";
 import { httpRequestScrape } from "../../common/http_request_scrape.js";
 import { logger } from "../../common/logger.js";
 import { readSymbolQuoteAliases } from "../../symbols-exchange/fetch_symbols_exchange.js";
-import { validateAnalystRecommendations } from "./validate_analyst_recommendations.js";
+import { formatProjectedPercent } from "./yahoo_analyst_recommendation.js";
+import { yahooOpenPrice } from "./yahoo_open_price.js";
+import {
+  parsePriceTarget,
+  validateAnalystRecommendations,
+} from "./validate_analyst_recommendations.js";
 
 const ANALYST_TABLE_HEADERS = [
   "analyst",
@@ -124,30 +129,6 @@ function extractCallbackData(html, key) {
   return null;
 }
 
-function quotePriceUsd(data) {
-  const walk = (node) => {
-    if (!Array.isArray(node)) return null;
-    const pair = node[1];
-    if (
-      Array.isArray(pair) &&
-      typeof pair[0] === "string" &&
-      typeof pair[1] === "string" &&
-      node[4] === "USD" &&
-      Array.isArray(node[5]) &&
-      typeof node[5][0] === "number" &&
-      node[5][0] > 0
-    ) {
-      return node[5][0];
-    }
-    for (const child of node) {
-      const found = walk(child);
-      if (found != null) return found;
-    }
-    return null;
-  };
-  return data ? walk(data) : null;
-}
-
 function embeddedAnalystRows(data) {
   if (!Array.isArray(data) || !Array.isArray(data[1])) return [];
   return data[1].filter((row) => Array.isArray(row) && row.length > 27);
@@ -170,18 +151,6 @@ function formatUsdPriceTarget(value) {
   return `$${value.toFixed(2)}`;
 }
 
-function formatProjectedPercent(target, quote) {
-  if (target == null || quote == null || target === 0 || quote === 0) return null;
-  const percent = ((target - quote) / quote) * 100;
-  if (!Number.isFinite(percent)) return null;
-  const rounded = Math.round(percent * 10) / 10;
-  if (rounded === 0) return "0%";
-  const sign = rounded > 0 ? "+" : "-";
-  const abs = Math.abs(rounded);
-  const body = Number.isInteger(abs) ? String(abs) : abs.toFixed(1);
-  return `${sign}${body}%`;
-}
-
 function padUsDate(text) {
   const match = String(text ?? "")
     .trim()
@@ -194,7 +163,7 @@ function cleanText(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
 }
 
-function listingFromEmbedded(row, quote) {
+function listingFromEmbedded(row) {
   const usd = usdPriceAmount(row);
   return {
     analyst: cleanText(row[1]),
@@ -202,9 +171,25 @@ function listingFromEmbedded(row, quote) {
     recommendation: cleanText(row[3]),
     action: cleanText(row[27]),
     price_target: formatUsdPriceTarget(usd),
-    projected: formatProjectedPercent(usd, quote),
+    projected: null,
     date: padUsDate(row[4]),
   };
+}
+
+function symbolForOpenPrice(symbol) {
+  if (!symbol) return symbol;
+  const aliases = readSymbolQuoteAliases();
+  for (const [ticker, quote] of Object.entries(aliases)) {
+    if (quote === symbol) return ticker.replaceAll(".", "-");
+  }
+  return symbol.replaceAll(".", "-");
+}
+
+async function projectFromRatingDate(listing, symbol) {
+  const target = parsePriceTarget(listing.price_target);
+  if (target == null || target === 0 || !symbol) return { ...listing, projected: null };
+  const open = await yahooOpenPrice.forDate(symbolForOpenPrice(symbol), padUsDate(listing.date));
+  return { ...listing, projected: formatProjectedPercent(target, open) };
 }
 
 function alignEmbeddedRows(listings, rows) {
@@ -223,7 +208,7 @@ function alignEmbeddedRows(listings, rows) {
   });
 }
 
-function withUsdPriceTarget(listing, row, quote) {
+function withUsdPriceTarget(listing, row) {
   if (listing.price_target == null || USD_PRICE_TARGET.test(listing.price_target)) {
     return listing;
   }
@@ -232,15 +217,14 @@ function withUsdPriceTarget(listing, row, quote) {
   return {
     ...listing,
     price_target: formatUsdPriceTarget(usd),
-    projected: formatProjectedPercent(usd, quote),
   };
 }
 
-export function parseGoogleAnalystRecommendation(html) {
+export async function parseGoogleAnalystRecommendation(html, symbol) {
   const embedded = embeddedAnalystRows(extractCallbackData(html, "ds:6"));
-  const quote = quotePriceUsd(extractCallbackData(html, "ds:2"));
   const $ = cheerio.load(html);
   const $table = findAnalystTable($);
+  const listings = [];
   if ($table === null) {
     if (embedded.length === 0) {
       logger.error({
@@ -249,31 +233,32 @@ export function parseGoogleAnalystRecommendation(html) {
       });
       return [];
     }
-    return validateAnalystRecommendations(
-      embedded.map((row) => listingFromEmbedded(row, quote)),
-    );
-  }
-  const $body = $table.find("tbody").first();
-  const $rowsRoot = $body.length ? $body : $table;
-  const listings = [];
-  $rowsRoot.find("tr").each((_, row) => {
-    const rowCells = $(row).find("td");
-    if (rowCells.length < ANALYST_TABLE_HEADERS.length) return;
-    const [analyst, firm] = getAnalyst($, rowCells);
-    listings.push({
-      analyst,
-      firm,
-      recommendation: cellText(rowCells.eq(1)),
-      action: cellText(rowCells.eq(2)),
-      price_target: optional(cellText(rowCells.eq(3))),
-      projected: optional(cellText(rowCells.eq(4))),
-      date: cellText(rowCells.eq(5)),
+    listings.push(...embedded.map((row) => listingFromEmbedded(row)));
+  } else {
+    const $body = $table.find("tbody").first();
+    const $rowsRoot = $body.length ? $body : $table;
+    $rowsRoot.find("tr").each((_, row) => {
+      const rowCells = $(row).find("td");
+      if (rowCells.length < ANALYST_TABLE_HEADERS.length) return;
+      const [analyst, firm] = getAnalyst($, rowCells);
+      listings.push({
+        analyst,
+        firm,
+        recommendation: cellText(rowCells.eq(1)),
+        action: cellText(rowCells.eq(2)),
+        price_target: optional(cellText(rowCells.eq(3))),
+        projected: null,
+        date: cellText(rowCells.eq(5)),
+      });
     });
-  });
-  const aligned = alignEmbeddedRows(listings, embedded);
-  return validateAnalystRecommendations(
-    listings.map((listing, index) => withUsdPriceTarget(listing, aligned[index], quote)),
-  );
+    const aligned = alignEmbeddedRows(listings, embedded);
+    for (let index = 0; index < listings.length; index += 1) {
+      listings[index] = withUsdPriceTarget(listings[index], aligned[index]);
+    }
+  }
+  const projected = [];
+  for (const listing of listings) projected.push(await projectFromRatingDate(listing, symbol));
+  return validateAnalystRecommendations(projected);
 }
 
 export const googleAnalystRecommendationSource = {

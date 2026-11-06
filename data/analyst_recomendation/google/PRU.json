@@ -5,7 +5,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$119.00",
-    "projected": "+2.3%",
+    "projected": "+3%",
     "date": "10/16/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+3.1%",
+    "projected": "+3.8%",
     "date": "10/16/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$127.00",
-    "projected": "+9.2%",
+    "projected": "+10.9%",
     "date": "10/15/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$104.00",
-    "projected": "-10.6%",
+    "projected": "-8.4%",
     "date": "10/12/2026"
   },
   {
@@ -41,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$108.00",
-    "projected": "-7.2%",
+    "projected": "-4.9%",
     "date": "10/12/2026"
   },
   {
@@ -50,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$132.00",
-    "projected": "+13.5%",
+    "projected": "+16.2%",
     "date": "10/12/2026"
   },
   {
@@ -59,7 +59,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$96.00",
-    "projected": "-17.5%",
+    "projected": "-14.7%",
     "date": "10/07/2026"
   },
   {
@@ -68,7 +68,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$105.00",
-    "projected": "-9.8%",
+    "projected": "-7%",
     "date": "10/05/2026"
   },
   {
@@ -86,7 +86,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$114.00",
-    "projected": "-2%",
+    "projected": "-4.4%",
     "date": "09/14/2026"
   },
   {
@@ -104,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-5.5%",
+    "projected": "-3.3%",
     "date": "07/09/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-5.5%",
+    "projected": "+0.9%",
     "date": "06/24/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$92.00",
-    "projected": "-20.9%",
+    "projected": "-9.7%",
     "date": "05/06/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$87.00",
-    "projected": "-25.2%",
+    "projected": "-14.6%",
     "date": "05/06/2026"
   },
   {
@@ -167,7 +167,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-5.5%",
+    "projected": "+4.7%",
     "date": "02/04/2026"
   }
 ]

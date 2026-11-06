@@ -12,7 +12,7 @@ test("config loads defaults", () => {
     delayMultiple: 2,
     maxAttempts: 5,
   });
-  expect(config.cache).toEqual({ enabled: true, ttl: 864000000 });
+  expect(config.cache).toEqual({ enabled: true, ttl: 2592000000 });
   expect(config.rateLimit.minDelay).toBe(1000);
   expect(config.rateLimit.maxDelay).toBe(10000);
   expect(config.http.timeout).toBe(60000);

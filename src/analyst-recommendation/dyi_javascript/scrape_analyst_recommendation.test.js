@@ -29,8 +29,11 @@ const sources = [
   tipranksAnalystRecommendationSource,
 ];
 
-test("parseGoogleAnalystRecommendation returns rows in order", () => {
-  const rows = parseGoogleAnalystRecommendation(html);
+test("parseGoogleAnalystRecommendation uses the open on the rating date", async () => {
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(200);
+  const rows = await parseGoogleAnalystRecommendation(html, "NVDA");
+  expect(openSpy).toHaveBeenCalledTimes(1);
+  expect(openSpy).toHaveBeenCalledWith("NVDA", "09/10/2026");
   expect(rows).toEqual([
     {
       analyst: "James Schneider",
@@ -38,7 +41,7 @@ test("parseGoogleAnalystRecommendation returns rows in order", () => {
       recommendation: "Buy",
       action: "Maintained",
       price_target: "$300.00",
-      projected: "+37.4%",
+      projected: "+50%",
       date: "09/10/2026",
     },
     {
@@ -51,11 +54,12 @@ test("parseGoogleAnalystRecommendation returns rows in order", () => {
       date: "09/10/2026",
     },
   ]);
+  openSpy.mockRestore();
 });
 
-test("parseGoogleAnalystRecommendation returns empty array when table missing", () => {
+test("parseGoogleAnalystRecommendation returns empty array when table missing", async () => {
   const stderrSpy = jest.spyOn(process.stderr, "write").mockImplementation(() => true);
-  expect(parseGoogleAnalystRecommendation("<html></html>")).toEqual([]);
+  expect(await parseGoogleAnalystRecommendation("<html></html>")).toEqual([]);
   expect(stderrSpy).toHaveBeenCalledWith(
     '{"message":"error","error":"Analyst Recommendation table not found","log_level":"error"}\n',
   );
@@ -99,7 +103,11 @@ function embeddedRow({
   return row;
 }
 
-test("parseGoogleAnalystRecommendation converts non-USD targets using embedded USD", () => {
+test("parseGoogleAnalystRecommendation converts non-USD targets using embedded USD", async () => {
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockImplementation(async (symbol, date) => {
+    expect(symbol).toBe("DE");
+    return { "10/13/2026": 20, "06/10/2026": 2, "05/11/2026": 10 }[date];
+  });
   const html = `<html><body><main><table><thead><tr>
     <th>Analyst</th><th>Recommendation</th><th>Action</th>
     <th>Price target</th><th>Projected</th><th>Date</th>
@@ -144,14 +152,14 @@ test("parseGoogleAnalystRecommendation converts non-USD targets using embedded U
         displayCurrency: "USD",
       }),
     ])}</script>`;
-  expect(parseGoogleAnalystRecommendation(html)).toEqual([
+  expect(await parseGoogleAnalystRecommendation(html, "DE")).toEqual([
     {
       analyst: "Ada",
       firm: "Citi",
       recommendation: "Buy",
       action: "Maintained",
       price_target: "$28.70",
-      projected: "+8.5%",
+      projected: "+43.5%",
       date: "10/13/2026",
     },
     {
@@ -160,7 +168,7 @@ test("parseGoogleAnalystRecommendation converts non-USD targets using embedded U
       recommendation: "Buy",
       action: "Initiated",
       price_target: "$1.47",
-      projected: "-94.4%",
+      projected: "-26.5%",
       date: "06/10/2026",
     },
     {
@@ -169,13 +177,15 @@ test("parseGoogleAnalystRecommendation converts non-USD targets using embedded U
       recommendation: "Hold",
       action: "Maintained",
       price_target: "$8.33",
-      projected: "-68.5%",
+      projected: "-16.7%",
       date: "05/11/2026",
     },
   ]);
+  openSpy.mockRestore();
 });
 
-test("parseGoogleAnalystRecommendation reads embedded rows when the table is missing", () => {
+test("parseGoogleAnalystRecommendation reads embedded rows when the table is missing", async () => {
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(200);
   const html = `<html></html><script>${quotePayload("CBOE", 308.09)}</script><script>${analystPayload([
     embeddedRow({
       analyst: "Eli Abboud",
@@ -188,17 +198,34 @@ test("parseGoogleAnalystRecommendation reads embedded rows when the table is mis
       displayCurrency: "MXN",
     }),
   ])}</script>`;
-  expect(parseGoogleAnalystRecommendation(html)).toEqual([
+  expect(await parseGoogleAnalystRecommendation(html, "CBOE")).toEqual([
     {
       analyst: "Eli Abboud",
       firm: "Bank of America Securities",
       recommendation: "Hold",
       action: "Reiterated",
       price_target: "$329.00",
-      projected: "+6.8%",
+      projected: "+64.5%",
       date: "10/14/2026",
     },
   ]);
+  expect(openSpy).toHaveBeenCalledWith("CBOE", "10/14/2026");
+  openSpy.mockRestore();
+});
+
+test("parseGoogleAnalystRecommendation looks up opens under the fortune symbol for a quote alias", async () => {
+  const openSpy = jest.spyOn(yahooOpenPrice, "forDate").mockResolvedValue(100);
+  const html = `<html><body><main><table><thead><tr>
+    <th>Analyst</th><th>Recommendation</th><th>Action</th>
+    <th>Price target</th><th>Projected</th><th>Date</th>
+    </tr></thead><tbody>
+    <tr><td><div><div>Ada</div><div>Citi</div></div></td>
+      <td>Buy</td><td>Maintained</td><td>$150.00</td><td>+999%</td><td>01/15/2026</td></tr>
+    </tbody></table></main></body></html>`;
+  const rows = await parseGoogleAnalystRecommendation(html, "SKYD");
+  expect(openSpy).toHaveBeenCalledWith("PSKY", "01/15/2026");
+  expect(rows[0].projected).toBe("+50%");
+  openSpy.mockRestore();
 });
 
 test("googleAnalystRecommendationUrl uses the quote alias", () => {

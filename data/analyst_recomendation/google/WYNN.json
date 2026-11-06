@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$102.00",
-    "projected": "+34.4%",
+    "projected": "+34.9%",
     "date": "10/13/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$103.00",
-    "projected": "+35.7%",
+    "projected": "+38.2%",
     "date": "10/12/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$128.00",
-    "projected": "+68.6%",
+    "projected": "+69.4%",
     "date": "10/09/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$131.00",
-    "projected": "+72.6%",
+    "projected": "+67.8%",
     "date": "10/02/2026"
   },
   {
@@ -41,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$138.00",
-    "projected": "+81.8%",
+    "projected": "+54.7%",
     "date": "09/11/2026"
   },
   {
@@ -50,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$138.00",
-    "projected": "+81.8%",
+    "projected": "+54.7%",
     "date": "09/11/2026"
   },
   {
@@ -59,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$128.00",
-    "projected": "+68.6%",
+    "projected": "+41.1%",
     "date": "09/02/2026"
   },
   {
@@ -68,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$128.00",
-    "projected": "+68.6%",
+    "projected": "+21.9%",
     "date": "08/12/2026"
   },
   {
@@ -86,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$130.00",
-    "projected": "+71.2%",
+    "projected": "+27.3%",
     "date": "08/05/2026"
   },
   {
@@ -95,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$139.00",
-    "projected": "+83.1%",
+    "projected": "+36.2%",
     "date": "08/05/2026"
   },
   {
@@ -104,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "+64.6%",
+    "projected": "+22.4%",
     "date": "08/05/2026"
   },
   {
@@ -113,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$132.00",
-    "projected": "+73.9%",
+    "projected": "+29.3%",
     "date": "08/05/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$143.00",
-    "projected": "+88.4%",
+    "projected": "+40.1%",
     "date": "08/05/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$134.00",
-    "projected": "+76.5%",
+    "projected": "+39.1%",
     "date": "07/15/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$143.00",
-    "projected": "+88.4%",
+    "projected": "+48.4%",
     "date": "07/02/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$127.00",
-    "projected": "+67.3%",
+    "projected": "+18.9%",
     "date": "04/16/2026"
   }
 ]

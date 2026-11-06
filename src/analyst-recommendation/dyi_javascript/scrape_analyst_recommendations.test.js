@@ -205,11 +205,11 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
     );
     expect(all).toEqual([
       { date: "2026-09-10", ticker: "AAA", analyst: "David O'Connor", percent: null, projected_price: null },
-      { date: "2026-09-10", ticker: "AAA", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
+      { date: "2026-09-10", ticker: "AAA", analyst: "James Schneider", percent: 37, projected_price: 300 },
       { date: "2026-09-10", ticker: "BBB", analyst: "David O'Connor", percent: null, projected_price: null },
-      { date: "2026-09-10", ticker: "BBB", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
+      { date: "2026-09-10", ticker: "BBB", analyst: "James Schneider", percent: 37, projected_price: 300 },
       { date: "2026-09-10", ticker: "CCC", analyst: "David O'Connor", percent: null, projected_price: null },
-      { date: "2026-09-10", ticker: "CCC", analyst: "James Schneider", percent: 37.4, projected_price: 300 },
+      { date: "2026-09-10", ticker: "CCC", analyst: "James Schneider", percent: 37, projected_price: 300 },
     ]);
     expect(
       readFileSync(join(cwd, "data/analyst_recomendation/google/AAA.html"), "utf8"),
@@ -228,18 +228,18 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
       [
         "date,ticker,analyst,percent,projected_price",
         "2026-09-10,AAA,David O'Connor,,",
-        "2026-09-10,AAA,James Schneider,37.4,300",
+        "2026-09-10,AAA,James Schneider,37,300",
         "2026-09-10,BBB,David O'Connor,,",
-        "2026-09-10,BBB,James Schneider,37.4,300",
+        "2026-09-10,BBB,James Schneider,37,300",
         "2026-09-10,CCC,David O'Connor,,",
-        "2026-09-10,CCC,James Schneider,37.4,300",
+        "2026-09-10,CCC,James Schneider,37,300",
       ].join("\n"),
     );
     const perDateAndSymbolCsv = [
       "date,symbol,average_projected,std_projected,analyst_projections_count,projections",
-      "2026-09-10,AAA,37.4,,1,James Schneider:37.4",
-      "2026-09-10,BBB,37.4,,1,James Schneider:37.4",
-      "2026-09-10,CCC,37.4,,1,James Schneider:37.4",
+      "2026-09-10,AAA,37,,1,James Schneider:37",
+      "2026-09-10,BBB,37,,1,James Schneider:37",
+      "2026-09-10,CCC,37,,1,James Schneider:37",
     ].join("\n");
     expect(
       readFileSync(
@@ -330,9 +330,9 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
         "2026-09-04,AAA,,,,,78.1,,1,Rosenblatt:78.1",
         "2026-09-04,BBB,,,,,78.1,,1,Rosenblatt:78.1",
         "2026-09-04,CCC,,,,,78.1,,1,Rosenblatt:78.1",
-        "2026-09-10,AAA,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
-        "2026-09-10,BBB,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
-        "2026-09-10,CCC,37.4,,1,James Schneider:37.4,37,,1,Piper Sandler:37",
+        "2026-09-10,AAA,37,,1,James Schneider:37,37,,1,Piper Sandler:37",
+        "2026-09-10,BBB,37,,1,James Schneider:37,37,,1,Piper Sandler:37",
+        "2026-09-10,CCC,37,,1,James Schneider:37,37,,1,Piper Sandler:37",
       ].join("\n"),
     );
     expect(
@@ -349,9 +349,9 @@ test("iterates first analyst_recommendations.limit symbols and writes outputs", 
         "2026-09-04,AAA,,,,,78.1,,1,Rosenblatt:78.1",
         "2026-09-04,BBB,,,,,78.1,,1,Rosenblatt:78.1",
         "2026-09-04,CCC,,,,,78.1,,1,Rosenblatt:78.1",
-        "2026-09-10,AAA,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
-        "2026-09-10,BBB,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
-        "2026-09-10,CCC,37.4,,1,James Schneider:37.4,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,AAA,37,,1,James Schneider:37,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,BBB,37,,1,James Schneider:37,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
+        "2026-09-10,CCC,37,,1,James Schneider:37,57.55,29.0621,2,Rosenblatt:78.1|Piper Sandler:37",
       ].join("\n"),
     );
   } finally {

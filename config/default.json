@@ -1,7 +1,7 @@
 {
   "logger": { "level": "info" },
   "retry": { "enabled": true, "initialDelay": 1000, "delayMultiple": 2, "maxAttempts": 5 },
-  "cache": { "enabled": true, "ttl": 864000000 },
+  "cache": { "enabled": true, "ttl": 2592000000 },
   "rateLimit": { "enabled": true, "minDelay": 3000, "maxDelay": 30000 },
   "http": {
     "timeout": 60000,
