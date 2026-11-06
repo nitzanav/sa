@@ -1,0 +1,262 @@
+[
+  {
+    "person_id": "aaron-rakers",
+    "firm_id": "wells-fargo",
+    "person": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 3,
+    "support_share": 0.75,
+    "query_suggestions": [
+      "\"Aaron Rakers\" \"Wells Fargo\" analyst",
+      "\"Aaron Rakers\" analyst"
+    ]
+  },
+  {
+    "person_id": "alexander-potter",
+    "firm_id": "piper-sandler",
+    "person": "Alexander Potter",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Alexander Potter\" \"Piper Sandler\" analyst",
+      "\"Alexander Potter\" analyst"
+    ]
+  },
+  {
+    "person_id": "alexandra-straton",
+    "firm_id": "morgan-stanley",
+    "person": "Alexandra Straton",
+    "firm": "Morgan Stanley",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Alexandra Straton\" \"Morgan Stanley\" analyst",
+      "\"Alexandra Straton\" analyst"
+    ]
+  },
+  {
+    "person_id": "amit-mehrotra",
+    "firm_id": "ubs",
+    "person": "Amit Mehrotra",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Amit Mehrotra\" \"UBS\" analyst",
+      "\"Amit Mehrotra\" analyst"
+    ]
+  },
+  {
+    "person_id": "andrew-lazar",
+    "firm_id": "barclays",
+    "person": "Andrew Lazar",
+    "firm": "Barclays",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Andrew Lazar\" \"Barclays\" analyst",
+      "\"Andrew Lazar\" analyst"
+    ]
+  },
+  {
+    "person_id": "andrew-mok",
+    "firm_id": "barclays",
+    "person": "Andrew Mok",
+    "firm": "Barclays",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Andrew Mok\" \"Barclays\" analyst",
+      "\"Andrew Mok\" analyst"
+    ]
+  },
+  {
+    "person_id": "andrew-strelzik",
+    "firm_id": "bmo-capital",
+    "person": "Andrew Strelzik",
+    "firm": "BMO Capital",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Andrew Strelzik\" \"BMO Capital\" analyst",
+      "\"Andrew Strelzik\" analyst"
+    ]
+  },
+  {
+    "person_id": "angel-castillo",
+    "firm_id": "morgan-stanley",
+    "person": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Angel Castillo\" \"Morgan Stanley\" analyst",
+      "\"Angel Castillo\" analyst"
+    ]
+  },
+  {
+    "person_id": "anna-andreeva",
+    "firm_id": "piper-sandler",
+    "person": "Anna Andreeva",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Anna Andreeva\" \"Piper Sandler\" analyst",
+      "\"Anna Andreeva\" analyst"
+    ]
+  },
+  {
+    "person_id": "atul-maheswari",
+    "firm_id": "ubs",
+    "person": "Atul Maheswari",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Atul Maheswari\" \"UBS\" analyst",
+      "\"Atul Maheswari\" analyst"
+    ]
+  },
+  {
+    "person_id": "bob-brackett",
+    "firm_id": "bernstein",
+    "person": "Bob Brackett",
+    "firm": "Bernstein",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Bob Brackett\" \"Bernstein\" analyst",
+      "\"Bob Brackett\" analyst"
+    ]
+  },
+  {
+    "person_id": "brad-zelnick",
+    "firm_id": "deutsche-bank",
+    "person": "Brad Zelnick",
+    "firm": "Deutsche Bank",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Brad Zelnick\" \"Deutsche Bank\" analyst",
+      "\"Brad Zelnick\" analyst"
+    ]
+  },
+  {
+    "person_id": "craig-ellis",
+    "firm_id": "b-riley-securities",
+    "person": "Craig Ellis",
+    "firm": "B. Riley Securities",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Craig Ellis\" \"B. Riley Securities\" analyst",
+      "\"Craig Ellis\" analyst"
+    ]
+  },
+  {
+    "person_id": "daniel-politzer",
+    "firm_id": "jp-morgan",
+    "person": "Daniel Politzer",
+    "firm": "JP Morgan",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Daniel Politzer\" \"JP Morgan\" analyst",
+      "\"Daniel Politzer\" analyst"
+    ]
+  },
+  {
+    "person_id": "david-roman",
+    "firm_id": "goldman-sachs",
+    "person": "David Roman",
+    "firm": "Goldman Sachs",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"David Roman\" \"Goldman Sachs\" analyst",
+      "\"David Roman\" analyst"
+    ]
+  },
+  {
+    "person_id": "david-westenberg",
+    "firm_id": "piper-sandler",
+    "person": "David Westenberg",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"David Westenberg\" \"Piper Sandler\" analyst",
+      "\"David Westenberg\" analyst"
+    ]
+  },
+  {
+    "person_id": "david-windley",
+    "firm_id": "jefferies",
+    "person": "David Windley",
+    "firm": "Jefferies",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"David Windley\" \"Jefferies\" analyst",
+      "\"David Windley\" analyst"
+    ]
+  },
+  {
+    "person_id": "erik-woodring",
+    "firm_id": "morgan-stanley",
+    "person": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Erik Woodring\" \"Morgan Stanley\" analyst",
+      "\"Erik Woodring\" analyst"
+    ]
+  },
+  {
+    "person_id": "evan-stampler",
+    "firm_id": "wells-fargo",
+    "person": "Evan Stampler",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Evan Stampler\" \"Wells Fargo\" analyst",
+      "\"Evan Stampler\" analyst"
+    ]
+  },
+  {
+    "person_id": "frank-lee",
+    "firm_id": "hsbc",
+    "person": "Frank Lee",
+    "firm": "HSBC",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Frank Lee\" \"HSBC\" analyst",
+      "\"Frank Lee\" analyst"
+    ]
+  }
+]

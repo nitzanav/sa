@@ -1,0 +1,262 @@
+[
+  {
+    "person_id": "j-bruce-chan",
+    "firm_id": "stifel",
+    "person": "J. Bruce Chan",
+    "firm": "Stifel",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"J. Bruce Chan\" \"Stifel\" analyst",
+      "\"J. Bruce Chan\" analyst"
+    ]
+  },
+  {
+    "person_id": "james-feldman",
+    "firm_id": "wells-fargo",
+    "person": "James Feldman",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"James Feldman\" \"Wells Fargo\" analyst",
+      "\"James Feldman\" analyst"
+    ]
+  },
+  {
+    "person_id": "james-friedman",
+    "firm_id": "susquehanna",
+    "person": "James Friedman",
+    "firm": "Susquehanna",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"James Friedman\" \"Susquehanna\" analyst",
+      "\"James Friedman\" analyst"
+    ]
+  },
+  {
+    "person_id": "jason-bednar",
+    "firm_id": "piper-sandler",
+    "person": "Jason Bednar",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jason Bednar\" \"Piper Sandler\" analyst",
+      "\"Jason Bednar\" analyst"
+    ]
+  },
+  {
+    "person_id": "jason-gabelman",
+    "firm_id": "td-cowen",
+    "person": "Jason Gabelman",
+    "firm": "TD Cowen",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jason Gabelman\" \"TD Cowen\" analyst",
+      "\"Jason Gabelman\" analyst"
+    ]
+  },
+  {
+    "person_id": "jayson-bedford",
+    "firm_id": "raymond-james",
+    "person": "Jayson Bedford",
+    "firm": "Raymond James",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jayson Bedford\" \"Raymond James\" analyst",
+      "\"Jayson Bedford\" analyst"
+    ]
+  },
+  {
+    "person_id": "jeff-bernstein",
+    "firm_id": "barclays",
+    "person": "Jeff Bernstein",
+    "firm": "Barclays",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jeff Bernstein\" \"Barclays\" analyst",
+      "\"Jeff Bernstein\" analyst"
+    ]
+  },
+  {
+    "person_id": "jerry-revich",
+    "firm_id": "wells-fargo",
+    "person": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jerry Revich\" \"Wells Fargo\" analyst",
+      "\"Jerry Revich\" analyst"
+    ]
+  },
+  {
+    "person_id": "jessica-tassan",
+    "firm_id": "piper-sandler",
+    "person": "Jessica Tassan",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Jessica Tassan\" \"Piper Sandler\" analyst",
+      "\"Jessica Tassan\" analyst"
+    ]
+  },
+  {
+    "person_id": "joe-o-dea",
+    "firm_id": "wells-fargo",
+    "person": "Joe O'Dea",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Joe O'Dea\" \"Wells Fargo\" analyst",
+      "\"Joe O'Dea\" analyst"
+    ]
+  },
+  {
+    "person_id": "john-ivankoe",
+    "firm_id": "jp-morgan",
+    "person": "John Ivankoe",
+    "firm": "JP Morgan",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"John Ivankoe\" \"JP Morgan\" analyst",
+      "\"John Ivankoe\" analyst"
+    ]
+  },
+  {
+    "person_id": "john-royall",
+    "firm_id": "piper-sandler",
+    "person": "John Royall",
+    "firm": "Piper Sandler",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"John Royall\" \"Piper Sandler\" analyst",
+      "\"John Royall\" analyst"
+    ]
+  },
+  {
+    "person_id": "joseph-c-giordano",
+    "firm_id": "td-cowen",
+    "person": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Joseph C Giordano\" \"TD Cowen\" analyst",
+      "\"Joseph C Giordano\" analyst"
+    ]
+  },
+  {
+    "person_id": "joseph-quatrochi",
+    "firm_id": "wells-fargo",
+    "person": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Joseph Quatrochi\" \"Wells Fargo\" analyst",
+      "\"Joseph Quatrochi\" analyst"
+    ]
+  },
+  {
+    "person_id": "josh-silverstein",
+    "firm_id": "ubs",
+    "person": "Josh Silverstein",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Josh Silverstein\" \"UBS\" analyst",
+      "\"Josh Silverstein\" analyst"
+    ]
+  },
+  {
+    "person_id": "juan-c-sanabria",
+    "firm_id": "bmo-capital",
+    "person": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Juan C. Sanabria\" \"BMO Capital\" analyst",
+      "\"Juan C. Sanabria\" analyst"
+    ]
+  },
+  {
+    "person_id": "justin-jenkins",
+    "firm_id": "raymond-james",
+    "person": "Justin Jenkins",
+    "firm": "Raymond James",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Justin Jenkins\" \"Raymond James\" analyst",
+      "\"Justin Jenkins\" analyst"
+    ]
+  },
+  {
+    "person_id": "manav-gupta",
+    "firm_id": "ubs",
+    "person": "Manav Gupta",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Manav Gupta\" \"UBS\" analyst",
+      "\"Manav Gupta\" analyst"
+    ]
+  },
+  {
+    "person_id": "matthew-taylor",
+    "firm_id": "jefferies",
+    "person": "Matthew Taylor",
+    "firm": "Jefferies",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Matthew Taylor\" \"Jefferies\" analyst",
+      "\"Matthew Taylor\" analyst"
+    ]
+  },
+  {
+    "person_id": "michael-carroll",
+    "firm_id": "rbc-capital",
+    "person": "Michael Carroll",
+    "firm": "RBC Capital",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Michael Carroll\" \"RBC Capital\" analyst",
+      "\"Michael Carroll\" analyst"
+    ]
+  }
+]

@@ -1,0 +1,524 @@
+[
+  {
+    "person_id": "aaron-rakers",
+    "firm_id": "wells-fargo",
+    "person": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/aaron-rakers/",
+    "note": "Title: 'Aaron Rakers - Stock Analyst at Wells Fargo'. Wells Fargo CIB page names him a senior equity analyst at Wells Fargo Securities."
+  },
+  {
+    "person_id": "alexander-potter",
+    "firm_id": "piper-sandler",
+    "person": "Alexander Potter",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/alexander-potter",
+    "note": "Official Piper Sandler page lists him as Sr Research Analyst covering global autos, robotics and space."
+  },
+  {
+    "person_id": "alexandra-straton",
+    "firm_id": "morgan-stanley",
+    "person": "Alexandra Straton",
+    "firm": "Morgan Stanley",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/alexandra-straton/",
+    "note": "Title: 'Alexandra Straton - Stock Analyst at Morgan Stanley'. Business Insider names her Morgan Stanley's top softlines retail and brand analyst."
+  },
+  {
+    "person_id": "amit-mehrotra",
+    "firm_id": "ubs",
+    "person": "Amit Mehrotra",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/amit-mehrotra/",
+    "note": "Title: 'Amit Mehrotra - Stock Analyst at UBS'. LinkedIn and TipRanks also list him as a UBS industrial-sector analyst."
+  },
+  {
+    "person_id": "andrew-lazar",
+    "firm_id": "barclays",
+    "person": "Andrew Lazar",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://ir.mccormick.com/analyst/andrew-lazar",
+    "note": "McCormick IR lists Andrew Lazar as a Barclays analyst (andrew.lazar@barclays.com). Same pairing on Hershey and Lamb Weston analyst-coverage pages."
+  },
+  {
+    "person_id": "andrew-mok",
+    "firm_id": "barclays",
+    "person": "Andrew Mok",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/andrew-mok-cfa",
+    "note": "Title: 'Andrew Mok CFA | Barclays Stock Analyst'. LinkedIn: Director, Health Care Equity Analyst at Barclays."
+  },
+  {
+    "person_id": "andrew-strelzik",
+    "firm_id": "bmo-capital",
+    "person": "Andrew Strelzik",
+    "firm": "BMO Capital",
+    "confirmed": "yes",
+    "url": "https://capitalmarkets.bmo.com/en/our-bankers/andrew-strelzik/",
+    "note": "Official BMO page: 'Restaurant Analyst' and 'senior analyst in BMO Capital Markets Equity Research'."
+  },
+  {
+    "person_id": "angel-castillo",
+    "firm_id": "morgan-stanley",
+    "person": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/angel-castillo/",
+    "note": "Title: 'Angel Castillo - Stock Analyst at Morgan Stanley'. LinkedIn: Head of US Machinery & Construction Equity Research at Morgan Stanley."
+  },
+  {
+    "person_id": "anna-andreeva",
+    "firm_id": "piper-sandler",
+    "person": "Anna Andreeva",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/anna-andreeva",
+    "note": "Official Piper Sandler page lists her as Sr. Research Analyst. Firm press release names her managing director and senior research analyst."
+  },
+  {
+    "person_id": "atul-maheswari",
+    "firm_id": "ubs",
+    "person": "Atul Maheswari",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/atul-maheswari/",
+    "note": "Title: 'Atul Maheswari - Stock Analyst at UBS'. LinkedIn: Equity Research Analyst at UBS covering airlines."
+  },
+  {
+    "person_id": "bob-brackett",
+    "firm_id": "bernstein",
+    "person": "Bob Brackett",
+    "firm": "Bernstein",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/bob-brackett/",
+    "note": "Title: 'Bob Brackett - Stock Analyst at Bernstein'. EIA bio: Senior Analyst, bob.brackett@bernstein.com."
+  },
+  {
+    "person_id": "brad-zelnick",
+    "firm_id": "deutsche-bank",
+    "person": "Brad Zelnick",
+    "firm": "Deutsche Bank",
+    "confirmed": "yes",
+    "url": "https://www.db.com/news/detail/20210316-brad-zelnick-joins-deutsche-bank-as-senior-us-software-research-analyst",
+    "note": "Deutsche Bank news: joins as Senior US Software Research Analyst. Title also: 'Brad Zelnick - Stock Analyst at Deutsche Bank'."
+  },
+  {
+    "person_id": "craig-ellis",
+    "firm_id": "b-riley-securities",
+    "person": "Craig Ellis",
+    "firm": "B. Riley Securities",
+    "confirmed": "yes",
+    "url": "https://www.brileysecurities.com/craig-ellis",
+    "note": "Official B. Riley page: director of research and senior semiconductor and capital equipment analyst at B. Riley Securities."
+  },
+  {
+    "person_id": "daniel-politzer",
+    "firm_id": "jp-morgan",
+    "person": "Daniel Politzer",
+    "firm": "JP Morgan",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/daniel-politzer/",
+    "note": "Title: 'Daniel Politzer - Stock Analyst at J.P. Morgan'. CDC Gaming: lead gaming analyst for J.P. Morgan."
+  },
+  {
+    "person_id": "david-roman",
+    "firm_id": "goldman-sachs",
+    "person": "David Roman",
+    "firm": "Goldman Sachs",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/david-roman/",
+    "note": "Title: 'David Roman - Stock Analyst at Goldman Sachs'. TipRanks and LivaNova IR also list him as a Goldman Sachs analyst. LinkedIn now shows a Oct 2026 move to Morgan Stanley, but sources still identify him as GS analyst."
+  },
+  {
+    "person_id": "david-westenberg",
+    "firm_id": "piper-sandler",
+    "person": "David Westenberg",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/david-westenberg-cfa",
+    "note": "Official Piper Sandler page: senior research analyst and managing director covering animal health and genomics tools."
+  },
+  {
+    "person_id": "david-windley",
+    "firm_id": "jefferies",
+    "person": "David Windley",
+    "firm": "Jefferies",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/david-windley",
+    "note": "Title: 'David Windley Profile - Jefferies Analyst'. Speaker bio: Managing Director and founding member of Jefferies Healthcare Equity Research."
+  },
+  {
+    "person_id": "erik-woodring",
+    "firm_id": "morgan-stanley",
+    "person": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/erik-woodring/",
+    "note": "Title: 'Erik Woodring - Stock Analyst at Morgan Stanley'. LinkedIn: Head of US Technology Hardware Equity Research at Morgan Stanley."
+  },
+  {
+    "person_id": "evan-stampler",
+    "firm_id": "wells-fargo",
+    "person": "Evan Stampler",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/evan-stampler/",
+    "note": "Title: 'Evan Stampler - Stock Analyst at Wells Fargo'. Benzinga: 'Wells Fargo analyst Evan Stampler'."
+  },
+  {
+    "person_id": "frank-lee",
+    "firm_id": "hsbc",
+    "person": "Frank Lee",
+    "firm": "HSBC",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/frank-lee-cfa/",
+    "note": "Title: 'Frank Lee CFA - Stock Analyst at HSBC'. LinkedIn: Global Head of Technology Hardware & Semiconductor Research at HSBC."
+  },
+  {
+    "person_id": "j-bruce-chan",
+    "firm_id": "stifel",
+    "person": "J. Bruce Chan",
+    "firm": "Stifel",
+    "confirmed": "yes",
+    "url": "https://stifelinstitutional.com/meet/bruce-j-chan/",
+    "note": "Stifel Institutional bio: analyst in Transportation and Future Mobility covering Global Logistics; TipRanks title Stifel Nicolaus Analyst."
+  },
+  {
+    "person_id": "james-feldman",
+    "firm_id": "wells-fargo",
+    "person": "James Feldman",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/james-feldman/",
+    "note": "Title Stock Analyst at Wells Fargo; TipRanks Wells Fargo Analyst; Wells Fargo CRE page: Residential REIT analyst at Wells Fargo."
+  },
+  {
+    "person_id": "james-friedman",
+    "firm_id": "susquehanna",
+    "person": "James Friedman",
+    "firm": "Susquehanna",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/james-friedman/",
+    "note": "Title Stock Analyst at Susquehanna; TipRanks Susquehanna Analyst; MarketBeat: stock analyst at Susquehanna."
+  },
+  {
+    "person_id": "jason-bednar",
+    "firm_id": "piper-sandler",
+    "person": "Jason Bednar",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/jason-bednar-cfa",
+    "note": "Piper Sandler bio: managing director and senior research analyst at Piper Sandler, medical technology."
+  },
+  {
+    "person_id": "jason-gabelman",
+    "firm_id": "td-cowen",
+    "person": "Jason Gabelman",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/hot-seat-with-jason-gabelman",
+    "note": "TD Securities bio: Research Analyst, TD Cowen; TipRanks title TD Cowen Analyst."
+  },
+  {
+    "person_id": "jayson-bedford",
+    "firm_id": "raymond-james",
+    "person": "Jayson Bedford",
+    "firm": "Raymond James",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/jayson-bedford/",
+    "note": "Title Stock Analyst at Raymond James; TipRanks Raymond James Analyst; MarketBeat: stock analyst at Raymond James Financial."
+  },
+  {
+    "person_id": "jeff-bernstein",
+    "firm_id": "barclays",
+    "person": "Jeff Bernstein",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://icr.swoogo.com/Industry_Outlook_Restaurants/speaker/713254/jeffrey-bernstein",
+    "note": "ICR speaker bio: Managing Director and senior Equity Research Analyst at Barclays; TipRanks Barclays Analyst."
+  },
+  {
+    "person_id": "jerry-revich",
+    "firm_id": "wells-fargo",
+    "person": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/jerry-revich",
+    "note": "TipRanks title Wells Fargo Analyst; MarketBeat: stock analyst at Wells Fargo covering Machinery."
+  },
+  {
+    "person_id": "jessica-tassan",
+    "firm_id": "piper-sandler",
+    "person": "Jessica Tassan",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/jessica-tassan",
+    "note": "Piper Sandler bio: director and senior research analyst at Piper Sandler, healthcare IT and delivery."
+  },
+  {
+    "person_id": "joe-o-dea",
+    "firm_id": "wells-fargo",
+    "person": "Joe O'Dea",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://www.wellsfargo.com/cib/insights/events/industrials-conference/",
+    "note": "Wells Fargo page: managing director and senior Equity analyst at Wells Fargo Securities; TipRanks Wells Fargo Analyst. Later listed as partner at Vertical Research Partners."
+  },
+  {
+    "person_id": "john-ivankoe",
+    "firm_id": "jp-morgan",
+    "person": "John Ivankoe",
+    "firm": "JP Morgan",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/john-ivankoe",
+    "note": "TipRanks title J.P. Morgan Analyst; LinkedIn: Equity Research Analyst at JPMorgan; restfinance: head of U.S. restaurants equity research at J.P. Morgan."
+  },
+  {
+    "person_id": "john-royall",
+    "firm_id": "piper-sandler",
+    "person": "John Royall",
+    "firm": "Piper Sandler",
+    "confirmed": "yes",
+    "url": "https://www.pipersandler.com/about/people/john-royall-cfa",
+    "note": "Piper Sandler bio: senior research analyst and head of Integrated Oils, Refining, and E&P equity research at Piper Sandler."
+  },
+  {
+    "person_id": "joseph-c-giordano",
+    "firm_id": "td-cowen",
+    "person": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/muni-budgets-may-not-be-as-strong",
+    "note": "TD Securities bio: Diversified Industrials, Automation & Robotics Research Analyst, TD Cowen; TipRanks TD Cowen Analyst."
+  },
+  {
+    "person_id": "joseph-quatrochi",
+    "firm_id": "wells-fargo",
+    "person": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/joseph-quatrochi",
+    "note": "TipRanks title Wells Fargo Analyst; LinkedIn: Equity Research Analyst at Wells Fargo Securities; stockanalysis Stock Analyst at Wells Fargo."
+  },
+  {
+    "person_id": "josh-silverstein",
+    "firm_id": "ubs",
+    "person": "Josh Silverstein",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/josh-silverstein",
+    "note": "TipRanks title UBS Analyst; MarketBeat: stock analyst at UBS Group; stockanalysis Stock Analyst at UBS."
+  },
+  {
+    "person_id": "juan-c-sanabria",
+    "firm_id": "bmo-capital",
+    "person": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "confirmed": "yes",
+    "url": "https://capitalmarkets.bmo.com/en/our-bankers/juan-c-sanabria/",
+    "note": "BMO Capital Markets bio: U.S. Real Estate Analyst on BMO equity research covering REITs; TipRanks BMO Capital Analyst."
+  },
+  {
+    "person_id": "justin-jenkins",
+    "firm_id": "raymond-james",
+    "person": "Justin Jenkins",
+    "firm": "Raymond James",
+    "confirmed": "yes",
+    "url": "https://www.raymondjames.com/corporations-and-institutions/global-equities-and-investment-banking/equity-research/equity-research-team/bio?bioListId=7de80524431246b596a5a1ae78364bdd&id=871a9d25ceef415694e97e0febb3f600",
+    "note": "Raymond James bio: became an analyst in 2015 covering refiners and midstream; TipRanks Raymond James Analyst."
+  },
+  {
+    "person_id": "manav-gupta",
+    "firm_id": "ubs",
+    "person": "Manav Gupta",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/manav-gupta",
+    "note": "TipRanks title UBS Analyst; stockanalysis Stock Analyst at UBS; MarketBeat: stock analyst at UBS Group."
+  },
+  {
+    "person_id": "matthew-taylor",
+    "firm_id": "jefferies",
+    "person": "Matthew Taylor",
+    "firm": "Jefferies",
+    "confirmed": "yes",
+    "url": "https://www.jefferies.com/analysts/matt-taylor/",
+    "note": "Jefferies analyst page: joined Jefferies in 2022 to lead US Medical Supplies & Devices research; TipRanks Jefferies Analyst."
+  },
+  {
+    "person_id": "michael-carroll",
+    "firm_id": "rbc-capital",
+    "person": "Michael Carroll",
+    "firm": "RBC Capital",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/michael-carroll/",
+    "note": "Title Stock Analyst at RBC Capital; Ventas IR lists Michael Carroll as RBC Capital Markets analyst."
+  },
+  {
+    "person_id": "michael-elias",
+    "firm_id": "td-cowen",
+    "person": "Michael Elias",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/hot-seat-with-michael-elias",
+    "note": "TD Securities: Michael Elias is Managing Director, TMT Communications Infrastructure Research Analyst at TD Cowen."
+  },
+  {
+    "person_id": "michael-lasser",
+    "firm_id": "ubs",
+    "person": "Michael Lasser",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/michael-lasser/",
+    "note": "StockAnalysis: Michael Lasser is a Stock Analyst at UBS."
+  },
+  {
+    "person_id": "moshe-orenbuch",
+    "firm_id": "td-cowen",
+    "person": "Moshe Orenbuch",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/tdc-two-cents-getting-to-know-zip",
+    "note": "TD Securities: Moshe Orenbuch is Managing Director, Specialty Finance Research Analyst at TD Cowen."
+  },
+  {
+    "person_id": "nate-svensson",
+    "firm_id": "deutsche-bank",
+    "person": "Nate Svensson",
+    "firm": "Deutsche Bank",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/nate-svensson/",
+    "note": "StockAnalysis: Nate Svensson is a Stock Analyst at Deutsche Bank."
+  },
+  {
+    "person_id": "nicole-deblase",
+    "firm_id": "deutsche-bank",
+    "person": "Nicole Deblase",
+    "firm": "Deutsche Bank",
+    "confirmed": "yes",
+    "url": "https://www.marketbeat.com/all-access/analyst-rankings/327/",
+    "note": "MarketBeat: Nicole DeBlase is a Managing Director and lead analyst covering US Multi-Industry and Electrical Equipment for Deutsche Bank."
+  },
+  {
+    "person_id": "nik-cremo",
+    "firm_id": "barclays",
+    "person": "Nik Cremo",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://ir.nayax.com/stock-info/analyst-coverage/default.aspx",
+    "note": "Nayax IR analyst coverage lists Nik Cremo as the Barclays analyst."
+  },
+  {
+    "person_id": "rayna-kumar",
+    "firm_id": "oppenheimer",
+    "person": "Rayna Kumar",
+    "firm": "Oppenheimer",
+    "confirmed": "yes",
+    "url": "https://www.oppenheimer.com/news-media/2024/press-releases/appoints-rayna-kumar-as-managing-director-and-senior-analyst-covering-the-fintech-sector",
+    "note": "Oppenheimer press release: appointed Rayna Kumar as Managing Director and Senior Analyst covering Fintech."
+  },
+  {
+    "person_id": "richard-hightower",
+    "firm_id": "barclays",
+    "person": "Richard Hightower",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://www.marketbeat.com/all-access/analyst-rankings/179/",
+    "note": "MarketBeat: Richard Hightower is Managing Director, U.S. REIT Equity Research and a stock analyst at Barclays."
+  },
+  {
+    "person_id": "ryan-krueger",
+    "firm_id": "keefe-bruyette-and-woods",
+    "person": "Ryan Krueger",
+    "firm": "Keefe, Bruyette & Woods",
+    "confirmed": "yes",
+    "url": "https://investor.rgare.com/news-releases/news-release-details/reinsurance-group-america-names-ryan-krueger-senior-vice",
+    "note": "RGA release: Ryan Krueger spent over a decade at KBW as Managing Director, Equity Research of the U.S. life insurance sector."
+  },
+  {
+    "person_id": "scott-schneeberger",
+    "firm_id": "oppenheimer",
+    "person": "Scott Schneeberger",
+    "firm": "Oppenheimer",
+    "confirmed": "yes",
+    "url": "https://www.oppenheimer.com/corporations-institutions/equities/industrials",
+    "note": "Oppenheimer: Scott Schneeberger is Managing Director and Senior Analyst covering industrial and business services."
+  },
+  {
+    "person_id": "simon-leopold",
+    "firm_id": "raymond-james",
+    "person": "Simon Leopold",
+    "firm": "Raymond James",
+    "confirmed": "yes",
+    "url": "https://www.raymondjames.com/corporations-and-institutions/global-equities-and-investment-banking/equity-research/equity-research-team/bio?bioListId=a54a8fc571644d25b91ef832784c1fca&id=ac0ba23abd0d4664aeba5682e6af0465",
+    "note": "Raymond James equity research bio: Simon Leopold is Managing Director covering data infrastructure and semiconductors."
+  },
+  {
+    "person_id": "stephen-d-ambrisi",
+    "firm_id": "rbc-capital",
+    "person": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/stephen-d%2527ambrisi",
+    "note": "TipRanks: Stephen D'Ambrisi is a Wall Street Analyst at RBC Capital."
+  },
+  {
+    "person_id": "stephen-volkmann",
+    "firm_id": "jefferies",
+    "person": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/STEPHEN-VOLKMANN-A04LE9/",
+    "note": "MarketScreener: Stephen Volkmann, CFA, is an Equity Analyst at Jefferies LLC."
+  },
+  {
+    "person_id": "thomas-fitzgerald",
+    "firm_id": "td-cowen",
+    "person": "Thomas Fitzgerald",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/tdc-wheels-up-consumer-takeaways",
+    "note": "TD Securities: Tom Fitzgerald, Vice President, Equity Research, TD Cowen, is the Lead Airlines Analyst."
+  },
+  {
+    "person_id": "thomas-wadewitz",
+    "firm_id": "ubs",
+    "person": "Thomas Wadewitz",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/THOMAS-WADEWITZ-A056NQ/",
+    "note": "MarketScreener: Thomas Wadewitz is Analyst-Equity at UBS Securities LLC."
+  },
+  {
+    "person_id": "trey-bowers",
+    "firm_id": "wells-fargo",
+    "person": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://www.wellsfargo.com/cib/global-markets/extelallamerica/",
+    "note": "Wells Fargo equity research page lists Trey Bowers covering Gaming & Lodging."
+  },
+  {
+    "person_id": "trung-huynh",
+    "firm_id": "rbc-capital",
+    "person": "Trung Huynh",
+    "firm": "RBC Capital",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/TRUNG-HUYNH-A1Q6NY/",
+    "note": "MarketScreener: Trung Huynh is Analyst-Equity at RBC Capital Markets LLC."
+  },
+  {
+    "person_id": "ygal-arounian",
+    "firm_id": "wedbush",
+    "person": "Ygal Arounian",
+    "firm": "Wedbush",
+    "confirmed": "yes",
+    "url": "https://wedbush.com/ygal-arounian-rejoins-wedbush-as-managing-director-equity-research-internet/",
+    "note": "Wedbush: Ygal Arounian rejoined as Managing Director, Equity Research, Internet."
+  }
+]

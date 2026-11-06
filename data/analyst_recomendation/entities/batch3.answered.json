@@ -1,0 +1,164 @@
+[
+  {
+    "person_id": "michael-elias",
+    "firm_id": "td-cowen",
+    "person": "Michael Elias",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/hot-seat-with-michael-elias",
+    "note": "TD Securities: Michael Elias is Managing Director, TMT Communications Infrastructure Research Analyst at TD Cowen."
+  },
+  {
+    "person_id": "michael-lasser",
+    "firm_id": "ubs",
+    "person": "Michael Lasser",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/michael-lasser/",
+    "note": "StockAnalysis: Michael Lasser is a Stock Analyst at UBS."
+  },
+  {
+    "person_id": "moshe-orenbuch",
+    "firm_id": "td-cowen",
+    "person": "Moshe Orenbuch",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/tdc-two-cents-getting-to-know-zip",
+    "note": "TD Securities: Moshe Orenbuch is Managing Director, Specialty Finance Research Analyst at TD Cowen."
+  },
+  {
+    "person_id": "nate-svensson",
+    "firm_id": "deutsche-bank",
+    "person": "Nate Svensson",
+    "firm": "Deutsche Bank",
+    "confirmed": "yes",
+    "url": "https://stockanalysis.com/analysts/nate-svensson/",
+    "note": "StockAnalysis: Nate Svensson is a Stock Analyst at Deutsche Bank."
+  },
+  {
+    "person_id": "nicole-deblase",
+    "firm_id": "deutsche-bank",
+    "person": "Nicole Deblase",
+    "firm": "Deutsche Bank",
+    "confirmed": "yes",
+    "url": "https://www.marketbeat.com/all-access/analyst-rankings/327/",
+    "note": "MarketBeat: Nicole DeBlase is a Managing Director and lead analyst covering US Multi-Industry and Electrical Equipment for Deutsche Bank."
+  },
+  {
+    "person_id": "nik-cremo",
+    "firm_id": "barclays",
+    "person": "Nik Cremo",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://ir.nayax.com/stock-info/analyst-coverage/default.aspx",
+    "note": "Nayax IR analyst coverage lists Nik Cremo as the Barclays analyst."
+  },
+  {
+    "person_id": "rayna-kumar",
+    "firm_id": "oppenheimer",
+    "person": "Rayna Kumar",
+    "firm": "Oppenheimer",
+    "confirmed": "yes",
+    "url": "https://www.oppenheimer.com/news-media/2024/press-releases/appoints-rayna-kumar-as-managing-director-and-senior-analyst-covering-the-fintech-sector",
+    "note": "Oppenheimer press release: appointed Rayna Kumar as Managing Director and Senior Analyst covering Fintech."
+  },
+  {
+    "person_id": "richard-hightower",
+    "firm_id": "barclays",
+    "person": "Richard Hightower",
+    "firm": "Barclays",
+    "confirmed": "yes",
+    "url": "https://www.marketbeat.com/all-access/analyst-rankings/179/",
+    "note": "MarketBeat: Richard Hightower is Managing Director, U.S. REIT Equity Research and a stock analyst at Barclays."
+  },
+  {
+    "person_id": "ryan-krueger",
+    "firm_id": "keefe-bruyette-and-woods",
+    "person": "Ryan Krueger",
+    "firm": "Keefe, Bruyette & Woods",
+    "confirmed": "yes",
+    "url": "https://investor.rgare.com/news-releases/news-release-details/reinsurance-group-america-names-ryan-krueger-senior-vice",
+    "note": "RGA release: Ryan Krueger spent over a decade at KBW as Managing Director, Equity Research of the U.S. life insurance sector."
+  },
+  {
+    "person_id": "scott-schneeberger",
+    "firm_id": "oppenheimer",
+    "person": "Scott Schneeberger",
+    "firm": "Oppenheimer",
+    "confirmed": "yes",
+    "url": "https://www.oppenheimer.com/corporations-institutions/equities/industrials",
+    "note": "Oppenheimer: Scott Schneeberger is Managing Director and Senior Analyst covering industrial and business services."
+  },
+  {
+    "person_id": "simon-leopold",
+    "firm_id": "raymond-james",
+    "person": "Simon Leopold",
+    "firm": "Raymond James",
+    "confirmed": "yes",
+    "url": "https://www.raymondjames.com/corporations-and-institutions/global-equities-and-investment-banking/equity-research/equity-research-team/bio?bioListId=a54a8fc571644d25b91ef832784c1fca&id=ac0ba23abd0d4664aeba5682e6af0465",
+    "note": "Raymond James equity research bio: Simon Leopold is Managing Director covering data infrastructure and semiconductors."
+  },
+  {
+    "person_id": "stephen-d-ambrisi",
+    "firm_id": "rbc-capital",
+    "person": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "confirmed": "yes",
+    "url": "https://www.tipranks.com/experts/analysts/stephen-d%2527ambrisi",
+    "note": "TipRanks: Stephen D'Ambrisi is a Wall Street Analyst at RBC Capital."
+  },
+  {
+    "person_id": "stephen-volkmann",
+    "firm_id": "jefferies",
+    "person": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/STEPHEN-VOLKMANN-A04LE9/",
+    "note": "MarketScreener: Stephen Volkmann, CFA, is an Equity Analyst at Jefferies LLC."
+  },
+  {
+    "person_id": "thomas-fitzgerald",
+    "firm_id": "td-cowen",
+    "person": "Thomas Fitzgerald",
+    "firm": "TD Cowen",
+    "confirmed": "yes",
+    "url": "https://www.tdsecurities.com/ca/en/tdc-wheels-up-consumer-takeaways",
+    "note": "TD Securities: Tom Fitzgerald, Vice President, Equity Research, TD Cowen, is the Lead Airlines Analyst."
+  },
+  {
+    "person_id": "thomas-wadewitz",
+    "firm_id": "ubs",
+    "person": "Thomas Wadewitz",
+    "firm": "UBS",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/THOMAS-WADEWITZ-A056NQ/",
+    "note": "MarketScreener: Thomas Wadewitz is Analyst-Equity at UBS Securities LLC."
+  },
+  {
+    "person_id": "trey-bowers",
+    "firm_id": "wells-fargo",
+    "person": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "confirmed": "yes",
+    "url": "https://www.wellsfargo.com/cib/global-markets/extelallamerica/",
+    "note": "Wells Fargo equity research page lists Trey Bowers covering Gaming & Lodging."
+  },
+  {
+    "person_id": "trung-huynh",
+    "firm_id": "rbc-capital",
+    "person": "Trung Huynh",
+    "firm": "RBC Capital",
+    "confirmed": "yes",
+    "url": "https://www.marketscreener.com/insider/TRUNG-HUYNH-A1Q6NY/",
+    "note": "MarketScreener: Trung Huynh is Analyst-Equity at RBC Capital Markets LLC."
+  },
+  {
+    "person_id": "ygal-arounian",
+    "firm_id": "wedbush",
+    "person": "Ygal Arounian",
+    "firm": "Wedbush",
+    "confirmed": "yes",
+    "url": "https://wedbush.com/ygal-arounian-rejoins-wedbush-as-managing-director-equity-research-internet/",
+    "note": "Wedbush: Ygal Arounian rejoined as Managing Director, Equity Research, Internet."
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "person_id": "michael-elias",
+    "firm_id": "td-cowen",
+    "person": "Michael Elias",
+    "firm": "TD Cowen",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Michael Elias\" \"TD Cowen\" analyst",
+      "\"Michael Elias\" analyst"
+    ]
+  },
+  {
+    "person_id": "michael-lasser",
+    "firm_id": "ubs",
+    "person": "Michael Lasser",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Michael Lasser\" \"UBS\" analyst",
+      "\"Michael Lasser\" analyst"
+    ]
+  },
+  {
+    "person_id": "moshe-orenbuch",
+    "firm_id": "td-cowen",
+    "person": "Moshe Orenbuch",
+    "firm": "TD Cowen",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Moshe Orenbuch\" \"TD Cowen\" analyst",
+      "\"Moshe Orenbuch\" analyst"
+    ]
+  },
+  {
+    "person_id": "nate-svensson",
+    "firm_id": "deutsche-bank",
+    "person": "Nate Svensson",
+    "firm": "Deutsche Bank",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Nate Svensson\" \"Deutsche Bank\" analyst",
+      "\"Nate Svensson\" analyst"
+    ]
+  },
+  {
+    "person_id": "nicole-deblase",
+    "firm_id": "deutsche-bank",
+    "person": "Nicole Deblase",
+    "firm": "Deutsche Bank",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Nicole Deblase\" \"Deutsche Bank\" analyst",
+      "\"Nicole Deblase\" analyst"
+    ]
+  },
+  {
+    "person_id": "nik-cremo",
+    "firm_id": "barclays",
+    "person": "Nik Cremo",
+    "firm": "Barclays",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Nik Cremo\" \"Barclays\" analyst",
+      "\"Nik Cremo\" analyst"
+    ]
+  },
+  {
+    "person_id": "rayna-kumar",
+    "firm_id": "oppenheimer",
+    "person": "Rayna Kumar",
+    "firm": "Oppenheimer",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Rayna Kumar\" \"Oppenheimer\" analyst",
+      "\"Rayna Kumar\" analyst"
+    ]
+  },
+  {
+    "person_id": "richard-hightower",
+    "firm_id": "barclays",
+    "person": "Richard Hightower",
+    "firm": "Barclays",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Richard Hightower\" \"Barclays\" analyst",
+      "\"Richard Hightower\" analyst"
+    ]
+  },
+  {
+    "person_id": "ryan-krueger",
+    "firm_id": "keefe-bruyette-and-woods",
+    "person": "Ryan Krueger",
+    "firm": "Keefe, Bruyette & Woods",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Ryan Krueger\" \"Keefe, Bruyette & Woods\" analyst",
+      "\"Ryan Krueger\" analyst"
+    ]
+  },
+  {
+    "person_id": "scott-schneeberger",
+    "firm_id": "oppenheimer",
+    "person": "Scott Schneeberger",
+    "firm": "Oppenheimer",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Scott Schneeberger\" \"Oppenheimer\" analyst",
+      "\"Scott Schneeberger\" analyst"
+    ]
+  },
+  {
+    "person_id": "simon-leopold",
+    "firm_id": "raymond-james",
+    "person": "Simon Leopold",
+    "firm": "Raymond James",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Simon Leopold\" \"Raymond James\" analyst",
+      "\"Simon Leopold\" analyst"
+    ]
+  },
+  {
+    "person_id": "stephen-d-ambrisi",
+    "firm_id": "rbc-capital",
+    "person": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Stephen D'Ambrisi\" \"RBC Capital\" analyst",
+      "\"Stephen D'Ambrisi\" analyst"
+    ]
+  },
+  {
+    "person_id": "stephen-volkmann",
+    "firm_id": "jefferies",
+    "person": "Stephen Volkmann",
+    "firm": "Jefferies",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Stephen Volkmann\" \"Jefferies\" analyst",
+      "\"Stephen Volkmann\" analyst"
+    ]
+  },
+  {
+    "person_id": "thomas-fitzgerald",
+    "firm_id": "td-cowen",
+    "person": "Thomas Fitzgerald",
+    "firm": "TD Cowen",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Thomas Fitzgerald\" \"TD Cowen\" analyst",
+      "\"Thomas Fitzgerald\" analyst"
+    ]
+  },
+  {
+    "person_id": "thomas-wadewitz",
+    "firm_id": "ubs",
+    "person": "Thomas Wadewitz",
+    "firm": "UBS",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Thomas Wadewitz\" \"UBS\" analyst",
+      "\"Thomas Wadewitz\" analyst"
+    ]
+  },
+  {
+    "person_id": "trey-bowers",
+    "firm_id": "wells-fargo",
+    "person": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Trey Bowers\" \"Wells Fargo\" analyst",
+      "\"Trey Bowers\" analyst"
+    ]
+  },
+  {
+    "person_id": "trung-huynh",
+    "firm_id": "rbc-capital",
+    "person": "Trung Huynh",
+    "firm": "RBC Capital",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Trung Huynh\" \"RBC Capital\" analyst",
+      "\"Trung Huynh\" analyst"
+    ]
+  },
+  {
+    "person_id": "ygal-arounian",
+    "firm_id": "wedbush",
+    "person": "Ygal Arounian",
+    "firm": "Wedbush",
+    "rule": "exact_price_weak",
+    "support_n": 2,
+    "support_share": 1.0,
+    "query_suggestions": [
+      "\"Ygal Arounian\" \"Wedbush\" analyst",
+      "\"Ygal Arounian\" analyst"
+    ]
+  }
+]
