@@ -49,7 +49,7 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500 write_joint_analyst_recommendations etl backtest
+        download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -98,6 +98,11 @@ download_fortune_500:
 	@mkdir -p data/fortune_500
 	@curl -fsSL https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv -o data/fortune_500/symbols.csv
 
+# Daily Yahoo chart responses for every symbol in data/fortune_500/symbols.csv.
+# Writes data/yahoo_quotes/quotes.csv (ticker, raw JSON response).
+download_yahoo_quotes: download_fortune_500
+	@./penv python etl/download_yahoo_quotes.py
+
 # ---------------------------------------------------------------------------
 # Database operations
 # ---------------------------------------------------------------------------
@@ -121,6 +126,12 @@ write_joint_analyst_recommendations:
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/etl.sql
+
+# Point-in-time analyst win rates from Yahoo prices. Run after `make etl`
+# so _raw_signals exists. Replaces the recency view with the win-rate weights.
+winrate: download_yahoo_quotes
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
+	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/winrate.sql
 
 # ---------------------------------------------------------------------------
 # Backtests
