@@ -4,18 +4,72 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+21.7%",
-    "date": "10/15/2026"
+    "price_target": "$95.00",
+    "projected": "+21.2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+14.8%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Nicholas Campanella",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+19.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$92.00",
+    "projected": "+15.6%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$86.00",
+    "projected": "+8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+17.9%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$89.00",
+    "projected": "+15.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
     "price_target": "$85.00",
-    "projected": "+13.7%",
-    "date": "10/14/2026"
+    "projected": "+9.8%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Richard Sunderland",
@@ -63,15 +117,6 @@
     "date": "09/29/2026"
   },
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$83.00",
-    "projected": "+14.9%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -90,33 +135,6 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+18.7%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$91.00",
-    "projected": "+16.4%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$99.00",
-    "projected": "+26.6%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Nicholas Amicucci",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -124,15 +142,6 @@
     "price_target": "$96.00",
     "projected": "+18.8%",
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+16%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "William Appicelli",

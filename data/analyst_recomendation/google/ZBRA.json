@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Itay Michaeli",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+36.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+14.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+20.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Piyush Avasthy",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$398.00",
+    "projected": "+19.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Kenneth Newman",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$430.00",
+    "projected": "+29.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$432.00",
+    "projected": "+29.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$378.00",
+    "projected": "+0.7%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Joseph C Giordano",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+26.6%",
+    "date": "09/22/2026"
+  },
+  {
+    "analyst": "Robert Jamieson",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$435.00",
+    "projected": "+23.7%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "James Ricchiuti",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$435.00",
+    "projected": "+23.7%",
+    "date": "09/15/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$450.00",
+    "projected": "+30.2%",
+    "date": "09/02/2026"
+  },
+  {
+    "analyst": "Amit Mehrotra",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$435.00",
+    "projected": "+14.1%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$435.00",
+    "projected": "+14.1%",
+    "date": "08/13/2026"
+  },
+  {
+    "analyst": "Damian Karas",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$435.00",
+    "projected": "+18.7%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "Brian Drab",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "08/07/2026"
+  },
+  {
+    "analyst": "Brad Hewitt",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$317.00",
+    "projected": "+20.3%",
+    "date": "07/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+47.5%",
+    "date": "03/30/2026"
+  }
+]

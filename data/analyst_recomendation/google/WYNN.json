@@ -1,12 +1,93 @@
 [
   {
+    "analyst": "Barry Jonas",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+38.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Daniel Politzer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+43.4%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Lizzie Dove",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+34.9%",
-    "date": "10/13/2026"
+    "price_target": "$93.00",
+    "projected": "+19.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+48.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Benjamin Chaiken",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+65.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+40.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "David Bain",
+    "firm": "Texas Capital Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+49.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Brandt Montour",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+53.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$125.00",
+    "projected": "+66.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "+59.9%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "James Hardiman",
@@ -16,24 +97,6 @@
     "price_target": "$103.00",
     "projected": "+38.2%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Brandt Montour",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$128.00",
-    "projected": "+69.4%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Trey Bowers",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+67.8%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Robin M. Farley",
@@ -63,24 +126,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Stephen Grambling",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$128.00",
-    "projected": "+21.9%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Shaun Kelley",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "John Staszak",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -97,42 +142,6 @@
     "price_target": "$139.00",
     "projected": "+36.2%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Barry Jonas",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+22.4%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Benjamin Chaiken",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$132.00",
-    "projected": "+29.3%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Steven Wieczynski",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$143.00",
-    "projected": "+40.1%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Daniel Politzer",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$134.00",
-    "projected": "+39.1%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "David Katz",
