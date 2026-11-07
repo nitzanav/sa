@@ -1,4 +1,5 @@
 import { jest } from "@jest/globals";
+import { createServer } from "node:http";
 import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -74,4 +75,31 @@ test("throws on non-OK", async () => {
     ),
   ).rejects.toThrow(/HTTP 500/);
   fetchSpy.mockRestore();
+});
+
+test("body timeout rejects without an unhandled rejection", async () => {
+  const server = createServer((_req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.write("<html>partial");
+  });
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  const unhandled = [];
+  const onUnhandled = (error) => unhandled.push(error);
+  process.on("unhandledRejection", onUnhandled);
+  const dir = mkdtempSync(join(tmpdir(), "hs-"));
+  try {
+    await expect(
+      httpRequestScrape(
+        { url: `http://127.0.0.1:${server.address().port}/hang`, timeout: 200 },
+        { operationName: "hang", initialDelay: 0, maxAttempts: 1 },
+        { fileName: join(dir, "hang.html") },
+        { enabled: false },
+      ),
+    ).rejects.toThrow(/aborted due to timeout/);
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(unhandled).toEqual([]);
+  } finally {
+    process.off("unhandledRejection", onUnhandled);
+    await new Promise((resolve) => server.close(resolve));
+  }
 });

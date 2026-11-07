@@ -20,7 +20,10 @@ const request = log(async function request(httpConfig = {}) {
       signal: AbortSignal.timeout(timeout),
     });
     if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
-    return response.text();
+    // Await the body before finally closes the dispatcher. A bare return lets a
+    // timeout reject the body promise while close() is still pending, which Node
+    // reports as an unhandled TimeoutError and exits.
+    return await response.text();
   } finally {
     await dispatcher.close();
   }
