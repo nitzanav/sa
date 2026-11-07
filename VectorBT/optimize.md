@@ -24,7 +24,7 @@ Trusted cells have at least 30 signals. Smaller cells stay in the matrices and o
 
 Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal, and those lots are one position. A ticker that already has an open position is skipped. After that position closes, a later signal can open a new one. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
 
-A slot-book signal buys the next session's close. Analyst points arrive through the signal day, so that day's close is not a trade. A Friday signal buys Monday. The fill is that next close. Phase `nextopen` uses the same next session and fills that session's open instead. Opens are cached in `VectorBT/.cache/open.pkl`, adjusted the same way as the closes. The older hold and target path still buys the signal session.
+A slot-book signal buys the next session's close. Analyst points arrive through the signal day, so that day's close is not a trade. A Friday signal buys Monday. The fill is that next close. Phase `nextopen` uses the same next session and fills that session's open instead. Opens are cached in `VectorBT/.cache/open.pkl`, adjusted the same way as the closes. The older hold and target path still buys the signal session. Phase `fills` runs the frozen recency cell on the signal session's close, the next session's open, and the next session's close.
 
 `--one-lot`: at most one open lot per ticker. A later buy **while that lot is open** does not open another lot; it restarts the hold clock (10/15/30/…) from that bar. The profit target and the drawdown peak stay on the original entry. After the lot has closed (time, target, or drawdown), the next buy opens a new lot. A closed position does not block the next one.
 
@@ -140,6 +140,7 @@ Lot-day exposure is four figures on the winning combination, taken from the lots
 - **Days exposed:** distinct calendar days with at least one lot open. A day with two lots open counts once.
 - **Lot-days:** sum of days held across lots. One lot for 3 days, one for 1 day, and one for 3 days is 6 lot-days. Overlap counts once per lot.
 - **Average lot amount:** mean dollar size of the lots opened.
+- **Position length:** calendar days from the buy date through the sell date, inclusive. Lots with the same ticker, buy date, and buy price are one position and count once. The winning line, the upper canvas stats, and the top 30 show min, average, max, p25, p50, and p75 of those lengths. An open position runs through the last quote day.
 
 3. `simulation_<timestamp>_<words>__optimize.tsx` — copy of the canvas source. The file Cursor opens beside chat is the same source at:
 
@@ -492,6 +493,35 @@ A signal buys the next session's open. A Friday signal buys Monday's open. The l
 
 ```bash
 ./penv python VectorBT/simulation_2026-11-06_2130_UTC+2_recency-next-open__optimize.py nextopen \
+  --end 2026-10-26
+```
+
+## Entry fills
+
+Same recency book as the published canvas: analyst >3, projected >10%, 12 lots, strength `at`, no SPY and no TQQQ. Signals are `yahoo_and_tipranks_1d_recency` through `5d_recency`. Loss dropdown is 7.5%, 5%, or 2.5%. Profit protection is 7.5%, 5%, or 2.5%. Sell pick is `ls` or `nb`. Entry fill is same close, next open, or next close. Same close is the fill behind the baseline `7.5dd 5pp · ls · at` on `2d_recency`. On a close fill, stops run before buys. On next open, the lot sold to make room sells at that open; stops still use the close after the open. 5 signals × 3 fills × 3 dd × 3 pp × 2 picks = 270 cells. The canvas Fill pills are same close, next open, and next close. All three start on.
+
+```bash
+./penv python VectorBT/simulation_2026-11-07_2106_UTC+2_frozen-recency-fills__optimize.py fills \
+  --end 2026-10-26
+```
+
+## Recency fill cuts
+
+The fill book with the buy and protect cuts opened. 12 lots of $26,667, strength `at`, sell pick `ls` only. Signals stay `yahoo_and_tipranks_1d_recency` through `5d_recency`. Loss dropdown stays 7.5%, 5%, and 2.5%. Profit protection adds 10% and 15% beside 7.5%, 5%, and 2.5%. Analyst cuts are >0, >1, >2, >3, >4, and >5. Projected upside cuts are >0%, >10%, >20%, >30%, and >40%. Entry fill is still same close, next open, and next close. 5 signals × 6 analyst cuts × 5 upside cuts × 3 fills × 3 dd × 5 pp = 6,750 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-07_2123_UTC+2_recency-fill-cuts__optimize.py cuts \
+  --end 2026-10-26
+```
+
+## Recency union
+
+Frozen from the two published rows: `2.5dd 15pp · 12 × $26,667 · ls · at` on same close and next open, analyst >2. Profit protection adds `25pp`, `30pp`, `40pp`, `50pp`, and `60pp` beside `15pp`. Projected upside is `>40%`, `>50%`, and `>60%`. Books are `yahoo_and_tipranks_1d_recency` through `5d_recency`, plus `yahoo_and_tipranks_any_recency`. The combined book buys when any of those five clears the same analyst and upside cut. A ticker and day that qualifies on more than one book is one signal, and the kept row is the strongest qualifier. A row that misses the cut does not replace one that passes. A ticker that already has an open position is skipped.
+
+Buy windows are `5m_Jan-May`, `5m_Jun-Oct`, and `10m_Jan-Oct`. Signals are dated inside the window. Prices continue through the last quote, so a position can sell after the buy window. A lot still open on the last quote stays open. 6 signals × 3 upside cuts × 3 ranges × 2 fills × 6 pp = 648 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-07_2300_UTC+2_recency-union-pp__optimize.py union \
   --end 2026-10-26
 ```
 
