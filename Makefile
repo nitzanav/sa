@@ -116,6 +116,15 @@ download_yahoo_quotes: download_fortune_500
 write_joint_analyst_recommendations:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
 
+# Daily file snapshot. A hyphen is not valid in an unquoted table name, so
+# 2026-11-07 is stored as _raw_signals_2026_11_07. The same day is replaced.
+RAW_SIGNALS_SNAPSHOT := _raw_signals_$(shell date +%Y_%m_%d)
+
+# Rewrite the _raw_signals staging name. Leaves raw_signals untouched.
+define psql_with_raw_snapshot
+sed -E 's/(^|[^A-Za-z0-9_])_raw_signals([^A-Za-z0-9_]|$$)/\1$(RAW_SIGNALS_SNAPSHOT)\2/g' $(1) | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f -
+endef
+
 # Rebuild CSVs from per-symbol JSON, copy Yahoo, Google, and TipRanks into
 # database tables, pool all_sources (Yahoo + TipRanks) and yahoo_and_google,
 # then export ranked signals.
@@ -125,13 +134,14 @@ write_joint_analyst_recommendations:
 #   make etl
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/etl.sql
+	@$(call psql_with_raw_snapshot,etl/etl.sql)
 
 # Point-in-time analyst win rates from Yahoo prices. Run after `make etl`
-# so _raw_signals exists. Replaces the recency view with the win-rate weights.
+# on the same day so that day's _raw_signals_YYYY_MM_DD snapshot exists.
+# Replaces the recency view with the win-rate weights.
 winrate: download_yahoo_quotes
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/winrate.sql
+	@$(call psql_with_raw_snapshot,etl/winrate.sql)
 
 # ---------------------------------------------------------------------------
 # Backtests

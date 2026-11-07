@@ -1,14 +1,55 @@
 -- NOTE: signal dates are session-aligned; weekend/holiday rows are shifted back
 -- onto the prior session (lookahead, see the shift comment).
+--
+-- raw_signals is cumulative. It is created once and then only upserted, so a
+-- rating that later disappears from a source page stays here. created_at is
+-- the first time the row was stored. updated_at is the last scrape that still
+-- contained it.
+--
+-- The file load lands in _raw_signals. make etl renames that table to
+-- _raw_signals_ plus YYYY_MM_DD, and drops and recreates the same day's table.
 CREATE TABLE IF NOT EXISTS raw_signals (
   source varchar,
   date date,
   ticker varchar,
   analyst text,
   percent real,
-  projected_price real
+  projected_price real,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
 );
-TRUNCATE TABLE raw_signals;
+
+ALTER TABLE raw_signals ADD COLUMN IF NOT EXISTS created_at timestamptz NOT NULL DEFAULT now();
+ALTER TABLE raw_signals ADD COLUMN IF NOT EXISTS updated_at timestamptz NOT NULL DEFAULT now();
+
+-- Key is source, ticker (the symbol), date, analyst, and projected_price.
+-- analyst stays in the key so one session can hold every analyst.
+-- projected_price stays in the key so one analyst can keep two prices on the
+-- same session after the weekend/holiday shift. NULL prices are equal, so a
+-- re-run updates that row instead of inserting another copy.
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_indexes
+    WHERE schemaname = current_schema()
+      AND indexname = 'raw_signals_source_ticker_date_analyst_price'
+  ) THEN
+    DELETE FROM raw_signals
+    WHERE ctid IN (
+      SELECT ctid FROM (
+        SELECT ctid, ROW_NUMBER() OVER (
+          PARTITION BY source, ticker, date, analyst, projected_price
+          ORDER BY ctid
+        ) AS rn
+        FROM raw_signals
+      ) s
+      WHERE rn > 1
+    );
+    CREATE UNIQUE INDEX raw_signals_source_ticker_date_analyst_price
+      ON raw_signals (source, ticker, date, analyst, projected_price) NULLS NOT DISTINCT;
+  END IF;
+END $$;
 
 DROP TABLE IF EXISTS _load;
 CREATE TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
@@ -131,24 +172,51 @@ FROM (
   GROUP BY source
 ) s;
 
-INSERT INTO raw_signals
-SELECT r.*
-FROM _raw_signals r
-JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date;
+INSERT INTO raw_signals (source, date, ticker, analyst, percent, projected_price)
+SELECT source, date, ticker, analyst, percent, projected_price
+FROM (
+  SELECT DISTINCT ON (r.source, r.ticker, r.date, r.analyst, r.projected_price)
+    r.source, r.date, r.ticker, r.analyst, r.percent, r.projected_price
+  FROM _raw_signals r
+  JOIN _windows w ON r.date BETWEEN w.start_date AND w.end_date
+  ORDER BY r.source, r.ticker, r.date, r.analyst, r.projected_price, r.percent DESC NULLS LAST
+) d
+ON CONFLICT (source, ticker, date, analyst, projected_price)
+DO UPDATE SET
+  percent = EXCLUDED.percent,
+  updated_at = now();
 
 -- Combined books (yahoo_and_tipranks, yahoo_and_google) are deduped under their
 -- own source name. Intentional: the same projected_price on the same session
 -- from both underlying sources counts once, so a combined count is NOT the sum
 -- of the parts. Feature, not a bug.
-INSERT INTO raw_signals
+INSERT INTO raw_signals (source, date, ticker, analyst, percent, projected_price)
 SELECT 'yahoo_and_tipranks', date, ticker, analyst, percent, projected_price
-FROM raw_signals
-WHERE source IN ('yahoo', 'tipranks');
+FROM (
+  SELECT DISTINCT ON (ticker, date, analyst, projected_price)
+    date, ticker, analyst, percent, projected_price
+  FROM raw_signals
+  WHERE source IN ('yahoo', 'tipranks')
+  ORDER BY ticker, date, analyst, projected_price, percent DESC NULLS LAST
+) d
+ON CONFLICT (source, ticker, date, analyst, projected_price)
+DO UPDATE SET
+  percent = EXCLUDED.percent,
+  updated_at = now();
 
-INSERT INTO raw_signals
+INSERT INTO raw_signals (source, date, ticker, analyst, percent, projected_price)
 SELECT 'yahoo_and_google', date, ticker, analyst, percent, projected_price
-FROM raw_signals
-WHERE source IN ('yahoo', 'google');
+FROM (
+  SELECT DISTINCT ON (ticker, date, analyst, projected_price)
+    date, ticker, analyst, percent, projected_price
+  FROM raw_signals
+  WHERE source IN ('yahoo', 'google')
+  ORDER BY ticker, date, analyst, projected_price, percent DESC NULLS LAST
+) d
+ON CONFLICT (source, ticker, date, analyst, projected_price)
+DO UPDATE SET
+  percent = EXCLUDED.percent,
+  updated_at = now();
 
 -- See the combined-books note above: cross-source duplicates collapse here too.
 -- Dedupe key is (source, ticker, date, projected_price), NOT analyst, for a
