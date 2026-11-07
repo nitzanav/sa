@@ -4,6 +4,8 @@
 **Period:** 2026-01-02 → 2026-10-26 · 297 days (205 trading)
 One book of $320,000. The lot count splits that cash. Ranked by **return on avg invested**. 40000 combos. Trusted set is n≥30 (40000 cells).
 
+[Recency books sweep canvas](/Users/nitzan/.cursor/projects/Users-nitzan-dev-sa/canvases/simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize.canvas.tsx)
+
 100 buys × 400 sells. One pass. Each cell is one book size, one loss dropdown, and one profit protect. Stops run first. A full book then sells the biggest loss, or the least profitable winner when that lot is the weaker signal.
 
 # WINNING COMBINATION

@@ -24,7 +24,7 @@ Trusted cells have at least 30 signals. Smaller cells stay in the matrices and o
 
 Default: every signal opens its own lot. A later signal for a ticker that is still held resets that lot's time stop and its projection target. The drawdown peak stays since entry. On a slot book, several lots can open from one signal, and those lots are one position. A ticker that already has an open position is skipped. After that position closes, a later signal can open a new one. Win rate counts that entry once: lots with the same ticker, buy date, and buy price are one position, and the position wins when their P&L sums to more than zero.
 
-A slot-book signal buys the next session's close. Analyst points arrive through the signal day, so that day's close is not a trade. A Friday signal buys Monday. The fill is that next close. The price cache has no opens. The older hold and target path still buys the signal session.
+A slot-book signal buys the next session's close. Analyst points arrive through the signal day, so that day's close is not a trade. A Friday signal buys Monday. The fill is that next close. Phase `nextopen` uses the same next session and fills that session's open instead. Opens are cached in `VectorBT/.cache/open.pkl`, adjusted the same way as the closes. The older hold and target path still buys the signal session.
 
 `--one-lot`: at most one open lot per ticker. A later buy **while that lot is open** does not open another lot; it restarts the hold clock (10/15/30/…) from that bar. The profit target and the drawdown peak stay on the original entry. After the lot has closed (time, target, or drawdown), the next buy opens a new lot. A closed position does not block the next one.
 
@@ -374,6 +374,8 @@ Same fixed $320,000 stock-only book and the same sell grid as `horizon`, on the 
   --end 2026-10-26
 ```
 
+[Recency books sweep canvas](/Users/nitzan/.cursor/projects/Users-nitzan-dev-sa/canvases/simulation_2026-11-01_2135_UTC+2_recency-ls-books__optimize.canvas.tsx)
+
 ## Recency sell picks
 
 Same fixed $320,000 stock-only book, same five recency books, and the same stop grid as `recency`. The sell pick is `ls`, `dls`, or `nb`. `ls` sells the biggest loss. `dls` sells that loss divided by calendar days held. If every stock lot is in profit, either of those sells the least profitable lot only when its strength is strictly below the new signal. `nb` does not sell a lot to free a slot. The signal is bought only when a slot is already free. Loss dropdown and profit protection still close lots under `nb`. 100 buys × 1,200 sells = 120,000 cells.
@@ -479,6 +481,17 @@ Same frozen buy and the same 52 windows. `ls` and `nb` run in one pass. Loss dro
 
 ```bash
 ./penv python VectorBT/simulation_2026-11-06_1552_UTC+2_frozen-grace-stops__optimize.py grace \
+  --end 2026-10-26
+```
+
+## Recency next open
+
+The recency grid again, cut down. Books are `yahoo_and_tipranks_1d_recency` through `yahoo_and_tipranks_5d_recency`. Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30%. The book is 12 lots of $26,667. Loss dropdown is 1.25/2.5/5/7.5. Profit protection is 2.5/5/7.5. Strength is `at`, `sqra`, `a`, and `sqra_target`. Sell pick is `ls`. 100 buys × 48 sells = 4,800 cells.
+
+A signal buys the next session's open. A Friday signal buys Monday's open. The lot sold to make room sells at that same open. Stops still use the close, and they run after the open, so today's close cannot free a slot for this morning's buy. A lot bought at the open can be stopped at that day's close.
+
+```bash
+./penv python VectorBT/simulation_2026-11-06_2130_UTC+2_recency-next-open__optimize.py nextopen \
   --end 2026-10-26
 ```
 

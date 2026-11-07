@@ -133,6 +133,12 @@ projected >10%. The sell stays 7.5dd 5pp · 12 × $26,667 · ls, and the
 strength formula is at, sqra, a, or sqra_target. Every window in the flat
 range list is its own cell. A slot-book signal buys the next session's
 close, because analyst points arrive through the signal day.
+
+Phase nextopen reruns the recency grid on the five yahoo_and_tipranks
+recency books. The book is 12 lots only. Loss dropdown drops 10%. Profit
+protection drops 10%. A signal buys the next session's open. The lot sold
+to make room sells at that same open. Stops still use the close, after
+the open.
 """
 
 from __future__ import annotations
@@ -285,6 +291,10 @@ HOLD_GRACE_DAYS = 6
 GRACE_DRAWDOWNS = (0.075, 0.05, 0.025, 0.0125)
 GRACE_PROTECTS = (0.075, 0.05, 0.025)
 GRACE_PICKS = ("ls", "nb")
+NEXT_OPEN_STEM = "simulation_2026-11-06_2130_UTC+2_recency-next-open__optimize"
+OPEN_DRAWDOWNS = (0.0125, 0.025, 0.05, 0.075)
+OPEN_PROTECTS = (0.025, 0.05, 0.075)
+OPEN_SLOTS = (12,)
 FROZEN_SIGNAL = "yahoo_and_tipranks_2d_recency"
 EXPORT_SIGNAL_NAMES = (
     "yahoo-daily",
@@ -1486,6 +1496,7 @@ def run_slot_book(
     cash_sleeve=True,
     lot_amount=None,
     no_buy=False,
+    opens=None,
 ):
     """At most `slots` open lots.
 
@@ -1501,6 +1512,12 @@ def run_slot_book(
     opened by the signal in hand stay one position. After that position
     closes, a later signal can open a new one. Signals that enter on the
     same session are taken strongest first.
+
+    When opens is set, that next-session fill is the open, for the new buy
+    and for the lot sold to make room. Stops still use the close, and they
+    run after the open, so today's close cannot free a slot for this
+    morning's buy. A lot bought at the open can be stopped at that day's
+    close.
 
     When drawdown and profit_protect are set, those stops run first each day,
     before new signals. Loss dropdown sells while the close is under the
@@ -1524,6 +1541,14 @@ def run_slot_book(
     if not held or n == 0:
         raise RuntimeError(f"No price data for {label}")
     prices = {ticker: close[ticker].to_numpy(dtype=float) for ticker in held}
+    open_prices = None
+    if opens is not None:
+        opens = opens.reindex(close.index)
+        open_prices = {}
+        for ticker in held:
+            if ticker not in opens.columns:
+                continue
+            open_prices[ticker] = opens[ticker].to_numpy(dtype=float)
     tqqq_px = None
     stop_px = None
     stop_ticker = park_ticker or PARK_SPY
@@ -1556,9 +1581,10 @@ def run_slot_book(
             blocked.add(stop_ticker)
         if tqqq_px is not None and ticker in blocked:
             continue
-        if loc < 0 or loc >= n or ticker not in prices:
+        trade_book = open_prices if open_prices is not None else prices
+        if loc < 0 or loc >= n or ticker not in trade_book:
             continue
-        px = float(prices[ticker][loc])
+        px = float(trade_book[ticker][loc])
         if not math.isfinite(px) or px <= 0:
             continue
         n_signals += 1
@@ -1672,24 +1698,40 @@ def run_slot_book(
             return True
         return False
 
-    for t in range(n):
-        freed_by_stop = 0
-        if drawdown is not None or profit_protect is not None:
-            for lot in list(open_lots):
-                if lot.get("park") or lot["entry"] >= t:
-                    continue
-                point = mark(lot, t)
-                if point is None:
-                    continue
-                px = point[1]
-                if px > lot["peak"]:
-                    lot["peak"] = px
-                pp_hit, dd_hit = _protect_stops(
-                    px, lot["peak"], lot["entry_px"], drawdown, profit_protect
-                )
-                if pp_hit or dd_hit:
-                    close_lot(lot, t, px)
-                    freed_by_stop += 1
+    def quote(book, ticker, t):
+        series = book.get(ticker)
+        if series is None:
+            return None
+        px = float(series[t])
+        if not math.isfinite(px) or px <= 0:
+            return None
+        return px
+
+    def run_stops(t):
+        nonlocal freed_by_stop
+        if drawdown is None and profit_protect is None:
+            return
+        for lot in list(open_lots):
+            if lot.get("park"):
+                continue
+            if open_prices is None and lot["entry"] >= t:
+                continue
+            if lot["entry"] > t:
+                continue
+            px = quote(prices, lot["ticker"], t)
+            if px is None:
+                continue
+            if px > lot["peak"]:
+                lot["peak"] = px
+            pp_hit, dd_hit = _protect_stops(
+                px, lot["peak"], lot["entry_px"], drawdown, profit_protect
+            )
+            if pp_hit or dd_hit:
+                close_lot(lot, t, px)
+                freed_by_stop += 1
+
+    def run_signals(t, book):
+        nonlocal freed_by_stop, idle_cash
         todays = by_day.get(t, [])
         todays.sort(key=lambda signal: (signal["strength"], signal["score"]), reverse=True)
         for signal in todays:
@@ -1698,8 +1740,8 @@ def run_slot_book(
                 for lot in open_lots
             ):
                 continue
-            px = float(prices[signal["ticker"]][t])
-            if not math.isfinite(px) or px <= 0:
+            px = quote(book, signal["ticker"], t)
+            if px is None:
                 continue
             for _ in range(int(signal["lots"])):
                 if len(open_lots) < slots:
@@ -1726,15 +1768,15 @@ def run_slot_book(
                 for lot in open_lots:
                     if lot.get("park"):
                         continue
-                    point = mark(lot, t)
-                    if point is None:
+                    held_px = quote(book, lot["ticker"], t)
+                    if held_px is None:
                         blocked = True
                         break
-                    ret = point[0]
+                    ret = held_px / lot["entry_px"] - 1.0
                     if daily_loss:
                         held_days = max((dates[t] - dates[lot["entry"]]).days, 1)
                         ret = ret / held_days
-                    marked.append((lot, ret, point[1]))
+                    marked.append((lot, ret, held_px))
                 if blocked or not marked:
                     break
                 victim = _slot_replacement(marked, signal["strength"])
@@ -1742,6 +1784,15 @@ def run_slot_book(
                     break
                 close_lot(victim[0], t, victim[2])
                 open_lot(signal, t, px)
+
+    for t in range(n):
+        freed_by_stop = 0
+        if open_prices is not None:
+            run_signals(t, open_prices)
+            run_stops(t)
+        else:
+            run_stops(t)
+            run_signals(t, prices)
         if tqqq_px is not None:
             if not use_spy_fill:
                 idle_cash += freed_by_stop
@@ -2841,6 +2892,57 @@ def download_close_yahoo(symbols, start, end):
     return close
 
 
+def download_open_yahoo(symbols, start, end):
+    """Adjusted opens, same Yahoo adjustment as the close cache."""
+    import yfinance as yf
+
+    start_s = pd.Timestamp(start).strftime("%Y-%m-%d")
+    end_s = (pd.Timestamp(end) + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    print(f"Downloading {len(symbols)} Yahoo opens {start_s} → {end_s} …")
+    data = yf.download(
+        tickers=list(symbols),
+        start=start_s,
+        end=end_s,
+        auto_adjust=True,
+        threads=True,
+        group_by="column",
+        progress=True,
+    )
+    if data.empty:
+        raise RuntimeError("Yahoo returned no opens")
+    if isinstance(data.columns, pd.MultiIndex):
+        opened = data["Open"].copy()
+    else:
+        opened = data[["Open"]].copy() if "Open" in data.columns else data.copy()
+        if len(symbols) == 1:
+            opened.columns = [symbols[0]]
+    opened = opened.dropna(axis=1, how="all")
+    return normalize_price_index(opened)
+
+
+def ensure_opens(tickers, start, end, index):
+    """Open prices aligned to the close calendar. Missing names are downloaded once."""
+    CACHE_DIR.mkdir(exist_ok=True)
+    path = CACHE_DIR / "open.pkl"
+    want_end = quote_day(end)
+    cached = pd.read_pickle(path) if path.exists() else pd.DataFrame()
+    if not cached.empty:
+        cached = normalize_price_index(cached)
+    have_end = None if cached.empty else pd.Timestamp(cached.index.max()).normalize()
+    missing = [t for t in tickers if cached.empty or t not in cached.columns]
+    stale = have_end is None or have_end < want_end
+    if stale or missing:
+        names = list(dict.fromkeys(list(tickers) + (list(cached.columns) if not cached.empty else [])))
+        extra = download_open_yahoo(names, start, want_end)
+        cached = extra if cached.empty else extra.combine_first(cached)
+        cached = normalize_price_index(cached)
+        cached.to_pickle(path)
+        print(f"Cached {cached.shape[1]} opens → {path} · last {cached.index.max().date()}")
+    aligned = align_columns_to_index(cached, index)
+    keep = [t for t in tickers if t in aligned.columns]
+    return aligned[keep]
+
+
 def align_columns_to_index(extra, index):
     extra = extra.copy()
     idx = extra.index
@@ -3920,6 +4022,7 @@ def run_combos(
     parks=None,
     cash_sleeve=True,
     resume=False,
+    opens=None,
 ):
     rows = []
     close_wide = None
@@ -3959,9 +4062,12 @@ def run_combos(
                 f"({len(bought)} signals)"
             )
             book_close = close
+            book_opens = opens
             if buy.get("date_from") and buy.get("date_to"):
                 start, end = combo_price_bounds(buy)
                 book_close = close.loc[start:end]
+                if book_opens is not None:
+                    book_opens = opens.loc[start:end]
                 if book_close.empty:
                     raise RuntimeError(
                         f"no prices in {start.date()} → {end.date()}"
@@ -3999,6 +4105,7 @@ def run_combos(
                     lot_mode=spec.lot_mode,
                     cash_sleeve=cash_sleeve,
                     lot_amount=spec.lot_amount,
+                    opens=book_opens,
                 )
             else:
                 row, positions, close_wide, _, init_cash = run_one(
@@ -4552,6 +4659,24 @@ def daily_sell_grid():
         for slots in DAILY_SLOTS
         for dd in BOOK_DRAWDOWNS
         for pp in DAILY_PROTECTS
+    ]
+
+
+def next_open_sell_grid():
+    """Recency sells with 12 lots only, and without 10% loss or 10% protection."""
+    return [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=slots,
+            loss_mode="ls",
+            lot_mode=mode,
+            lot_amount=BOOK_CASH / slots,
+        )
+        for mode in LOT_FORMULAS
+        for slots in OPEN_SLOTS
+        for dd in OPEN_DRAWDOWNS
+        for pp in OPEN_PROTECTS
     ]
 
 
@@ -5763,6 +5888,81 @@ def confirm_validation_markdown(rows, position_path=None):
             lines.append(f"| {key[0]} · " + _formula_line(stats, top5)[2:])
         lines.append("")
     return "\n".join(lines)
+
+
+def _check_next_open():
+    """Monday's signal buys Tuesday's open. That close can stop the lot."""
+    index = pd.bdate_range("2026-01-05", periods=3)
+    close = pd.DataFrame({"A": [10.0, 10.0, 10.0]}, index=index)
+    opens = pd.DataFrame({"A": [9.0, 12.0, 11.0]}, index=index)
+    spy = pd.Series(100.0, index=index, name=SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 4,
+                "average_projected": 40,
+                "signal_score": 1,
+            }
+        ]
+    )
+    _, positions, _, _ = run_slot_book(
+        "open", close, spy, signals, slots=1, opens=opens
+    )
+    bought = positions.iloc[0]
+    if bought["date_buy"] != index[1].strftime("%Y-%m-%d") or abs(bought["price_buy"] - 12.0) > 1e-9:
+        raise RuntimeError(f"Monday signal should buy Tuesday's open at 12, got\n{positions}")
+    stopped = pd.DataFrame({"A": [10.0, 9.0, 9.0]}, index=index)
+    _, hit, _, _ = run_slot_book(
+        "open-stop",
+        stopped,
+        spy,
+        signals,
+        slots=1,
+        drawdown=0.075,
+        opens=opens,
+    )
+    closed = hit[hit["status"] == "Closed"]
+    if len(closed) != 1 or abs(closed["price_buy"].iloc[0] - 12.0) > 1e-9:
+        raise RuntimeError(f"open entry should be 12, got\n{hit}")
+    if abs(closed["price_sell"].iloc[0] - 9.0) > 1e-9:
+        raise RuntimeError(f"same-day close should stop at 9, got\n{hit}")
+    print("Next-open fill checks passed.")
+
+
+def run_nextopen(signals, close, spy, opens, position_log=None):
+    _check_slot_book()
+    _check_next_open()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    buys = daily_buy_grid()
+    specs = next_open_sell_grid()
+    print(
+        f"\n=== Recency next open: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · lots {', '.join(str(n) for n in OPEN_SLOTS)}"
+        f" · loss {', '.join(f'{dd * 100:g}dd' for dd in OPEN_DRAWDOWNS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in OPEN_PROTECTS)}"
+        f" · {', '.join(LOT_FORMULAS)}"
+        f" · buy the next session's open"
+        f" · {', '.join(signal_names())} ==="
+    )
+    return run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "nextopen",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+    )
 
 
 def run_recency(signals, close, spy, position_log=None):
@@ -7985,6 +8185,7 @@ def parse_args():
             "window",
             "horizon",
             "recency",
+            "nextopen",
             "ranges",
             "confirm",
             "next",
@@ -8078,7 +8279,7 @@ def main():
         set_signal_names((FROZEN_SIGNAL,))
     elif args.phase == "confirm" and not args.signal_names:
         set_signal_names(CONFIRM_SIGNAL_NAMES)
-    elif args.phase in ("recency", "ranges") and not args.signal_names:
+    elif args.phase in ("recency", "ranges", "nextopen") and not args.signal_names:
         set_signal_names(RECENCY_SIGNAL_NAMES)
     elif args.phase == "horizon" and not args.signal_names:
         set_signal_names(HORIZON_SIGNAL_NAMES)
@@ -8110,6 +8311,8 @@ def main():
         prefix = OUT_DIR / CONFIRM_STEM
     elif args.phase == "ranges":
         prefix = OUT_DIR / RANGES_STEM
+    elif args.phase == "nextopen":
+        prefix = OUT_DIR / NEXT_OPEN_STEM
     elif args.phase == "recency":
         prefix = OUT_DIR / RECENCY_STEM
     elif args.phase == "horizon":
@@ -8555,6 +8758,74 @@ def main():
         present = {row["buy_label"] for row in rows}
         canvas_buys = [buy for buy in buys if buy_label(buy) in present]
         write_grid_canvas(prefix, rows, signals, canvas_buys, [spec], info)
+        return
+
+    if args.phase == "nextopen":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash = run_nextopen(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "nextopen.json", rows)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max(r["n_signals"] for r in rows),
+            run_label,
+            "Recency books, next-session open, 12 lots, no 10dd or 10pp",
+        )
+        specs = next_open_sell_grid()
+        notes = [
+            "Recency books: yahoo_and_tipranks_1d_recency through "
+            "yahoo_and_tipranks_5d_recency. "
+            "Analyst >0/>1/>2/>3/>4 × projected >0/10/20/30%. "
+            "Each cell is one book.",
+            f"One book of ${BOOK_CASH:,.0f} split into 12 lots of "
+            f"${BOOK_CASH / 12:,.0f}.",
+            "A signal buys the next session's open. Analyst points arrive "
+            "through the signal day, so that day's close is not a trade. "
+            "A Friday signal buys Monday's open. The lot sold to make room "
+            "sells at that same open. Stops still use the close, and they "
+            "run after the open, so today's close cannot free a slot for "
+            "this morning's buy. A lot bought at the open can be stopped "
+            "at that day's close.",
+            "No SPY and no TQQQ. An empty slot stays cash.",
+            "Four strength formulas, each at least 1 lot and at most 16. "
+            "ls sells the biggest loss. If every stock lot is in profit, the "
+            "least profitable one is sold only when its strength is strictly "
+            "below the new signal.",
+            "Loss dropdown: 1.25%, 2.5%, 5%, and 7.5%. Profit protection: "
+            "2.5%, 5%, and 7.5% of the gain from entry to the highest close. "
+            "10% loss dropdown and 10% profit protection are not in this grid.",
+            "100 buys × 48 sells = 4,800 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            daily_buy_grid(),
+            specs,
+            SellSpec(
+                drawdown=0.075,
+                profit_protect=0.05,
+                slots=12,
+                loss_mode="ls",
+                lot_mode="at",
+                lot_amount=BOOK_CASH / 12,
+            ),
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in daily_buy_grid() if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
         return
 
     if args.phase == "recency":
