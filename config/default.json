@@ -16,7 +16,7 @@
     "viewport": { "width": 1440, "height": 900 }
   },
   "analyst_recommendations": {
-    "limit": 3,
+    "limit": 10000,
     "skip_existing": false
   },
   "sharadar": {
