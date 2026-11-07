@@ -1,20 +1,20 @@
 [
   {
+    "analyst": "Lyaysyan Sedova",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+12.6%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Gregory Williams",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$36.00",
-    "projected": "+64.3%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
+    "projected": "+60.2%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$27.50",
-    "projected": "+25.5%",
+    "projected": "+22.4%",
     "date": "10/23/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$27.00",
-    "projected": "+23.2%",
+    "projected": "+20.2%",
     "date": "10/23/2026"
   },
   {
@@ -50,7 +50,16 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$24.00",
-    "projected": "+9.5%",
+    "projected": "+6.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
     "date": "10/23/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$27.00",
-    "projected": "+23.2%",
+    "projected": "+20.2%",
     "date": "10/23/2026"
   },
   {
@@ -68,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$23.00",
-    "projected": "+5%",
+    "projected": "+2.4%",
     "date": "10/23/2026"
   },
   {
@@ -77,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$35.00",
-    "projected": "+59.7%",
+    "projected": "+56%",
     "date": "10/22/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$23.00",
-    "projected": "+5%",
+    "projected": "+2.5%",
     "date": "10/22/2026"
   },
   {
@@ -153,15 +162,6 @@
     "date": "06/30/2026"
   },
   {
-    "analyst": "Lyaysyan Sedova",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$29.00",
-    "projected": "+20.8%",
-    "date": "06/12/2026"
-  },
-  {
     "analyst": "Walter Piecyk",
     "firm": "LightShed Partners",
     "recommendation": "Hold",
@@ -214,32 +214,5 @@
     "price_target": "$53.00",
     "projected": null,
     "date": "11/13/2025"
-  },
-  {
-    "analyst": "David Joyce",
-    "firm": "Seaport Global",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "11/02/2025"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$30.00",
-    "projected": null,
-    "date": "10/31/2025"
-  },
-  {
-    "analyst": "Jeffrey Wlodarczak",
-    "firm": "Pivotal Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$36.00",
-    "projected": null,
-    "date": "10/30/2025"
   }
 ]

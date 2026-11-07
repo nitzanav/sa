@@ -9,15 +9,6 @@
     "date": "01/07/2026"
   },
   {
-    "analyst": "Tigress Financial",
-    "firm": "Tigress Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+64.2%",
-    "date": "06/12/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -27,13 +18,13 @@
     "date": "02/06/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$118.00",
-    "projected": "+61.1%",
-    "date": "07/17/2026"
+    "price_target": "$115.00",
+    "projected": "+64.2%",
+    "date": "06/12/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -43,6 +34,15 @@
     "price_target": "$105.00",
     "projected": "+43.3%",
     "date": "02/05/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+61.1%",
+    "date": "07/17/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -63,15 +63,6 @@
     "date": "05/07/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+40.3%",
-    "date": "05/07/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -81,12 +72,21 @@
     "date": "02/06/2026"
   },
   {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+38.4%",
-    "date": "08/06/2026"
+    "price_target": "$112.00",
+    "projected": "+40.3%",
+    "date": "05/07/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+46.8%",
+    "date": "11/06/2026"
   }
 ]

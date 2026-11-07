@@ -4,27 +4,27 @@
     "firm": "Wells Fargo",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "-20.2%",
-    "date": "08/05/2026"
+    "price_target": "$175.00",
+    "projected": "-19.1%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": "-3.7%",
-    "date": "08/05/2026"
+    "price_target": "$207.00",
+    "projected": "+0.7%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$208.00",
-    "projected": "+12.4%",
-    "date": "10/05/2026"
+    "price_target": "$220.00",
+    "projected": "+4.6%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -40,26 +40,26 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "-6.2%",
-    "date": "10/09/2026"
+    "price_target": "$192.00",
+    "projected": "-6.6%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
-    "recommendation": "Hold",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+1.8%",
-    "date": "04/10/2026"
+    "price_target": "$185.00",
+    "projected": "-3.2%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "-12.8%",
-    "date": "08/05/2026"
+    "price_target": "$198.00",
+    "projected": "-8.5%",
+    "date": "10/21/2026"
   }
 ]

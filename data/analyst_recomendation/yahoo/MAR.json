@@ -22,18 +22,18 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$398.00",
-    "projected": "+11%",
-    "date": "02/11/2026"
+    "price_target": "$456.00",
+    "projected": "+9.2%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$384.00",
-    "projected": "+5%",
-    "date": "10/12/2026"
+    "price_target": "$403.00",
+    "projected": "+0.3%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Citigroup",
@@ -58,35 +58,35 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+22%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+7.9%",
-    "date": "07/21/2026"
+    "price_target": "$463.00",
+    "projected": "+10.9%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$363.00",
-    "projected": "-6.6%",
-    "date": "10/16/2026"
+    "price_target": "$409.00",
+    "projected": "-3.4%",
+    "date": "11/04/2026"
   },
   {
-    "analyst": "Macquarie",
-    "firm": "Macquarie",
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+0.8%",
-    "date": "08/06/2026"
+    "price_target": "$406.00",
+    "projected": "+2.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$395.00",
+    "projected": "+13.4%",
+    "date": "08/05/2026"
   }
 ]

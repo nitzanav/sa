@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$580.00",
+    "projected": "-14.1%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Kristen Owen",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$685.00",
-    "projected": "+5%",
+    "projected": "+8.5%",
     "date": "10/22/2026"
   },
   {
@@ -34,15 +43,6 @@
     "price_target": "$750.00",
     "projected": "+15.6%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Chad Dillard",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "-15.6%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Michael Feniger",
@@ -108,15 +108,6 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Sabahat Khan",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$752.00",
-    "projected": "+20.7%",
-    "date": "08/21/2026"
-  },
-  {
     "analyst": "Angel Castillo",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -150,6 +141,15 @@
     "action": "Maintained",
     "price_target": "$675.00",
     "projected": "+8.3%",
+    "date": "08/21/2026"
+  },
+  {
+    "analyst": "Sabahat Khan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$752.00",
+    "projected": "+20.7%",
     "date": "08/21/2026"
   },
   {

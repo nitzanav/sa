@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Justin Bowers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$190.00",
+    "projected": "+8.9%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$180.00",
+    "projected": "+3.6%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Doug Schenkel",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -21,7 +39,7 @@
     "analyst": "Daniel Brennan",
     "firm": "TD Cowen",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$196.00",
     "projected": "+14%",
     "date": "10/13/2026"
@@ -34,15 +52,6 @@
     "price_target": "$190.00",
     "projected": "+10.5%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+5%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "‏Avantika Dhabaria‏",

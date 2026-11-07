@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Ryskin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1690.00",
+    "projected": "-6.5%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Casey Woodring",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -15,15 +24,6 @@
     "action": "Maintained",
     "price_target": "$1575.00",
     "projected": "+2.9%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Avantika Dhabaria",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1690.00",
-    "projected": "+10.4%",
     "date": "10/09/2026"
   },
   {

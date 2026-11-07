@@ -27,15 +27,6 @@
     "date": "12/13/2025"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": null,
-    "date": "10/29/2025"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -45,6 +36,15 @@
     "date": "02/26/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "-12.1%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -52,15 +52,6 @@
     "price_target": "$104.00",
     "projected": "-2.4%",
     "date": "07/22/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$89.00",
-    "projected": "-6.1%",
-    "date": "09/18/2026"
   },
   {
     "analyst": "Citigroup",

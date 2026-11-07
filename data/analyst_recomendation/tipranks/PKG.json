@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Michael Roxland",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$294.00",
-    "projected": "+25.3%",
-    "date": "10/23/2026"
+    "price_target": "$262.00",
+    "projected": "+5.5%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Detlef Winckelmann",
@@ -14,7 +14,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$322.00",
-    "projected": "+37.2%",
+    "projected": "+30.2%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Michael Roxland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$294.00",
+    "projected": "+18.9%",
     "date": "10/23/2026"
   },
   {
@@ -42,15 +51,6 @@
     "action": "Maintained",
     "price_target": "$289.00",
     "projected": "+27.3%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$253.00",
-    "projected": "+11.5%",
     "date": "10/05/2026"
   },
   {

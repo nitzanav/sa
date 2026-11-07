@@ -27,15 +27,6 @@
     "date": "07/01/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$266.00",
-    "projected": "+11.7%",
-    "date": "09/01/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$251.00",
     "projected": "+5.4%",
     "date": "09/01/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$268.00",
+    "projected": "+14.8%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Mizuho",

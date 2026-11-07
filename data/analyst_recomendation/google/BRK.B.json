@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brian Meredith",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$628.00",
+    "projected": "+15.4%",
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Manyi Lu",
     "firm": "DBS",
     "recommendation": "Hold",
@@ -7,15 +16,6 @@
     "price_target": "$540.00",
     "projected": "+7%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Brian Meredith",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$604.00",
-    "projected": "+15.1%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Kevin Heal",

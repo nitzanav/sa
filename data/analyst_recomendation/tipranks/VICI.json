@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Smedes Rose",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+17.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$29.00",
+    "projected": "+16.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Haendel St. Juste",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+4.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Greg McGinniss",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+4.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "-3.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+7.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Caitlin Burrows",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+11.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$30.75",
+    "projected": "+27.3%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Barry Jonas",
     "firm": "Truist Financial",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+35.7%",
+    "projected": "+37.6%",
     "date": "10/20/2026"
   },
   {
@@ -14,17 +86,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$28.00",
-    "projected": "+18.7%",
+    "projected": "+20.4%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "John Kilichowski",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$24.00",
-    "projected": "+1.7%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Mitchell Germain",
@@ -34,24 +97,6 @@
     "price_target": "$31.00",
     "projected": "+35.7%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "+13.3%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Greg McGinniss",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "+10.6%",
-    "date": "09/24/2026"
   },
   {
     "analyst": "Anthony Paolone",
@@ -81,33 +126,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Haendel St. Juste",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+5.7%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Caitlin Burrows",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$31.00",
-    "projected": "+16.2%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Richard Anderson",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+20.3%",
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Shaun Kelley",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -132,15 +150,6 @@
     "action": "Maintained",
     "price_target": "$32.00",
     "projected": "+20.5%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+28.1%",
     "date": "07/30/2026"
   },
   {

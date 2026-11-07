@@ -45,15 +45,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Siti Panigrahi",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$430.00",
-    "projected": "+37.4%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Brent Thill",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -81,21 +72,21 @@
     "date": "09/18/2026"
   },
   {
-    "analyst": "Arvind Ramnani",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "-4.1%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Arjun Bhatia",
     "firm": "William Blair",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Arvind Ramnani",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "-4.1%",
     "date": "09/18/2026"
   },
   {
@@ -117,13 +108,13 @@
     "date": "09/18/2026"
   },
   {
-    "analyst": "Billy Fitzsimmons",
-    "firm": "Piper Sandler",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "-9.1%",
-    "date": "09/17/2026"
+    "analyst": "Siti Panigrahi",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$430.00",
+    "projected": "+37.4%",
+    "date": "09/18/2026"
   },
   {
     "analyst": "Michael Turrin",
@@ -141,6 +132,15 @@
     "action": "Maintained",
     "price_target": "$346.00",
     "projected": "+8.4%",
+    "date": "09/17/2026"
+  },
+  {
+    "analyst": "Billy Fitzsimmons",
+    "firm": "Piper Sandler",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "-9.1%",
     "date": "09/17/2026"
   },
   {

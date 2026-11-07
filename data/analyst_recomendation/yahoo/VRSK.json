@@ -4,9 +4,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+28.2%",
-    "date": "09/09/2026"
+    "price_target": "$250.00",
+    "projected": "+23.6%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -40,9 +40,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+27.2%",
-    "date": "07/30/2026"
+    "price_target": "$265.00",
+    "projected": "+31%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "B of A Securities",

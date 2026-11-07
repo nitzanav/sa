@@ -1,12 +1,30 @@
 [
   {
-    "analyst": "Jessica Reif Ehrlich",
-    "firm": "Bank of America Securities",
+    "analyst": "Bryan Kraft",
+    "firm": "Deutsche Bank",
     "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$85.00",
-    "projected": "+28.8%",
-    "date": "10/16/2026"
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+30.8%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Doug Creutz",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+3.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "David Karnovsky",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$83.00",
+    "projected": "+32.4%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Kannan Venkateshwar",
@@ -14,8 +32,26 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "-3%",
-    "date": "10/07/2026"
+    "projected": "-4.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Jessica Reif Ehrlich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+28.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Steven Cahall",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+20.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Michael Morris",
@@ -45,48 +81,12 @@
     "date": "08/14/2026"
   },
   {
-    "analyst": "Bryan Kraft",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+18.4%",
-    "date": "08/14/2026"
-  },
-  {
-    "analyst": "Steven Cahall",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$80.00",
-    "projected": "+18.4%",
-    "date": "08/14/2026"
-  },
-  {
-    "analyst": "David Karnovsky",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$82.00",
-    "projected": "+21.3%",
-    "date": "08/14/2026"
-  },
-  {
     "analyst": "Kutgun Maral",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$73.00",
     "projected": "+17%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Doug Creutz",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+4.2%",
     "date": "08/07/2026"
   },
   {
@@ -160,14 +160,5 @@
     "price_target": "$80.00",
     "projected": null,
     "date": "12/19/2025"
-  },
-  {
-    "analyst": "Andrew Beale",
-    "firm": "Arete Research",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$97.00",
-    "projected": null,
-    "date": "10/28/2025"
   }
 ]

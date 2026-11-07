@@ -22,18 +22,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$392.00",
-    "projected": "+22.2%",
-    "date": "10/09/2026"
+    "price_target": "$383.00",
+    "projected": "+14.6%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "+16.1%",
-    "date": "06/24/2026"
+    "price_target": "$370.00",
+    "projected": "+10.7%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -58,9 +58,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "+8%",
-    "date": "07/29/2026"
+    "price_target": "$375.00",
+    "projected": "+15.8%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Keybanc",
@@ -76,9 +76,9 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$363.00",
-    "projected": "+13.3%",
-    "date": "10/06/2026"
+    "price_target": "$370.00",
+    "projected": "+12.5%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Wells Fargo",

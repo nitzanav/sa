@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+19.7%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "+15.7%",
-    "date": "08/05/2026"
+    "price_target": "$198.00",
+    "projected": "+20.2%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Stephens & Co.",
@@ -22,18 +31,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$188.00",
-    "projected": "+17.4%",
-    "date": "10/15/2026"
+    "price_target": "$196.00",
+    "projected": "+17.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "-14.7%",
-    "date": "08/28/2026"
+    "price_target": "$140.00",
+    "projected": "-15.6%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -49,9 +58,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$177.00",
-    "projected": "+12.3%",
-    "date": "09/26/2026"
+    "price_target": "$180.00",
+    "projected": "+7.7%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -88,5 +97,14 @@
     "price_target": "$184.00",
     "projected": "+14.7%",
     "date": "10/09/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+1.4%",
+    "date": "05/06/2026"
   }
 ]

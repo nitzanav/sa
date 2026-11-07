@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jessica Reif Ehrlich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$85.00",
+    "projected": "+44%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Matthew Condon",
     "firm": "Citizens JMP",
     "recommendation": "Buy",
@@ -16,14 +25,5 @@
     "price_target": null,
     "projected": null,
     "date": "08/07/2026"
-  },
-  {
-    "analyst": "Jessica Reif Ehrlich",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$54.00",
-    "projected": "+9.3%",
-    "date": "07/08/2026"
   }
 ]

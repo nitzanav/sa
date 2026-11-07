@@ -1,11 +1,11 @@
 [
   {
-    "analyst": "David Vernon",
+    "analyst": "Alex Irving",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$307.00",
-    "projected": "+34.6%",
+    "projected": "+34.2%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$252.00",
-    "projected": "+10.5%",
+    "projected": "+10.9%",
     "date": "10/19/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$285.00",
-    "projected": "+25%",
+    "projected": "+25.4%",
     "date": "10/19/2026"
   },
   {

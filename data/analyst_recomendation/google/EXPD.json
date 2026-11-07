@@ -1,12 +1,93 @@
 [
   {
+    "analyst": "Sergey Glinyanov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "-1.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$230.00",
+    "projected": "+11.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Lucas Servera",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "-3.4%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jason Seidl",
+    "firm": "TD Cowen",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$189.00",
+    "projected": "-8.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Thomas Wadewitz",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+18.4%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brian Ossenbeck",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+6.3%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Daniel Moore CFA",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+1.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brandon Oglenski",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "-15.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jordan Alliger",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "-7.1%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "J. Bruce Chan",
     "firm": "Stifel Nicolaus",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "-0.5%",
-    "date": "10/08/2026"
+    "price_target": "$204.00",
+    "projected": "+2.4%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Ravi Shanker",
@@ -18,33 +99,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Brian Ossenbeck",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$214.00",
-    "projected": "+11.2%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Thomas Wadewitz",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$220.00",
-    "projected": "+15.5%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Daniel Moore CFA",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+6.7%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Hugo Watkins",
     "firm": "Exane BNP Paribas",
     "recommendation": "Hold",
@@ -52,24 +106,6 @@
     "price_target": "$180.00",
     "projected": "-4.4%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Brandon Oglenski",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "-11.7%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$207.00",
-    "projected": "+9.6%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "Scott Group",
@@ -88,33 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Lucas Servera",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "-5.7%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jordan Alliger",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$171.00",
-    "projected": "+0.6%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Jason Seidl",
-    "firm": "TD Cowen",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$176.00",
-    "projected": "+3.5%",
-    "date": "08/04/2026"
   },
   {
     "analyst": "Jeff Kauffman",

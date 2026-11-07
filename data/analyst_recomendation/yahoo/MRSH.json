@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$197.00",
+    "projected": "+5%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+10.2%",
-    "date": "10/07/2026"
+    "price_target": "$200.00",
+    "projected": "+7.4%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Morgan Stanley",

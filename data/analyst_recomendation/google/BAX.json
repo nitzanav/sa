@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Robbie Marcus",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+6%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Rick Wise",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+6%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Christopher Pasquale",
     "firm": "Barclays",
     "recommendation": "Sell",
-    "action": "Initiated",
+    "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "-17.4%",
-    "date": "10/07/2026"
+    "projected": "-15.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+6%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Matthew Taylor",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-3.8%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Matt Miksic",
@@ -36,15 +72,6 @@
     "date": "08/11/2026"
   },
   {
-    "analyst": "Robbie Marcus",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "-5.1%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Pito Chickering",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
@@ -69,15 +96,6 @@
     "action": "Reiterated",
     "price_target": "$23.00",
     "projected": "-14.6%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Rick Wise",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "+4%",
     "date": "07/31/2026"
   },
   {
@@ -124,14 +142,5 @@
     "price_target": null,
     "projected": null,
     "date": "05/08/2026"
-  },
-  {
-    "analyst": "Matthew Taylor",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$19.00",
-    "projected": "-2.7%",
-    "date": "02/12/2026"
   }
 ]

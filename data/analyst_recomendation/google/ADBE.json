@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Tyler Radke",
+    "firm": "Citi",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$207.00",
+    "projected": "-16.6%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Stephen Bersey",
     "firm": "HSBC",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": "$225.00",
     "projected": "-4.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Tyler Radke",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+3.8%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Derrick Wood",
@@ -55,6 +55,15 @@
   },
   {
     "analyst": "Paul Chew",
+    "firm": "Phillip Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$261.00",
+    "projected": "+3.7%",
+    "date": "09/18/2026"
+  },
+  {
+    "analyst": "Alif Fahmi",
     "firm": "Phillip Securities",
     "recommendation": "Hold",
     "action": "Maintained",

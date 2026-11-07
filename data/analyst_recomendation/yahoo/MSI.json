@@ -4,27 +4,27 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$529.00",
-    "projected": "+11.4%",
-    "date": "08/06/2026"
+    "price_target": "$598.00",
+    "projected": "+19.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$531.00",
-    "projected": "+14.8%",
-    "date": "09/22/2026"
+    "price_target": "$533.00",
+    "projected": "+6.2%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$545.00",
-    "projected": "+13.9%",
-    "date": "08/07/2026"
+    "price_target": "$570.00",
+    "projected": "+11%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Morgan Stanley",

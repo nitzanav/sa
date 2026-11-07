@@ -1,5 +1,86 @@
 [
   {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+19.3%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "John Royall",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$69.00",
+    "projected": "+8.3%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+12.9%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Jean Ann Salisbury",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$67.00",
+    "projected": "+5.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+21.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Michael Scialla",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+29%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+14.5%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Lloyd Byrne",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "-1.9%",
+    "date": "10/17/2026"
+  },
+  {
+    "analyst": "Leo Mariani",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$70.00",
+    "projected": "+14.5%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -7,15 +88,6 @@
     "price_target": "$71.00",
     "projected": "+16.1%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$69.00",
-    "projected": "+11.7%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Gabriel Daoud",
@@ -61,24 +133,6 @@
     "price_target": "$82.00",
     "projected": "+31.7%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Leo Mariani",
-    "firm": "Roth MKM",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "-10.5%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Neil Mehta",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$69.00",
-    "projected": "+25.2%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Stephen Richardson",
@@ -135,24 +189,6 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+13%",
-    "date": "08/10/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "+19.7%",
-    "date": "08/11/2026"
-  },
-  {
     "analyst": "Nitin Kumar CFA",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -162,15 +198,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Jean Ann Salisbury",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$59.00",
-    "projected": "+7.3%",
-    "date": "07/28/2026"
-  },
-  {
     "analyst": "Scott Gruber",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -178,15 +205,6 @@
     "price_target": "$60.00",
     "projected": "+9.8%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "Michael Scialla",
-    "firm": "Stephens",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$69.00",
-    "projected": "+25.5%",
-    "date": "07/14/2026"
   },
   {
     "analyst": "Suvro Sarkar",

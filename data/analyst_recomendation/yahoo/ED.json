@@ -22,9 +22,9 @@
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$106.00",
-    "projected": "-1.9%",
-    "date": "08/08/2026"
+    "price_target": "$108.00",
+    "projected": "-9.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Mizuho",
@@ -40,9 +40,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$118.00",
-    "projected": "+13.7%",
-    "date": "10/02/2026"
+    "price_target": "$134.00",
+    "projected": "+11.7%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Keybanc",

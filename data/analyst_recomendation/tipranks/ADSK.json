@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Tomer Zilberman",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+18.1%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Tyler Radke",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -43,15 +52,6 @@
     "price_target": "$315.00",
     "projected": "+43.5%",
     "date": "09/18/2026"
-  },
-  {
-    "analyst": "Tomer Zilberman",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$300.00",
-    "projected": "+37.1%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Siti Panigrahi",
@@ -117,21 +117,21 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$355.00",
-    "projected": "+40.1%",
-    "date": "09/01/2026"
-  },
-  {
     "analyst": "Nay Soe Naing",
     "firm": "Berenberg Bank",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$333.00",
     "projected": "+31.4%",
+    "date": "09/01/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$355.00",
+    "projected": "+40.1%",
     "date": "09/01/2026"
   },
   {

@@ -5,16 +5,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$43.00",
-    "projected": "+26.4%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Brian McNamara",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "-3%",
+    "projected": "+22%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +14,16 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$26.00",
-    "projected": "-23.6%",
+    "projected": "-26.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Brian McNamara",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "-6.4%",
     "date": "10/23/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "+32.2%",
+    "projected": "+27.6%",
     "date": "10/23/2026"
   },
   {
@@ -41,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$37.00",
-    "projected": "+8.7%",
+    "projected": "+4.9%",
     "date": "10/23/2026"
   },
   {
@@ -50,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$40.00",
-    "projected": "+17.5%",
+    "projected": "+25.6%",
     "date": "10/22/2026"
   },
   {
@@ -59,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$42.00",
-    "projected": "+23.4%",
+    "projected": "+31.9%",
     "date": "10/22/2026"
   },
   {
@@ -68,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$35.00",
-    "projected": "+2.9%",
+    "projected": "+6.1%",
     "date": "10/19/2026"
   },
   {

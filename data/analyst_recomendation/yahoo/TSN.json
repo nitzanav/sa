@@ -45,15 +45,6 @@
     "date": "07/02/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+21%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -61,5 +52,14 @@
     "price_target": "$56.00",
     "projected": "+7.9%",
     "date": "10/08/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+21%",
+    "date": "09/18/2026"
   }
 ]

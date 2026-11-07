@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+21.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+15.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$60.00",
+    "projected": "+9.9%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Tracy Benguigui",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+19.3%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Ben Gerlinger",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$63.00",
-    "projected": "+24.1%",
+    "projected": "+20.4%",
     "date": "10/22/2026"
   },
   {
@@ -14,17 +59,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$59.00",
-    "projected": "+16.2%",
+    "projected": "+11.3%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+12.3%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Manan Gosalia",
@@ -32,7 +68,16 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$64.00",
-    "projected": "+26.1%",
+    "projected": "+26.8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+12.9%",
     "date": "10/20/2026"
   },
   {
@@ -41,16 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$58.00",
-    "projected": "+14.3%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$58.00",
-    "projected": "+14.3%",
+    "projected": "+14.9%",
     "date": "10/20/2026"
   },
   {
@@ -59,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$67.00",
-    "projected": "+32%",
+    "projected": "+32.8%",
     "date": "10/20/2026"
   },
   {
@@ -68,25 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "+18.2%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$63.00",
-    "projected": "+24.1%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+32%",
+    "projected": "+18.9%",
     "date": "10/20/2026"
   },
   {
@@ -95,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$60.00",
-    "projected": "+18.2%",
+    "projected": "+19.2%",
     "date": "10/19/2026"
   },
   {
@@ -124,15 +142,6 @@
     "price_target": "$63.00",
     "projected": "+20%",
     "date": "09/23/2026"
-  },
-  {
-    "analyst": "Kevin Heal",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+9.4%",
-    "date": "07/21/2026"
   },
   {
     "analyst": "Peter Winter",

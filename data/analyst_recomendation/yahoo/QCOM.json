@@ -4,18 +4,18 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+19.4%",
-    "date": "07/30/2026"
+    "price_target": "$185.00",
+    "projected": "+23.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+36.5%",
-    "date": "09/10/2026"
+    "price_target": "$205.00",
+    "projected": "+36.6%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Benchmark",
@@ -31,9 +31,9 @@
     "firm": "Susquehanna",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+9.2%",
-    "date": "07/30/2026"
+    "price_target": "$165.00",
+    "projected": "+2.3%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Mizuho",
@@ -49,9 +49,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "-10.7%",
-    "date": "05/01/2026"
+    "price_target": "$200.00",
+    "projected": "+24%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -76,9 +76,9 @@
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+21.5%",
-    "date": "06/26/2026"
+    "price_target": "$150.00",
+    "projected": "0%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "B of A Securities",

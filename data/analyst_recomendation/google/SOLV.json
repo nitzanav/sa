@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Ryan Zimmerman",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+9.6%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
+    "analyst": "Vik Chopra",
+    "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$95.00",
-    "projected": "+9.6%",
-    "date": "10/09/2026"
+    "price_target": "$92.00",
+    "projected": "+6.4%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Rick Wise",
@@ -23,35 +14,62 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+14.1%",
-    "date": "09/18/2026"
+    "projected": "+15.7%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Jason Bednar",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$105.00",
-    "projected": "+17.3%",
-    "date": "09/15/2026"
+    "price_target": "$110.00",
+    "projected": "+27.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+9.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Ryan Zimmerman",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+15.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Steven Valiquette",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+33%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+17.2%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Patrick Wood",
     "firm": "UBS",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$101.00",
-    "projected": "+16%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Vik Chopra",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "-4.3%",
-    "date": "08/17/2026"
+    "price_target": "$101.00",
+    "projected": "+17.9%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Nathan Treybeck",
@@ -69,15 +87,6 @@
     "action": "Reiterated",
     "price_target": "$101.00",
     "projected": "+12.8%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Steven Valiquette",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+26.2%",
     "date": "08/06/2026"
   },
   {
@@ -106,15 +115,6 @@
     "price_target": "$81.00",
     "projected": "+7.5%",
     "date": "07/09/2026"
-  },
-  {
-    "analyst": "Larry Biegelsen",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "-8.8%",
-    "date": "05/22/2026"
   },
   {
     "analyst": "David Roman",

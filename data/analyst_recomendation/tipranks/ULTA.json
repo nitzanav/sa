@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Steven Zaccone",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$685.00",
+    "projected": "+7%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Sydney Wagner",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$730.00",
-    "projected": "+19.5%",
+    "projected": "+15.7%",
     "date": "10/23/2026"
   },
   {
@@ -14,17 +23,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$700.00",
-    "projected": "+14.6%",
+    "projected": "+17.6%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Steven Zaccone",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "-5.1%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Kate McShane",
@@ -90,33 +90,6 @@
     "date": "09/09/2026"
   },
   {
-    "analyst": "Anna Glaessgen",
-    "firm": "B. Riley Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "-7.7%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Christopher Horvers",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$631.00",
-    "projected": "+16.4%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Dylan Carden",
-    "firm": "William Blair",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Oliver Chen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -141,6 +114,33 @@
     "action": "Maintained",
     "price_target": "$600.00",
     "projected": "+10.7%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Dylan Carden",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Christopher Horvers",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$631.00",
+    "projected": "+16.4%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Anna Glaessgen",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "-7.7%",
     "date": "08/28/2026"
   },
   {

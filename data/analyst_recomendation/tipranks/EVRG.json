@@ -1,30 +1,48 @@
 [
   {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+15.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$97.00",
+    "projected": "+14.6%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+16.4%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$92.00",
-    "projected": "+11.9%",
+    "projected": "+9.8%",
     "date": "10/22/2026"
   },
   {
     "analyst": "Shelby Tucker",
     "firm": "TD Cowen",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Initiated",
     "price_target": "$95.00",
-    "projected": "+15.5%",
+    "projected": "+13.4%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+14.3%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Shahriar Pourreza",
@@ -41,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$93.00",
-    "projected": "+13.1%",
+    "projected": "+11.6%",
     "date": "10/19/2026"
   },
   {
@@ -50,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "+4.6%",
+    "projected": "+3.2%",
     "date": "10/19/2026"
   },
   {
@@ -61,15 +79,6 @@
     "price_target": "$85.00",
     "projected": "+3.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+15.5%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Anthony Crowdell",

@@ -9,15 +9,6 @@
     "date": "09/28/2026"
   },
   {
-    "analyst": "Needham",
-    "firm": "Needham",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/03/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -25,6 +16,15 @@
     "price_target": "$34.00",
     "projected": "+4.5%",
     "date": "10/02/2026"
+  },
+  {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/03/2026"
   },
   {
     "analyst": "Stifel",
@@ -36,13 +36,13 @@
     "date": "10/03/2026"
   },
   {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
+    "analyst": "BTIG",
+    "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+53.6%",
-    "date": "10/03/2026"
+    "projected": "+32.2%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -54,22 +54,13 @@
     "date": "10/02/2026"
   },
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "-18.8%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "BTIG",
-    "firm": "BTIG",
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+53.6%",
-    "date": "10/03/2026"
+    "projected": "+35%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -79,6 +70,15 @@
     "price_target": "$27.00",
     "projected": "-17.1%",
     "date": "10/02/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "-18.8%",
+    "date": "09/10/2026"
   },
   {
     "analyst": "Goldman Sachs",

@@ -1,12 +1,39 @@
 [
   {
-    "analyst": "Richard Sunderland",
-    "firm": "Truist Financial",
+    "analyst": "Jeremy Tonet",
+    "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+9.5%",
-    "date": "10/15/2026"
+    "price_target": "$77.00",
+    "projected": "+4.1%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+8.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+17.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Paul Fremont",
+    "firm": "Ladenburg Thalmann & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.50",
+    "projected": "+2.1%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Nicholas Campanella",
@@ -14,8 +41,80 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$76.00",
-    "projected": "+5.3%",
-    "date": "10/12/2026"
+    "projected": "+2.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Paul Cole",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+18%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+17.7%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+5.5%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$72.50",
+    "projected": "+2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+19.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+19%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$89.00",
+    "projected": "+26.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+9.5%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Jim Kelleher",
@@ -36,42 +135,6 @@
     "date": "09/28/2026"
   },
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$88.00",
-    "projected": "+25.7%",
-    "date": "09/21/2026"
-  },
-  {
-    "analyst": "Jeremy Tonet",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+11.2%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$89.00",
-    "projected": "+18.9%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Carly Davenport",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -79,15 +142,6 @@
     "price_target": "$86.00",
     "projected": "+15.5%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$79.00",
-    "projected": "+3.8%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Ryan Levine",
@@ -99,24 +153,6 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+23.5%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Paul Cole",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+10%",
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "Paul Zimbardo CFA",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -124,15 +160,6 @@
     "price_target": "$78.00",
     "projected": "-0.5%",
     "date": "07/20/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+0.8%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Sophie Karp",
@@ -151,15 +178,6 @@
     "price_target": "$91.00",
     "projected": "+11.6%",
     "date": "04/20/2026"
-  },
-  {
-    "analyst": "Paul Fremont",
-    "firm": "Ladenburg Thalmann & Co.",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$84.50",
-    "projected": "+1.4%",
-    "date": "03/13/2026"
   },
   {
     "analyst": "Nicholas Amicucci",

@@ -9,6 +9,15 @@
     "date": "01/24/2026"
   },
   {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+3.1%",
+    "date": "11/02/2026"
+  },
+  {
     "analyst": "Seaport Global",
     "firm": "Seaport Global",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": null,
     "projected": null,
     "date": "04/08/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+9.5%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "UBS",
@@ -45,22 +45,22 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "-3.1%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$119.00",
-    "projected": "-13.1%",
-    "date": "10/15/2026"
+    "price_target": "$114.00",
+    "projected": "-21.9%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "-14.4%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -81,12 +81,12 @@
     "date": "01/22/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
-    "recommendation": "Hold",
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+12.2%",
-    "date": "09/22/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
   }
 ]

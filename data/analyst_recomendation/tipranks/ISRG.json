@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$470.00",
-    "projected": "+9.7%",
+    "projected": "+16.8%",
     "date": "10/21/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$503.00",
-    "projected": "+17.4%",
+    "projected": "+25%",
     "date": "10/21/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$480.00",
-    "projected": "+12%",
+    "projected": "+19.3%",
     "date": "10/21/2026"
   },
   {
@@ -32,34 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+16.7%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Robbie Marcus",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$475.00",
-    "projected": "+10.9%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Anthony Petrone",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "-6.6%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Lee Hambright",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$685.00",
-    "projected": "+59.9%",
+    "projected": "+24.2%",
     "date": "10/21/2026"
   },
   {
@@ -68,7 +41,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+28.4%",
+    "projected": "+36.6%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Lee Hambright",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$685.00",
+    "projected": "+70.2%",
     "date": "10/21/2026"
   },
   {
@@ -77,7 +59,34 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$470.00",
-    "projected": "+9.7%",
+    "projected": "+16.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Robbie Marcus",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$475.00",
+    "projected": "+18%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "-0.6%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$486.00",
+    "projected": "+20.7%",
     "date": "10/21/2026"
   },
   {
@@ -86,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$550.00",
-    "projected": "+28.4%",
+    "projected": "+36.6%",
     "date": "10/21/2026"
   },
   {
@@ -99,21 +108,12 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Larry Biegelsen",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$486.00",
-    "projected": "+13.4%",
-    "date": "10/21/2026"
-  },
-  {
     "analyst": "Christopher Pasquale",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+16.7%",
+    "projected": "+24.2%",
     "date": "10/21/2026"
   },
   {
@@ -122,7 +122,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$518.00",
-    "projected": "+20.9%",
+    "projected": "+19.5%",
     "date": "10/20/2026"
   },
   {
@@ -131,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$550.00",
-    "projected": "+28.4%",
+    "projected": "+26.9%",
     "date": "10/20/2026"
   },
   {
@@ -140,7 +140,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+16.7%",
+    "projected": "+15.3%",
     "date": "10/20/2026"
   },
   {
@@ -149,7 +149,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$454.00",
-    "projected": "+6%",
+    "projected": "+4.7%",
     "date": "10/20/2026"
   },
   {
@@ -158,7 +158,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$485.00",
-    "projected": "+13.2%",
+    "projected": "+13.1%",
     "date": "10/19/2026"
   },
   {

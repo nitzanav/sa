@@ -13,9 +13,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "+12%",
-    "date": "08/01/2026"
+    "price_target": "$140.00",
+    "projected": "+23.2%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -45,6 +45,15 @@
     "date": "05/01/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-2.6%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",
@@ -52,15 +61,6 @@
     "price_target": "$82.00",
     "projected": "+6.1%",
     "date": "04/22/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "-3.1%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "Mizuho",

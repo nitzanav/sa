@@ -1,20 +1,65 @@
 [
   {
+    "analyst": "Mark Lear",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "-1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Leo Mariani",
+    "firm": "Roth MKM",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+3.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Pei Hwa Ho",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+3.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$213.00",
+    "projected": "+46.4%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$147.00",
-    "projected": "-3.9%",
-    "date": "10/16/2026"
+    "price_target": "$155.00",
+    "projected": "+6.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$187.00",
+    "projected": "+17%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Devin McDermott",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$157.00",
-    "projected": "+1.3%",
+    "action": "Maintained",
+    "price_target": "$163.00",
+    "projected": "+5.2%",
     "date": "10/15/2026"
   },
   {
@@ -25,15 +70,6 @@
     "price_target": "$165.00",
     "projected": "+6.5%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Mark Lear",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$144.00",
-    "projected": "-6.8%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Hanwen Chang",
@@ -108,24 +144,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Leo Mariani",
-    "firm": "Roth MKM",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$138.00",
-    "projected": "0%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+34.6%",
-    "date": "09/23/2026"
-  },
-  {
     "analyst": "John Freeman",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -189,15 +207,6 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Pei Hwa Ho",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+9.8%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Sergey Pigarev",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
@@ -231,15 +240,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "07/21/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+19.6%",
     "date": "07/21/2026"
   },
   {

@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$157.00",
+    "projected": "+10.5%",
+    "date": "10/20/2026"
+  }
+]

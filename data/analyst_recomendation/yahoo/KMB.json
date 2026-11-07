@@ -4,9 +4,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$118.00",
-    "projected": "+18.9%",
-    "date": "09/11/2026"
+    "price_target": "$137.00",
+    "projected": "+26.7%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Citigroup",
@@ -18,15 +18,6 @@
     "date": "01/14/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$129.00",
-    "projected": null,
-    "date": "10/31/2025"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -34,24 +25,6 @@
     "price_target": "$120.00",
     "projected": "+23.4%",
     "date": "09/26/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": null,
-    "date": "11/05/2025"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+5.5%",
-    "date": "07/22/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -63,30 +36,39 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
+    "analyst": "Barclays",
+    "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": null,
-    "date": "11/04/2025"
+    "price_target": "$115.00",
+    "projected": "+5.5%",
+    "date": "07/22/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+3%",
-    "date": "08/06/2026"
+    "price_target": "$113.00",
+    "projected": "+3.8%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+4.3%",
-    "date": "10/06/2026"
+    "price_target": "$110.00",
+    "projected": "+1.8%",
+    "date": "11/07/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+10.1%",
+    "date": "03/30/2026"
   }
 ]

@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "+16.4%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$50.00",
+    "projected": "+5.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+17.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": "+13.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+5.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$50.00",
-    "projected": "+9.1%",
+    "projected": "+9.5%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$50.00",
-    "projected": "+9.1%",
+    "projected": "+8.9%",
     "date": "10/21/2026"
   },
   {
@@ -23,17 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+9.1%",
+    "projected": "+8.7%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "+15.2%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Nicolas Woods",
@@ -54,24 +99,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$49.00",
-    "projected": "+8.7%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -81,15 +108,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "+13.5%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Steve Fleishman",
     "firm": "Wolfe Research",
     "recommendation": "Hold",
@@ -97,15 +115,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+14%",
-    "date": "07/21/2026"
   },
   {
     "analyst": "William Appicelli",

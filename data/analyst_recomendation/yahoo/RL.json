@@ -18,15 +18,6 @@
     "date": "08/08/2026"
   },
   {
-    "analyst": "BTIG",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$460.00",
-    "projected": "+16.3%",
-    "date": "08/08/2026"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -34,6 +25,15 @@
     "price_target": "$410.00",
     "projected": "+19.9%",
     "date": "02/06/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$460.00",
+    "projected": "+16.3%",
+    "date": "08/08/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -49,18 +49,18 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$520.00",
-    "projected": "+31.5%",
-    "date": "08/08/2026"
+    "price_target": "$521.00",
+    "projected": "+32.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$463.00",
-    "projected": "+17%",
-    "date": "08/07/2026"
+    "price_target": "$473.00",
+    "projected": "+26.1%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Guggenheim",

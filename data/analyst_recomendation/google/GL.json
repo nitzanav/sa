@@ -3,19 +3,37 @@
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$195.00",
-    "projected": "+15%",
-    "date": "10/15/2026"
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+18.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "+17%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Wesley Carmichael",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$180.00",
+    "projected": "+15.7%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$191.00",
-    "projected": "+15.8%",
-    "date": "10/12/2026"
+    "price_target": "$215.00",
+    "projected": "+29.5%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Bob Huang",
@@ -23,20 +41,20 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$197.00",
-    "projected": "+19.3%",
-    "date": "10/05/2026"
+    "projected": "+18.6%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$165.00",
+    "projected": "-0.6%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Menno Hulshof",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+30.3%",
-    "date": "08/31/2026"
-  },
-  {
-    "analyst": "Andrew Kligerman",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
@@ -60,24 +78,6 @@
     "action": "Maintained",
     "price_target": "$185.00",
     "projected": "+8.1%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+16.8%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+11%",
     "date": "07/24/2026"
   },
   {

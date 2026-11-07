@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Nitin Kumar CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+10.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Pei Hwa Ho",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$146.00",
+    "projected": "+8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$159.00",
+    "projected": "+17.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Sam Margolin",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+32.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Neal Dingmann",
+    "firm": "William Blair",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$167.00",
+    "projected": "+12.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "John Royall",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$157.00",
+    "projected": "+4.5%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Neil Mehta",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$157.00",
-    "projected": "+10%",
+    "projected": "+6.7%",
     "date": "10/20/2026"
   },
   {
@@ -14,17 +68,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$175.00",
-    "projected": "+22.6%",
+    "projected": "+18.9%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$159.00",
-    "projected": "+11.2%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Scott Hanold",
@@ -33,15 +78,6 @@
     "action": "Maintained",
     "price_target": "$152.00",
     "projected": "+7%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Sam Margolin",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$189.00",
-    "projected": "+33.1%",
     "date": "10/14/2026"
   },
   {
@@ -88,15 +124,6 @@
     "price_target": "$174.00",
     "projected": "+35.7%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Nitin Kumar CFA",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/05/2026"
   },
   {
     "analyst": "Leo Mariani",
@@ -162,15 +189,6 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "Pei Hwa Ho",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$146.00",
-    "projected": "+16.8%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Sergey Pigarev",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -205,15 +223,6 @@
     "price_target": "$123.00",
     "projected": "+0.6%",
     "date": "04/27/2026"
-  },
-  {
-    "analyst": "Ryan Todd",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$157.00",
-    "projected": "+28.5%",
-    "date": "04/08/2026"
   },
   {
     "analyst": "Alastair Syme",

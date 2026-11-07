@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+26.3%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+54.7%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Jade Rahmani",
     "firm": "KBW",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$158.00",
-    "projected": "+16.2%",
+    "projected": "+22%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$183.00",
-    "projected": "+34.5%",
+    "projected": "+41.4%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$180.00",
-    "projected": "+32.3%",
+    "projected": "+34%",
     "date": "10/21/2026"
   },
   {
@@ -43,24 +61,6 @@
     "price_target": "$190.00",
     "projected": "+28%",
     "date": "08/18/2026"
-  },
-  {
-    "analyst": "Seth Bergey",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+31.4%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Alex Kramm",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+29.3%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Steve Sakwa",

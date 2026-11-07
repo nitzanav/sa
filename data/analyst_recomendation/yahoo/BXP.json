@@ -29,11 +29,11 @@
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+22.1%",
-    "date": "10/12/2026"
+    "price_target": "$65.00",
+    "projected": "+2.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Mizuho",
@@ -49,9 +49,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+5.3%",
-    "date": "09/21/2026"
+    "price_target": "$66.00",
+    "projected": "+6.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "UBS",

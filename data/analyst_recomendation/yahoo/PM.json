@@ -4,9 +4,9 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$205.00",
-    "projected": "+6.4%",
-    "date": "07/24/2026"
+    "price_target": "$232.00",
+    "projected": "+8.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -22,9 +22,9 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+11.6%",
-    "date": "07/24/2026"
+    "price_target": "$220.00",
+    "projected": "+9.9%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Barclays",
@@ -58,9 +58,9 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$193.00",
-    "projected": "+0.3%",
-    "date": "09/24/2026"
+    "price_target": "$201.00",
+    "projected": "+2%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Jefferies",
@@ -70,5 +70,14 @@
     "price_target": "$180.00",
     "projected": "+7.5%",
     "date": "01/21/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+9.1%",
+    "date": "10/27/2026"
   }
 ]

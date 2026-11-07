@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+21.5%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Christopher Rolland",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+19.6%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "John Vinh",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -7,15 +25,6 @@
     "price_target": "$525.00",
     "projected": "+32.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+21.7%",
-    "date": "09/22/2026"
   },
   {
     "analyst": "Vivek Arya",
@@ -81,15 +90,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Christopher Rolland",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$475.00",
-    "projected": "+25.5%",
-    "date": "08/19/2026"
-  },
-  {
     "analyst": "Harlan Sur",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -105,15 +105,6 @@
     "action": "Maintained",
     "price_target": "$458.00",
     "projected": "+21.5%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Quinn Bolton",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+19.4%",
     "date": "08/20/2026"
   },
   {
@@ -168,6 +159,15 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+19.4%",
     "date": "08/20/2026"
   },
   {

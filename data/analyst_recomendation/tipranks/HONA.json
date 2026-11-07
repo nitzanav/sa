@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "David E. Strauss",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$195.00",
+    "projected": "+24%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Noah Poponak",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+13.5%",
+    "date": "11/01/2026"
+  },
+  {
+    "analyst": "Sheila Kahyaoglu",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+7.2%",
+    "date": "11/01/2026"
+  },
+  {
     "analyst": "Kristine Liwag",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$205.00",
-    "projected": "+26%",
-    "date": "10/20/2026"
+    "projected": "+29.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+14.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Kenneth Herbert",
@@ -14,8 +50,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$210.00",
-    "projected": "+32.9%",
-    "date": "10/15/2026"
+    "projected": "+26.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Daniel DiCicco",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$181.00",
+    "projected": "+8.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Seth Seifman",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+26.4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Gautam Khanna",
@@ -36,24 +90,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Noah Poponak",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$190.00",
-    "projected": "+22.7%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+22.7%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Gavin Parsons",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -70,42 +106,6 @@
     "price_target": "$190.00",
     "projected": "+23.4%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Seth Seifman",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+43.9%",
-    "date": "08/10/2026"
-  },
-  {
-    "analyst": "Sheila Kahyaoglu",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+12%",
-    "date": "08/09/2026"
-  },
-  {
-    "analyst": "Daniel DiCicco",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$209.00",
-    "projected": "+33.8%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "David E. Strauss",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$195.00",
-    "projected": "+24.8%",
-    "date": "08/07/2026"
   },
   {
     "analyst": "Alexander Virgo",

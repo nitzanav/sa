@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+16.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+9.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$46.00",
+    "projected": "+9.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+2.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+2.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Nicholas Amicucci",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+3.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+4.7%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$44.00",
-    "projected": "+10.1%",
+    "projected": "+8.2%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$47.00",
-    "projected": "+17.6%",
+    "projected": "+15.6%",
     "date": "10/22/2026"
   },
   {
@@ -23,26 +95,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$39.00",
-    "projected": "-2.4%",
+    "projected": "-3.3%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+12.6%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+2.6%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Jeremy Tonet",
@@ -90,42 +144,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$40.00",
-    "projected": "+3.7%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+24.4%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Nicholas Amicucci",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "+5.9%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+10.1%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Steve Fleishman",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -135,15 +153,6 @@
     "date": "07/28/2026"
   },
   {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": null,
-    "projected": null,
-    "date": "06/30/2026"
-  },
-  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Hold",
@@ -151,15 +160,6 @@
     "price_target": null,
     "projected": null,
     "date": "06/05/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+4.4%",
-    "date": "04/24/2026"
   },
   {
     "analyst": "Julien Dumoulin Smith",

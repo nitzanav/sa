@@ -45,13 +45,13 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$143.00",
-    "projected": null,
-    "date": "10/29/2025"
+    "price_target": "$130.00",
+    "projected": "+11.3%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -85,8 +85,8 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$127.00",
-    "projected": "+7.7%",
-    "date": "09/18/2026"
+    "price_target": "$128.00",
+    "projected": "+5.3%",
+    "date": "10/21/2026"
   }
 ]

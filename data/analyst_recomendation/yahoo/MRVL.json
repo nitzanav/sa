@@ -5,8 +5,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$300.00",
-    "projected": "+33.2%",
-    "date": "08/29/2026"
+    "projected": "+81.5%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -22,18 +22,18 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+44.1%",
-    "date": "10/08/2026"
+    "price_target": "$300.00",
+    "projected": "+81.5%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+29.5%",
-    "date": "06/24/2026"
+    "price_target": "$225.00",
+    "projected": "+36.1%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -58,9 +58,9 @@
     "firm": "B. Riley Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+39.8%",
-    "date": "08/28/2026"
+    "price_target": "$275.00",
+    "projected": "+57.8%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Benchmark",
@@ -76,9 +76,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+51.1%",
-    "date": "10/07/2026"
+    "price_target": "$250.00",
+    "projected": "+51.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Keybanc",

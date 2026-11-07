@@ -22,27 +22,27 @@
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$372.00",
-    "projected": "+17.5%",
-    "date": "07/29/2026"
+    "price_target": "$360.00",
+    "projected": "+18.4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$337.00",
-    "projected": "+18.2%",
-    "date": "10/07/2026"
+    "price_target": "$350.00",
+    "projected": "+18.4%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$358.00",
-    "projected": "+28.8%",
-    "date": "10/12/2026"
+    "price_target": "$361.00",
+    "projected": "+18.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Stifel",
@@ -58,9 +58,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$362.00",
-    "projected": "+13.5%",
-    "date": "07/30/2026"
+    "price_target": "$364.00",
+    "projected": "+19.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Tigress Financial",

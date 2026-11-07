@@ -22,9 +22,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+15.6%",
-    "date": "08/20/2026"
+    "price_target": "$84.00",
+    "projected": "+12%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -49,9 +49,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+10.7%",
-    "date": "09/21/2026"
+    "price_target": "$82.00",
+    "projected": "+7.5%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Morgan Stanley",

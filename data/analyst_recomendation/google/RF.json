@@ -1,12 +1,129 @@
 [
   {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$31.00",
+    "projected": "+7.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-2.4%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Dave Rochester",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$32.00",
+    "projected": "+17.4%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+20.3%",
-    "date": "10/14/2026"
+    "projected": "+14.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+10.1%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+13.1%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Ryan Kenny",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$35.00",
+    "projected": "+27.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "+2.2%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Russell Gunther",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$30.00",
+    "projected": "+9.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Christopher Marinac",
+    "firm": "Brean Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$33.00",
+    "projected": "+20.4%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$30.00",
+    "projected": "+9.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+20.4%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+9.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$32.00",
+    "projected": "+14.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Scott Siefers",
@@ -27,15 +144,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+10.3%",
-    "date": "10/06/2026"
-  },
-  {
     "analyst": "Erika Najarian",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -43,69 +151,6 @@
     "price_target": "$30.00",
     "projected": "+10.6%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$30.50",
-    "projected": "+13%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+0.7%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Mike Mayo",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$30.00",
-    "projected": "+11.1%",
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+25%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Ryan Kenny",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$35.00",
-    "projected": "+26.9%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Brian Foran",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$31.00",
-    "projected": "+11.7%",
-    "date": "09/23/2026"
-  },
-  {
-    "analyst": "David George",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$28.00",
-    "projected": "-2.3%",
-    "date": "09/18/2026"
   },
   {
     "analyst": "Matt O'Connor",
@@ -117,15 +162,6 @@
     "date": "08/27/2026"
   },
   {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$33.00",
-    "projected": "+4.7%",
-    "date": "07/20/2026"
-  },
-  {
     "analyst": "Peter Winter",
     "firm": "D.A. Davidson",
     "recommendation": "Hold",
@@ -133,24 +169,6 @@
     "price_target": "$34.00",
     "projected": "+9.2%",
     "date": "07/21/2026"
-  },
-  {
-    "analyst": "Ben Gerlinger",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$36.00",
-    "projected": "+15.6%",
-    "date": "07/21/2026"
-  },
-  {
-    "analyst": "Christopher Mcgratty",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+4.7%",
-    "date": "07/20/2026"
   },
   {
     "analyst": "David Chiaverini",
@@ -178,15 +196,6 @@
     "price_target": "$28.00",
     "projected": "-7.3%",
     "date": "07/06/2026"
-  },
-  {
-    "analyst": "Russell Gunther",
-    "firm": "Stephens",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$31.00",
-    "projected": "+5.1%",
-    "date": "06/15/2026"
   },
   {
     "analyst": "Kevin Heal",

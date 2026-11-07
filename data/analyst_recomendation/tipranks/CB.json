@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$379.00",
+    "projected": "+6.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$360.00",
+    "projected": "+1.4%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Harry Fong",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$410.00",
+    "projected": "+15%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Brian Meredith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$380.00",
+    "projected": "+6.5%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$374.00",
-    "projected": "+5.9%",
+    "projected": "+3.1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Ryan Tunis",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "-3.6%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$350.00",
-    "projected": "-0.9%",
+    "projected": "-2.8%",
     "date": "10/22/2026"
   },
   {
@@ -23,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$366.00",
-    "projected": "+3.7%",
+    "projected": "+1.7%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$405.00",
-    "projected": "+14.7%",
+    "projected": "+12.5%",
     "date": "10/22/2026"
   },
   {
@@ -41,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$403.00",
-    "projected": "+14.1%",
+    "projected": "+13%",
     "date": "10/21/2026"
   },
   {
@@ -50,7 +95,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$360.00",
-    "projected": "+2%",
+    "projected": "+1%",
     "date": "10/21/2026"
   },
   {
@@ -59,17 +104,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$387.00",
-    "projected": "+9.6%",
+    "projected": "+8.6%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Ryan Tunis",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$333.00",
-    "projected": "-5.7%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Joshua Shanker",
@@ -77,7 +113,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$335.00",
-    "projected": "-5.1%",
+    "projected": "-6.7%",
     "date": "10/20/2026"
   },
   {
@@ -97,15 +133,6 @@
     "price_target": "$359.00",
     "projected": "+7.4%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+6%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Michael Zaremski",
@@ -153,15 +180,6 @@
     "date": "07/22/2026"
   },
   {
-    "analyst": "Harry Fong",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$410.00",
-    "projected": "+18.7%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Matthew Carletti",
     "firm": "Citizens JMP",
     "recommendation": "Buy",
@@ -171,15 +189,6 @@
     "date": "07/10/2026"
   },
   {
-    "analyst": "Brian Meredith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$369.00",
-    "projected": "+2.3%",
-    "date": "07/08/2026"
-  },
-  {
     "analyst": "Tracy Benguigui",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -187,14 +196,5 @@
     "price_target": "$373.00",
     "projected": "+16%",
     "date": "04/22/2026"
-  },
-  {
-    "analyst": "Gregory Peters",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$340.00",
-    "projected": null,
-    "date": "10/27/2025"
   }
 ]

@@ -3,10 +3,19 @@
     "analyst": "Thomas McJoynt Griffith",
     "firm": "KBW",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$345.00",
+    "projected": "+10.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+21.5%",
-    "date": "10/12/2026"
+    "price_target": "$329.00",
+    "projected": "+8.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Bob Huang",
@@ -16,15 +25,6 @@
     "price_target": "$300.00",
     "projected": "+12.7%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$329.00",
-    "projected": "+16%",
-    "date": "09/08/2026"
   },
   {
     "analyst": "Charlie Lederer",

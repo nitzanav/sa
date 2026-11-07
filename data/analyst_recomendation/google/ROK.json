@@ -1,30 +1,75 @@
 [
   {
-    "analyst": "Christopher Snyder",
-    "firm": "Morgan Stanley",
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$520.00",
-    "projected": "+22.9%",
-    "date": "10/16/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Brett Linzey",
-    "firm": "Mizuho Securities",
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$430.00",
-    "projected": "+2.6%",
-    "date": "10/15/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
   },
   {
     "analyst": "Andrew Kaplowitz",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$536.00",
-    "projected": "+24%",
-    "date": "10/12/2026"
+    "price_target": "$504.00",
+    "projected": "+30.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$470.00",
+    "projected": "+21.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "-3.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$490.00",
+    "projected": "+26.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Tommy Moll",
+    "firm": "Stephens",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$500.00",
+    "projected": "+29.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Kenneth Newman",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$510.00",
+    "projected": "+31.7%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Varun Govindaraj",
@@ -90,39 +135,12 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Quinn Fredrickson",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$514.00",
-    "projected": "+14.2%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Alexander Virgo",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$485.00",
     "projected": "+7.8%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Kenneth Newman",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$510.00",
-    "projected": "+13.3%",
     "date": "08/05/2026"
   },
   {

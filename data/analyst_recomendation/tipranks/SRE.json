@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+27.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+14.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Ian Rapp",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$83.00",
+    "projected": "+5.7%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$97.50",
-    "projected": "+18.5%",
+    "projected": "+16.3%",
     "date": "10/22/2026"
   },
   {
@@ -14,17 +41,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+21.6%",
+    "projected": "+20%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+21.6%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Carly Davenport",
@@ -52,24 +70,6 @@
     "price_target": "$99.00",
     "projected": "+21.5%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "+10.5%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Ian Rapp",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$83.00",
-    "projected": "+8.2%",
-    "date": "09/29/2026"
   },
   {
     "analyst": "Shahriar Pourreza",

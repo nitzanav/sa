@@ -1,5 +1,113 @@
 [
   {
+    "analyst": "Larry Biegelsen",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+2.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "William Plovanic",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$179.00",
+    "projected": "+20.4%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+7.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Mike Kratky",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$167.00",
+    "projected": "-0.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Robbie Marcus",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+1.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Patrick Wood",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$171.00",
+    "projected": "+2.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+1.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Lee Hambright",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": "+19.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Marie Thibault",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jeff Johnson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+34.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Kendall Au",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$180.00",
+    "projected": "+21.1%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Matthew Taylor",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -9,24 +117,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "Mike Kratky",
-    "firm": "Leerink Partners",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$143.00",
-    "projected": "+6.1%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Christopher Pasquale",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$150.00",
-    "projected": "+11.2%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Matt Miksic",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -34,42 +124,6 @@
     "price_target": "$150.00",
     "projected": "+11.2%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Kendall Au",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+21.4%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Patrick Wood",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "+5.6%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Jeff Johnson",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+33.7%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Kieran Ryan",
@@ -99,66 +153,12 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Jonathan Block",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$180.00",
-    "projected": "+37.5%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Lee Hambright",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+33.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "William Plovanic",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$179.00",
-    "projected": "+36.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Marie Thibault",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Robbie Marcus",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$152.00",
-    "projected": "+18.8%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Shagun Singh Chadha",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$160.00",
     "projected": "+25%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Larry Biegelsen",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$144.00",
-    "projected": "+12.5%",
     "date": "08/05/2026"
   },
   {

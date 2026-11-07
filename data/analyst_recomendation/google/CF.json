@@ -1,21 +1,75 @@
 [
   {
-    "analyst": "Benjamin Theurer",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+12.4%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Joel Jackson",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$135.00",
-    "projected": "+16.9%",
-    "date": "10/06/2026"
+    "projected": "+14.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Ben Isaacson",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+12.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Benjamin Theurer",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+16.7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Vitaly Kononov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+6.8%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$134.00",
+    "projected": "+10.9%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Lucas Beaumont",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$134.00",
+    "projected": "+11.8%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Hamir Patel",
+    "firm": "CIBC",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+11.4%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-4.3%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Andrew Wong CFA",
@@ -63,15 +117,6 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Vitaly Kononov",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$133.00",
-    "projected": "+5.5%",
-    "date": "08/26/2026"
-  },
-  {
     "analyst": "Jeffrey Zekauskas",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -79,42 +124,6 @@
     "price_target": "$115.00",
     "projected": "-0.7%",
     "date": "08/12/2026"
-  },
-  {
-    "analyst": "Ben Isaacson",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+12.6%",
-    "date": "08/10/2026"
-  },
-  {
-    "analyst": "Matthew DeYoe",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$106.00",
-    "projected": "-7.3%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+7.5%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Lucas Beaumont",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+7.5%",
-    "date": "08/07/2026"
   },
   {
     "analyst": "Duffy Fischer",
@@ -133,15 +142,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Hamir Patel",
-    "firm": "CIBC",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$129.00",
-    "projected": "+2%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Michael Sison",

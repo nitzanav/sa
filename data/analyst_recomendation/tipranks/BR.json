@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$181.00",
+    "projected": "-2.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Puneet Jain",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$201.00",
+    "projected": "+8%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Daniel Perlin",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$226.00",
-    "projected": "+36%",
-    "date": "10/12/2026"
+    "projected": "+25.3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Alex Kramm",
@@ -16,24 +34,6 @@
     "price_target": "$180.00",
     "projected": "+6.2%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "James Faucette",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$176.00",
-    "projected": "+8.8%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Puneet Jain",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$191.00",
-    "projected": "+12.6%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Peter Heckmann",

@@ -1,11 +1,83 @@
 [
   {
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1075.00",
+    "projected": "+18.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1210.00",
+    "projected": "+33.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Daniel DiCicco",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1073.00",
+    "projected": "+18.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1050.00",
+    "projected": "+15.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1237.00",
+    "projected": "+36.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1234.00",
+    "projected": "+35.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+29.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1200.00",
+    "projected": "+36.4%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Christine Yao",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$1038.00",
-    "projected": "+7.5%",
+    "projected": "+7.4%",
     "date": "10/19/2026"
   },
   {
@@ -14,17 +86,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$1002.00",
-    "projected": "+3.8%",
+    "projected": "+3.7%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Brett Linzey",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": "+26%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Joseph C Giordano",
@@ -34,15 +97,6 @@
     "price_target": "$950.00",
     "projected": "-0.2%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Andrew Kaplowitz",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1234.00",
-    "projected": "+28.5%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Chigusa Katoku",
@@ -63,15 +117,6 @@
     "date": "10/07/2026"
   },
   {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1200.00",
-    "projected": "+23.1%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Vertical Research",
     "recommendation": "Buy",
@@ -79,15 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Stephen Tusa",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$1050.00",
-    "projected": "+8.8%",
-    "date": "09/24/2026"
   },
   {
     "analyst": "Amit Mehrotra",
@@ -99,24 +135,6 @@
     "date": "08/17/2026"
   },
   {
-    "analyst": "Jamie Cook",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1358.00",
-    "projected": "+28%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "John Eade",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": "+11.2%",
-    "date": "08/07/2026"
-  },
-  {
     "analyst": "Mircea Dobre",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
@@ -126,31 +144,13 @@
     "date": "08/07/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Susquehanna",
+    "analyst": "John Eade",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1250.00",
-    "projected": "+15.9%",
+    "price_target": "$1200.00",
+    "projected": "+11.2%",
     "date": "08/07/2026"
-  },
-  {
-    "analyst": "Jeffrey Hammond",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1210.00",
-    "projected": "+12.2%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Daniel DiCicco",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1214.00",
-    "projected": "+12.8%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Matthew McCann CFA",

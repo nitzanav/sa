@@ -5,8 +5,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+6.7%",
-    "date": "10/21/2026"
+    "projected": "+3.6%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -63,21 +63,21 @@
     "date": "09/25/2026"
   },
   {
-    "analyst": "Brian Harbour",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$255.00",
-    "projected": "+24.4%",
-    "date": "09/25/2026"
-  },
-  {
     "analyst": "Gregory Francfort",
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$235.00",
     "projected": "+14.7%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Brian Harbour",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$255.00",
+    "projected": "+24.4%",
     "date": "09/25/2026"
   },
   {
@@ -108,12 +108,12 @@
     "date": "09/25/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Freedom Capital Markets",
+    "analyst": "Peter Saleh",
+    "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+26.9%",
+    "price_target": "$235.00",
+    "projected": "+14.7%",
     "date": "09/25/2026"
   },
   {
@@ -126,12 +126,12 @@
     "date": "09/25/2026"
   },
   {
-    "analyst": "Peter Saleh",
-    "firm": "BTIG",
+    "analyst": "Unknown Analyst",
+    "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$235.00",
-    "projected": "+14.7%",
+    "price_target": "$260.00",
+    "projected": "+26.9%",
     "date": "09/25/2026"
   },
   {
@@ -180,7 +180,7 @@
     "date": "09/01/2026"
   },
   {
-    "analyst": "Chris O`Cull",
+    "analyst": "Chris O’Cull",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Upgraded",

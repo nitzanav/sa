@@ -4,9 +4,18 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+8.1%",
-    "date": "06/30/2026"
+    "price_target": "$86.00",
+    "projected": "+3.2%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+3.8%",
+    "date": "10/13/2026"
   },
   {
     "analyst": "Citigroup",

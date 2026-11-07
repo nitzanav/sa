@@ -1,12 +1,75 @@
 [
   {
+    "analyst": "Blaine Heck",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$158.00",
+    "projected": "+23.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Michael Carroll",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$160.00",
+    "projected": "+26.2%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "John Kim",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$150.00",
-    "projected": "+17.1%",
-    "date": "10/16/2026"
+    "projected": "+19%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Michael Lewis",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$141.00",
+    "projected": "+11.5%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Dave Rodgers",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$163.00",
+    "projected": "+26.9%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Nicholas Thillman",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+8.9%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Zhiger Kurmet",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$142.00",
+    "projected": "+13.8%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Todd Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/19/2026"
   },
   {
     "analyst": "Tom Catherwood",
@@ -16,15 +79,6 @@
     "price_target": "$170.00",
     "projected": "+28.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Blaine Heck",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$166.00",
-    "projected": "+24.2%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Nicholas Yulico",
@@ -45,24 +99,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Michael Carroll",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$160.00",
-    "projected": "+14.4%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Nicholas Thillman",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "-4.1%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Brendan Lynch",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -81,30 +117,12 @@
     "date": "07/27/2026"
   },
   {
-    "analyst": "Michael Lewis",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$162.00",
-    "projected": "+9.4%",
-    "date": "07/21/2026"
-  },
-  {
     "analyst": "Vikram Malhotra",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$159.00",
     "projected": "+6%",
-    "date": "07/17/2026"
-  },
-  {
-    "analyst": "Dave Rodgers",
-    "firm": "Raymond James",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
     "date": "07/17/2026"
   },
   {
@@ -151,15 +169,6 @@
     "price_target": "$165.00",
     "projected": "+13.6%",
     "date": "04/21/2026"
-  },
-  {
-    "analyst": "Todd Thomas",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "04/20/2026"
   },
   {
     "analyst": "Michael Goldsmith",

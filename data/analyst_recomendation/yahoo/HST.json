@@ -27,13 +27,13 @@
     "date": "11/08/2025"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "-1.8%",
-    "date": "07/29/2026"
+    "price_target": "$27.00",
+    "projected": "+22.1%",
+    "date": "09/10/2026"
   },
   {
     "analyst": "Barclays",
@@ -45,22 +45,13 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+22.1%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "+3.4%",
-    "date": "07/21/2026"
+    "price_target": "$26.00",
+    "projected": "+4.7%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -72,13 +63,22 @@
     "date": "10/12/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+3.4%",
+    "date": "07/21/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "+8.1%",
-    "date": "07/24/2026"
+    "price_target": "$27.00",
+    "projected": "+7.6%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "UBS",

@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Mark Li",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1300.00",
+    "projected": "+72.7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1300.00",
+    "projected": "+34.3%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1550.00",
+    "projected": "+79.8%",
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Matt Bryson",
     "firm": "Wedbush",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1400.00",
-    "projected": "+54.6%",
+    "projected": "+62.4%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1650.00",
-    "projected": "+82.2%",
+    "projected": "+87.6%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1500.00",
-    "projected": "+65.7%",
+    "projected": "+62.4%",
     "date": "10/21/2026"
   },
   {
@@ -52,15 +79,6 @@
     "price_target": "$1750.00",
     "projected": "+100.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1550.00",
-    "projected": "+65.9%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Jim Hin Kwong Au",
@@ -99,21 +117,21 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Tristan Gerra",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1520.00",
-    "projected": "+37.3%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Timothy Arcuri",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$1625.00",
     "projected": "+46.7%",
+    "date": "10/02/2026"
+  },
+  {
+    "analyst": "Tristan Gerra",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1520.00",
+    "projected": "+37.3%",
     "date": "10/02/2026"
   },
   {
@@ -132,15 +150,6 @@
     "action": "Maintained",
     "price_target": "$1550.00",
     "projected": "+47%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Atif Malik",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1300.00",
-    "projected": "+23.3%",
     "date": "10/01/2026"
   },
   {
@@ -195,15 +204,6 @@
     "action": "Reiterated",
     "price_target": "$1250.00",
     "projected": "+18.6%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Mark Li",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1300.00",
-    "projected": "+23.3%",
     "date": "10/01/2026"
   },
   {
@@ -286,5 +286,41 @@
     "price_target": "$2000.00",
     "projected": "+62.2%",
     "date": "06/25/2026"
+  },
+  {
+    "analyst": "SK Kim",
+    "firm": "Daiwa",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1600.00",
+    "projected": "+76.8%",
+    "date": "06/10/2026"
+  },
+  {
+    "analyst": "Kinngai Chan",
+    "firm": "Summit Insights Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "03/18/2026"
+  },
+  {
+    "analyst": "Warren Lau",
+    "firm": "Aletheia Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$650.00",
+    "projected": "+65.1%",
+    "date": "03/04/2026"
+  },
+  {
+    "analyst": "Ricky Seo",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$330.00",
+    "projected": null,
+    "date": "12/09/2025"
   }
 ]

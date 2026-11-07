@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+83.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$183.00",
+    "projected": "+62.2%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Arun Viswanathan",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -19,15 +37,6 @@
   },
   {
     "analyst": "Unknown Analyst",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$211.00",
-    "projected": "+68.3%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Aleksey Yefremov",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Initiated",

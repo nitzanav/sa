@@ -4,9 +4,9 @@
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1375.00",
-    "projected": "+5.5%",
-    "date": "08/05/2026"
+    "price_target": "$1645.00",
+    "projected": "+11%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Barclays",
@@ -31,18 +31,18 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1427.00",
-    "projected": "+9.7%",
-    "date": "10/14/2026"
+    "price_target": "$1582.00",
+    "projected": "+6.8%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Stephens & Co.",
     "firm": "Stephens & Co.",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1355.00",
-    "projected": "-1.1%",
-    "date": "07/15/2026"
+    "price_target": "$1380.00",
+    "projected": "-4.3%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "JP Morgan",

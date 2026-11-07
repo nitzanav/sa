@@ -3,16 +3,79 @@
     "analyst": "Doug Anmuth",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+32.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Nat Schindler",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+32.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "John Blackledge",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$460.00",
+    "projected": "+62.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$425.00",
-    "projected": "+24.8%",
-    "date": "10/15/2026"
+    "price_target": "$380.00",
+    "projected": "+35.9%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jeffrey Wlodarczak",
+    "firm": "Pivotal Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$475.00",
+    "projected": "+48.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Ralph Schackart",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Ingo Wermann",
+    "firm": "DZ BANK AG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Saiyi He",
+    "firm": "CMB International Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$421.00",
+    "projected": "+48.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Stephen Ju",
     "firm": "UBS",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$380.00",
     "projected": "+8.1%",
     "date": "10/14/2026"
@@ -25,15 +88,6 @@
     "price_target": "$380.00",
     "projected": "+8.1%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "John Blackledge",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$485.00",
-    "projected": "+38.7%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -45,15 +99,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Justin Post",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Jason Helfstein",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -63,57 +108,12 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "Nat Schindler",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+29.6%",
-    "date": "07/22/2026"
-  },
-  {
-    "analyst": "Ingo Wermann",
-    "firm": "DZ BANK AG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "Josh Beck",
     "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
     "projected": "+24.4%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Saiyi He",
-    "firm": "CMB International Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$428.00",
-    "projected": "+33.1%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Ralph Schackart",
-    "firm": "William Blair",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Jeffrey Wlodarczak",
-    "firm": "Pivotal Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$475.00",
-    "projected": "+47.7%",
     "date": "07/23/2026"
   },
   {

@@ -1,66 +1,111 @@
 [
   {
-    "analyst": "Nik Modi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
+    "analyst": "Andrew Lazar",
+    "firm": "Barclays",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+36.6%",
-    "date": "10/23/2026"
+    "price_target": "$25.00",
+    "projected": "+1.4%",
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Alexia Burland Howard",
-    "firm": "Bernstein",
-    "recommendation": "Sell",
+    "analyst": "David Palmer",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$21.00",
-    "projected": "-10.4%",
-    "date": "10/21/2026"
+    "price_target": "$23.00",
+    "projected": "-10.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Thomas Palmer",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$23.00",
-    "projected": "-1.8%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Andrew Lazar",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$25.00",
-    "projected": "+6.7%",
-    "date": "10/16/2026"
+    "projected": "-10.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Peter Grom",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$24.00",
-    "projected": "+3.4%",
-    "date": "10/15/2026"
+    "price_target": "$26.00",
+    "projected": "+1.4%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Peter Galbo",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$23.00",
-    "projected": "+2.9%",
-    "date": "10/09/2026"
+    "analyst": "Matthew Smith, CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+1.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+24.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Michael Lavery",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-2.5%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Christopher Carey",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$24.00",
+    "projected": "-6.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Zheng Feng Chee",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-2.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Robert Dickerson",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "-14.4%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$23.00",
-    "projected": "+4.1%",
-    "date": "10/05/2026"
+    "projected": "-5.1%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Robert Moskow",
@@ -72,24 +117,6 @@
     "date": "09/22/2026"
   },
   {
-    "analyst": "Michael Lavery",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "-0.7%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "David Palmer",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$23.00",
-    "projected": "-5.8%",
-    "date": "09/14/2026"
-  },
-  {
     "analyst": "Taylor Conrad",
     "firm": "Argus Research",
     "recommendation": "Hold",
@@ -97,24 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/31/2026"
-  },
-  {
-    "analyst": "Zheng Feng Chee",
-    "firm": "DBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$23.00",
-    "projected": "-10.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Matthew Smith, CFA",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "+0.9%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Leah Jordan",
@@ -151,15 +160,6 @@
     "price_target": "$22.00",
     "projected": "+0.4%",
     "date": "04/23/2026"
-  },
-  {
-    "analyst": "Robert Dickerson",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": null,
-    "projected": null,
-    "date": "04/14/2026"
   },
   {
     "analyst": "Max Gumport",

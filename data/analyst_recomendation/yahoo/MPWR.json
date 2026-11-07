@@ -9,6 +9,15 @@
     "date": "02/09/2026"
   },
   {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1500.00",
+    "projected": "+29.7%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
@@ -22,9 +31,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1889.00",
-    "projected": "+26%",
-    "date": "08/01/2026"
+    "price_target": "$1906.00",
+    "projected": "+62.4%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Needham",
@@ -47,28 +56,28 @@
   {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1575.00",
-    "projected": "+5.1%",
-    "date": "08/01/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1850.00",
-    "projected": "+18.2%",
-    "date": "05/01/2026"
+    "price_target": "$1700.00",
+    "projected": "+44.8%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1800.00",
-    "projected": "+20.1%",
-    "date": "07/31/2026"
+    "price_target": "$1550.00",
+    "projected": "+25.7%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1700.00",
+    "projected": "+37.9%",
+    "date": "10/20/2026"
   }
 ]

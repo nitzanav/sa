@@ -1,21 +1,39 @@
 [
   {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$198.00",
-    "projected": "-5.3%",
-    "date": "10/20/2026"
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$185.00",
+    "projected": "-3.2%",
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Jasper Bibb",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$235.00",
+    "price_target": "$231.00",
     "projected": "+12.4%",
-    "date": "10/20/2026"
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "-17.3%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Joshua Chan",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+7.1%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Jason Haas CFA",
@@ -23,62 +41,44 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$175.00",
-    "projected": "-16.3%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Curtis Nagle",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "-21.1%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Manav Patnaik",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "-24.1%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Jeffrey Silber",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$212.00",
-    "projected": "+8.3%",
-    "date": "10/13/2026"
+    "projected": "-14.8%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Toni Kaplan",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "-3.5%",
-    "date": "10/08/2026"
+    "price_target": "$192.00",
+    "projected": "-6.6%",
+    "date": "11/04/2026"
   },
   {
-    "analyst": "Joshua Chan",
-    "firm": "UBS",
+    "analyst": "Jasper Bibb",
+    "firm": "Truist Financial",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$208.00",
-    "projected": "+12.4%",
-    "date": "10/05/2026"
+    "action": "Downgraded",
+    "price_target": "$210.00",
+    "projected": "+2.2%",
+    "date": "11/04/2026"
   },
   {
-    "analyst": "Faiza Alwy",
-    "firm": "Deutsche Bank",
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$210.00",
-    "projected": "+11.7%",
-    "date": "08/05/2026"
+    "price_target": "$207.00",
+    "projected": "+0.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$198.00",
+    "projected": "-6.1%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Jeffrey Meuler",
@@ -90,13 +90,13 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "George Tong",
-    "firm": "Goldman Sachs",
+    "analyst": "Faiza Alwy",
+    "firm": "Deutsche Bank",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": "+14.9%",
-    "date": "08/04/2026"
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+11.7%",
+    "date": "08/05/2026"
   },
   {
     "analyst": "Andrew Nicholas",

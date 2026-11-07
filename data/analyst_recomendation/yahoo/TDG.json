@@ -27,6 +27,15 @@
     "date": "08/06/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1300.00",
+    "projected": "+14.5%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "02/06/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1345.00",
-    "projected": "+12%",
-    "date": "07/15/2026"
   },
   {
     "analyst": "Wells Fargo",

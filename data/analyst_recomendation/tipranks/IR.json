@@ -1,21 +1,39 @@
 [
   {
-    "analyst": "Brandon Knutson",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$87.00",
-    "projected": "+10.9%",
-    "date": "10/20/2026"
+    "analyst": "Michael Halloran",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+31.6%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Nathan Jones",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+16.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Amit Mehrotra",
+    "firm": "UBS",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+18.6%",
-    "date": "10/19/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+12.5%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Andrew Kaplowitz",
@@ -34,15 +52,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Michael Halloran",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+28%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Unknown Analyst",

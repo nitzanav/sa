@@ -1,30 +1,93 @@
 [
   {
+    "analyst": "Puneet Souda",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+14.2%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Daniel Brennan",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+11.9%",
-    "date": "10/13/2026"
+    "price_target": "$185.00",
+    "projected": "+10.3%",
+    "date": "11/04/2026"
   },
   {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
+    "analyst": "Dan Leonard",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$172.00",
+    "projected": "+5.5%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Casey Woodring",
+    "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "-21.9%",
-    "date": "10/12/2026"
+    "price_target": "$160.00",
+    "projected": "-4.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Daniel Arias",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$177.00",
+    "projected": "+5.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Catherine Ramsey Schulte",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+13.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Lu Li",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$185.00",
+    "projected": "+13.5%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Luke Sergott",
+    "firm": "Barclays",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+8.3%",
-    "date": "10/09/2026"
+    "price_target": "$175.00",
+    "projected": "+4.4%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Vijay Kumar",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+10.4%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "-22%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Michael Ryskin",
@@ -34,15 +97,6 @@
     "price_target": "$165.00",
     "projected": "+8.3%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Luke Sergott",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+4.6%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Matt Larew",
@@ -108,33 +162,6 @@
     "date": "09/04/2026"
   },
   {
-    "analyst": "Dan Leonard",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$135.00",
-    "projected": "+5.9%",
-    "date": "09/01/2026"
-  },
-  {
-    "analyst": "Casey Woodring",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-3.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Vijay Kumar",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+12%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Evan Stampler",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -153,24 +180,6 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "Daniel Arias",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "-2.2%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Puneet Souda",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "07/17/2026"
-  },
-  {
     "analyst": "Michael Polark",
     "firm": "Wolfe Research",
     "recommendation": "Hold",
@@ -187,15 +196,6 @@
     "price_target": null,
     "projected": null,
     "date": "05/11/2026"
-  },
-  {
-    "analyst": "Catherine Ramsey Schulte",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+36.1%",
-    "date": "05/04/2026"
   },
   {
     "analyst": "Unknown Analyst",

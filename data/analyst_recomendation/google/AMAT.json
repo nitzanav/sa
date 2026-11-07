@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Shane Brett CFA",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$538.00",
+    "projected": "+39%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Timothy Arcuri",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$695.00",
+    "projected": "+75.8%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+86.3%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Charles Shi",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$560.00",
+    "projected": "+33.3%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "James Schneider",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -52,33 +88,6 @@
     "price_target": "$590.00",
     "projected": "+36.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Shane Brett CFA",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$563.00",
-    "projected": "+16.8%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+52.9%",
-    "date": "09/22/2026"
-  },
-  {
-    "analyst": "Timothy Arcuri",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$695.00",
-    "projected": "+54.2%",
-    "date": "09/01/2026"
   },
   {
     "analyst": "Vijay Rakesh",
@@ -150,15 +159,6 @@
     "action": "Maintained",
     "price_target": "$650.00",
     "projected": "+30.2%",
-    "date": "08/14/2026"
-  },
-  {
-    "analyst": "Charles Shi",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$740.00",
-    "projected": "+48.2%",
     "date": "08/14/2026"
   },
   {

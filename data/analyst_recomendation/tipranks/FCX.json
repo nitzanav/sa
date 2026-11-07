@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Richard Garchitorena",
-    "firm": "Barclays",
-    "recommendation": "Buy",
+    "analyst": "Vitaly Kononov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "+19.8%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Daniel Major",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+24.6%",
-    "date": "10/08/2026"
+    "price_target": "$68.00",
+    "projected": "+6.6%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Sam Crittenden",
@@ -23,35 +14,98 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$85.00",
-    "projected": "+19.2%",
-    "date": "10/07/2026"
+    "projected": "+33.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+28.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Ralph M. Profiti",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+21.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Daniel Major",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+28.8%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Bill Peterson",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+36.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Katja Jancic",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$92.00",
-    "projected": "+29%",
-    "date": "10/07/2026"
+    "price_target": "$85.00",
+    "projected": "+28.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Orest Wowkodaw",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+18.2%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Carlos De Alba",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$75.00",
-    "projected": "+5.2%",
-    "date": "10/07/2026"
+    "projected": "+13.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Nick Cash",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$83.00",
+    "projected": "+26.7%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Timna Tanners",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+20.6%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$87.00",
-    "projected": "+19.4%",
-    "date": "10/06/2026"
+    "projected": "+32.8%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Alexander Hacking",
@@ -63,24 +117,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Nick Cash",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$81.00",
-    "projected": "+16.4%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Lawson Winder",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$80.00",
-    "projected": "+15%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Bob Brackett",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -88,15 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Vitaly Kononov",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$75.00",
-    "projected": "-0.5%",
-    "date": "09/03/2026"
   },
   {
     "analyst": "Hans Engel",
@@ -115,33 +142,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/24/2026"
-  },
-  {
-    "analyst": "Katja Jancic",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+24.7%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Orest Wowkodaw",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$77.00",
-    "projected": "+23.1%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Ralph M. Profiti",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+31%",
-    "date": "07/21/2026"
   },
   {
     "analyst": "Liam Fitzpatrick",

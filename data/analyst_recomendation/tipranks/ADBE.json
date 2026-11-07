@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Tyler Radke",
+    "firm": "Citi",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$207.00",
+    "projected": "-16.6%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Stephen Bersey",
     "firm": "HSBC",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": "$225.00",
     "projected": "-4.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Tyler Radke",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+3.8%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Derrick Wood",
@@ -54,7 +54,7 @@
     "date": "09/24/2026"
   },
   {
-    "analyst": "Paul Chew",
+    "analyst": "Alif Fahmi",
     "firm": "Phillip Securities",
     "recommendation": "Hold",
     "action": "Maintained",
@@ -70,6 +70,15 @@
     "price_target": "$373.00",
     "projected": "+42.6%",
     "date": "09/14/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
   },
   {
     "analyst": "Gil Luria",
@@ -96,15 +105,6 @@
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "+3.2%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
     "date": "09/11/2026"
   },
   {
@@ -153,15 +153,6 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Billy Fitzsimmons",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+3.2%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Saket Kalia",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -177,6 +168,15 @@
     "action": "Maintained",
     "price_target": "$195.00",
     "projected": "-19.5%",
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "Billy Fitzsimmons",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+3.2%",
     "date": "09/11/2026"
   },
   {
@@ -225,15 +225,6 @@
     "date": "07/20/2026"
   },
   {
-    "analyst": "Nick Altmann",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "06/12/2026"
-  },
-  {
     "analyst": "Egor Tolmachev",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
@@ -258,6 +249,15 @@
     "action": "Downgraded",
     "price_target": "$187.50",
     "projected": "-7.4%",
+    "date": "06/12/2026"
+  },
+  {
+    "analyst": "Nick Altmann",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
     "date": "06/12/2026"
   },
   {
@@ -286,5 +286,14 @@
     "price_target": "$270.00",
     "projected": "+1.1%",
     "date": "02/09/2026"
+  },
+  {
+    "analyst": "Andy Yu CFA",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$660.00",
+    "projected": null,
+    "date": "12/15/2025"
   }
 ]

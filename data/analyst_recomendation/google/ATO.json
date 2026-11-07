@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$182.00",
+    "projected": "+8.4%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "Richard Sunderland",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -25,15 +34,6 @@
     "price_target": "$167.00",
     "projected": "+7%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$179.00",
-    "projected": "+11.7%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Eli Jossen",

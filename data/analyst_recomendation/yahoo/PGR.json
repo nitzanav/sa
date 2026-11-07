@@ -9,6 +9,15 @@
     "date": "10/05/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$308.00",
+    "projected": "+49.9%",
+    "date": "07/16/2026"
+  },
+  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -27,15 +36,6 @@
     "date": "03/24/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$308.00",
-    "projected": "+49.9%",
-    "date": "07/16/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
@@ -52,15 +52,6 @@
     "price_target": "$210.00",
     "projected": "-0.3%",
     "date": "07/25/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": null,
-    "date": "10/28/2025"
   },
   {
     "analyst": "UBS",
@@ -86,8 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+10.1%",
-    "date": "07/17/2026"
+    "projected": "-0.9%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Citigroup",
@@ -97,14 +88,5 @@
     "price_target": "$261.00",
     "projected": "+30%",
     "date": "02/04/2026"
-  },
-  {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$246.00",
-    "projected": "+15%",
-    "date": "10/16/2026"
   }
 ]

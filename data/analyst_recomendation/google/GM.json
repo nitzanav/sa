@@ -1,21 +1,102 @@
 [
   {
-    "analyst": "Andrew Percoco",
-    "firm": "Morgan Stanley",
+    "analyst": "Ivan Feinseth",
+    "firm": "Tigress Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$132.00",
+    "projected": "+63.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Chris McNally",
+    "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+20.7%",
-    "date": "10/15/2026"
+    "price_target": "$100.00",
+    "projected": "+23.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Joseph Spak",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+39.1%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Edison Yu",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+27.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Itay Michaeli",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+72.1%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Tom Narayan",
     "firm": "RBC Capital",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$98.00",
+    "projected": "+26.9%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Michael Ward",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+70.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Andrew Percoco",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+23.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Mark Delaney",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+23.4%",
-    "date": "10/12/2026"
+    "price_target": "$96.00",
+    "projected": "+24.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Dan Levy",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "+36.9%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Alexander Perry",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$107.00",
+    "projected": "+38.6%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Rajat Gupta CFA",
@@ -25,24 +106,6 @@
     "price_target": "$110.00",
     "projected": "+33.5%",
     "date": "10/11/2026"
-  },
-  {
-    "analyst": "Edison Yu",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+22.6%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Dan Levy",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+33.5%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Stephan Lingnau",
@@ -63,33 +126,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Joseph Spak",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+37.5%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Alexander Perry",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "+31.4%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Mark Delaney",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$112.00",
-    "projected": "+41.8%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Michael Legg",
     "firm": "Ladenburg Thalmann & Co.",
     "recommendation": "Buy",
@@ -97,15 +133,6 @@
     "price_target": "$105.00",
     "projected": "+31.4%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Michael Ward",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+62.4%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Colin Langan",
@@ -126,15 +153,6 @@
     "date": "08/11/2026"
   },
   {
-    "analyst": "Ivan Feinseth",
-    "firm": "Tigress Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$130.00",
-    "projected": "+48.4%",
-    "date": "07/28/2026"
-  },
-  {
     "analyst": "Philippe Houchois",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -142,15 +160,6 @@
     "price_target": "$99.00",
     "projected": "+22.9%",
     "date": "07/26/2026"
-  },
-  {
-    "analyst": "Itay Michaeli",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$132.00",
-    "projected": "+64%",
-    "date": "07/22/2026"
   },
   {
     "analyst": "Mickey Legg",
@@ -169,15 +178,6 @@
     "price_target": "$100.00",
     "projected": "+27.6%",
     "date": "06/28/2026"
-  },
-  {
-    "analyst": "Chris McNally",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+31.7%",
-    "date": "05/04/2026"
   },
   {
     "analyst": "Ryan Brinkman",

@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Zhihan Ma",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": "+12.1%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Simeon Gutman",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+1.5%",
+    "date": "11/01/2026"
+  },
+  {
+    "analyst": "Bill Kirk",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$138.00",
+    "projected": "+14.3%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Greg Melich",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Christopher Nardone",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "+6.4%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Krisztina Katai",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -9,15 +54,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Zhihan Ma",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": "+24.3%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Paul Lejuez",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -25,33 +61,6 @@
     "price_target": "$132.00",
     "projected": "+18.4%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Greg Melich",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+13.6%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Christopher Nardone",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+14.5%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Simeon Gutman",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+20.4%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Steven Shemesh",
@@ -267,15 +276,6 @@
     "action": "Maintained",
     "price_target": "$130.00",
     "projected": "+25.4%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Bill Kirk",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$138.00",
-    "projected": "+33.1%",
     "date": "08/21/2026"
   },
   {

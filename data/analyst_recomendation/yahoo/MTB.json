@@ -4,18 +4,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "+1.6%",
-    "date": "07/16/2026"
+    "price_target": "$245.00",
+    "projected": "+14.3%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+12.8%",
-    "date": "09/23/2026"
+    "price_target": "$235.00",
+    "projected": "+10%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -31,9 +31,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$301.00",
-    "projected": "+36.2%",
-    "date": "09/28/2026"
+    "price_target": "$294.00",
+    "projected": "+37.2%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -72,6 +72,15 @@
     "date": "07/17/2026"
   },
   {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+4.8%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$230.00",
     "projected": "+6.7%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "DA Davidson",
-    "firm": "DA Davidson",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$266.00",
-    "projected": "+6%",
-    "date": "07/16/2026"
   }
 ]

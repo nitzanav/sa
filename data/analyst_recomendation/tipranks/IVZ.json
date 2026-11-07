@@ -1,12 +1,75 @@
 [
   {
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$37.00",
+    "projected": "+32.7%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Glenn Schorr",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+17.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Michael Brown",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+42%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Kenneth Lee",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$36.00",
-    "projected": "+24.4%",
-    "date": "10/22/2026"
+    "projected": "+24.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+14.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Alex Bond",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+35%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Stephen Biggar",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Alexander Blostein",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$37.00",
+    "projected": "+29.6%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Michael Cyprys",
@@ -14,26 +77,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+10.6%",
+    "projected": "+11.4%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$34.00",
-    "projected": "+19.1%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Alexander Blostein",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$35.00",
-    "projected": "+19%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Brennan Hawken",
@@ -54,33 +99,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "Glenn Schorr",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+13.5%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Alex Bond",
-    "firm": "KBW",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$38.00",
-    "projected": "+26.3%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Michael Brown",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$41.00",
-    "projected": "+33.4%",
-    "date": "10/06/2026"
-  },
-  {
     "analyst": "Michael Cho",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -88,24 +106,6 @@
     "price_target": "$29.50",
     "projected": "+1.8%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+10.4%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Stephen Biggar",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/28/2026"
   },
   {
     "analyst": "Brian Bedell",

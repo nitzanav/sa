@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Danilo Gargiulo",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+3.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Jon Tower",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -7,15 +25,6 @@
     "price_target": "$247.00",
     "projected": "+19.6%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Danilo Gargiulo",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+14.9%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Christopher Carril",
@@ -180,6 +189,15 @@
     "date": "09/01/2026"
   },
   {
+    "analyst": "Chris O’Cull",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$250.00",
+    "projected": "+10.4%",
+    "date": "08/24/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
@@ -189,7 +207,7 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Chris O`Cull",
+    "analyst": "Chris O’Cull",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Upgraded",

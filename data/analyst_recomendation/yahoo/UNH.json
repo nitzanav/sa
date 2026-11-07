@@ -4,27 +4,18 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$493.00",
-    "projected": "+13.3%",
-    "date": "07/22/2026"
+    "price_target": "$500.00",
+    "projected": "+17.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$529.00",
-    "projected": "+24%",
-    "date": "07/17/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$485.00",
-    "projected": "+13.7%",
-    "date": "07/13/2026"
+    "price_target": "$531.00",
+    "projected": "+30.5%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -36,13 +27,22 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$524.00",
-    "projected": "+27.7%",
-    "date": "10/16/2026"
+    "price_target": "$487.00",
+    "projected": "+18%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$504.00",
+    "projected": "+31.8%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Barclays",
@@ -54,13 +54,13 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$504.00",
-    "projected": "+31.8%",
-    "date": "10/14/2026"
+    "price_target": "$524.00",
+    "projected": "+27.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -85,8 +85,8 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$478.00",
-    "projected": "+12%",
-    "date": "07/18/2026"
+    "price_target": "$498.00",
+    "projected": "+18.1%",
+    "date": "10/21/2026"
   }
 ]

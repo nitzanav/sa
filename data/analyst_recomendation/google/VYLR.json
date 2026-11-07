@@ -1,0 +1,83 @@
+[
+  {
+    "analyst": "Kevin McCarthy",
+    "firm": "Vertical Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$74.00",
+    "projected": "+2.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "David Symonds",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$75.00",
+    "projected": "-0.6%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+12.6%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "Lucas Beaumont",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$89.00",
+    "projected": "+20.3%",
+    "date": "10/12/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$87.00",
+    "projected": "+17.8%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Salvator Tiano",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/07/2026"
+  },
+  {
+    "analyst": "Kristen Owen",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$82.00",
+    "projected": "+14%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$78.00",
+    "projected": "+17.1%",
+    "date": "10/05/2026"
+  },
+  {
+    "analyst": "Edlain Rodriguez",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$84.00",
+    "projected": "+22.3%",
+    "date": "10/04/2026"
+  }
+]

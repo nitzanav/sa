@@ -4,9 +4,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$257.00",
-    "projected": "+4.9%",
-    "date": "09/19/2026"
+    "price_target": "$271.00",
+    "projected": "+10.8%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Jefferies",
@@ -31,9 +31,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$272.00",
-    "projected": "+13.1%",
-    "date": "07/23/2026"
+    "price_target": "$280.00",
+    "projected": "+16.2%",
+    "date": "10/24/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -85,8 +85,8 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$262.00",
-    "projected": "+7.6%",
-    "date": "06/25/2026"
+    "price_target": "$265.00",
+    "projected": "+10%",
+    "date": "10/24/2026"
   }
 ]

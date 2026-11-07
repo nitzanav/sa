@@ -1,30 +1,75 @@
 [
   {
-    "analyst": "Rowland Mayor",
-    "firm": "RBC Capital",
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+12.5%",
-    "date": "10/12/2026"
+    "price_target": "$89.00",
+    "projected": "+12.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Elyse Greenspan",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+3%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Rowland Mayor",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+7.3%",
-    "date": "10/12/2026"
+    "price_target": "$87.00",
+    "projected": "+6.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$84.00",
+    "projected": "+3.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Alex Scott",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "-0.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ryan Tunis",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+9.6%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Joshua Shanker",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$86.00",
-    "projected": "+11.2%",
-    "date": "10/12/2026"
+    "action": "Reiterated",
+    "price_target": "$91.00",
+    "projected": "+10.9%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Meyer Shields",
@@ -45,30 +90,12 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+10.8%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Vikram Gandhi",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$88.00",
     "projected": "+17.4%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Alex Scott",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+8.1%",
     "date": "10/07/2026"
   },
   {
@@ -99,15 +126,6 @@
     "date": "09/01/2026"
   },
   {
-    "analyst": "Ryan Tunis",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+18.2%",
-    "date": "08/17/2026"
-  },
-  {
     "analyst": "Michael Zaremski",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -115,24 +133,6 @@
     "price_target": "$89.00",
     "projected": "+16.2%",
     "date": "08/12/2026"
-  },
-  {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "+8%",
-    "date": "08/10/2026"
-  },
-  {
-    "analyst": "David Motemaden",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+7.4%",
-    "date": "08/07/2026"
   },
   {
     "analyst": "Unknown Analyst",

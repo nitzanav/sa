@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+62.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+18.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$132.00",
+    "projected": "+33.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ric Prentiss",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$118.00",
+    "projected": "+19%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Sebastiano Petti",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -7,24 +43,6 @@
     "price_target": "$144.00",
     "projected": "+64.1%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$134.00",
-    "projected": "+44.4%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "John Hodulik",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$150.00",
-    "projected": "+60.3%",
-    "date": "09/08/2026"
   },
   {
     "analyst": "Bryan Kraft",
@@ -36,15 +54,6 @@
     "date": "08/04/2026"
   },
   {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+33.6%",
-    "date": "08/04/2026"
-  },
-  {
     "analyst": "Gregory Williams",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$130.00",
     "projected": "+48.5%",
     "date": "08/04/2026"
-  },
-  {
-    "analyst": "Ric Prentiss",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$115.00",
-    "projected": "+26.7%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Pierre Ferragu",

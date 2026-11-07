@@ -1,57 +1,84 @@
 [
   {
-    "analyst": "Christopher Snyder",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$375.00",
-    "projected": "+6.6%",
-    "date": "10/15/2026"
+    "analyst": "Joe Ritchie",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$357.00",
+    "projected": "+2.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+9.2%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Brett Linzey",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$395.00",
-    "projected": "+12.3%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Noah Kaye",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$548.00",
-    "projected": "+58.8%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Joe Ritchie",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$390.00",
-    "projected": "+13%",
-    "date": "10/14/2026"
+    "price_target": "$350.00",
+    "projected": "+7.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Jeff Reive",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$406.00",
-    "projected": "+15.3%",
-    "date": "10/13/2026"
+    "price_target": "$378.00",
+    "projected": "+8.3%",
+    "date": "10/28/2026"
   },
   {
-    "analyst": "Stephen Tusa",
-    "firm": "Wells Fargo",
+    "analyst": "Tommy Moll",
+    "firm": "Stephens",
     "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$424.00",
-    "projected": "+14.5%",
-    "date": "09/24/2026"
+    "action": "Downgraded",
+    "price_target": "$350.00",
+    "projected": "+7.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Timothy Wojs",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$362.00",
+    "projected": "+11.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Noah Kaye",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Christopher Snyder",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "-2.7%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -72,15 +99,6 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Timothy Wojs",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$495.00",
-    "projected": "+15.1%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Deane Dray",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -88,15 +106,6 @@
     "price_target": "$469.00",
     "projected": "-4.5%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Jeffrey Hammond",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
   },
   {
     "analyst": "Ryan Merkel",

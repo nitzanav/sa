@@ -1,48 +1,93 @@
 [
   {
-    "analyst": "Stephen Powers",
-    "firm": "Deutsche Bank",
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+9.6%",
-    "date": "10/19/2026"
+    "price_target": "$94.00",
+    "projected": "-1.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "-19.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+4.3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Andrea Faria Teixeira",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
     "action": "Reiterated",
-    "price_target": "$83.00",
-    "projected": "-4.3%",
-    "date": "10/19/2026"
+    "price_target": "$86.00",
+    "projected": "-6.5%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Anna Lizzul",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+4.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "-2.2%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Lauren Lieberman",
     "firm": "Barclays",
     "recommendation": "Sell",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$80.00",
-    "projected": "-7.7%",
-    "date": "10/16/2026"
+    "projected": "-13%",
+    "date": "11/03/2026"
   },
   {
-    "analyst": "Dara Mohsenian",
-    "firm": "Morgan Stanley",
+    "analyst": "Javier Escalante",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$99.00",
+    "projected": "+10.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+2.1%",
-    "date": "10/15/2026"
+    "price_target": "$110.00",
+    "projected": "+25.1%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Peter Grom",
-    "firm": "UBS",
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$91.00",
-    "projected": "+6.8%",
-    "date": "10/15/2026"
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+10.9%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Filippo Falorni",
@@ -61,51 +106,6 @@
     "price_target": "$80.00",
     "projected": "-6.2%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Nik Modi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+32.6%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Bonnie Herzog",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "-8.6%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Christopher Carey",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+5%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Anna Lizzul",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+18.9%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Javier Escalante",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+10.6%",
-    "date": "09/11/2026"
   },
   {
     "analyst": "Taylor Conrad",

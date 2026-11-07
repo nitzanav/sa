@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Brad Zelnick",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$300.00",
+    "projected": "+22.9%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Tal Liani",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+11.9%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Gregg Moskowitz",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+13.4%",
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Eric Heath",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -105,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$280.00",
     "projected": "+13.4%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Tal Liani",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+5.3%",
     "date": "09/18/2026"
   },
   {
@@ -268,15 +286,6 @@
     "price_target": "$300.00",
     "projected": "+31.6%",
     "date": "09/01/2026"
-  },
-  {
-    "analyst": "Gregg Moskowitz",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+9.5%",
-    "date": "08/30/2026"
   },
   {
     "analyst": "Joseph Bonner",
@@ -456,15 +465,6 @@
     "action": "Maintained",
     "price_target": "$400.00",
     "projected": "+314.3%",
-    "date": "03/04/2026"
-  },
-  {
-    "analyst": "Brad Zelnick",
-    "firm": "Deutsche Bank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+355.7%",
     "date": "03/04/2026"
   },
   {

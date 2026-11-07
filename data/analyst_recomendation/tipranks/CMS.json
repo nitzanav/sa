@@ -1,11 +1,47 @@
 [
   {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+13.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+10.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.2%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$69.00",
-    "projected": "+2.6%",
+    "projected": "+1%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$73.00",
-    "projected": "+8.5%",
+    "projected": "+6.3%",
     "date": "10/21/2026"
   },
   {
@@ -23,26 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$78.00",
-    "projected": "+16%",
+    "projected": "+14.9%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$79.00",
-    "projected": "+17.4%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$76.00",
-    "projected": "+13%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Nicholas Campanella",
@@ -61,15 +79,6 @@
     "price_target": "$77.00",
     "projected": "+16.2%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+23.9%",
-    "date": "10/01/2026"
   },
   {
     "analyst": "Julien Dumoulin Smith",
@@ -105,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$84.00",
     "projected": "+12.8%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+3.4%",
     "date": "07/29/2026"
   },
   {

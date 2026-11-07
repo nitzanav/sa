@@ -31,9 +31,9 @@
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+19.6%",
-    "date": "07/21/2026"
+    "price_target": "$187.00",
+    "projected": "+18.9%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Jefferies",
@@ -43,15 +43,6 @@
     "price_target": "$175.00",
     "projected": "+35.2%",
     "date": "07/03/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$157.00",
-    "projected": "+15.2%",
-    "date": "05/28/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -72,13 +63,22 @@
     "date": "08/14/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$157.00",
+    "projected": "+15.2%",
+    "date": "05/28/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$147.00",
-    "projected": "-0.7%",
-    "date": "08/18/2026"
+    "price_target": "$155.00",
+    "projected": "+6.6%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Truist Securities",

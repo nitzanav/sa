@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Mikhail Paramonov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,400.00",
+    "projected": "+19.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "William Katz",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$1,405.00",
+    "projected": "+23.4%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Brennan Hawken",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,350.00",
+    "projected": "+18.8%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Jose Luis Pascual",
+    "firm": "JLPascual",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$1,210.00",
+    "projected": "+7.3%",
+    "date": "10/18/2026"
+  },
+  {
+    "analyst": "Michael Cyprys",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,531.00",
+    "projected": "+35.7%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Stephen Biggar",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -48,7 +93,7 @@
     "analyst": "Daniel Welden",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$1,250.00",
     "projected": "+14.8%",
     "date": "10/14/2026"
@@ -81,33 +126,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Michael Cyprys",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,468.00",
-    "projected": "+33.5%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Brennan Hawken",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,300.00",
-    "projected": "+19.6%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "William Katz",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,212.00",
-    "projected": "+11.5%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -124,15 +142,6 @@
     "price_target": "$1,435.00",
     "projected": "+33%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Jose Luis Pascual",
-    "firm": "JLPascual",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,300.00",
-    "projected": "+23.1%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "Manyi Lu",

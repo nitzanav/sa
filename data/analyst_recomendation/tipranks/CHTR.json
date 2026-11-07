@@ -1,11 +1,47 @@
 [
   {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$135.00",
+    "projected": "+10.3%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+19%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Sebastiano Petti",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+33.7%",
+    "date": "11/02/2026"
+  },
+  {
     "analyst": "Laurent Yoon",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+8.8%",
+    "projected": "+9.6%",
     "date": "10/23/2026"
   },
   {
@@ -18,15 +54,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Sebastiano Petti",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Kannan Venkateshwar",
     "firm": "Barclays",
     "recommendation": "Sell",
@@ -34,15 +61,6 @@
     "price_target": "$115.00",
     "projected": "+4.2%",
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$140.00",
-    "projected": "+24.2%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "John Hodulik",
@@ -61,24 +79,6 @@
     "price_target": "$118.00",
     "projected": "-19.1%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+34.8%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Joseph Bonner",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/27/2026"
   },
   {
     "analyst": "Jessica Reif Ehrlich",
@@ -105,6 +105,15 @@
     "action": "Reiterated",
     "price_target": "$380.00",
     "projected": "+202.8%",
+    "date": "07/27/2026"
+  },
+  {
+    "analyst": "Joseph Bonner",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
     "date": "07/27/2026"
   },
   {
@@ -153,15 +162,6 @@
     "date": "02/02/2026"
   },
   {
-    "analyst": "Brandon Nispel",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "02/02/2026"
-  },
-  {
     "analyst": "Keith Snyder CFA",
     "firm": "CFRA",
     "recommendation": "Sell",
@@ -169,14 +169,5 @@
     "price_target": "$165.00",
     "projected": null,
     "date": "12/02/2025"
-  },
-  {
-    "analyst": "Jeffrey Wlodarczak",
-    "firm": "Pivotal Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": null,
-    "date": "10/31/2025"
   }
 ]

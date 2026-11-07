@@ -4,9 +4,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$209.00",
-    "projected": "+52.6%",
-    "date": "07/16/2026"
+    "price_target": "$182.00",
+    "projected": "+88.2%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Jefferies",
@@ -31,18 +31,18 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$204.00",
-    "projected": "+60.8%",
-    "date": "07/29/2026"
+    "price_target": "$163.00",
+    "projected": "+68.5%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$159.00",
-    "projected": "+50.4%",
-    "date": "09/18/2026"
+    "price_target": "$144.00",
+    "projected": "+45.2%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "BMO Capital",

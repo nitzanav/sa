@@ -9,6 +9,15 @@
     "date": "05/11/2026"
   },
   {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "-9.7%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -31,9 +40,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$66.00",
-    "projected": "+36.7%",
-    "date": "10/15/2026"
+    "price_target": "$63.00",
+    "projected": "+20.4%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -58,9 +67,18 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+34.1%",
-    "date": "09/14/2026"
+    "price_target": "$70.00",
+    "projected": "+33.8%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+22.2%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -69,24 +87,6 @@
     "action": "Maintained",
     "price_target": "$66.00",
     "projected": "+26.2%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+23.3%",
-    "date": "03/04/2026"
-  },
-  {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+22.4%",
     "date": "07/27/2026"
   }
 ]

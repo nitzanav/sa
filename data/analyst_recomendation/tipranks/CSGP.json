@@ -1,12 +1,21 @@
 [
   {
-    "analyst": "Ryan Tomasello",
-    "firm": "KBW",
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+5%",
-    "date": "10/22/2026"
+    "price_target": "$33.00",
+    "projected": "+19.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$30.00",
+    "projected": "0%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Ashish Sabadra",
@@ -14,17 +23,62 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$34.00",
-    "projected": "+5%",
-    "date": "10/16/2026"
+    "projected": "+13.3%",
+    "date": "10/28/2026"
   },
   {
-    "analyst": "Jeffrey Silber",
-    "firm": "BMO Capital",
+    "analyst": "Alexei Gogolev",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$44.00",
+    "projected": "+46.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "-13.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$36.00",
+    "projected": "+20%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Jeffrey Meuler",
+    "firm": "Robert W. Baird",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+11.9%",
-    "date": "10/13/2026"
+    "price_target": "$32.00",
+    "projected": "+6.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Jake Fuller",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+16.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Ryan Tomasello",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "0%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Mayank Tandon",
@@ -36,15 +90,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Jason Haas CFA",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$25.00",
-    "projected": "-9%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Stephen Sheldon",
     "firm": "William Blair",
     "recommendation": "Hold",
@@ -54,39 +99,12 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "George Tong",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$40.00",
-    "projected": "+28.4%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Curtis Nagle",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+15.3%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Scott Wurtzel",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
     "projected": "+22.9%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Alexei Gogolev",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$52.00",
-    "projected": "+99.8%",
     "date": "07/29/2026"
   },
   {
@@ -99,15 +117,6 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "Jake Fuller",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$42.00",
-    "projected": "+61.4%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Andrew Boone",
     "firm": "Citizens JMP",
     "recommendation": "Buy",
@@ -115,15 +124,6 @@
     "price_target": "$35.00",
     "projected": "+34.5%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Jeffrey Meuler",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$34.00",
-    "projected": "+25.9%",
-    "date": "07/14/2026"
   },
   {
     "analyst": "Michael Rindos",

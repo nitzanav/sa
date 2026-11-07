@@ -81,12 +81,12 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$66.00",
-    "projected": "+0.7%",
-    "date": "10/01/2026"
+    "price_target": "$79.00",
+    "projected": "+45.8%",
+    "date": "06/03/2026"
   }
 ]

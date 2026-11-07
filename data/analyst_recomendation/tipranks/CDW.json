@@ -1,30 +1,48 @@
 [
   {
-    "analyst": "Unknown Analyst",
-    "firm": "UBS",
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$159.00",
-    "projected": "+1.9%",
-    "date": "10/16/2026"
+    "price_target": "$195.00",
+    "projected": "+14.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$193.00",
+    "projected": "+13%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$195.00",
+    "projected": "+14.2%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Asiya Merchant",
     "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+9.9%",
-    "date": "10/08/2026"
+    "price_target": "$170.00",
+    "projected": "-0.5%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Erik Woodring",
-    "firm": "Morgan Stanley",
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$171.00",
-    "projected": "+16.1%",
-    "date": "09/21/2026"
+    "price_target": "$185.00",
+    "projected": "+15%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Guy Hardwick",
@@ -45,24 +63,6 @@
     "date": "09/03/2026"
   },
   {
-    "analyst": "Amit Daryanani",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+11.4%",
-    "date": "08/26/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+22.5%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Adam Tindle",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -70,14 +70,5 @@
     "price_target": "$150.00",
     "projected": "+17.6%",
     "date": "05/06/2026"
-  },
-  {
-    "analyst": "Ruplu Bhattacharya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": null,
-    "date": "11/06/2025"
   }
 ]

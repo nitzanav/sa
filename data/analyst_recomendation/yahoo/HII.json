@@ -31,9 +31,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$342.00",
-    "projected": null,
-    "date": "11/03/2025"
+    "price_target": "$375.00",
+    "projected": "+19.7%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -43,5 +43,14 @@
     "price_target": "$400.00",
     "projected": "0%",
     "date": "02/12/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$352.00",
+    "projected": "+12.3%",
+    "date": "11/03/2026"
   }
 ]

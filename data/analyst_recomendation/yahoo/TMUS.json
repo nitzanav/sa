@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+9.6%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -7,15 +16,6 @@
     "price_target": "$235.00",
     "projected": "+36.5%",
     "date": "07/25/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+4.1%",
-    "date": "03/17/2026"
   },
   {
     "analyst": "Benchmark",
@@ -31,9 +31,9 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+51%",
-    "date": "07/24/2026"
+    "price_target": "$258.00",
+    "projected": "+71.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Barclays",
@@ -58,9 +58,9 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+45.2%",
-    "date": "07/25/2026"
+    "price_target": "$240.00",
+    "projected": "+60%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -72,15 +72,6 @@
     "date": "12/12/2025"
   },
   {
-    "analyst": "Wolfe Research",
-    "firm": "Wolfe Research",
-    "recommendation": "",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/15/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$220.00",
     "projected": "+18.4%",
     "date": "07/07/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/15/2026"
   }
 ]

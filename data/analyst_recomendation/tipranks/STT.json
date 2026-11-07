@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$192.50",
+    "projected": "+11.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+13.9%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Brennan Hawken",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$185.00",
-    "projected": "+9.8%",
+    "projected": "+11.9%",
     "date": "10/19/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$190.00",
-    "projected": "+12.8%",
+    "projected": "+14.9%",
     "date": "10/19/2026"
   },
   {
@@ -88,24 +106,6 @@
     "price_target": "$215.00",
     "projected": "+32.8%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+23.5%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$187.50",
-    "projected": "+7.1%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Manan Gosalia",

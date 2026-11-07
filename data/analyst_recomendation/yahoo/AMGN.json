@@ -22,18 +22,18 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+8.8%",
-    "date": "08/06/2026"
+    "price_target": "$536.00",
+    "projected": "+11.8%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+14.4%",
-    "date": "08/05/2026"
+    "price_target": "$480.00",
+    "projected": "+8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Jefferies",
@@ -58,18 +58,18 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "-5.7%",
-    "date": "10/07/2026"
+    "price_target": "$398.00",
+    "projected": "-17%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+16%",
-    "date": "10/09/2026"
+    "price_target": "$530.00",
+    "projected": "+9.5%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -85,8 +85,8 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$405.00",
-    "projected": "+0.2%",
-    "date": "08/08/2026"
+    "price_target": "$465.00",
+    "projected": "-3%",
+    "date": "11/04/2026"
   }
 ]

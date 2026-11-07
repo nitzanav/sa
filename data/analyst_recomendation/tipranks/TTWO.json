@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "Eric Handler",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$272.00",
+    "projected": "+29.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Clark Lampen",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$262.00",
+    "projected": "+31.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "James Callahan CFA",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$290.00",
+    "projected": "+51.8%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Brian Pitz",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$285.00",
+    "projected": "+49.2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Omar Dessouky",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$330.00",
+    "projected": "+64.8%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Eric Sheridan",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$285.00",
-    "projected": "+35.4%",
+    "projected": "+38.9%",
     "date": "10/19/2026"
   },
   {
@@ -15,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$270.00",
     "projected": "+33.1%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Omar Dessouky",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$368.00",
-    "projected": "+81.4%",
     "date": "10/15/2026"
   },
   {
@@ -63,39 +99,12 @@
     "date": "09/18/2026"
   },
   {
-    "analyst": "James Callahan CFA",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$290.00",
-    "projected": "+36.5%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Clark Lampen",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$313.00",
-    "projected": "+31%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Drew Crum",
     "firm": "B. Riley Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$300.00",
     "projected": "+25.5%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Brian Pitz",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$285.00",
-    "projected": "+19.2%",
     "date": "08/28/2026"
   },
   {
@@ -126,15 +135,6 @@
     "date": "08/10/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$280.00",
-    "projected": "+13.1%",
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Alicia Reese",
     "firm": "Wedbush",
     "recommendation": "Buy",
@@ -144,21 +144,21 @@
     "date": "08/10/2026"
   },
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+13.1%",
+    "date": "08/10/2026"
+  },
+  {
     "analyst": "Colin Sebastian",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$270.00",
     "projected": "+9.1%",
-    "date": "08/10/2026"
-  },
-  {
-    "analyst": "Eric Handler",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$300.00",
-    "projected": "+21.2%",
     "date": "08/10/2026"
   },
   {

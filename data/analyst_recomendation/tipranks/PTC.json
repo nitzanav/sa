@@ -1,20 +1,38 @@
 [
   {
+    "analyst": "Kenneth Wong",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Daniel Jester",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+5.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Jason Celino",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Tyler Radke",
     "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$205.00",
     "projected": "+6.2%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Kenneth Wong",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
     "date": "10/06/2026"
   },
   {
@@ -54,15 +72,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Daniel Jester",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$205.00",
-    "projected": "+4.7%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Saket Kalia",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -78,15 +87,6 @@
     "action": "Upgraded",
     "price_target": "$205.00",
     "projected": "+4.7%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Jason Celino",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
     "date": "10/05/2026"
   },
   {

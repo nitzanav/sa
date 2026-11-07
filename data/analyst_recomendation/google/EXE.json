@@ -1,12 +1,111 @@
 [
   {
-    "analyst": "Bob Brackett",
-    "firm": "Bernstein",
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$127.00",
-    "projected": "+39.9%",
-    "date": "10/16/2026"
+    "price_target": "$121.00",
+    "projected": "+31.6%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Gabriel Daoud",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+32.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Sergey Pigarev",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$113.00",
+    "projected": "+22.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+33.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+27.3%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Tim Rezvan",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Scott Hanold",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+42.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "David Deckelbaum",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+42.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Mark Lear",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "+17.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+13.1%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$133.00",
+    "projected": "+40.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+25.7%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -18,31 +117,13 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Hold",
+    "analyst": "Bob Brackett",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "+17.8%",
+    "price_target": "$127.00",
+    "projected": "+39.9%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$129.00",
-    "projected": "+40.8%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Josh Silverstein",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "+30.9%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -51,15 +132,6 @@
     "action": "Initiated",
     "price_target": "$111.00",
     "projected": "+20.4%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Scott Hanold",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+42.1%",
     "date": "10/14/2026"
   },
   {
@@ -90,24 +162,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Gabriel Daoud",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+41.6%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$124.00",
-    "projected": "+45.2%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Lloyd Byrne",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -115,33 +169,6 @@
     "price_target": "$136.00",
     "projected": "+59.2%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Neil Mehta",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "+30.5%",
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$133.00",
-    "projected": "+51.3%",
-    "date": "09/23/2026"
-  },
-  {
-    "analyst": "David Deckelbaum",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$135.00",
-    "projected": "+38.2%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "Tim O'Toole",
@@ -160,15 +187,6 @@
     "price_target": "$135.00",
     "projected": "+37.3%",
     "date": "09/09/2026"
-  },
-  {
-    "analyst": "Sergey Pigarev",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$122.00",
-    "projected": "+22.4%",
-    "date": "09/03/2026"
   },
   {
     "analyst": "Charles Meade",
@@ -225,15 +243,6 @@
     "date": "04/30/2026"
   },
   {
-    "analyst": "Tim Rezvan",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "04/30/2026"
-  },
-  {
     "analyst": "Michael Scialla",
     "firm": "Stephens",
     "recommendation": "Buy",
@@ -250,15 +259,6 @@
     "price_target": "$120.00",
     "projected": "+23.8%",
     "date": "04/27/2026"
-  },
-  {
-    "analyst": "Mark Lear",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$138.00",
-    "projected": "+41.4%",
-    "date": "04/10/2026"
   },
   {
     "analyst": "Phillip Jungwirth",

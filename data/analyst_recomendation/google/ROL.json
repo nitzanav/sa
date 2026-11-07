@@ -2,20 +2,11 @@
   {
     "analyst": "Marc VanT Sant",
     "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "-3.8%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Joshua Chan",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$36.00",
-    "projected": "+11.4%",
-    "date": "10/14/2026"
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$49.00",
+    "projected": "+31.1%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Greg Parrish",
@@ -23,8 +14,71 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$43.00",
-    "projected": "+32.9%",
-    "date": "10/13/2026"
+    "projected": "+22%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "-26.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+25.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Brian McNamara",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "-6.4%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+27.6%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+31.9%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Joshua Chan",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$37.00",
+    "projected": "+4.9%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$35.00",
+    "projected": "+6.1%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Tomohiko Sano",
@@ -36,15 +90,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Manav Patnaik",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+39.1%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Curtis Nagle",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -52,15 +97,6 @@
     "price_target": "$28.00",
     "projected": "-13.6%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Jason Haas CFA",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$27.00",
-    "projected": "-11.2%",
-    "date": "09/29/2026"
   },
   {
     "analyst": "Tim Mulrooney",
@@ -97,42 +133,6 @@
     "price_target": "$22.00",
     "projected": "-41.8%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Brian McNamara",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+18.2%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "George Tong",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$49.00",
-    "projected": "+26.3%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$40.00",
-    "projected": "+7.2%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$52.00",
-    "projected": "+0.4%",
-    "date": "05/27/2026"
   },
   {
     "analyst": "Oliver Davies CFA",

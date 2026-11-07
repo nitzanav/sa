@@ -1,21 +1,30 @@
 [
   {
+    "analyst": "Anthony Chukumba",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$140.00",
+    "projected": "-3.2%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Zhihan Ma",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$130.00",
-    "projected": "+4.4%",
-    "date": "10/15/2026"
+    "projected": "-5.6%",
+    "date": "11/03/2026"
   },
   {
-    "analyst": "Anthony Chukumba",
-    "firm": "Loop Capital Markets",
+    "analyst": "Matthew Boss",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$140.00",
-    "projected": "+21.8%",
-    "date": "10/01/2026"
+    "action": "Maintained",
+    "price_target": "$159.00",
+    "projected": "+23.8%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Michael Montani",
@@ -54,24 +63,6 @@
     "date": "08/31/2026"
   },
   {
-    "analyst": "Matthew Boss",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+33.4%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Kate McShane",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$131.00",
-    "projected": "+2.8%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Simeon Gutman",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -108,12 +99,12 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "Joe Feldman",
-    "firm": "Telsey Advisory",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+17.7%",
+    "analyst": "Kate McShane",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+2.8%",
     "date": "08/28/2026"
   },
   {
@@ -123,6 +114,15 @@
     "action": "Maintained",
     "price_target": "$147.00",
     "projected": "+15.3%",
+    "date": "08/28/2026"
+  },
+  {
+    "analyst": "Joe Feldman",
+    "firm": "Telsey Advisory",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+17.7%",
     "date": "08/28/2026"
   },
   {

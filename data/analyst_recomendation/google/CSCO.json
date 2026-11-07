@@ -2,11 +2,38 @@
   {
     "analyst": "Meta Marshall",
     "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$120.00",
+    "projected": "+19.7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Peter Weed",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+9.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Tal Liani",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+20.4%",
-    "date": "10/15/2026"
+    "price_target": "$150.00",
+    "projected": "+47.1%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Daniel Zhu‏",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+5.4%",
+    "date": "10/25/2026"
   },
   {
     "analyst": "Atif Malik",
@@ -16,15 +43,6 @@
     "price_target": "$139.00",
     "projected": "+19.1%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Daniel Zhu‏",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-6%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -123,15 +141,6 @@
     "action": "Reiterated",
     "price_target": "$165.00",
     "projected": "+44.8%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Tal Liani",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "+31.7%",
     "date": "08/13/2026"
   },
   {

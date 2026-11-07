@@ -4,18 +4,54 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$420.00",
-    "projected": "+13.7%",
-    "date": "10/13/2026"
+    "price_target": "$500.00",
+    "projected": "+18.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Daniel Markowitz CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$480.00",
+    "projected": "+14.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$495.00",
+    "projected": "+18.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Doug Schenkel",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$495.00",
+    "projected": "+18.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$494.00",
+    "projected": "+17.9%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Luke Sergott",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+18.4%",
-    "date": "10/07/2026"
+    "price_target": "$500.00",
+    "projected": "+19.3%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Kallum Titchmarsh",
@@ -25,42 +61,6 @@
     "price_target": "$400.00",
     "projected": "+8.9%",
     "date": "09/22/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+22.9%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Doug Schenkel",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+22.9%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$412.00",
-    "projected": "+19.9%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Daniel Markowitz CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+29.1%",
-    "date": "07/27/2026"
   },
   {
     "analyst": "Michael Ryskin",

@@ -27,22 +27,13 @@
     "date": "04/10/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": null,
-    "date": "10/29/2025"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+9.7%",
-    "date": "07/29/2026"
+    "price_target": "$75.00",
+    "projected": "+15.4%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -58,18 +49,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+11.6%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+6.7%",
-    "date": "04/29/2026"
+    "price_target": "$68.00",
+    "projected": "+4.6%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Barclays",
@@ -81,6 +63,15 @@
     "date": "10/16/2026"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+6.7%",
+    "date": "04/29/2026"
+  },
+  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$68.00",
     "projected": "+13.1%",
     "date": "02/05/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+6.7%",
+    "date": "02/04/2026"
   }
 ]

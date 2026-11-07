@@ -1,5 +1,95 @@
 [
   {
+    "analyst": "Graham Doyle",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+0.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Rick Wise",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Robbie Marcus",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Suraj Kalia",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+11.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Vik Chopra",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "-1.6%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Anthony Petrone",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+18.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+3.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+24.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Kendall Au",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+18.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$84.00",
+    "projected": "+10.5%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Ryan Zimmerman",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -7,15 +97,6 @@
     "price_target": "$75.00",
     "projected": "+13.6%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Christopher Pasquale",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$85.00",
-    "projected": "+30.9%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "David Saxon",
@@ -27,42 +108,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$71.00",
-    "projected": "+11.6%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Kendall Au",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+22.4%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "+14.8%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Vik Chopra",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$71.00",
-    "projected": "+9.3%",
-    "date": "09/13/2026"
-  },
-  {
     "analyst": "Larry Biegelsen",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -72,57 +117,12 @@
     "date": "08/25/2026"
   },
   {
-    "analyst": "Anthony Petrone",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+23.5%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Graham Doyle",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$73.00",
-    "projected": "+6%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Robbie Marcus",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "-1.9%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Rick Wise",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+12.1%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Vijay Kumar",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$84.00",
     "projected": "+17.7%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Suraj Kalia",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+19.1%",
     "date": "07/30/2026"
   },
   {

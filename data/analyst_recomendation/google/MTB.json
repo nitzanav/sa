@@ -1,5 +1,113 @@
 [
   {
+    "analyst": "Tracy Benguigui",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$198.00",
+    "projected": "-11.1%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+4.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Brian Foran",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+10%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$247.00",
+    "projected": "+15.3%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Daniel Tamayo",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+14.3%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Ryan Kenny",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$294.00",
+    "projected": "+37.2%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+16.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Christopher Mcgratty",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+16.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$267.00",
+    "projected": "+24.6%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+3.8%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Stephen Biggar",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$245.00",
+    "projected": "+10.6%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Dave Rochester",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -27,24 +135,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Daniel Tamayo",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$250.00",
-    "projected": "+14%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$267.00",
-    "projected": "+21.8%",
-    "date": "10/06/2026"
-  },
-  {
     "analyst": "Erika Najarian",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -52,15 +142,6 @@
     "price_target": "$238.00",
     "projected": "+8%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Ryan Kenny",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$301.00",
-    "projected": "+38.2%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Andrew J Dietrich",
@@ -72,15 +153,6 @@
     "date": "10/02/2026"
   },
   {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+6.7%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Mike Mayo",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
@@ -90,24 +162,6 @@
     "date": "09/29/2026"
   },
   {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "+15.7%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Brian Foran",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+12.8%",
-    "date": "09/23/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -115,24 +169,6 @@
     "price_target": "$255.00",
     "projected": "+11.8%",
     "date": "09/22/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$262.00",
-    "projected": "+2.8%",
-    "date": "08/18/2026"
-  },
-  {
-    "analyst": "Stephen Biggar",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+11.4%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Matt O'Connor",
@@ -159,24 +195,6 @@
     "action": "Maintained",
     "price_target": "$253.00",
     "projected": "+0.8%",
-    "date": "07/16/2026"
-  },
-  {
-    "analyst": "David George",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "-0.4%",
-    "date": "07/16/2026"
-  },
-  {
-    "analyst": "Christopher Mcgratty",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "-0.4%",
     "date": "07/16/2026"
   },
   {

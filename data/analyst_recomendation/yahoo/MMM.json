@@ -13,9 +13,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+13.3%",
-    "date": "10/09/2026"
+    "price_target": "$210.00",
+    "projected": "+9%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "UBS",
@@ -31,9 +31,9 @@
     "firm": "RBC Capital",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$132.00",
+    "price_target": "$135.00",
     "projected": "-22.8%",
-    "date": "07/23/2026"
+    "date": "10/22/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -49,9 +49,9 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$183.00",
-    "projected": "+6.4%",
-    "date": "07/22/2026"
+    "price_target": "$188.00",
+    "projected": "+9.3%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -67,9 +67,9 @@
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$171.00",
-    "projected": "+1.4%",
-    "date": "09/26/2026"
+    "price_target": "$197.00",
+    "projected": "+14.5%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Mizuho",

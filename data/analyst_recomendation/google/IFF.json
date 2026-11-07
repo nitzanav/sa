@@ -1,21 +1,75 @@
 [
   {
-    "analyst": "Lauren Lieberman",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$105.00",
-    "projected": "+15.1%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Abigail Eberts",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "+9.6%",
-    "date": "10/16/2026"
+    "projected": "+19.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$91.00",
+    "projected": "+8.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+7.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+7.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+19.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Edlain Rodriguez",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+18%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+22.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Kristen Owen",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+18.1%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Lisa De Neve",
@@ -34,24 +88,6 @@
     "price_target": "$95.00",
     "projected": "+13.1%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+19.5%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": "+10.2%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -90,15 +126,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Kristen Owen",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+9.3%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Kevin McCarthy",
     "firm": "Vertical Research",
     "recommendation": "Hold",
@@ -115,15 +142,6 @@
     "price_target": "$105.00",
     "projected": "+20.9%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "Matthew DeYoe",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$101.00",
-    "projected": "+20.5%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Daniel Lungo",
@@ -160,23 +178,5 @@
     "price_target": "$84.80",
     "projected": "+8%",
     "date": "05/09/2026"
-  },
-  {
-    "analyst": "Jeffrey Zekauskas",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$92.00",
-    "projected": "+11%",
-    "date": "05/07/2026"
-  },
-  {
-    "analyst": "Edlain Rodriguez",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+11.5%",
-    "date": "02/16/2026"
   }
 ]

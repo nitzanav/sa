@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,245.00",
+    "projected": "+35.3%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,000.00",
+    "projected": "+10%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Mikhail Paramonov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$1,100.00",
+    "projected": "+25%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Brennan Hawken",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$950.00",
+    "projected": "+7.2%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Jose Luis Pascual",
+    "firm": "JLPascual",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$687.00",
+    "projected": "-23.3%",
+    "date": "10/17/2026"
+  },
+  {
     "analyst": "Kian Abouhossein",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -79,33 +124,6 @@
     "price_target": "$1,000.00",
     "projected": "+13.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,245.00",
-    "projected": "+41.3%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Brennan Hawken",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$970.00",
-    "projected": "+7.6%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Erika Najarian",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,010.00",
-    "projected": "+12%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Glenn Schorr",

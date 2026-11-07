@@ -1,30 +1,120 @@
 [
   {
-    "analyst": "Manav Patnaik",
-    "firm": "Barclays",
+    "analyst": "Sean Kennedy",
+    "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$875.00",
-    "projected": "+12.4%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Jason Haas CFA",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$800.00",
-    "projected": "+10.7%",
-    "date": "10/14/2026"
+    "price_target": "$901.00",
+    "projected": "+31.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Ryan Griffin CFA",
     "firm": "BMO Capital",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$800.00",
+    "projected": "+20.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Alexander Hess",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1,150.00",
-    "projected": "+55%",
-    "date": "10/13/2026"
+    "price_target": "$800.00",
+    "projected": "+20.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$826.00",
+    "projected": "+11.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jeffrey Meuler",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$990.00",
+    "projected": "+49.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Owen Lau",
+    "firm": "Clear Street",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$925.00",
+    "projected": "+39.3%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Surinder Thind",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$875.00",
+    "projected": "+31.7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$770.00",
+    "projected": "+15.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$800.00",
+    "projected": "+20.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$650.00",
+    "projected": "-2.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$720.00",
+    "projected": "+2.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$942.00",
+    "projected": "+25.7%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/16/2026"
   },
   {
     "analyst": "Patrick O'Shaughnessy",
@@ -36,24 +126,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "George Tong",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,129.00",
-    "projected": "+70.6%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Jeffrey Meuler",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,070.00",
-    "projected": "+74.3%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Jeffrey Silber",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -63,33 +135,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Curtis Nagle",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$700.00",
-    "projected": "+4.8%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Surinder Thind",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,675.00",
-    "projected": "+150.7%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,525.00",
-    "projected": "+128.3%",
-    "date": "09/29/2026"
-  },
-  {
     "analyst": "Craig Huber",
     "firm": "Huber Research",
     "recommendation": "Sell",
@@ -97,42 +142,6 @@
     "price_target": "$710.00",
     "projected": "+6.3%",
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Owen Lau",
-    "firm": "Clear Street",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,600.00",
-    "projected": "+59.7%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Kevin Mcveigh",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$1,100.00",
-    "projected": "+9.8%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Alexander Hess",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,530.00",
-    "projected": "+47.1%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Sean Kennedy",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,344.00",
-    "projected": "+20.9%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Scott Wurtzel",

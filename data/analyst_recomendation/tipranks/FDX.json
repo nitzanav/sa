@@ -1,12 +1,102 @@
 [
   {
-    "analyst": "Alex Irving",
+    "analyst": "Fadi Chamoun",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "+3%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Christian Wetherbee",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+33.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Ravi Shanker",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$160.00",
+    "projected": "-49.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Ariel Rosa",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$374.00",
+    "projected": "+18.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "J. Bruce Chan",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+7.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$359.00",
+    "projected": "+16.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Parash Jain",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$370.00",
+    "projected": "+22.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Brian Ossenbeck",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+32.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Jason Seidl",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$354.00",
+    "projected": "+17.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Brandon Oglenski",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+41%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "David Vernon",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$397.00",
-    "projected": "+33.9%",
-    "date": "10/23/2026"
+    "price_target": "$377.00",
+    "projected": "+25.4%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Patrick Brown",
@@ -16,24 +106,6 @@
     "price_target": "$340.00",
     "projected": "+16.3%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Ravi Shanker",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "-44.6%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Ariel Rosa",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$373.00",
-    "projected": "+29.2%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Jordan Alliger",
@@ -52,33 +124,6 @@
     "price_target": "$350.00",
     "projected": "+21.6%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Brian Ossenbeck",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$399.00",
-    "projected": "+37.1%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Brandon Oglenski",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+47.8%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Christian Wetherbee",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+48.2%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Scott Group",
@@ -135,42 +180,6 @@
     "date": "06/25/2026"
   },
   {
-    "analyst": "J. Bruce Chan",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$326.00",
-    "projected": "+3.6%",
-    "date": "06/24/2026"
-  },
-  {
-    "analyst": "Jason Seidl",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$354.00",
-    "projected": "+12.5%",
-    "date": "06/24/2026"
-  },
-  {
-    "analyst": "Fadi Chamoun",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+8%",
-    "date": "06/24/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$378.00",
-    "projected": "+20.1%",
-    "date": "06/24/2026"
-  },
-  {
     "analyst": "Jonathan Chappell",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -196,15 +205,6 @@
     "price_target": "$479.00",
     "projected": "+62.9%",
     "date": "03/23/2026"
-  },
-  {
-    "analyst": "Parash Jain",
-    "firm": "HSBC",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$360.00",
-    "projected": "+17.3%",
-    "date": "03/20/2026"
   },
   {
     "analyst": "Oliver Holmes",

@@ -22,9 +22,9 @@
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+49.3%",
-    "date": "07/07/2026"
+    "price_target": "$73.00",
+    "projected": "+36.2%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -40,9 +40,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+24.7%",
-    "date": "10/09/2026"
+    "price_target": "$73.00",
+    "projected": "+37.5%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Barclays",
@@ -58,8 +58,8 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+17.8%",
-    "date": "07/15/2026"
+    "price_target": "$60.00",
+    "projected": "+11.9%",
+    "date": "11/05/2026"
   }
 ]

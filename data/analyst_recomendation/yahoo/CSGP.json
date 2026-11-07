@@ -5,8 +5,8 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$26.00",
-    "projected": "-11.3%",
-    "date": "06/25/2026"
+    "projected": "-6.1%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -18,21 +18,21 @@
     "date": "05/19/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+46.7%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$33.00",
     "projected": "+26.8%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+99.8%",
     "date": "07/29/2026"
   },
   {
@@ -54,6 +54,15 @@
     "date": "06/25/2026"
   },
   {
+    "analyst": "Needham",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+44.5%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Stephens & Co.",
     "firm": "Stephens & Co.",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$42.00",
     "projected": "+19.2%",
     "date": "05/05/2026"
-  },
-  {
-    "analyst": "Needham",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "+44%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",

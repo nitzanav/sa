@@ -36,15 +36,6 @@
     "date": "10/02/2026"
   },
   {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+22.4%",
-    "date": "06/27/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -52,6 +43,15 @@
     "price_target": "$48.00",
     "projected": "+10.3%",
     "date": "10/02/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+22.4%",
+    "date": "06/27/2026"
   },
   {
     "analyst": "Stifel",

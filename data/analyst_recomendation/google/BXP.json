@@ -1,12 +1,84 @@
 [
   {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+13.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Caitlin Burrows",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+12.1%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+27.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+6.3%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Alexander Goldfarb",
     "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+4.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Tom Catherwood",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+37.8%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Jana Galan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+37.8%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Blaine Heck",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$72.00",
-    "projected": "+22.1%",
-    "date": "10/12/2026"
+    "price_target": "$82.00",
+    "projected": "+36.8%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "John Kim",
@@ -18,15 +90,6 @@
     "date": "10/11/2026"
   },
   {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+9.6%",
-    "date": "10/09/2026"
-  },
-  {
     "analyst": "Anthony Paolone",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -34,15 +97,6 @@
     "price_target": "$81.00",
     "projected": "+36%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+13%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Michael Lewis",
@@ -54,24 +108,6 @@
     "date": "09/09/2026"
   },
   {
-    "analyst": "Brendan Lynch",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$79.00",
-    "projected": "+17.4%",
-    "date": "09/08/2026"
-  },
-  {
-    "analyst": "Blaine Heck",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$82.00",
-    "projected": "+21%",
-    "date": "09/01/2026"
-  },
-  {
     "analyst": "Michael Goldsmith",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -79,15 +115,6 @@
     "price_target": "$70.00",
     "projected": "-0.9%",
     "date": "08/25/2026"
-  },
-  {
-    "analyst": "Jeffrey Spector",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$85.00",
-    "projected": "+25.3%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Peter Abramowitz",
@@ -117,15 +144,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Caitlin Burrows",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "-7.6%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Ronald Kamdem",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -133,15 +151,6 @@
     "price_target": "$60.00",
     "projected": "-14.7%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Tom Catherwood",
-    "firm": "BTIG",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/28/2026"
   },
   {
     "analyst": "Vikram Malhotra",

@@ -4,9 +4,18 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+6.7%",
-    "date": "09/30/2026"
+    "price_target": "$270.00",
+    "projected": "0%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$307.00",
+    "projected": "+9.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Tigress Financial",
@@ -18,15 +27,6 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "Keybanc",
-    "firm": "Keybanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+20.8%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Deutsche Bank",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -36,15 +36,6 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+22.8%",
-    "date": "05/08/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -52,6 +43,15 @@
     "price_target": "$297.00",
     "projected": "+26%",
     "date": "09/28/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+22.8%",
+    "date": "05/08/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -72,21 +72,21 @@
     "date": "02/13/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "+8.6%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+20.4%",
-    "date": "09/25/2026"
+    "price_target": "$300.00",
+    "projected": "+6.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "-0.1%",
+    "date": "10/31/2026"
   }
 ]

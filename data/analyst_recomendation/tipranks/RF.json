@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$31.00",
+    "projected": "+7.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-2.4%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Ben Gerlinger",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+14.7%",
+    "projected": "+14.2%",
     "date": "10/21/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$32.00",
-    "projected": "+14.7%",
+    "projected": "+17.4%",
     "date": "10/20/2026"
   },
   {
@@ -23,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$30.00",
-    "projected": "+7.6%",
+    "projected": "+10.1%",
     "date": "10/20/2026"
   },
   {
@@ -32,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$31.00",
-    "projected": "+11.2%",
+    "projected": "+13.1%",
     "date": "10/19/2026"
   },
   {
@@ -41,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$35.00",
-    "projected": "+25.5%",
+    "projected": "+27.7%",
     "date": "10/19/2026"
   },
   {
@@ -50,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$28.00",
-    "projected": "+0.4%",
+    "projected": "+2.2%",
     "date": "10/19/2026"
   },
   {
@@ -59,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$30.00",
-    "projected": "+7.6%",
+    "projected": "+9.5%",
     "date": "10/19/2026"
   },
   {
@@ -68,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$33.00",
-    "projected": "+18.3%",
+    "projected": "+20.4%",
     "date": "10/19/2026"
   },
   {
@@ -77,7 +95,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$30.00",
-    "projected": "+7.6%",
+    "projected": "+9.5%",
     "date": "10/19/2026"
   },
   {
@@ -86,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$33.00",
-    "projected": "+18.3%",
+    "projected": "+20.4%",
     "date": "10/19/2026"
   },
   {
@@ -95,7 +113,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$30.00",
-    "projected": "+7.6%",
+    "projected": "+9.5%",
     "date": "10/19/2026"
   },
   {
@@ -105,15 +123,6 @@
     "action": "Reiterated",
     "price_target": "$32.00",
     "projected": "+14.7%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "-3.2%",
     "date": "10/16/2026"
   },
   {
@@ -133,15 +142,6 @@
     "price_target": "$30.00",
     "projected": "+10.6%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$30.50",
-    "projected": "+13%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Matt O'Connor",

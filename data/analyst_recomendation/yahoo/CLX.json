@@ -20,38 +20,29 @@
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
-    "recommendation": "Sell",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$99.00",
-    "projected": "-6%",
-    "date": "08/05/2026"
+    "projected": "+7.6%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+2.1%",
-    "date": "10/15/2026"
+    "price_target": "$94.00",
+    "projected": "-1.1%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "-3.1%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+7.1%",
-    "date": "08/04/2026"
+    "price_target": "$86.00",
+    "projected": "-6.5%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Citigroup",
@@ -67,9 +58,18 @@
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+2.5%",
-    "date": "10/06/2026"
+    "price_target": "$90.00",
+    "projected": "-2.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+4.3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Jefferies",

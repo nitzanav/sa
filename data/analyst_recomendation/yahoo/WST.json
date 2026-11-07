@@ -4,9 +4,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+29.1%",
-    "date": "07/27/2026"
+    "price_target": "$480.00",
+    "projected": "+14.5%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Keybanc",
@@ -27,6 +27,15 @@
     "date": "09/09/2026"
   },
   {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+19.3%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Stephens & Co.",
     "firm": "Stephens & Co.",
     "recommendation": "Buy",
@@ -34,14 +43,5 @@
     "price_target": "$360.00",
     "projected": "+14.8%",
     "date": "06/03/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+18.4%",
-    "date": "10/07/2026"
   }
 ]

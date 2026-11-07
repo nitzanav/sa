@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$163.00",
+    "projected": "+0.6%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Andrew Kaplowitz",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$188.00",
-    "projected": "+32.2%",
-    "date": "10/23/2026"
+    "projected": "+28.2%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Adam Seiden",
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$160.00",
-    "projected": "+12.5%",
+    "projected": "+13.3%",
     "date": "10/19/2026"
   },
   {
@@ -52,15 +61,6 @@
     "price_target": "$160.00",
     "projected": "+16.1%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Chad Dillard",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$163.00",
-    "projected": "+18.6%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Andrew Wittmann",

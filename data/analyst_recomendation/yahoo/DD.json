@@ -22,27 +22,27 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+24.1%",
-    "date": "10/15/2026"
+    "price_target": "$173.00",
+    "projected": "+15.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$172.00",
-    "projected": "+30.9%",
-    "date": "10/06/2026"
+    "price_target": "$182.00",
+    "projected": "+21.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+10.3%",
-    "date": "02/11/2026"
+    "price_target": "$170.00",
+    "projected": "+13.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -76,9 +76,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+23.2%",
-    "date": "10/07/2026"
+    "price_target": "$176.00",
+    "projected": "+17.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "B of A Securities",

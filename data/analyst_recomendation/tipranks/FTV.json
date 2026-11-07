@@ -1,30 +1,57 @@
 [
   {
-    "analyst": "Jeff Reive",
-    "firm": "RBC Capital",
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "+2.3%",
-    "date": "10/13/2026"
+    "price_target": "$65.00",
+    "projected": "+0.4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Julian Mitchell",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "-1.8%",
-    "date": "10/09/2026"
+    "price_target": "$59.00",
+    "projected": "-8.9%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Jamie Cook",
-    "firm": "Truist Financial",
+    "analyst": "Brett Linzey",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "-15.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+9.9%",
-    "date": "10/05/2026"
+    "price_target": "$71.00",
+    "projected": "+9.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+15.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Jeff Reive",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+4.1%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Alexander Virgo",
@@ -63,15 +90,6 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "Andrew Kaplowitz",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Seaport Global",
     "recommendation": "Buy",
@@ -88,24 +106,6 @@
     "price_target": "$65.00",
     "projected": "+9.8%",
     "date": "05/04/2026"
-  },
-  {
-    "analyst": "Robert Mason CFA",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+7%",
-    "date": "02/05/2026"
-  },
-  {
-    "analyst": "Brett Linzey",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Downgraded",
-    "price_target": "$51.00",
-    "projected": "-6.8%",
-    "date": "01/05/2026"
   },
   {
     "analyst": "Joseph C Giordano",

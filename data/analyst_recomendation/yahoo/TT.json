@@ -13,9 +13,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$566.00",
-    "projected": "+24.8%",
-    "date": "07/31/2026"
+    "price_target": "$549.00",
+    "projected": "+32.2%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Barclays",
@@ -85,8 +85,8 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$502.00",
-    "projected": "+4.6%",
-    "date": "10/14/2026"
+    "price_target": "$486.00",
+    "projected": "+15.2%",
+    "date": "10/30/2026"
   }
 ]

@@ -13,9 +13,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+2.7%",
-    "date": "07/31/2026"
+    "price_target": "$85.00",
+    "projected": "+4.3%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Stifel",
@@ -49,9 +49,9 @@
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+3.3%",
-    "date": "08/04/2026"
+    "price_target": "$97.00",
+    "projected": "+19%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Citigroup",

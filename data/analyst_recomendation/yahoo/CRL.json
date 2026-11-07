@@ -13,9 +13,18 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+12.6%",
-    "date": "09/25/2026"
+    "price_target": "$400.00",
+    "projected": "+25.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$352.00",
+    "projected": "+6.6%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -25,15 +34,6 @@
     "price_target": "$310.00",
     "projected": "+18.5%",
     "date": "08/07/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$322.00",
-    "projected": "+9.8%",
-    "date": "09/26/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -49,9 +49,9 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$357.00",
-    "projected": "+22.3%",
-    "date": "10/01/2026"
+    "price_target": "$387.00",
+    "projected": "+21.4%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -72,15 +72,6 @@
     "date": "09/26/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+12.6%",
-    "date": "09/26/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$325.00",
     "projected": "+10.8%",
     "date": "09/25/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+13.6%",
+    "date": "11/05/2026"
   }
 ]

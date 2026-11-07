@@ -1,12 +1,30 @@
 [
   {
-    "analyst": "Michael Cyprys",
-    "firm": "Morgan Stanley",
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
     "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$447.00",
+    "projected": "-10.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Brennan Hawken",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$520.00",
+    "projected": "+4.1%",
+    "date": "11/01/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$483.00",
-    "projected": "-2.9%",
-    "date": "10/09/2026"
+    "price_target": "$525.00",
+    "projected": "+5.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Kenneth Lee",
@@ -14,35 +32,35 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$595.00",
-    "projected": "+19.7%",
-    "date": "10/09/2026"
+    "projected": "+19.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Thomas Gallagher",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$632.00",
-    "projected": "+27.8%",
-    "date": "10/07/2026"
+    "action": "Reiterated",
+    "price_target": "$568.00",
+    "projected": "+18.6%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Brennan Hawken",
-    "firm": "BMO Capital",
+    "analyst": "Crispin Love",
+    "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$560.00",
-    "projected": "+13.1%",
-    "date": "10/06/2026"
+    "price_target": "$561.00",
+    "projected": "+15%",
+    "date": "10/19/2026"
   },
   {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$570.00",
-    "projected": "+15.5%",
-    "date": "10/05/2026"
+    "analyst": "Michael Cyprys",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$483.00",
+    "projected": "-2.9%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "Wilma Burdis",
@@ -70,24 +88,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$545.00",
-    "projected": "+4.9%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "Crispin Love",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$518.00",
-    "projected": "+2.9%",
-    "date": "07/13/2026"
   },
   {
     "analyst": "Suneet Kamath",

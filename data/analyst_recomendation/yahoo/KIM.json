@@ -4,9 +4,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+21.8%",
-    "date": "10/12/2026"
+    "price_target": "$30.00",
+    "projected": "+22.3%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -27,6 +27,15 @@
     "date": "09/29/2026"
   },
   {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+7.6%",
+    "date": "10/02/2026"
+  },
+  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Hold",
@@ -36,13 +45,13 @@
     "date": "09/24/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Hold",
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+7.6%",
-    "date": "10/02/2026"
+    "price_target": "$25.00",
+    "projected": "+13.3%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -58,9 +67,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "-0.3%",
-    "date": "07/23/2026"
+    "price_target": "$23.00",
+    "projected": "-2.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Citigroup",
@@ -70,15 +79,6 @@
     "price_target": "$26.00",
     "projected": "+8.4%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "+13.3%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Scotiabank",

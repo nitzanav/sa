@@ -1,12 +1,66 @@
 [
   {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$362.00",
+    "projected": "+19.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+9.1%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Arun Viswanathan",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$359.00",
+    "projected": "+10.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+19.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$346.00",
-    "projected": "+17.4%",
-    "date": "10/15/2026"
+    "projected": "+14.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "James Hooper",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$373.00",
+    "projected": "+21.5%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Abigail Eberts",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "+18%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Matthew DeYoe",
@@ -27,15 +81,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "Aleksey Yefremov",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$353.00",
-    "projected": "+25.6%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Patrick Cunningham",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -43,15 +88,6 @@
     "price_target": "$312.00",
     "projected": "+12.3%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+9.7%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -126,15 +162,6 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "John McNulty",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$365.00",
-    "projected": "+21.8%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Duffy Fischer",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -144,37 +171,10 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Abigail Eberts",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$350.00",
-    "projected": "+16.8%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "John Roberts CFA",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$355.00",
-    "projected": "+15%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Peter Clark",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$345.00",
-    "projected": "+15.8%",
-    "date": "07/17/2026"
-  },
-  {
-    "analyst": "James Hooper",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
     "price_target": "$345.00",
     "projected": "+15.8%",
     "date": "07/17/2026"

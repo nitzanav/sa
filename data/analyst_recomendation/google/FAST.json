@@ -4,18 +4,36 @@
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+15%",
-    "date": "10/15/2026"
+    "price_target": "$61.00",
+    "projected": "+16.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Christine Yao",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+0.4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Andrew Obin",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$55.00",
-    "projected": "+5.4%",
-    "date": "10/15/2026"
+    "projected": "+4.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "+15.5%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Connor Cerniglia",
@@ -79,15 +97,6 @@
     "price_target": "$46.00",
     "projected": "-4.6%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Kristina Ruggeri",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+20.3%",
-    "date": "07/16/2026"
   },
   {
     "analyst": "Stephen Volkmann",

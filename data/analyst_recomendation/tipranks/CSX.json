@@ -1,11 +1,38 @@
 [
   {
-    "analyst": "Chad Dillard",
+    "analyst": "Christian Wetherbee",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "+3.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Daniel Moore CFA",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$53.00",
+    "projected": "+0.6%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Harrison Bauer",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+16.8%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Alex Irving",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$49.00",
-    "projected": "+0.1%",
+    "projected": "-5%",
     "date": "10/23/2026"
   },
   {
@@ -14,16 +41,16 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$54.00",
-    "projected": "+10.3%",
+    "projected": "+4.7%",
     "date": "10/23/2026"
   },
   {
-    "analyst": "Christian Wetherbee",
-    "firm": "Wells Fargo",
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$54.00",
-    "projected": "+10.3%",
+    "action": "Reiterated",
+    "price_target": "$57.00",
+    "projected": "+10.6%",
     "date": "10/23/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$55.00",
-    "projected": "+12.4%",
+    "projected": "+9.8%",
     "date": "10/22/2026"
   },
   {
@@ -41,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$58.00",
-    "projected": "+18.5%",
+    "projected": "+15.8%",
     "date": "10/22/2026"
   },
   {
@@ -50,7 +77,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$60.00",
-    "projected": "+22.6%",
+    "projected": "+19.8%",
     "date": "10/22/2026"
   },
   {
@@ -59,16 +86,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "-34.6%",
-    "date": "10/22/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$57.00",
-    "projected": "+16.5%",
+    "projected": "-36.1%",
     "date": "10/22/2026"
   },
   {
@@ -77,7 +95,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "+22.6%",
+    "projected": "+19.8%",
     "date": "10/22/2026"
   },
   {
@@ -86,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+2.2%",
+    "projected": "+4.1%",
     "date": "10/21/2026"
   },
   {
@@ -95,7 +113,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$54.00",
-    "projected": "+10.3%",
+    "projected": "+12.4%",
     "date": "10/21/2026"
   },
   {
@@ -115,15 +133,6 @@
     "price_target": "$52.00",
     "projected": "+9.8%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Harrison Bauer",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+17.3%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Kristina Ruggeri",
@@ -178,15 +187,6 @@
     "price_target": "$57.00",
     "projected": "+16.7%",
     "date": "07/08/2026"
-  },
-  {
-    "analyst": "Daniel Moore CFA",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "+8.1%",
-    "date": "07/07/2026"
   },
   {
     "analyst": "Stephanie Moore",

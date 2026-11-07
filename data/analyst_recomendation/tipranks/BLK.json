@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Mikhail Paramonov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1400.00",
+    "projected": "+19.7%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "William Katz",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$1405.00",
-    "projected": "+24.6%",
+    "projected": "+23.4%",
     "date": "10/20/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1350.00",
-    "projected": "+19.7%",
+    "projected": "+18.8%",
     "date": "10/19/2026"
   },
   {

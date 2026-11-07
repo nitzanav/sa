@@ -13,18 +13,18 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+17.9%",
-    "date": "08/06/2026"
+    "price_target": "$45.00",
+    "projected": "+7.8%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+76.8%",
-    "date": "10/13/2026"
+    "price_target": "$64.00",
+    "projected": "+53.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -54,15 +54,6 @@
     "date": "07/07/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+62.1%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$66.00",
     "projected": "+39%",
     "date": "08/05/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+72.5%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -88,32 +88,5 @@
     "price_target": "$103.00",
     "projected": "+18.5%",
     "date": "01/09/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+35.2%",
-    "date": "10/10/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+30.4%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+37.5%",
-    "date": "10/07/2026"
   }
 ]

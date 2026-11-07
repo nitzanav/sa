@@ -31,27 +31,36 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+37.5%",
-    "date": "10/07/2026"
+    "price_target": "$96.00",
+    "projected": "+25.1%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+35.2%",
-    "date": "07/23/2026"
+    "price_target": "$105.00",
+    "projected": "+39.1%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+39.5%",
-    "date": "10/08/2026"
+    "price_target": "$109.00",
+    "projected": "+42.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+29.8%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Benchmark",
@@ -61,15 +70,6 @@
     "price_target": "$90.00",
     "projected": "+11.8%",
     "date": "02/11/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+23.4%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "JP Morgan",

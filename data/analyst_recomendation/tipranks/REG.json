@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Greg McGinniss",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+6.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Michael Gorman",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+10.1%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "James Feldman",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$84.00",
-    "projected": "+14.4%",
+    "projected": "+12%",
     "date": "10/23/2026"
   },
   {
@@ -27,15 +45,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Greg McGinniss",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+13%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Linda Tsai",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -43,15 +52,6 @@
     "price_target": "$84.00",
     "projected": "+16.6%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Michael Gorman",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+18.7%",
-    "date": "10/01/2026"
   },
   {
     "analyst": "Richard Hightower",

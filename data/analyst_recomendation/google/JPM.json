@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+18.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+17.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Jose Luis Pascual",
+    "firm": "JLPascual",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$305.00",
+    "projected": "-10.1%",
+    "date": "10/18/2026"
+  },
+  {
     "analyst": "Mikhail Paramonov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -43,15 +79,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$400.00",
-    "projected": "+18.6%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -108,15 +135,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+29.9%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Richard Ramsden",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -151,15 +169,6 @@
     "price_target": "$370.00",
     "projected": "+13.1%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Erika Najarian",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$395.00",
-    "projected": "+18.5%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Glenn Schorr",

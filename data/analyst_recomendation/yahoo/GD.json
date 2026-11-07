@@ -13,9 +13,9 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$360.00",
-    "projected": "+6.1%",
-    "date": "10/15/2026"
+    "price_target": "$400.00",
+    "projected": "+7%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -49,18 +49,18 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$374.00",
-    "projected": "+14.7%",
-    "date": "10/08/2026"
+    "price_target": "$400.00",
+    "projected": "+7%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+23.4%",
-    "date": "07/30/2026"
+    "price_target": "$480.00",
+    "projected": "+29%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "UBS",
@@ -76,8 +76,8 @@
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+9.3%",
-    "date": "10/14/2026"
+    "price_target": "$386.00",
+    "projected": "+3.8%",
+    "date": "11/03/2026"
   }
 ]

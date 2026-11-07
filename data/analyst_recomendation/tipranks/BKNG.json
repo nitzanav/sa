@@ -1,39 +1,12 @@
 [
   {
-    "analyst": "Brad Erickson",
-    "firm": "RBC Capital",
+    "analyst": "Ronald Josey",
+    "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$220.00",
-    "projected": "+31.6%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Conor Cunningham",
-    "firm": "Melius Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+34.6%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Justin Post",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$234.00",
-    "projected": "+43.6%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Deepak Mathivanan",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+6.1%",
-    "date": "10/12/2026"
+    "projected": "+27.9%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Richard Clarke",
@@ -41,17 +14,161 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$188.00",
-    "projected": "+19.2%",
-    "date": "10/07/2026"
+    "projected": "+17.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Naved Khan",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$265.00",
+    "projected": "+65.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Kevin Kopelman",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+55.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brian Pitz",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+52.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Matthew Cost",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+24.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$219.00",
+    "projected": "+36.5%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Ken Gawrelski",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$190.00",
-    "projected": "+20.5%",
-    "date": "10/07/2026"
+    "price_target": "$179.00",
+    "projected": "+11.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ygal Arounian",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+30.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Scott Devitt",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+30.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Doug Anmuth",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+27.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Lloyd Walmsley",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+27.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Shyam Patil",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": "+24.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Thomas Champion",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$200.00",
+    "projected": "+24.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Michael Bellisario",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$211.00",
+    "projected": "+31.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ross Sandler",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$170.00",
+    "projected": "+6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$267.00",
+    "projected": "+66.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Deepak Mathivanan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "-3.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Brad Erickson",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$205.00",
+    "projected": "+32.3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Jake Fuller",
@@ -59,8 +176,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+55.1%",
-    "date": "10/02/2026"
+    "projected": "+61.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Conor Cunningham",
+    "firm": "Melius Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+37.6%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Gregory Miller",
@@ -70,33 +196,6 @@
     "price_target": "$216.00",
     "projected": "+32.8%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Matthew Cost",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$230.00",
-    "projected": "+34.2%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Ronald Josey",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$236.00",
-    "projected": "+33.8%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Scott Devitt",
-    "firm": "Rosenblatt Securities",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$245.00",
-    "projected": "+20.1%",
-    "date": "08/31/2026"
   },
   {
     "analyst": "Mark Mahaney",
@@ -117,15 +216,6 @@
     "date": "08/07/2026"
   },
   {
-    "analyst": "Doug Anmuth",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$248.00",
-    "projected": "+19.5%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Tom White",
     "firm": "D.A. Davidson",
     "recommendation": "Buy",
@@ -144,33 +234,6 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "Naved Khan",
-    "firm": "B. Riley Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$274.00",
-    "projected": "+31.9%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Ygal Arounian",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$247.00",
-    "projected": "+18.9%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jed Kelly",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+15.5%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Daniel Kurnos",
     "firm": "StoneX",
     "recommendation": "Buy",
@@ -180,66 +243,12 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "Lloyd Walmsley",
-    "firm": "Mizuho Securities",
+    "analyst": "Jed Kelly",
+    "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$240.00",
     "projected": "+15.5%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Michael Bellisario",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+10.7%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Thomas Champion",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$215.00",
-    "projected": "+3.5%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Stephen Ju",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$274.00",
-    "projected": "+31.9%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Brian Pitz",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+20.3%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Kevin Kopelman",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$250.00",
-    "projected": "+20.3%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Ross Sandler",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+1.1%",
     "date": "08/05/2026"
   },
   {
@@ -277,5 +286,50 @@
     "price_target": "$260.00",
     "projected": "+43.6%",
     "date": "04/08/2026"
+  },
+  {
+    "analyst": "Amanda Tan",
+    "firm": "DBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+11.8%",
+    "date": "04/07/2026"
+  },
+  {
+    "analyst": "Meredith Prichard Jensen",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$309.07",
+    "projected": "+89%",
+    "date": "02/19/2026"
+  },
+  {
+    "analyst": "Robert Mollins",
+    "firm": "Gordon Haskett Capital Corporation",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$217.06",
+    "projected": "+28.6%",
+    "date": "02/10/2026"
+  },
+  {
+    "analyst": "Matthew Condon",
+    "firm": "Citizens JMP",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "02/04/2026"
+  },
+  {
+    "analyst": "Nicholas Jones CFA",
+    "firm": "Exane BNP Paribas",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$243.39",
+    "projected": null,
+    "date": "11/24/2025"
   }
 ]

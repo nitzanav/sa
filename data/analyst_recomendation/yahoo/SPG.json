@@ -49,9 +49,18 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$216.00",
-    "projected": "+4.8%",
-    "date": "09/21/2026"
+    "price_target": "$225.00",
+    "projected": "+1.2%",
+    "date": "11/07/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+2.7%",
+    "date": "10/09/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -70,15 +79,6 @@
     "price_target": "$221.00",
     "projected": "+8.1%",
     "date": "09/17/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$205.00",
-    "projected": "+2.7%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Truist Securities",

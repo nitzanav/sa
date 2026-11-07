@@ -11,38 +11,29 @@
   {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
-    "recommendation": "Hold",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+7.8%",
-    "date": "04/22/2026"
+    "price_target": "$54.00",
+    "projected": "-4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+6.3%",
-    "date": "07/30/2026"
+    "price_target": "$58.00",
+    "projected": "+4.7%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
-    "recommendation": "Hold",
+    "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "+1.8%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Keybanc",
-    "firm": "Keybanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/23/2025"
+    "price_target": "$53.00",
+    "projected": "-6.9%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Baird",
@@ -67,9 +58,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "-18.3%",
-    "date": "02/04/2026"
+    "price_target": "$46.00",
+    "projected": "-18.2%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Canaccord Genuity",
@@ -77,8 +68,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$55.00",
-    "projected": "-4.2%",
-    "date": "07/30/2026"
+    "projected": "-2.2%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -88,5 +79,14 @@
     "price_target": "$65.00",
     "projected": "+11.9%",
     "date": "07/29/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$58.00",
+    "projected": "+1.9%",
+    "date": "10/23/2026"
   }
 ]

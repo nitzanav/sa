@@ -45,6 +45,15 @@
     "date": "09/11/2026"
   },
   {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+28.5%",
+    "date": "09/25/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -63,13 +72,13 @@
     "date": "07/01/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+28.5%",
-    "date": "09/25/2026"
+    "price_target": "$113.00",
+    "projected": "+7.1%",
+    "date": "09/24/2026"
   },
   {
     "analyst": "Stifel",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$112.00",
     "projected": "+6.2%",
-    "date": "09/24/2026"
-  },
-  {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+7.1%",
     "date": "09/24/2026"
   }
 ]

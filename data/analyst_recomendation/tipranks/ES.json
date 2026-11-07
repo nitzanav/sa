@@ -1,11 +1,47 @@
 [
   {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+23.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+7.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-16.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$70.00",
-    "projected": "+5.7%",
+    "projected": "+7%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$71.00",
-    "projected": "+7.2%",
+    "projected": "+9.4%",
     "date": "10/20/2026"
   },
   {
@@ -23,7 +59,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$68.00",
-    "projected": "+2.7%",
+    "projected": "+2.5%",
     "date": "10/19/2026"
   },
   {
@@ -45,15 +81,6 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "-11.9%",
-    "date": "08/03/2026"
-  },
-  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -63,15 +90,6 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Ryan Levine",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -79,15 +97,6 @@
     "price_target": "$81.00",
     "projected": "+7.7%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$76.00",
-    "projected": "+3.5%",
-    "date": "07/21/2026"
   },
   {
     "analyst": "Marie Ferguson",

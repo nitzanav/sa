@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+12.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Matthew O'Brien",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "-9.1%",
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Robbie Marcus",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -7,15 +25,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Matthew O'Brien",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "-8.6%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Ryan Zimmerman",
@@ -79,15 +88,6 @@
     "price_target": "$114.00",
     "projected": "+23.1%",
     "date": "09/17/2026"
-  },
-  {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+17.8%",
-    "date": "09/14/2026"
   },
   {
     "analyst": "Brandon Vazquez",

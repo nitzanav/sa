@@ -1,12 +1,93 @@
 [
   {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "-13.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Buck Horne",
+    "firm": "Raymond James",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+3.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$147.00",
+    "projected": "+0.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Stephen Kim",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+4.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Susan Maklari",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+17.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$186.00",
+    "projected": "+27.4%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Matthew Bouley",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "-14.4%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Jade Rahmani",
     "firm": "KBW",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$152.00",
-    "projected": "+8.7%",
-    "date": "10/22/2026"
+    "price_target": "$150.00",
+    "projected": "+2.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Michael Dahl",
+    "firm": "RBC Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "-19.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Sam Reid",
@@ -14,26 +95,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$140.00",
-    "projected": "+0.1%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+7.2%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Michael Dahl",
-    "firm": "RBC Capital",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$119.00",
-    "projected": "-13.1%",
-    "date": "10/15/2026"
+    "projected": "-1.4%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Tyler Batory",
@@ -45,24 +108,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Susan Maklari",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "+35.8%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Rafe Jadrosich",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Michael Rehaut",
     "firm": "Melius Research",
     "recommendation": "Sell",
@@ -70,33 +115,6 @@
     "price_target": "$128.00",
     "projected": "-3.2%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Matthew Bouley",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "-1.7%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$151.00",
-    "projected": "+11.7%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Stephen Kim",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$166.00",
-    "projected": "+18.1%",
-    "date": "09/25/2026"
   },
   {
     "analyst": "Ryan Gilbert",
@@ -115,15 +133,6 @@
     "price_target": "$140.00",
     "projected": "-1.6%",
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "John Lovallo",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$206.00",
-    "projected": "+43.5%",
-    "date": "07/22/2026"
   },
   {
     "analyst": "Chris Graja",

@@ -1,30 +1,30 @@
 [
   {
-    "analyst": "Brett Fishbin",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$269.00",
-    "projected": "+16.7%",
-    "date": "08/17/2026"
-  },
-  {
     "analyst": "Patrick Wood",
     "firm": "UBS",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+16.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Brett Fishbin",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$270.00",
-    "projected": "+17.7%",
-    "date": "08/07/2026"
+    "price_target": "$284.00",
+    "projected": "+14.5%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Jason Bednar",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$275.00",
-    "projected": "+19.9%",
-    "date": "08/07/2026"
+    "projected": "+9%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Michael Matson",

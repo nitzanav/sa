@@ -1,39 +1,111 @@
 [
   {
+    "analyst": "Andrew Boone",
+    "firm": "Citizens JMP",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+25.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "John Babcock",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+20.7%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Andrew Percoco",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "+54.6%",
-    "date": "10/15/2026"
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+34.8%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Mike McGovern",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
+    "analyst": "Daniela Haigian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+34.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Benjamin Black CFA",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+30.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Joseph Spak",
+    "firm": "UBS",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "+9.8%",
-    "date": "10/12/2026"
+    "price_target": "$84.00",
+    "projected": "+28.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Ronald Josey",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+53.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Chris Pierce",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+53.2%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Marvin Fong",
     "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+36%",
-    "date": "10/09/2026"
+    "price_target": "$82.00",
+    "projected": "+39.8%",
+    "date": "10/28/2026"
   },
   {
-    "analyst": "Joseph Spak",
-    "firm": "UBS",
+    "analyst": "David Lantz",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+14.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Brad Erickson",
+    "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+31.2%",
-    "date": "10/07/2026"
+    "price_target": "$85.00",
+    "projected": "+30.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Mike McGovern",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$72.00",
+    "projected": "+10.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Jeff Lick",
@@ -42,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$83.00",
     "projected": "+28.7%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "John Babcock",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+24.1%",
     "date": "10/06/2026"
   },
   {
@@ -72,33 +135,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Daniela Haigian",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "+19.9%",
-    "date": "09/03/2026"
-  },
-  {
-    "analyst": "Brad Erickson",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+22%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "David Lantz",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$80.00",
-    "projected": "+18.3%",
-    "date": "08/18/2026"
-  },
-  {
     "analyst": "Sharon Zackfia",
     "firm": "William Blair",
     "recommendation": "Buy",
@@ -106,15 +142,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/12/2026"
-  },
-  {
-    "analyst": "Benjamin Black CFA",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$80.00",
-    "projected": "+28.8%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Michael Baker",
@@ -150,33 +177,6 @@
     "action": "Maintained",
     "price_target": "$72.00",
     "projected": "+22.1%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Ronald Josey",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+44.9%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Andrew Boone",
-    "firm": "Citizens JMP",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+40.8%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Chris Pierce",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "+103.6%",
     "date": "07/30/2026"
   },
   {

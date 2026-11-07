@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Mark Lear",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$61.00",
+    "projected": "+48.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+73.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+39%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "-4.7%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Nitin Kumar CFA",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -12,19 +48,10 @@
     "analyst": "Devin McDermott",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$63.00",
-    "projected": "+25.8%",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+29.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Mark Lear",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$61.00",
-    "projected": "+20.2%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Hanwen Chang",
@@ -43,15 +70,6 @@
     "price_target": "$61.00",
     "projected": "+23.9%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+22.9%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Josh Silverstein",
@@ -88,15 +106,6 @@
     "price_target": "$55.00",
     "projected": "+17.5%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+35.1%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "John Freeman",

@@ -54,6 +54,15 @@
     "date": "08/05/2026"
   },
   {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+29.1%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$426.00",
     "projected": "-1.8%",
     "date": "09/26/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$430.00",
-    "projected": null,
-    "date": "11/21/2025"
   }
 ]

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+4.8%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -29,11 +38,11 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Sell",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$75.00",
-    "projected": "-6.8%",
-    "date": "10/12/2026"
+    "projected": "+4.7%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Morgan Stanley",

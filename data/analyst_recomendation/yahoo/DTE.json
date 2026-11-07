@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$154.00",
-    "projected": null,
-    "date": "11/06/2025"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -58,9 +49,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$141.00",
-    "projected": "+9.1%",
-    "date": "09/18/2026"
+    "price_target": "$139.00",
+    "projected": "+6.9%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -79,14 +70,5 @@
     "price_target": "$162.00",
     "projected": "+10.3%",
     "date": "07/16/2026"
-  },
-  {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$146.00",
-    "projected": null,
-    "date": "10/31/2025"
   }
 ]

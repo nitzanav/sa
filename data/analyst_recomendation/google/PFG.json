@@ -3,46 +3,37 @@
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$106.00",
-    "projected": "-1.2%",
-    "date": "10/15/2026"
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "-11.6%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Wesley Carmichael",
-    "firm": "Wells Fargo",
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "-1.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Thomas Gallagher",
+    "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+4.9%",
-    "date": "10/12/2026"
+    "price_target": "$111.00",
+    "projected": "-0.6%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Paul Newsome",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$128.00",
-    "projected": "+18.8%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "-0.7%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+1.9%",
-    "date": "10/09/2026"
+    "price_target": "$125.00",
+    "projected": "+11.9%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Ryan Krueger",
@@ -50,8 +41,35 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+6.3%",
-    "date": "10/08/2026"
+    "projected": "+3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Wesley Carmichael",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+1.1%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Michael Ward CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+3.9%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$106.00",
+    "projected": "-2.6%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Alex Scott",
@@ -59,17 +77,17 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$86.00",
-    "projected": "-21.1%",
-    "date": "10/07/2026"
+    "projected": "-20.2%",
+    "date": "10/27/2026"
   },
   {
-    "analyst": "Michael Ward CFA",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "+5%",
-    "date": "09/10/2026"
+    "analyst": "Unknown Analyst",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-0.6%",
+    "date": "09/11/2026"
   },
   {
     "analyst": "Tim Switzer",
@@ -124,15 +142,6 @@
     "price_target": "$125.00",
     "projected": "+14.9%",
     "date": "06/24/2026"
-  },
-  {
-    "analyst": "Thomas Gallagher",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+9%",
-    "date": "04/27/2026"
   },
   {
     "analyst": "Jimmy Bhullar",

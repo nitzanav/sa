@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Peter Henderson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+22.7%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "David Karnovsky",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$205.00",
-    "projected": "+18%",
-    "date": "10/16/2026"
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+16.8%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Eric Handler",
@@ -14,8 +23,62 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$208.00",
-    "projected": "+22.4%",
-    "date": "10/15/2026"
+    "projected": "+21.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Stephen Laszczyk",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+22.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Batya Levi",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$208.00",
+    "projected": "+21.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Tyler DiMatteo",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+25.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Joseph Stauff",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$183.00",
+    "projected": "+6.6%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ken Leon",
+    "firm": "CFRA",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$167.00",
+    "projected": "-2.5%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Cameron Mansson-Perrone",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$215.00",
+    "projected": "+25.5%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Ian S. Moore",
@@ -34,24 +97,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Peter Henderson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Stephen Laszczyk",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+20.4%",
-    "date": "09/11/2026"
   },
   {
     "analyst": "Jason Bazinet",
@@ -81,15 +126,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Joseph Stauff",
-    "firm": "Susquehanna",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$187.00",
-    "projected": "+1.1%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Matthew Harrigan",
     "firm": "StoneX",
     "recommendation": "Buy",
@@ -108,28 +144,10 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Tyler DiMatteo",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+16.3%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Jed Kelly",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+8.2%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Cameron Mansson-Perrone",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
     "price_target": "$200.00",
     "projected": "+8.2%",
     "date": "07/31/2026"
@@ -142,15 +160,6 @@
     "price_target": "$215.00",
     "projected": "+20.9%",
     "date": "07/22/2026"
-  },
-  {
-    "analyst": "Batya Levi",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$208.00",
-    "projected": "+14.7%",
-    "date": "07/20/2026"
   },
   {
     "analyst": "Steven Cahall",

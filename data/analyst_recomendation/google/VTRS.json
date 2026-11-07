@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Ashwani Verma",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$28.00",
+    "projected": "+48.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Chris Schott",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+11.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "David Amsellem",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$14.00",
+    "projected": "-23.1%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Glen Santangelo",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -18,15 +45,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "David Amsellem",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$13.00",
-    "projected": "-26.6%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Salveen Richter",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -34,15 +52,6 @@
     "price_target": "$20.00",
     "projected": "+15.9%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Ashwani Verma",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "+45.9%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Les Sulewski",
@@ -79,15 +88,6 @@
     "price_target": "$20.00",
     "projected": "+20.3%",
     "date": "09/08/2026"
-  },
-  {
-    "analyst": "Chris Schott",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$18.00",
-    "projected": "+10.4%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Unknown Analyst",

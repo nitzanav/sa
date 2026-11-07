@@ -1,65 +1,65 @@
 [
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+21.4%",
-    "date": "04/16/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+13.9%",
-    "date": "08/05/2026"
+    "price_target": "$70.00",
+    "projected": "+11.9%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+20.7%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+21.9%",
-    "date": "10/13/2026"
+    "price_target": "$77.00",
+    "projected": "+12.8%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+7.2%",
-    "date": "02/05/2026"
+    "price_target": "$75.00",
+    "projected": "+9.9%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+10%",
-    "date": "10/06/2026"
+    "price_target": "$68.00",
+    "projected": "-0.4%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+17.9%",
-    "date": "07/09/2026"
+    "price_target": "$77.00",
+    "projected": "+16.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$65.00",
-    "projected": "+6.3%",
-    "date": "09/18/2026"
+    "projected": "-4.7%",
+    "date": "11/05/2026"
   }
 ]

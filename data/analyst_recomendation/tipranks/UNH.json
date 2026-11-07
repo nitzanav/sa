@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Lance Wilkes",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+26.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$531.00",
+    "projected": "+28.7%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$487.00",
+    "projected": "+18%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Ann Hynes",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+21.8%",
+    "projected": "+19.5%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$498.00",
-    "projected": "+21.4%",
+    "projected": "+24.6%",
     "date": "10/19/2026"
   },
   {
@@ -24,15 +51,6 @@
     "action": "Reiterated",
     "price_target": "$524.00",
     "projected": "+27.7%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Lance Wilkes",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+21.8%",
     "date": "10/16/2026"
   },
   {
@@ -78,15 +96,6 @@
     "action": "Reiterated",
     "price_target": "$504.00",
     "projected": "+31.8%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$529.00",
-    "projected": "+38.4%",
     "date": "10/14/2026"
   },
   {
@@ -144,15 +153,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$526.00",
-    "projected": "+37.1%",
-    "date": "09/15/2026"
-  },
-  {
     "analyst": "George Hill",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
@@ -171,8 +171,8 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "Michael Wiederhorn",
-    "firm": "Oppenheimer",
+    "analyst": "David S Macdonald",
+    "firm": "Truist Financial",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$500.00",
@@ -180,8 +180,8 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "David S Macdonald",
-    "firm": "Truist Financial",
+    "analyst": "Michael Wiederhorn",
+    "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$500.00",
@@ -223,14 +223,5 @@
     "price_target": "$440.00",
     "projected": "+55.1%",
     "date": "01/28/2026"
-  },
-  {
-    "analyst": "Justin Lake",
-    "firm": "Wolfe Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": null,
-    "date": "10/27/2025"
   }
 ]

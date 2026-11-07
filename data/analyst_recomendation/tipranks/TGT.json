@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "Rupesh Parikh",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+13.8%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Zhihan Ma",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$154.00",
-    "projected": "-0.8%",
-    "date": "10/13/2026"
+    "projected": "-2.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Kate McShane",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$161.00",
+    "projected": "+5.8%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Greg Melich",
@@ -36,15 +54,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Steven Shemesh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$178.00",
-    "projected": "+11.8%",
-    "date": "09/30/2026"
-  },
-  {
     "analyst": "Corey Tarlowe",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -63,13 +72,13 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Kate McShane",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
+    "analyst": "Steven Shemesh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$161.00",
-    "projected": "+3.6%",
-    "date": "09/25/2026"
+    "price_target": "$178.00",
+    "projected": "+11.8%",
+    "date": "09/30/2026"
   },
   {
     "analyst": "David Bellinger",
@@ -243,15 +252,6 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Rupesh Parikh",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$170.00",
-    "projected": "+12.6%",
-    "date": "08/11/2026"
-  },
-  {
     "analyst": "Spencer Hanus",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -277,5 +277,23 @@
     "price_target": null,
     "projected": null,
     "date": "05/21/2026"
+  },
+  {
+    "analyst": "Georgy Vashchenko",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$130.00",
+    "projected": "+8.1%",
+    "date": "05/20/2026"
+  },
+  {
+    "analyst": "Mavis Hui",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+12%",
+    "date": "04/27/2026"
   }
 ]

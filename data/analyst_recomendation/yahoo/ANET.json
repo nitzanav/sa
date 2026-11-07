@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+13.3%",
+    "date": "10/20/2026"
+  },
+  {
     "analyst": "Needham",
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+35.1%",
-    "date": "08/06/2026"
+    "projected": "+55.4%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -31,9 +40,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+28.3%",
-    "date": "04/16/2026"
+    "price_target": "$270.00",
+    "projected": "+50.8%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -68,61 +77,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$280.00",
-    "projected": "+45.5%",
-    "date": "08/06/2026"
+    "projected": "+67.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$289.00",
-    "projected": "+46%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "+21.3%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+4.7%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$259.00",
-    "projected": "+34.6%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$220.00",
-    "projected": "+12.4%",
-    "date": "09/01/2026"
-  },
-  {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+14.2%",
-    "date": "08/05/2026"
+    "price_target": "$236.00",
+    "projected": "+31.8%",
+    "date": "11/04/2026"
   }
 ]

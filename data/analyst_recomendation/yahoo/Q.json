@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+36.5%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -16,5 +7,14 @@
     "price_target": "$160.00",
     "projected": "+28%",
     "date": "10/01/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+36.5%",
+    "date": "10/15/2026"
   }
 ]

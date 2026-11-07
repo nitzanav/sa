@@ -1,21 +1,102 @@
 [
   {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Benjamin Chaiken",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$54.00",
+    "projected": "+51%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Katz",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$37.00",
+    "projected": "+3.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$49.00",
+    "projected": "+35%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Lizzie Dove",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+7.7%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$47.00",
-    "projected": "+26.5%",
-    "date": "10/14/2026"
+    "price_target": "$45.00",
+    "projected": "+25.9%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Brandt Montour",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+56.2%",
-    "date": "10/09/2026"
+    "price_target": "$50.00",
+    "projected": "+39.9%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Trey Bowers",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+11.9%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Joseph Stauff",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+31.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+45.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Daniel Politzer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$50.00",
+    "projected": "+39.9%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Robin M. Farley",
@@ -36,51 +117,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "John Staszak",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Benjamin Chaiken",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+27.3%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Steven Wieczynski",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+25.2%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Trey Bowers",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+0.1%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Stephen Grambling",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+30%",
-    "date": "07/27/2026"
-  },
-  {
     "analyst": "Steven Pizzella",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -99,33 +135,6 @@
     "date": "07/23/2026"
   },
   {
-    "analyst": "Daniel Politzer",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+35.1%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Shaun Kelley",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$60.00",
-    "projected": "+35.1%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Joseph Stauff",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+41.9%",
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "George Choi",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -133,15 +142,6 @@
     "price_target": "$73.00",
     "projected": "+55.7%",
     "date": "07/10/2026"
-  },
-  {
-    "analyst": "David Katz",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+12.3%",
-    "date": "07/02/2026"
   },
   {
     "analyst": "Unknown Analyst",

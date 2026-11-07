@@ -1,5 +1,95 @@
 [
   {
+    "analyst": "Daniel Moore CFA",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "-1.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Christian Wetherbee",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "+10.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Christopher Stathoulopoulos",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+4.8%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Thomas Wadewitz",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$363.00",
+    "projected": "+9.3%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Jason Seidl",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$379.00",
+    "projected": "+12.7%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$396.00",
+    "projected": "+17.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Walter Spracklin",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+7.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Brian Ossenbeck",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$323.00",
+    "projected": "-3.9%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Ariel Rosa",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$349.00",
+    "projected": "+3.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Brandon Oglenski",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+19%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Fadi Chamoun",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -9,60 +99,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Ariel Rosa",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$347.00",
-    "projected": "+10.8%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Jason Seidl",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$376.00",
-    "projected": "+19.5%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Christian Wetherbee",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$385.00",
-    "projected": "+21.8%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$396.00",
-    "projected": "+24.9%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Thomas Wadewitz",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Brian Ossenbeck",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$318.00",
-    "projected": "+0.3%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Harrison Bauer",
     "firm": "Susquehanna",
     "recommendation": "Hold",
@@ -70,33 +106,6 @@
     "price_target": "$350.00",
     "projected": "+12.2%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Brandon Oglenski",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+28.5%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Walter Spracklin",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+4.8%",
-    "date": "09/24/2026"
-  },
-  {
-    "analyst": "Daniel Moore CFA",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$377.00",
-    "projected": "+7.2%",
-    "date": "07/27/2026"
   },
   {
     "analyst": "Unknown Analyst",

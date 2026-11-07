@@ -1,12 +1,66 @@
 [
   {
+    "analyst": "Noah Poponak",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$361.00",
+    "projected": "+33.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ronald Epstein",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$375.00",
+    "projected": "+34.6%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Kristine Liwag",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$402.00",
+    "projected": "+44.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+32.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+32.8%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Kenneth Herbert",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+9.7%",
-    "date": "10/15/2026"
+    "price_target": "$295.00",
+    "projected": "+11.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$293.00",
+    "projected": "+4.2%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Douglas Harned",
@@ -18,15 +72,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Noah Poponak",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$361.00",
-    "projected": "+52.3%",
-    "date": "10/11/2026"
-  },
-  {
     "analyst": "Gautam Khanna",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -34,33 +79,6 @@
     "price_target": "$280.00",
     "projected": "+18.1%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+47.6%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$264.00",
-    "projected": "+11.4%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Ronald Epstein",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$325.00",
-    "projected": "+37.1%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Kristina Ruggeri",
@@ -196,15 +214,6 @@
     "price_target": "$418.00",
     "projected": "+23.4%",
     "date": "02/05/2026"
-  },
-  {
-    "analyst": "Kristine Liwag",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$390.00",
-    "projected": "+15.4%",
-    "date": "02/02/2026"
   },
   {
     "analyst": "Myles Walton",

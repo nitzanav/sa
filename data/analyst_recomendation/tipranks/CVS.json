@@ -1,21 +1,111 @@
 [
   {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
+    "analyst": "John Ransom",
+    "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+23.3%",
-    "date": "10/13/2026"
+    "price_target": "$103.00",
+    "projected": "+27.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Scott Fidel",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+42.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
   },
   {
     "analyst": "Michael Cherny",
     "firm": "Leerink Partners",
     "recommendation": "Buy",
     "action": "Reiterated",
+    "price_target": "$104.00",
+    "projected": "+27.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$107.00",
+    "projected": "+31%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Jessica Tassan",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$113.00",
+    "projected": "+38.4%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$111.00",
+    "projected": "+35.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+22.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$123.00",
+    "projected": "+50.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Andrew Mok CFA",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+31%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+29%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Lance Wilkes",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$112.00",
-    "projected": "+29.3%",
-    "date": "10/12/2026"
+    "projected": "+31.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Charles Rhyee",
@@ -36,42 +126,6 @@
     "date": "10/07/2026"
   },
   {
-    "analyst": "Lance Wilkes",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+29.2%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Elizabeth Anderson CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+46.6%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+28.5%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Kevin Caliendo",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$118.00",
-    "projected": "+21.5%",
-    "date": "09/03/2026"
-  },
-  {
     "analyst": "Brian Tanquilut",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -79,15 +133,6 @@
     "price_target": "$120.00",
     "projected": "+28.7%",
     "date": "08/31/2026"
-  },
-  {
-    "analyst": "Jessica Tassan",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+21.3%",
-    "date": "08/26/2026"
   },
   {
     "analyst": "Steven Silver",
@@ -108,15 +153,6 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$111.00",
-    "projected": "+16.4%",
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Michael Ha",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
@@ -133,24 +169,6 @@
     "price_target": "$118.00",
     "projected": "+16.9%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "Andrew Mok CFA",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Scott Fidel",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+8%",
-    "date": "07/27/2026"
   },
   {
     "analyst": "Ann Hynes",
@@ -187,14 +205,5 @@
     "price_target": "$92.00",
     "projected": "+5.7%",
     "date": "05/07/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "02/11/2026"
   }
 ]

@@ -4,9 +4,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+16.4%",
-    "date": "10/14/2026"
+    "price_target": "$187.00",
+    "projected": "+14%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -16,6 +16,15 @@
     "price_target": "$162.00",
     "projected": "+13.3%",
     "date": "03/30/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+12.8%",
+    "date": "10/24/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -36,22 +45,13 @@
     "date": "12/18/2025"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+3.8%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+8.4%",
-    "date": "07/16/2026"
+    "price_target": "$180.00",
+    "projected": "+9.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Argus Research",
@@ -63,30 +63,30 @@
     "date": "08/07/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": null,
-    "date": "10/20/2025"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+9.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
     "price_target": "$166.00",
-    "projected": "+12.1%",
-    "date": "10/06/2026"
+    "projected": "+1.2%",
+    "date": "10/24/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$152.00",
-    "projected": "+1.7%",
-    "date": "07/22/2026"
+    "price_target": "$165.00",
+    "projected": "+2.6%",
+    "date": "10/26/2026"
   }
 ]

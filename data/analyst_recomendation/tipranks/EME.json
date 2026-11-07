@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Avinatan Jaroslawicz",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$925.00",
+    "projected": "+38.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Manish Somaiya",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$920.00",
+    "projected": "+33.5%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Brent Thielman",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": "+45.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Justin Hauke",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$809.00",
+    "projected": "+22%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Adam Bubes",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$795.00",
-    "projected": "+13.2%",
-    "date": "10/20/2026"
+    "projected": "+13.6%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Tim Mulrooney",
@@ -16,42 +52,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/21/2026"
-  },
-  {
-    "analyst": "Manish Somaiya",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1047.00",
-    "projected": "+27.6%",
-    "date": "08/08/2026"
-  },
-  {
-    "analyst": "Brent Thielman",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1200.00",
-    "projected": "+43%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Avinatan Jaroslawicz",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1065.00",
-    "projected": "+27%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Justin Hauke",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$918.00",
-    "projected": "+9.4%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Adam Thalhimer",

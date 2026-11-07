@@ -1,12 +1,102 @@
 [
   {
+    "analyst": "Sachin Mittal",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+20%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Dan Dolev",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$69.00",
+    "projected": "+8.8%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+9.9%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Steven Wahrhaftig",
     "firm": "Wedbush",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$70.00",
-    "projected": "+4.6%",
-    "date": "10/22/2026"
+    "projected": "+9.9%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Keith Bachman",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+6.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jonathan Lee CFA",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+25.6%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+6.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "James Friedman",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+31.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "David Paige",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "-11.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.00",
+    "projected": "+23.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Tien Tsin Huang",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$78.00",
+    "projected": "+10.6%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Bryan Keane",
@@ -14,7 +104,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$68.00",
-    "projected": "+1.7%",
+    "projected": "+0.7%",
     "date": "10/20/2026"
   },
   {
@@ -25,15 +115,6 @@
     "price_target": "$60.00",
     "projected": "-0.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Jason Kupferberg",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+73.8%",
-    "date": "09/24/2026"
   },
   {
     "analyst": "Maggie Nolan",
@@ -72,66 +153,12 @@
     "date": "08/25/2026"
   },
   {
-    "analyst": "Sean Kennedy",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+12.6%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jonathan Lee CFA",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+14.3%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "James Friedman",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+52.3%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Tien Tsin Huang",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$67.00",
-    "projected": "+24.4%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "David Koning",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$68.00",
     "projected": "+26.3%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Keith Bachman",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+17%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "James Faucette",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$51.00",
-    "projected": "-5.3%",
     "date": "07/30/2026"
   },
   {
@@ -144,15 +171,6 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "David Paige",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "-10.2%",
-    "date": "07/29/2026"
-  },
-  {
     "analyst": "Mayank Tandon",
     "firm": "Needham",
     "recommendation": "Hold",
@@ -160,15 +178,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Sachin Mittal",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "+20.6%",
-    "date": "07/16/2026"
   },
   {
     "analyst": "Meha Pau",
@@ -196,14 +205,5 @@
     "price_target": "$64.00",
     "projected": "+10.5%",
     "date": "04/13/2026"
-  },
-  {
-    "analyst": "Amit Daryanani",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+36.8%",
-    "date": "02/04/2026"
   }
 ]

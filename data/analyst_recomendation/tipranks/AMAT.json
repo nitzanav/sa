@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Shane Brett CFA",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$538.00",
+    "projected": "+39%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Timothy Arcuri",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$695.00",
+    "projected": "+75.8%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+86.3%",
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Charles Shi",
     "firm": "Needham",
     "recommendation": "Buy",
@@ -63,33 +90,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Shane Brett CFA",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$563.00",
-    "projected": "+16.8%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+52.9%",
-    "date": "09/22/2026"
-  },
-  {
-    "analyst": "Timothy Arcuri",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$695.00",
-    "projected": "+54.2%",
-    "date": "09/01/2026"
-  },
-  {
     "analyst": "Vijay Rakesh",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -97,15 +97,6 @@
     "price_target": "$590.00",
     "projected": "+22.4%",
     "date": "08/24/2026"
-  },
-  {
-    "analyst": "Ling Lee Keng",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$710.00",
-    "projected": "+37.1%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Jim Kelleher",
@@ -123,6 +114,15 @@
     "action": "Maintained",
     "price_target": "$675.00",
     "projected": "+30.3%",
+    "date": "08/17/2026"
+  },
+  {
+    "analyst": "Ling Lee Keng",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$710.00",
+    "projected": "+37.1%",
     "date": "08/17/2026"
   },
   {
@@ -268,5 +268,23 @@
     "price_target": "$500.00",
     "projected": "+18.2%",
     "date": "05/10/2026"
+  },
+  {
+    "analyst": "Leon Chen",
+    "firm": "KGI Securities",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$425.00",
+    "projected": "+16.5%",
+    "date": "02/13/2026"
+  },
+  {
+    "analyst": "Kinngai Chan",
+    "firm": "Summit Insights Group",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "02/12/2026"
   }
 ]

@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$154.00",
+    "projected": "+30.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$148.50",
+    "projected": "+19.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jose Luis Pascual",
+    "firm": "JLPascual",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+29%",
+    "date": "10/17/2026"
+  },
+  {
+    "analyst": "Lim Rui Wen",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+29%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Scott Siefers",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -22,17 +58,8 @@
     "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+10%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$147.00",
-    "projected": "+19.8%",
+    "price_target": "$140.00",
+    "projected": "+14.1%",
     "date": "10/14/2026"
   },
   {
@@ -70,15 +97,6 @@
     "price_target": "$164.00",
     "projected": "+33.5%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$154.00",
-    "projected": "+25.5%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Richard Ramsden",

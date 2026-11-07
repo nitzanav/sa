@@ -1,5 +1,68 @@
 [
   {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+17%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "-3.4%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$99.00",
+    "projected": "+25.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+30.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$88.00",
+    "projected": "+10.8%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+34.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$85.00",
+    "projected": "+6.8%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -33,15 +96,6 @@
     "action": "Maintained",
     "price_target": "$56.00",
     "projected": "-27%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+21.3%",
     "date": "10/02/2026"
   },
   {
@@ -79,51 +133,6 @@
     "price_target": "$90.00",
     "projected": "+4.8%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+14.7%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$93.00",
-    "projected": "+3.7%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+22.7%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+26.1%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": "+3.3%",
-    "date": "07/07/2026"
   },
   {
     "analyst": "William Appicelli",

@@ -4,9 +4,9 @@
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+9.4%",
-    "date": "07/21/2026"
+    "price_target": "$141.00",
+    "projected": "+11.5%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "BTIG",
@@ -74,11 +74,11 @@
   {
     "analyst": "Raymond James",
     "firm": "Raymond James",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "06/19/2026"
+    "price_target": "$163.00",
+    "projected": "+28.4%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "RBC Capital",

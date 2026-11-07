@@ -1,12 +1,93 @@
 [
   {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Simon Leopold",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+106.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wedbush",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+41.2%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Mark Newman",
     "firm": "Bernstein",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$42.00",
-    "projected": "+8.6%",
-    "date": "10/13/2026"
+    "projected": "+34.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Ruplu Bhattacharya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+24.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$39.00",
+    "projected": "+24.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+26.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Sajal Dogra",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+56.5%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Asiya Merchant",
@@ -14,8 +95,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "+3.8%",
-    "date": "10/09/2026"
+    "projected": "+42.9%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Vijay Rakesh",
@@ -27,15 +108,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Katherine Murphy",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "-7.5%",
-    "date": "09/15/2026"
-  },
-  {
     "analyst": "Mehdi Hosseini",
     "firm": "Susquehanna",
     "recommendation": "Sell",
@@ -43,33 +115,6 @@
     "price_target": "$15.00",
     "projected": "-60.3%",
     "date": "09/12/2026"
-  },
-  {
-    "analyst": "Sajal Dogra",
-    "firm": "Rosenblatt Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$51.00",
-    "projected": "+37.2%",
-    "date": "08/21/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+14.5%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "Brandon Nispel",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/14/2026"
   },
   {
     "analyst": "Nehal Chokshi",
@@ -99,42 +144,6 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Wedbush",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "+14.3%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Ruplu Bhattacharya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$33.00",
-    "projected": "-5.7%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Quinn Bolton",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$46.00",
-    "projected": "+31.5%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$39.00",
-    "projected": "+11.5%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Chad Dillard",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -151,15 +160,6 @@
     "price_target": "$48.00",
     "projected": "+48.5%",
     "date": "06/22/2026"
-  },
-  {
-    "analyst": "Simon Leopold",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+43.1%",
-    "date": "05/06/2026"
   },
   {
     "analyst": "Jonathan Tanwanteng",

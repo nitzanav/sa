@@ -4,9 +4,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+15.1%",
-    "date": "10/16/2026"
+    "price_target": "$103.00",
+    "projected": "+22.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Keybanc",
@@ -22,9 +22,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+19.8%",
-    "date": "10/07/2026"
+    "price_target": "$105.00",
+    "projected": "+25.3%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -36,6 +36,24 @@
     "date": "02/14/2026"
   },
   {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+13.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+18.1%",
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -43,15 +61,6 @@
     "price_target": "$95.00",
     "projected": "+15.9%",
     "date": "07/02/2026"
-  },
-  {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+14.7%",
-    "date": "05/08/2026"
   },
   {
     "analyst": "Mizuho",
@@ -63,30 +72,21 @@
     "date": "02/18/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+13.5%",
-    "date": "10/08/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": "+4.7%",
-    "date": "08/06/2026"
+    "price_target": "$95.00",
+    "projected": "+13.3%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+11%",
-    "date": "05/07/2026"
+    "price_target": "$95.00",
+    "projected": "+13.3%",
+    "date": "11/06/2026"
   }
 ]

@@ -1,48 +1,84 @@
 [
   {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+4.8%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Lauren Lieberman",
     "firm": "Barclays",
     "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$89.00",
+    "projected": "-18.9%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$83.00",
-    "projected": "-19.5%",
-    "date": "10/16/2026"
+    "price_target": "$115.00",
+    "projected": "+6.7%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Peter Grom",
     "firm": "UBS",
     "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "+3.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Andrea Faria Teixeira",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$106.00",
-    "projected": "+1.7%",
-    "date": "10/15/2026"
+    "price_target": "$109.00",
+    "projected": "+1.1%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Filippo Falorni",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+8.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Nik Modi",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+19.6%",
-    "date": "10/06/2026"
+    "price_target": "$117.00",
+    "projected": "+8.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Bonnie Herzog",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$113.00",
-    "projected": "+19.4%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Christopher Carey",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+10.9%",
-    "date": "10/05/2026"
+    "price_target": "$118.00",
+    "projected": "+7%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Anna Lizzul",
@@ -50,8 +86,17 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$115.00",
-    "projected": "+13.9%",
-    "date": "08/14/2026"
+    "projected": "+4.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Rupesh Parikh",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+15.4%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Taylor Conrad",
@@ -72,33 +117,6 @@
     "date": "08/03/2026"
   },
   {
-    "analyst": "Dara Mohsenian",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$112.00",
-    "projected": "+11.5%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Filippo Falorni",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+4.5%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Robert Moskow",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$97.00",
-    "projected": "-3.5%",
-    "date": "08/03/2026"
-  },
-  {
     "analyst": "Jon Andersen",
     "firm": "William Blair",
     "recommendation": "Buy",
@@ -108,15 +126,6 @@
     "date": "07/31/2026"
   },
   {
-    "analyst": "Andrea Faria Teixeira",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+7.1%",
-    "date": "07/16/2026"
-  },
-  {
     "analyst": "Javier Escalante",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -124,15 +133,6 @@
     "price_target": "$105.00",
     "projected": "+11.1%",
     "date": "05/04/2026"
-  },
-  {
-    "analyst": "Rupesh Parikh",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+12%",
-    "date": "02/23/2026"
   },
   {
     "analyst": "Edward Lewis",

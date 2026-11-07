@@ -63,15 +63,6 @@
     "date": "04/01/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+10.6%",
-    "date": "10/08/2026"
-  },
-  {
     "analyst": "BTIG",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -81,12 +72,21 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+10.6%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+18.2%",
-    "date": "09/03/2026"
+    "price_target": "$104.00",
+    "projected": "+12.7%",
+    "date": "09/02/2026"
   }
 ]

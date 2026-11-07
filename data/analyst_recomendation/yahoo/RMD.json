@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+21.7%",
-    "date": "06/18/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -18,13 +9,22 @@
     "date": "07/15/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+21.7%",
+    "date": "06/18/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$267.00",
-    "projected": "+11.3%",
-    "date": "09/01/2026"
+    "price_target": "$277.00",
+    "projected": "+12.3%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -40,18 +40,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$262.00",
-    "projected": "+15.7%",
-    "date": "09/15/2026"
+    "price_target": "$288.00",
+    "projected": "+16.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+21.6%",
-    "date": "07/14/2026"
+    "price_target": "$270.00",
+    "projected": "+9.5%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Baird",
@@ -67,9 +67,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+3.8%",
-    "date": "08/07/2026"
+    "price_target": "$250.00",
+    "projected": "+1.4%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Piper Sandler",

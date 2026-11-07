@@ -1,5 +1,77 @@
 [
   {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$297.00",
+    "projected": "+12.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$299.00",
+    "projected": "+13.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+21.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$293.00",
+    "projected": "+11.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$285.50",
+    "projected": "+8.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$279.00",
+    "projected": "+1.4%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$302.00",
+    "projected": "+9.8%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$283.00",
+    "projected": "+5.8%",
+    "date": "10/20/2026"
+  },
+  {
     "analyst": "Ami Probandt",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -18,33 +90,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$298.00",
-    "projected": "+9.2%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Alexander Goldfarb",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$326.00",
-    "projected": "+19.2%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Michael Lewis",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -54,15 +99,6 @@
     "date": "09/22/2026"
   },
   {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$299.00",
-    "projected": "+10.4%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Haendel St. Juste",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -70,15 +106,6 @@
     "price_target": "$295.00",
     "projected": "+6.7%",
     "date": "09/08/2026"
-  },
-  {
-    "analyst": "James Feldman",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$297.00",
-    "projected": "+5.2%",
-    "date": "09/01/2026"
   },
   {
     "analyst": "Peter Abramowitz",
@@ -117,15 +144,6 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$302.00",
-    "projected": "+7.3%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Jeffrey Spector",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -151,15 +169,6 @@
     "price_target": "$330.00",
     "projected": "+17.5%",
     "date": "07/31/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$292.75",
-    "projected": "+1%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -196,14 +205,5 @@
     "price_target": "$280.00",
     "projected": "+4%",
     "date": "04/29/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$281.00",
-    "projected": "+11.5%",
-    "date": "03/02/2026"
   }
 ]

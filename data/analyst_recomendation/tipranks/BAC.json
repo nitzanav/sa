@@ -1,21 +1,57 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+37.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+26.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$62.00",
+    "projected": "+22.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$59.50",
+    "projected": "+16.6%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Mikhail Paramonov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$63.00",
-    "projected": "+20.8%",
+    "projected": "+23%",
     "date": "10/19/2026"
   },
   {
-    "analyst": "Glenn Schorr",
-    "firm": "Evercore ISI",
+    "analyst": "Glenn Thum",
+    "firm": "Phillip Securities",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+10.8%",
-    "date": "10/15/2026"
+    "action": "Upgraded",
+    "price_target": "$65.00",
+    "projected": "+24.7%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "John McDonald CFA",
@@ -24,6 +60,15 @@
     "action": "Maintained",
     "price_target": "$58.00",
     "projected": "+12.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Glenn Schorr",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "+10.8%",
     "date": "10/15/2026"
   },
   {
@@ -36,15 +81,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$62.00",
-    "projected": "+20.5%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Christopher Mcgratty",
     "firm": "KBW",
     "recommendation": "Buy",
@@ -54,21 +90,21 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Ben Gerlinger",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+16.6%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Manan Gosalia",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$61.00",
     "projected": "+18.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Ben Gerlinger",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+16.6%",
     "date": "10/15/2026"
   },
   {
@@ -99,33 +135,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Mike Mayo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+28.4%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+36.5%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Erika Najarian",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+24%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Chris Kotowski",
     "firm": "Oppenheimer",
     "recommendation": "Hold",
@@ -151,15 +160,6 @@
     "price_target": "$75.00",
     "projected": "+19.4%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Glenn Thum",
-    "firm": "Phillip Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+11%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Stephen Biggar",

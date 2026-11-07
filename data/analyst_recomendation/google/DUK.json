@@ -1,5 +1,59 @@
 [
   {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$139.00",
+    "projected": "+9.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Nicholas Amicucci",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+6.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$127.00",
+    "projected": "+1.8%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$123.00",
+    "projected": "+1.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$128.00",
+    "projected": "+5.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$127.00",
+    "projected": "+5.6%",
+    "date": "10/20/2026"
+  },
+  {
     "analyst": "Carly Davenport",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -45,15 +99,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$127.00",
-    "projected": "+8.1%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Andrew Weisel",
     "firm": "Scotiabank",
     "recommendation": "Buy",
@@ -88,42 +133,6 @@
     "price_target": "$136.00",
     "projected": "+9.4%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$141.00",
-    "projected": "+13.4%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+11.7%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Nicholas Amicucci",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+13.4%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$134.00",
-    "projected": "+4.7%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Marie Ferguson",

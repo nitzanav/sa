@@ -4,18 +4,18 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+40.3%",
-    "date": "07/24/2026"
+    "price_target": "$475.00",
+    "projected": "+27.3%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Canaccord Genuity",
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$410.00",
-    "projected": "+20.2%",
-    "date": "07/23/2026"
+    "price_target": "$442.00",
+    "projected": "+18.1%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Wedbush",
@@ -31,9 +31,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+17.3%",
-    "date": "07/23/2026"
+    "price_target": "$410.00",
+    "projected": "+9.5%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Baird",
@@ -49,18 +49,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+46.6%",
-    "date": "07/23/2026"
+    "price_target": "$480.00",
+    "projected": "+28.2%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+32%",
-    "date": "07/23/2026"
+    "price_target": "$460.00",
+    "projected": "+23.3%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -68,8 +68,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$485.00",
-    "projected": "+51.2%",
-    "date": "07/24/2026"
+    "projected": "+30%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Jefferies",

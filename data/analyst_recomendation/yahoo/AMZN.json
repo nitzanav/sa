@@ -4,9 +4,9 @@
     "firm": "Wedbush",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+17%",
-    "date": "08/01/2026"
+    "price_target": "$298.00",
+    "projected": "+28.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -18,13 +18,22 @@
     "date": "04/21/2026"
   },
   {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+5.8%",
+    "date": "04/25/2026"
+  },
+  {
     "analyst": "Telsey Advisory Group",
     "firm": "Telsey Advisory Group",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$335.00",
-    "projected": "+26.4%",
-    "date": "08/01/2026"
+    "projected": "+44.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Needham",
@@ -34,15 +43,6 @@
     "price_target": "$300.00",
     "projected": "+13.2%",
     "date": "08/01/2026"
-  },
-  {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+5.8%",
-    "date": "04/25/2026"
   },
   {
     "analyst": "Citigroup",
@@ -58,9 +58,9 @@
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+19.5%",
-    "date": "10/13/2026"
+    "price_target": "$280.00",
+    "projected": "+20.4%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Piper Sandler",

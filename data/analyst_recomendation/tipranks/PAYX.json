@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+9.6%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Mark Marcon",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -7,24 +16,6 @@
     "price_target": "$110.00",
     "projected": "+9.9%",
     "date": "09/28/2026"
-  },
-  {
-    "analyst": "Kevin Mcveigh",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+14.9%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Ramsey El Assal",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "-5.1%",
-    "date": "09/25/2026"
   },
   {
     "analyst": "Jared Levine",
@@ -42,6 +33,15 @@
     "action": "Reiterated",
     "price_target": "$109.00",
     "projected": "+7.7%",
+    "date": "09/25/2026"
+  },
+  {
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "-5.1%",
     "date": "09/25/2026"
   },
   {

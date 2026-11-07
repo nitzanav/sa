@@ -1,5 +1,77 @@
 [
   {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+13.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+10.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+6.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$69.00",
+    "projected": "+1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$73.00",
+    "projected": "+6.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+14.9%",
+    "date": "10/20/2026"
+  },
+  {
     "analyst": "Nicholas Campanella",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -18,33 +90,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+13.4%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+23.9%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+17.8%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Julien Dumoulin Smith",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -52,15 +97,6 @@
     "price_target": "$74.00",
     "projected": "+10.8%",
     "date": "09/15/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$79.00",
-    "projected": "+15.6%",
-    "date": "09/03/2026"
   },
   {
     "analyst": "Marie Ferguson",
@@ -81,15 +117,6 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Steve Fleishman",
     "firm": "Wolfe Research",
     "recommendation": "Hold",
@@ -105,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$84.00",
     "projected": "+12.8%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+3.4%",
     "date": "07/29/2026"
   },
   {

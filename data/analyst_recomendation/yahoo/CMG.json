@@ -4,9 +4,9 @@
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$42.00",
-    "projected": "+5.3%",
-    "date": "02/05/2026"
+    "price_target": "$40.00",
+    "projected": "+26.3%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -29,11 +29,20 @@
   {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$44.00",
-    "projected": "+20.1%",
-    "date": "07/30/2026"
+    "price_target": "$41.00",
+    "projected": "+34.6%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "BTIG",
@@ -41,17 +50,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$45.00",
-    "projected": "+31.7%",
-    "date": "08/06/2026"
+    "projected": "+42.1%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+23%",
-    "date": "07/14/2026"
+    "price_target": "$40.00",
+    "projected": "+31.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Stifel",
@@ -63,30 +72,21 @@
     "date": "02/05/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+28.2%",
-    "date": "04/30/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+12.8%",
-    "date": "02/05/2026"
+    "price_target": "$40.00",
+    "projected": "+42.4%",
+    "date": "10/22/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": "+20.7%",
-    "date": "10/16/2026"
+    "price_target": "$51.00",
+    "projected": "+61%",
+    "date": "10/30/2026"
   }
 ]

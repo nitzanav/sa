@@ -1,11 +1,74 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$124.00",
+    "projected": "+14.1%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$121.00",
+    "projected": "+11.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+12.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+14.1%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+20.5%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$129.00",
+    "projected": "+19.8%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$123.50",
-    "projected": "+18%",
+    "projected": "+16.1%",
     "date": "10/22/2026"
   },
   {
@@ -14,26 +77,8 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$101.00",
-    "projected": "-3.5%",
+    "projected": "-4.7%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+11.8%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$131.00",
-    "projected": "+25.2%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Nicholas Campanella",
@@ -41,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$115.00",
-    "projected": "+9.9%",
+    "projected": "+10.2%",
     "date": "10/19/2026"
   },
   {
@@ -97,51 +142,6 @@
     "price_target": "$128.00",
     "projected": "+19%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$121.00",
-    "projected": "+11.3%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$129.00",
-    "projected": "+19%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$123.00",
-    "projected": "+7.6%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+0.2%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+8.6%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Ryan Levine",

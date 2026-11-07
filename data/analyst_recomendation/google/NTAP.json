@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+19.7%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Howard Ma",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Tim Long",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -16,15 +34,6 @@
     "price_target": "$300.00",
     "projected": "+29.3%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Katherine Murphy",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+6.8%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Krish Sankar",

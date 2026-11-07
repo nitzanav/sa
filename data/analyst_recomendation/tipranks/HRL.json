@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+12.5%",
+    "date": "11/02/2026"
+  },
+  {
     "analyst": "Benjamin Theurer",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -34,15 +43,6 @@
     "price_target": "$29.00",
     "projected": "+44.6%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Peter Galbo",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$24.00",
-    "projected": "+19.5%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Thomas Palmer",

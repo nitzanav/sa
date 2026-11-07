@@ -1,30 +1,57 @@
 [
   {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Chris Dankert",
+    "firm": "D.A. Davidson",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1400.00",
+    "projected": "-5.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Tommy Moll",
+    "firm": "Stephens",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1380.00",
+    "projected": "-6.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Christopher Glynn",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1645.00",
+    "projected": "+11%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "David Manthey",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1500.00",
-    "projected": "+11.9%",
-    "date": "10/19/2026"
+    "price_target": "$1600.00",
+    "projected": "+8%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Christine Yao",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$1400.00",
-    "projected": "+4.5%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Jeff Reive",
-    "firm": "RBC Capital",
+    "analyst": "Kenneth Newman",
+    "firm": "KeyBanc",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1427.00",
-    "projected": "+8.7%",
-    "date": "10/13/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
   },
   {
     "analyst": "Guy Hardwick",
@@ -32,8 +59,26 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$1172.00",
-    "projected": "-7.8%",
-    "date": "09/24/2026"
+    "projected": "-20.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Jeff Reive",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1582.00",
+    "projected": "+8.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Christine Yao",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1400.00",
+    "projected": "+5.1%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Nigel Coe",
@@ -64,57 +109,12 @@
   },
   {
     "analyst": "Unknown Analyst",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Chris Dankert",
-    "firm": "D.A. Davidson",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$1260.00",
-    "projected": "-2.9%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Christopher Glynn",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1375.00",
-    "projected": "+5.5%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$1350.00",
     "projected": "+3.6%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Kenneth Newman",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Tommy Moll",
-    "firm": "Stephens",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$1355.00",
-    "projected": "-2.6%",
-    "date": "07/14/2026"
   },
   {
     "analyst": "William Blunt",

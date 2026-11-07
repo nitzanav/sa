@@ -1,21 +1,66 @@
 [
   {
-    "analyst": "James Fish",
-    "firm": "Piper Sandler",
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$531.00",
-    "projected": "+15.5%",
-    "date": "10/20/2026"
+    "price_target": "$476.00",
+    "projected": "-7.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Tomer Zilberman",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
   },
   {
     "analyst": "Amit Daryanani",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$550.00",
-    "projected": "+21.9%",
-    "date": "10/14/2026"
+    "price_target": "$575.00",
+    "projected": "+14.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$570.00",
+    "projected": "+13.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "James Fish",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$533.00",
+    "projected": "+6.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Andrew Spinola",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$570.00",
+    "projected": "+13.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$598.00",
+    "projected": "+19.1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Matthew Niknam",
@@ -25,51 +70,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "Tomer Zilberman",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$476.00",
-    "projected": "+0.2%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$545.00",
-    "projected": "+14.8%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Andrew Spinola",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$520.00",
-    "projected": "+9.5%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$529.00",
-    "projected": "+11.4%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Louie DiPalma",

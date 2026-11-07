@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$4864.00",
+    "projected": "-22%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "John Lovallo",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -14,17 +23,8 @@
     "recommendation": "Sell",
     "action": "Downgraded",
     "price_target": "$5900.00",
-    "projected": "-1.6%",
+    "projected": "-1.7%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$5058.00",
-    "projected": "-15.6%",
-    "date": "10/22/2026"
   },
   {
     "analyst": "Ryan Gilbert",

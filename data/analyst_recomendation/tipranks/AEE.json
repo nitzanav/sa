@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+6.4%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$119.10",
-    "projected": "+14.1%",
+    "projected": "+11.3%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$114.00",
-    "projected": "+9.2%",
+    "projected": "+6.6%",
     "date": "10/22/2026"
   },
   {
@@ -23,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$109.00",
-    "projected": "+4.5%",
+    "projected": "+2%",
     "date": "10/21/2026"
   },
   {
@@ -32,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$113.00",
-    "projected": "+8.3%",
+    "projected": "+7.8%",
     "date": "10/20/2026"
   },
   {
@@ -41,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$121.00",
-    "projected": "+16%",
+    "projected": "+15.4%",
     "date": "10/20/2026"
   },
   {
@@ -50,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "+4.5%",
+    "projected": "+3.4%",
     "date": "10/19/2026"
   },
   {
@@ -72,15 +90,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+11.5%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -97,15 +106,6 @@
     "price_target": "$104.00",
     "projected": "+5.3%",
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$107.00",
-    "projected": "+8%",
-    "date": "09/25/2026"
   },
   {
     "analyst": "Shahriar Pourreza",

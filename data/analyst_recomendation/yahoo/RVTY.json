@@ -4,9 +4,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+12%",
-    "date": "08/05/2026"
+    "price_target": "$180.00",
+    "projected": "+14.2%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Baird",
@@ -22,27 +22,27 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+11.9%",
-    "date": "10/13/2026"
+    "price_target": "$185.00",
+    "projected": "+10.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+4.6%",
-    "date": "10/07/2026"
+    "price_target": "$175.00",
+    "projected": "+4.4%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "-10.1%",
-    "date": "05/07/2026"
+    "price_target": "$160.00",
+    "projected": "-4.6%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Wells Fargo",

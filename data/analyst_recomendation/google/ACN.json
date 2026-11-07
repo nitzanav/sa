@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+21%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$252.00",
+    "projected": "+1.7%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "David Koning",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$252.00",
+    "projected": "+7.2%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "David Grossman",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
@@ -69,24 +96,6 @@
     "action": "Maintained",
     "price_target": "$230.00",
     "projected": "+6.3%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Jason Kupferberg",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "-2.9%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Kevin Mcveigh",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$278.00",
-    "projected": "+28.5%",
     "date": "10/15/2026"
   },
   {
@@ -169,15 +178,6 @@
     "price_target": "$190.00",
     "projected": "-12%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "David Koning",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+16.1%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Maggie Nolan",

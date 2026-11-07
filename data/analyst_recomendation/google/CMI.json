@@ -1,39 +1,75 @@
 [
   {
+    "analyst": "Tami Zakaria",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+3.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$637.00",
+    "projected": "+41.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Luke Junk",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$535.00",
+    "projected": "+18.6%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Kyle Menges",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$630.00",
-    "projected": "+20%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Jerry Revich",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$760.00",
-    "projected": "+47.9%",
-    "date": "10/08/2026"
+    "price_target": "$525.00",
+    "projected": "+16.4%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Adam Seiden",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$760.00",
-    "projected": "+44.1%",
-    "date": "10/06/2026"
+    "price_target": "$675.00",
+    "projected": "+49.6%",
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Jamie Cook",
-    "firm": "Truist Financial",
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$779.00",
-    "projected": "+48.3%",
-    "date": "10/05/2026"
+    "price_target": "$557.00",
+    "projected": "+11.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jerry Revich",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$608.00",
+    "projected": "+16.9%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Steven Fisher",
@@ -43,24 +79,6 @@
     "price_target": "$741.00",
     "projected": "+41.6%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Chad Dillard",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+33.9%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Tami Zakaria",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$600.00",
-    "projected": "+15.2%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -124,14 +142,5 @@
     "price_target": "$845.00",
     "projected": "+23.7%",
     "date": "05/11/2026"
-  },
-  {
-    "analyst": "Luke Junk",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+1.2%",
-    "date": "05/06/2026"
   }
 ]

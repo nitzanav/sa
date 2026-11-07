@@ -1,5 +1,86 @@
 [
   {
+    "analyst": "Gabe Moreen",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+8.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$49.00",
+    "projected": "+12.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Nicholas Amicucci",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+19.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+6.3%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$49.50",
+    "projected": "+14.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$45.00",
+    "projected": "+4.7%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Eli Jossen",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$51.00",
+    "projected": "+20.3%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Ian Rapp",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+0.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+3.1%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Julien Dumoulin Smith",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -27,15 +108,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Ian Rapp",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$43.00",
-    "projected": "+10.4%",
-    "date": "09/29/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Scotiabank",
     "recommendation": "Hold",
@@ -43,33 +115,6 @@
     "price_target": "$43.00",
     "projected": "+10.4%",
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$45.00",
-    "projected": "+14.3%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Eli Jossen",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+26.7%",
-    "date": "09/01/2026"
-  },
-  {
-    "analyst": "Gabe Moreen",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+18.2%",
-    "date": "08/26/2026"
   },
   {
     "analyst": "Shahriar Pourreza",
@@ -81,15 +126,6 @@
     "date": "08/21/2026"
   },
   {
-    "analyst": "Nicholas Amicucci",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+23%",
-    "date": "08/17/2026"
-  },
-  {
     "analyst": "Paul Fremont",
     "firm": "Ladenburg Thalmann & Co.",
     "recommendation": "Buy",
@@ -97,33 +133,6 @@
     "price_target": "$51.00",
     "projected": "+20.7%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+4.3%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+11.8%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Steve Fleishman",

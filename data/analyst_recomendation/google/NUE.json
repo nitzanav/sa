@@ -1,12 +1,66 @@
 [
   {
+    "analyst": "Samuel McKinney",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$301.00",
+    "projected": "+8.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Vitaly Kononov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$304.00",
+    "projected": "+11.4%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Carlos De Alba",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$300.00",
+    "projected": "+9.9%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Bill Peterson",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$304.00",
+    "projected": "+12.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Katja Jancic",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$296.00",
-    "projected": "+19%",
-    "date": "10/09/2026"
+    "price_target": "$295.00",
+    "projected": "+9.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+18.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+15.1%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Nick Cash",
@@ -14,71 +68,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$302.00",
-    "projected": "+23.2%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Samuel McKinney",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$286.00",
-    "projected": "+18%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Carlos De Alba",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$270.00",
-    "projected": "+9%",
-    "date": "09/25/2026"
-  },
-  {
-    "analyst": "Vitaly Kononov",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+12.1%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Katja Jancic",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$295.00",
-    "projected": "+11.6%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+6%",
-    "date": "09/17/2026"
+    "projected": "+15.2%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Lawson Winder",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$280.00",
-    "projected": "+10.1%",
-    "date": "09/18/2026"
+    "price_target": "$300.00",
+    "projected": "+14.4%",
+    "date": "10/26/2026"
   },
   {
-    "analyst": "Richard Garchitorena",
-    "firm": "Barclays",
-    "recommendation": "Buy",
+    "analyst": "Andrew Jones CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+16%",
-    "date": "09/18/2026"
+    "price_target": "$256.00",
+    "projected": "-2.3%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -97,15 +106,6 @@
     "price_target": "$300.00",
     "projected": "+11.5%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Andrew Jones CFA",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$256.00",
-    "projected": "+0.8%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Unknown Analyst",

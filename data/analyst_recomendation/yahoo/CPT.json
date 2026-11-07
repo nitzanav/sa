@@ -13,9 +13,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+3.7%",
-    "date": "09/01/2026"
+    "price_target": "$103.00",
+    "projected": "+5%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -81,12 +81,12 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "",
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+0.2%",
-    "date": "09/17/2026"
+    "price_target": "$101.00",
+    "projected": "+3.6%",
+    "date": "10/14/2026"
   }
 ]

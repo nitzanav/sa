@@ -5,17 +5,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$270.00",
-    "projected": "+18.3%",
-    "date": "10/13/2026"
+    "projected": "+11.9%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+11.9%",
-    "date": "07/20/2026"
+    "price_target": "$260.00",
+    "projected": "+4.1%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -49,9 +49,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$262.00",
-    "projected": "+29.3%",
-    "date": "07/23/2026"
+    "price_target": "$277.00",
+    "projected": "+14.8%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -67,26 +67,26 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$238.00",
-    "projected": "+5.1%",
-    "date": "10/15/2026"
+    "price_target": "$240.00",
+    "projected": "-0.5%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+25.2%",
-    "date": "07/22/2026"
+    "price_target": "$280.00",
+    "projected": "+12.1%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$236.00",
-    "projected": "-1.5%",
-    "date": "02/26/2026"
+    "price_target": "$243.00",
+    "projected": "+0.7%",
+    "date": "10/22/2026"
   }
 ]

@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$490.00",
+    "projected": "+10.6%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Terry Tillman",
     "firm": "Truist Financial",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$500.00",
-    "projected": "+29.1%",
+    "projected": "+13.6%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$525.00",
-    "projected": "+35.6%",
+    "projected": "+19.3%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$450.00",
-    "projected": "+16.2%",
+    "projected": "+10.4%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$540.00",
-    "projected": "+39.5%",
+    "projected": "+32.4%",
     "date": "10/22/2026"
   },
   {
@@ -52,15 +61,6 @@
     "price_target": "$450.00",
     "projected": "+13.2%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Chigusa Katoku",
-    "firm": "J.P. Morgan",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$415.00",
-    "projected": "+5.7%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Joseph C Giordano",

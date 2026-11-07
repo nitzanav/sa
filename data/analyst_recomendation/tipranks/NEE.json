@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+17%",
+    "date": "10/27/2026"
+  },
+  {
     "analyst": "Nicholas Campanella",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$79.00",
-    "projected": "-0.8%",
+    "projected": "-3.4%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$99.00",
-    "projected": "+24.4%",
+    "projected": "+25.6%",
     "date": "10/22/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$103.00",
-    "projected": "+29.4%",
+    "projected": "+30.6%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$106.00",
-    "projected": "+33.2%",
+    "projected": "+34.4%",
     "date": "10/22/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$88.00",
-    "projected": "+10.6%",
+    "projected": "+10.8%",
     "date": "10/19/2026"
   },
   {
@@ -126,15 +135,6 @@
     "date": "08/17/2026"
   },
   {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+14.7%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "William Appicelli",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -178,14 +178,5 @@
     "price_target": "$87.00",
     "projected": "+7.5%",
     "date": "01/14/2026"
-  },
-  {
-    "analyst": "Ryan Levine",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": null,
-    "date": "10/30/2025"
   }
 ]

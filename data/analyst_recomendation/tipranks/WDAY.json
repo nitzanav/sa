@@ -171,15 +171,6 @@
     "date": "09/29/2026"
   },
   {
-    "analyst": "Siti Panigrahi",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$210.00",
-    "projected": "+10.1%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Almas Almaganbetov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
@@ -252,6 +243,15 @@
     "date": "08/28/2026"
   },
   {
+    "analyst": "Siti Panigrahi",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+10.1%",
+    "date": "08/28/2026"
+  },
+  {
     "analyst": "Derrick Wood",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -286,5 +286,59 @@
     "price_target": "$92.00",
     "projected": "-34.5%",
     "date": "07/20/2026"
+  },
+  {
+    "analyst": "Alexander Sklar",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "05/22/2026"
+  },
+  {
+    "analyst": "Robert Simmons, CFA",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "04/29/2026"
+  },
+  {
+    "analyst": "Omar Sheikh",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+42.8%",
+    "date": "03/10/2026"
+  },
+  {
+    "analyst": "Mark Marcon",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+47.4%",
+    "date": "02/24/2026"
+  },
+  {
+    "analyst": "Patrick Walravens",
+    "firm": "Citizens JMP",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "02/18/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": null,
+    "date": "11/26/2025"
   }
 ]

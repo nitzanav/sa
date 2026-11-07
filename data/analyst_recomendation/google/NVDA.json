@@ -1,5 +1,86 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Thomas O'Malley",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+29%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Daniel Zhu‏",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+89.6%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+89.6%",
+    "date": "10/25/2026"
+  },
+  {
+    "analyst": "Joseph Moore",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$300.00",
+    "projected": "+38.2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+42.6%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+35.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+35.8%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "William Stein",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/20/2026"
+  },
+  {
     "analyst": "Timothy Arcuri",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -18,15 +99,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Atif Malik",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$315.00",
-    "projected": "+30.1%",
-    "date": "10/06/2026"
-  },
-  {
     "analyst": "Karl Ackerman",
     "firm": "Exane BNP Paribas",
     "recommendation": "Buy",
@@ -36,30 +108,12 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Joseph Moore",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$300.00",
-    "projected": "+27.1%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "C J Muse",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$350.00",
     "projected": "+52.2%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Thomas O'Malley",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+19.6%",
     "date": "10/01/2026"
   },
   {
@@ -90,24 +144,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$400.00",
-    "projected": "+76.3%",
-    "date": "09/22/2026"
-  },
-  {
-    "analyst": "James Schneider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+36%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "David O'Connor",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -126,15 +162,6 @@
     "date": "09/09/2026"
   },
   {
-    "analyst": "Quinn Bolton",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+29.8%",
-    "date": "09/04/2026"
-  },
-  {
     "analyst": "Simon Leopold",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -142,15 +169,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+60%",
-    "date": "09/02/2026"
   },
   {
     "analyst": "Harlan Sur",
@@ -231,15 +249,6 @@
     "action": "Reiterated",
     "price_target": "$275.00",
     "projected": "+23.4%",
-    "date": "08/27/2026"
-  },
-  {
-    "analyst": "William Stein",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$346.00",
-    "projected": "+55.3%",
     "date": "08/27/2026"
   },
   {

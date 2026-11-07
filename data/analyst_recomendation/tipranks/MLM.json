@@ -1,21 +1,39 @@
 [
   {
-    "analyst": "Adam Seiden",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$640.00",
-    "projected": "+26.5%",
-    "date": "10/19/2026"
-  },
-  {
     "analyst": "Patrick Brown",
     "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$640.00",
-    "projected": "+26.5%",
-    "date": "10/16/2026"
+    "price_target": "$620.00",
+    "projected": "+20.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$641.00",
+    "projected": "+24.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Anthony Codling",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$520.00",
+    "projected": "-7.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$589.00",
+    "projected": "+4.7%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Brent Thielman",
@@ -24,7 +42,34 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "10/14/2026"
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Adam Seiden",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$640.00",
+    "projected": "+13.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Garik Shmois",
+    "firm": "D.A. Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$610.00",
+    "projected": "+13%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brian Brophy",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$629.00",
+    "projected": "+24.9%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Adrian Huerta",
@@ -34,15 +79,6 @@
     "price_target": "$650.00",
     "projected": "+36.6%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Anthony Codling",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$530.00",
-    "projected": "+9.9%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Steven Fisher",
@@ -63,24 +99,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$579.00",
-    "projected": "+20.7%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": "+27.9%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Philip Ng",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -90,15 +108,6 @@
     "date": "09/23/2026"
   },
   {
-    "analyst": "Garik Shmois",
-    "firm": "D.A. Davidson",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$625.00",
-    "projected": "+16.3%",
-    "date": "08/25/2026"
-  },
-  {
     "analyst": "Angel Castillo",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$639.00",
     "projected": "+16.8%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "Brian Brophy",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$634.00",
-    "projected": "+15.7%",
-    "date": "08/04/2026"
   },
   {
     "analyst": "Ivan Yi",

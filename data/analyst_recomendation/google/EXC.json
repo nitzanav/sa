@@ -4,9 +4,90 @@
     "firm": "Goldman Sachs",
     "recommendation": "Sell",
     "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "-2.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Paul Cole",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+8.4%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+3.8%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
     "price_target": "$44.00",
-    "projected": "+1.7%",
-    "date": "10/15/2026"
+    "projected": "+2%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$49.00",
+    "projected": "+13.6%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Jeremy Tonet",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+6.3%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$44.00",
+    "projected": "+1.6%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Richard Sunderland",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+7.8%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Andrew Weisel",
@@ -36,51 +117,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$50.00",
-    "projected": "+19.3%",
-    "date": "09/21/2026"
-  },
-  {
-    "analyst": "Paul Cole",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+15.3%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Jeremy Tonet",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+6.9%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Richard Sunderland",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+5.1%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+3.3%",
-    "date": "07/31/2026"
-  },
-  {
     "analyst": "Shahriar Pourreza",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -88,15 +124,6 @@
     "price_target": "$50.00",
     "projected": "+7.9%",
     "date": "07/22/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+0.9%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "Shelby Tucker",
@@ -159,15 +186,6 @@
     "action": "Downgraded",
     "price_target": "$48.00",
     "projected": "+4.2%",
-    "date": "04/17/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$49.00",
-    "projected": "+6.4%",
     "date": "04/17/2026"
   },
   {

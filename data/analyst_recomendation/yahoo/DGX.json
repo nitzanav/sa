@@ -63,15 +63,6 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": null,
-    "date": "10/27/2025"
-  },
-  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",

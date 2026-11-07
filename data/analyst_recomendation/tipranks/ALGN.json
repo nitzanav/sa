@@ -1,12 +1,48 @@
 [
   {
-    "analyst": "Steven Valiquette",
-    "firm": "Mizuho Securities",
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+7.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jonathan Block",
+    "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+33%",
-    "date": "10/22/2026"
+    "price_target": "$175.00",
+    "projected": "+14.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$175.00",
+    "projected": "+14.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "David Saxon",
+    "firm": "Needham",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Michael Cherny",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+37.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Jason Bednar",
@@ -14,8 +50,35 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$205.00",
-    "projected": "+36.3%",
-    "date": "10/21/2026"
+    "projected": "+34%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+30.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Vik Chopra",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$199.00",
+    "projected": "+31.6%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Steven Valiquette",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+32%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Jeff Johnson",
@@ -27,33 +90,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Michael Cherny",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+49.8%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Jonathan Block",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+24.1%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Elizabeth Anderson CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$155.00",
-    "projected": "+10.7%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Brandon Vazquez",
     "firm": "William Blair",
     "recommendation": "Buy",
@@ -61,24 +97,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Vik Chopra",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$209.00",
-    "projected": "+20.8%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Glen Santangelo",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+17%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Daniel Grosslight",
@@ -93,24 +111,6 @@
     "analyst": "Michael Ryskin",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$188.00",
-    "projected": "+4%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "David Saxon",
-    "firm": "Needham",
-    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,
     "projected": null,

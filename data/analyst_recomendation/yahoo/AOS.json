@@ -29,11 +29,11 @@
   {
     "analyst": "Stifel",
     "firm": "Stifel",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+18.4%",
-    "date": "08/01/2026"
+    "price_target": "$59.00",
+    "projected": "+0.4%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Baird",
@@ -49,9 +49,9 @@
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+28.1%",
-    "date": "06/10/2026"
+    "price_target": "$72.00",
+    "projected": "+21%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -67,8 +67,8 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+8.2%",
-    "date": "07/31/2026"
+    "price_target": "$67.00",
+    "projected": "+5.5%",
+    "date": "10/31/2026"
   }
 ]

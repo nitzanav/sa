@@ -67,9 +67,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$526.00",
-    "projected": "+33.1%",
-    "date": "10/15/2026"
+    "price_target": "$539.00",
+    "projected": "+43.4%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Jefferies",
@@ -85,8 +85,8 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$503.00",
-    "projected": "+13.2%",
-    "date": "09/26/2026"
+    "price_target": "$485.00",
+    "projected": "+29%",
+    "date": "11/04/2026"
   }
 ]

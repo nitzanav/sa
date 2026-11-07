@@ -4,9 +4,9 @@
     "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$860.00",
-    "projected": "+6.7%",
-    "date": "01/08/2026"
+    "price_target": "$1030.00",
+    "projected": "+7.7%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Argus Research",
@@ -27,40 +27,40 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1030.00",
-    "projected": "+33.8%",
-    "date": "08/03/2026"
-  },
-  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$780.00",
-    "projected": "+5.7%",
-    "date": "10/07/2026"
+    "price_target": "$982.00",
+    "projected": "+5.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1100.00",
+    "projected": "+15%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$960.00",
-    "projected": "+27.8%",
-    "date": "04/23/2026"
+    "price_target": "$980.00",
+    "projected": "+21.5%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Canaccord Genuity",
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$875.00",
-    "projected": "+37.9%",
-    "date": "05/20/2026"
+    "price_target": "$1175.00",
+    "projected": "+22.9%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -76,17 +76,17 @@
     "firm": "Leerink Partners",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$824.00",
-    "projected": "+1.2%",
-    "date": "08/18/2026"
+    "price_target": "$997.00",
+    "projected": "+7.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Bernstein",
     "firm": "Bernstein",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$921.00",
-    "projected": "+20.5%",
-    "date": "04/09/2026"
+    "price_target": "$812.00",
+    "projected": "-12.4%",
+    "date": "11/02/2026"
   }
 ]

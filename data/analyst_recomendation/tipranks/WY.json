@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Matt McKellar",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "+28.3%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "George Staphos",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$25.00",
-    "projected": "+31.7%",
-    "date": "10/14/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/02/2026"
   },
   {
     "analyst": "Ketan Mamtora",
@@ -23,8 +14,44 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$34.00",
-    "projected": "+78.7%",
-    "date": "10/12/2026"
+    "projected": "+65.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Susan Maklari",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+31.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Hamir Patel",
+    "firm": "CIBC",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$24.00",
+    "projected": "+16.7%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "+11.8%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Matt McKellar",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "+25.3%",
+    "date": "11/01/2026"
   },
   {
     "analyst": "Michael Roxland",
@@ -33,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$24.00",
     "projected": "+26.1%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Susan Maklari",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+41.9%",
     "date": "10/12/2026"
   },
   {
@@ -61,15 +79,6 @@
     "price_target": "$30.00",
     "projected": "+61.7%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$21.00",
-    "projected": "+13.8%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Hong Zhang",
@@ -97,15 +106,6 @@
     "price_target": "$31.00",
     "projected": "+21.7%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Hamir Patel",
-    "firm": "CIBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "+13.1%",
-    "date": "04/23/2026"
   },
   {
     "analyst": "Unknown Analyst",

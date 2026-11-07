@@ -4,9 +4,72 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$294.00",
-    "projected": "-0.8%",
-    "date": "10/16/2026"
+    "price_target": "$334.00",
+    "projected": "-1.5%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$348.00",
+    "projected": "+6.5%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$323.00",
+    "projected": "+3.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Michael Griffin CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$303.00",
+    "projected": "0%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$343.00",
+    "projected": "+13.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$344.00",
+    "projected": "+13.5%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$351.00",
+    "projected": "+15.8%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Linda Tsai",
@@ -36,15 +99,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Michael Griffin CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$308.00",
-    "projected": "+3.7%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Michael Mueller",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -52,33 +106,6 @@
     "price_target": "$330.00",
     "projected": "+11.2%",
     "date": "09/21/2026"
-  },
-  {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$344.00",
-    "projected": "+15.8%",
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Brendan Lynch",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$351.00",
-    "projected": "+19.3%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$343.00",
-    "projected": "+14%",
-    "date": "09/02/2026"
   },
   {
     "analyst": "Ravi Vaidya",
@@ -106,33 +133,6 @@
     "price_target": "$350.00",
     "projected": "+11.2%",
     "date": "08/27/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Jeffrey Spector",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$341.00",
-    "projected": "+4.3%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$318.00",
-    "projected": "-1.7%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Caitlin Burrows",

@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+29.6%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Julian Mitchell",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$241.00",
-    "projected": "+14%",
+    "projected": "+11.6%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$271.00",
-    "projected": "+28.2%",
+    "projected": "+25.5%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$269.00",
-    "projected": "+27.2%",
+    "projected": "+26%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$265.00",
-    "projected": "+25.3%",
+    "projected": "+24.1%",
     "date": "10/22/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$231.00",
-    "projected": "+9.3%",
+    "projected": "+7.5%",
     "date": "10/21/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$250.00",
-    "projected": "+18.2%",
+    "projected": "+19%",
     "date": "10/20/2026"
   },
   {
@@ -187,23 +196,5 @@
     "price_target": "$390.00",
     "projected": null,
     "date": "12/03/2025"
-  },
-  {
-    "analyst": "Christopher Glynn",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/24/2025"
-  },
-  {
-    "analyst": "Amit Mehrotra",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$516.00",
-    "projected": null,
-    "date": "10/24/2025"
   }
 ]

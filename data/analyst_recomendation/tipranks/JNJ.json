@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "David Risinger",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$272.00",
+    "projected": "+2.5%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+5.6%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Louise Chen",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+14.3%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Asad Haider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+5%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Michael Yee",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+20.4%",
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Hans Engel",
     "firm": "Erste Group",
     "recommendation": "Hold",
@@ -14,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$300.00",
-    "projected": "+17.4%",
+    "projected": "+17.9%",
     "date": "10/19/2026"
   },
   {
@@ -36,24 +81,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "David Risinger",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$272.00",
-    "projected": "+5.8%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Louise Chen",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+22.4%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Lee Hambright",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -72,15 +99,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$280.00",
-    "projected": "+10%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Rick Wise",
     "firm": "Stifel Nicolaus",
     "recommendation": "Hold",
@@ -88,15 +106,6 @@
     "price_target": "$260.00",
     "projected": "-0.6%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Michael Yee",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+25.4%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Vamil Divan",
@@ -142,15 +151,6 @@
     "price_target": "$320.00",
     "projected": "+18.4%",
     "date": "09/10/2026"
-  },
-  {
-    "analyst": "Asad Haider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$282.00",
-    "projected": "+4.1%",
-    "date": "08/25/2026"
   },
   {
     "analyst": "David Toung",

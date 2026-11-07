@@ -4,9 +4,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+25.4%",
-    "date": "01/30/2026"
+    "price_target": "$270.00",
+    "projected": "+17.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -31,9 +31,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "-45.3%",
-    "date": "05/27/2026"
+    "price_target": "$270.00",
+    "projected": "+15.5%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Guggenheim",
@@ -49,27 +49,18 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "+17.1%",
-    "date": "10/07/2026"
+    "price_target": "$260.00",
+    "projected": "+11.2%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+35.5%",
-    "date": "04/23/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$195.00",
-    "projected": "+9.3%",
-    "date": "07/22/2026"
+    "price_target": "$254.00",
+    "projected": "+10.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -81,6 +72,15 @@
     "date": "10/06/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+9.3%",
+    "date": "07/22/2026"
+  },
+  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -88,5 +88,41 @@
     "price_target": "$230.00",
     "projected": "+17.8%",
     "date": "07/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+38.3%",
+    "date": "04/23/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+17.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.5%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+21.9%",
+    "date": "04/13/2026"
   }
 ]

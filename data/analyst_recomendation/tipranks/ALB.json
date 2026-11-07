@@ -1,21 +1,57 @@
 [
   {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
+    "analyst": "Joel Jackson",
+    "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+28.7%",
-    "date": "10/22/2026"
+    "price_target": "$160.00",
+    "projected": "+61.6%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Pete Osterland",
     "firm": "Truist Financial",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+71.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+90.5%",
-    "date": "10/20/2026"
+    "price_target": "$95.00",
+    "projected": "-4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$119.00",
+    "projected": "+19.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Ben Isaacson",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+90.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+37.2%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Matthew DeYoe",
@@ -23,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$131.00",
-    "projected": "+34.9%",
+    "projected": "+36.7%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Arun Viswanathan",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$129.00",
-    "projected": "+33%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "John Roberts CFA",
@@ -43,15 +70,6 @@
     "price_target": "$130.00",
     "projected": "+32.7%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Aleksey Yefremov",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$109.00",
-    "projected": "+12.4%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Vincent Andrews",
@@ -69,15 +87,6 @@
     "action": "Reiterated",
     "price_target": "$135.00",
     "projected": "+28.1%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Joel Jackson",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+66%",
     "date": "10/06/2026"
   },
   {
@@ -115,15 +124,6 @@
     "price_target": "$170.00",
     "projected": "+27.9%",
     "date": "08/20/2026"
-  },
-  {
-    "analyst": "Ben Isaacson",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+44.6%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Eric Boyes",
@@ -196,14 +196,5 @@
     "price_target": "$200.00",
     "projected": "+20.3%",
     "date": "01/18/2026"
-  },
-  {
-    "analyst": "David Deckelbaum",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": null,
-    "date": "11/05/2025"
   }
 ]

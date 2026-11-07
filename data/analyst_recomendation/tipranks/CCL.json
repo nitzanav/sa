@@ -36,15 +36,6 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "John Staszak",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+18.2%",
-    "date": "09/30/2026"
-  },
-  {
     "analyst": "Matthew Boss",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -54,12 +45,12 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Steven Wieczynski",
-    "firm": "Stifel Nicolaus",
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$35.00",
-    "projected": "+37.8%",
+    "price_target": "$30.00",
+    "projected": "+18.2%",
     "date": "09/30/2026"
   },
   {
@@ -69,6 +60,15 @@
     "action": "Reiterated",
     "price_target": "$33.00",
     "projected": "+30%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+37.8%",
     "date": "09/30/2026"
   },
   {

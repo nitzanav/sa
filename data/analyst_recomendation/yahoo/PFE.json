@@ -22,9 +22,9 @@
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "-3.1%",
-    "date": "06/10/2026"
+    "price_target": "$28.00",
+    "projected": "-8.9%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -49,9 +49,9 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+2.4%",
-    "date": "04/29/2026"
+    "price_target": "$30.00",
+    "projected": "-3.5%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -63,22 +63,22 @@
     "date": "04/10/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "-0.7%",
-    "date": "04/14/2026"
-  },
-  {
     "analyst": "Guggenheim",
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$31.00",
-    "projected": "+18.2%",
-    "date": "08/07/2026"
+    "price_target": "$33.00",
+    "projected": "+6.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "-3.5%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Barclays",

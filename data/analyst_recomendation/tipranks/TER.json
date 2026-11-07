@@ -4,27 +4,99 @@
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$485.00",
-    "projected": "+43%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Mehdi Hosseini",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$550.00",
-    "projected": "+44.6%",
-    "date": "09/12/2026"
+    "price_target": "$430.00",
+    "projected": "+41.8%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Quinn Fredrickson",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
-    "action": "Downgraded",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "+27%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Steve Barger",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Shane Brett CFA",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+25.3%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+81.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+32.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+45.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Vedvati Shrotre",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$420.00",
-    "projected": "+10%",
-    "date": "08/21/2026"
+    "projected": "+38.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Brian Chin",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+28.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+48.7%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "C J Muse",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$550.00",
+    "projected": "+72.9%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Joseph Cardoso",
@@ -45,33 +117,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Vedvati Shrotre",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$420.00",
-    "projected": "+20.7%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Steve Barger",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Shane Brett CFA",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$397.00",
-    "projected": "+14.1%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Krish Sankar",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -79,51 +124,6 @@
     "price_target": "$450.00",
     "projected": "+22.3%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$525.00",
-    "projected": "+42.7%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "James Schneider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+26.4%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "C J Muse",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$550.00",
-    "projected": "+72.2%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Atif Malik",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+22.3%",
-    "date": "04/30/2026"
-  },
-  {
-    "analyst": "Brian Chin",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$390.00",
-    "projected": "+0.3%",
-    "date": "04/28/2026"
   },
   {
     "analyst": "Amanda Tan",
@@ -169,14 +169,5 @@
     "price_target": "$225.00",
     "projected": null,
     "date": "12/02/2025"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$209.00",
-    "projected": null,
-    "date": "11/03/2025"
   }
 ]

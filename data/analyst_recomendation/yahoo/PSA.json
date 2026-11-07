@@ -36,6 +36,15 @@
     "date": "02/06/2026"
   },
   {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$323.00",
+    "projected": "+3.3%",
+    "date": "10/28/2026"
+  },
+  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$343.00",
     "projected": "+14%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$318.00",
-    "projected": "-0.1%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Citigroup",

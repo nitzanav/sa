@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$260.00",
-    "projected": "+12.8%",
+    "projected": "+11.2%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +14,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+17.1%",
+    "projected": "+15.5%",
     "date": "10/22/2026"
   },
   {
@@ -23,7 +23,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+17.1%",
+    "projected": "+15.5%",
     "date": "10/22/2026"
   },
   {
@@ -32,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+12.8%",
+    "projected": "+11.2%",
     "date": "10/22/2026"
   },
   {
@@ -41,16 +41,16 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$254.00",
-    "projected": "+10.2%",
+    "projected": "+8.6%",
     "date": "10/22/2026"
   },
   {
-    "analyst": "Patrick B Donnelly",
+    "analyst": "Joanne Wuensch",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$270.00",
-    "projected": "+17.1%",
+    "projected": "+15.5%",
     "date": "10/22/2026"
   },
   {
@@ -59,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",
-    "projected": "+12.8%",
+    "projected": "+11.2%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Dan Leonard",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+15%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Evie Koslosky",
@@ -77,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$275.00",
-    "projected": "+19.3%",
+    "projected": "+26.4%",
     "date": "10/21/2026"
   },
   {
@@ -86,7 +77,16 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$270.00",
-    "projected": "+17.1%",
+    "projected": "+24.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Dan Leonard",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+21.8%",
     "date": "10/21/2026"
   },
   {
@@ -135,15 +135,6 @@
     "date": "07/23/2026"
   },
   {
-    "analyst": "Aristotelis Moutopoulos",
-    "firm": "DZ BANK AG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": "+17.7%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Justin Bowers",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -159,6 +150,15 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "07/22/2026"
+  },
+  {
+    "analyst": "Aristotelis Moutopoulos",
+    "firm": "DZ BANK AG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+17.7%",
     "date": "07/22/2026"
   },
   {

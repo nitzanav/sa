@@ -58,9 +58,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+9.6%",
-    "date": "10/14/2026"
+    "price_target": "$338.00",
+    "projected": "+23.8%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Mizuho",
@@ -88,41 +88,5 @@
     "price_target": "$324.00",
     "projected": "+10%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Stifel",
-    "firm": "Stifel",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+16.5%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Seaport Global",
-    "firm": "Seaport Global",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/05/2026"
-  },
-  {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$345.00",
-    "projected": "+17.6%",
-    "date": "08/18/2026"
-  },
-  {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "",
-    "action": "Maintained",
-    "price_target": "$314.00",
-    "projected": "+5.8%",
-    "date": "09/10/2026"
   }
 ]

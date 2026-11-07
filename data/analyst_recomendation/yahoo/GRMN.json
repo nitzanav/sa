@@ -13,26 +13,26 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$297.00",
-    "projected": "+0.5%",
-    "date": "07/31/2026"
+    "price_target": "$277.00",
+    "projected": "+1%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+7.3%",
-    "date": "04/16/2026"
+    "price_target": "$310.00",
+    "projected": "+10.5%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$289.00",
-    "projected": "-1.4%",
-    "date": "07/30/2026"
+    "price_target": "$295.00",
+    "projected": "+7.6%",
+    "date": "10/29/2026"
   }
 ]

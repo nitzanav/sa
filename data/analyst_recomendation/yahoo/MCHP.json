@@ -13,18 +13,18 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+14.2%",
-    "date": "05/09/2026"
+    "price_target": "$85.00",
+    "projected": "+31.1%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+47.5%",
-    "date": "08/08/2026"
+    "price_target": "$115.00",
+    "projected": "+77.3%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "UBS",
@@ -49,9 +49,9 @@
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+60.2%",
-    "date": "08/18/2026"
+    "price_target": "$100.00",
+    "projected": "+54.2%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Stifel",
@@ -72,6 +72,15 @@
     "date": "01/16/2026"
   },
   {
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+85%",
+    "date": "11/07/2026"
+  },
+  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$120.00",
     "projected": "+14.2%",
     "date": "05/08/2026"
-  },
-  {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+14.2%",
-    "date": "05/09/2026"
   }
 ]

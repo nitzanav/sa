@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Aneesha Sherman",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+25%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Lorraine Hutchinson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+19.5%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Spencer Hanus",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "Hans Engel",
     "firm": "Erste Group",
     "recommendation": "Hold",
@@ -42,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$178.00",
     "projected": "+40.3%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Lorraine Hutchinson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$175.00",
-    "projected": "+37.9%",
     "date": "09/14/2026"
   },
   {
@@ -114,15 +132,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Aneesha Sherman",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+23.1%",
     "date": "08/20/2026"
   },
   {

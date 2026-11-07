@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$590.00",
+    "projected": "+39.5%",
+    "date": "11/02/2026"
+  },
+  {
     "analyst": "Mark Newman",
     "firm": "Bernstein",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$650.00",
-    "projected": "+16.8%",
-    "date": "10/13/2026"
+    "projected": "+43.9%",
+    "date": "10/25/2026"
   },
   {
     "analyst": "Tim Long",
@@ -16,15 +25,6 @@
     "price_target": "$574.00",
     "projected": "+4.7%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Katherine Murphy",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$570.00",
-    "projected": "+0.2%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Asiya Merchant",

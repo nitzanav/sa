@@ -1,66 +1,102 @@
 [
   {
-    "analyst": "Andrea Faria Teixeira",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$104.00",
-    "projected": "+11.2%",
-    "date": "10/19/2026"
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+1.3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Lauren Lieberman",
     "firm": "Barclays",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$87.00",
-    "projected": "-7%",
-    "date": "10/16/2026"
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "-1.8%",
+    "date": "11/03/2026"
   },
   {
-    "analyst": "Peter Grom",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$106.00",
-    "projected": "+12.5%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Peter Galbo",
-    "firm": "Bank of America Securities",
+    "analyst": "Kevin Grundy",
+    "firm": "Exane BNP Paribas",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+14.1%",
-    "date": "10/09/2026"
+    "price_target": "$108.00",
+    "projected": "+12.1%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Nik Modi",
     "firm": "RBC Capital",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "+20.2%",
-    "date": "10/06/2026"
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "+9%",
+    "date": "11/02/2026"
   },
   {
-    "analyst": "Bonnie Herzog",
-    "firm": "Goldman Sachs",
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$97.00",
+    "projected": "+0.7%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Andrea Faria Teixeira",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "+18.3%",
-    "date": "10/05/2026"
+    "price_target": "$102.00",
+    "projected": "+5.9%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Christopher Carey",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "-1.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$111.00",
+    "projected": "+15.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+6.5%",
-    "date": "10/05/2026"
+    "price_target": "$112.00",
+    "projected": "+16.3%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+5.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "+7.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Michael Lavery",
@@ -72,39 +108,12 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+13.1%",
-    "date": "09/15/2026"
-  },
-  {
     "analyst": "Stephen Powers",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$101.00",
     "projected": "+9.3%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Dara Mohsenian",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$104.00",
-    "projected": "+12.6%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Robert Moskow",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "-2.6%",
     "date": "08/03/2026"
   },
   {

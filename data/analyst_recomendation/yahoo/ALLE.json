@@ -4,18 +4,27 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+11.7%",
-    "date": "07/24/2026"
+    "price_target": "$183.00",
+    "projected": "+2.3%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$206.00",
+    "projected": "+15.8%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "+7.7%",
-    "date": "07/25/2026"
+    "price_target": "$200.00",
+    "projected": "+11.8%",
+    "date": "10/24/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -40,9 +49,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "-3.6%",
-    "date": "08/11/2026"
+    "price_target": "$181.00",
+    "projected": "-5.4%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Baird",

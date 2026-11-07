@@ -36,15 +36,6 @@
     "date": "05/14/2026"
   },
   {
-    "analyst": "Stifel",
-    "firm": "Stifel",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "+13.5%",
-    "date": "04/22/2026"
-  },
-  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -52,6 +43,15 @@
     "price_target": "$40.00",
     "projected": "+6.6%",
     "date": "03/19/2026"
+  },
+  {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$40.00",
+    "projected": "+13.5%",
+    "date": "04/22/2026"
   },
   {
     "analyst": "Bernstein",

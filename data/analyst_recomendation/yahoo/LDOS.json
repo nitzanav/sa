@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+3.4%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Buy",
@@ -16,6 +7,15 @@
     "price_target": "$160.00",
     "projected": "+46.9%",
     "date": "07/10/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+3.4%",
+    "date": "09/18/2026"
   },
   {
     "analyst": "Stifel",

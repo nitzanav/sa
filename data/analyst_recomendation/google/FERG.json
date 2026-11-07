@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$288.00",
+    "projected": "+24.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "David Manthey",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$288.00",
+    "projected": "+29.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+40.5%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Michael Dahl",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -72,15 +99,6 @@
     "date": "09/07/2026"
   },
   {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+45.5%",
-    "date": "09/03/2026"
-  },
-  {
     "analyst": "Annelies Vermeulen",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -108,15 +126,6 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+12%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Suhasini Varanasi",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -139,15 +148,6 @@
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$288.00",
-    "projected": "+9.6%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "David Manthey",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
     "price_target": "$288.00",
     "projected": "+9.6%",
     "date": "08/11/2026"

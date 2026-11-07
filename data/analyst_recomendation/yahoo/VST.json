@@ -18,22 +18,13 @@
     "date": "07/28/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$243.00",
-    "projected": null,
-    "date": "11/08/2025"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$227.00",
-    "projected": "+62.2%",
-    "date": "08/21/2026"
+    "price_target": "$226.00",
+    "projected": "+47.4%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -49,9 +40,9 @@
     "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$218.00",
-    "projected": "+32.4%",
-    "date": "01/12/2026"
+    "price_target": "$194.00",
+    "projected": "+32.1%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "JP Morgan",

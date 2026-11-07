@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$465.00",
+    "projected": "+21.5%",
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Christopher Rolland",
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$475.00",
-    "projected": "+18.7%",
+    "projected": "+19.6%",
     "date": "10/21/2026"
   },
   {
@@ -16,15 +25,6 @@
     "price_target": "$525.00",
     "projected": "+32.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+21.7%",
-    "date": "09/22/2026"
   },
   {
     "analyst": "Vivek Arya",
@@ -43,15 +43,6 @@
     "price_target": "$675.00",
     "projected": "+81.1%",
     "date": "08/24/2026"
-  },
-  {
-    "analyst": "Jim Kelleher",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/20/2026"
   },
   {
     "analyst": "Harsh Kumar",
@@ -108,15 +99,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Quinn Bolton",
-    "firm": "Needham",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+19.4%",
-    "date": "08/20/2026"
-  },
-  {
     "analyst": "Timothy Arcuri",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -132,6 +114,24 @@
     "action": "Reiterated",
     "price_target": "$500.00",
     "projected": "+32.7%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Quinn Bolton",
+    "firm": "Needham",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+19.4%",
+    "date": "08/20/2026"
+  },
+  {
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
     "date": "08/20/2026"
   },
   {
@@ -241,14 +241,5 @@
     "price_target": "$265.00",
     "projected": null,
     "date": "11/19/2025"
-  },
-  {
-    "analyst": "David O'Connor",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$300.00",
-    "projected": null,
-    "date": "11/04/2025"
   }
 ]

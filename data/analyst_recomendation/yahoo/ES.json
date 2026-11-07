@@ -22,9 +22,9 @@
     "firm": "JP Morgan",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+1.4%",
-    "date": "03/12/2026"
+    "price_target": "$68.00",
+    "projected": "+4.8%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Mizuho",
@@ -43,6 +43,15 @@
     "price_target": "$74.00",
     "projected": "+9.5%",
     "date": "03/27/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+7.8%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "BMO Capital",

@@ -1,21 +1,30 @@
 [
   {
-    "analyst": "Michael Funk",
-    "firm": "Bank of America Securities",
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$34.00",
-    "projected": "+48.7%",
-    "date": "10/14/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/03/2026"
   },
   {
-    "analyst": "Laurent Yoon",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$24.00",
-    "projected": "+7.8%",
-    "date": "10/12/2026"
+    "analyst": "Ryan Gravett",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+40.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+40.6%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Maher Yaghi",
@@ -23,44 +32,98 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$26.50",
-    "projected": "+18.4%",
-    "date": "10/09/2026"
+    "projected": "+20.2%",
+    "date": "10/22/2026"
   },
   {
-    "analyst": "Brandon Nispel",
-    "firm": "KeyBanc",
+    "analyst": "Timothy Horan",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$33.00",
+    "projected": "+49.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+37%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Sebastiano Petti",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$36.00",
-    "projected": "+46.2%",
-    "date": "10/07/2026"
+    "price_target": "$31.00",
+    "projected": "+40.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Michael Funk",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$34.00",
+    "projected": "+55.3%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Kannan Venkateshwar",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "-2.9%",
-    "date": "09/29/2026"
+    "price_target": "$21.00",
+    "projected": "-4.8%",
+    "date": "10/22/2026"
   },
   {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$28.00",
-    "projected": "+10.2%",
-    "date": "09/28/2026"
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+49.7%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Steven Cahall",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$20.00",
-    "projected": "-20.4%",
-    "date": "09/23/2026"
+    "projected": "-9.3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Michael Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$27.00",
+    "projected": "+23.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Laurent Yoon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+10.4%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Sam McHugh",
@@ -70,33 +133,6 @@
     "price_target": "$30.00",
     "projected": "+16.5%",
     "date": "09/21/2026"
-  },
-  {
-    "analyst": "Ryan Gravett",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$31.00",
-    "projected": "+23.6%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "John Hodulik",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$31.00",
-    "projected": "+23.6%",
-    "date": "09/18/2026"
-  },
-  {
-    "analyst": "Sebastiano Petti",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$33.00",
-    "projected": "+31.6%",
-    "date": "09/18/2026"
   },
   {
     "analyst": "Michael Rollins",
@@ -126,15 +162,6 @@
     "date": "07/22/2026"
   },
   {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+28.3%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Jonathan Atkin",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -153,24 +180,6 @@
     "date": "07/23/2026"
   },
   {
-    "analyst": "Gregory Williams",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$33.00",
-    "projected": "+41.9%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Michael Ng",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+28.3%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Raymond James",
     "recommendation": "Hold",
@@ -187,15 +196,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/08/2026"
-  },
-  {
-    "analyst": "Timothy Horan",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "06/03/2026"
   },
   {
     "analyst": "Walter Piecyk",

@@ -40,18 +40,18 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$236.00",
-    "projected": "+19.5%",
-    "date": "02/25/2026"
+    "price_target": "$232.00",
+    "projected": "+38.1%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$259.00",
-    "projected": "+47.1%",
-    "date": "10/15/2026"
+    "price_target": "$297.00",
+    "projected": "+61%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -63,13 +63,13 @@
     "date": "08/27/2026"
   },
   {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
+    "analyst": "Barclays",
+    "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$282.00",
-    "projected": "+29.4%",
-    "date": "08/03/2026"
+    "price_target": "$230.00",
+    "projected": "+28.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Jefferies",

@@ -3,10 +3,28 @@
     "analyst": "Adam Kramer",
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
-    "action": "Initiated",
-    "price_target": "$5,058.00",
-    "projected": "-17.5%",
-    "date": "10/01/2026"
+    "action": "Reiterated",
+    "price_target": "$4,864.00",
+    "projected": "-22%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$7,425.00",
+    "projected": "+23.8%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$5,900.00",
+    "projected": "-1.7%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Ryan Gilbert",
@@ -25,24 +43,6 @@
     "price_target": "$6,400.00",
     "projected": "+2.1%",
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "Rafe Jadrosich",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$7,000.00",
-    "projected": "+13.8%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "John Lovallo",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$7,400.00",
-    "projected": "+20.3%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Trevor Allinson",

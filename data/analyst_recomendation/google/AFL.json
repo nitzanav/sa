@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$112.00",
+    "projected": "-9.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Wesley Carmichael",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$116.00",
+    "projected": "-8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joshua Shanker",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+9.5%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -9,33 +45,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Wesley Carmichael",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+0.7%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+19.8%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Joshua Shanker",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$133.00",
-    "projected": "+15.5%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Ryan Krueger",
     "firm": "KBW",
     "recommendation": "Hold",
@@ -43,15 +52,6 @@
     "price_target": "$120.00",
     "projected": "+6.4%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "-5.5%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Alex Scott",

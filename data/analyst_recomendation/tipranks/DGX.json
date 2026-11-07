@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+5.6%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Erin Wright",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -27,12 +36,12 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Michael Ryskin",
+    "analyst": "Lu Li",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$265.00",
-    "projected": "+10.6%",
+    "projected": "+17%",
     "date": "10/22/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$250.00",
-    "projected": "+4.3%",
+    "projected": "+6.7%",
     "date": "10/19/2026"
   },
   {
@@ -69,15 +78,6 @@
     "action": "Maintained",
     "price_target": "$260.00",
     "projected": "+10.6%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Lisa Gill",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$250.00",
-    "projected": "+6.3%",
     "date": "07/28/2026"
   },
   {
@@ -115,14 +115,5 @@
     "price_target": "$215.00",
     "projected": "+3.8%",
     "date": "02/11/2026"
-  },
-  {
-    "analyst": "David Westenberg",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$200.00",
-    "projected": null,
-    "date": "10/27/2025"
   }
 ]

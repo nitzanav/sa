@@ -4,9 +4,9 @@
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": null,
-    "date": "10/29/2025"
+    "price_target": "$780.00",
+    "projected": "+9.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "UBS",
@@ -22,18 +22,18 @@
     "firm": "Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$639.00",
-    "projected": "+36.2%",
-    "date": "04/25/2026"
+    "price_target": "$756.00",
+    "projected": "+12.4%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+27.9%",
-    "date": "04/25/2026"
+    "price_target": "$775.00",
+    "projected": "+15.2%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -58,9 +58,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$685.00",
-    "projected": "+17.8%",
-    "date": "01/30/2026"
+    "price_target": "$800.00",
+    "projected": "+18.9%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -85,8 +85,8 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$750.00",
-    "projected": "+13.2%",
-    "date": "10/07/2026"
+    "price_target": "$775.00",
+    "projected": "+12%",
+    "date": "10/22/2026"
   }
 ]

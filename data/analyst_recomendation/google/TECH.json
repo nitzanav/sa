@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Toung",
+    "firm": "Argus Research",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Evan Stampler",
     "firm": "Wells Fargo",
     "recommendation": "Hold",

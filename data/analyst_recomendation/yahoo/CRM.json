@@ -63,15 +63,6 @@
     "date": "09/18/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "-6.2%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "BTIG",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$300.00",
     "projected": "+14.5%",
     "date": "09/03/2026"
+  },
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+80.3%",
+    "date": "05/29/2026"
   },
   {
     "analyst": "Jefferies",

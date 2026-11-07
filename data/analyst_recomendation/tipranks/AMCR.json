@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "George Staphos",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+8.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Nathan Reilly",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+23.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Hillary Cacanando",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Gabrial Hajde",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$44.00",
-    "projected": "-0.2%",
+    "projected": "+0.2%",
     "date": "10/19/2026"
   },
   {
@@ -16,15 +43,6 @@
     "price_target": "$47.00",
     "projected": "+13.2%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "George Staphos",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+13.3%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Michael Roxland",
@@ -54,24 +72,6 @@
     "date": "08/14/2026"
   },
   {
-    "analyst": "Ghansham Panjabi",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Hillary Cacanando",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$50.00",
-    "projected": "+6.4%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Raymond James",
     "recommendation": "Hold",
@@ -81,13 +81,13 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Nathan Reilly",
-    "firm": "UBS",
+    "analyst": "Ghansham Panjabi",
+    "firm": "Robert W. Baird",
     "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$56.00",
-    "projected": "+19.7%",
-    "date": "08/11/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "08/13/2026"
   },
   {
     "analyst": "Ramoun Lazar",

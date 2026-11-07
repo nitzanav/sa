@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Richard Poland",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-2.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$46.00",
+    "projected": "+71%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$34.00",
+    "projected": "+26.4%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Matthew Hedberg",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+2.4%",
-    "date": "10/12/2026"
+    "price_target": "$27.00",
+    "projected": "+12%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Saket Kalia",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+19%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Roger Boyd",
@@ -27,15 +63,6 @@
     "date": "09/25/2026"
   },
   {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$32.00",
-    "projected": "+6%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Joseph Bonner",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -51,33 +78,6 @@
     "action": "Reiterated",
     "price_target": null,
     "projected": null,
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "B. Riley Securities",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$46.00",
-    "projected": "+58.6%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Richard Poland",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$28.00",
-    "projected": "-3.4%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Saket Kalia",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+10.3%",
     "date": "08/07/2026"
   },
   {

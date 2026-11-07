@@ -27,22 +27,31 @@
     "date": "08/04/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$121.00",
-    "projected": "+3.5%",
-    "date": "10/12/2026"
+    "price_target": "$125.00",
+    "projected": "+6.1%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$146.00",
-    "projected": "+13.2%",
-    "date": "09/01/2026"
+    "price_target": "$131.00",
+    "projected": "+12.9%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+6%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -79,14 +88,5 @@
     "price_target": "$123.00",
     "projected": "+3.4%",
     "date": "09/21/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$147.00",
-    "projected": "+12.2%",
-    "date": "08/12/2026"
   }
 ]

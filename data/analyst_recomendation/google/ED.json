@@ -1,12 +1,21 @@
 [
   {
-    "analyst": "Harsh Mehta",
-    "firm": "Goldman Sachs",
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+3.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "-8.5%",
-    "date": "10/15/2026"
+    "price_target": "$108.00",
+    "projected": "-9.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Sophie Karp",
@@ -14,17 +23,35 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$87.00",
-    "projected": "-19.4%",
-    "date": "10/13/2026"
+    "projected": "-27.5%",
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+2.7%",
-    "date": "10/07/2026"
+    "price_target": "$109.00",
+    "projected": "-5.9%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$104.00",
+    "projected": "-7.7%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Harsh Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "-8.5%",
+    "date": "10/15/2026"
   },
   {
     "analyst": "Ross Fowler",
@@ -97,24 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/10/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$106.00",
-    "projected": "-1.9%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "-3.3%",
-    "date": "07/17/2026"
   },
   {
     "analyst": "William Appicelli",

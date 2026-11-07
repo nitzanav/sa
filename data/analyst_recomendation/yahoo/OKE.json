@@ -9,15 +9,6 @@
     "date": "01/23/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": null,
-    "date": "10/24/2025"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -67,18 +58,9 @@
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "+9.3%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "-3.8%",
-    "date": "07/21/2026"
+    "price_target": "$105.00",
+    "projected": "+8.4%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Barclays",
@@ -88,5 +70,23 @@
     "price_target": "$88.00",
     "projected": "-3.2%",
     "date": "07/09/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "+3.1%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Scotiabank",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "+6%",
+    "date": "11/03/2026"
   }
 ]

@@ -1,39 +1,147 @@
 [
   {
-    "analyst": "Mohit Bansal",
-    "firm": "Wells Fargo",
+    "analyst": "Jason Gerberry",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,557.00",
+    "projected": "+8.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "David Risinger",
+    "firm": "Leerink Partners",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,330.00",
-    "projected": "+7.7%",
-    "date": "10/15/2026"
+    "price_target": "$1,508.00",
+    "projected": "+8.2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Carter Gould",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,600.00",
+    "projected": "+12%",
+    "date": "11/01/2026"
   },
   {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,400.00",
-    "projected": "+18.5%",
-    "date": "10/12/2026"
+    "price_target": "$1,650.00",
+    "projected": "+18.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Ilya Zubkov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,600.00",
+    "projected": "+12%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Terence Flynn",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,596.00",
+    "projected": "+11.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Srikripa Devarakonda",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,612.00",
+    "projected": "+12.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Louise Chen",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,605.00",
+    "projected": "+12.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Asad Haider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,573.00",
+    "projected": "+10.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jasper Hellweg",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,550.00",
+    "projected": "+8.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,600.00",
+    "projected": "+20.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Chris Schott",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,650.00",
+    "projected": "+15.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Michael Yee",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,625.00",
+    "projected": "+13.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Mohit Bansal",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,500.00",
+    "projected": "+12.6%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Geoff Meacham",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,600.00",
-    "projected": "+35.5%",
-    "date": "10/12/2026"
+    "price_target": "$1,650.00",
+    "projected": "+15.5%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
+    "analyst": "Akash Tewari",
+    "firm": "Jefferies",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,500.00",
-    "projected": "+27%",
-    "date": "10/12/2026"
+    "action": "Reiterated",
+    "price_target": "$1,610.00",
+    "projected": "+20.8%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Emily Field",
@@ -41,44 +149,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,400.00",
-    "projected": "+18.5%",
-    "date": "10/12/2026"
+    "projected": "+5%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Chris Schott",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,500.00",
-    "projected": "+30%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Jason Gerberry",
-    "firm": "Bank of America Securities",
+    "analyst": "Courtney Breen",
+    "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$1,341.00",
-    "projected": "+16.2%",
-    "date": "10/09/2026"
+    "price_target": "$1,450.00",
+    "projected": "+12.7%",
+    "date": "10/26/2026"
   },
   {
-    "analyst": "Carter Gould",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,440.00",
-    "projected": "+21.7%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Terence Flynn",
-    "firm": "Morgan Stanley",
+    "analyst": "Kerry Holford",
+    "firm": "Berenberg Bank",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,430.00",
-    "projected": "+24%",
-    "date": "10/09/2026"
+    "price_target": "$1,400.00",
+    "projected": "+10.8%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Steve Scala",
@@ -88,24 +178,6 @@
     "price_target": "$1,250.00",
     "projected": "+8.2%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "Srikripa Devarakonda",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Asad Haider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,371.00",
-    "projected": "+15.6%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Umer Raffat",
@@ -126,15 +198,6 @@
     "date": "09/23/2026"
   },
   {
-    "analyst": "Akash Tewari",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,440.00",
-    "projected": "+25.6%",
-    "date": "09/22/2026"
-  },
-  {
     "analyst": "Seamus Fernandez",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -142,24 +205,6 @@
     "price_target": "$1,284.00",
     "projected": "+11.6%",
     "date": "09/17/2026"
-  },
-  {
-    "analyst": "David Risinger",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "09/16/2026"
-  },
-  {
-    "analyst": "Kerry Holford",
-    "firm": "Berenberg Bank",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$1,400.00",
-    "projected": "+22.6%",
-    "date": "09/14/2026"
   },
   {
     "analyst": "Luisa Hector",
@@ -180,15 +225,6 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "Courtney Breen",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,385.00",
-    "projected": "+18.5%",
-    "date": "08/31/2026"
-  },
-  {
     "analyst": "Nico Chen",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -205,24 +241,6 @@
     "price_target": "$1,220.00",
     "projected": "-1.5%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "Louise Chen",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,300.00",
-    "projected": "+8.6%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Michael Yee",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,425.00",
-    "projected": "+21.4%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Alexandria Hammond",

@@ -4,9 +4,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+14%",
-    "date": "07/06/2026"
+    "price_target": "$230.00",
+    "projected": "+9.9%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Stifel",
@@ -20,11 +20,11 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "-3%",
-    "date": "08/08/2026"
+    "price_target": "$242.00",
+    "projected": "+15.6%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "UBS",
@@ -76,9 +76,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "-0.1%",
-    "date": "08/07/2026"
+    "price_target": "$200.00",
+    "projected": "-4.4%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -88,23 +88,5 @@
     "price_target": "$190.00",
     "projected": "+2.8%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+6.5%",
-    "date": "08/31/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+5.4%",
-    "date": "02/10/2026"
   }
 ]

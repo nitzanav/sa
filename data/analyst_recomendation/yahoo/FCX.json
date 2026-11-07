@@ -4,9 +4,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+22%",
-    "date": "10/07/2026"
+    "price_target": "$79.00",
+    "projected": "+19.8%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -18,6 +18,15 @@
     "date": "11/20/2025"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+30.3%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -27,22 +36,13 @@
     "date": "07/09/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+10.5%",
-    "date": "10/08/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$83.00",
-    "projected": "+16.4%",
-    "date": "10/07/2026"
+    "price_target": "$84.00",
+    "projected": "+20.2%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -58,9 +58,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+29%",
-    "date": "10/07/2026"
+    "price_target": "$90.00",
+    "projected": "+36.4%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Citigroup",
@@ -88,32 +88,5 @@
     "price_target": "$85.00",
     "projected": "+21.3%",
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "-39%",
-    "date": "09/09/2026"
-  },
-  {
-    "analyst": "Scotiabank",
-    "firm": "Scotiabank",
-    "recommendation": "",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+8.2%",
-    "date": "06/15/2026"
-  },
-  {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "02/13/2026"
   }
 ]

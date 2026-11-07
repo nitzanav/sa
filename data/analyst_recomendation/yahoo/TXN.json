@@ -4,9 +4,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+22.6%",
-    "date": "07/23/2026"
+    "price_target": "$365.00",
+    "projected": "+31.4%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Benchmark",
@@ -22,18 +22,18 @@
     "firm": "Rosenblatt",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+24.5%",
-    "date": "07/25/2026"
+    "price_target": "$360.00",
+    "projected": "+29.6%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "-0.1%",
-    "date": "04/23/2026"
+    "price_target": "$300.00",
+    "projected": "+8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Citigroup",
@@ -67,9 +67,9 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+22.6%",
-    "date": "07/23/2026"
+    "price_target": "$330.00",
+    "projected": "+21%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Keybanc",
@@ -85,8 +85,8 @@
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "-8%",
-    "date": "07/23/2026"
+    "price_target": "$278.00",
+    "projected": "-2.2%",
+    "date": "10/22/2026"
   }
 ]

@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Christine Yao",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$725.00",
+    "projected": "+9.3%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$646.00",
+    "projected": "+2.5%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Noah Poponak",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$915.00",
-    "projected": "+47.5%",
+    "projected": "+44.2%",
     "date": "10/22/2026"
   },
   {
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$795.00",
-    "projected": "+28.2%",
+    "projected": "+25.3%",
     "date": "10/22/2026"
   },
   {
@@ -23,26 +41,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$780.00",
-    "projected": "+25.8%",
+    "projected": "+22.9%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Guy Hardwick",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$640.00",
-    "projected": "+3.2%",
-    "date": "10/22/2026"
-  },
-  {
-    "analyst": "Christine Yao",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$715.00",
-    "projected": "+15.3%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "John Godyn",

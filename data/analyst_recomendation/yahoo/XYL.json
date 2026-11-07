@@ -4,18 +4,18 @@
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+46.9%",
-    "date": "10/14/2026"
+    "price_target": "$135.00",
+    "projected": "+53.1%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+32.2%",
-    "date": "10/14/2026"
+    "price_target": "$125.00",
+    "projected": "+37.4%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Baird",
@@ -31,36 +31,45 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+30%",
-    "date": "07/29/2026"
+    "price_target": "$114.00",
+    "projected": "+25.3%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$148.00",
-    "projected": "+44.2%",
-    "date": "10/13/2026"
+    "price_target": "$130.00",
+    "projected": "+47.5%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+51.6%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$139.00",
-    "projected": "+35.5%",
-    "date": "10/13/2026"
+    "price_target": "$104.00",
+    "projected": "+12.9%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+9%",
-    "date": "10/06/2026"
+    "price_target": "$99.00",
+    "projected": "+12.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Jefferies",
@@ -79,14 +88,5 @@
     "price_target": "$110.00",
     "projected": "+6.3%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": null,
-    "date": "12/05/2025"
   }
 ]

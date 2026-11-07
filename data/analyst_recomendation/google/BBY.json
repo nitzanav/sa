@@ -1,20 +1,38 @@
 [
   {
-    "analyst": "Scot Ciccarelli",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
+    "analyst": "Zachary Fadem",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "-3.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Steven Zaccone",
+    "firm": "Citi",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/29/2026"
+    "price_target": "$102.00",
+    "projected": "+3.7%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Greg Melich",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+0.5%",
+    "price_target": "$100.00",
+    "projected": "+2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Scot Ciccarelli",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
     "date": "09/29/2026"
   },
   {
@@ -108,15 +126,6 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "Zachary Fadem",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$85.00",
-    "projected": "+1.4%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Seth Sigman",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -124,15 +133,6 @@
     "price_target": "$85.00",
     "projected": "+1.4%",
     "date": "08/28/2026"
-  },
-  {
-    "analyst": "Steven Zaccone",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+0.5%",
-    "date": "08/14/2026"
   },
   {
     "analyst": "Jonathan Matuszewski",

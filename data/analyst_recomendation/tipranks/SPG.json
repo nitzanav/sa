@@ -5,8 +5,35 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$254.00",
-    "projected": "+27%",
-    "date": "10/12/2026"
+    "projected": "+14.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Greg McGinniss",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$221.00",
+    "projected": "-0.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Haendel St. Juste",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$239.00",
+    "projected": "+7.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$216.50",
+    "projected": "-2.6%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Michael Goldsmith",
@@ -63,15 +90,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Greg McGinniss",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$221.00",
-    "projected": "+8.1%",
-    "date": "09/17/2026"
-  },
-  {
     "analyst": "Michael Mueller",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -79,15 +97,6 @@
     "price_target": "$223.00",
     "projected": "+8.8%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Haendel St. Juste",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$226.00",
-    "projected": "+4.9%",
-    "date": "08/27/2026"
   },
   {
     "analyst": "Nicholas Joseph",
@@ -99,15 +108,6 @@
     "date": "08/17/2026"
   },
   {
-    "analyst": "Juan C. Sanabria",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+12.6%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Samir Khanal",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -117,21 +117,21 @@
     "date": "08/13/2026"
   },
   {
+    "analyst": "Juan C. Sanabria",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+12.6%",
+    "date": "08/13/2026"
+  },
+  {
     "analyst": "Floris van Dijkum",
     "firm": "Ladenburg Thalmann & Co.",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$275.00",
     "projected": "+24.8%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$209.00",
-    "projected": "-5.1%",
     "date": "08/11/2026"
   },
   {
@@ -178,14 +178,5 @@
     "price_target": "$202.00",
     "projected": null,
     "date": "12/15/2025"
-  },
-  {
-    "analyst": "Kenneth Billingsley",
-    "firm": "Compass Point",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$195.00",
-    "projected": null,
-    "date": "11/04/2025"
   }
 ]

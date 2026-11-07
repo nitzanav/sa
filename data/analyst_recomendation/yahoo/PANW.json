@@ -18,13 +18,13 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Wedbush",
-    "firm": "Wedbush",
+    "analyst": "Needham",
+    "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+18.2%",
-    "date": "09/12/2026"
+    "price_target": "$425.00",
+    "projected": "+27.5%",
+    "date": "09/03/2026"
   },
   {
     "analyst": "Stifel",
@@ -36,13 +36,13 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Needham",
-    "firm": "Needham",
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+27.5%",
-    "date": "09/03/2026"
+    "price_target": "$400.00",
+    "projected": "+18.2%",
+    "date": "09/12/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -63,15 +63,6 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "JMP Securities",
-    "firm": "JMP Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": null,
-    "date": "10/28/2025"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$375.00",
     "projected": "+12.5%",
     "date": "09/03/2026"
+  },
+  {
+    "analyst": "BTIG",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+8.9%",
+    "date": "09/29/2026"
   }
 ]

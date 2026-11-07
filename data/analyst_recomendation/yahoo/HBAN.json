@@ -18,31 +18,31 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": null,
-    "date": "10/20/2025"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$17.50",
-    "projected": "+14.4%",
-    "date": "10/02/2026"
+    "price_target": "$18.00",
+    "projected": "+12.4%",
+    "date": "10/31/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+20.6%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$19.00",
-    "projected": "+22.1%",
-    "date": "09/23/2026"
+    "price_target": "$18.00",
+    "projected": "+14.6%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Barclays",

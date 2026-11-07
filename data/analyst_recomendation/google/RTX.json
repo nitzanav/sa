@@ -1,12 +1,102 @@
 [
   {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+26.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Ronald Epstein",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$235.00",
+    "projected": "+19.1%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Seth Seifman",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+24.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "John Godyn",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+24.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+26.8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+26.8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$212.00",
+    "projected": "+9.7%",
+    "date": "10/21/2026"
+  },
+  {
     "analyst": "Kenneth Herbert",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$235.00",
-    "projected": "+23.7%",
-    "date": "10/15/2026"
+    "projected": "+21.6%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Kristine Liwag",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+24.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "David E. Strauss",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+19%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Anthony Valentini",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+21.6%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Douglas Harned",
@@ -27,15 +117,6 @@
     "date": "10/13/2026"
   },
   {
-    "analyst": "Ronald Epstein",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Gautam Khanna",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -54,42 +135,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Anthony Valentini",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$223.00",
-    "projected": "+23.7%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "John Godyn",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+31.2%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+33.9%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$209.00",
-    "projected": "+11.8%",
-    "date": "09/29/2026"
-  },
-  {
     "analyst": "Sheila Kahyaoglu",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -97,24 +142,6 @@
     "price_target": "$250.00",
     "projected": "+27.9%",
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "Kristina Ruggeri",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+11.4%",
-    "date": "07/29/2026"
-  },
-  {
-    "analyst": "Seth Seifman",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+8.6%",
-    "date": "07/28/2026"
   },
   {
     "analyst": "Noah Poponak",
@@ -133,24 +160,6 @@
     "price_target": "$240.00",
     "projected": "+13.8%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Kristine Liwag",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$240.00",
-    "projected": "+13.8%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "David E. Strauss",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$230.00",
-    "projected": "+12.2%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Jason Sum",

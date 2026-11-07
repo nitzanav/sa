@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Tracy Benguigui",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$198.00",
+    "projected": "-11.1%",
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Ben Gerlinger",
     "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$230.00",
-    "projected": "+3.8%",
+    "projected": "+4.8%",
     "date": "10/21/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$235.00",
-    "projected": "+6.1%",
+    "projected": "+10%",
     "date": "10/20/2026"
   },
   {
@@ -23,7 +32,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$247.00",
-    "projected": "+11.5%",
+    "projected": "+15.3%",
     "date": "10/19/2026"
   },
   {
@@ -32,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$245.00",
-    "projected": "+10.6%",
+    "projected": "+14.3%",
     "date": "10/19/2026"
   },
   {
@@ -41,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$294.00",
-    "projected": "+32.7%",
+    "projected": "+37.2%",
     "date": "10/19/2026"
   },
   {
@@ -50,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+12.9%",
+    "projected": "+16.7%",
     "date": "10/19/2026"
   },
   {
@@ -59,7 +68,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+12.9%",
+    "projected": "+16.7%",
     "date": "10/19/2026"
   },
   {
@@ -68,16 +77,16 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$267.00",
-    "projected": "+20.5%",
+    "projected": "+24.6%",
     "date": "10/19/2026"
   },
   {
-    "analyst": "Stephen Biggar",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
+    "price_target": "$230.00",
+    "projected": "+3.8%",
     "date": "10/16/2026"
   },
   {
@@ -90,12 +99,12 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
+    "analyst": "Stephen Biggar",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+3.8%",
+    "price_target": null,
+    "projected": null,
     "date": "10/16/2026"
   },
   {
@@ -178,14 +187,5 @@
     "price_target": "$300.00",
     "projected": "+23.1%",
     "date": "07/15/2026"
-  },
-  {
-    "analyst": "Steven Chubak",
-    "firm": "Wolfe Research",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "01/07/2026"
   }
 ]

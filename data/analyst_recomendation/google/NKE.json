@@ -1,5 +1,140 @@
 [
   {
+    "analyst": "Kelly Crago",
+    "firm": "BMO Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-34.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Piral Dadhania",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$39.00",
+    "projected": "+1.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jay Sole",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "-15.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joseph Civello",
+    "firm": "Truist Financial",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$29.00",
+    "projected": "-28.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Peter McGoldrick",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$36.00",
+    "projected": "-9.1%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Alexandra Straton",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$25.00",
+    "projected": "-36.9%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Aneesha Sherman",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+16.2%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Anna Andreeva",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-24.4%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Robert Drbul",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+32.3%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Lorraine Hutchinson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "-36.5%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Adrienne Yih",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+21.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ashley Owens",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Matthew Boss",
+    "firm": "J.P. Morgan",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "-10.9%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Spencer Hanus",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$28.00",
+    "projected": "-25.9%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Christine Dooley",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+11.5%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Nick Anderson CFA",
     "firm": "Berenberg Bank",
     "recommendation": "Sell",
@@ -9,39 +144,12 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Jay Sole",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Aneesha Sherman",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+30.1%",
-    "date": "10/09/2026"
-  },
-  {
     "analyst": "Krisztina Katai",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$33.00",
     "projected": "-4.6%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Lorraine Hutchinson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$24.00",
-    "projected": "-30.6%",
     "date": "10/09/2026"
   },
   {
@@ -60,24 +168,6 @@
     "action": "Maintained",
     "price_target": "$32.00",
     "projected": "-5.4%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Adrienne Yih",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": "+9.4%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Peter McGoldrick",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$36.00",
-    "projected": "+6.4%",
     "date": "10/05/2026"
   },
   {
@@ -135,39 +225,12 @@
     "date": "10/02/2026"
   },
   {
-    "analyst": "Alexandra Straton",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "-17.1%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Joseph Civello",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$29.00",
-    "projected": "-10.9%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Jonathan Komp",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$36.00",
     "projected": "+10.6%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Kelly Crago",
-    "firm": "BMO Capital",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$25.00",
-    "projected": "-23.2%",
     "date": "10/02/2026"
   },
   {
@@ -180,30 +243,12 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "Anna Andreeva",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "-14%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Laurent Vasilescu",
     "firm": "Exane BNP Paribas",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$19.00",
     "projected": "-41.6%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Robert Drbul",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$50.00",
-    "projected": "+53.6%",
     "date": "10/02/2026"
   },
   {
@@ -231,33 +276,6 @@
     "action": "Reiterated",
     "price_target": null,
     "projected": null,
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Ashley Owens",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Matthew Boss",
-    "firm": "J.P. Morgan",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+1.4%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Piral Dadhania",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$40.00",
-    "projected": "+22.9%",
     "date": "10/02/2026"
   },
   {

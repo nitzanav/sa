@@ -1,0 +1,74 @@
+[
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$216.00",
+    "projected": "+83.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$183.00",
+    "projected": "+62.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+36.5%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "Pete Osterland",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$170.00",
+    "projected": "+39.1%",
+    "date": "10/14/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+26.6%",
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Melissa Weathers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$170.00",
+    "projected": "+21.3%",
+    "date": "08/05/2026"
+  },
+  {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$175.00",
+    "projected": "+24.1%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Edward Yang",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+11.2%",
+    "date": "01/08/2026"
+  }
+]

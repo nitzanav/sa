@@ -31,9 +31,9 @@
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1225.00",
-    "projected": "+24.8%",
-    "date": "07/23/2026"
+    "price_target": "$1230.00",
+    "projected": "+43%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Barclays",
@@ -45,22 +45,22 @@
     "date": "04/23/2026"
   },
   {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1270.00",
-    "projected": "+40.3%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1150.00",
-    "projected": "+15%",
-    "date": "10/09/2026"
+    "price_target": "$1035.00",
+    "projected": "+21.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+47.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Wells Fargo",

@@ -1,11 +1,20 @@
 [
   {
+    "analyst": "Aneesha Sherman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+7.4%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Spencer Hanus",
     "firm": "Wolfe Research",
     "recommendation": "Sell",
     "action": "Initiated",
     "price_target": "$75.00",
-    "projected": "-24.9%",
+    "projected": "-25%",
     "date": "10/21/2026"
   },
   {
@@ -14,7 +23,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$90.00",
-    "projected": "-9.9%",
+    "projected": "-6.4%",
     "date": "10/19/2026"
   },
   {
@@ -25,15 +34,6 @@
     "price_target": "$70.00",
     "projected": "-26.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Aneesha Sherman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/12/2026"
   },
   {
     "analyst": "Peter McGoldrick",
@@ -117,21 +117,21 @@
     "date": "09/08/2026"
   },
   {
-    "analyst": "Simeon Siegel",
-    "firm": "Guggenheim",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/04/2026"
-  },
-  {
     "analyst": "Zachary Warring",
     "firm": "CFRA",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$169.00",
     "projected": "+72.2%",
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Simeon Siegel",
+    "firm": "Guggenheim",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
     "date": "09/04/2026"
   },
   {
@@ -207,21 +207,21 @@
     "date": "09/04/2026"
   },
   {
-    "analyst": "Lorraine Hutchinson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$122.00",
-    "projected": "+24.3%",
-    "date": "09/04/2026"
-  },
-  {
     "analyst": "Ashley Owens",
     "firm": "KeyBanc",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "09/04/2026"
+  },
+  {
+    "analyst": "Lorraine Hutchinson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$122.00",
+    "projected": "+24.3%",
     "date": "09/04/2026"
   },
   {

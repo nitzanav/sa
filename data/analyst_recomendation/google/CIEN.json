@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Daniel Zhu‏",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+35%",
+    "date": "10/25/2026"
+  },
+  {
     "analyst": "Amit Daryanani",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$658.00",
     "projected": "+50.9%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Daniel Zhu‏",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$440.00",
-    "projected": "+2.6%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Unknown Analyst",

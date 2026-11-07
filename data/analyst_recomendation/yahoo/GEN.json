@@ -18,12 +18,21 @@
     "date": "08/07/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+26.4%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+1.6%",
-    "date": "10/13/2026"
+    "price_target": "$27.00",
+    "projected": "+0.4%",
+    "date": "10/29/2026"
   }
 ]

@@ -13,9 +13,9 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$750.00",
-    "projected": "+17.6%",
-    "date": "07/07/2026"
+    "price_target": "$500.00",
+    "projected": "+49.3%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -49,9 +49,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$732.00",
-    "projected": "+24.2%",
-    "date": "08/06/2026"
+    "price_target": "$540.00",
+    "projected": "+61.2%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "UBS",

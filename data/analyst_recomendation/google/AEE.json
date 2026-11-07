@@ -1,5 +1,77 @@
 [
   {
+    "analyst": "Sophie Karp",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Stephen D'Ambrisi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+6.4%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$119.10",
+    "projected": "+11.3%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Shelby Tucker",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$114.00",
+    "projected": "+6.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$109.00",
+    "projected": "+2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$113.00",
+    "projected": "+7.8%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Alex Kania",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$121.00",
+    "projected": "+15.4%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+3.4%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Carly Davenport",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -16,15 +88,6 @@
     "price_target": "$116.00",
     "projected": "+11.1%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Sophie Karp",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+11.5%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Anthony Crowdell",
@@ -54,42 +117,6 @@
     "date": "09/29/2026"
   },
   {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+9.3%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Stephen D'Ambrisi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$107.00",
-    "projected": "+8%",
-    "date": "09/25/2026"
-  },
-  {
-    "analyst": "Alex Kania",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+15.6%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$119.00",
-    "projected": "+7.1%",
-    "date": "07/22/2026"
-  },
-  {
     "analyst": "Shahriar Pourreza",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -115,15 +142,6 @@
     "price_target": "$113.00",
     "projected": "-0.2%",
     "date": "07/13/2026"
-  },
-  {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+3.5%",
-    "date": "07/09/2026"
   },
   {
     "analyst": "Steve Fleishman",

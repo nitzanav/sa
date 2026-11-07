@@ -1,5 +1,140 @@
 [
   {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+15.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "David Begleiter",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+13.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+3.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+9.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+13.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Arun Viswanathan",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+3.2%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+9.2%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Ghansham Panjabi",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+13.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Salvator Tiano",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+10.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Aleksey Yefremov",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+15.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$140.00",
+    "projected": "+17.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Abigail Eberts",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+13.3%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+9.1%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "John Roberts CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+17.4%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+0.8%",
+    "date": "10/29/2026"
+  },
+  {
     "analyst": "Michael Leithead",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -7,33 +142,6 @@
     "price_target": "$136.00",
     "projected": "+31.6%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Aleksey Yefremov",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$136.00",
-    "projected": "+31.6%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Arun Viswanathan",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+9.3%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "John McNulty",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+31.4%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Michael Sison",
@@ -45,25 +153,7 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Joshua Spector",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "+10.4%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$133.00",
-    "projected": "+24.7%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Salvator Tiano",
     "firm": "KeyBanc",
     "recommendation": "Buy",
     "action": "Initiated",
@@ -90,42 +180,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Duffy Fischer",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+17.7%",
-    "date": "08/02/2026"
-  },
-  {
-    "analyst": "Matthew DeYoe",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$137.00",
-    "projected": "+22.1%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$121.00",
-    "projected": "+7.8%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Vincent Andrews",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "-1.5%",
-    "date": "07/28/2026"
-  },
-  {
     "analyst": "James Hooper",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -133,24 +187,6 @@
     "price_target": "$130.00",
     "projected": "+8.1%",
     "date": "07/17/2026"
-  },
-  {
-    "analyst": "John Roberts CFA",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+11.8%",
-    "date": "07/01/2026"
-  },
-  {
-    "analyst": "Jeffrey Zekauskas",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+17.6%",
-    "date": "04/30/2026"
   },
   {
     "analyst": "Eric Boyes",

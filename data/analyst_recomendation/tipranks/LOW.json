@@ -1,12 +1,21 @@
 [
   {
-    "analyst": "Greg Melich",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
+    "analyst": "Steven Zaccone",
+    "firm": "Citi",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+1.5%",
-    "date": "10/20/2026"
+    "price_target": "$260.00",
+    "projected": "+18%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Zachary Fadem",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+4.9%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Zhihan Ma",
@@ -14,8 +23,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$254.00",
-    "projected": "+35%",
-    "date": "10/13/2026"
+    "projected": "+17.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "W. Andrew Carter",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "-2.9%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Greg Melich",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+1%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Michael Rehaut",
@@ -63,24 +90,6 @@
     "date": "09/15/2026"
   },
   {
-    "analyst": "W. Andrew Carter",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Steven Zaccone",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+19.6%",
-    "date": "08/24/2026"
-  },
-  {
     "analyst": "Simeon Gutman",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$275.00",
     "projected": "+27.3%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Zachary Fadem",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$245.00",
-    "projected": "+13.4%",
     "date": "08/20/2026"
   },
   {

@@ -1,11 +1,47 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$284.00",
+    "projected": "+20.7%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$278.00",
+    "projected": "+20.9%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$259.00",
+    "projected": "+11.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Tracy Benguigui",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/26/2026"
+  },
+  {
     "analyst": "Ben Gerlinger",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$270.00",
-    "projected": "+24.7%",
+    "projected": "+24.3%",
     "date": "10/20/2026"
   },
   {
@@ -14,26 +50,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$248.00",
-    "projected": "+14.5%",
+    "projected": "+14.1%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$276.00",
-    "projected": "+27.4%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Mike Mayo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+31.6%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "John Pancari",
@@ -90,13 +108,22 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "Jim Kelleher",
-    "firm": "Argus Research",
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$276.00",
+    "projected": "+27.4%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/15/2026"
+    "price_target": "$285.00",
+    "projected": "+31.6%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Gerard Cassidy",
@@ -117,31 +144,13 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$284.00",
-    "projected": "+36.2%",
+    "price_target": null,
+    "projected": null,
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Erika Najarian",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$286.00",
-    "projected": "+28.5%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$258.00",
-    "projected": "+16.7%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Domenico Santoro",

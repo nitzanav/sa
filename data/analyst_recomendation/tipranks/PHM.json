@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "-7.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$127.00",
+    "projected": "+4.7%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Rafe Jadrosich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$135.00",
+    "projected": "+14.4%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$136.00",
-    "projected": "+19.8%",
+    "projected": "+15.3%",
     "date": "10/23/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$145.00",
-    "projected": "+27.7%",
+    "projected": "+22.9%",
     "date": "10/23/2026"
   },
   {
@@ -23,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$162.00",
-    "projected": "+42.7%",
+    "projected": "+37.3%",
     "date": "10/23/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "-4%",
+    "projected": "-7.6%",
     "date": "10/23/2026"
   },
   {
@@ -41,17 +68,8 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "-3.1%",
+    "projected": "-0.9%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Anthony Pettinari",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$122.00",
-    "projected": "+7.5%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "Susan Maklari",
@@ -70,15 +88,6 @@
     "price_target": "$132.00",
     "projected": "+15.8%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$128.00",
-    "projected": "+11.6%",
-    "date": "10/01/2026"
   },
   {
     "analyst": "Stephen Kim",
@@ -124,15 +133,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/20/2026"
-  },
-  {
-    "analyst": "Rafe Jadrosich",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$146.00",
-    "projected": "+14.1%",
-    "date": "07/22/2026"
   },
   {
     "analyst": "Kenneth Zener",

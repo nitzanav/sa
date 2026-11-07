@@ -27,13 +27,13 @@
     "date": "10/10/2026"
   },
   {
-    "analyst": "JMP Securities",
-    "firm": "JMP Securities",
-    "recommendation": "Buy",
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": null,
-    "date": "10/24/2025"
+    "price_target": "$169.00",
+    "projected": "+4.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -43,15 +43,6 @@
     "price_target": "$198.00",
     "projected": "+24.8%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$172.00",
-    "projected": "+7.8%",
-    "date": "10/03/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -72,13 +63,13 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": null,
-    "date": "10/23/2025"
+    "price_target": "$170.00",
+    "projected": "+7.6%",
+    "date": "10/07/2026"
   },
   {
     "analyst": "UBS",

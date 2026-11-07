@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$94.00",
+    "projected": "+28%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+2.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Jingyi Zheng",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+9.7%",
+    "date": "10/19/2026"
+  },
+  {
+    "analyst": "Brandon Knutson‏",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+5.5%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Nicholas Housden",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -7,24 +43,6 @@
     "price_target": "$90.00",
     "projected": "+35.7%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+36%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Stephen Tusa",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Initiated",
-    "price_target": "$77.00",
-    "projected": "+16%",
-    "date": "09/25/2026"
   },
   {
     "analyst": "Unknown Analyst",

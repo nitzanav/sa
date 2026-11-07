@@ -4,45 +4,90 @@
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1020.00",
-    "projected": "+0.8%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Kevin Caliendo",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": "+18.6%",
-    "date": "10/16/2026"
+    "price_target": "$1050.00",
+    "projected": "-3.3%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Unknown Analyst",
     "firm": "Leerink Partners",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1070.00",
-    "projected": "+15.8%",
-    "date": "10/07/2026"
+    "action": "Reiterated",
+    "price_target": "$1200.00",
+    "projected": "+10.5%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Ryan Halsted",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$845.00",
-    "projected": "-8.3%",
-    "date": "10/06/2026"
+    "analyst": "Kevin Caliendo",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1250.00",
+    "projected": "+15.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Charles Rhyee",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1200.00",
+    "projected": "+10.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1260.00",
+    "projected": "+16%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Elizabeth Anderson CFA",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
+    "price_target": "$1200.00",
+    "projected": "+10.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Eric Coldwell",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1225.00",
+    "projected": "+12.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1250.00",
+    "projected": "+15.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
     "price_target": "$1000.00",
-    "projected": "+8.6%",
-    "date": "10/06/2026"
+    "projected": "-7.9%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Ryan Halsted",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$965.00",
+    "projected": "-5.4%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "George Hill",
@@ -54,24 +99,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$977.00",
-    "projected": "+6.1%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1050.00",
-    "projected": "+16%",
-    "date": "10/05/2026"
-  },
-  {
     "analyst": "Ryan Daniels",
     "firm": "William Blair",
     "recommendation": "Buy",
@@ -79,15 +106,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Glen Santangelo",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1000.00",
-    "projected": "+14.9%",
-    "date": "08/18/2026"
   },
   {
     "analyst": "Stephen Baxter",
@@ -115,23 +133,5 @@
     "price_target": "$1000.00",
     "projected": "+14.5%",
     "date": "08/10/2026"
-  },
-  {
-    "analyst": "Eric Coldwell",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1015.00",
-    "projected": "+11.3%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Charles Rhyee",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1006.00",
-    "projected": "+10.3%",
-    "date": "08/06/2026"
   }
 ]

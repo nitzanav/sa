@@ -1,21 +1,21 @@
 [
   {
-    "analyst": "Brian Harbour",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$88.00",
-    "projected": "+7.1%",
-    "date": "10/15/2026"
+    "analyst": "John Ivankoe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+18.1%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Danilo Gargiulo",
-    "firm": "Bernstein",
+    "analyst": "Karen Holthouse",
+    "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$85.00",
+    "price_target": "$84.00",
     "projected": "+7.8%",
-    "date": "10/13/2026"
+    "date": "11/05/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -23,35 +23,44 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$90.00",
-    "projected": "+15.6%",
-    "date": "10/11/2026"
+    "projected": "+16%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Kelly Bania",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+29.8%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Sara Senatore",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+21.2%",
-    "date": "09/29/2026"
+    "action": "Reiterated",
+    "price_target": "$102.00",
+    "projected": "+31.4%",
+    "date": "11/03/2026"
   },
   {
-    "analyst": "John Ivankoe",
-    "firm": "J.P. Morgan",
+    "analyst": "Mark Carden",
+    "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$95.00",
-    "projected": "+21.2%",
-    "date": "09/29/2026"
+    "projected": "+25.8%",
+    "date": "11/04/2026"
   },
   {
-    "analyst": "John Heinbockel",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
+    "analyst": "Danilo Gargiulo",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+9.6%",
-    "date": "09/15/2026"
+    "price_target": "$85.00",
+    "projected": "+9.5%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Edward Kelly",
@@ -59,8 +68,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$100.00",
-    "projected": "+22.4%",
-    "date": "09/10/2026"
+    "projected": "+32.4%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Brian Harbour",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "+10.7%",
+    "date": "10/15/2026"
+  },
+  {
+    "analyst": "John Heinbockel",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+15.6%",
+    "date": "10/11/2026"
   },
   {
     "analyst": "John Staszak",
@@ -72,15 +99,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Mark Carden",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+11.8%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Lauren Silberman",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
@@ -90,30 +108,12 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "Kelly Bania",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$98.00",
-    "projected": "+16.7%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Brian Mullan",
     "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$84.00",
     "projected": "0%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Karen Holthouse",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$86.00",
-    "projected": "+2.4%",
     "date": "08/05/2026"
   },
   {

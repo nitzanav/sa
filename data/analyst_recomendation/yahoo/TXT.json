@@ -22,18 +22,27 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$86.00",
-    "projected": "+19.2%",
-    "date": "10/08/2026"
+    "price_target": "$97.00",
+    "projected": "+12.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+10%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+9.2%",
-    "date": "05/05/2026"
+    "price_target": "$94.00",
+    "projected": "+7.8%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "JP Morgan",

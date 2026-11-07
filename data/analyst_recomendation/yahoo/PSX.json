@@ -22,9 +22,9 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+16.5%",
-    "date": "10/01/2026"
+    "price_target": "$308.00",
+    "projected": "+5.5%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Raymond James",
@@ -40,9 +40,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$345.00",
-    "projected": "+17.3%",
-    "date": "10/14/2026"
+    "price_target": "$346.00",
+    "projected": "+25.3%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -67,18 +67,18 @@
     "firm": "Piper Sandler",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$264.00",
-    "projected": "+3.2%",
-    "date": "09/03/2026"
+    "price_target": "$268.00",
+    "projected": "-3%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$284.00",
-    "projected": "+7.9%",
-    "date": "09/14/2026"
+    "price_target": "$290.00",
+    "projected": "+3.4%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Barclays",

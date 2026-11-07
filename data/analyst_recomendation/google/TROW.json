@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
     "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+2.2%",
-    "date": "10/14/2026"
+    "action": "Reiterated",
+    "price_target": "$93.00",
+    "projected": "-11.7%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Brennan Hawken",
@@ -14,26 +14,17 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$110.00",
-    "projected": "+5.3%",
-    "date": "10/12/2026"
+    "projected": "+4.5%",
+    "date": "11/01/2026"
   },
   {
     "analyst": "Ken Worthington",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
     "action": "Reiterated",
-    "price_target": "$106.00",
+    "price_target": "$107.00",
     "projected": "+1.6%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "William Katz",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+4.3%",
-    "date": "10/12/2026"
+    "date": "10/30/2026"
   },
   {
     "analyst": "Glenn Schorr",
@@ -41,44 +32,53 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "+4.3%",
-    "date": "10/09/2026"
+    "projected": "+3.5%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Michael Brown",
-    "firm": "UBS",
+    "analyst": "William Katz",
+    "firm": "TD Cowen",
     "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$107.00",
-    "projected": "+3.7%",
-    "date": "10/07/2026"
+    "action": "Maintained",
+    "price_target": "$96.00",
+    "projected": "-8.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Alex Bond",
     "firm": "KBW",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+8.2%",
-    "date": "10/08/2026"
+    "action": "Reiterated",
+    "price_target": "$113.00",
+    "projected": "+7.3%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
     "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "-13.6%",
-    "date": "10/05/2026"
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "-3.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Michael Cyprys",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+4.9%",
-    "date": "09/25/2026"
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+9.1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Michael Brown",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$107.00",
+    "projected": "+6%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "Unknown Analyst",

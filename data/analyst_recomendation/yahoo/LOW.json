@@ -18,15 +18,6 @@
     "date": "01/15/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+11.6%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -36,13 +27,13 @@
     "date": "08/21/2026"
   },
   {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+41.2%",
-    "date": "09/22/2026"
+    "price_target": "$245.00",
+    "projected": "+11.6%",
+    "date": "08/12/2026"
   },
   {
     "analyst": "B of A Securities",
@@ -61,6 +52,15 @@
     "price_target": "$270.00",
     "projected": "+24.3%",
     "date": "05/22/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+41.2%",
+    "date": "09/22/2026"
   },
   {
     "analyst": "Truist Securities",

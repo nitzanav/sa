@@ -23,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$165.00",
-    "projected": "+45.6%",
-    "date": "09/12/2026"
+    "projected": "+83.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -49,9 +49,9 @@
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+24.2%",
-    "date": "09/09/2026"
+    "price_target": "$120.00",
+    "projected": "+40.8%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -67,26 +67,26 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": "+13.5%",
-    "date": "09/08/2026"
+    "price_target": "$128.00",
+    "projected": "+43.4%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+22.7%",
-    "date": "07/23/2026"
+    "price_target": "$135.00",
+    "projected": "+50.3%",
+    "date": "10/29/2026"
   },
   {
-    "analyst": "Needham",
-    "firm": "Needham",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+39.3%",
-    "date": "07/31/2026"
+    "price_target": "$123.00",
+    "projected": "+44.3%",
+    "date": "10/30/2026"
   }
 ]

@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$332.00",
+    "projected": "+12.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$355.00",
+    "projected": "+24%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Ben Mohr",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$334.00",
+    "projected": "+16.6%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Steve Barger",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Jerry Revich",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -7,33 +43,6 @@
     "price_target": "$315.00",
     "projected": "+12.5%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Ben Mohr",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$338.00",
-    "projected": "+19.7%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Angel Castillo",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$355.00",
-    "projected": "+22%",
-    "date": "09/27/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$322.00",
-    "projected": "+11.7%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "Tami Zakaria",
@@ -51,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$330.00",
     "projected": "+12.4%",
-    "date": "07/23/2026"
-  },
-  {
-    "analyst": "Steve Barger",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+15.8%",
     "date": "07/23/2026"
   },
   {

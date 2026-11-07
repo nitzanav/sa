@@ -5,8 +5,35 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$240.00",
-    "projected": "+5.4%",
-    "date": "10/13/2026"
+    "projected": "+3.8%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Lorraine Hutchinson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$258.00",
+    "projected": "+10.1%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Jay Sole",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$315.00",
+    "projected": "+34%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Spencer Hanus",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$279.00",
+    "projected": "+18.8%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Ike Boruchow",
@@ -34,15 +61,6 @@
     "price_target": "$272.00",
     "projected": "+16.5%",
     "date": "09/23/2026"
-  },
-  {
-    "analyst": "Jay Sole",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$239.00",
-    "projected": "+5.4%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Joseph Civello",
@@ -115,15 +133,6 @@
     "price_target": "$270.00",
     "projected": "+10.7%",
     "date": "08/21/2026"
-  },
-  {
-    "analyst": "Lorraine Hutchinson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$265.00",
-    "projected": "+15.4%",
-    "date": "08/20/2026"
   },
   {
     "analyst": "Robert Drbul",

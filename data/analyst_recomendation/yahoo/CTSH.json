@@ -13,9 +13,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+24.4%",
-    "date": "07/30/2026"
+    "price_target": "$77.00",
+    "projected": "+9.2%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Citigroup",
@@ -49,27 +49,9 @@
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+34.4%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+26.7%",
-    "date": "07/24/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+8.3%",
-    "date": "07/25/2026"
+    "price_target": "$80.00",
+    "projected": "+21.5%",
+    "date": "10/28/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -79,6 +61,24 @@
     "price_target": "$60.00",
     "projected": "-0.8%",
     "date": "10/13/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+10.6%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$55.00",
+    "projected": "-13.7%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Baird",

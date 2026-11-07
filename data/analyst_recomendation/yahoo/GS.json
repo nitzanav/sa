@@ -67,18 +67,18 @@
     "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$970.00",
-    "projected": "+10.1%",
-    "date": "10/07/2026"
+    "price_target": "$950.00",
+    "projected": "+7.2%",
+    "date": "10/19/2026"
   },
   {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1010.00",
-    "projected": "+12%",
-    "date": "10/06/2026"
+    "price_target": "$1000.00",
+    "projected": "+10.7%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",

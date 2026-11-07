@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+20.2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Vivek Juneja",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$166.50",
+    "projected": "+11.7%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Ben Gerlinger",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -18,30 +36,12 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Mike Mayo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$162.00",
-    "projected": "+13.1%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Glenn Schorr",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$150.00",
     "projected": "+4.7%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Manan Gosalia",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$152.00",
-    "projected": "+6.1%",
     "date": "10/16/2026"
   },
   {
@@ -54,21 +54,21 @@
     "date": "10/16/2026"
   },
   {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$152.00",
+    "projected": "+6.1%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Alexander Blostein",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$180.00",
     "projected": "+25.7%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Vivek Juneja",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$161.00",
-    "projected": "+12.4%",
     "date": "10/16/2026"
   },
   {
@@ -90,21 +90,21 @@
     "date": "10/16/2026"
   },
   {
+    "analyst": "Mike Mayo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$162.00",
+    "projected": "+13.1%",
+    "date": "10/16/2026"
+  },
+  {
     "analyst": "Gerard Cassidy",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$168.00",
     "projected": "+20.2%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$178.00",
-    "projected": "+27.3%",
     "date": "10/15/2026"
   },
   {

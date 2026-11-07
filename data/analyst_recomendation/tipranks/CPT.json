@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.25",
+    "projected": "+20.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+4%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$109.00",
-    "projected": "+10.5%",
+    "projected": "+10.9%",
     "date": "10/20/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$103.00",
-    "projected": "+4.4%",
+    "projected": "+5%",
     "date": "10/19/2026"
   },
   {
@@ -43,24 +70,6 @@
     "price_target": "$101.00",
     "projected": "+2.5%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Alexander Goldfarb",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$102.00",
-    "projected": "+4.4%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/02/2026"
   },
   {
     "analyst": "Michael Lewis",
@@ -124,15 +133,6 @@
     "price_target": "$111.00",
     "projected": "+0.2%",
     "date": "08/03/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$123.25",
-    "projected": "+10.4%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Julien Blouin",

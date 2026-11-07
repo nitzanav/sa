@@ -22,27 +22,36 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1040.00",
-    "projected": "+24.7%",
-    "date": "06/10/2026"
+    "price_target": "$800.00",
+    "projected": "+24.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+44.8%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$550.00",
-    "projected": "+26.1%",
-    "date": "02/05/2026"
+    "price_target": "$950.00",
+    "projected": "+48.2%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1300.00",
-    "projected": "+18.2%",
-    "date": "10/06/2026"
+    "price_target": "$900.00",
+    "projected": "+40.4%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -56,11 +65,11 @@
   {
     "analyst": "B. Riley Securities",
     "firm": "B. Riley Securities",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$526.00",
-    "projected": "+20.6%",
-    "date": "02/05/2026"
+    "price_target": "$770.00",
+    "projected": "+13.1%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Barclays",
@@ -79,14 +88,5 @@
     "price_target": "$1000.00",
     "projected": "+7.8%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$960.00",
-    "projected": "+4.8%",
-    "date": "05/07/2026"
   }
 ]

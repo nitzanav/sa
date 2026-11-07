@@ -1,5 +1,86 @@
 [
   {
+    "analyst": "Timothy Wojs",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$70.00",
+    "projected": "+29.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+9.7%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jeff Reive",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+30.8%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+37.1%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+29.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Amit Mehrotra",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+27.9%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Stephen Tusa",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+18.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Jeffrey Hammond",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+15.9%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Christopher Snyder",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -18,15 +99,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+15.9%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Joe Ritchie",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -34,33 +106,6 @@
     "price_target": "$61.00",
     "projected": "+12.6%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Jeff Reive",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+30.3%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Andrew Kaplowitz",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+44.5%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Julian Mitchell",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$61.00",
-    "projected": "+8.8%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Patrick Baumann",
@@ -73,15 +118,6 @@
   },
   {
     "analyst": "Joe O'Dea",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$67.00",
-    "projected": "+22.4%",
-    "date": "09/24/2026"
-  },
-  {
-    "analyst": "Stephen Tusa",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Initiated",
@@ -151,33 +187,6 @@
     "price_target": "$75.00",
     "projected": "+1.3%",
     "date": "06/30/2026"
-  },
-  {
-    "analyst": "Timothy Wojs",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+11.6%",
-    "date": "05/01/2026"
-  },
-  {
-    "analyst": "Jeffrey Hammond",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/01/2026"
-  },
-  {
-    "analyst": "Alexander Virgo",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+32.4%",
-    "date": "04/30/2026"
   },
   {
     "analyst": "Andrew Buscaglia",

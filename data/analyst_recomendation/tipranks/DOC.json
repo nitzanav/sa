@@ -1,12 +1,39 @@
 [
   {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "+9.7%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "John Kilichowski",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$19.00",
-    "projected": "-0.4%",
-    "date": "10/19/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+9.7%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$22.00",
+    "projected": "+14.9%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Michael Goldsmith",
@@ -34,15 +61,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Richard Anderson",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/28/2026"
   },
   {
     "analyst": "James Kammert",
@@ -97,24 +115,6 @@
     "price_target": "$24.00",
     "projected": "+12.7%",
     "date": "08/10/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$21.00",
-    "projected": "-4.5%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$22.00",
-    "projected": "0%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Vikram Malhotra",

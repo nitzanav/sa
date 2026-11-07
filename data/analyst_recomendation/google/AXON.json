@@ -1,5 +1,86 @@
 [
   {
+    "analyst": "Andrew Spinola",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$380.00",
+    "projected": "+13.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$610.00",
+    "projected": "+82.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "David Paige",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$615.00",
+    "projected": "+83.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Andrew Sherman",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$650.00",
+    "projected": "+94.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$485.00",
+    "projected": "+44.8%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jeremy Hamblin",
+    "firm": "Craig-Hallum",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$390.00",
+    "projected": "+16.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "William Power",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+79.1%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "James Fish",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$540.00",
+    "projected": "+61.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$507.00",
+    "projected": "+51.4%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Brian Gesuale",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -7,33 +88,6 @@
     "price_target": "$675.00",
     "projected": "+64.9%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Andrew Spinola",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$470.00",
-    "projected": "+10.7%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "David Paige",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$735.00",
-    "projected": "+73.4%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Andrew Sherman",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$825.00",
-    "projected": "+69.8%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "John Staszak",
@@ -52,15 +106,6 @@
     "price_target": "$750.00",
     "projected": "+45.2%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$688.00",
-    "projected": "+13%",
-    "date": "08/26/2026"
   },
   {
     "analyst": "Jonathan Ho",
@@ -90,15 +135,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Jeremy Hamblin",
-    "firm": "Craig-Hallum",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$830.00",
-    "projected": "+40.9%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Nilesh Bhaiya",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -108,48 +144,12 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$640.00",
-    "projected": "+8.6%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "James Fish",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$732.00",
-    "projected": "+24.2%",
-    "date": "08/06/2026"
-  },
-  {
     "analyst": "Jordan Lyonnais",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$700.00",
     "projected": "+71.4%",
-    "date": "05/07/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$755.00",
-    "projected": "+84.9%",
-    "date": "05/07/2026"
-  },
-  {
-    "analyst": "William Power",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$675.00",
-    "projected": "+65.3%",
     "date": "05/07/2026"
   },
   {

@@ -27,6 +27,15 @@
     "date": "07/24/2026"
   },
   {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$177.00",
+    "projected": "+7.3%",
+    "date": "10/22/2026"
+  },
+  {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": "$186.00",
     "projected": "+5.8%",
     "date": "06/26/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$173.00",
-    "projected": "-1.2%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -67,26 +67,26 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$186.00",
-    "projected": "+8.5%",
-    "date": "10/05/2026"
+    "price_target": "$170.00",
+    "projected": "+3.6%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+9.3%",
-    "date": "10/02/2026"
+    "price_target": "$191.50",
+    "projected": "+10.5%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$189.00",
-    "projected": "+8%",
-    "date": "07/23/2026"
+    "price_target": "$194.00",
+    "projected": "+17.6%",
+    "date": "10/22/2026"
   }
 ]

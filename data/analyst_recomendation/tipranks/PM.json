@@ -1,20 +1,56 @@
 [
   {
-    "analyst": "Faham Baig",
-    "firm": "UBS",
-    "recommendation": "Hold",
+    "analyst": "Lisa Lewandowski",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$201.00",
-    "projected": "-1%",
-    "date": "10/22/2026"
+    "price_target": "$211.00",
+    "projected": "+1%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Matthew Smith, CFA",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$232.00",
+    "projected": "+12.4%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Pallav Mittal",
+    "firm": "Barclays",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$205.00",
-    "projected": "+1%",
+    "price_target": "$225.00",
+    "projected": "+9%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Bonnie Herzog",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$222.00",
+    "projected": "+9.8%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Christine Dooley",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "+9.9%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Faham Baig",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$201.00",
+    "projected": "+2%",
     "date": "10/22/2026"
   },
   {
@@ -23,35 +59,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$215.00",
-    "projected": "+5.9%",
+    "projected": "+9.1%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Lisa Lewandowski",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$211.00",
-    "projected": "+4%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Bonnie Herzog",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$222.00",
-    "projected": "+9.4%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Pallav Mittal",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$225.00",
-    "projected": "+10.8%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "Callum Elliott",
@@ -97,15 +106,6 @@
     "price_target": "$215.00",
     "projected": "+12%",
     "date": "07/23/2026"
-  },
-  {
-    "analyst": "Christine Dooley",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "04/22/2026"
   },
   {
     "analyst": "Andrei Andon Ionita",

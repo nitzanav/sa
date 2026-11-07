@@ -13,9 +13,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$19.00",
-    "projected": "+26.8%",
-    "date": "10/02/2026"
+    "price_target": "$21.00",
+    "projected": "+17.3%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -40,9 +40,9 @@
     "firm": "Susquehanna",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$15.00",
-    "projected": "-14.5%",
-    "date": "05/06/2026"
+    "price_target": "$16.00",
+    "projected": "+1.8%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "Mizuho",
@@ -52,6 +52,15 @@
     "price_target": "$17.00",
     "projected": "-5%",
     "date": "08/19/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+31.8%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Barclays",
@@ -67,9 +76,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$18.00",
-    "projected": "+17%",
-    "date": "10/12/2026"
+    "price_target": "$22.00",
+    "projected": "+22.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -79,14 +88,5 @@
     "price_target": "$22.00",
     "projected": "+17%",
     "date": "07/09/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": "+11.7%",
-    "date": "08/19/2026"
   }
 ]

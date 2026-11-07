@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Aneesha Sherman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+7.4%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Spencer Hanus",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$75.00",
+    "projected": "-25%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Ike Boruchow",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "-6.4%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Kelly Crago",
     "firm": "BMO Capital",
     "recommendation": "Sell",
@@ -7,15 +34,6 @@
     "price_target": "$70.00",
     "projected": "-26.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Aneesha Sherman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/12/2026"
   },
   {
     "analyst": "Peter McGoldrick",
@@ -43,15 +61,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Ike Boruchow",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "-4.8%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Brooke Roach",

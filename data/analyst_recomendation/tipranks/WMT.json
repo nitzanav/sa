@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "Zhihan Ma",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$142.00",
+    "projected": "+12.1%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Simeon Gutman",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$125.00",
-    "projected": "+5.9%",
-    "date": "10/20/2026"
+    "projected": "+1.5%",
+    "date": "11/01/2026"
+  },
+  {
+    "analyst": "Bill Kirk",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$138.00",
+    "projected": "+14.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "Greg Melich",
@@ -14,7 +32,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$130.00",
-    "projected": "+10.1%",
+    "projected": "+8%",
     "date": "10/20/2026"
   },
   {
@@ -23,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$126.00",
-    "projected": "+6.7%",
+    "projected": "+6.4%",
     "date": "10/19/2026"
   },
   {
@@ -34,15 +52,6 @@
     "price_target": "$136.00",
     "projected": "+13.3%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Zhihan Ma",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": "+24.3%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Paul Lejuez",
@@ -117,21 +126,21 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "Seth Sigman",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$132.00",
-    "projected": "+24.3%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Bradley Thomas",
     "firm": "KeyBanc",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "09/10/2026"
+  },
+  {
+    "analyst": "Seth Sigman",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+24.3%",
     "date": "09/10/2026"
   },
   {
@@ -252,15 +261,6 @@
     "date": "08/21/2026"
   },
   {
-    "analyst": "Bill Kirk",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$138.00",
-    "projected": "+33.1%",
-    "date": "08/21/2026"
-  },
-  {
     "analyst": "Georgy Vashchenko",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -286,5 +286,41 @@
     "price_target": null,
     "projected": null,
     "date": "06/24/2026"
+  },
+  {
+    "analyst": "Spencer Hanus",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$137.00",
+    "projected": "+5.1%",
+    "date": "05/08/2026"
+  },
+  {
+    "analyst": "Clement Xu",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+12.3%",
+    "date": "04/15/2026"
+  },
+  {
+    "analyst": "Joe Thomas",
+    "firm": "HSBC",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$131.00",
+    "projected": "+1.9%",
+    "date": "02/19/2026"
+  },
+  {
+    "analyst": "Sam Hudson",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+12.7%",
+    "date": "02/17/2026"
   }
 ]

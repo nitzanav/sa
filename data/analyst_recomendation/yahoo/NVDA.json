@@ -36,15 +36,6 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "+104.5%",
-    "date": "08/28/2026"
-  },
-  {
     "analyst": "Argus Research",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -54,22 +45,13 @@
     "date": "11/21/2025"
   },
   {
-    "analyst": "Benchmark",
-    "firm": "Benchmark",
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$335.00",
-    "projected": "+47.3%",
+    "price_target": "$465.00",
+    "projected": "+104.5%",
     "date": "08/28/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+48.3%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -81,6 +63,15 @@
     "date": "08/27/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+58.4%",
+    "date": "05/22/2026"
+  },
+  {
     "analyst": "HSBC",
     "firm": "HSBC",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$325.00",
     "projected": "+48%",
     "date": "05/19/2026"
+  },
+  {
+    "analyst": "Benchmark",
+    "firm": "Benchmark",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$335.00",
+    "projected": "+47.3%",
+    "date": "08/28/2026"
   }
 ]

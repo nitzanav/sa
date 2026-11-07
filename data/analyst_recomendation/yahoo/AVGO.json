@@ -23,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+66.8%",
-    "date": "09/04/2026"
+    "projected": "+76.5%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -63,15 +63,6 @@
     "date": "09/03/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$530.00",
-    "projected": "+29.6%",
-    "date": "06/04/2026"
-  },
-  {
     "analyst": "Deutsche Bank",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$515.00",
     "projected": "+26.3%",
     "date": "06/05/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+29.6%",
+    "date": "06/04/2026"
   },
   {
     "analyst": "UBS",

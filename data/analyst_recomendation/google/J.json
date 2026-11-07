@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$163.00",
+    "projected": "+0.6%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Andrew Kaplowitz",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$188.00",
+    "projected": "+28.2%",
+    "date": "10/26/2026"
+  },
+  {
+    "analyst": "Adam Seiden",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+13.3%",
+    "date": "10/19/2026"
+  },
+  {
     "analyst": "Sabahat Khan",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -36,24 +63,6 @@
     "date": "10/05/2026"
   },
   {
-    "analyst": "Chad Dillard",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$163.00",
-    "projected": "+18.6%",
-    "date": "09/28/2026"
-  },
-  {
-    "analyst": "Adam Seiden",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$160.00",
-    "projected": "+11.8%",
-    "date": "09/24/2026"
-  },
-  {
     "analyst": "Andrew Wittmann",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -88,15 +97,6 @@
     "price_target": "$146.00",
     "projected": "+2.2%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "Andrew Kaplowitz",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": "+38.7%",
-    "date": "07/23/2026"
   },
   {
     "analyst": "Unknown Analyst",

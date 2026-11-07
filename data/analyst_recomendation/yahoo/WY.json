@@ -4,9 +4,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$21.00",
-    "projected": "+14.1%",
-    "date": "10/05/2026"
+    "price_target": "$23.00",
+    "projected": "+11.8%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -31,9 +31,18 @@
     "firm": "DA Davidson",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$31.00",
-    "projected": "+26.6%",
-    "date": "06/30/2026"
+    "price_target": "$27.00",
+    "projected": "+37.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "CIBC",
+    "firm": "CIBC",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+16.7%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "JP Morgan",

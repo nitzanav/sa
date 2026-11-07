@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Christian Wetherbee",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+12.6%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+25%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Thomas Fitzgerald CFA",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+33.5%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Jose Luis Pascual",
+    "firm": "JLPascual",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$108.00",
+    "projected": "+38%",
+    "date": "10/17/2026"
+  },
+  {
     "analyst": "Sergey Glinyanov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -63,15 +99,6 @@
     "date": "10/12/2026"
   },
   {
-    "analyst": "Christian Wetherbee",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+23.4%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Ravi Shanker",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -124,24 +151,6 @@
     "price_target": "$114.00",
     "projected": "+38.7%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+18.7%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Thomas Fitzgerald CFA",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+17.8%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Sheila Kahyaoglu",
