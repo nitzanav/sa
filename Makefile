@@ -89,7 +89,7 @@ SOURCE ?=
 SKIP_EXISTING ?=
 
 scrape_analyst_recommendations: symbols_exchange
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
+	@time . "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
 
 scrape_analyst_recommendations-test:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e
