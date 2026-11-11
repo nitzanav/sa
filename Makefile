@@ -49,7 +49,8 @@ endef
 .PHONY: analyst-recommendation-py analyst-recommendation-py-test \
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
-        download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest
+        download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest \
+        alert\:buy
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -125,13 +126,24 @@ write_joint_analyst_recommendations:
 #   make etl
 etl: write_joint_analyst_recommendations
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/etl.sql
+	@day=$$(date +%Y_%m_%d); \
+	sed -E "s/(^|[^A-Za-z0-9_])_raw_signals([^A-Za-z0-9_]|$$)/\\1_raw_signals_$$day\\2/g" etl/etl.sql \
+	| psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f -
 
 # Point-in-time analyst win rates from Yahoo prices. Run after `make etl`
 # so _raw_signals exists. Replaces the recency view with the win-rate weights.
 winrate: download_yahoo_quotes
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/winrate.sql
+
+# Today's buy alerts from the signals view. Run after `make etl`.
+# etl/buy_alerts.sql also runs as-is: each NOW() is the transaction start time.
+# This target replaces each NOW() with one local timestamptz, then ignores an alert key already stored.
+#   make alert:buy
+alert\:buy:
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
+	@now=$$(date '+%Y-%m-%d %H:%M:%S%z'); \
+	sed "s/NOW()/TIMESTAMPTZ '$$now'/g" etl/buy_alerts.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f -
 
 # ---------------------------------------------------------------------------
 # Backtests
