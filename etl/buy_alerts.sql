@@ -3,11 +3,10 @@
 -- analyst_projections_count > 2 and average_projected > 40.
 -- strength is the at lot count: floor(analysts * percent / 10), clamped to 1..16.
 -- A repeat of the same alert key is ignored. alerted_at stays on the first insert.
--- Inside this transaction the timestamp function is stable. `make alert:buy`
--- replaces each call with one stamped timestamptz before psql runs.
+-- _run freezes one timestamp. Each psql statement is its own transaction, so a
+-- later timestamp call would differ. alerts ranks the raw rows from that run.
+-- `make alert:buy` replaces the timestamp call.
 -- Requires the signals view from etl/etl.sql (`make etl`).
-
-BEGIN;
 
 CREATE TABLE IF NOT EXISTS alerts_raw (
   id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -45,23 +44,36 @@ CREATE UNIQUE INDEX IF NOT EXISTS alerts_dedup
     type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
   );
 
--- One row set for both inserts. A psql variable cannot hold these rows.
-CREATE TEMP TABLE _buy_alert_candidates ON COMMIT DROP AS
+CREATE INDEX IF NOT EXISTS alerts_raw_alerted_at_idx ON alerts_raw (alerted_at);
+
+-- Freeze the timestamp once. Each statement is its own transaction under psql -f,
+-- so a later timestamp call would differ. ON COMMIT DROP would remove _run
+-- before the next statement.
+DROP TABLE IF EXISTS _run;
+CREATE TEMP TABLE _run AS SELECT NOW() AS alerted_at;
+
+INSERT INTO alerts_raw (
+  type, alerted_at, alert_strategy, signal_name, signal_date,
+  symbol, analysts, percent, strength
+)
 SELECT
+  'buy',
+  r.alerted_at,
+  'at >2 >40%',
   s.signal_name,
-  s.date AS signal_date,
-  s.ticker AS symbol,
-  s.analyst_projections_count AS analysts,
-  s.average_projected AS percent,
+  s.date,
+  s.ticker,
+  s.analyst_projections_count,
+  s.average_projected,
   LEAST(
     16,
     GREATEST(
       1,
       FLOOR(s.analyst_projections_count * s.average_projected / 10.0)::integer
     )
-  ) AS strength,
-  s.signal_score
+  )
 FROM signals s
+CROSS JOIN _run r
 WHERE s.signal_name IN (
     'yahoo_and_tipranks_1d_recency',
     'yahoo_and_tipranks_2d_recency',
@@ -71,23 +83,7 @@ WHERE s.signal_name IN (
   )
   AND s.analyst_projections_count > 2
   AND s.average_projected > 40
-  AND s.date = NOW()::date;
-
-INSERT INTO alerts_raw (
-  type, alerted_at, alert_strategy, signal_name, signal_date,
-  symbol, analysts, percent, strength
-)
-SELECT
-  'buy',
-  NOW(),
-  'at >2 >40%',
-  c.signal_name,
-  c.signal_date,
-  c.symbol,
-  c.analysts,
-  c.percent,
-  c.strength
-FROM _buy_alert_candidates c
+  AND s.date = r.alerted_at::date
 ON CONFLICT (
   type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
 ) DO NOTHING;
@@ -96,20 +92,34 @@ INSERT INTO alerts (
   type, alerted_at, alert_strategy, signal_name, signal_date,
   symbol, analysts, percent, strength
 )
-SELECT DISTINCT ON (c.symbol)
+SELECT
   'buy',
-  NOW(),
+  ranked.alerted_at,
   'at >2 >40%',
   'yahoo_and_tipranks_any_recency',
-  c.signal_date,
-  c.symbol,
-  c.analysts,
-  c.percent,
-  c.strength
-FROM _buy_alert_candidates c
-ORDER BY c.symbol, c.strength DESC, c.signal_score DESC NULLS LAST, c.signal_name ASC
+  ranked.signal_date,
+  ranked.symbol,
+  ranked.analysts,
+  ranked.percent,
+  ranked.strength
+FROM (
+  SELECT
+    a.alerted_at,
+    a.signal_date,
+    a.symbol,
+    a.analysts,
+    a.percent,
+    a.strength,
+    ROW_NUMBER() OVER (
+      PARTITION BY a.symbol
+      ORDER BY a.strength DESC, a.signal_name ASC
+    ) AS rn
+  FROM alerts_raw a
+  WHERE a.alerted_at = (SELECT alerted_at FROM _run)
+    AND a.type = 'buy'
+    AND a.alert_strategy = 'at >2 >40%'
+) ranked
+WHERE ranked.rn = 1
 ON CONFLICT (
   type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
 ) DO NOTHING;
-
-COMMIT;
