@@ -139,10 +139,14 @@ winrate: download_yahoo_quotes
 # Today's buy alerts from the signals view. Run after `make etl`.
 # etl/buy_alerts.sql also runs as-is. This target replaces NOW() with one UTC
 # timestamptz, then prints the alerts rows stored at that time.
+# DAYS_AGO shifts that timestamp back. macOS date has no -d, so the offset is -v.
 #   make alert:buy
+#   make alert:buy DAYS_AGO=3
+DAYS_AGO ?= 0
+
 alert\:buy:
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
-	@now=$$(date -u '+%Y-%m-%d %H:%M:%S%z'); \
+	@now=$$(date -u -v-$(DAYS_AGO)d '+%Y-%m-%d %H:%M:%S%z'); \
 	sed "s/NOW()/TIMESTAMPTZ '$$now'/g" etl/buy_alerts.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f - && \
 	psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -c "SELECT * FROM alerts WHERE alerted_at = TIMESTAMPTZ '$$now'"
 
