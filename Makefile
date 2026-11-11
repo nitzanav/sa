@@ -50,7 +50,7 @@ endef
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
         download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest \
-        alert\:buy
+        alert\:buy alert\:buy-truncate
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -149,6 +149,12 @@ alert\:buy:
 	@now=$$(date -u -v-$(DAYS_AGO)d '+%Y-%m-%d %H:%M:%S%z'); \
 	sed "s/NOW()/TIMESTAMPTZ '$$now'/g" etl/buy_alerts.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f - && \
 	psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -c "SELECT * FROM alerts WHERE alerted_at = TIMESTAMPTZ '$$now'"
+
+# Wipe alerts and alerts_raw. Use before a clean backfill.
+#   make alert:buy-truncate
+alert\:buy-truncate:
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
+	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/alert_buy_truncate.sql
 
 # ---------------------------------------------------------------------------
 # Backtests
