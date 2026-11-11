@@ -379,4 +379,4 @@ DO $$ BEGIN
 END $$;
 
 -- \copy reads the rest of the line only, so the export query stays on one line.
-\copy (SELECT * FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)(-[1-5]d|_[1-5]d_recency)$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
+\copy (SELECT signal_name, date, ticker, average_projected, analyst_projections_count, mad, analyst_percent_list FROM signals WHERE signal_name ~ '^(yahoo|google|tipranks|yahoo_and_tipranks|yahoo_and_google)(-[1-5]d|_[1-5]d_recency)$' AND analyst_projections_count > 0 AND average_projected > 0 ORDER BY signal_name,date,ticker,average_projected DESC) TO 'data/signals.csv' WITH CSV HEADER
