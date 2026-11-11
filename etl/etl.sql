@@ -9,6 +9,9 @@ CREATE TABLE IF NOT EXISTS raw_signals (
   projected_price real
 );
 TRUNCATE TABLE raw_signals;
+-- Source files repeat the same analyst and price. signals_dedup collapses those
+-- later. This index rejects the second copy and aborts the load.
+DROP INDEX IF EXISTS raw_signals_source_ticker_date_analyst_price;
 
 DROP TABLE IF EXISTS _load;
 CREATE TABLE _load (date date, ticker varchar, analyst text, percent real, projected_price real);
