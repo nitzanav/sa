@@ -10,10 +10,11 @@ Actions
     
 High:
     - buy alert bot
+    - kind of a bug that 12 and 7 ananlysts not priroitse higher than 2-3
     - sell alert bot
     - more than snp500, getm more signals of more symbols
     - analyst win rate 
-
+    - get rid of tipranks (now that google scrapign is the same)
 
 
 Medium:
@@ -32,7 +33,17 @@ check the tipranks consensus GET /stable/upgrades-downgrades-consensus-bulk?apik
 
 
 
-—---------------
+—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------
+Winner chosen, now mix other to increase utilization.
+2.5dd 15pp · 12 × $26,667 · ls · at · next open
+1. All lots avialble for => yahoo_and_tipranks_5d_recency >4,>30%
+2. When zero signals in step 1 => use al signals of >4, >20%
+3. When zero signals in step 2 => use al signals of >4, >10%
+4. When zero signals in step 2 => use al signals of >4, >0%
+
+
+
+—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------
 Recency union. >2 >30% on any 1-5 signals
 simulation_2026-11-07_2300_UTC+2_recency-union-pp__optimize.canvas.tsx
 | Sell                                            | Buy                                                    | On invested | Stock P&L | Trade window            | Days utilized | Lots utilized | Lot-days | Lot-days invested | Avg lot |    Win |     Lots | Symbols | Positions | Hold min | Hold avg | Hold max | P25 | P50 | P75 |
