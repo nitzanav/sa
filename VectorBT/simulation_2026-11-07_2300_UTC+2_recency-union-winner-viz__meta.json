@@ -1,0 +1,13 @@
+{
+  "sell": "2.5dd 15pp \u00b7 12 \u00d7 $26,667 \u00b7 ls \u00b7 at \u00b7 next open",
+  "buy": "10m_Jan-Oct \u00b7 yahoo_and_tipranks_any_recency \u00b7 analyst>2 \u00b7 proj>40%",
+  "signals_union": 747,
+  "positions_rows": 810,
+  "date_from": "2026-01-02",
+  "date_to": "2026-10-26",
+  "notes": [
+    "positions = distinct tickers with an open lot that session",
+    "strength stacks = same-day percentile buckets of at-strength among open positions",
+    "signals_1d = yahoo_and_tipranks_1d_recency \u00b7 >2 \u00b7 >40% (unique book, not union)"
+  ]
+}

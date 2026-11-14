@@ -525,6 +525,81 @@ Buy windows are `5m_Jan-May`, `5m_Jun-Oct`, and `10m_Jan-Oct`. Signals are dated
   --end 2026-10-26
 ```
 
+## Strength divisors
+
+The published next-open book, with the lot formula's divisor opened. Sell is `2.5dd 15pp · 12 × $26,667 · ls · next open`. The buy is the published cell: `yahoo_and_tipranks_any_recency`, analyst >2, projected >40%, January–October. The combined book buys when any of the 1d–5d recency books clears that cut. A ticker and day that qualifies on more than one book is one signal, the strongest qualifier. A ticker that already has an open position is skipped. Prices continue through the last quote.
+
+Lot size is `floor(analysts × target percent / N)`, at least 1 and at most 16. N is 5, 10, 20, 30, 40, and 50. `a×p/10` is the published `at` formula. The ranking strength that decides whether a profitable lot is replaced stays `sqrt(min(analysts, 10)) × floor(target percent / 10) × 10`. 6 cells. An earlier pass of this phase used projected >30% (`simulation_2026-11-12_0100_UTC+2_strength-divisors`).
+
+```bash
+./penv python VectorBT/simulation_2026-11-12_0108_UTC+2_strength-divisors-40__optimize.py atdiv \
+  --end 2026-10-26
+```
+
+## One position
+
+The recency union as one position of the whole $320,000. The strongest signal that day is bought at the next open. A new buy waits until that position has closed. There is no loss dropdown. Profit protection is 5%, 10%, or 15% of the gain from entry to the highest close. A position that never trades above its entry stays open through the last quote.
+
+The rank is one of five formulas. `a×t` is analysts × the projected fraction. `a×p²` is analysts × that fraction squared, so a 40% upside contributes 0.16. `√a×p` is sqrt(analysts) × the fraction. `t` is the fraction alone. `a²` is analysts squared. A ticker and day that qualifies on more than one of the 1d–5d books keeps the row that rank scores highest. `signal_score` breaks a tie.
+
+Analyst cuts are >0, >1, >2, and >3. Projected cuts are >30% and >40%. The window is January–October. 4 × 2 × 5 × 3 = 120 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-12_0128_UTC+2_one-position__optimize.py onepos \
+  --end 2026-10-26
+```
+
+## Two-signal lots
+
+The recency union, next open, ranked only by `a×t` (analysts × the projected fraction). One book of $320,000 split into 1, 2, or 3 lots. A day buys at most two names, one lot each, and only into a free lot. One free lot takes the strongest signal. Two or three free lots take the strongest two. One signal takes one lot. A full book does not sell to make room. There is no loss dropdown. Profit protection is 5%, 10%, or 15%. Analyst cuts are >0, >2, >3, and >4. Projected cuts are >10%, >20%, >30%, >40%, >50%, and >60%. January–October. 4 × 6 × 3 × 3 = 216 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-12_0151_UTC+2_two-signal-lots__optimize.py pair \
+  --end 2026-10-26
+```
+
+## Half lots
+
+The same recency union, next open, and `a×t` rank. One book of $320,000 split into 256 lots of $1,250, so a half-step still has lots to give. Stops run at the close. The next open counts the lots those stops left free. The strongest signal takes half of them, rounded up. The next signal takes half of what remains, rounded up, and a third signal does the same. With 256 free lots and three signals that is 128, then 64, then 32, and the last 32 stay cash. One signal takes 128. Five free lots round up to 3, then 1, then 1. A later session can buy a ticker that already has open lots. A full book does not sell to make room. A stop on today's close frees lots for the next open. Loss dropdown is 1.25%, 2.5%, 5%, or 10% from the entry. Profit protection is 5%, 10%, or 15%. Analyst cuts are >0, >2, >3, and >4. Projected cuts are >10% through >60%. January–October. 4 × 6 × 4 × 3 = 288 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-13_1457_UTC+2_half-dd__optimize.py half \
+  --end 2026-10-26
+```
+
+## Half lots, one open position
+
+The same 256-lot half grid. A ticker that already has open lots is skipped. The half that ticker would have taken goes to the next eligible signal, still at most three new names. After that position closes, a later signal can buy the ticker again. A full book does not sell to make room. Loss dropdown, profit protection, rank, and buy cuts stay the same. 288 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-13_1647_UTC+2_half-dd-skip-held__optimize.py once \
+  --end 2026-10-26
+```
+
+## Recency mix
+
+The published winner sell: `2.5dd 15pp · 12 × $26,667 · ls · at · next open`. Step 1 uses the union canvas filter: any of the five recency books at analyst >2 and projected >40%. The dollars follow the current signals.csv. A session with none of those falls through to the same five books at analyst >4 and projected >20%, then >10%, then >0%. A looser step runs only when every tighter step is empty that day. The four buys are step 1, steps 1–2, steps 1–3, and steps 1–4.
+
+A session buys the strongest 1, 2, 3, or 4 new names, or every name in the active step. Strength is the `at` rank. Each name still opens `floor(analysts × target percent / 10)` lots. A ticker that already has an open position is skipped and does not use up a name. One ticker on one day is one signal.
+
+Buy windows are Jan–May, Jun–Oct, and Jan–Oct. Signals are dated inside the window. Prices continue through the last quote. 4 steps × 3 ranges × 5 name caps = 60 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-14_1424_UTC+2_recency-mix-match__optimize.py mix \
+  --end 2026-10-26
+```
+
+## Recency step share
+
+The same waterfall and the same frozen sell, `2.5dd 15pp · 12 × $26,667 · ls · at · next open`. Step 1 still buys the full book and can sell a lot to make room. A fallback step buys a share of the lots that are already free and does not sell a stock to make room. The share is rounded to the nearest lot, and half a lot rounds up. The day's names share that budget, strongest first. Each name still asks for `floor(analysts × target percent / 10)` lots.
+
+The ½ ladder is 50% of the free lots, then 25%, then 12.5%. The ¾ ladder is 75%, then 56.25%, then 42.1875%. Every lot is $26,667, so that share of the free lots is the same share of the free money. Step 1 is one row. 1 + 2 factors × 3 fallback depths × 3 ranges = 21 cells.
+
+```bash
+./penv python VectorBT/simulation_2026-11-14_1927_UTC+2_recency-step-share__optimize.py share \
+  --end 2026-10-26
+```
+
 ## Eight-lot book
 
 Same daily books and the same winner buys. One sell: a book of 8 lots. 5 books × 12 buys = 60 cells. There is no hold, no profit target, and no drawdown.

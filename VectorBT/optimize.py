@@ -166,6 +166,62 @@ Jan–May, Jun–Oct, and Jan–Oct. Prices continue through the last quote,
 so a position can sell after its buy window. A lot still open on the
 last quote stays open. 6 signals × 3 upside cuts × 3 ranges × 2 fills
 × 6 pp = 648 cells.
+
+Phase atdiv keeps the next-open book and changes only the lot formula.
+The sell is 2.5dd 15pp, 12 lots of $26,667, ls, next open. The buy is
+the recency union: analyst >2 and projected >40% when any of the 1d–5d
+books clears that cut, January–October. Lot size is
+floor(analysts × target percent / N) for N in 5, 10, 20, 30, 40, and 50,
+still at least 1 lot and at most 16. /10 is the published at formula.
+6 cells.
+
+Phase onepos is one position of the whole $320,000. The strongest signal
+that day is bought at the next open. A new buy waits until that position
+has closed. There is no loss dropdown. Profit protection is 5%, 10%, or
+15% of the peak gain. The rank is one of five formulas. a×t is analysts
+× the projected fraction. a×p² is analysts × that fraction squared, and
+the square is below the fraction when upside is under 100%. √a×p is
+sqrt(analysts) × the fraction. t is the fraction alone. a² is analysts
+squared. Analyst cuts are >0, >1, >2, and >3. Projected cuts are >30%
+and >40%. The book is the recency union, January–October.
+4 × 2 × 5 × 3 = 120 cells.
+
+Phase pair keeps that next-open union and the a×t rank only. The book
+is $320,000 split into 1, 2, or 3 lots. A day buys at most two names,
+one lot each, and only into a free lot. One free lot takes the strongest
+signal. Two or three free lots take the strongest two. One signal takes
+one lot. A full book does not sell to make room. There is no loss
+dropdown. Profit protection is 5%, 10%, or 15%. Analyst cuts are >0,
+>2, >3, and >4. Projected cuts are >10% through >60%.
+4 × 6 × 3 × 3 = 216 cells.
+
+Phase half keeps that next-open union and the a×t rank. The book is
+$320,000 split into 256 lots of $1,250. Stops run at the close. The
+next open counts the lots those stops left free, then gives half of
+them, rounded up, to the strongest signal, half of what remains to the
+next signal, and half of what remains to a third. Leftover lots stay
+cash. A later session can buy a ticker that is already held. A full
+book does not sell to make room. Loss dropdown is 1.25%, 2.5%, 5%, or
+10% from the entry. Profit protection is 5%, 10%, or 15%. Analyst and
+upside cuts match phase pair. 4 × 6 × 4 × 3 = 288 cells.
+
+Phase once is that same half grid. A ticker that already has open lots
+is skipped. The half that ticker would have taken goes to the next
+eligible signal, still at most three new names. After that position
+closes, a later signal can buy the ticker again. 288 cells.
+
+Phase mix keeps the published winner sell, 2.5dd 15pp · 12 × $26,667 ·
+ls · at · next open. Step 1 is the published union buy: any of the five
+recency books, analyst >2, projected >40%. A session with none of those
+falls through to the same five books at analyst >4 and projected >20%,
+then >10%, then >0%. The four cells are step 1, steps 1–2, steps 1–3,
+and steps 1–4. A session buys the strongest 1, 2, 3, or 4 new names, or
+every name in the active step. One name still opens
+floor(analysts × target percent / 10) lots. A ticker that already has
+an open position is skipped and does not use a name. Buy windows are
+Jan–May, Jun–Oct, and Jan–Oct. Prices continue through the last quote.
+With no name cap, step 1 is the union cell any · >2,>40% · next open.
+4 steps × 3 ranges × 5 name caps = 60 cells.
 """
 
 from __future__ import annotations
@@ -202,6 +258,67 @@ from backtest import (  # noqa: E402
     simulate,
     unique_tickers,
 )
+
+def with_signal_score(signals):
+    """Fill signal_score when the export omitted it.
+
+    1d books use average projected × sqrt(analysts). Longer books multiply
+    by (1 − MAD). That is the recency score in etl/etl.sql.
+    """
+    if "signal_score" in signals.columns:
+        return signals
+    out = signals.copy()
+    projected = out["average_projected"].astype(float)
+    analysts = out["analyst_projections_count"].astype(float).clip(lower=0)
+    base = projected * analysts.pow(0.5)
+    if "signal_name" in out.columns:
+        names = out["signal_name"].astype(str)
+        one_day = (
+            names.str.endswith("_1d_recency")
+            | names.str.endswith("-1d")
+            | names.str.endswith("-daily")
+        )
+    else:
+        one_day = True
+    mad = out["mad"].astype(float) if "mad" in out.columns else 0.0
+    out["signal_score"] = base.where(one_day, base * (1.0 - mad))
+    return out
+
+
+def _check_signal_score_fill():
+    """A missing score is rebuilt. A score already on the row stays."""
+    frame = pd.DataFrame(
+        {
+            "signal_name": [
+                "yahoo_and_tipranks_1d_recency",
+                "yahoo_and_tipranks_3d_recency",
+            ],
+            "average_projected": [40.0, 40.0],
+            "analyst_projections_count": [4.0, 4.0],
+            "mad": [0.25, 0.25],
+        }
+    )
+    scored = with_signal_score(frame)
+    if abs(float(scored.loc[0, "signal_score"]) - 80.0) > 1e-9:
+        raise RuntimeError(f"1d score drifted: {scored.loc[0, 'signal_score']}")
+    if abs(float(scored.loc[1, "signal_score"]) - 60.0) > 1e-9:
+        raise RuntimeError(f"3d score drifted: {scored.loc[1, 'signal_score']}")
+    scored.loc[0, "signal_score"] = 7.0
+    kept = with_signal_score(scored)
+    if float(kept.loc[0, "signal_score"]) != 7.0:
+        raise RuntimeError("an existing signal_score must stay")
+    print("Signal score fill checks passed.")
+
+
+def load_signals(path=SIGNALS_CSV):
+    signals = pd.read_csv(path, parse_dates=["date"])
+    if signals.empty:
+        raise RuntimeError(f"No signals in {path}")
+    signals = with_signal_score(signals)
+    return signals.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
+        drop=True
+    )
+
 
 OUT_DIR = Path(__file__).resolve().parent
 ROOT = Path(__file__).resolve().parents[1]
@@ -329,6 +446,35 @@ CUTS_PROTECTS = (0.15, 0.10, 0.075, 0.05, 0.025)
 CUTS_ANALYSTS = (0, 1, 2, 3, 4, 5)
 CUTS_PROJECTED = (0, 10, 20, 30, 40)
 UNION_STEM = "simulation_2026-11-07_2300_UTC+2_recency-union-pp__optimize"
+ATDIV_STEM = "simulation_2026-11-12_0108_UTC+2_strength-divisors-40__optimize"
+AT_DIVISORS = (5, 10, 20, 30, 40, 50)
+ATDIV_DRAWDOWN = 0.025
+ATDIV_PROTECT = 0.15
+ATDIV_ANALYSTS = 2
+ATDIV_PROJECTED = 40.0
+ATDIV_RANGE = {"label": "10m_Jan-Oct", "start": "2026-01-01", "end": "2026-10-31"}
+ONE_STEM = "simulation_2026-11-12_0128_UTC+2_one-position__optimize"
+ONE_PROTECTS = (0.05, 0.10, 0.15)
+ONE_ANALYSTS = (0, 1, 2, 3)
+ONE_PROJECTED = (30, 40)
+RANK_FORMULAS = ("a×t", "a×p²", "√a×p", "t", "a²")
+ONE_RANGE = {"label": "10m_Jan-Oct", "start": "2026-01-01", "end": "2026-10-31"}
+PAIR_STEM = "simulation_2026-11-12_0151_UTC+2_two-signal-lots__optimize"
+PAIR_PROTECTS = (0.05, 0.10, 0.15)
+PAIR_SLOTS = (1, 2, 3)
+PAIR_ANALYSTS = (0, 2, 3, 4)
+PAIR_PROJECTED = (10, 20, 30, 40, 50, 60)
+PAIR_RANK = "a×t"
+PAIR_MAX_NEW = 2
+HALF_STEM = "simulation_2026-11-13_1457_UTC+2_half-dd__optimize"
+HALF_DRAWDOWNS = (0.0125, 0.025, 0.05, 0.10)
+HALF_PROTECTS = (0.05, 0.10, 0.15)
+HALF_SLOTS = 256
+HALF_NAMES = 3
+HALF_ANALYSTS = (0, 2, 3, 4)
+HALF_PROJECTED = (10, 20, 30, 40, 50, 60)
+HALF_RANK = "a×t"
+ONCE_STEM = "simulation_2026-11-13_1647_UTC+2_half-dd-skip-held__optimize"
 UNION_DRAWDOWN = 0.025
 UNION_PROTECTS = (0.15, 0.25, 0.30, 0.40, 0.50, 0.60)
 UNION_FILLS = ("same-close", "next-open")
@@ -339,6 +485,25 @@ UNION_RANGES = (
     {"label": "5m_Jun-Oct", "start": "2026-06-01", "end": "2026-10-31"},
     {"label": "10m_Jan-Oct", "start": "2026-01-01", "end": "2026-10-31"},
 )
+MIX_STEM = "simulation_2026-11-14_1424_UTC+2_recency-mix-match__optimize"
+SHARE_STEM = "simulation_2026-11-14_1927_UTC+2_recency-step-share__optimize"
+# Each fallback step deploys this fraction of the previous step's share.
+SHARE_FACTORS = (0.5, 0.75)
+# (source, min analysts, min projected). Step 1 is the union canvas buy.
+MIX_TIERS = (
+    ("any", 2, 40.0),
+    ("any", 4, 20.0),
+    ("any", 4, 10.0),
+    ("any", 4, 0.0),
+)
+MIX_LABELS = (
+    "any >2,>40%",
+    "any >2,>40% → all >4,>20%",
+    "any >2,>40% → all >4,>20% → >10%",
+    "any >2,>40% → all >4,>20% → >10% → >0%",
+)
+# 0 is unlimited names. A positive cap is the most new names that session.
+MIX_CAPS = (1, 2, 3, 4, 0)
 FILL_MODES = ("same-close", "next-open", "next-close")
 FILL_LABELS = {
     "same-close": "same close",
@@ -498,6 +663,7 @@ class SellSpec:
     lot_mode: str | None = None
     lot_amount: float | None = None
     fill: str | None = None
+    max_names: int | None = None
 
     @property
     def staged(self) -> bool:
@@ -523,9 +689,11 @@ class SellSpec:
     @property
     def tag(self) -> str:
         if self.slots is not None and self.profit_protect is not None:
-            dd = f"dd{self.drawdown * 100:g}"
             pp = f"pp{self.profit_protect * 100:g}"
-            core = f"{dd}-{pp}-slots{self.slots}"
+            if self.drawdown is None:
+                core = f"{pp}-slots{self.slots}"
+            else:
+                core = f"dd{self.drawdown * 100:g}-{pp}-slots{self.slots}"
             parts = []
             if self.filler:
                 parts.append(self.filler.lower())
@@ -536,6 +704,8 @@ class SellSpec:
                 parts.append(self.lot_mode)
             if self.fill:
                 parts.append(self.fill)
+            if self.max_names is not None:
+                parts.append("maxall" if self.max_names == 0 else f"max{self.max_names}")
             return "-".join(parts)
         if self.slots is not None:
             return f"slots{self.slots}"
@@ -552,6 +722,16 @@ class SellSpec:
     @property
     def short(self) -> str:
         if self.slots is not None and self.profit_protect is not None:
+            if self.drawdown is None:
+                size = (
+                    f"{self.slots} × ${self.lot_amount:,.0f}"
+                    if self.lot_amount
+                    else f"{self.slots} lots"
+                )
+                text = f"{self.profit_protect * 100:g}pp · {size}"
+                if self.lot_mode:
+                    text = f"{text} · {self.lot_mode}"
+                return text
             size = (
                 f"{self.slots} × ${self.lot_amount:,.0f}"
                 if self.lot_amount
@@ -569,6 +749,9 @@ class SellSpec:
                 text = f"{text} · {self.lot_mode}"
             if self.fill:
                 text = f"{text} · {FILL_LABELS[self.fill]}"
+            if self.max_names is not None:
+                cap = "all" if self.max_names == 0 else str(self.max_names)
+                text = f"{text} · max {cap}"
             return text
         if self.slots is not None:
             return f"{self.slots} lots"
@@ -596,10 +779,16 @@ class SellSpec:
     @property
     def label(self) -> str:
         if self.slots is not None and self.profit_protect is not None:
-            text = (
-                f"{self.slots} lots, {self.drawdown * 100:g}% loss dd, "
-                f"{self.profit_protect * 100:g}% of peak gain"
-            )
+            if self.drawdown is None:
+                text = (
+                    f"{self.slots} lot, "
+                    f"{self.profit_protect * 100:g}% of peak gain"
+                )
+            else:
+                text = (
+                    f"{self.slots} lots, {self.drawdown * 100:g}% loss dd, "
+                    f"{self.profit_protect * 100:g}% of peak gain"
+                )
             if self.filler:
                 return f"{text}, stop filler {self.filler}"
             return text
@@ -838,11 +1027,12 @@ def filter_signals(signals, min_analysts, min_projected, signal_name=None):
     )
 
 
-def union_rows(signals, min_analysts, min_projected):
+def union_rows(signals, min_analysts, min_projected, rank_mode=None):
     """One row per ticker and day from any recency book that clears the cut.
 
     The kept row is the strongest qualifier. A stronger row that misses the
-    cut does not replace a weaker row that passes it.
+    cut does not replace a weaker row that passes it. rank_mode uses that
+    formula. The default rank is the slot-book strength.
     """
     out = restrict_signal_names(signals, RECENCY_SIGNAL_NAMES)
     out = out[
@@ -852,12 +1042,20 @@ def union_rows(signals, min_analysts, min_projected):
     if out.empty:
         return out.reset_index(drop=True)
     out["_day"] = pd.to_datetime(out["date"]).dt.normalize()
-    out["_strength"] = [
-        position_strength(analysts, projected)
-        for analysts, projected in zip(
-            out["analyst_projections_count"], out["average_projected"]
-        )
-    ]
+    if rank_mode:
+        out["_strength"] = [
+            rank_strength(analysts, projected, rank_mode)
+            for analysts, projected in zip(
+                out["analyst_projections_count"], out["average_projected"]
+            )
+        ]
+    else:
+        out["_strength"] = [
+            position_strength(analysts, projected)
+            for analysts, projected in zip(
+                out["analyst_projections_count"], out["average_projected"]
+            )
+        ]
     out["_score"] = out["signal_score"] if "signal_score" in out.columns else 0.0
     out = out.sort_values(
         ["_day", "ticker", "_strength", "_score"],
@@ -924,6 +1122,28 @@ def _protect_stops(px, peak, entry_px, drawdown, profit_protect):
     return pp_hit, dd_hit
 
 
+def rank_strength(analysts, projected_pct, mode):
+    """Rank one signal. t and p are the projected upside as a fraction.
+
+    a×t is analysts × the fraction. a×p² is analysts × the fraction
+    squared, so a 40% upside contributes 0.16. √a×p is sqrt(analysts)
+    × the fraction. t is the fraction alone. a² is analysts squared.
+    """
+    if mode not in RANK_FORMULAS:
+        raise RuntimeError(f"unknown rank {mode}")
+    count = max(float(analysts), 0.0)
+    frac = float(projected_pct) / 100.0
+    if mode == "a×t":
+        return count * frac
+    if mode == "a×p²":
+        return count * frac * frac
+    if mode == "√a×p":
+        return math.sqrt(count) * frac
+    if mode == "t":
+        return frac
+    return count * count
+
+
 def position_strength(analysts, projected_pct):
     """sqrt(analysts capped at 10) × target percent floored to 10-point steps.
 
@@ -934,11 +1154,21 @@ def position_strength(analysts, projected_pct):
     return math.sqrt(count) * bucket
 
 
+def at_divisor(mode):
+    """Divisor N in a×p/N, or None when mode is another formula."""
+    prefix = "a×p/"
+    if isinstance(mode, str) and mode.startswith(prefix) and mode[len(prefix):].isdigit():
+        return int(mode[len(prefix):])
+    return None
+
+
 def position_lots(analysts, projected_pct, mode="at"):
     """Lots one signal opens. At least 1, at most 16.
 
     at (and str): floor(analysts × target percent / 10).
     Two analysts and 10% is 2. Four analysts and 40% is 16.
+    a×p/N: the same product divided by N. a×p/10 matches at.
+    Three analysts and 40% is 16 at /5, 12 at /10, and 2 at /50.
     sqra: floor(analysts²). Two analysts is 4. Four is 16.
     a: floor(analysts × 3). Two analysts is 6. Four is 12.
     sqra_target: floor(analysts² × target percent / 40).
@@ -946,8 +1176,11 @@ def position_lots(analysts, projected_pct, mode="at"):
     """
     count = max(float(analysts), 0.0)
     proj = float(projected_pct)
+    divisor = at_divisor(mode)
     if mode in ("str", "at"):
         raw = math.floor(count * proj / 10.0)
+    elif divisor:
+        raw = math.floor(count * proj / float(divisor))
     elif mode == "sqra":
         raw = math.floor(count * count)
     elif mode == "a":
@@ -1464,6 +1697,56 @@ def _check_lot_formulas():
     print("Lot formula checks passed.")
 
 
+def _check_at_divisors():
+    """a×p/N is floor(analysts × target percent / N), capped at 16. /10 is at."""
+    cases = (
+        (5, 3, 40, 16),
+        (10, 3, 40, 12),
+        (20, 3, 40, 6),
+        (30, 3, 40, 4),
+        (40, 3, 40, 3),
+        (50, 3, 40, 2),
+        (10, 2, 10, 2),
+        (50, 2, 10, 1),
+    )
+    for divisor, analysts, proj, want in cases:
+        mode = f"a×p/{divisor}"
+        got = position_lots(analysts, proj, mode)
+        if got != want:
+            raise RuntimeError(f"{mode}({analysts}, {proj}) = {got}, want {want}")
+    if position_lots(4, 40, "a×p/10") != position_lots(4, 40, "at"):
+        raise RuntimeError("a×p/10 must match at")
+    if at_divisor("at") is not None or at_divisor("a×p/") is not None:
+        raise RuntimeError("at_divisor must ignore formulas that are not a×p/N")
+    index = pd.bdate_range("2026-01-05", periods=2)
+    close = pd.DataFrame({"A": [10.0, 10.0]}, index=index)
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "A",
+                "analyst_projections_count": 3,
+                "average_projected": 30,
+                "signal_score": 1,
+            }
+        ]
+    )
+    for mode, want in (("a×p/10", 9), ("a×p/5", 16), ("a×p/30", 3)):
+        _, positions, _, _ = run_slot_book(
+            mode,
+            close,
+            spy,
+            signals,
+            slots=16,
+            cash_sleeve=False,
+            lot_mode=mode,
+        )
+        if len(positions) != want:
+            raise RuntimeError(f"{mode} opened {len(positions)} lots, want {want}")
+    print("Divisor checks passed.")
+
+
 def _check_position_win_rate():
     """A multi-lot entry is one position. Lot count does not weight the rate."""
     frame = pd.DataFrame(
@@ -1627,6 +1910,36 @@ def next_session_bars(dates, signal_dates):
     return dates.get_indexer(pd.DatetimeIndex(day), method="bfill")
 
 
+def free_share_lots(free, fraction):
+    """Nearest whole number of free lots. Half a lot rounds up.
+
+    12 free lots at 12.5% is 2. 12 free lots at 56.25% is 7. A fraction
+    of one lot that is under half a lot is 0, and that session buys nothing.
+    """
+    if free <= 0 or fraction <= 0:
+        return 0
+    if fraction >= 1:
+        return int(free)
+    return int(math.floor(free * float(fraction) + 0.5))
+
+
+def _mix_tier(row):
+    tier = getattr(row, "mix_tier", None)
+    if tier is None or (isinstance(tier, float) and math.isnan(tier)):
+        return None
+    return int(tier)
+
+
+def _day_share(todays, lot_factor):
+    """Step 1 is the whole book. Step N deploys factor^(N-1) of the free lots."""
+    if lot_factor is None or not todays:
+        return 1.0
+    tier = todays[0].get("tier")
+    if tier is None:
+        return 1.0
+    return float(lot_factor) ** int(tier)
+
+
 def run_slot_book(
     label,
     close,
@@ -1646,6 +1959,11 @@ def run_slot_book(
     no_buy=False,
     opens=None,
     entry=None,
+    max_new=None,
+    half_names=None,
+    skip_held=False,
+    max_names=None,
+    lot_factor=None,
 ):
     """At most `slots` open lots.
 
@@ -1681,6 +1999,29 @@ def run_slot_book(
 
     cash_sleeve false keeps uninvested money as cash. The sleeve does not
     buy SPY, and with no tqqq the empty slots stay empty.
+
+    max_new caps how many stock lots can open on one session. Two means
+    the strongest two signals, one lot each, even when a third lot is free.
+    A session with one signal opens one lot. One free lot takes the
+    strongest signal only.
+
+    max_names caps how many new tickers can open on one session. The
+    names are the strongest first. Each name still opens its lot count,
+    so one name can take every free lot. A ticker that is already held
+    is skipped and does not use a name. None means every signal that day.
+
+    lot_factor scales a fallback step. Step 1, tier 0, still deploys its
+    full lot count and can sell a lot to make room. A later tier deploys
+    factor^tier of the lots that are already free, rounded to the nearest
+    lot, and does not sell a stock to make room. The day's signals share
+    that budget, strongest first.
+
+    half_names splits the lots free at the fill across that many signals.
+    Each one takes half of what is still free, rounded up. The rest stays
+    cash. A ticker that is already held can be bought again. skip_held
+    leaves that ticker out and gives its half to the next eligible signal.
+    On a next-open fill those free lots are whatever earlier closes left.
+    Today's close stop frees a lot for the next open.
     """
     from backtest import bar_dates
 
@@ -1754,17 +2095,28 @@ def run_slot_book(
             {
                 "ticker": ticker,
                 "entry": loc,
-                "strength": position_strength(row.analyst_projections_count, row.average_projected),
+                "strength": (
+                    rank_strength(
+                        row.analyst_projections_count,
+                        row.average_projected,
+                        lot_mode,
+                    )
+                    if lot_mode in RANK_FORMULAS
+                    else position_strength(
+                        row.analyst_projections_count, row.average_projected
+                    )
+                ),
                 "score": float(row.rank) if pd.notna(row.rank) else 0.0,
                 "lots": (
                     1
-                    if not lot_mode or lot_mode == "1"
+                    if not lot_mode or lot_mode == "1" or lot_mode in RANK_FORMULAS
                     else position_lots(
                         row.analyst_projections_count,
                         row.average_projected,
                         lot_mode,
                     )
                 ),
+                "tier": _mix_tier(row),
             }
         )
 
@@ -1894,9 +2246,75 @@ def run_slot_book(
 
     def run_signals(t, book):
         nonlocal freed_by_stop, idle_cash
+        opened = 0
+        names_opened = 0
         todays = by_day.get(t, [])
         todays.sort(key=lambda signal: (signal["strength"], signal["score"]), reverse=True)
+        share = _day_share(todays, lot_factor)
+        if share < 1:
+            budget = free_share_lots(slots - len(open_lots), share)
+            held_names = {
+                lot["ticker"] for lot in open_lots if not lot.get("park")
+            }
+            for signal in todays:
+                if budget <= 0:
+                    break
+                ticker = signal["ticker"]
+                if ticker in held_names:
+                    continue
+                px = quote(book, ticker, t)
+                if px is None:
+                    continue
+                take = min(int(signal["lots"]), budget, slots - len(open_lots))
+                if take <= 0:
+                    continue
+                for _ in range(take):
+                    open_lot(signal, t, px)
+                    opened += 1
+                    if freed_by_stop > 0:
+                        freed_by_stop -= 1
+                    elif not use_spy_fill and idle_cash > 0:
+                        idle_cash -= 1
+                budget -= take
+                held_names.add(ticker)
+            return
+        if half_names:
+            free = slots - len(open_lots)
+            taken = 0
+            held_names = None
+            if skip_held:
+                held_names = {
+                    lot["ticker"] for lot in open_lots if not lot.get("park")
+                }
+            for signal in todays:
+                if taken >= half_names or free <= 0:
+                    break
+                ticker = signal["ticker"]
+                if held_names is not None and ticker in held_names:
+                    continue
+                px = quote(book, ticker, t)
+                if px is None:
+                    continue
+                take = (free + 1) // 2
+                for _ in range(take):
+                    if len(open_lots) >= slots:
+                        break
+                    open_lot(signal, t, px)
+                    opened += 1
+                    if freed_by_stop > 0:
+                        freed_by_stop -= 1
+                    elif not use_spy_fill and idle_cash > 0:
+                        idle_cash -= 1
+                free -= take
+                taken += 1
+                if held_names is not None:
+                    held_names.add(ticker)
+            return
         for signal in todays:
+            if max_new is not None and opened >= max_new:
+                break
+            if max_names is not None and names_opened >= max_names:
+                break
             if any(
                 lot["ticker"] == signal["ticker"] and not lot.get("park")
                 for lot in open_lots
@@ -1905,9 +2323,14 @@ def run_slot_book(
             px = quote(book, signal["ticker"], t)
             if px is None:
                 continue
+            took = False
             for _ in range(int(signal["lots"])):
+                if max_new is not None and opened >= max_new:
+                    break
                 if len(open_lots) < slots:
                     open_lot(signal, t, px)
+                    opened += 1
+                    took = True
                     if freed_by_stop > 0:
                         freed_by_stop -= 1
                     elif not use_spy_fill and idle_cash > 0:
@@ -1917,6 +2340,7 @@ def run_slot_book(
                     break
                 if use_spy_fill and tqqq_px is not None and sell_park(stop_ticker, t):
                     open_lot(signal, t, px)
+                    took = True
                     continue
                 if (
                     tqqq_px is not None
@@ -1924,6 +2348,7 @@ def run_slot_book(
                     and sell_park(PARK_TQQQ, t)
                 ):
                     open_lot(signal, t, px)
+                    took = True
                     continue
                 marked = []
                 blocked = False
@@ -1946,6 +2371,9 @@ def run_slot_book(
                     break
                 close_lot(victim[0], t, victim[2])
                 open_lot(signal, t, px)
+                took = True
+            if took:
+                names_opened += 1
 
     for t in range(n):
         freed_by_stop = 0
@@ -3005,10 +3433,81 @@ def filter_percentile(signals, min_percentile, signal_name=None):
     )
 
 
+def _strongest_ticker_day(frame):
+    """One row per ticker and day, the strongest by the slot-book rank."""
+    if frame is None or len(frame) == 0:
+        return frame
+    out = frame.copy()
+    out["_day"] = pd.to_datetime(out["date"]).dt.normalize()
+    out["_strength"] = [
+        position_strength(analysts, projected)
+        for analysts, projected in zip(
+            out["analyst_projections_count"], out["average_projected"]
+        )
+    ]
+    out["_score"] = out["signal_score"] if "signal_score" in out.columns else 0.0
+    out = out.sort_values(
+        ["_day", "ticker", "_strength", "_score"],
+        ascending=[True, True, False, False],
+    )
+    out = out.drop_duplicates(["_day", "ticker"], keep="first")
+    return out.drop(columns=["_day", "_strength", "_score"])
+
+
+def mix_tier_rows(signals, tier_index):
+    """One waterfall step. Step 0 is the union canvas buy, any · >2,>40%."""
+    kind, analysts, projected = MIX_TIERS[tier_index]
+    if kind == "primary":
+        out = filter_signals(signals, analysts, projected, "yahoo_and_tipranks_5d_recency")
+    else:
+        out = union_rows(signals, analysts, projected)
+    return _strongest_ticker_day(out)
+
+
+def mix_rows(signals, depth, date_from=None, date_to=None):
+    """Keep the tightest step that has a signal on that day.
+
+    A looser step is used only when every tighter step is empty that day.
+    depth 1 is any recency book at analyst >2 and projected >40%.
+    """
+    frames = []
+    for index in range(int(depth)):
+        frame = mix_tier_rows(signals, index)
+        if date_from and date_to and len(frame):
+            dates = pd.to_datetime(frame["date"]).dt.normalize()
+            frame = frame.loc[
+                (dates >= pd.Timestamp(date_from)) & (dates <= pd.Timestamp(date_to))
+            ]
+        if len(frame) == 0:
+            continue
+        frame = frame.copy()
+        frame["_tier"] = index
+        frame["_day"] = pd.to_datetime(frame["date"]).dt.normalize()
+        frames.append(frame)
+    if not frames:
+        return signals.iloc[0:0].copy()
+    all_rows = pd.concat(frames, ignore_index=True)
+    best = all_rows.groupby("_day", sort=False)["_tier"].transform("min")
+    kept = all_rows.loc[all_rows["_tier"] == best].drop(columns=["_day"])
+    kept = kept.rename(columns={"_tier": "mix_tier"})
+    return kept.sort_values(["date", "signal_score"], ascending=[True, False]).reset_index(
+        drop=True
+    )
+
+
 def apply_buy(signals, buy):
     signal_name = buy.get("signal_name")
-    if signal_name == UNION_SIGNAL:
-        out = union_rows(signals, buy["min_analysts"], buy["min_projected"])
+    if buy.get("mix_depth"):
+        out = mix_rows(
+            signals, buy["mix_depth"], buy.get("date_from"), buy.get("date_to")
+        )
+    elif signal_name == UNION_SIGNAL:
+        out = union_rows(
+            signals,
+            buy["min_analysts"],
+            buy["min_projected"],
+            rank_mode=buy.get("rank_mode"),
+        )
     elif buy.get("min_percentile") is not None:
         out = filter_percentile(signals, buy["min_percentile"], signal_name)
     else:
@@ -4202,6 +4701,9 @@ def run_combos(
     cash_sleeve=True,
     resume=False,
     opens=None,
+    max_new=None,
+    half_names=None,
+    skip_held=False,
 ):
     rows = []
     close_wide = None
@@ -4229,7 +4731,11 @@ def run_combos(
             key = combo_key(buy, spec)
             if key in seen:
                 continue
-            bought = apply_buy(signals, buy)
+            ran = buy
+            if spec.lot_mode in RANK_FORMULAS:
+                ran = dict(buy)
+                ran["rank_mode"] = spec.lot_mode
+            bought = apply_buy(signals, ran)
             if bought.empty:
                 print(f"  skip I{iteration} {spec.short} · {buy_label(buy)}: no signals")
                 seen.add(key)
@@ -4286,6 +4792,11 @@ def run_combos(
                     lot_amount=spec.lot_amount,
                     opens=book_opens if spec.fill in (None, "next-open") else None,
                     entry=spec.fill,
+                    max_new=max_new,
+                    half_names=half_names,
+                    skip_held=skip_held,
+                    max_names=spec.max_names or None,
+                    lot_factor=buy.get("lot_factor"),
                 )
             else:
                 row, positions, close_wide, _, init_cash = run_one(
@@ -6526,6 +7037,428 @@ def _check_union_book():
         raise RuntimeError("every union window must price through the last quote")
 
 
+def mix_sells():
+    """The frozen winner sell, once for each new-name cap."""
+    specs = [
+        SellSpec(
+            drawdown=0.025,
+            profit_protect=0.15,
+            slots=12,
+            loss_mode="ls",
+            lot_mode="at",
+            lot_amount=BOOK_CASH / 12,
+            fill="next-open",
+            max_names=cap,
+        )
+        for cap in MIX_CAPS
+    ]
+    shorts = [spec.short for spec in specs]
+    if shorts[0] != "2.5dd 15pp · 12 × $26,667 · ls · at · next open · max 1":
+        raise RuntimeError(f"mix sell order drifted: {shorts[0]}")
+    if shorts[-1] != "2.5dd 15pp · 12 × $26,667 · ls · at · next open · max all":
+        raise RuntimeError(f"unlimited mix sell drifted: {shorts[-1]}")
+    if len(set(spec.tag for spec in specs)) != len(MIX_CAPS):
+        raise RuntimeError(f"mix sell tags collided: {[spec.tag for spec in specs]}")
+    return specs
+
+
+def mix_buys(price_to):
+    """Four waterfall depths on the three buy windows."""
+    buys = [
+        {
+            "min_analysts": MIX_TIERS[0][1],
+            "min_projected": MIX_TIERS[0][2],
+            "signal_name": MIX_LABELS[depth - 1],
+            "mix_depth": depth,
+            "range_label": window["label"],
+            "date_from": window["start"],
+            "date_to": window["end"],
+            "price_to": price_to,
+        }
+        for window in UNION_RANGES
+        for depth in range(1, len(MIX_TIERS) + 1)
+    ]
+    if len(buys) != len(UNION_RANGES) * len(MIX_TIERS):
+        raise RuntimeError(f"expected {len(UNION_RANGES) * len(MIX_TIERS)} mix buys")
+    if buys[0]["signal_name"] != MIX_LABELS[0] or buys[-1]["mix_depth"] != 4:
+        raise RuntimeError("mix buy order drifted")
+    return buys
+
+
+def _check_mix_book():
+    specs = mix_sells()
+    if len(specs) != 5:
+        raise RuntimeError(f"expected 5 mix sells, got {len(specs)}")
+    frame = pd.DataFrame(
+        {
+            "date": [
+                "2026-01-05",
+                "2026-01-05",
+                "2026-01-06",
+                "2026-01-06",
+                "2026-01-07",
+                "2026-01-09",
+                "2026-01-09",
+                "2026-06-02",
+            ],
+            "ticker": ["A", "B", "C", "D", "E", "H", "H", "Z"],
+            "average_projected": [45.0, 25.0, 22.0, 12.0, 5.0, 21.0, 25.0, 41.0],
+            "analyst_projections_count": [5, 5, 5, 5, 5, 9, 5, 6],
+            "signal_score": [1.0, 9.0, 1.0, 1.0, 1.0, 1.0, 9.0, 1.0],
+            "signal_name": [
+                "yahoo_and_tipranks_5d_recency",
+                "yahoo_and_tipranks_1d_recency",
+                "yahoo_and_tipranks_5d_recency",
+                "yahoo_and_tipranks_1d_recency",
+                "yahoo_and_tipranks_2d_recency",
+                "yahoo_and_tipranks_5d_recency",
+                "yahoo_and_tipranks_1d_recency",
+                "yahoo_and_tipranks_5d_recency",
+            ],
+        }
+    )
+    def pairs(depth, **window):
+        kept = mix_rows(frame, depth, window.get("date_from"), window.get("date_to"))
+        return list(
+            zip(
+                pd.to_datetime(kept["date"]).dt.strftime("%Y-%m-%d"),
+                kept["ticker"],
+                kept["average_projected"].astype(float),
+            )
+        )
+
+    strict = pairs(1)
+    if strict != [("2026-01-05", "A", 45.0), ("2026-06-02", "Z", 41.0)]:
+        raise RuntimeError(f"step 1 must be any book at >2,>40%: {strict}")
+    second = pairs(2)
+    if ("2026-01-05", "B", 25.0) in second or ("2026-01-06", "D", 12.0) in second:
+        raise RuntimeError(f"a tighter step must block the looser one: {second}")
+    if ("2026-01-06", "C", 22.0) not in second:
+        raise RuntimeError(f"an empty >2,>40% day must use >4,>20%: {second}")
+    if ("2026-01-09", "H", 21.0) not in second or ("2026-01-09", "H", 25.0) in second:
+        raise RuntimeError(f"union must keep the stronger >20% row: {second}")
+    third = pairs(3)
+    if ("2026-01-07", "E", 5.0) in third:
+        raise RuntimeError(f">0% must wait until >10% is empty: {third}")
+    fourth = pairs(4)
+    if ("2026-01-07", "E", 5.0) not in fourth:
+        raise RuntimeError(f"step 4 must take >0% when every tighter step is empty: {fourth}")
+    windowed = pairs(4, date_from="2026-01-01", date_to="2026-05-31")
+    if any(ticker == "Z" for _day, ticker, _proj in windowed):
+        raise RuntimeError(f"June signal leaked into Jan–May: {windowed}")
+    index = pd.to_datetime(["2026-01-05", "2026-01-06", "2026-01-07"])
+    close = pd.DataFrame({"A": [10.0, 10.0, 11.0], "B": [10.0, 10.0, 11.0]}, index=index)
+    opens = pd.DataFrame({"A": [10.0, 10.0, 11.0], "B": [10.0, 10.0, 11.0]}, index=index)
+    spy = pd.Series([100.0, 100.0, 100.0], index=index, name="SPY")
+    bought = pd.DataFrame(
+        {
+            "date": ["2026-01-05", "2026-01-05"],
+            "ticker": ["A", "B"],
+            "average_projected": [40.0, 30.0],
+            "analyst_projections_count": [6, 5],
+            "signal_score": [2.0, 1.0],
+            "signal_name": ["yahoo_and_tipranks_5d_recency", "yahoo_and_tipranks_5d_recency"],
+        }
+    )
+    capped, positions, _close, _cash = run_slot_book(
+        "mix cap",
+        close,
+        spy,
+        bought,
+        slots=4,
+        lot_mode="1",
+        lot_amount=1000,
+        cash_sleeve=False,
+        opens=opens,
+        entry="next-open",
+        max_names=1,
+    )
+    names = sorted(positions["ticker"].unique())
+    if names != ["A"] or capped["n_positions"] != 1:
+        raise RuntimeError(f"max 1 name must keep the strongest only: {names}")
+    open_cap, positions_all, _close, _cash = run_slot_book(
+        "mix all",
+        close,
+        spy,
+        bought,
+        slots=4,
+        lot_mode="1",
+        lot_amount=1000,
+        cash_sleeve=False,
+        opens=opens,
+        entry="next-open",
+        max_names=None,
+    )
+    if sorted(positions_all["ticker"].unique()) != ["A", "B"] or open_cap["n_positions"] != 2:
+        raise RuntimeError(
+            f"unlimited names must buy both: {sorted(positions_all['ticker'].unique())}"
+        )
+
+
+def run_mix(signals, close, spy, opens, position_log=None):
+    _check_slot_book()
+    _check_next_open()
+    _check_entry_fills()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_mix_book()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = mix_buys(price_to)
+    specs = mix_sells()
+    print(
+        f"\n=== Recency mix: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · 2.5dd 15pp · 12 lots · ls · at · next open"
+        f" · steps {', '.join(MIX_LABELS)}"
+        f" · max names {', '.join('all' if cap == 0 else str(cap) for cap in MIX_CAPS)}"
+        f" · ranges {', '.join(window['label'] for window in UNION_RANGES)}"
+        f" · prices through {price_to}"
+        f" · one position per ticker ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "mix",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
+def _share_percent(fraction):
+    text = f"{fraction * 100:.4f}".rstrip("0").rstrip(".")
+    return f"{text}%"
+
+
+def share_signal_name(factor, depth):
+    """Label the waterfall and the share of free lots each fallback step buys."""
+    head = "any >2,>40%"
+    if depth <= 1:
+        return head
+    mark = "½" if abs(factor - 0.5) < 1e-9 else "¾"
+    bits = [head]
+    for tier in range(1, depth):
+        bits.append(_share_percent(factor ** tier))
+    return f"{mark} · " + " → ".join(bits) + " of free"
+
+
+def share_sells():
+    """The frozen winner sell. The share lives on the buy, not the sell."""
+    spec = SellSpec(
+        drawdown=0.025,
+        profit_protect=0.15,
+        slots=12,
+        loss_mode="ls",
+        lot_mode="at",
+        lot_amount=BOOK_CASH / 12,
+        fill="next-open",
+    )
+    if spec.short != "2.5dd 15pp · 12 × $26,667 · ls · at · next open":
+        raise RuntimeError(f"share sell drifted: {spec.short}")
+    return [spec]
+
+
+def share_buys(price_to):
+    """Step 1 buys the full book. Fallback steps buy a shrinking share of free lots.
+
+    The ½ ladder is 50%, 25%, and 12.5%. The ¾ ladder is 75%, 56.25%, and
+    42.1875%. Step 1 is one row, shared by both ladders.
+    """
+    buys = []
+    for window in UNION_RANGES:
+        buys.append(
+            {
+                "min_analysts": MIX_TIERS[0][1],
+                "min_projected": MIX_TIERS[0][2],
+                "signal_name": share_signal_name(1.0, 1),
+                "mix_depth": 1,
+                "range_label": window["label"],
+                "date_from": window["start"],
+                "date_to": window["end"],
+                "price_to": price_to,
+            }
+        )
+        for factor in SHARE_FACTORS:
+            for depth in range(2, len(MIX_TIERS) + 1):
+                buys.append(
+                    {
+                        "min_analysts": MIX_TIERS[0][1],
+                        "min_projected": MIX_TIERS[0][2],
+                        "signal_name": share_signal_name(factor, depth),
+                        "mix_depth": depth,
+                        "lot_factor": factor,
+                        "range_label": window["label"],
+                        "date_from": window["start"],
+                        "date_to": window["end"],
+                        "price_to": price_to,
+                    }
+                )
+    expected = len(UNION_RANGES) * (1 + len(SHARE_FACTORS) * (len(MIX_TIERS) - 1))
+    if len(buys) != expected:
+        raise RuntimeError(f"expected {expected} share buys, got {len(buys)}")
+    if buys[0]["signal_name"] != "any >2,>40%":
+        raise RuntimeError(f"step 1 label drifted: {buys[0]['signal_name']}")
+    if buys[1]["signal_name"] != "½ · any >2,>40% → 50% of free":
+        raise RuntimeError(f"½ step 2 label drifted: {buys[1]['signal_name']}")
+    if buys[3]["signal_name"] != "½ · any >2,>40% → 50% → 25% → 12.5% of free":
+        raise RuntimeError(f"½ step 4 label drifted: {buys[3]['signal_name']}")
+    if buys[4]["signal_name"] != "¾ · any >2,>40% → 75% of free":
+        raise RuntimeError(f"¾ step 2 label drifted: {buys[4]['signal_name']}")
+    if buys[6]["signal_name"] != "¾ · any >2,>40% → 75% → 56.25% → 42.1875% of free":
+        raise RuntimeError(f"¾ step 4 label drifted: {buys[6]['signal_name']}")
+    return buys
+
+
+def _check_share_book():
+    if free_share_lots(12, 0.5) != 6:
+        raise RuntimeError("50% of 12 free lots must be 6")
+    if free_share_lots(12, 0.25) != 3:
+        raise RuntimeError("25% of 12 free lots must be 3")
+    if free_share_lots(12, 0.125) != 2:
+        raise RuntimeError("12.5% of 12 free lots must round 1.5 up to 2")
+    if free_share_lots(12, 0.75) != 9:
+        raise RuntimeError("75% of 12 free lots must be 9")
+    if free_share_lots(12, 0.5625) != 7:
+        raise RuntimeError("56.25% of 12 free lots must round 6.75 up to 7")
+    if free_share_lots(12, 0.421875) != 5:
+        raise RuntimeError("42.1875% of 12 free lots must round 5.0625 to 5")
+    if free_share_lots(0, 0.5) != 0:
+        raise RuntimeError("a full book has no free lots to share")
+    specs = share_sells()
+    buys = share_buys("2026-10-26")
+    if len(specs) != 1 or len(buys) != 21:
+        raise RuntimeError(f"expected 1 sell and 21 buys, got {len(specs)} and {len(buys)}")
+    index = pd.to_datetime(["2026-01-05", "2026-01-06", "2026-01-07"])
+    close = pd.DataFrame(
+        {"A": [10.0, 9.0, 8.0], "B": [10.0, 10.0, 10.0]}, index=index
+    )
+    opens = close.copy()
+    spy = pd.Series([100.0, 100.0, 100.0], index=index, name="SPY")
+    full = pd.DataFrame(
+        {
+            "date": ["2026-01-05"],
+            "ticker": ["A"],
+            "average_projected": [40.0],
+            "analyst_projections_count": [10],
+            "signal_score": [1.0],
+            "signal_name": ["yahoo_and_tipranks_5d_recency"],
+            "mix_tier": [0],
+        }
+    )
+    step1, positions, _close, _cash = run_slot_book(
+        "share step 1",
+        close,
+        spy,
+        full,
+        slots=4,
+        lot_mode="at",
+        lot_amount=1000,
+        cash_sleeve=False,
+        opens=opens,
+        entry="next-open",
+        lot_factor=0.5,
+    )
+    if len(positions) != 4 or step1["n_positions"] != 1:
+        raise RuntimeError(f"step 1 must take every free lot: {len(positions)} lots")
+    half = full.copy()
+    half["mix_tier"] = [1]
+    shared, positions_half, _close, _cash = run_slot_book(
+        "share step 2",
+        close,
+        spy,
+        half,
+        slots=4,
+        lot_mode="at",
+        lot_amount=1000,
+        cash_sleeve=False,
+        opens=opens,
+        entry="next-open",
+        lot_factor=0.5,
+    )
+    if len(positions_half) != 2:
+        raise RuntimeError(f"step 2 must buy half of 4 free lots: {len(positions_half)}")
+    crowded = pd.DataFrame(
+        {
+            "date": ["2026-01-05", "2026-01-06"],
+            "ticker": ["A", "B"],
+            "average_projected": [40.0, 20.0],
+            "analyst_projections_count": [10, 10],
+            "signal_score": [1.0, 9.0],
+            "signal_name": [
+                "yahoo_and_tipranks_5d_recency",
+                "yahoo_and_tipranks_5d_recency",
+            ],
+            "mix_tier": [0, 1],
+        }
+    )
+    kept, crowded_positions, _close, _cash = run_slot_book(
+        "share no displace",
+        close,
+        spy,
+        crowded,
+        slots=2,
+        lot_mode="at",
+        lot_amount=1000,
+        cash_sleeve=False,
+        opens=opens,
+        entry="next-open",
+        lot_factor=0.5,
+    )
+    names = sorted(crowded_positions["ticker"].unique())
+    if names != ["A"] or len(crowded_positions) != 2:
+        raise RuntimeError(
+            f"a fallback step must leave a full book alone: {names} {len(crowded_positions)}"
+        )
+
+
+def run_share(signals, close, spy, opens, position_log=None):
+    _check_slot_book()
+    _check_next_open()
+    _check_entry_fills()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_position_win_rate()
+    _check_mix_book()
+    _check_share_book()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = share_buys(price_to)
+    specs = share_sells()
+    print(
+        f"\n=== Recency step share: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · 2.5dd 15pp · 12 lots · ls · at · next open"
+        f" · step 1 full book"
+        f" · ½ of free lots is 50% → 25% → 12.5%"
+        f" · ¾ of free lots is 75% → 56.25% → 42.1875%"
+        f" · ranges {', '.join(window['label'] for window in UNION_RANGES)}"
+        f" · prices through {price_to}"
+        f" · one position per ticker ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "share",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
 def run_union(signals, close, spy, opens, position_log=None):
     _check_slot_book()
     _check_next_open()
@@ -6564,6 +7497,700 @@ def run_union(signals, close, spy, opens, position_log=None):
         cash_sleeve=False,
         resume=True,
         opens=opens,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
+def atdiv_sells():
+    """2.5dd 15pp · 12 × $26,667 · ls · next open, once per a×p divisor."""
+    specs = [
+        SellSpec(
+            drawdown=ATDIV_DRAWDOWN,
+            profit_protect=ATDIV_PROTECT,
+            slots=12,
+            loss_mode="ls",
+            lot_mode=f"a×p/{divisor}",
+            lot_amount=BOOK_CASH / 12,
+            fill="next-open",
+        )
+        for divisor in AT_DIVISORS
+    ]
+    shorts = [spec.short for spec in specs]
+    anchor = "2.5dd 15pp · 12 × $26,667 · ls · a×p/10 · next open"
+    if anchor not in shorts:
+        raise RuntimeError(f"atdiv sells missing the /10 book: {shorts}")
+    if specs[0].short != "2.5dd 15pp · 12 × $26,667 · ls · a×p/5 · next open":
+        raise RuntimeError(f"atdiv sell order drifted: {specs[0].short}")
+    if len(specs) != len(AT_DIVISORS) or len(set(shorts)) != len(AT_DIVISORS):
+        raise RuntimeError(f"expected {len(AT_DIVISORS)} unique atdiv sells, got {len(specs)}")
+    return specs
+
+
+def atdiv_buys(price_to):
+    """January–October union: analyst >2 and projected >40% on any 1d–5d book."""
+    return [
+        {
+            "min_analysts": ATDIV_ANALYSTS,
+            "min_projected": float(ATDIV_PROJECTED),
+            "signal_name": UNION_SIGNAL,
+            "range_label": ATDIV_RANGE["label"],
+            "date_from": ATDIV_RANGE["start"],
+            "date_to": ATDIV_RANGE["end"],
+            "price_to": price_to,
+        }
+    ]
+
+
+def run_atdiv(signals, close, spy, opens, position_log=None):
+    _check_slot_book()
+    _check_next_open()
+    _check_entry_fills()
+    _check_cash_book()
+    _check_split_book()
+    _check_lot_formulas()
+    _check_at_divisors()
+    _check_signal_score_fill()
+    _check_position_win_rate()
+    _check_union_book()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = atdiv_buys(price_to)
+    specs = atdiv_sells()
+    print(
+        f"\n=== Strength divisors: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f} total"
+        f" · loss {ATDIV_DRAWDOWN * 100:g}dd"
+        f" · protect {ATDIV_PROTECT * 100:g}pp"
+        f" · {FILL_LABELS['next-open']}"
+        f" · ls · 12 lots"
+        f" · a×p/{{{', '.join(str(n) for n in AT_DIVISORS)}}}"
+        f" · analysts >{ATDIV_ANALYSTS}"
+        f" · projected >{ATDIV_PROJECTED:g}%"
+        f" · {ATDIV_RANGE['label']}"
+        f" · prices through {price_to}"
+        f" · one position per ticker"
+        f" · {UNION_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "atdiv",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
+def _check_one_position():
+    """One full-book position. The rank picks the name, and a held name blocks the next buy."""
+    high = rank_strength(8, 30, "a×t")
+    low = rank_strength(2, 80, "a×t")
+    if not high > low:
+        raise RuntimeError(f"a×t should prefer 8 analysts at 30%, got {high} vs {low}")
+    if not rank_strength(2, 80, "a×p²") > rank_strength(8, 30, "a×p²"):
+        raise RuntimeError("a×p² should prefer 2 analysts at 80%")
+    if abs(rank_strength(4, 40, "a×p²") - 4 * 0.16) > 1e-9:
+        raise RuntimeError("a×p² at 40% must use 0.16")
+    if not rank_strength(2, 80, "t") > rank_strength(8, 30, "t"):
+        raise RuntimeError("t should follow the projected fraction")
+    if not rank_strength(8, 30, "a²") > rank_strength(2, 80, "a²"):
+        raise RuntimeError("a² should follow the analyst count")
+    if not rank_strength(2, 80, "√a×p") > rank_strength(8, 30, "√a×p"):
+        raise RuntimeError("√a×p should prefer 2 analysts at 80%")
+    index = pd.bdate_range("2026-01-05", periods=6)
+    dup = pd.DataFrame(
+        [
+            {
+                "signal_name": RECENCY_SIGNAL_NAMES[0],
+                "date": index[0],
+                "ticker": "LOW",
+                "average_projected": 80,
+                "analyst_projections_count": 2,
+                "signal_score": 1,
+            },
+            {
+                "signal_name": RECENCY_SIGNAL_NAMES[1],
+                "date": index[0],
+                "ticker": "LOW",
+                "average_projected": 30,
+                "analyst_projections_count": 8,
+                "signal_score": 2,
+            },
+        ]
+    )
+    if int(union_rows(dup, 0, 0, rank_mode="a×t").iloc[0]["analyst_projections_count"]) != 8:
+        raise RuntimeError("union a×t should keep the 8-analyst row")
+    if int(union_rows(dup, 0, 0, rank_mode="a×p²").iloc[0]["analyst_projections_count"]) != 2:
+        raise RuntimeError("union a×p² should keep the 80% row")
+    label = SellSpec(
+        profit_protect=0.10,
+        slots=1,
+        loss_mode="nb",
+        lot_mode="a×t",
+        lot_amount=float(BOOK_CASH),
+        fill="next-open",
+    ).short
+    if label != "10pp · 1 × $320,000 · a×t":
+        raise RuntimeError(f"one-position label drifted: {label}")
+
+    index = pd.bdate_range("2026-01-05", periods=6)
+    flat = [10.0, 10.0, 10.0, 12.0, 11.0, 10.0]
+    close = pd.DataFrame(
+        {name: [10.0, 10.0, 12.0, 11.5, 10.0, 10.0] for name in ("LOW", "HIGH", "OTHER", "NEW")},
+        index=index,
+    )
+    opens = pd.DataFrame({name: flat for name in close.columns}, index=index)
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    signals = pd.DataFrame(
+        [
+            {
+                "date": index[0],
+                "ticker": "LOW",
+                "analyst_projections_count": 2,
+                "average_projected": 80,
+                "signal_score": 1,
+            },
+            {
+                "date": index[0],
+                "ticker": "HIGH",
+                "analyst_projections_count": 8,
+                "average_projected": 30,
+                "signal_score": 1,
+            },
+            {
+                "date": index[1],
+                "ticker": "OTHER",
+                "analyst_projections_count": 9,
+                "average_projected": 90,
+                "signal_score": 1,
+            },
+            {
+                "date": index[3],
+                "ticker": "NEW",
+                "analyst_projections_count": 4,
+                "average_projected": 50,
+                "signal_score": 1,
+            },
+        ]
+    )
+    held = {
+        "a×t": "HIGH",
+        "a×p²": "LOW",
+    }
+    for mode, winner in held.items():
+        row, positions, _, init = run_slot_book(
+            mode,
+            close,
+            spy,
+            signals,
+            slots=1,
+            profit_protect=0.10,
+            lot_mode=mode,
+            cash_sleeve=False,
+            lot_amount=float(BOOK_CASH),
+            no_buy=True,
+            opens=opens,
+            entry="next-open",
+        )
+        names = list(positions["ticker"])
+        if init != BOOK_CASH or row["max_open_lots"] != 1:
+            raise RuntimeError(f"{mode} must be one ${BOOK_CASH:,.0f} position, got {row}")
+        if names != [winner, "NEW"]:
+            raise RuntimeError(f"{mode} should buy {winner} then NEW, got {names}")
+        if "OTHER" in names:
+            raise RuntimeError(f"{mode} bought while a position was open")
+        first = positions.iloc[0]
+        if first["date_buy"] != "2026-01-06" or first["date_sell"] != "2026-01-08":
+            raise RuntimeError(f"{mode} exit drifted: {first.to_dict()}")
+        if abs(first["pnl"] - BOOK_CASH * 0.15) > 1:
+            raise RuntimeError(f"{mode} 15% gain should be ${BOOK_CASH * 0.15:,.0f}, got {first['pnl']}")
+    print("One-position rank checks passed.")
+
+
+def one_sells():
+    """5pp, 10pp, and 15pp, once per rank, on one position of the whole book."""
+    specs = [
+        SellSpec(
+            profit_protect=pp,
+            slots=1,
+            loss_mode="nb",
+            lot_mode=mode,
+            lot_amount=float(BOOK_CASH),
+            fill="next-open",
+        )
+        for mode in RANK_FORMULAS
+        for pp in ONE_PROTECTS
+    ]
+    anchor = "10pp · 1 × $320,000 · a×t"
+    if anchor not in [spec.short for spec in specs]:
+        raise RuntimeError("one-position sells missing 10pp · 1 × $320,000 · a×t")
+    want = len(RANK_FORMULAS) * len(ONE_PROTECTS)
+    if len(specs) != want or len({spec.tag for spec in specs}) != want:
+        raise RuntimeError(f"expected {want} unique one-position sells, got {len(specs)}")
+    return specs
+
+
+def one_buys(price_to):
+    """January–October union. Analyst >0/>1/>2/>3 and projected >30%/>40%."""
+    return [
+        {
+            "min_analysts": n,
+            "min_projected": float(p),
+            "signal_name": UNION_SIGNAL,
+            "range_label": ONE_RANGE["label"],
+            "date_from": ONE_RANGE["start"],
+            "date_to": ONE_RANGE["end"],
+            "price_to": price_to,
+        }
+        for n in ONE_ANALYSTS
+        for p in ONE_PROJECTED
+    ]
+
+
+def run_onepos(signals, close, spy, opens, position_log=None):
+    _check_one_position()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = one_buys(price_to)
+    specs = one_sells()
+    print(
+        f"\n=== One position: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in ONE_PROTECTS)}"
+        f" · {FILL_LABELS['next-open']}"
+        f" · ranks {', '.join(RANK_FORMULAS)}"
+        f" · analysts {', '.join(f'>{n}' for n in ONE_ANALYSTS)}"
+        f" · projected {', '.join(f'>{p}%' for p in ONE_PROJECTED)}"
+        f" · {ONE_RANGE['label']}"
+        f" · {UNION_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "onepos",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
+def _check_two_signals():
+    """At most two new names a day, one lot each, and only into a free lot."""
+    index = pd.bdate_range("2026-01-05", periods=5)
+    names = ("A", "B", "C", "D", "E", "F")
+    close = pd.DataFrame({name: 10.0 for name in names}, index=index)
+    opens = close.copy()
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+
+    def frame(rows):
+        return pd.DataFrame(rows)
+
+    def signal(day, ticker, analysts, projected):
+        return {
+            "date": index[day],
+            "ticker": ticker,
+            "analyst_projections_count": analysts,
+            "average_projected": projected,
+            "signal_score": 1,
+        }
+
+    # a×t: B 2.4, C 2.0, D 1.8, A 1.6. Three free lots still take only B and C.
+    many = frame(
+        [
+            signal(0, "A", 2, 80),
+            signal(0, "B", 8, 30),
+            signal(0, "C", 4, 50),
+            signal(0, "D", 9, 20),
+            signal(1, "E", 3, 40),
+            signal(2, "F", 10, 90),
+        ]
+    )
+    kwargs = dict(
+        spy=spy,
+        profit_protect=0.10,
+        lot_mode=PAIR_RANK,
+        cash_sleeve=False,
+        no_buy=True,
+        opens=opens,
+        entry="next-open",
+        max_new=PAIR_MAX_NEW,
+    )
+    _, positions, _, init = run_slot_book(
+        "three",
+        close,
+        signals=many,
+        slots=3,
+        lot_amount=BOOK_CASH / 3,
+        **kwargs,
+    )
+    if abs(init - BOOK_CASH) > 1:
+        raise RuntimeError(f"three lots must be a ${BOOK_CASH:,.0f} book, got {init}")
+    if list(positions["ticker"]) != ["B", "C", "E"]:
+        raise RuntimeError(f"three free lots should buy B, C, then E, got {list(positions['ticker'])}")
+    _, one_signal, _, _ = run_slot_book(
+        "one-signal",
+        close,
+        signals=frame([signal(0, "A", 2, 80)]),
+        slots=2,
+        lot_amount=BOOK_CASH / 2,
+        **kwargs,
+    )
+    if list(one_signal["ticker"]) != ["A"] or len(one_signal) != 1:
+        raise RuntimeError(f"two free lots and one signal should buy that signal, got {list(one_signal['ticker'])}")
+    _, one_lot, _, _ = run_slot_book(
+        "one-lot",
+        close,
+        signals=frame(
+            [
+                signal(0, "A", 2, 80),
+                signal(0, "B", 8, 30),
+                signal(0, "C", 4, 50),
+            ]
+        ),
+        slots=1,
+        lot_amount=float(BOOK_CASH),
+        **kwargs,
+    )
+    if list(one_lot["ticker"]) != ["B"]:
+        raise RuntimeError(f"one free lot should buy B, got {list(one_lot['ticker'])}")
+    print("Two-signal lot checks passed.")
+
+
+def pair_sells():
+    """1, 2, and 3 lots × 5pp, 10pp, and 15pp. Rank is a×t. No buy when full."""
+    specs = [
+        SellSpec(
+            profit_protect=pp,
+            slots=slots,
+            loss_mode="nb",
+            lot_mode=PAIR_RANK,
+            lot_amount=BOOK_CASH / slots,
+            fill="next-open",
+        )
+        for pp in PAIR_PROTECTS
+        for slots in PAIR_SLOTS
+    ]
+    anchor = "10pp · 2 × $160,000 · a×t"
+    if anchor not in [spec.short for spec in specs]:
+        raise RuntimeError(f"pair sells missing {anchor}")
+    want = len(PAIR_PROTECTS) * len(PAIR_SLOTS)
+    if len(specs) != want or len({spec.tag for spec in specs}) != want:
+        raise RuntimeError(f"expected {want} unique pair sells, got {len(specs)}")
+    return specs
+
+
+def pair_buys(price_to):
+    """January–October union. Analyst >0/>2/>3/>4 and projected >10% through >60%."""
+    return [
+        {
+            "min_analysts": n,
+            "min_projected": float(p),
+            "signal_name": UNION_SIGNAL,
+            "range_label": ONE_RANGE["label"],
+            "date_from": ONE_RANGE["start"],
+            "date_to": ONE_RANGE["end"],
+            "price_to": price_to,
+        }
+        for n in PAIR_ANALYSTS
+        for p in PAIR_PROJECTED
+    ]
+
+
+def run_pair(signals, close, spy, opens, position_log=None):
+    _check_two_signals()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = pair_buys(price_to)
+    specs = pair_sells()
+    print(
+        f"\n=== Two-signal lots: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f}"
+        f" · lots {', '.join(str(n) for n in PAIR_SLOTS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in PAIR_PROTECTS)}"
+        f" · {FILL_LABELS['next-open']}"
+        f" · rank {PAIR_RANK}"
+        f" · at most {PAIR_MAX_NEW} new names a day"
+        f" · analysts {', '.join(f'>{n}' for n in PAIR_ANALYSTS)}"
+        f" · projected {', '.join(f'>{p}%' for p in PAIR_PROJECTED)}"
+        f" · {ONE_RANGE['label']}"
+        f" · {UNION_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "pair",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+        max_new=PAIR_MAX_NEW,
+    )
+    return rows, close, init_cash or BOOK_CASH, buys, specs
+
+
+def _check_half_lots():
+    """Half of the free lots, rounded up, for each of up to three signals.
+
+    A later session can add lots of a ticker that is still held. A close
+    stop frees lots for the next open, not for that same morning.
+    """
+    index = pd.bdate_range("2026-01-05", periods=6)
+    names = ("A", "B", "C", "D")
+    flat = pd.DataFrame({name: 10.0 for name in names}, index=index)
+    spy = pd.Series(100.0, index=index, name=PARK_SPY)
+    amount = BOOK_CASH / HALF_SLOTS
+
+    def frame(rows):
+        return pd.DataFrame(rows)
+
+    def signal(day, ticker, analysts, projected):
+        return {
+            "date": index[day],
+            "ticker": ticker,
+            "analyst_projections_count": analysts,
+            "average_projected": projected,
+            "signal_score": 1,
+        }
+
+    def book(label, signals, close, slots, lot_amount, skip_held=False):
+        return run_slot_book(
+            label,
+            close,
+            spy=spy,
+            signals=signals,
+            slots=slots,
+            lot_amount=lot_amount,
+            profit_protect=0.10,
+            lot_mode=HALF_RANK,
+            cash_sleeve=False,
+            no_buy=True,
+            opens=pd.DataFrame(10.0, index=index, columns=close.columns),
+            entry="next-open",
+            half_names=HALF_NAMES,
+            skip_held=skip_held,
+        )
+
+    # a×t: A 7.2, B 2.0, C 0.8, D 0.1. The fourth name is left out.
+    # 256 free -> 128, 64, 32, and 32 stay cash.
+    _, split, _, init = book(
+        "split",
+        frame(
+            [
+                signal(0, "A", 8, 90),
+                signal(0, "B", 4, 50),
+                signal(0, "C", 2, 40),
+                signal(0, "D", 1, 10),
+            ]
+        ),
+        flat,
+        HALF_SLOTS,
+        amount,
+    )
+    if abs(init - BOOK_CASH) > 1:
+        raise RuntimeError(f"256 lots must be a ${BOOK_CASH:,.0f} book, got {init}")
+    counts = split.groupby("ticker").size().to_dict()
+    if counts != {"A": 128, "B": 64, "C": 32}:
+        raise RuntimeError(f"256 free lots should open 128/64/32, got {counts}")
+
+    _, only, _, _ = book(
+        "one-signal",
+        frame([signal(0, "A", 8, 90)]),
+        flat,
+        HALF_SLOTS,
+        amount,
+    )
+    if len(only) != 128 or set(only["ticker"]) != {"A"}:
+        raise RuntimeError(f"one signal should take 128 lots, got {len(only)}")
+
+    # 5 free -> 3, then 1, then 1.
+    _, odd, _, _ = book(
+        "odd",
+        frame(
+            [
+                signal(0, "A", 8, 90),
+                signal(0, "B", 4, 50),
+                signal(0, "C", 2, 40),
+            ]
+        ),
+        flat,
+        5,
+        1.0,
+    )
+    odd_counts = odd.groupby("ticker").size().to_dict()
+    if odd_counts != {"A": 3, "B": 1, "C": 1}:
+        raise RuntimeError(f"5 free lots should round up to 3/1/1, got {odd_counts}")
+
+    _, one_lot, _, _ = book(
+        "one-lot",
+        frame(
+            [
+                signal(0, "A", 8, 90),
+                signal(0, "B", 4, 50),
+                signal(0, "C", 2, 40),
+            ]
+        ),
+        flat,
+        1,
+        float(BOOK_CASH),
+    )
+    if list(one_lot["ticker"]) != ["A"]:
+        raise RuntimeError(f"1 free lot should round up onto A, got {list(one_lot['ticker'])}")
+
+    # The same ticker can be bought again while the first lots are open.
+    _, stacked, _, _ = book(
+        "stack",
+        frame([signal(0, "A", 8, 90), signal(1, "A", 8, 90)]),
+        flat,
+        HALF_SLOTS,
+        amount,
+    )
+    by_day = stacked.groupby("date_buy").size().to_dict()
+    first = index[1].strftime("%Y-%m-%d")
+    second = index[2].strftime("%Y-%m-%d")
+    if by_day.get(first) != 128 or by_day.get(second) != 64:
+        raise RuntimeError(f"a held ticker should add 64 lots the next day, got {by_day}")
+
+    # A stops at the bar-2 close. C, bought that morning, does not receive
+    # those lots. B, bought the next open, does.
+    close = flat.copy()
+    close["A"] = [10.0, 20.0, 18.0, 18.0, 18.0, 18.0]
+    _, stopped, _, _ = book(
+        "stopped",
+        frame(
+            [
+                signal(0, "A", 8, 90),
+                signal(1, "C", 4, 50),
+                signal(2, "B", 6, 80),
+            ]
+        ),
+        close,
+        HALF_SLOTS,
+        amount,
+    )
+    stopped_counts = stopped.groupby("ticker").size().to_dict()
+    if stopped_counts != {"A": 128, "C": 64, "B": 96}:
+        raise RuntimeError(
+            f"a close stop should free lots for the next open, got {stopped_counts}"
+        )
+    sold = stopped[stopped["ticker"] == "A"]
+    if set(sold["status"]) != {"Closed"} or set(sold["date_sell"]) != {index[2].strftime("%Y-%m-%d")}:
+        raise RuntimeError(f"A should sell at the bar-2 close, got {sold[['date_sell', 'status']].head(1)}")
+
+    # A is already held, so day 2 skips A and gives the free lots to B and C.
+    # 5 lots: day 1 takes 3 for A. Day 2 has 2 free: 1 for B, then 1 for C.
+    _, skipped, _, _ = book(
+        "skip-held",
+        frame(
+            [
+                signal(0, "A", 8, 90),
+                signal(1, "A", 9, 90),
+                signal(1, "B", 4, 50),
+                signal(1, "C", 2, 40),
+                signal(1, "D", 1, 30),
+            ]
+        ),
+        flat,
+        5,
+        1.0,
+        skip_held=True,
+    )
+    skip_counts = skipped.groupby("ticker").size().to_dict()
+    if skip_counts != {"A": 3, "B": 1, "C": 1}:
+        raise RuntimeError(f"a held ticker should be skipped, got {skip_counts}")
+    later = skipped[skipped["date_buy"] == index[2].strftime("%Y-%m-%d")]
+    if set(later["ticker"]) != {"B", "C"}:
+        raise RuntimeError(f"day 2 should buy B and C, got {list(later['ticker'])}")
+    print("Half-lot checks passed.")
+
+
+def half_sells():
+    """256 lots × 1.25–10dd × 5–15pp. Rank is a×t. No buy when full."""
+    specs = [
+        SellSpec(
+            drawdown=dd,
+            profit_protect=pp,
+            slots=HALF_SLOTS,
+            loss_mode="nb",
+            lot_mode=HALF_RANK,
+            lot_amount=BOOK_CASH / HALF_SLOTS,
+            fill="next-open",
+        )
+        for dd in HALF_DRAWDOWNS
+        for pp in HALF_PROTECTS
+    ]
+    anchor = "2.5dd 10pp · 256 × $1,250 · nb · a×t · next open"
+    if anchor not in [spec.short for spec in specs]:
+        raise RuntimeError(f"half sells missing {anchor}")
+    want = len(HALF_DRAWDOWNS) * len(HALF_PROTECTS)
+    if len(specs) != want or len({spec.tag for spec in specs}) != want:
+        raise RuntimeError(f"expected {want} unique half sells, got {len(specs)}")
+    return specs
+
+
+def half_buys(price_to):
+    """January–October union. Analyst >0/>2/>3/>4 and projected >10% through >60%."""
+    return [
+        {
+            "min_analysts": n,
+            "min_projected": float(p),
+            "signal_name": UNION_SIGNAL,
+            "range_label": ONE_RANGE["label"],
+            "date_from": ONE_RANGE["start"],
+            "date_to": ONE_RANGE["end"],
+            "price_to": price_to,
+        }
+        for n in HALF_ANALYSTS
+        for p in HALF_PROJECTED
+    ]
+
+
+def run_half(signals, close, spy, opens, position_log=None, skip_held=False):
+    _check_half_lots()
+    price_to = pd.Timestamp(close.index.max()).strftime("%Y-%m-%d")
+    buys = half_buys(price_to)
+    specs = half_sells()
+    print(
+        f"\n=== Half lots: {len(buys)} buys × {len(specs)} sells"
+        f" · ${BOOK_CASH:,.0f}"
+        f" · {HALF_SLOTS} × ${BOOK_CASH / HALF_SLOTS:,.0f}"
+        f" · loss {', '.join(f'{dd * 100:g}dd' for dd in HALF_DRAWDOWNS)}"
+        f" · protect {', '.join(f'{pp * 100:g}pp' for pp in HALF_PROTECTS)}"
+        f" · {FILL_LABELS['next-open']}"
+        f" · rank {HALF_RANK}"
+        f" · {HALF_NAMES} names, half the free lots each, rounded up"
+        f" · {'skip a held ticker' if skip_held else 'a held ticker can be bought again'}"
+        f" · analysts {', '.join(f'>{n}' for n in HALF_ANALYSTS)}"
+        f" · projected {', '.join(f'>{p}%' for p in HALF_PROJECTED)}"
+        f" · {ONE_RANGE['label']}"
+        f" · {UNION_SIGNAL} ==="
+    )
+    rows, _sliced, init_cash = run_combos(
+        signals,
+        close,
+        spy,
+        buys,
+        specs,
+        set(),
+        "once" if skip_held else "half",
+        position_log=position_log,
+        cash_sleeve=False,
+        resume=True,
+        opens=opens,
+        half_names=HALF_NAMES,
+        skip_held=skip_held,
     )
     return rows, close, init_cash or BOOK_CASH, buys, specs
 
@@ -6879,8 +8506,18 @@ def coarse_count_table(signals, buys):
     for name in names:
         for n in analysts:
             cells = []
+            matched = next(
+                (
+                    buy
+                    for buy in buys
+                    if buy.get("signal_name") == name and buy.get("min_analysts") == n
+                ),
+                None,
+            )
             for projected in cuts:
-                if name == UNION_SIGNAL:
+                if matched and matched.get("mix_depth"):
+                    counted = mix_rows(signals, matched["mix_depth"])
+                elif name == UNION_SIGNAL:
                     counted = union_rows(signals, n, float(projected))
                 else:
                     counted = filter_signals(signals, n, float(projected), name)
@@ -6935,11 +8572,55 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
     by_buy = defaultdict(list)
     for row in rows:
         by_buy[row.get("buy_label")].append(row)
-    lot_note = (
-        f"One book of ${BOOK_CASH:,.0f}. The lot count splits that cash. "
-        if any(getattr(spec, "lot_amount", None) for spec in specs)
-        else f"${POSITION_VALUE:,.0f} per lot. "
+    one_position = all(
+        spec.slots == 1 and spec.drawdown is None and spec.lot_amount for spec in specs
     )
+    half_book = (
+        not one_position
+        and bool(specs)
+        and all(
+            spec.slots == HALF_SLOTS
+            and spec.loss_mode == "nb"
+            and spec.lot_amount
+            and spec.profit_protect is not None
+            for spec in specs
+        )
+    )
+    skip_held_book = half_book and any(row.get("iteration") == "once" for row in rows)
+    capped = (
+        not one_position
+        and not half_book
+        and bool(specs)
+        and all(
+            spec.drawdown is None and spec.loss_mode == "nb" and spec.lot_amount
+            for spec in specs
+        )
+    )
+    if one_position:
+        lot_note = (
+            f"One position of ${BOOK_CASH:,.0f}. A new buy waits until it has closed. "
+        )
+    elif half_book:
+        held_rule = (
+            "that are not already held"
+            if skip_held_book
+            else "including a ticker that is already held"
+        )
+        lot_note = (
+            f"One book of ${BOOK_CASH:,.0f} split into {HALF_SLOTS} lots "
+            f"of ${BOOK_CASH / HALF_SLOTS:,.0f}. The next open gives half "
+            f"the free lots, rounded up, to each of up to {HALF_NAMES} signals "
+            f"{held_rule}. "
+        )
+    elif capped:
+        lot_note = (
+            f"One book of ${BOOK_CASH:,.0f} split into 1, 2, or 3 lots. "
+            "A day buys at most two names, one lot each, and only into a free lot. "
+        )
+    elif any(getattr(spec, "lot_amount", None) for spec in specs):
+        lot_note = f"One book of ${BOOK_CASH:,.0f}. The lot count splits that cash. "
+    else:
+        lot_note = f"${POSITION_VALUE:,.0f} per lot. "
 
     body = [
         f"# {info['title']}",
@@ -6957,7 +8638,24 @@ def write_grid_summary(path, rows, signals, info, notes, buys, specs, anchor, tr
         (
             f"{len(buys)} buys × {len(specs)} sells. One pass. "
             + (
-                "Each cell is one book size, one loss dropdown, and one profit "
+                "Each cell is one rank and one profit protect. The strongest "
+                "signal that day takes the whole book. A held position blocks "
+                "the next buy. There is no loss dropdown."
+                if one_position
+                else "Each cell is one loss dropdown and one profit protect. "
+                "The rank is a×t. Stops run at the close, and the next open "
+                "splits the lots those stops left free. "
+                + (
+                    "A ticker that already has open lots is skipped."
+                    if skip_held_book
+                    else "A held ticker can be bought again."
+                )
+                if half_book
+                else "Each cell is one lot count and one profit protect. "
+                "The rank is a×t. A day buys at most two names, one lot each, "
+                "and only when a lot is free. There is no loss dropdown."
+                if capped
+                else "Each cell is one book size, one loss dropdown, and one profit "
                 "protect. Stops run first. A full book then sells the biggest "
                 "loss, or the least profitable winner when that lot is the weaker signal."
                 if any(
@@ -7260,7 +8958,7 @@ for (const label of RANGES) {
 }
 
 type Buy = { s: string; a: number; p: number; n: number; sym: number; w: string };
-type Sell = { h: number; t: number; d: number; p: number; f: string; r: string; z: string; m: number; e: string };
+type Sell = { h: number; t: number; d: number; p: number; f: string; r: string; z: string; m: number; e: string; k?: number };
 
 const BUYS: Buy[] = __BUYS__;
 const SELLS: Sell[] = __SELLS__;
@@ -7299,20 +8997,28 @@ function lotSizeLabel(value: string): string {
   return value;
 }
 
+function capLabel(sell: Sell): string {
+  if (!sell.k) return "";
+  return sell.k < 0 ? "max all" : `max ${sell.k}`;
+}
+
 function buyLabel(buy: Buy): string {
   const cut = `>${buy.a},>${buy.p}%`;
-  const book = buy.s ? `${buy.s} · ${cut}` : cut;
+  const book = buy.s && buy.s.includes(">") ? buy.s : buy.s ? `${buy.s} · ${cut}` : cut;
   return buy.w ? `${buy.w} · ${book}` : book;
 }
 
 function sellLabel(sell: Sell): string {
   if (SELL_MODE === "book") {
+    if (!sell.d) {
+      return [sell.p ? `${sell.p}pp` : "", lotSplit(sell.h), lotSizeLabel(sell.z)].filter(Boolean).join(" · ");
+    }
     const base = `${sell.d}dd ${sell.p}pp · ${lotSplit(sell.h)}`;
     const fillerName = sell.f === "none" ? "no SPY" : sell.f;
     const ruleName = sell.r === "ls" ? "ls" : sell.r === "dls" ? "dls" : sell.r;
     const lotName = lotSizeLabel(sell.z);
     const entryName = sell.e || "";
-    return [base, fillerName, ruleName, lotName, entryName].filter(Boolean).join(" · ");
+    return [base, fillerName, ruleName, lotName, entryName, capLabel(sell)].filter(Boolean).join(" · ");
   }
   if (SELL_MODE === "slots") return `${sell.h} lots`;
   if (SELL_MODE === "protect") return `${sell.d}dd ${sell.p}pp`;
@@ -8134,7 +9840,7 @@ export default function FineGridCanvas() {
                 10) times the target percent floored to 10% steps.
               </Text>
             </Stack>
-          ) : SELL_MODE === "book" || SELL_MODE === "protect" ? (
+          ) : (SELL_MODE === "book" || SELL_MODE === "protect") && DROPS.some((value) => value !== 0) ? (
             <FilterColumn
               label="Loss dd"
               options={DROPS}
@@ -8144,6 +9850,25 @@ export default function FineGridCanvas() {
               moneyMode={showMode === "pnl"}
             stats={filterStats.drop}
             />
+          ) : SELL_MODE === "book" && !(HOLDS.length === 1 && HOLDS[0] === 1) ? (
+            <Stack gap={4}>
+              <Text>Free lots</Text>
+              <Text size="small" tone="secondary">
+                No loss dropdown. A full book does not sell a lot to make room.
+                One free lot buys the strongest signal. Two or three free lots
+                buy the strongest two signals, one lot each. One signal takes
+                one lot.
+              </Text>
+            </Stack>
+          ) : SELL_MODE === "book" || SELL_MODE === "protect" ? (
+            <Stack gap={4}>
+              <Text>One position</Text>
+              <Text size="small" tone="secondary">
+                The whole book is one position. The strongest signal that day
+                is bought at the next open. A new buy waits until that position
+                has closed.
+              </Text>
+            </Stack>
           ) : (
             <FilterColumn
               label="Hold"
@@ -8255,7 +9980,7 @@ export default function FineGridCanvas() {
           ) : null}
           {SIZES.length > 0 ? (
             <FilterColumn
-              label={SIZES.includes("at") ? "Strength" : "Lot size"}
+              label={SIZES.some((value) => value === "at" || value.startsWith("a×p/") || value === "a×t" || value === "a×p²" || value === "√a×p" || value === "t" || value === "a²") ? "Strength" : "Lot size"}
               options={SIZES}
               selected={sizes}
               onChange={setSizes}
@@ -8647,13 +10372,20 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
                 {
                     "h": int(spec.slots),
                     "t": 0,
-                    "d": _pct_number(spec.drawdown),
+                    "d": 0 if spec.drawdown is None else _pct_number(spec.drawdown),
                     "p": _pct_number(spec.profit_protect),
                     "f": spec.filler or "",
                     "r": spec.loss_mode or "",
                     "z": spec.lot_mode or "",
                     "m": round(float(spec.lot_amount), 2) if spec.lot_amount else 0,
                     "e": FILL_LABELS.get(spec.fill or "", ""),
+                    "k": (
+                        -1
+                        if spec.max_names == 0
+                        else int(spec.max_names)
+                        if spec.max_names
+                        else 0
+                    ),
                 }
             )
         elif slots_mode:
@@ -8748,7 +10480,18 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
         if spec.lot_mode and spec.lot_mode not in sizes:
             sizes.append(spec.lot_mode)
     fixed = any(spec.lot_amount for spec in specs)
-    if fixed:
+    one_position = fixed and all(spec.slots == 1 and spec.drawdown is None for spec in specs)
+    if one_position:
+        sizing = (
+            f"one position of ${BOOK_CASH:,.0f}. "
+            "The strongest signal that day is bought. A new buy waits until that position has closed. "
+            + (
+                "Upside filter includes >0%. "
+                if not upsides or min(upsides) == 0
+                else f"Upside filter includes >{min(upsides)}%. "
+            )
+        )
+    elif fixed:
         sizing = (
             f"one book of ${BOOK_CASH:,.0f}. "
             "The lot count splits that cash, so fewer lots means more dollars in each lot. "
@@ -8802,6 +10545,8 @@ def write_grid_canvas(prefix, rows, signals, buys, specs, info):
             " Each cell keeps signals and prices inside one date range. "
             "A lot still open on the last day of that range stays open."
         )
+    if info.get("caption_extra"):
+        caption += " " + info["caption_extra"]
     data = {
         "__SOURCE__": json.dumps(caption),
         "__TITLE__": json.dumps(info.get("title") or "Buy × sell"),
@@ -8895,6 +10640,13 @@ def parse_args():
             "fills",
             "cuts",
             "union",
+            "atdiv",
+            "onepos",
+            "pair",
+            "half",
+            "once",
+            "mix",
+            "share",
             "ranges",
             "confirm",
             "next",
@@ -8944,6 +10696,7 @@ def parse_args():
             "next, pp25, dd5, nb125, and grace keep yahoo_and_tipranks_2d_recency. "
             "fills and cuts keep yahoo_and_tipranks_1d_recency through 5d_recency. "
             "union keeps those five books and adds yahoo_and_tipranks_any_recency. "
+            "atdiv keeps that same combined book. "
             "Other phases default to "
             "yahoo-daily and yahoo-7d-window."
         ),
@@ -8990,7 +10743,7 @@ def main():
         set_signal_names((FROZEN_SIGNAL,))
     elif args.phase in ("fills", "cuts") and not args.signal_names:
         set_signal_names(RECENCY_SIGNAL_NAMES)
-    elif args.phase == "union":
+    elif args.phase in ("union", "atdiv", "onepos", "pair", "half", "once", "mix", "share"):
         set_signal_names(RECENCY_SIGNAL_NAMES + (UNION_SIGNAL,))
     elif args.phase == "confirm" and not args.signal_names:
         set_signal_names(CONFIRM_SIGNAL_NAMES)
@@ -9030,6 +10783,20 @@ def main():
         prefix = OUT_DIR / FILLS_STEM
     elif args.phase == "cuts":
         prefix = OUT_DIR / CUTS_STEM
+    elif args.phase == "atdiv":
+        prefix = OUT_DIR / ATDIV_STEM
+    elif args.phase == "onepos":
+        prefix = OUT_DIR / ONE_STEM
+    elif args.phase == "pair":
+        prefix = OUT_DIR / PAIR_STEM
+    elif args.phase == "half":
+        prefix = OUT_DIR / HALF_STEM
+    elif args.phase == "once":
+        prefix = OUT_DIR / ONCE_STEM
+    elif args.phase == "mix":
+        prefix = OUT_DIR / MIX_STEM
+    elif args.phase == "share":
+        prefix = OUT_DIR / SHARE_STEM
     elif args.phase == "union":
         prefix = OUT_DIR / UNION_STEM
     elif args.phase == "nextopen":
@@ -9649,6 +11416,453 @@ def main():
             "No SPY and no TQQQ.",
             "6 signals × 3 upside cuts × 3 ranges × 2 fills × 6 pp "
             "= 648 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "half":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_half(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "half.json", rows)
+        frozen = next(
+            spec
+            for spec in specs
+            if spec.short == "2.5dd 10pp · 256 × $1,250 · nb · a×t · next open"
+        )
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Half lots with loss dropdown, a×t, recency union, next open",
+        )
+        notes = [
+            "One book of $320,000 split into 256 lots of $1,250. "
+            "The rank is a×t: analysts × the projected fraction.",
+            "Stops run at the close. The next open counts the lots those "
+            "stops left free. The strongest signal takes half of them, "
+            "rounded up. The next signal takes half of what remains, "
+            "rounded up, and a third signal does the same. With 256 free "
+            "lots and three signals that is 128, 64, and 32. The last 32 "
+            "stay cash. One signal takes 128 and leaves 128 cash. Five "
+            "free lots round up to 3, then 1, then 1.",
+            "A later session can buy a ticker that already has open lots. "
+            "A full book does not sell a lot to make room. A stop on "
+            "today's close frees lots for the next open, not for this morning.",
+            "Loss dropdown is 1.25%, 2.5%, 5%, or 10% from the entry while "
+            "the close is under entry. Profit protection is 5%, 10%, or 15% "
+            "of the gain from entry to the highest close. A position that "
+            "never trades above its entry can still hit loss dropdown.",
+            "The book is yahoo_and_tipranks_any_recency, bought at the "
+            "next open. Analyst cuts are >0, >2, >3, and >4. Projected "
+            "cuts are >10%, >20%, >30%, >40%, >50%, and >60%. The window "
+            "is January–October. A ticker and day on more than one recency "
+            "book keeps the a×t row. No SPY and no TQQQ.",
+            "4 analyst cuts × 6 upside cuts × 4 loss dropdowns × 3 profit "
+            "protects = 288 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "mix":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_mix(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "mix.json", rows)
+        frozen = next(spec for spec in specs if spec.max_names == 0)
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Recency mix, 2.5dd 15pp, next open, name cap",
+        )
+        notes = [
+            "Frozen sell: 2.5% loss dropdown, 15% of the peak gain, 12 lots "
+            "of $26,667, ls, strength formula at, next open.",
+            "Step 1 uses the union canvas filter: any of the five recency "
+            "books, analyst >2, projected >40%. The dollars follow the "
+            "current signals.csv. "
+            "A session with none of those falls through to the same five "
+            "books at analyst >4 and projected >20%, then >10%, then >0%. "
+            "A looser step runs only when every tighter step is empty that day.",
+            "The four buy rows are step 1, steps 1–2, steps 1–3, and "
+            "steps 1–4. All signals means the 1d through 5d recency books. "
+            "One ticker on one day is one signal, the strongest qualifier.",
+            "A session buys the strongest 1, 2, 3, or 4 new names, or every "
+            "name in the active step. Strength is the at rank. Each name "
+            "still opens floor(analysts × target percent / 10) lots. A "
+            "ticker that already has an open position is skipped and does "
+            "not use up a name.",
+            "Buy windows are Jan–May, Jun–Oct, and Jan–Oct. Signals are "
+            "dated inside the window. Prices continue through the last "
+            "quote, so a position can sell after the buy window.",
+            "4 steps × 3 ranges × 5 name caps = 60 cells. Trusted cells "
+            "have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "share":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_share(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "share.json", rows)
+        frozen = specs[0]
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Recency mix, fallback steps buy a share of the free lots",
+        )
+        notes = [
+            "Frozen sell: 2.5% loss dropdown, 15% of the peak gain, 12 lots "
+            "of $26,667, ls, strength formula at, next open.",
+            "Step 1 is the full buy: any of the five recency books, analyst "
+            ">2, projected >40%. It can sell a lot to make room. The dollars "
+            "follow the current signals.csv.",
+            "A session with none of those falls through to the same five "
+            "books at analyst >4 and projected >20%, then >10%, then >0%. "
+            "A looser step runs only when every tighter step is empty that day.",
+            "A fallback step buys a share of the lots that are already free. "
+            "It does not sell a stock to make room. The share is rounded to "
+            "the nearest lot. Half a lot rounds up. The day's names share "
+            "that budget, strongest first. Each name still asks for "
+            "floor(analysts × target percent / 10) lots and stops when the "
+            "budget is filled. A ticker that already has an open position "
+            "is skipped.",
+            "The ½ ladder buys 50% of the free lots, then 25%, then 12.5%. "
+            "The ¾ ladder buys 75%, then 56.25%, then 42.1875%. Every lot "
+            "is $26,667, so a share of the free lots is the same share of "
+            "the free money.",
+            "Buy windows are Jan–May, Jun–Oct, and Jan–Oct. Signals are "
+            "dated inside the window. Prices continue through the last "
+            "quote, so a position can sell after the buy window.",
+            "1 step-1 buy + 2 factors × 3 fallback depths × 3 ranges = 21 "
+            "cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "once":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_half(
+            signals, close, spy, opens, position_log=position_path, skip_held=True
+        )
+        save_json(CACHE_DIR / "once.json", rows)
+        frozen = next(
+            spec
+            for spec in specs
+            if spec.short == "2.5dd 10pp · 256 × $1,250 · nb · a×t · next open"
+        )
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Half lots, skip a held ticker, a×t, recency union, next open",
+        )
+        info["caption_extra"] = (
+            "A ticker that already has open lots is skipped. "
+            "The next eligible signal takes that half, still at most three new names."
+        )
+        notes = [
+            "One book of $320,000 split into 256 lots of $1,250. "
+            "The rank is a×t: analysts × the projected fraction.",
+            "Stops run at the close. The next open counts the lots those "
+            "stops left free. The strongest signal that is not already held "
+            "takes half of them, rounded up. The next new signal takes half "
+            "of what remains, rounded up, and a third new signal does the "
+            "same. With 256 free lots and three new signals that is 128, 64, "
+            "and 32. The last 32 stay cash. One new signal takes 128 and "
+            "leaves 128 cash. Five free lots round up to 3, then 1, then 1.",
+            "A ticker that already has open lots is skipped. After that "
+            "position closes, a later signal can buy it again. A full book "
+            "does not sell a lot to make room. A stop on today's close frees "
+            "lots for the next open, not for this morning.",
+            "Loss dropdown is 1.25%, 2.5%, 5%, or 10% from the entry while "
+            "the close is under entry. Profit protection is 5%, 10%, or 15% "
+            "of the gain from entry to the highest close. A position that "
+            "never trades above its entry can still hit loss dropdown.",
+            "The book is yahoo_and_tipranks_any_recency, bought at the "
+            "next open. Analyst cuts are >0, >2, >3, and >4. Projected "
+            "cuts are >10%, >20%, >30%, >40%, >50%, and >60%. The window "
+            "is January–October. A ticker and day on more than one recency "
+            "book keeps the a×t row. No SPY and no TQQQ.",
+            "4 analyst cuts × 6 upside cuts × 4 loss dropdowns × 3 profit "
+            "protects = 288 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "pair":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_pair(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "pair.json", rows)
+        frozen = next(spec for spec in specs if spec.short == "10pp · 2 × $160,000 · a×t")
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Two-signal lots, a×t, recency union, next open",
+        )
+        notes = [
+            "One book of $320,000 split into 1, 2, or 3 lots. "
+            "One lot is $320,000, two lots are $160,000, and three lots "
+            "are $106,667.",
+            "The rank is a×t: analysts × the projected fraction. A 40% "
+            "upside is 0.40. That is the only rank.",
+            "A day buys at most two names, one lot each. One free lot "
+            "takes the strongest signal. Two or three free lots take the "
+            "strongest two. One signal takes one lot and leaves the other "
+            "lots empty. A full book does not sell a lot to make room.",
+            "There is no loss dropdown. Profit protection is 5%, 10%, or "
+            "15% of the gain from entry to the highest close. A position "
+            "that never trades above its entry stays open through the last quote.",
+            "The book is yahoo_and_tipranks_any_recency, bought at the "
+            "next open. Analyst cuts are >0, >2, >3, and >4. Projected "
+            "cuts are >10%, >20%, >30%, >40%, >50%, and >60%. The window "
+            "is January–October. A ticker and day on more than one recency "
+            "book keeps the a×t row. No SPY and no TQQQ.",
+            "4 analyst cuts × 6 upside cuts × 3 lot counts × 3 profit "
+            "protects = 216 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "onepos":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_onepos(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "onepos.json", rows)
+        frozen = next(spec for spec in specs if spec.short == "10pp · 1 × $320,000 · a×t")
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "One position, recency union, next open",
+        )
+        notes = [
+            "One position of $320,000. The strongest signal that day is "
+            "bought at the next open. A new buy waits until that position "
+            "has closed. There is no loss dropdown.",
+            "Profit protection is 5%, 10%, or 15% of the gain from entry "
+            "to the highest close. A position that never trades above its "
+            "entry stays open through the last quote.",
+            "The rank is analysts × the projected fraction (a×t), analysts "
+            "× that fraction squared (a×p²), sqrt(analysts) × the fraction "
+            "(√a×p), the fraction alone (t), or analysts squared (a²). "
+            "A 40% upside is 0.40, and its square is 0.16. The same ticker "
+            "and day on more than one recency book keeps the row that rank "
+            "scores highest. signal_score breaks a tie.",
+            "The book is yahoo_and_tipranks_any_recency. It buys when any "
+            "of yahoo_and_tipranks_1d_recency through 5d_recency clears the "
+            "cut. Analyst cuts are >0, >1, >2, and >3. Projected cuts are "
+            ">30% and >40%.",
+            "The buy window is January–October. Signals are dated inside "
+            "the window. Prices continue through the last quote, so a "
+            "position can sell after the buy window. A lot still open on "
+            "the last quote stays open. No SPY and no TQQQ.",
+            "4 analyst cuts × 2 upside cuts × 5 ranks × 3 profit protects "
+            "= 120 cells. Trusted cells have at least 30 signals.",
+        ]
+        write_grid_summary(
+            report_path,
+            rows,
+            signals,
+            info,
+            notes,
+            buys,
+            specs,
+            frozen,
+        )
+        write_positions_log(position_path, position_path)
+        write_code_snapshot(prefix, sys.argv[1:])
+        present = {row["buy_label"] for row in rows}
+        canvas_buys = [buy for buy in buys if buy_label(buy) in present]
+        write_grid_canvas(prefix, rows, signals, canvas_buys, specs, info)
+        return
+
+    if args.phase == "atdiv":
+        position_path = Path(f"{prefix}.csv")
+        opens = ensure_opens(
+            unique_tickers(signals),
+            signals["date"].min(),
+            quote_end,
+            close.index,
+        )
+        rows, close_wide, init_cash, buys, specs = run_atdiv(
+            signals, close, spy, opens, position_log=position_path
+        )
+        save_json(CACHE_DIR / "atdiv.json", rows)
+        frozen = next(
+            spec
+            for spec in specs
+            if spec.short == "2.5dd 15pp · 12 × $26,667 · ls · a×p/10 · next open"
+        )
+        info = period_info(
+            close_wide,
+            init_cash,
+            max((r["n_signals"] for r in rows), default=0),
+            run_label,
+            "Recency union, a×p divisors, 2.5dd 15pp, next open",
+        )
+        notes = [
+            "Frozen sell from the published next-open row: 2.5% loss "
+            "dropdown, 15% of the peak gain, 12 lots of $26,667, ls, "
+            "next open.",
+            "Lot size is floor(analysts × target percent / N), at least 1 "
+            "and at most 16. N is 5, 10, 20, 30, 40, and 50. a×p/10 is the "
+            "published at formula. The ranking strength used to replace a "
+            "profitable lot stays sqrt(min(analysts, 10)) × the target "
+            "percent floored to 10-point steps.",
+            "signals.csv has no signal_score column. The sweep fills it "
+            "with the recency formula: projected × sqrt(analysts), and "
+            "× (1 − MAD) on books longer than 1d. It is the tie-break "
+            "when two qualifiers have the same strength.",
+            "The buy is the published cell: yahoo_and_tipranks_any_recency, "
+            "analyst >2, projected >40%. It buys when any of "
+            "yahoo_and_tipranks_1d_recency "
+            "through 5d_recency clears that cut. A ticker and day that "
+            "qualifies on more than one book is one signal, the strongest "
+            "qualifier.",
+            "The buy window is January–October. Signals are dated inside "
+            "the window. Prices continue through the last quote, so a "
+            "position can sell after the buy window. A lot still open on "
+            "the last quote stays open.",
+            "A ticker that already has an open position is skipped. "
+            "No SPY and no TQQQ.",
+            "1 buy × 6 divisors = 6 cells. Trusted cells have at least 30 signals.",
         ]
         write_grid_summary(
             report_path,
