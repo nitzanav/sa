@@ -5,8 +5,10 @@
 -- A repeat of the same alert key is ignored. alerted_at stays on the first insert.
 -- _run freezes one timestamp. Each psql statement is its own transaction, so a
 -- later timestamp call would differ. alerts ranks the raw rows from that run.
--- `make alert:buy` replaces the timestamp call.
+-- `make alert:buy` replaces the timestamp call, then opens positions from
+-- today's alerts using Yahoo regular-market prices (make download_yahoo_quotes).
 -- Requires the signals view from etl/etl.sql (`make etl`).
+-- Book: recency union · at >2 >40% · 12 slots · lots = min(at strength, 12).
 
 CREATE TABLE IF NOT EXISTS alerts_raw (
   id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -45,6 +47,23 @@ CREATE UNIQUE INDEX IF NOT EXISTS alerts_dedup
   );
 
 CREATE INDEX IF NOT EXISTS alerts_raw_alerted_at_idx ON alerts_raw (alerted_at);
+
+CREATE TABLE IF NOT EXISTS positions (
+  id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  alert_id bigint NOT NULL REFERENCES alerts (id),
+  signal_date date NOT NULL,
+  symbol text NOT NULL,
+  open boolean NOT NULL DEFAULT true,
+  lots integer NOT NULL,
+  buy_date timestamptz NOT NULL,
+  price double precision NOT NULL
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS positions_open_symbol_uniq
+  ON positions (symbol)
+  WHERE open;
+
+CREATE INDEX IF NOT EXISTS positions_buy_date_idx ON positions (buy_date);
 
 -- Freeze the timestamp once. Each statement is its own transaction under psql -f,
 -- so a later timestamp call would differ. ON COMMIT DROP would remove _run
@@ -123,3 +142,51 @@ WHERE ranked.rn = 1
 ON CONFLICT (
   type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
 ) DO NOTHING;
+
+DROP TABLE IF EXISTS _yahoo_quotes;
+CREATE TEMP TABLE _yahoo_quotes (ticker text, response text);
+\copy _yahoo_quotes FROM 'data/yahoo_quotes/quotes.csv' WITH CSV HEADER
+
+DROP TABLE IF EXISTS _yahoo_price;
+CREATE TEMP TABLE _yahoo_price AS
+SELECT
+  ticker AS symbol,
+  COALESCE(
+    NULLIF(response::jsonb #>> '{chart,result,0,meta,regularMarketPrice}', '')::double precision,
+    (
+      SELECT (elem #>> '{}')::double precision
+      FROM jsonb_array_elements(
+             COALESCE(response::jsonb #> '{chart,result,0,indicators,quote,0,close}', '[]'::jsonb)
+           ) WITH ORDINALITY AS t(elem, ord)
+      WHERE elem IS NOT NULL AND elem::text <> 'null'
+      ORDER BY ord DESC
+      LIMIT 1
+    )
+  ) AS price
+FROM _yahoo_quotes;
+
+INSERT INTO positions (
+  alert_id, signal_date, symbol, open, lots, buy_date, price
+)
+SELECT
+  a.id,
+  a.signal_date,
+  a.symbol,
+  true,
+  LEAST(a.strength, 12),
+  r.alerted_at,
+  p.price
+FROM alerts a
+CROSS JOIN _run r
+JOIN _yahoo_price p ON p.symbol = a.symbol
+WHERE a.alerted_at = r.alerted_at
+  AND a.type = 'buy'
+  AND a.alert_strategy = 'at >2 >40%'
+  AND p.price IS NOT NULL
+  AND NOT EXISTS (
+    SELECT 1
+    FROM positions po
+    WHERE po.symbol = a.symbol
+      AND po.open
+  )
+ON CONFLICT (symbol) WHERE open DO NOTHING;
