@@ -16,13 +16,14 @@ async function dismissConsent(page) {
   }
 }
 
-async function scrollPage(page) {
-  await page.evaluate(async () => {
-    for (let i = 0; i < 15; i += 1) {
-      window.scrollBy(0, 900);
-      await new Promise((resolve) => setTimeout(resolve, 250));
-    }
-  });
+async function scrollPage(page, { maxScrolls = 15, pauseMs = 100 } = {}) {
+  const target = page.locator("#top-analyst").first();
+  for (let i = 0; i < maxScrolls; i += 1) {
+    if (await target.isVisible().catch(() => false)) return i;
+    await page.evaluate((dy) => window.scrollBy(0, dy), 900);
+    await new Promise((resolve) => setTimeout(resolve, pauseMs));
+  }
+  return maxScrolls;
 }
 
 const browser = await chromium.launch({ headless: true });

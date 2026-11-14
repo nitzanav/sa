@@ -5,27 +5,41 @@ import { join } from "node:path";
 import {
   httpRequestScrapePlaywright,
   playwrightBrowser,
+  scrollPage,
 } from "./http_request_scrape_playwright.js";
 
-function fakeBrowser(html, { agreeVisible = false } = {}) {
+function fakeBrowser(html, { agreeVisible = false, topAnalystVisible = true } = {}) {
   const page = {
     goto: jest.fn(async () => {}),
     content: jest.fn(async () => html),
     waitForLoadState: jest.fn(async () => {}),
     waitForURL: jest.fn(async () => {}),
     evaluate: jest.fn(async () => {}),
-    locator: jest.fn(() => ({
-      first: () => ({
-        isVisible: async () => agreeVisible,
-        click: jest.fn(async () => {
-          page.agreeClicked = true;
+    scrollEvaluateCalls: 0,
+    locator: jest.fn((selector) => {
+      if (selector === "#top-analyst") {
+        return {
+          first: () => ({
+            isVisible: async () => topAnalystVisible,
+          }),
+        };
+      }
+      return {
+        first: () => ({
+          isVisible: async () => agreeVisible,
+          click: jest.fn(async () => {
+            page.agreeClicked = true;
+          }),
         }),
-      }),
-    })),
+      };
+    }),
     getByText: jest.fn(() => ({
       first: () => ({ waitFor: async () => {} }),
     })),
   };
+  page.evaluate.mockImplementation(async () => {
+    page.scrollEvaluateCalls += 1;
+  });
   return {
     page,
     browser: {
@@ -116,5 +130,47 @@ test("clicks Yahoo consent agree before returning html", async () => {
   expect(html).toBe("<consented/>");
   expect(page.agreeClicked).toBe(true);
   expect(page.waitForURL).toHaveBeenCalled();
+  launchSpy.mockRestore();
+});
+
+test("scrollPage stops without scrolling when #top-analyst is visible", async () => {
+  const { page } = fakeBrowser("<x/>", { topAnalystVisible: true });
+  await expect(scrollPage(page, { pauseMs: 0 })).resolves.toBe(0);
+  expect(page.scrollEvaluateCalls).toBe(0);
+});
+
+test("scrollPage scrolls until #top-analyst becomes visible", async () => {
+  let visibleAfter = 2;
+  const page = {
+    evaluate: jest.fn(async () => {}),
+    locator: jest.fn(() => ({
+      first: () => ({
+        isVisible: async () => {
+          visibleAfter -= 1;
+          return visibleAfter < 0;
+        },
+      }),
+    })),
+  };
+  await expect(scrollPage(page, { maxScrolls: 5, pauseMs: 0 })).resolves.toBe(2);
+  expect(page.evaluate).toHaveBeenCalledTimes(2);
+});
+
+test("scrollPage hits maxScrolls when #top-analyst never appears", async () => {
+  const { page } = fakeBrowser("<x/>", { topAnalystVisible: false });
+  await expect(scrollPage(page, { maxScrolls: 3, pauseMs: 0 })).resolves.toBe(3);
+  expect(page.scrollEvaluateCalls).toBe(3);
+});
+
+test("skips scroll loops when #top-analyst is already visible", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "hsp-"));
+  const { browser, page } = fakeBrowser("<live/>", { topAnalystVisible: true });
+  const launchSpy = jest.spyOn(playwrightBrowser, "launch").mockResolvedValue(browser);
+  await httpRequestScrapePlaywright(
+    { url: "http://x" },
+    { operationName: "k", initialDelay: 0, maxAttempts: 1 },
+    { fileName: join(dir, "e.html") },
+  );
+  expect(page.scrollEvaluateCalls).toBe(0);
   launchSpy.mockRestore();
 });
