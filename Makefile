@@ -50,7 +50,7 @@ endef
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
         download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest \
-        alert\:buy alert\:buy-truncate
+        alert\:buy alert\:buy-truncate scrape_alert_buy
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -156,6 +156,13 @@ alert\:buy: download_yahoo_quotes
 alert\:buy-truncate:
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/alert_buy_truncate.sql
+
+# Refresh Fortune 500 list, scrape Yahoo/TipRanks/Google in parallel, then alert:buy.
+# Run `make etl` first (or after scrapes) so signals reflect new JSON when needed.
+#   make scrape_alert_buy
+#   make scrape_alert_buy DAYS_AGO=3
+scrape_alert_buy:
+	@./etl/scrape_alert_buy.sh
 
 # ---------------------------------------------------------------------------
 # Backtests
