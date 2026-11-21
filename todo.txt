@@ -41,6 +41,19 @@ Winner chosen, now mix other to increase utilization.
 3. When zero signals in step 2 => use al signals of >4, >10%
 4. When zero signals in step 2 => use al signals of >4, >0%
 
+4 Buy fill fallback options:
+step 1 only
+step 1 + 2
+step 1 + 2 + 3
+step 1 + 2 + 3 + 4
+
+Max number of positions:
+1 / 2 / 3 / 4 / unlimited.
+(this requires order by strength at buy)
+
+
+
+
 
 
 —---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------—---------------

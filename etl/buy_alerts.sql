@@ -1,4 +1,8 @@
--- Buy alerts for the calendar date of this run.
+-- Buy alerts for the New York trade date of this run.
+-- etl/assert_session_closed.sql requires a weekday at or after 16:00
+-- America/New_York and that date's close in the daily file. The order
+-- placed from this run is the next session's open. The stored price is
+-- the regular-market price at decision time.
 -- Qualifiers are yahoo_and_tipranks_1d_recency through 5d_recency with
 -- analyst_projections_count > 2 and average_projected > 40.
 -- strength is the at lot count: floor(analysts * percent / 10), clamped to 1..16.
@@ -71,6 +75,8 @@ CREATE INDEX IF NOT EXISTS positions_buy_date_idx ON positions (buy_date);
 DROP TABLE IF EXISTS _run;
 CREATE TEMP TABLE _run AS SELECT NOW() AS alerted_at;
 
+\i etl/assert_session_closed.sql
+
 INSERT INTO alerts_raw (
   type, alerted_at, alert_strategy, signal_name, signal_date,
   symbol, analysts, percent, strength
@@ -102,7 +108,7 @@ WHERE s.signal_name IN (
   )
   AND s.analyst_projections_count > 2
   AND s.average_projected > 40
-  AND s.date = r.alerted_at::date
+  AND s.date = (timezone('America/New_York', r.alerted_at))::date
 ON CONFLICT (
   type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
 ) DO NOTHING;

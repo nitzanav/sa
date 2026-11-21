@@ -1,8 +1,10 @@
 """Download Yahoo daily chart responses for data/fortune_500/symbols.csv.
 
-Writes data/yahoo_quotes/quotes.csv with the symbol and the raw JSON body.
+Writes data/yahoo_quotes/quotes.csv with the symbol and the raw JSON body,
+and data/yahoo_quotes/all_symbols_per_date_and_symbol.csv with one row per
+symbol per New York trading day (date, symbol, open, high, low, close).
 Yahoo uses '-' where the constituents file uses '.' (BRK.B -> BRK-B). The
-CSV keeps the constituents symbol so it matches _raw_signals.
+CSVs keep the constituents symbol so they match _raw_signals.
 """
 
 import csv
@@ -10,13 +12,17 @@ import json
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 SYMBOLS = ROOT / "data/fortune_500/symbols.csv"
 OUT = ROOT / "data/yahoo_quotes/quotes.csv"
+BARS = ROOT / "data/yahoo_quotes/all_symbols_per_date_and_symbol.csv"
+NY = ZoneInfo("America/New_York")
 
 # Signals sit in 2024-2026. period2 is exclusive.
 PERIOD1 = 1704067200  # 2024-01-01
@@ -60,6 +66,57 @@ def fetch(symbol):
     return symbol, None, str(last_error)
 
 
+def _price(values, index):
+    if index >= len(values) or values[index] is None:
+        return ""
+    return values[index]
+
+
+def daily_bars(symbol, body):
+    """One (date, symbol, open, high, low, close) row per trading day.
+
+    date is the America/New_York calendar day of Yahoo's bar timestamp.
+    Days with no close are omitted. A missing open, high, or low stays blank.
+    """
+    payload = json.loads(body)
+    result = (payload.get("chart") or {}).get("result") or []
+    if not result:
+        return []
+    chart = result[0]
+    timestamps = chart.get("timestamp") or []
+    quote = ((chart.get("indicators") or {}).get("quote") or [{}])[0]
+    opens = quote.get("open") or []
+    highs = quote.get("high") or []
+    lows = quote.get("low") or []
+    closes = quote.get("close") or []
+    rows = []
+    for index, stamp in enumerate(timestamps):
+        if stamp is None or index >= len(closes) or closes[index] is None:
+            continue
+        day = datetime.fromtimestamp(stamp, NY).date().isoformat()
+        rows.append((
+            day,
+            symbol,
+            _price(opens, index),
+            _price(highs, index),
+            _price(lows, index),
+            closes[index],
+        ))
+    return rows
+
+
+def write_daily_bars(quotes):
+    bars = []
+    for symbol, body in quotes:
+        bars.extend(daily_bars(symbol, body))
+    bars.sort()
+    with BARS.open("w", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["date", "symbol", "open", "high", "low", "close"])
+        writer.writerows(bars)
+    return len(bars)
+
+
 def main():
     names = symbols()
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -82,7 +139,11 @@ def main():
         writer = csv.writer(handle)
         writer.writerow(["ticker", "response"])
         writer.writerows(rows)
-    print(f"Wrote {len(rows)} responses, {len(failures)} failed", file=sys.stderr)
+    bar_count = write_daily_bars(rows)
+    print(
+        f"Wrote {len(rows)} responses and {bar_count} daily bars, {len(failures)} failed",
+        file=sys.stderr,
+    )
     if failures:
         raise SystemExit(1)
 

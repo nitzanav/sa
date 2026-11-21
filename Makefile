@@ -50,7 +50,8 @@ endef
         analyst-recommendation-js analyst-recommendation-js-test \
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
         download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest \
-        alert\:buy alert\:buy-truncate scrape_alert_buy
+        alert\:buy alert\:buy-truncate scrape_alert_buy \
+        alert\:sell sell_alerts
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -100,7 +101,9 @@ download_fortune_500:
 	@curl -fsSL https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv -o data/fortune_500/symbols.csv
 
 # Daily Yahoo chart responses for every symbol in data/fortune_500/symbols.csv.
-# Writes data/yahoo_quotes/quotes.csv (ticker, raw JSON response).
+# Writes data/yahoo_quotes/quotes.csv (ticker, raw JSON response) and
+# data/yahoo_quotes/all_symbols_per_date_and_symbol.csv
+# (date, symbol, open, high, low, close; date is America/New_York).
 download_yahoo_quotes: download_fortune_500
 	@./penv python etl/download_yahoo_quotes.py
 
@@ -136,10 +139,12 @@ winrate: download_yahoo_quotes
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/winrate.sql
 
-# Today's buy alerts from the signals view. Run after `make etl`.
-# Refreshes Yahoo quotes, then replaces NOW() with one UTC timestamptz, opens
-# positions for new alerts, and prints alerts and positions for that run.
-# DAYS_AGO shifts that timestamp back. macOS date has no -d, so the offset is -v.
+# Today's buy alerts from the signals view. Run after `make etl`, on a weekday
+# at or after 16:00 America/New_York, once the daily bars include that date.
+# The order is the next session's open. Refreshes Yahoo quotes, then replaces
+# NOW() with one UTC timestamptz, opens positions for new alerts, and prints
+# alerts and positions for that run.
+# DAYS_AGO shifts that timestamp back 24 hours. macOS date has no -d, so the offset is -v.
 #   make alert:buy
 #   make alert:buy DAYS_AGO=3
 DAYS_AGO ?= 0
@@ -163,6 +168,27 @@ alert\:buy-truncate:
 #   make scrape_alert_buy DAYS_AGO=3
 scrape_alert_buy:
 	@./etl/scrape_alert_buy.sh
+
+# Sell open positions on 2.5% loss from entry (dd) or 15% giveback of the
+# peak gain (pp), using the close of the run's New York date. The run must be
+# a weekday at or after 16:00 America/New_York with that date in the daily
+# bars. The order is the next session's open. ls is manual. Refreshes Yahoo
+# quotes, freezes one UTC timestamptz, writes sell alerts, closes those
+# positions, and prints the run.
+#   make alert:sell
+#   make alert:sell DAYS_AGO=3
+alert\:sell: download_yahoo_quotes
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
+	@now=$$(date -u -v-$(DAYS_AGO)d '+%Y-%m-%d %H:%M:%S%z'); \
+	sed "s/NOW()/TIMESTAMPTZ '$$now'/g" etl/sell_alerts.sql | psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f - && \
+	psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -c "SELECT * FROM alerts WHERE alerted_at = TIMESTAMPTZ '$$now' AND type = 'sell'" && \
+	psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -c "SELECT id, symbol, lots, price AS entry, sell_price, peak_price, sell_reason, buy_date, sell_date FROM positions WHERE sell_date = TIMESTAMPTZ '$$now'"
+
+# Quotes only, then alert:sell. No analyst scrape.
+#   make sell_alerts
+#   make sell_alerts DAYS_AGO=3
+sell_alerts:
+	@./etl/sell_alerts.sh
 
 # ---------------------------------------------------------------------------
 # Backtests
