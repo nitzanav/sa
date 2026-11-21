@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+10.5%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Ilya Zubkov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$322.00",
     "projected": "+10.3%",
     "date": "11/01/2026"
-  },
-  {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$330.00",
-    "projected": "+13%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "Jason Gerberry",

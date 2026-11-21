@@ -1,20 +1,20 @@
 [
   {
-    "analyst": "Jim Kelleher",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$225.00",
-    "projected": "+38.8%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Vivek Arya",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Jim Kelleher",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$225.00",
+    "projected": "+38.8%",
     "date": "10/29/2026"
   },
   {

@@ -3,10 +3,10 @@
     "analyst": "Ronald Epstein",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+21%",
-    "date": "11/03/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
   },
   {
     "analyst": "Kristine Liwag",

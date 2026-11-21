@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Dushyant Ailani",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$382.00",
+    "projected": "+16.2%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Itay Michaeli",
     "firm": "TD Cowen",
     "recommendation": "Buy",

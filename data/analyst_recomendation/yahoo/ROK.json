@@ -36,6 +36,15 @@
     "date": "09/02/2026"
   },
   {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+29.1%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -49,18 +58,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$536.00",
-    "projected": "+19.1%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Stephens & Co.",
-    "firm": "Stephens & Co.",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+29.1%",
-    "date": "11/06/2026"
+    "price_target": "$504.00",
+    "projected": "+30.1%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Goldman Sachs",

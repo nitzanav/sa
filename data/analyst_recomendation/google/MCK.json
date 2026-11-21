@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,250.00",
+    "projected": "+17.4%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,255.00",
+    "projected": "+17.9%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Steven Valiquette",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -72,15 +90,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,250.00",
-    "projected": "+15.1%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Glen Santangelo",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Lisa Gill",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,042.00",
-    "projected": "+19.4%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Stephen Baxter",

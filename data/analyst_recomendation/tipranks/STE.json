@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Windley",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$305.00",
+    "projected": "+17.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Patrick Wood",
     "firm": "UBS",
     "recommendation": "Buy",

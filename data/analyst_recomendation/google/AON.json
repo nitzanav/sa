@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$373.00",
+    "projected": "+10.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Meyer Shields",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$376.00",
+    "projected": "+11.7%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Michael Zaremski",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -72,30 +90,12 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$363.00",
-    "projected": "+14.3%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Joshua Shanker",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$322.00",
     "projected": "+17.1%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Meyer Shields",
-    "firm": "KBW",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$342.00",
-    "projected": "+24.4%",
     "date": "10/12/2026"
   },
   {

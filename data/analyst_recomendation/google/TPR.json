@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Oliver Chen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+29.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$159.00",
+    "projected": "+17.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Jay Sole",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -99,15 +117,6 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Oliver Chen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$175.00",
-    "projected": "+35.2%",
-    "date": "08/18/2026"
-  },
-  {
     "analyst": "Kahori Tamada",
     "firm": "Daiwa",
     "recommendation": "Buy",
@@ -142,15 +151,6 @@
     "price_target": "$211.00",
     "projected": "+37.1%",
     "date": "08/04/2026"
-  },
-  {
-    "analyst": "Craig Wong-Pan",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$81.30",
-    "projected": "-41.9%",
-    "date": "07/16/2026"
   },
   {
     "analyst": "Christine Dooley",

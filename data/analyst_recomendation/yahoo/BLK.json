@@ -9,15 +9,6 @@
     "date": "07/17/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1250.00",
-    "projected": "+10.8%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$1405.00",
     "projected": "+23.4%",
     "date": "10/20/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1250.00",
+    "projected": "+10.8%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Evercore ISI Group",

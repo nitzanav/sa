@@ -4,18 +4,18 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1600.00",
-    "projected": "+10.7%",
-    "date": "08/04/2026"
+    "price_target": "$1900.00",
+    "projected": "+8%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1700.00",
-    "projected": "+10.9%",
-    "date": "10/07/2026"
+    "price_target": "$1900.00",
+    "projected": "+9%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -76,9 +76,9 @@
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": "+7.5%",
-    "date": "05/11/2026"
+    "price_target": "$1840.00",
+    "projected": "+4.6%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Wells Fargo",

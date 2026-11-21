@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Amit Daryanani",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$575.00",
-    "projected": "+59.7%",
-    "date": "10/27/2026"
+    "projected": "+86.1%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Mark Newman",
@@ -108,15 +117,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$800.00",
-    "projected": "+131.1%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Mehdi Hosseini",
     "firm": "Susquehanna",
     "recommendation": "Hold",
@@ -153,7 +153,7 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Aaron Rakers",
+    "analyst": "Joseph Quatrochi",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -187,14 +187,5 @@
     "price_target": null,
     "projected": null,
     "date": "06/22/2026"
-  },
-  {
-    "analyst": "Ananda Baruah",
-    "firm": "Loop Capital Markets",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": null,
-    "date": "11/10/2025"
   }
 ]

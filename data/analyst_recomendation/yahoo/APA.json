@@ -58,35 +58,35 @@
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "+9%",
-    "date": "05/11/2026"
+    "price_target": "$41.00",
+    "projected": "-14.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+17.7%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$44.00",
-    "projected": "-2.9%",
-    "date": "11/05/2026"
+    "price_target": "$48.00",
+    "projected": "-0.4%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Truist Securities",
     "firm": "Truist Securities",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "-4.3%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+10.4%",
-    "date": "10/13/2026"
+    "price_target": "$50.00",
+    "projected": "+14%",
+    "date": "11/10/2026"
   }
 ]

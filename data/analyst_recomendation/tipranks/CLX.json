@@ -63,6 +63,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+14.1%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Javier Escalante",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$99.00",
     "projected": "+10.1%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Nik Modi",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+25.1%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Stephen Powers",

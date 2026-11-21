@@ -45,15 +45,6 @@
     "date": "10/10/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$142.00",
-    "projected": null,
-    "date": "11/15/2025"
-  },
-  {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$115.00",
     "projected": "+12.2%",
     "date": "08/06/2026"
+  },
+  {
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+13.8%",
+    "date": "09/29/2026"
   }
 ]

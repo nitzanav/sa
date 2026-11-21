@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+13.4%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Susquehanna",
     "recommendation": "Hold",
@@ -133,15 +142,6 @@
     "price_target": "$112.00",
     "projected": "+10.3%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Alex Irving",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$127.00",
-    "projected": "+25.9%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Kristina Ruggeri",

@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$146.00",
+    "projected": "+48.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "James Weston",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "+58.1%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "James Thalacker",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -61,24 +79,6 @@
     "price_target": "$179.00",
     "projected": "+80.8%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "James Weston",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$152.00",
-    "projected": "+53.2%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+66.3%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Angie Storozynski",

@@ -1,17 +1,26 @@
 [
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Travis Steed",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Jaret Seiberg",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$121.00",
+    "projected": "+16.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,
     "projected": null,

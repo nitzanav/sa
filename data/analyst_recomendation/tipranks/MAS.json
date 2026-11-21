@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Stephen Kim",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "-0.2%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Chris Graja",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -133,15 +142,6 @@
     "price_target": "$75.00",
     "projected": "+9.6%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Stephen Kim",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+15.7%",
-    "date": "09/25/2026"
   },
   {
     "analyst": "Trevor Allinson",

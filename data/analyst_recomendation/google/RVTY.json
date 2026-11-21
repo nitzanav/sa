@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$160.00",
+    "projected": "-0.1%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Puneet Souda",
     "firm": "Leerink Partners",
     "recommendation": "Buy",
@@ -79,15 +88,6 @@
     "price_target": "$180.00",
     "projected": "+10.4%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$120.00",
-    "projected": "-22%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Michael Ryskin",

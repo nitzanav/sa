@@ -72,15 +72,6 @@
     "date": "08/14/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+2.8%",
-    "date": "09/03/2026"
-  },
-  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$617.00",
     "projected": "+33.5%",
     "date": "09/02/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+2.8%",
+    "date": "09/03/2026"
   }
 ]

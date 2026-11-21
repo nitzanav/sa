@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Edward Hockin",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$200.00",
+    "projected": "+2.1%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Lisa Lewandowski",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",

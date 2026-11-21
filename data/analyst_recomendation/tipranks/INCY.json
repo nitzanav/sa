@@ -27,6 +27,15 @@
     "date": "11/05/2026"
   },
   {
+    "analyst": "Brian Abrahams",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "-5.6%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Brian Abrahams",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+4.8%",
     "date": "10/29/2026"
   },
   {

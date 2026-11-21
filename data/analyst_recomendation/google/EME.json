@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Fairbanks",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$700.00",
+    "projected": "+9%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Avinatan Jaroslawicz",
     "firm": "UBS",
     "recommendation": "Buy",

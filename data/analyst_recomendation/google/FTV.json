@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brandon Knutson‏",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "-4.8%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Jamie Cook",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -79,15 +88,6 @@
     "price_target": "$64.00",
     "projected": "+16.2%",
     "date": "09/18/2026"
-  },
-  {
-    "analyst": "Brandon Knutson‏",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "-1%",
-    "date": "08/19/2026"
   },
   {
     "analyst": "John Eade",

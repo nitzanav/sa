@@ -27,15 +27,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+4.2%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$95.00",
     "projected": "+35.4%",
     "date": "09/18/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+4.2%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Truist Securities",

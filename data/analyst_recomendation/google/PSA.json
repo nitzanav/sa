@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$365.00",
+    "projected": "+8.2%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Michael Goldsmith",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$351.00",
     "projected": "+15.8%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Linda Tsai",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$317.00",
-    "projected": "+11.1%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Michael Lewis",

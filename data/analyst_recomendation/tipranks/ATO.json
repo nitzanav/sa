@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ryan Levine",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$191.00",
+    "projected": "+9.6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Constantine Lednev",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$201.00",
+    "projected": "+16.7%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "David Arcaro",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -45,15 +63,6 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Constantine Lednev",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+13.2%",
-    "date": "07/21/2026"
-  },
-  {
     "analyst": "Nicholas Campanella",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -79,15 +88,6 @@
     "price_target": "$196.00",
     "projected": "+8.4%",
     "date": "05/15/2026"
-  },
-  {
-    "analyst": "Ryan Levine",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$191.00",
-    "projected": "+4.1%",
-    "date": "05/08/2026"
   },
   {
     "analyst": "Ross Fowler",

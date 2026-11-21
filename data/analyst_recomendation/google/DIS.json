@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kutgun Maral",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.00",
+    "projected": "+20.5%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Sean Diffley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -177,15 +186,6 @@
     "action": "Reiterated",
     "price_target": "$115.00",
     "projected": "+12.2%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Kutgun Maral",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$144.00",
-    "projected": "+40.4%",
     "date": "08/06/2026"
   },
   {

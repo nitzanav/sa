@@ -27,15 +27,6 @@
     "date": "04/16/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+8.2%",
-    "date": "05/16/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
@@ -43,6 +34,15 @@
     "price_target": "$68.00",
     "projected": "+0.8%",
     "date": "11/03/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+8.2%",
+    "date": "05/16/2026"
   },
   {
     "analyst": "BMO Capital",

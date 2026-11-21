@@ -14,7 +14,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$195.00",
-    "projected": "+24.1%",
+    "projected": "+23.8%",
     "date": "11/06/2026"
   },
   {
@@ -23,7 +23,16 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$170.00",
-    "projected": "+8.2%",
+    "projected": "+7.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+23.8%",
     "date": "11/06/2026"
   },
   {
@@ -34,15 +43,6 @@
     "price_target": "$171.00",
     "projected": "+23.2%",
     "date": "08/06/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$195.00",
-    "projected": "+24.1%",
-    "date": "11/06/2026"
   },
   {
     "analyst": "Raymond James",

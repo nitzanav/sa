@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$256.00",
+    "projected": "+13.1%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -79,15 +88,6 @@
     "price_target": "$240.00",
     "projected": "+16.2%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$254.00",
-    "projected": "+20.4%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Unknown Analyst",

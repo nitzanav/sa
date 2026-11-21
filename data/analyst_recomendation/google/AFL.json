@@ -1,21 +1,48 @@
 [
   {
+    "analyst": "Thomas Gallagher",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$116.00",
+    "projected": "-10.1%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Yaron Kinar",
     "firm": "Mizuho Securities",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "-9.6%",
-    "date": "11/06/2026"
+    "price_target": "$117.00",
+    "projected": "-9.4%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Wesley Carmichael",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$124.00",
+    "projected": "-3.9%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$116.00",
-    "projected": "-8%",
-    "date": "11/05/2026"
+    "price_target": "$123.00",
+    "projected": "-2.3%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$143.00",
+    "projected": "+14.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Joshua Shanker",
@@ -27,15 +54,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+9.5%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -43,15 +61,6 @@
     "price_target": "$119.00",
     "projected": "-0.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+6.4%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Alex Scott",
@@ -115,15 +124,6 @@
     "price_target": "$130.00",
     "projected": "+11.1%",
     "date": "05/26/2026"
-  },
-  {
-    "analyst": "Thomas Gallagher",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "-2.9%",
-    "date": "04/30/2026"
   },
   {
     "analyst": "Wilma Burdis",

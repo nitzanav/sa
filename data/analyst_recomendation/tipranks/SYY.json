@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Kelly Bania",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+28.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "John Ivankoe",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -16,15 +34,6 @@
     "price_target": "$84.00",
     "projected": "+7.8%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Kelly Bania",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+29.8%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Mark Carden",
@@ -79,15 +88,6 @@
     "price_target": "$91.00",
     "projected": "+10.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "John Staszak",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/20/2026"
   },
   {
     "analyst": "Lauren Silberman",

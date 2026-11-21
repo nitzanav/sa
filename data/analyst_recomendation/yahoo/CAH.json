@@ -4,9 +4,9 @@
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+20.2%",
-    "date": "08/13/2026"
+    "price_target": "$304.00",
+    "projected": "+10.5%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "UBS",
@@ -18,15 +18,6 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+8.4%",
-    "date": "07/02/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -36,13 +27,13 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+18%",
-    "date": "08/13/2026"
+    "price_target": "$260.00",
+    "projected": "+8.4%",
+    "date": "07/02/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -52,6 +43,15 @@
     "price_target": "$286.00",
     "projected": "+12.1%",
     "date": "10/30/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+18%",
+    "date": "08/13/2026"
   },
   {
     "analyst": "Baird",
@@ -81,12 +81,12 @@
     "date": "08/12/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+9.2%",
-    "date": "10/21/2026"
+    "price_target": "$309.00",
+    "projected": "+10.3%",
+    "date": "11/13/2026"
   }
 ]

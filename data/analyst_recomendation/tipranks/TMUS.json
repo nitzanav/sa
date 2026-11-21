@@ -232,14 +232,5 @@
     "price_target": "$245.00",
     "projected": null,
     "date": "12/09/2025"
-  },
-  {
-    "analyst": "Ivan Feinseth",
-    "firm": "Tigress Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$310.00",
-    "projected": null,
-    "date": "11/11/2025"
   }
 ]

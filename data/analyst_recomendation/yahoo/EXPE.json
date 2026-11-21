@@ -5,7 +5,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+47.4%",
+    "projected": "+47%",
     "date": "11/06/2026"
   },
   {
@@ -36,15 +36,6 @@
     "date": "01/28/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+2.7%",
-    "date": "08/08/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$326.00",
     "projected": null,
     "date": "12/19/2025"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+2.7%",
+    "date": "08/08/2026"
   },
   {
     "analyst": "Truist Securities",

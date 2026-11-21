@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+7.5%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Todd Thomas",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+10.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Michael Goldsmith",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -63,15 +81,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Linda Tsai",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$147.00",
-    "projected": "+9.5%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Michael Mueller",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -106,15 +115,6 @@
     "price_target": "$170.00",
     "projected": "+17.7%",
     "date": "08/27/2026"
-  },
-  {
-    "analyst": "Todd Thomas",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/04/2026"
   },
   {
     "analyst": "Caitlin Burrows",

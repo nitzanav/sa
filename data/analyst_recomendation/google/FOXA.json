@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$90.00",
+    "projected": "+35.6%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Bryan Kraft",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -160,15 +169,6 @@
     "price_target": "$81.00",
     "projected": "+24.2%",
     "date": "05/11/2026"
-  },
-  {
-    "analyst": "Sean Diffley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$77.00",
-    "projected": "+12.8%",
-    "date": "05/12/2026"
   },
   {
     "analyst": "John Hodulik",

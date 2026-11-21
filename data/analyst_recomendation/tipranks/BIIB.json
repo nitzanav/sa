@@ -1,20 +1,29 @@
 [
   {
+    "analyst": "Ananda Ghosh",
+    "firm": "H.C. Wainwright",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+7.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "David Amsellem",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$305.00",
+    "projected": "+21.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "-1.5%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Ananda Ghosh",
-    "firm": "H.C. Wainwright",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$270.00",
-    "projected": "+6.4%",
     "date": "11/02/2026"
   },
   {
@@ -187,15 +196,6 @@
     "price_target": "$230.00",
     "projected": "-6.1%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "David Amsellem",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "-2.4%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Jeffrey Walch",

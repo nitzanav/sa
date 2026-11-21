@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Steven Silver",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$309.00",
+    "projected": "+12.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+16.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$286.00",
+    "projected": "+4.3%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Charles Rhyee",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$304.00",
+    "projected": "+10.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Ryan Halsted",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -72,30 +108,12 @@
     "date": "09/09/2026"
   },
   {
-    "analyst": "Lisa Gill",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+11.3%",
-    "date": "08/17/2026"
-  },
-  {
     "analyst": "George Hill",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$261.00",
     "projected": "+12%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Charles Rhyee",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$280.00",
-    "projected": "+20.2%",
     "date": "08/13/2026"
   },
   {
@@ -135,15 +153,6 @@
     "date": "08/11/2026"
   },
   {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+13.4%",
-    "date": "07/20/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "William O'Neil",
     "recommendation": "Buy",
@@ -154,15 +163,6 @@
   },
   {
     "analyst": "Unknown Analyst",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$248.00",
-    "projected": "+25.4%",
-    "date": "05/05/2026"
-  },
-  {
-    "analyst": "Steven Silver",
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",

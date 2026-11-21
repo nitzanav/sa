@@ -1,20 +1,29 @@
 [
   {
+    "analyst": "Naved Khan",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$265.00",
+    "projected": "+64.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+10.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Richard Clarke",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$188.00",
     "projected": "+17.2%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Naved Khan",
-    "firm": "B. Riley Securities",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$265.00",
-    "projected": "+65.2%",
     "date": "11/04/2026"
   },
   {
@@ -277,15 +286,6 @@
     "price_target": "$215.00",
     "projected": "+18.5%",
     "date": "07/20/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+6.5%",
-    "date": "07/13/2026"
   },
   {
     "analyst": "Trevor Young",

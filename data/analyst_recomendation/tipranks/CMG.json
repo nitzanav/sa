@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Sara Senatore",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Danilo Gargiulo",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$40.00",
     "projected": "+31.3%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Sara Senatore",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/27/2026"
   },
   {
     "analyst": "Lauren Silberman",

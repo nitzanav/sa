@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Nikhil Devnani",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+29.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Ronald Josey",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$105.00",
+    "projected": "+51.1%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Mark Mahaney",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -87,15 +105,6 @@
     "action": "Maintained",
     "price_target": "$100.00",
     "projected": "+41.3%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Nikhil Devnani",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+27.2%",
     "date": "11/05/2026"
   },
   {
@@ -304,15 +313,6 @@
     "price_target": "$115.00",
     "projected": "+64.2%",
     "date": "06/12/2026"
-  },
-  {
-    "analyst": "Ronald Josey",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "+54.2%",
-    "date": "06/01/2026"
   },
   {
     "analyst": "Bill Selesky",

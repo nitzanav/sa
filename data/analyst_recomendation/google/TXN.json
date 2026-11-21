@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Ingo Wermann",
     "firm": "DZ BANK AG",
     "recommendation": "Hold",
@@ -7,15 +16,6 @@
     "price_target": "$300.00",
     "projected": "-2.8%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "+23%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Stacy Rasgon",

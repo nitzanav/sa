@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Karnovsky",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$222.00",
+    "projected": "+10.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Joseph Stauff",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -117,15 +126,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Dalton Baretto",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$10.57",
-    "projected": "-94.2%",
-    "date": "10/09/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "CFRA",
     "recommendation": "Buy",
@@ -141,15 +141,6 @@
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "+29.2%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "David Karnovsky",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$222.00",
-    "projected": "+14.7%",
     "date": "08/04/2026"
   },
   {

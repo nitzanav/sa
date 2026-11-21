@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Mark Shmulik",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -267,15 +276,6 @@
     "action": "Maintained",
     "price_target": "$340.00",
     "projected": "+46.2%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Justin Post",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$317.00",
-    "projected": "+36.3%",
     "date": "10/30/2026"
   },
   {

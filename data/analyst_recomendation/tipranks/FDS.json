@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$290.00",
+    "projected": "-10.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$304.00",
+    "projected": "-6.5%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Alex Kramm",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$375.00",
+    "projected": "+15.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "-7.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Toni Kaplan",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$321.00",
+    "projected": "-1.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Shlomo Rosenbaum",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "0%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Manav Patnaik",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "-6.1%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "George Tong",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$237.00",
+    "projected": "-26.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Jeffrey Silber",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$352.00",
+    "projected": "+9.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Curtis Nagle",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$212.00",
+    "projected": "-23.5%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Faiza Alwy",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$301.00",
+    "projected": "+8.7%",
+    "date": "10/01/2026"
+  },
+  {
+    "analyst": "Andrew Nicholas",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/30/2026"
+  },
+  {
+    "analyst": "Scott Wurtzel",
+    "firm": "Wolfe Research",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$240.00",
+    "projected": "+8.1%",
+    "date": "07/01/2026"
+  },
+  {
+    "analyst": "Henry Hayden",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$215.00",
+    "projected": "-1.7%",
+    "date": "06/18/2026"
+  },
+  {
+    "analyst": "Craig Huber",
+    "firm": "Huber Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$326.00",
+    "projected": null,
+    "date": "12/19/2025"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$253.00",
+    "projected": null,
+    "date": "12/19/2025"
+  },
+  {
+    "analyst": "Surinder Thind",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$315.00",
+    "projected": null,
+    "date": "12/10/2025"
+  }
+]

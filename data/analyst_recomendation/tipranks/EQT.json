@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+29.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+13.5%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Devin McDermott",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -7,15 +25,6 @@
     "price_target": "$67.00",
     "projected": "+22.8%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+23.3%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "David Deckelbaum",
@@ -60,15 +69,6 @@
     "action": "Reiterated",
     "price_target": "$52.00",
     "projected": "-8.3%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+11.1%",
     "date": "10/28/2026"
   },
   {

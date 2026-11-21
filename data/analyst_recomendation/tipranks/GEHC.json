@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Toung",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+31.6%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Graham Doyle",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -151,15 +160,6 @@
     "price_target": null,
     "projected": null,
     "date": "04/30/2026"
-  },
-  {
-    "analyst": "David Toung",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$95.00",
-    "projected": "+21.3%",
-    "date": "03/03/2026"
   },
   {
     "analyst": "Nico Chen",

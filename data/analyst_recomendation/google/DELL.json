@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Katherine Murphy",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -177,15 +186,6 @@
     "action": "Reiterated",
     "price_target": "$635.00",
     "projected": "+37.4%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$600.00",
-    "projected": "+29.9%",
     "date": "09/02/2026"
   },
   {

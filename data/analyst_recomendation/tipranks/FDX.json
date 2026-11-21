@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$377.00",
+    "projected": "+16.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Brandon Oglenski",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+35.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Fadi Chamoun",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -79,24 +97,6 @@
     "price_target": "$354.00",
     "projected": "+17.4%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Brandon Oglenski",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+41%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$377.00",
-    "projected": "+25.4%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Patrick Brown",

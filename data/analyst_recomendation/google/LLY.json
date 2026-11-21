@@ -3,9 +3,36 @@
     "analyst": "Jason Gerberry",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,557.00",
-    "projected": "+8.6%",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Evan Seigerman",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,650.00",
+    "projected": "+20.8%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Akash Tewari",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,700.00",
+    "projected": "+24.5%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,600.00",
+    "projected": "+11.6%",
     "date": "11/05/2026"
   },
   {
@@ -25,15 +52,6 @@
     "price_target": "$1,600.00",
     "projected": "+12%",
     "date": "11/01/2026"
-  },
-  {
-    "analyst": "Evan Seigerman",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,650.00",
-    "projected": "+18.4%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Ilya Zubkov",
@@ -90,15 +108,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,600.00",
-    "projected": "+20.1%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Chris Schott",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -133,15 +142,6 @@
     "price_target": "$1,650.00",
     "projected": "+15.5%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Akash Tewari",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,610.00",
-    "projected": "+20.8%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Emily Field",

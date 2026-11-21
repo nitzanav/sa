@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Bryan Keane",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$800.00",
+    "projected": "+20.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Harshita Rawat",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$764.00",
+    "projected": "+16%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Mikhail Paramonov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
@@ -189,15 +207,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Harshita Rawat",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$730.00",
-    "projected": "+19.7%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -214,15 +223,6 @@
     "price_target": "$665.00",
     "projected": "+9.8%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Bryan Keane",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$675.00",
-    "projected": "+18.7%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Bill Carcache",

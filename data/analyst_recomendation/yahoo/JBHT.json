@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "+22.5%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -16,6 +7,15 @@
     "price_target": "$275.00",
     "projected": "+20.6%",
     "date": "10/16/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+22.5%",
+    "date": "09/18/2026"
   },
   {
     "analyst": "Wells Fargo",

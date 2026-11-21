@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+2%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "David Palmer",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -75,7 +84,7 @@
     "analyst": "Logan Reich",
     "firm": "RBC Capital",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$300.00",
     "projected": "+11.6%",
     "date": "11/04/2026"

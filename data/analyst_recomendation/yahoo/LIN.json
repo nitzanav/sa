@@ -1,12 +1,21 @@
 [
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
+    "analyst": "Keybanc",
+    "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$546.00",
-    "projected": "+11.2%",
-    "date": "08/11/2026"
+    "price_target": "$545.00",
+    "projected": "+7%",
+    "date": "10/31/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$568.00",
+    "projected": "+11.5%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -18,6 +27,15 @@
     "date": "05/05/2026"
   },
   {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$546.00",
+    "projected": "+11.2%",
+    "date": "08/11/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -25,15 +43,6 @@
     "price_target": "$580.00",
     "projected": "+13.8%",
     "date": "10/31/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$568.00",
-    "projected": "+11.5%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "UBS",

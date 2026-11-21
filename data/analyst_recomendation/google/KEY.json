@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+11.7%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Jason Goldberg",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$24.00",
-    "projected": "+9.7%",
-    "date": "11/05/2026"
+    "projected": "+13.3%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Vivek Juneja",
@@ -16,15 +25,6 @@
     "price_target": "$23.50",
     "projected": "+9.3%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+12.5%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Andrew J Dietrich",
@@ -177,15 +177,6 @@
     "action": "Initiated",
     "price_target": "$26.00",
     "projected": "+13.5%",
-    "date": "06/15/2026"
-  },
-  {
-    "analyst": "Nate Heywood",
-    "firm": "ATB Cormark Capital Markets",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$41.82",
-    "projected": "+82.5%",
     "date": "06/15/2026"
   },
   {

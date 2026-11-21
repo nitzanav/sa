@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$317.00",
+    "projected": "+10.8%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Jamie Cook",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -79,15 +88,6 @@
     "price_target": "$286.00",
     "projected": "+7%",
     "date": "07/09/2026"
-  },
-  {
-    "analyst": "David Raso",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$272.00",
-    "projected": "+6.6%",
-    "date": "05/11/2026"
   },
   {
     "analyst": "Joe O'Dea",

@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+0.3%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Dan Leonard",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+0.2%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "David Toung",
     "firm": "Argus Research",
     "recommendation": "Sell",
@@ -16,15 +34,6 @@
     "price_target": "$73.00",
     "projected": "+1.1%",
     "date": "08/14/2026"
-  },
-  {
-    "analyst": "Dan Leonard",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+1.2%",
-    "date": "08/12/2026"
   },
   {
     "analyst": "Matt Larew",

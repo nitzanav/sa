@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Westenberg",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "-0.6%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Andrea Alfonso",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -97,15 +106,6 @@
     "price_target": "$96.00",
     "projected": "+29.3%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "David Westenberg",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+10.5%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Brandon Vazquez",

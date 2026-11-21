@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Saket Kalia",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+21.4%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Matthew Hedberg",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+30.4%",
+    "date": "11/08/2026"
+  },
+  {
     "analyst": "Fatima Boolani",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -205,24 +223,6 @@
     "price_target": "$240.00",
     "projected": "+17.5%",
     "date": "09/24/2026"
-  },
-  {
-    "analyst": "Matthew Hedberg",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+16%",
-    "date": "09/23/2026"
-  },
-  {
-    "analyst": "Saket Kalia",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+8.5%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "Rudy Kessinger",

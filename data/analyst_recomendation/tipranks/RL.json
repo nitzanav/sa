@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John Kernan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$426.00",
+    "projected": "+10.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Kendall Toscano",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -36,21 +45,21 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Robert Drbul",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$460.00",
-    "projected": "+14.9%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Brooke Roach",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$465.00",
     "projected": "+16.1%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Robert Drbul",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$460.00",
+    "projected": "+14.9%",
     "date": "11/05/2026"
   },
   {

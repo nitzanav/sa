@@ -54,15 +54,6 @@
     "date": "07/21/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$330.00",
-    "projected": "+17.4%",
-    "date": "07/24/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$330.00",
     "projected": "+21%",
     "date": "10/20/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+17.4%",
+    "date": "07/24/2026"
   },
   {
     "analyst": "Keybanc",

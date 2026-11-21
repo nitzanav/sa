@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$66.00",
+    "projected": "+4.2%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Nicholas Yulico",
     "firm": "Scotiabank",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$68.00",
     "projected": "+3.3%",
     "date": "09/09/2026"
-  },
-  {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "-0.9%",
-    "date": "08/25/2026"
   },
   {
     "analyst": "Peter Abramowitz",

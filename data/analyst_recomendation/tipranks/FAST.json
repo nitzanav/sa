@@ -1,39 +1,48 @@
 [
   {
-    "analyst": "Kristina Ruggeri",
-    "firm": "Argus Research",
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$47.00",
+    "projected": "-16.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "+16.2%",
-    "date": "10/20/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
   },
   {
     "analyst": "David Manthey",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+15%",
-    "date": "10/15/2026"
+    "price_target": "$61.00",
+    "projected": "+16.7%",
+    "date": "11/06/2026"
   },
   {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
+    "analyst": "Christine Yao",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+0.4%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$55.00",
-    "projected": "+5.4%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$47.00",
-    "projected": "-9.9%",
-    "date": "10/15/2026"
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "+15.5%",
+    "date": "10/20/2026"
   },
   {
     "analyst": "Kenneth Newman",
@@ -90,15 +99,6 @@
     "date": "09/03/2026"
   },
   {
-    "analyst": "Sam Darkatsh",
-    "firm": "Raymond James",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "07/15/2026"
-  },
-  {
     "analyst": "Stephen Volkmann",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -108,13 +108,13 @@
     "date": "07/15/2026"
   },
   {
-    "analyst": "Christopher Snyder",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+3.1%",
-    "date": "07/14/2026"
+    "analyst": "Sam Darkatsh",
+    "firm": "Raymond James",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "07/15/2026"
   },
   {
     "analyst": "William Blunt",

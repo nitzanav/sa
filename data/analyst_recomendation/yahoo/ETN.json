@@ -11,11 +11,11 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$445.00",
-    "projected": "+6.2%",
-    "date": "05/07/2026"
+    "price_target": "$395.00",
+    "projected": "+12.5%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -45,15 +45,6 @@
     "date": "01/16/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$515.00",
-    "projected": "+8.2%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$515.00",
     "projected": "+21.6%",
     "date": "09/08/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$445.00",
+    "projected": "+22.2%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "RBC Capital",

@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Zachary Fadem",
-    "firm": "Wells Fargo",
+    "analyst": "Peter Keith",
+    "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+10.9%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Zhihan Ma",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$344.00",
-    "projected": "+2%",
-    "date": "11/03/2026"
+    "price_target": "$371.00",
+    "projected": "+7.8%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "W. Andrew Carter",
@@ -23,8 +14,80 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$322.00",
-    "projected": "-0.7%",
-    "date": "10/29/2026"
+    "projected": "-9.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Steven Shemesh",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$342.00",
+    "projected": "-3.7%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Christopher Nardone",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$397.00",
+    "projected": "+13.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+20.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Zhihan Ma",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$357.00",
+    "projected": "+2.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Seth Sigman",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$420.00",
+    "projected": "+20.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Christopher Horvers",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+15.3%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Steven Zaccone",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+17.4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Zachary Fadem",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+10.9%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Simeon Gutman",
@@ -52,33 +115,6 @@
     "price_target": "$397.00",
     "projected": "+40.2%",
     "date": "10/06/2026"
-  },
-  {
-    "analyst": "Steven Shemesh",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$342.00",
-    "projected": "+17.8%",
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Steven Zaccone",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+32.9%",
-    "date": "09/21/2026"
-  },
-  {
-    "analyst": "Michael Lasser",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$420.00",
-    "projected": "+36.8%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Kate McShane",
@@ -126,15 +162,6 @@
     "date": "08/19/2026"
   },
   {
-    "analyst": "Seth Sigman",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$420.00",
-    "projected": "+23%",
-    "date": "08/19/2026"
-  },
-  {
     "analyst": "Max Rakhlenko",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -171,15 +198,6 @@
     "date": "08/18/2026"
   },
   {
-    "analyst": "Christopher Nardone",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$407.00",
-    "projected": "+20.9%",
-    "date": "08/18/2026"
-  },
-  {
     "analyst": "Michael Baker",
     "firm": "D.A. Davidson",
     "recommendation": "Buy",
@@ -198,15 +216,6 @@
     "date": "08/14/2026"
   },
   {
-    "analyst": "Peter Keith",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$378.00",
-    "projected": "+8.9%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Spencer Hanus",
     "firm": "Wolfe Research",
     "recommendation": "Hold",
@@ -223,15 +232,6 @@
     "price_target": null,
     "projected": null,
     "date": "06/16/2026"
-  },
-  {
-    "analyst": "Christopher Horvers",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/29/2026"
   },
   {
     "analyst": "Peter Benedict",

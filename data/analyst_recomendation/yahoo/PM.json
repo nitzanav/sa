@@ -38,11 +38,11 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": null,
-    "date": "11/26/2025"
+    "price_target": "$200.00",
+    "projected": "+3.4%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Citigroup",

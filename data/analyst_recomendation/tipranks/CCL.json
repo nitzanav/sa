@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Thomas Fitzgerald CFA",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$32.00",
+    "projected": "+5.5%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Richard Clarke",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -169,15 +178,6 @@
     "price_target": "$38.00",
     "projected": "+76.7%",
     "date": "09/24/2026"
-  },
-  {
-    "analyst": "Thomas Fitzgerald CFA",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+38%",
-    "date": "09/22/2026"
   },
   {
     "analyst": "James Hardiman",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Meyer Shields",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$191.00",
+    "projected": "+0.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Michael Zaremski",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$200.00",
     "projected": "+12.8%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Meyer Shields",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$171.00",
-    "projected": "+4%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Paul Newsome",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Samantha Hoh",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+73.5%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Sergey Pigarev",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",

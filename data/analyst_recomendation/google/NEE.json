@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Meike Becker",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+18.5%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -24,15 +33,6 @@
     "action": "Maintained",
     "price_target": "$99.00",
     "projected": "+25.6%",
-    "date": "10/22/2026"
-  },
-  {
-    "analyst": "Meike Becker",
-    "firm": "HSBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+30.6%",
     "date": "10/22/2026"
   },
   {

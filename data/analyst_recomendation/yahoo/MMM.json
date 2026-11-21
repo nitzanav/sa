@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -54,15 +63,6 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$195.00",
-    "projected": "+15.7%",
-    "date": "09/26/2026"
-  },
-  {
     "analyst": "Bernstein",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -72,6 +72,15 @@
     "date": "10/21/2026"
   },
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "+15.7%",
+    "date": "09/26/2026"
+  },
+  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$180.00",
     "projected": "+5.3%",
     "date": "07/23/2026"
-  },
-  {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": "+15.2%",
-    "date": "01/21/2026"
   }
 ]

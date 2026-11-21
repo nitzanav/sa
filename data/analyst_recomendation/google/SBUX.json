@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Dennis Geiger",
-    "firm": "UBS",
-    "recommendation": "Hold",
+    "analyst": "Sara Senatore",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+6.3%",
-    "date": "11/06/2026"
+    "price_target": "$141.00",
+    "projected": "+32.2%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Jon Tower",
@@ -14,8 +14,26 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$107.00",
-    "projected": "+2.5%",
-    "date": "11/02/2026"
+    "projected": "-2.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Matthew Smith, CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$115.00",
+    "projected": "+8.2%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Dennis Geiger",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+6.3%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "David Palmer",
@@ -51,15 +69,6 @@
     "action": "Reiterated",
     "price_target": "$130.00",
     "projected": "+23%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Sara Senatore",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$141.00",
-    "projected": "+33.4%",
     "date": "10/30/2026"
   },
   {

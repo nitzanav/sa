@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Vik Chopra",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$518.00",
+    "projected": "+13.4%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Travis Steed",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$470.00",
-    "projected": "+16.8%",
-    "date": "10/21/2026"
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+9.5%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Mike Kratky",
@@ -117,15 +126,6 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Vik Chopra",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$518.00",
-    "projected": "+19.5%",
-    "date": "10/20/2026"
-  },
-  {
     "analyst": "Kendall Au",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -153,7 +153,7 @@
     "date": "10/20/2026"
   },
   {
-    "analyst": "Joshua Buchalter",
+    "analyst": "Mathew Blackman",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",

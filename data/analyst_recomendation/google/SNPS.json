@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Lee Simpson",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$620.00",
     "projected": "+21.5%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$600.00",
-    "projected": "+19.6%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Gary Mobley",

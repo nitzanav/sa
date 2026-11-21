@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Michael Latimore",
+    "firm": "Northland Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$540.00",
+    "projected": "+69.1%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$507.00",
+    "projected": "+58.8%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Brian Gesuale",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$475.00",
+    "projected": "+40.9%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Andrew Spinola",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$380.00",
-    "projected": "+13.4%",
+    "projected": "+12.8%",
     "date": "11/06/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$610.00",
-    "projected": "+82.1%",
+    "projected": "+81%",
     "date": "11/06/2026"
   },
   {
@@ -23,7 +50,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$615.00",
-    "projected": "+83.6%",
+    "projected": "+82.5%",
     "date": "11/06/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$650.00",
-    "projected": "+94.1%",
+    "projected": "+92.9%",
     "date": "11/06/2026"
   },
   {
@@ -41,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$485.00",
-    "projected": "+44.8%",
+    "projected": "+43.9%",
     "date": "11/06/2026"
   },
   {
@@ -50,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": "$390.00",
-    "projected": "+16.4%",
+    "projected": "+15.7%",
     "date": "11/06/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$600.00",
-    "projected": "+79.1%",
+    "projected": "+78%",
     "date": "11/06/2026"
   },
   {
@@ -68,26 +95,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$540.00",
-    "projected": "+61.2%",
+    "projected": "+60.2%",
     "date": "11/06/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$507.00",
-    "projected": "+51.4%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Brian Gesuale",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$675.00",
-    "projected": "+64.9%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "John Staszak",
@@ -124,15 +133,6 @@
     "price_target": "$715.00",
     "projected": "+25.8%",
     "date": "08/10/2026"
-  },
-  {
-    "analyst": "Michael Latimore",
-    "firm": "Northland Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$800.00",
-    "projected": "+35.8%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Nilesh Bhaiya",

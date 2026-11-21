@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Matthew Coad",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+2.4%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Harshita Rawat",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+9%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Stephen Biggar",
     "firm": "Argus Research",
     "recommendation": "Hold",
     "action": "Downgraded",
     "price_target": null,
     "projected": null,
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "+18.7%",
     "date": "11/06/2026"
   },
   {
@@ -160,33 +187,6 @@
     "price_target": "$35.00",
     "projected": "+14.5%",
     "date": "11/04/2026"
-  },
-  {
-    "analyst": "Matthew Coad",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$37.00",
-    "projected": "-2.6%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Ramsey El Assal",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+23.6%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Harshita Rawat",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/12/2026"
   },
   {
     "analyst": "Nate Svensson",

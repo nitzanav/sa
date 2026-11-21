@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+15.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+31.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Scott Hanold",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$131.00",
+    "projected": "+47.6%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Bob Brackett",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+52.6%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Arun Jayaram",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -45,15 +81,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Scott Hanold",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+42.5%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Tim Rezvan",
     "firm": "KeyBanc",
     "recommendation": "Hold",
@@ -81,24 +108,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$107.00",
-    "projected": "+13.1%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$133.00",
-    "projected": "+40.6%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "Neil Mehta",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -114,15 +123,6 @@
     "action": "Reiterated",
     "price_target": "$123.00",
     "projected": "+35.5%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Bob Brackett",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$127.00",
-    "projected": "+39.9%",
     "date": "10/16/2026"
   },
   {

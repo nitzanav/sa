@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$267.00",
+    "projected": "+20.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Tracy Benguigui",
     "firm": "Wolfe Research",
     "recommendation": "Sell",
@@ -69,15 +78,6 @@
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "+16.7%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$267.00",
-    "projected": "+24.6%",
     "date": "10/19/2026"
   },
   {

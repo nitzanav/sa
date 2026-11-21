@@ -47,11 +47,11 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$158.00",
-    "projected": "+21.5%",
-    "date": "10/12/2026"
+    "price_target": "$139.00",
+    "projected": "-0.2%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -63,15 +63,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$144.00",
-    "projected": "+13.8%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -79,6 +70,15 @@
     "price_target": "$143.00",
     "projected": "+2.9%",
     "date": "02/04/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+5%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "JP Morgan",

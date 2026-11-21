@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$570.00",
+    "projected": "+13.6%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Kevin Fischbeck",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -76,15 +85,6 @@
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$495.00",
-    "projected": "+11.1%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Ann Hynes",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
     "price_target": "$495.00",
     "projected": "+11.1%",
     "date": "10/28/2026"

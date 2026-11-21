@@ -1,39 +1,75 @@
 [
   {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+22.1%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Anthony Pettinari",
     "firm": "Citi",
     "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$288.00",
-    "projected": "+24.2%",
-    "date": "10/27/2026"
+    "action": "Maintained",
+    "price_target": "$303.00",
+    "projected": "+17.3%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "David Manthey",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$288.00",
-    "projected": "+29.5%",
-    "date": "10/20/2026"
+    "price_target": "$300.00",
+    "projected": "+16%",
+    "date": "11/10/2026"
   },
   {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
+    "analyst": "Scott Schneeberger",
+    "firm": "Oppenheimer",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$325.00",
-    "projected": "+40.5%",
-    "date": "10/19/2026"
+    "price_target": "$296.00",
+    "projected": "+14.5%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "John Lovallo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+4.4%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Sam Reid",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$295.00",
+    "projected": "+14.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Matthew Bouley",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$314.00",
+    "projected": "+21.4%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Michael Dahl",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$286.00",
-    "projected": "+29.8%",
-    "date": "10/07/2026"
+    "price_target": "$288.00",
+    "projected": "+14.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Michael Rehaut",
@@ -52,15 +88,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Sam Reid",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+35.2%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Nigel Coe",
@@ -126,39 +153,12 @@
     "date": "08/11/2026"
   },
   {
-    "analyst": "John Lovallo",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$256.00",
-    "projected": "-2.6%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Scott Schneeberger",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$288.00",
-    "projected": "+9.6%",
-    "date": "08/11/2026"
-  },
-  {
     "analyst": "Keith Hughes",
     "firm": "Truist Financial",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Matthew Bouley",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$313.00",
-    "projected": "+19.1%",
     "date": "08/11/2026"
   }
 ]

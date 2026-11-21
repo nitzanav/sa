@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Adam Frisch",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+63.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "James Yaro",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$115.00",
+    "projected": "+44.3%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+42.4%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -25,15 +52,6 @@
     "price_target": "$105.00",
     "projected": "+16.9%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Adam Frisch",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+45.7%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Michael Cyprys",
@@ -99,15 +117,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+28.9%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "David Smith -CFA",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -142,15 +151,6 @@
     "price_target": "$110.00",
     "projected": "+23.3%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "James Yaro",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$128.00",
-    "projected": "+34.5%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Mark Palmer",
@@ -250,14 +250,5 @@
     "price_target": "$125.00",
     "projected": "+47.3%",
     "date": "02/09/2026"
-  },
-  {
-    "analyst": "Patrick O'Shaughnessy",
-    "firm": "Raymond James",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/12/2025"
   }
 ]

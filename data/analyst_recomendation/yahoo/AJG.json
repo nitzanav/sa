@@ -36,6 +36,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$307.00",
+    "projected": "+9.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$292.00",
     "projected": "+15%",
     "date": "07/07/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$302.00",
-    "projected": "+9.8%",
-    "date": "10/31/2026"
   },
   {
     "analyst": "Truist Securities",

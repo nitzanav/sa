@@ -9,15 +9,6 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "-6.7%",
-    "date": "01/07/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
@@ -25,6 +16,15 @@
     "price_target": "$99.00",
     "projected": "+7.6%",
     "date": "11/03/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "-6.7%",
+    "date": "01/07/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -45,15 +45,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+6%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$96.00",
     "projected": "+4.3%",
     "date": "11/03/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+6%",
+    "date": "10/14/2026"
   },
   {
     "analyst": "Jefferies",

@@ -72,15 +72,6 @@
     "date": "07/28/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+4.1%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$350.00",
     "projected": "+12.2%",
     "date": "10/03/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+4.1%",
+    "date": "10/23/2026"
   }
 ]

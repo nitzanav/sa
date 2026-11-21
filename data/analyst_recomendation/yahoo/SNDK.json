@@ -18,13 +18,13 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$2720.00",
-    "projected": "+123.9%",
-    "date": "10/31/2026"
+    "price_target": "$2500.00",
+    "projected": "+19.9%",
+    "date": "07/01/2026"
   },
   {
     "analyst": "Mizuho",
@@ -36,15 +36,6 @@
     "date": "10/07/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$2500.00",
-    "projected": "+19.9%",
-    "date": "07/01/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -54,13 +45,13 @@
     "date": "06/03/2026"
   },
   {
-    "analyst": "Wedbush",
-    "firm": "Wedbush",
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$2000.00",
-    "projected": "+21.4%",
-    "date": "08/15/2026"
+    "price_target": "$2720.00",
+    "projected": "+123.9%",
+    "date": "10/31/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -70,6 +61,15 @@
     "price_target": "$2200.00",
     "projected": "+73.5%",
     "date": "10/27/2026"
+  },
+  {
+    "analyst": "Wedbush",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2000.00",
+    "projected": "+21.4%",
+    "date": "08/15/2026"
   },
   {
     "analyst": "Barclays",

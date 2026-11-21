@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$99.00",
+    "projected": "+6.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "James Weston",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$99.50",
     "projected": "+9.2%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+8%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "David Arcaro",

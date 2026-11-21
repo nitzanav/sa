@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$120.00",
-    "projected": "+19.7%",
-    "date": "11/05/2026"
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+49.3%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Peter Weed",
@@ -14,17 +14,125 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$110.00",
-    "projected": "+9.8%",
-    "date": "11/05/2026"
+    "projected": "+9.5%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Matthew Niknam",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$127.00",
+    "projected": "+26.4%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Brandon Nispel",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+34.4%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Michael Ng",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+25.5%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$138.00",
+    "projected": "+37.4%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Tal Liani",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$150.00",
-    "projected": "+47.1%",
-    "date": "11/03/2026"
+    "projected": "+49.3%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Michael Genovese",
+    "firm": "Rosenblatt Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+39.3%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "James Fish",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+11.5%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+29.4%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$130.00",
+    "projected": "+30.5%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+8.5%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Atif Malik",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+19.4%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "+54.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$120.00",
+    "projected": "+19.7%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Daniel Zhu‏",
@@ -36,15 +144,6 @@
     "date": "10/25/2026"
   },
   {
-    "analyst": "Atif Malik",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$139.00",
-    "projected": "+19.1%",
-    "date": "10/08/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -54,15 +153,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "James Fish",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$125.00",
-    "projected": "+13.3%",
-    "date": "09/22/2026"
-  },
-  {
     "analyst": "Gianmarco Conti",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -70,33 +160,6 @@
     "price_target": "$135.00",
     "projected": "+22.4%",
     "date": "08/31/2026"
-  },
-  {
-    "analyst": "Matthew Niknam",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+27.3%",
-    "date": "08/24/2026"
-  },
-  {
-    "analyst": "Amit Daryanani",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+35.2%",
-    "date": "08/17/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+35.2%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Jim Kelleher",
@@ -135,57 +198,12 @@
     "date": "08/13/2026"
   },
   {
-    "analyst": "Michael Genovese",
-    "firm": "Rosenblatt Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$165.00",
-    "projected": "+44.8%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "David Vogt",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$138.00",
-    "projected": "+21.1%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Aaron Rakers",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "+31.7%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Sebastien Naji",
     "firm": "William Blair",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Brandon Nispel",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+18.5%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+8%",
     "date": "08/13/2026"
   },
   {

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mehdi Hosseini",
+    "firm": "Susquehanna",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "-36%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Wedbush",
     "recommendation": "Hold",
@@ -83,7 +92,7 @@
   {
     "analyst": "Katherine Murphy",
     "firm": "Goldman Sachs",
-    "recommendation": "Buy",
+    "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$34.00",
     "projected": "+8%",
@@ -106,15 +115,6 @@
     "price_target": "$43.00",
     "projected": "-1.3%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Mehdi Hosseini",
-    "firm": "Susquehanna",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$15.00",
-    "projected": "-60.3%",
-    "date": "09/12/2026"
   },
   {
     "analyst": "Nehal Chokshi",

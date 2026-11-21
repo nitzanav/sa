@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+3.7%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$413.00",
+    "projected": "+19%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Leerink Partners",
     "recommendation": "Buy",
@@ -33,15 +51,6 @@
     "action": "Maintained",
     "price_target": "$405.00",
     "projected": "+12.5%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$360.00",
-    "projected": "0%",
     "date": "11/05/2026"
   },
   {
@@ -79,15 +88,6 @@
     "price_target": "$400.00",
     "projected": "+16.5%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Lisa Gill",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$390.00",
-    "projected": "+21.5%",
-    "date": "08/10/2026"
   },
   {
     "analyst": "Stephen Baxter",

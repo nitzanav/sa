@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Linda Tsai",
+    "firm": "Truist Financial",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+6.4%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Richard Anderson",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
@@ -90,15 +108,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Linda Tsai",
-    "firm": "Truist Financial",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$60.00",
-    "projected": "+11.4%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -133,15 +142,6 @@
     "price_target": "$72.00",
     "projected": "+14.5%",
     "date": "08/18/2026"
-  },
-  {
-    "analyst": "Jeffrey Spector",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$72.00",
-    "projected": "+15.6%",
-    "date": "08/07/2026"
   },
   {
     "analyst": "Anthony Paolone",

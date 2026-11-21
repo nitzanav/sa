@@ -9,6 +9,15 @@
     "date": "11/05/2026"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$478.00",
+    "projected": "+3.2%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$488.00",
     "projected": "+5.7%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$478.00",
-    "projected": "+3.2%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Wells Fargo",

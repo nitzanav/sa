@@ -45,15 +45,6 @@
     "date": "01/07/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/25/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -61,6 +52,15 @@
     "price_target": "$171.00",
     "projected": "+2.4%",
     "date": "11/05/2026"
+  },
+  {
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "09/25/2026"
   },
   {
     "analyst": "JP Morgan",

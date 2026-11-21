@@ -27,15 +27,6 @@
     "date": "10/31/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+11.6%",
-    "date": "07/16/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$260.00",
     "projected": "+19.6%",
     "date": "10/19/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+11.6%",
+    "date": "07/16/2026"
   },
   {
     "analyst": "B of A Securities",

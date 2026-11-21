@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Chris O’Cull",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$400.00",
+    "projected": "+16.6%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Danilo Gargiulo",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -51,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$380.00",
     "projected": "+28.8%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Chris O’Cull",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+8.4%",
     "date": "10/14/2026"
   },
   {

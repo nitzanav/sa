@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Toni Kaplan",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$220.00",
+    "projected": "-9.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Sabahat Khan",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$247.00",
+    "projected": "+4.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+14.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Jon Windham",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -24,15 +51,6 @@
     "action": "Maintained",
     "price_target": "$245.00",
     "projected": "+7.4%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Toni Kaplan",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$220.00",
-    "projected": "-3.6%",
     "date": "10/29/2026"
   },
   {
@@ -69,24 +87,6 @@
     "action": "Reiterated",
     "price_target": "$232.00",
     "projected": "+1.9%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+18.3%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Sabahat Khan",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$247.00",
-    "projected": "+8.5%",
     "date": "10/28/2026"
   },
   {

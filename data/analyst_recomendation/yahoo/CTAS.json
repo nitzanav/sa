@@ -72,15 +72,6 @@
     "date": "07/16/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$210.00",
-    "projected": null,
-    "date": "12/18/2025"
-  },
-  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$190.00",
     "projected": "+7.7%",
     "date": "03/26/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": null,
+    "date": "12/18/2025"
   }
 ]

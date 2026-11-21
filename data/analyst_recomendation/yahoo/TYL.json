@@ -9,15 +9,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+54.4%",
-    "date": "02/13/2026"
-  },
-  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$450.00",
     "projected": "+40.2%",
     "date": "09/29/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+54.4%",
+    "date": "02/13/2026"
   },
   {
     "analyst": "BTIG",

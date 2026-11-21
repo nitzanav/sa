@@ -1,12 +1,57 @@
 [
   {
+    "analyst": "Tal Liani",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$220.00",
+    "projected": "-6.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Michael Turrin",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "-4.5%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Tyler Radke",
     "firm": "Citi",
     "recommendation": "Sell",
-    "action": "Downgraded",
-    "price_target": "$207.00",
-    "projected": "-16.6%",
-    "date": "11/04/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Billy Fitzsimmons",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+6.1%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "J. Parker Lane",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "-4.5%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Matthew Swanson",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+32.5%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Stephen Bersey",
@@ -15,15 +60,6 @@
     "action": "Downgraded",
     "price_target": "$267.00",
     "projected": "+13%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Michael Turrin",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Downgraded",
-    "price_target": "$225.00",
-    "projected": "-4.8%",
     "date": "10/13/2026"
   },
   {
@@ -117,30 +153,12 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Matthew Swanson",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+30.1%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Samik Chatterjee",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$315.00",
     "projected": "+30.1%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "Tal Liani",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$220.00",
-    "projected": "-9.2%",
     "date": "09/11/2026"
   },
   {
@@ -171,30 +189,12 @@
     "date": "09/11/2026"
   },
   {
-    "analyst": "Billy Fitzsimmons",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+3.2%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Brent Thill",
     "firm": "Jefferies",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$275.00",
     "projected": "+13.6%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "J. Parker Lane",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "-7.1%",
     "date": "09/11/2026"
   },
   {

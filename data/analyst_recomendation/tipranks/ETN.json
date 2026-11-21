@@ -5,8 +5,35 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$534.00",
-    "projected": "+42%",
-    "date": "11/04/2026"
+    "projected": "+52.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$395.00",
+    "projected": "+8.5%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$445.00",
+    "projected": "+28%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Daniel DiCicco",
@@ -88,33 +115,6 @@
     "price_target": "$520.00",
     "projected": "+24.6%",
     "date": "08/28/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "David Raso",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$502.00",
-    "projected": "+19.5%",
-    "date": "08/02/2026"
-  },
-  {
-    "analyst": "Julian Mitchell",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$392.00",
-    "projected": "-1.1%",
-    "date": "06/12/2026"
   },
   {
     "analyst": "Kristina Ruggeri",

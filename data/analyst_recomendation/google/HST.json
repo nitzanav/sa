@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+7.1%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Duane Pfennigwerth",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": "$26.00",
     "projected": "+12.8%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "Richard Anderson",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+5.4%",
-    "date": "08/11/2026"
   },
   {
     "analyst": "Floris van Dijkum",

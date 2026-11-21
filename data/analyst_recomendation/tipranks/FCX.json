@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Jonathan Brandt",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+27%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+29.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lawson Winder",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Vitaly Kononov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",
@@ -99,15 +126,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Lawson Winder",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+32.8%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Alexander Hacking",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -160,15 +178,6 @@
     "price_target": "$75.00",
     "projected": "+20.4%",
     "date": "04/23/2026"
-  },
-  {
-    "analyst": "Alexandra Yates",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "02/13/2026"
   },
   {
     "analyst": "Brian MacArthur",

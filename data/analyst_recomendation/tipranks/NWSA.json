@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$43.00",
+    "projected": "+62.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Brent Penter",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -43,14 +52,5 @@
     "price_target": "$29.40",
     "projected": "+9.7%",
     "date": "05/08/2026"
-  },
-  {
-    "analyst": "Curry Baker",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": null,
-    "date": "11/12/2025"
   }
 ]

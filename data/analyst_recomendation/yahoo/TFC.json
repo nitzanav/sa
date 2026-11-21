@@ -45,15 +45,6 @@
     "date": "07/02/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "+12.2%",
-    "date": "07/09/2026"
-  },
-  {
     "analyst": "Stephens & Co.",
     "firm": "Stephens & Co.",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$54.00",
     "projected": "+16.2%",
     "date": "10/20/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+12.2%",
+    "date": "07/09/2026"
   },
   {
     "analyst": "Citigroup",

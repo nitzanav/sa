@@ -3,10 +3,19 @@
     "analyst": "Varun Govindaraj",
     "firm": "Bernstein",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$555.00",
-    "projected": "+32.5%",
-    "date": "11/04/2026"
+    "projected": "+31.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Julian Mitchell",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$480.00",
+    "projected": "+12.3%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Andrew Kaplowitz",
@@ -115,15 +124,6 @@
     "price_target": "$565.00",
     "projected": "+17.7%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Julian Mitchell",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$550.00",
-    "projected": "+16.1%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Patrick Baumann",

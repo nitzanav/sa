@@ -1,12 +1,39 @@
 [
   {
-    "analyst": "Rupesh Parikh",
-    "firm": "Oppenheimer",
+    "analyst": "Edward Kelly",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+13.8%",
-    "date": "11/03/2026"
+    "price_target": "$185.00",
+    "projected": "+12.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Joe Feldman",
+    "firm": "Telsey Advisory",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$182.00",
+    "projected": "+10.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$205.00",
+    "projected": "+24.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Clement Xu",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+7.9%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Zhihan Ma",
@@ -14,7 +41,43 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$154.00",
-    "projected": "-2.6%",
+    "projected": "-4.9%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Steven Shemesh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$178.00",
+    "projected": "+10.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Christopher Nardone",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Christopher Horvers",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$163.00",
+    "projected": "+1.1%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Rupesh Parikh",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+13.8%",
     "date": "11/03/2026"
   },
   {
@@ -34,15 +97,6 @@
     "price_target": "$165.00",
     "projected": "+6.3%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Christopher Nardone",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "-8.8%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Simeon Gutman",
@@ -81,15 +135,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Steven Shemesh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$178.00",
-    "projected": "+11.8%",
-    "date": "09/30/2026"
-  },
-  {
     "analyst": "David Bellinger",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -97,15 +142,6 @@
     "price_target": "$150.00",
     "projected": "-2.9%",
     "date": "09/16/2026"
-  },
-  {
-    "analyst": "Joe Feldman",
-    "firm": "Telsey Advisory",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$182.00",
-    "projected": "+14.6%",
-    "date": "09/15/2026"
   },
   {
     "analyst": "Robert Drbul",
@@ -123,15 +159,6 @@
     "action": "Reiterated",
     "price_target": "$150.00",
     "projected": "-4.5%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Christopher Horvers",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$157.00",
-    "projected": "0%",
     "date": "08/20/2026"
   },
   {
@@ -189,30 +216,12 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Michael Lasser",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+17.8%",
-    "date": "08/20/2026"
-  },
-  {
     "analyst": "Paul Lejuez",
     "firm": "Citi",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$160.00",
     "projected": "+1.9%",
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Edward Kelly",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+17.8%",
     "date": "08/20/2026"
   },
   {

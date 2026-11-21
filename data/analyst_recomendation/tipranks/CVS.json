@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+24.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Allen Lutz",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+17.3%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "John Ransom",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -60,24 +78,6 @@
     "action": "Reiterated",
     "price_target": "$111.00",
     "projected": "+35.9%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Allen Lutz",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "+22.5%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$123.00",
-    "projected": "+50.6%",
     "date": "11/05/2026"
   },
   {

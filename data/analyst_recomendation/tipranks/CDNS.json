@@ -3,10 +3,10 @@
     "analyst": "Vivek Arya",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$420.00",
-    "projected": "+28.9%",
-    "date": "10/27/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
   },
   {
     "analyst": "Blair Abernethy",

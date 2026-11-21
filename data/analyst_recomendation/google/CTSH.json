@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Nate Svensson",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$66.00",
+    "projected": "+5.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Sachin Mittal",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -133,15 +142,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/21/2026"
-  },
-  {
-    "analyst": "Nate Svensson",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "+13.1%",
-    "date": "09/18/2026"
   },
   {
     "analyst": "Arvind Ramnani",

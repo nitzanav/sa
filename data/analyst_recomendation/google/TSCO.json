@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Oliver Wintermantel",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$38.00",
+    "projected": "+5.1%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Michael Lasser",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -124,15 +133,6 @@
     "price_target": "$35.00",
     "projected": "+4.1%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Oliver Wintermantel",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$40.00",
-    "projected": "+19%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Seth Sigman",

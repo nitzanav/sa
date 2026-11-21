@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Edward Kelly",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+7.7%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Bradley Thomas",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -94,15 +103,6 @@
     "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Upgraded",
-    "price_target": "$750.00",
-    "projected": "+18.7%",
-    "date": "09/10/2026"
-  },
-  {
-    "analyst": "Edward Kelly",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
     "price_target": "$750.00",
     "projected": "+18.7%",
     "date": "09/10/2026"

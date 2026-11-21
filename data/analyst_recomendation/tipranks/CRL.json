@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Charles Rhyee",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$388.00",
+    "projected": "+11.7%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Ann Hynes",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -96,15 +105,6 @@
     "action": "Reiterated",
     "price_target": "$320.00",
     "projected": "+9.1%",
-    "date": "09/25/2026"
-  },
-  {
-    "analyst": "Charles Rhyee",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$325.00",
-    "projected": "+10.8%",
     "date": "09/25/2026"
   },
   {

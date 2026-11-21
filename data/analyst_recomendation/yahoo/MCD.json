@@ -36,6 +36,15 @@
     "date": "09/14/2026"
   },
   {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "-0.4%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$370.00",
     "projected": "+11.3%",
     "date": "02/13/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+6.8%",
-    "date": "11/05/2026"
   },
   {
     "analyst": "Mizuho",

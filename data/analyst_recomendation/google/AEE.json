@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+8.2%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Sophie Karp",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$116.00",
     "projected": "+11.1%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+12.2%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Ian Rapp",

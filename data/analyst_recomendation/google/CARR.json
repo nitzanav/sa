@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$63.00",
+    "projected": "+15.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Timothy Wojs",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+15.9%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Christopher Snyder",

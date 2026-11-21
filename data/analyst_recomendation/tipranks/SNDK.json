@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$2500.00",
+    "projected": "+169.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Stacy Rasgon",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -24,15 +42,6 @@
     "action": "Reiterated",
     "price_target": "$2000.00",
     "projected": "+64.6%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Amit Daryanani",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$2500.00",
-    "projected": "+105.7%",
     "date": "10/30/2026"
   },
   {
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$1300.00",
     "projected": "+7%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$2000.00",
-    "projected": "+64.6%",
     "date": "10/30/2026"
   },
   {

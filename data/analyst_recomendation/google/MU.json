@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Mark Li",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$1,300.00",
     "projected": "+34.3%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,550.00",
-    "projected": "+79.8%",
-    "date": "10/25/2026"
   },
   {
     "analyst": "Matt Bryson",

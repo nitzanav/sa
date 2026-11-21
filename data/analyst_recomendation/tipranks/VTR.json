@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$99.00",
+    "projected": "+10.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$90.00",
+    "projected": "+1.2%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Michael Carroll",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -63,15 +81,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+6.6%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Richard Hightower",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": "$104.00",
     "projected": "+12.5%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$90.00",
-    "projected": "+0.6%",
-    "date": "08/13/2026"
   },
   {
     "analyst": "Nicholas Joseph",

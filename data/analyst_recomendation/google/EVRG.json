@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Anthony Crowdell",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$91.00",
+    "projected": "+2.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Alex Kania",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$85.00",
     "projected": "+3.8%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Anthony Crowdell",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+3.3%",
-    "date": "08/11/2026"
   },
   {
     "analyst": "Ryan Levine",

@@ -5,8 +5,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$121.00",
-    "projected": "+16.9%",
-    "date": "11/04/2026"
+    "projected": "+11.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$134.00",
+    "projected": "+28%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Sergey Glinyanov",
@@ -88,15 +97,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/07/2026"
-  },
-  {
-    "analyst": "David Raso",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$139.00",
-    "projected": "+21.8%",
-    "date": "05/11/2026"
   },
   {
     "analyst": "Unknown Analyst",

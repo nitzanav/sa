@@ -45,6 +45,15 @@
     "date": "10/07/2026"
   },
   {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$423.00",
+    "projected": "+1.6%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$315.00",
+    "projected": "+3.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Ramsey El Assal",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": "$250.00",
     "projected": "-13.6%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Kevin Mcveigh",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$310.00",
-    "projected": "+1.8%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Jacob Smith CFA",

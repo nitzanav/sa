@@ -88,41 +88,5 @@
     "price_target": "$109.00",
     "projected": "+16.5%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+14.3%",
-    "date": "04/09/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "-2%",
-    "date": "10/05/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$129.00",
-    "projected": "+37.9%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Compass Point",
-    "firm": "Compass Point",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+28.3%",
-    "date": "08/04/2026"
   }
 ]

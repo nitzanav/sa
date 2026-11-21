@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Benjamin Budish",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": "$111.00",
     "projected": "+34.1%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$116.00",
-    "projected": "+30.5%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Christopher Allen",

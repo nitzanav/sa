@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$89.00",
+    "projected": "+0.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Christine Dooley",
     "firm": "Argus Research",
     "recommendation": "Buy",

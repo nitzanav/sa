@@ -1,0 +1,191 @@
+[
+  {
+    "analyst": "Alexia Burland Howard",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$74.00",
+    "projected": "+12.6%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Peter Grom",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+10.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Andrew Lazar",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+10.4%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Nik Modi",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+1.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Georgy Vashchenko",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$71.00",
+    "projected": "+9.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$73.00",
+    "projected": "+12.3%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "David Palmer",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$71.00",
+    "projected": "+9.2%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Thomas Palmer",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$72.00",
+    "projected": "+10.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+15.4%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Michael Lavery",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+1.5%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+4.6%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Matthew Smith, CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+13.8%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Leah Jordan",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": null,
+    "projected": null,
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Robert Dickerson",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+16%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Zheng Feng Chee",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+18.5%",
+    "date": "07/31/2026"
+  },
+  {
+    "analyst": "Scott Marks CFA",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$73.00",
+    "projected": "+17.7%",
+    "date": "07/28/2026"
+  },
+  {
+    "analyst": "Megan Alexander",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+12.1%",
+    "date": "06/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Berenberg Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+9.4%",
+    "date": "05/05/2026"
+  },
+  {
+    "analyst": "Stephen Powers",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "-6.3%",
+    "date": "04/13/2026"
+  },
+  {
+    "analyst": "Bingqing Zhu",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$55.00",
+    "projected": "-3.5%",
+    "date": "03/25/2026"
+  },
+  {
+    "analyst": "John Baumgartner",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+30.4%",
+    "date": "01/08/2026"
+  }
+]

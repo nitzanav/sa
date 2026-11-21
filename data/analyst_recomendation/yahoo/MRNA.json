@@ -4,18 +4,18 @@
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$137.00",
-    "projected": "-41.7%",
-    "date": "10/16/2026"
+    "price_target": "$195.00",
+    "projected": "-24.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+23.1%",
-    "date": "10/26/2026"
+    "price_target": "$305.00",
+    "projected": "+18.3%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Argus Research",

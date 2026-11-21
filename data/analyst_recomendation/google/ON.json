@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "H.C. Wainwright",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+3.6%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Atif Malik",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -70,15 +88,6 @@
     "price_target": "$87.00",
     "projected": "+20.9%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "+38.5%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Anthony Stoss",

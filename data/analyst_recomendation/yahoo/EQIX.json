@@ -9,15 +9,6 @@
     "date": "02/13/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1265.00",
-    "projected": "+19.2%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Guggenheim",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$1235.00",
     "projected": "+22.8%",
     "date": "10/21/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1265.00",
+    "projected": "+19.2%",
+    "date": "07/30/2026"
   },
   {
     "analyst": "Evercore ISI Group",

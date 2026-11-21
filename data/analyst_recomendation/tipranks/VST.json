@@ -3,10 +3,28 @@
     "analyst": "Gabriele Sorbara",
     "firm": "Siebert Williams Shank & Co",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$202.00",
-    "projected": "+68.9%",
-    "date": "11/06/2026"
+    "projected": "+49.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Mark Jarvi",
+    "firm": "CIBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+36.7%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$169.00",
+    "projected": "+32%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "James Thalacker",
@@ -43,24 +61,6 @@
     "price_target": "$228.00",
     "projected": "+60.4%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Mark Jarvi",
-    "firm": "CIBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$181.00",
-    "projected": "+23.2%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$189.00",
-    "projected": "+28.7%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Shahriar Pourreza",
@@ -196,14 +196,5 @@
     "price_target": "$203.00",
     "projected": "+26.6%",
     "date": "02/10/2026"
-  },
-  {
-    "analyst": "Nicholas Amicucci",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$243.00",
-    "projected": null,
-    "date": "11/07/2025"
   }
 ]

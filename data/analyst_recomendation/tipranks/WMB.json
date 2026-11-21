@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "John Mackay",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$82.00",
+    "projected": "+19.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Theresa Chen",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+19.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Robert Kad",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$103.00",
+    "projected": "+57.1%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Praneeth Satish",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -52,33 +79,6 @@
     "price_target": "$85.00",
     "projected": "+22.7%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Theresa Chen",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+18.3%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "John Mackay",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$84.00",
-    "projected": "+13.3%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Robert Kad",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$103.00",
-    "projected": "+38.9%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Manav Gupta",

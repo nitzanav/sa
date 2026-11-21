@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Anthony Pettinari",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$50.00",
+    "projected": "+11.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Ketan Mamtora",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "+3.1%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "George Staphos",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -36,15 +54,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Ketan Mamtora",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": "+13.2%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Michael Roxland",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$47.00",
     "projected": "+4.3%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$52.00",
-    "projected": "+13%",
-    "date": "08/14/2026"
   },
   {
     "analyst": "Unknown Analyst",

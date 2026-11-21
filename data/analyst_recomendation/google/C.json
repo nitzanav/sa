@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Domenico Santoro",
+    "firm": "HSBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$158.00",
+    "projected": "+27.3%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Jason Goldberg",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -151,15 +160,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Domenico Santoro",
-    "firm": "HSBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "+22.7%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "David Chiaverini",

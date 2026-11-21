@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John Godyn",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$352.00",
+    "projected": "+16.9%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Seth Seifman",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -43,15 +52,6 @@
     "price_target": "$406.00",
     "projected": "+52.8%",
     "date": "10/11/2026"
-  },
-  {
-    "analyst": "John Godyn",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$379.00",
-    "projected": "+44.4%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Scott Deuschle",

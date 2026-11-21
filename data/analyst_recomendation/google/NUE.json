@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+16%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Richard Garchitorena",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+31.6%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Samuel McKinney",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -43,24 +61,6 @@
     "price_target": "$295.00",
     "projected": "+9.3%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Richard Garchitorena",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+18.5%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+15.1%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Nick Cash",

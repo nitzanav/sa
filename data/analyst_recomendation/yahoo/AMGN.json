@@ -4,9 +4,9 @@
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$460.00",
-    "projected": "+5.6%",
-    "date": "08/20/2026"
+    "price_target": "$515.00",
+    "projected": "+10.2%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -34,6 +34,15 @@
     "price_target": "$480.00",
     "projected": "+8%",
     "date": "10/23/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$531.00",
+    "projected": "+10.7%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Jefferies",
@@ -79,14 +88,5 @@
     "price_target": "$415.00",
     "projected": "-0.3%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": "-3%",
-    "date": "11/04/2026"
   }
 ]

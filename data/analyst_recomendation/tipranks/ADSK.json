@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Mark Schappel",
+    "firm": "Loop Capital Markets",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$310.00",
+    "projected": "+15.7%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Saket Kalia",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+15.3%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Tomer Zilberman",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$300.00",
-    "projected": "+18.1%",
-    "date": "10/23/2026"
+    "projected": "+15.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Brent Thill",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+23.6%",
+    "date": "11/08/2026"
+  },
+  {
+    "analyst": "Matthew Hedberg",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$305.00",
+    "projected": "+16%",
+    "date": "11/08/2026"
   },
   {
     "analyst": "Tyler Radke",
@@ -90,24 +126,6 @@
     "date": "09/17/2026"
   },
   {
-    "analyst": "Saket Kalia",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+37.1%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Matthew Hedberg",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+37%",
-    "date": "09/16/2026"
-  },
-  {
     "analyst": "Mason Marion",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
@@ -133,15 +151,6 @@
     "price_target": "$355.00",
     "projected": "+40.1%",
     "date": "09/01/2026"
-  },
-  {
-    "analyst": "Brent Thill",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+14.9%",
-    "date": "08/28/2026"
   },
   {
     "analyst": "Blair Abernethy",

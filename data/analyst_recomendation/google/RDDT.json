@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Jason Helfstein",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Joseph Bonner",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+48.9%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Michael Morris",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+47.2%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Serena Lim Yi Qi",
     "firm": "Phillip Securities",
     "recommendation": "Buy",
@@ -33,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$140.00",
     "projected": "+39.7%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Jason Helfstein",
-    "firm": "Oppenheimer",
-    "recommendation": "Sell",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
     "date": "10/30/2026"
   },
   {
@@ -114,15 +132,6 @@
     "action": "Reiterated",
     "price_target": "$120.00",
     "projected": "+19.7%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Michael Morris",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$170.00",
-    "projected": "+69.6%",
     "date": "10/30/2026"
   },
   {

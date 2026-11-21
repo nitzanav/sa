@@ -9,15 +9,6 @@
     "date": "06/02/2026"
   },
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+13.1%",
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$280.00",
     "projected": "+12.5%",
     "date": "01/13/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+13.1%",
+    "date": "08/10/2026"
   },
   {
     "analyst": "B of A Securities",

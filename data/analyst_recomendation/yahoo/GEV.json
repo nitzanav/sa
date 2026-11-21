@@ -18,6 +18,15 @@
     "date": "04/23/2026"
   },
   {
+    "analyst": "GLJ Research",
+    "firm": "GLJ Research",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$540.00",
+    "projected": "-28.5%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -49,9 +58,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1035.00",
-    "projected": "+21.8%",
-    "date": "10/30/2026"
+    "price_target": "$1000.00",
+    "projected": "+18.3%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Susquehanna",
@@ -79,14 +88,5 @@
     "price_target": "$1250.00",
     "projected": "+7.7%",
     "date": "04/24/2026"
-  },
-  {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$804.00",
-    "projected": null,
-    "date": "12/11/2025"
   }
 ]

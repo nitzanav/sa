@@ -1,5 +1,104 @@
 [
   {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$602.00",
+    "projected": "+33.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ryan Langston",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$430.00",
+    "projected": "-2.9%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$530.00",
+    "projected": "+19.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Lisa Gill",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$484.00",
+    "projected": "+13.8%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "George Hill",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$516.00",
+    "projected": "+17.7%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Jessica Tassan",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$526.00",
+    "projected": "+19.9%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Matthew Gillmor CFA",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Andrew Mok CFA",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$587.00",
+    "projected": "+33.8%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Kevin Fischbeck",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+26.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jason Cassorla",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$521.00",
+    "projected": "+25.5%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Sarah James",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$495.00",
+    "projected": "+19.3%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Lance Wilkes",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -9,39 +108,12 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Jason Cassorla",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$471.00",
-    "projected": "+13.1%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Andrew Mok CFA",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$582.00",
-    "projected": "+38%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Elizabeth Anderson CFA",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$480.00",
     "projected": "+9.3%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Ann Hynes",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$495.00",
-    "projected": "+12.8%",
     "date": "10/13/2026"
   },
   {
@@ -99,15 +171,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Sarah James",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$460.00",
-    "projected": "+12.2%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Ben Hendrix",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -126,33 +189,6 @@
     "date": "09/30/2026"
   },
   {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$502.00",
-    "projected": "+23.9%",
-    "date": "09/15/2026"
-  },
-  {
-    "analyst": "Kevin Fischbeck",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "09/08/2026"
-  },
-  {
-    "analyst": "Lisa Gill",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$393.00",
-    "projected": "+2.1%",
-    "date": "08/10/2026"
-  },
-  {
     "analyst": "Erin Wright",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -160,33 +196,6 @@
     "price_target": "$370.00",
     "projected": "+2%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Ryan Langston",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$370.00",
-    "projected": "-0.5%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Jessica Tassan",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$463.00",
-    "projected": "+27.3%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "George Hill",
-    "firm": "Deutsche Bank",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$436.00",
-    "projected": "+19.9%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Scott Fidel",
@@ -204,15 +213,6 @@
     "action": "Upgraded",
     "price_target": "$513.00",
     "projected": "+41%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Matthew Gillmor CFA",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
     "date": "07/30/2026"
   },
   {

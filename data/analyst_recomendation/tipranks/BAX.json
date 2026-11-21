@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Steven Silver",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$23.00",
+    "projected": "-12.1%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Robbie Marcus",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -15,15 +33,6 @@
     "action": "Maintained",
     "price_target": "$25.00",
     "projected": "+6%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Christopher Pasquale",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": "-15.2%",
     "date": "10/30/2026"
   },
   {
@@ -106,14 +115,5 @@
     "price_target": "$24.00",
     "projected": "+5.4%",
     "date": "07/06/2026"
-  },
-  {
-    "analyst": "Steven Silver",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/08/2026"
   }
 ]

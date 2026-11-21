@@ -9,15 +9,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Loop Capital",
-    "firm": "Loop Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$465.00",
-    "projected": null,
-    "date": "11/10/2025"
-  },
-  {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$1000.00",
     "projected": "+22.7%",
     "date": "05/12/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "-2.6%",
+    "date": "01/28/2026"
   }
 ]

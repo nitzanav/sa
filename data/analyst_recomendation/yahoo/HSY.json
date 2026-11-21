@@ -36,15 +36,6 @@
     "date": "06/26/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+15.5%",
-    "date": "07/09/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -52,6 +43,15 @@
     "price_target": "$173.00",
     "projected": "+6.7%",
     "date": "10/31/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+15.5%",
+    "date": "07/09/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -81,12 +81,12 @@
     "date": "07/22/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
+    "analyst": "Barclays",
+    "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "-1.9%",
-    "date": "05/21/2026"
+    "price_target": "$171.00",
+    "projected": "+0.9%",
+    "date": "11/03/2026"
   }
 ]

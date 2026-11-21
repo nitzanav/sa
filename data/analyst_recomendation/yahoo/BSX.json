@@ -9,6 +9,15 @@
     "date": "10/30/2026"
   },
   {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+14.1%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -27,15 +36,6 @@
     "date": "10/26/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/01/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -45,13 +45,13 @@
     "date": "02/05/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Buy",
+    "analyst": "Argus Research",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+27%",
-    "date": "05/18/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "08/01/2026"
   },
   {
     "analyst": "Canaccord Genuity",
@@ -63,13 +63,13 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$51.00",
-    "projected": "+17.5%",
-    "date": "10/14/2026"
+    "price_target": "$68.00",
+    "projected": "+27%",
+    "date": "05/18/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -81,12 +81,12 @@
     "date": "02/06/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+64.1%",
-    "date": "07/15/2026"
+    "price_target": "$51.00",
+    "projected": "+17.5%",
+    "date": "10/14/2026"
   }
 ]

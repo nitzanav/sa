@@ -1,5 +1,59 @@
 [
   {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "+21.2%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Gabriele Sorbara",
+    "firm": "Siebert Williams Shank & Co",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$256.00",
+    "projected": "+41.9%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$192.00",
+    "projected": "+6.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Scott Hanold",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+33%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$263.00",
+    "projected": "+46%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Leo Mariani",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "+27.3%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Pei Hwa Ho",
     "firm": "DBS",
     "recommendation": "Hold",
@@ -16,15 +70,6 @@
     "price_target": "$263.00",
     "projected": "+44%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Josh Silverstein",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+36.6%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -45,15 +90,6 @@
     "date": "11/02/2026"
   },
   {
-    "analyst": "Leo Mariani",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$223.00",
-    "projected": "+13.3%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Tim O'Toole",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
@@ -72,30 +108,12 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Gabriele Sorbara",
-    "firm": "Siebert Williams Shank & Co",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$269.00",
-    "projected": "+36.7%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Nitin Kumar CFA",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$254.00",
     "projected": "+29.1%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$221.00",
-    "projected": "+12.3%",
     "date": "11/03/2026"
   },
   {
@@ -115,15 +133,6 @@
     "price_target": "$222.00",
     "projected": "+11.3%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Scott Hanold",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+22.2%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Hanwen Chang",

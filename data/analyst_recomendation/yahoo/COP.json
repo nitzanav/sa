@@ -29,11 +29,11 @@
   {
     "analyst": "Bernstein",
     "firm": "Bernstein",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "-2.2%",
-    "date": "01/06/2026"
+    "price_target": "$122.00",
+    "projected": "-13.8%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "UBS",
@@ -45,15 +45,6 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Truist Securities",
-    "firm": "Truist Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$136.00",
-    "projected": "+3.6%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Mizuho",
     "firm": "Mizuho",
     "recommendation": "Buy",
@@ -63,13 +54,13 @@
     "date": "07/08/2026"
   },
   {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+20.2%",
-    "date": "10/21/2026"
+    "price_target": "$142.00",
+    "projected": "+6.8%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -81,12 +72,21 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Hold",
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+1%",
-    "date": "01/21/2026"
+    "price_target": "$175.00",
+    "projected": "+20.2%",
+    "date": "10/21/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+16.5%",
+    "date": "11/13/2026"
   }
 ]

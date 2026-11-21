@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Harshita Rawat",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+1.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Dan Dolev",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+16.8%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Nik Cremo",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$97.00",
+    "projected": "-1.4%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Timothy Chiodo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$104.00",
+    "projected": "+5.7%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Gustavo Gala",
+    "firm": "Monness",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$135.00",
+    "projected": "+43.6%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Daniel Perlin",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -90,30 +135,21 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Gustavo Gala",
-    "firm": "Monness",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$135.00",
-    "projected": "+43.6%",
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+9.5%",
     "date": "11/06/2026"
   },
   {
     "analyst": "Matthew O'Neill",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$116.00",
     "projected": "+23.4%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Timothy Chiodo",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "+10.6%",
     "date": "11/06/2026"
   },
   {
@@ -162,15 +198,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Harshita Rawat",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Will Nance",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -207,15 +234,6 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "Dan Dolev",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "+17.3%",
-    "date": "09/03/2026"
-  },
-  {
     "analyst": "Darrin Peller",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -250,15 +268,6 @@
     "price_target": "$110.00",
     "projected": "+25.3%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Nik Cremo",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$89.00",
-    "projected": "+1.7%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -358,14 +367,5 @@
     "price_target": null,
     "projected": null,
     "date": "03/26/2026"
-  },
-  {
-    "analyst": "Ramsey El Assal",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$88.00",
-    "projected": "+8.6%",
-    "date": "02/23/2026"
   }
 ]

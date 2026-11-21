@@ -1,20 +1,83 @@
 [
   {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$72.00",
+    "projected": "+24.7%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Betty Jiang",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$73.00",
+    "projected": "+23.7%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Sam Margolin",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+32.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Leo Mariani",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+26.7%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "David Deckelbaum",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$68.00",
+    "projected": "+23.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Mark Lear",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$63.00",
+    "projected": "+14%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Stephen Richardson",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+26.7%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "John Royall",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$69.00",
+    "projected": "+20.5%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Neil Mehta",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$76.00",
     "projected": "+19.3%",
-    "date": "10/27/2026"
-  },
-  {
-    "analyst": "John Royall",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$69.00",
-    "projected": "+8.3%",
     "date": "10/27/2026"
   },
   {
@@ -54,15 +117,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+14.5%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Lloyd Byrne",
     "firm": "Jefferies",
     "recommendation": "Hold",
@@ -72,24 +126,6 @@
     "date": "10/17/2026"
   },
   {
-    "analyst": "Leo Mariani",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$70.00",
-    "projected": "+14.5%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Betty Jiang",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$71.00",
-    "projected": "+16.1%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Gabriel Daoud",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -97,15 +133,6 @@
     "price_target": "$64.00",
     "projected": "+3.6%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Mark Lear",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$63.00",
-    "projected": "+1.2%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Josh Silverstein",
@@ -124,33 +151,6 @@
     "price_target": "$68.00",
     "projected": "+9.3%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Sam Margolin",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+31.7%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Stephen Richardson",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+14.7%",
-    "date": "09/11/2026"
-  },
-  {
-    "analyst": "David Deckelbaum",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$68.00",
-    "projected": "+9.5%",
-    "date": "09/10/2026"
   },
   {
     "analyst": "Robert Hodges",

@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Gustavo Gala",
+    "firm": "Monness",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "-23%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Hal Goetsch",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+15.4%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ramsey El Assal",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+50.3%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -7,15 +34,6 @@
     "price_target": "$175.00",
     "projected": "+28.2%",
     "date": "11/06/2026"
-  },
-  {
-    "analyst": "Gustavo Gala",
-    "firm": "Monness",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "-29.6%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Stephen Glagola",
@@ -33,15 +51,6 @@
     "action": "Reiterated",
     "price_target": "$177.00",
     "projected": "+26.1%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Ramsey El Assal",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+42.5%",
     "date": "11/02/2026"
   },
   {
@@ -268,15 +277,6 @@
     "price_target": "$200.00",
     "projected": "+34.2%",
     "date": "08/13/2026"
-  },
-  {
-    "analyst": "Hal Goetsch",
-    "firm": "B. Riley Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$203.00",
-    "projected": "+32.6%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Brian Bedell",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Ward",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$131.00",
+    "projected": "+49.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Ivan Feinseth",
     "firm": "Tigress Financial",
     "recommendation": "Buy",
@@ -42,15 +51,6 @@
     "action": "Maintained",
     "price_target": "$132.00",
     "projected": "+72.1%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Michael Ward",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$131.00",
-    "projected": "+70.8%",
     "date": "10/21/2026"
   },
   {

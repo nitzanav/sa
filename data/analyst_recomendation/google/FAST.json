@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$47.00",
+    "projected": "-16.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "David Manthey",
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$61.00",
-    "projected": "+16.6%",
+    "projected": "+16.7%",
     "date": "11/06/2026"
   },
   {
@@ -18,15 +36,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+4.3%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Kristina Ruggeri",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -34,15 +43,6 @@
     "price_target": "$59.00",
     "projected": "+15.5%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$47.00",
-    "projected": "-9.9%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Kenneth Newman",

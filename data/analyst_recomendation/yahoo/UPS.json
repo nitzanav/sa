@@ -54,15 +54,6 @@
     "date": "07/29/2026"
   },
   {
-    "analyst": "Deutsche Bank",
-    "firm": "Deutsche Bank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$106.00",
-    "projected": "+1.6%",
-    "date": "01/29/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$131.00",
     "projected": "+23.4%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "Deutsche Bank",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$106.00",
+    "projected": "+1.6%",
+    "date": "01/29/2026"
   },
   {
     "analyst": "Barclays",

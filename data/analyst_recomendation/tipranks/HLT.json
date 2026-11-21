@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$362.00",
+    "projected": "-3.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Brandt Montour",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -16,15 +34,6 @@
     "price_target": "$400.00",
     "projected": "+9.9%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Shaun Kelley",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+3.2%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Robin M. Farley",
@@ -94,15 +103,6 @@
     "firm": "Robert W. Baird",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$362.00",
-    "projected": "+6%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Stephen Grambling",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
     "price_target": "$362.00",
     "projected": "+6%",
     "date": "10/28/2026"

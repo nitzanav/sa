@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Andy Yu CFA",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+41.4%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Michael Funk",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -295,15 +304,6 @@
     "price_target": "$222.00",
     "projected": "+16.8%",
     "date": "07/24/2026"
-  },
-  {
-    "analyst": "Andy Yu CFA",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$213.00",
-    "projected": "+7%",
-    "date": "05/05/2026"
   },
   {
     "analyst": "Gregory P Miller",

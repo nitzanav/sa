@@ -67,18 +67,18 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$89.00",
-    "projected": "+1.6%",
-    "date": "08/07/2026"
+    "price_target": "$97.00",
+    "projected": "-1.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+24.4%",
-    "date": "02/12/2026"
+    "price_target": "$100.00",
+    "projected": "+6.3%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "UBS",

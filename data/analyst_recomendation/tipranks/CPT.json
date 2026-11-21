@@ -1,12 +1,48 @@
 [
   {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$118.25",
-    "projected": "+20.6%",
-    "date": "11/06/2026"
+    "price_target": "$107.00",
+    "projected": "+8.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$107.00",
+    "projected": "+8.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ami Probandt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$107.00",
+    "projected": "+7.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$101.00",
+    "projected": "+0.7%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$101.00",
+    "projected": "+0.7%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Nicholas Yulico",
@@ -24,6 +60,15 @@
     "action": "Maintained",
     "price_target": "$102.00",
     "projected": "+4%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.25",
+    "projected": "+20.6%",
     "date": "11/06/2026"
   },
   {
@@ -45,15 +90,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Ami Probandt",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$101.00",
-    "projected": "+3.6%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Richard Hightower",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -63,15 +99,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+2.5%",
-    "date": "10/13/2026"
-  },
-  {
     "analyst": "Michael Lewis",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -79,15 +106,6 @@
     "price_target": "$108.00",
     "projected": "+11%",
     "date": "09/25/2026"
-  },
-  {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+10.9%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Jeffrey Spector",
@@ -115,24 +133,6 @@
     "price_target": "$114.00",
     "projected": "+3.6%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+11.2%",
-    "date": "08/12/2026"
-  },
-  {
-    "analyst": "Richard Anderson",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$111.00",
-    "projected": "+0.2%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Julien Blouin",

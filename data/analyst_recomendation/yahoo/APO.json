@@ -54,21 +54,21 @@
     "date": "04/07/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+4.6%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$133.00",
     "projected": "+7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+4.6%",
     "date": "11/05/2026"
   },
   {

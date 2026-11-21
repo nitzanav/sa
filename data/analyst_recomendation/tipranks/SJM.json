@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Alexia Burland Howard",
     "firm": "Bernstein",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$160.00",
-    "projected": "+26.3%",
-    "date": "10/21/2026"
+    "projected": "+23.7%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Andrew Lazar",
@@ -36,21 +45,21 @@
     "date": "09/01/2026"
   },
   {
-    "analyst": "David Palmer",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+15.1%",
-    "date": "08/27/2026"
-  },
-  {
     "analyst": "Peter Grom",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$149.00",
     "projected": "+14.4%",
+    "date": "08/27/2026"
+  },
+  {
+    "analyst": "David Palmer",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+15.1%",
     "date": "08/27/2026"
   },
   {
@@ -87,15 +96,6 @@
     "action": "Reiterated",
     "price_target": "$125.00",
     "projected": "-4.1%",
-    "date": "08/27/2026"
-  },
-  {
-    "analyst": "Peter Galbo",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$145.00",
-    "projected": "+11.3%",
     "date": "08/27/2026"
   },
   {

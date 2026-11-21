@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+11.4%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Gregg Orrill",
     "firm": "UBS",
     "recommendation": "Hold",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Bill Carcache",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$210.00",
+    "projected": "+18.4%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Peter Heckmann",
     "firm": "D.A. Davidson",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$190.00",
     "projected": "+5.3%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Bill Carcache",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+8%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Jeff Cantwell",

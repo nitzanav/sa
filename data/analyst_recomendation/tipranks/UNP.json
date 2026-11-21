@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Alex Irving",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$347.00",
+    "projected": "+13.8%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Daniel Moore CFA",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -36,15 +54,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Alex Irving",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$347.00",
-    "projected": "+16.9%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Christian Wetherbee",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -69,15 +78,6 @@
     "action": "Maintained",
     "price_target": "$348.00",
     "projected": "+17.3%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$338.00",
-    "projected": "+13.9%",
     "date": "10/23/2026"
   },
   {

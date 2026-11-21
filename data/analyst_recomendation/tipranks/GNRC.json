@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Stephen Gengaro",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+71.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Dimple Gosai",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$266.00",
+    "projected": "+47%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Vikram Bagri",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -42,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$280.00",
     "projected": "+38.4%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Stephen Gengaro",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$325.00",
-    "projected": "+60.7%",
     "date": "10/29/2026"
   },
   {
@@ -97,15 +106,6 @@
     "price_target": "$290.00",
     "projected": "+48.1%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Dimple Gosai",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$279.00",
-    "projected": "+50.8%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Christopher Glynn",

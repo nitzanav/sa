@@ -54,15 +54,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$168.00",
-    "projected": "+43.8%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$140.00",
     "projected": "+13.8%",
     "date": "07/13/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$168.00",
+    "projected": "+43.8%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "UBS",

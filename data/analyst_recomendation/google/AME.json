@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Jamie Cook",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$329.00",
+    "projected": "+35.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Quinn Fredrickson",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -54,15 +72,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+27%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Christopher Snyder",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": "$290.00",
     "projected": "+14%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jamie Cook",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$316.00",
-    "projected": "+23.6%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Matt Summerville",

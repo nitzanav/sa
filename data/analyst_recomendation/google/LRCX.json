@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Craig Ellis",
+    "firm": "B. Riley Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$310.00",
+    "projected": "+50.1%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Stacy Rasgon",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -108,15 +126,6 @@
     "date": "10/22/2026"
   },
   {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$345.00",
-    "projected": "+47.1%",
-    "date": "10/22/2026"
-  },
-  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -168,15 +177,6 @@
     "action": "Maintained",
     "price_target": "$375.00",
     "projected": "+36.3%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Craig Ellis",
-    "firm": "B. Riley Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$338.00",
-    "projected": "+22.8%",
     "date": "10/19/2026"
   },
   {

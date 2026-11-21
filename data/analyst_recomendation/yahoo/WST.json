@@ -27,15 +27,6 @@
     "date": "09/09/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+19.3%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Stephens & Co.",
     "firm": "Stephens & Co.",
     "recommendation": "Buy",
@@ -43,5 +34,14 @@
     "price_target": "$360.00",
     "projected": "+14.8%",
     "date": "06/03/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+19.3%",
+    "date": "10/30/2026"
   }
 ]

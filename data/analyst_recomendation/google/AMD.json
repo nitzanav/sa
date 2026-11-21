@@ -1,11 +1,65 @@
 [
   {
+    "analyst": "Matt Bryson",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+5.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Srini Pajjuri",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$540.00",
+    "projected": "-5.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$700.00",
+    "projected": "+23%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Sebastien Naji",
+    "firm": "William Blair",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Egor Tolmachev",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$620.00",
+    "projected": "+31%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Rick Schafer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$600.00",
+    "projected": "+35%",
+    "date": "11/08/2026"
+  },
+  {
     "analyst": "Yik Ban Chong",
     "firm": "Phillip Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$755.00",
-    "projected": "+70.1%",
+    "projected": "+69.9%",
     "date": "11/06/2026"
   },
   {
@@ -63,15 +117,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Matt Bryson",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$600.00",
-    "projected": "+23.6%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "C J Muse",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -79,15 +124,6 @@
     "price_target": "$700.00",
     "projected": "+45.8%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Srini Pajjuri",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$540.00",
-    "projected": "+11.3%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Timothy Arcuri",
@@ -111,7 +147,7 @@
     "analyst": "Joseph Moore",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$550.00",
     "projected": "+13.3%",
     "date": "11/04/2026"
@@ -180,15 +216,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$650.00",
-    "projected": "+34%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Harsh Kumar",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -222,15 +249,6 @@
     "action": "Reiterated",
     "price_target": "$685.00",
     "projected": "+11.1%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Sebastien Naji",
-    "firm": "William Blair",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
     "date": "09/29/2026"
   },
   {
@@ -326,15 +344,6 @@
   {
     "analyst": "Gus Richard",
     "firm": "Northland Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Rick Schafer",
-    "firm": "Oppenheimer",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,

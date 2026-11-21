@@ -27,6 +27,15 @@
     "date": "10/14/2026"
   },
   {
+    "analyst": "‏Avantika Dhabaria‏",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+10.5%",
+    "date": "10/13/2026"
+  },
+  {
     "analyst": "Michael Ryskin",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$190.00",
     "projected": "+10.5%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "‏Avantika Dhabaria‏",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+12.7%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Luke Sergott",

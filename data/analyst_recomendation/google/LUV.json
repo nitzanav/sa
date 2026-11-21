@@ -5,8 +5,17 @@
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$50.00",
-    "projected": "+7.6%",
-    "date": "11/05/2026"
+    "projected": "+8.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Andrew Didora",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
   },
   {
     "analyst": "Ivan Feinseth",
@@ -97,15 +106,6 @@
     "price_target": "$50.00",
     "projected": "+27.6%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Andrew Didora",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "+8.1%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Savanthi Syth",

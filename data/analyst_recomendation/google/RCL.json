@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Andrew Didora",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$365.00",
+    "projected": "+7.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Jamie Rollo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "-0.7%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "James Hardiman",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$364.00",
-    "projected": "+19.7%",
-    "date": "10/29/2026"
+    "projected": "+7.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Steven Wieczynski",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$415.00",
+    "projected": "+22.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Brandt Montour",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+3.3%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Manucher Narzulloev",
@@ -15,15 +51,6 @@
     "action": "Upgraded",
     "price_target": "$379.00",
     "projected": "+28.2%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Steven Wieczynski",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+40.4%",
     "date": "10/28/2026"
   },
   {
@@ -54,39 +81,12 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Brandt Montour",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+18.4%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "Trey Bowers",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$361.00",
     "projected": "+20.3%",
-    "date": "10/27/2026"
-  },
-  {
-    "analyst": "Jamie Rollo",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$300.00",
-    "projected": "-1.3%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Andrew Didora",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$330.00",
-    "projected": "+10%",
     "date": "10/27/2026"
   },
   {

@@ -1,12 +1,39 @@
 [
   {
+    "analyst": "Alex Fasciano",
+    "firm": "CFRA",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Christian Wetherbee",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$100.00",
-    "projected": "+12.6%",
-    "date": "11/05/2026"
+    "projected": "+10.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Jason Sum",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$110.00",
+    "projected": "+19.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Andrew Didora",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
   },
   {
     "analyst": "David Vernon",
@@ -117,15 +144,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Andrew Didora",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+19.2%",
-    "date": "10/09/2026"
-  },
-  {
     "analyst": "Savanthi Syth",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -160,15 +178,6 @@
     "price_target": "$105.00",
     "projected": "+32.2%",
     "date": "09/18/2026"
-  },
-  {
-    "analyst": "Jason Sum",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+20.3%",
-    "date": "08/13/2026"
   },
   {
     "analyst": "Michael Linenberg",

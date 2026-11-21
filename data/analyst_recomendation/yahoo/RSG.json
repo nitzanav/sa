@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+10.2%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Oppenheimer",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -56,11 +65,11 @@
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+6.9%",
-    "date": "10/31/2026"
+    "price_target": "$295.00",
+    "projected": "+16%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Barclays",
@@ -79,14 +88,5 @@
     "price_target": "$245.00",
     "projected": "+1.4%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+10.3%",
-    "date": "08/12/2026"
   }
 ]

@@ -1,17 +1,26 @@
 [
   {
-    "analyst": "Unknown Analyst",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/05/2026"
+    "analyst": "Jaret Seiberg",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$121.00",
+    "projected": "+16.6%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Travis Steed",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
@@ -63,7 +72,7 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Shagun Singh Chadha",
+    "analyst": "Kendall Au",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -159,15 +168,6 @@
     "action": "Maintained",
     "price_target": "$120.00",
     "projected": "+19.2%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Chris Krueger CFA",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$117.00",
-    "projected": "+16.2%",
     "date": "11/05/2026"
   },
   {

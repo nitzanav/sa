@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Joseph Moore",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$72.00",
+    "projected": "+22.8%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Thomas O'Malley",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+53.6%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Melissa Fairbanks",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -171,15 +189,6 @@
     "date": "11/02/2026"
   },
   {
-    "analyst": "Joseph Moore",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$103.00",
-    "projected": "+44.1%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -204,15 +213,6 @@
     "action": "Maintained",
     "price_target": "$120.00",
     "projected": "+47.5%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Thomas O'Malley",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+29.1%",
     "date": "08/07/2026"
   },
   {

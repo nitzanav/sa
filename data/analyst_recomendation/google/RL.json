@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$426.00",
+    "projected": "+10.5%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "John Kernan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$426.00",
+    "projected": "+10.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Brooke Roach",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",

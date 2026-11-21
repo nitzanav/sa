@@ -1,21 +1,48 @@
 [
   {
-    "analyst": "Paul Newsome",
-    "firm": "Piper Sandler",
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+5.3%",
-    "date": "11/05/2026"
+    "price_target": "$112.00",
+    "projected": "+8.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+13.1%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Wesley Carmichael",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "+5.3%",
-    "date": "11/05/2026"
+    "price_target": "$113.00",
+    "projected": "+9.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ryan Krueger",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$111.00",
+    "projected": "+8.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Paul Newsome",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$115.00",
+    "projected": "+15.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Joshua Shanker",
@@ -43,33 +70,6 @@
     "price_target": "$114.00",
     "projected": "+11.9%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$110.00",
-    "projected": "+9.7%",
-    "date": "10/15/2026"
-  },
-  {
-    "analyst": "Ryan Krueger",
-    "firm": "KBW",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$108.00",
-    "projected": "+12.7%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$109.00",
-    "projected": "+13.1%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Michael Ward CFA",

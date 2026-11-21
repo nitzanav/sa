@@ -88,41 +88,5 @@
     "price_target": "$32.00",
     "projected": "-0.1%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Keybanc",
-    "firm": "Keybanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/12/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "+18.3%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+3.8%",
-    "date": "10/14/2026"
-  },
-  {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/13/2026"
   }
 ]

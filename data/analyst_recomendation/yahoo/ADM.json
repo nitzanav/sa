@@ -27,15 +27,6 @@
     "date": "08/06/2026"
   },
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$82.00",
-    "projected": "+0.2%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
@@ -43,6 +34,15 @@
     "price_target": "$75.00",
     "projected": "+4.7%",
     "date": "11/05/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$82.00",
+    "projected": "+0.2%",
+    "date": "08/05/2026"
   },
   {
     "analyst": "Morgan Stanley",

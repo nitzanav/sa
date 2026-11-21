@@ -27,6 +27,15 @@
     "date": "10/22/2026"
   },
   {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$258.00",
+    "projected": "-6.6%",
+    "date": "10/31/2026"
+  },
+  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$290.00",
     "projected": "+3.4%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$282.00",
-    "projected": "-0.2%",
-    "date": "10/12/2026"
   }
 ]

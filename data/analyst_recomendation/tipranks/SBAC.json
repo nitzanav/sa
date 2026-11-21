@@ -63,6 +63,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "David Paige",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+19.2%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Gregory Williams",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jonathan Atkin",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+21.8%",
-    "date": "08/04/2026"
   },
   {
     "analyst": "Michael Funk",

@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$118.00",
-    "projected": "+11.8%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -18,13 +9,13 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": null,
-    "date": "11/11/2025"
+    "price_target": "$118.00",
+    "projected": "+11.8%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -54,15 +45,6 @@
     "date": "01/05/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": null,
-    "date": "12/17/2025"
-  },
-  {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Buy",
@@ -72,6 +54,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": null,
+    "date": "12/17/2025"
+  },
+  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$112.00",
     "projected": "+15%",
     "date": "08/20/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$132.00",
+    "projected": "+18%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Barclays",

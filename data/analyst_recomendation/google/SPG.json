@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$227.00",
+    "projected": "-4%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$235.00",
+    "projected": "+0.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Caitlin Burrows",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+12.6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Samir Khanal",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$264.00",
+    "projected": "+14.3%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Alexander Goldfarb",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -34,15 +70,6 @@
     "price_target": "$216.50",
     "projected": "-2.6%",
     "date": "11/06/2026"
-  },
-  {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$205.00",
-    "projected": "+2.7%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Monir Koummal",
@@ -99,15 +126,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$216.00",
-    "projected": "+4.8%",
-    "date": "09/21/2026"
-  },
-  {
     "analyst": "Michael Mueller",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -126,15 +144,6 @@
     "date": "08/17/2026"
   },
   {
-    "analyst": "Samir Khanal",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$264.00",
-    "projected": "+18.9%",
-    "date": "08/13/2026"
-  },
-  {
     "analyst": "Juan C. Sanabria",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -151,15 +160,6 @@
     "price_target": "$275.00",
     "projected": "+24.8%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "Caitlin Burrows",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$241.00",
-    "projected": "+5.2%",
-    "date": "07/20/2026"
   },
   {
     "analyst": "Omotayo Okusanya",

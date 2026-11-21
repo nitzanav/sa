@@ -27,15 +27,6 @@
     "date": "09/12/2026"
   },
   {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+22.4%",
-    "date": "10/08/2026"
-  },
-  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$95.00",
     "projected": "+17.2%",
     "date": "10/12/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+22.4%",
+    "date": "10/08/2026"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -72,15 +72,6 @@
     "date": "07/01/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$98.00",
-    "projected": "+17.6%",
-    "date": "08/24/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$110.00",
     "projected": "+26.4%",
     "date": "07/14/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+17.6%",
+    "date": "08/24/2026"
   }
 ]

@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Michael Griffin CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$81.00",
+    "projected": "+6%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$82.00",
+    "projected": "+7.3%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Greg McGinniss",
     "firm": "Scotiabank",
     "recommendation": "Hold",
@@ -25,15 +43,6 @@
     "price_target": "$84.00",
     "projected": "+12%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$77.00",
-    "projected": "+7.5%",
-    "date": "10/09/2026"
   },
   {
     "analyst": "Ronald Kamdem",
@@ -88,15 +97,6 @@
     "price_target": "$83.00",
     "projected": "+13.8%",
     "date": "09/24/2026"
-  },
-  {
-    "analyst": "Michael Griffin CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$81.00",
-    "projected": "+10.7%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Nicholas Yulico",

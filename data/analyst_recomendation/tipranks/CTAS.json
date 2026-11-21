@@ -160,14 +160,5 @@
     "price_target": "$210.00",
     "projected": null,
     "date": "12/19/2025"
-  },
-  {
-    "analyst": "Oliver Davies CFA",
-    "firm": "Rothschild & Co Redburn",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$184.00",
-    "projected": null,
-    "date": "11/11/2025"
   }
 ]

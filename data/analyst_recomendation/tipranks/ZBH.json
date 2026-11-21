@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Matthew O'Brien",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$110.00",
+    "projected": "+3.4%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Christopher Pasquale",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+8.1%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Richard Newitter",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -54,15 +72,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "+5.4%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Jeff Johnson",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -81,15 +90,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Christopher Pasquale",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "-9.9%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Vik Chopra",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -105,6 +105,15 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+10.5%",
     "date": "11/04/2026"
   },
   {

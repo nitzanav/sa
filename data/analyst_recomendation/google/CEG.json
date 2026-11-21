@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Mark Jarvi",
+    "firm": "CIBC",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$346.00",
+    "projected": "+27%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Nicholas Amicucci",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+39.5%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "James Thalacker",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -25,24 +43,6 @@
     "price_target": "$391.00",
     "projected": "+50.4%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Nicholas Amicucci",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$380.00",
-    "projected": "+45.5%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Mark Jarvi",
-    "firm": "CIBC",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$343.00",
-    "projected": "+31.4%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Shahriar Pourreza",

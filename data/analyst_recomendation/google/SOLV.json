@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Patrick Wood",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+15.4%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Vik Chopra",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -61,15 +70,6 @@
     "price_target": "$100.00",
     "projected": "+17.2%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Patrick Wood",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "+17.9%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Nathan Treybeck",

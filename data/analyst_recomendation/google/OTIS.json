@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Brandon Knutson‏",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+3.7%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Varun Govindaraj",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$94.00",
-    "projected": "+28%",
-    "date": "10/29/2026"
+    "projected": "+20.2%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Stephen Tusa",
@@ -24,15 +33,6 @@
     "action": "Maintained",
     "price_target": "$78.00",
     "projected": "+9.7%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Brandon Knutson‏",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$75.00",
-    "projected": "+5.5%",
     "date": "10/19/2026"
   },
   {

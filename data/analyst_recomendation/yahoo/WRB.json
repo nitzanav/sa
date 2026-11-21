@@ -81,12 +81,12 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "Keefe, Bruyette & Woods",
-    "firm": "Keefe, Bruyette & Woods",
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$69.00",
-    "projected": "-3.6%",
-    "date": "07/08/2026"
+    "price_target": "$73.00",
+    "projected": "-0.4%",
+    "date": "10/21/2026"
   }
 ]

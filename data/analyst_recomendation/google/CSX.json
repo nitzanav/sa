@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Chad Dillard",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "-6.6%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Ken Hoexter",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Christian Wetherbee",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -25,15 +43,6 @@
     "price_target": "$60.00",
     "projected": "+16.8%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Chad Dillard",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "-5%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Alex Irving",
@@ -106,15 +115,6 @@
     "price_target": "$32.00",
     "projected": "-36.1%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Ken Hoexter",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$57.00",
-    "projected": "+10.6%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Brandon Oglenski",

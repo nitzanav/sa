@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Dushyant Ailani",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$134.00",
+    "projected": "+12.1%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+5.7%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Steven Fox",
     "firm": "Fox Advisors",
     "recommendation": "Buy",
@@ -63,15 +90,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$200.00",
-    "projected": "+56.1%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Joshua Spector",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -100,15 +118,6 @@
   },
   {
     "analyst": "Daniel Zhu‏",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+13.1%",
-    "date": "10/25/2026"
-  },
-  {
-    "analyst": "Mark Newman",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",

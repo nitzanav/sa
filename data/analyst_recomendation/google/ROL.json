@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Jason Haas CFA",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$30.00",
+    "projected": "-22%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Marc VanT Sant",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Upgraded",
     "price_target": "$49.00",
-    "projected": "+31.1%",
-    "date": "11/06/2026"
+    "projected": "+27.4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Greg Parrish",
@@ -15,15 +24,6 @@
     "action": "Reiterated",
     "price_target": "$43.00",
     "projected": "+22%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Jason Haas CFA",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$26.00",
-    "projected": "-26.3%",
     "date": "10/23/2026"
   },
   {

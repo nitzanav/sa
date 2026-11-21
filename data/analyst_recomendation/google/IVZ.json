@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Glenn Schorr",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+16%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Glenn Schorr",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+17.7%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Michael Brown",

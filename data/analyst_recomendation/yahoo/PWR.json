@@ -13,9 +13,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$714.00",
-    "projected": "+10.7%",
-    "date": "09/28/2026"
+    "price_target": "$701.00",
+    "projected": "+26.3%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Stifel",
@@ -81,12 +81,12 @@
     "date": "02/20/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$826.00",
-    "projected": "+10.2%",
-    "date": "05/04/2026"
+    "price_target": "$830.00",
+    "projected": "+36.5%",
+    "date": "10/31/2026"
   }
 ]

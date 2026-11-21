@@ -1,20 +1,47 @@
 [
   {
-    "analyst": "Julien Dumoulin Smith",
-    "firm": "Jefferies",
+    "analyst": "Theresa Chen",
+    "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$311.00",
-    "projected": "+13.9%",
-    "date": "11/06/2026"
+    "price_target": "$294.00",
+    "projected": "+2.5%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Brandon Bingham",
     "firm": "Scotiabank",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$319.00",
-    "projected": "+16.8%",
+    "price_target": "$325.00",
+    "projected": "+20%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Robert Kad",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$362.00",
+    "projected": "+33.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Praneeth Satish",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$330.00",
+    "projected": "+24.6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$311.00",
+    "projected": "+13.9%",
     "date": "11/06/2026"
   },
   {
@@ -42,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$338.00",
     "projected": "+23.8%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Theresa Chen",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$294.00",
-    "projected": "+7.7%",
     "date": "11/06/2026"
   },
   {
@@ -108,15 +126,6 @@
     "date": "09/21/2026"
   },
   {
-    "analyst": "Robert Kad",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$359.00",
-    "projected": "+26.4%",
-    "date": "09/17/2026"
-  },
-  {
     "analyst": "Gabe Moreen",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$320.00",
     "projected": "+9.6%",
     "date": "09/11/2026"
-  },
-  {
-    "analyst": "Praneeth Satish",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$324.00",
-    "projected": "+10%",
-    "date": "09/02/2026"
   },
   {
     "analyst": "Jeremy Tonet",

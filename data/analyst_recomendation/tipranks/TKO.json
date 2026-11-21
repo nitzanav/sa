@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Karnovsky",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$222.00",
+    "projected": "+10.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Joseph Stauff",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -132,15 +141,6 @@
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "+29.2%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "David Karnovsky",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$222.00",
-    "projected": "+14.7%",
     "date": "08/04/2026"
   },
   {

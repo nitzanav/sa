@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Fairbanks",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,700.00",
+    "projected": "+53.9%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Brian Brophy",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",

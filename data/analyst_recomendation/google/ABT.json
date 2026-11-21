@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$125.00",
+    "projected": "+12.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Adam Maeder",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -7,15 +16,6 @@
     "price_target": "$118.00",
     "projected": "+10.4%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$115.00",
-    "projected": "+8.3%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "David Toung",

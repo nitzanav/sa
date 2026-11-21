@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Catherine Ramsey Schulte",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": "$275.00",
     "projected": "+4%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$215.00",
-    "projected": "-20.1%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Daniel Brennan",

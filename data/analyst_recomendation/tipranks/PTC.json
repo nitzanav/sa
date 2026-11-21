@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Joshua Tilton",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Kenneth Wong",
     "firm": "Oppenheimer",
     "recommendation": "Hold",
@@ -160,14 +169,5 @@
     "price_target": "$130.00",
     "projected": "+12.5%",
     "date": "06/18/2026"
-  },
-  {
-    "analyst": "Joshua Tilton",
-    "firm": "Wolfe Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$195.00",
-    "projected": "+43.8%",
-    "date": "05/06/2026"
   }
 ]

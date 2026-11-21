@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "DA Davidson",
+    "firm": "DA Davidson",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+32.6%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
@@ -67,9 +76,9 @@
     "firm": "B of A Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$650.00",
-    "projected": "+43.6%",
-    "date": "11/05/2026"
+    "price_target": "$700.00",
+    "projected": "+23%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Wedbush",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$600.00",
     "projected": "+32.6%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": "+34.8%",
     "date": "11/05/2026"
   }
 ]

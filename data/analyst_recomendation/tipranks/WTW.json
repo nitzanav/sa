@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$384.00",
+    "projected": "+15.7%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Meyer Shields",
     "firm": "KBW",
     "recommendation": "Buy",
@@ -42,15 +51,6 @@
     "action": "Reiterated",
     "price_target": "$383.00",
     "projected": "+18.6%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "+14.6%",
     "date": "11/02/2026"
   },
   {

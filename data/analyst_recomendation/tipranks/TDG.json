@@ -1,21 +1,75 @@
 [
   {
+    "analyst": "Michael Leshock",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1350.00",
+    "projected": "+9.9%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Jonathan Siegmann CFA",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1405.00",
+    "projected": "+14.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Gavin Parsons",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1481.00",
+    "projected": "+20.5%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Kristine Liwag",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$1300.00",
-    "projected": "+14.5%",
-    "date": "10/19/2026"
+    "projected": "+5.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Michael Goldie",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1450.00",
+    "projected": "+18%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Gautam Khanna",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1350.00",
+    "projected": "+12.5%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Kenneth Herbert",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1200.00",
-    "projected": "+7.3%",
-    "date": "10/15/2026"
+    "price_target": "$1300.00",
+    "projected": "+8.4%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Noah Poponak",
@@ -27,24 +81,6 @@
     "date": "10/11/2026"
   },
   {
-    "analyst": "Gautam Khanna",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1300.00",
-    "projected": "+19.3%",
-    "date": "10/09/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1350.00",
-    "projected": "+23.6%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "David E. Strauss",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -52,24 +88,6 @@
     "price_target": "$1210.00",
     "projected": "+10.1%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Gavin Parsons",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1509.00",
-    "projected": "+36.2%",
-    "date": "09/29/2026"
-  },
-  {
-    "analyst": "Michael Goldie",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1400.00",
-    "projected": "+26.7%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Seth Seifman",
@@ -108,15 +126,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Michael Leshock",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/18/2026"
-  },
-  {
     "analyst": "Sheila Kahyaoglu",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -141,15 +150,6 @@
     "action": "Reiterated",
     "price_target": "$1361.00",
     "projected": "+7%",
-    "date": "08/05/2026"
-  },
-  {
-    "analyst": "Jonathan Siegmann CFA",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$1405.00",
-    "projected": "+10.5%",
     "date": "08/05/2026"
   },
   {

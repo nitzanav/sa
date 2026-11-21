@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kevin Mcveigh",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+17.7%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "George Tong",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -153,15 +162,6 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "John Gibson CFA",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$35.56",
-    "projected": "-78%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Andrew Grobler",
     "firm": "Exane BNP Paribas",
     "recommendation": "Buy",
@@ -214,15 +214,6 @@
     "price_target": "$200.00",
     "projected": "+15.5%",
     "date": "07/08/2026"
-  },
-  {
-    "analyst": "Kevin Mcveigh",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$220.00",
-    "projected": "+34%",
-    "date": "07/02/2026"
   },
   {
     "analyst": "Unknown Analyst",

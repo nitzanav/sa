@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Terry Ma",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$94.00",
+    "projected": "+30.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Mihir Bhatia",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$89.00",
+    "projected": "+21.9%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Donald Fandetti",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+20.5%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Erika Najarian",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -69,33 +96,6 @@
     "action": "Maintained",
     "price_target": "$80.00",
     "projected": "+8.1%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Donald Fandetti",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$88.00",
-    "projected": "+18.9%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Terry Ma",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$94.00",
-    "projected": "+27%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Mihir Bhatia",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$89.00",
-    "projected": "+20.3%",
     "date": "10/20/2026"
   },
   {

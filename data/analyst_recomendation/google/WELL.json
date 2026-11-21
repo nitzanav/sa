@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Michael Goldsmith",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$289.00",
+    "projected": "+17.5%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$251.00",
+    "projected": "+2.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Michael Mueller",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$273.00",
+    "projected": "+11.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Michael Carroll",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$266.00",
+    "projected": "+7.8%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Farrell Granath",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -63,15 +99,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$251.00",
-    "projected": "+7.6%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "John Kilichowski",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -79,15 +106,6 @@
     "price_target": "$268.00",
     "projected": "+14.8%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Michael Goldsmith",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$269.00",
-    "projected": "+16.2%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Richard Hightower",
@@ -106,15 +124,6 @@
     "price_target": "$265.00",
     "projected": "+16.8%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Michael Mueller",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$260.00",
-    "projected": "+11.1%",
-    "date": "09/24/2026"
   },
   {
     "analyst": "Joe Dickstein",
@@ -141,15 +150,6 @@
     "action": "Maintained",
     "price_target": "$275.00",
     "projected": "+17.4%",
-    "date": "07/31/2026"
-  },
-  {
-    "analyst": "Michael Carroll",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+11%",
     "date": "07/31/2026"
   },
   {

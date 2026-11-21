@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Erika Najarian",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+17.7%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Jason Goldberg",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$75.00",
     "projected": "+19.9%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Erika Najarian",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+19.7%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Vivek Juneja",

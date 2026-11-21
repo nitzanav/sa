@@ -1,21 +1,39 @@
 [
   {
+    "analyst": "Farrell Granath",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$45.00",
+    "projected": "+1.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "James Kammert",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$56.00",
+    "projected": "+26.4%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "John Kim",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Sabahat Khan",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$62.00",
-    "projected": "+42.9%",
+    "price_target": "$47.00",
+    "projected": "+8.3%",
     "date": "11/04/2026"
-  },
-  {
-    "analyst": "Farrell Granath",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+35.5%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Nicholas Joseph",
@@ -36,15 +54,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "James Kammert",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "+35.9%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Ronald Kamdem",
     "firm": "Morgan Stanley",
     "recommendation": "Sell",
@@ -61,15 +70,6 @@
     "price_target": "$59.00",
     "projected": "+36.6%",
     "date": "10/26/2026"
-  },
-  {
-    "analyst": "John Kim",
-    "firm": "BMO Capital",
-    "recommendation": "Sell",
-    "action": "Downgraded",
-    "price_target": "$41.00",
-    "projected": "-8.5%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Anthony Paolone",
@@ -142,14 +142,5 @@
     "price_target": null,
     "projected": null,
     "date": "12/02/2025"
-  },
-  {
-    "analyst": "Aaron Hecht",
-    "firm": "Citizens JMP",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": null,
-    "projected": null,
-    "date": "11/13/2025"
   }
 ]

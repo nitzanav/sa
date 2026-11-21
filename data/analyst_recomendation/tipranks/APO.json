@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$156.00",
+    "projected": "+26.7%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$161.00",
+    "projected": "+35.3%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Etienne Ricard",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+5.6%",
+    "date": "11/08/2026"
+  },
+  {
     "analyst": "Michael Brown",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -63,15 +90,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$156.00",
-    "projected": "+33.5%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Glenn Schorr",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -81,15 +99,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Brennan Hawken",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$124.00",
-    "projected": "+8.8%",
-    "date": "10/26/2026"
-  },
-  {
     "analyst": "Crispin Love",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -97,15 +106,6 @@
     "price_target": "$145.00",
     "projected": "+28.3%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$161.00",
-    "projected": "+41.5%",
-    "date": "10/05/2026"
   },
   {
     "analyst": "Stephen Biggar",

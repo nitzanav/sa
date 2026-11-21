@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brian Pitz",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$150.00",
+    "projected": "+22.2%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Joseph Bonner",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$125.00",
     "projected": "+2.5%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Brian Pitz",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "+23%",
     "date": "10/29/2026"
   },
   {

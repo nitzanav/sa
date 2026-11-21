@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$151.00",
+    "projected": "+12.2%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Christopher Stathoulopoulos",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$185.00",
     "projected": "+43.7%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$151.00",
-    "projected": "+6.7%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "David Hicks CFA",

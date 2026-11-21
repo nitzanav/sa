@@ -36,15 +36,6 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+6.5%",
-    "date": "07/16/2026"
-  },
-  {
     "analyst": "Guggenheim",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$287.00",
     "projected": "+12%",
     "date": "10/08/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+6.5%",
+    "date": "07/16/2026"
   },
   {
     "analyst": "Goldman Sachs",

@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Jason Bazinet",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+29%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Serena Lim Yi Qi",
+    "firm": "Phillip Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+15.9%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$462.00",
+    "projected": "+29.8%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Alec Brondolo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$347.00",
-    "projected": "-1.8%",
+    "projected": "-2.5%",
     "date": "11/06/2026"
   },
   {
@@ -106,24 +133,6 @@
     "price_target": "$445.00",
     "projected": "+27.2%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Jason Bazinet",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+99.2%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Stephen Ju",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$414.00",
-    "projected": "+60.8%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Bernie McTernan",

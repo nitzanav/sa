@@ -4,9 +4,9 @@
     "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$471.00",
-    "projected": "+26.7%",
-    "date": "07/31/2026"
+    "price_target": "$521.00",
+    "projected": "+18.8%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Mizuho",
@@ -22,9 +22,9 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$502.00",
-    "projected": "+22.4%",
-    "date": "07/14/2026"
+    "price_target": "$602.00",
+    "projected": "+35.1%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Jefferies",
@@ -36,15 +36,6 @@
     "date": "02/12/2026"
   },
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$525.00",
-    "projected": "+20.8%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$480.00",
     "projected": "+29.1%",
     "date": "07/31/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$525.00",
+    "projected": "+20.8%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -65,20 +65,20 @@
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$254.00",
-    "projected": "-16.1%",
-    "date": "05/14/2026"
+    "price_target": "$526.00",
+    "projected": "+19.9%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "JP Morgan",
     "firm": "JP Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$393.00",
-    "projected": "+2.1%",
-    "date": "08/10/2026"
+    "price_target": "$484.00",
+    "projected": "+13.8%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Raymond James",

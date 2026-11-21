@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Harlan Sur",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "-6.2%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Hold",

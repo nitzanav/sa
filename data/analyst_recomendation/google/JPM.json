@@ -81,6 +81,15 @@
     "date": "10/14/2026"
   },
   {
+    "analyst": "Scott Siefers",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$370.00",
+    "projected": "+13.1%",
+    "date": "10/14/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -160,15 +169,6 @@
     "price_target": "$365.00",
     "projected": "+7.4%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Scott Siefers",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$370.00",
-    "projected": "+13.1%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Glenn Schorr",

@@ -1,21 +1,75 @@
 [
   {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$150.00",
+    "projected": "+23.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lyaysyan Sedova",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+10.8%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Jessica Reif Ehrlich",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Sean Diffley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$135.00",
-    "projected": "+10.3%",
-    "date": "11/05/2026"
+    "projected": "+12.7%",
+    "date": "11/09/2026"
   },
   {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+19%",
-    "date": "11/04/2026"
+    "price_target": "$345.00",
+    "projected": "+187.9%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Laurent Yoon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+0.2%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Steven Cahall",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$103.00",
+    "projected": "-14%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Kannan Venkateshwar",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-4%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Brandon Nispel",
@@ -24,7 +78,7 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "11/03/2026"
+    "date": "11/09/2026"
   },
   {
     "analyst": "Sebastiano Petti",
@@ -34,33 +88,6 @@
     "price_target": "$150.00",
     "projected": "+33.7%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Laurent Yoon",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+9.6%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Steven Cahall",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$101.00",
-    "projected": "-9.6%",
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "Kannan Venkateshwar",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+4.2%",
-    "date": "09/29/2026"
   },
   {
     "analyst": "John Hodulik",
@@ -81,30 +108,12 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Jessica Reif Ehrlich",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$160.00",
-    "projected": "+27.5%",
-    "date": "07/27/2026"
-  },
-  {
     "analyst": "Bryan Kraft",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$150.00",
     "projected": "+19.5%",
-    "date": "07/27/2026"
-  },
-  {
-    "analyst": "Gregory Williams",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$380.00",
-    "projected": "+202.8%",
     "date": "07/27/2026"
   },
   {
@@ -133,15 +142,6 @@
     "price_target": "$125.00",
     "projected": "-11.1%",
     "date": "07/02/2026"
-  },
-  {
-    "analyst": "Lyaysyan Sedova",
-    "firm": "Freedom Capital Markets",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$167.00",
-    "projected": "+20.3%",
-    "date": "06/12/2026"
   },
   {
     "analyst": "Unknown Analyst",

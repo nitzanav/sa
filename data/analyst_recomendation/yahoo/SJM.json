@@ -54,15 +54,6 @@
     "date": "08/28/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$136.00",
-    "projected": "+4.4%",
-    "date": "08/27/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$110.00",
     "projected": "-5.6%",
     "date": "06/11/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+4.4%",
+    "date": "08/27/2026"
   },
   {
     "analyst": "B of A Securities",

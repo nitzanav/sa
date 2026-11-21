@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Dushyant Ailani",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$284.00",
+    "projected": "+7.4%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Timothy Arcuri",
     "firm": "UBS",
     "recommendation": "Buy",

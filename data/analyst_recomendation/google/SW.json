@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gabriel Simoes",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+13.3%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Pallav Mittal",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": "$55.00",
     "projected": "+35.8%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Gabriel Simoes",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "+27.7%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Andrew Jones CFA",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Hong Zhang",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+15.1%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "George Staphos",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -79,15 +88,6 @@
     "price_target": "$30.00",
     "projected": "+61.7%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Hong Zhang",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+27.8%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Marie Ferguson",

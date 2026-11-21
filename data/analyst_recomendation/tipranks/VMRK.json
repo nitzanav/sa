@@ -1,5 +1,77 @@
 [
   {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Adam Kramer",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$75.00",
+    "projected": "+15.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ami Probandt",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "+13.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Richard Anderson",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+3.1%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$77.50",
+    "projected": "+17.5%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+7.7%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Nicholas Yulico",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+1.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Alexander Goldfarb",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$67.00",
+    "projected": "+3.1%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "James Feldman",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -7,24 +79,6 @@
     "price_target": "$68.00",
     "projected": "+11.7%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Adam Kramer",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Ami Probandt",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$71.00",
-    "projected": "+16.5%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Richard Hightower",
@@ -43,24 +97,6 @@
     "price_target": "$67.00",
     "projected": "+8.2%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Alexander Goldfarb",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+9.6%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+14.1%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Michael Gorman",
@@ -88,15 +124,6 @@
     "price_target": "$73.00",
     "projected": "+11%",
     "date": "09/08/2026"
-  },
-  {
-    "analyst": "Nicholas Yulico",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "+5.5%",
-    "date": "08/27/2026"
   },
   {
     "analyst": "Austin Wurschmidt",
@@ -135,15 +162,6 @@
     "date": "08/24/2026"
   },
   {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.50",
-    "projected": "+22.1%",
-    "date": "08/19/2026"
-  },
-  {
     "analyst": "Nicholas Joseph",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -151,15 +169,6 @@
     "price_target": "$70.90",
     "projected": "+3.3%",
     "date": "07/29/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/27/2026"
   },
   {
     "analyst": "Peter Abramowitz",
@@ -178,15 +187,6 @@
     "price_target": "$72.00",
     "projected": "+12.5%",
     "date": "06/22/2026"
-  },
-  {
-    "analyst": "Richard Anderson",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$66.00",
-    "projected": "+1.7%",
-    "date": "05/04/2026"
   },
   {
     "analyst": "Unknown Analyst",

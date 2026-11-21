@@ -45,15 +45,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+23%",
-    "date": "10/06/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$150.00",
     "projected": "+21.5%",
     "date": "09/17/2026"
+  },
+  {
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+23%",
+    "date": "10/06/2026"
   },
   {
     "analyst": "Barclays",

@@ -81,12 +81,12 @@
     "date": "07/25/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
+    "analyst": "Susquehanna",
+    "firm": "Susquehanna",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$58.00",
-    "projected": "+41.4%",
-    "date": "10/23/2026"
+    "price_target": "$45.00",
+    "projected": "+9.8%",
+    "date": "10/08/2026"
   }
 ]

@@ -5,8 +5,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$804.00",
-    "projected": "+28.2%",
-    "date": "11/04/2026"
+    "projected": "+34.3%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Dimple Gosai",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$701.00",
+    "projected": "+26.3%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "John Staszak",
@@ -142,15 +151,6 @@
     "price_target": "$847.00",
     "projected": "+39.1%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Dimple Gosai",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$714.00",
-    "projected": "+11.2%",
-    "date": "10/01/2026"
   },
   {
     "analyst": "Hanxu Wang",

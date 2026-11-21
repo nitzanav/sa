@@ -36,15 +36,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+14.3%",
-    "date": "04/27/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$68.00",
     "projected": "+25.1%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "BMO Capital",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+14.3%",
+    "date": "04/27/2026"
   },
   {
     "analyst": "Jefferies",

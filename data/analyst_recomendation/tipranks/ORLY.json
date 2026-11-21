@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kate McShane",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$104.00",
+    "projected": "+15.2%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Zhihan Ma",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/18/2026"
-  },
-  {
-    "analyst": "Kate McShane",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$113.00",
-    "projected": "+34.8%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Michael Baker",

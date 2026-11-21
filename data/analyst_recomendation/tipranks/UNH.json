@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Elizabeth Anderson CFA",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$480.00",
+    "projected": "+20.4%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Lance Wilkes",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$506.00",
     "projected": "+27.3%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Elizabeth Anderson CFA",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$480.00",
-    "projected": "+20.7%",
     "date": "10/13/2026"
   },
   {

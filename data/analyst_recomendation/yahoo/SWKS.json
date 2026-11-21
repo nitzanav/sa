@@ -27,6 +27,15 @@
     "date": "11/05/2026"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+2.3%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Hold",
@@ -34,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/15/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+10.9%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Mizuho",
@@ -59,7 +59,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$79.00",
-    "projected": "-4.8%",
+    "projected": "-4.9%",
     "date": "11/06/2026"
   },
   {

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Zhihan Ma",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "-7.1%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Anthony Chukumba",
     "firm": "Loop Capital Markets",
     "recommendation": "Hold",
@@ -7,15 +16,6 @@
     "price_target": "$140.00",
     "projected": "-3.2%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Zhihan Ma",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "-5.6%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Matthew Boss",

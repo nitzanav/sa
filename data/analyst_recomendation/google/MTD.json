@@ -1,12 +1,57 @@
 [
   {
+    "analyst": "‏Avantika Dhabaria‏",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Daniel Arias",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1,600.00",
-    "projected": "-11.4%",
-    "date": "11/06/2026"
+    "price_target": "$1,900.00",
+    "projected": "+8%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Evie Koslosky",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,640.00",
+    "projected": "-6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Casey Woodring",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$1,840.00",
+    "projected": "+4.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Catherine Ramsey Schulte",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,815.00",
+    "projected": "+4.1%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Luke Sergott",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,900.00",
+    "projected": "+9%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Tycho Peterson",
@@ -27,22 +72,13 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Casey Woodring",
-    "firm": "J.P. Morgan",
+    "analyst": "Dan Leonard",
+    "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$1,550.00",
-    "projected": "-5.2%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "‏Avantika Dhabaria‏",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,690.00",
-    "projected": "+10.4%",
-    "date": "10/09/2026"
+    "price_target": "$1,790.00",
+    "projected": "-0.9%",
+    "date": "11/06/2026"
   },
   {
     "analyst": "Kallum Titchmarsh",
@@ -52,24 +88,6 @@
     "price_target": "$1,575.00",
     "projected": "+2.9%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Luke Sergott",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,700.00",
-    "projected": "+10.9%",
-    "date": "10/07/2026"
-  },
-  {
-    "analyst": "Evie Koslosky",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,510.00",
-    "projected": "+7.5%",
-    "date": "09/20/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -97,15 +115,6 @@
     "price_target": "$1,200.00",
     "projected": "-11.9%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Dan Leonard",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$1,515.00",
-    "projected": "+7.4%",
-    "date": "09/01/2026"
   },
   {
     "analyst": "Evan Stampler",
@@ -151,14 +160,5 @@
     "price_target": "$1,180.00",
     "projected": "+1.1%",
     "date": "06/01/2026"
-  },
-  {
-    "analyst": "Catherine Ramsey Schulte",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,194.00",
-    "projected": "+6.9%",
-    "date": "05/11/2026"
   }
 ]

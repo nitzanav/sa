@@ -36,15 +36,6 @@
     "date": "08/08/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$960.00",
-    "projected": null,
-    "date": "11/12/2025"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -58,9 +49,9 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1217.00",
-    "projected": "+13.7%",
-    "date": "08/12/2026"
+    "price_target": "$1200.00",
+    "projected": "+23.7%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "BMO Capital",
@@ -81,12 +72,21 @@
     "date": "01/30/2026"
   },
   {
-    "analyst": "Argus Research",
-    "firm": "Argus Research",
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1000.00",
+    "projected": "+1.4%",
+    "date": "04/11/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$900.00",
+    "price_target": "$1000.00",
     "projected": null,
-    "date": "11/11/2025"
+    "date": "12/17/2025"
   }
 ]

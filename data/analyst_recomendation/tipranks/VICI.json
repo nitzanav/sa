@@ -160,14 +160,5 @@
     "price_target": "$39.00",
     "projected": "+38.4%",
     "date": "06/16/2026"
-  },
-  {
-    "analyst": "Todd Thomas",
-    "firm": "KeyBanc",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/07/2025"
   }
 ]

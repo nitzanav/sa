@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$396.00",
+    "projected": "+18.7%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Daniel Moore CFA",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -42,15 +51,6 @@
     "action": "Reiterated",
     "price_target": "$379.00",
     "projected": "+12.7%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$396.00",
-    "projected": "+17.8%",
     "date": "10/23/2026"
   },
   {

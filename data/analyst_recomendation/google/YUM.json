@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John Ivankoe",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "-0.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Gregory Francfort",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -93,7 +102,7 @@
     "analyst": "Logan Reich",
     "firm": "RBC Capital",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$180.00",
     "projected": "+12.1%",
     "date": "11/03/2026"
@@ -115,15 +124,6 @@
     "price_target": "$167.00",
     "projected": "+11%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "John Ivankoe",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+9%",
-    "date": "09/29/2026"
   },
   {
     "analyst": "John Staszak",

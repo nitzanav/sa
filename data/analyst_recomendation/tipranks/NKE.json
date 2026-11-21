@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Anna Andreeva",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-26.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Ike Boruchow",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "-20.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Aneesha Sherman",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "+14.2%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Lorraine Hutchinson",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$24.00",
+    "projected": "-39.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$38.00",
+    "projected": "-2.2%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Kelly Crago",
     "firm": "BMO Capital",
     "recommendation": "Sell",
@@ -54,24 +99,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Aneesha Sherman",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+16.2%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "Anna Andreeva",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "-24.4%",
-    "date": "10/22/2026"
-  },
-  {
     "analyst": "Adrienne Yih",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -105,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$50.00",
     "projected": "+32.3%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Lorraine Hutchinson",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "-36.5%",
     "date": "10/21/2026"
   },
   {
@@ -240,15 +258,6 @@
     "action": "Maintained",
     "price_target": "$19.00",
     "projected": "-41.6%",
-    "date": "10/02/2026"
-  },
-  {
-    "analyst": "Ike Boruchow",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$30.00",
-    "projected": "-7.8%",
     "date": "10/02/2026"
   },
   {

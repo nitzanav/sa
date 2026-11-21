@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Daniel Jester",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$412.00",
+    "projected": "+21.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Rishi Jaluria",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$385.00",
+    "projected": "+13.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Jared Levine",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "+2.9%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Adam Wood",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -18,15 +45,6 @@
     "date": "10/07/2026"
   },
   {
-    "analyst": "Rishi Jaluria",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$385.00",
-    "projected": "+35.7%",
-    "date": "10/02/2026"
-  },
-  {
     "analyst": "Gabriela Borges",
     "firm": "Goldman Sachs",
     "recommendation": "Sell",
@@ -34,15 +52,6 @@
     "price_target": "$304.00",
     "projected": "+5%",
     "date": "09/24/2026"
-  },
-  {
-    "analyst": "Daniel Jester",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$412.00",
-    "projected": "+36.6%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Brent Thill",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$300.00",
     "projected": "-6%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "Jared Levine",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$346.00",
-    "projected": "+8.4%",
     "date": "09/17/2026"
   },
   {

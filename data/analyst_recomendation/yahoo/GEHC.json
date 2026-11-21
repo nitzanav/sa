@@ -36,15 +36,6 @@
     "date": "04/30/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$79.00",
-    "projected": "+3.7%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$84.00",
     "projected": "+17.7%",
     "date": "07/30/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$79.00",
+    "projected": "+3.7%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "UBS",

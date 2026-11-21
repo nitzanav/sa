@@ -1,12 +1,102 @@
 [
   {
+    "analyst": "Eric Heath",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$380.00",
+    "projected": "+15%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Adam Borg",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$415.00",
+    "projected": "+28.2%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Joseph Gallo",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+23.6%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Peter Levine",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$415.00",
+    "projected": "+22.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Tal Liani",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$420.00",
+    "projected": "+24.3%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Fatima Boolani",
     "firm": "Citi",
     "recommendation": "Buy",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$440.00",
-    "projected": "+17.8%",
-    "date": "10/16/2026"
+    "projected": "+30.2%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Roger Boyd",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+20.1%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Ittai Kidron",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+38.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Gray Powell",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$425.00",
+    "projected": "+33.1%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Saket Kalia",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+17.4%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Matthew Hedberg",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+43.3%",
+    "date": "11/08/2026"
   },
   {
     "analyst": "Michael Turrin",
@@ -34,15 +124,6 @@
     "price_target": "$440.00",
     "projected": "+9.1%",
     "date": "10/02/2026"
-  },
-  {
-    "analyst": "Gray Powell",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$425.00",
-    "projected": "+14.7%",
-    "date": "09/28/2026"
   },
   {
     "analyst": "Meta Marshall",
@@ -108,15 +189,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Adam Borg",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+19.9%",
-    "date": "09/02/2026"
-  },
-  {
     "analyst": "Brad Zelnick",
     "firm": "Deutsche Bank",
     "recommendation": "Buy",
@@ -168,15 +240,6 @@
     "action": "Maintained",
     "price_target": "$425.00",
     "projected": "+22.8%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Ittai Kidron",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+30.1%",
     "date": "09/02/2026"
   },
   {
@@ -234,15 +297,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Matthew Hedberg",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$475.00",
-    "projected": "+37.3%",
-    "date": "09/02/2026"
-  },
-  {
     "analyst": "John Difucci",
     "firm": "Guggenheim",
     "recommendation": "Hold",
@@ -261,48 +315,12 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "Roger Boyd",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$390.00",
-    "projected": "+12.7%",
-    "date": "09/02/2026"
-  },
-  {
     "analyst": "Jonathan Ho",
     "firm": "William Blair",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Tal Liani",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$420.00",
-    "projected": "+21.4%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Saket Kalia",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+8.4%",
-    "date": "09/02/2026"
-  },
-  {
-    "analyst": "Joseph Gallo",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+30.1%",
     "date": "09/02/2026"
   },
   {
@@ -330,15 +348,6 @@
     "action": "Maintained",
     "price_target": "$430.00",
     "projected": "+16.2%",
-    "date": "08/31/2026"
-  },
-  {
-    "analyst": "Peter Levine",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+12.2%",
     "date": "08/31/2026"
   },
   {

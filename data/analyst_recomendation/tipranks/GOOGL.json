@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Mark Shmulik",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -31,8 +40,8 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$371.00",
-    "projected": "+31.3%",
+    "price_target": "$365.00",
+    "projected": "+29.2%",
     "date": "11/02/2026"
   },
   {
@@ -87,15 +96,6 @@
     "action": "Reiterated",
     "price_target": "$375.00",
     "projected": "+33.4%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Justin Post",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$380.00",
-    "projected": "+35.2%",
     "date": "10/30/2026"
   },
   {

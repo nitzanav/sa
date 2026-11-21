@@ -9,6 +9,15 @@
     "date": "06/26/2026"
   },
   {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+24.8%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -18,12 +27,12 @@
     "date": "05/01/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+24.8%",
+    "price_target": "$239.00",
+    "projected": "+32.5%",
     "date": "11/03/2026"
   },
   {
@@ -43,15 +52,6 @@
     "price_target": "$205.00",
     "projected": "+15%",
     "date": "09/21/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$239.00",
-    "projected": "+32.5%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "JP Morgan",

@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Serena Lim Yi Qi",
+    "firm": "Phillip Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$470.00",
+    "projected": "+15.9%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Jason Bazinet",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+29%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Stephen Ju",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$462.00",
+    "projected": "+29.8%",
+    "date": "11/06/2026"
+  },
+  {
     "analyst": "Alec Brondolo",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$347.00",
-    "projected": "-1.8%",
+    "projected": "-2.5%",
     "date": "11/06/2026"
   },
   {
@@ -108,24 +135,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Jason Bazinet",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$500.00",
-    "projected": "+99.2%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Stephen Ju",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$414.00",
-    "projected": "+60.8%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "Bernie McTernan",
     "firm": "Needham",
     "recommendation": "Buy",
@@ -168,15 +177,6 @@
     "action": "Downgraded",
     "price_target": "$400.00",
     "projected": "+21.4%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Serena Yi Qi Lim",
-    "firm": "Phillip Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": "+85.1%",
     "date": "08/11/2026"
   },
   {
@@ -232,14 +232,5 @@
     "price_target": "$340.00",
     "projected": "-18.8%",
     "date": "03/02/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$721.00",
-    "projected": null,
-    "date": "11/07/2025"
   }
 ]

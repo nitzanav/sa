@@ -72,15 +72,6 @@
     "date": "02/02/2026"
   },
   {
-    "analyst": "Leerink Partners",
-    "firm": "Leerink Partners",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$997.00",
-    "projected": "+7.5%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "Bernstein",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$812.00",
     "projected": "-12.4%",
     "date": "11/02/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$917.00",
+    "projected": "+32.3%",
+    "date": "04/30/2026"
   }
 ]

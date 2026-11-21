@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "John Newman",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,175.00",
+    "projected": "+28.4%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Geoff Meacham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$825.00",
+    "projected": "-8.8%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Tazeen Ahmad",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,030.00",
+    "projected": "+12.5%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -63,15 +90,6 @@
     "date": "11/02/2026"
   },
   {
-    "analyst": "John Newman",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,175.00",
-    "projected": "+26.7%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "Brian Skorney",
     "firm": "Robert W. Baird",
     "recommendation": "Hold",
@@ -87,15 +105,6 @@
     "action": "Reiterated",
     "price_target": "$855.00",
     "projected": "-7.8%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Geoff Meacham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$825.00",
-    "projected": "-11%",
     "date": "11/02/2026"
   },
   {
@@ -141,15 +150,6 @@
     "action": "Maintained",
     "price_target": "$925.00",
     "projected": "+6.4%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Tazeen Ahmad",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,030.00",
-    "projected": "+18.5%",
     "date": "10/30/2026"
   },
   {

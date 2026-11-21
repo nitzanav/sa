@@ -54,15 +54,6 @@
     "date": "08/21/2026"
   },
   {
-    "analyst": "Wells Fargo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$543.00",
-    "projected": null,
-    "date": "11/15/2025"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$607.50",
     "projected": "+14.3%",
     "date": "05/23/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$800.00",
+    "projected": "+22.1%",
+    "date": "09/01/2026"
   }
 ]

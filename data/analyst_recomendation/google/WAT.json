@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$535.00",
+    "projected": "+15.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "‏Avantika Dhabaria‏",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -106,15 +115,6 @@
     "price_target": "$530.00",
     "projected": "+12.7%",
     "date": "11/04/2026"
-  },
-  {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+3.1%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Michael Ryskin",

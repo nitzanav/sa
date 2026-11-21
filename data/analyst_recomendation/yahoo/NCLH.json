@@ -45,15 +45,6 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$17.00",
-    "projected": "-5%",
-    "date": "08/19/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$20.00",
     "projected": "+31.8%",
     "date": "10/20/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$17.00",
+    "projected": "-5%",
+    "date": "08/19/2026"
   },
   {
     "analyst": "Barclays",

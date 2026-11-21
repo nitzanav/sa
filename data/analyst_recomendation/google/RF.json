@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "John Pancari",
+    "firm": "Evercore ISI",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$28.00",
+    "projected": "-2.6%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Jason Goldberg",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+3.4%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Vivek Juneja",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -7,15 +25,6 @@
     "price_target": "$31.00",
     "projected": "+7.1%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "John Pancari",
-    "firm": "Evercore ISI",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$28.00",
-    "projected": "-2.4%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Dave Rochester",
@@ -105,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$33.00",
     "projected": "+20.4%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Jason Goldberg",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+9.5%",
     "date": "10/19/2026"
   },
   {

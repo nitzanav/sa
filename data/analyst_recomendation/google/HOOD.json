@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Adam Frisch",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+63.1%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "James Yaro",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$115.00",
+    "projected": "+44.3%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Benjamin Budish",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+42.4%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -16,15 +43,6 @@
     "price_target": "$120.00",
     "projected": "+40.3%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Adam Frisch",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+45.7%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Michael Cyprys",
@@ -90,15 +108,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Benjamin Budish",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+28.9%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "David Smith -CFA",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$123.00",
     "projected": "+37.8%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "James Yaro",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$128.00",
-    "projected": "+34.5%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Daniel Welden",

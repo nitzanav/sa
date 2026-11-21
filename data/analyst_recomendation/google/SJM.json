@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Peter Galbo",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Alexia Burland Howard",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$144.00",
     "projected": "+10.5%",
-    "date": "08/27/2026"
-  },
-  {
-    "analyst": "Peter Galbo",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$145.00",
-    "projected": "+11.3%",
     "date": "08/27/2026"
   },
   {

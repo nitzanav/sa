@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$325.00",
+    "projected": "+8.8%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "David Windley",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$304.00",
+    "projected": "+0.1%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Jessica Tassan",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$360.00",
+    "projected": "+18.6%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Lance Wilkes",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+29.7%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Andrew Mok CFA",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$320.00",
+    "projected": "+8.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Erin Wright",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -27,7 +72,7 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Unknown Analyst",
+    "analyst": "Sarah James",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
@@ -63,24 +108,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Lance Wilkes",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$387.00",
-    "projected": "+28.2%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Jessica Tassan",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "+17.6%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Ben Hendrix",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -99,15 +126,6 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "Andrew Mok CFA",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+12.3%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Charles Rhyee",
     "firm": "TD Cowen",
     "recommendation": "Buy",
@@ -115,24 +133,6 @@
     "price_target": "$338.00",
     "projected": "+23.3%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$307.00",
-    "projected": "+12%",
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "David Windley",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$307.00",
-    "projected": "+10%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Parker Snure",

@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Sarah James",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+16.6%",
+    "date": "11/11/2026"
+  },
+  {
+    "analyst": "Ben Hendrix",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$207.00",
+    "projected": "+4.3%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Scott Fidel",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "-3.3%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Kevin Fischbeck",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -81,15 +117,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Ben Hendrix",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$183.00",
-    "projected": "+4.1%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "John Ransom",
     "firm": "Raymond James",
     "recommendation": "Hold",
@@ -115,32 +142,5 @@
     "price_target": "$200.00",
     "projected": "+18.4%",
     "date": "09/03/2026"
-  },
-  {
-    "analyst": "Scott Fidel",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$190.00",
-    "projected": "+15.2%",
-    "date": "07/30/2026"
-  },
-  {
-    "analyst": "Sarah James",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$194.00",
-    "projected": "+29.7%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Ann Hynes",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+28.2%",
-    "date": "07/13/2026"
   }
 ]

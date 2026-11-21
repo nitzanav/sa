@@ -27,6 +27,15 @@
     "date": "11/07/2026"
   },
   {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+31.1%",
+    "date": "11/07/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -40,17 +49,8 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+16.8%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+54.2%",
+    "price_target": "$75.00",
+    "projected": "+15.6%",
     "date": "11/07/2026"
   },
   {
@@ -72,6 +72,15 @@
     "date": "01/16/2026"
   },
   {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+54.2%",
+    "date": "11/07/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$120.00",
     "projected": "+85%",
     "date": "11/07/2026"
-  },
-  {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+14.2%",
-    "date": "05/08/2026"
   }
 ]

@@ -22,45 +22,45 @@
     "firm": "Susquehanna",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$63.00",
-    "projected": "+42.7%",
-    "date": "07/21/2026"
+    "price_target": "$60.00",
+    "projected": "+43.5%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Bernstein",
     "firm": "Bernstein",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$42.00",
-    "projected": "+15.1%",
-    "date": "01/06/2026"
+    "price_target": "$44.00",
+    "projected": "-5.9%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "+39%",
-    "date": "11/06/2026"
+    "price_target": "$59.00",
+    "projected": "+26.2%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+29.8%",
-    "date": "10/15/2026"
+    "price_target": "$64.00",
+    "projected": "+54.1%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+38.3%",
-    "date": "08/31/2026"
+    "price_target": "$60.00",
+    "projected": "+28.3%",
+    "date": "11/14/2026"
   },
   {
     "analyst": "Piper Sandler",
@@ -76,9 +76,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+39.6%",
-    "date": "10/02/2026"
+    "price_target": "$68.00",
+    "projected": "+63.8%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Mizuho",

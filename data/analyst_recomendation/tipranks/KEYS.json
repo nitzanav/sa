@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$425.00",
+    "projected": "+43.7%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Atif Malik",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+6.3%",
-    "date": "10/08/2026"
+    "projected": "+30%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "Mark Delaney",
@@ -34,15 +43,6 @@
     "price_target": "$405.00",
     "projected": "+24.6%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+21.8%",
-    "date": "08/19/2026"
   },
   {
     "analyst": "Andrew Spinola",

@@ -81,12 +81,12 @@
     "date": "06/18/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$112.00",
-    "projected": "+8%",
-    "date": "10/31/2026"
+    "price_target": "$145.00",
+    "projected": "+33.7%",
+    "date": "01/15/2026"
   }
 ]

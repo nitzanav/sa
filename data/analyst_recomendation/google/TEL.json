@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$255.00",
+    "projected": "+16.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Steven Fox",
     "firm": "Fox Advisors",
     "recommendation": "Hold",
@@ -63,15 +72,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$243.00",
-    "projected": "+11%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "Mark Delaney",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -124,15 +124,6 @@
     "price_target": "$230.00",
     "projected": "+6.2%",
     "date": "06/21/2026"
-  },
-  {
-    "analyst": "Maurice Patrick",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$16.82",
-    "projected": "-92.2%",
-    "date": "05/13/2026"
   },
   {
     "analyst": "Stephen Bersey",

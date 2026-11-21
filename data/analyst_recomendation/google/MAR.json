@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Shaun Kelley",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Nicholas Joseph",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$409.00",
     "projected": "-2%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Shaun Kelley",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/02/2026"
   },
   {
     "analyst": "Trey Bowers",

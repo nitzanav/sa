@@ -1,11 +1,56 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$143.00",
+    "projected": "+8.2%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Paul Fremont",
+    "firm": "Ladenburg Thalmann & Co.",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$144.50",
+    "projected": "+9.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Andrew Weisel",
+    "firm": "Scotiabank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$140.00",
+    "projected": "+5.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+16.5%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Julien Dumoulin Smith",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$152.00",
+    "projected": "+14.5%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Hold",
     "action": "Initiated",
     "price_target": "$135.00",
-    "projected": "+4.9%",
+    "projected": "+3.8%",
     "date": "10/22/2026"
   },
   {
@@ -14,17 +59,8 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$139.00",
-    "projected": "+8%",
+    "projected": "+6.9%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$165.00",
-    "projected": "+28.2%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Richard Sunderland",
@@ -33,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$150.00",
     "projected": "+16.6%",
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$139.00",
-    "projected": "+8%",
     "date": "10/16/2026"
   },
   {
@@ -99,15 +126,6 @@
     "date": "07/08/2026"
   },
   {
-    "analyst": "Julien Dumoulin Smith",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$170.00",
-    "projected": "+13%",
-    "date": "04/12/2026"
-  },
-  {
     "analyst": "William Appicelli",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -133,14 +151,5 @@
     "price_target": null,
     "projected": null,
     "date": "02/18/2026"
-  },
-  {
-    "analyst": "Andrew Weisel",
-    "firm": "Scotiabank",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$146.00",
-    "projected": null,
-    "date": "10/31/2025"
   }
 ]

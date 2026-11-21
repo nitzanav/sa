@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Wamsi Mohan",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Erik Woodring",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -142,15 +151,6 @@
     "price_target": "$1,100.00",
     "projected": "+69.1%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Wamsi Mohan",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,200.00",
-    "projected": "+85.5%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Sajal Dogra",

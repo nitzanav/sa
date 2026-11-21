@@ -54,15 +54,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$35.00",
-    "projected": "+17.1%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -81,12 +72,21 @@
     "date": "11/05/2026"
   },
   {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+17.1%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Cantor Fitzgerald",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+23.6%",
-    "date": "10/17/2026"
+    "price_target": "$34.00",
+    "projected": "+19.5%",
+    "date": "11/10/2026"
   }
 ]

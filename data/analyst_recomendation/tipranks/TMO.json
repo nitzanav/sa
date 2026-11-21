@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Eve Burstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$830.00",
     "projected": "+24.8%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Eve Burstein",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$575.00",
-    "projected": "-16.8%",
-    "date": "10/19/2026"
   },
   {
     "analyst": "Kallum Titchmarsh",

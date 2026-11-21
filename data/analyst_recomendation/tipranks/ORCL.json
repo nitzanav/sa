@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "Andy Yu CFA",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+133.3%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Mark Moerdler",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$325.00",
-    "projected": "+171.9%",
-    "date": "11/06/2026"
+    "projected": "+175.6%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Gabriela Borges",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$206.00",
+    "projected": "+72.3%",
+    "date": "11/08/2026"
   },
   {
     "analyst": "Karl Keirstead",
@@ -162,15 +180,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Gabriela Borges",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$206.00",
-    "projected": "+63%",
-    "date": "10/22/2026"
-  },
-  {
     "analyst": "Daniel Ives",
     "firm": "Yorkville Ives & Co",
     "recommendation": "Hold",
@@ -286,15 +295,6 @@
     "price_target": "$330.00",
     "projected": "+108.4%",
     "date": "09/10/2026"
-  },
-  {
-    "analyst": "Andy Yu CFA",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+113.6%",
-    "date": "08/24/2026"
   },
   {
     "analyst": "Bhavtosh Vajpayee",

@@ -1,0 +1,155 @@
+[
+  {
+    "analyst": "Abigail Eberts",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+19.3%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$91.00",
+    "projected": "+8.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Lauren Lieberman",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$103.00",
+    "projected": "+22.9%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Jeffrey Zekauskas",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "+7.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Joshua Spector",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+7.8%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+19.2%",
+    "date": "11/05/2026"
+  },
+  {
+    "analyst": "Edlain Rodriguez",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$102.00",
+    "projected": "+18%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Kristen Owen",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$108.00",
+    "projected": "+18.1%",
+    "date": "10/22/2026"
+  },
+  {
+    "analyst": "Lisa De Neve",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+19.5%",
+    "date": "10/08/2026"
+  },
+  {
+    "analyst": "Alexandra Yates",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$95.00",
+    "projected": "+13.1%",
+    "date": "10/06/2026"
+  },
+  {
+    "analyst": "Salvator Tiano",
+    "firm": "KeyBanc",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "09/11/2026"
+  },
+  {
+    "analyst": "David Begleiter",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+17.3%",
+    "date": "08/12/2026"
+  },
+  {
+    "analyst": "Ghansham Panjabi",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+15.1%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Kevin McCarthy",
+    "firm": "Vertical Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$93.00",
+    "projected": "+7%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Ben Klieve",
+    "firm": "StoneX",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+20.9%",
+    "date": "08/06/2026"
+  },
+  {
+    "analyst": "Laurence Alexander",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$105.00",
+    "projected": "+35.2%",
+    "date": "05/14/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Berenberg Bank",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$84.80",
+    "projected": "+8%",
+    "date": "05/09/2026"
+  }
+]

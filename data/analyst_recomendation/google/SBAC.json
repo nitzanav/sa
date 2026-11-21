@@ -99,6 +99,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "David Paige",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+19.2%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Madison Rezaei",
     "firm": "Bernstein",
     "recommendation": "Hold",

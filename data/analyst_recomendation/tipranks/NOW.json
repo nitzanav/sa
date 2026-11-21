@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Billy Fitzsimmons",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+74.1%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Saiyi He",
     "firm": "CMB International Securities",
     "recommendation": "Buy",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$165.00",
     "projected": "+36.5%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Billy Fitzsimmons",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$175.00",
-    "projected": "+44.7%",
     "date": "10/29/2026"
   },
   {

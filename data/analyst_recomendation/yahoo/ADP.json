@@ -63,15 +63,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$223.00",
-    "projected": "-8.4%",
-    "date": "07/06/2026"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Sell",
@@ -79,6 +70,15 @@
     "price_target": "$250.00",
     "projected": "-13.7%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "-8.4%",
+    "date": "07/06/2026"
   },
   {
     "analyst": "Citigroup",

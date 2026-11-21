@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+34%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "Srini Pajjuri",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+31.9%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -126,15 +144,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Srini Pajjuri",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+9.7%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Kevin Cassidy",
     "firm": "Rosenblatt Securities",
     "recommendation": "Sell",
@@ -222,15 +231,6 @@
     "action": "Upgraded",
     "price_target": "$95.00",
     "projected": "+39%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$100.00",
-    "projected": "+46.3%",
     "date": "10/30/2026"
   },
   {

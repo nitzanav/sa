@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Leerink Partners",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$405.00",
+    "projected": "+12.5%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
@@ -58,9 +67,9 @@
     "firm": "JP Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$390.00",
-    "projected": "+20.4%",
-    "date": "08/07/2026"
+    "price_target": "$413.00",
+    "projected": "+19%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "Wells Fargo",

@@ -1,20 +1,29 @@
 [
   {
+    "analyst": "Evan Seigerman",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "-4.6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "-1.5%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Courtney Breen",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$61.00",
     "projected": "-2.3%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Evan Seigerman",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "-3.9%",
     "date": "11/02/2026"
   },
   {
@@ -87,15 +96,6 @@
     "action": "Maintained",
     "price_target": "$75.00",
     "projected": "+23%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$64.00",
-    "projected": "+4.9%",
     "date": "10/29/2026"
   },
   {

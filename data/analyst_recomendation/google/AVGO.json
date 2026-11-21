@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Mike Harrison",
+    "firm": "Rothschild & Co Redburn",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$398.00",
+    "projected": "+11.6%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Harlan Sur",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Vivek Arya",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -204,24 +231,6 @@
     "action": "Maintained",
     "price_target": "$505.00",
     "projected": "+43.6%",
-    "date": "09/03/2026"
-  },
-  {
-    "analyst": "Harlan Sur",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$580.00",
-    "projected": "+64.9%",
-    "date": "09/03/2026"
-  },
-  {
-    "analyst": "Vivek Arya",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$460.00",
-    "projected": "+30.8%",
     "date": "09/03/2026"
   },
   {

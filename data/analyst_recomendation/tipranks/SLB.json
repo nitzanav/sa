@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Stephen Gengaro",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+24.4%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Phillip Jungwirth",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -24,15 +33,6 @@
     "action": "Maintained",
     "price_target": "$66.00",
     "projected": "+26.1%",
-    "date": "10/26/2026"
-  },
-  {
-    "analyst": "Stephen Gengaro",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$64.00",
-    "projected": "+22.3%",
     "date": "10/26/2026"
   },
   {

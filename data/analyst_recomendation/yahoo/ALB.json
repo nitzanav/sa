@@ -31,18 +31,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$161.00",
-    "projected": "+23.4%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$150.00",
-    "projected": "+42.6%",
-    "date": "10/05/2026"
+    "price_target": "$105.00",
+    "projected": "+7.7%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Deutsche Bank",
@@ -52,6 +43,15 @@
     "price_target": "$250.00",
     "projected": "+26.3%",
     "date": "05/14/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+41.7%",
+    "date": "11/10/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -76,9 +76,9 @@
     "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+37.2%",
-    "date": "10/22/2026"
+    "price_target": "$140.00",
+    "projected": "+43.6%",
+    "date": "11/09/2026"
   },
   {
     "analyst": "Oppenheimer",

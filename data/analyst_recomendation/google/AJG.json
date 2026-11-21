@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$307.00",
+    "projected": "+9.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Bob Huang",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$315.00",
     "projected": "+20%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$302.00",
-    "projected": "+9.8%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "Alex Scott",

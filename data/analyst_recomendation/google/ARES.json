@@ -4,9 +4,9 @@
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$164.00",
-    "projected": "+18.4%",
-    "date": "11/05/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
   },
   {
     "analyst": "Brennan Hawken",

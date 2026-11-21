@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Justin Post",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Doug Anmuth",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$940.00",
+    "projected": "+49%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Mark Shmulik",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -16,15 +34,6 @@
     "price_target": "$850.00",
     "projected": "+36.7%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Justin Post",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/27/2026"
   },
   {
     "analyst": "Nat Schindler",
@@ -195,15 +204,6 @@
     "action": "Maintained",
     "price_target": "$995.00",
     "projected": "+47.1%",
-    "date": "10/22/2026"
-  },
-  {
-    "analyst": "Doug Anmuth",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$940.00",
-    "projected": "+39%",
     "date": "10/22/2026"
   },
   {

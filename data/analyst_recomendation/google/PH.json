@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,218.00",
+    "projected": "+25.7%",
+    "date": "11/12/2026"
+  },
+  {
+    "analyst": "David Raso",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,200.00",
+    "projected": "+25.8%",
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Nathan Jones",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$1,002.00",
+    "projected": "+6.6%",
+    "date": "11/09/2026"
+  },
+  {
+    "analyst": "Joe Ritchie",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,114.00",
+    "projected": "+18.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Jamie Cook",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -81,15 +117,6 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Nathan Jones",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$1,002.00",
-    "projected": "+3.7%",
-    "date": "10/19/2026"
-  },
-  {
     "analyst": "Joseph C Giordano",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -106,15 +133,6 @@
     "price_target": "$1,131.00",
     "projected": "+19.3%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,218.00",
-    "projected": "+25%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -207,15 +225,6 @@
     "date": "05/26/2026"
   },
   {
-    "analyst": "David Raso",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,064.00",
-    "projected": "+22.1%",
-    "date": "05/11/2026"
-  },
-  {
     "analyst": "Philip Walsh",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -223,15 +232,6 @@
     "price_target": "$1,100.00",
     "projected": "+21.6%",
     "date": "05/01/2026"
-  },
-  {
-    "analyst": "Joe Ritchie",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,040.00",
-    "projected": "+14.6%",
-    "date": "04/07/2026"
   },
   {
     "analyst": "Raj Ray",

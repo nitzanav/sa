@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Steve Sakwa",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$30.00",
+    "projected": "+11.2%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -79,15 +88,6 @@
     "price_target": "$31.00",
     "projected": "+16%",
     "date": "10/12/2026"
-  },
-  {
-    "analyst": "Steve Sakwa",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+21.6%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Haendel St. Juste",

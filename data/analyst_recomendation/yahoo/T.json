@@ -63,6 +63,15 @@
     "date": "07/23/2026"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+51.8%",
+    "date": "10/23/2026"
+  },
+  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": null,
     "projected": null,
     "date": "06/03/2026"
-  },
-  {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+51.8%",
-    "date": "10/23/2026"
   }
 ]
