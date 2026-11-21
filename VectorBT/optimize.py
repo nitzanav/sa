@@ -486,9 +486,9 @@ UNION_RANGES = (
     {"label": "10m_Jan-Oct", "start": "2026-01-01", "end": "2026-10-31"},
 )
 MIX_STEM = "simulation_2026-11-14_1424_UTC+2_recency-mix-match__optimize"
-SHARE_STEM = "simulation_2026-11-14_1927_UTC+2_recency-step-share__optimize"
+SHARE_STEM = "simulation_2026-11-14_1944_UTC+2_recency-quarter-share__optimize"
 # Each fallback step deploys this fraction of the previous step's share.
-SHARE_FACTORS = (0.5, 0.75)
+SHARE_FACTORS = (0.25,)
 # (source, min analysts, min projected). Step 1 is the union canvas buy.
 MIX_TIERS = (
     ("any", 2, 40.0),
@@ -7243,7 +7243,7 @@ def share_signal_name(factor, depth):
     head = "any >2,>40%"
     if depth <= 1:
         return head
-    mark = "½" if abs(factor - 0.5) < 1e-9 else "¾"
+    mark = {0.25: "¼", 0.5: "½", 0.75: "¾"}.get(round(float(factor), 4), _share_percent(factor))
     bits = [head]
     for tier in range(1, depth):
         bits.append(_share_percent(factor ** tier))
@@ -7269,8 +7269,7 @@ def share_sells():
 def share_buys(price_to):
     """Step 1 buys the full book. Fallback steps buy a shrinking share of free lots.
 
-    The ½ ladder is 50%, 25%, and 12.5%. The ¾ ladder is 75%, 56.25%, and
-    42.1875%. Step 1 is one row, shared by both ladders.
+    The ¼ ladder is 25%, then 6.25%, then 1.5625%. Step 1 is one row.
     """
     buys = []
     for window in UNION_RANGES:
@@ -7306,36 +7305,28 @@ def share_buys(price_to):
         raise RuntimeError(f"expected {expected} share buys, got {len(buys)}")
     if buys[0]["signal_name"] != "any >2,>40%":
         raise RuntimeError(f"step 1 label drifted: {buys[0]['signal_name']}")
-    if buys[1]["signal_name"] != "½ · any >2,>40% → 50% of free":
-        raise RuntimeError(f"½ step 2 label drifted: {buys[1]['signal_name']}")
-    if buys[3]["signal_name"] != "½ · any >2,>40% → 50% → 25% → 12.5% of free":
-        raise RuntimeError(f"½ step 4 label drifted: {buys[3]['signal_name']}")
-    if buys[4]["signal_name"] != "¾ · any >2,>40% → 75% of free":
-        raise RuntimeError(f"¾ step 2 label drifted: {buys[4]['signal_name']}")
-    if buys[6]["signal_name"] != "¾ · any >2,>40% → 75% → 56.25% → 42.1875% of free":
-        raise RuntimeError(f"¾ step 4 label drifted: {buys[6]['signal_name']}")
+    if buys[1]["signal_name"] != "¼ · any >2,>40% → 25% of free":
+        raise RuntimeError(f"¼ step 2 label drifted: {buys[1]['signal_name']}")
+    if buys[2]["signal_name"] != "¼ · any >2,>40% → 25% → 6.25% of free":
+        raise RuntimeError(f"¼ step 3 label drifted: {buys[2]['signal_name']}")
+    if buys[3]["signal_name"] != "¼ · any >2,>40% → 25% → 6.25% → 1.5625% of free":
+        raise RuntimeError(f"¼ step 4 label drifted: {buys[3]['signal_name']}")
     return buys
 
 
 def _check_share_book():
-    if free_share_lots(12, 0.5) != 6:
-        raise RuntimeError("50% of 12 free lots must be 6")
     if free_share_lots(12, 0.25) != 3:
         raise RuntimeError("25% of 12 free lots must be 3")
-    if free_share_lots(12, 0.125) != 2:
-        raise RuntimeError("12.5% of 12 free lots must round 1.5 up to 2")
-    if free_share_lots(12, 0.75) != 9:
-        raise RuntimeError("75% of 12 free lots must be 9")
-    if free_share_lots(12, 0.5625) != 7:
-        raise RuntimeError("56.25% of 12 free lots must round 6.75 up to 7")
-    if free_share_lots(12, 0.421875) != 5:
-        raise RuntimeError("42.1875% of 12 free lots must round 5.0625 to 5")
-    if free_share_lots(0, 0.5) != 0:
+    if free_share_lots(12, 0.0625) != 1:
+        raise RuntimeError("6.25% of 12 free lots must round 0.75 up to 1")
+    if free_share_lots(12, 0.015625) != 0:
+        raise RuntimeError("1.5625% of 12 free lots is 0.1875 and buys nothing")
+    if free_share_lots(0, 0.25) != 0:
         raise RuntimeError("a full book has no free lots to share")
     specs = share_sells()
     buys = share_buys("2026-10-26")
-    if len(specs) != 1 or len(buys) != 21:
-        raise RuntimeError(f"expected 1 sell and 21 buys, got {len(specs)} and {len(buys)}")
+    if len(specs) != 1 or len(buys) != 12:
+        raise RuntimeError(f"expected 1 sell and 12 buys, got {len(specs)} and {len(buys)}")
     index = pd.to_datetime(["2026-01-05", "2026-01-06", "2026-01-07"])
     close = pd.DataFrame(
         {"A": [10.0, 9.0, 8.0], "B": [10.0, 10.0, 10.0]}, index=index
@@ -7364,7 +7355,7 @@ def _check_share_book():
         cash_sleeve=False,
         opens=opens,
         entry="next-open",
-        lot_factor=0.5,
+        lot_factor=0.25,
     )
     if len(positions) != 4 or step1["n_positions"] != 1:
         raise RuntimeError(f"step 1 must take every free lot: {len(positions)} lots")
@@ -7381,10 +7372,10 @@ def _check_share_book():
         cash_sleeve=False,
         opens=opens,
         entry="next-open",
-        lot_factor=0.5,
+        lot_factor=0.25,
     )
-    if len(positions_half) != 2:
-        raise RuntimeError(f"step 2 must buy half of 4 free lots: {len(positions_half)}")
+    if len(positions_half) != 1:
+        raise RuntimeError(f"step 2 must buy a quarter of 4 free lots: {len(positions_half)}")
     crowded = pd.DataFrame(
         {
             "date": ["2026-01-05", "2026-01-06"],
@@ -7410,7 +7401,7 @@ def _check_share_book():
         cash_sleeve=False,
         opens=opens,
         entry="next-open",
-        lot_factor=0.5,
+        lot_factor=0.25,
     )
     names = sorted(crowded_positions["ticker"].unique())
     if names != ["A"] or len(crowded_positions) != 2:
@@ -7437,8 +7428,7 @@ def run_share(signals, close, spy, opens, position_log=None):
         f" · ${BOOK_CASH:,.0f} total"
         f" · 2.5dd 15pp · 12 lots · ls · at · next open"
         f" · step 1 full book"
-        f" · ½ of free lots is 50% → 25% → 12.5%"
-        f" · ¾ of free lots is 75% → 56.25% → 42.1875%"
+        f" · ¼ of free lots is 25% → 6.25% → 1.5625%"
         f" · ranges {', '.join(window['label'] for window in UNION_RANGES)}"
         f" · prices through {price_to}"
         f" · one position per ticker ==="
@@ -11596,15 +11586,17 @@ def main():
             "floor(analysts × target percent / 10) lots and stops when the "
             "budget is filled. A ticker that already has an open position "
             "is skipped.",
-            "The ½ ladder buys 50% of the free lots, then 25%, then 12.5%. "
-            "The ¾ ladder buys 75%, then 56.25%, then 42.1875%. Every lot "
-            "is $26,667, so a share of the free lots is the same share of "
-            "the free money.",
+            "The ¼ ladder buys 25% of the free lots, then 6.25%, then "
+            "1.5625%. On a 12-lot book, 6.25% of 12 free lots is 0.75 and "
+            "rounds up to 1 lot. 1.5625% of 12 free lots is 0.1875 and "
+            "rounds to 0, so step 4 buys nothing while 12 or fewer lots "
+            "are free. Every lot is $26,667, so a share of the free lots "
+            "is the same share of the free money.",
             "Buy windows are Jan–May, Jun–Oct, and Jan–Oct. Signals are "
             "dated inside the window. Prices continue through the last "
             "quote, so a position can sell after the buy window.",
-            "1 step-1 buy + 2 factors × 3 fallback depths × 3 ranges = 21 "
-            "cells. Trusted cells have at least 30 signals.",
+            "1 step-1 buy + 3 fallback depths × 3 ranges = 12 cells. "
+            "Trusted cells have at least 30 signals.",
         ]
         write_grid_summary(
             report_path,

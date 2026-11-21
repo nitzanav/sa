@@ -593,10 +593,10 @@ Buy windows are Jan–May, Jun–Oct, and Jan–Oct. Signals are dated inside th
 
 The same waterfall and the same frozen sell, `2.5dd 15pp · 12 × $26,667 · ls · at · next open`. Step 1 still buys the full book and can sell a lot to make room. A fallback step buys a share of the lots that are already free and does not sell a stock to make room. The share is rounded to the nearest lot, and half a lot rounds up. The day's names share that budget, strongest first. Each name still asks for `floor(analysts × target percent / 10)` lots.
 
-The ½ ladder is 50% of the free lots, then 25%, then 12.5%. The ¾ ladder is 75%, then 56.25%, then 42.1875%. Every lot is $26,667, so that share of the free lots is the same share of the free money. Step 1 is one row. 1 + 2 factors × 3 fallback depths × 3 ranges = 21 cells.
+The ¼ ladder is 25% of the free lots, then 6.25%, then 1.5625%. Every lot is $26,667, so that share of the free lots is the same share of the free money. On a 12-lot book, 6.25% of 12 free lots rounds up to 1 lot, and 1.5625% of 12 free lots rounds to 0. Step 1 is one row. 1 + 3 fallback depths × 3 ranges = 12 cells. The earlier ½ and ¾ ladders are `simulation_2026-11-14_1927_UTC+2_recency-step-share__optimize`.
 
 ```bash
-./penv python VectorBT/simulation_2026-11-14_1927_UTC+2_recency-step-share__optimize.py share \
+./penv python VectorBT/simulation_2026-11-14_1944_UTC+2_recency-quarter-share__optimize.py share \
   --end 2026-10-26
 ```
 
