@@ -87,11 +87,13 @@ symbols_exchange:
 #   SKIP_EXISTING=1 SOURCE=tipranks make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
 # TipRanks live fetches read TIP_RANKS_API_KEY from .env (make exports it). Cache hits do not. Do not put the key in config.
+# After a successful scrape, commits data/ (message "data") and pushes. A no-op or git failure does not fail the target.
 SOURCE ?=
 SKIP_EXISTING ?=
 
 scrape_analyst_recommendations: symbols_exchange
 	@time . "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
+	@(git reset && git add -- data && git commit -m "data" && git push) || :
 
 scrape_analyst_recommendations-test:
 	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e
