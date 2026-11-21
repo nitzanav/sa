@@ -18,4 +18,5 @@ SOURCE=tipranks make scrape_analyst_recommendations & p2=$!
 SOURCE=google make scrape_analyst_recommendations & p3=$!
 wait "$p1" && wait "$p2" && wait "$p3"
 
+make alert:sell DAYS_AGO="${DAYS_AGO:-0}"
 make alert:buy DAYS_AGO="${DAYS_AGO:-0}"
