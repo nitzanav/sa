@@ -10,6 +10,9 @@ Actions
     
 High:
     - buy alert bot
+        - 
+        - html charts view
+        - total rading file view
     - kind of a bug that 12 and 7 ananlysts not priroitse higher than 2-3
     - sell alert bot
     - more than snp500, getm more signals of more symbols
