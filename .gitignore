@@ -8,6 +8,7 @@ build/
 .mypy_cache/
 .ruff_cache/
 .env
+data/alerts/
 etl/test/etl_test.sql
 etl/test/signals.csv
 node_modules/

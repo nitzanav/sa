@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p><%= alerted_at %></p>
+<h2>Alerts</h2>
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>type</th>
+    <th>symbol</th>
+    <th>signal</th>
+    <th>date</th>
+    <th>analysts</th>
+    <th>percent</th>
+    <th>strength</th>
+  </tr>
+  <% alerts.forEach(function (row) { %>
+  <tr>
+    <td><%= row.type %></td>
+    <td><%= row.symbol %></td>
+    <td><%= row.signal_name %></td>
+    <td><%= row.signal_date %></td>
+    <td><%= row.analysts %></td>
+    <td><%= row.percent %></td>
+    <td><%= row.strength %></td>
+  </tr>
+  <% }) %>
+</table>
+<h2>Positions</h2>
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>symbol</th>
+    <th>lots</th>
+    <th>open</th>
+    <th>price</th>
+    <th>buy_date</th>
+    <th>sell_price</th>
+    <th>sell_reason</th>
+    <th>sell_date</th>
+  </tr>
+  <% positions.forEach(function (row) { %>
+  <tr>
+    <td><%= row.symbol %></td>
+    <td><%= row.lots %></td>
+    <td><%= row.open %></td>
+    <td><%= row.price %></td>
+    <td><%= row.buy_date %></td>
+    <td><%= row.sell_price %></td>
+    <td><%= row.sell_reason %></td>
+    <td><%= row.sell_date %></td>
+  </tr>
+  <% }) %>
+</table>
+</body>
+</html>
