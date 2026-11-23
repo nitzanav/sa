@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$168.00",
+    "projected": "+12.3%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Ebrahim Poonawala",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -34,15 +43,6 @@
     "price_target": "$157.00",
     "projected": "+10.5%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$168.00",
-    "projected": "+20.2%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Glenn Schorr",

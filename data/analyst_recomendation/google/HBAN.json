@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jon Arfstrom",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$20.00",
+    "projected": "+31.7%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Kevin Heal",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -97,15 +106,6 @@
     "price_target": "$18.00",
     "projected": "+15.6%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Jon Arfstrom",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": "+29%",
-    "date": "10/22/2026"
   },
   {
     "analyst": "David George",

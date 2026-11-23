@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$94.00",
+    "projected": "-13.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Initiated",
+    "price_target": "$94.00",
+    "projected": "-13.5%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",

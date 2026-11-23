@@ -3,10 +3,10 @@
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$245.00",
-    "projected": "+45.4%",
-    "date": "11/02/2026"
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/20/2026"
   },
   {
     "analyst": "Ashish Sabadra",

@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+8.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$248.00",
     "projected": "+13.6%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Sam Margolin",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$268.00",
+    "projected": "+22.8%",
     "date": "11/13/2026"
   },
   {
@@ -16,15 +43,6 @@
     "price_target": "$233.00",
     "projected": "+9.7%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$261.00",
-    "projected": "+18.6%",
-    "date": "11/05/2026"
   },
   {
     "analyst": "Sergey Pigarev",
@@ -81,30 +99,12 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$230.00",
-    "projected": "-1.1%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "Biraj Borkhataria",
     "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$230.00",
     "projected": "-1.7%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Sam Margolin",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$268.00",
-    "projected": "+14.5%",
     "date": "10/30/2026"
   },
   {

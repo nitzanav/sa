@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$253.00",
+    "projected": "-9.3%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Brian Brophy",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
@@ -78,15 +87,6 @@
     "action": "Reiterated",
     "price_target": "$257.00",
     "projected": "-9.3%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Sell",
-    "action": "Reiterated",
-    "price_target": "$253.00",
-    "projected": "-10.7%",
     "date": "10/30/2026"
   },
   {

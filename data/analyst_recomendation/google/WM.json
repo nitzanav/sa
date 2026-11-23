@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Connor Cerniglia",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+12.4%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "James Schumm",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$275.00",
+    "projected": "+13.2%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Toni Kaplan",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -16,15 +34,6 @@
     "price_target": "$247.00",
     "projected": "+4.7%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Connor Cerniglia",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+14.5%",
-    "date": "11/09/2026"
   },
   {
     "analyst": "Jon Windham",
@@ -178,15 +187,6 @@
     "price_target": "$271.00",
     "projected": "+20.5%",
     "date": "08/20/2026"
-  },
-  {
-    "analyst": "James Schumm",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$275.00",
-    "projected": "+19.6%",
-    "date": "07/30/2026"
   },
   {
     "analyst": "Stephanie Price",

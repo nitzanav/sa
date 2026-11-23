@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$351.00",
+    "projected": "+5.2%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Linda Tsai",
     "firm": "Truist Financial",
     "recommendation": "Buy",
@@ -69,15 +78,6 @@
     "action": "Maintained",
     "price_target": "$344.00",
     "projected": "+13.5%",
-    "date": "10/27/2026"
-  },
-  {
-    "analyst": "Brendan Lynch",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$351.00",
-    "projected": "+15.8%",
     "date": "10/27/2026"
   },
   {

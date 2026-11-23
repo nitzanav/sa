@@ -1,6 +1,5 @@
 date,ticker,analyst,percent,projected_price
 2025-11-16,HAS,Gerrick Johnson,,100
-2025-11-17,AKAM,Unknown Analyst,,100
 2025-11-17,NTAP,Unknown Analyst,,
 2025-11-17,SBAC,Unknown Analyst,,219
 2025-11-18,EG,Paul Young,,
@@ -1486,7 +1485,6 @@ date,ticker,analyst,percent,projected_price
 2026-07-02,WST,Paul Knight,6.5,390
 2026-07-02,WYNN,David Katz,48.4,143
 2026-07-05,NEM,Unknown Analyst,52.4,146
-2026-07-06,ARE,Vikram Malhotra,14.7,60
 2026-07-06,BAX,Vijay Kumar,5.4,24
 2026-07-06,BDX,Vijay Kumar,14,180
 2026-07-06,CVS,Rajesh Kumar,-2,103
@@ -2079,7 +2077,6 @@ date,ticker,analyst,percent,projected_price
 2026-07-31,AAPL,Unknown Analyst,,
 2026-07-31,AEP,Anthony Crowdell,5.5,135
 2026-07-31,AJG,Adam Klauber,,
-2026-07-31,AMZN,Benjamin Black CFA,22.6,325
 2026-07-31,AMZN,Gil Luria,-5.7,250
 2026-07-31,APD,Jeffrey Zekauskas,10.2,330
 2026-07-31,APD,Unknown Analyst,17.2,351
@@ -2479,7 +2476,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-10,WY,Marie Ferguson,,
 2026-08-11,ABNB,Paul Chew,-12,158
 2026-08-11,ALL,Gregory Peters,18,315
-2026-08-11,ALL,Pablo Singzon,9.4,292
 2026-08-11,AMAT,Sebastien Naji,,
 2026-08-11,AMZN,Sachin Mittal,19.1,332
 2026-08-11,ANET,Unknown Analyst,,
@@ -2726,7 +2722,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-20,LOW,Jonathan Matuszewski,20.4,260
 2026-08-20,LOW,Scot Ciccarelli,17.6,254
 2026-08-20,MAR,Robin M. Farley,10.8,395
-2026-08-20,MO,Christine Dooley,,
 2026-08-20,OTIS,Kristina Ruggeri,51.4,108
 2026-08-20,PHM,Ryan Gilbert,,
 2026-08-20,PYPL,Iris Gao,-1.8,60
@@ -3672,7 +3667,6 @@ date,ticker,analyst,percent,projected_price
 2026-09-21,VICI,James Kammert,26.1,30
 2026-09-21,VICI,Ronald Kamdem,21.9,29
 2026-09-21,WAB,Tami Zakaria,12.6,320
-2026-09-22,ALLE,Alexander Virgo,17.2,180
 2026-09-22,AMGN,Matt Phipps,,
 2026-09-22,AZO,Kate McShane,35.3,3917
 2026-09-22,AZO,Phillip Blee,,
@@ -4573,10 +4567,10 @@ date,ticker,analyst,percent,projected_price
 2026-10-11,PSX,Lloyd Byrne,-1.4,276
 2026-10-11,SPGI,George Tong,28.5,519
 2026-10-11,TDG,Noah Poponak,60.1,1745
-2026-10-12,ABT,Unknown Analyst,,
 2026-10-12,ACN,Sachin Mittal,2.5,216
 2026-10-12,AMZN,Paul Rossington,18.1,310
 2026-10-12,AON,Joshua Shanker,17.1,322
+2026-10-12,ARE,John Kim,-8.5,41
 2026-10-12,AVY,Michael Roxland,24.7,208
 2026-10-12,BEN,Michael Cho,9.1,35
 2026-10-12,BG,Thomas Palmer,34,139
@@ -4796,7 +4790,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-14,EQT,Scott Hanold,16.3,63
 2026-10-14,ESS,Richard Hightower,5.4,285
 2026-10-14,EXC,Andrew Weisel,3.6,44
-2026-10-14,GOOG,Stephen Ju,8.1,380
 2026-10-14,GRMN,Richard Kramer,19.7,335
 2026-10-14,GS,Christopher Mcgratty,24.9,1100
 2026-10-14,GS,Manan Gosalia,30,1145
@@ -4870,11 +4863,9 @@ date,ticker,analyst,percent,projected_price
 2026-10-14,WFC,Unknown Analyst,,
 2026-10-14,WMB,Julien Dumoulin Smith,11.4,83
 2026-10-14,XEL,Richard Sunderland,16.4,87
-2026-10-15,ABNB,Richard Clarke,29.2,217
 2026-10-15,ACN,Amit Daryanani,15.6,250
 2026-10-15,ACN,Bryan Bergin,-7.1,201
 2026-10-15,ACN,David Grossman,11.9,242
-2026-10-15,ACN,James Faucette,-9.8,195
 2026-10-15,ACN,James Friedman,6.3,230
 2026-10-15,ADI,John Vinh,32.7,525
 2026-10-15,AEE,Carly Davenport,8.3,115
@@ -5383,7 +5374,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-20,WSM,Peter Keith,13.7,286
 2026-10-20,XOM,Nitin Kumar CFA,3.9,187
 2026-10-20,ZTS,Keith Devas,4.2,83
-2026-10-21,ABBV,Emily Field,13,325
 2026-10-21,ABT,Kendall Au,23.4,125
 2026-10-21,ABT,Marie Thibault,23.4,125
 2026-10-21,ACN,David Koning,7.2,252
@@ -5755,7 +5745,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-22,META,Shyam Patil,25.7,850
 2026-10-22,META,Stephen Ju,31.9,892
 2026-10-22,META,Ygal Arounian,7.9,730
-2026-10-22,MMM,Stephen Tusa,11.5,195
 2026-10-22,MNST,"Matthew Smith, CFA",11.2,52
 2026-10-22,MRK,Asad Haider,2.6,155
 2026-10-22,MU,Quinn Bolton,87.6,1650
@@ -6125,13 +6114,11 @@ date,ticker,analyst,percent,projected_price
 2026-10-25,TXN,Stacy Rasgon,11.6,310
 2026-10-25,VLO,Arun Jayaram,4.2,447
 2026-10-26,A,Justin Bowers,8.9,190
-2026-10-26,ABBV,David Amsellem,5.6,303
 2026-10-26,ABT,David Toung,,
 2026-10-26,ACN,Jason Kupferberg,1.7,252
 2026-10-26,ACN,Kevin Mcveigh,21,300
 2026-10-26,AEE,Stephen D'Ambrisi,6.4,115
 2026-10-26,AMGN,Emily Field,-10.1,400
-2026-10-26,APD,James Hooper,21.5,373
 2026-10-26,APH,Amit Daryanani,34.2,100
 2026-10-26,ARE,Julien Blouin,36.6,59
 2026-10-26,AXP,Andrew Bauch,21.1,380
@@ -6203,7 +6190,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-26,META,Brad Erickson,25.3,800
 2026-10-26,META,Serena Lim Yi Qi,22.2,780
 2026-10-26,META,Thomas Champion,33.2,850
-2026-10-26,MMM,Amit Mehrotra,31.4,230
 2026-10-26,MRK,Mohit Bansal,13.1,165
 2026-10-26,MRNA,Eliana Merle,-33.1,125
 2026-10-26,MRSH,Harry Fong,1.8,200
@@ -6281,7 +6267,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-27,AMT,David Paige,9.9,205
 2026-10-27,AMT,Michael Ng,15.3,215
 2026-10-27,ARE,Richard Anderson,-3.2,42
-2026-10-27,ARE,Ronald Kamdem,22.1,53
 2026-10-27,AVGO,Gil Luria,17.7,400
 2026-10-27,AVGO,John Vinh,69.2,575
 2026-10-27,AXP,Ben Gerlinger,5.5,335
@@ -7021,19 +7006,16 @@ date,ticker,analyst,percent,projected_price
 2026-10-29,GNRC,Praneeth Satish,38.4,280
 2026-10-29,GNRC,Sean Milligan,42.4,288
 2026-10-29,GNRC,Tanner James,37.9,279
-2026-10-29,GOOG,Doug Anmuth,32.1,375
 2026-10-29,GOOG,Ingo Wermann,,
 2026-10-29,GOOG,John Blackledge,62.1,460
 2026-10-29,GOOG,Nat Schindler,32.1,375
 2026-10-29,GOOG,Saiyi He,48.3,421
 2026-10-29,GOOGL,Brad Erickson,39.4,400
 2026-10-29,GOOGL,Brian White,,
-2026-10-29,GOOGL,Doug Anmuth,30.7,375
 2026-10-29,GOOGL,Eric Sheridan,34.2,385
 2026-10-29,GOOGL,Gil Luria,4.6,300
 2026-10-29,GOOGL,Justin Patterson,34.2,385
 2026-10-29,GOOGL,Michael Nathanson,20.3,345
-2026-10-29,GOOGL,Stephen Ju,15.7,332
 2026-10-29,GOOGL,Thomas Champion,20.3,345
 2026-10-29,GOOGL,Ygal Arounian,34.9,387
 2026-10-29,GOOGL,Youssef Squali,42.9,410
@@ -7333,19 +7315,16 @@ date,ticker,analyst,percent,projected_price
 2026-10-30,AMZN,Doug Anmuth,57,365
 2026-10-30,AMZN,Eric Sheridan,59.1,370
 2026-10-30,AMZN,Ingo Wermann,,
-2026-10-30,AMZN,Jason Helfstein,22.6,285
 2026-10-30,AMZN,Joe Feldman,44.1,335
 2026-10-30,AMZN,John Blackledge,46.2,340
 2026-10-30,AMZN,Josh Beck,7.5,250
 2026-10-30,AMZN,Justin Patterson,48.4,345
 2026-10-30,AMZN,Ken Gawrelski,40.2,326
 2026-10-30,AMZN,Lloyd Walmsley,44.1,335
-2026-10-30,AMZN,Mark Mahaney,52.7,355
 2026-10-30,AMZN,Michael Morton,53.5,357
 2026-10-30,AMZN,Nat Schindler,29,300
 2026-10-30,AMZN,Ronald Josey,50.5,350
 2026-10-30,AMZN,Ross Sandler,57,365
-2026-10-30,AMZN,Stephen Ju,51.4,352
 2026-10-30,AMZN,Thomas Champion,37.6,320
 2026-10-30,AMZN,Tom Forte,50.5,350
 2026-10-30,AMZN,Ygal Arounian,28.1,298
@@ -7525,7 +7504,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-30,GILD,Umer Raffat,,
 2026-10-30,GNRC,Vikram Bagri,21,235
 2026-10-30,GOOG,Justin Post,35.9,380
-2026-10-30,GOOGL,Brian Nowak,33.4,375
 2026-10-30,GOOGL,Joseph Bonner,56.5,440
 2026-10-30,GOOGL,Ronald Josey,33.4,375
 2026-10-30,GPN,Andrew Jeffrey,,
@@ -7963,7 +7941,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-02,GOOGL,Brent Thill,41.6,400
 2026-11-02,GOOGL,Brian Pitz,50.5,425
 2026-11-02,GOOGL,Deepak Mathivanan,23.9,350
-2026-11-02,GOOGL,Ken Gawrelski,29.2,365
 2026-11-02,GOOGL,Serena Lim Yi Qi,32.8,375
 2026-11-02,GPN,Bill Carcache,3.7,101
 2026-11-02,GRMN,Ronald Epstein,-16.4,230
@@ -8010,7 +7987,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-02,LITE,Simon Leopold,65.5,1328
 2026-11-02,LLY,David Risinger,8.2,1508
 2026-11-02,LMT,David E. Strauss,10.6,700
-2026-11-02,LNT,Edward DeArias,10.1,79
+2026-11-02,LNT,James Thalacker,10.1,79
 2026-11-02,LNT,Shahriar Pourreza,14.3,82
 2026-11-02,LRCX,Stacy Rasgon,43.9,350
 2026-11-02,LYB,Aleksey Yefremov,4.4,69
@@ -8415,7 +8392,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-04,AIG,Rowland Mayor,6.9,87
 2026-11-04,ALL,Joshua Shanker,39.3,370
 2026-11-04,AMD,Atif Malik,64.9,800
-2026-11-04,AMD,Chris Krueger CFA,39.1,675
 2026-11-04,AMD,David O'Connor,34,650
 2026-11-04,AMD,Harlan Sur,18.5,575
 2026-11-04,AMD,Harsh Kumar,13.3,550
@@ -8423,6 +8399,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-04,AMD,James Schneider,39.1,675
 2026-11-04,AMD,John Vinh,49.4,725
 2026-11-04,AMD,Joseph Moore,13.3,550
+2026-11-04,AMD,Joshua Buchalter,39.1,675
 2026-11-04,AMD,Ruben Roy,49.4,725
 2026-11-04,AMD,Stacy Rasgon,34,650
 2026-11-04,AMD,Thomas O'Malley,37,665
@@ -8466,7 +8443,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-04,APTV,Itay Michaeli,72.5,72
 2026-11-04,APTV,Luke Junk,19.8,50
 2026-11-04,APTV,Mark Delaney,29.3,54
-2026-11-04,ARE,Sabahat Khan,8.3,47
+2026-11-04,ARE,Michael Carroll,8.3,47
 2026-11-04,BALL,Arun Viswanathan,22.3,77
 2026-11-04,BALL,Edlain Rodriguez,19.1,75
 2026-11-04,BALL,George Staphos,,
@@ -9124,8 +9101,8 @@ date,ticker,analyst,percent,projected_price
 2026-11-06,ABNB,Josh Beck,9.9,210
 2026-11-06,ABNB,Ken Gawrelski,12.5,215
 2026-11-06,ABNB,Lloyd Walmsley,28.2,245
+2026-11-06,ABNB,Maria Ripps,17.7,225
 2026-11-06,ABNB,Matthew Cost,-11.1,170
-2026-11-06,ABNB,Michael Graham,17.7,225
 2026-11-06,ABNB,Ross Sandler,2,195
 2026-11-06,ABNB,Scott Devitt,20.3,230
 2026-11-06,ABNB,Stephen Ju,-0.1,191
@@ -9152,7 +9129,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-06,ALL,Matthew Heimermann,-13.2,225
 2026-11-06,ALL,Ryan Tunis,-6.6,242
 2026-11-06,ALL,Vikram Gandhi,4.6,271
-2026-11-06,ALL,Yaron Kinar,20,311
 2026-11-06,AMAT,Atif Malik,,
 2026-11-06,AMD,Yik Ban Chong,69.9,755
 2026-11-06,AMGN,Ilya Zubkov,4.9,470
@@ -9249,7 +9225,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-06,FIS,Ramsey El Assal,18.7,34
 2026-11-06,FIS,Stephen Biggar,,
 2026-11-06,FISV,Ramsey El Assal,6.7,65
-2026-11-06,GOOGL,Mark Shmulik,14.1,325
+2026-11-06,GOOGL,Madison Rezaei,14.1,325
 2026-11-06,GPN,Andrew Bauch,-6.4,88
 2026-11-06,GPN,Andrew Schmidt,19.1,112
 2026-11-06,GPN,Bryan Bergin,6.3,100
@@ -9655,15 +9631,12 @@ date,ticker,analyst,percent,projected_price
 2026-11-10,AIG,Brian Meredith,28.5,103
 2026-11-10,AIZ,Brian Meredith,18.3,377
 2026-11-10,AKAM,Peter Levine,13.2,90
-2026-11-10,ALL,Bob Huang,2,260
 2026-11-10,ALL,Brian Meredith,11,283
-2026-11-10,ALL,Meyer Shields,-5.4,241
 2026-11-10,AMCR,Anthony Pettinari,11.2,50
 2026-11-10,AME,Andrew Obin,,
 2026-11-10,APD,Matthew DeYoe,8.1,335
 2026-11-10,APP,Serena Lim Yi Qi,15.9,470
 2026-11-10,APTV,Rajat Gupta CFA,29,51
-2026-11-10,ARE,John Kim,,
 2026-11-10,AWK,John Staszak,11.4,165
 2026-11-10,BA,Kenneth Herbert,37.2,235
 2026-11-10,BDX,Christopher Pasquale,-8.8,195
@@ -9831,7 +9804,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-11,ADBE,Tyler Radke,,
 2026-11-11,AFL,Ryan Krueger,-2.3,123
 2026-11-11,ALGN,Glen Santangelo,14.7,200
-2026-11-11,ALL,Michael Zaremski,17.7,304
 2026-11-11,APA,Unknown Analyst,-10.7,41
 2026-11-11,ARE,James Kammert,26.4,56
 2026-11-11,AXP,Donald Fandetti,28.4,415
@@ -9998,7 +9970,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-12,ADSK,Saket Kalia,15.3,300
 2026-11-12,AFL,Thomas Gallagher,-10.1,116
 2026-11-12,AFL,Wesley Carmichael,-3.9,124
-2026-11-12,AFL,Yaron Kinar,-9.4,117
 2026-11-12,ALB,Matthew DeYoe,27.2,120
 2026-11-12,AMAT,Adithya Metuku,69.6,641
 2026-11-12,AMAT,Srini Pajjuri,58.7,600
@@ -10009,7 +9980,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-12,AMGN,Gary Nachman,-6.8,440
 2026-11-12,AMGN,Jasper Hellweg,9.1,515
 2026-11-12,AMGN,Terence Flynn,-13.1,410
-2026-11-12,AMZN,Justin Post,,
 2026-11-12,APA,Noah Hungness,8.1,51
 2026-11-12,APA,Scott Hanold,3.9,49
 2026-11-12,APH,Varun Govindaraj,33.9,102
@@ -10306,3 +10276,32 @@ date,ticker,analyst,percent,projected_price
 2026-11-13,WMT,Edward Kelly,6.5,135
 2026-11-13,WTW,Yaron Kinar,15.7,384
 2026-11-13,XOM,Betty Jiang,20.2,206
+2026-11-16,ABBV,Emily Field,11.7,335
+2026-11-16,ALL,Pablo Singzon,7.8,291
+2026-11-16,APD,James Hooper,18,375
+2026-11-16,ARE,Vikram Malhotra,13.8,50
+2026-11-16,MMM,Amit Mehrotra,25.5,230
+2026-11-16,MMM,Stephen Tusa,11.9,205
+2026-11-17,AFL,Yaron Kinar,-7.3,118
+2026-11-17,ALL,Bob Huang,2.3,275
+2026-11-17,ALLE,Alexander Virgo,0.2,190
+2026-11-17,AMZN,Justin Post,23.1,317
+2026-11-17,GOOG,Karl Keirstead,13.9,320
+2026-11-17,MO,Christine Dooley,,
+2026-11-18,ABBV,David Amsellem,20.3,349
+2026-11-18,GOOGL,Brian Nowak,32.6,375
+2026-11-18,GOOGL,Ken Gawrelski,29.1,365
+2026-11-19,ABT,Mike Kratky,18.2,124
+2026-11-19,ACN,James Faucette,-14.6,195
+2026-11-19,ACN,Matthew O'Neill,26.2,288
+2026-11-19,ALL,Michael Zaremski,15,304
+2026-11-19,GOOGL,Karl Keirstead,8.7,320
+2026-11-20,ABNB,Richard Clarke,34.7,234
+2026-11-20,ALL,Meyer Shields,-11.3,241
+2026-11-20,ALL,Yaron Kinar,14.5,311
+2026-11-20,AMZN,Jason Helfstein,22.3,310
+2026-11-20,AMZN,Mark Mahaney,40.1,355
+2026-11-20,GOOG,Doug Anmuth,,
+2026-11-20,GOOGL,Doug Anmuth,36.6,375
+2026-11-21,AMZN,Karl Keirstead,34.1,340
+2026-11-23,ARE,Ronald Kamdem,23.6,52

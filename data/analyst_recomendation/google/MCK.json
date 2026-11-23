@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,235.00",
+    "projected": "+13%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Allen Lutz",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -87,15 +96,6 @@
     "action": "Maintained",
     "price_target": "$1,225.00",
     "projected": "+12.8%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Glen Santangelo",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,000.00",
-    "projected": "-7.9%",
     "date": "11/05/2026"
   },
   {

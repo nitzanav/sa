@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$222.00",
+    "projected": "+17.2%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Buy",

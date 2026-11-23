@@ -1,21 +1,102 @@
 [
   {
+    "analyst": "John Freeman",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$246.00",
+    "projected": "+39.1%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+41.4%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Josh Silverstein",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$263.00",
+    "projected": "+49.2%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$222.00",
+    "projected": "+25.9%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Scott Hanold",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$240.00",
+    "projected": "+33%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Gabriel Daoud",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$242.00",
+    "projected": "+34.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$235.00",
+    "projected": "+29.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$223.00",
-    "projected": "+21.2%",
-    "date": "11/13/2026"
+    "projected": "+23.6%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Leo Mariani",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$223.00",
+    "projected": "+22.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Nitin Kumar CFA",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+36.3%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Gabriele Sorbara",
     "firm": "Siebert Williams Shank & Co",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$256.00",
-    "projected": "+41.9%",
-    "date": "11/12/2026"
+    "price_target": "$265.00",
+    "projected": "+45.6%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -25,33 +106,6 @@
     "price_target": "$192.00",
     "projected": "+6.6%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Scott Hanold",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+33%",
-    "date": "11/12/2026"
-  },
-  {
-    "analyst": "Josh Silverstein",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$263.00",
-    "projected": "+46%",
-    "date": "11/11/2026"
-  },
-  {
-    "analyst": "Leo Mariani",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$223.00",
-    "projected": "+27.3%",
-    "date": "11/10/2026"
   },
   {
     "analyst": "Pei Hwa Ho",
@@ -72,7 +126,7 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Unknown Analyst",
+    "analyst": "Sam Margolin",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -81,13 +135,13 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Neil Mehta",
-    "firm": "Goldman Sachs",
+    "analyst": "David Deckelbaum",
+    "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$235.00",
-    "projected": "+12.6%",
-    "date": "11/02/2026"
+    "action": "Reiterated",
+    "price_target": "$259.00",
+    "projected": "+31.6%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Tim O'Toole",
@@ -108,15 +162,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Nitin Kumar CFA",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$254.00",
-    "projected": "+29.1%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Phillip Jungwirth",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -124,15 +169,6 @@
     "price_target": "$224.00",
     "projected": "+13.7%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$222.00",
-    "projected": "+11.3%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Hanwen Chang",
@@ -153,33 +189,6 @@
     "date": "10/11/2026"
   },
   {
-    "analyst": "Gabriel Daoud",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "10/06/2026"
-  },
-  {
-    "analyst": "John Freeman",
-    "firm": "Raymond James",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": "+33.5%",
-    "date": "09/17/2026"
-  },
-  {
-    "analyst": "David Deckelbaum",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$259.00",
-    "projected": "+24.9%",
-    "date": "09/10/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
@@ -187,15 +196,6 @@
     "price_target": "$259.00",
     "projected": "+28.1%",
     "date": "09/09/2026"
-  },
-  {
-    "analyst": "Sam Margolin",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$263.00",
-    "projected": "+32.8%",
-    "date": "08/13/2026"
   },
   {
     "analyst": "Scott Gruber",

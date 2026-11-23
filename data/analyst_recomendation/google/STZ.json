@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Margaret-May Binshtok",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Peter Galbo",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",

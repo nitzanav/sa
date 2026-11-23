@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$66.00",
+    "projected": "+12.7%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "John McNulty",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -24,15 +33,6 @@
     "action": "Reiterated",
     "price_target": "$69.00",
     "projected": "+4%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "+11.5%",
     "date": "11/03/2026"
   },
   {

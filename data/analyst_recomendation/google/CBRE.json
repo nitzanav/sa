@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brendan Lynch",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$161.00",
+    "projected": "+20.7%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Nicholas Joseph",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -24,15 +33,6 @@
     "action": "Maintained",
     "price_target": "$158.00",
     "projected": "+22%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Brendan Lynch",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$183.00",
-    "projected": "+41.4%",
     "date": "10/23/2026"
   },
   {

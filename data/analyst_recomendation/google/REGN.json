@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Geoff Meacham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$825.00",
+    "projected": "-11.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Evan Seigerman",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,050.00",
+    "projected": "+9.7%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Eliana Merle",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,075.00",
+    "projected": "+12.9%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "John Newman",
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
@@ -9,15 +36,6 @@
     "date": "11/10/2026"
   },
   {
-    "analyst": "Geoff Meacham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$825.00",
-    "projected": "-8.8%",
-    "date": "11/11/2026"
-  },
-  {
     "analyst": "Tazeen Ahmad",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -25,15 +43,6 @@
     "price_target": "$1,030.00",
     "projected": "+12.5%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "Evan Seigerman",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,050.00",
-    "projected": "+13.2%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "David Risinger",
@@ -51,6 +60,15 @@
     "action": "Maintained",
     "price_target": "$1,068.00",
     "projected": "+15.2%",
+    "date": "11/02/2026"
+  },
+  {
+    "analyst": "Jeffrey Walch",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$812.00",
+    "projected": "-12.4%",
     "date": "11/02/2026"
   },
   {
@@ -187,15 +205,6 @@
     "price_target": "$972.00",
     "projected": "+26.8%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "Eliana Merle",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$917.00",
-    "projected": "+23.8%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Akash Tewari",

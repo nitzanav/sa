@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Doug Anmuth",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+36.6%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Karl Keirstead",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+8.7%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Ken Gawrelski",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$365.00",
+    "projected": "+29.1%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Brian Nowak",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+32.6%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Justin Post",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -9,7 +45,7 @@
     "date": "11/13/2026"
   },
   {
-    "analyst": "Mark Shmulik",
+    "analyst": "Madison Rezaei",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
@@ -33,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$400.00",
     "projected": "+41.6%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Ken Gawrelski",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$365.00",
-    "projected": "+29.2%",
     "date": "11/02/2026"
   },
   {
@@ -90,15 +117,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Brian Nowak",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$375.00",
-    "projected": "+33.4%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Ygal Arounian",
     "firm": "Wedbush",
     "recommendation": "Buy",
@@ -117,30 +135,12 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Doug Anmuth",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+30.7%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Gil Luria",
     "firm": "D.A. Davidson",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$300.00",
     "projected": "+4.6%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Stephen Ju",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$332.00",
-    "projected": "+15.7%",
     "date": "10/29/2026"
   },
   {

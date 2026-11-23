@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Charles Minervino",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+21.7%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Noah Poponak",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -25,15 +34,6 @@
     "price_target": "$170.00",
     "projected": "+7.2%",
     "date": "11/01/2026"
-  },
-  {
-    "analyst": "Charles Minervino",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$190.00",
-    "projected": "+14.3%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Kristine Liwag",

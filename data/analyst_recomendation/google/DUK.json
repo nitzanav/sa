@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+7.4%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+5.1%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+5.1%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -117,15 +144,6 @@
     "date": "08/05/2026"
   },
   {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$132.00",
-    "projected": "+6.2%",
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Shahriar Pourreza",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -133,15 +151,6 @@
     "price_target": "$136.00",
     "projected": "+9.4%",
     "date": "08/05/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/07/2026"
   },
   {
     "analyst": "Unknown Analyst",

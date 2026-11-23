@@ -45,6 +45,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "John Heinbockel",
+    "firm": "Guggenheim",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$90.00",
+    "projected": "+16%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Sara Senatore",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$91.00",
     "projected": "+10.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "John Heinbockel",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$90.00",
-    "projected": "+15.6%",
-    "date": "10/11/2026"
   },
   {
     "analyst": "Lauren Silberman",

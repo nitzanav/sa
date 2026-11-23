@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Srini Pajjuri",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,500.00",
+    "projected": "+106.6%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Vivek Arya",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -42,15 +51,6 @@
     "action": "Initiated",
     "price_target": null,
     "projected": null,
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Srini Pajjuri",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,500.00",
-    "projected": "+62.4%",
     "date": "10/21/2026"
   },
   {

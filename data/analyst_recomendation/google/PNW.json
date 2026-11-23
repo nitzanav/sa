@@ -27,6 +27,15 @@
     "date": "11/04/2026"
   },
   {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$106.00",
+    "projected": "+0.1%",
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -88,15 +97,6 @@
     "price_target": "$91.00",
     "projected": "-12.1%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$106.00",
-    "projected": "+4.2%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Ryan Levine",

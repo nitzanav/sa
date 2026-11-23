@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ronald Kamdem",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Upgraded",
+    "price_target": "$52.00",
+    "projected": "+23.6%",
+    "date": "11/23/2026"
+  },
+  {
+    "analyst": "Vikram Malhotra",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+13.8%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Farrell Granath",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -18,16 +36,7 @@
     "date": "11/11/2026"
   },
   {
-    "analyst": "John Kim",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/10/2026"
-  },
-  {
-    "analyst": "Sabahat Khan",
+    "analyst": "Michael Carroll",
     "firm": "RBC Capital",
     "recommendation": "Hold",
     "action": "Reiterated",
@@ -54,15 +63,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Ronald Kamdem",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$53.00",
-    "projected": "+22.1%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Julien Blouin",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -70,6 +70,15 @@
     "price_target": "$59.00",
     "projected": "+36.6%",
     "date": "10/26/2026"
+  },
+  {
+    "analyst": "John Kim",
+    "firm": "BMO Capital",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$41.00",
+    "projected": "-8.5%",
+    "date": "10/12/2026"
   },
   {
     "analyst": "Anthony Paolone",
@@ -97,15 +106,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Vikram Malhotra",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+14.7%",
-    "date": "07/06/2026"
   },
   {
     "analyst": "Jonathan Petersen",

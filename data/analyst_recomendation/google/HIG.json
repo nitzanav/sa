@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Meyer Shields",
+    "firm": "KBW",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$137.00",
+    "projected": "+0.1%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$145.00",
+    "projected": "+6%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Yaron Kinar",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -18,15 +36,6 @@
     "date": "11/11/2026"
   },
   {
-    "analyst": "Meyer Shields",
-    "firm": "KBW",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$137.00",
-    "projected": "+3.1%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "Ryan Tunis",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -34,15 +43,6 @@
     "price_target": "$136.00",
     "projected": "+2.4%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+0.5%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "Michael Zaremski",

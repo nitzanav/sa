@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$66.00",
+    "projected": "+30.6%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Bob Brackett",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+39%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -16,15 +34,6 @@
     "price_target": "$60.00",
     "projected": "+13.5%",
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$67.00",
-    "projected": "+22.8%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Sergey Pigarev",
@@ -115,15 +124,6 @@
     "price_target": "$62.00",
     "projected": "+13.8%",
     "date": "10/20/2026"
-  },
-  {
-    "analyst": "Bob Brackett",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$68.00",
-    "projected": "+29%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "Nitin Kumar CFA",

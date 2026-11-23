@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John Staszak",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "James Hardiman",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$128.00",
     "projected": "+41.1%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "John Staszak",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$130.00",
-    "projected": "+27.3%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Steven Pizzella",

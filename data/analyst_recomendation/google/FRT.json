@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+7.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Michael Mueller",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$135.00",
     "projected": "+26.5%",
     "date": "10/05/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$122.00",
-    "projected": "+14%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Barry Jonas",

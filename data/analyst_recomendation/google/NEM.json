@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Fahad Tariq",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+39.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vitaly Kononov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Hold",

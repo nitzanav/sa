@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Joseph Bonner",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Saken Ismailov",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$8.50",
+    "projected": "-8.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Patrick Sholl",
+    "firm": "Barrington",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Kannan Venkateshwar",
     "firm": "Barclays",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$7.00",
-    "projected": "-2%",
+    "projected": "-24.4%",
     "date": "11/11/2026"
   },
   {
@@ -14,7 +41,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$13.00",
-    "projected": "+82.1%",
+    "projected": "+40.4%",
     "date": "11/10/2026"
   },
   {
@@ -23,7 +50,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$8.00",
-    "projected": "+12%",
+    "projected": "-13.6%",
     "date": "11/10/2026"
   },
   {
@@ -32,7 +59,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$8.00",
-    "projected": "+12%",
+    "projected": "-13.6%",
     "date": "11/09/2026"
   },
   {
@@ -41,7 +68,7 @@
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$10.00",
-    "projected": "+40.1%",
+    "projected": "+8%",
     "date": "11/10/2026"
   },
   {
@@ -50,7 +77,7 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$9.00",
-    "projected": "+26.1%",
+    "projected": "-2.8%",
     "date": "11/10/2026"
   },
   {
@@ -59,7 +86,7 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$6.00",
-    "projected": "-16%",
+    "projected": "-35.2%",
     "date": "11/10/2026"
   },
   {
@@ -77,7 +104,7 @@
     "recommendation": "Buy",
     "action": "Initiated",
     "price_target": "$10.00",
-    "projected": "+40.1%",
+    "projected": "+8%",
     "date": "10/26/2026"
   },
   {
@@ -95,7 +122,7 @@
     "recommendation": "Sell",
     "action": "Reiterated",
     "price_target": "$9.00",
-    "projected": "-17%",
+    "projected": null,
     "date": "09/24/2026"
   },
   {
@@ -104,7 +131,7 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$16.00",
-    "projected": "+47.6%",
+    "projected": null,
     "date": "09/22/2026"
   },
   {
@@ -117,30 +144,12 @@
     "date": "09/14/2026"
   },
   {
-    "analyst": "Joseph Bonner",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Patrick Sholl",
-    "firm": "Barrington",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/05/2026"
-  },
-  {
     "analyst": "Doug Creutz",
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Reiterated",
     "price_target": "$8.00",
-    "projected": "-2.8%",
+    "projected": null,
     "date": "08/05/2026"
   },
   {

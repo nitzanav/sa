@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$96.00",
+    "projected": "+8.8%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "David Paige",
     "firm": "RBC Capital",
     "recommendation": "Buy",

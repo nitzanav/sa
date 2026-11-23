@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Owen Bennett",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+15.6%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Edward Hockin",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -106,15 +115,6 @@
     "price_target": "$215.00",
     "projected": "+12%",
     "date": "07/23/2026"
-  },
-  {
-    "analyst": "Owen Bennett",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$216.00",
-    "projected": "+12.2%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Unknown Analyst",

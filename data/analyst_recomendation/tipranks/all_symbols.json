@@ -8,13 +8,6 @@
   },
   {
     "date": "2025-11-17",
-    "ticker": "AKAM",
-    "analyst": "Unknown Analyst",
-    "percent": null,
-    "projected_price": 100
-  },
-  {
-    "date": "2025-11-17",
     "ticker": "NTAP",
     "analyst": "Unknown Analyst",
     "percent": null,
@@ -10410,13 +10403,6 @@
   },
   {
     "date": "2026-07-06",
-    "ticker": "ARE",
-    "analyst": "Vikram Malhotra",
-    "percent": 14.7,
-    "projected_price": 60
-  },
-  {
-    "date": "2026-07-06",
     "ticker": "BAX",
     "analyst": "Vijay Kumar",
     "percent": 5.4,
@@ -14562,13 +14548,6 @@
   {
     "date": "2026-07-31",
     "ticker": "AMZN",
-    "analyst": "Benjamin Black CFA",
-    "percent": 22.6,
-    "projected_price": 325
-  },
-  {
-    "date": "2026-07-31",
-    "ticker": "AMZN",
     "analyst": "Gil Luria",
     "percent": -5.7,
     "projected_price": 250
@@ -17361,13 +17340,6 @@
   },
   {
     "date": "2026-08-11",
-    "ticker": "ALL",
-    "analyst": "Pablo Singzon",
-    "percent": 9.4,
-    "projected_price": 292
-  },
-  {
-    "date": "2026-08-11",
     "ticker": "AMAT",
     "analyst": "Sebastien Naji",
     "percent": null,
@@ -19087,13 +19059,6 @@
     "analyst": "Robin M. Farley",
     "percent": 10.8,
     "projected_price": 395
-  },
-  {
-    "date": "2026-08-20",
-    "ticker": "MO",
-    "analyst": "Christine Dooley",
-    "percent": null,
-    "projected_price": null
   },
   {
     "date": "2026-08-20",
@@ -25712,13 +25677,6 @@
   },
   {
     "date": "2026-09-22",
-    "ticker": "ALLE",
-    "analyst": "Alexander Virgo",
-    "percent": 17.2,
-    "projected_price": 180
-  },
-  {
-    "date": "2026-09-22",
     "ticker": "AMGN",
     "analyst": "Matt Phipps",
     "percent": null,
@@ -32019,13 +31977,6 @@
   },
   {
     "date": "2026-10-12",
-    "ticker": "ABT",
-    "analyst": "Unknown Analyst",
-    "percent": null,
-    "projected_price": null
-  },
-  {
-    "date": "2026-10-12",
     "ticker": "ACN",
     "analyst": "Sachin Mittal",
     "percent": 2.5,
@@ -32044,6 +31995,13 @@
     "analyst": "Joshua Shanker",
     "percent": 17.1,
     "projected_price": 322
+  },
+  {
+    "date": "2026-10-12",
+    "ticker": "ARE",
+    "analyst": "John Kim",
+    "percent": -8.5,
+    "projected_price": 41
   },
   {
     "date": "2026-10-12",
@@ -33580,13 +33538,6 @@
   },
   {
     "date": "2026-10-14",
-    "ticker": "GOOG",
-    "analyst": "Stephen Ju",
-    "percent": 8.1,
-    "projected_price": 380
-  },
-  {
-    "date": "2026-10-14",
     "ticker": "GRMN",
     "analyst": "Richard Kramer",
     "percent": 19.7,
@@ -34098,13 +34049,6 @@
   },
   {
     "date": "2026-10-15",
-    "ticker": "ABNB",
-    "analyst": "Richard Clarke",
-    "percent": 29.2,
-    "projected_price": 217
-  },
-  {
-    "date": "2026-10-15",
     "ticker": "ACN",
     "analyst": "Amit Daryanani",
     "percent": 15.6,
@@ -34123,13 +34067,6 @@
     "analyst": "David Grossman",
     "percent": 11.9,
     "projected_price": 242
-  },
-  {
-    "date": "2026-10-15",
-    "ticker": "ACN",
-    "analyst": "James Faucette",
-    "percent": -9.8,
-    "projected_price": 195
   },
   {
     "date": "2026-10-15",
@@ -37689,13 +37626,6 @@
   },
   {
     "date": "2026-10-21",
-    "ticker": "ABBV",
-    "analyst": "Emily Field",
-    "percent": 13,
-    "projected_price": 325
-  },
-  {
-    "date": "2026-10-21",
     "ticker": "ABT",
     "analyst": "Kendall Au",
     "percent": 23.4,
@@ -40293,13 +40223,6 @@
   },
   {
     "date": "2026-10-22",
-    "ticker": "MMM",
-    "analyst": "Stephen Tusa",
-    "percent": 11.5,
-    "projected_price": 195
-  },
-  {
-    "date": "2026-10-22",
     "ticker": "MNST",
     "analyst": "Matthew Smith, CFA",
     "percent": 11.2,
@@ -42883,13 +42806,6 @@
   },
   {
     "date": "2026-10-26",
-    "ticker": "ABBV",
-    "analyst": "David Amsellem",
-    "percent": 5.6,
-    "projected_price": 303
-  },
-  {
-    "date": "2026-10-26",
     "ticker": "ABT",
     "analyst": "David Toung",
     "percent": null,
@@ -42922,13 +42838,6 @@
     "analyst": "Emily Field",
     "percent": -10.1,
     "projected_price": 400
-  },
-  {
-    "date": "2026-10-26",
-    "ticker": "APD",
-    "analyst": "James Hooper",
-    "percent": 21.5,
-    "projected_price": 373
   },
   {
     "date": "2026-10-26",
@@ -43426,13 +43335,6 @@
     "analyst": "Thomas Champion",
     "percent": 33.2,
     "projected_price": 850
-  },
-  {
-    "date": "2026-10-26",
-    "ticker": "MMM",
-    "analyst": "Amit Mehrotra",
-    "percent": 31.4,
-    "projected_price": 230
   },
   {
     "date": "2026-10-26",
@@ -43972,13 +43874,6 @@
     "analyst": "Richard Anderson",
     "percent": -3.2,
     "projected_price": 42
-  },
-  {
-    "date": "2026-10-27",
-    "ticker": "ARE",
-    "analyst": "Ronald Kamdem",
-    "percent": 22.1,
-    "projected_price": 53
   },
   {
     "date": "2026-10-27",
@@ -49156,13 +49051,6 @@
   {
     "date": "2026-10-29",
     "ticker": "GOOG",
-    "analyst": "Doug Anmuth",
-    "percent": 32.1,
-    "projected_price": 375
-  },
-  {
-    "date": "2026-10-29",
-    "ticker": "GOOG",
     "analyst": "Ingo Wermann",
     "percent": null,
     "projected_price": null
@@ -49205,13 +49093,6 @@
   {
     "date": "2026-10-29",
     "ticker": "GOOGL",
-    "analyst": "Doug Anmuth",
-    "percent": 30.7,
-    "projected_price": 375
-  },
-  {
-    "date": "2026-10-29",
-    "ticker": "GOOGL",
     "analyst": "Eric Sheridan",
     "percent": 34.2,
     "projected_price": 385
@@ -49236,13 +49117,6 @@
     "analyst": "Michael Nathanson",
     "percent": 20.3,
     "projected_price": 345
-  },
-  {
-    "date": "2026-10-29",
-    "ticker": "GOOGL",
-    "analyst": "Stephen Ju",
-    "percent": 15.7,
-    "projected_price": 332
   },
   {
     "date": "2026-10-29",
@@ -51340,13 +51214,6 @@
   {
     "date": "2026-10-30",
     "ticker": "AMZN",
-    "analyst": "Jason Helfstein",
-    "percent": 22.6,
-    "projected_price": 285
-  },
-  {
-    "date": "2026-10-30",
-    "ticker": "AMZN",
     "analyst": "Joe Feldman",
     "percent": 44.1,
     "projected_price": 335
@@ -51389,13 +51256,6 @@
   {
     "date": "2026-10-30",
     "ticker": "AMZN",
-    "analyst": "Mark Mahaney",
-    "percent": 52.7,
-    "projected_price": 355
-  },
-  {
-    "date": "2026-10-30",
-    "ticker": "AMZN",
     "analyst": "Michael Morton",
     "percent": 53.5,
     "projected_price": 357
@@ -51420,13 +51280,6 @@
     "analyst": "Ross Sandler",
     "percent": 57,
     "projected_price": 365
-  },
-  {
-    "date": "2026-10-30",
-    "ticker": "AMZN",
-    "analyst": "Stephen Ju",
-    "percent": 51.4,
-    "projected_price": 352
   },
   {
     "date": "2026-10-30",
@@ -52680,13 +52533,6 @@
     "analyst": "Justin Post",
     "percent": 35.9,
     "projected_price": 380
-  },
-  {
-    "date": "2026-10-30",
-    "ticker": "GOOGL",
-    "analyst": "Brian Nowak",
-    "percent": 33.4,
-    "projected_price": 375
   },
   {
     "date": "2026-10-30",
@@ -55750,13 +55596,6 @@
   {
     "date": "2026-11-02",
     "ticker": "GOOGL",
-    "analyst": "Ken Gawrelski",
-    "percent": 29.2,
-    "projected_price": 365
-  },
-  {
-    "date": "2026-11-02",
-    "ticker": "GOOGL",
     "analyst": "Serena Lim Yi Qi",
     "percent": 32.8,
     "projected_price": 375
@@ -56079,7 +55918,7 @@
   {
     "date": "2026-11-02",
     "ticker": "LNT",
-    "analyst": "Edward DeArias",
+    "analyst": "James Thalacker",
     "percent": 10.1,
     "projected_price": 79
   },
@@ -58914,13 +58753,6 @@
   {
     "date": "2026-11-04",
     "ticker": "AMD",
-    "analyst": "Chris Krueger CFA",
-    "percent": 39.1,
-    "projected_price": 675
-  },
-  {
-    "date": "2026-11-04",
-    "ticker": "AMD",
     "analyst": "David O'Connor",
     "percent": 34,
     "projected_price": 650
@@ -58966,6 +58798,13 @@
     "analyst": "Joseph Moore",
     "percent": 13.3,
     "projected_price": 550
+  },
+  {
+    "date": "2026-11-04",
+    "ticker": "AMD",
+    "analyst": "Joshua Buchalter",
+    "percent": 39.1,
+    "projected_price": 675
   },
   {
     "date": "2026-11-04",
@@ -59271,7 +59110,7 @@
   {
     "date": "2026-11-04",
     "ticker": "ARE",
-    "analyst": "Sabahat Khan",
+    "analyst": "Michael Carroll",
     "percent": 8.3,
     "projected_price": 47
   },
@@ -63877,16 +63716,16 @@
   {
     "date": "2026-11-06",
     "ticker": "ABNB",
-    "analyst": "Matthew Cost",
-    "percent": -11.1,
-    "projected_price": 170
+    "analyst": "Maria Ripps",
+    "percent": 17.7,
+    "projected_price": 225
   },
   {
     "date": "2026-11-06",
     "ticker": "ABNB",
-    "analyst": "Michael Graham",
-    "percent": 17.7,
-    "projected_price": 225
+    "analyst": "Matthew Cost",
+    "percent": -11.1,
+    "projected_price": 170
   },
   {
     "date": "2026-11-06",
@@ -64069,13 +63908,6 @@
     "analyst": "Vikram Gandhi",
     "percent": 4.6,
     "projected_price": 271
-  },
-  {
-    "date": "2026-11-06",
-    "ticker": "ALL",
-    "analyst": "Yaron Kinar",
-    "percent": 20,
-    "projected_price": 311
   },
   {
     "date": "2026-11-06",
@@ -64752,7 +64584,7 @@
   {
     "date": "2026-11-06",
     "ticker": "GOOGL",
-    "analyst": "Mark Shmulik",
+    "analyst": "Madison Rezaei",
     "percent": 14.1,
     "projected_price": 325
   },
@@ -67594,23 +67426,9 @@
   {
     "date": "2026-11-10",
     "ticker": "ALL",
-    "analyst": "Bob Huang",
-    "percent": 2,
-    "projected_price": 260
-  },
-  {
-    "date": "2026-11-10",
-    "ticker": "ALL",
     "analyst": "Brian Meredith",
     "percent": 11,
     "projected_price": 283
-  },
-  {
-    "date": "2026-11-10",
-    "ticker": "ALL",
-    "analyst": "Meyer Shields",
-    "percent": -5.4,
-    "projected_price": 241
   },
   {
     "date": "2026-11-10",
@@ -67646,13 +67464,6 @@
     "analyst": "Rajat Gupta CFA",
     "percent": 29,
     "projected_price": 51
-  },
-  {
-    "date": "2026-11-10",
-    "ticker": "ARE",
-    "analyst": "John Kim",
-    "percent": null,
-    "projected_price": null
   },
   {
     "date": "2026-11-10",
@@ -68825,13 +68636,6 @@
   },
   {
     "date": "2026-11-11",
-    "ticker": "ALL",
-    "analyst": "Michael Zaremski",
-    "percent": 17.7,
-    "projected_price": 304
-  },
-  {
-    "date": "2026-11-11",
     "ticker": "APA",
     "analyst": "Unknown Analyst",
     "percent": -10.7,
@@ -69994,13 +69798,6 @@
   },
   {
     "date": "2026-11-12",
-    "ticker": "AFL",
-    "analyst": "Yaron Kinar",
-    "percent": -9.4,
-    "projected_price": 117
-  },
-  {
-    "date": "2026-11-12",
     "ticker": "ALB",
     "analyst": "Matthew DeYoe",
     "percent": 27.2,
@@ -70068,13 +69865,6 @@
     "analyst": "Terence Flynn",
     "percent": -13.1,
     "projected_price": 410
-  },
-  {
-    "date": "2026-11-12",
-    "ticker": "AMZN",
-    "analyst": "Justin Post",
-    "percent": null,
-    "projected_price": null
   },
   {
     "date": "2026-11-12",
@@ -72147,5 +71937,208 @@
     "analyst": "Betty Jiang",
     "percent": 20.2,
     "projected_price": 206
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "ABBV",
+    "analyst": "Emily Field",
+    "percent": 11.7,
+    "projected_price": 335
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "ALL",
+    "analyst": "Pablo Singzon",
+    "percent": 7.8,
+    "projected_price": 291
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "APD",
+    "analyst": "James Hooper",
+    "percent": 18,
+    "projected_price": 375
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "ARE",
+    "analyst": "Vikram Malhotra",
+    "percent": 13.8,
+    "projected_price": 50
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "MMM",
+    "analyst": "Amit Mehrotra",
+    "percent": 25.5,
+    "projected_price": 230
+  },
+  {
+    "date": "2026-11-16",
+    "ticker": "MMM",
+    "analyst": "Stephen Tusa",
+    "percent": 11.9,
+    "projected_price": 205
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "AFL",
+    "analyst": "Yaron Kinar",
+    "percent": -7.3,
+    "projected_price": 118
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "ALL",
+    "analyst": "Bob Huang",
+    "percent": 2.3,
+    "projected_price": 275
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "ALLE",
+    "analyst": "Alexander Virgo",
+    "percent": 0.2,
+    "projected_price": 190
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "AMZN",
+    "analyst": "Justin Post",
+    "percent": 23.1,
+    "projected_price": 317
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "GOOG",
+    "analyst": "Karl Keirstead",
+    "percent": 13.9,
+    "projected_price": 320
+  },
+  {
+    "date": "2026-11-17",
+    "ticker": "MO",
+    "analyst": "Christine Dooley",
+    "percent": null,
+    "projected_price": null
+  },
+  {
+    "date": "2026-11-18",
+    "ticker": "ABBV",
+    "analyst": "David Amsellem",
+    "percent": 20.3,
+    "projected_price": 349
+  },
+  {
+    "date": "2026-11-18",
+    "ticker": "GOOGL",
+    "analyst": "Brian Nowak",
+    "percent": 32.6,
+    "projected_price": 375
+  },
+  {
+    "date": "2026-11-18",
+    "ticker": "GOOGL",
+    "analyst": "Ken Gawrelski",
+    "percent": 29.1,
+    "projected_price": 365
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "ABT",
+    "analyst": "Mike Kratky",
+    "percent": 18.2,
+    "projected_price": 124
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "ACN",
+    "analyst": "James Faucette",
+    "percent": -14.6,
+    "projected_price": 195
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "ACN",
+    "analyst": "Matthew O'Neill",
+    "percent": 26.2,
+    "projected_price": 288
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "ALL",
+    "analyst": "Michael Zaremski",
+    "percent": 15,
+    "projected_price": 304
+  },
+  {
+    "date": "2026-11-19",
+    "ticker": "GOOGL",
+    "analyst": "Karl Keirstead",
+    "percent": 8.7,
+    "projected_price": 320
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "ABNB",
+    "analyst": "Richard Clarke",
+    "percent": 34.7,
+    "projected_price": 234
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "ALL",
+    "analyst": "Meyer Shields",
+    "percent": -11.3,
+    "projected_price": 241
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "ALL",
+    "analyst": "Yaron Kinar",
+    "percent": 14.5,
+    "projected_price": 311
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "AMZN",
+    "analyst": "Jason Helfstein",
+    "percent": 22.3,
+    "projected_price": 310
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "AMZN",
+    "analyst": "Mark Mahaney",
+    "percent": 40.1,
+    "projected_price": 355
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "GOOG",
+    "analyst": "Doug Anmuth",
+    "percent": null,
+    "projected_price": null
+  },
+  {
+    "date": "2026-11-20",
+    "ticker": "GOOGL",
+    "analyst": "Doug Anmuth",
+    "percent": 36.6,
+    "projected_price": 375
+  },
+  {
+    "date": "2026-11-21",
+    "ticker": "AMZN",
+    "analyst": "Karl Keirstead",
+    "percent": 34.1,
+    "projected_price": 340
+  },
+  {
+    "date": "2026-11-23",
+    "ticker": "ARE",
+    "analyst": "Ronald Kamdem",
+    "percent": 23.6,
+    "projected_price": 52
   }
 ]

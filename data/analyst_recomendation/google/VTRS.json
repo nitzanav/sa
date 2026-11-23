@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Les Sulewski",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$26.00",
+    "projected": "+27.3%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Daniel Clark",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$24.00",
+    "projected": "+17.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Glen Santangelo",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -54,15 +72,6 @@
     "date": "10/08/2026"
   },
   {
-    "analyst": "Les Sulewski",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$25.00",
-    "projected": "+44.8%",
-    "date": "09/23/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Oppenheimer",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": "$25.00",
     "projected": "+44.8%",
     "date": "09/23/2026"
-  },
-  {
-    "analyst": "Daniel Clark",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$20.00",
-    "projected": "+19.6%",
-    "date": "09/09/2026"
   },
   {
     "analyst": "Jasper Hellweg",

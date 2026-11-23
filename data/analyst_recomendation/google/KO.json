@@ -1,11 +1,47 @@
 [
   {
+    "analyst": "Robert Ottenstein",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+2.1%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Margaret-May Binshtok",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Robert Moskow",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$112.00",
+    "projected": "+13.4%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Peter Galbo",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Cristian Rios",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$95.00",
+    "projected": "-3.2%",
     "date": "11/13/2026"
   },
   {
@@ -16,15 +52,6 @@
     "price_target": "$95.00",
     "projected": "-3.2%",
     "date": "11/13/2026"
-  },
-  {
-    "analyst": "Cristian Rios",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+0.1%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Zheng Feng Chee",
@@ -42,24 +69,6 @@
     "action": "Maintained",
     "price_target": "$89.00",
     "projected": "-2%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Robert Moskow",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$104.00",
-    "projected": "+14.5%",
-    "date": "10/28/2026"
-  },
-  {
-    "analyst": "Robert Ottenstein",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+10.1%",
     "date": "10/28/2026"
   },
   {

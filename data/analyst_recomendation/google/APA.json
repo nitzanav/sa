@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Scott Gruber",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+7.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$44.00",
+    "projected": "-5.7%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Arun Jayaram",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+4.3%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -108,15 +135,6 @@
     "date": "10/20/2026"
   },
   {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$43.00",
-    "projected": "-9.3%",
-    "date": "10/15/2026"
-  },
-  {
     "analyst": "Nitin Kumar CFA",
     "firm": "Mizuho Securities",
     "recommendation": "Sell",
@@ -142,15 +160,6 @@
     "price_target": "$41.00",
     "projected": "-9.8%",
     "date": "10/11/2026"
-  },
-  {
-    "analyst": "Arun Jayaram",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$46.00",
-    "projected": "+1.9%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Leo Mariani",
@@ -205,15 +214,6 @@
     "price_target": "$50.00",
     "projected": "+14.3%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Scott Gruber",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$44.00",
-    "projected": "-1.7%",
-    "date": "08/20/2026"
   },
   {
     "analyst": "Bill Selesky",

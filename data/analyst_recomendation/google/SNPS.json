@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "James Schneider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+36.8%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Saket Kalia",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$640.00",
+    "projected": "+42.3%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Vivek Arya",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -52,15 +70,6 @@
     "price_target": "$640.00",
     "projected": "+36.8%",
     "date": "10/01/2026"
-  },
-  {
-    "analyst": "James Schneider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+42.4%",
-    "date": "09/30/2026"
   },
   {
     "analyst": "Harlan Sur",

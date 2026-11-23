@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Marie Ferguson",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+26.8%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Aidan Kelly",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$99.00",
+    "projected": "+27.6%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
@@ -72,15 +90,6 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Aidan Kelly",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+21.5%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Shahriar Pourreza",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -151,15 +160,6 @@
     "price_target": "$110.00",
     "projected": "+16.3%",
     "date": "07/10/2026"
-  },
-  {
-    "analyst": "Marie Ferguson",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+17.2%",
-    "date": "06/09/2026"
   },
   {
     "analyst": "Unknown Analyst",

@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Aidan Kelly",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+39.2%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "David Arcaro",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+55.1%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Gregg Orrill",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -52,24 +70,6 @@
     "price_target": "$15.50",
     "projected": "+20.2%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "David Arcaro",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$21.00",
-    "projected": "+58.9%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Aidan Kelly",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$17.00",
-    "projected": "+29.6%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Nicholas Campanella",

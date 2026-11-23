@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "David Bellinger",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,150.00",
+    "projected": "+3.6%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,220.00",
+    "projected": "+9.8%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Chuck Cerankosky",
+    "firm": "Northcoast Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Christopher Nardone",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -16,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "David Bellinger",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,100.00",
-    "projected": "+1.8%",
-    "date": "11/11/2026"
   },
   {
     "analyst": "Greg Melich",

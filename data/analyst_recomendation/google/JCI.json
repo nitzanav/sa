@@ -3,10 +3,19 @@
     "analyst": "Varun Govindaraj",
     "firm": "Bernstein",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$194.00",
-    "projected": "+35.8%",
-    "date": "11/12/2026"
+    "projected": "+41.4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
   },
   {
     "analyst": "Julian Mitchell",
@@ -16,15 +25,6 @@
     "price_target": "$160.00",
     "projected": "+11.5%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/09/2026"
   },
   {
     "analyst": "John Eade",
@@ -81,7 +81,16 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Toby Okwara‏",
+    "analyst": "Toby Okwara",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+17.2%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Toby Okwara",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",

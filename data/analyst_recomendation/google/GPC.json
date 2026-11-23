@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$130.00",
+    "projected": "+7.3%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Bill Selesky",
     "firm": "Argus Research",
     "recommendation": "Buy",

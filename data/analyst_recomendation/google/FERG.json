@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "Sam Reid",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$295.00",
+    "projected": "+17%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Arnaud Lehmann",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+29.8%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Connor Cerniglia",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$325.00",
-    "projected": "+22.1%",
-    "date": "11/12/2026"
+    "projected": "+29.3%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Anthony Pettinari",
@@ -42,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$270.00",
     "projected": "+4.4%",
-    "date": "11/10/2026"
-  },
-  {
-    "analyst": "Sam Reid",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$295.00",
-    "projected": "+14.1%",
     "date": "11/10/2026"
   },
   {
@@ -141,15 +150,6 @@
     "action": "Reiterated",
     "price_target": "$261.00",
     "projected": "+7.3%",
-    "date": "08/18/2026"
-  },
-  {
-    "analyst": "Arnaud Lehmann",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$315.00",
-    "projected": "+29.5%",
     "date": "08/18/2026"
   },
   {

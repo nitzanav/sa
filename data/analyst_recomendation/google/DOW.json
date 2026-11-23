@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Patrick Cunningham",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+2.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Jeffrey Zekauskas",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -42,15 +51,6 @@
     "action": "Maintained",
     "price_target": "$33.00",
     "projected": "+3.1%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Patrick Cunningham",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "-0.1%",
     "date": "10/23/2026"
   },
   {

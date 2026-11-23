@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Bain",
+    "firm": "Texas Capital Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$59.00",
+    "projected": "+50.7%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "John Staszak",
     "firm": "Argus Research",
     "recommendation": "Hold",

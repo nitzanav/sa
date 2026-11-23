@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Matthew O'Neill",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$120.00",
+    "projected": "+6.6%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$130.00",
+    "projected": "+11.3%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Jason Kupferberg",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
@@ -79,15 +97,6 @@
     "price_target": "$112.00",
     "projected": "+6.2%",
     "date": "09/24/2026"
-  },
-  {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+18.5%",
-    "date": "09/23/2026"
   },
   {
     "analyst": "Tien Tsin Huang",

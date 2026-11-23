@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,450.00",
+    "projected": "+19.6%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$1,450.00",
+    "projected": "+19.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Mikhail Paramonov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",

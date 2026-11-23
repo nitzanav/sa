@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Kelly Crago",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$665.00",
+    "projected": "-0.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Sydney Wagner",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$766.00",
+    "projected": "+14.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Steven Zaccone",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -7,15 +25,6 @@
     "price_target": "$685.00",
     "projected": "+4.8%",
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "Sydney Wagner",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$730.00",
-    "projected": "+15.7%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Lorraine Hutchinson",
@@ -79,15 +88,6 @@
     "price_target": "$645.00",
     "projected": "+19.2%",
     "date": "09/11/2026"
-  },
-  {
-    "analyst": "Kelly Crago",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$580.00",
-    "projected": "+6.6%",
-    "date": "09/09/2026"
   },
   {
     "analyst": "Unknown Analyst",

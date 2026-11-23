@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$149.00",
+    "projected": "+57.5%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+30%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Gabriele Sorbara",
     "firm": "Siebert Williams Shank & Co",
     "recommendation": "Buy",
@@ -16,15 +34,6 @@
     "price_target": "$150.00",
     "projected": "+58.1%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$147.00",
-    "projected": "+79.4%",
-    "date": "11/05/2026"
   },
   {
     "analyst": "David Arcaro",
@@ -151,15 +160,6 @@
     "price_target": "$216.00",
     "projected": "+60.3%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Carly Davenport",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$184.00",
-    "projected": "+29.6%",
-    "date": "07/27/2026"
   },
   {
     "analyst": "Steve Fleishman",

@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Brian Bittner",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$310.00",
+    "projected": "+15.2%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Jon Tower",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$301.00",
+    "projected": "+10.5%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Dennis Geiger",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+17.5%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Christopher Carril",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$307.00",
+    "projected": "+12.7%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Alexia Burland Howard",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -72,15 +108,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Dennis Geiger",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+13.9%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Logan Reich",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -108,15 +135,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Jon Tower",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+12.1%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Zachary Fadem",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -135,30 +153,12 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Christopher Carril",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$307.00",
-    "projected": "+9.3%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Andrew Charles",
     "firm": "TD Cowen",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$285.00",
     "projected": "+6%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Brian Bittner",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$310.00",
-    "projected": "+15.3%",
     "date": "11/04/2026"
   },
   {

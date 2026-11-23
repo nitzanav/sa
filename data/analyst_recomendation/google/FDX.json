@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$377.00",
+    "projected": "+16.8%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "David Vernon",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -133,15 +142,6 @@
     "price_target": "$350.00",
     "projected": "+21.6%",
     "date": "10/07/2026"
-  },
-  {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$397.00",
-    "projected": "+24.6%",
-    "date": "09/03/2026"
   },
   {
     "analyst": "Scott Group",

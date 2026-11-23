@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Benjamin Theurer",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$83.00",
+    "projected": "+18.5%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Duffy Fischer",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$87.00",
+    "projected": "+20.4%",
+    "date": "11/15/2026"
+  },
+  {
+    "analyst": "Matthew DeYoe",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+10%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Joel Jackson",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -36,15 +63,6 @@
     "date": "11/13/2026"
   },
   {
-    "analyst": "Matthew DeYoe",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/12/2026"
-  },
-  {
     "analyst": "Kevin McCarthy",
     "firm": "Vertical Research",
     "recommendation": "Hold",
@@ -61,15 +79,6 @@
     "price_target": "$75.00",
     "projected": "-0.6%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Duffy Fischer",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": "$87.00",
-    "projected": "+17.8%",
-    "date": "10/08/2026"
   },
   {
     "analyst": "Salvator Tiano",

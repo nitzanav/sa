@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Christian Wetherbee",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+17.5%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Atul Maheswari",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$113.00",
+    "projected": "+30.8%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+16.3%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Alex Fasciano",
     "firm": "CFRA",
     "recommendation": "Buy",
@@ -7,15 +34,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/13/2026"
-  },
-  {
-    "analyst": "Christian Wetherbee",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "+10.3%",
-    "date": "11/12/2026"
   },
   {
     "analyst": "Jason Sum",
@@ -34,15 +52,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+25%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Thomas Fitzgerald CFA",
@@ -105,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$105.00",
     "projected": "+29.5%",
-    "date": "10/12/2026"
-  },
-  {
-    "analyst": "Atul Maheswari",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$102.00",
-    "projected": "+25.8%",
     "date": "10/12/2026"
   },
   {

@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$280.00",
+    "projected": "+24.6%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Timna Tanners",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$285.00",
+    "projected": "+26.8%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Carlos De Alba",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$270.00",
+    "projected": "+18.7%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Andrew Jones CFA",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$257.00",
+    "projected": "+12.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Richard Garchitorena",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -36,15 +72,6 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Carlos De Alba",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+6.3%",
-    "date": "10/21/2026"
-  },
-  {
     "analyst": "Katja Jancic",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -54,30 +81,12 @@
     "date": "10/21/2026"
   },
   {
-    "analyst": "Timna Tanners",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$271.00",
-    "projected": "+16.5%",
-    "date": "10/20/2026"
-  },
-  {
     "analyst": "Lawson Winder",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$270.00",
     "projected": "+9.9%",
-    "date": "10/19/2026"
-  },
-  {
-    "analyst": "Andrew Jones CFA",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$276.00",
-    "projected": "+12.3%",
     "date": "10/19/2026"
   },
   {

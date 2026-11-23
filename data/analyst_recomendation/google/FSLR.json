@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+31.8%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Dimple Gosai",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$222.00",
+    "projected": "+46.3%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Brian K. Lee",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -12,19 +30,10 @@
     "analyst": "Jon Windham",
     "firm": "UBS",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$295.00",
     "projected": "+57.2%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "Dimple Gosai",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$222.00",
-    "projected": "+12.1%",
-    "date": "11/09/2026"
   },
   {
     "analyst": "Jed Dorsheimer",

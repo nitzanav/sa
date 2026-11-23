@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Matthew O'Neill",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$70.00",
+    "projected": "+22%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Nate Svensson",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",

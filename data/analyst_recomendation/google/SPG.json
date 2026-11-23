@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Caitlin Burrows",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "+13.6%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Nicholas Joseph",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$237.00",
+    "projected": "+2.5%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Samir Khanal",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$260.00",
+    "projected": "+11%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Steve Sakwa",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -16,24 +43,6 @@
     "price_target": "$235.00",
     "projected": "+0.8%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Caitlin Burrows",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+12.6%",
-    "date": "11/09/2026"
-  },
-  {
-    "analyst": "Samir Khanal",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$264.00",
-    "projected": "+14.3%",
-    "date": "11/09/2026"
   },
   {
     "analyst": "Alexander Goldfarb",
@@ -133,15 +142,6 @@
     "price_target": "$223.00",
     "projected": "+8.8%",
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Nicholas Joseph",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+5.3%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Juan C. Sanabria",

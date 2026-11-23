@@ -3,10 +3,28 @@
     "analyst": "Christian Wetherbee",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$50.00",
-    "projected": "+8.2%",
-    "date": "11/12/2026"
+    "projected": "+6.4%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Atul Maheswari",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$59.00",
+    "projected": "+28.3%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "David Vernon",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$45.00",
+    "projected": "-3.2%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Andrew Didora",
@@ -34,24 +52,6 @@
     "price_target": "$48.00",
     "projected": "+9%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "David Vernon",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+4.7%",
-    "date": "10/27/2026"
-  },
-  {
-    "analyst": "Atul Maheswari",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$54.00",
-    "projected": "+28.7%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Catherine O'Brien",

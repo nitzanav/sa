@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$373.00",
+    "projected": "-5.8%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Harry Fong",
     "firm": "Roth MKM",
     "recommendation": "Buy",
@@ -52,15 +61,6 @@
     "price_target": "$388.00",
     "projected": "+0.3%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$371.00",
-    "projected": "-4.5%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Meyer Shields",

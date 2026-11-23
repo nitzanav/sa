@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Guy Hardwick",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$78.00",
+    "projected": "+45.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Jason Celino",
     "firm": "KeyBanc",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$67.00",
     "projected": "+18.8%",
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "Guy Hardwick",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$78.00",
-    "projected": "+44.2%",
-    "date": "11/09/2026"
   },
   {
     "analyst": "Tami Zakaria",

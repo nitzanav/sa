@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jean Ann Salisbury",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$98.00",
+    "projected": "+11%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Theresa Chen",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -169,15 +178,6 @@
     "price_target": "$104.00",
     "projected": "+9.3%",
     "date": "09/02/2026"
-  },
-  {
-    "analyst": "Jean Ann Salisbury",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$98.00",
-    "projected": "+7.8%",
-    "date": "08/12/2026"
   },
   {
     "analyst": "Selman Akyol",

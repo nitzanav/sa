@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mike Kratky",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$124.00",
+    "projected": "+18.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Travis Steed",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",

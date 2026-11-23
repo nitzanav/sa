@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Samir Khanal",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+15.8%",
+    "date": "11/15/2026"
+  },
+  {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+15.8%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Michael Griffin CFA",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -133,24 +151,6 @@
     "price_target": "$85.00",
     "projected": "+10.5%",
     "date": "08/07/2026"
-  },
-  {
-    "analyst": "Samir Khanal",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+8.3%",
-    "date": "08/03/2026"
-  },
-  {
-    "analyst": "Jeffrey Spector",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$87.00",
-    "projected": "+8.3%",
-    "date": "08/03/2026"
   },
   {
     "analyst": "Floris van Dijkum",

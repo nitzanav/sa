@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Matthew DeYoe",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -160,15 +169,6 @@
     "price_target": "$133.00",
     "projected": "+24.7%",
     "date": "09/11/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/26/2026"
   },
   {
     "analyst": "Unknown Analyst",

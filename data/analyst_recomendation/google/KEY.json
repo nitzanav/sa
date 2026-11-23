@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "+16.1%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "John Pancari",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$27.00",
     "projected": "+28.6%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$24.00",
-    "projected": "+19.8%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Mike Mayo",

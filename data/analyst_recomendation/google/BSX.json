@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Joanne Wuensch",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$44.00",
+    "projected": "+1%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "William Plovanic",
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Joanne Wuensch",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$44.00",
-    "projected": "+0.3%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Travis Steed",

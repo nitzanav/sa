@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Julien Blouin",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$123.00",
+    "projected": "+4.7%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Steve Sakwa",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -79,15 +88,6 @@
     "price_target": "$125.00",
     "projected": "+6.4%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Julien Blouin",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$125.00",
-    "projected": "+6.1%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Unknown Analyst",

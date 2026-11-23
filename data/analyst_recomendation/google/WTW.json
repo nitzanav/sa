@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Elyse Greenspan",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$390.00",
+    "projected": "+18%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+2%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Yaron Kinar",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -18,30 +36,12 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "-2.6%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Brian Meredith",
     "firm": "UBS",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$395.00",
     "projected": "+22.3%",
-    "date": "11/02/2026"
-  },
-  {
-    "analyst": "Elyse Greenspan",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$360.00",
-    "projected": "+11.5%",
     "date": "11/02/2026"
   },
   {

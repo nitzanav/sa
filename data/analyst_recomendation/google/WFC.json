@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$100.00",
+    "projected": "+22.1%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$92.00",
+    "projected": "+12.3%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vivek Juneja",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -16,15 +34,6 @@
     "price_target": "$108.00",
     "projected": "+27%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/26/2026"
   },
   {
     "analyst": "Mikhail Paramonov",
@@ -79,15 +88,6 @@
     "price_target": "$90.00",
     "projected": "+14.4%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+14.2%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Manan Gosalia",

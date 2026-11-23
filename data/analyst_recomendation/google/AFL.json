@@ -1,20 +1,20 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "-7.3%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Thomas Gallagher",
     "firm": "Evercore ISI",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$116.00",
     "projected": "-10.1%",
-    "date": "11/12/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "-9.4%",
     "date": "11/12/2026"
   },
   {

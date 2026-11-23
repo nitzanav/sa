@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Ebrahim Poonawala",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+25%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$370.00",
+    "projected": "+13%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Manan Gosalia",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$377.00",
+    "projected": "+13%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Jason Goldberg",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -16,15 +43,6 @@
     "price_target": "$400.00",
     "projected": "+17.3%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Ebrahim Poonawala",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/23/2026"
   },
   {
     "analyst": "Jose Luis Pascual",
@@ -135,30 +153,12 @@
     "date": "10/14/2026"
   },
   {
-    "analyst": "Manan Gosalia",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$377.00",
-    "projected": "+15.2%",
-    "date": "10/14/2026"
-  },
-  {
     "analyst": "Richard Ramsden",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$392.00",
     "projected": "+15.3%",
-    "date": "10/13/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$370.00",
-    "projected": "+8.8%",
     "date": "10/13/2026"
   },
   {

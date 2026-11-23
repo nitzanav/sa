@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$160.00",
+    "projected": "+15.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$149.00",
     "projected": "+10.3%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$159.00",
-    "projected": "+17.7%",
     "date": "11/06/2026"
   },
   {

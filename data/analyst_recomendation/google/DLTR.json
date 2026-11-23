@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$160.00",
+    "projected": "+15.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$165.00",
+    "projected": "+18.8%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Zhihan Ma",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -79,15 +97,6 @@
     "price_target": "$145.00",
     "projected": "+20.8%",
     "date": "08/27/2026"
-  },
-  {
-    "analyst": "Michael Lasser",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$150.00",
-    "projected": "+17.7%",
-    "date": "08/28/2026"
   },
   {
     "analyst": "Kelly Bania",

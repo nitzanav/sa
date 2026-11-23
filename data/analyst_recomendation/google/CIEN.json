@@ -1,6 +1,24 @@
 [
   {
-    "analyst": "Daniel Zhu‏",
+    "analyst": "Daniel Zhu",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$440.00",
+    "projected": "+66%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Sean O'Loughlin",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+41.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Daniel Zhu",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
@@ -106,15 +124,6 @@
     "price_target": "$450.00",
     "projected": "+28.4%",
     "date": "09/17/2026"
-  },
-  {
-    "analyst": "Sean O'Loughlin",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+14.3%",
-    "date": "09/16/2026"
   },
   {
     "analyst": "Jim Kelleher",

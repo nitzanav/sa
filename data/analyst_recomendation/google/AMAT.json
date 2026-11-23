@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Stacy Rasgon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+69.3%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Egor Tolmachev",
+    "firm": "Freedom Capital Markets",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$490.00",
+    "projected": "+40.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Thomas O'Malley",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -85,8 +103,8 @@
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$580.00",
-    "projected": "+54.3%",
+    "price_target": "$670.00",
+    "projected": "+78.2%",
     "date": "11/13/2026"
   },
   {
@@ -124,15 +142,6 @@
     "price_target": "$520.00",
     "projected": "+37.6%",
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "Stacy Rasgon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$600.00",
-    "projected": "+59.6%",
-    "date": "11/13/2026"
   },
   {
     "analyst": "Timothy Arcuri",

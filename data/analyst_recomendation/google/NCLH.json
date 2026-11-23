@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Robin M. Farley",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$19.00",
+    "projected": "+10.3%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "James Hardiman",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$16.00",
     "projected": "-10.7%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Robin M. Farley",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$20.00",
-    "projected": "+13.9%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Steven Wieczynski",

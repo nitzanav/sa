@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+13%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Domenico Santoro",
     "firm": "HSBC",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$159.00",
     "projected": "+29.6%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$135.00",
-    "projected": "+2.8%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Manan Gosalia",

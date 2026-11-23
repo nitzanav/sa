@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Timothy Chiodo",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+19.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Sanjay Sakhrani",
+    "firm": "KBW",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+18%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Nik Cremo",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-5.1%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "David Koning",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+32.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Bryan Keane",
     "firm": "Citi",
     "recommendation": "Hold",
@@ -51,24 +87,6 @@
     "action": "Maintained",
     "price_target": "$60.00",
     "projected": "-0.1%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Sanjay Sakhrani",
-    "firm": "KBW",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+16.6%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Timothy Chiodo",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$68.00",
-    "projected": "+13.2%",
     "date": "11/04/2026"
   },
   {
@@ -144,6 +162,15 @@
     "date": "11/04/2026"
   },
   {
+    "analyst": "Stephen Biggar",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
     "analyst": "Matthew O'Neill",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -153,30 +180,12 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Nik Cremo",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "-1.7%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Will Nance",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$61.00",
     "projected": "+7.9%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "David Koning",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$70.00",
-    "projected": "+23.8%",
     "date": "11/03/2026"
   },
   {
@@ -232,15 +241,6 @@
     "price_target": null,
     "projected": null,
     "date": "08/25/2026"
-  },
-  {
-    "analyst": "Stephen Biggar",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/11/2026"
   },
   {
     "analyst": "Brett Huff",

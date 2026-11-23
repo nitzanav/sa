@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Eric Handler",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$136.00",
+    "projected": "+12.3%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Stephen Laszczyk",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$126.00",
+    "projected": "+4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Christopher Horvers",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$145.00",
+    "projected": "+19.7%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Anthony Bonadio",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "-2.4%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Arpine Kocharyan",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -9,24 +45,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Stephen Laszczyk",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+8.1%",
-    "date": "10/25/2026"
-  },
-  {
-    "analyst": "Eric Handler",
-    "firm": "Roth MKM",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$125.00",
-    "projected": "+13.4%",
-    "date": "10/21/2026"
-  },
-  {
     "analyst": "James Hardiman",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -34,15 +52,6 @@
     "price_target": "$137.00",
     "projected": "+20.2%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Anthony Bonadio",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$100.00",
-    "projected": "-9.3%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Andrew Didora",
@@ -87,15 +96,6 @@
     "action": "Maintained",
     "price_target": "$105.00",
     "projected": "+18.1%",
-    "date": "07/22/2026"
-  },
-  {
-    "analyst": "Christopher Horvers",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$111.00",
-    "projected": "+24.8%",
     "date": "07/22/2026"
   },
   {

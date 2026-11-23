@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Akash Tewari",
+    "firm": "Jefferies",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$36.00",
+    "projected": "+29.5%",
+    "date": "11/23/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-14.5%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Ilya Zubkov",
     "firm": "Freedom Capital Markets",
     "recommendation": "Buy",
@@ -117,30 +144,12 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Akash Tewari",
-    "firm": "Jefferies",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$36.00",
-    "projected": "+17.3%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Chris Schott",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$30.00",
     "projected": "-2.2%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "-18.5%",
     "date": "11/03/2026"
   },
   {
@@ -187,15 +196,6 @@
     "price_target": "$35.00",
     "projected": "+25.4%",
     "date": "10/08/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Leerink Partners",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/02/2026"
   },
   {
     "analyst": "Rajesh Kumar",

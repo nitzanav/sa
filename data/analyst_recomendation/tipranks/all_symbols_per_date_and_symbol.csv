@@ -1024,7 +1024,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-07-02,WST,6.5,,1,Paul Knight:6.5
 2026-07-02,WYNN,48.4,,1,David Katz:48.4
 2026-07-05,NEM,52.4,,1,Unknown Analyst:52.4
-2026-07-06,ARE,14.7,,1,Vikram Malhotra:14.7
 2026-07-06,BAX,5.4,,1,Vijay Kumar:5.4
 2026-07-06,BDX,14,,1,Vijay Kumar:14
 2026-07-06,CVS,-2,,1,Rajesh Kumar:-2
@@ -1447,7 +1446,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-07-30,XEL,18.8,,1,Nicholas Amicucci:18.8
 2026-07-31,AAPL,14.8,,1,Aaron Rakers:14.8
 2026-07-31,AEP,5.5,,1,Anthony Crowdell:5.5
-2026-07-31,AMZN,8.45,20.0111,2,Benjamin Black CFA:22.6|Gil Luria:-5.7
+2026-07-31,AMZN,-5.7,,1,Gil Luria:-5.7
 2026-07-31,APD,13.7,4.9497,2,Jeffrey Zekauskas:10.2|Unknown Analyst:17.2
 2026-07-31,BAX,4,5.2326,2,Josh Jennings:7.7|Pito Chickering:0.3
 2026-07-31,CI,17,14.1421,2,George Hill:7|Michael Ha:27
@@ -1694,7 +1693,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-08-10,TWLO,-5.9,,1,Michael Latimore:-5.9
 2026-08-10,UBER,32.6,,1,Rohit Kulkarni:32.6
 2026-08-11,ABNB,-12,,1,Paul Chew:-12
-2026-08-11,ALL,13.7,6.0811,2,Gregory Peters:18|Pablo Singzon:9.4
+2026-08-11,ALL,18,,1,Gregory Peters:18
 2026-08-11,AMZN,19.1,,1,Sachin Mittal:19.1
 2026-08-11,APP,21.4,,1,Unknown Analyst:21.4
 2026-08-11,BAX,1.6,,1,Travis Steed:1.6
@@ -2418,7 +2417,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-09-21,ULTA,31.1,,1,Dana Telsey:31.1
 2026-09-21,VICI,24,2.9698,2,James Kammert:26.1|Ronald Kamdem:21.9
 2026-09-21,WAB,12.6,,1,Tami Zakaria:12.6
-2026-09-22,ALLE,17.2,,1,Alexander Virgo:17.2
 2026-09-22,AZO,26.4,12.5865,2,Kate McShane:35.3|Seth Sigman:17.5
 2026-09-22,BBY,0.6,,1,Joe Feldman:0.6
 2026-09-22,CIEN,68.8,,1,Ruben Roy:68.8
@@ -3022,6 +3020,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-12,ACN,2.5,,1,Sachin Mittal:2.5
 2026-10-12,AMZN,18.1,,1,Paul Rossington:18.1
 2026-10-12,AON,17.1,,1,Joshua Shanker:17.1
+2026-10-12,ARE,-8.5,,1,John Kim:-8.5
 2026-10-12,AVY,24.7,,1,Michael Roxland:24.7
 2026-10-12,BEN,9.1,,1,Michael Cho:9.1
 2026-10-12,BG,34,,1,Thomas Palmer:34
@@ -3186,7 +3185,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-14,EQT,16.3,,1,Scott Hanold:16.3
 2026-10-14,ESS,5.4,,1,Richard Hightower:5.4
 2026-10-14,EXC,3.6,,1,Andrew Weisel:3.6
-2026-10-14,GOOG,8.1,,1,Stephen Ju:8.1
 2026-10-14,GRMN,19.7,,1,Richard Kramer:19.7
 2026-10-14,GS,24.7,5.4028,3,Christopher Mcgratty:24.9|Manan Gosalia:30|Unknown Analyst:19.2
 2026-10-14,HPE,18.8,,1,Tim Long:18.8
@@ -3229,8 +3227,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-14,WFC,15.2333,1.4434,3,Christopher Mcgratty:14.4|David George:16.9|John Pancari:14.4
 2026-10-14,WMB,11.4,,1,Julien Dumoulin Smith:11.4
 2026-10-14,XEL,16.4,,1,Richard Sunderland:16.4
-2026-10-15,ABNB,29.2,,1,Richard Clarke:29.2
-2026-10-15,ACN,3.38,11.3357,5,Amit Daryanani:15.6|Bryan Bergin:-7.1|David Grossman:11.9|James Faucette:-9.8|James Friedman:6.3
+2026-10-15,ACN,6.675,9.9473,4,Amit Daryanani:15.6|Bryan Bergin:-7.1|David Grossman:11.9|James Friedman:6.3
 2026-10-15,ADI,32.7,,1,John Vinh:32.7
 2026-10-15,AEE,8.3,,1,Carly Davenport:8.3
 2026-10-15,AEP,-1.7,,1,Ross Fowler:-1.7
@@ -3548,7 +3545,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-20,WSM,7.5,8.7681,2,Oliver Wintermantel:1.3|Peter Keith:13.7
 2026-10-20,XOM,3.9,,1,Nitin Kumar CFA:3.9
 2026-10-20,ZTS,4.2,,1,Keith Devas:4.2
-2026-10-21,ABBV,13,,1,Emily Field:13
 2026-10-21,ABT,23.4,0,2,Kendall Au:23.4|Marie Thibault:23.4
 2026-10-21,ACN,7.2,,1,David Koning:7.2
 2026-10-21,ADI,19.6,,1,Christopher Rolland:19.6
@@ -3695,7 +3691,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-22,MCO,14.5667,9.0163,3,Jason Haas CFA:24.5|Jeffrey Silber:6.9|Shlomo Rosenbaum:12.3
 2026-10-22,MDT,-9.1,,1,Matthew O'Brien:-9.1
 2026-10-22,META,28.0714,8.8189,14,Barton Crockett:33.1|Brent Thill:29.4|Brian Nowak:21.2|Brian White:29.4|Eric Sheridan:30.8|Joseph Bonner:18.3|Justin Patterson:33.8|Ken Gawrelski:47.1|Mark Mahaney:28.6|Ross Sandler:30.1|Saiyi He:25.7|Shyam Patil:25.7|Stephen Ju:31.9|Ygal Arounian:7.9
-2026-10-22,MMM,11.5,,1,Stephen Tusa:11.5
 2026-10-22,MNST,11.2,,1,Matthew Smith; CFA:11.2
 2026-10-22,MRK,2.6,,1,Asad Haider:2.6
 2026-10-22,MU,87.6,,1,Quinn Bolton:87.6
@@ -3856,11 +3851,9 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-25,TXN,11.6,,1,Stacy Rasgon:11.6
 2026-10-25,VLO,4.2,,1,Arun Jayaram:4.2
 2026-10-26,A,8.9,,1,Justin Bowers:8.9
-2026-10-26,ABBV,5.6,,1,David Amsellem:5.6
 2026-10-26,ACN,11.35,13.6472,2,Jason Kupferberg:1.7|Kevin Mcveigh:21
 2026-10-26,AEE,6.4,,1,Stephen D'Ambrisi:6.4
 2026-10-26,AMGN,-10.1,,1,Emily Field:-10.1
-2026-10-26,APD,21.5,,1,James Hooper:21.5
 2026-10-26,APH,34.2,,1,Amit Daryanani:34.2
 2026-10-26,ARE,36.6,,1,Julien Blouin:36.6
 2026-10-26,AXP,17.62,12.9702,5,Andrew Bauch:21.1|Gustavo Gala:2|Jeffrey Adelson:21.1|Sanjay Sakhrani:35.5|Terry Ma:8.4
@@ -3908,7 +3901,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-26,LNT,10.5,,1,Stephen D'Ambrisi:10.5
 2026-10-26,LUV,28.7,,1,Atul Maheswari:28.7
 2026-10-26,META,26.9,5.6719,3,Brad Erickson:25.3|Serena Lim Yi Qi:22.2|Thomas Champion:33.2
-2026-10-26,MMM,31.4,,1,Amit Mehrotra:31.4
 2026-10-26,MRK,13.1,,1,Mohit Bansal:13.1
 2026-10-26,MRNA,-33.1,,1,Eliana Merle:-33.1
 2026-10-26,MRSH,1.8,,1,Harry Fong:1.8
@@ -3956,7 +3948,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-27,AAPL,6.7,,1,Nicolas Cote Colisson:6.7
 2026-10-27,ACGL,-7,,1,Robert Cox CFA:-7
 2026-10-27,AMT,9.9333,5.3501,3,Ari Klein:4.6|David Paige:9.9|Michael Ng:15.3
-2026-10-27,ARE,9.45,17.8898,2,Richard Anderson:-3.2|Ronald Kamdem:22.1
+2026-10-27,ARE,-3.2,,1,Richard Anderson:-3.2
 2026-10-27,AVGO,43.45,36.416,2,Gil Luria:17.7|John Vinh:69.2
 2026-10-27,AXP,4.7,1.1314,2,Ben Gerlinger:5.5|John Pancari:3.9
 2026-10-27,BA,34.0333,3.7528,3,Brian Langenberg:36.2|Charles Minervino:36.2|Noah Poponak:29.7
@@ -4218,8 +4210,8 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-29,GILD,1.3,8.6267,2,Carter Gould:7.4|Salveen Richter:-4.8
 2026-10-29,GL,18.4,,1,Pablo Singzon:18.4
 2026-10-29,GNRC,37.3571,6.3269,7,Chip Moore:23.6|Christine Cho CFA:38.9|Jeffrey Hammond:38.4|Michael Halloran:41.9|Praneeth Satish:38.4|Sean Milligan:42.4|Tanner James:37.9
-2026-10-29,GOOG,43.65,14.4779,4,Doug Anmuth:32.1|John Blackledge:62.1|Nat Schindler:32.1|Saiyi He:48.3
-2026-10-29,GOOGL,27.72,12.0203,10,Brad Erickson:39.4|Doug Anmuth:30.7|Eric Sheridan:34.2|Gil Luria:4.6|Justin Patterson:34.2|Michael Nathanson:20.3|Stephen Ju:15.7|Thomas Champion:20.3|Ygal Arounian:34.9|Youssef Squali:42.9
+2026-10-29,GOOG,47.5,15.016,3,John Blackledge:62.1|Nat Schindler:32.1|Saiyi He:48.3
+2026-10-29,GOOGL,28.85,12.7437,8,Brad Erickson:39.4|Eric Sheridan:34.2|Gil Luria:4.6|Justin Patterson:34.2|Michael Nathanson:20.3|Thomas Champion:20.3|Ygal Arounian:34.9|Youssef Squali:42.9
 2026-10-29,GRMN,7.2,6.01,3,Erik Woodring:7.6|Joseph Cardoso:13|Tim Long:1
 2026-10-29,HBAN,19.15,8.8388,2,Brian Foran:12.9|Jason Goldberg:25.4
 2026-10-29,HCA,-7.5333,16.2004,3,Andrew Mok CFA:-14.6|Ben Hendrix:11|Craig Hettenbach:-19
@@ -4314,7 +4306,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-30,AJG,5.6333,4.7706,6,Alex Scott:6.2|David Motemaden:8|Mark Hughes:0|Meyer Shields:0|Paul Newsome:12|Robert Cox CFA:7.6
 2026-10-30,ALGN,7.2,,1,Elizabeth Anderson CFA:7.2
 2026-10-30,AMP,19.1,,1,Kenneth Lee:19.1
-2026-10-30,AMZN,41.7192,14.2842,26,Andrew Boone:18.3|Brad Erickson:41.9|Brent Thill:41.9|Brian Nowak:44.1|Brian Pitz:67.7|Brian White:41.9|Colin Sebastian:29|Deepak Mathivanan:20.4|Doug Anmuth:57|Eric Sheridan:59.1|Jason Helfstein:22.6|Joe Feldman:44.1|John Blackledge:46.2|Josh Beck:7.5|Justin Patterson:48.4|Ken Gawrelski:40.2|Lloyd Walmsley:44.1|Mark Mahaney:52.7|Michael Morton:53.5|Nat Schindler:29|Ronald Josey:50.5|Ross Sandler:57|Stephen Ju:51.4|Thomas Champion:37.6|Tom Forte:50.5|Ygal Arounian:28.1
+2026-10-30,AMZN,41.6522,14.3353,23,Andrew Boone:18.3|Brad Erickson:41.9|Brent Thill:41.9|Brian Nowak:44.1|Brian Pitz:67.7|Brian White:41.9|Colin Sebastian:29|Deepak Mathivanan:20.4|Doug Anmuth:57|Eric Sheridan:59.1|Joe Feldman:44.1|John Blackledge:46.2|Josh Beck:7.5|Justin Patterson:48.4|Ken Gawrelski:40.2|Lloyd Walmsley:44.1|Michael Morton:53.5|Nat Schindler:29|Ronald Josey:50.5|Ross Sandler:57|Thomas Champion:37.6|Tom Forte:50.5|Ygal Arounian:28.1
 2026-10-30,AON,7.2,,1,Bob Huang:7.2
 2026-10-30,AOS,-0.8,5.9065,4,Andrew Kaplowitz:5.5|Michael Halloran:-0.8|Nathan Jones:0.8|Susan Maklari:-8.7
 2026-10-30,ARE,3.8,,1,Nicholas Joseph:3.8
@@ -4371,7 +4363,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-10-30,GILD,10.2571,5.0487,7,Chris Schott:11.6|Gregory Renza:6.3|Joseph Stringer:17.5|Michael Yee:14.5|Mohit Bansal:11.6|Terence Flynn:7.5|Tyler Van Buren:2.8
 2026-10-30,GNRC,21,,1,Vikram Bagri:21
 2026-10-30,GOOG,35.9,,1,Justin Post:35.9
-2026-10-30,GOOGL,41.1,13.3368,3,Brian Nowak:33.4|Joseph Bonner:56.5|Ronald Josey:33.4
+2026-10-30,GOOGL,44.95,16.3342,2,Joseph Bonner:56.5|Ronald Josey:33.4
 2026-10-30,GPN,125.6,,1,Hal Goetsch:125.6
 2026-10-30,HBAN,12.4,,1,Vivek Juneja:12.4
 2026-10-30,HIG,0.5,,1,Bob Huang:0.5
@@ -4534,7 +4526,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-02,GDDY,3.9,13.7179,2,Christopher Zhang:-5.8|Jamesmichael Sherman-Lewis:13.6
 2026-11-02,GEV,44,24.4659,2,John Eade:26.7|Joseph Osha:61.3
 2026-11-02,GILD,-3.15,16.1927,2,Daina Graybosch:-14.6|Evan Seigerman:8.3
-2026-11-02,GOOGL,35.6,10.5321,5,Brent Thill:41.6|Brian Pitz:50.5|Deepak Mathivanan:23.9|Ken Gawrelski:29.2|Serena Lim Yi Qi:32.8
+2026-11-02,GOOGL,37.2,11.4382,4,Brent Thill:41.6|Brian Pitz:50.5|Deepak Mathivanan:23.9|Serena Lim Yi Qi:32.8
 2026-11-02,GPN,3.7,,1,Bill Carcache:3.7
 2026-11-02,GRMN,-16.4,,1,Ronald Epstein:-16.4
 2026-11-02,GS,10,,1,Erika Najarian:10
@@ -4565,7 +4557,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-02,LITE,35.95,31.6207,4,Christopher Rolland:18.4|Joseph Cardoso:59.5|Ruben Roy:0.4|Simon Leopold:65.5
 2026-11-02,LLY,8.2,,1,David Risinger:8.2
 2026-11-02,LMT,10.6,,1,David E. Strauss:10.6
-2026-11-02,LNT,12.2,2.9698,2,Edward DeArias:10.1|Shahriar Pourreza:14.3
+2026-11-02,LNT,12.2,2.9698,2,James Thalacker:10.1|Shahriar Pourreza:14.3
 2026-11-02,LRCX,43.9,,1,Stacy Rasgon:43.9
 2026-11-02,LYB,10.42,11.2019,5,Aleksey Yefremov:4.4|Arun Viswanathan:24|Jeffrey Zekauskas:21|John Roberts CFA:2.9|Matthew DeYoe:-0.2
 2026-11-02,MA,19.8,,1,Ramsey El Assal:19.8
@@ -4752,7 +4744,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-04,ADM,15.0667,10.5078,3,Andrew Strelzik:14.6|Benjamin Theurer:25.8|Pooran Sharma:4.8
 2026-11-04,AIG,3.2,5.2326,2,Alex Scott:-0.5|Rowland Mayor:6.9
 2026-11-04,ALL,39.3,,1,Joshua Shanker:39.3
-2026-11-04,AMD,35.5385,15.0875,13,Atif Malik:64.9|Chris Krueger CFA:39.1|David O'Connor:34|Harlan Sur:18.5|Harsh Kumar:13.3|James Schneider:39.1|John Vinh:49.4|Joseph Moore:13.3|Ruben Roy:49.4|Stacy Rasgon:34|Thomas O'Malley:37|Timothy Arcuri:44.3|Vijay Rakesh:25.7
+2026-11-04,AMD,35.5385,15.0875,13,Atif Malik:64.9|David O'Connor:34|Harlan Sur:18.5|Harsh Kumar:13.3|James Schneider:39.1|John Vinh:49.4|Joseph Moore:13.3|Joshua Buchalter:39.1|Ruben Roy:49.4|Stacy Rasgon:34|Thomas O'Malley:37|Timothy Arcuri:44.3|Vijay Rakesh:25.7
 2026-11-04,AME,12,5.2915,3,Andrew Kaplowitz:8|Brett Linzey:10|Steve Barger:18
 2026-11-04,AMGN,-3.3167,13.5526,12,Chris Schott:-11.4|Courtney Breen:-16.6|Evan Seigerman:-7.8|Gregory Renza:-17|Jay Olson:8.4|Louise Chen:10.5|Luca Issi:-2|Michael Yee:10.5|Salveen Richter:11.8|Tazeen Ahmad:-27.6|Vamil Divan:-9.3|Yaron Werber:10.7
 2026-11-04,AMT,10.5,,1,Marie Ferguson:10.5
@@ -4760,7 +4752,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-04,APO,19.3667,9.7983,6,Bart Dziarski:18.1|Christopher Allen:11.2|Daniel Welden:8.7|Ken Worthington:34.3|Michael Cyprys:27.5|William Katz:16.4
 2026-11-04,APP,57.8,,1,Clark Lampen:57.8
 2026-11-04,APTV,31.26,24.5219,5,Andrew Percoco:7.8|Dan Levy:26.9|Itay Michaeli:72.5|Luke Junk:19.8|Mark Delaney:29.3
-2026-11-04,ARE,8.3,,1,Sabahat Khan:8.3
+2026-11-04,ARE,8.3,,1,Michael Carroll:8.3
 2026-11-04,BALL,13.15,9.0305,4,Arun Viswanathan:22.3|Edlain Rodriguez:19.1|Jeffrey Zekauskas:3.2|Joshua Spector:8
 2026-11-04,BDX,-10.3,,1,Josh Jennings:-10.3
 2026-11-04,BKNG,31.3067,16.2921,15,Brian Pitz:52.8|Doug Anmuth:27.8|Justin Post:36.5|Ken Gawrelski:11.6|Kevin Kopelman:55.9|Lloyd Walmsley:27.8|Matthew Cost:24.7|Michael Bellisario:31.6|Richard Clarke:17.2|Ross Sandler:6|Scott Devitt:30.9|Shyam Patil:24.7|Stephen Ju:66.5|Thomas Champion:24.7|Ygal Arounian:30.9
@@ -4987,11 +4979,11 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-05,ZBRA,36.9,,1,Itay Michaeli:36.9
 2026-11-05,ZTS,0.2,,1,Jonathan Block:0.2
 2026-11-06,AAPL,-8.5,,1,Helena Wang:-8.5
-2026-11-06,ABNB,7.9833,11.6244,18,Brad Erickson:12.5|Brian Pitz:-5.8|Colin Sebastian:12.5|Deepak Mathivanan:-5.8|Doug Anmuth:5.7|Eric Sheridan:-3.2|Jed Kelly:20.3|John Blackledge:9.9|Josh Beck:9.9|Ken Gawrelski:12.5|Lloyd Walmsley:28.2|Matthew Cost:-11.1|Michael Graham:17.7|Ross Sandler:2|Scott Devitt:20.3|Stephen Ju:-0.1|Thomas Champion:-5.8|Ygal Arounian:24
+2026-11-06,ABNB,7.9833,11.6244,18,Brad Erickson:12.5|Brian Pitz:-5.8|Colin Sebastian:12.5|Deepak Mathivanan:-5.8|Doug Anmuth:5.7|Eric Sheridan:-3.2|Jed Kelly:20.3|John Blackledge:9.9|Josh Beck:9.9|Ken Gawrelski:12.5|Lloyd Walmsley:28.2|Maria Ripps:17.7|Matthew Cost:-11.1|Ross Sandler:2|Scott Devitt:20.3|Stephen Ju:-0.1|Thomas Champion:-5.8|Ygal Arounian:24
 2026-11-06,AIG,12.9667,0.7506,3,Meyer Shields:13.4|Ryan Tunis:13.4|Yaron Kinar:12.1
 2026-11-06,AKAM,71.76,51.7425,10,Jackson Ader:109.9|James Fish:43.9|Jeff Van Rhee:103.9|John Difucci:169.9|Michael Elias:100.3|Patrick Colville:43.9|Rishi Jaluria:2|Rudy Kessinger:49.9|Shyam Patil:8|Tal Liani:85.9
 2026-11-06,ALB,43.1,41.1012,3,Aleksey Yefremov:-4|Joel Jackson:61.6|Pete Osterland:71.7
-2026-11-06,ALL,0.4,12.7083,5,Elyse Greenspan:-2.8|Matthew Heimermann:-13.2|Ryan Tunis:-6.6|Vikram Gandhi:4.6|Yaron Kinar:20
+2026-11-06,ALL,-4.5,7.4342,4,Elyse Greenspan:-2.8|Matthew Heimermann:-13.2|Ryan Tunis:-6.6|Vikram Gandhi:4.6
 2026-11-06,AMD,69.9,,1,Yik Ban Chong:69.9
 2026-11-06,AMGN,4.9,,1,Ilya Zubkov:4.9
 2026-11-06,AMZN,23.2,,1,Mark Shmulik:23.2
@@ -5037,7 +5029,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-06,FICO,31.9,,1,Sean Kennedy:31.9
 2026-11-06,FIS,11.7,9.8995,2,Bryan Keane:4.7|Ramsey El Assal:18.7
 2026-11-06,FISV,6.7,,1,Ramsey El Assal:6.7
-2026-11-06,GOOGL,14.1,,1,Mark Shmulik:14.1
+2026-11-06,GOOGL,14.1,,1,Madison Rezaei:14.1
 2026-11-06,GPN,16.5818,14.1176,11,Andrew Bauch:-6.4|Andrew Schmidt:19.1|Bryan Bergin:6.3|David Koning:32.9|Gustavo Gala:43.6|James Faucette:18|Jason Kupferberg:23.4|Matthew O'Neill:23.4|Ramsey El Assal:9.5|Tien Tsin Huang:6.3|Vasundhara Govil:6.3
 2026-11-06,GS,20.6,,1,Ebrahim Poonawala:20.6
 2026-11-06,HD,17.4,,1,Steven Zaccone:17.4
@@ -5245,7 +5237,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-10,AIG,28.5,,1,Brian Meredith:28.5
 2026-11-10,AIZ,18.3,,1,Brian Meredith:18.3
 2026-11-10,AKAM,13.2,,1,Peter Levine:13.2
-2026-11-10,ALL,2.5333,8.213,3,Bob Huang:2|Brian Meredith:11|Meyer Shields:-5.4
+2026-11-10,ALL,11,,1,Brian Meredith:11
 2026-11-10,AMCR,11.2,,1,Anthony Pettinari:11.2
 2026-11-10,APD,8.1,,1,Matthew DeYoe:8.1
 2026-11-10,APP,15.9,,1,Serena Lim Yi Qi:15.9
@@ -5359,7 +5351,6 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-11,ADBE,-2.375,5.7361,4,Billy Fitzsimmons:6.1|J. Parker Lane:-4.5|Michael Turrin:-4.5|Tal Liani:-6.6
 2026-11-11,AFL,-2.3,,1,Ryan Krueger:-2.3
 2026-11-11,ALGN,14.7,,1,Glen Santangelo:14.7
-2026-11-11,ALL,17.7,,1,Michael Zaremski:17.7
 2026-11-11,APA,-10.7,,1,Unknown Analyst:-10.7
 2026-11-11,ARE,26.4,,1,James Kammert:26.4
 2026-11-11,AXP,28.4,,1,Donald Fandetti:28.4
@@ -5466,7 +5457,7 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-12,AAPL,6.2,,1,Mark Newman:6.2
 2026-11-12,ABNB,19.7,7.4081,3,Amanda Tan:16.9|Justin Post:14.1|Naved Khan:28.1
 2026-11-12,ADSK,15.3,,1,Saket Kalia:15.3
-2026-11-12,AFL,-7.8,3.3956,3,Thomas Gallagher:-10.1|Wesley Carmichael:-3.9|Yaron Kinar:-9.4
+2026-11-12,AFL,-7,4.3841,2,Thomas Gallagher:-10.1|Wesley Carmichael:-3.9
 2026-11-12,ALB,27.2,,1,Matthew DeYoe:27.2
 2026-11-12,AMAT,55.3,16.2687,3,Adithya Metuku:69.6|Srini Pajjuri:58.7|Vivek Arya:37.6
 2026-11-12,AMD,8.95,19.8697,2,Srini Pajjuri:-5.1|Vivek Arya:23
@@ -5665,3 +5656,25 @@ date,symbol,average_projected,std_projected,analyst_projections_count,projection
 2026-11-13,WMT,6.5,,1,Edward Kelly:6.5
 2026-11-13,WTW,15.7,,1,Yaron Kinar:15.7
 2026-11-13,XOM,20.2,,1,Betty Jiang:20.2
+2026-11-16,ABBV,11.7,,1,Emily Field:11.7
+2026-11-16,ALL,7.8,,1,Pablo Singzon:7.8
+2026-11-16,APD,18,,1,James Hooper:18
+2026-11-16,ARE,13.8,,1,Vikram Malhotra:13.8
+2026-11-16,MMM,18.7,9.6167,2,Amit Mehrotra:25.5|Stephen Tusa:11.9
+2026-11-17,AFL,-7.3,,1,Yaron Kinar:-7.3
+2026-11-17,ALL,2.3,,1,Bob Huang:2.3
+2026-11-17,ALLE,0.2,,1,Alexander Virgo:0.2
+2026-11-17,AMZN,23.1,,1,Justin Post:23.1
+2026-11-17,GOOG,13.9,,1,Karl Keirstead:13.9
+2026-11-18,ABBV,20.3,,1,David Amsellem:20.3
+2026-11-18,GOOGL,30.85,2.4749,2,Brian Nowak:32.6|Ken Gawrelski:29.1
+2026-11-19,ABT,18.2,,1,Mike Kratky:18.2
+2026-11-19,ACN,5.8,28.85,2,James Faucette:-14.6|Matthew O'Neill:26.2
+2026-11-19,ALL,15,,1,Michael Zaremski:15
+2026-11-19,GOOGL,8.7,,1,Karl Keirstead:8.7
+2026-11-20,ABNB,34.7,,1,Richard Clarke:34.7
+2026-11-20,ALL,1.6,18.2434,2,Meyer Shields:-11.3|Yaron Kinar:14.5
+2026-11-20,AMZN,31.2,12.5865,2,Jason Helfstein:22.3|Mark Mahaney:40.1
+2026-11-20,GOOGL,36.6,,1,Doug Anmuth:36.6
+2026-11-21,AMZN,34.1,,1,Karl Keirstead:34.1
+2026-11-23,ARE,23.6,,1,Ronald Kamdem:23.6

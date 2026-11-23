@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$157.00",
+    "projected": "+3.8%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "John Eade",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+11.4%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "John Staszak",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -43,15 +61,6 @@
     "price_target": "$127.00",
     "projected": "-5.3%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$140.00",
-    "projected": "+1.4%",
-    "date": "09/17/2026"
   },
   {
     "analyst": "Unknown Analyst",

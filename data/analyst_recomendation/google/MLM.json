@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$590.00",
+    "projected": "+14.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Steven Fisher",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -124,15 +133,6 @@
     "price_target": "$625.00",
     "projected": "+16.3%",
     "date": "08/25/2026"
-  },
-  {
-    "analyst": "Angel Castillo",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$639.00",
-    "projected": "+16.8%",
-    "date": "08/13/2026"
   },
   {
     "analyst": "Scott Group",

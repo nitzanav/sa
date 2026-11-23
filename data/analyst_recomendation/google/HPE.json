@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$52.00",
+    "projected": "+18.1%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Wamsi Mohan",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$88.00",
+    "projected": "+99.9%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/09/2026"
+    "price_target": "$62.00",
+    "projected": "+36%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+40.4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+68.5%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Katherine Murphy",
@@ -16,15 +52,6 @@
     "price_target": "$75.00",
     "projected": "+35.1%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Mark Newman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$62.00",
-    "projected": "+12.9%",
-    "date": "10/25/2026"
   },
   {
     "analyst": "Tim Long",
@@ -72,24 +99,6 @@
     "date": "10/01/2026"
   },
   {
-    "analyst": "Erik Woodring",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$72.00",
-    "projected": "+9.9%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "David Vogt",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$66.00",
-    "projected": "+0.7%",
-    "date": "10/01/2026"
-  },
-  {
     "analyst": "Amit Daryanani",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -105,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$70.00",
     "projected": "+6.8%",
-    "date": "10/01/2026"
-  },
-  {
-    "analyst": "Asiya Merchant",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$92.00",
-    "projected": "+40.4%",
     "date": "10/01/2026"
   },
   {

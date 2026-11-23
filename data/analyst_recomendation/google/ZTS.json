@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Glen Santangelo",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "+1.1%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "David Westenberg",
     "firm": "Piper Sandler",
     "recommendation": "Hold",
@@ -88,15 +97,6 @@
     "price_target": "$94.00",
     "projected": "+22.6%",
     "date": "08/25/2026"
-  },
-  {
-    "analyst": "Glen Santangelo",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$85.00",
-    "projected": "+16.3%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Daniel Grosslight",

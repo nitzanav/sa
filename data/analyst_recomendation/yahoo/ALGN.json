@@ -9,15 +9,6 @@
     "date": "10/10/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+29.2%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Hold",
@@ -25,6 +16,15 @@
     "price_target": "$162.00",
     "projected": "+7.7%",
     "date": "10/16/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+29.2%",
+    "date": "10/23/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -70,6 +70,15 @@
     "price_target": "$155.00",
     "projected": "+9.2%",
     "date": "10/06/2026"
+  },
+  {
+    "analyst": "Leerink Partners",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$210.00",
+    "projected": "+37.3%",
+    "date": "10/29/2026"
   },
   {
     "analyst": "UBS",

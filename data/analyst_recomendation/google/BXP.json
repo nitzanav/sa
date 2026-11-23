@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jeffrey Spector",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$83.00",
+    "projected": "+31.1%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Michael Goldsmith",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -61,15 +70,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Jeffrey Spector",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "+37.8%",
-    "date": "10/25/2026"
   },
   {
     "analyst": "Jana Galan",

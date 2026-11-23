@@ -1,5 +1,50 @@
 [
   {
+    "analyst": "Carly Davenport",
+    "firm": "Goldman Sachs",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$318.00",
+    "projected": "+18.3%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Nicholas Campanella",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$371.00",
+    "projected": "+38%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Sunaina Ocalan",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$293.00",
+    "projected": "+6%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Rinny Singh",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "James Thalacker",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$335.00",
+    "projected": "+21.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Mark Jarvi",
     "firm": "CIBC",
     "recommendation": "Buy",
@@ -16,24 +61,6 @@
     "price_target": "$380.00",
     "projected": "+39.5%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "James Thalacker",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$316.00",
-    "projected": "+30.8%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Rinny Singh",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$346.00",
-    "projected": "+31%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "David Arcaro",
@@ -63,15 +90,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Nicholas Campanella",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$345.00",
-    "projected": "+34.1%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Meike Becker",
     "firm": "HSBC",
     "recommendation": "Buy",
@@ -88,15 +106,6 @@
     "price_target": "$358.00",
     "projected": "+30.2%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Carly Davenport",
-    "firm": "Goldman Sachs",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$305.00",
-    "projected": "+4.8%",
-    "date": "10/06/2026"
   },
   {
     "analyst": "Andrew Weisel",
@@ -135,7 +144,7 @@
     "date": "08/17/2026"
   },
   {
-    "analyst": "Sunaina Ocalan‏",
+    "analyst": "Sunaina Ocalan",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",

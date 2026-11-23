@@ -1,8 +1,17 @@
 [
   {
+    "analyst": "Robert Wertheimer",
+    "firm": "Melius Research",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$113.00",
+    "projected": "+33.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "David Raso",
     "firm": "Evercore ISI",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$95.00",
     "projected": "+10.2%",
@@ -36,7 +45,16 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Brandon Knutson‏",
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+12.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",

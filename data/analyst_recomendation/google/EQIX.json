@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Madison Rezaei",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,270.00",
+    "projected": "+22%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Andy Yu CFA",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -24,15 +33,6 @@
     "action": "Reiterated",
     "price_target": "$1,250.00",
     "projected": "+20.5%",
-    "date": "11/01/2026"
-  },
-  {
-    "analyst": "Madison Rezaei",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,270.00",
-    "projected": "+22.4%",
     "date": "11/01/2026"
   },
   {
@@ -99,15 +99,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Michael Elias",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,210.00",
-    "projected": "+16.5%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Richard Choe",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -151,6 +142,15 @@
     "price_target": "$1,135.00",
     "projected": "+9.3%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "Michael Elias",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$1,166.00",
+    "projected": "+18.3%",
+    "date": "10/27/2026"
   },
   {
     "analyst": "Alexander Haissl",

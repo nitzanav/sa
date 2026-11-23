@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Richard Clarke",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$234.00",
+    "projected": "+34.7%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Naved Khan",
     "firm": "B. Riley Securities",
     "recommendation": "Buy",
@@ -117,7 +126,7 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Michael Graham",
+    "analyst": "Maria Ripps",
     "firm": "Canaccord Genuity",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -232,15 +241,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Richard Clarke",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$217.00",
-    "projected": "+29.2%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Sergio Segura",

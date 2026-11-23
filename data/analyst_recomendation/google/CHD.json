@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Rupesh Parikh",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$124.00",
+    "projected": "+12.6%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Anna Lizzul",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$125.00",
+    "projected": "+9.9%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Christopher Carey",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$125.00",
+    "projected": "+9.9%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Robert Moskow",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -16,15 +43,6 @@
     "price_target": "$89.00",
     "projected": "-18.9%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Christopher Carey",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$115.00",
-    "projected": "+6.7%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Peter Grom",
@@ -79,24 +97,6 @@
     "price_target": "$118.00",
     "projected": "+7%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Anna Lizzul",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$115.00",
-    "projected": "+4.3%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Rupesh Parikh",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+15.4%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Taylor Conrad",

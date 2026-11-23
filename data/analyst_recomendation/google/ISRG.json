@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Ryan Zimmerman",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$513.00",
+    "projected": "+19.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vik Chopra",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$518.00",
-    "projected": "+13.4%",
-    "date": "11/09/2026"
+    "projected": "+18.4%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Travis Steed",
@@ -123,15 +132,6 @@
     "action": "Maintained",
     "price_target": "$500.00",
     "projected": "+15.3%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Ryan Zimmerman",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$454.00",
-    "projected": "+4.7%",
     "date": "10/20/2026"
   },
   {

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$115.00",
+    "projected": "-3%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Jeffrey Zekauskas",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -115,15 +124,6 @@
     "price_target": "$162.00",
     "projected": "+37.5%",
     "date": "09/25/2026"
-  },
-  {
-    "analyst": "Vincent Andrews",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "-9.2%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Unknown Analyst",

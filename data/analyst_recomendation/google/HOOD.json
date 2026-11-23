@@ -1,12 +1,21 @@
 [
   {
+    "analyst": "Craig Siegenthaler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Adam Frisch",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+63.1%",
-    "date": "11/13/2026"
+    "price_target": "$100.00",
+    "projected": "+39.4%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "James Yaro",
@@ -25,15 +34,6 @@
     "price_target": "$115.00",
     "projected": "+42.4%",
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "Craig Siegenthaler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$151.00",
-    "projected": "+76.5%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Ramsey El Assal",

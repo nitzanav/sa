@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "David Amsellem",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$349.00",
+    "projected": "+20.3%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$335.00",
+    "projected": "+11.7%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Trung Huynh",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -126,15 +144,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "David Amsellem",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$303.00",
-    "projected": "+5.6%",
-    "date": "10/26/2026"
-  },
-  {
     "analyst": "Courtney Breen",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -142,15 +151,6 @@
     "price_target": "$230.00",
     "projected": "-19.2%",
     "date": "10/25/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+13%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Chris Schott",

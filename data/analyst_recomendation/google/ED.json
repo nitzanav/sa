@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$106.00",
+    "projected": "-12.8%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$102.00",
     "projected": "-8.5%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$96.00",
-    "projected": "-8.7%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Ryan Levine",

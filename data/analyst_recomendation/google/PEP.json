@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Margaret-May Binshtok",
+    "firm": "Wolfe Research",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Cristian Rios",
+    "firm": "Bernstein",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$128.00",
+    "projected": "-10.5%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Alexia Burland Howard",
     "firm": "Bernstein",
     "recommendation": "Hold",
@@ -181,15 +199,6 @@
   },
   {
     "analyst": "Unknown Analyst",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Initiated",
-    "price_target": "$143.00",
-    "projected": "-1.3%",
-    "date": "06/11/2026"
-  },
-  {
-    "analyst": "Cristian Rios",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Initiated",

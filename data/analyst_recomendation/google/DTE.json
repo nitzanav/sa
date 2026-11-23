@@ -9,6 +9,15 @@
     "date": "11/05/2026"
   },
   {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+16.5%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "James Thalacker",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$139.00",
     "projected": "+6.9%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$165.00",
-    "projected": "+29.3%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Richard Sunderland",

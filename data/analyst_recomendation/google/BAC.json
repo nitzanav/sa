@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$60.00",
+    "projected": "+22%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Erika Najarian",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -97,15 +106,6 @@
     "price_target": "$56.00",
     "projected": "+8.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$60.00",
-    "projected": "+20.4%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Christopher Mcgratty",

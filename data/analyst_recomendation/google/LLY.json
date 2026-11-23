@@ -4,9 +4,18 @@
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/13/2026"
+    "price_target": "$1,600.00",
+    "projected": "+17.4%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Mohit Bansal",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,500.00",
+    "projected": "+6.5%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Evan Seigerman",
@@ -14,8 +23,44 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1,650.00",
-    "projected": "+20.8%",
-    "date": "11/09/2026"
+    "projected": "+13.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Trung Huynh",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,600.00",
+    "projected": "+13%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Geoff Meacham",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,650.00",
+    "projected": "+16.5%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,550.00",
+    "projected": "+6.6%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Courtney Breen",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1,450.00",
+    "projected": "+1.4%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Akash Tewari",
@@ -25,15 +70,6 @@
     "price_target": "$1,700.00",
     "projected": "+24.5%",
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "Trung Huynh",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,600.00",
-    "projected": "+11.6%",
-    "date": "11/05/2026"
   },
   {
     "analyst": "David Risinger",
@@ -124,42 +160,6 @@
     "price_target": "$1,625.00",
     "projected": "+13.7%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Mohit Bansal",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,500.00",
-    "projected": "+12.6%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Geoff Meacham",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,650.00",
-    "projected": "+15.5%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1,400.00",
-    "projected": "+5%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Courtney Breen",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$1,450.00",
-    "projected": "+12.7%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Kerry Holford",

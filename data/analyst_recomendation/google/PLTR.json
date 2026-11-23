@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Tyler Radke",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$265.00",
+    "projected": "+65%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Alif Fahmi",
+    "firm": "Phillip Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$248.00",
+    "projected": "+49.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Yi Fu Lee",
     "firm": "StoneX",
     "recommendation": "Hold",
@@ -141,15 +159,6 @@
     "action": "Reiterated",
     "price_target": "$233.00",
     "projected": "+38.5%",
-    "date": "11/03/2026"
-  },
-  {
-    "analyst": "Tyler Radke",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$265.00",
-    "projected": "+57.6%",
     "date": "11/03/2026"
   },
   {

@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "William Katz",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$158.00",
+    "projected": "+22.8%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$159.00",
+    "projected": "+19.1%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$159.00",
+    "projected": "+19.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Craig Siegenthaler",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -33,15 +60,6 @@
     "action": "Maintained",
     "price_target": "$154.00",
     "projected": "+23.1%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "William Katz",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$158.00",
-    "projected": "+26.3%",
     "date": "10/30/2026"
   },
   {

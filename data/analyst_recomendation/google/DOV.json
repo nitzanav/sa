@@ -81,7 +81,16 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Brandon Knutson‏",
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$215.00",
+    "projected": "+10.5%",
+    "date": "10/20/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",

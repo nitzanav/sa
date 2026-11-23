@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Elyse Greenspan",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$235.00",
+    "projected": "+15.2%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "David Motemaden",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$224.00",
+    "projected": "+9.7%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+1.9%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Yaron Kinar",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -16,15 +43,6 @@
     "price_target": "$230.00",
     "projected": "+11.8%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "David Motemaden",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$224.00",
-    "projected": "+16.1%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Harry Fong",
@@ -81,15 +99,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$190.00",
-    "projected": "+1.3%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Rowland Mayor",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -124,15 +133,6 @@
     "price_target": "$180.00",
     "projected": "-1.5%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Elyse Greenspan",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$197.00",
-    "projected": "+5%",
-    "date": "10/16/2026"
   },
   {
     "analyst": "Hans Engel",

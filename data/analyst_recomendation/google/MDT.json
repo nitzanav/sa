@@ -1,21 +1,39 @@
 [
   {
+    "analyst": "Mike Kratky",
+    "firm": "Leerink Partners",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$117.00",
+    "projected": "+16.4%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Ryan Zimmerman",
+    "firm": "BTIG",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$109.00",
+    "projected": "+8.5%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Matthew O'Brien",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$120.00",
+    "projected": "+16.8%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Travis Steed",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
-    "projected": "+16.8%",
-    "date": "11/09/2026"
-  },
-  {
-    "analyst": "Matthew O'Brien",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$85.00",
-    "projected": "-9.1%",
-    "date": "10/22/2026"
+    "projected": "+15.6%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Robbie Marcus",
@@ -25,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Ryan Zimmerman",
-    "firm": "BTIG",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+9.1%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Christopher Pasquale",
@@ -196,15 +205,6 @@
     "price_target": "$100.00",
     "projected": "+16%",
     "date": "07/28/2026"
-  },
-  {
-    "analyst": "Mike Kratky",
-    "firm": "Leerink Partners",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "07/10/2026"
   },
   {
     "analyst": "Vijay Kumar",

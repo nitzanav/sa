@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Simon Yarmak",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.25",
+    "projected": "+21.8%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Steve Sakwa",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -12,7 +21,7 @@
     "analyst": "Adam Kramer",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$107.00",
     "projected": "+8.2%",
     "date": "11/11/2026"
@@ -60,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$102.00",
     "projected": "+4%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Simon Yarmak",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$118.25",
-    "projected": "+20.6%",
     "date": "11/06/2026"
   },
   {

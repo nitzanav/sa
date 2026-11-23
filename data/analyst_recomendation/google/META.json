@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Karl Keirstead",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$815.00",
+    "projected": "+30.6%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Justin Post",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$360.00",
+    "projected": "+10.7%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Brian Meredith",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -7,15 +16,6 @@
     "price_target": "$377.00",
     "projected": "+18.3%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$330.00",
-    "projected": "+5.6%",
-    "date": "11/09/2026"
   },
   {
     "analyst": "Paul Newsome",

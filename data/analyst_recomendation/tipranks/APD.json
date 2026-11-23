@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "James Hooper",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+18%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Matthew DeYoe",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$359.00",
     "projected": "+10.8%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "James Hooper",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$373.00",
-    "projected": "+21.5%",
-    "date": "10/26/2026"
   },
   {
     "analyst": "Salvator Tiano",

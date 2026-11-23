@@ -5,8 +5,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$560.00",
-    "projected": "+28.4%",
-    "date": "11/12/2026"
+    "projected": "+31.1%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Julian Mitchell",
@@ -63,7 +63,16 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "Toby Okwara‏",
+    "analyst": "Toby Okwara",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$600.00",
+    "projected": "+39.3%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Toby Okwara",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",

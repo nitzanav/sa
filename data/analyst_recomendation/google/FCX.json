@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Jonathan Brandt",
     "firm": "HSBC",
     "recommendation": "Buy",
@@ -142,15 +151,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/14/2026"
-  },
-  {
-    "analyst": "Hans Engel",
-    "firm": "Erste Group",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": null,
-    "projected": null,
-    "date": "08/27/2026"
   },
   {
     "analyst": "Unknown Analyst",

@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "James Faucette",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$195.00",
+    "projected": "-14.6%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Matthew O'Neill",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$288.00",
+    "projected": "+26.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Kevin Mcveigh",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -79,15 +97,6 @@
     "price_target": "$235.00",
     "projected": "+8.7%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "James Faucette",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$195.00",
-    "projected": "-9.8%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "James Friedman",

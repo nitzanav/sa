@@ -1,30 +1,93 @@
 [
   {
-    "analyst": "Meta Marshall",
-    "firm": "Morgan Stanley",
+    "analyst": "Andrew Spinola",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$380.00",
+    "projected": "+34.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Mark Delaney",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$464.00",
+    "projected": "+58.2%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Joseph Cardoso",
+    "firm": "J.P. Morgan",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$425.00",
-    "projected": "+43.7%",
-    "date": "11/12/2026"
+    "projected": "+50.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Quinn Fredrickson",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$375.00",
+    "projected": "+33%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Atif Malik",
     "firm": "Citi",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+30%",
-    "date": "11/11/2026"
+    "price_target": "$345.00",
+    "projected": "+22.4%",
+    "date": "11/20/2026"
   },
   {
-    "analyst": "Mark Delaney",
-    "firm": "Goldman Sachs",
+    "analyst": "David Ridley Lane",
+    "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Reiterated",
-    "price_target": "$487.00",
-    "projected": "+25.9%",
-    "date": "10/05/2026"
+    "price_target": "$375.00",
+    "projected": "+33%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Meta Marshall",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$400.00",
+    "projected": "+41.9%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Aaron Rakers",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$350.00",
+    "projected": "+24.2%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Joseph Quatrochi",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+19.3%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$439.00",
+    "projected": "+55.8%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Matthew Niknam",
@@ -36,24 +99,6 @@
     "date": "09/16/2026"
   },
   {
-    "analyst": "David Ridley Lane",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$405.00",
-    "projected": "+24.6%",
-    "date": "09/14/2026"
-  },
-  {
-    "analyst": "Andrew Spinola",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$440.00",
-    "projected": "+26.1%",
-    "date": "08/19/2026"
-  },
-  {
     "analyst": "Mehdi Hosseini",
     "firm": "Susquehanna",
     "recommendation": "Buy",
@@ -61,42 +106,6 @@
     "price_target": "$440.00",
     "projected": "+26.1%",
     "date": "08/19/2026"
-  },
-  {
-    "analyst": "Joseph Cardoso",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$425.00",
-    "projected": "+21.8%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Quinn Fredrickson",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$410.00",
-    "projected": "+17.5%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Aaron Rakers",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$405.00",
-    "projected": "+16%",
-    "date": "08/19/2026"
-  },
-  {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$429.00",
-    "projected": "+22.6%",
-    "date": "08/18/2026"
   },
   {
     "analyst": "Samik Chatterjee",

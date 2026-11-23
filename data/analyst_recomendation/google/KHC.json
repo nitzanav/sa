@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Andrew Lazar",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$24.00",
+    "projected": "-5.3%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Leah Jordan",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -97,15 +106,6 @@
     "price_target": "$25.00",
     "projected": "-2.5%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "Andrew Lazar",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "+1.4%",
-    "date": "11/06/2026"
   },
   {
     "analyst": "Peter Galbo",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jeff Osborne",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$295.00",
+    "projected": "+39.8%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Stephen Gengaro",
     "firm": "Stifel Nicolaus",
     "recommendation": "Buy",
@@ -178,15 +187,6 @@
     "price_target": "$333.00",
     "projected": "+55.6%",
     "date": "08/08/2026"
-  },
-  {
-    "analyst": "Jeff Osborne",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$285.00",
-    "projected": "+35.7%",
-    "date": "07/29/2026"
   },
   {
     "analyst": "Jeffrey Rossetti",

@@ -99,7 +99,7 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "‏Avantika Dhabaria‏",
+    "analyst": "Avantika Dhabaria",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -109,6 +109,15 @@
   },
   {
     "analyst": "Michael Ryskin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$320.00",
+    "projected": "+19.6%",
+    "date": "10/27/2026"
+  },
+  {
+    "analyst": "Avantika Dhabaria",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Reiterated",

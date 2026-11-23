@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$80.00",
+    "projected": "+13.7%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Greg Melich",
     "firm": "Evercore ISI",
     "recommendation": "Buy",

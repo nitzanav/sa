@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "David Risinger",
+    "firm": "Leerink Partners",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-0.3%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$60.00",
-    "projected": "-4.6%",
-    "date": "11/09/2026"
+    "projected": "-1.3%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$75.00",
+    "projected": "+15.5%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Trung Huynh",
@@ -90,15 +108,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+23%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "David Amsellem",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
@@ -160,15 +169,6 @@
     "price_target": "$80.00",
     "projected": "+35.9%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "David Risinger",
-    "firm": "Leerink Partners",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "-0.8%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Rajesh Kumar",

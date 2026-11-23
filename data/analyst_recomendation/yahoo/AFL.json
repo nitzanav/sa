@@ -36,15 +36,6 @@
     "date": "11/13/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$117.00",
-    "projected": "-8.3%",
-    "date": "11/13/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Sell",
@@ -52,6 +43,15 @@
     "price_target": "$101.00",
     "projected": "-10.4%",
     "date": "10/08/2026"
+  },
+  {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "-7.3%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Keefe, Bruyette & Woods",

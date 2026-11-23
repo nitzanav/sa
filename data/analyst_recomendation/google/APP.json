@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Bryan Smilek",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "-3%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Jason Bazinet",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -81,16 +90,16 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Bryan Smilek",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+14.3%",
+    "analyst": "Michael Pachter",
+    "firm": "Wedbush",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$600.00",
+    "projected": "+71.5%",
     "date": "11/05/2026"
   },
   {
-    "analyst": "Michael Pachter",
+    "analyst": "Alicia Reese",
     "firm": "Wedbush",
     "recommendation": "Buy",
     "action": "Reiterated",
@@ -213,15 +222,6 @@
     "action": "Maintained",
     "price_target": "$580.00",
     "projected": "+71.4%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Alicia Reese",
-    "firm": "Wedbush",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$610.00",
-    "projected": "+80.2%",
     "date": "08/06/2026"
   },
   {

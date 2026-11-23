@@ -1,12 +1,39 @@
 [
   {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$528.00",
+    "projected": "+53.4%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Stephan Lingnau",
+    "firm": "Erste Group",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Chad Dillard",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$534.00",
-    "projected": "+52.1%",
-    "date": "11/12/2026"
+    "projected": "+56.6%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Andrew Obin",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
   },
   {
     "analyst": "Unknown Analyst",
@@ -21,7 +48,7 @@
     "analyst": "Julian Mitchell",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
-    "action": "Initiated",
+    "action": "Reiterated",
     "price_target": "$395.00",
     "projected": "+8.5%",
     "date": "11/11/2026"
@@ -51,15 +78,6 @@
     "action": "Reiterated",
     "price_target": "$486.00",
     "projected": "+29.3%",
-    "date": "11/04/2026"
-  },
-  {
-    "analyst": "Andrew Obin",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$490.00",
-    "projected": "+30.3%",
     "date": "11/04/2026"
   },
   {
@@ -135,15 +153,6 @@
     "date": "08/02/2026"
   },
   {
-    "analyst": "Kristina Ruggeri",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "05/13/2026"
-  },
-  {
     "analyst": "Patrick Baumann",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -151,15 +160,6 @@
     "price_target": "$445.00",
     "projected": "+5%",
     "date": "05/06/2026"
-  },
-  {
-    "analyst": "Stephan Lingnau",
-    "firm": "Erste Group",
-    "recommendation": "Buy",
-    "action": "Initiated",
-    "price_target": null,
-    "projected": null,
-    "date": "05/05/2026"
   },
   {
     "analyst": "Brett Linzey",

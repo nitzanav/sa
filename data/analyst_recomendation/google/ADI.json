@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Rick Schafer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$450.00",
+    "projected": "+15.8%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Kyle Smith",
+    "firm": "Roth MKM",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$505.00",
+    "projected": "+23.6%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Roth MKM",
     "recommendation": "Buy",
@@ -177,15 +195,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "08/20/2026"
-  },
-  {
-    "analyst": "Rick Schafer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+19.4%",
     "date": "08/20/2026"
   },
   {

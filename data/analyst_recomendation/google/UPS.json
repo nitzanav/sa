@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$128.00",
+    "projected": "+13.4%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "David Vernon",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -153,15 +171,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Varun Govindaraj",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "+26.4%",
-    "date": "09/03/2026"
-  },
-  {
     "analyst": "Unknown Analyst",
     "firm": "Wells Fargo",
     "recommendation": "Hold",
@@ -169,15 +178,6 @@
     "price_target": "$110.00",
     "projected": "+4.1%",
     "date": "08/14/2026"
-  },
-  {
-    "analyst": "Kristina Ruggeri",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$130.00",
-    "projected": "+21.3%",
-    "date": "08/06/2026"
   },
   {
     "analyst": "Unknown Analyst",

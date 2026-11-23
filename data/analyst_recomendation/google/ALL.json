@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Michael Zaremski",
-    "firm": "BMO Capital",
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$304.00",
-    "projected": "+17.7%",
-    "date": "11/11/2026"
+    "price_target": "$311.00",
+    "projected": "+14.5%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Meyer Shields",
@@ -14,17 +14,35 @@
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$241.00",
-    "projected": "-5.4%",
-    "date": "11/10/2026"
+    "projected": "-11.3%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Michael Zaremski",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$304.00",
+    "projected": "+15%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Bob Huang",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+2%",
-    "date": "11/10/2026"
+    "price_target": "$275.00",
+    "projected": "+2.3%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Pablo Singzon",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$291.00",
+    "projected": "+7.8%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Brian Meredith",
@@ -69,15 +87,6 @@
     "action": "Downgraded",
     "price_target": "$271.00",
     "projected": "+4.6%",
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$311.00",
-    "projected": "+20%",
     "date": "11/06/2026"
   },
   {
@@ -141,15 +150,6 @@
     "action": "Reiterated",
     "price_target": "$315.00",
     "projected": "+18%",
-    "date": "08/11/2026"
-  },
-  {
-    "analyst": "Pablo Singzon",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$292.00",
-    "projected": "+9.4%",
     "date": "08/11/2026"
   },
   {

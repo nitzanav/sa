@@ -1,12 +1,30 @@
 [
   {
+    "analyst": "Bill Selesky",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$609.00",
+    "projected": "+40.3%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Chad Dillard",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$462.00",
-    "projected": "+0.4%",
-    "date": "11/12/2026"
+    "projected": "+3.8%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Angel Castillo",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$588.00",
+    "projected": "+32.1%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Sergey Glinyanov",
@@ -115,24 +133,6 @@
     "price_target": "$675.00",
     "projected": "+15%",
     "date": "08/24/2026"
-  },
-  {
-    "analyst": "Bill Selesky",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$770.00",
-    "projected": "+20.3%",
-    "date": "08/13/2026"
-  },
-  {
-    "analyst": "Angel Castillo",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$761.00",
-    "projected": "+18%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Timothy Thein",

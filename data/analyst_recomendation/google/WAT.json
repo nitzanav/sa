@@ -5,11 +5,20 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$535.00",
-    "projected": "+15.3%",
-    "date": "11/13/2026"
+    "projected": "+18.1%",
+    "date": "11/18/2026"
   },
   {
-    "analyst": "‏Avantika Dhabaria‏",
+    "analyst": "Avantika Dhabaria",
+    "firm": "Bank of America Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Avantika Dhabaria",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
     "action": "Maintained",

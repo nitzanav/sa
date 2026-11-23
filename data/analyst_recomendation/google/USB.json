@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+10.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Jason Goldberg",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -61,15 +70,6 @@
     "price_target": "$68.00",
     "projected": "+17.1%",
     "date": "10/16/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$65.00",
-    "projected": "+15.8%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "John Pancari",

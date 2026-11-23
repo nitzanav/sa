@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Richard Clarke",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$172.00",
+    "projected": "+16%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Naved Khan",
     "firm": "B. Riley Securities",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$180.00",
     "projected": "+10.8%",
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "Richard Clarke",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$188.00",
-    "projected": "+17.2%",
-    "date": "11/04/2026"
   },
   {
     "analyst": "Kevin Kopelman",

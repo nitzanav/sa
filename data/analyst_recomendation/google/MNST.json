@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Margaret-May Binshtok",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Robert Ottenstein",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$52.00",
+    "projected": "+13.5%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Dara Mohsenian",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$55.00",
+    "projected": "+16.9%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Sean McGowan",
     "firm": "Roth MKM",
     "recommendation": "Hold",
@@ -135,15 +162,6 @@
     "date": "09/22/2026"
   },
   {
-    "analyst": "Dara Mohsenian",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$55.00",
-    "projected": "+23.2%",
-    "date": "09/18/2026"
-  },
-  {
     "analyst": "John Staszak",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -168,15 +186,6 @@
     "action": "Reiterated",
     "price_target": "$54.00",
     "projected": "+15.2%",
-    "date": "08/07/2026"
-  },
-  {
-    "analyst": "Robert Ottenstein",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$52.50",
-    "projected": "+12%",
     "date": "08/07/2026"
   },
   {

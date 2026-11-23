@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Susquehanna",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$245.00",
+    "projected": "+26%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$214.00",
+    "projected": "+8.4%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Ronald Epstein",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -34,15 +52,6 @@
     "price_target": "$240.00",
     "projected": "+24.2%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Unknown Analyst",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$245.00",
-    "projected": "+26.8%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Charles Minervino",
@@ -97,15 +106,6 @@
     "price_target": "$235.00",
     "projected": "+21.6%",
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Douglas Harned",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$214.00",
-    "projected": "+12.7%",
-    "date": "10/15/2026"
   },
   {
     "analyst": "Scott Deuschle",

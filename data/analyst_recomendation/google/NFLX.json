@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Laurent Yoon",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+37.1%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Helena Wang",
     "firm": "Phillip Securities",
     "recommendation": "Buy",
@@ -177,15 +186,6 @@
     "action": "Reiterated",
     "price_target": "$78.00",
     "projected": "+21.6%",
-    "date": "10/21/2026"
-  },
-  {
-    "analyst": "Laurent Yoon",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "+24.7%",
     "date": "10/21/2026"
   },
   {

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Christine Dooley",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Pallav Mittal",
     "firm": "Barclays",
     "recommendation": "Sell",
@@ -70,15 +79,6 @@
     "price_target": "$59.00",
     "projected": "-18.3%",
     "date": "10/13/2026"
-  },
-  {
-    "analyst": "Christine Dooley",
-    "firm": "Argus Research",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "08/20/2026"
   },
   {
     "analyst": "Gerald Pascarelli",

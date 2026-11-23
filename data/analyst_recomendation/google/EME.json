@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Stefan Diaz",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$799.00",
+    "projected": "+22.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Michael Fairbanks",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",

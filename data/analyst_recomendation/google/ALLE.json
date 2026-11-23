@@ -1,6 +1,24 @@
 [
   {
-    "analyst": "Brandon Knutson‏",
+    "analyst": "Alexander Virgo",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+0.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$181.00",
+    "projected": "-5.4%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Reiterated",
@@ -61,15 +79,6 @@
     "price_target": null,
     "projected": null,
     "date": "09/29/2026"
-  },
-  {
-    "analyst": "Alexander Virgo",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+17.2%",
-    "date": "09/22/2026"
   },
   {
     "analyst": "Christopher Snyder",

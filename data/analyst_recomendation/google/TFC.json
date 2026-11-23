@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "David George",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$56.00",
+    "projected": "+19.4%",
+    "date": "11/23/2026"
+  },
+  {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$51.00",
+    "projected": "+5.8%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vivek Juneja",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
@@ -63,15 +81,6 @@
     "date": "10/20/2026"
   },
   {
-    "analyst": "David George",
-    "firm": "Robert W. Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$56.00",
-    "projected": "+19.6%",
-    "date": "10/19/2026"
-  },
-  {
     "analyst": "Ebrahim Poonawala",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",
@@ -96,15 +105,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "10/16/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$51.00",
-    "projected": "+7.9%",
     "date": "10/16/2026"
   },
   {

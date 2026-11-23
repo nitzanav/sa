@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "Ittai Kidron",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$227.00",
+    "projected": "+11.7%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Adam Borg",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+21.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Jonathan Ruykhaver",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$250.00",
+    "projected": "+40.4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Shaul Eyal",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$200.00",
+    "projected": "+12.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Saket Kalia",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -34,15 +70,6 @@
     "price_target": "$245.00",
     "projected": "+10%",
     "date": "10/09/2026"
-  },
-  {
-    "analyst": "Shaul Eyal",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "-6.3%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "Meta Marshall",
@@ -126,15 +153,6 @@
     "date": "09/24/2026"
   },
   {
-    "analyst": "Ittai Kidron",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$227.00",
-    "projected": "+11.2%",
-    "date": "09/24/2026"
-  },
-  {
     "analyst": "Gray Powell",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -186,15 +204,6 @@
     "action": "Maintained",
     "price_target": "$220.00",
     "projected": "+7.7%",
-    "date": "09/24/2026"
-  },
-  {
-    "analyst": "Adam Borg",
-    "firm": "Stifel Nicolaus",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+5.3%",
     "date": "09/24/2026"
   },
   {
@@ -268,15 +277,6 @@
     "price_target": "$203.00",
     "projected": "+22.2%",
     "date": "08/27/2026"
-  },
-  {
-    "analyst": "Jonathan Ruykhaver",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$200.00",
-    "projected": "+56.3%",
-    "date": "08/26/2026"
   },
   {
     "analyst": "Adam Tindle",

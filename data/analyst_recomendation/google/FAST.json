@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "David Manthey",
+    "firm": "Robert W. Baird",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": "$56.00",
+    "projected": "+6.7%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Connor Cerniglia",
     "firm": "Bernstein",
     "recommendation": "Sell",
@@ -15,15 +24,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "11/06/2026"
-  },
-  {
-    "analyst": "David Manthey",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$61.00",
-    "projected": "+16.7%",
     "date": "11/06/2026"
   },
   {

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$120.00",
+    "projected": "+10.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Dushyant Ailani",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "Mark Newman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+5.7%",
-    "date": "11/10/2026"
   },
   {
     "analyst": "Steven Fox",

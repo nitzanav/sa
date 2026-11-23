@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Christopher Carril",
+    "firm": "KeyBanc",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$249.00",
+    "projected": "+7.1%",
+    "date": "11/23/2026"
+  },
+  {
     "analyst": "Danilo Gargiulo",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$247.00",
     "projected": "+19.6%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Christopher Carril",
-    "firm": "KeyBanc",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$237.00",
-    "projected": "+19.8%",
-    "date": "10/02/2026"
   },
   {
     "analyst": "John Ivankoe",

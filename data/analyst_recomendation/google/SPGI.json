@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Ashish Sabadra",
-    "firm": "RBC Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$510.00",
-    "projected": "+5.2%",
-    "date": "11/05/2026"
-  },
-  {
     "analyst": "Manav Patnaik",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$572.00",
-    "projected": "+22.6%",
-    "date": "11/02/2026"
+    "projected": "+28.1%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Jeffrey Silber",
@@ -23,8 +14,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$513.00",
-    "projected": "+13.5%",
-    "date": "10/29/2026"
+    "projected": "+8%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Mark Grant",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$532.00",
+    "projected": "+12.8%",
+    "date": "11/15/2026"
+  },
+  {
+    "analyst": "Ashish Sabadra",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$510.00",
+    "projected": "+5.2%",
+    "date": "11/05/2026"
   },
   {
     "analyst": "Sean Kennedy",

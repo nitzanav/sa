@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$74.00",
+    "projected": "-6.3%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$80.00",
+    "projected": "+2.7%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Brian Meredith",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -25,15 +43,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$70.00",
-    "projected": "-4.5%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Robert Cox CFA",
@@ -70,15 +79,6 @@
     "price_target": "$69.00",
     "projected": "-7.5%",
     "date": "10/19/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "-1%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Meyer Shields",

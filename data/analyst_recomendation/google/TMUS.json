@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+11.4%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Matthias Volkert",
     "firm": "DZ BANK AG",
     "recommendation": "Buy",
@@ -79,15 +88,6 @@
     "price_target": "$169.00",
     "projected": "+12.2%",
     "date": "10/29/2026"
-  },
-  {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+10%",
-    "date": "10/30/2026"
   },
   {
     "analyst": "Michael Funk",

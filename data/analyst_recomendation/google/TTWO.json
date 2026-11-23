@@ -1,12 +1,48 @@
 [
   {
+    "analyst": "Matthew Cost",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$280.00",
+    "projected": "+33.7%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Doug Creutz",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$284.00",
+    "projected": "+32.3%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Brian Pitz",
     "firm": "BMO Capital",
     "recommendation": "Buy",
     "action": "Reiterated",
     "price_target": "$285.00",
-    "projected": "+23.8%",
-    "date": "11/13/2026"
+    "projected": "+34%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Jason Bazinet",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$270.00",
+    "projected": "+27%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Alec Brondolo",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+41.1%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Andrew Marok",
@@ -33,15 +69,6 @@
     "action": "Maintained",
     "price_target": "$272.00",
     "projected": "+24.6%",
-    "date": "11/10/2026"
-  },
-  {
-    "analyst": "Matthew Cost",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$280.00",
-    "projected": "+28.3%",
     "date": "11/10/2026"
   },
   {
@@ -81,15 +108,6 @@
     "date": "11/10/2026"
   },
   {
-    "analyst": "Jason Bazinet",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$270.00",
-    "projected": "+24.8%",
-    "date": "11/09/2026"
-  },
-  {
     "analyst": "Clark Lampen",
     "firm": "BTIG",
     "recommendation": "Buy",
@@ -117,30 +135,12 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Alec Brondolo",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+40.5%",
-    "date": "10/12/2026"
-  },
-  {
     "analyst": "Drew Crum",
     "firm": "B. Riley Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$300.00",
     "projected": "+25.5%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Doug Creutz",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$284.00",
-    "projected": "+18.8%",
     "date": "08/28/2026"
   },
   {

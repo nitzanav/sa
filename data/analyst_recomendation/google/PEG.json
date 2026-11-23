@@ -27,6 +27,15 @@
     "date": "11/03/2026"
   },
   {
+    "analyst": "Shahriar Pourreza",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$87.00",
+    "projected": "+17.6%",
+    "date": "11/03/2026"
+  },
+  {
     "analyst": "Paul Fremont",
     "firm": "Ladenburg Thalmann & Co.",
     "recommendation": "Hold",
@@ -96,15 +105,6 @@
     "action": "Maintained",
     "price_target": "$84.00",
     "projected": "+19%",
-    "date": "10/20/2026"
-  },
-  {
-    "analyst": "Shahriar Pourreza",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$89.00",
-    "projected": "+26.1%",
     "date": "10/20/2026"
   },
   {

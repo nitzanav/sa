@@ -1,21 +1,30 @@
 [
   {
-    "analyst": "Stephen Baxter",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$602.00",
-    "projected": "+33.8%",
-    "date": "11/12/2026"
-  },
-  {
     "analyst": "Ryan Langston",
     "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$485.00",
+    "projected": "+23.6%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Erin Wright",
+    "firm": "Morgan Stanley",
     "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$430.00",
-    "projected": "-2.9%",
-    "date": "11/11/2026"
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+21%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Lance Wilkes",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": "+16.7%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Ann Hynes",
@@ -23,8 +32,26 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$530.00",
-    "projected": "+19.6%",
-    "date": "11/11/2026"
+    "projected": "+18.9%",
+    "date": "11/15/2026"
+  },
+  {
+    "analyst": "Ben Hendrix",
+    "firm": "RBC Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$563.00",
+    "projected": "+22.4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Stephen Baxter",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$602.00",
+    "projected": "+33.8%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Lisa Gill",
@@ -99,15 +126,6 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "Lance Wilkes",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+2.6%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Elizabeth Anderson CFA",
     "firm": "Evercore ISI",
     "recommendation": "Buy",
@@ -171,15 +189,6 @@
     "date": "10/09/2026"
   },
   {
-    "analyst": "Ben Hendrix",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+1.2%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "David Windley",
     "firm": "Jefferies",
     "recommendation": "Buy",
@@ -187,15 +196,6 @@
     "price_target": "$420.00",
     "projected": "+8.9%",
     "date": "09/30/2026"
-  },
-  {
-    "analyst": "Erin Wright",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$370.00",
-    "projected": "+2%",
-    "date": "08/05/2026"
   },
   {
     "analyst": "Scott Fidel",

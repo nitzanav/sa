@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Michael Cyprys",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$165.00",
+    "projected": "+41.6%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$139.00",
+    "projected": "+16.4%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$139.00",
+    "projected": "+16.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Brennan Hawken",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -87,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$119.00",
     "projected": "+1.8%",
-    "date": "10/23/2026"
-  },
-  {
-    "analyst": "Michael Cyprys",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+41.2%",
     "date": "10/23/2026"
   },
   {

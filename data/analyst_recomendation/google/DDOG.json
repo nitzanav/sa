@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "William Power",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+59.4%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Gabriela Borges",
     "firm": "Goldman Sachs",
     "recommendation": "Sell",
@@ -277,15 +286,6 @@
     "price_target": "$237.00",
     "projected": "+5.8%",
     "date": "09/15/2026"
-  },
-  {
-    "analyst": "William Power",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+19.7%",
-    "date": "08/17/2026"
   },
   {
     "analyst": "Rob Owens",

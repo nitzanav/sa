@@ -1,11 +1,29 @@
 [
   {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$120.00",
+    "projected": "+41.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$102.00",
     "projected": "+15.9%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Neil Mehta",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$103.00",
+    "projected": "+17%",
     "date": "11/13/2026"
   },
   {
@@ -63,15 +81,6 @@
     "date": "10/29/2026"
   },
   {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$123.00",
-    "projected": "+33.8%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Josh Silverstein",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$111.00",
     "projected": "+17.3%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Neil Mehta",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$117.00",
-    "projected": "+25.7%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Unknown Analyst",

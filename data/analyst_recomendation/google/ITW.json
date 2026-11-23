@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kristina Ruggeri",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "David Raso",
     "firm": "Evercore ISI",
     "recommendation": "Sell",

@@ -5,7 +5,6 @@ date,ticker,analyst,percent,projected_price
 2025-11-20,HD,B of A Securities,,430
 2025-11-20,HUBB,UBS,,450
 2025-11-20,TJX,TD Cowen,,167
-2025-11-21,AIG,Goldman Sachs,,84
 2025-11-21,NVDA,Argus Research,,220
 2025-11-21,TJX,Bernstein,,155
 2025-11-22,WMT,BMO Capital,,125
@@ -116,6 +115,7 @@ date,ticker,analyst,percent,projected_price
 2026-01-07,MU,Piper Sandler,17.4,400
 2026-01-07,UBER,Wolfe Research,27.6,110
 2026-01-07,YUM,Barclays,18.6,179
+2026-01-08,ACGL,Goldman Sachs,-2.3,93
 2026-01-08,AMCR,Baird,19.8,50
 2026-01-08,BDX,Stifel,35.9,215
 2026-01-08,CB,Goldman Sachs,13.2,351
@@ -379,7 +379,6 @@ date,ticker,analyst,percent,projected_price
 2026-03-05,PEG,Barclays,6.7,89
 2026-03-05,ROST,Guggenheim,6.9,226
 2026-03-05,TGT,B of A Securities,-11.5,106
-2026-03-06,AEP,Evercore ISI Group,16.8,153
 2026-03-06,DUK,Evercore ISI Group,5.8,139
 2026-03-06,EIX,Ladenburg Thalmann,-11,63
 2026-03-06,NI,Evercore ISI Group,7.2,50
@@ -498,6 +497,7 @@ date,ticker,analyst,percent,projected_price
 2026-04-06,SCHW,Jefferies,25.7,118
 2026-04-06,WYNN,Jefferies,48.4,150
 2026-04-07,APO,Goldman Sachs,27.6,134
+2026-04-07,ARES,Goldman Sachs,29.1,131
 2026-04-07,COF,Goldman Sachs,43.1,260
 2026-04-07,FSLR,Jefferies,-3.1,187
 2026-04-07,KKR,Goldman Sachs,22.4,110
@@ -623,7 +623,6 @@ date,ticker,analyst,percent,projected_price
 2026-04-24,NEE,Wells Fargo,4.9,102
 2026-04-24,ROP,Barclays,2.2,373
 2026-04-24,WRB,BMO Capital,0.1,68
-2026-04-25,AMZN,Oppenheimer,5.8,275
 2026-04-25,DLR,Stifel,16.4,235
 2026-04-25,DOV,Baird,21.9,279
 2026-04-25,DOV,Oppenheimer,9.3,250
@@ -1069,7 +1068,6 @@ date,ticker,analyst,percent,projected_price
 2026-07-06,ZBH,Evercore ISI Group,25.8,110
 2026-07-07,AJG,Barclays,15,292
 2026-07-07,APTV,Deutsche Bank,27,75
-2026-07-07,ARE,Mizuho,19.9,60
 2026-07-07,C,B of A Securities,22.2,176
 2026-07-07,CHRW,Morgan Stanley,-52,91
 2026-07-07,DLTR,JP Morgan,37.6,170
@@ -1678,7 +1676,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-10,WMB,RBC Capital,22.5,87
 2026-08-10,ZTS,Piper Sandler,10.5,80
 2026-08-11,ALB,Evercore ISI Group,38,180
-2026-08-11,ALL,JP Morgan,9.4,292
 2026-08-11,DOC,Citigroup,5.4,22
 2026-08-11,J,UBS,15.1,167
 2026-08-11,KIM,Citigroup,8.4,26
@@ -1750,7 +1747,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-17,HON,Jefferies,9.8,255
 2026-08-17,INCY,Piper Sandler,8.2,130
 2026-08-17,SPG,Citigroup,5.3,230
-2026-08-18,AJG,Argus Research,20,300
 2026-08-18,AMCR,JP Morgan,2.5,47
 2026-08-18,CBRE,Barclays,23.3,183
 2026-08-18,DLR,Evercore ISI Group,20.7,240
@@ -1780,7 +1776,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-19,SJM,Jefferies,16.2,140
 2026-08-19,WDAY,B of A Securities,7.7,205
 2026-08-20,ABBV,Piper Sandler,14,303
-2026-08-20,AMGN,Piper Sandler,4.9,457
 2026-08-20,BBY,Piper Sandler,-2.9,85
 2026-08-20,CIEN,Northland Capital Markets,24.9,500
 2026-08-20,EL,Goldman Sachs,15,112
@@ -1827,7 +1822,6 @@ date,ticker,analyst,percent,projected_price
 2026-08-22,WMT,Baird,15.7,120
 2026-08-22,WMT,Guggenheim,25.4,130
 2026-08-22,WMT,Telsey Advisory Group,25.4,130
-2026-08-24,ABNB,Bernstein,14.8,217
 2026-08-24,ACN,Citigroup,2.9,190
 2026-08-24,DAL,Raymond James,17.6,98
 2026-08-24,DE,Barclays,3.4,675
@@ -1891,6 +1885,7 @@ date,ticker,analyst,percent,projected_price
 2026-08-27,TRGP,RBC Capital,15.4,338
 2026-08-27,TWLO,Citizens,17.9,275
 2026-08-28,ADSK,UBS,24.4,325
+2026-08-28,ARES,Oppenheimer,13.5,162
 2026-08-28,BBY,Barclays,1.4,85
 2026-08-28,CRM,Evercore ISI Group,15.8,290
 2026-08-28,CRM,Truist Securities,19.8,300
@@ -2257,7 +2252,6 @@ date,ticker,analyst,percent,projected_price
 2026-09-26,GS,Wells Fargo,26.7,1175
 2026-09-26,GWW,Barclays,-7,1172
 2026-09-26,KMB,B of A Securities,23.4,120
-2026-09-26,MMM,Wells Fargo,15.7,195
 2026-09-26,PH,Wells Fargo,7.8,1050
 2026-09-26,ROK,Wells Fargo,-1.8,426
 2026-09-26,SHW,Wells Fargo,5.9,340
@@ -2401,7 +2395,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-05,WFC,Goldman Sachs,16.8,96
 2026-10-05,ZBRA,Truist Securities,0.7,378
 2026-10-06,AFL,UBS,11.1,125
-2026-10-06,AIG,Morgan Stanley,6.4,80
 2026-10-06,ALGN,Evercore ISI Group,9.2,155
 2026-10-06,CFG,UBS,19.5,77
 2026-10-06,CHRW,Evercore ISI Group,54.1,217
@@ -2435,7 +2428,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-06,VMC,Truist Securities,29.5,320
 2026-10-06,VST,BMO Capital,38.6,210
 2026-10-06,WRB,Morgan Stanley,0.4,70
-2026-10-07,ALL,Mizuho,31.2,295
 2026-10-07,APH,Goldman Sachs,33,116
 2026-10-07,ATO,Argus Research,15.6,185
 2026-10-07,DELL,Mizuho,15.4,650
@@ -2634,6 +2626,7 @@ date,ticker,analyst,percent,projected_price
 2026-10-14,AEE,Keybanc,16.8,122
 2026-10-14,AEE,Truist Securities,11.1,116
 2026-10-14,AEP,Keybanc,5.4,133
+2026-10-14,ARES,UBS,17.4,134
 2026-10-14,BSX,Truist Securities,17.5,51
 2026-10-14,CARR,Goldman Sachs,12.6,61
 2026-10-14,CCL,Tigress Financial,58.7,42
@@ -2646,7 +2639,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-14,ED,Keybanc,-19.5,87
 2026-10-14,ETR,Keybanc,12.4,118
 2026-10-14,EXC,Keybanc,,
-2026-10-14,GOOG,UBS,8.1,380
 2026-10-14,GS,"Keefe, Bruyette & Woods",24.9,1100
 2026-10-14,HUM,Mizuho,17.4,495
 2026-10-14,INCY,HC Wainwright & Co.,40,152
@@ -2677,7 +2669,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-14,XEL,Truist Securities,16.4,87
 2026-10-15,AFL,JP Morgan,-0.8,119
 2026-10-15,APA,Mizuho,-7.2,44
-2026-10-15,APA,Morgan Stanley,-9.3,43
 2026-10-15,ATO,Truist Securities,4.8,174
 2026-10-15,BAC,Barclays,32.1,68
 2026-10-15,BAC,RBC Capital,16.6,60
@@ -3064,7 +3055,6 @@ date,ticker,analyst,percent,projected_price
 2026-10-23,ABT,JP Morgan,15.4,118
 2026-10-23,ABT,TD Cowen,15.4,118
 2026-10-23,ABT,Wells Fargo,17.3,120
-2026-10-23,AEP,Jefferies,11.9,146
 2026-10-23,ALGN,Mizuho,29.2,200
 2026-10-23,ALLE,JP Morgan,2.3,183
 2026-10-23,AMGN,Oppenheimer,8,480
@@ -3239,6 +3229,7 @@ date,ticker,analyst,percent,projected_price
 2026-10-26,TDY,Barclays,2.5,646
 2026-10-27,ALLE,Goldman Sachs,15.8,206
 2026-10-27,APO,BMO Capital,7.2,124
+2026-10-27,ARES,BMO Capital,5.5,130
 2026-10-27,AVGO,Rosenblatt,76.5,600
 2026-10-27,BMY,Piper Sandler,27.4,78
 2026-10-27,CDNS,JP Morgan,28.9,420
@@ -3350,12 +3341,12 @@ date,ticker,analyst,percent,projected_price
 2026-10-28,XYL,Goldman Sachs,51.6,138
 2026-10-28,XYL,RBC Capital,37.4,125
 2026-10-28,XYL,Stifel,25.3,114
-2026-10-29,ACGL,Morgan Stanley,-1,103
 2026-10-29,ADP,Citigroup,1.8,295
 2026-10-29,ADP,Guggenheim,17.4,340
 2026-10-29,ADP,Jefferies,-13.7,250
 2026-10-29,ADP,RBC Capital,0.1,290
 2026-10-29,AEP,Wells Fargo,15.2,149
+2026-10-29,ALGN,Leerink Partners,37.3,210
 2026-10-29,ALGN,Morgan Stanley,14.4,175
 2026-10-29,AMT,Citigroup,18.4,220
 2026-10-29,APH,Citigroup,41.1,115
@@ -3516,6 +3507,10 @@ date,ticker,analyst,percent,projected_price
 2026-10-30,AMZN,Telsey Advisory Group,44.1,335
 2026-10-30,AMZN,Wedbush,28.1,298
 2026-10-30,APH,JP Morgan,45.7,115
+2026-10-30,ARES,"Keefe, Bruyette & Woods",3.9,130
+2026-10-30,ARES,RBC Capital,36.7,171
+2026-10-30,ARES,TD Cowen,26.3,158
+2026-10-30,ARES,Wells Fargo,12.7,141
 2026-10-30,BA,Bernstein,30.3,223
 2026-10-30,BAX,Wells Fargo,6,25
 2026-10-30,BIIB,Baird,13.6,290
@@ -3657,6 +3652,8 @@ date,ticker,analyst,percent,projected_price
 2026-10-31,AMZN,Mizuho,44.1,335
 2026-10-31,AOS,Citigroup,5.5,67
 2026-10-31,ARE,Citigroup,3.8,42
+2026-10-31,ARES,Barclays,20.7,151
+2026-10-31,ARES,JP Morgan,23.1,154
 2026-10-31,AVY,JP Morgan,9.9,200
 2026-10-31,AVY,UBS,26.3,230
 2026-10-31,BAC,JP Morgan,16.6,59.5
@@ -3807,15 +3804,12 @@ date,ticker,analyst,percent,projected_price
 2026-11-03,ABBV,Guggenheim,11.5,322
 2026-11-03,ABBV,RBC Capital,14.3,330
 2026-11-03,ABBV,Wells Fargo,17.8,340
-2026-11-03,ACGL,Cantor Fitzgerald,1.5,111
 2026-11-03,ACGL,UBS,14.4,125
 2026-11-03,ACGL,Wells Fargo,8.9,119
 2026-11-03,AJG,Citigroup,8.2,300
 2026-11-03,AJG,Jefferies,15,319
-2026-11-03,AJG,Wells Fargo,12.5,312
 2026-11-03,ALLE,Morgan Stanley,-5.4,181
 2026-11-03,AON,Cantor Fitzgerald,22.9,410
-2026-11-03,AON,Wells Fargo,9.1,364
 2026-11-03,AXP,UBS,5.4,346
 2026-11-03,BIIB,Guggenheim,21.3,300
 2026-11-03,BIIB,HC Wainwright & Co.,9.2,270
@@ -3912,6 +3906,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-04,AAPL,Baird,-0.5,340
 2026-11-04,AAPL,Morgan Stanley,2.5,350
 2026-11-04,ADM,Stephens & Co.,4.8,75
+2026-11-04,AEP,Jefferies,19.4,153
 2026-11-04,AME,RBC Capital,23.2,308
 2026-11-04,AMGN,Goldman Sachs,11.8,536
 2026-11-04,AMGN,TD Cowen,10.7,531
@@ -4099,6 +4094,7 @@ date,ticker,analyst,percent,projected_price
 2026-11-06,ABNB,Canaccord Genuity,17.7,225
 2026-11-06,ABNB,Citigroup,18.8,227
 2026-11-06,ABNB,Wells Fargo,12.5,215
+2026-11-06,AIG,Wells Fargo,7.1,85
 2026-11-06,AIZ,"Keefe, Bruyette & Woods",14.7,345
 2026-11-06,AKAM,DA Davidson,49.9,125
 2026-11-06,ALB,RBC Capital,20.2,119
@@ -4232,7 +4228,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-09,AEE,Mizuho,8.2,123
 2026-11-09,AFL,Piper Sandler,14.4,143
 2026-11-09,AIG,Piper Sandler,9,85
-2026-11-09,AIZ,Morgan Stanley,5.6,330
 2026-11-09,AIZ,Piper Sandler,14,356
 2026-11-09,ALB,Citigroup,43.6,140
 2026-11-09,ALB,Morgan Stanley,7.7,105
@@ -4388,7 +4383,6 @@ date,ticker,analyst,percent,projected_price
 2026-11-12,WELL,UBS,16.3,289
 2026-11-12,XYZ,Truist Securities,12.4,95
 2026-11-13,AFL,Evercore ISI Group,-9.1,116
-2026-11-13,AFL,Mizuho,-8.3,117
 2026-11-13,AJG,Mizuho,9.3,307
 2026-11-13,AMAT,JP Morgan,33,500
 2026-11-13,AMAT,Mizuho,35.6,510
@@ -4444,3 +4438,20 @@ date,ticker,analyst,percent,projected_price
 2026-11-14,NVDA,Rosenblatt,76.6,300
 2026-11-14,P,Guggenheim,97.3,215
 2026-11-14,TSCO,Evercore ISI Group,5.1,38
+2026-11-16,ALL,JP Morgan,7.8,291
+2026-11-16,ARE,Mizuho,13.8,50
+2026-11-17,ACGL,Morgan Stanley,3.1,113
+2026-11-17,AEP,Evercore ISI Group,19.8,154
+2026-11-17,AFL,Mizuho,-7.3,118
+2026-11-17,AIG,Morgan Stanley,3.3,85
+2026-11-17,AIZ,Morgan Stanley,12,360
+2026-11-17,AJG,Argus Research,11.5,317
+2026-11-17,GOOG,UBS,13.9,320
+2026-11-17,MMM,Wells Fargo,13.9,205
+2026-11-19,AMGN,Piper Sandler,22.2,542
+2026-11-19,APA,Morgan Stanley,-3.8,44
+2026-11-20,AJG,Wells Fargo,4.3,294
+2026-11-20,AON,Wells Fargo,8.5,364
+2026-11-21,ABNB,Bernstein,34.7,234
+2026-11-21,ALL,Mizuho,14.5,311
+2026-11-21,AMZN,Oppenheimer,22.3,310

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "-6.5%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Jasper Hellweg",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -151,15 +160,6 @@
     "price_target": "$190.00",
     "projected": "+11.6%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$145.00",
-    "projected": "-7.8%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Brian Skorney",

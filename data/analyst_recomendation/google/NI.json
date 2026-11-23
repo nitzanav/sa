@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ross Fowler",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$48.00",
+    "projected": "+7.5%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Aidan Kelly",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$53.00",
+    "projected": "+18.7%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Gabe Moreen",
     "firm": "Mizuho Securities",
     "recommendation": "Buy",
@@ -43,15 +61,6 @@
     "price_target": "$49.50",
     "projected": "+14.6%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Ross Fowler",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$45.00",
-    "projected": "+4.7%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Eli Jossen",

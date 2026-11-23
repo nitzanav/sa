@@ -1,5 +1,41 @@
 [
   {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$28.00",
+    "projected": "-3.4%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$32.00",
+    "projected": "+10.3%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Erik Woodring",
+    "firm": "Morgan Stanley",
+    "recommendation": "Sell",
+    "action": "Reiterated",
+    "price_target": "$21.00",
+    "projected": "-27.6%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$25.00",
+    "projected": "-13.9%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Katherine Murphy",
     "firm": "Goldman Sachs",
     "recommendation": "Sell",
@@ -9,15 +45,6 @@
     "date": "11/02/2026"
   },
   {
-    "analyst": "Mark Newman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$32.00",
-    "projected": "-4.9%",
-    "date": "10/25/2026"
-  },
-  {
     "analyst": "David Paige",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -25,24 +52,6 @@
     "price_target": "$33.00",
     "projected": "+8.8%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Asiya Merchant",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$25.00",
-    "projected": "-22%",
-    "date": "10/08/2026"
-  },
-  {
-    "analyst": "Erik Woodring",
-    "firm": "Morgan Stanley",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$19.00",
-    "projected": "-43.1%",
-    "date": "09/21/2026"
   },
   {
     "analyst": "Wamsi Mohan",
@@ -87,15 +96,6 @@
     "action": "Reiterated",
     "price_target": "$30.00",
     "projected": "+7.7%",
-    "date": "08/27/2026"
-  },
-  {
-    "analyst": "David Vogt",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$28.00",
-    "projected": "+0.5%",
     "date": "08/27/2026"
   },
   {

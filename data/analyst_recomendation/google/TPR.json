@@ -9,6 +9,15 @@
     "date": "11/11/2026"
   },
   {
+    "analyst": "John Kernan",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$159.00",
+    "projected": "+17.5%",
+    "date": "11/09/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",

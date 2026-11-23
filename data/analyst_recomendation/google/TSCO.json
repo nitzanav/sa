@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$35.00",
+    "projected": "-7.6%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Peter Benedict",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+12.8%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Oliver Wintermantel",
     "firm": "Evercore ISI",
     "recommendation": "Hold",
@@ -115,15 +133,6 @@
     "price_target": null,
     "projected": null,
     "date": "10/21/2026"
-  },
-  {
-    "analyst": "Peter Benedict",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$38.00",
-    "projected": "+15.2%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Simeon Gutman",

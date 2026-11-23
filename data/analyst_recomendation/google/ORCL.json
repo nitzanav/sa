@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mark Moerdler",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$325.00",
+    "projected": "+179.4%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Andy Yu CFA",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -7,15 +16,6 @@
     "price_target": "$290.00",
     "projected": "+133.3%",
     "date": "11/11/2026"
-  },
-  {
-    "analyst": "Mark Moerdler",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$325.00",
-    "projected": "+175.6%",
-    "date": "11/10/2026"
   },
   {
     "analyst": "Gabriela Borges",

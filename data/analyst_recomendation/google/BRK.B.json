@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Kevin Heal",
+    "firm": "Argus Research",
+    "recommendation": "Hold",
+    "action": "Downgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Brian Meredith",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$540.00",
     "projected": "+7%",
     "date": "08/17/2026"
-  },
-  {
-    "analyst": "Kevin Heal",
-    "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "06/04/2026"
   },
   {
     "analyst": "Edmond Fok",

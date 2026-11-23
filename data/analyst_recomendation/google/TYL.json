@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Terry Tillman",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$500.00",
+    "projected": "+22.6%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Andrew Sherman",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$475.00",
+    "projected": "+16.5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Gabriela Borges",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -90,15 +108,6 @@
     "date": "10/27/2026"
   },
   {
-    "analyst": "Andrew Sherman",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$450.00",
-    "projected": "+16.2%",
-    "date": "10/26/2026"
-  },
-  {
     "analyst": "Adam Hotchkiss",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -120,19 +129,10 @@
     "analyst": "Billy Fitzsimmons",
     "firm": "Piper Sandler",
     "recommendation": "Buy",
-    "action": "Reiterated",
+    "action": "Initiated",
     "price_target": "$450.00",
     "projected": "+40.3%",
     "date": "09/28/2026"
-  },
-  {
-    "analyst": "Terry Tillman",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "08/21/2026"
   },
   {
     "analyst": "Peter Heckmann",

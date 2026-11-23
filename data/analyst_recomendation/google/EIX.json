@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Aidan Kelly",
+    "firm": "J.P. Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$64.00",
+    "projected": "+2.4%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Anthony Crowdell",
     "firm": "Mizuho Securities",
     "recommendation": "Hold",
@@ -70,15 +79,6 @@
     "price_target": "$67.00",
     "projected": "+19.7%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Aidan Kelly",
-    "firm": "J.P. Morgan",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "+6.2%",
-    "date": "10/12/2026"
   },
   {
     "analyst": "Richard Sunderland",

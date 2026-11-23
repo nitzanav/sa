@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Dave Kang",
+    "firm": "B. Riley Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$770.00",
+    "projected": "+35.9%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Daniel Zhu",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$700.00",
+    "projected": "+26.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "David Vogt",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -9,7 +27,7 @@
     "date": "11/10/2026"
   },
   {
-    "analyst": "Daniel Zhu‏",
+    "analyst": "Daniel Zhu",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
@@ -70,15 +88,6 @@
     "price_target": "$1,280.00",
     "projected": "+59.5%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "Dave Kang",
-    "firm": "B. Riley Securities",
-    "recommendation": "Hold",
-    "action": "Downgraded",
-    "price_target": "$770.00",
-    "projected": "+13.1%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Simon Leopold",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Tristan Gerra",
+    "firm": "Robert W. Baird",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+79.6%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vivek Arya",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -105,15 +114,6 @@
     "action": "Maintained",
     "price_target": "$200.00",
     "projected": "+33.3%",
-    "date": "11/05/2026"
-  },
-  {
-    "analyst": "Tristan Gerra",
-    "firm": "Robert W. Baird",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "+113.2%",
     "date": "11/05/2026"
   },
   {

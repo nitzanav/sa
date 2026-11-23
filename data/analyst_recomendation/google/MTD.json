@@ -1,6 +1,15 @@
 [
   {
-    "analyst": "‏Avantika Dhabaria‏",
+    "analyst": "Avantika Dhabaria",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/10/2026"
+  },
+  {
+    "analyst": "Avantika Dhabaria",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
@@ -30,7 +39,7 @@
     "analyst": "Casey Woodring",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
-    "action": "Reiterated",
+    "action": "Maintained",
     "price_target": "$1,840.00",
     "projected": "+4.6%",
     "date": "11/10/2026"

@@ -5,8 +5,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$804.00",
-    "projected": "+34.3%",
-    "date": "11/12/2026"
+    "projected": "+34.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Stefan Diaz",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$636.00",
+    "projected": "+5.1%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Dimple Gosai",

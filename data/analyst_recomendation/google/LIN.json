@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Martin Roediger",
+    "firm": "Kepler Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$601.00",
+    "projected": "+17.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "John McNulty",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -214,14 +223,5 @@
     "price_target": "$575.00",
     "projected": "+15.8%",
     "date": "04/17/2026"
-  },
-  {
-    "analyst": "Martin Roediger",
-    "firm": "Kepler Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$490.00",
-    "projected": "-1.2%",
-    "date": "03/31/2026"
   }
 ]

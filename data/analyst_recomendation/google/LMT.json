@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$633.00",
+    "projected": "+9.1%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Michael Ciarmoli",
     "firm": "Guggenheim",
     "recommendation": "Buy",
@@ -115,15 +124,6 @@
     "price_target": "$560.00",
     "projected": "-4.1%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Douglas Harned",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$564.00",
-    "projected": "+11%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "Robert Stallard",

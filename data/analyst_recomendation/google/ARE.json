@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Vikram Malhotra",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+13.8%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Farrell Granath",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -18,15 +27,6 @@
     "date": "11/11/2026"
   },
   {
-    "analyst": "John Kim",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/10/2026"
-  },
-  {
     "analyst": "Sabahat Khan",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -39,10 +39,10 @@
     "analyst": "Michael Carroll",
     "firm": "RBC Capital",
     "recommendation": "Hold",
-    "action": "Maintained",
+    "action": "Reiterated",
     "price_target": "$47.00",
-    "projected": "+15.8%",
-    "date": "11/02/2026"
+    "projected": "+8.3%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "Nicholas Joseph",
@@ -81,6 +81,15 @@
     "date": "10/27/2026"
   },
   {
+    "analyst": "John Kim",
+    "firm": "BMO Capital",
+    "recommendation": "Sell",
+    "action": "Downgraded",
+    "price_target": "$41.00",
+    "projected": "-8.5%",
+    "date": "10/12/2026"
+  },
+  {
     "analyst": "Anthony Paolone",
     "firm": "J.P. Morgan",
     "recommendation": "Sell",
@@ -106,15 +115,6 @@
     "price_target": null,
     "projected": null,
     "date": "07/30/2026"
-  },
-  {
-    "analyst": "Vikram Malhotra",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$60.00",
-    "projected": "+14.7%",
-    "date": "07/06/2026"
   },
   {
     "analyst": "Jeffrey Spector",

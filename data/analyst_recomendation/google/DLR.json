@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Matthew Niknam",
+    "firm": "Truist Financial",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$215.00",
+    "projected": "+24.2%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$226.00",
+    "projected": "+26.7%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Andy Yu CFA",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -27,22 +54,13 @@
     "date": "11/02/2026"
   },
   {
-    "analyst": "Varun Govindaraj",
+    "analyst": "Chad Dillard",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$226.00",
     "projected": "+21.7%",
     "date": "11/01/2026"
-  },
-  {
-    "analyst": "Michael Rollins",
-    "firm": "Citi",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$234.00",
-    "projected": "+30%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Zhiger Kurmet",
@@ -141,6 +159,15 @@
     "action": "Reiterated",
     "price_target": null,
     "projected": null,
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "Michael Elias",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$220.00",
+    "projected": "+18.5%",
     "date": "10/30/2026"
   },
   {
@@ -243,15 +270,6 @@
     "date": "08/04/2026"
   },
   {
-    "analyst": "Matthew Niknam",
-    "firm": "Truist Financial",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": null,
-    "projected": null,
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "Richard Choe",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -295,15 +313,6 @@
     "price_target": "$227.00",
     "projected": "+19.5%",
     "date": "07/26/2026"
-  },
-  {
-    "analyst": "Michael Elias",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$222.00",
-    "projected": "+16.8%",
-    "date": "07/24/2026"
   },
   {
     "analyst": "Gregory P Miller",

@@ -1,20 +1,29 @@
 [
   {
+    "analyst": "Stephen Grambling",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$362.00",
+    "projected": "-0.4%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Richard Clarke",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "+1.7%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Shaun Kelley",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "11/09/2026"
-  },
-  {
-    "analyst": "Stephen Grambling",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$362.00",
-    "projected": "-3.5%",
     "date": "11/09/2026"
   },
   {
@@ -124,15 +133,6 @@
     "price_target": "$360.00",
     "projected": "+1.5%",
     "date": "10/25/2026"
-  },
-  {
-    "analyst": "Richard Clarke",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$320.00",
-    "projected": "-11.1%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Daniel Politzer",

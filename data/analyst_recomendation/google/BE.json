@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Ameet Thakkar",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$230.00",
+    "projected": "+42%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Sunaina Ocalan",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$306.00",
+    "projected": "+73.3%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Mark Strouse",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Chris Dendrinos",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -18,7 +45,7 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Sunaina Ocalan‏",
+    "analyst": "Sunaina Ocalan",
     "firm": "Bernstein",
     "recommendation": "Hold",
     "action": "Maintained",
@@ -81,15 +108,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Mark Strouse",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$292.00",
-    "projected": "+43.8%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "Chip Moore",
     "firm": "Roth MKM",
     "recommendation": "Hold",
@@ -124,15 +142,6 @@
     "price_target": "$298.00",
     "projected": "+46.8%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Ameet Thakkar",
-    "firm": "BMO Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$260.00",
-    "projected": "+18.1%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Christopher Souther",

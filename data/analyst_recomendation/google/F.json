@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Andrew Percoco",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$13.00",
+    "projected": "+15.4%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Matthias Volkert",
+    "firm": "DZ BANK AG",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$15.00",
+    "projected": "+32%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Dan Levy",
+    "firm": "Barclays",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$14.00",
+    "projected": "+23.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -18,30 +45,12 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Dan Levy",
-    "firm": "Barclays",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$14.00",
-    "projected": "+14%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Alexander Perry",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Andrew Percoco",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$13.00",
-    "projected": "+10.5%",
     "date": "10/29/2026"
   },
   {
@@ -115,15 +124,6 @@
     "price_target": "$17.00",
     "projected": "+22.4%",
     "date": "08/11/2026"
-  },
-  {
-    "analyst": "Matthias Volkert",
-    "firm": "DZ BANK AG",
-    "recommendation": "Hold",
-    "action": "Upgraded",
-    "price_target": "$16.00",
-    "projected": "+7%",
-    "date": "07/31/2026"
   },
   {
     "analyst": "Itay Michaeli",

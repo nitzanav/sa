@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jean Ann Salisbury",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$39.00",
+    "projected": "+23.2%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "John Mackay",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -115,15 +124,6 @@
     "price_target": "$39.00",
     "projected": "+13.7%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Jean Ann Salisbury",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$39.00",
-    "projected": "+16.1%",
-    "date": "10/21/2026"
   },
   {
     "analyst": "Ameet Thakkar",

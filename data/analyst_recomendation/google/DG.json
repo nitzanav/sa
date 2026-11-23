@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Michael Lasser",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$168.00",
+    "projected": "+24.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$145.00",
+    "projected": "+7.2%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Seth Sigman",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$151.00",
+    "projected": "+11.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Zhihan Ma",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -15,15 +42,6 @@
     "action": "Maintained",
     "price_target": "$178.00",
     "projected": "+39.8%",
-    "date": "10/29/2026"
-  },
-  {
-    "analyst": "Seth Sigman",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$151.00",
-    "projected": "+18.6%",
     "date": "10/29/2026"
   },
   {
@@ -132,15 +150,6 @@
     "action": "Reiterated",
     "price_target": "$123.00",
     "projected": "-1.8%",
-    "date": "08/28/2026"
-  },
-  {
-    "analyst": "Michael Lasser",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$168.00",
-    "projected": "+34.1%",
     "date": "08/28/2026"
   },
   {

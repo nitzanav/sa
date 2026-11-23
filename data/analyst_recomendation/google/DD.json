@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "John McNulty",
+    "firm": "BMO Capital",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$190.00",
+    "projected": "+24.9%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Arun Viswanathan",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$170.00",
     "projected": "+13.1%",
     "date": "11/05/2026"
-  },
-  {
-    "analyst": "John McNulty",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$186.00",
-    "projected": "+24%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Joshua Spector",

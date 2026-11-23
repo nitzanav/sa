@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Douglas Harned",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$352.00",
+    "projected": "+22.2%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "John Godyn",
     "firm": "Citi",
     "recommendation": "Buy",
@@ -16,15 +25,6 @@
     "price_target": "$375.00",
     "projected": "+19.7%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Douglas Harned",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$352.00",
-    "projected": "+11%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "David E. Strauss",

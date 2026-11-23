@@ -1,11 +1,38 @@
 [
   {
+    "analyst": "Hans Engel",
+    "firm": "Erste Group",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Devin McDermott",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$187.00",
+    "projected": "+12.7%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Betty Jiang",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$206.00",
     "projected": "+20.2%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Sam Margolin",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$189.00",
+    "projected": "+10.2%",
     "date": "11/13/2026"
   },
   {
@@ -81,15 +108,6 @@
     "date": "11/04/2026"
   },
   {
-    "analyst": "Sam Margolin",
-    "firm": "Wells Fargo",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$189.00",
-    "projected": "+2.7%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "Pei Hwa Ho",
     "firm": "DBS",
     "recommendation": "Buy",
@@ -106,15 +124,6 @@
     "price_target": "$213.00",
     "projected": "+19.7%",
     "date": "11/03/2026"
-  },
-  {
-    "analyst": "Devin McDermott",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$187.00",
-    "projected": "+1.6%",
-    "date": "11/02/2026"
   },
   {
     "analyst": "Biraj Borkhataria",

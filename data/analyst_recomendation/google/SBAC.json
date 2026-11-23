@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Deutsche Bank",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$211.00",
+    "projected": "+13.2%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Michael Ng",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",

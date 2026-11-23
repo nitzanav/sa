@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brad Heffern",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$68.00",
+    "projected": "+4.8%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Marie Ferguson",
     "firm": "Argus Research",
     "recommendation": "Buy",
@@ -88,15 +97,6 @@
     "price_target": "$74.00",
     "projected": "+21.4%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Brad Heffern",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$67.00",
-    "projected": "+8.2%",
-    "date": "10/13/2026"
   },
   {
     "analyst": "Michael Gorman",

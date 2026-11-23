@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Stifel Nicolaus",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$85.00",
+    "projected": "+18.9%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Mike McGovern",
     "firm": "Bank of America Securities",
     "recommendation": "Hold",

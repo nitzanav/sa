@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Andrew Kligerman",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$218.00",
+    "projected": "+34%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Pablo Singzon",
     "firm": "J.P. Morgan",
     "recommendation": "Buy",
@@ -25,15 +34,6 @@
     "price_target": "$180.00",
     "projected": "+15.7%",
     "date": "10/26/2026"
-  },
-  {
-    "analyst": "Andrew Kligerman",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$215.00",
-    "projected": "+29.5%",
-    "date": "10/23/2026"
   },
   {
     "analyst": "Bob Huang",

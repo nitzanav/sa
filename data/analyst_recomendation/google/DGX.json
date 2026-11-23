@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$260.00",
+    "projected": "-0.1%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Lisa Gill",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -74,15 +83,6 @@
   {
     "analyst": "David Toung",
     "firm": "Argus Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$260.00",
-    "projected": "+10.6%",
-    "date": "07/28/2026"
-  },
-  {
-    "analyst": "Ann Hynes",
-    "firm": "Mizuho Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$260.00",

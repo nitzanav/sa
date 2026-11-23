@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Brandt Montour",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+9.6%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Andrew Didora",
     "firm": "Bank of America Securities",
     "recommendation": "Buy",
@@ -33,15 +42,6 @@
     "action": "Maintained",
     "price_target": "$415.00",
     "projected": "+22.4%",
-    "date": "11/11/2026"
-  },
-  {
-    "analyst": "Brandt Montour",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "+3.3%",
     "date": "11/11/2026"
   },
   {

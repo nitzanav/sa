@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Param Singh",
+    "firm": "Oppenheimer",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Asiya Merchant",
+    "firm": "Citi",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$190.00",
+    "projected": "+6.2%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Amit Daryanani",
+    "firm": "Evercore ISI",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$300.00",
+    "projected": "+67.7%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Katherine Murphy",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -25,15 +52,6 @@
     "price_target": "$219.00",
     "projected": "-5.4%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Amit Daryanani",
-    "firm": "Evercore ISI",
-    "recommendation": "Buy",
-    "action": "Upgraded",
-    "price_target": "$300.00",
-    "projected": "+29.3%",
-    "date": "10/07/2026"
   },
   {
     "analyst": "Krish Sankar",
@@ -69,24 +87,6 @@
     "action": "Maintained",
     "price_target": null,
     "projected": null,
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Param Singh",
-    "firm": "Oppenheimer",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "09/30/2026"
-  },
-  {
-    "analyst": "Asiya Merchant",
-    "firm": "Citi",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$190.00",
-    "projected": "-9.5%",
     "date": "09/30/2026"
   },
   {

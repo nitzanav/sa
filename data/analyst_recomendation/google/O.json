@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "James Feldman",
+    "firm": "Wells Fargo",
+    "recommendation": "Hold",
+    "action": "Reiterated",
+    "price_target": "$61.00",
+    "projected": "+3%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Linda Tsai",
     "firm": "Truist Financial",
     "recommendation": "Hold",

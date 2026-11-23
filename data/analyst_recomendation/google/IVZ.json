@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$37.00",
+    "projected": "+30.2%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$37.00",
+    "projected": "+30.2%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Glenn Schorr",
     "firm": "Evercore ISI",
     "recommendation": "Hold",

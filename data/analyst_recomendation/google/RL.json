@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Matthew Boss",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$464.00",
+    "projected": "+21%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -70,15 +79,6 @@
     "price_target": "$473.00",
     "projected": "+26.1%",
     "date": "11/06/2026"
-  },
-  {
-    "analyst": "Matthew Boss",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$464.00",
-    "projected": "+17.8%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Rick Patel",

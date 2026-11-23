@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Yaron Kinar",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$368.00",
+    "projected": "-1.8%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Bob Huang",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$380.00",
+    "projected": "-0.1%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Andrew Kligerman",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -7,15 +25,6 @@
     "price_target": "$379.00",
     "projected": "+6.6%",
     "date": "10/28/2026"
-  },
-  {
-    "analyst": "Bob Huang",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$360.00",
-    "projected": "+1.4%",
-    "date": "10/27/2026"
   },
   {
     "analyst": "Harry Fong",
@@ -43,15 +52,6 @@
     "price_target": "$374.00",
     "projected": "+3.1%",
     "date": "10/23/2026"
-  },
-  {
-    "analyst": "Yaron Kinar",
-    "firm": "Mizuho Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$350.00",
-    "projected": "-2.8%",
-    "date": "10/22/2026"
   },
   {
     "analyst": "Elyse Greenspan",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Gerard Cassidy",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+5%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Vivek Juneja",
     "firm": "J.P. Morgan",
     "recommendation": "Hold",
@@ -79,15 +88,6 @@
     "price_target": "$185.00",
     "projected": "+10.5%",
     "date": "10/15/2026"
-  },
-  {
-    "analyst": "Gerard Cassidy",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Reiterated",
-    "price_target": "$175.00",
-    "projected": "+8.1%",
-    "date": "10/14/2026"
   },
   {
     "analyst": "David Konrad",

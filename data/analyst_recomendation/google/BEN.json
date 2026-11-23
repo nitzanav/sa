@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Ryan Coyne",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$38.00",
+    "projected": "+6.5%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Unknown Analyst",
+    "firm": "Mizuho Securities",
+    "recommendation": "Hold",
+    "action": "Initiated",
+    "price_target": "$38.00",
+    "projected": "+6.5%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Brian Bedell",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",

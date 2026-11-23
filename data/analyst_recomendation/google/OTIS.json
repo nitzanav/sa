@@ -1,6 +1,15 @@
 [
   {
-    "analyst": "Brandon Knutson‏",
+    "analyst": "Brandon Knutson",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$80.00",
+    "projected": "+3.7%",
+    "date": "11/13/2026"
+  },
+  {
+    "analyst": "Brandon Knutson",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
     "action": "Maintained",

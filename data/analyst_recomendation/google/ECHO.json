@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "analyst": "Gregory Williams",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$137.00",
+    "projected": "+50.6%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Michael Rollins",
+    "firm": "Citi",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$156.00",
+    "projected": "+54.5%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "John Hodulik",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$160.00",
+    "projected": "+62.2%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Ric Prentiss",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$118.00",
+    "projected": "+19%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Brent Penter",
+    "firm": "Raymond James",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$118.00",
+    "projected": "+19%",
+    "date": "11/03/2026"
+  },
+  {
+    "analyst": "Sean Diffley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$132.00",
+    "projected": "+33.8%",
+    "date": "11/04/2026"
+  },
+  {
+    "analyst": "Sebastiano Petti",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Upgraded",
+    "price_target": "$144.00",
+    "projected": "+64.1%",
+    "date": "10/16/2026"
+  },
+  {
+    "analyst": "Bryan Kraft",
+    "firm": "Deutsche Bank",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$118.00",
+    "projected": "+34.8%",
+    "date": "08/04/2026"
+  },
+  {
+    "analyst": "Pierre Ferragu",
+    "firm": "New Street",
+    "recommendation": "Buy",
+    "action": "Initiated",
+    "price_target": "$161.00",
+    "projected": "+21.7%",
+    "date": "05/13/2026"
+  }
+]

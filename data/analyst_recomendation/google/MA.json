@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Jason Kupferberg",
+    "firm": "Wells Fargo",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$731.00",
+    "projected": "+9.6%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Harshita Rawat",
     "firm": "Bernstein",
     "recommendation": "Buy",
@@ -141,15 +150,6 @@
     "action": "Maintained",
     "price_target": "$720.00",
     "projected": "+12.1%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "Jason Kupferberg",
-    "firm": "Wells Fargo",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$731.00",
-    "projected": "+13.8%",
     "date": "10/30/2026"
   },
   {

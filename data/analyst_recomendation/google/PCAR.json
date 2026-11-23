@@ -9,6 +9,15 @@
     "date": "11/12/2026"
   },
   {
+    "analyst": "Varun Govindaraj",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$121.00",
+    "projected": "+11.3%",
+    "date": "11/12/2026"
+  },
+  {
     "analyst": "David Raso",
     "firm": "Evercore ISI",
     "recommendation": "Buy",

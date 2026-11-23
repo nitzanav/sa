@@ -45,15 +45,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Raymond James",
-    "firm": "Raymond James",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "01/03/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$365.00",
     "projected": "+15.1%",
     "date": "07/13/2026"
+  },
+  {
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "01/03/2026"
   },
   {
     "analyst": "CLSA",

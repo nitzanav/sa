@@ -1,5 +1,32 @@
 [
   {
+    "analyst": "Terence Flynn",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$174.00",
+    "projected": "+25%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Emily Field",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$180.00",
+    "projected": "+21.7%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Asad Haider",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+12%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Carter Gould",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
@@ -63,15 +90,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Terence Flynn",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$174.00",
-    "projected": "+16.3%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Evan Seigerman",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -88,15 +106,6 @@
     "price_target": "$165.00",
     "projected": "+10.3%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Emily Field",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+28.6%",
-    "date": "10/28/2026"
   },
   {
     "analyst": "Vamil Divan",
@@ -151,15 +160,6 @@
     "price_target": "$175.00",
     "projected": "+20.7%",
     "date": "10/24/2026"
-  },
-  {
-    "analyst": "Asad Haider",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$155.00",
-    "projected": "+2.6%",
-    "date": "10/22/2026"
   },
   {
     "analyst": "Steve Scala",

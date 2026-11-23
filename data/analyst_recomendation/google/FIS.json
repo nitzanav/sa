@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Harshita Rawat",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$31.00",
+    "projected": "+9.6%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "Matthew Coad",
     "firm": "Truist Financial",
     "recommendation": "Hold",
@@ -7,15 +16,6 @@
     "price_target": "$31.00",
     "projected": "+2.4%",
     "date": "11/12/2026"
-  },
-  {
-    "analyst": "Harshita Rawat",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$31.00",
-    "projected": "+9%",
-    "date": "11/10/2026"
   },
   {
     "analyst": "Stephen Biggar",

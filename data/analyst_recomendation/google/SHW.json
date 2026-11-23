@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Unknown Analyst",
+    "firm": "Argus Research",
+    "recommendation": "Buy",
+    "action": "Reiterated",
+    "price_target": "$380.00",
+    "projected": "+10%",
+    "date": "11/17/2026"
+  },
+  {
+    "analyst": "Vincent Andrews",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$395.00",
+    "projected": "+14.4%",
+    "date": "11/17/2026"
+  },
+  {
     "analyst": "David Begleiter",
     "firm": "Deutsche Bank",
     "recommendation": "Hold",
@@ -106,15 +124,6 @@
     "price_target": "$392.00",
     "projected": "+24.2%",
     "date": "10/27/2026"
-  },
-  {
-    "analyst": "Vincent Andrews",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Reiterated",
-    "price_target": "$395.00",
-    "projected": "+20.2%",
-    "date": "10/29/2026"
   },
   {
     "analyst": "Greg Melich",

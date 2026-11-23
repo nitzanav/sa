@@ -1,5 +1,23 @@
 [
   {
+    "analyst": "Katherine Murphy",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "+38.3%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Mark Newman",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$42.00",
+    "projected": "+64.4%",
+    "date": "11/16/2026"
+  },
+  {
     "analyst": "Mehdi Hosseini",
     "firm": "Susquehanna",
     "recommendation": "Sell",
@@ -36,15 +54,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Mark Newman",
-    "firm": "Bernstein",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$42.00",
-    "projected": "+34.7%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Ruplu Bhattacharya",
     "firm": "Bank of America Securities",
     "recommendation": "Sell",
@@ -70,15 +79,6 @@
     "price_target": "$39.00",
     "projected": "+24.1%",
     "date": "11/04/2026"
-  },
-  {
-    "analyst": "Katherine Murphy",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+8%",
-    "date": "10/20/2026"
   },
   {
     "analyst": "Quinn Bolton",

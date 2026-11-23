@@ -1,12 +1,39 @@
 [
   {
+    "analyst": "David Vogt",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$340.00",
+    "projected": "-3.6%",
+    "date": "11/20/2026"
+  },
+  {
+    "analyst": "Samik Chatterjee",
+    "firm": "J.P. Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$355.00",
+    "projected": "+0.6%",
+    "date": "11/19/2026"
+  },
+  {
+    "analyst": "Tim Long",
+    "firm": "Barclays",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$261.00",
+    "projected": "-26%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Mark Newman",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$380.00",
-    "projected": "+6.2%",
-    "date": "11/12/2026"
+    "projected": "+6.4%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Brandon Nispel",
@@ -34,15 +61,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/09/2026"
-  },
-  {
-    "analyst": "Samik Chatterjee",
-    "firm": "J.P. Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "11/08/2026"
   },
   {
     "analyst": "Helena Wang",
@@ -153,15 +171,6 @@
     "date": "11/03/2026"
   },
   {
-    "analyst": "Tim Long",
-    "firm": "Barclays",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$261.00",
-    "projected": "-19.8%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Michael Ng",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -185,8 +194,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$365.00",
-    "projected": "+6.5%",
-    "date": "11/02/2026"
+    "projected": "+12.1%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Laura Martin",
@@ -196,15 +205,6 @@
     "price_target": null,
     "projected": null,
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "David Vogt",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$340.00",
-    "projected": "+4.4%",
-    "date": "11/03/2026"
   },
   {
     "analyst": "Nicolas Cote Colisson",

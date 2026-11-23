@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Ann Hynes",
+    "firm": "Mizuho Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$225.00",
+    "projected": "+17.1%",
+    "date": "11/15/2026"
+  },
+  {
     "analyst": "Sarah James",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Hold",
@@ -16,15 +25,6 @@
     "price_target": "$207.00",
     "projected": "+4.3%",
     "date": "11/10/2026"
-  },
-  {
-    "analyst": "Ann Hynes",
-    "firm": "Mizuho Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$225.00",
-    "projected": "+16.6%",
-    "date": "11/11/2026"
   },
   {
     "analyst": "Scott Fidel",

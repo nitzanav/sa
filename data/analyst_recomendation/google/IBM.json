@@ -1,21 +1,12 @@
 [
   {
-    "analyst": "Sachin Mittal",
-    "firm": "DBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "+14.6%",
-    "date": "10/26/2026"
-  },
-  {
     "analyst": "James Friedman",
     "firm": "Susquehanna",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$256.00",
-    "projected": "+1.2%",
-    "date": "10/26/2026"
+    "projected": "+14%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Mark Newman",
@@ -23,8 +14,17 @@
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$250.00",
-    "projected": "+0.1%",
-    "date": "10/25/2026"
+    "projected": "+1.2%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Sachin Mittal",
+    "firm": "DBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+14.6%",
+    "date": "10/26/2026"
   },
   {
     "analyst": "Keith Bachman",

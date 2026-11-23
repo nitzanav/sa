@@ -1,6 +1,15 @@
 [
   {
-    "analyst": "Daniel Zhu‏",
+    "analyst": "Daniel Zhu",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$350.00",
+    "projected": "+73.8%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "Daniel Zhu",
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",

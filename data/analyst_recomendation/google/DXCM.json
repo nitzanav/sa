@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Travis Steed",
+    "firm": "Bank of America Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Unknown Analyst",
     "firm": "Leerink Partners",
     "recommendation": "Buy",
@@ -106,15 +115,6 @@
     "price_target": "$120.00",
     "projected": "+47.2%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Travis Steed",
-    "firm": "Bank of America Securities",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": null,
-    "projected": null,
-    "date": "10/23/2026"
   },
   {
     "analyst": "Joanne Wuensch",
