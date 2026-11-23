@@ -9,6 +9,15 @@
     "date": "11/07/2026"
   },
   {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$720.00",
+    "projected": "+54.5%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -58,9 +67,9 @@
     "firm": "Argus Research",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$770.00",
-    "projected": "+20.5%",
-    "date": "06/01/2026"
+    "price_target": "$609.00",
+    "projected": "+40.5%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Wolfe Research",
@@ -79,14 +88,5 @@
     "price_target": "$465.00",
     "projected": "+3.1%",
     "date": "11/07/2026"
-  },
-  {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$761.00",
-    "projected": "+20.8%",
-    "date": "07/17/2026"
   }
 ]

@@ -4,9 +4,9 @@
     "firm": "Telsey Advisory Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+25.4%",
-    "date": "08/22/2026"
+    "price_target": "$145.00",
+    "projected": "+13.9%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Guggenheim",
@@ -40,18 +40,18 @@
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$130.00",
-    "projected": "+11.2%",
-    "date": "10/21/2026"
+    "price_target": "$135.00",
+    "projected": "+6.1%",
+    "date": "11/21/2026"
   },
   {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$150.00",
+    "price_target": "$147.00",
     "projected": "+15.5%",
-    "date": "05/07/2026"
+    "date": "11/21/2026"
   },
   {
     "analyst": "DA Davidson",
@@ -63,15 +63,6 @@
     "date": "09/10/2026"
   },
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": null,
-    "date": "11/22/2025"
-  },
-  {
     "analyst": "Baird",
     "firm": "Baird",
     "recommendation": "Buy",
@@ -81,12 +72,21 @@
     "date": "08/22/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$141.00",
+    "projected": "+10.8%",
+    "date": "11/20/2026"
+  },
+  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$145.00",
-    "projected": "+9.3%",
-    "date": "02/14/2026"
+    "projected": "+13.9%",
+    "date": "11/21/2026"
   }
 ]

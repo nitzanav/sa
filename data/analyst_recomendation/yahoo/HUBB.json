@@ -45,15 +45,6 @@
     "date": "09/02/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": null,
-    "date": "11/20/2025"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",

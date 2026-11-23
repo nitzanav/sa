@@ -27,15 +27,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$77.00",
-    "projected": "+41.7%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -69,6 +60,15 @@
     "action": "Maintained",
     "price_target": "$62.00",
     "projected": "+14.1%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$77.00",
+    "projected": "+41.7%",
     "date": "10/29/2026"
   },
   {

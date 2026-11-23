@@ -36,21 +36,21 @@
     "date": "04/29/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$71.00",
-    "projected": "+4.4%",
-    "date": "10/28/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$82.00",
     "projected": "+20.5%",
+    "date": "10/28/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+4.4%",
     "date": "10/28/2026"
   },
   {

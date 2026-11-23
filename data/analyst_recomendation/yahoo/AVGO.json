@@ -81,12 +81,12 @@
     "date": "06/04/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$485.00",
-    "projected": "+18.6%",
-    "date": "06/04/2026"
+    "price_target": "$460.00",
+    "projected": "+27.8%",
+    "date": "09/10/2026"
   }
 ]

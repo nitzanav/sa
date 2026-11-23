@@ -36,15 +36,6 @@
     "date": "10/15/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$250.00",
-    "projected": "+46.7%",
-    "date": "09/16/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Sell",
@@ -52,6 +43,15 @@
     "price_target": "$130.00",
     "projected": "-21.2%",
     "date": "11/04/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$250.00",
+    "projected": "+46.7%",
+    "date": "09/16/2026"
   },
   {
     "analyst": "Morgan Stanley",

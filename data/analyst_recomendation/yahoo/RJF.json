@@ -9,15 +9,6 @@
     "date": "10/07/2026"
   },
   {
-    "analyst": "Jefferies",
-    "firm": "Jefferies",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$145.00",
-    "projected": "+3.1%",
-    "date": "04/06/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Hold",
@@ -25,6 +16,15 @@
     "price_target": "$171.00",
     "projected": "+8.4%",
     "date": "10/10/2026"
+  },
+  {
+    "analyst": "Jefferies",
+    "firm": "Jefferies",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$145.00",
+    "projected": "+3.1%",
+    "date": "04/06/2026"
   },
   {
     "analyst": "Wells Fargo",

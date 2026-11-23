@@ -27,6 +27,15 @@
     "date": "09/26/2026"
   },
   {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$113.00",
+    "projected": "+5.4%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",

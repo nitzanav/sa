@@ -67,8 +67,17 @@
     "firm": "Citigroup",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$74.00",
-    "projected": "+11.5%",
+    "price_target": "$66.00",
+    "projected": "+9.4%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$69.00",
+    "projected": "+4%",
     "date": "11/03/2026"
   },
   {
@@ -79,14 +88,5 @@
     "price_target": "$69.00",
     "projected": "+4.4%",
     "date": "11/02/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$69.00",
-    "projected": "+4%",
-    "date": "11/03/2026"
   }
 ]

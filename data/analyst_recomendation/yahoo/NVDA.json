@@ -4,9 +4,9 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$300.00",
-    "projected": "+36%",
-    "date": "09/10/2026"
+    "price_target": "$230.00",
+    "projected": "+50.4%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Rosenblatt",
@@ -14,8 +14,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$300.00",
-    "projected": "+76.6%",
-    "date": "11/14/2026"
+    "projected": "+96.2%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Bernstein",
@@ -41,17 +41,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$220.00",
-    "projected": null,
-    "date": "11/21/2025"
+    "projected": "+38.2%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$186.00",
-    "projected": "+9.5%",
-    "date": "11/13/2026"
+    "price_target": "$184.00",
+    "projected": "+20.3%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -85,8 +85,8 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$315.00",
-    "projected": "+41.3%",
-    "date": "08/27/2026"
+    "price_target": "$220.00",
+    "projected": "+40.2%",
+    "date": "11/17/2026"
   }
 ]

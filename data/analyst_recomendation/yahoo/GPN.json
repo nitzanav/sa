@@ -27,6 +27,15 @@
     "date": "10/09/2026"
   },
   {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "-0.7%",
+    "date": "11/11/2026"
+  },
+  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$100.00",
     "projected": "+6.3%",
     "date": "11/07/2026"
-  },
-  {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": "+4%",
-    "date": "08/06/2026"
   }
 ]

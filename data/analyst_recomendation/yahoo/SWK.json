@@ -65,10 +65,10 @@
   {
     "analyst": "Mizuho",
     "firm": "Mizuho",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$105.00",
-    "projected": "+16.2%",
-    "date": "10/15/2026"
+    "price_target": "$120.00",
+    "projected": "+10.8%",
+    "date": "11/18/2026"
   }
 ]

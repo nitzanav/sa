@@ -27,13 +27,13 @@
     "date": "10/20/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+14.4%",
-    "date": "10/22/2026"
+    "projected": "+14.2%",
+    "date": "10/21/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -45,13 +45,13 @@
     "date": "10/19/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$32.00",
-    "projected": "+14.2%",
-    "date": "10/21/2026"
+    "projected": "+14.4%",
+    "date": "10/22/2026"
   },
   {
     "analyst": "Truist Securities",

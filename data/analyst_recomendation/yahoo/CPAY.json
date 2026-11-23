@@ -9,6 +9,15 @@
     "date": "11/06/2026"
   },
   {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$461.00",
+    "projected": "+1.4%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",

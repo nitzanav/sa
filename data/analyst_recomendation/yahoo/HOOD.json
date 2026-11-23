@@ -63,15 +63,6 @@
     "date": "10/31/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+44.3%",
-    "date": "11/13/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
@@ -79,6 +70,15 @@
     "price_target": "$135.00",
     "projected": "+50.3%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$115.00",
+    "projected": "+44.3%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "Truist Securities",

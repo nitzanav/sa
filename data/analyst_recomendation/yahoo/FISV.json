@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$59.00",
-    "projected": "-1.7%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -34,5 +25,14 @@
     "price_target": "$65.00",
     "projected": "+4%",
     "date": "11/11/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$59.00",
+    "projected": "-1.7%",
+    "date": "11/04/2026"
   }
 ]

@@ -63,15 +63,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$255.00",
-    "projected": null,
-    "date": "11/19/2025"
-  },
-  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Sell",

@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Seaport Global",
+    "firm": "Seaport Global",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": null,
+    "projected": null,
+    "date": "10/31/2026"
+  },
+  {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Sell",
@@ -54,15 +63,6 @@
     "date": "10/31/2026"
   },
   {
-    "analyst": "Mizuho",
-    "firm": "Mizuho",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$114.00",
-    "projected": "+2.1%",
-    "date": "10/07/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Hold",
@@ -72,6 +72,15 @@
     "date": "11/12/2026"
   },
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "+2.1%",
+    "date": "10/07/2026"
+  },
+  {
     "analyst": "Benchmark",
     "firm": "Benchmark",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$140.00",
     "projected": "+30.9%",
     "date": "05/19/2026"
-  },
-  {
-    "analyst": "Wedbush",
-    "firm": "Wedbush",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$75.00",
-    "projected": "+9.7%",
-    "date": "10/30/2026"
   }
 ]

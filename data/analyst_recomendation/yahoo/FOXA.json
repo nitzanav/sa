@@ -63,6 +63,15 @@
     "date": "11/14/2026"
   },
   {
+    "analyst": "Seaport Global",
+    "firm": "Seaport Global",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$76.00",
+    "projected": "+13.2%",
+    "date": "11/10/2026"
+  },
+  {
     "analyst": "Wolfe Research",
     "firm": "Wolfe Research",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$60.00",
     "projected": "+5.3%",
     "date": "06/15/2026"
-  },
-  {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$73.00",
-    "projected": "+7%",
-    "date": "05/12/2026"
   }
 ]

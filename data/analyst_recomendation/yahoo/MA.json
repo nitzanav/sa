@@ -1,92 +1,92 @@
 [
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$605.00",
-    "projected": "+18.1%",
-    "date": "04/22/2026"
+    "price_target": "$742.00",
+    "projected": "+15.5%",
+    "date": "10/30/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$597.00",
-    "projected": "+15.4%",
-    "date": "07/01/2026"
+    "price_target": "$765.00",
+    "projected": "+19.1%",
+    "date": "10/31/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$800.00",
-    "projected": "+21.4%",
-    "date": "11/10/2026"
-  },
-  {
-    "analyst": "Keybanc",
-    "firm": "Keybanc",
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$735.00",
-    "projected": "+14.4%",
-    "date": "10/31/2026"
+    "projected": "+8.1%",
+    "date": "11/05/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
+    "analyst": "Tigress Financial",
+    "firm": "Tigress Financial",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$710.00",
-    "projected": "+23.7%",
-    "date": "10/10/2026"
+    "price_target": "$735.00",
+    "projected": "+48%",
+    "date": "03/14/2026"
   },
   {
-    "analyst": "Morgan Stanley",
-    "firm": "Morgan Stanley",
+    "analyst": "Raymond James",
+    "firm": "Raymond James",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$681.00",
-    "projected": "+20%",
-    "date": "07/31/2026"
+    "price_target": "$631.00",
+    "projected": "+16.6%",
+    "date": "01/31/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
+    "analyst": "Wells Fargo",
+    "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$700.00",
-    "projected": "+9%",
+    "price_target": "$731.00",
+    "projected": "+13.8%",
     "date": "10/30/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
+    "analyst": "Macquarie",
+    "firm": "Macquarie",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$755.00",
-    "projected": "+17.5%",
+    "price_target": "$750.00",
+    "projected": "+16.7%",
     "date": "10/31/2026"
   },
   {
-    "analyst": "Susquehanna",
-    "firm": "Susquehanna",
-    "recommendation": "Buy",
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$740.00",
-    "projected": "+15.2%",
+    "price_target": "$640.00",
+    "projected": "-0.4%",
     "date": "10/31/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
+    "analyst": "Keefe, Bruyette & Woods",
+    "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$726.00",
-    "projected": "+13%",
+    "price_target": "$750.00",
+    "projected": "+16.7%",
     "date": "10/30/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$750.00",
+    "projected": "+16.7%",
+    "date": "10/31/2026"
   }
 ]

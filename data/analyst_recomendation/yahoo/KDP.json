@@ -9,15 +9,6 @@
     "date": "12/18/2025"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$41.00",
-    "projected": "+14.5%",
-    "date": "11/04/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
@@ -25,6 +16,15 @@
     "price_target": "$41.00",
     "projected": "+10.2%",
     "date": "11/05/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$41.00",
+    "projected": "+14.5%",
+    "date": "11/04/2026"
   },
   {
     "analyst": "UBS",
@@ -70,5 +70,14 @@
     "price_target": "$28.00",
     "projected": "+6.5%",
     "date": "03/30/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$35.00",
+    "projected": "-2.3%",
+    "date": "11/04/2026"
   }
 ]

@@ -9,6 +9,15 @@
     "date": "10/31/2026"
   },
   {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$175.00",
+    "projected": "+2.8%",
+    "date": "10/30/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -40,9 +49,9 @@
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$145.00",
-    "projected": "+11.5%",
-    "date": "07/30/2026"
+    "price_target": "$160.00",
+    "projected": "-6.5%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -78,15 +87,6 @@
     "action": "Maintained",
     "price_target": "$190.00",
     "projected": "+11.6%",
-    "date": "10/30/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$131.00",
-    "projected": "-23.1%",
     "date": "10/30/2026"
   }
 ]

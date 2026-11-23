@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$135.00",
+    "projected": "+14%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "Raymond James",
     "firm": "Raymond James",
     "recommendation": "Buy",
@@ -23,8 +32,17 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$140.00",
-    "projected": "+43.7%",
-    "date": "06/30/2026"
+    "projected": "+18.2%",
+    "date": "11/18/2026"
+  },
+  {
+    "analyst": "Morgan Stanley",
+    "firm": "Morgan Stanley",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$138.00",
+    "projected": "+13.1%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "UBS",
@@ -40,18 +58,18 @@
     "firm": "Needham",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$125.00",
-    "projected": "+16.6%",
-    "date": "10/10/2026"
+    "price_target": "$135.00",
+    "projected": "+10.7%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Rosenblatt",
     "firm": "Rosenblatt",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$126.00",
-    "projected": "+20.7%",
-    "date": "08/07/2026"
+    "price_target": "$141.00",
+    "projected": "+15.6%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Argus Research",
@@ -67,26 +85,8 @@
     "firm": "Wells Fargo",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$132.00",
-    "projected": "+28.7%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+12.2%",
-    "date": "08/06/2026"
-  },
-  {
-    "analyst": "Guggenheim",
-    "firm": "Guggenheim",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$120.00",
-    "projected": "+13.8%",
-    "date": "09/29/2026"
+    "price_target": "$140.00",
+    "projected": "+18.2%",
+    "date": "11/18/2026"
   }
 ]

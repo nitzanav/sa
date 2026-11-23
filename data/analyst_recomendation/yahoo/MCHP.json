@@ -72,21 +72,21 @@
     "date": "01/16/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": "+54.2%",
-    "date": "11/07/2026"
-  },
-  {
     "analyst": "Keybanc",
     "firm": "Keybanc",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$120.00",
     "projected": "+85%",
+    "date": "11/07/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+54.2%",
     "date": "11/07/2026"
   }
 ]

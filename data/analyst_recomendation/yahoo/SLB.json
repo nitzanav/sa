@@ -1,14 +1,5 @@
 [
   {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$71.00",
-    "projected": "+32.3%",
-    "date": "05/11/2026"
-  },
-  {
     "analyst": "Freedom Broker",
     "firm": "Freedom Broker",
     "recommendation": "Hold",
@@ -16,6 +7,15 @@
     "price_target": "$48.00",
     "projected": "-9.7%",
     "date": "10/27/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$71.00",
+    "projected": "+32.3%",
+    "date": "05/11/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -72,15 +72,6 @@
     "date": "10/26/2026"
   },
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$65.00",
-    "projected": "+22.2%",
-    "date": "10/27/2026"
-  },
-  {
     "analyst": "Goldman Sachs",
     "firm": "Goldman Sachs",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$60.00",
     "projected": "+23.3%",
     "date": "03/04/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$65.00",
+    "projected": "+22.2%",
+    "date": "10/27/2026"
   }
 ]

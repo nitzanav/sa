@@ -63,15 +63,6 @@
     "date": "08/20/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$155.00",
-    "projected": "+5.4%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Hold",
@@ -79,6 +70,15 @@
     "price_target": "$140.00",
     "projected": "-6.4%",
     "date": "10/30/2026"
+  },
+  {
+    "analyst": "Cantor Fitzgerald",
+    "firm": "Cantor Fitzgerald",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$155.00",
+    "projected": "+5.4%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "Citigroup",

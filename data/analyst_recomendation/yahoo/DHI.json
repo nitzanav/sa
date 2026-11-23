@@ -45,21 +45,21 @@
     "date": "10/16/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$114.00",
-    "projected": "-21.9%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$125.00",
     "projected": "-14.4%",
+    "date": "10/30/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$114.00",
+    "projected": "-21.9%",
     "date": "10/30/2026"
   },
   {

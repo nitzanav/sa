@@ -27,15 +27,6 @@
     "date": "01/24/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$575.00",
-    "projected": "+3%",
-    "date": "11/03/2026"
-  },
-  {
     "analyst": "Cantor Fitzgerald",
     "firm": "Cantor Fitzgerald",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$619.00",
     "projected": "+15.6%",
     "date": "11/04/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$575.00",
+    "projected": "+3%",
+    "date": "11/03/2026"
   },
   {
     "analyst": "HC Wainwright & Co.",

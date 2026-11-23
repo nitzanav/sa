@@ -45,15 +45,6 @@
     "date": "01/16/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$515.00",
-    "projected": "+21.6%",
-    "date": "09/08/2026"
-  },
-  {
     "analyst": "Evercore ISI Group",
     "firm": "Evercore ISI Group",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$445.00",
     "projected": "+22.2%",
     "date": "11/11/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$515.00",
+    "projected": "+21.6%",
+    "date": "09/08/2026"
   },
   {
     "analyst": "RBC Capital",

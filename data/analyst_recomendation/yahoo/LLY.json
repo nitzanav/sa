@@ -23,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$1600.00",
-    "projected": "+12%",
-    "date": "10/30/2026"
+    "projected": "+13.6%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "JP Morgan",
@@ -45,15 +45,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "HSBC",
-    "firm": "HSBC",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$940.00",
-    "projected": "-16.8%",
-    "date": "09/11/2026"
-  },
-  {
     "analyst": "Morgan Stanley",
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$1596.00",
     "projected": "+11.7%",
     "date": "10/30/2026"
+  },
+  {
+    "analyst": "HSBC",
+    "firm": "HSBC",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$940.00",
+    "projected": "-16.8%",
+    "date": "09/11/2026"
   },
   {
     "analyst": "Wells Fargo",
@@ -76,9 +76,9 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$1400.00",
-    "projected": "+44%",
-    "date": "05/05/2026"
+    "price_target": "$1550.00",
+    "projected": "+6.6%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Citigroup",

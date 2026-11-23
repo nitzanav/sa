@@ -54,15 +54,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Wolfe Research",
-    "firm": "Wolfe Research",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$29.00",
-    "projected": "+24.7%",
-    "date": "07/23/2026"
-  },
-  {
     "analyst": "TD Cowen",
     "firm": "TD Cowen",
     "recommendation": "Hold",
@@ -70,6 +61,15 @@
     "price_target": "$33.00",
     "projected": "+51.8%",
     "date": "10/23/2026"
+  },
+  {
+    "analyst": "Wolfe Research",
+    "firm": "Wolfe Research",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$29.00",
+    "projected": "+24.7%",
+    "date": "07/23/2026"
   },
   {
     "analyst": "Barclays",

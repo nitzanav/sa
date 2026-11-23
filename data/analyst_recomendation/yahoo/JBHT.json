@@ -36,15 +36,6 @@
     "date": "09/17/2026"
   },
   {
-    "analyst": "JP Morgan",
-    "firm": "JP Morgan",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$283.00",
-    "projected": "+24.1%",
-    "date": "10/16/2026"
-  },
-  {
     "analyst": "Benchmark",
     "firm": "Benchmark",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$300.00",
     "projected": "+9.1%",
     "date": "06/27/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$283.00",
+    "projected": "+24.1%",
+    "date": "10/16/2026"
   },
   {
     "analyst": "Raymond James",

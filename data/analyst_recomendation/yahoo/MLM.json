@@ -22,9 +22,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$639.00",
-    "projected": "+16.8%",
-    "date": "08/13/2026"
+    "price_target": "$590.00",
+    "projected": "+14.6%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -36,15 +36,6 @@
     "date": "10/06/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$640.00",
-    "projected": "+21.5%",
-    "date": "11/12/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$641.00",
     "projected": "+24.3%",
     "date": "11/07/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$640.00",
+    "projected": "+21.5%",
+    "date": "11/12/2026"
   },
   {
     "analyst": "Stephens & Co.",

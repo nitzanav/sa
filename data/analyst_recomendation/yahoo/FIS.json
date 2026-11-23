@@ -9,21 +9,21 @@
     "date": "11/06/2026"
   },
   {
-    "analyst": "B of A Securities",
-    "firm": "B of A Securities",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$33.00",
-    "projected": "+15.2%",
-    "date": "11/06/2026"
-  },
-  {
     "analyst": "Keefe, Bruyette & Woods",
     "firm": "Keefe, Bruyette & Woods",
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$42.00",
     "projected": "+46.6%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$33.00",
+    "projected": "+15.2%",
     "date": "11/06/2026"
   },
   {
@@ -54,15 +54,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$30.00",
-    "projected": "+4.7%",
-    "date": "11/06/2026"
-  },
-  {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Hold",
@@ -81,12 +72,21 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Cantor Fitzgerald",
-    "firm": "Cantor Fitzgerald",
-    "recommendation": "Buy",
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "+19.5%",
-    "date": "11/10/2026"
+    "price_target": "$30.00",
+    "projected": "+4.7%",
+    "date": "11/06/2026"
+  },
+  {
+    "analyst": "Stephens & Co.",
+    "firm": "Stephens & Co.",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$50.00",
+    "projected": "+18.4%",
+    "date": "08/12/2026"
   }
 ]

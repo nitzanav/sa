@@ -9,6 +9,15 @@
     "date": "10/10/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$70.00",
+    "projected": "+22%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$55.00",
     "projected": "-13.7%",
     "date": "10/30/2026"
-  },
-  {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$55.00",
-    "projected": "+23.5%",
-    "date": "07/11/2026"
   }
 ]

@@ -27,15 +27,6 @@
     "date": "11/05/2026"
   },
   {
-    "analyst": "Goldman Sachs",
-    "firm": "Goldman Sachs",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$34.00",
-    "projected": "-2.8%",
-    "date": "08/12/2026"
-  },
-  {
     "analyst": "Susquehanna",
     "firm": "Susquehanna",
     "recommendation": "Sell",
@@ -43,6 +34,15 @@
     "price_target": "$18.00",
     "projected": "-39.2%",
     "date": "11/11/2026"
+  },
+  {
+    "analyst": "Goldman Sachs",
+    "firm": "Goldman Sachs",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$34.00",
+    "projected": "-2.8%",
+    "date": "08/12/2026"
   },
   {
     "analyst": "Needham",

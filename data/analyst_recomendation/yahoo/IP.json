@@ -56,11 +56,11 @@
   {
     "analyst": "Argus Research",
     "firm": "Argus Research",
-    "recommendation": "Buy",
+    "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$45.00",
-    "projected": "+26.3%",
-    "date": "09/24/2026"
+    "price_target": null,
+    "projected": null,
+    "date": "11/19/2026"
   },
   {
     "analyst": "Wells Fargo",

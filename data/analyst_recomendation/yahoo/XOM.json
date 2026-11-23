@@ -1,12 +1,12 @@
 [
   {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$185.00",
-    "projected": "+12.5%",
-    "date": "09/03/2026"
+    "price_target": "$186.00",
+    "projected": "+8.5%",
+    "date": "11/13/2026"
   },
   {
     "analyst": "TD Cowen",
@@ -16,6 +16,15 @@
     "price_target": "$193.00",
     "projected": "+10.8%",
     "date": "11/04/2026"
+  },
+  {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$185.00",
+    "projected": "+12.5%",
+    "date": "09/03/2026"
   },
   {
     "analyst": "Morgan Stanley",
@@ -79,14 +88,5 @@
     "price_target": "$184.00",
     "projected": "+17.3%",
     "date": "04/09/2026"
-  },
-  {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$180.00",
-    "projected": "+17.6%",
-    "date": "05/05/2026"
   }
 ]

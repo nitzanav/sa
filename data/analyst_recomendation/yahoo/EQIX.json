@@ -72,15 +72,6 @@
     "date": "08/01/2026"
   },
   {
-    "analyst": "TD Cowen",
-    "firm": "TD Cowen",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$1210.00",
-    "projected": "+16.5%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Stifel",
     "firm": "Stifel",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$1265.00",
     "projected": "+19.2%",
     "date": "07/30/2026"
+  },
+  {
+    "analyst": "TD Cowen",
+    "firm": "TD Cowen",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$1210.00",
+    "projected": "+16.5%",
+    "date": "10/29/2026"
   }
 ]

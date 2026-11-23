@@ -27,15 +27,6 @@
     "date": "07/30/2026"
   },
   {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$400.00",
-    "projected": "+22.3%",
-    "date": "04/30/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -43,6 +34,15 @@
     "price_target": "$430.00",
     "projected": "+41.8%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$400.00",
+    "projected": "+22.3%",
+    "date": "04/30/2026"
   },
   {
     "analyst": "Susquehanna",

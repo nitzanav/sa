@@ -63,21 +63,21 @@
     "date": "07/13/2026"
   },
   {
-    "analyst": "Oppenheimer",
-    "firm": "Oppenheimer",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$168.00",
-    "projected": "+43.8%",
-    "date": "10/23/2026"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
     "price_target": "$118.00",
     "projected": "+1%",
+    "date": "10/23/2026"
+  },
+  {
+    "analyst": "Oppenheimer",
+    "firm": "Oppenheimer",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$168.00",
+    "projected": "+43.8%",
     "date": "10/23/2026"
   },
   {

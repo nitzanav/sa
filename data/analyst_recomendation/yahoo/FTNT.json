@@ -72,15 +72,6 @@
     "date": "10/23/2026"
   },
   {
-    "analyst": "Evercore ISI Group",
-    "firm": "Evercore ISI Group",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$165.00",
-    "projected": "+0.6%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Hold",
@@ -88,5 +79,14 @@
     "price_target": "$100.00",
     "projected": "+11.5%",
     "date": "05/05/2026"
+  },
+  {
+    "analyst": "Evercore ISI Group",
+    "firm": "Evercore ISI Group",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$165.00",
+    "projected": "+0.6%",
+    "date": "07/30/2026"
   }
 ]

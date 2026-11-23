@@ -13,9 +13,9 @@
     "firm": "Bernstein",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$402.00",
-    "projected": "+14.2%",
-    "date": "05/16/2026"
+    "price_target": "$479.00",
+    "projected": "+12.4%",
+    "date": "11/16/2026"
   },
   {
     "analyst": "Goldman Sachs",
@@ -31,18 +31,9 @@
     "firm": "Morgan Stanley",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$403.00",
-    "projected": "+0.3%",
-    "date": "10/22/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$450.00",
-    "projected": "+9.7%",
-    "date": "11/07/2026"
+    "price_target": "$431.00",
+    "projected": "+4.1%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Jefferies",
@@ -52,6 +43,15 @@
     "price_target": "$415.00",
     "projected": "+15.7%",
     "date": "02/11/2026"
+  },
+  {
+    "analyst": "Citigroup",
+    "firm": "Citigroup",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$450.00",
+    "projected": "+9.7%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Wells Fargo",

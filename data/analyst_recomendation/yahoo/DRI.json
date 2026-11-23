@@ -81,12 +81,12 @@
     "date": "06/27/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
+    "analyst": "Guggenheim",
+    "firm": "Guggenheim",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$240.00",
-    "projected": "+12.9%",
-    "date": "06/26/2026"
+    "price_target": "$235.00",
+    "projected": "+14.7%",
+    "date": "09/26/2026"
   }
 ]

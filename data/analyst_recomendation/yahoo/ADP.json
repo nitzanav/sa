@@ -36,6 +36,15 @@
     "date": "05/05/2026"
   },
   {
+    "analyst": "B of A Securities",
+    "firm": "B of A Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$345.00",
+    "projected": "+13.1%",
+    "date": "11/19/2026"
+  },
+  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Hold",
@@ -54,21 +63,21 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "RBC Capital",
-    "firm": "RBC Capital",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$290.00",
-    "projected": "+0.1%",
-    "date": "10/29/2026"
-  },
-  {
     "analyst": "Jefferies",
     "firm": "Jefferies",
     "recommendation": "Sell",
     "action": "Maintained",
     "price_target": "$250.00",
     "projected": "-13.7%",
+    "date": "10/29/2026"
+  },
+  {
+    "analyst": "RBC Capital",
+    "firm": "RBC Capital",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$290.00",
+    "projected": "+0.1%",
     "date": "10/29/2026"
   },
   {
@@ -79,14 +88,5 @@
     "price_target": "$223.00",
     "projected": "-8.4%",
     "date": "07/06/2026"
-  },
-  {
-    "analyst": "Citigroup",
-    "firm": "Citigroup",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$295.00",
-    "projected": "+1.8%",
-    "date": "10/29/2026"
   }
 ]

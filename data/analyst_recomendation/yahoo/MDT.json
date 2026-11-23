@@ -56,20 +56,20 @@
   {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$91.00",
-    "projected": "+5.1%",
-    "date": "04/01/2026"
+    "price_target": "$120.00",
+    "projected": "+19%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "BTIG",
     "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$99.00",
-    "projected": "+7.2%",
-    "date": "10/13/2026"
+    "price_target": "$109.00",
+    "projected": "+7.5%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Barclays",

@@ -45,15 +45,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Barclays",
-    "firm": "Barclays",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$230.00",
-    "projected": "+28.5%",
-    "date": "11/02/2026"
-  },
-  {
     "analyst": "BMO Capital",
     "firm": "BMO Capital",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$263.00",
     "projected": "+23.5%",
     "date": "08/27/2026"
+  },
+  {
+    "analyst": "Barclays",
+    "firm": "Barclays",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$230.00",
+    "projected": "+28.5%",
+    "date": "11/02/2026"
   },
   {
     "analyst": "Guggenheim",

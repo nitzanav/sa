@@ -36,15 +36,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$57.00",
-    "projected": "-0.7%",
-    "date": "07/30/2026"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -52,6 +43,15 @@
     "price_target": "$70.00",
     "projected": "+34.1%",
     "date": "09/01/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$57.00",
+    "projected": "-0.7%",
+    "date": "07/30/2026"
   },
   {
     "analyst": "Morgan Stanley",

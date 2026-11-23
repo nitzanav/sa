@@ -4,9 +4,9 @@
     "firm": "Mizuho",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$415.00",
-    "projected": "+10.6%",
-    "date": "08/19/2026"
+    "price_target": "$440.00",
+    "projected": "+22.5%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Oppenheimer",
@@ -23,8 +23,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$425.00",
-    "projected": "+27.5%",
-    "date": "09/03/2026"
+    "projected": "+18.4%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Stifel",
@@ -41,8 +41,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$400.00",
-    "projected": "+18.2%",
-    "date": "09/12/2026"
+    "projected": "+27.5%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Cantor Fitzgerald",
@@ -50,8 +50,8 @@
     "recommendation": "Buy",
     "action": "Maintained",
     "price_target": "$425.00",
-    "projected": "+27.5%",
-    "date": "09/03/2026"
+    "projected": "+18.4%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Truist Securities",
@@ -67,26 +67,26 @@
     "firm": "Piper Sandler",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$410.00",
-    "projected": "+18.5%",
-    "date": "09/02/2026"
+    "price_target": "$450.00",
+    "projected": "+26.5%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "Barclays",
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$375.00",
-    "projected": "+12.5%",
-    "date": "09/03/2026"
+    "price_target": "$385.00",
+    "projected": "+8.2%",
+    "date": "11/19/2026"
   },
   {
     "analyst": "BTIG",
     "firm": "BTIG",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$425.00",
-    "projected": "+8.9%",
-    "date": "09/29/2026"
+    "price_target": "$442.00",
+    "projected": "+23.1%",
+    "date": "11/20/2026"
   }
 ]

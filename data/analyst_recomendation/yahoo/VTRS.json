@@ -4,9 +4,18 @@
     "firm": "Barclays",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$22.00",
-    "projected": "+35.5%",
-    "date": "05/20/2026"
+    "price_target": "$25.00",
+    "projected": "+19.7%",
+    "date": "11/16/2026"
+  },
+  {
+    "analyst": "JP Morgan",
+    "firm": "JP Morgan",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$21.00",
+    "projected": "+11.8%",
+    "date": "11/07/2026"
   },
   {
     "analyst": "Piper Sandler",

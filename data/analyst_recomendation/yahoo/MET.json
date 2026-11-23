@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Mizuho",
+    "firm": "Mizuho",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$117.00",
+    "projected": "+13.8%",
+    "date": "11/13/2026"
+  },
+  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Buy",
@@ -79,14 +88,5 @@
     "price_target": "$114.00",
     "projected": "+12.2%",
     "date": "10/22/2026"
-  },
-  {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$115.00",
-    "projected": "+15.4%",
-    "date": "11/09/2026"
   }
 ]

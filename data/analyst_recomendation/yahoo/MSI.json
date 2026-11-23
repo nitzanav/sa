@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Truist Securities",
+    "firm": "Truist Securities",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$555.00",
+    "projected": "+10.6%",
+    "date": "11/05/2026"
+  },
+  {
     "analyst": "Piper Sandler",
     "firm": "Piper Sandler",
     "recommendation": "Buy",

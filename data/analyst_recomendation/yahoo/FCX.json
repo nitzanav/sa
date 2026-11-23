@@ -9,15 +9,6 @@
     "date": "10/28/2026"
   },
   {
-    "analyst": "BMO Capital",
-    "firm": "BMO Capital",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$47.00",
-    "projected": null,
-    "date": "11/20/2025"
-  },
-  {
     "analyst": "UBS",
     "firm": "UBS",
     "recommendation": "Buy",
@@ -88,5 +79,14 @@
     "price_target": "$85.00",
     "projected": "+21.3%",
     "date": "09/16/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$47.00",
+    "projected": "-39%",
+    "date": "09/09/2026"
   }
 ]

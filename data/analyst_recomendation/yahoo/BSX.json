@@ -9,15 +9,6 @@
     "date": "10/30/2026"
   },
   {
-    "analyst": "Bernstein",
-    "firm": "Bernstein",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$49.00",
-    "projected": "+14.1%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "Citigroup",
     "firm": "Citigroup",
     "recommendation": "Hold",
@@ -25,6 +16,15 @@
     "price_target": "$44.00",
     "projected": "+5.2%",
     "date": "10/29/2026"
+  },
+  {
+    "analyst": "Bernstein",
+    "firm": "Bernstein",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$49.00",
+    "projected": "+14.1%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Stifel",
@@ -54,15 +54,6 @@
     "date": "08/01/2026"
   },
   {
-    "analyst": "Canaccord Genuity",
-    "firm": "Canaccord Genuity",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$48.00",
-    "projected": "+11.8%",
-    "date": "10/30/2026"
-  },
-  {
     "analyst": "B of A Securities",
     "firm": "B of A Securities",
     "recommendation": "Buy",
@@ -70,6 +61,15 @@
     "price_target": "$68.00",
     "projected": "+27%",
     "date": "05/18/2026"
+  },
+  {
+    "analyst": "Canaccord Genuity",
+    "firm": "Canaccord Genuity",
+    "recommendation": "Buy",
+    "action": "Maintained",
+    "price_target": "$48.00",
+    "projected": "+11.8%",
+    "date": "10/30/2026"
   },
   {
     "analyst": "Morgan Stanley",

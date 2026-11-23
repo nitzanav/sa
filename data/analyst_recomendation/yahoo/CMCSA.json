@@ -27,15 +27,6 @@
     "date": "09/17/2026"
   },
   {
-    "analyst": "UBS",
-    "firm": "UBS",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$27.00",
-    "projected": "+10.7%",
-    "date": "09/16/2026"
-  },
-  {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
     "recommendation": "Sell",
@@ -43,6 +34,15 @@
     "price_target": "$23.00",
     "projected": "+8%",
     "date": "07/24/2026"
+  },
+  {
+    "analyst": "UBS",
+    "firm": "UBS",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$27.00",
+    "projected": "+10.7%",
+    "date": "09/16/2026"
   },
   {
     "analyst": "Morgan Stanley",

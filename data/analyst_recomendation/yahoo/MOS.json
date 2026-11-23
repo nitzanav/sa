@@ -13,9 +13,9 @@
     "firm": "UBS",
     "recommendation": "Hold",
     "action": "Maintained",
-    "price_target": "$19.00",
-    "projected": "+1.3%",
-    "date": "10/28/2026"
+    "price_target": "$22.00",
+    "projected": "+3.9%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "Barclays",
@@ -25,6 +25,15 @@
     "price_target": "$22.00",
     "projected": "+15.7%",
     "date": "10/16/2026"
+  },
+  {
+    "analyst": "Freedom Broker",
+    "firm": "Freedom Broker",
+    "recommendation": "Sell",
+    "action": "Maintained",
+    "price_target": "$18.00",
+    "projected": "-20.8%",
+    "date": "11/11/2026"
   },
   {
     "analyst": "RBC Capital",
@@ -52,15 +61,6 @@
     "price_target": "$22.00",
     "projected": "+15.7%",
     "date": "10/14/2026"
-  },
-  {
-    "analyst": "Freedom Broker",
-    "firm": "Freedom Broker",
-    "recommendation": "Sell",
-    "action": "Maintained",
-    "price_target": "$18.00",
-    "projected": "-20.8%",
-    "date": "11/11/2026"
   },
   {
     "analyst": "Morgan Stanley",

@@ -4,9 +4,9 @@
     "firm": "Stifel",
     "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$110.00",
-    "projected": "+11.3%",
-    "date": "08/06/2026"
+    "price_target": "$140.00",
+    "projected": "+37.1%",
+    "date": "11/17/2026"
   },
   {
     "analyst": "UBS",
@@ -45,15 +45,6 @@
     "date": "03/24/2026"
   },
   {
-    "analyst": "Baird",
-    "firm": "Baird",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$100.00",
-    "projected": null,
-    "date": "12/17/2025"
-  },
-  {
     "analyst": "RBC Capital",
     "firm": "RBC Capital",
     "recommendation": "Buy",
@@ -61,6 +52,15 @@
     "price_target": "$125.00",
     "projected": "+12.6%",
     "date": "11/05/2026"
+  },
+  {
+    "analyst": "Baird",
+    "firm": "Baird",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": null,
+    "date": "12/17/2025"
   },
   {
     "analyst": "Evercore ISI Group",
@@ -74,11 +74,11 @@
   {
     "analyst": "Wells Fargo",
     "firm": "Wells Fargo",
-    "recommendation": "Hold",
+    "recommendation": "Buy",
     "action": "Maintained",
-    "price_target": "$113.00",
-    "projected": "+1.8%",
-    "date": "11/05/2026"
+    "price_target": "$123.00",
+    "projected": "+21.8%",
+    "date": "11/18/2026"
   },
   {
     "analyst": "Canaccord Genuity",

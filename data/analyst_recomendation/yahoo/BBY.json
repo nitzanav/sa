@@ -1,5 +1,14 @@
 [
   {
+    "analyst": "Stifel",
+    "firm": "Stifel",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$100.00",
+    "projected": "+2.6%",
+    "date": "11/18/2026"
+  },
+  {
     "analyst": "DA Davidson",
     "firm": "DA Davidson",
     "recommendation": "Hold",
@@ -49,18 +58,9 @@
     "firm": "B of A Securities",
     "recommendation": "Sell",
     "action": "Maintained",
-    "price_target": "$80.00",
-    "projected": "-4.4%",
-    "date": "08/04/2026"
-  },
-  {
-    "analyst": "Piper Sandler",
-    "firm": "Piper Sandler",
-    "recommendation": "Hold",
-    "action": "Maintained",
-    "price_target": "$85.00",
-    "projected": "-2.9%",
-    "date": "08/20/2026"
+    "price_target": "$83.00",
+    "projected": "-17.5%",
+    "date": "11/20/2026"
   },
   {
     "analyst": "Guggenheim",
@@ -72,6 +72,15 @@
     "date": "08/29/2026"
   },
   {
+    "analyst": "Piper Sandler",
+    "firm": "Piper Sandler",
+    "recommendation": "Hold",
+    "action": "Maintained",
+    "price_target": "$85.00",
+    "projected": "-2.9%",
+    "date": "08/20/2026"
+  },
+  {
     "analyst": "Loop Capital",
     "firm": "Loop Capital",
     "recommendation": "Hold",
@@ -79,14 +88,5 @@
     "price_target": "$82.00",
     "projected": "+0.4%",
     "date": "07/14/2026"
-  },
-  {
-    "analyst": "Telsey Advisory Group",
-    "firm": "Telsey Advisory Group",
-    "recommendation": "Buy",
-    "action": "Maintained",
-    "price_target": "$95.00",
-    "projected": "+51.3%",
-    "date": "02/24/2026"
   }
 ]
