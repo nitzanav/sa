@@ -28,3 +28,12 @@ header=$'DROP SCHEMA IF EXISTS etl_test CASCADE;\nCREATE SCHEMA etl_test;\nSET s
 
 psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/test/etl_test.sql
 diff -u etl/test/expected/signals.csv etl/test/signals.csv
+
+mkdir -p etl/test/tmp
+sed "s|data/yahoo_quotes/all_symbols_per_date_and_symbol.csv|etl/test/fixtures/yahoo_quotes.csv|" \
+  etl/load_yahoo_quotes.sql > etl/test/tmp/load_yahoo_quotes.sql
+if grep -nE 'public\.|search_path' etl/test/tmp/*.sql etl/assert_session_closed.sql; then
+  echo "Error: SQL under test must not name a schema" >&2
+  exit 1
+fi
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/test/quotes.sql

@@ -11,8 +11,9 @@ export
 #   make analyst-recommendation-py URL='https://...'
 URL ?= https://www.google.com/finance/beta/quote/NVDA:NASDAQ?window=YTD&tab=analysis
 
-# Reference output that every implementation must reproduce.
-FIXTURE := docs/tasks/analyst-recommendation/expected.json
+# Reference output that every implementation must reproduce. Not named FIXTURE:
+# export would overwrite FIXTURE=1 for make positions-explorer.
+EXPECTED_JSON := docs/tasks/analyst-recommendation/expected.json
 
 # $(call diff-against-fixture,<stdout capture file>)
 # Compares parsed JSON: json.tool normalizes whitespace and sorts keys.
@@ -20,8 +21,8 @@ FIXTURE := docs/tasks/analyst-recommendation/expected.json
 # implementations are validated the same way.
 define diff-against-fixture
 @diff <(./penv python -m json.tool --sort-keys $(1)) \
-      <(./penv python -m json.tool --sort-keys $(FIXTURE)) \
-  && echo 'PASS: $(1) matches $(FIXTURE)'
+      <(./penv python -m json.tool --sort-keys $(EXPECTED_JSON)) \
+  && echo 'PASS: $(1) matches $(EXPECTED_JSON)'
 endef
 
 # ---------------------------------------------------------------------------
@@ -29,7 +30,7 @@ endef
 # ---------------------------------------------------------------------------
 # Naming convention: <task>-<tech> for the runner, <task>-<tech>-test for the
 # test. The runner MUST print pure JSON to stdout (no logs), so the test can
-# capture stdout to a file and diff it against $(FIXTURE).
+# capture stdout to a file and diff it against $(EXPECTED_JSON).
 #
 # Steps to add a new tech `<tech>` for task `analyst-recommendation`:
 #   1. Put the script under `src/analyst-recommendation/dyi_<tech>/`.
@@ -51,7 +52,7 @@ endef
         scrape_analyst_recommendations scrape_analyst_recommendations-test symbols_exchange \
         download_fortune_500 download_yahoo_quotes write_joint_analyst_recommendations etl winrate backtest \
         alert\:buy alert\:buy-truncate alert_bot notify_alerts \
-        alert\:sell sell_alerts
+        alert\:sell sell_alerts positions-explorer
 
 analyst-recommendation-py:
 	@./penv python src/analyst-recommendation/dyi_python/scrape_analyst_recommendation.py '$(URL)'
@@ -105,9 +106,12 @@ download_fortune_500:
 # Daily Yahoo chart responses for every symbol in data/fortune_500/symbols.csv.
 # Writes data/yahoo_quotes/quotes.csv (ticker, raw JSON response) and
 # data/yahoo_quotes/all_symbols_per_date_and_symbol.csv
-# (date, symbol, open, high, low, close; date is America/New_York).
+# (date, symbol, open, high, low, close; date is America/New_York), then
+# replaces the yahoo_quotes table with those bars. Requires DATABASE_URL.
 download_yahoo_quotes: download_fortune_500
+	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@./penv python etl/download_yahoo_quotes.py
+	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/load_yahoo_quotes.sql
 
 # ---------------------------------------------------------------------------
 # Database operations
@@ -207,3 +211,14 @@ sell_alerts:
 
 backtest:
 	@./penv python VectorBT/backtest.py
+
+# ---------------------------------------------------------------------------
+# Positions explorer
+# ---------------------------------------------------------------------------
+
+# Chart closes, positions, and analyst targets per symbol. FIXTURE=1 serves
+# positions_explorer/lib/fixture.json instead of the database. PORT defaults to 3000.
+#   make positions-explorer
+#   FIXTURE=1 make positions-explorer
+positions-explorer:
+	@./nvm-run node positions_explorer/server.js

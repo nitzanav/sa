@@ -11,6 +11,7 @@ build/
 data/alerts/
 etl/test/etl_test.sql
 etl/test/signals.csv
+etl/test/tmp/
 node_modules/
 .vscode/
 .DS_Store

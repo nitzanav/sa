@@ -1,0 +1,26 @@
+const PAD = 24;
+
+const fmt = (n) => n.toFixed(1);
+
+function linear(lo, hi, from, to) {
+  return (v) => (hi === lo ? (from + to) / 2 : from + ((v - lo) / (hi - lo)) * (to - from));
+}
+
+// Returns p => [px, py] that fits every point inside the padded plot.
+function scale(points, width, height) {
+  const xs = points.map((p) => Date.parse(p.x));
+  const ys = points.map((p) => p.y);
+  const sx = linear(Math.min(...xs), Math.max(...xs), PAD, width - PAD);
+  const sy = linear(Math.min(...ys), Math.max(...ys), height - PAD, PAD);
+  return (p) => [sx(Date.parse(p.x)), sy(p.y)];
+}
+
+// Inner markup for <svg viewBox="0 0 width height">.
+export function renderSvg({ close }, { width, height }) {
+  if (close.length === 0) {
+    return `<text class="empty" x="${width / 2}" y="${height / 2}" text-anchor="middle">No bars</text>`;
+  }
+  const at = scale(close, width, height);
+  const line = close.map((p) => at(p).map(fmt).join(",")).join(" ");
+  return `<polyline class="close" points="${line}"/>`;
+}
