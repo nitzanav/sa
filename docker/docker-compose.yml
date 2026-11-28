@@ -1,0 +1,23 @@
+# One-shot alert bot. The image has no repo. entrypoint.sh clones it with GIT_PAT.
+# make alert_bot commits every change and pushes it ("alert bot execution")
+# after the parallel source scrapes finish.
+#
+#   docker compose -f docker/docker-compose.yml run --rm alert-bot
+#   docker compose -f docker/docker-compose.yml run --rm alert-bot make alert_bot
+#
+# GIT_PAT is a GitHub personal access token with repo scope. It is not an SSH key.
+# Put it in the repo .env with DATABASE_URL, ALERT_EMAIL, TIP_RANKS_API_KEY, and SMTP_*.
+services:
+  alert-bot:
+    build: .
+    image: sa-alert-bot
+    init: true
+    shm_size: 1073741824
+    env_file:
+      - ../.env
+    environment:
+      NODE_EXTRA_CA_CERTS: /opt/rds/global-bundle.pem
+      PGSSLROOTCERT: /opt/rds/global-bundle.pem
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

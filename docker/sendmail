@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ ! -s /etc/msmtprc ]; then
+  echo "sendmail: set SMTP_HOST (and SMTP_USER / SMTP_PASSWORD) so alert mail can be delivered" >&2
+  exit 1
+fi
+exec /usr/bin/msmtp "$@"
