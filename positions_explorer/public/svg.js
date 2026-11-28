@@ -1,4 +1,5 @@
 const PAD = 24;
+const R = 5;
 
 const fmt = (n) => n.toFixed(1);
 
@@ -16,11 +17,18 @@ function scale(points, width, height) {
 }
 
 // Inner markup for <svg viewBox="0 0 width height">.
-export function renderSvg({ close }, { width, height }) {
+export function renderSvg({ close, buys, sells }, { width, height }) {
   if (close.length === 0) {
     return `<text class="empty" x="${width / 2}" y="${height / 2}" text-anchor="middle">No bars</text>`;
   }
-  const at = scale(close, width, height);
+  const at = scale([...close, ...buys, ...sells], width, height);
   const line = close.map((p) => at(p).map(fmt).join(",")).join(" ");
-  return `<polyline class="close" points="${line}"/>`;
+  const circles = (cls, points) =>
+    points
+      .map((p) => {
+        const [cx, cy] = at(p).map(fmt);
+        return `<circle class="${cls}" cx="${cx}" cy="${cy}" r="${R}"/>`;
+      })
+      .join("");
+  return `<polyline class="close" points="${line}"/>${circles("buy", buys)}${circles("sell", sells)}`;
 }

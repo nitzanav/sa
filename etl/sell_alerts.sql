@@ -1,6 +1,6 @@
 -- Sell alerts for open positions. Book sell is 2.5dd 15pp (ls is manual).
 -- etl/assert_session_closed.sql requires a weekday at or after 16:00
--- America/New_York and that date's close in the daily file. The order
+-- America/New_York and that date's close in yahoo_quotes. The order
 -- placed from this run is the next session's open.
 -- The decision price is the latest close on or before that New York date,
 -- and on or after the buy.
@@ -12,8 +12,8 @@
 -- (a loss of at least 2.5% from the entry).
 -- A repeat of the same alert key is ignored. Closing is idempotent via open.
 -- _run freezes one timestamp. `make alert:sell` replaces NOW().
--- Bars come from data/yahoo_quotes/all_symbols_per_date_and_symbol.csv
--- (make download_yahoo_quotes).
+-- Bars come from yahoo_quotes through _bar (make download_yahoo_quotes
+-- loads the table).
 -- alerts and positions come from etl/buy_alerts.sql. A sell writes alerts only.
 
 ALTER TABLE positions ADD COLUMN IF NOT EXISTS sell_date timestamptz;

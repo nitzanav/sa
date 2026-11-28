@@ -6,6 +6,10 @@ const fixture = {
       { bar_date: "2026-11-04", close: 200 },
       { bar_date: "2026-11-05", close: 205 },
     ],
+    positions: [
+      { buy_date: "2026-11-04", price: 200, sell_date: "2026-11-05", sell_price: 205 },
+      { buy_date: "2026-11-05", price: 205, sell_date: null, sell_price: null },
+    ],
   },
 };
 
@@ -38,7 +42,7 @@ function stubQuery(rowsFor) {
   return { query, calls };
 }
 
-test("/api/chart returns the closes for a symbol", async () => {
+test("/api/chart returns the closes, buys, and sells for a symbol", async () => {
   const res = await get(fixtureSource(fixture), "/api/chart?symbol=AAPL");
   expect(res.status).toBe(200);
   expect(JSON.parse(res.body)).toEqual({
@@ -46,12 +50,17 @@ test("/api/chart returns the closes for a symbol", async () => {
       { x: "2026-11-04", y: 200 },
       { x: "2026-11-05", y: 205 },
     ],
+    buys: [
+      { x: "2026-11-04", y: 200 },
+      { x: "2026-11-05", y: 205 },
+    ],
+    sells: [{ x: "2026-11-05", y: 205 }],
   });
 });
 
 test("/api/chart for a symbol missing from the fixture returns an empty line", async () => {
   const res = await get(fixtureSource(fixture), "/api/chart?symbol=ZZZZ");
-  expect(JSON.parse(res.body)).toEqual({ close: [] });
+  expect(JSON.parse(res.body)).toEqual({ close: [], buys: [], sells: [] });
 });
 
 test("/api/chart without a symbol is a 400", async () => {
@@ -79,10 +88,14 @@ test("/ serves the page", async () => {
   expect(res.body).toContain('<svg id="chart"');
 });
 
-test("dbSource reads yahoo_quotes for the symbol", async () => {
-  const { query, calls } = stubQuery(() => fixture.AAPL.bars);
-  expect(await dbSource(query).rows("AAPL")).toEqual({ bars: fixture.AAPL.bars });
+test("dbSource reads yahoo_quotes and positions for the symbol", async () => {
+  const { query, calls } = stubQuery((sql) =>
+    sql.includes("FROM positions") ? fixture.AAPL.positions : fixture.AAPL.bars);
+  expect(await dbSource(query).rows("AAPL")).toEqual(fixture.AAPL);
   expect(calls).toEqual([
     { sql: expect.stringContaining("FROM yahoo_quotes WHERE symbol = $1"), params: ["AAPL"] },
+    { sql: expect.stringContaining("FROM positions"), params: ["AAPL"] },
   ]);
+  expect(calls[1].sql).toContain("(timezone('America/New_York', buy_date))::date");
+  expect(calls[1].sql).toContain("(timezone('America/New_York', sell_date))::date");
 });

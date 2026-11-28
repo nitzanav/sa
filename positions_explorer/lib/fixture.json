@@ -21,6 +21,10 @@
       { "bar_date": "2026-11-04", "close": 238.2 },
       { "bar_date": "2026-11-05", "close": 240.6 },
       { "bar_date": "2026-11-06", "close": 242.3 }
+    ],
+    "positions": [
+      { "buy_date": "2026-10-16", "price": 233.5, "sell_date": "2026-10-22", "sell_price": 224.3 },
+      { "buy_date": "2026-10-28", "price": 234.2, "sell_date": null, "sell_price": null }
     ]
   },
   "MSFT": {
@@ -45,6 +49,9 @@
       { "bar_date": "2026-11-04", "close": 536.1 },
       { "bar_date": "2026-11-05", "close": 534.7 },
       { "bar_date": "2026-11-06", "close": 538.2 }
+    ],
+    "positions": [
+      { "buy_date": "2026-10-20", "price": 521.2, "sell_date": null, "sell_price": null }
     ]
   }
 }

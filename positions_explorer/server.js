@@ -6,6 +6,16 @@ import { buildSeries } from "./lib/series.js";
 
 const BARS_SQL = "SELECT bar_date, close FROM yahoo_quotes WHERE symbol = $1 ORDER BY bar_date";
 
+// New York dates, so markers line up with bar_date.
+const POSITIONS_SQL = `
+  SELECT (timezone('America/New_York', buy_date))::date AS buy_date,
+         price,
+         (timezone('America/New_York', sell_date))::date AS sell_date,
+         sell_price
+  FROM positions
+  WHERE symbol = $1
+  ORDER BY buy_date`;
+
 const FILES = {
   "/": ["public/index.html", "text/html; charset=utf-8"],
   "/chart.js": ["public/chart.js", "text/javascript"],
@@ -13,11 +23,16 @@ const FILES = {
 };
 
 export function dbSource(query) {
-  return { rows: async (symbol) => ({ bars: await query(BARS_SQL, [symbol]) }) };
+  return {
+    rows: async (symbol) => ({
+      bars: await query(BARS_SQL, [symbol]),
+      positions: await query(POSITIONS_SQL, [symbol]),
+    }),
+  };
 }
 
 export function fixtureSource(fixture) {
-  return { rows: async (symbol) => fixture[symbol] ?? { bars: [] } };
+  return { rows: async (symbol) => fixture[symbol] ?? { bars: [], positions: [] } };
 }
 
 function json(res, status, body) {

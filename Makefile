@@ -147,9 +147,9 @@ winrate: download_yahoo_quotes
 
 # Today's buy alerts from the signals view. Run after `make etl`, on a weekday
 # at or after 16:00 America/New_York, once the daily bars include that date.
-# The order is the next session's open. Refreshes Yahoo quotes, then replaces
-# NOW() with ALERT_AT (default: now, UTC). alert_bot exports one value so
-# sell, buy, and notify share it.
+# The order is the next session's open. Refreshes Yahoo quotes and the
+# yahoo_quotes table, then replaces NOW() with ALERT_AT (default: now, UTC).
+# alert_bot exports one value so sell, buy, and notify share it.
 #   make alert:buy
 #   ALERT_AT='2026-11-06 22:00:00+0000' make alert:buy
 alert\:buy: download_yahoo_quotes
@@ -184,7 +184,7 @@ alert_bot: download_fortune_500
 # peak gain (pp), using the close of the run's New York date. The run must be
 # a weekday at or after 16:00 America/New_York with that date in the daily
 # bars. The order is the next session's open. ls is manual. Refreshes Yahoo
-# quotes, then replaces NOW() with ALERT_AT.
+# quotes and the yahoo_quotes table, then replaces NOW() with ALERT_AT.
 #   make alert:sell
 #   ALERT_AT='2026-11-06 22:00:00+0000' make alert:sell
 alert\:sell: download_yahoo_quotes

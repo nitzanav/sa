@@ -1,18 +1,11 @@
 -- Requires _run(alerted_at). Stops the script unless this run is a finished
--- New York session: a weekday at or after 16:00 America/New_York, and the
--- daily file contains that date. Loads _bar for the caller.
+-- New York session: a weekday at or after 16:00 America/New_York, and
+-- yahoo_quotes contains that date. Loads _bar for the caller.
 -- The order placed from this run is the next session's open.
 
 DROP TABLE IF EXISTS _bar;
-CREATE TEMP TABLE _bar (
-  bar_date date,
-  symbol text,
-  open double precision,
-  high double precision,
-  low double precision,
-  close double precision
-);
-\copy _bar (bar_date, symbol, open, high, low, close) FROM 'data/yahoo_quotes/all_symbols_per_date_and_symbol.csv' WITH CSV HEADER
+CREATE TEMP TABLE _bar AS
+SELECT bar_date, symbol, open, high, low, close FROM yahoo_quotes;
 
 DROP TABLE IF EXISTS _session;
 CREATE TEMP TABLE _session AS

@@ -6,11 +6,18 @@ const close = [
   { x: "2026-11-05", y: 205 },
   { x: "2026-11-06", y: 210 },
 ];
+const none = { buys: [], sells: [] };
 
 // [[x, y], ...] from every points="..." attribute on elements of this tag.
 function pointsOf(svg, tag) {
   return [...svg.matchAll(new RegExp(`<${tag} [^>]*points="([^"]+)"`, "g"))]
     .flatMap((m) => m[1].split(" ").map((p) => p.split(",").map(Number)));
+}
+
+// [[cx, cy], ...] for every circle of this class.
+function circlesOf(svg, cls) {
+  return [...svg.matchAll(new RegExp(`<circle class="${cls}" cx="([^"]+)" cy="([^"]+)"`, "g"))]
+    .map((m) => [Number(m[1]), Number(m[2])]);
 }
 
 function expectInside([x, y]) {
@@ -21,7 +28,7 @@ function expectInside([x, y]) {
 }
 
 test("the close polyline has one point per bar, inside the plot", () => {
-  const xy = pointsOf(renderSvg({ close }, SIZE), "polyline");
+  const xy = pointsOf(renderSvg({ ...none, close }, SIZE), "polyline");
   expect(xy).toHaveLength(3);
   xy.forEach(expectInside);
   expect(xy[0][0]).toBeLessThan(xy[2][0]);
@@ -29,12 +36,30 @@ test("the close polyline has one point per bar, inside the plot", () => {
 });
 
 test("a single bar does not produce NaN", () => {
-  const xy = pointsOf(renderSvg({ close: [close[0]] }, SIZE), "polyline");
+  const xy = pointsOf(renderSvg({ ...none, close: [close[0]] }, SIZE), "polyline");
   expect(xy).toEqual([[200, 100]]);
 });
 
 test("no bars give the empty-state text", () => {
-  expect(renderSvg({ close: [] }, SIZE)).toBe(
+  expect(renderSvg({ ...none, close: [] }, SIZE)).toBe(
     '<text class="empty" x="200" y="100" text-anchor="middle">No bars</text>',
   );
+});
+
+test("one circle per buy and per sell, inside the plot", () => {
+  const svg = renderSvg({
+    close,
+    buys: [{ x: "2026-11-04", y: 200 }, { x: "2026-11-06", y: 210 }],
+    sells: [{ x: "2026-11-07", y: 190 }],
+  }, SIZE);
+  const buys = circlesOf(svg, "buy");
+  const sells = circlesOf(svg, "sell");
+  expect(buys).toHaveLength(2);
+  expect(sells).toHaveLength(1);
+  [...buys, ...sells, ...pointsOf(svg, "polyline")].forEach(expectInside);
+});
+
+test("markers are ignored when there are no bars", () => {
+  const svg = renderSvg({ close: [], buys: [{ x: "2026-11-04", y: 200 }], sells: [] }, SIZE);
+  expect(svg).not.toContain("<circle");
 });

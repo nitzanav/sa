@@ -1,8 +1,9 @@
 -- Buy alerts for the New York trade date of this run.
 -- etl/assert_session_closed.sql requires a weekday at or after 16:00
--- America/New_York and that date's close in the daily file. The order
+-- America/New_York and that date's close in yahoo_quotes. The order
 -- placed from this run is the next session's open. The stored price is
--- the regular-market price at decision time.
+-- the close of the run's New York date from yahoo_quotes. A symbol with
+-- no bar on that date is skipped.
 -- Qualifiers are yahoo_and_tipranks_1d_recency through 5d_recency with
 -- analyst_projections_count > 2 and average_projected > 40.
 -- strength is the at lot count: floor(analysts * percent / 10), clamped to 1..16.
@@ -10,7 +11,7 @@
 -- _run freezes one timestamp. Each psql statement is its own transaction, so a
 -- later timestamp call would differ. alerts ranks the raw rows from that run.
 -- `make alert:buy` replaces the timestamp call, then opens positions from
--- today's alerts using Yahoo regular-market prices (make download_yahoo_quotes).
+-- today's alerts at that close (make download_yahoo_quotes loads yahoo_quotes).
 -- Requires the signals view from etl/etl.sql (`make etl`).
 -- Book: recency union · at >2 >40% · 12 slots · lots = min(at strength, 12).
 
@@ -149,28 +150,6 @@ ON CONFLICT (
   type, alert_strategy, signal_name, signal_date, symbol, analysts, percent, strength
 ) DO NOTHING;
 
-DROP TABLE IF EXISTS _yahoo_quotes;
-CREATE TEMP TABLE _yahoo_quotes (ticker text, response text);
-\copy _yahoo_quotes FROM 'data/yahoo_quotes/quotes.csv' WITH CSV HEADER
-
-DROP TABLE IF EXISTS _yahoo_price;
-CREATE TEMP TABLE _yahoo_price AS
-SELECT
-  ticker AS symbol,
-  COALESCE(
-    NULLIF(response::jsonb #>> '{chart,result,0,meta,regularMarketPrice}', '')::double precision,
-    (
-      SELECT (elem #>> '{}')::double precision
-      FROM jsonb_array_elements(
-             COALESCE(response::jsonb #> '{chart,result,0,indicators,quote,0,close}', '[]'::jsonb)
-           ) WITH ORDINALITY AS t(elem, ord)
-      WHERE elem IS NOT NULL AND elem::text <> 'null'
-      ORDER BY ord DESC
-      LIMIT 1
-    )
-  ) AS price
-FROM _yahoo_quotes;
-
 INSERT INTO positions (
   alert_id, signal_date, symbol, open, lots, buy_date, price
 )
@@ -181,14 +160,15 @@ SELECT
   true,
   LEAST(a.strength, 12),
   r.alerted_at,
-  p.price
+  q.close
 FROM alerts a
 CROSS JOIN _run r
-JOIN _yahoo_price p ON p.symbol = a.symbol
+JOIN yahoo_quotes q
+  ON q.symbol = a.symbol
+ AND q.bar_date = (timezone('America/New_York', r.alerted_at))::date
 WHERE a.alerted_at = r.alerted_at
   AND a.type = 'buy'
   AND a.alert_strategy = 'at >2 >40%'
-  AND p.price IS NOT NULL
   AND NOT EXISTS (
     SELECT 1
     FROM positions po
