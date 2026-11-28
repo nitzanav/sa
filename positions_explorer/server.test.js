@@ -1,6 +1,7 @@
 import { createServer, dbSource, fixtureSource } from "./server.js";
 
 const fixture = {
+  MSFT: { bars: [], positions: [], signals: [] },
   AAPL: {
     bars: [
       { bar_date: "2026-11-04", close: 200 },
@@ -9,6 +10,9 @@ const fixture = {
     positions: [
       { buy_date: "2026-11-04", price: 200, sell_date: "2026-11-05", sell_price: 205 },
       { buy_date: "2026-11-05", price: 205, sell_date: null, sell_price: null },
+    ],
+    signals: [
+      { date: "2026-11-04", projected_price: 240, source: "tipranks", analyst: "Jane Doe" },
     ],
   },
 };
@@ -42,7 +46,7 @@ function stubQuery(rowsFor) {
   return { query, calls };
 }
 
-test("/api/chart returns the closes, buys, and sells for a symbol", async () => {
+test("/api/chart returns the closes, buys, sells, and targets for a symbol", async () => {
   const res = await get(fixtureSource(fixture), "/api/chart?symbol=AAPL");
   expect(res.status).toBe(200);
   expect(JSON.parse(res.body)).toEqual({
@@ -55,12 +59,13 @@ test("/api/chart returns the closes, buys, and sells for a symbol", async () => 
       { x: "2026-11-05", y: 205 },
     ],
     sells: [{ x: "2026-11-05", y: 205 }],
+    targets: [{ x: "2026-11-04", y: 240, source: "tipranks", analyst: "Jane Doe" }],
   });
 });
 
-test("/api/chart for a symbol missing from the fixture returns an empty line", async () => {
+test("/api/chart for a symbol missing from the fixture returns empty series", async () => {
   const res = await get(fixtureSource(fixture), "/api/chart?symbol=ZZZZ");
-  expect(JSON.parse(res.body)).toEqual({ close: [], buys: [], sells: [] });
+  expect(JSON.parse(res.body)).toEqual({ close: [], buys: [], sells: [], targets: [] });
 });
 
 test("/api/chart without a symbol is a 400", async () => {
@@ -71,7 +76,7 @@ test("/api/chart without a symbol is a 400", async () => {
 
 test("unknown paths are a 404", async () => {
   expect((await get(fixtureSource(fixture), "/nope")).status).toBe(404);
-  expect((await get(fixtureSource(fixture), "/api/symbols")).status).toBe(404);
+  expect((await get(fixtureSource(fixture), "/../server.js")).status).toBe(404);
 });
 
 test("a failing source is a 500 with its message", async () => {
@@ -88,14 +93,34 @@ test("/ serves the page", async () => {
   expect(res.body).toContain('<svg id="chart"');
 });
 
-test("dbSource reads yahoo_quotes and positions for the symbol", async () => {
-  const { query, calls } = stubQuery((sql) =>
-    sql.includes("FROM positions") ? fixture.AAPL.positions : fixture.AAPL.bars);
+test("/api/symbols returns the sorted fixture keys", async () => {
+  const res = await get(fixtureSource(fixture), "/api/symbols");
+  expect(res.status).toBe(200);
+  expect(JSON.parse(res.body)).toEqual(["AAPL", "MSFT"]);
+});
+
+test("dbSource.symbols maps symbol from positions", async () => {
+  const { query, calls } = stubQuery(() => [{ symbol: "AAPL" }, { symbol: "MSFT" }]);
+  expect(await dbSource(query).symbols()).toEqual(["AAPL", "MSFT"]);
+  expect(calls).toEqual([{ sql: expect.stringContaining("FROM positions"), params: [] }]);
+});
+
+test("dbSource reads quotes, positions, and base-source signals for the symbol", async () => {
+  const { query, calls } = stubQuery((sql) => {
+    if (sql.includes("FROM positions")) return fixture.AAPL.positions;
+    if (sql.includes("FROM raw_signals")) return fixture.AAPL.signals;
+    return fixture.AAPL.bars;
+  });
   expect(await dbSource(query).rows("AAPL")).toEqual(fixture.AAPL);
-  expect(calls).toEqual([
-    { sql: expect.stringContaining("FROM yahoo_quotes WHERE symbol = $1"), params: ["AAPL"] },
-    { sql: expect.stringContaining("FROM positions"), params: ["AAPL"] },
-  ]);
-  expect(calls[1].sql).toContain("(timezone('America/New_York', buy_date))::date");
-  expect(calls[1].sql).toContain("(timezone('America/New_York', sell_date))::date");
+  expect(calls.map((c) => c.params)).toEqual([["AAPL"], ["AAPL"], ["AAPL"]]);
+
+  const [bars, positions, signals] = calls.map((c) => c.sql);
+  expect(bars).toContain("FROM yahoo_quotes WHERE symbol = $1");
+  expect(positions).toContain("(timezone('America/New_York', buy_date))::date");
+  expect(positions).toContain("(timezone('America/New_York', sell_date))::date");
+  expect(signals).toContain("FROM raw_signals");
+  expect(signals).toContain("ticker = $1");
+  expect(signals).toContain("source IN ('yahoo', 'google', 'tipranks')");
+  expect(signals).not.toContain("yahoo_and_tipranks");
+  expect(signals).not.toContain("yahoo_and_google");
 });

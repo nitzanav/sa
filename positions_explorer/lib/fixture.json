@@ -25,6 +25,11 @@
     "positions": [
       { "buy_date": "2026-10-16", "price": 233.5, "sell_date": "2026-10-22", "sell_price": 224.3 },
       { "buy_date": "2026-10-28", "price": 234.2, "sell_date": null, "sell_price": null }
+    ],
+    "signals": [
+      { "date": "2026-10-13", "projected_price": 260, "source": "yahoo", "analyst": "Jane Doe" },
+      { "date": "2026-10-27", "projected_price": 255, "source": "google", "analyst": "John Roe" },
+      { "date": "2026-11-03", "projected_price": 270, "source": "tipranks", "analyst": "Ann Lee" }
     ]
   },
   "MSFT": {
@@ -52,6 +57,11 @@
     ],
     "positions": [
       { "buy_date": "2026-10-20", "price": 521.2, "sell_date": null, "sell_price": null }
+    ],
+    "signals": [
+      { "date": "2026-10-16", "projected_price": 600, "source": "tipranks", "analyst": "Sam Park" },
+      { "date": "2026-10-30", "projected_price": 580, "source": "yahoo", "analyst": "Jane Doe" },
+      { "date": "2026-11-04", "projected_price": 590, "source": "google", "analyst": "Ravi Shah" }
     ]
   }
 }

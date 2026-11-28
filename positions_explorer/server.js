@@ -16,6 +16,18 @@ const POSITIONS_SQL = `
   WHERE symbol = $1
   ORDER BY buy_date`;
 
+const SYMBOLS_SQL = "SELECT DISTINCT symbol FROM positions ORDER BY symbol";
+
+// Base sources only. The combined books (yahoo_and_tipranks, yahoo_and_google)
+// repeat these rows and would draw the same target twice.
+const SIGNALS_SQL = `
+  SELECT date, projected_price, source, analyst
+  FROM raw_signals
+  WHERE ticker = $1
+    AND source IN ('yahoo', 'google', 'tipranks')
+    AND projected_price IS NOT NULL
+  ORDER BY date, source, analyst`;
+
 const FILES = {
   "/": ["public/index.html", "text/html; charset=utf-8"],
   "/chart.js": ["public/chart.js", "text/javascript"],
@@ -24,15 +36,20 @@ const FILES = {
 
 export function dbSource(query) {
   return {
+    symbols: async () => (await query(SYMBOLS_SQL)).map((r) => r.symbol),
     rows: async (symbol) => ({
       bars: await query(BARS_SQL, [symbol]),
       positions: await query(POSITIONS_SQL, [symbol]),
+      signals: await query(SIGNALS_SQL, [symbol]),
     }),
   };
 }
 
 export function fixtureSource(fixture) {
-  return { rows: async (symbol) => fixture[symbol] ?? { bars: [], positions: [] } };
+  return {
+    symbols: async () => Object.keys(fixture).sort(),
+    rows: async (symbol) => fixture[symbol] ?? { bars: [], positions: [], signals: [] },
+  };
 }
 
 function json(res, status, body) {
@@ -44,6 +61,7 @@ export function createServer(source) {
   return http.createServer(async (req, res) => {
     const url = new URL(req.url, "http://localhost");
     try {
+      if (url.pathname === "/api/symbols") return json(res, 200, await source.symbols());
       if (url.pathname === "/api/chart") {
         const symbol = url.searchParams.get("symbol");
         if (!symbol) return json(res, 400, { error: "symbol is required" });

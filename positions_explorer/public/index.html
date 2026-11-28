@@ -5,14 +5,19 @@
   <title>Positions explorer</title>
   <style>
     body { font: 14px system-ui, sans-serif; margin: 16px; }
-    #chart { display: block; width: 100%; max-width: 960px; border: 1px solid #ddd; }
+    #chart { display: block; width: 100%; max-width: 960px; margin-top: 8px; border: 1px solid #ddd; }
     .close { fill: none; stroke: steelblue; stroke-width: 1.5; }
     .empty { fill: #888; }
     .buy { fill: seagreen; }
     .sell { fill: crimson; }
+    .target { fill-opacity: 0.7; }
+    .source-yahoo { fill: rebeccapurple; }
+    .source-google { fill: darkorange; }
+    .source-tipranks { fill: teal; }
   </style>
 </head>
 <body>
+  <label>Symbol <select id="symbol"></select></label>
   <svg id="chart" viewBox="0 0 960 480"></svg>
   <script type="module" src="/chart.js"></script>
 </body>

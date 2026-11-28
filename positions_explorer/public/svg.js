@@ -17,11 +17,11 @@ function scale(points, width, height) {
 }
 
 // Inner markup for <svg viewBox="0 0 width height">.
-export function renderSvg({ close, buys, sells }, { width, height }) {
+export function renderSvg({ close, buys, sells, targets }, { width, height }) {
   if (close.length === 0) {
     return `<text class="empty" x="${width / 2}" y="${height / 2}" text-anchor="middle">No bars</text>`;
   }
-  const at = scale([...close, ...buys, ...sells], width, height);
+  const at = scale([...close, ...buys, ...sells, ...targets], width, height);
   const line = close.map((p) => at(p).map(fmt).join(",")).join(" ");
   const circles = (cls, points) =>
     points
@@ -30,5 +30,12 @@ export function renderSvg({ close, buys, sells }, { width, height }) {
         return `<circle class="${cls}" cx="${cx}" cy="${cy}" r="${R}"/>`;
       })
       .join("");
-  return `<polyline class="close" points="${line}"/>${circles("buy", buys)}${circles("sell", sells)}`;
+  const triangles = targets
+    .map((t) => {
+      const [x, y] = at(t);
+      const points = [[x, y - R], [x - R, y + R], [x + R, y + R]];
+      return `<polygon class="target source-${t.source}" points="${points.map((p) => p.map(fmt).join(",")).join(" ")}"/>`;
+    })
+    .join("");
+  return `${triangles}<polyline class="close" points="${line}"/>${circles("buy", buys)}${circles("sell", sells)}`;
 }

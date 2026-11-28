@@ -1,6 +1,7 @@
 import { renderSvg } from "./svg.js";
 
 const svg = document.getElementById("chart");
+const select = document.getElementById("symbol");
 const { width, height } = svg.viewBox.baseVal;
 
 async function getJson(url) {
@@ -17,4 +18,9 @@ async function draw(symbol) {
   svg.innerHTML = renderSvg(series, { width, height });
 }
 
-draw(new URLSearchParams(location.search).get("symbol"));
+const symbols = await getJson("/api/symbols");
+select.replaceChildren(...symbols.map((s) => new Option(s, s)));
+const wanted = new URLSearchParams(location.search).get("symbol");
+select.value = symbols.includes(wanted) ? wanted : (symbols[0] ?? "");
+select.addEventListener("change", () => draw(select.value));
+draw(select.value);
