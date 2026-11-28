@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Run a command with this repo's Node.
+# Uses nvm and .nvmrc when nvm is installed. The alert-bot image has that
+# Node version on PATH and does not install nvm.
+set -euo pipefail
+
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$root"
+
+if [ -s "${NVM_DIR:-$HOME/.nvm}/nvm.sh" ]; then
+  # shellcheck disable=SC1090
+  . "${NVM_DIR:-$HOME/.nvm}/nvm.sh"
+  nvm use >/dev/null
+fi
+
+exec "$@"

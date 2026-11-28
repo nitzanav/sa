@@ -1,0 +1,11 @@
+.git
+.cursor
+.venv
+node_modules
+data
+.env
+**/.DS_Store
+**/__pycache__
+**/*.pyc
+VectorBT
+positions_explorer

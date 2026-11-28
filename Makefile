@@ -4,6 +4,9 @@ SHELL := /bin/bash
 -include .env
 export
 
+# Local dev sources nvm (.nvmrc). The alert-bot image has that Node on PATH.
+# Recipes call ./nvm-run so both work.
+
 # ---------------------------------------------------------------------------
 # Shared configuration
 # ---------------------------------------------------------------------------
@@ -62,7 +65,7 @@ analyst-recommendation-py-test:
 	$(call diff-against-fixture,/tmp/analyst-recommendation-py.json)
 
 analyst-recommendation-js:
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendation.js '$(URL)'
+	@./nvm-run node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendation.js '$(URL)'
 
 analyst-recommendation-js-test:
 	@$(MAKE) --no-print-directory analyst-recommendation-js URL='$(URL)' > /tmp/analyst-recommendation-js.json
@@ -73,7 +76,7 @@ analyst-recommendation-js-test:
 # ---------------------------------------------------------------------------
 
 symbols_exchange:
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/symbols-exchange/fetch_symbols_exchange.js
+	@./nvm-run node src/symbols-exchange/fetch_symbols_exchange.js
 
 # Scrapes Google, Yahoo, and TipRanks into data/analyst_recomendation/<source>/, then joins
 # per-date/symbol CSVs into data/analyst_recomendation/all_symbols_per_date_and_symbol*.csv.
@@ -88,16 +91,15 @@ symbols_exchange:
 #   SKIP_EXISTING=1 SOURCE=tipranks make scrape_analyst_recommendations
 #   NODE_CONFIG='{"analyst_recommendations": {"source": "yahoo"}}' make scrape_analyst_recommendations
 # TipRanks live fetches read TIP_RANKS_API_KEY from .env (make exports it). Cache hits do not. Do not put the key in config.
-# After a successful scrape, commits data/ (message "data") and pushes. A no-op or git failure does not fail the target.
+# Does not commit. alert_bot commits once after the parallel source scrapes finish.
 SOURCE ?=
 SKIP_EXISTING ?=
 
 scrape_analyst_recommendations: symbols_exchange
-	@time . "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
-	@(git reset && git add -- data && git commit -m "data" && git push) || :
+	@time ./nvm-run node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js $(if $(SOURCE),--source=$(SOURCE)) $(if $(SKIP_EXISTING),--skip-existing)
 
 scrape_analyst_recommendations-test:
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && npm run --silent test:e2e
+	@./nvm-run npm run --silent test:e2e
 
 download_fortune_500:
 	@mkdir -p data/fortune_500
@@ -124,7 +126,7 @@ download_yahoo_quotes: download_fortune_500
 #   SOURCE=yahoo make write_joint_analyst_recommendations
 #   SOURCE=tipranks make write_joint_analyst_recommendations
 write_joint_analyst_recommendations:
-	@. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
+	@./nvm-run node src/analyst-recommendation/dyi_javascript/scrape_analyst_recommendations.js --join-only $(if $(SOURCE),--source=$(SOURCE))
 
 # Rebuild CSVs from per-symbol JSON, copy Yahoo, Google, and TipRanks into
 # database tables, pool all_sources (Yahoo + TipRanks) and yahoo_and_google,
@@ -164,6 +166,8 @@ alert\:buy-truncate:
 	@psql "$$DATABASE_URL" -v ON_ERROR_STOP=1 -f etl/alert_buy_truncate.sql
 
 # One ALERT_AT for sell, buy, and notify. DRY_MODE=1 skips the analyst scrapes.
+# The three source scrapes run in parallel, so the commit happens once here,
+# after they finish, and includes every change.
 #   make alert_bot
 #   ALERT_AT='2026-11-06 22:00:00+0000' make alert_bot
 #   DRY_MODE=1 make alert_bot
@@ -178,7 +182,12 @@ alert_bot: download_fortune_500
 	fi; \
 	$(MAKE) --no-print-directory alert:sell; \
 	$(MAKE) --no-print-directory alert:buy; \
-	$(MAKE) --no-print-directory notify_alerts
+	$(MAKE) --no-print-directory notify_alerts; \
+	git add -A; \
+	if ! git diff --cached --quiet; then \
+		git commit -m "alert bot execution"; \
+		git push origin HEAD:main; \
+	fi
 
 # Sell open positions on 2.5% loss from entry (dd) or 15% giveback of the
 # peak gain (pp), using the close of the run's New York date. The run must be
@@ -197,7 +206,7 @@ alert\:sell: download_yahoo_quotes
 notify_alerts:
 	@if [ -z "$$DATABASE_URL" ]; then echo "Error: DATABASE_URL is not set"; exit 1; fi
 	@export ALERT_AT="$${ALERT_AT:-$$(date -u '+%Y-%m-%d %H:%M:%S%z')}"; \
-	. "$${NVM_DIR:-$$HOME/.nvm}/nvm.sh" && nvm use >/dev/null && node etl/notify_alerts.js
+	./nvm-run node etl/notify_alerts.js
 
 # Quotes only, then alert:sell. No analyst scrape.
 #   make sell_alerts

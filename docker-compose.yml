@@ -1,0 +1,28 @@
+# One-shot alert bot. data/ is fetched from GitHub at start. make alert_bot
+# commits every change and pushes it (message "alert bot execution") after the
+# parallel source scrapes finish.
+#
+#   docker compose run --rm alert-bot
+#   docker compose run --rm alert-bot make alert_bot
+#   docker compose run --rm -e DRY_MODE=1 alert-bot make alert_bot
+#   docker compose run --rm -e ALERT_AT='2026-11-06 22:00:00+0000' alert-bot make alert_bot
+#
+# Needs .env (see .env.example): DATABASE_URL with sslmode=require, ALERT_EMAIL,
+# TIP_RANKS_API_KEY for a live TipRanks scrape, and SMTP_* for the email step.
+# The GitHub SSH key is mounted so the container can fetch and push.
+# The RDS security group must allow the machine running Docker.
+services:
+  alert-bot:
+    build: .
+    image: sa-alert-bot
+    init: true
+    shm_size: 1073741824
+    env_file:
+      - .env
+    environment:
+      NODE_EXTRA_CA_CERTS: /opt/rds/global-bundle.pem
+      PGSSLROOTCERT: /opt/rds/global-bundle.pem
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ${HOME}/.ssh/github_7_feb_2026:/run/secrets/github_key:ro

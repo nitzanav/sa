@@ -9,6 +9,7 @@ build/
 .ruff_cache/
 .env
 data/alerts/
+data/logs/
 etl/test/etl_test.sql
 etl/test/signals.csv
 etl/test/tmp/

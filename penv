@@ -6,22 +6,34 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV="$ROOT/.venv"
 PY_VERSION="$(cat "$ROOT/.python-version" | tr -d '[:space:]')"
 
-ensure_python() {
-  if ! command -v pyenv &>/dev/null; then
-    echo "penv: pyenv not found. Install: https://github.com/pyenv/pyenv" >&2
+# pyenv on a dev machine. In Docker, python3 is already the version in .python-version.
+python_bin() {
+  if command -v pyenv &>/dev/null; then
+    if ! pyenv versions --bare | grep -qx "$PY_VERSION"; then
+      echo "penv: installing Python $PY_VERSION via pyenv..." >&2
+      pyenv install -s "$PY_VERSION" >&2
+    fi
+    PYENV_VERSION="$PY_VERSION" pyenv which python
+    return
+  fi
+  if command -v python3 &>/dev/null; then
+    local ver
+    ver="$(python3 -c 'import sys; print("%d.%d.%d" % sys.version_info[:3])')"
+    if [[ "$ver" == "$PY_VERSION" ]]; then
+      command -v python3
+      return
+    fi
+    echo "penv: python3 is $ver, need $PY_VERSION. Install pyenv: https://github.com/pyenv/pyenv" >&2
     exit 1
   fi
-  if ! pyenv versions --bare | grep -qx "$PY_VERSION"; then
-    echo "penv: installing Python $PY_VERSION via pyenv..."
-    pyenv install -s "$PY_VERSION"
-  fi
+  echo "penv: pyenv not found. Install: https://github.com/pyenv/pyenv" >&2
+  exit 1
 }
 
 ensure_venv() {
-  ensure_python
   if [[ ! -d "$VENV" ]]; then
     echo "penv: creating virtualenv at .venv..."
-    PYENV_VERSION="$PY_VERSION" pyenv exec python -m venv "$VENV"
+    "$(python_bin)" -m venv "$VENV"
   fi
 }
 
